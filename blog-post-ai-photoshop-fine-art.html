@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<title>Blog Post — How I Use AI & Photoshop to Elevate Fine Art Photography</title>
+<style>
+body{font-family:Georgia,serif;max-width:740px;margin:40px auto;padding:0 24px;color:#222;line-height:1.8;font-size:18px}
+h1{font-size:2.1rem;line-height:1.25;margin-bottom:12px;color:#111}
+h2{font-size:1.35rem;margin:40px 0 12px;color:#111;border-bottom:2px solid #b5924a;padding-bottom:8px}
+h3{font-size:1.1rem;margin:28px 0 8px;color:#333}
+.subtitle{font-size:1.1rem;color:#666;margin-bottom:28px;font-style:italic}
+.meta{font-size:.85rem;color:#999;margin-bottom:36px}
+.meta a{color:#b5924a;text-decoration:none}
+img{width:100%;height:auto;display:block;margin:28px 0;border-radius:4px}
+.caption{font-size:.82rem;color:#888;margin-top:-20px;margin-bottom:28px;font-style:italic;text-align:center}
+.before-after{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:24px 0}
+.before-after img{margin:0}
+.before-after .caption{margin-top:6px;margin-bottom:0}
+.tip{background:#faf7f2;border-left:4px solid #b5924a;padding:16px 20px;margin:28px 0;border-radius:0 4px 4px 0}
+.tip strong{color:#b5924a}
+.steps{background:#f8f8f8;padding:20px 24px;margin:20px 0;border-radius:4px}
+.steps ol{margin:8px 0 0 20px}
+.steps li{margin-bottom:8px;color:#333}
+.steps code{background:#e8e8e8;padding:2px 6px;border-radius:3px;font-size:.88rem;font-family:monospace}
+a{color:#b5924a}
+.cta{background:#111;color:#f2efe8;padding:32px;text-align:center;border-radius:6px;margin:48px 0}
+.cta h3{color:#b5924a;margin:0 0 10px;font-size:1.2rem}
+.cta p{color:#ccc;font-size:.95rem;margin:0 0 18px}
+.cta a{display:inline-block;background:#b5924a;color:#111;padding:10px 28px;text-decoration:none;border-radius:3px;font-weight:bold;font-size:.95rem}
+hr{border:none;border-top:1px solid #e0e0e0;margin:40px 0}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════
+     COPY EVERYTHING BELOW THIS LINE INTO YOUR MEDIUM POST
+     (Medium supports HTML paste — paste as rich text or use
+      their import feature at medium.com/p/import)
+     ═══════════════════════════════════════════════════════════ -->
+
+<h1>How I Use AI and Photoshop to Turn a Good Photo Into a Fine Art Print</h1>
+
+<p class="subtitle">Three real examples — removing distractions, enhancing skies, and adding fine art texture — with step-by-step techniques any photographer can use today.</p>
+
+<p class="meta">By <strong>Dan Sproul</strong> · Fine Art Photographer, Lima, Ohio · <a href="https://dsproul.com">dsproul.com</a></p>
+
+<p>I've been a landscape and wildlife photographer for over a decade, shooting with a Canon 5D Mark IV across some of America's most stunning wild places — from the sea stacks of the Oregon Coast to the glacier lakes of Alaska. But here's something I've only recently started talking openly about: <strong>the difference between a good photograph and a print someone wants to hang on their wall often comes down to what you remove, not just what you capture.</strong></p>
+
+<p>AI tools built into Photoshop — specifically Generative Fill, the upgraded Remove tool, and Neural Filters — have genuinely changed how I finish my work. What used to take hours of painstaking clone-stamp work now takes minutes, and the results are often indistinguishable from a scene with no one in it.</p>
+
+<p>In this post I'm walking through three real images from my portfolio, showing exactly what I did in Photoshop and why. Whether you're a photographer selling prints or just trying to get the most out of your landscape work, these techniques will change how you think about post-processing.</p>
+
+<hr/>
+
+<h2>Example 1: Moody Oregon Coast — Removing People and Birds with Generative Fill</h2>
+
+<img src="blog-oregon-coast-monochrome-dan-sproul.jpg" alt="Moody monochrome Oregon Coast landscape with sea stacks and crashing waves — fine art print by Dan Sproul"/>
+<p class="caption">Moody Oceanside Beach, Oregon Coast — Monochrome fine art print. Available at <a href="https://dsproul.com">dsproul.com</a></p>
+
+<p>This scene on the Oregon Coast had everything I wanted — dramatic rock formations, crashing surf, sea stacks disappearing into fog. What it also had were three people standing on the rocks in the middle distance and a cluster of birds perched on the largest formation. Neither added to the image; both pulled the eye away from the atmosphere I was going for.</p>
+
+<p>This is exactly the kind of problem that used to mean hours with the Clone Stamp tool, carefully painting in ocean and rock textures that matched the surrounding area. With Generative Fill, it took under ten minutes.</p>
+
+<div class="steps">
+  <strong>How to remove people and birds with Photoshop Generative Fill:</strong>
+  <ol>
+    <li>Open your image and duplicate the background layer <code>(Ctrl/Cmd + J)</code> — always work non-destructively.</li>
+    <li>Select the <strong>Object Selection Tool</strong> <code>(W)</code>. Hover over each person or bird — Photoshop AI automatically detects and highlights the subject. Click to select.</li>
+    <li>For multiple subjects, hold <code>Shift</code> and click each one to add to the selection. Expand the selection slightly: <strong>Select → Modify → Expand</strong> by 4–8px to capture edge pixels.</li>
+    <li>Go to the <strong>Generative Fill</strong> toolbar (appears at the bottom of the canvas when a selection is active). Leave the prompt field <em>empty</em> — this tells Photoshop to fill based purely on the surrounding context.</li>
+    <li>Click <strong>Generate</strong>. Photoshop offers 3 variations. Choose the one that matches texture and light direction best.</li>
+    <li>For stubborn edges or areas where the fill looks slightly off, use the <strong>Remove Tool</strong> (under the Spot Healing Brush) to paint over problem areas — it uses AI to blend seamlessly.</li>
+  </ol>
+</div>
+
+<div class="tip">
+  <strong>Pro tip:</strong> For birds against sky, the Remove Tool often works better than Generative Fill because sky is a simpler texture. For birds against complex rock or water, use Generative Fill with no prompt for the most realistic result.
+</div>
+
+<p>For this image I converted to monochrome in <strong>Camera Raw</strong> before removing the distractions, which made the selection process cleaner — the AI has an easier time matching tones when there's no color variance to contend with. The conversion itself used the <strong>Black and White Mix</strong> panel with heavy blue channel reduction (to darken the sky to near-white fog) and boosted reds and yellows to bring out the texture in the wet rocks.</p>
+
+<hr/>
+
+<h2>Example 2: Pemaquid Point Lighthouse, Maine — AI Sky Enhancement and Fine Art Texture</h2>
+
+<img src="blog-pemaquid-lighthouse-maine-dan-sproul.jpg" alt="Pemaquid Point Lighthouse Maine sunrise with fine art textured sky — photography print by Dan Sproul"/>
+<p class="caption">Pemaquid Point Lighthouse, Maine — Fine art textured sunrise. Available at <a href="https://dsproul.com">dsproul.com</a></p>
+
+<p>The original shot of Pemaquid Point had the lighthouse, the extraordinary layered granite foreground, and a reasonably nice sky — but "reasonably nice" doesn't stop anyone in their tracks. The sky I captured was flat and slightly hazy. The foreground rocks, which are genuinely one of the most spectacular geological formations on the Maine coast, deserved a sky that matched their drama.</p>
+
+<p>What makes this image feel like a painting rather than a straight photograph is a combination of two techniques: <strong>Sky Replacement</strong> with a hand-blended transition, and a <strong>fine art texture overlay</strong> applied through a blend mode.</p>
+
+<div class="steps">
+  <strong>Sky Replacement in Photoshop:</strong>
+  <ol>
+    <li>Go to <strong>Edit → Sky Replacement</strong>. Photoshop automatically masks the sky from the foreground.</li>
+    <li>Choose a sky from the built-in library or import your own. I keep a personal library of skies shot at golden hour — these are real skies I've photographed, not stock.</li>
+    <li>Adjust <strong>Shift Edge</strong> (−10 to −20) to avoid fringing along the horizon line, especially where sky meets trees or rocky edges.</li>
+    <li>Use <strong>Fade Edge</strong> (40–60) to blend the new sky naturally into the original image lighting.</li>
+    <li>Set <strong>Foreground Lighting</strong> to 20–35% to warm the rocks and match the golden-hour sky light. This is what makes a sky replacement look real instead of composited.</li>
+    <li>Click OK — Photoshop creates a masked group you can fine-tune with a brush.</li>
+  </ol>
+</div>
+
+<div class="steps">
+  <strong>Adding a fine art texture overlay:</strong>
+  <ol>
+    <li>Find a high-resolution paper or canvas texture image (I shoot my own — heavily textured watercolor paper under window light at 200 ISO).</li>
+    <li>Place the texture as a new layer above everything <code>(File → Place Embedded)</code>. Scale to cover the full image.</li>
+    <li>Change the blend mode to <strong>Soft Light</strong> and reduce opacity to <strong>15–30%</strong>. This adds texture without muddying colors.</li>
+    <li>For a more painterly effect, try <strong>Overlay</strong> at 10–20% opacity. For subtle grain only, try <strong>Luminosity</strong> at 20–40%.</li>
+    <li>Add a <strong>Hue/Saturation</strong> adjustment layer clipped to the texture and desaturate it fully — you want texture, not color contamination from the texture source.</li>
+  </ol>
+</div>
+
+<div class="tip">
+  <strong>Pro tip:</strong> The texture effect reads much more strongly on large prints than on screen. What looks like 20% texture on a monitor looks like about 10% on a 24×16 canvas. If you're creating work specifically for print, push the texture opacity higher than your screen suggests.
+</div>
+
+<hr/>
+
+<h2>Example 3: Watkins Glen State Park, New York — Cleaning Up a Busy Scene</h2>
+
+<img src="blog-watkins-glen-waterfall-dan-sproul.jpg" alt="Watkins Glen State Park New York waterfall gorge with stone steps — fine art landscape print by Dan Sproul"/>
+<p class="caption">Watkins Glen State Park, New York — Gorge waterfall and ancient stone steps. Available at <a href="https://dsproul.com">dsproul.com</a></p>
+
+<p>Watkins Glen is one of those places that photographers chase for years. The gorge with its 200-foot waterfalls, ancient sedimentary walls, and hand-cut stone staircase is genuinely breathtaking in person. It is also, on any given summer day, packed with visitors. The original of this image had people on the staircase, a couple in bright jackets in the lower right foreground, and some trash and signage that had worked its way into the lower left.</p>
+
+<p>Foreground distractions like scattered rocks, wrappers, or out-of-place bright spots are often harder to remove than people because the surrounding texture is complex — water, moss, stone all meeting at irregular angles. This is where Photoshop's <strong>Content-Aware Fill</strong> and the newer <strong>Remove Tool</strong> used in combination give the best results.</p>
+
+<div class="steps">
+  <strong>Removing people from stairs and complex foregrounds:</strong>
+  <ol>
+    <li>For the staircase figures: use the <strong>Lasso Tool</strong> <code>(L)</code> to draw a loose selection around each person. Go to <strong>Edit → Content-Aware Fill</strong>. In the workspace, paint out any sampling areas that would pull from similar people or bright spots. Click <strong>Generate</strong>.</li>
+    <li>For foreground distractions on complex texture (wet rocks, moss): switch to the <strong>Remove Tool</strong>. Set brush size just slightly larger than the distraction. Paint over it in one smooth stroke — don't scrub back and forth. One deliberate pass gives the AI the cleanest information to work with.</li>
+    <li>For the lower-left area where foliage met water met rock: I used <strong>Generative Fill</strong> with the text prompt <em>"mossy rock and ferns"</em> to generate a believable fill that matched the natural surroundings. When the context is complex, a descriptive prompt gives better results than an empty one.</li>
+    <li>Check the result at 100% zoom — edges are where AI fills typically show artifacts. Use a small <strong>Healing Brush</strong> <code>(J)</code> to touch up any seams.</li>
+  </ol>
+</div>
+
+<div class="tip">
+  <strong>Pro tip:</strong> Shoot multiple frames at popular locations. Even 30 seconds apart, people move. In Lightroom or Bridge, stack your frames and use <strong>Statistics → Median</strong> stacking to automatically remove moving subjects before you even open Photoshop. For busy locations like Watkins Glen, I often shoot 8–12 frames over 5 minutes specifically to enable this technique.
+</div>
+
+<hr/>
+
+<h2>The Bigger Picture: Why This Matters for Fine Art Photography</h2>
+
+<p>There's an ongoing conversation in photography about whether AI editing "counts" — whether removing a person from a landscape print is somehow dishonest. My view is straightforward: <strong>fine art photography has always been about vision, not documentation.</strong> Ansel Adams dodged and burned in the darkroom. Every color photographer since Kodachrome has pushed saturation and contrast in post. The question isn't whether you edit; it's whether the final image honestly represents the character and atmosphere of the place you photographed.</p>
+
+<p>Every location in my work is real. The light is real. The compositions are made by standing in those places, often for hours, waiting for the right conditions. What AI tools allow me to do is remove the accident of timing — the person who walked into frame at exactly the wrong moment — and reveal the scene as it actually feels to be there.</p>
+
+<p>The result is photography that holds up on a wall. Not just on a screen at thumbnail size, but as a 36-inch canvas print above a sofa, or as a metal print in a hotel lobby. That's the standard I hold my work to, and it's why I've invested in learning these tools deeply.</p>
+
+<hr/>
+
+<h2>Tools Used in This Workflow</h2>
+
+<p><strong>Adobe Photoshop 2025</strong> — Generative Fill, Sky Replacement, Remove Tool, Content-Aware Fill, Camera Raw Filter</p>
+<p><strong>Adobe Lightroom Classic</strong> — initial RAW processing, lens correction, basic exposure, median stacking via Photomerge</p>
+<p><strong>Camera:</strong> Canon 5D Mark IV · Canon 90D · Canon 7D · Multiple lenses</p>
+<p><em>Note: Generative Fill requires an Adobe Creative Cloud subscription and an internet connection. It uses Adobe Firefly AI, which is trained on licensed imagery.</em></p>
+
+<hr/>
+
+<div class="cta">
+  <h3>See the finished prints</h3>
+  <p>All three images shown in this post — and hundreds more from Alaska, Oregon, Colorado, the Smoky Mountains, and beyond — are available as museum-quality canvas, metal, framed, and acrylic prints.</p>
+  <a href="https://dsproul.com">Browse the portfolio at dsproul.com →</a>
+</div>
+
+<p style="font-size:.9rem;color:#888;margin-top:40px"><em>Dan Sproul is an award-winning fine art photographer based in Lima, Ohio. His commercial work includes large-scale installations at Drury Inn hotels and the Wexner Medical Center at Ohio State University. His prints have sold to collectors, interior designers, and businesses across all 50 states and 21 countries. Follow his work at <a href="https://dsproul.com">dsproul.com</a>.</em></p>
+
+<!-- ═══════════════════════════════════════════════════════════
+     END OF MEDIUM POST CONTENT
+     
+     MEDIUM POSTING TIPS:
+     - Title: "How I Use AI and Photoshop to Turn a Good Photo Into a Fine Art Print"
+     - Subtitle: "Three real examples — removing distractions, enhancing skies, and adding fine art texture"
+     - Tags: Photography, Photoshop, AI, Landscape Photography, Fine Art Photography
+     - Publication: Submit to "The Photographer's Handbook" and "ILLUMINATION" publications on Medium
+     - Add dsproul.com to your Medium profile link
+     - After posting, share the URL on your Instagram bio and Pinterest profile
+     ═══════════════════════════════════════════════════════════ -->
+
+</body>
+</html>
