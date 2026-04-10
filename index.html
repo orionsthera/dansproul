@@ -273,6 +273,10 @@ footer{padding:28px 56px;border-top:1px solid rgba(255,255,255,.05);display:flex
 footer a{color:rgba(242,239,232,.18);text-decoration:none;transition:color .3s}
 footer a:hover{color:var(--accent)}
 
+.use-card:hover img{transform:scale(1.06);filter:brightness(.78) saturate(.88)!important}
+.use-card img{transition:transform .8s cubic-bezier(.25,.46,.45,.94),filter .6s}
+#best-sellers-grid a:hover img{transform:scale(1.05)}
+#best-sellers-grid a:hover .bs-ov{opacity:1!important}
 /* ── ANIMATIONS ── */
 @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
 
@@ -291,6 +295,15 @@ footer a:hover{color:var(--accent)}
   .test-grid{grid-template-columns:1fr}
   .contact-cards{grid-template-columns:1fr}
   .local-seo-block{padding:28px 24px}
+}
+@media(max-width:900px){
+  .shop-use-grid{grid-template-columns:1fr 1fr!important}
+  #best-sellers-grid{grid-template-columns:1fr 1fr!important}
+}
+@media(max-width:660px){
+  .shop-use-grid{grid-template-columns:1fr!important}
+  #best-sellers-grid{grid-template-columns:1fr 1fr!important}
+  div[style*="grid-template-columns:1fr 1fr"][style*="gap:72px"]{grid-template-columns:1fr!important;gap:40px!important}
 }
 @media(max-width:660px){
   nav{padding:18px 24px}
@@ -362,7 +375,7 @@ footer a:hover{color:var(--accent)}
   </div>
   <div class="hero-credit">
     Valdez Glacier Lake · Alaska<br/>
-    <a href="/cdn-cgi/l/email-protection#127f7c76627a7d667d527a7d667f737b7e3c717d7f">© Dan Sproul Photography</a>
+    <a href="mailto:sproulphoto@gmail.com">© Dan Sproul Photography</a>
   </div>
 </div>
 
@@ -408,7 +421,7 @@ footer a:hover{color:var(--accent)}
   <p class="section-label">Collections</p>
   <div class="coll-grid">
 
-    <a class="coll-card c-land" href="https://dansproul.com/art/landscape" target="_blank" aria-label="View Landscape Photography collection">
+    <a class="coll-card c-land" href="oregon-coast-photography-prints.html" aria-label="View Oregon Coast Photography Prints">
       <img src="cannon-beach-haystack-rock-oregon-dan-sproul.jpg" alt="Cannon Beach Haystack Rock Oregon fine art landscape photography by Dan Sproul Lima Ohio"/>
       <div class="coll-overlay">
         <span class="c-cat">Featured Collection</span>
@@ -438,7 +451,7 @@ footer a:hover{color:var(--accent)}
       </div>
     </a>
 
-    <a class="coll-card c-aut" href="https://dansproul.com/collections/autumn+landscapes+and+artwork" target="_blank" aria-label="View Autumn Collection">
+    <a class="coll-card c-aut" href="colorado-photography-prints.html" aria-label="View Colorado Photography Prints">
       <img src="chimney-peak-colorado-autumn-dan-sproul.jpg" alt="Chimney Peak Mountain Colorado autumn fall foliage photography by Dan Sproul"/>
       <div class="coll-overlay">
         <span class="c-cat">Season</span>
@@ -448,7 +461,7 @@ footer a:hover{color:var(--accent)}
       </div>
     </a>
 
-    <a class="coll-card c-wat" href="https://dansproul.com/art/waterfall" target="_blank" aria-label="View Waterfalls and Rivers collection">
+    <a class="coll-card c-wat" href="https://dansproul.com/art/serene" target="_blank" aria-label="View Waterfalls and Rivers collection">
       <img src="bridal-veil-falls-oregon-dan-sproul.jpg" alt="Bridal Veil Falls Oregon long exposure waterfall photography by Dan Sproul" style="object-position:center top"/>
       <div class="coll-overlay">
         <span class="c-cat">Water</span>
@@ -503,15 +516,15 @@ footer a:hover{color:var(--accent)}
 
   <!-- Gallery grid — each image links to shop -->
   <div class="gallery-grid">
-    <a class="gal-item wide" href="https://dansproul.com/featured/autumn-sunrise-maroon-bells-dan-sproul.html" target="_blank" aria-label="Maroon Bells Dawn Colorado — view prints">
-      <img src="maroon-bells-dawn-autumn-dan-sproul.jpg" alt="Maroon Bells dawn autumn Colorado landscape photography by Dan Sproul"/>
+    <a class="gal-item wide" href="colorado-photography-prints.html" aria-label="Maroon Bells Dawn Colorado — view prints">
+      <img src="maroon-bells-dawn-autumn-dan-sproul.jpg" alt="Maroon Bells dawn autumn Colorado landscape photography by Dan Sproul" style="object-position:center top"/>
       <div class="gal-overlay"><span class="gal-name">Maroon Bells · Dawn · Colorado</span></div>
     </a>
-    <a class="gal-item" href="https://dansproul.com/featured/moose-family-in-autumn-aspen-dan-sproul.html" target="_blank" aria-label="Moose Family Aspen Forest — view prints">
+    <a class="gal-item" href="https://dansproul.com/art/wildlife" target="_blank" aria-label="Moose Family Aspen Forest — view prints">
       <img src="moose-family-aspen-forest-dan-sproul.jpg" alt="Moose family aspen forest wildlife photography by Dan Sproul"/>
       <div class="gal-overlay"><span class="gal-name">Moose Family · Aspen Forest</span></div>
     </a>
-    <a class="gal-item" href="https://dansproul.com/featured/sunlit-badlands-burrowing-owl-dan-sproul.html" target="_blank" aria-label="Burrowing Owl Badlands — view prints">
+    <a class="gal-item" href="https://dansproul.com/art/wildlife" target="_blank" aria-label="Burrowing Owl Badlands — view prints">
       <img src="burrowing-owl-badlands-national-park-dan-sproul.jpg" alt="Burrowing owl Badlands National Park wildlife photography by Dan Sproul"/>
       <div class="gal-overlay"><span class="gal-name">Burrowing Owl · Badlands NP</span></div>
     </a>
@@ -523,12 +536,119 @@ footer a:hover{color:var(--accent)}
       <img src="little-river-smoky-mountains-long-exposure-dan-sproul.jpg" alt="Little River Smoky Mountains long exposure photography by Dan Sproul"/>
       <div class="gal-overlay"><span class="gal-name">Little River · Smoky Mountains</span></div>
     </a>
-    <a class="gal-item wide" href="https://dansproul.com/art/landscape" target="_blank" aria-label="Oregon Coastal Landscape — view prints">
+    <a class="gal-item wide" href="oregon-coast-photography-prints.html" aria-label="Oregon Coastal Landscape — view prints">
       <img src="oregon-coastal-landscape-pacific-northwest-dan-sproul.jpg" alt="Oregon coastal landscape Pacific Northwest photography by Dan Sproul"/>
       <div class="gal-overlay"><span class="gal-name">Oregon Coast · Pacific Northwest</span></div>
     </a>
   </div>
 </section>
+
+
+<!-- ══ BEST SELLERS ══ -->
+<section id="best-sellers" style="padding:88px 56px;background:#0a0906">
+  <p class="section-label">Best Sellers</p>
+  <p style="font-size:.8rem;line-height:2;color:rgba(242,239,232,.52);max-width:540px;margin-bottom:52px">The most loved prints across all collections — chosen by collectors, interior designers, and hospitality clients.</p>
+
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:3px" id="best-sellers-grid">
+
+    <a href="https://dansproul.com/featured/valdez-glacier-lake" target="_blank" style="position:relative;overflow:hidden;aspect-ratio:3/4;display:block;text-decoration:none;background:#111">
+      <img src="valdez-glacier-lake-alaska-dan-sproul.jpg" alt="Valdez Glacier Lake Alaska best selling fine art print by Dan Sproul" style="width:100%;height:100%;object-fit:cover;display:block;filter:brightness(.82) saturate(.88);transition:transform .8s,filter .6s"/>
+      <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(8,8,7,.9) 0%,transparent 55%);opacity:0;transition:opacity .35s;display:flex;flex-direction:column;justify-content:flex-end;padding:16px" class="bs-ov">
+        <p style="font-family:'Cormorant Garamond',serif;font-size:.9rem;font-weight:300;color:var(--off-white);margin-bottom:3px">Valdez Glacier Lake</p>
+        <p style="font-size:.48rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent)">Alaska · #1 Best Seller</p>
+      </div>
+      <div style="position:absolute;top:12px;left:12px;background:var(--accent);color:var(--black);font-size:.44rem;letter-spacing:.2em;text-transform:uppercase;padding:4px 9px">#1</div>
+    </a>
+
+    <a href="https://dansproul.com/featured/maroon-bells" target="_blank" style="position:relative;overflow:hidden;aspect-ratio:3/4;display:block;text-decoration:none;background:#111">
+      <img src="maroon-bells-dawn-autumn-dan-sproul.jpg" alt="Maroon Bells Colorado best selling fine art print by Dan Sproul" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;filter:brightness(.82) saturate(.88);transition:transform .8s,filter .6s"/>
+      <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(8,8,7,.9) 0%,transparent 55%);opacity:0;transition:opacity .35s;display:flex;flex-direction:column;justify-content:flex-end;padding:16px" class="bs-ov">
+        <p style="font-family:'Cormorant Garamond',serif;font-size:.9rem;font-weight:300;color:var(--off-white);margin-bottom:3px">Maroon Bells at Dawn</p>
+        <p style="font-size:.48rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent)">Colorado · Top Seller</p>
+      </div>
+      <div style="position:absolute;top:12px;left:12px;background:var(--accent);color:var(--black);font-size:.44rem;letter-spacing:.2em;text-transform:uppercase;padding:4px 9px">#2</div>
+    </a>
+
+    <a href="https://dansproul.com/featured/cannon-beach" target="_blank" style="position:relative;overflow:hidden;aspect-ratio:3/4;display:block;text-decoration:none;background:#111">
+      <img src="oregon-cannon-beach-sunset-dan-sproul.jpg" alt="Cannon Beach Oregon best selling fine art print by Dan Sproul" style="width:100%;height:100%;object-fit:cover;display:block;filter:brightness(.82) saturate(.88);transition:transform .8s,filter .6s"/>
+      <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(8,8,7,.9) 0%,transparent 55%);opacity:0;transition:opacity .35s;display:flex;flex-direction:column;justify-content:flex-end;padding:16px" class="bs-ov">
+        <p style="font-family:'Cormorant Garamond',serif;font-size:.9rem;font-weight:300;color:var(--off-white);margin-bottom:3px">Cannon Beach Sunset</p>
+        <p style="font-size:.48rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent)">Oregon Coast · Top Seller</p>
+      </div>
+      <div style="position:absolute;top:12px;left:12px;background:var(--accent);color:var(--black);font-size:.44rem;letter-spacing:.2em;text-transform:uppercase;padding:4px 9px">#3</div>
+    </a>
+
+    <a href="https://dansproul.com/featured/bear-lake" target="_blank" style="position:relative;overflow:hidden;aspect-ratio:3/4;display:block;text-decoration:none;background:#111">
+      <img src="colorado-bear-lake-autumn-reflection-dan-sproul.jpg" alt="Bear Lake Colorado autumn best selling fine art print by Dan Sproul" style="width:100%;height:100%;object-fit:cover;display:block;filter:brightness(.82) saturate(.88);transition:transform .8s,filter .6s"/>
+      <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(8,8,7,.9) 0%,transparent 55%);opacity:0;transition:opacity .35s;display:flex;flex-direction:column;justify-content:flex-end;padding:16px" class="bs-ov">
+        <p style="font-family:'Cormorant Garamond',serif;font-size:.9rem;font-weight:300;color:var(--off-white);margin-bottom:3px">Bear Lake Autumn Reflection</p>
+        <p style="font-size:.48rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent)">Rocky Mountain NP · Top Seller</p>
+      </div>
+      <div style="position:absolute;top:12px;left:12px;background:var(--accent);color:var(--black);font-size:.44rem;letter-spacing:.2em;text-transform:uppercase;padding:4px 9px">#4</div>
+    </a>
+
+    <a href="oregon-coast-photography-prints.html" style="position:relative;overflow:hidden;aspect-ratio:3/4;display:block;text-decoration:none;background:#111">
+      <img src="oregon-bandon-beach-starfish-sunset-dan-sproul.jpg" alt="Bandon Beach Oregon starfish sunset fine art print by Dan Sproul" style="width:100%;height:100%;object-fit:cover;display:block;filter:brightness(.82) saturate(.88);transition:transform .8s,filter .6s"/>
+      <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(8,8,7,.9) 0%,transparent 55%);opacity:0;transition:opacity .35s;display:flex;flex-direction:column;justify-content:flex-end;padding:16px" class="bs-ov">
+        <p style="font-family:'Cormorant Garamond',serif;font-size:.9rem;font-weight:300;color:var(--off-white);margin-bottom:3px">Bandon Beach Starfish</p>
+        <p style="font-size:.48rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent)">Oregon Coast · Popular</p>
+      </div>
+      <div style="position:absolute;top:12px;left:12px;background:var(--accent);color:var(--black);font-size:.44rem;letter-spacing:.2em;text-transform:uppercase;padding:4px 9px">#5</div>
+    </a>
+
+    <a href="alaska-photography-prints.html" style="position:relative;overflow:hidden;aspect-ratio:3/4;display:block;text-decoration:none;background:#111">
+      <img src="mockup-kenai-fjords-alaska-dan-sproul.jpg" alt="Kenai Fjords Alaska sea stacks fine art print by Dan Sproul" style="width:100%;height:100%;object-fit:cover;display:block;filter:brightness(.82) saturate(.88);transition:transform .8s,filter .6s"/>
+      <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(8,8,7,.9) 0%,transparent 55%);opacity:0;transition:opacity .35s;display:flex;flex-direction:column;justify-content:flex-end;padding:16px" class="bs-ov">
+        <p style="font-family:'Cormorant Garamond',serif;font-size:.9rem;font-weight:300;color:var(--off-white);margin-bottom:3px">Kenai Fjords Sea Stacks</p>
+        <p style="font-size:.48rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent)">Alaska · Popular</p>
+      </div>
+      <div style="position:absolute;top:12px;left:12px;background:var(--accent);color:var(--black);font-size:.44rem;letter-spacing:.2em;text-transform:uppercase;padding:4px 9px">#6</div>
+    </a>
+
+    <a href="https://dansproul.com/art/black+and+white" target="_blank" style="position:relative;overflow:hidden;aspect-ratio:3/4;display:block;text-decoration:none;background:#111">
+      <img src="oregon-cannon-beach-bw-panorama-dan-sproul.jpg" alt="Cannon Beach black and white fine art print by Dan Sproul" style="width:100%;height:100%;object-fit:cover;display:block;filter:brightness(.82) saturate(.15);transition:transform .8s,filter .6s"/>
+      <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(8,8,7,.9) 0%,transparent 55%);opacity:0;transition:opacity .35s;display:flex;flex-direction:column;justify-content:flex-end;padding:16px" class="bs-ov">
+        <p style="font-family:'Cormorant Garamond',serif;font-size:.9rem;font-weight:300;color:var(--off-white);margin-bottom:3px">Cannon Beach — B&amp;W Panorama</p>
+        <p style="font-size:.48rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent)">Monochrome · Designer Fave</p>
+      </div>
+      <div style="position:absolute;top:12px;left:12px;background:var(--accent);color:var(--black);font-size:.44rem;letter-spacing:.2em;text-transform:uppercase;padding:4px 9px">#7</div>
+    </a>
+
+    <a href="https://dansproul.com/art/wildlife" target="_blank" style="position:relative;overflow:hidden;aspect-ratio:3/4;display:block;text-decoration:none;background:#111">
+      <img src="black-bear-cub-cades-cove-tennessee-dan-sproul.jpg" alt="Black bear cub Tennessee fine art print by Dan Sproul" style="width:100%;height:100%;object-fit:cover;display:block;filter:brightness(.82) saturate(.88);transition:transform .8s,filter .6s"/>
+      <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(8,8,7,.9) 0%,transparent 55%);opacity:0;transition:opacity .35s;display:flex;flex-direction:column;justify-content:flex-end;padding:16px" class="bs-ov">
+        <p style="font-family:'Cormorant Garamond',serif;font-size:.9rem;font-weight:300;color:var(--off-white);margin-bottom:3px">Black Bear Cub — Cades Cove</p>
+        <p style="font-size:.48rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent)">Wildlife · Popular</p>
+      </div>
+      <div style="position:absolute;top:12px;left:12px;background:var(--accent);color:var(--black);font-size:.44rem;letter-spacing:.2em;text-transform:uppercase;padding:4px 9px">#8</div>
+    </a>
+
+  </div>
+
+  <div style="text-align:center;margin-top:48px">
+    <a href="https://dansproul.com/shop" target="_blank" class="btn btn-out" style="font-size:.6rem;padding:13px 36px">View All Prints at dansproul.com ↗</a>
+  </div>
+</section>
+
+<!-- ══ FOR DESIGNERS STRIP ══ -->
+<div style="background:#0e0c09;padding:72px 56px;border-top:1px solid rgba(181,146,74,.1);display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center">
+  <div>
+    <p style="font-size:.5rem;letter-spacing:.38em;text-transform:uppercase;color:var(--accent);margin-bottom:16px">For Interior Designers</p>
+    <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.5vw,3rem);font-weight:300;line-height:1.15;color:var(--off-white);margin-bottom:18px">Art that defines <em style="font-style:italic;color:var(--accent)">the whole room.</em></h2>
+    <p style="font-size:.78rem;line-height:2;color:rgba(242,239,232,.55);margin-bottom:14px">Dan works directly with interior designers, architects, and hospitality groups on custom commercial installations. Trade pricing, custom sizing, curated sets, and direct-to-install delivery available.</p>
+    <p style="font-size:.78rem;line-height:2;color:rgba(242,239,232,.55);margin-bottom:32px">Recent installations include <strong style="color:rgba(242,239,232,.8);font-weight:400">Drury Inn hotels</strong> and the <strong style="color:rgba(242,239,232,.8);font-weight:400">Wexner Medical Center at Ohio State University</strong>.</p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap">
+      <a href="for-designers.html" class="btn btn-solid" style="font-size:.6rem;padding:12px 30px">For Designers →</a>
+      <a href="in-your-space.html" class="btn btn-out" style="font-size:.6rem;padding:12px 30px">See Room Mockups</a>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:3px">
+    <div style="aspect-ratio:1/1;overflow:hidden"><img src="room-drury-inn-hotel-lobby-st-louis.jpg" alt="Drury Inn hotel lobby art installation by Dan Sproul" style="width:100%;height:100%;object-fit:cover;display:block;filter:brightness(.8)"/></div>
+    <div style="aspect-ratio:1/1;overflow:hidden"><img src="room-office-mountain-lake.jpg" alt="Office wall art by Dan Sproul" style="width:100%;height:100%;object-fit:cover;display:block;filter:brightness(.8)"/></div>
+    <div style="aspect-ratio:1/1;overflow:hidden"><img src="room-living-room-harbor.jpg" alt="Living room wall art by Dan Sproul" style="width:100%;height:100%;object-fit:cover;display:block;filter:brightness(.8)"/></div>
+    <div style="aspect-ratio:1/1;overflow:hidden"><img src="room-gallery-bw-coastal.jpg" alt="Gallery wall black and white coastal art by Dan Sproul" style="width:100%;height:100%;object-fit:cover;display:block;filter:brightness(.8)"/></div>
+  </div>
+</div>
 
 <!-- PROMO -->
 <div class="promo">
@@ -660,8 +780,8 @@ footer a:hover{color:var(--accent)}
       <p style="font-size:.5rem;letter-spacing:.32em;text-transform:uppercase;color:rgba(181,146,74,.6);margin-bottom:14px">Location Collections</p>
       <ul style="list-style:none">
         <li style="margin-bottom:8px"><a href="alaska-photography-prints.html" style="font-size:.6rem;letter-spacing:.12em;color:rgba(242,239,232,.32);text-decoration:none;transition:color .3s" onmouseover="this.style.color='#b5924a'" onmouseout="this.style.color='rgba(242,239,232,.32)'">Alaska Photography Prints</a></li>
-        <li style="margin-bottom:8px"><a href="oregon-coast-photography-prints.html" target="_blank" style="font-size:.6rem;letter-spacing:.12em;color:rgba(242,239,232,.32);text-decoration:none;transition:color .3s" onmouseover="this.style.color='#b5924a'" onmouseout="this.style.color='rgba(242,239,232,.32)'">Oregon Coast Prints</a></li>
-        <li style="margin-bottom:8px"><a href="colorado-photography-prints.html" target="_blank" style="font-size:.6rem;letter-spacing:.12em;color:rgba(242,239,232,.32);text-decoration:none;transition:color .3s" onmouseover="this.style.color='#b5924a'" onmouseout="this.style.color='rgba(242,239,232,.32)'">Colorado Prints</a></li>
+        <li style="margin-bottom:8px"><a href="oregon-coast-photography-prints.html" style="font-size:.6rem;letter-spacing:.12em;color:rgba(242,239,232,.32);text-decoration:none;transition:color .3s" onmouseover="this.style.color='#b5924a'" onmouseout="this.style.color='rgba(242,239,232,.32)'">Oregon Coast Prints</a></li>
+        <li style="margin-bottom:8px"><a href="colorado-photography-prints.html" style="font-size:.6rem;letter-spacing:.12em;color:rgba(242,239,232,.32);text-decoration:none;transition:color .3s" onmouseover="this.style.color='#b5924a'" onmouseout="this.style.color='rgba(242,239,232,.32)'">Colorado Prints</a></li>
         <li style="margin-bottom:8px"><a href="https://dansproul.com/art/serene" target="_blank" style="font-size:.6rem;letter-spacing:.12em;color:rgba(242,239,232,.32);text-decoration:none;transition:color .3s" onmouseover="this.style.color='#b5924a'" onmouseout="this.style.color='rgba(242,239,232,.32)'">Smoky Mountains Prints</a></li>
       </ul>
     </div>
@@ -711,20 +831,4 @@ footer a:hover{color:var(--accent)}
 
   // Close on any mobile link tap
   var links = nav.querySelectorAll('a');
-  links.forEach(function(a){ a.addEventListener('click', close); });
-
-  // Smooth scroll for anchor links
-  document.querySelectorAll('a[href^="#"]').forEach(function(a){
-    a.addEventListener('click', function(e){
-      var target = document.querySelector(a.getAttribute('href'));
-      if(target){
-        e.preventDefault();
-        close();
-        setTimeout(function(){ target.scrollIntoView({behavior:'smooth'}); }, 10);
-      }
-    });
-  });
-})();
-</script>
-</body>
-</html>
+  links.
