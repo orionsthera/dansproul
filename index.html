@@ -807,31 +807,30 @@ footer a:hover{color:var(--accent)}
       </ul>
     </div>
   </div>
-</div>
-
-<script>
-// ── MOBILE MENU — bulletproof version ──
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 (function(){
   var ham = document.getElementById('hamburger');
   var nav = document.getElementById('mobileNav');
   var cls = document.getElementById('mobileClose');
   if(!ham || !nav || !cls) return;
 
-  function open(){
+  function openMenu(){
     nav.classList.add('open');
     ham.classList.add('active');
     document.body.style.overflow = 'hidden';
   }
-  function close(){
+  function closeMenu(){
     nav.classList.remove('open');
     ham.classList.remove('active');
     document.body.style.overflow = '';
   }
 
-  ham.addEventListener('click', open);
-  cls.addEventListener('click', close);
-  nav.addEventListener('click', function(e){ if(e.target === nav) close(); });
-
-  // Close on any mobile link tap
-  var links = nav.querySelectorAll('a');
-  links.
+  ham.addEventListener('click', openMenu);
+  cls.addEventListener('click', closeMenu);
+  nav.addEventListener('click', function(e){ if(e.target === nav) closeMenu(); });
+  nav.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', closeMenu); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeMenu(); });
+})();
+</script>
+</body>
+</html>
