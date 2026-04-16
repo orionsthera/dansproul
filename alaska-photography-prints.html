@@ -181,30 +181,36 @@ footer a:hover{color:var(--accent)}
 
 <!-- MOBILE MENU -->
 <div class="mobile-nav" id="mobileNav">
-  <button class="close-btn" id="mobileClose">✕</button>
-  <a href="index.html">Home</a>
-  <a href="index.html#collections">Collections</a>
-  <a href="in-your-space.html">In Your Space</a>
-  <a href="index.html#about">About</a>
-  <a href="blog.html">Blog</a>
-  <a href="index.html#contact">Contact</a>
+  <button class="close-btn" id="mobileClose" aria-label="Close menu">✕</button>
+  <a href="/">Home</a>
+  <a href="/#collections">Collections</a>
+  <a href="/#gallery">Gallery</a>
+  <a href="/in-your-space.html">In Your Space</a>
+  <a href="/for-designers.html">For Designers</a>
+  <a href="/#about">About</a>
+  <a href="/blog.html">Blog</a>
+  <a href="/#contact">Contact</a>
+  <a href="https://dansproul.com/shop" target="_blank" style="color:#b5924a">Shop ↗</a>
 </div>
 
-<!-- NAV -->
 <nav>
-  <a href="index.html" class="nav-logo">
+  <a href="/" class="nav-logo">
     <span class="nav-logo-name">Dan Sproul</span>
     <span class="nav-logo-sub">Fine Art Photography</span>
   </a>
   <ul class="nav-links">
-    <li><a href="index.html#collections">Collections</a></li>
-    <li><a href="in-your-space.html">In Your Space</a></li>
-    <li><a href="index.html#about">About</a></li>
-    <li><a href="blog.html">Blog</a></li>
-    <li><a href="index.html#contact">Contact</a></li>
+    <li><a href="/">Home</a></li>
+    <li><a href="/#collections">Collections</a></li>
+    <li><a href="/in-your-space.html">In Your Space</a></li>
+    <li><a href="/for-designers.html">For Designers</a></li>
+    <li><a href="/#about">About</a></li>
+    <li><a href="/blog.html">Blog</a></li>
+    <li><a href="/#contact">Contact</a></li>
     <li><a href="https://dansproul.com/shop" target="_blank" class="nav-shop">Shop ↗</a></li>
   </ul>
-  <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  <button class="hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 
 <!-- HERO -->
@@ -473,3 +479,4 @@ mn.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mn.cla
 </script>
 </body>
 </html>
+
