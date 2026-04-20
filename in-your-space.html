@@ -155,18 +155,18 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 
 <!-- MOBILE MENU -->
 <div class="mobile-nav" id="mobileNav">
-  <button class="close-btn" id="mobileClose" aria-label="Close menu">✕</button>
+  <button class="close-btn" id="mobileClose">✕</button>
   <a href="/">Home</a>
   <a href="/#collections">Collections</a>
-  <a href="/#gallery">Gallery</a>
-  <a href="/in-your-space.html">In Your Space</a>
+  <a href="/in-your-space.html" style="color:var(--accent)">In Your Space</a>
   <a href="/for-designers.html">For Designers</a>
   <a href="/#about">About</a>
   <a href="/blog.html">Blog</a>
   <a href="/#contact">Contact</a>
-  <a href="https://dansproul.com/shop" target="_blank" style="color:#b5924a">Shop ↗</a>
+  <a href="https://dansproul.com/shop" target="_blank" style="color:var(--accent)">Shop ↗</a>
 </div>
 
+<!-- NAV -->
 <nav>
   <a href="/" class="nav-logo">
     <span class="nav-logo-name">Dan Sproul</span>
@@ -175,16 +175,14 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
   <ul class="nav-links">
     <li><a href="/">Home</a></li>
     <li><a href="/#collections">Collections</a></li>
-    <li><a href="/in-your-space.html">In Your Space</a></li>
+    <li><a href="/in-your-space.html" class="active">In Your Space</a></li>
     <li><a href="/for-designers.html">For Designers</a></li>
     <li><a href="/#about">About</a></li>
     <li><a href="/blog.html">Blog</a></li>
     <li><a href="/#contact">Contact</a></li>
     <li><a href="https://dansproul.com/shop" target="_blank" class="nav-shop">Shop ↗</a></li>
   </ul>
-  <button class="hamburger" id="hamburger" aria-label="Open menu">
-    <span></span><span></span><span></span>
-  </button>
+  <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
 
 <!-- HERO -->
@@ -238,6 +236,17 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
         <div class="caption-meta"><span class="caption-medium">White Frame · 40×28</span><span class="caption-cta">Order Print ↗</span></div>
       </div>
     </div>
+    <div class="photo-card wide"
+         data-img="cozy_room_with_pier_framed_image_dan_sproul.jpg"
+         data-title="Coastal Pier at Sunrise — Framed in Cozy Bedroom"
+         data-sub="Black Frame · 24×36 · Bedroom"
+         onclick="openLb(this)">
+      <img src="cozy_room_with_pier_framed_image_dan_sproul.jpg" alt="Coastal pier at sunrise framed print in cozy neutral bedroom by Dan Sproul"/>
+      <div class="card-caption">
+        <p class="caption-title">Coastal Pier at Sunrise — Bedroom</p>
+        <div class="caption-meta"><span class="caption-medium">Black Frame · 24×36</span><span class="caption-cta">Order Print ↗</span></div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -279,6 +288,17 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
       <div class="card-caption">
         <p class="caption-title">Charleston, South Carolina — Mixed Media Canvas</p>
         <div class="caption-meta"><span class="caption-medium">Canvas Wrap · 40×40</span><span class="caption-cta">Order Print ↗</span></div>
+      </div>
+    </div>
+    <div class="photo-card wide"
+         data-img="modern_interior_room_framed_forest_path_in_light_dan_sproul.jpg"
+         data-title="Sunlit Forest Path — Framed Print in Industrial Living Room"
+         data-sub="White Frame · 36×28 · Living Room"
+         onclick="openLb(this)">
+      <img src="modern_interior_room_framed_forest_path_in_light_dan_sproul.jpg" alt="Sunlit forest path framed print in industrial modern living room by Dan Sproul"/>
+      <div class="card-caption">
+        <p class="caption-title">Sunlit Forest Path — Industrial Living Room</p>
+        <div class="caption-meta"><span class="caption-medium">White Frame · 36×28</span><span class="caption-cta">Order Print ↗</span></div>
       </div>
     </div>
   </div>
@@ -333,6 +353,17 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
       <div class="card-caption">
         <p class="caption-title">Dayton, Ohio — City &amp; Map Mixed Media</p>
         <div class="caption-meta"><span class="caption-medium">White Frame · 30×24</span><span class="caption-cta">Order Print ↗</span></div>
+      </div>
+    </div>
+    <div class="photo-card wide"
+         data-img="calming_beach_sunset_interior_dan_sproul.jpg"
+         data-title="Calming Beach Sunset Pier — Framed Print Above Desk"
+         data-sub="Black Frame · 20×30 · Home Office"
+         onclick="openLb(this)">
+      <img src="calming_beach_sunset_interior_dan_sproul.jpg" alt="Calming beach sunset pier framed print above desk in home office by Dan Sproul"/>
+      <div class="card-caption">
+        <p class="caption-title">Beach Sunset Pier — Above Desk</p>
+        <div class="caption-meta"><span class="caption-medium">Black Frame · 20×30</span><span class="caption-cta">Order Print ↗</span></div>
       </div>
     </div>
     <div class="photo-card wide"
