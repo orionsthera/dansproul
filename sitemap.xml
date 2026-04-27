@@ -1,15 +1,128 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url><loc>https://dsproul.com/</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>1.0</priority>
-    <image:image><image:loc>https://dsproul.com/valdez-glacier-lake-alaska-dan-sproul.jpg</image:loc><image:title>Valdez Glacier Lake Alaska fine art photography by Dan Sproul</image:title></image:image>
-    <image:image><image:loc>https://dsproul.com/cannon-beach-haystack-rock-oregon-dan-sproul.jpg</image:loc><image:title>Cannon Beach Haystack Rock Oregon landscape photography by Dan Sproul</image:title></image:image>
-    <image:image><image:loc>https://dsproul.com/maroon-bells-dawn-autumn-dan-sproul.jpg</image:loc><image:title>Maroon Bells dawn autumn Colorado landscape photography by Dan Sproul</image:title></image:image>
+
+  <url>
+    <loc>https://dsproul.com/</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://dsproul.com/valdez-glacier-lake-alaska-dan-sproul.jpg</image:loc>
+      <image:title>Valdez Glacier Lake Alaska Fine Art Photography — Dan Sproul</image:title>
+      <image:caption>Award-winning fine art photography by Dan Sproul, Lima Ohio</image:caption>
+    </image:image>
   </url>
-  <url><loc>https://dsproul.com/alaska-photography-prints.html</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://dsproul.com/oregon-coast-photography-prints.html</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://dsproul.com/colorado-photography-prints.html</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://dsproul.com/smoky-mountains-photography-prints.html</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://dsproul.com/in-your-space.html</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://dsproul.com/blog.html</loc><lastmod>2026-04-07</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+
+  <url>
+    <loc>https://dsproul.com/for-designers.html</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://dsproul.com/hotel_lobby_framed_art_badlands_sunrise.jpg</image:loc>
+      <image:title>Hotel Lobby Fine Art Photography — Dan Sproul Interior Design</image:title>
+      <image:caption>Fine art photography for interior designers, hotels, and commercial spaces by Dan Sproul</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://dsproul.com/in-your-space.html</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://dsproul.com/hotel_bedroom_framed_art_foggy_lake_canada_dan_sproul.jpg</image:loc>
+      <image:title>Fine Art Photography in Hotel Bedroom — Dan Sproul Wall Art Mockups</image:title>
+      <image:caption>Wall art mockups and room visualizer — fine art photography prints by Dan Sproul</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://dsproul.com/shop-direct.html</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://dsproul.com/oregon-coast-photography-prints.html</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://dsproul.com/cannon-beach-haystack-rock-oregon-dan-sproul.jpg</image:loc>
+      <image:title>Cannon Beach Haystack Rock Oregon Coast Fine Art Photography Print — Dan Sproul</image:title>
+      <image:caption>Oregon Coast fine art photography prints — canvas, metal, framed by Dan Sproul, Lima Ohio</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://dsproul.com/alaska-photography-prints.html</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://dsproul.com/valdez-glacier-lake-alaska-dan-sproul.jpg</image:loc>
+      <image:title>Alaska Fine Art Photography Prints — Valdez Glacier Lake — Dan Sproul</image:title>
+      <image:caption>Alaska landscape fine art photography prints by Dan Sproul — canvas, metal, framed, acrylic</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://dsproul.com/colorado-photography-prints.html</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://dsproul.com/chimney-peak-colorado-autumn-dan-sproul.jpg</image:loc>
+      <image:title>Colorado Autumn Photography Prints — Maroon Bells — Dan Sproul</image:title>
+      <image:caption>Colorado fall landscape fine art photography prints by Dan Sproul — canvas, metal, framed</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://dsproul.com/smoky-mountains-photography-prints.html</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://dsproul.com/grotto-falls-smoky-mountains-dan-sproul.jpg</image:loc>
+      <image:title>Smoky Mountains Fine Art Photography Prints — Dan Sproul</image:title>
+      <image:caption>Great Smoky Mountains landscape photography prints by Dan Sproul — canvas, metal, framed</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://dsproul.com/wyoming-grand-teton-photography-prints.html</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://dsproul.com/autumn_morning_in_grand_tetons.jpg</image:loc>
+      <image:title>Grand Teton National Park Photography Prints — Wyoming — Dan Sproul</image:title>
+      <image:caption>Grand Teton fine art photography prints by Dan Sproul — Wyoming landscape wall art</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://dsproul.com/ohio-photography-prints.html</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://dsproul.com/marblehead_lighthouse_and_green_leaves_ohio_dan_sproul.jpg</image:loc>
+      <image:title>Ohio Fine Art Photography Prints — Marblehead Lighthouse — Dan Sproul</image:title>
+      <image:caption>Ohio landscape and lighthouse photography prints by Dan Sproul — Lima Ohio photographer</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://dsproul.com/blog.html</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>
