@@ -378,6 +378,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 .gs-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s cubic-bezier(.25,.46,.45,.94),filter .5s;filter:brightness(.8) saturate(.85)}
 .gs-item:hover img{transform:scale(1.08);filter:brightness(1) saturate(1)}
 
+/* PLACEMENT ROWS */
+.pl-row-2{display:grid;grid-template-columns:1.4fr 1fr;gap:3px;margin-bottom:3px}
+.pl-row-3,.pl-row-4{display:grid;grid-template-columns:1fr 1fr 1fr;gap:3px;margin-bottom:3px}
+
 /* TESTIMONIALS */
 .test-grid{display:grid;grid-template-columns:1fr 1fr;gap:3px;margin-top:56px}
 .test-card{background:#0e0c09;padding:44px 36px;position:relative}
@@ -414,6 +418,8 @@ footer a:hover{color:var(--accent)}
   .section{padding:64px 24px}
   .intro-grid,.licensing-grid{grid-template-columns:1fr;gap:40px}
   .placement-grid{grid-template-columns:1fr 1fr}
+  .pl-row-2{grid-template-columns:1fr 1fr}
+  .pl-row-3,.pl-row-4{grid-template-columns:1fr 1fr}
   .formats-grid{grid-template-columns:1fr}
   .venues-grid{grid-template-columns:1fr 1fr}
   .process-steps{grid-template-columns:1fr 1fr;gap:40px}
@@ -427,6 +433,8 @@ footer a:hover{color:var(--accent)}
 }
 @media(max-width:580px){
   .placement-grid{grid-template-columns:1fr}
+  .pl-row-2{grid-template-columns:1fr}
+  .pl-row-3,.pl-row-4{grid-template-columns:1fr 1fr}
   .venues-grid{grid-template-columns:1fr}
   .process-steps{grid-template-columns:1fr}
   .gallery-strip{grid-template-columns:repeat(2,1fr)}
@@ -526,7 +534,7 @@ footer a:hover{color:var(--accent)}
   </div>
 
   <!-- ROW 2: Lobby Badlands (wide) + Hotel Bedroom (tall) -->
-  <div style="display:grid;grid-template-columns:1.4fr 1fr;gap:3px;margin-bottom:3px">
+  <div class="pl-row-2">
     <div class="placement-card pzoom" style="aspect-ratio:16/10" onclick="openFDLightbox(this)">
       <img src="hotel lobby framed art badlands sunrise.jpg" alt="Badlands sunrise large format framed canvas in luxury hotel lobby by Dan Sproul"/>
       <div class="placement-overlay">
@@ -546,7 +554,7 @@ footer a:hover{color:var(--accent)}
   </div>
 
   <!-- ROW 3: Hotel Hallway (tall) + Mount Hood Dining (tall) + Oregon Bedroom (tall) -->
-  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:3px;margin-bottom:3px">
+  <div class="pl-row-3">
     <div class="placement-card pzoom" onclick="openFDLightbox(this)">
       <img src="hotel floor framed art canada rockies landscape.jpg" alt="Canadian Rockies large format framed art in hotel corridor by Dan Sproul"/>
       <div class="placement-overlay">
@@ -574,7 +582,7 @@ footer a:hover{color:var(--accent)}
   </div>
 
   <!-- ROW 4: Existing strong mockups -->
-  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:3px">
+  <div class="pl-row-4">
     <div class="placement-card pzoom" onclick="openFDLightbox(this)">
       <img src="grotto falls smoky mountains canvas art in room dan sproul.jpg" alt="Grotto Falls Smoky Mountains five panel canvas art in room by Dan Sproul"/>
       <div class="placement-overlay">
