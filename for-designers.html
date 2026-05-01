@@ -378,10 +378,6 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 .gs-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s cubic-bezier(.25,.46,.45,.94),filter .5s;filter:brightness(.8) saturate(.85)}
 .gs-item:hover img{transform:scale(1.08);filter:brightness(1) saturate(1)}
 
-/* PLACEMENT ROWS */
-.pl-row-2{display:grid;grid-template-columns:1.4fr 1fr;gap:3px;margin-bottom:3px}
-.pl-row-3,.pl-row-4{display:grid;grid-template-columns:1fr 1fr 1fr;gap:3px;margin-bottom:3px}
-
 /* TESTIMONIALS */
 .test-grid{display:grid;grid-template-columns:1fr 1fr;gap:3px;margin-top:56px}
 .test-card{background:#0e0c09;padding:44px 36px;position:relative}
@@ -390,6 +386,30 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 .test-divider{width:36px;height:1px;background:var(--accent);opacity:.5;margin-bottom:14px}
 .test-name{font-size:.6rem;letter-spacing:.26em;text-transform:uppercase;color:var(--off-white);margin-bottom:4px}
 .test-role{font-size:.55rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent)}
+
+/* SPEC SHEET DOWNLOADS */
+.spec-section{background:#0b0a08;padding:100px 56px;border-top:1px solid var(--border)}
+.spec-cards{display:grid;grid-template-columns:1fr 1fr;gap:3px;margin-top:56px}
+.spec-card{background:#111009;display:flex;overflow:hidden;position:relative}
+.spec-card-preview{width:200px;flex-shrink:0;overflow:hidden;position:relative}
+.spec-card-preview img{width:100%;height:100%;object-fit:cover;display:block;filter:brightness(.82);transition:filter .4s,transform .5s cubic-bezier(.25,.46,.45,.94)}
+.spec-card:hover .spec-card-preview img{filter:brightness(1);transform:scale(1.04)}
+.spec-card-body{flex:1;padding:36px 32px;display:flex;flex-direction:column;justify-content:space-between;min-height:220px}
+.spec-card-tag{font-size:.52rem;letter-spacing:.35em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.spec-card-title{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;line-height:1.2;margin-bottom:10px}
+.spec-card-title em{font-style:italic;color:var(--accent)}
+.spec-card-desc{font-size:.68rem;line-height:1.9;color:var(--muted);margin-bottom:28px;flex:1}
+.spec-card-footer{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.btn-download{display:inline-flex;align-items:center;gap:8px;padding:11px 28px;font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;text-decoration:none;background:var(--accent);color:var(--black);border:1px solid var(--accent);transition:all .3s;font-family:'Jost',sans-serif;font-weight:400}
+.btn-download:hover{background:#c9a45a;border-color:#c9a45a}
+.btn-download svg{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:2;flex-shrink:0}
+.spec-file-info{font-size:.52rem;letter-spacing:.18em;color:var(--muted);opacity:.6}
+@media(max-width:900px){
+  .spec-cards{grid-template-columns:1fr}
+  .spec-card{flex-direction:column}
+  .spec-card-preview{width:100%;height:180px}
+}
+@media(max-width:580px){.spec-card-body{padding:24px 20px}}
 
 /* CONTACT */
 .contact-section{background:#050504;text-align:center;padding:120px 56px}
@@ -418,8 +438,6 @@ footer a:hover{color:var(--accent)}
   .section{padding:64px 24px}
   .intro-grid,.licensing-grid{grid-template-columns:1fr;gap:40px}
   .placement-grid{grid-template-columns:1fr 1fr}
-  .pl-row-2{grid-template-columns:1fr 1fr}
-  .pl-row-3,.pl-row-4{grid-template-columns:1fr 1fr}
   .formats-grid{grid-template-columns:1fr}
   .venues-grid{grid-template-columns:1fr 1fr}
   .process-steps{grid-template-columns:1fr 1fr;gap:40px}
@@ -433,8 +451,6 @@ footer a:hover{color:var(--accent)}
 }
 @media(max-width:580px){
   .placement-grid{grid-template-columns:1fr}
-  .pl-row-2{grid-template-columns:1fr}
-  .pl-row-3,.pl-row-4{grid-template-columns:1fr 1fr}
   .venues-grid{grid-template-columns:1fr}
   .process-steps{grid-template-columns:1fr}
   .gallery-strip{grid-template-columns:repeat(2,1fr)}
@@ -534,7 +550,7 @@ footer a:hover{color:var(--accent)}
   </div>
 
   <!-- ROW 2: Lobby Badlands (wide) + Hotel Bedroom (tall) -->
-  <div class="pl-row-2">
+  <div style="display:grid;grid-template-columns:1.4fr 1fr;gap:3px;margin-bottom:3px">
     <div class="placement-card pzoom" style="aspect-ratio:16/10" onclick="openFDLightbox(this)">
       <img src="hotel lobby framed art badlands sunrise.jpg" alt="Badlands sunrise large format framed canvas in luxury hotel lobby by Dan Sproul"/>
       <div class="placement-overlay">
@@ -554,7 +570,7 @@ footer a:hover{color:var(--accent)}
   </div>
 
   <!-- ROW 3: Hotel Hallway (tall) + Mount Hood Dining (tall) + Oregon Bedroom (tall) -->
-  <div class="pl-row-3">
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:3px;margin-bottom:3px">
     <div class="placement-card pzoom" onclick="openFDLightbox(this)">
       <img src="hotel floor framed art canada rockies landscape.jpg" alt="Canadian Rockies large format framed art in hotel corridor by Dan Sproul"/>
       <div class="placement-overlay">
@@ -582,7 +598,7 @@ footer a:hover{color:var(--accent)}
   </div>
 
   <!-- ROW 4: Existing strong mockups -->
-  <div class="pl-row-4">
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:3px">
     <div class="placement-card pzoom" onclick="openFDLightbox(this)">
       <img src="grotto falls smoky mountains canvas art in room dan sproul.jpg" alt="Grotto Falls Smoky Mountains five panel canvas art in room by Dan Sproul"/>
       <div class="placement-overlay">
@@ -811,6 +827,56 @@ footer a:hover{color:var(--accent)}
       <p class="test-name">Linda P.</p>
       <p class="test-role">Residential Interior Designer · Chicago, IL</p>
     </div>
+  </div>
+</section>
+
+<!-- SPEC SHEET DOWNLOADS -->
+<section class="spec-section" id="resources">
+  <p class="section-label">Designer Resources</p>
+  <h2 class="section-title">Download the <em>Spec Sheets</em></h2>
+  <p style="font-size:.78rem;line-height:2;color:rgba(242,239,232,.5);max-width:560px;margin-bottom:0">One-page procurement-ready spec sheets for your project files, client presentations, or sourcing submissions.</p>
+  <div class="spec-cards">
+
+    <div class="spec-card">
+      <div class="spec-card-preview">
+        <img src="hotel_lobby_framed_art_badlands_sunrise.jpg" alt="Hospitality art spec sheet preview — Dan Sproul Interior Art Systems"/>
+      </div>
+      <div class="spec-card-body">
+        <div>
+          <p class="spec-card-tag">Hospitality &amp; Commercial</p>
+          <h3 class="spec-card-title">Interior Art <em>Systems</em></h3>
+          <p class="spec-card-desc">Large-scale installations for hotel lobbies, corporate reception areas, healthcare environments, and multi-site programs. Includes formats, sizing, licensing, and procurement channels.</p>
+        </div>
+        <div class="spec-card-footer">
+          <a href="DanSproul_HospitalitySpec.pdf" download="DanSproul_HospitalitySpec.pdf" class="btn-download">
+            <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Spec Sheet
+          </a>
+          <span class="spec-file-info">PDF &middot; 1 page &middot; 625 KB</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="spec-card">
+      <div class="spec-card-preview">
+        <img src="modern_living_room_interior_pier_sunset_dan_sproul.jpg" alt="Residential art spec sheet preview — Dan Sproul Residential Art Resource"/>
+      </div>
+      <div class="spec-card-body">
+        <div>
+          <p class="spec-card-tag">Residential &amp; Staging</p>
+          <h3 class="spec-card-title">Residential Art <em>Resource</em></h3>
+          <p class="spec-card-desc">Fine art photography curated for residential interiors — living rooms, bedrooms, entryways, and model homes. Trade pricing, custom sizing, free mockup previews, and ready-to-hang delivery.</p>
+        </div>
+        <div class="spec-card-footer">
+          <a href="DanSproul_ResidentialSpec.pdf" download="DanSproul_ResidentialSpec.pdf" class="btn-download">
+            <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Spec Sheet
+          </a>
+          <span class="spec-file-info">PDF &middot; 1 page &middot; 661 KB</span>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
