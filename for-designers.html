@@ -392,6 +392,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 .spec-cards{display:grid;grid-template-columns:1fr 1fr;gap:3px;margin-top:56px}
 .spec-card{background:#111009;display:flex;overflow:hidden;position:relative}
 .spec-card-preview{width:200px;flex-shrink:0;overflow:hidden;position:relative}
+.spec-card-preview .preview-hint{position:absolute;bottom:10px;left:0;right:0;text-align:center;font-size:.48rem;letter-spacing:.2em;color:rgba(255,255,255,.7);text-transform:uppercase;pointer-events:none;opacity:0;transition:opacity .3s}
+.spec-card:hover .spec-card-preview .preview-hint{opacity:1}
 .spec-card-preview img{width:100%;height:100%;object-fit:cover;display:block;filter:brightness(.82);transition:filter .4s,transform .5s cubic-bezier(.25,.46,.45,.94)}
 .spec-card:hover .spec-card-preview img{filter:brightness(1);transform:scale(1.04)}
 .spec-card-body{flex:1;padding:36px 32px;display:flex;flex-direction:column;justify-content:space-between;min-height:220px}
@@ -580,7 +582,7 @@ footer a:hover{color:var(--accent)}
       </div>
     </div>
     <div class="placement-card pzoom" onclick="openFDLightbox(this)">
-      <img src="mount hood sunset reflection in modern room.jpg" alt="Mount Hood sunset reflection metal print in modern dining room by Dan Sproul"/>
+      <img src="mount hood sunset reflection in modern room.jpg" alt="Mount Hood sunset reflection metal print in modern dining room by Dan Sproul" style="object-position:center 20%"/>
       <div class="placement-overlay">
         <span class="pl-venue">Residential / Dining Room</span>
         <p class="pl-title">Mount Hood Reflection — Dining Room</p>
@@ -597,32 +599,84 @@ footer a:hover{color:var(--accent)}
     </div>
   </div>
 
-  <!-- ROW 4: Existing strong mockups -->
-  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:3px">
+  <!-- ROW 5: 3 new mockups — corporate waiting, bedroom mountain, warm living -->
+  <div class="pl-row-3" style="margin-top:3px">
     <div class="placement-card pzoom" onclick="openFDLightbox(this)">
-      <img src="grotto falls smoky mountains canvas art in room dan sproul.jpg" alt="Grotto Falls Smoky Mountains five panel canvas art in room by Dan Sproul"/>
+      <img src="corporate_office_waiting_room_framed_black_and_white_landscapes.jpg" alt="Corporate office waiting room with framed B&W landscape diptych by Dan Sproul"/>
       <div class="placement-overlay">
-        <span class="pl-venue">Healthcare / Wellness</span>
-        <p class="pl-title">Grotto Falls — Smoky Mountains</p>
-        <p class="pl-desc">5-panel canvas · Common area installation</p>
+        <span class="pl-venue">Corporate · Waiting Room</span>
+        <p class="pl-title">B&amp;W Landscape Diptych — Corporate Reception</p>
+        <p class="pl-desc">Two-piece installation · Walnut frame · White mat</p>
       </div>
     </div>
     <div class="placement-card pzoom" onclick="openFDLightbox(this)">
-      <img src="fine art badlands landscape framed in modern room dan sproul.jpg" alt="Badlands landscape framed print in Japandi entryway by Dan Sproul"/>
+      <img src="modern_bedroom_framed_mountain_reflection_dan_sproul.jpg" alt="Modern bedroom with framed mountain reflection landscape by Dan Sproul"/>
       <div class="placement-overlay">
-        <span class="pl-venue">Residential / Entryway</span>
-        <p class="pl-title">Badlands Sunrise — Japandi Entryway</p>
-        <p class="pl-desc">Wood frame · Organic modern · South Dakota</p>
+        <span class="pl-venue">Residential · Primary Bedroom</span>
+        <p class="pl-title">Mountain Reflection — Modern Bedroom</p>
+        <p class="pl-desc">Canvas · Walnut float frame · Above-bed installation</p>
       </div>
     </div>
     <div class="placement-card pzoom" onclick="openFDLightbox(this)">
-      <img src="oregon coast framed in office dan sproul.jpg" alt="Oregon Coast fine art print framed in commercial office by Dan Sproul"/>
+      <img src="warm_modern_living_room_mountain_reflection_mockup.jpg" alt="Warm modern living room with B&W mountain reflection framed print by Dan Sproul"/>
       <div class="placement-overlay">
-        <span class="pl-venue">Corporate / Reception</span>
-        <p class="pl-title">Oregon Coast Cliffs — Reception</p>
-        <p class="pl-desc">Large float frame · Corporate lobby</p>
+        <span class="pl-venue">Residential · Living Room</span>
+        <p class="pl-title">Mountain Reflection — Warm Living Room</p>
+        <p class="pl-desc">B&amp;W fine art print · Walnut frame · White mat · Statement piece</p>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- SPEC SHEET DOWNLOADS — placed here so designers see it right after the gallery -->
+<section class="spec-section" id="resources">
+  <p class="section-label">Designer Resources</p>
+  <h2 class="section-title">Download the <em>Spec Sheets</em></h2>
+  <p style="font-size:.78rem;line-height:2;color:rgba(242,239,232,.5);max-width:560px;margin-bottom:0">One-page procurement-ready spec sheets for your project files, client presentations, or sourcing submissions.</p>
+  <div class="spec-cards">
+
+    <div class="spec-card">
+      <div class="spec-card-preview" onclick="openFDLightboxSrc('hotel_lobby_framed_art_badlands_sunrise.jpg','Hospitality &amp; Commercial Spec Sheet — Dan Sproul')" style="cursor:zoom-in">
+        <img src="hotel_lobby_framed_art_badlands_sunrise.jpg" alt="Hospitality spec sheet preview"/>
+        <div class="preview-hint">Click to enlarge</div>
+      </div>
+      <div class="spec-card-body">
+        <div>
+          <p class="spec-card-tag">Hospitality &amp; Commercial</p>
+          <h3 class="spec-card-title">Interior Art <em>Systems</em></h3>
+          <p class="spec-card-desc">Large-scale installations for hotel lobbies, corporate reception areas, healthcare environments, and multi-site programs. Includes formats, sizing, licensing, and procurement channels.</p>
+        </div>
+        <div class="spec-card-footer">
+          <a href="DanSproul_HospitalitySpec.pdf" download="DanSproul_HospitalitySpec.pdf" class="btn-download">
+            <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Spec Sheet
+          </a>
+          <span class="spec-file-info">PDF &middot; 1 page &middot; 625 KB</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="spec-card">
+      <div class="spec-card-preview" onclick="openFDLightboxSrc('modern_living_room_interior_pier_sunset_dan_sproul.jpg','Residential Art Resource Spec Sheet — Dan Sproul')" style="cursor:zoom-in">
+        <img src="modern_living_room_interior_pier_sunset_dan_sproul.jpg" alt="Residential spec sheet preview"/>
+        <div class="preview-hint">Click to enlarge</div>
+      </div>
+      <div class="spec-card-body">
+        <div>
+          <p class="spec-card-tag">Residential &amp; Staging</p>
+          <h3 class="spec-card-title">Residential Art <em>Resource</em></h3>
+          <p class="spec-card-desc">Fine art photography curated for residential interiors — living rooms, bedrooms, entryways, and model homes. Trade pricing, custom sizing, free mockup previews, and ready-to-hang delivery.</p>
+        </div>
+        <div class="spec-card-footer">
+          <a href="DanSproul_ResidentialSpec.pdf" download="DanSproul_ResidentialSpec.pdf" class="btn-download">
+            <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Spec Sheet
+          </a>
+          <span class="spec-file-info">PDF &middot; 1 page &middot; 661 KB</span>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -830,56 +884,6 @@ footer a:hover{color:var(--accent)}
   </div>
 </section>
 
-<!-- SPEC SHEET DOWNLOADS -->
-<section class="spec-section" id="resources">
-  <p class="section-label">Designer Resources</p>
-  <h2 class="section-title">Download the <em>Spec Sheets</em></h2>
-  <p style="font-size:.78rem;line-height:2;color:rgba(242,239,232,.5);max-width:560px;margin-bottom:0">One-page procurement-ready spec sheets for your project files, client presentations, or sourcing submissions.</p>
-  <div class="spec-cards">
-
-    <div class="spec-card">
-      <div class="spec-card-preview">
-        <img src="DanSproul_HospitalitySpec.jpg" alt="Hospitality art spec sheet preview — Dan Sproul Interior Art Systems"/>
-      </div>
-      <div class="spec-card-body">
-        <div>
-          <p class="spec-card-tag">Hospitality &amp; Commercial</p>
-          <h3 class="spec-card-title">Interior Art <em>Systems</em></h3>
-          <p class="spec-card-desc">Large-scale installations for hotel lobbies, corporate reception areas, healthcare environments, and multi-site programs. Includes formats, sizing, licensing, and procurement channels.</p>
-        </div>
-        <div class="spec-card-footer">
-          <a href="DanSproul_HospitalitySpec.pdf" download="DanSproul_HospitalitySpec.pdf" class="btn-download">
-            <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Download Spec Sheet
-          </a>
-          <span class="spec-file-info">PDF &middot; 1 page &middot; 625 KB</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="spec-card">
-      <div class="spec-card-preview">
-        <img src="DanSproul_ResidentialSpec.jpg" alt="Residential art spec sheet preview — Dan Sproul Residential Art Resource"/>
-      </div>
-      <div class="spec-card-body">
-        <div>
-          <p class="spec-card-tag">Residential &amp; Staging</p>
-          <h3 class="spec-card-title">Residential Art <em>Resource</em></h3>
-          <p class="spec-card-desc">Fine art photography curated for residential interiors — living rooms, bedrooms, entryways, and model homes. Trade pricing, custom sizing, free mockup previews, and ready-to-hang delivery.</p>
-        </div>
-        <div class="spec-card-footer">
-          <a href="DanSproul_ResidentialSpec.pdf" download="DanSproul_ResidentialSpec.pdf" class="btn-download">
-            <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Download Spec Sheet
-          </a>
-          <span class="spec-file-info">PDF &middot; 1 page &middot; 661 KB</span>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
 <!-- CONTACT -->
 <div class="contact-section" id="contact">
   <p class="section-label" style="justify-content:center">Work Together</p>
@@ -921,8 +925,30 @@ footer a:hover{color:var(--accent)}
   cls.addEventListener('click', closeMenu);
   nav.addEventListener('click', function(e){ if(e.target===nav) closeMenu(); });
   nav.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', closeMenu); });
-  document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeMenu(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape'){ closeMenu(); closeFDLightbox(); } });
 })();
+
+function openFDLightbox(card){
+  var img = card.querySelector('img');
+  var lb  = document.getElementById('fd-lightbox');
+  var lbi = document.getElementById('fd-lightbox-img');
+  lbi.src = img.src;
+  lbi.alt = img.alt;
+  lb.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+function openFDLightboxSrc(src, alt){
+  var lb  = document.getElementById('fd-lightbox');
+  var lbi = document.getElementById('fd-lightbox-img');
+  lbi.src = src;
+  lbi.alt = alt || '';
+  lb.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+function closeFDLightbox(){
+  document.getElementById('fd-lightbox').style.display = 'none';
+  document.body.style.overflow = '';
+}
 </script>
 </body>
 </html>
