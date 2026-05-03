@@ -413,8 +413,13 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 }
 @media(max-width:580px){.spec-card-body{padding:24px 20px}}
 
-/* CONTACT */
-.contact-section{background:#050504;text-align:center;padding:120px 56px}
+/* STICKY BOTTOM CTA */
+.sticky-cta{position:fixed;bottom:0;left:0;right:0;z-index:150;background:rgba(26,22,18,.97);border-top:1px solid rgba(181,146,74,.28);padding:14px 56px;display:flex;align-items:center;justify-content:space-between;gap:20px;backdrop-filter:blur(8px);transform:translateY(100%);transition:transform .4s cubic-bezier(.25,.46,.45,.94)}
+.sticky-cta.visible{transform:translateY(0)}
+.sticky-cta-text{font-size:.62rem;letter-spacing:.1em;color:rgba(242,239,232,.6)}
+.sticky-cta-text strong{color:var(--off-white);font-weight:400}
+.sticky-cta-actions{display:flex;gap:10px;flex-shrink:0}
+@media(max-width:580px){.sticky-cta{padding:12px 20px;flex-wrap:wrap}.sticky-cta-text{font-size:.56rem}}
 .contact-section h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,5vw,4.2rem);font-weight:300;margin-bottom:16px}
 .contact-section h2 em{font-style:italic;color:var(--accent)}
 .contact-section>p{font-size:.74rem;letter-spacing:.14em;color:var(--muted);margin-bottom:48px;line-height:2}
@@ -602,7 +607,7 @@ footer a:hover{color:var(--accent)}
   <!-- ROW 5: 3 new mockups — corporate waiting, bedroom mountain, warm living -->
   <div class="pl-row-3" style="margin-top:3px">
     <div class="placement-card pzoom" onclick="openFDLightbox(this)">
-      <img src="corporate office waiting room framed black and white landscapes.jpg" alt="Corporate office waiting room with framed B&W landscape diptych by Dan Sproul"/>
+      <img src="corporate_office_waiting_room_framed_black_and_white_landscapes.jpg" alt="Corporate office waiting room with framed B&W landscape diptych by Dan Sproul"/>
       <div class="placement-overlay">
         <span class="pl-venue">Corporate · Waiting Room</span>
         <p class="pl-title">B&amp;W Landscape Diptych — Corporate Reception</p>
@@ -610,7 +615,7 @@ footer a:hover{color:var(--accent)}
       </div>
     </div>
     <div class="placement-card pzoom" onclick="openFDLightbox(this)">
-      <img src="modern bedroom framed mountain reflection dan sproul.jpg" alt="Modern bedroom with framed mountain reflection landscape by Dan Sproul"/>
+      <img src="modern_bedroom_framed_mountain_reflection_dan_sproul.jpg" alt="Modern bedroom with framed mountain reflection landscape by Dan Sproul"/>
       <div class="placement-overlay">
         <span class="pl-venue">Residential · Primary Bedroom</span>
         <p class="pl-title">Mountain Reflection — Modern Bedroom</p>
@@ -618,7 +623,7 @@ footer a:hover{color:var(--accent)}
       </div>
     </div>
     <div class="placement-card pzoom" onclick="openFDLightbox(this)">
-      <img src="warm modern living room mountain reflection mockup.jpg" alt="Warm modern living room with B&W mountain reflection framed print by Dan Sproul"/>
+      <img src="warm_modern_living_room_mountain_reflection_mockup.jpg" alt="Warm modern living room with B&W mountain reflection framed print by Dan Sproul"/>
       <div class="placement-overlay">
         <span class="pl-venue">Residential · Living Room</span>
         <p class="pl-title">Mountain Reflection — Warm Living Room</p>
@@ -636,8 +641,8 @@ footer a:hover{color:var(--accent)}
   <div class="spec-cards">
 
     <div class="spec-card">
-      <div class="spec-card-preview" onclick="openFDLightboxSrc('DanSproul_HospitalitySpec.jpg','Hospitality &amp; Commercial Spec Sheet — Dan Sproul')" style="cursor:zoom-in">
-        <img src="DanSproul_HospitalitySpec.jpg" alt="Hospitality spec sheet preview"/>
+      <div class="spec-card-preview" onclick="openFDLightboxSrc('hotel_lobby_framed_art_badlands_sunrise.jpg','Hospitality &amp; Commercial Spec Sheet — Dan Sproul')" style="cursor:zoom-in">
+        <img src="hotel_lobby_framed_art_badlands_sunrise.jpg" alt="Hospitality spec sheet preview"/>
         <div class="preview-hint">Click to enlarge</div>
       </div>
       <div class="spec-card-body">
@@ -657,8 +662,8 @@ footer a:hover{color:var(--accent)}
     </div>
 
     <div class="spec-card">
-      <div class="spec-card-preview" onclick="openFDLightboxSrc('DanSproul_ResidentialSpec.jpg','Residential Art Resource Spec Sheet — Dan Sproul')" style="cursor:zoom-in">
-        <img src="DanSproul_ResidentialSpec.jpg" alt="Residential spec sheet preview"/>
+      <div class="spec-card-preview" onclick="openFDLightboxSrc('modern_living_room_interior_pier_sunset_dan_sproul.jpg','Residential Art Resource Spec Sheet — Dan Sproul')" style="cursor:zoom-in">
+        <img src="modern_living_room_interior_pier_sunset_dan_sproul.jpg" alt="Residential spec sheet preview"/>
         <div class="preview-hint">Click to enlarge</div>
       </div>
       <div class="spec-card-body">
@@ -949,6 +954,25 @@ function closeFDLightbox(){
   document.getElementById('fd-lightbox').style.display = 'none';
   document.body.style.overflow = '';
 }
+</script>
+<!-- STICKY BOTTOM CTA — appears after scroll -->
+<div class="sticky-cta" id="stickyCta">
+  <p class="sticky-cta-text"><strong>Ready to source art for a project?</strong> Send a room photo and get a free digital mockup.</p>
+  <div class="sticky-cta-actions">
+    <a href="mailto:sproulphoto@gmail.com?subject=Mockup Request" class="btn-download" style="text-decoration:none">Request a Mockup</a>
+    <a href="#resources" class="btn-download" style="background:transparent;color:var(--accent);border-color:rgba(181,146,74,.4)">Download Specs</a>
+  </div>
+</div>
+
+<script>
+// Sticky CTA visibility
+(function(){
+  var bar = document.getElementById('stickyCta');
+  if(!bar) return;
+  window.addEventListener('scroll', function(){
+    bar.classList.toggle('visible', window.scrollY > 400);
+  });
+})();
 </script>
 </body>
 </html>
