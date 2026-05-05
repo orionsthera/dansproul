@@ -89,8 +89,8 @@ nav.main-nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-
 .filter-btn.active{color:var(--accent);border-bottom-color:var(--accent)}
 
 /* ── SECTION ─────────────────────────────── */
-.iys-section{padding:72px 56px}
-.sec-header{margin-bottom:44px}
+.iys-section{padding:56px 56px}
+.sec-header{margin-bottom:32px}
 .sec-label{font-size:.52rem;letter-spacing:.36em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
 .sec-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.7rem,2.8vw,2.6rem);font-weight:300;line-height:1.1;margin-bottom:8px}
 .sec-title em{font-style:italic;color:var(--accent)}
@@ -102,7 +102,7 @@ nav.main-nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-
 /* ── CARDS ───────────────────────────────── */
 /* Feature card — full width hero image per section */
 .feat-card{position:relative;overflow:hidden;margin-bottom:3px;cursor:pointer}
-.feat-card img{width:100%;height:480px;object-fit:cover;display:block;filter:brightness(.82);transition:filter .5s,transform .8s cubic-bezier(.25,.46,.45,.94)}
+.feat-card img{width:100%;height:540px;object-fit:cover;display:block;filter:brightness(.85);transition:filter .5s,transform .8s cubic-bezier(.25,.46,.45,.94)}
 .feat-card:hover img{filter:brightness(1);transform:scale(1.025)}
 /* Always-visible bottom info bar — NOT hover-only */
 .feat-bar{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(20,16,11,.96) 0%,rgba(20,16,11,.6) 60%,transparent 100%);padding:32px 36px 28px}
@@ -129,7 +129,7 @@ nav.main-nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-
 .m-card img{width:100%;height:100%;object-fit:cover;display:block;filter:brightness(.78);transition:filter .45s,transform .65s cubic-bezier(.25,.46,.45,.94)}
 .m-card:hover img{filter:brightness(.97);transform:scale(1.05)}
 /* Always-visible bottom label on mosaic cards */
-.m-bar{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(20,16,11,.94),transparent 80%);padding:18px 18px 14px}
+.m-bar{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(20,16,11,.92) 0%,rgba(20,16,11,.5) 45%,transparent 75%);padding:18px 18px 14px}
 .m-room{font-size:.42rem;letter-spacing:.26em;text-transform:uppercase;color:var(--accent);margin-bottom:4px}
 .m-title{font-family:'Cormorant Garamond',serif;font-size:.9rem;font-weight:300;color:var(--off-white);line-height:1.2;margin-bottom:4px}
 .m-bottom{display:flex;align-items:center;justify-content:space-between;gap:8px}
@@ -139,7 +139,7 @@ nav.main-nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-
 /* Hover reveals detail */
 .m-hover{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:18px;opacity:0;transition:opacity .3s;pointer-events:none}
 
-.h-300{height:300px}.h-360{height:360px}.h-420{height:420px}.h-260{height:260px}
+.h-300{height:340px}.h-360{height:400px}.h-420{height:460px}.h-260{height:300px}
 /* Better image display — use contain-like cropping approach */
 .m-card img{object-position:center center}
 .feat-card img{object-position:center 25%}
@@ -199,10 +199,10 @@ footer a:hover{color:var(--accent)}
   .iys-section{padding:52px 24px}
   .mosaic-2,.mosaic-2-1,.mosaic-1-2{grid-template-columns:1fr}
   .mosaic-3{grid-template-columns:1fr 1fr}
-  .h-300{height:280px}
-  .h-360{height:320px}
-  .h-420{height:360px}
-  .feat-card img{height:340px}
+  .h-300{height:300px}
+  .h-360{height:340px}
+  .h-420{height:380px}
+  .feat-card img{height:420px}
   .feat-bar-top{flex-direction:column;gap:10px}
   .feat-actions{flex-wrap:wrap}
   .cta-strip{padding:48px 24px;flex-direction:column;align-items:flex-start}
@@ -218,7 +218,7 @@ footer a:hover{color:var(--accent)}
   .h-260{height:auto;aspect-ratio:4/3}
   .hero h1{font-size:2.3rem}
   .hero-ctas{flex-direction:column}
-  .feat-card img{height:260px}
+  .feat-card img{height:300px}
   .feat-bar-top{flex-direction:column;gap:12px}
   .feat-actions{flex-wrap:wrap}
 }
@@ -384,7 +384,7 @@ footer a:hover{color:var(--accent)}
   </div>
 
   <div class="mosaic mosaic-2-1">
-    <div class="m-card h-300" onclick="openLb('hotel room framed mountain reflections alaska dan sproul.jpg','Alaska Mountain Reflections — Hotel Guest Room · White Frame · 24×36','https://dansproul.com/shop')">
+    <div class="m-card h-360" onclick="openLb('hotel room framed mountain reflections alaska dan sproul.jpg','Alaska Mountain Reflections — Hotel Guest Room · White Frame · 24×36','https://dansproul.com/shop')">
       <img src="hotel room framed mountain reflections alaska dan sproul.jpg" alt="Hotel guest room with framed Alaska mountain reflection by Dan Sproul — white frame"/>
       <div class="m-bar">
         <p class="m-room">Guest Room · Calm Blue Tones</p>
@@ -396,7 +396,7 @@ footer a:hover{color:var(--accent)}
       </div>
     </div>
     <div class="m-card h-300" onclick="openLb('modern bedroom framed garden of the gods.jpg','Garden of the Gods — Modern Bedroom · Black Frame · White Mat · 36×48','https://dansproul.com/shop')">
-      <img src="modern bedroom framed garden of the gods.jpg" alt="Modern bedroom with vibrant Garden of the Gods landscape by Dan Sproul — black frame white mat" style="object-position:center 35%"/>
+      <img src="modern bedroom framed garden of the gods.jpg" alt="Modern bedroom with vibrant Garden of the Gods landscape by Dan Sproul — black frame white mat" style="object-position:center 25%"/>
       <div class="m-bar">
         <p class="m-room">Bedroom · Bold Color · Above Bed</p>
         <p class="m-title">Garden of the Gods</p>
@@ -432,7 +432,7 @@ footer a:hover{color:var(--accent)}
   </div>
 
   <div class="feat-card" onclick="openLb('modern living room framed maine lake.jpg','Maine Lake — Modern Living Room · Black Frame · White Mat · 36×48+','https://dansproul.com/shop')">
-    <img src="modern living room framed maine lake.jpg" alt="Modern neutral living room with framed Maine lake autumn landscape by Dan Sproul — black frame above sofa" style="object-position:center 20%"/>
+    <img src="modern living room framed maine lake.jpg" alt="Modern neutral living room with framed Maine lake autumn landscape by Dan Sproul — black frame above sofa" style="object-position:center 15%"/>
     <div class="feat-bar">
       <div class="feat-bar-top">
         <div class="feat-bar-info">
@@ -567,7 +567,7 @@ footer a:hover{color:var(--accent)}
       </div>
     </div>
     <div class="m-card h-300" onclick="openLb('home office statement piece michigan bridge at night.jpg','Michigan Bridge at Night — Home Office · Black Float Frame · 30×40','https://dansproul.com/shop')">
-      <img src="home office statement piece michigan bridge at night.jpg" alt="Home office with Michigan bridge at night statement piece"/>
+      <img src="home office statement piece michigan bridge at night.jpg" alt="Home office with Michigan bridge at night statement piece by Dan Sproul — black float frame" style="object-position:center 20%"/>
       <div class="m-bar">
         <p class="m-room">Home Office · Bold Color</p>
         <p class="m-title">Michigan Bridge at Night</p>
@@ -575,7 +575,7 @@ footer a:hover{color:var(--accent)}
       </div>
     </div>
     <div class="m-card h-300" onclick="openLb('office reception area framed beach dan sproul.jpg','Aerial Beach — Corporate Reception · Dark Float Frame · 24×36 portrait','https://dansproul.com/shop')">
-      <img src="office reception area framed beach dan sproul.jpg" alt="Corporate reception area with framed aerial beach photograph"/>
+      <img src="office reception area framed beach dan sproul.jpg" alt="Corporate reception area with framed aerial beach photograph" style="object-position:center 20%"/>
       <div class="m-bar">
         <p class="m-room">Corporate Reception · Feature Wall</p>
         <p class="m-title">Aerial Beach</p>
@@ -608,7 +608,7 @@ footer a:hover{color:var(--accent)}
   </div>
 
   <div class="feat-card" onclick="openLb('Waterfall_Series_Hospitality_Concept_DanSproul.jpg','Waterfall Series — Three-Piece Hotel Lobby Installation · Custom sizing','https://dansproul.com/shop')">
-    <img src="Waterfall_Series_Hospitality_Concept_DanSproul.jpg" alt="Three-piece waterfall series in luxury hotel lobby — large format framed prints by Dan Sproul"/>
+    <img src="Waterfall_Series_Hospitality_Concept_DanSproul.jpg" alt="Three-piece waterfall series in luxury hotel lobby — large format framed prints by Dan Sproul" style="object-position:center 20%"/>
     <div class="feat-bar">
       <div class="feat-bar-top">
         <div class="feat-bar-info">
@@ -626,7 +626,7 @@ footer a:hover{color:var(--accent)}
 
   <div class="mosaic mosaic-2" style="margin-top:3px">
     <div class="m-card h-360" onclick="openLb('hotel lobby framed art badlands sunrise.jpg','Badlands Sunrise — Hotel Lobby · Large Format Canvas · 48×60+','https://dansproul.com/shop')">
-      <img src="hotel lobby framed art badlands sunrise.jpg" alt="Hotel lobby with large format Badlands sunrise canvas by Dan Sproul"/>
+      <img src="hotel lobby framed art badlands sunrise.jpg" alt="Hotel lobby with large format Badlands sunrise canvas by Dan Sproul" style="object-position:center 30%"/>
       <div class="m-bar">
         <p class="m-room">Hotel Lobby · Statement Piece</p>
         <p class="m-title">Badlands Sunrise</p>
@@ -634,7 +634,7 @@ footer a:hover{color:var(--accent)}
       </div>
     </div>
     <div class="m-card h-360" onclick="openLb('modern office interior linear sand dan sproul.jpg','Linear Sand Dunes — Modern Office Lobby · Black Frame · 40×60','https://dansproul.com/shop')">
-      <img src="modern office interior linear sand dan sproul.jpg" alt="Modern corporate office lobby with framed linear sand dunes photograph by Dan Sproul — large format black frame"/>
+      <img src="modern office interior linear sand dan sproul.jpg" alt="Modern corporate office lobby with framed linear sand dunes photograph by Dan Sproul — large format black frame" style="object-position:center 25%"/>
       <div class="m-bar">
         <p class="m-room">Office Lobby · Minimal · Warm Tones</p>
         <p class="m-title">Linear Sand Dunes</p>
