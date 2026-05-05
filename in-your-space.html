@@ -140,6 +140,9 @@ nav.main-nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-
 .m-hover{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:18px;opacity:0;transition:opacity .3s;pointer-events:none}
 
 .h-300{height:300px}.h-360{height:360px}.h-420{height:420px}.h-260{height:260px}
+/* Better image display — use contain-like cropping approach */
+.m-card img{object-position:center center}
+.feat-card img{object-position:center 25%}
 
 /* ── SECTION DIVIDER ─────────────────────── */
 .divider{padding:0 56px}
@@ -189,23 +192,35 @@ footer a:hover{color:var(--accent)}
   .hamburger{display:flex}
   .hero{padding:110px 24px 0}
   .hero-grid{grid-template-columns:1fr;gap:32px}
-  .hero-img-wrap{height:300px}
-  .how-banner{padding:16px 24px;gap:16px}
+  .hero-img-wrap{height:340px}
+  .how-banner{padding:16px 24px;gap:16px;flex-wrap:wrap}
+  .how-item{font-size:.55rem}
   .filter-nav{padding:0 24px}
   .iys-section{padding:52px 24px}
   .mosaic-2,.mosaic-2-1,.mosaic-1-2{grid-template-columns:1fr}
   .mosaic-3{grid-template-columns:1fr 1fr}
-  .feat-card img{height:300px}
+  .h-300{height:280px}
+  .h-360{height:320px}
+  .h-420{height:360px}
+  .feat-card img{height:340px}
+  .feat-bar-top{flex-direction:column;gap:10px}
+  .feat-actions{flex-wrap:wrap}
   .cta-strip{padding:48px 24px;flex-direction:column;align-items:flex-start}
   .divider{padding:0 24px}
   footer{padding:20px 24px;flex-direction:column;text-align:center}
+  .sss-link{font-size:.5rem;padding:8px 14px}
 }
 @media(max-width:580px){
   .mosaic-3{grid-template-columns:1fr}
-  .h-300,.h-360,.h-420,.h-260{height:240px}
+  .h-300{height:auto;aspect-ratio:4/3}
+  .h-360{height:auto;aspect-ratio:3/2}
+  .h-420{height:auto;aspect-ratio:4/3}
+  .h-260{height:auto;aspect-ratio:4/3}
   .hero h1{font-size:2.3rem}
   .hero-ctas{flex-direction:column}
-  .feat-card img{height:240px}
+  .feat-card img{height:260px}
+  .feat-bar-top{flex-direction:column;gap:12px}
+  .feat-actions{flex-wrap:wrap}
 }
 </style>
 </head>
@@ -380,13 +395,13 @@ footer a:hover{color:var(--accent)}
         </div>
       </div>
     </div>
-    <div class="m-card h-300" onclick="openLb('modern bedroom framed coastal oregon scene dan sproul.jpg','Coastal Oregon — Bedroom · Multiple sizes available','https://dansproul.com/shop')">
-      <img src="modern bedroom framed coastal oregon scene dan sproul.jpg" alt="Bedroom with coastal Oregon scene framed print" style="object-position:center 30%"/>
+    <div class="m-card h-300" onclick="openLb('modern bedroom framed garden of the gods.jpg','Garden of the Gods — Modern Bedroom · Black Frame · White Mat · 36×48','https://dansproul.com/shop')">
+      <img src="modern bedroom framed garden of the gods.jpg" alt="Modern bedroom with vibrant Garden of the Gods landscape by Dan Sproul — black frame white mat" style="object-position:center 35%"/>
       <div class="m-bar">
-        <p class="m-room">Bedroom · Alternate View</p>
-        <p class="m-title">Coastal Oregon Scene</p>
+        <p class="m-room">Bedroom · Bold Color · Above Bed</p>
+        <p class="m-title">Garden of the Gods</p>
         <div class="m-bottom">
-          <span class="m-size">Multiple sizes available</span>
+          <span class="m-size">36×48 · Black frame · White mat</span>
           <a href="https://dansproul.com/shop" target="_blank" class="m-shop" onclick="event.stopPropagation()">Shop →</a>
         </div>
       </div>
@@ -416,14 +431,14 @@ footer a:hover{color:var(--accent)}
     <p class="sec-feeling">"A large horizontal piece above the sofa anchors the entire room — it's the single highest-impact art placement in any home."</p>
   </div>
 
-  <div class="feat-card" onclick="openLb('warm modern living room mountain reflection mockup.jpg','Mountain Reflection — Warm Modern Living Room · Walnut Frame · White Mat · 36×48+','https://dansproul.com/shop')">
-    <img src="warm modern living room mountain reflection mockup.jpg" alt="Warm modern living room with large B&W mountain reflection framed print by Dan Sproul"/>
+  <div class="feat-card" onclick="openLb('modern living room framed maine lake.jpg','Maine Lake — Modern Living Room · Black Frame · White Mat · 36×48+','https://dansproul.com/shop')">
+    <img src="modern living room framed maine lake.jpg" alt="Modern neutral living room with framed Maine lake autumn landscape by Dan Sproul — black frame above sofa" style="object-position:center 20%"/>
     <div class="feat-bar">
       <div class="feat-bar-top">
         <div class="feat-bar-info">
-          <p class="feat-tag">Living Room · Warm Modern · Above Sofa</p>
-          <p class="feat-title">Mountain Reflection — B&amp;W</p>
-          <p class="feat-desc">Walnut frame · White mat · Perfect above a sofa · B&amp;W with warm neutrals</p>
+          <p class="feat-tag">Living Room · Modern Neutral · Above Sofa</p>
+          <p class="feat-title">Maine Lake — Autumn Reflection</p>
+          <p class="feat-desc">Black frame · White mat · Soft fall color palette · Pairs with neutral and warm interiors</p>
         </div>
         <div class="feat-actions">
           <span class="size-badge">36×48 — 60×40+</span>
@@ -618,12 +633,12 @@ footer a:hover{color:var(--accent)}
         <div class="m-bottom"><span class="m-size">48×60+ · Large format canvas</span><a href="https://dansproul.com/shop" target="_blank" class="m-shop" onclick="event.stopPropagation()">Shop →</a></div>
       </div>
     </div>
-    <div class="m-card h-360" onclick="openLb('office reception area framed beach dan sproul.jpg','Aerial Beach — Corporate Reception · Feature Wall','https://dansproul.com/shop')">
-      <img src="office reception area framed beach dan sproul.jpgg" alt="Corporate reception area with aerial beach feature wall"/>
+    <div class="m-card h-360" onclick="openLb('modern office interior linear sand dan sproul.jpg','Linear Sand Dunes — Modern Office Lobby · Black Frame · 40×60','https://dansproul.com/shop')">
+      <img src="modern office interior linear sand dan sproul.jpg" alt="Modern corporate office lobby with framed linear sand dunes photograph by Dan Sproul — large format black frame"/>
       <div class="m-bar">
-        <p class="m-room">Corporate Reception · Feature Wall</p>
-        <p class="m-title">Aerial Beach Installation</p>
-        <div class="m-bottom"><span class="m-size">Custom size · Dark float frame</span><a href="for-designers.html" class="m-shop" onclick="event.stopPropagation()">Trade Info →</a></div>
+        <p class="m-room">Office Lobby · Minimal · Warm Tones</p>
+        <p class="m-title">Linear Sand Dunes</p>
+        <div class="m-bottom"><span class="m-size">40×60 · Black frame · Custom sizing</span><a href="https://dansproul.com/shop" target="_blank" class="m-shop" onclick="event.stopPropagation()">Shop →</a></div>
       </div>
     </div>
   </div>
