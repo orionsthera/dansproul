@@ -980,7 +980,7 @@ footer a:hover{color:var(--accent)}
       </ul>
     </div>
     <div>
-      <div class="trade-form" id="tradeFormWrap">
+      <form class="trade-form" id="tradeFormWrap" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
         <p class="tf-title">Trade Account Application</p>
         <div class="tf-row">
           <div class="tf-field">
@@ -1019,8 +1019,9 @@ footer a:hover{color:var(--accent)}
           <label for="tf-project">Tell me about a current or upcoming project (optional)</label>
           <textarea id="tf-project" name="project" placeholder="e.g. We're furnishing a 24-room boutique hotel in Columbus and need artwork for guest rooms and the lobby…"></textarea>
         </div>
-        <button type="button" class="tf-submit" onclick="submitTradeForm()">Submit Application →</button>
+        <<button type="submit" class="tf-submit">">Submit Application →</button>
         <p class="tf-privacy">Your information is never shared. Response within one business day.</p>
+          </form>
       </div>
       <div class="tf-success" id="tfSuccess">
         <h3>Application <em>received.</em></h3>
