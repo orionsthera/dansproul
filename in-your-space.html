@@ -222,6 +222,33 @@ footer a:hover{color:var(--accent)}
   .feat-bar-top{flex-direction:column;gap:12px}
   .feat-actions{flex-wrap:wrap}
 }
+  /* ── HERO SLIDESHOW ──────────────────────────────────────────── */
+.hero-img-wrap{position:relative;overflow:hidden;height:480px}
+.hero-slide{position:absolute;inset:0;opacity:0;transition:opacity 1.2s ease-in-out}
+.hero-slide.active{opacity:1}
+.hero-slide img{width:100%;height:100%;object-fit:cover;display:block;filter:brightness(.85);object-position:center 18%}
+.hero-img-badge{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(20,16,11,.95),transparent);padding:28px 28px 24px;z-index:2}
+.hib-size{font-size:.52rem;letter-spacing:.28em;text-transform:uppercase;color:var(--accent);margin-bottom:6px}
+.hib-title{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:300;color:var(--off-white);margin-bottom:10px}
+.hib-shop{display:inline-block;font-size:.54rem;letter-spacing:.2em;text-transform:uppercase;color:var(--off-white);border-bottom:1px solid rgba(181,146,74,.5);padding-bottom:2px;text-decoration:none;transition:color .3s,border-color .3s}
+.hib-shop:hover{color:var(--accent);border-color:var(--accent)}
+/* Dot indicators */
+.slide-dots{position:absolute;bottom:72px;right:20px;display:flex;flex-direction:column;gap:6px;z-index:3}
+.slide-dot{width:5px;height:5px;border-radius:50%;background:rgba(242,239,232,.3);border:none;padding:0;cursor:pointer;transition:background .3s,transform .3s}
+.slide-dot.active{background:var(--accent);transform:scale(1.3)}
+/* Prev/next arrows */
+.slide-arrow{position:absolute;top:50%;transform:translateY(-50%);background:rgba(20,16,11,.45);border:1px solid rgba(181,146,74,.2);color:rgba(242,239,232,.7);font-size:1.1rem;width:36px;height:36px;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:3;transition:all .3s;border-radius:0}
+.slide-arrow:hover{background:rgba(181,146,74,.25);color:var(--off-white)}
+.slide-prev{left:12px}
+.slide-next{right:12px}
+@media(max-width:960px){
+  .hero-img-wrap{height:340px}
+  .slide-arrow{width:30px;height:30px;font-size:.9rem}
+}
+@media(max-width:580px){
+  .hero-img-wrap{height:280px}
+  .slide-dots{bottom:56px}
+}
 </style>
 </head>
 <body>
@@ -294,14 +321,43 @@ footer a:hover{color:var(--accent)}
       </div>
     </div>
 
-    <!-- Hero image with always-visible shop CTA -->
-    <div class="hero-img-wrap" onclick="openLb('warm modern living room mountain reflection mockup.jpg','Mountain Reflection — Warm Modern Living Room','https://dansproul.com/featured/black-and-white-canadian-rockies-reflection-dan-sproul.html')">
-      <img src="warm modern living room mountain reflection mockup.jpg" alt="Warm modern living room with large B&W mountain reflection print by Dan Sproul — walnut frame white mat above sofa"/>
-      <div class="hero-img-badge">
-        <p class="hib-size">Living Room · 36×48 or custom · Walnut frame</p>
-        <p class="hib-title">Mountain Reflection — B&amp;W</p>
-        <a href="https://dansproul.com/featured/black-and-white-canadian-rockies-reflection-dan-sproul.html" target="_blank" class="hib-shop" onclick="event.stopPropagation()">Shop This Print →</a>
+    <!-- Hero slideshow -->
+    <div class="hero-img-wrap" id="heroSlideshow">
+
+      <div class="hero-slide active">
+        <img src="warm modern living room mountain reflection mockup.jpg" alt="Warm modern living room with large B&W mountain reflection print by Dan Sproul — walnut frame white mat" style="object-position:center 30%"/>
       </div>
+
+      <div class="hero-slide">
+        <img src="living room interior mockup framed mountain light.jpg" alt="Bright modern living room with dreamy mountain light landscape print by Dan Sproul — black float frame above credenza" style="object-position:center 22%"/>
+      </div>
+
+      <div class="hero-slide">
+        <img src="modern living room with framed mountains in clouds.jpg" alt="Modern white living room with large B&W mountains in clouds framed print by Dan Sproul — black frame above sofa" style="object-position:center 20%"/>
+      </div>
+
+      <div class="hero-slide">
+        <img src="lobby framed mountains in clouds.jpg" alt="Modern healthcare lobby with large framed mountains in clouds landscape by Dan Sproul — black frame white mat" style="object-position:center 25%"/>
+      </div>
+
+      <div class="hero-slide">
+        <img src="modern dining room framed dreamy alaska landscape dan sproul.jpg" alt="Luxury modern dining room with large framed dreamy Alaska landscape by Dan Sproul — black frame dramatic lighting" style="object-position:center 20%"/>
+      </div>
+
+      <!-- Badge updates with JS -->
+      <div class="hero-img-badge">
+        <p class="hib-size" id="hib-size">Living Room · 36×48 or custom · Walnut frame</p>
+        <p class="hib-title" id="hib-title">Mountain Reflection — B&amp;W</p>
+        <a href="https://dansproul.com/shop" target="_blank" class="hib-shop">Shop This Print →</a>
+      </div>
+
+      <!-- Arrows -->
+      <button class="slide-arrow slide-prev" onclick="slideMove(-1)" aria-label="Previous">&#8592;</button>
+      <button class="slide-arrow slide-next" onclick="slideMove(1)" aria-label="Next">&#8594;</button>
+
+      <!-- Dots -->
+      <div class="slide-dots" id="slideDots"></div>
+
     </div>
   </div>
 </div>
