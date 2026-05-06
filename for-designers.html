@@ -463,6 +463,45 @@ footer a:hover{color:var(--accent)}
   .gallery-strip{grid-template-columns:repeat(2,1fr)}
   .hero-ctas{flex-direction:column;align-items:center}
 }
+
+/* PRICING ANCHOR */
+.pricing-anchor{background:var(--surface-2);border:1px solid var(--border);border-left:3px solid var(--accent);padding:28px 36px;margin-bottom:0}
+.pricing-anchor-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.pa-item{padding:20px 24px;border-right:1px solid var(--border)}
+.pa-item:last-child{border-right:none}
+.pa-label{font-size:.5rem;letter-spacing:.3em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
+.pa-price{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;color:var(--off-white);line-height:1;margin-bottom:6px}
+.pa-desc{font-size:.62rem;line-height:1.8;color:var(--muted)}
+.pa-note{font-size:.62rem;line-height:1.9;color:rgba(242,239,232,.45);padding:16px 24px;border-top:1px solid var(--border);grid-column:1/-1}
+@media(max-width:900px){.pricing-anchor-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:580px){.pricing-anchor-grid{grid-template-columns:1fr}.pa-item{border-right:none;border-bottom:1px solid var(--border)}}
+
+/* TRADE FORM */
+.trade-section{background:#050504;padding:100px 56px;border-top:1px solid var(--border)}
+.trade-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;max-width:1100px;margin:0 auto}
+.trade-left h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.5vw,3.2rem);font-weight:300;line-height:1.1;margin-bottom:16px}
+.trade-left h2 em{font-style:italic;color:var(--accent)}
+.trade-left p{font-size:.74rem;line-height:2;color:var(--muted);margin-bottom:16px}
+.trade-benefits{list-style:none;margin-top:24px}
+.trade-benefits li{font-size:.7rem;line-height:1.7;color:rgba(242,239,232,.65);padding:8px 0;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:10px}
+.trade-benefits li::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--accent);flex-shrink:0}
+.trade-form{background:var(--surface);padding:40px;border:1px solid var(--border)}
+.tf-title{font-size:.56rem;letter-spacing:.3em;text-transform:uppercase;color:var(--accent);margin-bottom:24px}
+.tf-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+.tf-field{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
+.tf-field label{font-size:.52rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.tf-field input,.tf-field select,.tf-field textarea{background:#080807;border:1px solid rgba(181,146,74,.2);color:var(--off-white);padding:11px 14px;font-family:'Jost',sans-serif;font-size:.72rem;letter-spacing:.04em;outline:none;transition:border-color .3s;width:100%}
+.tf-field input:focus,.tf-field select,.tf-field textarea:focus{border-color:var(--accent)}
+.tf-field select{appearance:none;cursor:pointer}
+.tf-field textarea{resize:vertical;min-height:90px}
+.tf-submit{width:100%;background:var(--accent);color:var(--charcoal);border:none;padding:14px;font-family:'Jost',sans-serif;font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;cursor:pointer;transition:background .3s;margin-top:6px}
+.tf-submit:hover{background:#c9a45a}
+.tf-privacy{font-size:.56rem;color:var(--muted);margin-top:12px;line-height:1.8;text-align:center}
+.tf-success{display:none;text-align:center;padding:40px 20px}
+.tf-success h3{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;color:var(--off-white);margin-bottom:10px}
+.tf-success p{font-size:.72rem;color:var(--muted);line-height:2}
+@media(max-width:900px){.trade-grid{grid-template-columns:1fr;gap:40px}.tf-row{grid-template-columns:1fr}.trade-section{padding:64px 24px}}
+
 </style>
 </head>
 <body>
@@ -537,6 +576,38 @@ footer a:hover{color:var(--accent)}
     </div>
   </div>
 </section>
+
+
+<!-- PRICING ANCHOR — removes friction for designers evaluating cost -->
+<div class="section" style="padding-top:0;padding-bottom:0;background:var(--charcoal)">
+  <div class="pricing-anchor">
+    <div class="pricing-anchor-grid">
+      <div class="pa-item">
+        <p class="pa-label">Canvas Prints</p>
+        <p class="pa-price">from $85</p>
+        <p class="pa-desc">Gallery-wrapped, ready to hang. 12×18 to 60×90+</p>
+      </div>
+      <div class="pa-item">
+        <p class="pa-label">Framed Prints</p>
+        <p class="pa-price">from $140</p>
+        <p class="pa-desc">Archival paper, white mat, wood frame. Any size.</p>
+      </div>
+      <div class="pa-item">
+        <p class="pa-label">Metal &amp; Acrylic</p>
+        <p class="pa-price">from $120</p>
+        <p class="pa-desc">Vivid, durable. Ideal for lobbies &amp; high-traffic spaces.</p>
+      </div>
+      <div class="pa-item">
+        <p class="pa-label">Trade &amp; Wholesale</p>
+        <p class="pa-price">Custom</p>
+        <p class="pa-desc">Volume discounts for designers. Apply below for trade pricing.</p>
+      </div>
+      <div class="pa-note">
+        All prices are retail starting points. <strong style="color:rgba(242,239,232,.75)">Designers and design firms receive trade pricing</strong> — apply using the form below. Custom sizing available on every image at no additional design fee. Commercial licensing and multi-site programs priced by scope.
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- PLACEMENT GALLERY -->
 <section class="placement-section section" id="placements">
