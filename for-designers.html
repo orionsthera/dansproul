@@ -960,6 +960,77 @@ footer a:hover{color:var(--accent)}
   </div>
 </section>
 
+  <!-- TRADE ACCOUNT FORM -->
+<section class="trade-section" id="trade">
+  <div class="trade-grid">
+    <div class="trade-left">
+      <p class="section-label">Trade Program</p>
+      <h2>Apply for <em>Trade Pricing</em></h2>
+      <p>Dan works directly with interior designers, architects, stagers, and commercial procurement teams. Trade accounts receive preferred pricing, priority response, and access to full-resolution mockup previews at no charge.</p>
+      <p>Fill out the form and you'll hear back within one business day.</p>
+      <ul class="trade-benefits">
+        <li>Preferred pricing on all print formats and sizes</li>
+        <li>Free digital mockups — send a room photo, get a preview</li>
+        <li>Direct access to 8,500+ high-resolution images</li>
+        <li>Custom sizing on every image at no additional fee</li>
+        <li>Multi-piece and multi-site installation programs</li>
+        <li>Direct-to-install delivery with hardware included</li>
+        <li>Priority email response within 24 hours</li>
+        <li>Digital licensing available for local print production</li>
+      </ul>
+    </div>
+    <div>
+      <div class="trade-form" id="tradeFormWrap">
+        <p class="tf-title">Trade Account Application</p>
+        <div class="tf-row">
+          <div class="tf-field">
+            <label for="tf-name">Your Name</label>
+            <input type="text" id="tf-name" name="name" placeholder="Jane Smith" required/>
+          </div>
+          <div class="tf-field">
+            <label for="tf-firm">Firm / Company Name</label>
+            <input type="text" id="tf-firm" name="firm" placeholder="Smith Interiors LLC" required/>
+          </div>
+        </div>
+        <div class="tf-field">
+          <label for="tf-email">Business Email</label>
+          <input type="email" id="tf-email" name="email" placeholder="jane@smithinteriors.com" required/>
+        </div>
+        <div class="tf-row">
+          <div class="tf-field">
+            <label for="tf-website">Website (optional)</label>
+            <input type="url" id="tf-website" name="website" placeholder="https://smithinteriors.com"/>
+          </div>
+          <div class="tf-field">
+            <label for="tf-type">Design Focus</label>
+            <select id="tf-type" name="type">
+              <option value="">Select one…</option>
+              <option>Residential Interior Design</option>
+              <option>Commercial / Hospitality</option>
+              <option>Healthcare / Senior Living</option>
+              <option>Staging &amp; Real Estate</option>
+              <option>Architecture</option>
+              <option>Procurement / Purchasing</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="tf-field">
+          <label for="tf-project">Tell me about a current or upcoming project (optional)</label>
+          <textarea id="tf-project" name="project" placeholder="e.g. We're furnishing a 24-room boutique hotel in Columbus and need artwork for guest rooms and the lobby…"></textarea>
+        </div>
+        <button type="button" class="tf-submit" onclick="submitTradeForm()">Submit Application →</button>
+        <p class="tf-privacy">Your information is never shared. Response within one business day.</p>
+      </div>
+      <div class="tf-success" id="tfSuccess">
+        <h3>Application <em>received.</em></h3>
+        <p>Thanks — Dan will review your application and follow up within one business day at the email you provided. If you have an urgent project, email directly at <a href="mailto:sproulphoto@gmail.com" style="color:var(--accent)">sproulphoto@gmail.com</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <!-- CONTACT -->
 <div class="contact-section" id="contact">
   <p class="section-label" style="justify-content:center">Work Together</p>
