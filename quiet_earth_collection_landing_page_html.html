@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiet Earth Collection | Calm Atmospheric Landscape Art | Dan Sproul</title>
+  <meta name="description" content="Quiet Earth Collection by Dan Sproul: atmospheric landscape photography for calm, restorative interiors, wellness spaces, bedrooms, hospitality, healthcare, and quiet luxury design." />
+  <style>
+    :root {
+      --cream:#f3efe7;
+      --warm:#e4dbcd;
+      --sand:#c7b8a2;
+      --stone:#8c9089;
+      --sage:#6f7b70;
+      --charcoal:#1c201f;
+      --muted:#6d716a;
+      --line:rgba(28,32,31,.12);
+      --card:#faf7f1;
+      --max:1380px;
+    }
+
+    *{margin:0;padding:0;box-sizing:border-box}
+
+    body{
+      background:var(--cream);
+      color:var(--charcoal);
+      font-family:Georgia,serif;
+      line-height:1.7;
+      -webkit-font-smoothing:antialiased;
+    }
+
+    img{width:100%;display:block}
+    a{color:inherit;text-decoration:none}
+    .container{width:min(92%,var(--max));margin:auto}
+
+    section{padding:95px 0;border-top:1px solid var(--line)}
+
+    .eyebrow{
+      text-transform:uppercase;
+      letter-spacing:2.4px;
+      font-size:.72rem;
+      color:var(--sage);
+      margin-bottom:18px;
+    }
+
+    h1{
+      font-size:clamp(3.2rem,7vw,7rem);
+      line-height:.92;
+      font-weight:400;
+      letter-spacing:-.03em;
+      margin-bottom:28px;
+    }
+
+    h2{
+      font-size:clamp(2rem,4vw,3.7rem);
+      line-height:1.05;
+      font-weight:400;
+      letter-spacing:-.02em;
+      margin-bottom:26px;
+    }
+
+    h3{font-size:1.45rem;font-weight:400;margin-bottom:12px}
+    p{color:var(--muted);max-width:760px}
+
+    .hero{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      position:relative;
+      overflow:hidden;
+      border-top:none;
+      background:
+        linear-gradient(to right,rgba(243,239,231,.94) 0%,rgba(243,239,231,.72) 38%,rgba(243,239,231,.22) 100%),
+        url('quiet-earth-hero.jpg') center/cover no-repeat;
+    }
+
+    .hero-content{max-width:780px;position:relative;z-index:2}
+    .hero p{font-size:1.15rem;margin-bottom:38px;color:#5e665e}
+
+    .btn-wrap{display:flex;gap:16px;flex-wrap:wrap}
+    .btn{
+      display:inline-block;
+      padding:14px 26px;
+      border:1px solid var(--sage);
+      color:var(--charcoal);
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      font-size:.72rem;
+      transition:.3s ease;
+      background:rgba(255,255,255,.15);
+    }
+    .btn.primary{background:var(--charcoal);color:var(--cream);border-color:var(--charcoal)}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(28,32,31,.12)}
+
+    .quiet-note{
+      margin-top:54px;
+      padding:28px 32px;
+      border-left:3px solid var(--sage);
+      background:rgba(255,255,255,.35);
+      max-width:660px;
+      color:#667066;
+      font-style:italic;
+      font-size:1.04rem;
+    }
+
+    .story-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:72px;
+      align-items:center;
+    }
+
+    .story-image{
+      border-radius:18px;
+      overflow:hidden;
+      border:1px solid var(--line);
+      box-shadow:0 25px 70px rgba(28,32,31,.12);
+    }
+
+    .story-image img{aspect-ratio:4/5;object-fit:cover}
+
+    .palette-row{
+      display:flex;
+      gap:10px;
+      margin-top:34px;
+      flex-wrap:wrap;
+    }
+
+    .swatch{
+      width:74px;height:74px;border-radius:50%;border:1px solid rgba(28,32,31,.09);
+    }
+    .s1{background:#e8e1d5}.s2{background:#c8c6b9}.s3{background:#899488}.s4{background:#b7aaa0}.s5{background:#3c4648}
+
+    .mockup-grid{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:46px;
+      margin-top:60px;
+    }
+
+    .mockup-card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:18px;
+      overflow:hidden;
+      box-shadow:0 18px 60px rgba(28,32,31,.08);
+      transition:.35s ease;
+    }
+
+    .mockup-card:hover{transform:translateY(-4px)}
+    .mockup-card img{aspect-ratio:16/8;object-fit:cover}
+    .mockup-content{padding:32px 34px}
+    .mockup-content p{font-size:1rem;color:#68706b}
+
+    .feature-band{
+      background:linear-gradient(to bottom,#e9e2d7,#f3efe7);
+    }
+
+    .feature-image{
+      margin-top:58px;
+      border-radius:20px;
+      overflow:hidden;
+      position:relative;
+      box-shadow:0 26px 80px rgba(28,32,31,.16);
+    }
+
+    .feature-image img{aspect-ratio:16/7;object-fit:cover;filter:brightness(.92)}
+
+    .feature-overlay{
+      position:absolute;
+      inset:0;
+      display:flex;
+      align-items:end;
+      padding:60px;
+      background:linear-gradient(to top,rgba(28,32,31,.48),rgba(28,32,31,0));
+    }
+
+    .feature-overlay h3{
+      color:#fff;
+      font-size:clamp(2rem,4vw,3.2rem);
+      text-shadow:0 2px 20px rgba(0,0,0,.35);
+    }
+
+    .quote-section{
+      background:#d8d2c6;
+      text-align:center;
+    }
+
+    .quote-section blockquote{
+      max-width:930px;
+      margin:auto;
+      font-size:clamp(1.55rem,3vw,2.7rem);
+      line-height:1.35;
+      color:#333a37;
+      font-style:italic;
+    }
+
+    .quote-section span{
+      display:block;
+      margin-top:28px;
+      color:var(--sage);
+      letter-spacing:2px;
+      font-size:.75rem;
+      text-transform:uppercase;
+    }
+
+    .art-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:30px;
+      margin-top:60px;
+    }
+
+    .art-card{
+      background:var(--card);
+      border:1px solid var(--line);
+      transition:.35s ease;
+      overflow:hidden;
+      border-radius:14px;
+    }
+
+    .art-card:hover{transform:translateY(-5px);box-shadow:0 20px 50px rgba(28,32,31,.12)}
+    .art-card img{aspect-ratio:4/3;object-fit:cover}
+    .art-info{padding:22px}
+    .art-info h4{font-size:1.08rem;font-weight:400;margin-bottom:8px;color:var(--charcoal)}
+    .art-info p{font-size:.92rem;color:#73776f}
+
+    .space-grid{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:22px;
+      margin-top:44px;
+    }
+
+    .space-card{
+      padding:32px 28px;
+      background:rgba(255,255,255,.32);
+      border:1px solid var(--line);
+      border-radius:14px;
+    }
+
+    .space-card p{font-size:.96rem}
+
+    .cta{
+      text-align:center;
+      background:linear-gradient(to bottom,#f3efe7,#e2dbcf);
+    }
+
+    .cta p{margin:0 auto 34px}
+
+    footer{
+      padding:45px 0;
+      border-top:1px solid var(--line);
+      color:#84877e;
+      font-size:.9rem;
+    }
+
+    @media(max-width:1000px){
+      .story-grid,.art-grid,.space-grid{grid-template-columns:1fr}
+      .hero{background-position:center}
+      .feature-overlay{padding:34px}
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="eyebrow">Curated Designer Collection</div>
+      <h1>Quiet Earth Collection</h1>
+      <p>
+        Atmospheric landscape photography designed for calm, restorative interiors — soft reflections, muted mountain light, fog, still water, and natural quiet for wellness, hospitality, healthcare, and quiet luxury spaces.
+      </p>
+
+      <div class="btn-wrap">
+        <a href="#collection" class="btn primary">Explore Collection</a>
+        <a href="#designer" class="btn">Request Designer Recommendations</a>
+      </div>
+
+      <div class="quiet-note">
+        Artwork designed to slow a room down — quiet landscapes for spaces that need calm, breathing room, and a natural sense of restoration.
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container story-grid">
+      <div>
+        <div class="eyebrow">Collection Story</div>
+        <h2>Stillness, Atmosphere, And Natural Space</h2>
+        <p>
+          The Quiet Earth Collection is built around landscape photography that feels restorative rather than dramatic. These images emphasize reflection, fog, soft light, layered atmosphere, and the quiet presence of water and mountains.
+        </p>
+        <br><br>
+        <p>
+          Created for designers sourcing artwork for calm interiors, this collection works especially well in bedrooms, wellness studios, healthcare environments, spa-inspired spaces, quiet hospitality interiors, and modern organic homes.
+        </p>
+
+        <div class="palette-row">
+          <div class="swatch s1"></div>
+          <div class="swatch s2"></div>
+          <div class="swatch s3"></div>
+          <div class="swatch s4"></div>
+          <div class="swatch s5"></div>
+        </div>
+      </div>
+
+      <div class="story-image">
+        <img src="quiet-earth-maligne-lake.jpg" alt="Misty mountain lake reflection from the Quiet Earth Collection by Dan Sproul">
+      </div>
+    </div>
+  </section>
+
+  <section class="feature-band">
+    <div class="container">
+      <div class="eyebrow">Styled Environments</div>
+      <h2>Designed For Calm, Restorative Interiors</h2>
+      <p>
+        Quiet Earth is intended to feel different from a standard landscape gallery. The collection is presented as atmosphere first — soft architecture, neutral palettes, organic texture, and artwork that supports the emotional tone of the room.
+      </p>
+
+      <div class="mockup-grid">
+        <div class="mockup-card">
+          <img src="quiet-earth-bedroom-mockup.jpg" alt="Quiet luxury bedroom with atmospheric landscape artwork by Dan Sproul">
+          <div class="mockup-content">
+            <h3>Quiet Luxury Bedroom</h3>
+            <p>Soft linen textures, warm wood, plaster walls, and oversized reflective landscape artwork designed to create a calm focal point above the bed.</p>
+          </div>
+        </div>
+
+        <div class="mockup-card">
+          <img src="quiet-earth-spa-lobby-mockup.jpg" alt="Wellness spa lobby with calming landscape art by Dan Sproul">
+          <div class="mockup-content">
+            <h3>Wellness & Spa Interiors</h3>
+            <p>Muted natural materials and atmospheric mountain artwork for restorative spaces where the art should support stillness, comfort, and calm.</p>
+          </div>
+        </div>
+
+        <div class="mockup-card">
+          <img src="quiet-earth-living-room-mockup.jpg" alt="Modern organic living room with quiet landscape art by Dan Sproul">
+          <div class="mockup-content">
+            <h3>Modern Organic Living</h3>
+            <p>Earth-toned interiors, minimal furniture, and reflective landscape photography for homes that favor quiet luxury over visual noise.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-image">
+        <img src="quiet-earth-collection-board.jpg" alt="Quiet Earth Collection designer presentation board by Dan Sproul">
+        <div class="feature-overlay">
+          <h3>Artwork That Creates Breathing Room</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote-section">
+    <div class="container">
+      <blockquote>
+        “The best calm interiors don’t need louder artwork. They need images that hold space, soften the room, and let the eye rest.”
+      </blockquote>
+      <span>Quiet Earth Collection</span>
+    </div>
+  </section>
+
+  <section id="collection">
+    <div class="container">
+      <div class="eyebrow">Featured Artwork</div>
+      <h2>Selected Quiet Earth Pieces</h2>
+      <p>
+        A curated set of atmospheric landscapes selected for their quiet palettes, reflective compositions, and ability to support calming interior environments.
+      </p>
+
+      <div class="art-grid">
+        <a href="https://dansproul.com/featured/maligne-lake-canadian-rockies-misty-mountain-reflection-fine-art-print-dan-sproul.html" class="art-card" target="_blank" rel="noopener">
+          <img src="quiet-earth-maligne-lake.jpg" alt="Maligne Lake misty mountain reflection by Dan Sproul">
+          <div class="art-info"><h4>Maligne Lake Mist</h4><p>Soft alpine atmosphere and quiet water reflection.</p></div>
+        </a>
+
+        <a href="https://dansproul.com/featured/moody-mountain-landscape-alaska-range-dan-sproul.html" class="art-card" target="_blank" rel="noopener">
+          <img src="quiet-earth-moodymountain-alaska.jpg" alt="Moody Alaska mountain landscape by Dan Sproul">
+          <div class="art-info"><h4>Moody Alaska Mountain</h4><p>Dark mountain atmosphere with soft natural drama.</p></div>
+        </a>
+
+        <a href="https://dansproul.com/featured/pyramid-lake-sunset-long-exposure-dan-sproul.html" class="art-card" target="_blank" rel="noopener">
+          <img src="quiet-earth-pyramid-lake.jpg" alt="Pyramid Lake sunset reflection by Dan Sproul">
+          <div class="art-info"><h4>Pyramid Lake Reflection</h4><p>Long exposure calm and softened mountain light.</p></div>
+        </a>
+
+        <a href="https://dansproul.com/featured/canadian-rockies-reflection-lake-dan-sproul.html" class="art-card" target="_blank" rel="noopener">
+          <img src="quiet-earth-canada-lake.jpg" alt="Canadian Rockies reflection lake by Dan Sproul">
+          <div class="art-info"><h4>Canadian Rockies Reflection</h4><p>Quiet forest edge and mirrored mountain water.</p></div>
+        </a>
+
+        <a href="https://dansproul.com/featured/trillium-lake-golden-hour-mount-hood-reflection-dan-sproul.html" class="art-card" target="_blank" rel="noopener">
+          <img src="quiet-earth-trillium-lake.jpg" alt="Trillium Lake Mount Hood reflection by Dan Sproul">
+          <div class="art-info"><h4>Trillium Lake Dusk</h4><p>Muted warmth, still water, and soft alpine reflection.</p></div>
+        </a>
+
+        <a href="https://dansproul.com/featured/twin-lakes-colorado-reflection-dan-sproul.html" class="art-card" target="_blank" rel="noopener">
+          <img src="quiet-earth-twin-lakes.jpg" alt="Twin Lakes Colorado mountain reflection by Dan Sproul">
+          <div class="art-info"><h4>Twin Lakes Reflection</h4><p>Clear mountain water and open natural stillness.</p></div>
+        </a>
+
+        <a href="https://dansproul.com/featured/string-lake-reflections-in-summer-dan-sproul.html" class="art-card" target="_blank" rel="noopener">
+          <img src="quiet-earth-string-lake.jpg" alt="String Lake summer reflections by Dan Sproul">
+          <div class="art-info"><h4>String Lake Reflections</h4><p>Soft forest reflection and mountain quiet.</p></div>
+        </a>
+
+        <a href="https://dansproul.com/featured/autumn-colors-rising-fog-in-the-smokies-dan-sproul.html" class="art-card" target="_blank" rel="noopener">
+          <img src="quiet-earth-autumn-forest.jpg" alt="Autumn fog in the Smoky Mountains by Dan Sproul">
+          <div class="art-info"><h4>Smoky Mountain Fog</h4><p>Layered autumn atmosphere and rising valley mist.</p></div>
+        </a>
+
+        <a href="https://dansproul.com/featured/moosehead-lake-morning-dan-sproul.html" class="art-card" target="_blank" rel="noopener">
+          <img src="quiet-earth-moosehead-lake.jpg" alt="Moosehead Lake morning shoreline by Dan Sproul">
+          <div class="art-info"><h4>Moosehead Lake Morning</h4><p>Quiet shoreline, open water, and soft natural calm.</p></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="eyebrow">Designed For</div>
+      <h2>Spaces That Need Calm</h2>
+      <div class="space-grid">
+        <div class="space-card"><h3>Wellness & Spa</h3><p>Soft atmospheric artwork for restorative and sensory-conscious environments.</p></div>
+        <div class="space-card"><h3>Bedrooms</h3><p>Quiet landscapes for restful spaces, guest rooms, and calming residential interiors.</p></div>
+        <div class="space-card"><h3>Healthcare</h3><p>Nature imagery with gentle visual energy for waiting rooms, corridors, and patient areas.</p></div>
+        <div class="space-card"><h3>Hospitality</h3><p>Atmospheric landscape collections for boutique hotels, lodges, and retreat properties.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="designer">
+    <div class="container">
+      <div class="eyebrow">Designer Access</div>
+      <h2>Curated Artwork For Quiet Interiors</h2>
+      <p>
+        High-resolution artwork licensing, custom sizing, and print-ready formats available for wellness, hospitality, healthcare, residential, and commercial interior projects.
+      </p>
+      <div class="btn-wrap" style="justify-content:center;">
+        <a href="/for-designers.html" class="btn primary">Request Recommendations</a>
+        <a href="/collections" class="btn">Explore More Collections</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">© Dan Sproul — Quiet Earth Collection</div>
+  </footer>
+
+</body>
+</html>
