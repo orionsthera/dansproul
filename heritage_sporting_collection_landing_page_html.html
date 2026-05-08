@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heritage Sporting Collection | Sporting Lodge Wall Art | Dan Sproul</title>
+  <meta name="description" content="Heritage Sporting Collection by Dan Sproul: vintage hunting, fishing, wildlife, and outdoor patent artwork for sporting lodges, lake houses, cabins, executive offices, and rustic luxury interiors." />
+  <style>
+    :root {
+      --bg: #0d0c0a;
+      --bg2: #151311;
+      --text: #f1ede5;
+      --muted: #b9ae9a;
+      --gold: #b69058;
+      --line: rgba(255,255,255,.08);
+      --card: #181512;
+      --max: 1380px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: Georgia, serif;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(92%, var(--max));
+      margin: auto;
+    }
+
+    section {
+      padding: 90px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: .72rem;
+      color: var(--gold);
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(3rem, 7vw, 6rem);
+      line-height: .95;
+      margin-bottom: 26px;
+      font-weight: 400;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      margin-bottom: 24px;
+      font-weight: 400;
+    }
+
+    h3 {
+      font-size: 1.4rem;
+      margin-bottom: 14px;
+      font-weight: 400;
+    }
+
+    p {
+      color: var(--muted);
+      max-width: 760px;
+    }
+
+    .hero {
+      border-top: none;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      background:
+        linear-gradient(to bottom, rgba(0,0,0,.5), rgba(0,0,0,.7)),
+        url('sporting-lodge-hero.jpg') center/cover no-repeat;
+    }
+
+    .hero-content {
+      max-width: 760px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      margin-bottom: 38px;
+    }
+
+    .btn-wrap {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 14px 26px;
+      border: 1px solid var(--gold);
+      transition: .3s ease;
+      letter-spacing: .5px;
+    }
+
+    .btn.primary {
+      background: var(--gold);
+      color: #111;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      opacity: .9;
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+    }
+
+    .section-intro {
+      max-width: 820px;
+      font-size: 1.08rem;
+      margin-top: 12px;
+    }
+
+    .featured-banner {
+      margin-top: 60px;
+      border-radius: 14px;
+      overflow: hidden;
+      position: relative;
+      border: 1px solid var(--line);
+    }
+
+    .featured-banner img {
+      aspect-ratio: 16/7;
+      object-fit: cover;
+      filter: brightness(.78);
+    }
+
+    .featured-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: end;
+      padding: 60px;
+      background: linear-gradient(to top, rgba(0,0,0,.75), rgba(0,0,0,.1));
+    }
+
+    .featured-overlay-content {
+      max-width: 620px;
+    }
+
+    .featured-overlay h3 {
+      font-size: clamp(2rem,4vw,3rem);
+      margin-bottom: 16px;
+    }
+
+    .featured-overlay p {
+      color: #ddd2c0;
+      font-size: 1.05rem;
+    }
+
+    .quote-section {
+      text-align: center;
+      background: linear-gradient(to bottom,#14110e,#0d0c0a);
+    }
+
+    .quote-section blockquote {
+      max-width: 920px;
+      margin: auto;
+      font-size: clamp(1.4rem,3vw,2.4rem);
+      line-height: 1.45;
+      color: #f1ede5;
+      font-style: italic;
+    }
+
+    .quote-section span {
+      display: block;
+      margin-top: 28px;
+      color: var(--gold);
+      letter-spacing: 1px;
+      font-size: .82rem;
+      text-transform: uppercase;
+    }
+
+    .story-grid {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .story-image {
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+    }
+
+    .mockup-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 42px;
+      margin-top: 60px;
+    }
+
+    .mockup-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      overflow: hidden;
+      border-radius: 12px;
+      transition: .35s ease;
+    }
+
+    .mockup-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(182,144,88,.35);
+    }
+
+    .mockup-card img {
+      aspect-ratio: 16/8;
+      object-fit: cover;
+    }
+
+    .mockup-content {
+      padding: 28px;
+    }
+
+    .mockup-content p {
+      font-size: .98rem;
+    }
+
+    .art-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      margin-top: 60px;
+    }
+
+    .art-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      transition: .3s ease;
+    }
+
+    .art-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(182,144,88,.5);
+    }
+
+    .art-card img {
+      aspect-ratio: 4/5;
+      object-fit: cover;
+    }
+
+    .art-info {
+      padding: 18px;
+    }
+
+    .art-info h4 {
+      font-weight: 400;
+      margin-bottom: 8px;
+      font-size: 1rem;
+    }
+
+    .space-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .space-card {
+      padding: 30px;
+      background: var(--card);
+      border: 1px solid var(--line);
+    }
+
+    .cta {
+      text-align: center;
+      background: linear-gradient(to bottom, #15120f, #0d0c0a);
+    }
+
+    .cta p {
+      margin: 0 auto 34px;
+    }
+
+    footer {
+      padding: 45px 0;
+      border-top: 1px solid var(--line);
+      color: #8e8577;
+      font-size: .9rem;
+    }
+
+    @media (max-width: 1000px) {
+      .story-grid,
+      .mockup-grid,
+      .art-grid,
+      .space-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="eyebrow">Curated Designer Collection</div>
+      <h1>Heritage Sporting Collection</h1>
+      <p>
+        Vintage hunting, fishing, wildlife, and outdoor patent artwork created for sporting lodges, lake houses, cabins, executive offices, and rustic luxury interiors. A curated mixed-media collection built around wilderness heritage, warm earth tones, and refined lodge atmosphere.
+      </p>
+
+      <div class="btn-wrap">
+        <a href="#collection" class="btn primary">Explore Collection</a>
+        <a href="#designer" class="btn">Request Designer Recommendations</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container story-grid">
+      <div>
+        <div class="eyebrow">Collection Story</div>
+        <h2>Where Sporting Heritage Meets Fine Art</h2>
+
+        <p>
+          The Heritage Sporting Collection blends vintage patent artwork with layered outdoor imagery inspired by hunting, fishing, wildlife, and classic sporting traditions. These pieces are not simple patent drawings — they are mixed-media artworks designed to feel nostalgic, collected, and visually suited for refined lodge interiors.
+        </p>
+
+        <br><br>
+
+        <p>
+          From duck calls and decoys to hunting knives, sporting rifles, archery equipment, camper designs, and wilderness tools, the collection creates a cohesive visual world for cabins, lake homes, lodges, boutique hospitality spaces, and masculine executive interiors.
+        </p>
+      </div>
+
+      <div class="story-image">
+        <img src="a_high_detail_composite_layout_image_moodboard_o.png" alt="Heritage Sporting Collection grouped framed artwork mockup">
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="eyebrow">Styled Environments</div>
+      <h2>Modern Rustic Sporting Interiors</h2>
+
+      <p class="section-intro">
+        The collection works best when presented as atmosphere first — warm architecture, layered textures, collected wilderness styling, and oversized statement artwork designed to feel integrated into refined sporting interiors.
+      </p>
+
+      <!--
+RECOMMENDED PRODUCTION MOCKUPS
+
+1. sporting-lodge-hero.jpg
+Large cinematic luxury sporting lodge interior.
+Oversized grouped framed sporting patent artwork above stone fireplace.
+Warm moody lighting, leather seating, dark walnut, rustic luxury styling.
+
+2. executive-office-mockup.jpg
+Masculine executive office with walnut desk, leather chair, matte black shelving.
+Large framed deer or rifle patent artwork.
+
+3. lodge-lounge-mockup.jpg
+Boutique lodge lounge with grouped framed sporting patents.
+Warm hospitality atmosphere.
+
+4. lake-house-mockup.jpg
+Refined lake house sitting room with duck call, fish lure, or waterfowl artwork.
+Natural oak, calm neutral palette.
+
+5. gallery-wall-mockup.jpg
+Curated sporting patent gallery wall.
+Mix vertical and horizontal frames.
+
+6. heritage-sporting-grouped-mockup.jpg
+Hero grouped collection image for collection story section.
+
+PINTEREST VERTICALS TO CREATE
+- Vertical pheasant patent mockup
+- Vertical deer patent mockup
+- Duck lodge entryway scene
+- Rustic office inspiration scene
+
+USE THESE FILE NAMES EXACTLY FOR EASY SITE ORGANIZATION.
+-->
+
+      <div class="mockup-grid">
+
+        <div class="mockup-card">
+          <img src="a_high_detail_composite_layout_image_moodboard_o.png" alt="Heritage Sporting Collection luxury lodge hero environment">
+          <div class="mockup-content">
+            <h3>Luxury Sporting Lodge Atmosphere</h3>
+            <p>
+              Warm leather seating, dark walnut textures, stone fireplaces, curated grouped artwork, and layered sporting heritage styling designed for modern rustic lodge interiors.
+            </p>
+          </div>
+        </div>
+
+        <div class="mockup-card">
+          <img src="a_large_promotional_webpage_mockup_layout_collage.png" alt="Heritage Sporting Collection styled environment collage">
+          <div class="mockup-content">
+            <h3>Curated Designer Collection</h3>
+            <p>
+              Executive offices, lake houses, boutique hospitality suites, and gallery wall environments designed to help designers visualize the collection within real interior spaces.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  <div class="container">
+
+      <div class="featured-banner">
+        <img src="a_large_promotional_webpage_mockup_layout_collage.png" alt="Modern rustic sporting lodge artwork collection by Dan Sproul">
+
+        <div class="featured-overlay">
+          <div class="featured-overlay-content">
+            <div class="eyebrow">Featured Environment</div>
+            <h3>Designed To Feel Collected Over Time</h3>
+            <p>
+              The strongest sporting interiors feel layered, personal, and rooted in story. The Heritage Sporting Collection was designed to create atmosphere first — helping rooms feel warmer, richer, and more memorable.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="quote-section">
+    <div class="container">
+      <blockquote>
+        “Modern rustic interiors work best when the artwork feels authentic to the space — collected, timeless, and connected to the outdoors rather than simply decorative.”
+      </blockquote>
+
+      <span>Heritage Sporting Collection</span>
+    </div>
+  </section>
+
+  <section id="collection">
+    <div class="container">
+      <div class="eyebrow">Featured Artwork</div>
+      <h2>Selected Collection Highlights</h2>
+
+      <p class="section-intro">
+        Instead of overwhelming the space with dozens of options, the Heritage Sporting Collection is curated around a smaller number of visually cohesive statement pieces designed to work together within modern rustic interiors.
+      </p>
+
+      <div class="art-grid">
+
+        <a href="https://dansproul.com/featured/1885-hunter-rifle-patent-dan-sproul.html" class="art-card" target="_blank" rel="noopener">
+          <img src="1885-hunting-rifle-patent.jpg" alt="1885 hunter rifle patent mixed media sporting artwork by Dan Sproul">
+          <div class="art-info">
+            <h4>1885 Hunter Rifle Patent</h4>
+            <p>Vintage sporting firearm artwork for lodge and executive interiors.</p>
+          </div>
+        </a>
+
+        <a href="https://dansproul.com/featured/1925-hunting-horn-patent-dan-sproul.html" class="art-card" target="_blank" rel="noopener">
+          <img src="1925-hunting-horn-patent.jpg" alt="1925 hunting horn patent artwork by Dan Sproul">
+          <div class="art-info">
+            <h4>1925 Hunting Horn Patent</h4>
+            <p>Warm heritage artwork for rustic luxury and sporting lodge spaces.</p>
+          </div>
+        </a>
+
+        <a href="https://dansproul.com/featured/1925-hunting-knife-patent-dan-sproul.html" class="art-card" target="_blank" rel="noopener">
+          <img src="1925-hunting-knife-patent.jpg" alt="1925 hunting knife patent artwork by Dan Sproul">
+          <div class="art-info">
+            <h4>1925 Hunting Knife Patent</h4>
+            <p>Outdoor heritage patent artwork with warm vintage texture.</p>
+          </div>
+        </a>
+
+        <a href="https://dansproul.com/featured/1959-archery-hunting-arrow-patent-dan-sproul.html" class="art-card" target="_blank" rel="noopener">
+          <img src="1959-archery-hunting-arrow-patent.jpg" alt="1959 archery hunting arrow patent artwork by Dan Sproul">
+          <div class="art-info">
+            <h4>1959 Archery Arrow Patent</h4>
+            <p>Archery-inspired sporting artwork for cabins and outdoor interiors.</p>
+          </div>
+        </a>
+
+        
+
+        
+
+        
+
+        
+
+        <a href="https://dansproul.com/featured/1909-hunting-knife-patent-dan-sproul.html" class="art-card" target="_blank" rel="noopener">
+          <img src="1909-hunting-knife-patent.jpg" alt="1909 hunting knife patent artwork by Dan Sproul">
+          <div class="art-info">
+            <h4>1909 Hunting Knife Patent</h4>
+            <p>Classic knife patent artwork layered with wilderness styling.</p>
+          </div>
+        </a>
+
+        <a href="https://dansproul.com/featured/1951-duck-call-patent-dan-sproul.html" class="art-card" target="_blank" rel="noopener">
+          <img src="1951-duck-call-patent.jpg" alt="1951 duck call patent artwork by Dan Sproul">
+          <div class="art-info">
+            <h4>1951 Duck Call Patent</h4>
+            <p>Waterfowl heritage artwork for lodge, cabin, and lake house interiors.</p>
+          </div>
+        </a>
+
+        
+
+        <a href="https://dansproul.com/featured/1948-duck-decoy-patent-hunting-art-dan-sproul.html" class="art-card" target="_blank" rel="noopener">
+          <img src="1948-duck-decoy-patent-hunting-art.jpg" alt="1948 duck decoy hunting patent artwork by Dan Sproul">
+          <div class="art-info">
+            <h4>1948 Duck Decoy Patent</h4>
+            <p>Waterfowl hunting artwork with nostalgic sporting lodge character.</p>
+          </div>
+        </a>
+
+        <a href="https://dansproul.com/featured/1929-duck-hunter-decoy-patent-dan-sproul.html" class="art-card" target="_blank" rel="noopener">
+          <img src="1929-duck-hunter-decoy-patent.jpg" alt="1929 duck hunter decoy patent artwork by Dan Sproul">
+          <div class="art-info">
+            <h4>1929 Duck Hunter Decoy Patent</h4>
+            <p>Classic decoy-inspired artwork for waterfowl and lodge interiors.</p>
+          </div>
+        </a>
+
+        <a href="https://dansproul.com/featured/1919-hunting-rifle-and-deer-head-dan-sproul.html" class="art-card" target="_blank" rel="noopener">
+          <img src="1919-hunting-rifle-and-deer-head.jpg" alt="1919 hunting rifle and deer head artwork by Dan Sproul">
+          <div class="art-info">
+            <h4>1919 Hunting Rifle & Deer</h4>
+            <p>Mixed-media deer and sporting rifle artwork for heritage interiors.</p>
+          </div>
+        </a>
+
+        <a href="https://dansproul.com/featured/pheasant-hunting-shotgun-patent-dan-sproul.html" class="art-card" target="_blank" rel="noopener">
+          <img src="pheasant-hunting-shotgun-patent.jpg" alt="Pheasant hunting shotgun patent artwork by Dan Sproul">
+          <div class="art-info">
+            <h4>Pheasant Hunting Shotgun Patent</h4>
+            <p>Upland hunting artwork for sporting lodges and rustic hospitality.</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="eyebrow">Designed For</div>
+      <h2>Spaces That Fit The Collection</h2>
+
+      <div class="space-grid">
+
+        <div class="space-card">
+          <h3>Sporting Lodges</h3>
+          <p>Curated artwork for refined wilderness hospitality environments.</p>
+        </div>
+
+        <div class="space-card">
+          <h3>Lake Houses</h3>
+          <p>Warm mixed-media sporting artwork for relaxed natural interiors.</p>
+        </div>
+
+        <div class="space-card">
+          <h3>Executive Offices</h3>
+          <p>Masculine modern artwork with historical and industrial character.</p>
+        </div>
+
+        <div class="space-card">
+          <h3>Boutique Hospitality</h3>
+          <p>Statement artwork collections designed for upscale hospitality spaces.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="eyebrow">Collection Direction</div>
+      <h2>Recommended Expansion Strategy</h2>
+
+      <div class="space-grid">
+
+        <div class="space-card">
+          <h3>Waterfowl Series</h3>
+          <p>Duck calls, decoys, pheasant hunting, marsh scenes, and sporting lodge artwork grouped into a cohesive hospitality collection.</p>
+        </div>
+
+        <div class="space-card">
+          <h3>Wilderness Tools</h3>
+          <p>Knives, traps, camping patents, hunting stands, and vintage outdoor equipment styled for rustic modern interiors.</p>
+        </div>
+
+        <div class="space-card">
+          <h3>Sporting Heritage</h3>
+          <p>Deer, rifles, upland hunting, and nostalgic Americana artwork for masculine executive spaces and lodges.</p>
+        </div>
+
+        <div class="space-card">
+          <h3>Adventure Living</h3>
+          <p>RV campers, outdoor exploration, wilderness lifestyle themes, and travel-inspired sporting artwork.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="designer">
+    <div class="container">
+      <div class="eyebrow">Designer Access</div>
+      <h2>Curated Artwork For Interior Projects</h2>
+
+      <p>
+        High-resolution artwork licensing and print-ready formats available for lodges, hospitality interiors, executive offices, and rustic modern spaces.
+      </p>
+
+      <div class="btn-wrap" style="justify-content:center;">
+        <a href="/for-designers" class="btn primary">Request Recommendations</a>
+        <a href="/collections" class="btn">Explore More Collections</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="eyebrow">Pinterest & Designer Marketing</div>
+      <h2>Built To Be Shared Visually</h2>
+
+      <p class="section-intro">
+        The collection is intentionally structured for Pinterest, designer outreach, boutique hospitality presentations, and visual storytelling across modern rustic interior platforms.
+      </p>
+
+      <div class="mockup-grid">
+
+        <div class="mockup-card">
+          <img src="a_high_detail_composite_layout_image_moodboard_o.png" alt="Pinterest ready sporting lodge artwork vertical concepts">
+          <div class="mockup-content">
+            <h3>Pinterest-Ready Collection Assets</h3>
+            <p>
+              Vertical storytelling graphics, grouped gallery walls, wildlife-driven artwork, and lodge-inspired interiors designed for visual discovery and interior inspiration marketing.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      © Dan Sproul — Heritage Sporting Collection
+    </div>
+  </footer>
+
+</body>
+</html>
