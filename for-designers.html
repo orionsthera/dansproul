@@ -233,7 +233,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Fine Art Photography for Interior Designers | Dan Sproul | Lima, Ohio</title>
-<meta name="description" content="Dan Sproul offers museum-quality fine art photography prints for interior designers, architects, hotels, hospitals, and commercial spaces. Canvas, metal, acrylic, framed prints and digital licensing. Based in Lima, Ohio. Ships worldwide."/>
+<meta name="description" content="Designer-focused fine art photography collections for hospitality, healthcare, corporate, and residential interiors. Print fulfillment, custom sizing, mockup previews, trade support, and digital licensing by Dan Sproul."/>
 <meta name="keywords" content="fine art photography for interior designers, photography prints for hotels, art for hospitals, art for nursing homes, commercial photography prints, large format wall art, canvas prints for designers, metal prints commercial, photography licensing interior design, Dan Sproul photography, Lima Ohio fine art photographer, wall art for healthcare, hospitality art prints"/>
 <meta name="author" content="Dan Sproul"/>
 <meta name="robots" content="index, follow"/>
@@ -241,7 +241,7 @@
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://dsproul.com/for-designers.html"/>
 <meta property="og:title" content="Fine Art Photography for Interior Designers | Dan Sproul"/>
-<meta property="og:description" content="Museum-quality landscape and nature photography prints for commercial interiors, hospitality, healthcare, and residential design. Custom sizing, multiple formats, digital licensing available."/>
+<meta property="og:description" content="Curated fine art photography collections for commercial interiors, hospitality, healthcare, corporate, and residential design. Print fulfillment, custom sizing, and digital licensing available."/>
 <meta property="og:image" content="https://dsproul.com/valdez-glacier-lake-alaska-dan-sproul.jpg"/>
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -258,7 +258,11 @@
   --mid-brown:#2e2619;
   --muted:rgba(242,239,232,0.45);
   --border:rgba(181,146,74,.18);
+  --surface:#111009;
+  --surface-2:#0d0b09;
+  --charcoal:#080807;
 }
+
 html{scroll-behavior:smooth}
 body{background:var(--black);color:var(--off-white);font-family:'Jost',sans-serif;font-weight:300;letter-spacing:.04em;overflow-x:hidden}
 
@@ -464,6 +468,34 @@ footer a:hover{color:var(--accent)}
   .hero-ctas{flex-direction:column;align-items:center}
 }
 
+
+/* CURATED COLLECTIONS */
+.collection-section{background:#090806;border-top:1px solid rgba(181,146,74,.08)}
+.collection-intro{display:flex;align-items:flex-end;justify-content:space-between;gap:40px;margin-bottom:56px}
+.collection-intro p{font-size:.78rem;line-height:2;color:rgba(242,239,232,.55);max-width:560px}
+.collection-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:3px}
+.collection-card{position:relative;display:block;text-decoration:none;overflow:hidden;min-height:420px;background:#111009;border:1px solid rgba(181,146,74,.1)}
+.collection-card img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover;filter:brightness(.55) saturate(.85);transition:transform .9s cubic-bezier(.25,.46,.45,.94),filter .5s}
+.collection-card:hover img{transform:scale(1.06);filter:brightness(.72) saturate(1)}
+.collection-card::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(8,8,7,.96) 0%,rgba(8,8,7,.62) 48%,rgba(8,8,7,.12) 100%)}
+.collection-body{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:32px 26px}
+.collection-kicker{font-size:.48rem;letter-spacing:.34em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
+.collection-title{font-family:'Cormorant Garamond',serif;font-size:1.65rem;font-weight:300;line-height:1.1;color:var(--off-white);margin-bottom:12px}
+.collection-desc{font-size:.66rem;line-height:1.8;color:rgba(242,239,232,.58);margin-bottom:18px}
+.collection-link{font-size:.52rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent)}
+.space-section{background:#0d0b09;padding-top:84px;padding-bottom:84px}
+.space-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:2px;margin-top:44px}
+.space-card{background:#111009;padding:34px 24px;min-height:190px;border:1px solid rgba(181,146,74,.08);transition:background .3s,border-color .3s}
+.space-card:hover{background:#161209;border-color:var(--border)}
+.space-title{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:300;margin-bottom:12px;color:var(--off-white)}
+.space-desc{font-size:.64rem;line-height:1.85;color:var(--muted)}
+.procurement-strip{background:var(--dark-brown);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:34px 56px;display:grid;grid-template-columns:1.2fr repeat(3,1fr);gap:28px;align-items:center}
+.procurement-lead{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;line-height:1.2;color:var(--off-white)}
+.procurement-item{font-size:.62rem;line-height:1.8;color:rgba(242,239,232,.55)}
+.procurement-item strong{display:block;font-size:.5rem;letter-spacing:.28em;text-transform:uppercase;color:var(--accent);margin-bottom:6px;font-family:'Jost',sans-serif;font-weight:300}
+@media(max-width:1000px){.collection-grid{grid-template-columns:1fr 1fr}.space-grid{grid-template-columns:1fr 1fr}.procurement-strip{grid-template-columns:1fr 1fr}.collection-intro{display:block}.collection-intro p{margin-top:20px}}
+@media(max-width:580px){.collection-grid,.space-grid,.procurement-strip{grid-template-columns:1fr}.collection-card{min-height:360px}.space-section{padding-top:64px;padding-bottom:64px}}
+
 /* PRICING ANCHOR */
 .pricing-anchor{background:var(--surface-2);border:1px solid var(--border);border-left:3px solid var(--accent);padding:28px 36px;margin-bottom:0}
 .pricing-anchor-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
@@ -491,7 +523,7 @@ footer a:hover{color:var(--accent)}
 .tf-field{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
 .tf-field label{font-size:.52rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
 .tf-field input,.tf-field select,.tf-field textarea{background:#080807;border:1px solid rgba(181,146,74,.2);color:var(--off-white);padding:11px 14px;font-family:'Jost',sans-serif;font-size:.72rem;letter-spacing:.04em;outline:none;transition:border-color .3s;width:100%}
-.tf-field input:focus,.tf-field select,.tf-field textarea:focus{border-color:var(--accent)}
+.tf-field input:focus,.tf-field select:focus,.tf-field textarea:focus{border-color:var(--accent)}
 .tf-field select{appearance:none;cursor:pointer}
 .tf-field textarea{resize:vertical;min-height:90px}
 .tf-submit{width:100%;background:var(--accent);color:var(--charcoal);border:none;padding:14px;font-family:'Jost',sans-serif;font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;cursor:pointer;transition:background .3s;margin-top:6px}
@@ -510,8 +542,8 @@ footer a:hover{color:var(--accent)}
 <div class="mobile-nav" id="mobileNav">
   <button class="close-btn" id="mobileClose" aria-label="Close menu">✕</button>
   <a href="/">Home</a>
-  <a href="/#collections">Collections</a>
-  <a href="/#gallery">Gallery</a>
+  <a href="#curated-collections">Collections</a>
+  <a href="#spaces">By Space</a>
   <a href="in-your-space.html">In Your Space</a>
   <a href="/#contact">Contact</a>
   <a href="https://dansproul.com/shop" target="_blank" style="color:var(--accent)">Shop ↗</a>
@@ -525,8 +557,8 @@ footer a:hover{color:var(--accent)}
   </a>
   <ul class="nav-links">
     <li><a href="/">Home</a></li>
-    <li><a href="/#collections">Collections</a></li>
-    <li><a href="/#gallery">Gallery</a></li>
+    <li><a href="#curated-collections">Collections</a></li>
+    <li><a href="#spaces">By Space</a></li>
     <li><a href="in-your-space.html">In Your Space</a></li>
     <li><a href="/#contact">Contact</a></li>
     <li><a href="https://dansproul.com/shop" target="_blank" class="nav-shop">Shop ↗</a></li>
@@ -541,11 +573,11 @@ footer a:hover{color:var(--accent)}
   <div class="hero-bg"></div>
   <div class="hero-content">
     <p class="hero-eyebrow">For Interior Designers &amp; Commercial Clients</p>
-    <h1 class="hero-title">Art That <em>Transforms</em><br/>Any Space</h1>
-    <p class="hero-sub">Museum-quality fine art photography for hospitality, healthcare, corporate, and residential interiors. Custom sizing, multiple formats, and digital licensing available.</p>
+    <h1 class="hero-title">Curated Fine Art<br/><em>for Interiors</em></h1>
+    <p class="hero-sub">Designer-focused artwork collections for hospitality, healthcare, corporate, and residential projects. Print fulfillment, custom sizing, mockup previews, and licensing support available.</p>
     <div class="hero-ctas">
       <a href="#contact" class="btn btn-solid">Request a Consultation</a>
-      <a href="#formats" class="btn btn-out">View Print Formats</a>
+      <a href="#curated-collections" class="btn btn-out">Browse Collections</a>
     </div>
   </div>
 </div>
@@ -558,6 +590,77 @@ footer a:hover{color:var(--accent)}
   <span class="trust-item">Corporate Offices</span>
   <span class="trust-item">Residential Design</span>
   <span class="trust-item">Ships Worldwide</span>
+</div>
+
+<!-- CURATED COLLECTIONS -->
+<section class="collection-section section" id="curated-collections">
+  <div class="collection-intro">
+    <div>
+      <p class="section-label">Curated Collections</p>
+      <h2 class="section-title">Artwork Organized by <em>Design Intent</em></h2>
+    </div>
+    <p>Browse by mood, finish, and project type rather than sorting through a general image archive. These collection paths are designed to help interiors teams quickly find cohesive artwork for specific rooms, palettes, and commercial environments.</p>
+  </div>
+  <div class="collection-grid">
+    <a class="collection-card" href="https://dansproul.com/shop/black+and+white" target="_blank">
+      <img src="corporate office waiting room framed black and white landscapes.jpg" alt="Black and white landscape photography collection for modern interiors by Dan Sproul"/>
+      <div class="collection-body">
+        <p class="collection-kicker">Monochrome / Coastal / Executive</p>
+        <h3 class="collection-title">Black &amp; White Collection</h3>
+        <p class="collection-desc">Monochrome landscapes, coastal scenes, and architectural nature studies for modern offices, luxury residential spaces, and quiet hospitality interiors.</p>
+        <span class="collection-link">Explore Collection →</span>
+      </div>
+    </a>
+    <a class="collection-card" href="https://dansproul.com/shop/foggy+lake" target="_blank">
+      <img src="hotel bedroom framed art foggy lake canada dan sproul.jpg" alt="Calm atmospheric landscape photography for hospitality and wellness interiors by Dan Sproul"/>
+      <div class="collection-body">
+        <p class="collection-kicker">Calm / Wellness / Neutral</p>
+        <h3 class="collection-title">Calm Atmospheric Landscapes</h3>
+        <p class="collection-desc">Soft water, fog, forests, and muted natural scenes curated for healthcare, wellness, guest rooms, bedrooms, and restorative environments.</p>
+        <span class="collection-link">Explore Collection →</span>
+      </div>
+    </a>
+    <a class="collection-card" href="https://dansproul.com/shop/patent" target="_blank">
+      <img src="black and white mountain scenes framed dan sproul.jpg" alt="Industrial aviation and patent inspired artwork for corporate interiors by Dan Sproul"/>
+      <div class="collection-body">
+        <p class="collection-kicker">Industrial / Office / Technical</p>
+        <h3 class="collection-title">Industrial &amp; Aviation</h3>
+        <p class="collection-desc">Patent artwork, aviation blueprints, engineering-inspired pieces, and technical compositions for executive offices, lounges, and industrial interiors.</p>
+        <span class="collection-link">Explore Collection →</span>
+      </div>
+    </a>
+    <a class="collection-card" href="https://dansproul.com/shop/waterfall" target="_blank">
+      <img src="Waterfall_Series_Hospitality_Concept_DanSproul.jpg" alt="Dramatic wilderness and waterfall artwork collection for hospitality interiors by Dan Sproul"/>
+      <div class="collection-body">
+        <p class="collection-kicker">Statement / Nature / Large Scale</p>
+        <h3 class="collection-title">Dramatic Wilderness</h3>
+        <p class="collection-desc">Waterfalls, mountains, Alaska landscapes, and bold natural scenes suited for lobbies, corridors, and large-scale statement walls.</p>
+        <span class="collection-link">Explore Collection →</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- SHOP BY SPACE -->
+<section class="space-section section" id="spaces">
+  <p class="section-label">Shop by Space</p>
+  <h2 class="section-title">Artwork Paths for <em>Real Projects</em></h2>
+  <p style="font-size:.78rem;line-height:2;color:rgba(242,239,232,.5);max-width:620px;margin-bottom:0">Each project has a different visual job to do. These pathways help match artwork to the way designers actually source: by room function, mood, scale, and installation needs.</p>
+  <div class="space-grid">
+    <div class="space-card"><h3 class="space-title">Hospitality</h3><p class="space-desc">Guest rooms, corridors, lobby statements, restaurants, spas, and multi-piece property programs.</p></div>
+    <div class="space-card"><h3 class="space-title">Corporate Offices</h3><p class="space-desc">Reception areas, executive offices, conference rooms, waiting rooms, and branded interior environments.</p></div>
+    <div class="space-card"><h3 class="space-title">Healthcare</h3><p class="space-desc">Calming nature imagery for patient rooms, waiting areas, senior living, and wellness-focused interiors.</p></div>
+    <div class="space-card"><h3 class="space-title">Residential</h3><p class="space-desc">Living rooms, bedrooms, entryways, dining areas, model homes, and staging projects.</p></div>
+    <div class="space-card"><h3 class="space-title">Large Scale</h3><p class="space-desc">Oversized prints, diptychs, triptychs, and custom-sized artwork for feature walls and installations.</p></div>
+  </div>
+</section>
+
+<!-- PROCUREMENT STRIP -->
+<div class="procurement-strip">
+  <p class="procurement-lead">Flexible sourcing for designers, from finished prints to licensed files.</p>
+  <p class="procurement-item"><strong>Print Fulfillment</strong>Canvas, metal, acrylic, fine art paper, and framed prints produced through professional fine art labs.</p>
+  <p class="procurement-item"><strong>Digital Licensing</strong>Print-ready files available for designers who prefer local production, custom vendors, or multi-site programs.</p>
+  <p class="procurement-item"><strong>Project Support</strong>Curated recommendations, mockup previews, custom sizing, and trade pricing for qualified design professionals.</p>
 </div>
 
 <!-- INTRO -->
@@ -579,7 +682,7 @@ footer a:hover{color:var(--accent)}
 
 
 <!-- PRICING ANCHOR — removes friction for designers evaluating cost -->
-<div class="section" style="padding-top:0;padding-bottom:0;background:var(--charcoal)">
+<div class="section" style="padding-top:0;padding-bottom:0;background:var(--black)">
   <div class="pricing-anchor">
     <div class="pricing-anchor-grid">
       <div class="pa-item">
@@ -611,9 +714,9 @@ footer a:hover{color:var(--accent)}
 
 <!-- PLACEMENT GALLERY -->
 <section class="placement-section section" id="placements">
-  <p class="section-label">Seen In</p>
-  <h2 class="section-title">Art for Every <em>Environment</em></h2>
-  <p style="font-size:.78rem;line-height:2;color:rgba(242,239,232,.5);max-width:580px;margin-bottom:48px">From quiet hotel corridors to dramatic lobby walls — fine art photography transforms commercial and residential spaces. Click any image to enlarge.</p>
+  <p class="section-label">Installation Mockups</p>
+  <h2 class="section-title">See the Work <em>In Context</em></h2>
+  <p style="font-size:.78rem;line-height:2;color:rgba(242,239,232,.5);max-width:580px;margin-bottom:48px">Selected mockups showing how large-format photography can work across hospitality, corporate, healthcare, and residential interiors. Click any image to enlarge.</p>
 
   <!-- ROW 1: Waterfall triptych spans full width — most impressive installation -->
   <div style="margin-bottom:3px">
@@ -1019,7 +1122,7 @@ footer a:hover{color:var(--accent)}
           <label for="tf-project">Tell me about a current or upcoming project (optional)</label>
           <textarea id="tf-project" name="project" placeholder="e.g. We're furnishing a 24-room boutique hotel in Columbus and need artwork for guest rooms and the lobby…"></textarea>
         </div>
-        <<button type="submit" class="tf-submit">">Submit Application →</button>
+        <button type="submit" class="tf-submit">Submit Application →</button>
         <p class="tf-privacy">Your information is never shared. Response within one business day.</p>
           </form>
       </div>
