@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -229,7 +230,6 @@
   ]
 }
 </script>
-<head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Fine Art Photography for Interior Designers | Dan Sproul | Lima, Ohio</title>
@@ -536,6 +536,128 @@ footer a:hover{color:var(--accent)}
 @media(max-width:900px){.heritage-feature{padding:70px 24px}.heritage-feature-grid{grid-template-columns:1fr;gap:34px}.heritage-support-grid{grid-template-columns:1fr}.heritage-apps{grid-template-columns:1fr 1fr}}
 @media(max-width:580px){.heritage-apps{grid-template-columns:1fr}}
 
+
+
+/* CURATED DESIGNER COLLECTIONS - fixed unique layout */
+.container{width:min(92%,1180px);margin:0 auto;}
+.fd-designer-collections{
+  background:linear-gradient(to bottom,#080807 0%,#0d0b09 55%,#080807 100%);
+  padding:110px 56px;
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+}
+.fd-designer-collections .fd-section-heading{
+  max-width:760px;
+  margin:0 auto 60px;
+  text-align:center;
+}
+.fd-designer-collections .fd-section-heading .eyebrow{
+  display:block;
+  font-size:.56rem;
+  letter-spacing:.38em;
+  text-transform:uppercase;
+  color:var(--accent);
+  margin-bottom:18px;
+}
+.fd-designer-collections .fd-section-heading h2{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(2.4rem,4.8vw,4.2rem);
+  line-height:1.05;
+  font-weight:300;
+  color:var(--off-white);
+  margin-bottom:18px;
+}
+.fd-designer-collections .fd-section-heading p{
+  font-size:.78rem;
+  line-height:2;
+  letter-spacing:.08em;
+  color:rgba(242,239,232,.56);
+  max-width:720px;
+  margin:0 auto;
+}
+.fd-collection-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:3px;
+  max-width:1180px;
+  margin:0 auto;
+}
+.fd-collection-card{
+  display:flex;
+  flex-direction:column;
+  background:#0e0c09;
+  border:1px solid rgba(181,146,74,.13);
+  text-decoration:none;
+  color:var(--off-white);
+  overflow:hidden;
+  min-height:100%;
+  transition:transform .35s ease,border-color .35s ease,background .35s ease;
+}
+.fd-collection-card:hover{
+  transform:translateY(-5px);
+  border-color:rgba(181,146,74,.45);
+  background:#15110d;
+}
+.fd-collection-image{
+  aspect-ratio:16/10;
+  overflow:hidden;
+  background:#14100c;
+}
+.fd-collection-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  filter:brightness(.86) saturate(.9);
+  transition:transform .7s cubic-bezier(.25,.46,.45,.94),filter .4s ease;
+}
+.fd-collection-card:hover .fd-collection-image img{
+  transform:scale(1.035);
+  filter:brightness(.98) saturate(1);
+}
+.fd-collection-content{
+  padding:30px 28px 32px;
+  display:flex;
+  flex-direction:column;
+  flex:1;
+}
+.fd-collection-type{
+  display:block;
+  color:var(--accent);
+  font-size:.52rem;
+  letter-spacing:.28em;
+  text-transform:uppercase;
+  margin-bottom:16px;
+}
+.fd-collection-content h3{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(1.7rem,2.8vw,2.35rem);
+  font-weight:300;
+  line-height:1.08;
+  color:var(--off-white);
+  margin-bottom:14px;
+}
+.fd-collection-content p{
+  font-size:.72rem;
+  line-height:1.95;
+  color:rgba(242,239,232,.58);
+  margin-bottom:24px;
+  flex:1;
+}
+.fd-collection-link{
+  color:var(--accent);
+  font-size:.56rem;
+  letter-spacing:.24em;
+  text-transform:uppercase;
+}
+@media(max-width:900px){
+  .fd-designer-collections{padding:76px 24px;}
+  .container{width:100%;}
+  .fd-collection-grid{grid-template-columns:1fr;gap:18px;}
+  .fd-designer-collections .fd-section-heading{text-align:left;margin-bottom:38px;}
+  .fd-designer-collections .fd-section-heading p{margin:0;}
+}
+
 </style>
 </head>
 <body>
@@ -739,50 +861,50 @@ footer a:hover{color:var(--accent)}
 </section>
 
 
-<section class="designer-collections">
+<section class="fd-designer-collections" id="designer-collections">
   <div class="container">
 
-    <div class="section-heading">
+    <div class="fd-section-heading">
       <span class="eyebrow">Curated Collections</span>
       <h2>Artwork Collections Built for Interior Projects</h2>
       <p>Curated fine art collections designed to help interior designers source cohesive artwork for residential, hospitality, wellness, and commercial spaces.</p>
     </div>
 
-    <div class="collection-grid">
+    <div class="fd-collection-grid">
 
-      <a class="collection-card" href="/heritage-sporting.html">
-        <div class="collection-image">
-          <img src="heritage-sporting-preview.jpg" alt="Heritage Sporting Collection">
+      <a class="fd-collection-card" href="/heritage-sporting.html">
+        <div class="fd-collection-image">
+          <img src="heritage-sporting-preview.jpg" alt="Heritage Sporting Collection rustic lodge sporting patent artwork by Dan Sproul">
         </div>
-        <div class="collection-content">
-          <span class="collection-type">Modern Rustic Interiors</span>
+        <div class="fd-collection-content">
+          <span class="fd-collection-type">Modern Rustic Interiors</span>
           <h3>Heritage Sporting</h3>
           <p>Vintage sporting patent artwork and rustic lodge-inspired pieces designed for masculine offices, mountain homes, clubhouses, whiskey lounges, and upscale sporting interiors.</p>
-          <span class="collection-link">Explore Collection →</span>
+          <span class="fd-collection-link">Explore Collection →</span>
         </div>
       </a>
 
-      <a class="collection-card" href="/quiet-earth.html">
-        <div class="collection-image">
-          <img src="quiet-earth-preview.jpg" alt="Quiet Earth Collection">
+      <a class="fd-collection-card" href="/quiet-earth.html">
+        <div class="fd-collection-image">
+          <img src="quiet-earth-preview.jpg" alt="Quiet Earth atmospheric landscape photography collection by Dan Sproul">
         </div>
-        <div class="collection-content">
-          <span class="collection-type">Wellness & Hospitality</span>
+        <div class="fd-collection-content">
+          <span class="fd-collection-type">Wellness &amp; Hospitality</span>
           <h3>Quiet Earth</h3>
           <p>Atmospheric landscapes, forests, lakes, and mountain imagery created for calming interiors, boutique hospitality spaces, wellness environments, and refined modern homes.</p>
-          <span class="collection-link">Explore Collection →</span>
+          <span class="fd-collection-link">Explore Collection →</span>
         </div>
       </a>
 
-      <a class="collection-card" href="/coastal-atmosphere.html">
-        <div class="collection-image">
-          <img src="coastal-atmosphere-preview.jpg" alt="Coastal Atmosphere Collection">
+      <a class="fd-collection-card" href="/coastal-atmosphere.html">
+        <div class="fd-collection-image">
+          <img src="coastal-atmosphere-preview.jpg" alt="Coastal Atmosphere Oregon Coast fine art photography collection by Dan Sproul">
         </div>
-        <div class="collection-content">
-          <span class="collection-type">Quiet Luxury Coastal</span>
+        <div class="fd-collection-content">
+          <span class="fd-collection-type">Quiet Luxury Coastal</span>
           <h3>Coastal Atmosphere</h3>
           <p>Moody Oregon Coast photography featuring sea stacks, fog, monochrome shoreline studies, and atmospheric coastal imagery for boutique hospitality and elevated coastal interiors.</p>
-          <span class="collection-link">Explore Collection →</span>
+          <span class="fd-collection-link">Explore Collection →</span>
         </div>
       </a>
 
