@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coastal Atmosphere Collection | Oregon Coast Wall Art | Dan Sproul</title>
+  <meta name="description" content="Coastal Atmosphere Collection by Dan Sproul: moody Oregon Coast photography, sea stacks, fog, black and white coastal art, and quiet luxury coastal wall art for interiors."/>
+  <style>
+    :root {
+      --cream:#f4f1ec;
+      --paper:#fbf9f5;
+      --stone:#e2ddd5;
+      --charcoal:#1f2526;
+      --muted:#6f7471;
+      --blue:#52656f;
+      --line:rgba(31,37,38,.13);
+      --max:1320px;
+    }
+
+    *{margin:0;padding:0;box-sizing:border-box}
+
+    body {
+      background:var(--cream);
+      color:var(--charcoal);
+      font-family:Georgia,serif;
+      line-height:1.7;
+      -webkit-font-smoothing:antialiased;
+    }
+
+    img{width:100%;display:block}
+    a{color:inherit;text-decoration:none}
+    .container{width:min(91%,var(--max));margin:auto}
+    section{padding:84px 0;border-top:1px solid var(--line)}
+
+    .site-header {
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      z-index:20;
+      padding:18px 32px;
+      background:rgba(0,0,0,.72);
+      border-bottom:1px solid rgba(255,255,255,.08);
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:28px;
+    }
+
+    .brand {
+      line-height:1;
+      letter-spacing:.24em;
+      text-transform:uppercase;
+      font-size:1.05rem;
+      color:#fff;
+    }
+
+    .brand span {
+      display:block;
+      margin-top:8px;
+      font-size:.48rem;
+      color:#b99056;
+      letter-spacing:.28em;
+    }
+
+    .site-nav {
+      display:flex;
+      align-items:center;
+      gap:30px;
+      font-size:.62rem;
+      letter-spacing:.22em;
+      text-transform:uppercase;
+      color:rgba(255,255,255,.86);
+    }
+
+    .site-nav a:hover{color:#d2b98c}
+    .shop-link{border:1px solid rgba(210,185,140,.42);padding:9px 17px;color:#d2b98c}
+
+    .eyebrow {
+      font-size:.72rem;
+      letter-spacing:.24em;
+      text-transform:uppercase;
+      color:var(--blue);
+      margin-bottom:18px;
+    }
+
+    h1 {
+      font-size:clamp(3.2rem,6.8vw,7.1rem);
+      line-height:.92;
+      font-weight:400;
+      letter-spacing:-.035em;
+      margin-bottom:24px;
+    }
+
+    h2 {
+      font-size:clamp(2rem,4vw,3.55rem);
+      line-height:1.05;
+      font-weight:400;
+      margin-bottom:24px;
+    }
+
+    h3{font-size:1.08rem;font-weight:400;margin-bottom:8px}
+    p{max-width:760px;color:var(--muted)}
+
+    .hero {
+      min-height:90vh;
+      display:flex;
+      align-items:center;
+      position:relative;
+      overflow:hidden;
+      border-top:none;
+      color:white;
+      background:
+        linear-gradient(to right,rgba(0,0,0,.62),rgba(0,0,0,.16),rgba(0,0,0,.38)),
+        url('coastal-proposal-rock.jpg') center/cover no-repeat;
+    }
+
+    .hero-content {
+      position:relative;
+      z-index:2;
+      max-width:720px;
+      padding-top:76px;
+    }
+
+    .hero .eyebrow{color:rgba(255,255,255,.82)}
+    .hero p{font-size:1.14rem;color:rgba(255,255,255,.86);margin-bottom:34px}
+
+    .btn-wrap{display:flex;gap:16px;flex-wrap:wrap}
+
+    .btn {
+      display:inline-block;
+      padding:14px 27px;
+      border:1px solid var(--charcoal);
+      letter-spacing:.13em;
+      text-transform:uppercase;
+      font-size:.7rem;
+      transition:.28s ease;
+    }
+
+    .hero .btn{border-color:rgba(255,255,255,.72);color:white;background:rgba(255,255,255,.08)}
+    .btn.primary{background:var(--charcoal);color:white;border-color:var(--charcoal)}
+    .hero .btn.primary{background:rgba(255,255,255,.92);color:#1f2526;border-color:rgba(255,255,255,.92)}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(0,0,0,.18)}
+
+    .intro {
+      background:var(--paper);
+    }
+
+    .intro-grid {
+      display:grid;
+      grid-template-columns:.88fr 1.12fr;
+      gap:70px;
+      align-items:center;
+    }
+
+    .intro p {
+      font-size:1.03rem;
+      line-height:1.9;
+      margin-bottom:18px;
+    }
+
+    .mockup-feature {
+      border-radius:12px;
+      overflow:hidden;
+      box-shadow:0 28px 80px rgba(31,37,38,.16);
+      border:1px solid var(--line);
+      background:#fff;
+    }
+
+    .mockup-feature img {
+      aspect-ratio:16/10;
+      object-fit:cover;
+      object-position:top center;
+    }
+
+    .mockup-section {
+      background:linear-gradient(to bottom,#ebe6de,#f4f1ec);
+      padding-top:70px;
+    }
+
+    .mockup-board {
+      margin-top:46px;
+      border:1px solid var(--line);
+      box-shadow:0 26px 80px rgba(31,37,38,.14);
+      background:#fff;
+    }
+
+    .mockup-board img {
+      height:auto;
+    }
+
+    .collection-note {
+      text-align:center;
+      max-width:780px;
+      margin:0 auto 46px;
+    }
+
+    .collection-note p {
+      margin:0 auto;
+    }
+
+    .art-grid {
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:34px;
+      margin-top:42px;
+    }
+
+    .art-card {
+      background:var(--paper);
+      border:1px solid var(--line);
+      padding:12px;
+      transition:.3s ease;
+    }
+
+    .art-card:hover {
+      transform:translateY(-5px);
+      box-shadow:0 20px 45px rgba(31,37,38,.12);
+    }
+
+    .art-card img {
+      aspect-ratio:4/3;
+      object-fit:cover;
+      background:#ddd;
+    }
+
+    .art-meta {
+      padding:16px 4px 4px;
+    }
+
+    .art-meta p {
+      font-size:.9rem;
+      margin-bottom:12px;
+    }
+
+    .art-meta span {
+      font-size:.68rem;
+      letter-spacing:.18em;
+      text-transform:uppercase;
+      color:var(--blue);
+      border-bottom:1px solid rgba(82,101,111,.45);
+      padding-bottom:3px;
+    }
+
+    .spaces {
+      background:#e5dfd6;
+    }
+
+    .space-grid {
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:20px;
+      margin-top:42px;
+    }
+
+    .space-card {
+      background:rgba(255,255,255,.38);
+      border:1px solid var(--line);
+      padding:28px;
+      border-radius:12px;
+    }
+
+    .space-card p{font-size:.92rem}
+
+    .cta {
+      text-align:center;
+      background:linear-gradient(to bottom,#f4f1ec,#e3ddd4);
+    }
+
+    .cta p{margin:0 auto 34px}
+
+    footer {
+      padding:45px 0;
+      border-top:1px solid var(--line);
+      color:#7c817e;
+      font-size:.9rem;
+    }
+
+    @media(max-width:1000px) {
+      .site-header {
+        position:relative;
+        background:#050505;
+        flex-direction:column;
+        align-items:center;
+        padding:22px 18px;
+      }
+
+      .site-nav {
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:14px 20px;
+        font-size:.56rem;
+      }
+
+      .intro-grid,.art-grid,.space-grid {
+        grid-template-columns:1fr;
+      }
+
+      .hero{min-height:76vh}
+      section{padding:70px 0}
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <a href="/" class="brand">Dan Sproul<span>Fine Art Photography</span></a>
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="/">Home</a>
+    <a href="/collections.html">Collections</a>
+    <a href="/gallery.html">Gallery</a>
+    <a href="/in-your-space.html">In Your Space</a>
+    <a href="/contact.html">Contact</a>
+    <a href="https://dansproul.com" class="shop-link">Shop ↗</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="container hero-content">
+    <div class="eyebrow">Pacific Northwest Collection</div>
+    <h1>Coastal Atmosphere</h1>
+    <p>Moody Oregon Coast photography, sea stacks, fog, and quiet shoreline imagery for refined coastal interiors.</p>
+    <div class="btn-wrap">
+      <a href="#collection" class="btn primary">View The Collection</a>
+      <a href="/for-designers.html" class="btn">For Designers</a>
+    </div>
+  </div>
+</section>
+
+<section class="intro">
+  <div class="container intro-grid">
+    <div>
+      <div class="eyebrow">Atmospheric Coastal Interiors</div>
+      <h2>Modern coastal without the cliché.</h2>
+      <p>This collection is built around fog, sea stacks, black and white shoreline studies, soft neutral palettes, and the quiet drama of the Pacific Northwest coast.</p>
+      <p>Designed for interiors where coastal artwork should feel refined, calming, and architectural rather than nautical or decorative.</p>
+      <a href="#collection" class="btn">Browse Artwork</a>
+    </div>
+    <div class="mockup-feature">
+      <a href="coastal-atmosphere-mockups.jpg" target="_blank" rel="noopener">
+        <img src="coastal-atmosphere-mockups.jpg" alt="Coastal Atmosphere framed artwork mockups in refined interiors">
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="mockup-section">
+  <div class="container">
+    <div class="collection-note">
+      <div class="eyebrow">Interior Applications</div>
+      <h2>Artwork for quiet coastal spaces.</h2>
+      <p>Oversized framed prints, muted shoreline palettes, and monochrome coastal work for homes, hospitality, wellness interiors, and refined vacation properties.</p>
+    </div>
+    <div class="mockup-board">
+      <a href="coastal-atmosphere-mockups.jpg" target="_blank" rel="noopener">
+        <img src="coastal-atmosphere-mockups.jpg" alt="Coastal Atmosphere collection mockups and selected artwork">
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="collection">
+  <div class="container">
+    <div class="collection-note">
+      <div class="eyebrow">Click Any Image To View Print Options</div>
+      <h2>Selected Coastal Artwork</h2>
+      <p>A curated set of Oregon Coast wall art selected for atmosphere, interior compatibility, and quiet coastal sophistication.</p>
+    </div>
+
+    <div class="art-grid">
+
+        <a class="art-card" href="https://dansproul.com/featured/proposal-rock-moody-oregon-coast-dan-sproul.html" target="_blank" rel="noopener">
+          <img src="coastal-proposal-rock.jpg" alt="Proposal Rock coastal wall art by Dan Sproul">
+          <div class="art-meta">
+            <h3>Proposal Rock</h3>
+            <p>Moody Oregon coast atmosphere with fog, cliffs, and quiet shoreline drama.</p>
+            <span>View print options</span>
+          </div>
+        </a>
+
+        <a class="art-card" href="https://dansproul.com/featured/dreamy-cannon-beach-seastacks-from-ecola-state-park-dan-sproul.html" target="_blank" rel="noopener">
+          <img src="coastal-ecola-cannon-beach.jpg" alt="Ecola State Park coastal wall art by Dan Sproul">
+          <div class="art-meta">
+            <h3>Ecola State Park</h3>
+            <p>Soft coastal light, sea stacks, and layered Pacific Northwest atmosphere.</p>
+            <span>View print options</span>
+          </div>
+        </a>
+
+        <a class="art-card" href="https://dansproul.com/featured/cannon-beach-oregon-sea-stacks-black-and-white-coastal-rock-formations-dan-sproul.html" target="_blank" rel="noopener">
+          <img src="coastal-seastacks-black-white.jpg" alt="Cannon Beach Sea Stacks coastal wall art by Dan Sproul">
+          <div class="art-meta">
+            <h3>Cannon Beach Sea Stacks</h3>
+            <p>Minimal black and white sea stack reflection for refined interiors.</p>
+            <span>View print options</span>
+          </div>
+        </a>
+
+        <a class="art-card" href="https://dansproul.com/featured/oregon-coast-seastack-black-and-white-reflection-dan-sproul.html" target="_blank" rel="noopener">
+          <img src="coastal-oceanside-monochrome.jpg" alt="Misty Coast coastal wall art by Dan Sproul">
+          <div class="art-meta">
+            <h3>Misty Coast</h3>
+            <p>Dark coastal rocks, moving surf, and atmospheric monochrome texture.</p>
+            <span>View print options</span>
+          </div>
+        </a>
+
+        <a class="art-card" href="https://dansproul.com/featured/cape-perpetua-oregon-coast-black-and-white-foggy-cliff-seascape-dan-sproul.html" target="_blank" rel="noopener">
+          <img src="coastal-cape-perpetua-black-white.jpg" alt="Cape Perpetua coastal wall art by Dan Sproul">
+          <div class="art-meta">
+            <h3>Cape Perpetua</h3>
+            <p>Foggy cliffside seascape with forest, surf, and quiet coastal intensity.</p>
+            <span>View print options</span>
+          </div>
+        </a>
+
+        <a class="art-card" href="https://dansproul.com/featured/heceta-head-lighthouse-oregon-coast-black-and-white-cliffside-seascape-dan-sproul.html" target="_blank" rel="noopener">
+          <img src="coastal-heceta-lighthouse.jpg" alt="Heceta Head Lighthouse coastal wall art by Dan Sproul">
+          <div class="art-meta">
+            <h3>Heceta Head Lighthouse</h3>
+            <p>Architectural coastal landmark rendered in timeless black and white.</p>
+            <span>View print options</span>
+          </div>
+        </a>
+
+        <a class="art-card" href="https://dansproul.com/featured/yaquina-head-lighthouse-over-cobbled-shore-oregon-coast-seascape-dan-sproul.html" target="_blank" rel="noopener">
+          <img src="coastal-yaquina-lighthouse.jpg" alt="Yaquina Head Lighthouse coastal wall art by Dan Sproul">
+          <div class="art-meta">
+            <h3>Yaquina Head Lighthouse</h3>
+            <p>Textured shoreline and lighthouse form with strong coastal contrast.</p>
+            <span>View print options</span>
+          </div>
+        </a>
+
+        <a class="art-card" href="https://dansproul.com/featured/bandon-beach-sea-stacks-at-sunset-oregon-coast-dan-sproul.html" target="_blank" rel="noopener">
+          <img src="coastal-bandon-sunset.jpg" alt="Bandon Beach Sunset coastal wall art by Dan Sproul">
+          <div class="art-meta">
+            <h3>Bandon Beach Sunset</h3>
+            <p>Warm sea stacks and reflective water for softer coastal spaces.</p>
+            <span>View print options</span>
+          </div>
+        </a>
+
+        <a class="art-card" href="https://dansproul.com/featured/cannon-beach-sea-stack-sunset-dan-sproul.html" target="_blank" rel="noopener">
+          <img src="coastal-cannon-beach-sunset.jpg" alt="Cannon Beach Sunset coastal wall art by Dan Sproul">
+          <div class="art-meta">
+            <h3>Cannon Beach Sunset</h3>
+            <p>Golden coastal reflection with sea stack drama and warm shoreline light.</p>
+            <span>View print options</span>
+          </div>
+        </a>
+    </div>
+  </div>
+</section>
+
+<section class="spaces">
+  <div class="container">
+    <div class="eyebrow">Designed For</div>
+    <h2>Spaces that fit the collection.</h2>
+
+    <div class="space-grid">
+      <div class="space-card">
+        <h3>Quiet Luxury Homes</h3>
+        <p>Muted coastal artwork for refined living rooms, bedrooms, and feature walls.</p>
+      </div>
+
+      <div class="space-card">
+        <h3>Wellness Interiors</h3>
+        <p>Fog, soft water, and low-contrast imagery for calming environments.</p>
+      </div>
+
+      <div class="space-card">
+        <h3>Boutique Hospitality</h3>
+        <p>Atmospheric Pacific Northwest artwork for guest rooms, lounges, and coastal properties.</p>
+      </div>
+
+      <div class="space-card">
+        <h3>Modern Coastal Design</h3>
+        <p>Sea stacks and shoreline forms without the obvious beach-house clichés.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <div class="eyebrow">Coastal Atmosphere Collection</div>
+    <h2>Curated Oregon Coast artwork for interiors.</h2>
+    <p>Available as fine art prints, framed pieces, canvas, and designer-ready artwork recommendations for interior projects.</p>
+    <div class="btn-wrap" style="justify-content:center;">
+      <a href="#collection" class="btn primary">View Artwork</a>
+      <a href="/for-designers.html" class="btn">Request Recommendations</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">© Dan Sproul — Coastal Atmosphere Collection</div>
+</footer>
+
+</body>
+</html>
