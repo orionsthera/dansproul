@@ -128,8 +128,20 @@
     .cta p{margin:0 auto 32px}
     footer{padding:45px 0;border-top:1px solid var(--line);color:#8f8679;font-size:.9rem}
 
+
+    .mockup-gallery{display:grid;grid-template-columns:1fr;gap:32px;margin-top:48px}
+    .mockup-pair{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+    .mockup-wrap img{transition:transform .5s ease}
+    .mockup-wrap:hover img{transform:scale(1.01)}
+    .related-card h3,.application-copy h3,.mood-card h3{letter-spacing:-0.02em}
+    .seo-copy a{color:#d8c6a4;text-decoration:none;border-bottom:1px solid rgba(216,198,164,.3)}
+    .seo-copy a:hover{border-color:#d8c6a4}
+    .faq-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;margin-top:46px}
+    .faq-item{background:rgba(255,255,255,.025);border:1px solid var(--line);border-radius:12px;padding:30px}
+    .faq-item p{font-size:.95rem;line-height:1.9}
+
     @media(max-width:1120px){
-      .intro-grid,.applications,.mood-grid,.image-split,.featured-art-grid,.art-grid,.related-grid{grid-template-columns:1fr}
+      .intro-grid,.applications,.mood-grid,.image-split,.featured-art-grid,.art-grid,.related-grid,.mockup-pair,.faq-grid{grid-template-columns:1fr}
       .seo-columns{columns:1}
     }
     @media(max-width:780px){
@@ -139,6 +151,20 @@
       section{padding:72px 0}
     }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"What type of interiors work best with Quiet Earth artwork?","acceptedAnswer":{"@type":"Answer","text":"Quiet Earth artwork was curated for calm modern interiors including bedrooms, living rooms, wellness spaces, boutique hospitality projects, offices, and quiet luxury residential design."}},
+      {"@type":"Question","name":"Are large statement print sizes available?","acceptedAnswer":{"@type":"Answer","text":"Many Quiet Earth photographs are available in oversized framed print formats suitable for statement walls, hospitality projects, and designer installations."}},
+      {"@type":"Question","name":"Can interior designers request artwork recommendations?","acceptedAnswer":{"@type":"Answer","text":"Yes. Designers can contact Dan directly for artwork recommendations, sizing guidance, or help selecting coordinated pieces for residential or hospitality projects."}},
+      {"@type":"Question","name":"Why are the Quiet Earth photographs organized by atmosphere instead of location?","acceptedAnswer":{"@type":"Answer","text":"Quiet Earth is curated around mood, tone, palette, stillness, and interior compatibility so homeowners and designers can choose artwork based on how a space should feel."}}
+    ]
+  }
+  </script>
+
 </head>
 
 <body>
@@ -147,7 +173,7 @@
   <a href="/" class="brand">Dan Sproul<span>Fine Art Photography</span></a>
   <nav class="site-nav" aria-label="Main navigation">
     <a href="/">Home</a>
-    <a href="/collections.html">Collections</a>
+    <a href="/art-collections.html">Art Collections</a>
     <a href="/gallery.html">Gallery</a>
     <a href="/in-your-space.html">In Your Space</a>
     <a href="/contact.html">Contact</a>
@@ -197,11 +223,30 @@
   <div class="container">
     <div class="section-heading center">
       <span class="eyebrow">Shown In Context</span>
-      <h2>Quiet landscape artwork for real interior applications.</h2>
-      <p>A simple designer-facing preview showing how the collection can work in living rooms, bedrooms, dining rooms, hospitality suites, and calming residential spaces.</p>
+      <h2>Quiet landscape artwork designed for real interiors.</h2>
+      <p>
+        Quiet Earth was created for homes, wellness-inspired rooms, offices, and calm residential interiors that benefit from natural atmosphere. These mockups show how oversized landscape photography can anchor a room without overwhelming it.
+      </p>
     </div>
-    <div class="mockup-wrap">
-      <img src="living room interior mockup quiet earth.jpg" alt="Quiet Earth Collection fine art landscape photography shown in refined interior mockups by Dan Sproul">
+
+    <div class="mockup-gallery">
+      <div class="mockup-wrap">
+        <img src="quiet-earth-lily-pond.jpg" alt="Large framed mountain reflection landscape photography above modern fireplace in luxury residential interior by Dan Sproul">
+      </div>
+
+      <div class="mockup-pair">
+        <div class="mockup-wrap">
+          <img src="quiet-earth-mountains-homeoffice.jpg" alt="Quiet Earth mountain landscape fine art photography in warm modern home office by Dan Sproul">
+        </div>
+
+        <div class="mockup-wrap">
+          <img src="quiet-earth-appalachian-fog.jpg" alt="Atmospheric foggy Appalachian landscape photography above bed in quiet luxury bedroom interior by Dan Sproul">
+        </div>
+      </div>
+
+      <div class="mockup-wrap">
+        <img src="quiet-earth-spa-waterfall.jpg" alt="Waterfall fine art photography in spa and wellness inspired residential interior by Dan Sproul">
+      </div>
     </div>
   </div>
 </section>
@@ -372,6 +417,42 @@
       <p>For interior designers, landscape wall art often needs to do more than fill an empty wall. It needs to support the mood of the room, complement the palette, and feel intentional within the architecture. Quiet Earth was created for that purpose, with images suited for large framed prints in living rooms, bedrooms, hospitality suites, wellness spaces, office lounges, and quiet commercial environments.</p>
       <p>The collection includes atmospheric Alaska photography, mountain lake reflections, misty forest scenes, soft pastoral imagery, Badlands earth tones, and dramatic natural landscapes with a refined visual presence. These works pair especially well with natural oak, walnut, plaster, linen, stone, leather, warm neutrals, and contemporary quiet-luxury interiors.</p>
       <p>Whether used as oversized artwork above a sofa, a calming bedroom print, a hospitality lobby focal point, or a series of coordinated landscape prints for a corridor, Quiet Earth offers a more curated approach to nature photography for interiors. The goal is simple: artwork that helps a space feel grounded, calm, and connected to the outdoors.</p>
+      <p>
+        Explore additional curated fine art photography collections including
+        <a href="/coastal-atmosphere.html">Coastal Atmosphere</a> for moody Oregon Coast photography,
+        <a href="/heritage-sporting.html">Heritage Sporting</a> for rustic lodge and sporting interiors,
+        and the <a href="/for-designers.html">For Designers</a> resource page for artwork recommendations,
+        oversized print guidance, and project support.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="seo-copy">
+  <div class="container">
+    <span class="eyebrow">Fine Art Photography FAQ</span>
+    <h2>Frequently asked questions about Quiet Earth artwork.</h2>
+
+    <div class="faq-grid">
+      <div class="faq-item">
+        <h3>What interiors work best with Quiet Earth?</h3>
+        <p>Quiet Earth was created for calm contemporary interiors, wellness-inspired spaces, mountain homes, boutique hospitality projects, minimalist residential interiors, and refined natural design aesthetics.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Are these images available as oversized framed prints?</h3>
+        <p>Yes. Many Quiet Earth photographs work especially well as oversized statement artwork above beds, fireplaces, dining room consoles, office walls, and hospitality focal walls.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can designers request recommendations?</h3>
+        <p>Absolutely. Interior designers can email directly for coordinated artwork suggestions, sizing guidance, or help selecting multiple pieces for residential or commercial projects.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Why organize by atmosphere instead of location?</h3>
+        <p>Quiet Earth is curated around mood, tone, palette, and interior compatibility. This creates a more useful experience for designers and homeowners searching for artwork that fits the feeling of a room.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -379,7 +460,8 @@
 <section class="related">
   <div class="container">
     <span class="eyebrow">Explore More</span>
-    <h2>Related designer collections and resources.</h2>
+    <h2>Explore related fine art photography collections.</h2>
+    <p>Browse additional atmospheric collections featuring coastal photography, rustic sporting artwork, designer resources, and fine art photography shown in realistic residential and hospitality interiors.</p>
     <div class="related-grid">
       <a href="/coastal-atmosphere.html" class="related-card">
         <img src="coastal-atmosphere-preview.jpg" alt="Coastal and atmospheric artwork collection preview for interior designers by Dan Sproul">
