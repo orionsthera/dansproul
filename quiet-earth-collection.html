@@ -457,55 +457,213 @@
   </div>
 </section>
 
-<section class="related">
-  <div class="container">
-    <span class="eyebrow">Explore More</span>
-    <h2>Explore related fine art photography collections.</h2>
-    <p>Browse additional atmospheric collections featuring coastal photography, rustic sporting artwork, designer resources, and fine art photography shown in realistic residential and hospitality interiors.</p>
-      <div class="fd-section-heading">
-      <span class="eyebrow">Curated Collections</span>
-      <h2>Artwork Collections Built for Interior Projects</h2>
-      <p>Curated fine art collections designed to help interior designers source cohesive artwork for residential, hospitality, wellness, and commercial spaces.</p>
+<section class="qe-related-collections">
+
+  <div class="qe-related-inner">
+
+    <div class="qe-related-header">
+      <span class="qe-related-eyebrow">Explore More</span>
+      <h2>Explore related fine art photography collections.</h2>
+
+      <p>
+        Browse additional atmospheric collections featuring coastal photography,
+        forest landscapes, mountain imagery, and artwork created for refined
+        residential and hospitality interiors.
+      </p>
     </div>
 
-    <div class="fd-collection-grid">
-     
-      <a class="fd-collection-card" href="coastal-atmosphere.html">
-        <div class="fd-collection-image">
-          <img src="coastal-atmosphere-preview.jpg" alt="Coastal Atmosphere Oregon Coast fine art photography collection by Dan Sproul">
+    <div class="qe-related-grid">
+
+      <!-- Coastal Atmosphere -->
+      <a class="qe-related-card" href="coastal-atmosphere.html">
+        <div class="qe-related-image">
+          <img src="coastal-atmosphere-preview.jpg" alt="Coastal Atmosphere Collection">
         </div>
-        <div class="fd-collection-content">
-          <span class="fd-collection-type">Quiet Luxury Coastal</span>
+
+        <div class="qe-related-content">
+          <span class="qe-related-type">Residential & Hospitality</span>
+
           <h3>Coastal Atmosphere</h3>
-          <p>Moody Oregon Coast photography featuring sea stacks, fog, monochrome shoreline studies, and atmospheric coastal imagery for boutique hospitality and elevated coastal interiors.</p>
-          <span class="fd-collection-link">Explore Collection →</span>
+
+          <p>
+            Moody Oregon Coast photography featuring sea stacks, fog,
+            monochrome shoreline studies, and atmospheric coastal imagery.
+          </p>
+
+          <span class="qe-related-link">
+            Explore Collection →
+          </span>
         </div>
       </a>
 
-      <a class="fd-collection-card" href="forest-light-collection.html">
-        <div class="fd-collection-image">
-          <img src="forest-light-living-room.jpg" alt="Forest Light fine art photography collection by Dan Sproul">
+     <!-- Forest Light -->
+      <a class="qe-related-card" href="forest-light-collection.html">
+        <div class="qe-related-image">
+          <img src="forest-light-preview.jpg" alt="Forest Light Collection">
         </div>
-        <div class="fd-collection-content">
-          <span class="fd-collection-type">Residential &amp; Hospitality</span>
+
+        <div class="qe-related-content">
+          <span class="qe-related-type">Residential & Hospitality</span>
+
           <h3>Forest Light</h3>
-          <p>Atmospheric forest photography featuring woodland trails, filtered morning light, immersive green landscapes, and calming natural scenes designed for wellness-focused interiors, hospitality spaces, and grounded modern environments.</p>
-          <span class="fd-collection-link">Explore Collection →</span>
+
+          <p>
+            Atmospheric forest photography featuring woodland trails,
+            filtered light, immersive green landscapes, and calming nature scenes.
+          </p>
+
+          <span class="qe-related-link">
+            Explore Collection →
+          </span>
         </div>
       </a>
 
-    <a class="fd-collection-card" href="mountain-light-collection.html">
-  <div class="fd-collection-image">
-    <img src="mountain-light-lobby.jpg" alt="Mountain Light fine art photography collection by Dan Sproul">
+      <!-- Mountain Light -->
+      <a class="qe-related-card" href="mountain-light-collection.html">
+        <div class="qe-related-image">
+          <img src="mountain-light-preview.jpg" alt="Mountain Light Collection">
+        </div>
+
+        <div class="qe-related-content">
+          <span class="qe-related-type">Residential & Hospitality</span>
+
+          <h3>Mountain Light</h3>
+
+          <p>
+            Atmospheric mountain photography featuring alpine landscapes,
+            dramatic peaks, expansive wilderness scenes, and elevated natural light.
+          </p>
+
+          <span class="qe-related-link">
+            Explore Collection →
+          </span>
+        </div>
+      </a>
+
+    </div>
+
   </div>
-  <div class="fd-collection-content">
-    <span class="fd-collection-type">Residential &amp; Hospitality</span>
-    <h3>Mountain Light</h3>
-    <p>Atmospheric mountain photography featuring alpine landscapes, dramatic peaks, expansive wilderness scenes, and elevated natural light designed for statement interiors, hospitality environments, and modern mountain-inspired spaces.</p>
-<span class="fd-collection-link">Explore Collection →</span>
-        </div>
-      </a>
 
+</section>
+
+<style>
+
+.qe-related-collections{
+  background:#050505;
+  padding:120px 0 130px;
+  border-top:1px solid rgba(255,255,255,0.08);
+}
+
+.qe-related-inner{
+  width:min(92%,1380px);
+  margin:auto;
+}
+
+.qe-related-header{
+  max-width:780px;
+  margin-bottom:55px;
+}
+
+.qe-related-eyebrow{
+  display:block;
+  color:#b99658;
+  text-transform:uppercase;
+  letter-spacing:.22em;
+  font-size:.68rem;
+  margin-bottom:18px;
+}
+
+.qe-related-header h2{
+  font-size:clamp(2.5rem,5vw,4.6rem);
+  line-height:.96;
+  font-weight:400;
+  color:#f3eee7;
+  margin-bottom:24px;
+  letter-spacing:-0.04em;
+}
+
+.qe-related-header p{
+  color:#b8aa98;
+  font-size:1rem;
+  line-height:1.9;
+  max-width:720px;
+}
+
+.qe-related-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
+
+.qe-related-card{
+  background:#0c0c0c;
+  border:1px solid rgba(255,255,255,0.08);
+  overflow:hidden;
+  transition:.28s ease;
+  text-decoration:none;
+}
+
+.qe-related-card:hover{
+  transform:translateY(-4px);
+  border-color:rgba(185,150,88,0.45);
+}
+
+.qe-related-image{
+  aspect-ratio:16/10;
+  overflow:hidden;
+}
+
+.qe-related-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.qe-related-content{
+  padding:26px 24px 30px;
+}
+
+.qe-related-type{
+  display:block;
+  color:#b99658;
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  font-size:.62rem;
+  margin-bottom:10px;
+}
+
+.qe-related-content h3{
+  color:#f3eee7;
+  font-size:1.7rem;
+  line-height:1.1;
+  font-weight:400;
+  margin-bottom:16px;
+}
+
+.qe-related-content p{
+  color:#b8aa98;
+  line-height:1.8;
+  font-size:.95rem;
+  margin-bottom:20px;
+}
+
+.qe-related-link{
+  color:#f3eee7;
+  font-size:.72rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
+
+@media(max-width:1100px){
+
+  .qe-related-grid{
+    grid-template-columns:1fr;
+  }
+
+}
+
+</style>
 <section class="email-capture">
   <div class="container">
     <span class="eyebrow">Designer Resources</span>
