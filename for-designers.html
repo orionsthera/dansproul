@@ -658,6 +658,172 @@ footer a:hover{color:var(--accent)}
   .fd-designer-collections .fd-section-heading p{margin:0;}
 }
 
+
+/* ==========================================================
+   UX TIGHTENING UPDATE — May 2026
+   Goal: keep the current page/design, but reduce vertical fatigue.
+   - Shorter hero
+   - Smaller in-page mockup examples
+   - Lightbox still opens full-size previews
+   - Collections remain below mockup examples
+   ========================================================== */
+
+/* Shorten the opening hero so visitors reach artwork faster */
+.hero{
+  height:72vh;
+  min-height:560px;
+  max-height:760px;
+}
+
+.hero-title{
+  font-size:clamp(2.7rem,6vw,5.6rem);
+}
+
+.hero-sub{
+  margin-bottom:30px;
+}
+
+/* Reduce the long visual scroll through mockup examples */
+.placement-section{
+  padding-top:86px;
+  padding-bottom:86px;
+}
+
+.placement-section > .section-title,
+.placement-section > p.section-label,
+.placement-section > p{
+  max-width:1180px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+/* Keep mockup examples premium but less oversized */
+.placement-section > div{
+  max-width:1180px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+/* The hero triptych inside the mockup section was too tall */
+.placement-section > div:first-of-type .placement-card{
+  aspect-ratio:16/5.8 !important;
+  max-height:520px;
+}
+
+/* The two-column and three-column rows were dominating the page */
+.placement-section > div[style*="grid-template-columns"]{
+  max-width:1180px;
+}
+
+.placement-section > div[style*="grid-template-columns:1.4fr 1fr"] .placement-card{
+  aspect-ratio:16/8.5 !important;
+  max-height:460px;
+}
+
+.placement-section > div[style*="grid-template-columns:1fr 1fr 1fr"] .placement-card{
+  aspect-ratio:4/3.15 !important;
+  max-height:390px;
+}
+
+/* The last row currently stacks huge. Make it feel like a refined preview row. */
+.pl-row-3{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:3px;
+  max-width:1180px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.pl-row-3 .placement-card{
+  aspect-ratio:4/3.1 !important;
+  max-height:390px;
+}
+
+/* Softer overlay: keeps labels readable without making images feel too dark */
+.placement-overlay{
+  padding:20px 20px;
+  background:linear-gradient(to top,rgba(8,8,7,.86) 0%,rgba(8,8,7,.38) 34%,transparent 68%);
+}
+
+.pl-title{
+  font-size:1rem;
+}
+
+.pl-desc{
+  font-size:.54rem;
+}
+
+/* Tighten collection section a little while keeping it below mockups */
+.fd-designer-collections{
+  padding-top:92px;
+  padding-bottom:100px;
+}
+
+.fd-collection-grid{
+  gap:14px;
+}
+
+.fd-collection-image{
+  aspect-ratio:16/8.8;
+}
+
+.fd-collection-content{
+  padding:25px 24px 28px;
+}
+
+.fd-collection-content p{
+  font-size:.69rem;
+  line-height:1.86;
+}
+
+/* Keep testimonials to two and make them feel intentional */
+.test-grid{
+  max-width:1100px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.test-card:nth-child(n+3){
+  display:none;
+}
+
+/* Mobile adjustments */
+@media(max-width:900px){
+  .hero{
+    height:76vh;
+    min-height:560px;
+  }
+
+  .placement-section{
+    padding-top:68px;
+    padding-bottom:68px;
+  }
+
+  .placement-section > div:first-of-type .placement-card,
+  .placement-section > div[style*="grid-template-columns:1.4fr 1fr"] .placement-card,
+  .placement-section > div[style*="grid-template-columns:1fr 1fr 1fr"] .placement-card,
+  .pl-row-3 .placement-card{
+    aspect-ratio:4/3 !important;
+    max-height:none;
+  }
+
+  .pl-row-3{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:580px){
+  .hero{
+    height:72vh;
+    min-height:520px;
+  }
+
+  .hero-title{
+    font-size:clamp(2.45rem,13vw,4.2rem);
+  }
+}
+
 </style>
 </head>
 <body>
