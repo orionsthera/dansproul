@@ -659,6 +659,117 @@ footer a:hover{color:var(--accent)}
 }
 
 
+
+/* HOSPITALITY ATMOSPHERE CAROUSEL */
+.hospitality-carousel-section{
+  background:linear-gradient(to bottom,#080807 0%,#0d0b09 48%,#080807 100%);
+  padding:100px 0 110px;
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+  overflow:hidden;
+}
+.hospitality-carousel-head{
+  width:min(92%,1180px);
+  margin:0 auto 48px;
+}
+.hospitality-carousel-head .section-label{
+  margin-bottom:34px;
+}
+.hospitality-carousel-head p:not(.section-label){
+  max-width:640px;
+  font-size:.78rem;
+  line-height:2;
+  color:rgba(242,239,232,.52);
+}
+.hospitality-carousel-wrap{
+  position:relative;
+}
+.hospitality-carousel{
+  display:flex;
+  gap:18px;
+  overflow-x:auto;
+  scroll-snap-type:x mandatory;
+  scroll-padding-left:max(56px,calc((100vw - 1180px) / 2));
+  padding:0 max(56px,calc((100vw - 1180px) / 2)) 24px;
+  -webkit-overflow-scrolling:touch;
+}
+.hospitality-carousel::-webkit-scrollbar{height:6px}
+.hospitality-carousel::-webkit-scrollbar-track{background:rgba(181,146,74,.08)}
+.hospitality-carousel::-webkit-scrollbar-thumb{background:rgba(181,146,74,.38);border-radius:999px}
+.hospitality-slide{
+  position:relative;
+  flex:0 0 min(86vw,1040px);
+  scroll-snap-align:start;
+  overflow:hidden;
+  border:1px solid rgba(181,146,74,.18);
+  background:#0e0c09;
+  cursor:zoom-in;
+  box-shadow:0 22px 80px rgba(0,0,0,.45);
+}
+.hospitality-slide img{
+  width:100%;
+  height:clamp(420px,56vw,640px);
+  object-fit:cover;
+  display:block;
+  filter:brightness(.88) saturate(.94);
+  transition:transform .85s cubic-bezier(.25,.46,.45,.94),filter .5s ease;
+}
+.hospitality-slide:hover img{
+  transform:scale(1.025);
+  filter:brightness(.98) saturate(1);
+}
+.hospitality-slide-caption{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  padding:80px 34px 30px;
+  background:linear-gradient(to top,rgba(8,8,7,.94) 0%,rgba(8,8,7,.55) 46%,transparent 100%);
+}
+.hospitality-slide-caption span{
+  display:block;
+  font-size:.5rem;
+  letter-spacing:.34em;
+  text-transform:uppercase;
+  color:var(--accent);
+  margin-bottom:8px;
+}
+.hospitality-slide-caption h3{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(1.55rem,2.6vw,2.35rem);
+  font-weight:300;
+  line-height:1.08;
+  color:var(--off-white);
+  margin-bottom:8px;
+}
+.hospitality-slide-caption p{
+  max-width:620px;
+  font-size:.68rem;
+  line-height:1.85;
+  letter-spacing:.1em;
+  color:rgba(242,239,232,.52);
+}
+.hospitality-carousel-note{
+  width:min(92%,1180px);
+  margin:22px auto 0;
+  font-size:.54rem;
+  letter-spacing:.24em;
+  text-transform:uppercase;
+  color:rgba(181,146,74,.65);
+}
+@media(max-width:900px){
+  .hospitality-carousel-section{padding:74px 0 82px}
+  .hospitality-carousel-head{margin-bottom:34px}
+  .hospitality-carousel{padding-left:24px;padding-right:24px;scroll-padding-left:24px}
+  .hospitality-slide{flex-basis:88vw}
+  .hospitality-slide img{height:440px}
+}
+@media(max-width:580px){
+  .hospitality-slide{flex-basis:90vw}
+  .hospitality-slide img{height:360px}
+  .hospitality-slide-caption{padding:70px 22px 24px}
+}
+
 /* ==========================================================
    UX TIGHTENING UPDATE — May 2026
    Goal: keep the current page/design, but reduce vertical fatigue.
@@ -1090,6 +1201,77 @@ footer a:hover{color:var(--accent)}
       
     </div>
   </div>
+</section>
+
+
+
+<!-- HOSPITALITY ATMOSPHERE CAROUSEL -->
+<section class="hospitality-carousel-section" id="hospitality-atmosphere">
+  <div class="hospitality-carousel-head">
+    <p class="section-label">Hospitality Atmosphere</p>
+    <h2 class="section-title">Boutique Hospitality <em>Concepts</em></h2>
+    <p>Original fine art photography curated for boutique hotels, wellness spaces, wine lounges, reception areas, and elevated guest experiences.</p>
+  </div>
+
+  <div class="hospitality-carousel-wrap">
+    <div class="hospitality-carousel" aria-label="Hospitality fine art photography mockup carousel">
+      <div class="hospitality-slide" onclick="openFDLightbox(this)">
+        <img src="hospitality lobby moody mockup(2).jpg" alt="Boutique hotel reception area with large framed mountain cloud fine art photography by Dan Sproul"/>
+        <div class="hospitality-slide-caption">
+          <span>Reception · Arrival Moment</span>
+          <h3>Statement Artwork for Boutique Hotel Reception</h3>
+          <p>Large-scale atmospheric mountain photography designed to create a memorable first impression in refined hospitality interiors.</p>
+        </div>
+      </div>
+
+      <div class="hospitality-slide" onclick="openFDLightbox(this)">
+        <img src="hospitality corridor moody mockup(2).jpg" alt="Luxury hospitality corridor with large moody mountain landscape photography by Dan Sproul"/>
+        <div class="hospitality-slide-caption">
+          <span>Corridor · Guest Journey</span>
+          <h3>Quiet Luxury for Hospitality Corridors</h3>
+          <p>Moody fine art photography and warm architectural lighting help transitional spaces feel intentional, calm, and elevated.</p>
+        </div>
+      </div>
+
+      <div class="hospitality-slide" onclick="openFDLightbox(this)">
+        <img src="hospitality lounge bar moody mockup(2).jpg" alt="Executive lounge with black and white mountain reflection photography by Dan Sproul"/>
+        <div class="hospitality-slide-caption">
+          <span>Executive Lounge · Private Club</span>
+          <h3>Black and White Landscapes for Refined Lounges</h3>
+          <p>Dramatic monochrome landscape photography paired with leather, dark wood, and warm brass for a sophisticated hospitality atmosphere.</p>
+        </div>
+      </div>
+
+      <div class="hospitality-slide" onclick="openFDLightbox(this)">
+        <img src="hospitality winery moody mockup(1).jpg" alt="Boutique restaurant and wine lounge with moody black and white lake island photography by Dan Sproul"/>
+        <div class="hospitality-slide-caption">
+          <span>Wine Lounge · Restaurant</span>
+          <h3>Atmospheric Artwork for Intimate Dining Spaces</h3>
+          <p>Fine art photography can anchor the dining experience with mood, texture, and a quiet sense of place.</p>
+        </div>
+      </div>
+
+      <div class="hospitality-slide" onclick="openFDLightbox(this)">
+        <img src="hospitality lobby mockup waterfall(1).jpg" alt="Moody hospitality lounge with large vertical waterfall fine art photography by Dan Sproul"/>
+        <div class="hospitality-slide-caption">
+          <span>Lounge · Natural Drama</span>
+          <h3>Waterfall Photography for Moody Hospitality Spaces</h3>
+          <p>A vertical nature statement piece adds movement, depth, and biophilic energy to dark luxury interiors.</p>
+        </div>
+      </div>
+
+      <div class="hospitality-slide" onclick="openFDLightbox(this)">
+        <img src="hospitality spa moody mockup(2).jpg" alt="Luxury spa relaxation room with large black and white rock reflection fine art photography by Dan Sproul"/>
+        <div class="hospitality-slide-caption">
+          <span>Spa Relaxation · Wellness</span>
+          <h3>Calming Artwork for Wellness Interiors</h3>
+          <p>Reflective black and white landscape photography creates a meditative visual pause for spa and relaxation environments.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p class="hospitality-carousel-note">Swipe or scroll to view the full hospitality concept series.</p>
 </section>
 
 <!-- SPEC SHEET DOWNLOADS — placed here so designers see it right after the gallery -->
