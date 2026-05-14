@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Monochrome Stillness | Black and White Fine Art Photography by Dan Sproul</title>
+  <meta name="description" content="Monochrome Stillness is a curated collection of black and white fine art photography by Dan Sproul for quiet interiors, hospitality spaces, healthcare environments, executive offices, and refined residential design.">
+  <link rel="canonical" href="https://dsproul.com/monochrome-stillness.html">
+
+  <meta property="og:title" content="Monochrome Stillness | Black and White Fine Art Photography">
+  <meta property="og:description" content="A curated black and white landscape photography collection by Dan Sproul for refined interiors, hospitality, healthcare, wellness, and residential spaces.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dsproul.com/monochrome-stillness.html">
+  <meta property="og:image" content="https://dsproul.com/hospitality suite mockup.jpg">
+
+  <style>
+    :root {
+      --bg: #f4f0ea;
+      --ink: #1f1f1d;
+      --muted: #6f665d;
+      --line: #d9d0c5;
+      --soft: #e8e1d8;
+      --dark: #151413;
+      --gold: #b99262;
+      --white: #fbf7f1;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .page {
+      overflow: hidden;
+    }
+
+    .hero {
+      min-height: 88vh;
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: center;
+      padding: 6rem clamp(1.5rem, 5vw, 6rem);
+      background:
+        linear-gradient(90deg, rgba(13,12,11,.96) 0%, rgba(13,12,11,.76) 43%, rgba(13,12,11,.24) 100%),
+        url("hospitality suite mockup.jpg") center / cover no-repeat;
+      color: var(--white);
+    }
+
+    .hero-inner {
+      max-width: 850px;
+    }
+
+    .eyebrow,
+    .section-label {
+      letter-spacing: .24em;
+      text-transform: uppercase;
+      font-size: .78rem;
+      color: var(--gold);
+      margin-bottom: 1rem;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h1 {
+      font-size: clamp(3.4rem, 8vw, 8rem);
+      line-height: .88;
+      font-weight: 400;
+      letter-spacing: -.055em;
+      margin: 0 0 1.5rem;
+    }
+
+    h2 {
+      font-size: clamp(2.25rem, 4.5vw, 4.8rem);
+      line-height: .98;
+      font-weight: 400;
+      letter-spacing: -.04em;
+      margin: 0;
+    }
+
+    h3 {
+      font-size: clamp(1.45rem, 2vw, 2.1rem);
+      line-height: 1.15;
+      font-weight: 400;
+      margin: 0 0 .75rem;
+    }
+
+    p {
+      margin-top: 0;
+    }
+
+    .hero p {
+      max-width: 640px;
+      font-size: clamp(1.05rem, 1.45vw, 1.28rem);
+      color: #dfd6cc;
+      margin-bottom: 2rem;
+    }
+
+    .button-row {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(255,255,255,.34);
+      padding: .92rem 1.25rem;
+      text-transform: uppercase;
+      letter-spacing: .16em;
+      font-size: .74rem;
+      font-family: Arial, Helvetica, sans-serif;
+      transition: .2s ease;
+    }
+
+    .button.primary {
+      background: var(--white);
+      color: #171514;
+      border-color: var(--white);
+    }
+
+    .button.dark {
+      background: var(--dark);
+      color: var(--white);
+      border-color: var(--dark);
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    section {
+      padding: clamp(4rem, 8vw, 7rem) clamp(1.5rem, 5vw, 6rem);
+    }
+
+    .intro {
+      display: grid;
+      grid-template-columns: .82fr 1.18fr;
+      gap: clamp(2rem, 5vw, 5rem);
+      align-items: start;
+    }
+
+    .intro-text {
+      font-size: 1.12rem;
+      color: #423b35;
+      max-width: 790px;
+    }
+
+    .use-cases {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--line);
+      border: 1px solid var(--line);
+      margin-top: 2.25rem;
+    }
+
+    .use-card {
+      background: #fbf7f1;
+      padding: 1.35rem;
+      min-height: 170px;
+    }
+
+    .use-card p {
+      color: var(--muted);
+      font-size: .96rem;
+      margin: 0;
+    }
+
+    .mockups {
+      background: #171514;
+      color: var(--white);
+    }
+
+    .section-head {
+      max-width: 920px;
+      margin-bottom: 2.2rem;
+    }
+
+    .section-head p {
+      color: #cfc6bb;
+      font-size: 1.06rem;
+      max-width: 760px;
+      margin-top: 1rem;
+    }
+
+    .mockup-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+
+    .mockup-card {
+      margin: 0;
+      background: #111;
+      border: 1px solid rgba(255,255,255,.08);
+      overflow: hidden;
+      min-height: 250px;
+    }
+
+    .mockup-card img {
+      height: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      transition: transform .35s ease;
+    }
+
+    .mockup-card:hover img {
+      transform: scale(1.025);
+    }
+
+    .gallery {
+      background: var(--bg);
+    }
+
+    .gallery .section-head p {
+      color: #4c443c;
+    }
+
+    .art-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.4rem;
+      margin-top: 2.25rem;
+    }
+
+    .art-card {
+      background: #fffaf3;
+      border: 1px solid var(--line);
+      padding: .8rem;
+      transition: .2s ease;
+    }
+
+    .art-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 18px 40px rgba(0,0,0,.08);
+    }
+
+    .art-card img {
+      aspect-ratio: 1.28 / 1;
+      object-fit: cover;
+      background: #ddd;
+    }
+
+    .art-card span {
+      display: block;
+      padding: .9rem .2rem .25rem;
+      font-size: .84rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: #3b332d;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .designer-note {
+      background: var(--soft);
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .designer-note .panel {
+      background: #f8f4ee;
+      border: 1px solid var(--line);
+      padding: clamp(1.5rem, 3vw, 3rem);
+    }
+
+    .designer-note ul {
+      margin: 1.25rem 0 0;
+      padding-left: 1.1rem;
+      color: #4c443c;
+    }
+
+    .designer-note li {
+      margin-bottom: .6rem;
+    }
+
+    .seo-copy {
+      background: #fbf7f1;
+      color: #2d2823;
+    }
+
+    .seo-copy-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      columns: 2;
+      column-gap: 4rem;
+      font-size: 1.05rem;
+    }
+
+    .seo-copy h2 {
+      column-span: all;
+      margin-bottom: 1.5rem;
+    }
+
+    .related {
+      background: #171514;
+      color: var(--white);
+      text-align: center;
+    }
+
+    .related p {
+      max-width: 720px;
+      margin: 1rem auto 2rem;
+      color: #cfc6bb;
+    }
+
+    .related-links {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    footer {
+      padding: 2rem clamp(1.5rem, 5vw, 6rem);
+      background: #100f0e;
+      color: #9e9388;
+      font-size: .82rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 980px) {
+      .intro,
+      .designer-note {
+        grid-template-columns: 1fr;
+      }
+
+      .mockup-grid,
+      .art-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .use-cases {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .seo-copy-inner {
+        columns: 1;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero {
+        min-height: auto;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        background:
+          linear-gradient(90deg, rgba(13,12,11,.94), rgba(13,12,11,.72)),
+          url("hospitality suite mockup.jpg") center / cover no-repeat;
+      }
+
+      .mockup-grid,
+      .art-grid,
+      .use-cases {
+        grid-template-columns: 1fr;
+      }
+
+      .button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="eyebrow">Curated Fine Art Photography</div>
+        <h1>Monochrome Stillness</h1>
+        <p>Black and white landscapes selected for quiet interiors, restorative environments, hospitality suites, refined residences, and spaces where artwork should feel timeless rather than decorative.</p>
+        <div class="button-row">
+          <a class="button primary" href="#collection">View Collection</a>
+          <a class="button" href="mailto:sproulphoto@gmail.com?subject=Trade%20Inquiry%20-%20Monochrome%20Stillness">Request Trade Info</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro">
+      <div>
+        <div class="section-label">Collection Concept</div>
+        <h2>Quiet contrast for spaces that need calm, depth, and permanence.</h2>
+      </div>
+      <div class="intro-text">
+        <p>Monochrome Stillness brings together black and white nature photography by Dan Sproul with a focus on atmosphere, reflection, mountain forms, mist, and soft visual rhythm. The collection is built for interiors where artwork needs to support the emotional tone of a room without overpowering the architecture.</p>
+        <p>These pieces work especially well in hospitality lounges, wellness spaces, healthcare corridors, residential living rooms, executive offices, and boutique environments where designers need artwork that feels sophisticated, grounded, and easy to specify across multiple rooms.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <div class="section-label">Where It Works</div>
+        <h2>Built for interiors with restraint.</h2>
+      </div>
+      <div class="use-cases">
+        <div class="use-card">
+          <h3>Hospitality</h3>
+          <p>Guest corridors, spa lounges, boutique suites, reception walls, and quiet destination-inspired spaces.</p>
+        </div>
+        <div class="use-card">
+          <h3>Healthcare</h3>
+          <p>Waiting areas, wellness corridors, patient rooms, therapy spaces, and restorative environments.</p>
+        </div>
+        <div class="use-card">
+          <h3>Residential</h3>
+          <p>Living rooms, bedrooms, entryways, reading areas, and calm gallery-style interiors.</p>
+        </div>
+        <div class="use-card">
+          <h3>Commercial</h3>
+          <p>Executive offices, conference rooms, reception areas, and refined professional spaces.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mockups">
+      <div class="section-head">
+        <div class="section-label">In Space</div>
+        <h2>Designed for refined interiors.</h2>
+        <p>Large-format monochrome landscapes create a calm focal point in rooms that rely on texture, lighting, architecture, and restraint.</p>
+      </div>
+      <div class="mockup-grid">
+          <figure class="mockup-card">
+            <img src="hospitality corridor mockup.jpg" alt="Boutique hospitality corridor with black and white mountain lake artwork" loading="lazy">
+          </figure>
+          <figure class="mockup-card">
+            <img src="residential living room black and white.jpg" alt="Minimal residential living room with monochrome mountain reflection artwork" loading="lazy">
+          </figure>
+          <figure class="mockup-card">
+            <img src="residential living room mockup.jpg" alt="Warm residential living room with black and white Moraine Lake artwork" loading="lazy">
+          </figure>
+          <figure class="mockup-card">
+            <img src="executive suite mockup.jpg" alt="Executive suite with large monochrome glacier panorama artwork" loading="lazy">
+          </figure>
+          <figure class="mockup-card">
+            <img src="hospitality suite mockup.jpg" alt="Boutique hospitality lounge with dramatic black and white mountain artwork" loading="lazy">
+          </figure>
+          <figure class="mockup-card">
+            <img src="hospitality spa moody mockup(3).jpg" alt="Moody hospitality spa with oversized monochrome rock reflection artwork" loading="lazy">
+          </figure>
+      </div>
+    </section>
+
+    <section class="gallery" id="collection">
+      <div class="section-head">
+        <div class="section-label">Selected Works</div>
+        <h2>Shop the Monochrome Stillness collection.</h2>
+        <p>Each image links to available print options including canvas, metal, acrylic, framed paper, and custom sizing through Dan Sproul’s print storefront.</p>
+      </div>
+      <div class="art-grid">
+          <a class="art-card" href="https://dansproul.com/featured/monochrome-maligne-lake-boathouse-dan-sproul.html" target="_blank" rel="noopener">
+            <img src="monochrome-maligne-lake-boathouse-dan-sproul (1).jpg" alt="Monochrome Maligne Lake Boathouse black and white fine art photography by Dan Sproul" loading="lazy">
+            <span>Monochrome Maligne Lake Boathouse</span>
+          </a>
+          <a class="art-card" href="https://dansproul.com/featured/dreamy-mountainscape-canada-black-and-white-dan-sproul.html" target="_blank" rel="noopener">
+            <img src="dreamy-mountainscape-canada-black-and-white-dan-sproul.jpg" alt="Dreamy Mountainscape Canada black and white fine art photography by Dan Sproul" loading="lazy">
+            <span>Dreamy Mountainscape Canada</span>
+          </a>
+          <a class="art-card" href="https://dansproul.com/featured/foggy-patricia-lake-sunrise-canada-dan-sproul.html" target="_blank" rel="noopener">
+            <img src="foggy-patricia-lake-sunrise-canada-dan-sproul.jpg" alt="Foggy Patricia Lake Sunrise black and white fine art photography by Dan Sproul" loading="lazy">
+            <span>Foggy Patricia Lake Sunrise</span>
+          </a>
+          <a class="art-card" href="https://dansproul.com/featured/denali-highway-mystique-landscape-dan-sproul.html" target="_blank" rel="noopener">
+            <img src="denali-highway-mystique-landscape-dan-sproul.jpg" alt="Denali Highway Mystique black and white fine art photography by Dan Sproul" loading="lazy">
+            <span>Denali Highway Mystique</span>
+          </a>
+          <a class="art-card" href="https://dansproul.com/featured/denali-highway-reflection-black-and-white-dan-sproul.html" target="_blank" rel="noopener">
+            <img src="denali-highway-reflection-black-and-white-dan-sproul.jpg" alt="Denali Highway Reflection black and white fine art photography by Dan Sproul" loading="lazy">
+            <span>Denali Highway Reflection</span>
+          </a>
+          <a class="art-card" href="https://dansproul.com/featured/waterfall-sunburst-black-and-white-dan-sproul.html" target="_blank" rel="noopener">
+            <img src="waterfall-sunburst-black-and-white-dan-sproul.jpg" alt="Waterfall Sunburst black and white fine art photography by Dan Sproul" loading="lazy">
+            <span>Waterfall Sunburst</span>
+          </a>
+          <a class="art-card" href="https://dansproul.com/featured/monochrome-moraine-lake-canada-dan-sproul.html" target="_blank" rel="noopener">
+            <img src="monochrome-moraine-lake-canada-dan-sproul.jpg" alt="Monochrome Moraine Lake black and white fine art photography by Dan Sproul" loading="lazy">
+            <span>Monochrome Moraine Lake</span>
+          </a>
+          <a class="art-card" href="https://dansproul.com/featured/morning-forest-path-black-and-white-dan-sproul.html" target="_blank" rel="noopener">
+            <img src="morning-forest-path-black-and-white-dan-sproul.jpg" alt="Morning Forest Path black and white fine art photography by Dan Sproul" loading="lazy">
+            <span>Morning Forest Path</span>
+          </a>
+          <a class="art-card" href="https://dansproul.com/featured/schwabachers-reflection-black-and-white-dan-sproul.html" target="_blank" rel="noopener">
+            <img src="schwabachers-reflection-black-and-white-dan-sproul.jpg" alt="Schwabacher’s Reflection black and white fine art photography by Dan Sproul" loading="lazy">
+            <span>Schwabacher’s Reflection</span>
+          </a>
+      </div>
+    </section>
+
+    <section class="designer-note">
+      <div>
+        <div class="section-label">For Designers</div>
+        <h2>Simple to specify. Flexible for residential and commercial projects.</h2>
+      </div>
+      <div class="panel">
+        <p>This collection is meant to function as a calm, cohesive visual system rather than a set of unrelated prints. Monochrome work can move between rooms, floors, and project phases while maintaining a consistent emotional tone.</p>
+        <ul>
+          <li>Available in large-format sizes for statement walls.</li>
+          <li>Works across hospitality, wellness, healthcare, residential, and office interiors.</li>
+          <li>Custom sizing available for project-specific walls and niches.</li>
+          <li>Trade pricing and mockup support available for designers and stagers.</li>
+        </ul>
+        <p style="margin-top:1.5rem;">
+          <a class="button dark" href="mailto:sproulphoto@gmail.com?subject=Monochrome%20Stillness%20Trade%20Inquiry">Contact for Trade Pricing</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="seo-copy">
+      <div class="seo-copy-inner">
+        <h2>Black and white landscape photography for quiet luxury interiors.</h2>
+        <p>Monochrome Stillness was curated for designers, art buyers, and collectors looking for black and white landscape photography that feels calm, architectural, and lasting. The collection includes mountain reflections, misty forests, glacial valleys, quiet lakes, waterfalls, and atmospheric nature scenes selected for their ability to support refined interiors.</p>
+        <p>Rather than relying on color as the main design element, these photographs emphasize shape, shadow, texture, reflection, and tonal balance. That makes them especially useful in spaces with natural wood, stone, plaster, linen, leather, warm neutrals, and minimalist architecture.</p>
+        <p>For hospitality and commercial interiors, monochrome photography can create continuity across multiple spaces while still giving each room a distinct focal point. For residential interiors, these works bring depth and calm without competing with furniture, lighting, or architectural finishes.</p>
+        <p>All selected works are available as fine art prints through Dan Sproul’s print storefront, with format options suited for both personal collecting and interior design projects.</p>
+      </div>
+    </section>
+
+    <section class="related">
+      <div class="section-label">Explore More Collections</div>
+      <h2>Additional curated art directions.</h2>
+      <p>Pair Monochrome Stillness with atmospheric landscapes, mountain imagery, coastal scenes, or softer nature-driven collections for larger projects.</p>
+      <div class="related-links">
+        <a class="button primary" href="quiet-earth.html">Quiet Earth</a>
+        <a class="button" href="mountain-light.html">Mountain Light</a>
+        <a class="button" href="for-designers.html">For Designers</a>
+        <a class="button" href="in-your-space.html">In Your Space</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Daniel Sproul Fine Art Photography</span>
+    <span>dsproul.com</span>
+  </footer>
+</body>
+</html>
