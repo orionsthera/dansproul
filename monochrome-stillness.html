@@ -56,6 +56,53 @@
       overflow: hidden;
     }
 
+
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 50;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1.5rem;
+      padding: 1.05rem clamp(1.5rem, 5vw, 6rem);
+      background: rgba(16,15,14,.76);
+      border-bottom: 1px solid rgba(255,255,255,.08);
+      backdrop-filter: blur(14px);
+      color: var(--white);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .site-logo {
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      font-size: .76rem;
+      color: #efe6dc;
+      white-space: nowrap;
+    }
+
+    .site-nav {
+      display: flex;
+      align-items: center;
+      gap: clamp(.8rem, 2.2vw, 1.8rem);
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .site-nav a {
+      font-size: .68rem;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: #d9cec2;
+      transition: color .2s ease;
+    }
+
+    .site-nav a:hover {
+      color: var(--gold);
+    }
+
     .hero {
       min-height: 88vh;
       display: grid;
@@ -385,6 +432,23 @@
         grid-template-columns: 1fr;
       }
 
+      .site-header {
+        position: absolute;
+        align-items: flex-start;
+        flex-direction: column;
+        padding-top: 1rem;
+        padding-bottom: .9rem;
+      }
+
+      .site-nav {
+        justify-content: flex-start;
+        gap: .7rem 1rem;
+      }
+
+      .hero {
+        padding-top: 9.5rem;
+      }
+
       .button {
         width: 100%;
       }
@@ -393,12 +457,23 @@
 </head>
 
 <body>
+  <header class="site-header">
+    <a class="site-logo" href="index.html">Daniel Sproul</a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="for-designers.html">For Designers</a>
+      <a href="artwork-collections.html">Collections</a>
+      <a href="in-your-space.html">In Your Space</a>
+      <a href="https://dansproul.com" target="_blank" rel="noopener">Shop Prints</a>
+    </nav>
+  </header>
+
   <main class="page">
     <section class="hero">
       <div class="hero-inner">
         <div class="eyebrow">Curated Fine Art Photography</div>
         <h1>Monochrome Stillness</h1>
-        <p>Black and white landscapes selected for quiet interiors, restorative environments, hospitality suites, refined residences, and spaces where artwork should feel timeless rather than decorative.</p>
+        <p>Restrained black and white landscapes selected for architectural calm, quiet luxury interiors, wellness spaces, boutique hospitality, and rooms where artwork should feel timeless, grounded, and intentional.</p>
         <div class="button-row">
           <a class="button primary" href="#collection">View Collection</a>
           <a class="button" href="mailto:sproulphoto@gmail.com?subject=Trade%20Inquiry%20-%20Monochrome%20Stillness">Request Trade Info</a>
@@ -409,10 +484,10 @@
     <section class="intro">
       <div>
         <div class="section-label">Collection Concept</div>
-        <h2>Quiet contrast for spaces that need calm, depth, and permanence.</h2>
+        <h2>Silence, restraint, atmosphere, and architectural calm.</h2>
       </div>
       <div class="intro-text">
-        <p>Monochrome Stillness brings together black and white nature photography by Dan Sproul with a focus on atmosphere, reflection, mountain forms, mist, and soft visual rhythm. The collection is built for interiors where artwork needs to support the emotional tone of a room without overpowering the architecture.</p>
+        <p>Monochrome Stillness brings together black and white nature photography by Dan Sproul with a focus on atmosphere, reflection, mountain forms, mist, and quiet visual rhythm. The collection is built for interiors where artwork needs to support the emotional tone of a room without overpowering the architecture.</p>
         <p>These pieces work especially well in hospitality lounges, wellness spaces, healthcare corridors, residential living rooms, executive offices, and boutique environments where designers need artwork that feels sophisticated, grounded, and easy to specify across multiple rooms.</p>
       </div>
     </section>
@@ -420,7 +495,7 @@
     <section>
       <div class="section-head">
         <div class="section-label">Where It Works</div>
-        <h2>Built for interiors with restraint.</h2>
+        <h2>Built for spaces where restraint matters.</h2>
       </div>
       <div class="use-cases">
         <div class="use-card">
@@ -445,8 +520,8 @@
     <section class="mockups">
       <div class="section-head">
         <div class="section-label">In Space</div>
-        <h2>Designed for refined interiors.</h2>
-        <p>Large-format monochrome landscapes create a calm focal point in rooms that rely on texture, lighting, architecture, and restraint.</p>
+        <h2>Architectural settings for monochrome work.</h2>
+        <p>Large-format monochrome landscapes create a calm focal point in interiors shaped by texture, indirect light, natural materials, and negative space.</p>
       </div>
       <div class="mockup-grid">
           <figure class="mockup-card">
@@ -465,7 +540,7 @@
             <img src="hospitality suite mockup.jpg" alt="Boutique hospitality lounge with dramatic black and white mountain artwork" loading="lazy">
           </figure>
           <figure class="mockup-card">
-            <img src="hospitality spa moody mockup.jpg" alt="Moody hospitality spa with oversized monochrome rock reflection artwork" loading="lazy">
+            <img src="hospitality spa moody mockup(3).jpg" alt="Moody hospitality spa with oversized monochrome rock reflection artwork" loading="lazy">
           </figure>
       </div>
     </section>
@@ -473,7 +548,7 @@
     <section class="gallery" id="collection">
       <div class="section-head">
         <div class="section-label">Selected Works</div>
-        <h2>Shop the Monochrome Stillness collection.</h2>
+        <h2>Selected monochrome works for interiors.</h2>
         <p>Each image links to available print options including canvas, metal, acrylic, framed paper, and custom sizing through Dan Sproul’s print storefront.</p>
       </div>
       <div class="art-grid">
@@ -519,7 +594,7 @@
     <section class="designer-note">
       <div>
         <div class="section-label">For Designers</div>
-        <h2>Simple to specify. Flexible for residential and commercial projects.</h2>
+        <h2>A cohesive visual system for multi-room projects.</h2>
       </div>
       <div class="panel">
         <p>This collection is meant to function as a calm, cohesive visual system rather than a set of unrelated prints. Monochrome work can move between rooms, floors, and project phases while maintaining a consistent emotional tone.</p>
