@@ -417,10 +417,78 @@
       flex-wrap: wrap;
     }
 
+
+
+    .spec-sheet-section {
+      background: #f3eee7;
+      color: var(--ink);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .spec-sheet-wrap {
+      display: grid;
+      grid-template-columns: minmax(0, .9fr) minmax(280px, .62fr);
+      gap: clamp(2rem, 5vw, 5rem);
+      align-items: center;
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    .spec-sheet-copy p {
+      color: #4c443c;
+      font-size: 1.05rem;
+      max-width: 660px;
+      margin: 1.1rem 0 1.6rem;
+    }
+
+    .spec-points {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: .75rem;
+      margin: 1.6rem 0 1.8rem;
+    }
+
+    .spec-point {
+      border: 1px solid var(--line);
+      background: #fbf7f1;
+      padding: 1rem;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: .76rem;
+      letter-spacing: .13em;
+      line-height: 1.45;
+      text-transform: uppercase;
+      color: #3b332d;
+    }
+
+    .spec-preview-card {
+      background: #111;
+      padding: .7rem;
+      border: 1px solid rgba(0,0,0,.18);
+      box-shadow: 0 24px 70px rgba(0,0,0,.16);
+    }
+
+    .spec-preview-card img {
+      aspect-ratio: 8.5 / 11;
+      object-fit: cover;
+      object-position: top center;
+      background: #ddd;
+    }
+
+    .spec-preview-caption {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: .72rem;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+      color: #d7cabc;
+      padding: .75rem .35rem .25rem;
+    }
+
     @media (max-width: 980px) {
       .intro,
       .designer-note,
-      .quiet-luxury-inner {
+      .quiet-luxury-inner,
+      .spec-sheet-wrap {
         grid-template-columns: 1fr;
       }
 
@@ -429,7 +497,8 @@
         grid-template-columns: repeat(2, 1fr);
       }
 
-      .use-cases {
+      .use-cases,
+      .spec-points {
         grid-template-columns: repeat(2, 1fr);
       }
 
@@ -450,7 +519,8 @@
 
       .mockup-grid,
       .art-grid,
-      .use-cases {
+      .use-cases,
+      .spec-points {
         grid-template-columns: 1fr;
       }
 
@@ -564,6 +634,30 @@
           <figure class="mockup-card">
             <img src="hospitality spa moody mockup.jpg" alt="Moody hospitality spa with oversized monochrome rock reflection artwork" loading="lazy">
           </figure>
+      </div>
+    </section>
+
+    <section class="spec-sheet-section">
+      <div class="spec-sheet-wrap">
+        <div class="spec-sheet-copy">
+          <div class="section-label">Collection Spec Sheet</div>
+          <h2>Download the Monochrome Stillness designer spec sheet.</h2>
+          <p>A concise PDF overview for designers, art consultants, hospitality teams, and commercial interiors. Includes the collection direction, use cases, presentation options, and visual examples for large-format black and white nature photography in refined interiors.</p>
+          <div class="spec-points" aria-label="Spec sheet highlights">
+            <div class="spec-point">Custom sizing for project walls</div>
+            <div class="spec-point">Trade-ready collection overview</div>
+            <div class="spec-point">Canvas, metal, acrylic &amp; framed paper</div>
+          </div>
+          <div class="button-row">
+            <a class="button dark" href="Monochrome_Stillness_Spec_Sheet.pdf" target="_blank" rel="noopener">Download Spec Sheet</a>
+            <a class="button dark" href="mailto:sproulphoto@gmail.com?subject=Monochrome%20Stillness%20Mockup%20Request">Request Mockup</a>
+          </div>
+        </div>
+
+        <a class="spec-preview-card" href="Monochrome_Stillness_Spec_Sheet.pdf" target="_blank" rel="noopener" aria-label="Download Monochrome Stillness spec sheet PDF">
+          <img src="monochrome-stillness-spec-sheet-preview.jpg" alt="Preview of the Monochrome Stillness collection spec sheet for interior designers" loading="lazy">
+          <div class="spec-preview-caption">PDF Preview · Monochrome Stillness</div>
+        </a>
       </div>
     </section>
 
