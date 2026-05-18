@@ -484,11 +484,224 @@
       padding: .75rem .35rem .25rem;
     }
 
+
+    /* Monochrome Stillness refinements */
+    .availability-strip {
+      background: #11100f;
+      color: var(--white);
+      border-top: 1px solid rgba(185,146,98,.22);
+      border-bottom: 1px solid rgba(185,146,98,.22);
+      padding-top: clamp(2.6rem, 5vw, 4rem);
+      padding-bottom: clamp(2.6rem, 5vw, 4rem);
+    }
+
+    .availability-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    .availability-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 1px;
+      background: rgba(185,146,98,.22);
+      border: 1px solid rgba(185,146,98,.22);
+      margin-top: 1.8rem;
+    }
+
+    .availability-item {
+      background: #151413;
+      min-height: 118px;
+      padding: 1.15rem;
+      display: flex;
+      align-items: flex-end;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: .72rem;
+      letter-spacing: .16em;
+      line-height: 1.5;
+      text-transform: uppercase;
+      color: #e5d8ca;
+    }
+
+    .gallery {
+      padding-top: clamp(5.5rem, 10vw, 9rem);
+      padding-bottom: clamp(5.5rem, 10vw, 9rem);
+    }
+
+    .oversized-installation {
+      background: #151413;
+      color: var(--white);
+      border-top: 1px solid rgba(255,255,255,.08);
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+
+    .oversized-wrap {
+      max-width: 1240px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: .72fr 1.28fr;
+      gap: clamp(2rem, 5vw, 5rem);
+      align-items: center;
+    }
+
+    .oversized-copy p {
+      color: #cfc6bb;
+      font-size: 1.05rem;
+      max-width: 560px;
+      margin-top: 1.1rem;
+    }
+
+    .oversized-image {
+      border: 1px solid rgba(255,255,255,.12);
+      background: #0d0c0b;
+      box-shadow: 0 32px 80px rgba(0,0,0,.28);
+      padding: .65rem;
+    }
+
+    .oversized-image img {
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .designer-process {
+      background: #191715;
+      color: var(--white);
+      border-top: 1px solid rgba(185,146,98,.18);
+      border-bottom: 1px solid rgba(185,146,98,.18);
+    }
+
+    .process-wrap {
+      max-width: 1240px;
+      margin: 0 auto;
+    }
+
+    .process-header {
+      max-width: 760px;
+      margin-bottom: 3rem;
+    }
+
+    .process-header p {
+      color: #cfc6bb;
+      font-size: 1.04rem;
+      margin-top: 1rem;
+    }
+
+    .process-line {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: rgba(185,146,98,.24);
+      border: 1px solid rgba(185,146,98,.24);
+    }
+
+    .process-step {
+      background: #141312;
+      padding: clamp(1.35rem, 2vw, 2.2rem);
+      min-height: 230px;
+    }
+
+    .process-number {
+      display: block;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: .72rem;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.2rem;
+    }
+
+    .process-step h3 {
+      font-size: clamp(1.45rem, 2.2vw, 2.25rem);
+      margin-bottom: .9rem;
+    }
+
+    .process-step p {
+      color: #cfc6bb;
+      font-size: .96rem;
+      margin: 0;
+    }
+
+    .related {
+      text-align: left;
+    }
+
+    .related-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      margin-top: 2.5rem;
+    }
+
+    .related-card {
+      position: relative;
+      min-height: 360px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,.10);
+      background: #0f0e0d;
+      display: flex;
+      align-items: flex-end;
+      padding: 1.35rem;
+      isolation: isolate;
+    }
+
+    .related-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(0,0,0,.08), rgba(0,0,0,.82));
+      z-index: -1;
+    }
+
+    .related-card img {
+      position: absolute;
+      inset: 0;
+      height: 100%;
+      object-fit: cover;
+      z-index: -2;
+      opacity: .72;
+      transition: transform .35s ease, opacity .35s ease;
+    }
+
+    .related-card:hover img {
+      transform: scale(1.035);
+      opacity: .9;
+    }
+
+    .related-card span {
+      display: block;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: .68rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: .6rem;
+    }
+
+    .related-card h3 {
+      margin: 0;
+      color: var(--white);
+    }
+
+    .related .section-label,
+    .related h2,
+    .related p {
+      text-align: left;
+      margin-left: 0;
+    }
+
+
     @media (max-width: 980px) {
       .intro,
       .designer-note,
       .quiet-luxury-inner,
-      .spec-sheet-wrap {
+      .spec-sheet-wrap,
+      .oversized-wrap {
         grid-template-columns: 1fr;
       }
 
@@ -498,7 +711,10 @@
       }
 
       .use-cases,
-      .spec-points {
+      .spec-points,
+      .availability-grid,
+      .process-line,
+      .related-grid {
         grid-template-columns: repeat(2, 1fr);
       }
 
@@ -520,7 +736,10 @@
       .mockup-grid,
       .art-grid,
       .use-cases,
-      .spec-points {
+      .spec-points,
+      .availability-grid,
+      .process-line,
+      .related-grid {
         grid-template-columns: 1fr;
       }
 
@@ -605,6 +824,21 @@
         <div class="use-card">
           <h3>Commercial</h3>
           <p>Executive offices, conference rooms, reception areas, and refined professional spaces.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="availability-strip" aria-label="Professional specification applications">
+      <div class="availability-inner">
+        <div class="section-label">Specification Confidence</div>
+        <h2>Available for professional interiors and large-scale artwork programs.</h2>
+        <div class="availability-grid">
+          <div class="availability-item">Hospitality Projects</div>
+          <div class="availability-item">Executive Offices</div>
+          <div class="availability-item">Wellness Interiors</div>
+          <div class="availability-item">Healthcare Spaces</div>
+          <div class="availability-item">Multi-Room Installations</div>
+          <div class="availability-item">Large Scale Framed Artwork</div>
         </div>
       </div>
     </section>
@@ -707,6 +941,20 @@
       </div>
     </section>
 
+    <section class="oversized-installation">
+      <div class="oversized-wrap">
+        <div class="oversized-copy">
+          <div class="section-label">Oversized Installations</div>
+          <h2>Monochrome artwork designed to anchor architectural spaces.</h2>
+          <p>Large-scale monochrome landscape photography selected for executive interiors, hospitality lobbies, wellness environments, and architecturally grounded commercial spaces.</p>
+          <p>This scale example shows how a single commanding black and white piece can create a focal point without adding visual noise.</p>
+        </div>
+        <figure class="oversized-image">
+          <img src="monochrome stillness hospitality lobby mockup.jpg" alt="Oversized black and white rock formation artwork installed in a luxury hospitality lobby by Dan Sproul" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
     <section class="designer-note">
       <div>
         <div class="section-label">For Designers</div>
@@ -723,6 +971,42 @@
         <p style="margin-top:1.5rem;">
           <a class="button dark" href="mailto:sproulphoto@gmail.com?subject=Monochrome%20Stillness%20Trade%20Inquiry">Contact for Trade Pricing</a>
         </p>
+      </div>
+    </section>
+
+    <section class="designer-process">
+      <div class="process-wrap">
+        <div class="process-header">
+          <div class="section-label">Curated Designer Workflow</div>
+          <h2>A quiet process for specifying monochrome artwork.</h2>
+          <p>Designed as a practical resource for designers, art consultants, hospitality teams, wellness environments, and residential projects that need cohesive visual direction.</p>
+        </div>
+
+        <div class="process-line">
+          <div class="process-step">
+            <span class="process-number">01</span>
+            <h3>Share Project Details</h3>
+            <p>Room imagery, dimensions, inspiration references, floor plans, or notes on the desired atmosphere.</p>
+          </div>
+
+          <div class="process-step">
+            <span class="process-number">02</span>
+            <h3>Receive Artwork Direction</h3>
+            <p>Curated monochrome recommendations based on atmosphere, scale, architecture, lighting, and project use.</p>
+          </div>
+
+          <div class="process-step">
+            <span class="process-number">03</span>
+            <h3>Review Placement Mockups</h3>
+            <p>Scaled previews showing artwork proportion, framing direction, placement, and alternate image options.</p>
+          </div>
+
+          <div class="process-step">
+            <span class="process-number">04</span>
+            <h3>Finalize Specification</h3>
+            <p>Available in framed, canvas, acrylic, metal, and oversized statement formats for refined interiors.</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -756,14 +1040,44 @@
     </section>
 
     <section class="related">
-      <div class="section-label">Explore More Collections</div>
-      <h2>Additional curated art directions.</h2>
-      <p>Pair Monochrome Stillness with atmospheric landscapes, mountain imagery, coastal scenes, or softer nature-driven collections for larger projects.</p>
-      <div class="related-links">
-        <a class="button primary" href="quiet-earth-collection.html">Quiet Earth</a>
-        <a class="button" href="mountain-light-collection.html">Mountain Light</a>
-        <a class="button" href="for-designers.html">For Designers</a>
-        <a class="button" href="in-your-space.html">In Your Space</a>
+      <div class="related-inner">
+        <div class="section-label">Explore More Collections</div>
+        <h2>Additional curated art directions.</h2>
+        <p>Continue through atmospheric collections designed to support larger interior projects with quiet, cohesive visual systems.</p>
+
+        <div class="related-grid">
+          <a class="related-card" href="quiet-earth-collection.html">
+            <img src="quiet-earth-living-room-mockup.jpg" alt="Quiet Earth atmospheric landscape artwork in a refined living room interior" loading="lazy">
+            <div>
+              <span>Atmospheric Landscapes</span>
+              <h3>Quiet Earth</h3>
+            </div>
+          </a>
+
+          <a class="related-card" href="mountain-light-collection.html">
+            <img src="mountain-light-lobby.jpg" alt="Mountain Light landscape artwork in a hospitality lobby interior" loading="lazy">
+            <div>
+              <span>Alpine Atmosphere</span>
+              <h3>Mountain Light</h3>
+            </div>
+          </a>
+
+          <a class="related-card" href="wellness-waters-collection.html">
+            <img src="wellness-waters-forest-spa-room.jpg" alt="Wellness Waters restorative water artwork in a spa-inspired interior" loading="lazy">
+            <div>
+              <span>Restorative Nature</span>
+              <h3>Wellness Waters</h3>
+            </div>
+          </a>
+
+          <a class="related-card" href="for-designers.html">
+            <img src="hospitality suite mockup.jpg" alt="Designer resource page for Dan Sproul fine art photography collections" loading="lazy">
+            <div>
+              <span>Trade Resources</span>
+              <h3>For Designers</h3>
+            </div>
+          </a>
+        </div>
       </div>
     </section>
   </main>
