@@ -316,6 +316,255 @@ grid-template-columns:1fr;
 section{padding:72px 0}
 .hero{min-height:82vh}
 }
+
+
+/* RELATED COLLECTION CARDS */
+
+
+.qe-related-collections{
+  background:#050505;
+  padding:120px 0 130px;
+  border-top:1px solid rgba(255,255,255,0.08);
+}
+
+.qe-related-inner{
+  width:min(92%,1380px);
+  margin:auto;
+}
+
+.qe-related-header{
+  max-width:780px;
+  margin-bottom:55px;
+}
+
+.qe-related-eyebrow{
+  display:block;
+  color:#b99658;
+  text-transform:uppercase;
+  letter-spacing:.22em;
+  font-size:.68rem;
+  margin-bottom:18px;
+}
+
+.qe-related-header h2{
+  font-size:clamp(2.5rem,5vw,4.6rem);
+  line-height:.96;
+  font-weight:400;
+  color:#f3eee7;
+  margin-bottom:24px;
+  letter-spacing:-0.04em;
+}
+
+.qe-related-header p{
+  color:#b8aa98;
+  font-size:1rem;
+  line-height:1.9;
+  max-width:720px;
+}
+
+.qe-related-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:24px;
+}
+
+.qe-related-card{
+  background:#0c0c0c;
+  border:1px solid rgba(255,255,255,0.08);
+  overflow:hidden;
+  transition:.28s ease;
+  text-decoration:none;
+}
+
+.qe-related-card:hover{
+  transform:translateY(-4px);
+  border-color:rgba(185,150,88,0.45);
+}
+
+.qe-related-image{
+  aspect-ratio:16/10;
+  overflow:hidden;
+}
+
+.qe-related-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.qe-related-content{
+  padding:26px 24px 30px;
+}
+
+.qe-related-type{
+  display:block;
+  color:#b99658;
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  font-size:.62rem;
+  margin-bottom:10px;
+}
+
+.qe-related-content h3{
+  color:#f3eee7;
+  font-size:1.7rem;
+  line-height:1.1;
+  font-weight:400;
+  margin-bottom:16px;
+}
+
+.qe-related-content p{
+  color:#b8aa98;
+  line-height:1.8;
+  font-size:.95rem;
+  margin-bottom:20px;
+}
+
+.qe-related-link{
+  color:#f3eee7;
+  font-size:.72rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
+
+@media(max-width:1100px){
+
+  .qe-related-grid{
+    grid-template-columns:1fr;
+  }
+
+}
+
+
+
+/* DESIGNER WORKFLOW */
+.workflow-intro-cta{
+  background:#0b0a08;
+  padding:90px 0 0;
+  border-top:1px solid rgba(255,255,255,.08);
+  text-align:center;
+}
+.workflow-intro-cta .container{
+  max-width:860px;
+}
+.workflow-intro-cta h2{
+  color:#f3eee7;
+  font-size:clamp(2.4rem,5vw,4.6rem);
+  line-height:.98;
+  margin-bottom:20px;
+}
+.workflow-intro-cta p{
+  margin:0 auto;
+  color:#b8aa98;
+  max-width:660px;
+}
+.designer-workflow{
+  background:#0b0a08;
+  color:#f4efe8;
+  padding:90px 0 120px;
+  border-bottom:1px solid rgba(211,177,122,.16);
+}
+.workflow-header{
+  max-width:780px;
+  margin-bottom:56px;
+}
+.workflow-header h2,
+.workflow-confidence h3,
+.workflow-cta h3{
+  font-weight:400;
+  line-height:.98;
+}
+.workflow-header h2{
+  font-size:clamp(2.6rem,5vw,4.8rem);
+  margin-bottom:24px;
+}
+.workflow-header p{
+  color:rgba(244,239,232,.72);
+  font-size:1rem;
+  max-width:680px;
+}
+.workflow-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+  margin-bottom:54px;
+}
+.workflow-step{
+  border:1px solid rgba(211,177,122,.18);
+  background:rgba(255,255,255,.035);
+  border-radius:14px;
+  padding:30px;
+  min-height:260px;
+}
+.workflow-number{
+  color:var(--accent);
+  font-size:.72rem;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+}
+.workflow-step h3{
+  font-size:1.55rem;
+  margin:22px 0 14px;
+}
+.workflow-step p{
+  color:rgba(244,239,232,.68);
+  font-size:.95rem;
+}
+.workflow-confidence{
+  display:grid;
+  grid-template-columns:.85fr 1.15fr;
+  gap:36px;
+  padding:38px;
+  border:1px solid rgba(211,177,122,.18);
+  border-radius:14px;
+  background:rgba(255,255,255,.025);
+  margin-bottom:46px;
+}
+.workflow-confidence h3{
+  font-size:clamp(2rem,4vw,3.6rem);
+}
+.workflow-confidence ul{
+  columns:2;
+  list-style:none;
+  color:rgba(244,239,232,.72);
+  font-size:.95rem;
+}
+.workflow-confidence li{
+  margin-bottom:13px;
+  padding-left:18px;
+  position:relative;
+}
+.workflow-confidence li::before{
+  content:"—";
+  position:absolute;
+  left:0;
+  color:var(--accent);
+}
+.workflow-cta{
+  text-align:center;
+  max-width:760px;
+  margin:0 auto;
+  padding-top:20px;
+}
+.workflow-cta h3{
+  font-size:clamp(2.2rem,5vw,4.2rem);
+  margin-bottom:14px;
+}
+.workflow-cta p{
+  color:rgba(244,239,232,.72);
+  margin:0 auto 30px;
+}
+@media(max-width:1100px){
+  .workflow-grid,
+  .workflow-confidence{
+    grid-template-columns:1fr;
+  }
+  .workflow-confidence ul{
+    columns:1;
+  }
+}
+
 </style>
 </head>
 
@@ -499,6 +748,89 @@ Soft atmospheric coastal imagery suited for bedrooms, wellness spaces, and refin
 </div>
 </section>
 
+
+<section class="workflow-intro-cta">
+<div class="container">
+<span class="eyebrow">Designer Support</span>
+<h2>Need this collection visualized in a bedroom, spa, lobby, or coastal home?</h2>
+<p>Email a room photo or project note and receive a complimentary mockup preview with artwork recommendations, sizing direction, and presentation guidance.</p>
+</div>
+</section>
+
+<section class="designer-workflow">
+  <div class="container">
+    <div class="workflow-header">
+      <span class="eyebrow">Designer Workflow</span>
+      <h2>From room photo to artwork recommendation.</h2>
+      <p>
+        A simple process for designers, stagers, hospitality teams, wellness spaces,
+        and residential clients who want artwork chosen with scale, atmosphere, and placement in mind.
+      </p>
+    </div>
+
+    <div class="workflow-grid">
+      <div class="workflow-step">
+        <span class="workflow-number">Step 01</span>
+        <h3>Share Your Space</h3>
+        <p>
+          Send a room photo, wall dimensions, project type, preferred atmosphere,
+          and any inspiration images or finish notes.
+        </p>
+      </div>
+
+      <div class="workflow-step">
+        <span class="workflow-number">Step 02</span>
+        <h3>Receive Curated Options</h3>
+        <p>
+          Dan recommends artwork options, sizing direction, orientation,
+          collection fit, and presentation formats.
+        </p>
+      </div>
+
+      <div class="workflow-step">
+        <span class="workflow-number">Step 03</span>
+        <h3>Review Mockups</h3>
+        <p>
+          See selected artwork visualized in your space with scale,
+          placement, and alternate image options when needed.
+        </p>
+      </div>
+
+      <div class="workflow-step">
+        <span class="workflow-number">Step 04</span>
+        <h3>Specify & Order</h3>
+        <p>
+          Available as framed prints, canvas, acrylic, metal, and custom-sized
+          pieces for residential and commercial interiors.
+        </p>
+      </div>
+    </div>
+
+    <div class="workflow-confidence">
+      <div>
+        <span class="eyebrow">Trade Confidence</span>
+        <h3>Built for easier specification.</h3>
+      </div>
+
+      <ul>
+        <li>Custom sizing available</li>
+        <li>Framed, canvas, acrylic, and metal options</li>
+        <li>Large-format artwork for statement walls</li>
+        <li>Collection PDFs and spec sheets available</li>
+        <li>Room mockups available before ordering</li>
+        <li>Support for residential, hospitality, healthcare, and wellness projects</li>
+      </ul>
+    </div>
+
+    <div class="workflow-cta">
+      <h3>Need artwork visualized in your project?</h3>
+      <p>Email a room photo or project note for a complimentary mockup preview.</p>
+      <a href="mailto:sproulphoto@gmail.com?subject=Coastal%20Atmosphere%20Mockup%20Request" class="btn primary">Request Mockup</a>
+      <a href="/for-designers.html" class="btn">For Designers</a>
+    </div>
+  </div>
+</section>
+
 <section class="qe-related-collections">
 
   <div class="qe-related-inner">
@@ -530,6 +862,28 @@ Soft atmospheric coastal imagery suited for bedrooms, wellness spaces, and refin
           <p>
             Quiet Earth is a curated collection of atmospheric landscape photography
             created for interiors that need calm, depth, and a grounded connection to nature.
+          </p>
+
+          <span class="qe-related-link">
+            Explore Collection →
+          </span>
+        </div>
+      </a>
+
+
+      <!-- Wellness Waters -->
+      <a class="qe-related-card" href="wellness-waters-collection.html">
+        <div class="qe-related-image">
+          <img src="spa massage room waterfall mockup(6).jpg" alt="Wellness Waters Collection spa massage room waterfall artwork mockup">
+        </div>
+
+        <div class="qe-related-content">
+          <span class="qe-related-type">Spa · Healthcare · Wellness</span>
+
+          <h3>Wellness Waters</h3>
+
+          <p>
+            Restorative waterfall, flowing water, forest stream, and calming nature photography selected for wellness clinics, spa interiors, healthcare waiting rooms, and boutique hospitality.
           </p>
 
           <span class="qe-related-link">
@@ -587,123 +941,6 @@ Soft atmospheric coastal imagery suited for bedrooms, wellness spaces, and refin
   </div>
 
 </section>
-
-<style>
-
-.qe-related-collections{
-  background:#050505;
-  padding:120px 0 130px;
-  border-top:1px solid rgba(255,255,255,0.08);
-}
-
-.qe-related-inner{
-  width:min(92%,1380px);
-  margin:auto;
-}
-
-.qe-related-header{
-  max-width:780px;
-  margin-bottom:55px;
-}
-
-.qe-related-eyebrow{
-  display:block;
-  color:#b99658;
-  text-transform:uppercase;
-  letter-spacing:.22em;
-  font-size:.68rem;
-  margin-bottom:18px;
-}
-
-.qe-related-header h2{
-  font-size:clamp(2.5rem,5vw,4.6rem);
-  line-height:.96;
-  font-weight:400;
-  color:#f3eee7;
-  margin-bottom:24px;
-  letter-spacing:-0.04em;
-}
-
-.qe-related-header p{
-  color:#b8aa98;
-  font-size:1rem;
-  line-height:1.9;
-  max-width:720px;
-}
-
-.qe-related-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:24px;
-}
-
-.qe-related-card{
-  background:#0c0c0c;
-  border:1px solid rgba(255,255,255,0.08);
-  overflow:hidden;
-  transition:.28s ease;
-  text-decoration:none;
-}
-
-.qe-related-card:hover{
-  transform:translateY(-4px);
-  border-color:rgba(185,150,88,0.45);
-}
-
-.qe-related-image{
-  aspect-ratio:16/10;
-  overflow:hidden;
-}
-
-.qe-related-image img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
-}
-
-.qe-related-content{
-  padding:26px 24px 30px;
-}
-
-.qe-related-type{
-  display:block;
-  color:#b99658;
-  text-transform:uppercase;
-  letter-spacing:.16em;
-  font-size:.62rem;
-  margin-bottom:10px;
-}
-
-.qe-related-content h3{
-  color:#f3eee7;
-  font-size:1.7rem;
-  line-height:1.1;
-  font-weight:400;
-  margin-bottom:16px;
-}
-
-.qe-related-content p{
-  color:#b8aa98;
-  line-height:1.8;
-  font-size:.95rem;
-  margin-bottom:20px;
-}
-
-.qe-related-link{
-  color:#f3eee7;
-  font-size:.72rem;
-  letter-spacing:.14em;
-  text-transform:uppercase;
-}
-
-@media(max-width:1100px){
-
-  .qe-related-grid{
-    grid-template-columns:1fr;
-  }
-
-}
 
 <section class="dark-section">
 <div class="container">
