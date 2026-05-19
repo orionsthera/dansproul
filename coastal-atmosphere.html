@@ -301,6 +301,59 @@ font-size:.9rem;
 color:#847c70;
 }
 
+.site-header{
+position:fixed;
+top:0;
+left:0;
+right:0;
+z-index:900;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:1.5rem;
+padding:1.05rem clamp(1.5rem,5vw,6rem);
+background:rgba(16,15,14,.78);
+border-bottom:1px solid rgba(255,255,255,.08);
+backdrop-filter:blur(14px);
+color:#fbf7f1;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+.site-logo{
+letter-spacing:.22em;
+text-transform:uppercase;
+font-size:.76rem;
+color:#efe6dc;
+white-space:nowrap;
+}
+
+.site-nav{
+display:flex;
+align-items:center;
+gap:clamp(.8rem,2.2vw,1.8rem);
+flex-wrap:wrap;
+justify-content:flex-end;
+}
+
+.site-nav a{
+font-size:.68rem;
+letter-spacing:.16em;
+text-transform:uppercase;
+color:#d9cec2;
+transition:color .2s ease;
+}
+
+.site-nav a:hover,
+.site-nav a.active{
+color:var(--accent);
+}
+
+.site-nav .shop-print-link{
+border:1px solid rgba(197,160,106,.42);
+padding:.5rem .85rem;
+color:#d8c6a4;
+}
+
 @media(max-width:1100px){
 .intro-grid,
 .mockup-pair,
@@ -315,6 +368,9 @@ grid-template-columns:1fr;
 @media(max-width:780px){
 section{padding:72px 0}
 .hero{min-height:82vh}
+.site-header{padding:1rem 1.4rem}
+.site-nav{display:none}
+.hero-content{padding-top:4.8rem}
 }
 
 
@@ -603,6 +659,17 @@ html,body{overflow-x:hidden}
   document.addEventListener('keydown',function(e){if(e.key==='Escape')close()});
 })();
 </script>
+
+<header class="site-header">
+  <a class="site-logo" href="/">Daniel Sproul</a>
+  <nav class="site-nav" aria-label="Primary navigation">
+    <a href="/">Home</a>
+    <a href="for-designers.html">For Designers</a>
+    <a class="active" href="art-collections.html">Collections</a>
+    <a href="in-your-space.html">In Your Space</a>
+    <a class="shop-print-link" href="https://dansproul.com" target="_blank" rel="noopener">Shop Prints</a>
+  </nav>
+</header>
 
 
 <section class="hero">
