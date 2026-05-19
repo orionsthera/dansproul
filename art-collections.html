@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Fine Art Photography Collections | Dan Sproul</title>
-<meta name="description" content="Explore curated fine art photography collections by Dan Sproul including Quiet Earth, Wellness Waters, Coastal Atmosphere, Mountain Light, Forest Light, Monochrome Stillness, and interior-focused artwork collections for residential, hospitality, wellness, healthcare, and commercial spaces.">
+<meta name="description" content="Explore curated fine art photography collections by Dan Sproul including Quiet Earth, Winter Stillness, Wellness Waters, Coastal Atmosphere, Mountain Light, Forest Light, Monochrome Stillness, and interior-focused artwork collections for residential, hospitality, wellness, healthcare, and commercial spaces.">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://dsproul.com/art-collections.html">
 <style>
@@ -22,6 +22,41 @@
 </style>
 </head>
 <body>
+<!-- STANDARD MOBILE NAV FIX -->
+<style>
+html,body{overflow-x:hidden}
+@media(max-width:760px){
+  .ds-mobile-toggle{display:flex!important}
+  .ds-mobile-panel.open{display:flex!important}
+}
+.ds-mobile-toggle{display:none;position:fixed;top:18px;right:18px;z-index:1000;background:rgba(15,13,11,.86);border:1px solid rgba(197,160,106,.42);padding:10px;flex-direction:column;gap:5px;cursor:pointer}
+.ds-mobile-toggle span{display:block;width:24px;height:1px;background:#f4eee5}
+.ds-mobile-panel{display:none;position:fixed;inset:0;z-index:999;background:rgba(12,10,8,.98);align-items:center;justify-content:center;flex-direction:column;gap:24px;text-align:center}
+.ds-mobile-panel a{color:#f4eee5!important;text-decoration:none!important;font-family:Georgia,serif!important;font-size:1.65rem!important;letter-spacing:.04em!important;text-transform:none!important}
+.ds-mobile-panel a.ds-gold{color:#c5a06a!important}
+.ds-mobile-close{position:absolute;top:22px;right:24px;background:none;border:0;color:#f4eee5;font-size:1.9rem;cursor:pointer}
+</style>
+<button class="ds-mobile-toggle" id="dsMobileToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+<div class="ds-mobile-panel" id="dsMobilePanel">
+  <button class="ds-mobile-close" id="dsMobileClose" aria-label="Close menu">×</button>
+  <a href="/">Home</a>
+  <a href="/art-collections.html">Collections</a>
+  <a href="/in-your-space.html">In Your Space</a>
+  <a href="/for-designers.html">For Designers</a>
+  <a href="https://dansproul.com" target="_blank" rel="noopener" class="ds-gold">Shop Prints ↗</a>
+</div>
+<script>
+(function(){
+  var b=document.getElementById('dsMobileToggle'),p=document.getElementById('dsMobilePanel'),c=document.getElementById('dsMobileClose');
+  if(!b||!p||!c)return;
+  function close(){p.classList.remove('open');document.body.style.overflow=''}
+  b.addEventListener('click',function(){p.classList.add('open');document.body.style.overflow='hidden'});
+  c.addEventListener('click',close);
+  p.querySelectorAll('a').forEach(function(a){a.addEventListener('click',close)});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close()});
+})();
+</script>
+
 <header class="site-header">
 <a href="/" class="brand">Dan Sproul<span>Fine Art Photography</span></a>
 <nav class="site-nav"><a href="/">Home</a><a href="/art-collections.html">Collections</a><a href="/for-designers.html">For Designers</a><a href="/in-your-space.html">In Your Space</a><a href="https://dansproul.com" class="shop-link">Shop ↗</a></nav>
@@ -32,7 +67,7 @@
 <h1>Fine Art Photography Organized by Mood, Place, and Interior Use</h1>
 <p>Explore atmospheric nature photography collections by Dan Sproul, curated for modern homes, hospitality interiors, wellness spaces, offices, and collectors looking for artwork with a clear sense of place and feeling.</p>
 <a href="#atmospheric" class="btn primary">Atmospheric Collections</a><a href="https://dansproul.com" class="btn">Shop Full Catalog</a>
-<div class="trust"><span>Quiet Earth</span><span>Wellness Waters</span><span>Coastal Atmosphere</span><span>Mountain Light</span><span>Forest Light</span><span>Monochrome Stillness</span></div>
+<div class="trust"><span>Quiet Earth</span><span>Winter Stillness</span><span>Wellness Waters</span><span>Coastal Atmosphere</span><span>Mountain Light</span><span>Forest Light</span><span>Monochrome Stillness</span></div>
 </div></section>
 
 <section><div class="container grid2">
@@ -45,9 +80,10 @@
 </div></section>
 
 <section class="light" id="atmospheric"><div class="container">
-<div class="center"><span class="eyebrow">Primary Atmospheric Collections</span><h2>Six collection directions for refined interiors.</h2><p>These curated nature photography collections are organized for residential, hospitality, wellness, healthcare, and design-focused spaces.</p></div>
+<div class="center"><span class="eyebrow">Primary Atmospheric Collections</span><h2>Seven collection directions for refined interiors.</h2><p>These curated nature photography collections are organized for residential, hospitality, wellness, healthcare, and design-focused spaces.</p></div>
 <div class="collection-grid">
 <a class="card" href="/quiet-earth-collection.html"><img src="quiet-earth-appalachian-fog.jpg" onerror="this.src='quiet-earth-fallback.jpg'" alt="Quiet Earth fine art photography collection by Dan Sproul"><div class="copy"><span>Calm / Grounded / Atmospheric</span><h3>Quiet Earth</h3><p>Muted landscapes, still water, mountain atmosphere, and grounded natural tones for calming residential, wellness, and hospitality interiors.</p><div class="meta"><em>Wellness</em><em>Hospitality</em><em>Quiet Luxury</em></div><b class="link">View Collection</b></div></a>
+<a class="card" href="/winter-stillness.html"><img src="winter stillness living room mockup.jpg" alt="Winter Stillness fine art photography collection by Dan Sproul shown in a calm living room interior"><div class="copy"><span>Winter / Quiet / Neutral</span><h3>Winter Stillness</h3><p>Soft winter landscapes, quiet snow, muted woodland atmosphere, and neutral nature photography for calm homes, hospitality rooms, offices, and restful interiors.</p><div class="meta"><em>Calm Interiors</em><em>Neutral Palette</em><em>Hospitality</em></div><b class="link">View Collection</b></div></a>
 <a class="card" href="/wellness-waters-collection.html"><img src="spa massage room waterfall mockup.jpg" alt="Wellness Waters fine art photography collection shown in a luxury spa treatment room with large waterfall wall art by Dan Sproul"><div class="copy"><span>Water / Wellness / Restorative</span><h3>Wellness Waters</h3><p>Restorative waterfall, stream, and flowing water photography for spas, healthcare interiors, hospitality, and calm residential spaces.</p><div class="meta"><em>Spa</em><em>Healthcare</em><em>Wellness</em></div><b class="link">View Collection</b></div></a>
 <a class="card" href="/coastal-atmosphere.html"><img src="coastal-atmosphere-preview.jpg" onerror="this.src='residential-art-resource.jpg'" alt="Coastal Atmosphere fine art photography collection by Dan Sproul"><div class="copy"><span>Moody / Coastal / Refined</span><h3>Coastal Atmosphere</h3><p>Moody Oregon Coast photography featuring sea stacks, fog, monochrome shoreline studies, and atmospheric coastal imagery for boutique hospitality and elevated coastal interiors.</p><div class="meta"><em>Coastal Modern</em><em>Residential</em><em>Boutique Hospitality</em></div><b class="link">View Collection</b></div></a>
 <a class="card" href="/mountain-light-collection.html"><img src="mountain-light-preview.jpg" onerror="this.src='mountain-light-artwork.jpg'" alt="Mountain Light fine art photography collection by Dan Sproul"><div class="copy"><span>Alpine / Luminous / Statement</span><h3>Mountain Light</h3><p>Atmospheric mountain photography featuring alpine landscapes, dramatic peaks, expansive wilderness scenes, and elevated natural light designed for statement interiors and modern mountain-inspired spaces.</p><div class="meta"><em>Lodges</em><em>Residential</em><em>Hospitality</em></div><b class="link">View Collection</b></div></a>
@@ -64,8 +100,8 @@
 
 <section><div class="container"><span class="eyebrow">Fine Art Photography Collections</span><h2>Curated photography collections for wall art, interiors, designers, and collectors.</h2><div class="cols">
 <p>Dan Sproul’s fine art photography collections are organized to make browsing easier for homeowners, collectors, interior designers, hospitality buyers, and anyone looking for large nature photography prints with a clear visual direction.</p>
-<p>The primary atmospheric collections include Quiet Earth, Wellness Waters, Coastal Atmosphere, Mountain Light, Forest Light, and Monochrome Stillness. Each collection is curated around mood, atmosphere, palette, and interior use rather than simply by location.</p>
-<p>Quiet Earth focuses on calming landscapes and grounded natural tones. Wellness Waters features waterfalls, flowing streams, and restorative water imagery for spas, healthcare, and hospitality spaces. Coastal Atmosphere highlights moody shoreline imagery and refined coastal scenes. Mountain Light emphasizes luminous alpine landscapes and dramatic mountain atmosphere. Forest Light brings woodland trails, filtered sunlight, trees, and biophilic calm into focus. Monochrome Stillness adds restrained black and white landscapes for healthcare, hospitality, executive, and wellness-oriented spaces.</p>
+<p>The primary atmospheric collections include Quiet Earth, Winter Stillness, Wellness Waters, Coastal Atmosphere, Mountain Light, Forest Light, and Monochrome Stillness. Each collection is curated around mood, atmosphere, palette, and interior use rather than simply by location.</p>
+<p>Quiet Earth focuses on calming landscapes and grounded natural tones. Winter Stillness adds soft snow, quiet woodland scenes, and neutral winter atmosphere for restful interiors. Wellness Waters features waterfalls, flowing streams, and restorative water imagery for spas, healthcare, and hospitality spaces. Coastal Atmosphere highlights moody shoreline imagery and refined coastal scenes. Mountain Light emphasizes luminous alpine landscapes and dramatic mountain atmosphere. Forest Light brings woodland trails, filtered sunlight, trees, and biophilic calm into focus. Monochrome Stillness adds restrained black and white landscapes for healthcare, hospitality, executive, and wellness-oriented spaces.</p>
 <p>For project-specific sourcing, visit the <a href="/for-designers.html">For Designers</a> page or explore how artwork looks in interiors through <a href="/in-your-space.html">In Your Space</a>.</p>
 </div></div></section>
 
