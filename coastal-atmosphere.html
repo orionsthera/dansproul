@@ -569,6 +569,41 @@ section{padding:72px 0}
 </head>
 
 <body>
+<!-- STANDARD MOBILE NAV FIX -->
+<style>
+html,body{overflow-x:hidden}
+@media(max-width:760px){
+  .ds-mobile-toggle{display:flex!important}
+  .ds-mobile-panel.open{display:flex!important}
+}
+.ds-mobile-toggle{display:none;position:fixed;top:18px;right:18px;z-index:1000;background:rgba(15,13,11,.86);border:1px solid rgba(197,160,106,.42);padding:10px;flex-direction:column;gap:5px;cursor:pointer}
+.ds-mobile-toggle span{display:block;width:24px;height:1px;background:#f4eee5}
+.ds-mobile-panel{display:none;position:fixed;inset:0;z-index:999;background:rgba(12,10,8,.98);align-items:center;justify-content:center;flex-direction:column;gap:24px;text-align:center}
+.ds-mobile-panel a{color:#f4eee5!important;text-decoration:none!important;font-family:Georgia,serif!important;font-size:1.65rem!important;letter-spacing:.04em!important;text-transform:none!important}
+.ds-mobile-panel a.ds-gold{color:#c5a06a!important}
+.ds-mobile-close{position:absolute;top:22px;right:24px;background:none;border:0;color:#f4eee5;font-size:1.9rem;cursor:pointer}
+</style>
+<button class="ds-mobile-toggle" id="dsMobileToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+<div class="ds-mobile-panel" id="dsMobilePanel">
+  <button class="ds-mobile-close" id="dsMobileClose" aria-label="Close menu">×</button>
+  <a href="/">Home</a>
+  <a href="/art-collections.html">Collections</a>
+  <a href="/in-your-space.html">In Your Space</a>
+  <a href="/for-designers.html">For Designers</a>
+  <a href="https://dansproul.com" target="_blank" rel="noopener" class="ds-gold">Shop Prints ↗</a>
+</div>
+<script>
+(function(){
+  var b=document.getElementById('dsMobileToggle'),p=document.getElementById('dsMobilePanel'),c=document.getElementById('dsMobileClose');
+  if(!b||!p||!c)return;
+  function close(){p.classList.remove('open');document.body.style.overflow=''}
+  b.addEventListener('click',function(){p.classList.add('open');document.body.style.overflow='hidden'});
+  c.addEventListener('click',close);
+  p.querySelectorAll('a').forEach(function(a){a.addEventListener('click',close)});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close()});
+})();
+</script>
+
 
 <section class="hero">
 <div class="container hero-content">
