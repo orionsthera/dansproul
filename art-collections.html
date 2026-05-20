@@ -35,15 +35,67 @@ html,body{overflow-x:hidden}
 .ds-mobile-panel a{color:#f4eee5!important;text-decoration:none!important;font-family:Georgia,serif!important;font-size:1.65rem!important;letter-spacing:.04em!important;text-transform:none!important}
 .ds-mobile-panel a.ds-gold{color:#c5a06a!important}
 .ds-mobile-close{position:absolute;top:22px;right:24px;background:none;border:0;color:#f4eee5;font-size:1.9rem;cursor:pointer}
+
+.footer-seo {
+  background: #100e0b;
+  padding: 62px clamp(22px, 6vw, 76px) 36px;
+  border-top: 1px solid rgba(185, 138, 59, .22);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 28px;
+  max-width: 1380px;
+  margin: 0 auto;
+}
+
+.footer-grid h3 {
+  margin-bottom: 13px;
+  color: #d5b365;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.footer-grid a {
+  display: block;
+  text-decoration: none;
+  color: rgba(244, 238, 229, .62);
+  font-size: 13px;
+  line-height: 2;
+}
+
+.footer-grid a:hover {
+  color: #f4eee5;
+}
+
+.footer-bottom {
+  max-width: 1380px;
+  margin: 40px auto 0;
+  padding-top: 28px;
+  border-top: 1px solid rgba(185, 138, 59, .22);
+  color: rgba(244, 238, 229, .32);
+  font-size: 10px;
+  letter-spacing: .18em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1040px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
 <button class="ds-mobile-toggle" id="dsMobileToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
 <div class="ds-mobile-panel" id="dsMobilePanel">
-  <button class="ds-mobile-close" id="dsMobileClose" aria-label="Close menu">×</button>
+  <button class="ds-mobile-close" id="dsMobileClose" aria-label="Close menu">Ã—</button>
   <a href="/">Home</a>
   <a href="/art-collections.html">Collections</a>
   <a href="/in-your-space.html">In Your Space</a>
   <a href="/for-designers.html">For Designers</a>
-  <a href="https://dansproul.com" target="_blank" rel="noopener" class="ds-gold">Shop Prints ↗</a>
+  <a href="https://dansproul.com" target="_blank" rel="noopener" class="ds-gold">Shop Prints â†—</a>
 </div>
 <script>
 (function(){
@@ -59,7 +111,7 @@ html,body{overflow-x:hidden}
 
 <header class="site-header">
 <a href="/" class="brand">Dan Sproul<span>Fine Art Photography</span></a>
-<nav class="site-nav"><a href="/">Home</a><a href="/art-collections.html">Collections</a><a href="/for-designers.html">For Designers</a><a href="/in-your-space.html">In Your Space</a><a href="https://dansproul.com" class="shop-link">Shop ↗</a></nav>
+<nav class="site-nav"><a href="/">Home</a><a href="/art-collections.html">Collections</a><a href="/for-designers.html">For Designers</a><a href="/in-your-space.html">In Your Space</a><a href="https://dansproul.com" class="shop-link">Shop â†—</a></nav>
 </header>
 
 <section class="hero"><div class="container hero-content">
@@ -72,7 +124,7 @@ html,body{overflow-x:hidden}
 
 <section><div class="container grid2">
 <div><span class="eyebrow">A Clearer Way To Explore The Work</span><h2>Built for homeowners, designers, hospitality buyers, and collectors.</h2>
-<p>This page organizes Dan Sproul’s work into curated collection directions instead of forcing visitors to sort through a large catalog all at once.</p>
+<p>This page organizes Dan Sproulâ€™s work into curated collection directions instead of forcing visitors to sort through a large catalog all at once.</p>
 <p>The primary atmospheric collections focus on how the artwork feels in a space: calm and grounded, coastal and moody, luminous and alpine, or restorative and woodland-focused.</p>
 <p>Each collection is built around mood, palette, subject, and interior use so visitors can move quickly from inspiration to a focused body of work.</p>
 <a href="/for-designers.html" class="btn">For Interior Designers</a></div>
@@ -99,7 +151,7 @@ html,body{overflow-x:hidden}
 </div></div></section>
 
 <section><div class="container"><span class="eyebrow">Fine Art Photography Collections</span><h2>Curated photography collections for wall art, interiors, designers, and collectors.</h2><div class="cols">
-<p>Dan Sproul’s fine art photography collections are organized to make browsing easier for homeowners, collectors, interior designers, hospitality buyers, and anyone looking for large nature photography prints with a clear visual direction.</p>
+<p>Dan Sproulâ€™s fine art photography collections are organized to make browsing easier for homeowners, collectors, interior designers, hospitality buyers, and anyone looking for large nature photography prints with a clear visual direction.</p>
 <p>The primary atmospheric collections include Quiet Earth, Winter Stillness, Wellness Waters, Coastal Atmosphere, Mountain Light, Forest Light, and Monochrome Stillness. Each collection is curated around mood, atmosphere, palette, and interior use rather than simply by location.</p>
 <p>Quiet Earth focuses on calming landscapes and grounded natural tones. Winter Stillness adds soft snow, quiet woodland scenes, and neutral winter atmosphere for restful interiors. Wellness Waters features waterfalls, flowing streams, and restorative water imagery for spas, healthcare, and hospitality spaces. Coastal Atmosphere highlights moody shoreline imagery and refined coastal scenes. Mountain Light emphasizes luminous alpine landscapes and dramatic mountain atmosphere. Forest Light brings woodland trails, filtered sunlight, trees, and biophilic calm into focus. Monochrome Stillness adds restrained black and white landscapes for healthcare, hospitality, executive, and wellness-oriented spaces.</p>
 <p>For project-specific sourcing, visit the <a href="/for-designers.html">For Designers</a> page or explore how artwork looks in interiors through <a href="/in-your-space.html">In Your Space</a>.</p>
