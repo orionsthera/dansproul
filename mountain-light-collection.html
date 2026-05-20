@@ -99,15 +99,67 @@ html,body{overflow-x:hidden}
 .ds-mobile-panel a{color:#f4eee5!important;text-decoration:none!important;font-family:Georgia,serif!important;font-size:1.65rem!important;letter-spacing:.04em!important;text-transform:none!important}
 .ds-mobile-panel a.ds-gold{color:#c5a06a!important}
 .ds-mobile-close{position:absolute;top:22px;right:24px;background:none;border:0;color:#f4eee5;font-size:1.9rem;cursor:pointer}
+
+.footer-seo {
+  background: #100e0b;
+  padding: 62px clamp(22px, 6vw, 76px) 36px;
+  border-top: 1px solid rgba(185, 138, 59, .22);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 28px;
+  max-width: 1380px;
+  margin: 0 auto;
+}
+
+.footer-grid h3 {
+  margin-bottom: 13px;
+  color: #d5b365;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.footer-grid a {
+  display: block;
+  text-decoration: none;
+  color: rgba(244, 238, 229, .62);
+  font-size: 13px;
+  line-height: 2;
+}
+
+.footer-grid a:hover {
+  color: #f4eee5;
+}
+
+.footer-bottom {
+  max-width: 1380px;
+  margin: 40px auto 0;
+  padding-top: 28px;
+  border-top: 1px solid rgba(185, 138, 59, .22);
+  color: rgba(244, 238, 229, .32);
+  font-size: 10px;
+  letter-spacing: .18em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1040px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
 <button class="ds-mobile-toggle" id="dsMobileToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
 <div class="ds-mobile-panel" id="dsMobilePanel">
-  <button class="ds-mobile-close" id="dsMobileClose" aria-label="Close menu">×</button>
+  <button class="ds-mobile-close" id="dsMobileClose" aria-label="Close menu">Ã—</button>
   <a href="/">Home</a>
   <a href="/art-collections.html">Collections</a>
   <a href="/in-your-space.html">In Your Space</a>
   <a href="/for-designers.html">For Designers</a>
-  <a href="https://dansproul.com" target="_blank" rel="noopener" class="ds-gold">Shop Prints ↗</a>
+  <a href="https://dansproul.com" target="_blank" rel="noopener" class="ds-gold">Shop Prints â†—</a>
 </div>
 <script>
 (function(){
@@ -124,14 +176,14 @@ html,body{overflow-x:hidden}
 <header class="site-header">
 <a href="/" class="brand">Dan Sproul<span>Fine Art Photography</span></a>
 <nav class="site-nav">
-<a href="/">Home</a><a href="/art-collections.html">Art Collections</a><a href="for-designers.html">For Designers</a><a href="/in-your-space.html">In Your Space</a><a href="mailto:sproulphoto@gmail.com?subject=Mountain%20Light%20Artwork%20Inquiry">Contact</a><a href="https://dansproul.com" class="shop-link">Shop ↗</a>
+<a href="/">Home</a><a href="/art-collections.html">Art Collections</a><a href="/gallery.html">Gallery</a><a href="/in-your-space.html">In Your Space</a><a href="/contact.html">Contact</a><a href="https://dansproul.com" class="shop-link">Shop â†—</a>
 </nav>
 </header>
 
 <section class="hero"><div class="container hero-content">
 <span class="eyebrow">Mountain Light Collection</span>
 <h1>Luminous Mountain Photography for Refined Interiors</h1>
-<p>Fine art mountain landscape photography built around sunrise, storm light, last glow, alpine reflection, golden valleys, and dramatic peaks — curated for mountain homes, hospitality spaces, offices, and nature-inspired interiors.</p>
+<p>Fine art mountain landscape photography built around sunrise, storm light, last glow, alpine reflection, golden valleys, and dramatic peaks â€” curated for mountain homes, hospitality spaces, offices, and nature-inspired interiors.</p>
 <a href="#collection" class="btn primary">View Selected Artwork</a><a href="#mockups" class="btn">View Interior Mockups</a>
 <div class="trust-strip"><span>Mountain Wall Art</span><span>Alaska & Grand Teton Prints</span><span>Large Landscape Artwork</span><span>Designer-Friendly Curation</span></div>
 </div></section>
@@ -140,12 +192,12 @@ html,body{overflow-x:hidden}
 <div>
 <span class="eyebrow">Alpine Glow & Last Light</span>
 <h2>A mountain collection shaped by light, not location alone.</h2>
-<p>Mountain Light brings together alpine landscapes photographed during the moments when light transforms the scene — sunrise over lakes, glowing autumn valleys, backlit ridgelines, storm breaks, reflected peaks, and warm evening color across rugged terrain.</p>
+<p>Mountain Light brings together alpine landscapes photographed during the moments when light transforms the scene â€” sunrise over lakes, glowing autumn valleys, backlit ridgelines, storm breaks, reflected peaks, and warm evening color across rugged terrain.</p>
 <p>The collection includes imagery from Alaska, Grand Teton National Park, Kenai Fjords, Mount Katahdin, and western mountain landscapes, but the organizing idea is atmosphere. Every image was selected because the light creates depth, emotion, and a natural sense of scale.</p>
 <p>These mountain fine art prints are suited for modern rustic interiors, mountain homes, hospitality suites, lodge-inspired spaces, offices, living rooms, bedrooms, and environments that benefit from uplifting natural drama.</p>
 <a href="#interior-uses" class="btn">Interior Applications</a><a href="/for-designers.html" class="btn">For Designers</a>
 </div>
-<div class="imgbox"><img src="grand tetons reflection cool tone.jpg" alt="Grand Teton mountains reflection photography print by Dan Sproul"></div>
+<div class="imgbox"><img src="jenny-lake-wyoming-magical-sunrise-dan-sproul.jpg" alt="Jenny Lake Wyoming sunrise mountain photography print by Dan Sproul"></div>
 </div></section>
 
 <section class="mockups" id="mockups"><div class="container">
@@ -293,7 +345,7 @@ Designers can request room-specific recommendations, scaled previews, orientatio
 <section class="seo"><div class="container">
 <span class="eyebrow">Mountain Landscape Photography Prints</span><h2>Mountain wall art for interiors that need warmth, scale, and natural light.</h2>
 <div class="cols">
-<p>The Mountain Light Collection brings together fine art mountain landscape photography selected for luminous atmosphere and interior usability. Rather than organizing the work only by national park or region, this collection is curated around the way light transforms mountain scenes — sunrise, last light, golden valleys, storm breaks, reflected peaks, and alpine glow.</p>
+<p>The Mountain Light Collection brings together fine art mountain landscape photography selected for luminous atmosphere and interior usability. Rather than organizing the work only by national park or region, this collection is curated around the way light transforms mountain scenes â€” sunrise, last light, golden valleys, storm breaks, reflected peaks, and alpine glow.</p>
 <p>These mountain photography prints are suited for refined residential interiors, mountain homes, lodge-inspired spaces, boutique hospitality projects, offices, bedrooms, living rooms, and nature-focused design. The collection includes imagery from Alaska, Grand Teton National Park, Kenai Fjords, Mount Katahdin, and western mountain landscapes.</p>
 <p>For interior designers and homeowners, mountain wall art often needs to create drama without feeling harsh or overly busy. Mountain Light emphasizes images that bring warmth, scale, and atmosphere into a room while still feeling polished enough for modern interiors.</p>
 <p>This collection supports searches for mountain landscape photography, mountain wall art, large framed mountain prints, Alaska landscape photography, Grand Teton wall art, mountain sunrise prints, lodge artwork, mountain home decor, and nature photography for interior designers.</p>
@@ -323,5 +375,57 @@ Designers can request room-specific recommendations, scaled previews, orientatio
 <a class="btn primary" href="mailto:sproulphoto@gmail.com?subject=Mountain%20Light%20Artwork%20Inquiry">Email Dan</a>
 </div></section>
 
-<footer><div class="container">© Dan Sproul — Mountain Light Collection</div></footer>
+<div class="footer-seo">
+  <div class="footer-grid">
+    <div>
+      <h3>Shop By Room</h3>
+      <a href="https://dansproul.com/collections/bedroom+wall+art+calming+nature+landscape+prints">Bedroom Wall Art</a>
+      <a href="in-your-space.html">Art In Your Space</a>
+      <a href="https://dansproul.com/collections/office+wall+art+inspiring+landscape+prints">Office Wall Art</a>
+      <a href="https://dansproul.com/art/dining+room">Dining Room Art</a>
+      <a href="https://dansproul.com/art/wellness">Wellness Space Prints</a>
+    </div>
+
+    <div>
+      <h3>Shop By Subject</h3>
+      <a href="https://dansproul.com/art/mountains">Mountain Prints</a>
+      <a href="https://dansproul.com/art/forest">Forest Photography</a>
+      <a href="https://dansproul.com/art/coastal">Coastal Wall Art</a>
+      <a href="https://dansproul.com/art/waterfalls">Waterfall Prints</a>
+      <a href="https://dansproul.com/art/wildlife">Wildlife Prints</a>
+    </div>
+
+    <div>
+      <h3>Shop By Mood</h3>
+      <a href="quiet-earth-collection.html">Quiet Earth Collection</a>
+      <a href="monochrome-stillness.html">Black &amp; White Prints</a>
+      <a href="https://dansproul.com/art/autumn">Warm Autumn Light</a>
+      <a href="https://dansproul.com/art/fog">Fog &amp; Mist Photography</a>
+      <a href="https://dansproul.com/art/calm">Calming Nature Prints</a>
+    </div>
+
+    <div>
+      <h3>Shop By Location</h3>
+      <a href="alaska-photography-prints.html">Alaska Prints</a>
+      <a href="colorado-photography-prints.html">Colorado Wall Art</a>
+      <a href="oregon-coast-photography-prints.html">Oregon Coast Prints</a>
+      <a href="smoky-mountains-photography-prints.html">Smoky Mountains Art</a>
+      <a href="https://dansproul.com/art/badlands">Badlands Wildlife Prints</a>
+    </div>
+
+    <div>
+      <h3>More Collections</h3>
+      <a href="https://dansproul.com/collections/best+sellers+and+designer+favorite+wall+art">Best Sellers</a>
+      <a href="art-collections.html">Curated Photography Collections</a>
+      <a href="for-designers.html">For Interior Designers</a>
+      <a href="coastal-atmosphere.html">Coastal Atmosphere</a>
+      <a href="wellness-waters-collection.html">Wellness Waters</a>
+    </div>
+  </div>
+
+  <footer class="footer-bottom">
+    © 2026 Dan Sproul Fine Art Photography · Lima, Ohio · Prints ship worldwide
+  </footer>
+</div>
 </body></html>
+
