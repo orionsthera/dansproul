@@ -653,26 +653,57 @@ a {
     </section>
 </main>
 
-<footer class="site-footer">
-    <div class="container footer-inner">
-        <div class="footer-kicker">Designer Resources</div>
+<style>
+.related-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:24px;
+}
 
-        <div class="footer-title">
-            Need Help Choosing Winter Artwork?
-        </div>
+.image-card{
+  position:relative;
+  overflow:hidden;
+  min-height:420px;
+  border:1px solid rgba(255,255,255,0.08);
+  background:#111;
+}
 
-        <p class="footer-text">
-            Send me a note about your project, hospitality space, wellness environment, or residential interior and I can recommend pieces from the Winter Stillness Collection.
-        </p>
+.image-card img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  transition:transform .5s ease;
+}
 
-        <a href="mailto:sproulphoto@gmail.com" class="footer-btn">Email Dan</a>
+.image-card:hover img{
+  transform:scale(1.03);
+}
 
-        <div class="footer-bottom">
-            © Dan Sproul - Winter Stillness Collection
-        </div>
-    </div>
-</footer>
-    .footer-seo {
+.related-overlay{
+  position:absolute;
+  inset:auto 0 0 0;
+  padding:34px;
+  background:linear-gradient(to top, rgba(0,0,0,.82), rgba(0,0,0,0));
+  color:white;
+}
+
+.related-overlay span{
+  display:block;
+  font-size:.7rem;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  margin-bottom:10px;
+  opacity:.8;
+}
+
+.related-overlay h3{
+  margin:0;
+  font-size:2rem;
+  font-weight:400;
+}
+
+.footer-seo {
   background: #100e0b;
   padding: 62px clamp(22px, 6vw, 76px) 36px;
   border-top: 1px solid rgba(185, 138, 59, .22);
@@ -718,21 +749,79 @@ a {
   text-transform: uppercase;
 }
 
-@media (max-width: 1040px) {
-  .footer-grid {
-    grid-template-columns: 1fr;
+@media(max-width:900px){
+
+  .related-grid{
+    grid-template-columns:1fr;
   }
+
+  .image-card{
+    min-height:320px;
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr;
+  }
+
 }
+</style>
 
-<script>
-const menuToggle = document.querySelector('.menu-toggle');
-const navLinks = document.querySelector('.nav-links');
 
-menuToggle.addEventListener('click', () => {
-    const isOpen = navLinks.classList.toggle('is-open');
-    menuToggle.setAttribute('aria-expanded', String(isOpen));
-});
-</script>
+</main>
+
+<div class="footer-seo">
+  <div class="footer-grid">
+    <div>
+      <h3>Shop By Room</h3>
+      <a href="https://dansproul.com/collections/bedroom+wall+art+calming+nature+landscape+prints">Bedroom Wall Art</a>
+      <a href="in-your-space.html">Art In Your Space</a>
+      <a href="https://dansproul.com/collections/office+wall+art+inspiring+landscape+prints">Office Wall Art</a>
+      <a href="https://dansproul.com/art/dining+room">Dining Room Art</a>
+      <a href="https://dansproul.com/art/wellness">Wellness Space Prints</a>
+    </div>
+
+    <div>
+      <h3>Shop By Subject</h3>
+      <a href="https://dansproul.com/art/mountains">Mountain Prints</a>
+      <a href="https://dansproul.com/art/forest">Forest Photography</a>
+      <a href="https://dansproul.com/art/coastal">Coastal Wall Art</a>
+      <a href="https://dansproul.com/art/waterfalls">Waterfall Prints</a>
+      <a href="https://dansproul.com/art/wildlife">Wildlife Prints</a>
+    </div>
+
+    <div>
+      <h3>Shop By Mood</h3>
+      <a href="quiet-earth-collection.html">Quiet Earth Collection</a>
+      <a href="monochrome-stillness.html">Black &amp; White Prints</a>
+      <a href="https://dansproul.com/art/autumn">Warm Autumn Light</a>
+      <a href="https://dansproul.com/art/fog">Fog &amp; Mist Photography</a>
+      <a href="https://dansproul.com/art/calm">Calming Nature Prints</a>
+    </div>
+
+    <div>
+      <h3>Shop By Location</h3>
+      <a href="alaska-photography-prints.html">Alaska Prints</a>
+      <a href="colorado-photography-prints.html">Colorado Wall Art</a>
+      <a href="oregon-coast-photography-prints.html">Oregon Coast Prints</a>
+      <a href="smoky-mountains-photography-prints.html">Smoky Mountains Art</a>
+      <a href="https://dansproul.com/art/badlands">Badlands Wildlife Prints</a>
+    </div>
+
+    <div>
+      <h3>More Collections</h3>
+      <a href="https://dansproul.com/collections/best+sellers+and+designer+favorite+wall+art">Best Sellers</a>
+      <a href="art-collections.html">Curated Photography Collections</a>
+      <a href="for-designers.html">For Interior Designers</a>
+      <a href="coastal-atmosphere.html">Coastal Atmosphere</a>
+      <a href="wellness-waters-collection.html">Wellness Waters</a>
+    </div>
+  </div>
+
+  <footer class="footer-bottom">
+    © 2026 Dan Sproul Fine Art Photography · Lima, Ohio · Prints ship worldwide
+  </footer>
+</div>
 
 </body>
 </html>
+
