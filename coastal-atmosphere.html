@@ -592,7 +592,7 @@ section{padding:72px 0}
   position:relative;
 }
 .workflow-confidence li::before{
-  content:"â€”";
+  content:"—";
   position:absolute;
   left:0;
   color:var(--accent);
@@ -621,108 +621,245 @@ section{padding:72px 0}
   }
 }
 
+
+/* GLOBAL NAV */
+.site-header{position:fixed;top:0;left:0;width:100%;z-index:9999;background:rgba(8,8,8,.72);backdrop-filter:blur(14px);border-bottom:1px solid rgba(185,138,59,.14);padding:0;display:block}
+.nav-wrap{max-width:1420px;margin:0 auto;padding:18px clamp(20px,4vw,42px);display:flex;align-items:center;justify-content:space-between;gap:28px}
+.logo{text-decoration:none;color:#f4eee5;font-family:Arial,Helvetica,sans-serif;font-size:14px;letter-spacing:.28em;text-transform:uppercase;line-height:1.1;white-space:nowrap}
+.logo span{display:block;margin-top:6px;font-size:9px;letter-spacing:.34em;color:rgba(244,238,229,.52)}
+.main-nav{display:flex;align-items:center;gap:28px}
+.main-nav a{text-decoration:none;color:rgba(244,238,229,.72);font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.16em;text-transform:uppercase;transition:.28s ease}
+.main-nav a:hover,.main-nav a.active{color:#d5b365}.nav-shop{padding:12px 18px;border:1px solid rgba(185,138,59,.45);color:#d5b365!important}.nav-shop:hover{background:#d5b365;color:#0f0d0a!important}
+.mobile-toggle{display:none;background:none;border:none;cursor:pointer}.mobile-toggle span{display:block;width:24px;height:1px;margin:6px 0;background:#f4eee5}
+@media(max-width:1040px){.mobile-toggle{display:block}.main-nav{position:absolute;top:100%;left:0;width:100%;background:#0b0907;border-bottom:1px solid rgba(185,138,59,.12);flex-direction:column;align-items:flex-start;padding:28px;gap:18px;display:none}.main-nav.active{display:flex}}
+
+/* BUYING HELP */
+.buying-help-section{background:#f4f0ea;color:#1f1f1d;border-top:1px solid rgba(40,35,30,.14);border-bottom:1px solid rgba(40,35,30,.14)}
+.buying-help-box{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(2rem,5vw,5rem);align-items:start}
+.buying-help-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(40,35,30,.14);border:1px solid rgba(40,35,30,.14)}
+.buying-help-item{background:#fffaf3;padding:1.35rem;min-height:160px}.buying-help-item strong{display:block;color:#9f7b3d;font-family:Arial,Helvetica,sans-serif;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;margin-bottom:.75rem}.buying-help-item p{color:#4c443c;margin:0}
+
+/* GLOBAL LINKED FOOTER */
+.footer-seo{background:#100e0b;padding:62px clamp(22px,6vw,76px) 36px;border-top:1px solid rgba(185,138,59,.22)}
+.footer-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:28px;max-width:1380px;margin:0 auto}
+.footer-grid h3{margin-bottom:13px;color:#d5b365;font-family:"Cormorant Garamond",Georgia,serif;font-size:21px;font-weight:400}
+.footer-grid a{display:block;text-decoration:none;color:rgba(244,238,229,.62);font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:2;text-transform:none;letter-spacing:0}.footer-grid a:hover{color:#f4eee5}
+.footer-bottom{max-width:1380px;margin:40px auto 0;padding-top:28px;border-top:1px solid rgba(185,138,59,.22);color:rgba(244,238,229,.32);font-family:Arial,Helvetica,sans-serif;font-size:10px;letter-spacing:.18em;text-align:center;text-transform:uppercase}
+@media(max-width:1040px){.footer-grid{grid-template-columns:1fr}}@media(max-width:980px){.buying-help-box,.buying-help-grid{grid-template-columns:1fr}}
+
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://dsproul.com/#dan-sproul",
+      "name": "Dan Sproul",
+      "url": "https://dsproul.com",
+      "jobTitle": "Fine Art Photographer and Mixed Media Artist",
+      "description": "Dan Sproul creates original landscape photography and heritage-inspired mixed media artwork for residential, hospitality, healthcare, wellness, and commercial interiors.",
+      "homeLocation": {
+        "@type": "Place",
+        "name": "Lima, Ohio"
+      },
+      "sameAs": [
+        "https://dansproul.com",
+        "https://fineartamerica.com/profiles/1-dan-sproul",
+        "https://www.pinterest.com/dansproul/",
+        "https://medium.com/@sprould99",
+        "https://dansproulphotography.substack.com/"
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://dsproul.com/#organization",
+      "name": "Dan Sproul Fine Art Photography",
+      "url": "https://dsproul.com",
+      "founder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://dsproul.com/coastal-atmosphere.html#webpage",
+      "url": "https://dsproul.com/coastal-atmosphere.html",
+      "name": "Coastal Atmosphere Collection | Moody Coastal Fine Art Photography | Dan Sproul",
+      "description": "Moody coastal fine art photography by Dan Sproul featuring Oregon Coast sea stacks, surf, fog, and atmospheric shoreline imagery curated for quiet luxury interiors, refined homes, boutique hospitality, and designer spaces.",
+      "author": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "about": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://dsproul.com/coastal-atmosphere-diningroom.jpg#image"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://dsproul.com/coastal-atmosphere.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dsproul.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Collections",
+          "item": "https://dsproul.com/art-collections.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Coastal Atmosphere",
+          "item": "https://dsproul.com/coastal-atmosphere.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://dsproul.com/coastal-atmosphere.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What interiors work best with Coastal Atmosphere?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Coastal Atmosphere works well in quiet luxury homes, modern coastal interiors, boutique hospitality spaces, bedrooms, dining rooms, wellness spaces, and contemporary residential projects."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this collection only for beach houses?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Coastal Atmosphere is designed around mood, restraint, fog, surf, and shoreline texture rather than themed nautical décor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are oversized framed prints available?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Many Coastal Atmosphere pieces work well as oversized framed prints above beds, fireplaces, consoles, dining spaces, and hospitality feature walls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can interior designers contact Dan directly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Interior designers can contact Dan Sproul for artwork recommendations, sizing guidance, curated suggestions, and complimentary mockup previews."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/coastal-atmosphere-diningroom.jpg#image",
+      "contentUrl": "https://dsproul.com/coastal-atmosphere-diningroom.jpg",
+      "name": "Coastal Atmosphere hero interior mockup",
+      "description": "Moody coastal fine art photography displayed in a refined interior by Dan Sproul",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com",
+      "representativeOfPage": true
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/coastal-atmosphere-bedroom.jpg#image",
+      "contentUrl": "https://dsproul.com/coastal-atmosphere-bedroom.jpg",
+      "name": "Moody coastal photography in luxury bedroom interior",
+      "description": "Moody coastal photography in luxury bedroom interior by Dan Sproul",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com",
+      "representativeOfPage": false
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/coastal-atmosphere-livingroom.jpg#image",
+      "contentUrl": "https://dsproul.com/coastal-atmosphere-livingroom.jpg",
+      "name": "Black and white coastal surf wall art in moody living room",
+      "description": "Black and white coastal surf wall art in moody living room by Dan Sproul",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com",
+      "representativeOfPage": false
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/coastal-atmosphere-living-room.jpg#image",
+      "contentUrl": "https://dsproul.com/coastal-atmosphere-living-room.jpg",
+      "name": "Coastal sea stack artwork above fireplace in luxury living room",
+      "description": "Coastal sea stack artwork above fireplace in luxury living room by Dan Sproul",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com",
+      "representativeOfPage": false
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/quiet-earth-lily-pond-chugach-alaska.jpg#image",
+      "contentUrl": "https://dsproul.com/quiet-earth-lily-pond-chugach-alaska.jpg",
+      "name": "Quiet Earth Collection",
+      "description": "Quiet Earth Collection",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com",
+      "representativeOfPage": false
+    }
+  ]
+}
+</script>
 </head>
 
 <body>
-<!-- STANDARD MOBILE NAV FIX -->
-<style>
-html,body{overflow-x:hidden}
-@media(max-width:760px){
-  .ds-mobile-toggle{display:flex!important}
-  .ds-mobile-panel.open{display:flex!important}
-}
-.ds-mobile-toggle{display:none;position:fixed;top:18px;right:18px;z-index:1000;background:rgba(15,13,11,.86);border:1px solid rgba(197,160,106,.42);padding:10px;flex-direction:column;gap:5px;cursor:pointer}
-.ds-mobile-toggle span{display:block;width:24px;height:1px;background:#f4eee5}
-.ds-mobile-panel{display:none;position:fixed;inset:0;z-index:999;background:rgba(12,10,8,.98);align-items:center;justify-content:center;flex-direction:column;gap:24px;text-align:center}
-.ds-mobile-panel a{color:#f4eee5!important;text-decoration:none!important;font-family:Georgia,serif!important;font-size:1.65rem!important;letter-spacing:.04em!important;text-transform:none!important}
-.ds-mobile-panel a.ds-gold{color:#c5a06a!important}
-.ds-mobile-close{position:absolute;top:22px;right:24px;background:none;border:0;color:#f4eee5;font-size:1.9rem;cursor:pointer}
-
-.footer-seo {
-  background: #100e0b;
-  padding: 62px clamp(22px, 6vw, 76px) 36px;
-  border-top: 1px solid rgba(185, 138, 59, .22);
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 28px;
-  max-width: 1380px;
-  margin: 0 auto;
-}
-
-.footer-grid h3 {
-  margin-bottom: 13px;
-  color: #d5b365;
-  font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: 21px;
-  font-weight: 400;
-}
-
-.footer-grid a {
-  display: block;
-  text-decoration: none;
-  color: rgba(244, 238, 229, .62);
-  font-size: 13px;
-  line-height: 2;
-}
-
-.footer-grid a:hover {
-  color: #f4eee5;
-}
-
-.footer-bottom {
-  max-width: 1380px;
-  margin: 40px auto 0;
-  padding-top: 28px;
-  border-top: 1px solid rgba(185, 138, 59, .22);
-  color: rgba(244, 238, 229, .32);
-  font-size: 10px;
-  letter-spacing: .18em;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-@media (max-width: 1040px) {
-  .footer-grid {
-    grid-template-columns: 1fr;
-  }
-}
-</style>
-<button class="ds-mobile-toggle" id="dsMobileToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
-<div class="ds-mobile-panel" id="dsMobilePanel">
-  <button class="ds-mobile-close" id="dsMobileClose" aria-label="Close menu">Ã—</button>
-  <a href="/">Home</a>
-  <a href="/art-collections.html">Collections</a>
-  <a href="/in-your-space.html">In Your Space</a>
-  <a href="/for-designers.html">For Designers</a>
-  <a href="https://dansproul.com" target="_blank" rel="noopener" class="ds-gold">Shop Prints â†—</a>
-</div>
-<script>
-(function(){
-  var b=document.getElementById('dsMobileToggle'),p=document.getElementById('dsMobilePanel'),c=document.getElementById('dsMobileClose');
-  if(!b||!p||!c)return;
-  function close(){p.classList.remove('open');document.body.style.overflow=''}
-  b.addEventListener('click',function(){p.classList.add('open');document.body.style.overflow='hidden'});
-  c.addEventListener('click',close);
-  p.querySelectorAll('a').forEach(function(a){a.addEventListener('click',close)});
-  document.addEventListener('keydown',function(e){if(e.key==='Escape')close()});
-})();
-</script>
 
 <header class="site-header">
-  <a class="site-logo" href="/">Daniel Sproul</a>
-  <nav class="site-nav" aria-label="Primary navigation">
-    <a href="/">Home</a>
-    <a href="for-designers.html">For Designers</a>
-    <a class="active" href="art-collections.html">Collections</a>
-    <a href="in-your-space.html">In Your Space</a>
-    <a class="shop-print-link" href="https://dansproul.com" target="_blank" rel="noopener">Shop Prints</a>
-  </nav>
+  <div class="nav-wrap">
+    <a class="logo" href="index.html">DAN SPROUL<span>FINE ART PHOTOGRAPHY</span></a>
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="best-sellers.html">Best Sellers</a>
+      <a href="art-collections.html">Collections</a>
+      <a href="in-your-space.html">In Your Space</a>
+      <a href="for-designers.html">For Designers</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-shop" href="https://dansproul.com" target="_blank" rel="noopener">Shop Prints</a>
+    </nav>
+    <button class="mobile-toggle" aria-label="Open navigation" type="button"><span></span><span></span></button>
+  </div>
 </header>
-
 
 <section class="hero">
 <div class="container hero-content">
@@ -738,7 +875,7 @@ and modern designer spaces.
 
 <div class="button-row">
 <a href="#collection" class="btn primary">Explore Collection</a>
-<a href="/for-designers.html" class="btn">For Designers</a>
+<a href="for-designers.html" class="btn">For Designers</a>
 </div>
 </div>
 </section>
@@ -748,7 +885,7 @@ and modern designer spaces.
 
 <div>
 <span class="eyebrow">Quiet Coastal Mood</span>
-<h2>Coastal artwork chosen for atmosphere instead of clichÃ©.</h2>
+<h2>Coastal artwork chosen for atmosphere instead of cliché.</h2>
 
 <p>
 Coastal Atmosphere focuses on refined ocean imagery rather than bright decorative beach art.
@@ -787,8 +924,7 @@ travertine, and contemporary organic design.
 <h2>Designed to work in refined residential interiors.</h2>
 
 <p>
-These mockups reflect the same quiet luxury and atmospheric direction established throughout the Quiet Earth collection pages,
-creating consistency across the site while helping visitors visualize scale, tone, and placement.
+These room views show how atmospheric coastal photography can add scale, softness, and quiet movement to refined residential interiors, bedrooms, dining rooms, and coastal hospitality spaces.
 </p>
 
 <div class="mockup-grid">
@@ -815,6 +951,21 @@ creating consistency across the site while helping visitors visualize scale, ton
 
 </div>
 </div>
+</section>
+
+
+<section class="buying-help-section" id="buying-help">
+  <div class="buying-help-box">
+    <div>
+      <span class="eyebrow">Buying Guidance</span>
+      <h2>Best for coastal homes, boutique hospitality, bedrooms, and quiet luxury interiors.</h2>
+    </div>
+    <div class="buying-help-grid">
+      <div class="buying-help-item"><strong>Best for</strong><p>Coastal bedrooms, dining rooms, boutique hotel suites, spa spaces, refined living rooms, oceanfront rentals, and interiors that need calm shoreline atmosphere.</p></div>
+      <div class="buying-help-item"><strong>Suggested sizes</strong><p>24×36 for bedrooms and small feature walls, 30×40 above consoles, and 40×60 or larger for dining rooms, lobbies, fireplaces, and hospitality spaces.</p></div>
+      <div class="buying-help-item"><strong>Strongest formats</strong><p>Framed fine art paper for refined residential interiors, canvas for warmth, and metal or acrylic for high-traffic hospitality and coastal commercial spaces.</p></div>
+    </div>
+  </div>
 </section>
 
 <section class="dark-section">
@@ -980,7 +1131,7 @@ Soft atmospheric coastal imagery suited for bedrooms, wellness spaces, and refin
       <h3>Need artwork visualized in your project?</h3>
       <p>Email a room photo or project note for a complimentary mockup preview.</p>
       <a href="mailto:sproulphoto@gmail.com?subject=Coastal%20Atmosphere%20Mockup%20Request" class="btn primary">Request Mockup</a>
-      <a href="/for-designers.html" class="btn">For Designers</a>
+      <a href="for-designers.html" class="btn">For Designers</a>
     </div>
   </div>
 </section>
@@ -1019,7 +1170,7 @@ Soft atmospheric coastal imagery suited for bedrooms, wellness spaces, and refin
           </p>
 
           <span class="qe-related-link">
-            Explore Collection â†’
+            Explore Collection →
           </span>
         </div>
       </a>
@@ -1032,7 +1183,7 @@ Soft atmospheric coastal imagery suited for bedrooms, wellness spaces, and refin
         </div>
 
         <div class="qe-related-content">
-          <span class="qe-related-type">Spa Â· Healthcare Â· Wellness</span>
+          <span class="qe-related-type">Spa · Healthcare · Wellness</span>
 
           <h3>Wellness Waters</h3>
 
@@ -1041,7 +1192,7 @@ Soft atmospheric coastal imagery suited for bedrooms, wellness spaces, and refin
           </p>
 
           <span class="qe-related-link">
-            Explore Collection â†’
+            Explore Collection →
           </span>
         </div>
       </a>
@@ -1063,7 +1214,7 @@ Soft atmospheric coastal imagery suited for bedrooms, wellness spaces, and refin
           </p>
 
           <span class="qe-related-link">
-            Explore Collection â†’
+            Explore Collection →
           </span>
         </div>
       </a>
@@ -1085,7 +1236,7 @@ Soft atmospheric coastal imagery suited for bedrooms, wellness spaces, and refin
           </p>
 
           <span class="qe-related-link">
-            Explore Collection â†’
+            Explore Collection →
           </span>
         </div>
       </a>
@@ -1115,7 +1266,7 @@ bedrooms, dining rooms, wellness spaces, and contemporary residential projects.
 <div class="faq">
 <h3>Is this collection only for beach houses?</h3>
 <p>
-No. The collection is designed around atmosphere and restraint rather than themed nautical dÃ©cor.
+No. The collection is designed around atmosphere and restraint rather than themed nautical décor.
 </p>
 </div>
 
@@ -1137,66 +1288,31 @@ Absolutely. Designers can reach out for artwork recommendations, sizing guidance
 
 <div class="button-row" style="margin-top:50px">
 <a href="mailto:sproulphoto@gmail.com" class="btn primary">Email Dan</a>
-<a href="/art-collections.html" class="btn">More Collections</a>
+<a href="art-collections.html" class="btn">More Collections</a>
 </div>
 
 </div>
 </section>
 
-<div class="footer-seo">
+<div id="contact" class="footer-seo">
   <div class="footer-grid">
-    <div>
-      <h3>Shop By Room</h3>
-      <a href="https://dansproul.com/collections/bedroom+wall+art+calming+nature+landscape+prints">Bedroom Wall Art</a>
-      <a href="in-your-space.html">Art In Your Space</a>
-      <a href="https://dansproul.com/collections/office+wall+art+inspiring+landscape+prints">Office Wall Art</a>
-      <a href="https://dansproul.com/art/dining+room">Dining Room Art</a>
-      <a href="https://dansproul.com/art/wellness">Wellness Space Prints</a>
-    </div>
-
-    <div>
-      <h3>Shop By Subject</h3>
-      <a href="https://dansproul.com/art/mountains">Mountain Prints</a>
-      <a href="https://dansproul.com/art/forest">Forest Photography</a>
-      <a href="https://dansproul.com/art/coastal">Coastal Wall Art</a>
-      <a href="https://dansproul.com/art/waterfalls">Waterfall Prints</a>
-      <a href="https://dansproul.com/art/wildlife">Wildlife Prints</a>
-    </div>
-
-    <div>
-      <h3>Shop By Mood</h3>
-      <a href="quiet-earth-collection.html">Quiet Earth Collection</a>
-      <a href="monochrome-stillness.html">Black &amp; White Prints</a>
-      <a href="https://dansproul.com/art/autumn">Warm Autumn Light</a>
-      <a href="https://dansproul.com/art/fog">Fog &amp; Mist Photography</a>
-      <a href="https://dansproul.com/art/calm">Calming Nature Prints</a>
-    </div>
-
-    <div>
-      <h3>Shop By Location</h3>
-      <a href="alaska-photography-prints.html">Alaska Prints</a>
-      <a href="colorado-photography-prints.html">Colorado Wall Art</a>
-      <a href="oregon-coast-photography-prints.html">Oregon Coast Prints</a>
-      <a href="smoky-mountains-photography-prints.html">Smoky Mountains Art</a>
-      <a href="https://dansproul.com/art/badlands">Badlands Wildlife Prints</a>
-    </div>
-
-    <div>
-      <h3>More Collections</h3>
-      <a href="https://dansproul.com/collections/best+sellers+and+designer+favorite+wall+art">Best Sellers</a>
-      <a href="art-collections.html">Curated Photography Collections</a>
-      <a href="for-designers.html">For Interior Designers</a>
-      <a href="coastal-atmosphere.html">Coastal Atmosphere</a>
-      <a href="wellness-waters-collection.html">Wellness Waters</a>
-    </div>
+    <div><h3>Shop By Room</h3><a href="https://dansproul.com/collections/bedroom+wall+art+calming+nature+landscape+prints">Bedroom Wall Art</a><a href="in-your-space.html">Art In Your Space</a><a href="https://dansproul.com/collections/office+wall+art+inspiring+landscape+prints">Office Wall Art</a><a href="https://dansproul.com/art/dining+room">Dining Room Art</a><a href="https://dansproul.com/art/wellness">Wellness Space Prints</a></div>
+    <div><h3>Shop By Subject</h3><a href="https://dansproul.com/art/mountains">Mountain Prints</a><a href="https://dansproul.com/art/forest">Forest Photography</a><a href="https://dansproul.com/art/coastal">Coastal Wall Art</a><a href="https://dansproul.com/art/waterfalls">Waterfall Prints</a><a href="https://dansproul.com/art/wildlife">Wildlife Prints</a></div>
+    <div><h3>Shop By Mood</h3><a href="quiet-earth-collection.html">Quiet Earth Collection</a><a href="monochrome-stillness.html">Black &amp; White Prints</a><a href="https://dansproul.com/art/autumn">Warm Autumn Light</a><a href="https://dansproul.com/art/fog">Fog &amp; Mist Photography</a><a href="https://dansproul.com/art/calm">Calming Nature Prints</a></div>
+    <div><h3>Shop By Location</h3><a href="alaska-photography-prints.html">Alaska Prints</a><a href="colorado-photography-prints.html">Colorado Wall Art</a><a href="oregon-coast-photography-prints.html">Oregon Coast Prints</a><a href="smoky-mountains-photography-prints.html">Smoky Mountains Art</a><a href="https://dansproul.com/art/badlands">Badlands Wildlife Prints</a></div>
+    <div><h3>More Collections</h3><a href="best-sellers.html">Best Sellers</a><a href="art-collections.html">Curated Photography Collections</a><a href="for-designers.html">For Interior Designers</a><a href="heritage-mixed-media.html">Heritage &amp; Mixed Media</a><a href="coastal-atmosphere.html">Coastal Atmosphere</a><a href="wellness-waters-collection.html">Wellness Waters</a><a href="mailto:sproulphoto@gmail.com">Email Dan</a></div>
   </div>
-
-  <footer class="footer-bottom">
-    © 2026 Dan Sproul Fine Art Photography · Lima, Ohio · Prints ship worldwide
-  </footer>
+  <footer class="footer-bottom">© 2026 Dan Sproul Fine Art Photography · Original landscape photography and heritage-inspired mixed media artwork by Dan Sproul, based in Lima, Ohio · Prints ship worldwide</footer>
 </div>
 
+
+<script>
+(function(){
+  const toggle=document.querySelector('.mobile-toggle');
+  const nav=document.querySelector('.main-nav');
+  if(toggle && nav){toggle.addEventListener('click',()=>nav.classList.toggle('active'));}
+})();
+</script>
 </body>
 </html>
-
 
