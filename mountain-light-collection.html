@@ -10,16 +10,6 @@
 <meta property="og:title" content="Mountain Light Collection | Dan Sproul Fine Art Photography">
 <meta property="og:description" content="Luminous mountain landscape photography prints curated for refined interiors, mountain homes, hospitality spaces, and nature-inspired design.">
 <meta property="og:image" content="https://dsproul.com/mountain-light-living-room.jpg">
-
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-{"@type":"Question","name":"What type of interiors work best with Mountain Light artwork?","acceptedAnswer":{"@type":"Answer","text":"Mountain Light artwork works well in mountain homes, refined residential interiors, lodge-inspired spaces, boutique hospitality projects, offices, bedrooms, living rooms, entryways, and nature-inspired interiors."}},
-{"@type":"Question","name":"What makes the Mountain Light collection different?","acceptedAnswer":{"@type":"Answer","text":"Mountain Light is curated around luminous atmosphere rather than location alone, featuring sunrise, last light, alpine glow, storm light, reflective lakes, and dramatic mountain landscapes."}},
-{"@type":"Question","name":"Are large mountain landscape prints available?","acceptedAnswer":{"@type":"Answer","text":"Many Mountain Light photographs are available as large framed prints and oversized statement artwork suitable for living rooms, bedrooms, offices, mountain lodges, and hospitality interiors."}},
-{"@type":"Question","name":"Can interior designers request recommendations?","acceptedAnswer":{"@type":"Answer","text":"Yes. Interior designers can contact Dan Sproul for mountain landscape artwork recommendations, sizing guidance, coordinated collections, and project-specific artwork suggestions."}}
-]}
-</script>
-
 <style>
 :root{--bg:#080807;--panel:#12110f;--panel2:#f3efe8;--cream:#f4efe7;--muted:#b5aa9b;--gold:#c7a25d;--line:rgba(255,255,255,.11);--max:1320px}
 *{margin:0;padding:0;box-sizing:border-box}
@@ -52,7 +42,7 @@ p{max-width:820px;color:var(--muted)}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
 .intro p{font-size:1.03rem;line-height:1.95;margin-bottom:18px}
 .imgbox{border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 28px 90px rgba(0,0,0,.42)}
-.imgbox img{aspect-ratio:16/10;object-fit:cover}
+.imgbox img{aspect-ratio:16/10;object-fit:cover;object-position:center center}
 .light{background:var(--panel2);color:#22201c;border-top:0}
 .light p{color:#5e574f}
 .center{text-align:center;margin:auto}
@@ -83,29 +73,142 @@ p{max-width:820px;color:var(--muted)}
 .email p{margin:0 auto 30px}
 footer{padding:45px 0;border-top:1px solid var(--line);color:#8f8679}
 @media(max-width:1120px){.grid2,.mockup-pair,.cards3,.cards4,.faq-grid{grid-template-columns:1fr}.cols{columns:1}.site-header{position:relative;flex-direction:column}.site-nav{flex-wrap:wrap}}
-</style>
-</head>
-<body>
-<!-- STANDARD MOBILE NAV FIX -->
-<style>
-html,body{overflow-x:hidden}
-@media(max-width:760px){
-  .ds-mobile-toggle{display:flex!important}
-  .ds-mobile-panel.open{display:flex!important}
-}
-.ds-mobile-toggle{display:none;position:fixed;top:18px;right:18px;z-index:1000;background:rgba(15,13,11,.86);border:1px solid rgba(197,160,106,.42);padding:10px;flex-direction:column;gap:5px;cursor:pointer}
-.ds-mobile-toggle span{display:block;width:24px;height:1px;background:#f4eee5}
-.ds-mobile-panel{display:none;position:fixed;inset:0;z-index:999;background:rgba(12,10,8,.98);align-items:center;justify-content:center;flex-direction:column;gap:24px;text-align:center}
-.ds-mobile-panel a{color:#f4eee5!important;text-decoration:none!important;font-family:Georgia,serif!important;font-size:1.65rem!important;letter-spacing:.04em!important;text-transform:none!important}
-.ds-mobile-panel a.ds-gold{color:#c5a06a!important}
-.ds-mobile-close{position:absolute;top:22px;right:24px;background:none;border:0;color:#f4eee5;font-size:1.9rem;cursor:pointer}
 
+/* ── GLOBAL SITE NAVIGATION ───────────────────────────── */
+.site-header{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:9999;
+  background:rgba(8,8,8,.72);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(185,138,59,.14);
+  padding:0;
+  display:block;
+}
+.nav-wrap{
+  max-width:1420px;
+  margin:0 auto;
+  padding:18px clamp(20px,4vw,42px);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:28px;
+}
+.logo{
+  text-decoration:none;
+  color:#f4eee5;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:14px;
+  letter-spacing:.28em;
+  text-transform:uppercase;
+  line-height:1.1;
+  white-space:nowrap;
+}
+.logo span{
+  display:block;
+  margin-top:6px;
+  font-size:9px;
+  letter-spacing:.34em;
+  color:rgba(244,238,229,.52);
+}
+.main-nav{
+  display:flex;
+  align-items:center;
+  gap:28px;
+}
+.main-nav a{
+  text-decoration:none;
+  color:rgba(244,238,229,.72);
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:12px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  transition:.28s ease;
+}
+.main-nav a:hover,.main-nav a.active{color:#d5b365}
+.nav-shop{
+  padding:12px 18px;
+  border:1px solid rgba(185,138,59,.45);
+  color:#d5b365!important;
+}
+.nav-shop:hover{background:#d5b365;color:#0f0d0a!important}
+.mobile-toggle{
+  display:none;
+  background:none;
+  border:none;
+  cursor:pointer;
+}
+.mobile-toggle span{
+  display:block;
+  width:24px;
+  height:1px;
+  margin:6px 0;
+  background:#f4eee5;
+}
+@media(max-width:1040px){
+  .mobile-toggle{display:block}
+  .main-nav{
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    background:#0b0907;
+    border-bottom:1px solid rgba(185,138,59,.12);
+    flex-direction:column;
+    align-items:flex-start;
+    padding:28px;
+    gap:18px;
+    display:none;
+  }
+  .main-nav.active{display:flex}
+}
+
+/* ── PRACTICAL BUYING HELP ───────────────────────────── */
+.buying-help-section{
+  background:#f4f0ea;
+  color:#1f1f1d;
+  border-top:1px solid rgba(40,35,30,.14);
+  border-bottom:1px solid rgba(40,35,30,.14);
+}
+.buying-help-box{
+  max-width:1180px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:.85fr 1.15fr;
+  gap:clamp(2rem,5vw,5rem);
+  align-items:start;
+}
+.buying-help-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:1px;
+  background:rgba(40,35,30,.14);
+  border:1px solid rgba(40,35,30,.14);
+}
+.buying-help-item{
+  background:#fffaf3;
+  padding:1.35rem;
+  min-height:160px;
+}
+.buying-help-item strong{
+  display:block;
+  color:#9f7b3d;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.72rem;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  margin-bottom:.75rem;
+}
+.buying-help-item p{color:#4c443c;margin:0}
+
+/* ── GLOBAL LINKED FOOTER ───────────────────────────── */
 .footer-seo {
   background: #100e0b;
   padding: 62px clamp(22px, 6vw, 76px) 36px;
   border-top: 1px solid rgba(185, 138, 59, .22);
 }
-
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -113,7 +216,6 @@ html,body{overflow-x:hidden}
   max-width: 1380px;
   margin: 0 auto;
 }
-
 .footer-grid h3 {
   margin-bottom: 13px;
   color: #d5b365;
@@ -121,69 +223,261 @@ html,body{overflow-x:hidden}
   font-size: 21px;
   font-weight: 400;
 }
-
 .footer-grid a {
   display: block;
   text-decoration: none;
   color: rgba(244, 238, 229, .62);
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   line-height: 2;
+  text-transform:none;
+  letter-spacing:0;
 }
-
-.footer-grid a:hover {
-  color: #f4eee5;
-}
-
+.footer-grid a:hover {color: #f4eee5}
 .footer-bottom {
   max-width: 1380px;
   margin: 40px auto 0;
   padding-top: 28px;
   border-top: 1px solid rgba(185, 138, 59, .22);
   color: rgba(244, 238, 229, .32);
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 10px;
   letter-spacing: .18em;
   text-align: center;
   text-transform: uppercase;
 }
-
 @media (max-width: 1040px) {
-  .footer-grid {
-    grid-template-columns: 1fr;
-  }
+  .footer-grid {grid-template-columns: 1fr}
 }
+@media(max-width:980px){
+  .buying-help-box,.buying-help-grid{grid-template-columns:1fr}
+}
+
 </style>
-<button class="ds-mobile-toggle" id="dsMobileToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
-<div class="ds-mobile-panel" id="dsMobilePanel">
-  <button class="ds-mobile-close" id="dsMobileClose" aria-label="Close menu">Ã—</button>
-  <a href="/">Home</a>
-  <a href="/art-collections.html">Collections</a>
-  <a href="/in-your-space.html">In Your Space</a>
-  <a href="/for-designers.html">For Designers</a>
-  <a href="https://dansproul.com" target="_blank" rel="noopener" class="ds-gold">Shop Prints â†—</a>
-</div>
-<script>
-(function(){
-  var b=document.getElementById('dsMobileToggle'),p=document.getElementById('dsMobilePanel'),c=document.getElementById('dsMobileClose');
-  if(!b||!p||!c)return;
-  function close(){p.classList.remove('open');document.body.style.overflow=''}
-  b.addEventListener('click',function(){p.classList.add('open');document.body.style.overflow='hidden'});
-  c.addEventListener('click',close);
-  p.querySelectorAll('a').forEach(function(a){a.addEventListener('click',close)});
-  document.addEventListener('keydown',function(e){if(e.key==='Escape')close()});
-})();
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://dsproul.com/#dan-sproul",
+      "name": "Dan Sproul",
+      "url": "https://dsproul.com",
+      "jobTitle": "Fine Art Photographer and Mixed Media Artist",
+      "description": "Dan Sproul creates original landscape photography and heritage-inspired mixed media artwork for residential, hospitality, healthcare, wellness, and commercial interiors.",
+      "homeLocation": {
+        "@type": "Place",
+        "name": "Lima, Ohio"
+      },
+      "sameAs": [
+        "https://dansproul.com",
+        "https://fineartamerica.com/profiles/1-dan-sproul",
+        "https://www.pinterest.com/dansproul/",
+        "https://medium.com/@sprould99",
+        "https://dansproulphotography.substack.com/"
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://dsproul.com/#organization",
+      "name": "Dan Sproul Fine Art Photography",
+      "url": "https://dsproul.com",
+      "founder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://dsproul.com/mountain-light-collection.html#webpage",
+      "url": "https://dsproul.com/mountain-light-collection.html",
+      "name": "Mountain Light Collection | Mountain Landscape Photography Prints | Dan Sproul",
+      "description": "Mountain Light is a curated fine art photography collection by Dan Sproul featuring luminous mountain landscapes, sunrise, last light, alpine lakes, Alaska, Grand Teton, Kenai Fjords, and dramatic mountain wall art for refined interiors.",
+      "author": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "about": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://dsproul.com/mountain-light-living-room.jpg#image"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://dsproul.com/mountain-light-collection.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dsproul.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Collections",
+          "item": "https://dsproul.com/art-collections.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Mountain Light",
+          "item": "https://dsproul.com/mountain-light-collection.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://dsproul.com/mountain-light-collection.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What type of interiors work best with Mountain Light artwork?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mountain Light artwork works well in mountain homes, refined residential interiors, lodge-inspired spaces, boutique hospitality projects, offices, bedrooms, living rooms, entryways, and nature-inspired interiors."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What makes the Mountain Light collection different?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mountain Light is curated around luminous atmosphere rather than location alone, featuring sunrise, last light, alpine glow, storm light, reflective lakes, and dramatic mountain landscapes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are large mountain landscape prints available?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Many Mountain Light photographs are available as large framed prints and oversized statement artwork suitable for living rooms, bedrooms, offices, mountain lodges, and hospitality interiors."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can interior designers request recommendations?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Interior designers can contact Dan Sproul for mountain landscape artwork recommendations, sizing guidance, coordinated collections, and project-specific artwork suggestions."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/mountain-light-living-room.jpg#image",
+      "contentUrl": "https://dsproul.com/mountain-light-living-room.jpg",
+      "name": "Mountain Light hero interior mockup",
+      "description": "Luminous mountain landscape photography displayed in a refined interior by Dan Sproul",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com",
+      "representativeOfPage": true
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/denali highway lake reflection.jpg#image",
+      "contentUrl": "https://dsproul.com/denali highway lake reflection.jpg",
+      "name": "Denali Highway lake reflection mountain photography print",
+      "description": "Denali Highway lake reflection mountain photography print by Dan Sproul",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com",
+      "representativeOfPage": false
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/mountain-light-bedroom.jpg#image",
+      "contentUrl": "https://dsproul.com/mountain-light-bedroom.jpg",
+      "name": "Mountain landscape wall art above bed in warm modern rustic bedroom",
+      "description": "Mountain landscape wall art above bed in warm modern rustic bedroom by Dan Sproul",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com",
+      "representativeOfPage": false
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/mountain-light-lobby.jpg#image",
+      "contentUrl": "https://dsproul.com/mountain-light-lobby.jpg",
+      "name": "Large mountain photography print in high-end lodge lobby interior",
+      "description": "Large mountain photography print in high-end lodge lobby interior by Dan Sproul",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com",
+      "representativeOfPage": false
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/mountain-light-entryway.jpg#image",
+      "contentUrl": "https://dsproul.com/mountain-light-entryway.jpg",
+      "name": "Statement mountain landscape artwork in luxury double-height entryway",
+      "description": "Statement mountain landscape artwork in luxury double-height entryway by Dan Sproul",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com",
+      "representativeOfPage": false
+    }
+  ]
+}
 </script>
+</head>
+<body>
 
 <header class="site-header">
-<a href="/" class="brand">Dan Sproul<span>Fine Art Photography</span></a>
-<nav class="site-nav">
-<a href="/">Home</a><a href="/art-collections.html">Art Collections</a><a href="/gallery.html">Gallery</a><a href="/in-your-space.html">In Your Space</a><a href="/contact.html">Contact</a><a href="https://dansproul.com" class="shop-link">Shop â†—</a>
-</nav>
+  <div class="nav-wrap">
+    <a class="logo" href="index.html">
+      DAN SPROUL
+      <span>FINE ART PHOTOGRAPHY</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="best-sellers.html">Best Sellers</a>
+      <a href="art-collections.html">Collections</a>
+      <a href="in-your-space.html">In Your Space</a>
+      <a href="for-designers.html">For Designers</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-shop" href="https://dansproul.com" target="_blank" rel="noopener">Shop Prints</a>
+    </nav>
+
+    <button class="mobile-toggle" aria-label="Open navigation" type="button">
+      <span></span>
+      <span></span>
+    </button>
+  </div>
 </header>
 
 <section class="hero"><div class="container hero-content">
 <span class="eyebrow">Mountain Light Collection</span>
 <h1>Luminous Mountain Photography for Refined Interiors</h1>
-<p>Fine art mountain landscape photography built around sunrise, storm light, last glow, alpine reflection, golden valleys, and dramatic peaks â€” curated for mountain homes, hospitality spaces, offices, and nature-inspired interiors.</p>
+<p>Fine art mountain landscape photography built around sunrise, storm light, last glow, alpine reflection, golden valleys, and dramatic peaks — curated for mountain homes, hospitality spaces, offices, and nature-inspired interiors.</p>
 <a href="#collection" class="btn primary">View Selected Artwork</a><a href="#mockups" class="btn">View Interior Mockups</a>
 <div class="trust-strip"><span>Mountain Wall Art</span><span>Alaska & Grand Teton Prints</span><span>Large Landscape Artwork</span><span>Designer-Friendly Curation</span></div>
 </div></section>
@@ -192,13 +486,37 @@ html,body{overflow-x:hidden}
 <div>
 <span class="eyebrow">Alpine Glow & Last Light</span>
 <h2>A mountain collection shaped by light, not location alone.</h2>
-<p>Mountain Light brings together alpine landscapes photographed during the moments when light transforms the scene â€” sunrise over lakes, glowing autumn valleys, backlit ridgelines, storm breaks, reflected peaks, and warm evening color across rugged terrain.</p>
+<p>Mountain Light brings together alpine landscapes photographed during the moments when light transforms the scene — sunrise over lakes, glowing autumn valleys, backlit ridgelines, storm breaks, reflected peaks, and warm evening color across rugged terrain.</p>
 <p>The collection includes imagery from Alaska, Grand Teton National Park, Kenai Fjords, Mount Katahdin, and western mountain landscapes, but the organizing idea is atmosphere. Every image was selected because the light creates depth, emotion, and a natural sense of scale.</p>
 <p>These mountain fine art prints are suited for modern rustic interiors, mountain homes, hospitality suites, lodge-inspired spaces, offices, living rooms, bedrooms, and environments that benefit from uplifting natural drama.</p>
 <a href="#interior-uses" class="btn">Interior Applications</a><a href="/for-designers.html" class="btn">For Designers</a>
 </div>
-<div class="imgbox"><img src="jenny-lake-wyoming-magical-sunrise-dan-sproul.jpg" alt="Jenny Lake Wyoming sunrise mountain photography print by Dan Sproul"></div>
+<div class="imgbox"><img src="denali highway lake reflection.jpg" alt="Denali Highway lake reflection mountain photography print by Dan Sproul"></div>
 </div></section>
+
+
+<section class="buying-help-section" id="buying-help">
+  <div class="buying-help-box">
+    <div>
+      <span class="eyebrow">Buying Guidance</span>
+      <h2>Best for mountain homes, lodges, offices, and refined residential interiors.</h2>
+    </div>
+    <div class="buying-help-grid">
+      <div class="buying-help-item">
+        <strong>Best for</strong>
+        <p>Mountain homes, hospitality suites, lodge lounges, executive offices, living rooms, bedrooms, entryways, and nature-focused interiors.</p>
+      </div>
+      <div class="buying-help-item">
+        <strong>Suggested sizes</strong>
+        <p>24×36 for smaller walls, 30×40 above consoles or beds, and 40×60 or larger for fireplaces, lobbies, lounges, and statement walls.</p>
+      </div>
+      <div class="buying-help-item">
+        <strong>Strongest formats</strong>
+        <p>Framed paper for refined interiors, canvas for warmth, metal or acrylic for high-traffic hospitality and commercial settings.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="mockups" id="mockups"><div class="container">
 <div class="center">
@@ -345,7 +663,7 @@ Designers can request room-specific recommendations, scaled previews, orientatio
 <section class="seo"><div class="container">
 <span class="eyebrow">Mountain Landscape Photography Prints</span><h2>Mountain wall art for interiors that need warmth, scale, and natural light.</h2>
 <div class="cols">
-<p>The Mountain Light Collection brings together fine art mountain landscape photography selected for luminous atmosphere and interior usability. Rather than organizing the work only by national park or region, this collection is curated around the way light transforms mountain scenes â€” sunrise, last light, golden valleys, storm breaks, reflected peaks, and alpine glow.</p>
+<p>The Mountain Light Collection brings together fine art mountain landscape photography selected for luminous atmosphere and interior usability. Rather than organizing the work only by national park or region, this collection is curated around the way light transforms mountain scenes — sunrise, last light, golden valleys, storm breaks, reflected peaks, and alpine glow.</p>
 <p>These mountain photography prints are suited for refined residential interiors, mountain homes, lodge-inspired spaces, boutique hospitality projects, offices, bedrooms, living rooms, and nature-focused design. The collection includes imagery from Alaska, Grand Teton National Park, Kenai Fjords, Mount Katahdin, and western mountain landscapes.</p>
 <p>For interior designers and homeowners, mountain wall art often needs to create drama without feeling harsh or overly busy. Mountain Light emphasizes images that bring warmth, scale, and atmosphere into a room while still feeling polished enough for modern interiors.</p>
 <p>This collection supports searches for mountain landscape photography, mountain wall art, large framed mountain prints, Alaska landscape photography, Grand Teton wall art, mountain sunrise prints, lodge artwork, mountain home decor, and nature photography for interior designers.</p>
@@ -375,7 +693,7 @@ Designers can request room-specific recommendations, scaled previews, orientatio
 <a class="btn primary" href="mailto:sproulphoto@gmail.com?subject=Mountain%20Light%20Artwork%20Inquiry">Email Dan</a>
 </div></section>
 
-<div class="footer-seo">
+<div id="contact" class="footer-seo">
   <div class="footer-grid">
     <div>
       <h3>Shop By Room</h3>
@@ -415,17 +733,29 @@ Designers can request room-specific recommendations, scaled previews, orientatio
 
     <div>
       <h3>More Collections</h3>
-      <a href="https://dansproul.com/collections/best+sellers+and+designer+favorite+wall+art">Best Sellers</a>
+      <a href="best-sellers.html">Best Sellers</a>
       <a href="art-collections.html">Curated Photography Collections</a>
       <a href="for-designers.html">For Interior Designers</a>
       <a href="coastal-atmosphere.html">Coastal Atmosphere</a>
       <a href="wellness-waters-collection.html">Wellness Waters</a>
+      <a href="mailto:sproulphoto@gmail.com">Email Dan</a>
     </div>
   </div>
 
   <footer class="footer-bottom">
-    © 2026 Dan Sproul Fine Art Photography · Lima, Ohio · Prints ship worldwide
+    © 2026 Dan Sproul Fine Art Photography · Original landscape photography and heritage-inspired mixed media artwork by Dan Sproul, based in Lima, Ohio · Prints ship worldwide
   </footer>
 </div>
-</body></html>
 
+
+<script>
+(function(){
+  const toggle=document.querySelector('.mobile-toggle');
+  const nav=document.querySelector('.main-nav');
+  if(toggle && nav){
+    toggle.addEventListener('click',()=>nav.classList.toggle('active'));
+  }
+})();
+</script>
+
+</body></html>
