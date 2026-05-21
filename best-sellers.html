@@ -135,32 +135,262 @@ footer a{text-decoration:none;color:var(--accent)}
   .print-grid{grid-template-columns:1fr}.path-card{min-height:300px}
   footer{padding:34px 24px;display:block;line-height:2.1}
 }
+
+/* Global linked footer + practical buying help */
+.practical-buying-help{background:#efe8dc;color:#24211d;border-top:1px solid rgba(40,35,30,.12);border-bottom:1px solid rgba(40,35,30,.12);padding:64px 56px}
+.buying-help-box{max-width:1380px;margin:0 auto;display:grid;grid-template-columns:.85fr 1.15fr;gap:34px;align-items:start;background:#fffaf1;border:1px solid rgba(40,35,30,.14);padding:34px;box-shadow:0 18px 48px rgba(0,0,0,.08)}
+.buying-help-box h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.5vw,3.2rem);font-weight:300;line-height:1.08;margin-bottom:12px;color:#24211d}
+.buying-help-box p{font-size:.78rem;line-height:2;color:rgba(36,33,29,.72)}
+.buying-help-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.buying-help-item{border:1px solid rgba(155,122,85,.2);background:#f7f1e8;padding:20px}
+.buying-help-item strong{display:block;color:#9b7a55;text-transform:uppercase;letter-spacing:.16em;font-size:.68rem;margin-bottom:8px}
+.related-links{background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.related-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.related-card{display:block;text-decoration:none;border:1px solid var(--border);background:rgba(8,8,7,.22);padding:26px;transition:border-color .3s,transform .3s}
+.related-card:hover{border-color:var(--border-strong);transform:translateY(-3px)}
+.related-card span{display:block;font-size:.5rem;letter-spacing:.26em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
+.related-card h3{font-family:'Cormorant Garamond',serif;font-size:1.45rem;font-weight:300;line-height:1.15;margin-bottom:10px}
+.related-card p{font-size:.7rem;line-height:1.85;color:var(--muted)}
+.faq-section{background:var(--surface-2);border-top:1px solid var(--border)}
+.faq-grid{max-width:1120px;display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.faq-item{border:1px solid var(--border);padding:26px;background:rgba(8,8,7,.18)}
+.faq-item h3{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:300;margin-bottom:10px}
+.faq-item p{font-size:.74rem;line-height:1.9;color:var(--muted)}
+.footer-seo{background:#100e0b;padding:62px clamp(22px,6vw,76px) 36px;border-top:1px solid rgba(185,138,59,.22)}
+.footer-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:28px;max-width:1380px;margin:0 auto}
+.footer-grid h3{margin-bottom:13px;color:#d5b365;font-family:"Cormorant Garamond",Georgia,serif;font-size:21px;font-weight:400}
+.footer-grid a{display:block;text-decoration:none;color:rgba(244,238,229,.62);font-size:13px;line-height:2;text-transform:none;letter-spacing:0}
+.footer-grid a:hover{color:#f4eee5}
+.footer-bottom{max-width:1380px;margin:40px auto 0;padding-top:28px;border-top:1px solid rgba(185,138,59,.22);color:rgba(244,238,229,.32);font-size:10px;letter-spacing:.18em;text-align:center;text-transform:uppercase}
+@media(max-width:1040px){.footer-grid,.buying-help-box,.buying-help-grid,.related-grid,.faq-grid{grid-template-columns:1fr}.practical-buying-help{padding:54px 24px}}
+
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://dsproul.com/#dan-sproul",
+      "name": "Dan Sproul",
+      "url": "https://dsproul.com",
+      "jobTitle": "Fine Art Photographer and Mixed Media Artist",
+      "description": "Dan Sproul creates original landscape photography and heritage-inspired mixed media artwork for residential, hospitality, healthcare, wellness, and commercial interiors.",
+      "homeLocation": {
+        "@type": "Place",
+        "name": "Lima, Ohio"
+      },
+      "sameAs": [
+        "https://dansproul.com",
+        "https://fineartamerica.com/profiles/1-dan-sproul",
+        "https://www.pinterest.com/dansproul/",
+        "https://medium.com/@sprould99",
+        "https://dansproulphotography.substack.com/"
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://dsproul.com/#organization",
+      "name": "Dan Sproul Fine Art Photography",
+      "url": "https://dsproul.com",
+      "founder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "description": "Original fine art photography and mixed media artwork for homes, hospitality, healthcare, wellness, and commercial spaces."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dsproul.com/#website",
+      "url": "https://dsproul.com",
+      "name": "Dan Sproul Fine Art Photography",
+      "publisher": {
+        "@id": "https://dsproul.com/#organization"
+      }
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://dsproul.com/best-sellers.html#webpage",
+      "url": "https://dsproul.com/best-sellers.html",
+      "name": "Best Sellers & Designer Favorite Wall Art Prints | Dan Sproul",
+      "description": "A curated starting point for Dan Sproul's most versatile fine art photography prints for residential, hospitality, healthcare, office, and wellness interiors.",
+      "isPartOf": {
+        "@id": "https://dsproul.com/#website"
+      },
+      "author": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "about": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://dsproul.com/valdez-glacier-lake-alaska-dan-sproul.jpg#image"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://dsproul.com/best-sellers.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dsproul.com/index.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Best Sellers",
+          "item": "https://dsproul.com/best-sellers.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://dsproul.com/best-sellers.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What makes these best sellers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "These are versatile Dan Sproul prints that work across common interiors including bedrooms, offices, hospitality spaces, wellness rooms, living rooms, and commercial projects."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I request a wall mockup before buying?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Buyers and designers can email a room photo to Dan Sproul for sizing guidance and a simple wall mockup direction."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What print formats are available?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Prints are available in formats such as framed paper, canvas, metal, and acrylic through Dan Sproul's print shop."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I shop the full best sellers collection?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The full Best Sellers and Designer Favorites collection is available at dansproul.com/collections/best+sellers+and+designer+favorite+wall+art."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/valdez-glacier-lake-alaska-dan-sproul.jpg#image",
+      "contentUrl": "https://dsproul.com/valdez-glacier-lake-alaska-dan-sproul.jpg",
+      "name": "Best Sellers & Designer Favorites hero room mockup by Dan Sproul",
+      "description": "Best Sellers and Designer Favorites wall art hero image by Dan Sproul",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com/collections/best+sellers+and+designer+favorite+wall+art",
+      "representativeOfPage": true
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/cannon-beach-haystack-rock-oregon-dan-sproul.jpg#image",
+      "contentUrl": "https://dsproul.com/cannon-beach-haystack-rock-oregon-dan-sproul.jpg",
+      "name": "Cannon Beach by Dan Sproul",
+      "description": "Cannon Beach Haystack Rock Oregon coastal photography print by Dan Sproul",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com/collections/best+sellers+and+designer+favorite+wall+art",
+      "representativeOfPage": false
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/maroon-bells-dawn-autumn-dan-sproul.jpg#image",
+      "contentUrl": "https://dsproul.com/maroon-bells-dawn-autumn-dan-sproul.jpg",
+      "name": "Maroon Bells Dawn by Dan Sproul",
+      "description": "Maroon Bells dawn autumn Colorado landscape photography by Dan Sproul",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com/collections/best+sellers+and+designer+favorite+wall+art",
+      "representativeOfPage": false
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/chimney-peak-colorado-autumn-dan-sproul.jpg#image",
+      "contentUrl": "https://dsproul.com/chimney-peak-colorado-autumn-dan-sproul.jpg",
+      "name": "Chimney Peak Autumn by Dan Sproul",
+      "description": "Chimney Peak Colorado autumn landscape print by Dan Sproul",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com/collections/best+sellers+and+designer+favorite+wall+art",
+      "representativeOfPage": false
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/bridal-veil-falls-oregon-dan-sproul.jpg#image",
+      "contentUrl": "https://dsproul.com/bridal-veil-falls-oregon-dan-sproul.jpg",
+      "name": "Bridal Veil Falls by Dan Sproul",
+      "description": "Bridal Veil Falls Oregon waterfall photography print by Dan Sproul",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com/collections/best+sellers+and+designer+favorite+wall+art",
+      "representativeOfPage": false
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <div class="mobile-nav" id="mobileNav">
-  <button class="close-btn" id="closeNav" aria-label="Close menu">x</button>
-  <a href="/">Home</a>
+  <button class="close-btn" id="closeNav" aria-label="Close menu">×</button>
+  <a href="index.html">Home</a>
   <a href="best-sellers.html">Best Sellers</a>
   <a href="art-collections.html">Collections</a>
   <a href="in-your-space.html">In Your Space</a>
   <a href="for-designers.html">For Designers</a>
-  <a href="mailto:sproulphoto@gmail.com">Contact</a>
-  <a href="https://dansproul.com/collections/best+sellers+and+designer+favorite+wall+art" target="_blank">Shop Prints</a>
+  <a href="#contact">Contact</a>
+  <a href="https://dansproul.com" target="_blank">Shop Prints</a>
 </div>
 
 <nav>
-  <a href="/" class="nav-logo">
+  <a href="index.html" class="nav-logo">
     <span class="nav-logo-name">Dan Sproul</span>
     <span class="nav-logo-sub">Fine Art Photography</span>
   </a>
   <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
     <li><a href="best-sellers.html" class="active">Best Sellers</a></li>
     <li><a href="art-collections.html">Collections</a></li>
     <li><a href="in-your-space.html">In Your Space</a></li>
     <li><a href="for-designers.html">For Designers</a></li>
-    <li><a href="mailto:sproulphoto@gmail.com">Contact</a></li>
-    <li><a href="https://dansproul.com/collections/best+sellers+and+designer+favorite+wall+art" target="_blank" class="nav-shop">Shop</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="https://dansproul.com" target="_blank" class="nav-shop">Shop Prints</a></li>
   </ul>
   <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
@@ -187,6 +417,22 @@ footer a{text-decoration:none;color:var(--accent)}
   <div class="trust-item"><p class="trust-k">Available As</p><p class="trust-v">Framed, canvas, metal, acrylic</p></div>
   <div class="trust-item"><p class="trust-k">Help Offered</p><p class="trust-v">Free mockups and sizing guidance</p></div>
 </div>
+
+<section class="practical-buying-help" id="buying-help">
+  <div class="buying-help-box">
+    <div>
+      <p class="eyebrow">Practical Buying Help</p>
+      <h2>How to choose from the best sellers.</h2>
+      <p>This page is meant to make the first decision easier. Start with mood and room use, then choose size and format based on the wall, traffic level, and whether the piece should feel quiet or become the focal point.</p>
+      <p style="margin-top:14px"><a href="https://dansproul.com/collections/best+sellers+and+designer+favorite+wall+art" target="_blank" style="color:#8b6a2c;font-weight:400">Shop the full Best Sellers &amp; Designer Favorites collection →</a></p>
+    </div>
+    <div class="buying-help-grid">
+      <div class="buying-help-item"><strong>Best for</strong><p>Living rooms, bedrooms, offices, waiting rooms, healthcare corridors, hospitality spaces, and designer projects needing a clear starting point.</p></div>
+      <div class="buying-help-item"><strong>Suggested sizes</strong><p>24×36 for smaller walls, 30×40 above consoles or beds, and 40×60 or larger for sofas, lobbies, offices, and statement walls.</p></div>
+      <div class="buying-help-item"><strong>Strongest formats</strong><p>Framed paper for refined interiors, canvas for warmth, metal for high-traffic spaces, and acrylic for a polished contemporary look.</p></div>
+    </div>
+  </div>
+</section>
 
 <section class="paths">
   <div class="section-head">
@@ -272,6 +518,22 @@ footer a{text-decoration:none;color:var(--accent)}
   </div>
 </section>
 
+<section class="related-links" id="related-collections">
+  <div class="section-head">
+    <div>
+      <p class="section-label">Related Collection Paths</p>
+      <h2 class="section-title">Continue from best sellers into <em>stronger directions</em></h2>
+    </div>
+    <p class="section-sub">Once a buyer finds the right mood here, these related pages help narrow the search by atmosphere, room use, or mixed media style.</p>
+  </div>
+  <div class="related-grid">
+    <a class="related-card" href="quiet-earth-collection.html"><span>Calm Atmosphere</span><h3>Quiet Earth</h3><p>Soft, atmospheric landscape photography for bedrooms, wellness interiors, and quiet living spaces.</p></a>
+    <a class="related-card" href="in-your-space.html"><span>Shop By Room</span><h3>In Your Space</h3><p>Room-based wall art guidance for bedrooms, offices, dining rooms, and living spaces.</p></a>
+    <a class="related-card" href="art-collections.html"><span>Collection Hub</span><h3>Curated Collections</h3><p>Explore the larger collection architecture by mood, subject, and interior use.</p></a>
+    <a class="related-card" href="heritage-mixed-media.html"><span>Place-Based Artwork</span><h3>Heritage &amp; Mixed Media</h3><p>Layered maps, typography, landmarks, wildlife, and regional artwork for distinctive interiors.</p></a>
+  </div>
+</section>
+
 <section class="video-proof">
   <div class="proof-grid">
     <div class="proof-video">
@@ -314,6 +576,21 @@ footer a{text-decoration:none;color:var(--accent)}
   </div>
 </section>
 
+<section class="faq-section" id="faq">
+  <div class="section-head">
+    <div>
+      <p class="section-label">Buying Questions</p>
+      <h2 class="section-title">Quick answers for choosing <em>wall art prints</em></h2>
+    </div>
+  </div>
+  <div class="faq-grid">
+    <div class="faq-item"><h3>What makes these best sellers?</h3><p>These are versatile pieces that work across common interiors: bedrooms, offices, hospitality spaces, wellness rooms, living rooms, and nature-inspired commercial projects.</p></div>
+    <div class="faq-item"><h3>Can I see one in my own room?</h3><p>Yes. Send a wall photo and Dan can suggest scale, format, and a simple mockup direction before you order.</p></div>
+    <div class="faq-item"><h3>What format should I choose?</h3><p>Framed paper feels refined, canvas adds warmth, metal is practical for higher-traffic spaces, and acrylic works well for polished modern interiors.</p></div>
+    <div class="faq-item"><h3>Where do I buy the full collection?</h3><p>The full Best Sellers &amp; Designer Favorites collection is available on Dan’s print shop, with multiple sizes and finish options.</p></div>
+  </div>
+</section>
+
 <div class="cta-band">
   <div>
     <h2>Not sure which print belongs on the wall?</h2>
@@ -325,10 +602,56 @@ footer a{text-decoration:none;color:var(--accent)}
   </div>
 </div>
 
-<footer>
-  <span>© 2026 Dan Sproul Fine Art Photography</span>
-  <span><a href="https://dansproul.com" target="_blank">dansproul.com</a> · <a href="mailto:sproulphoto@gmail.com">sproulphoto@gmail.com</a></span>
-</footer>
+
+<div class="footer-seo" id="contact">
+  <div class="footer-grid">
+    <div>
+      <h3>Shop By Room</h3>
+      <a href="https://dansproul.com/collections/bedroom+wall+art+calming+nature+landscape+prints">Bedroom Wall Art</a>
+      <a href="in-your-space.html">Art In Your Space</a>
+      <a href="https://dansproul.com/collections/office+wall+art+inspiring+landscape+prints">Office Wall Art</a>
+      <a href="https://dansproul.com/art/dining+room">Dining Room Art</a>
+      <a href="https://dansproul.com/art/wellness">Wellness Space Prints</a>
+    </div>
+    <div>
+      <h3>Shop By Subject</h3>
+      <a href="https://dansproul.com/art/mountains">Mountain Prints</a>
+      <a href="https://dansproul.com/art/forest">Forest Photography</a>
+      <a href="https://dansproul.com/art/coastal">Coastal Wall Art</a>
+      <a href="https://dansproul.com/art/waterfalls">Waterfall Prints</a>
+      <a href="https://dansproul.com/art/wildlife">Wildlife Prints</a>
+    </div>
+    <div>
+      <h3>Shop By Mood</h3>
+      <a href="quiet-earth-collection.html">Quiet Earth Collection</a>
+      <a href="monochrome-stillness.html">Black &amp; White Prints</a>
+      <a href="https://dansproul.com/art/autumn">Warm Autumn Light</a>
+      <a href="https://dansproul.com/art/fog">Fog &amp; Mist Photography</a>
+      <a href="https://dansproul.com/art/calm">Calming Nature Prints</a>
+    </div>
+    <div>
+      <h3>Shop By Location</h3>
+      <a href="alaska-photography-prints.html">Alaska Prints</a>
+      <a href="colorado-photography-prints.html">Colorado Wall Art</a>
+      <a href="oregon-coast-photography-prints.html">Oregon Coast Prints</a>
+      <a href="smoky-mountains-photography-prints.html">Smoky Mountains Art</a>
+      <a href="https://dansproul.com/art/badlands">Badlands Wildlife Prints</a>
+    </div>
+    <div>
+      <h3>More Collections</h3>
+      <a href="best-sellers.html">Best Sellers</a>
+      <a href="art-collections.html">Curated Photography Collections</a>
+      <a href="for-designers.html">For Interior Designers</a>
+      <a href="heritage-mixed-media.html">Heritage &amp; Mixed Media</a>
+      <a href="coastal-atmosphere.html">Coastal Atmosphere</a>
+      <a href="wellness-waters-collection.html">Wellness Waters</a>
+      <a href="mailto:sproulphoto@gmail.com">Email Dan</a>
+    </div>
+  </div>
+  <footer class="footer-bottom">
+    © 2026 Dan Sproul Fine Art Photography · Original landscape photography and heritage-inspired mixed media artwork by Dan Sproul, based in Lima, Ohio · Prints ship worldwide
+  </footer>
+</div>
 
 <script>
 const hamburger=document.getElementById('hamburger');
