@@ -413,6 +413,174 @@ img{max-width:100%;height:auto}
 section{content-visibility:auto;contain-intrinsic-size:1px 900px}
 .hero,.site-header,nav{content-visibility:visible;contain-intrinsic-size:auto}
 
+
+/* ── STANDARD NAV + FOOTER SYSTEM ───────────────────────────── */
+.site-nav-standard{
+  position:fixed!important;
+  top:0!important;
+  left:0!important;
+  right:0!important;
+  height:66px!important;
+  z-index:9999!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:28px!important;
+  padding:0 clamp(16px,4vw,44px)!important;
+  background:rgba(14,12,9,.94)!important;
+  border-bottom:1px solid rgba(185,138,59,.18)!important;
+  backdrop-filter:blur(14px)!important;
+  -webkit-backdrop-filter:blur(14px)!important;
+  box-sizing:border-box!important;
+}
+.nav-logo-standard{
+  display:flex!important;
+  flex-direction:column!important;
+  text-decoration:none!important;
+  color:#f4eee5!important;
+  line-height:1!important;
+  min-width:max-content!important;
+}
+.nav-logo-name-standard{
+  font-family:Arial,Helvetica,sans-serif!important;
+  font-size:18px!important;
+  font-weight:700!important;
+  letter-spacing:.24em!important;
+  text-transform:uppercase!important;
+}
+.nav-logo-sub-standard{
+  margin-top:7px!important;
+  color:#b9934b!important;
+  font-family:Arial,Helvetica,sans-serif!important;
+  font-size:9px!important;
+  letter-spacing:.26em!important;
+  text-transform:uppercase!important;
+}
+.nav-links-standard{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:flex-end!important;
+  gap:clamp(18px,2vw,34px)!important;
+}
+.nav-links-standard a{
+  color:rgba(244,238,229,.78)!important;
+  text-decoration:none!important;
+  font-family:Arial,Helvetica,sans-serif!important;
+  font-size:12px!important;
+  font-weight:700!important;
+  letter-spacing:.18em!important;
+  text-transform:uppercase!important;
+  white-space:nowrap!important;
+}
+.nav-links-standard a:hover{
+  color:#f4eee5!important;
+}
+.nav-shop-standard{
+  color:#d5b365!important;
+  border:1px solid rgba(213,179,101,.62)!important;
+  padding:14px 22px!important;
+}
+.nav-toggle-standard{
+  display:none!important;
+  width:42px!important;
+  height:42px!important;
+  border:1px solid rgba(213,179,101,.36)!important;
+  background:transparent!important;
+  cursor:pointer!important;
+}
+.nav-toggle-standard span{
+  display:block!important;
+  width:20px!important;
+  height:2px!important;
+  margin:5px auto!important;
+  background:#f4eee5!important;
+}
+.footer-seo{
+  background:#100e0b!important;
+  padding:62px clamp(22px,6vw,76px) 36px!important;
+  border-top:1px solid rgba(185,138,59,.22)!important;
+}
+.footer-grid{
+  display:grid!important;
+  grid-template-columns:repeat(5,1fr)!important;
+  gap:28px!important;
+  max-width:1380px!important;
+  margin:0 auto!important;
+}
+.footer-grid h3{
+  margin:0 0 13px!important;
+  color:#d5b365!important;
+  font-family:"Cormorant Garamond",Georgia,serif!important;
+  font-size:21px!important;
+  line-height:1.2!important;
+  font-weight:400!important;
+  text-transform:none!important;
+  letter-spacing:0!important;
+}
+.footer-grid a{
+  display:block!important;
+  text-decoration:none!important;
+  color:rgba(244,238,229,.62)!important;
+  font-family:Arial,Helvetica,sans-serif!important;
+  font-size:13px!important;
+  line-height:2!important;
+  text-transform:none!important;
+  letter-spacing:0!important;
+}
+.footer-grid a:hover{
+  color:#f4eee5!important;
+}
+.footer-bottom{
+  display:block!important;
+  max-width:1380px!important;
+  margin:40px auto 0!important;
+  padding-top:28px!important;
+  border-top:1px solid rgba(185,138,59,.22)!important;
+  color:rgba(244,238,229,.32)!important;
+  font-family:Arial,Helvetica,sans-serif!important;
+  font-size:10px!important;
+  letter-spacing:.18em!important;
+  line-height:1.8!important;
+  text-align:center!important;
+  text-transform:uppercase!important;
+}
+@media (max-width:1040px){
+  .site-nav-standard{
+    height:64px!important;
+  }
+  .nav-toggle-standard{
+    display:block!important;
+  }
+  .nav-links-standard{
+    position:fixed!important;
+    top:64px!important;
+    left:0!important;
+    right:0!important;
+    display:none!important;
+    flex-direction:column!important;
+    align-items:flex-start!important;
+    gap:0!important;
+    padding:18px 24px 24px!important;
+    background:rgba(14,12,9,.98)!important;
+    border-bottom:1px solid rgba(185,138,59,.22)!important;
+  }
+  .site-nav-standard.is-open .nav-links-standard{
+    display:flex!important;
+  }
+  .nav-links-standard a{
+    width:100%!important;
+    padding:14px 0!important;
+  }
+  .nav-shop-standard{
+    width:auto!important;
+    margin-top:8px!important;
+    padding:13px 18px!important;
+  }
+  .footer-grid{
+    grid-template-columns:1fr!important;
+  }
+}
+
 </style>
 <script type="application/ld+json">
 {
@@ -597,6 +765,29 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
 </head>
 
 <body>
+
+<!-- STANDARD SITE NAV -->
+<nav class="site-nav-standard" aria-label="Primary navigation">
+  <a href="index.html" class="nav-logo-standard" aria-label="Dan Sproul Fine Art Photography home">
+    <span class="nav-logo-name-standard">Dan Sproul</span>
+    <span class="nav-logo-sub-standard">Fine Art Photography</span>
+  </a>
+
+  <button class="nav-toggle-standard" aria-label="Open navigation menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+  <div class="nav-links-standard">
+    <a href="index.html">Home</a>
+    <a href="best-sellers.html">Best Sellers</a>
+    <a href="art-collections.html">Collections</a>
+    <a href="in-your-space.html">In Your Space</a>
+    <a href="for-designers.html">For Designers</a>
+    <a href="#contact">Contact</a>
+    <a href="https://dansproul.com" target="_blank" rel="noopener" class="nav-shop-standard">Shop Prints</a>
+  </div>
+</nav>
+
   <main class="page">
     <section class="hero">
       <div class="hero-inner">
@@ -775,12 +966,6 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
       </div>
     </section>
   </main>
-
-  <footer>
-    <span>Daniel Sproul Fine Art Photography</span>
-    <span>dsproul.com</span>
-  </footer>
-
 <section class="section ai-linking-hub" id="related-collection-paths">
   <div class="ai-section-head">
     <p class="section-label">Related Collection Paths</p>
@@ -795,6 +980,77 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
     <a href="heritage-mixed-media.html"><strong>Heritage &amp; Mixed Media</strong><span>Regional artwork, lodge interiors, restaurants, hospitality spaces, local identity.</span></a>
   </div>
 </section>
+
+
+<!-- STANDARD SITE FOOTER -->
+<div id="contact" class="footer-seo">
+  <div class="footer-grid">
+    <div>
+      <h3>Shop By Room</h3>
+      <a href="https://dansproul.com/collections/bedroom+wall+art+calming+nature+landscape+prints">Bedroom Wall Art</a>
+      <a href="in-your-space.html">Art In Your Space</a>
+      <a href="https://dansproul.com/collections/office+wall+art+inspiring+landscape+prints">Office Wall Art</a>
+      <a href="https://dansproul.com/art/dining+room">Dining Room Art</a>
+      <a href="https://dansproul.com/art/wellness">Wellness Space Prints</a>
+    </div>
+
+    <div>
+      <h3>Shop By Subject</h3>
+      <a href="https://dansproul.com/art/mountains">Mountain Prints</a>
+      <a href="https://dansproul.com/art/forest">Forest Photography</a>
+      <a href="https://dansproul.com/art/coastal">Coastal Wall Art</a>
+      <a href="https://dansproul.com/art/waterfalls">Waterfall Prints</a>
+      <a href="https://dansproul.com/art/wildlife">Wildlife Prints</a>
+    </div>
+
+    <div>
+      <h3>Shop By Mood</h3>
+      <a href="quiet-earth-collection.html">Quiet Earth Collection</a>
+      <a href="monochrome-stillness.html">Black &amp; White Prints</a>
+      <a href="https://dansproul.com/art/autumn">Warm Autumn Light</a>
+      <a href="https://dansproul.com/art/fog">Fog &amp; Mist Photography</a>
+      <a href="https://dansproul.com/art/calm">Calming Nature Prints</a>
+    </div>
+
+    <div>
+      <h3>Shop By Location</h3>
+      <a href="alaska-photography-prints.html">Alaska Prints</a>
+      <a href="colorado-photography-prints.html">Colorado Wall Art</a>
+      <a href="oregon-coast-photography-prints.html">Oregon Coast Prints</a>
+      <a href="smoky-mountains-photography-prints.html">Smoky Mountains Art</a>
+      <a href="https://dansproul.com/art/badlands">Badlands Wildlife Prints</a>
+    </div>
+
+    <div>
+      <h3>More Collections</h3>
+      <a href="best-sellers.html">Best Sellers</a>
+      <a href="art-collections.html">Curated Photography Collections</a>
+      <a href="for-designers.html">For Interior Designers</a>
+      <a href="coastal-atmosphere.html">Coastal Atmosphere</a>
+      <a href="wellness-waters-collection.html">Wellness Waters</a>
+      <a href="heritage-mixed-media.html">Heritage &amp; Mixed Media</a>
+      <a href="mailto:sproulphoto@gmail.com">Email Dan</a>
+    </div>
+  </div>
+
+  <footer class="footer-bottom">
+    © 2026 Dan Sproul Fine Art Photography · Original landscape photography and heritage-inspired mixed media artwork by Dan Sproul, based in Lima, Ohio · Prints ship worldwide
+  </footer>
+</div>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var nav = document.querySelector('.site-nav-standard');
+  var toggle = document.querySelector('.nav-toggle-standard');
+  if (nav && toggle) {
+    toggle.addEventListener('click', function () {
+      var isOpen = nav.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+  }
+});
+</script>
 
 </body>
 </html>
