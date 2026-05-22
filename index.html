@@ -3,837 +3,843 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dan Sproul Fine Art Photography | Landscape, Wildlife & Nature Prints for Homes and Designers</title>
-  <meta name="description" content="Fine art photography prints by Dan Sproul for homes, offices, hospitality spaces, healthcare interiors, and designers. Shop best sellers, calming nature wall art, landscape photography, wildlife prints, coastal artwork, and curated designer collections.">
+
+  <title>Fine Art Photography for Calm, Memorable Spaces | Dan Sproul</title>
+  <meta name="description" content="Fine art photography prints by Dan Sproul for homes, offices, hospitality spaces, healthcare interiors, wellness rooms, and designers. Explore best sellers, calming nature wall art, landscape photography, and curated designer collections.">
   <link rel="canonical" href="https://dsproul.com/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="https://dsproul.com/valdez-glacier-lake-alaska-dan-sproul.jpg">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
   <style>
     :root {
-      --black: #14110d;
-      --deep: #1f1a14;
-      --panel: #29231c;
-      --panel-2: #332b22;
-      --cream: #f4eee5;
-      --cream-soft: rgba(244, 238, 229, .66);
-      --cream-faint: rgba(244, 238, 229, .42);
-      --line: rgba(195, 158, 83, .17);
-      --line-strong: rgba(195, 158, 83, .34);
-      --gold: #c7a45a;
-      --gold-light: #e4c77d;
-      --paper: #eee7dc;
-      --light-bg: #f1ece3;
-      --light-ink: #211b14;
-      --sage: #929d85;
+      --black:#14110d;
+      --deep:#1f1a14;
+      --panel:#29231c;
+      --panel-2:#332b22;
+      --cream:#f4eee5;
+      --cream-soft:rgba(244,238,229,.68);
+      --cream-faint:rgba(244,238,229,.44);
+      --line:rgba(195,158,83,.18);
+      --line-strong:rgba(195,158,83,.36);
+      --gold:#c7a45a;
+      --gold-light:#e4c77d;
+      --paper:#eee7dc;
+      --light-bg:#f1ece3;
+      --light-ink:#211b14;
     }
 
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      background: var(--black);
-      color: var(--cream);
-      font-family: "Jost", sans-serif;
-      font-weight: 300;
-      letter-spacing: .035em;
-      overflow-x: hidden;
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      background:var(--black);
+      color:var(--cream);
+      font-family:"Jost",Arial,sans-serif;
+      font-weight:300;
+      letter-spacing:.035em;
+      overflow-x:hidden;
     }
-    img { display: block; width: 100%; height: 100%; object-fit: cover; }
-    a { color: inherit; }
-    h1, h2, h3, h4 {
-      font-family: "Cormorant Garamond", serif;
-      font-weight: 300;
-      margin: 0;
-      line-height: 1.05;
+    body::before{content:"";display:block;height:66px}
+    img{display:block;width:100%;height:auto;max-width:100%;object-fit:cover}
+    a{color:inherit}
+    h1,h2,h3,h4{
+      font-family:"Cormorant Garamond",Georgia,serif;
+      font-weight:300;
+      margin:0;
+      line-height:1.04;
     }
-    em { color: var(--gold-light); font-style: italic; }
-    p { margin: 0; }
+    em{color:var(--gold-light);font-style:italic}
+    p{margin:0}
+    section{content-visibility:auto;contain-intrinsic-size:1px 900px}
+    .hero,.site-nav-standard{content-visibility:visible;contain-intrinsic-size:auto}
 
-    .nav {
-      position: fixed;
-      inset: 0 0 auto;
-      z-index: 90;
-      min-height: 76px;
-      padding: 18px clamp(20px, 5vw, 64px);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background: rgba(20, 17, 13, .92);
-      border-bottom: 1px solid var(--line);
-      backdrop-filter: blur(12px);
+    /* ── STANDARD NAV ───────────────────────────── */
+    .site-nav-standard{
+      position:fixed!important;
+      top:0!important;
+      left:0!important;
+      right:0!important;
+      height:66px!important;
+      z-index:9999!important;
+      display:flex!important;
+      align-items:center!important;
+      justify-content:space-between!important;
+      gap:28px!important;
+      padding:0 clamp(16px,4vw,44px)!important;
+      background:rgba(14,12,9,.94)!important;
+      border-bottom:1px solid rgba(185,138,59,.18)!important;
+      backdrop-filter:blur(14px)!important;
+      -webkit-backdrop-filter:blur(14px)!important;
     }
-    .logo {
-      text-decoration: none;
-      line-height: 1;
+    .nav-logo-standard{
+      display:flex!important;
+      flex-direction:column!important;
+      text-decoration:none!important;
+      color:#f4eee5!important;
+      line-height:1!important;
+      min-width:max-content!important;
     }
-    .logo-name {
-      display: block;
-      font-family: "Cormorant Garamond", serif;
-      font-size: 18px;
-      letter-spacing: .22em;
-      text-transform: uppercase;
+    .nav-logo-name-standard{
+      font-family:Arial,Helvetica,sans-serif!important;
+      font-size:18px!important;
+      font-weight:700!important;
+      letter-spacing:.24em!important;
+      text-transform:uppercase!important;
     }
-    .logo-sub {
-      display: block;
-      margin-top: 6px;
-      color: var(--gold);
-      font-size: 9px;
-      letter-spacing: .34em;
-      text-transform: uppercase;
+    .nav-logo-sub-standard{
+      margin-top:7px!important;
+      color:#b9934b!important;
+      font-family:Arial,Helvetica,sans-serif!important;
+      font-size:9px!important;
+      letter-spacing:.26em!important;
+      text-transform:uppercase!important;
     }
-    .links {
-      display: flex;
-      gap: clamp(14px, 2vw, 26px);
-      align-items: center;
-      font-size: 10px;
-      letter-spacing: .18em;
-      text-transform: uppercase;
+    .nav-links-standard{
+      display:flex!important;
+      align-items:center!important;
+      justify-content:flex-end!important;
+      gap:clamp(18px,2vw,34px)!important;
     }
-    .links a {
-      text-decoration: none;
-      color: var(--cream-soft);
-      transition: color .25s ease, border-color .25s ease;
+    .nav-links-standard a{
+      color:rgba(244,238,229,.78)!important;
+      text-decoration:none!important;
+      font-family:Arial,Helvetica,sans-serif!important;
+      font-size:12px!important;
+      font-weight:700!important;
+      letter-spacing:.18em!important;
+      text-transform:uppercase!important;
+      white-space:nowrap!important;
     }
-    .links a:hover, .links .priority { color: var(--gold-light); }
-    .links .shop {
-      padding: 9px 15px;
-      border: 1px solid var(--line-strong);
-      color: var(--gold-light);
+    .nav-links-standard a:hover{color:#f4eee5!important}
+    .nav-shop-standard{
+      color:#d5b365!important;
+      border:1px solid rgba(213,179,101,.62)!important;
+      padding:14px 22px!important;
     }
-    .mobile-toggle {
-      display: none;
-      background: transparent;
-      border: 1px solid var(--line-strong);
-      padding: 10px;
-      flex-direction: column;
-      gap: 5px;
-      cursor: pointer;
+    .nav-toggle-standard{
+      display:none!important;
+      width:42px!important;
+      height:42px!important;
+      border:1px solid rgba(213,179,101,.36)!important;
+      background:transparent!important;
+      cursor:pointer!important;
     }
-    .mobile-toggle span {
-      display: block;
-      width: 24px;
-      height: 1px;
-      background: var(--paper);
-    }
-    .mobile-panel {
-      display: none;
-      position: fixed;
-      inset: 0;
-      z-index: 120;
-      background: rgba(20, 17, 13, .98);
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      gap: 24px;
-      text-align: center;
-    }
-    .mobile-panel.open { display: flex; }
-    .mobile-panel a {
-      color: var(--paper);
-      text-decoration: none;
-      font-family: "Cormorant Garamond", serif;
-      font-size: 1.8rem;
-    }
-    .mobile-panel a.gold { color: var(--gold-light); }
-    .mobile-close {
-      position: absolute;
-      top: 22px;
-      right: 24px;
-      background: transparent;
-      border: 0;
-      color: var(--paper);
-      font-size: 2rem;
-      cursor: pointer;
+    .nav-toggle-standard span{
+      display:block!important;
+      width:20px!important;
+      height:2px!important;
+      margin:5px auto!important;
+      background:#f4eee5!important;
     }
 
-    .hero {
-      min-height: 96vh;
-      position: relative;
-      display: grid;
-      align-items: end;
-      padding: 140px clamp(22px, 6vw, 76px) 80px;
-      overflow: hidden;
+    .section-pad{padding:clamp(58px,7vw,104px) clamp(22px,6vw,76px)}
+    .eyebrow{
+      margin-bottom:15px;
+      color:var(--gold);
+      font-size:10px;
+      letter-spacing:.38em;
+      text-transform:uppercase;
     }
-    .hero::before {
-      content: "";
-      position: absolute;
-      inset: 0;
+    .section-head{
+      max-width:1280px;
+      margin:0 auto 38px;
+      display:grid;
+      grid-template-columns:minmax(0,1fr) minmax(280px,520px);
+      gap:34px;
+      align-items:end;
+    }
+    .section-head h2{font-size:clamp(34px,5vw,68px)}
+    .section-head p{color:var(--cream-soft);line-height:1.9;font-size:15px}
+    .btns{display:flex;flex-wrap:wrap;gap:13px;margin-top:30px}
+    .btn{
+      min-height:45px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:0 23px;
+      border:1px solid var(--line-strong);
+      text-decoration:none;
+      color:var(--cream);
+      font-size:10px;
+      letter-spacing:.22em;
+      text-transform:uppercase;
+      transition:.25s ease;
+    }
+    .btn:hover{border-color:var(--gold-light);color:var(--gold-light)}
+    .btn.primary{background:var(--gold);border-color:var(--gold);color:var(--black);font-weight:500}
+    .btn.primary:hover{background:var(--gold-light);color:var(--black)}
+
+    .hero{
+      min-height:82vh;
+      position:relative;
+      display:grid;
+      align-items:end;
+      padding:clamp(92px,10vw,138px) clamp(22px,6vw,76px) clamp(64px,8vw,92px);
+      overflow:hidden;
+    }
+    .hero::before{
+      content:"";
+      position:absolute;
+      inset:0;
       background:
-        linear-gradient(to top, rgba(20,17,13,.99) 0%, rgba(20,17,13,.62) 34%, rgba(20,17,13,.18) 100%),
-        url("https://dsproul.com/valdez-glacier-lake-alaska-dan-sproul.jpg") center / cover no-repeat;
-      filter: brightness(.82) saturate(.86);
-      transform: scale(1.01);
+        linear-gradient(to top,rgba(20,17,13,.98) 0%,rgba(20,17,13,.70) 34%,rgba(20,17,13,.25) 100%),
+        url("https://dsproul.com/valdez-glacier-lake-alaska-dan-sproul.jpg") center/cover no-repeat;
+      filter:brightness(.78) saturate(.88);
+      transform:scale(1.01);
     }
-    .hero-content {
-      position: relative;
-      max-width: 930px;
-    }
-    .eyebrow {
-      margin-bottom: 16px;
-      color: var(--gold);
-      font-size: 10px;
-      letter-spacing: .38em;
-      text-transform: uppercase;
-    }
-    h1 {
-      max-width: 880px;
-      font-size: clamp(48px, 8vw, 112px);
-      letter-spacing: -.012em;
-    }
-    .hero-copy {
-      max-width: 610px;
-      margin-top: 24px;
-      color: var(--cream-soft);
-      font-size: clamp(15px, 1.35vw, 18px);
-      line-height: 1.85;
-    }
-    .buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 13px;
-      margin-top: 34px;
-    }
-    .btn {
-      min-height: 47px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0 24px;
-      border: 1px solid var(--line-strong);
-      text-decoration: none;
-      color: var(--cream);
-      font-size: 10px;
-      letter-spacing: .22em;
-      text-transform: uppercase;
-      transition: background .25s, border-color .25s, color .25s;
-    }
-    .btn:hover { border-color: var(--gold-light); color: var(--gold-light); }
-    .btn.primary {
-      background: var(--gold);
-      border-color: var(--gold);
-      color: var(--black);
-      font-weight: 500;
-    }
-    .btn.primary:hover { background: var(--gold-light); color: var(--black); }
-
-    .trust-strip {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      background: var(--deep);
-      border-top: 1px solid var(--line);
-      border-bottom: 1px solid var(--line);
-    }
-    .trust-strip div {
-      min-height: 86px;
-      padding: 19px 22px;
-      text-align: center;
-      border-right: 1px solid var(--line);
-      color: var(--cream-faint);
-      font-size: 10px;
-      letter-spacing: .22em;
-      text-transform: uppercase;
-    }
-    .trust-strip strong {
-      display: block;
-      margin-bottom: 4px;
-      color: var(--cream);
-      font-family: "Cormorant Garamond", serif;
-      font-size: 28px;
-      font-weight: 300;
-      letter-spacing: .02em;
-      text-transform: none;
+    .hero-content{position:relative;max-width:910px}
+    h1{max-width:830px;font-size:clamp(46px,7vw,96px);letter-spacing:-.012em}
+    .hero-copy{
+      max-width:650px;
+      margin-top:22px;
+      color:var(--cream-soft);
+      font-size:clamp(15px,1.35vw,18px);
+      line-height:1.85;
     }
 
-    section, .band {
-      padding: clamp(66px, 8vw, 112px) clamp(22px, 6vw, 76px);
+    .trust-strip{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      background:var(--deep);
+      border-top:1px solid var(--line);
+      border-bottom:1px solid var(--line);
     }
-    .section-head {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) minmax(260px, 520px);
-      gap: 32px;
-      align-items: end;
-      margin-bottom: 42px;
+    .trust-strip div{
+      min-height:76px;
+      padding:16px 20px;
+      text-align:center;
+      border-right:1px solid var(--line);
+      color:var(--cream-faint);
+      font-size:10px;
+      letter-spacing:.22em;
+      text-transform:uppercase;
     }
-    .section-head h2 {
-      max-width: 780px;
-      font-size: clamp(36px, 5vw, 70px);
-    }
-    .section-head p {
-      color: var(--cream-soft);
-      line-height: 1.9;
-      font-size: 15px;
-    }
-
-    .seller-grid {
-      display: grid;
-      grid-template-columns: 1.22fr 1fr 1fr;
-      gap: 4px;
-    }
-    .image-card {
-      min-height: 360px;
-      position: relative;
-      overflow: hidden;
-      background: var(--panel);
-      text-decoration: none;
-      color: var(--cream);
-    }
-    .image-card.feature { grid-row: span 2; min-height: 724px; }
-    .image-card::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to top, rgba(20,17,13,.96), rgba(20,17,13,.22) 60%, transparent);
-    }
-    .image-card img {
-      filter: brightness(.88) saturate(.9);
-      transition: transform .7s ease, filter .7s ease;
-    }
-    .image-card:hover img {
-      transform: scale(1.045);
-      filter: brightness(1) saturate(1);
-    }
-    .card-text {
-      position: absolute;
-      inset: auto 0 0;
-      z-index: 2;
-      padding: 26px;
-    }
-    .tag {
-      display: inline-block;
-      margin-bottom: 10px;
-      color: var(--gold-light);
-      font-size: 10px;
-      letter-spacing: .26em;
-      text-transform: uppercase;
-    }
-    .image-card h3 { font-size: clamp(28px, 3vw, 45px); }
-    .image-card p {
-      max-width: 430px;
-      margin-top: 9px;
-      color: var(--cream-soft);
-      font-size: 14px;
-      line-height: 1.7;
+    .trust-strip strong{
+      display:block;
+      margin-bottom:4px;
+      color:var(--cream);
+      font-family:"Cormorant Garamond",Georgia,serif;
+      font-size:25px;
+      font-weight:300;
+      letter-spacing:.02em;
+      text-transform:none;
     }
 
-    .light {
-      background: var(--light-bg);
-      color: var(--light-ink);
+    .quick-paths{
+      background:var(--light-bg);
+      color:var(--light-ink);
+      padding:clamp(44px,5vw,70px) clamp(22px,6vw,76px);
     }
-    .light em, .light .eyebrow { color: #87672d; }
-    .light .section-head p { color: rgba(33, 27, 20, .68); }
-    .path-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1px;
-      background: rgba(33, 27, 20, .16);
+    .quick-inner{max-width:1280px;margin:0 auto}
+    .quick-head{
+      display:grid;
+      grid-template-columns:minmax(0,420px) 1fr;
+      gap:34px;
+      margin-bottom:24px;
+      align-items:end;
     }
-    .path {
-      min-height: 258px;
-      padding: 28px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      background: #fbf8f1;
-      text-decoration: none;
-      color: var(--light-ink);
+    .quick-head h2{font-size:clamp(30px,4vw,50px)}
+    .quick-head p{color:rgba(33,27,20,.67);line-height:1.8}
+    .path-grid{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:1px;
+      background:rgba(33,27,20,.16);
     }
-    .path h3 { font-size: 33px; }
-    .path p {
-      margin-top: 12px;
-      color: rgba(33, 27, 20, .66);
-      line-height: 1.7;
-      font-size: 14px;
+    .path{
+      min-height:190px;
+      padding:25px;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      background:#fbf8f1;
+      text-decoration:none;
+      color:var(--light-ink);
     }
-    .path span {
-      margin-top: 22px;
-      color: #87672d;
-      font-size: 10px;
-      letter-spacing: .22em;
-      text-transform: uppercase;
+    .path h3{font-size:28px}
+    .path p{margin-top:10px;color:rgba(33,27,20,.66);line-height:1.65;font-size:13px}
+    .path span{margin-top:18px;color:#87672d;font-size:10px;letter-spacing:.22em;text-transform:uppercase}
+
+    .seller-section{padding-top:clamp(54px,6vw,86px)}
+    .seller-grid{
+      max-width:1280px;
+      margin:0 auto;
+      display:grid;
+      grid-template-columns:1.05fr repeat(4,1fr);
+      gap:4px;
+    }
+    .image-card{
+      min-height:360px;
+      position:relative;
+      overflow:hidden;
+      background:var(--panel);
+      text-decoration:none;
+      color:var(--cream);
+    }
+    .image-card.feature{grid-column:span 2;min-height:430px}
+    .image-card::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(to top,rgba(20,17,13,.95),rgba(20,17,13,.18) 62%,transparent);
+    }
+    .image-card img{height:100%;filter:brightness(.88) saturate(.92);transition:transform .7s ease,filter .7s ease}
+    .image-card:hover img{transform:scale(1.045);filter:brightness(1) saturate(1)}
+    .card-text{position:absolute;inset:auto 0 0;z-index:2;padding:24px}
+    .tag{display:inline-block;margin-bottom:9px;color:var(--gold-light);font-size:9px;letter-spacing:.26em;text-transform:uppercase}
+    .image-card h3{font-size:clamp(25px,3vw,40px)}
+    .image-card p{max-width:420px;margin-top:8px;color:var(--cream-soft);font-size:13px;line-height:1.7}
+
+    .collections{background:#100e0b}
+    .collection-grid{
+      max-width:1280px;
+      margin:0 auto;
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:4px;
+    }
+    .collection-card{
+      min-height:430px;
+      position:relative;
+      overflow:hidden;
+      text-decoration:none;
+      color:var(--cream);
+      background:var(--panel);
+    }
+    .collection-card::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(to top,rgba(20,17,13,.95),rgba(20,17,13,.22) 62%,transparent);
+    }
+    .collection-card img{height:100%;filter:brightness(.9) saturate(.88)}
+    .collection-card h3{font-size:32px}
+
+    .mockups{background:var(--deep)}
+    .mock-feature{
+      max-width:1280px;
+      margin:0 auto 42px;
+      display:grid;
+      grid-template-columns:1.08fr .92fr;
+      gap:clamp(34px,5vw,72px);
+      align-items:center;
+    }
+    .mock-image{aspect-ratio:4/3;overflow:hidden;background:var(--panel)}
+    .mock-copy h2{font-size:clamp(36px,5vw,64px)}
+    .mock-copy p{max-width:560px;margin-top:20px;color:var(--cream-soft);line-height:1.9;font-size:15px}
+    .mock-strip{
+      max-width:1280px;
+      margin:0 auto;
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:4px;
+    }
+    .mock-tile{position:relative;min-height:290px;overflow:hidden;color:var(--cream)}
+    .mock-tile img{height:100%}
+    .mock-tile::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(20,17,13,.86),transparent 60%)}
+    .mock-label{position:absolute;inset:auto 0 0;z-index:2;padding:18px;color:var(--cream-soft);font-size:10px;letter-spacing:.2em;text-transform:uppercase}
+    .mock-label strong{display:block;color:var(--cream);font-family:"Cormorant Garamond",Georgia,serif;font-size:23px;font-weight:300;letter-spacing:.02em;text-transform:none}
+
+    .environment{background:var(--black)}
+    .env-grid{
+      max-width:1280px;
+      margin:0 auto;
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:1px;
+      background:var(--line);
+    }
+    .env-card{
+      min-height:245px;
+      padding:27px;
+      background:#12100d;
+      text-decoration:none;
+      color:var(--cream);
+    }
+    .env-card h3{font-size:31px;margin-bottom:12px}
+    .env-card p{color:var(--cream-soft);font-size:13px;line-height:1.75}
+    .env-card span{display:block;margin-top:22px;color:var(--gold);font-size:10px;letter-spacing:.22em;text-transform:uppercase}
+
+    .buying{background:var(--panel)}
+    .buy-grid{
+      max-width:1280px;
+      margin:0 auto;
+      display:grid;
+      grid-template-columns:1fr 1fr 1fr;
+      gap:1px;
+      background:var(--line);
+    }
+    .buy-card{background:var(--deep);padding:28px}
+    .buy-card h3{font-size:30px;margin-bottom:12px}
+    .buy-card p{color:var(--cream-soft);font-size:14px;line-height:1.8}
+
+    .designer{
+      display:grid;
+      grid-template-columns:.95fr 1.05fr;
+      gap:clamp(34px,5vw,74px);
+      align-items:center;
+      background:var(--black);
+    }
+    .designer-image{aspect-ratio:4/3;overflow:hidden;background:var(--panel)}
+    .designer h2{font-size:clamp(38px,5vw,70px)}
+    .designer p{max-width:590px;margin-top:20px;color:var(--cream-soft);line-height:1.9;font-size:15px}
+    .service-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:1px;
+      margin:28px 0;
+      background:var(--line);
+    }
+    .service-grid div{background:var(--panel);padding:19px;color:var(--cream-faint);font-size:11px;line-height:1.65;letter-spacing:.14em;text-transform:uppercase}
+    .service-grid strong{display:block;margin-bottom:6px;color:var(--cream);font-family:"Cormorant Garamond",Georgia,serif;font-size:24px;font-weight:300;letter-spacing:.02em;text-transform:none}
+
+    .contact-slim{
+      background:var(--deep);
+      border-top:1px solid var(--line);
+      padding:clamp(42px,5.5vw,64px) clamp(22px,6vw,76px);
+      text-align:center;
+    }
+    .contact-slim h2{font-size:clamp(32px,4.2vw,52px);max-width:760px;margin:0 auto}
+    .contact-note{margin:14px auto 0;color:var(--cream-faint);font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+    .contact-email{display:inline-block;margin-top:20px;color:var(--paper);font-family:"Cormorant Garamond",Georgia,serif;font-size:21px;text-decoration:none;border-bottom:1px solid rgba(199,164,90,.45);padding-bottom:4px}
+    .contact-mini-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      max-width:820px;
+      margin:28px auto 0;
+      border:1px solid var(--line);
+      background:rgba(0,0,0,.18);
+    }
+    .contact-mini-card{padding:18px 16px;border-right:1px solid var(--line)}
+    .contact-mini-card:last-child{border-right:0}
+    .contact-mini-card span{display:block;color:var(--gold);font-size:10px;letter-spacing:.22em;text-transform:uppercase;margin-bottom:9px}
+    .contact-mini-card p,.contact-mini-card a{color:var(--paper);text-decoration:none;font-family:"Cormorant Garamond",Georgia,serif;font-size:18px;line-height:1.5}
+
+    /* ── STANDARD FOOTER ───────────────────────────── */
+    .footer-seo{
+      background:#100e0b!important;
+      padding:62px clamp(22px,6vw,76px) 36px!important;
+      border-top:1px solid rgba(185,138,59,.22)!important;
+    }
+    .footer-grid{
+      display:grid!important;
+      grid-template-columns:repeat(5,1fr)!important;
+      gap:28px!important;
+      max-width:1380px!important;
+      margin:0 auto!important;
+    }
+    .footer-grid h3{
+      margin:0 0 13px!important;
+      color:#d5b365!important;
+      font-family:"Cormorant Garamond",Georgia,serif!important;
+      font-size:21px!important;
+      line-height:1.2!important;
+      font-weight:400!important;
+      text-transform:none!important;
+      letter-spacing:0!important;
+    }
+    .footer-grid a{
+      display:block!important;
+      text-decoration:none!important;
+      color:rgba(244,238,229,.62)!important;
+      font-family:Arial,Helvetica,sans-serif!important;
+      font-size:13px!important;
+      line-height:2!important;
+      text-transform:none!important;
+      letter-spacing:0!important;
+    }
+    .footer-grid a:hover{color:#f4eee5!important}
+    .footer-bottom{
+      display:block!important;
+      max-width:1380px!important;
+      margin:40px auto 0!important;
+      padding-top:28px!important;
+      border-top:1px solid rgba(185,138,59,.22)!important;
+      color:rgba(244,238,229,.32)!important;
+      font-family:Arial,Helvetica,sans-serif!important;
+      font-size:10px!important;
+      letter-spacing:.18em!important;
+      line-height:1.8!important;
+      text-align:center!important;
+      text-transform:uppercase!important;
     }
 
-    .curated {
-      background: var(--black);
+    @media (max-width:1180px){
+      .seller-grid{grid-template-columns:repeat(2,1fr)}
+      .image-card.feature{grid-column:span 2}
+      .collection-grid,.env-grid{grid-template-columns:repeat(2,1fr)}
     }
-    .curated-grid {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 4px;
-    }
-    .collection-card {
-      min-height: 440px;
-      position: relative;
-      overflow: hidden;
-      text-decoration: none;
-      background: var(--panel);
-      color: var(--cream);
-    }
-    .collection-card::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to top, rgba(20,17,13,.94), rgba(20,17,13,.18) 62%, transparent);
-    }
-    .collection-card .card-text { padding: 22px; }
-    .collection-card h3 { font-size: 33px; }
-
-    .mockups {
-      background: var(--deep);
-    }
-    .mock-feature {
-      display: grid;
-      grid-template-columns: 1.15fr .85fr;
-      gap: clamp(34px, 5vw, 72px);
-      align-items: center;
-      margin-bottom: 46px;
-    }
-    .mock-image {
-      aspect-ratio: 4 / 3;
-      overflow: hidden;
-      background: var(--panel);
-    }
-    .mock-copy h2 {
-      font-size: clamp(38px, 5vw, 68px);
-    }
-    .mock-copy p {
-      max-width: 540px;
-      margin-top: 20px;
-      color: var(--cream-soft);
-      line-height: 1.9;
-      font-size: 15px;
-    }
-    .mock-strip {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 4px;
-    }
-    .mock-tile {
-      position: relative;
-      min-height: 310px;
-      overflow: hidden;
-      color: var(--cream);
-    }
-    .mock-tile::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to top, rgba(20,17,13,.85), transparent 60%);
-    }
-    .mock-label {
-      position: absolute;
-      inset: auto 0 0;
-      z-index: 2;
-      padding: 18px;
-      color: var(--cream-soft);
-      font-size: 10px;
-      letter-spacing: .2em;
-      text-transform: uppercase;
-    }
-    .mock-label strong {
-      display: block;
-      color: var(--cream);
-      font-family: "Cormorant Garamond", serif;
-      font-size: 23px;
-      font-weight: 300;
-      letter-spacing: .02em;
-      text-transform: none;
-    }
-
-    .intent {
-      display: grid;
-      grid-template-columns: minmax(0, 680px) auto;
-      align-items: center;
-      gap: 26px;
-      padding: 48px clamp(22px, 6vw, 76px);
-      background: var(--panel);
-      border-top: 1px solid var(--line);
-      border-bottom: 1px solid var(--line);
-    }
-    .intent h2 {
-      margin-top: 8px;
-      font-size: clamp(30px, 4vw, 52px);
-    }
-    .intent p:last-child {
-      margin-top: 12px;
-      color: var(--cream-soft);
-      line-height: 1.8;
-      max-width: 660px;
-    }
-
-    .designer {
-      display: grid;
-      grid-template-columns: .95fr 1.05fr;
-      gap: clamp(34px, 5vw, 74px);
-      align-items: center;
-      background: var(--black);
-    }
-    .designer-image {
-      aspect-ratio: 4 / 3;
-      overflow: hidden;
-      background: var(--panel);
-    }
-    .designer h2 { font-size: clamp(38px, 5vw, 70px); }
-    .designer p {
-      max-width: 590px;
-      margin-top: 20px;
-      color: var(--cream-soft);
-      line-height: 1.9;
-      font-size: 15px;
-    }
-    .service-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1px;
-      margin: 28px 0;
-      background: var(--line);
-    }
-    .service-grid div {
-      background: var(--panel);
-      padding: 19px;
-      color: var(--cream-faint);
-      font-size: 11px;
-      line-height: 1.65;
-      letter-spacing: .14em;
-      text-transform: uppercase;
-    }
-    .service-grid strong {
-      display: block;
-      margin-bottom: 6px;
-      color: var(--cream);
-      font-family: "Cormorant Garamond", serif;
-      font-size: 24px;
-      font-weight: 300;
-      letter-spacing: .02em;
-      text-transform: none;
-    }
-
-    .media-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1px;
-      background: var(--line);
-    }
-    .media-card {
-      padding: 26px;
-      min-height: 220px;
-      background: var(--deep);
-    }
-    .media-card h3 { font-size: 30px; }
-    .media-card p {
-      margin-top: 12px;
-      color: var(--cream-soft);
-      line-height: 1.7;
-      font-size: 14px;
-    }
-
-    .mixed-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-    }
-    .mixed-card {
-      text-decoration: none;
-      color: var(--cream);
-      border: 1px solid var(--line);
-      background: var(--deep);
-    }
-    .mixed-card .media {
-      height: 285px;
-      overflow: hidden;
-      background: var(--panel);
-    }
-    .mixed-card .text { padding: 23px; }
-    .mixed-card h3 { font-size: 31px; }
-    .mixed-card p {
-      margin-top: 10px;
-      color: var(--cream-soft);
-      line-height: 1.75;
-      font-size: 14px;
-    }
-
-    .local {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) minmax(360px, 720px);
-      gap: clamp(34px, 6vw, 80px);
-      align-items: center;
-      background: var(--deep);
-    }
-    .local h2 { font-size: clamp(38px, 5vw, 66px); }
-    .local p:not(.eyebrow) {
-      max-width: 740px;
-      margin-top: 18px;
-      color: var(--cream-soft);
-      line-height: 1.9;
-    }
-    .local-cards {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1px;
-      background: rgba(0, 0, 0, .28);
-    }
-    .local-card {
-      min-height: 128px;
-      padding: 28px;
-      text-align: center;
-      background: var(--panel);
-    }
-    .local-card h3 {
-      color: var(--gold-light);
-      font-size: 28px;
-    }
-    .local-card p {
-      margin-top: 9px !important;
-      color: var(--cream-faint) !important;
-      font-size: 10px;
-      letter-spacing: .18em;
-      line-height: 1.8 !important;
-      text-transform: uppercase;
-    }
-
-    .contact-slim {
-      background: var(--deep);
-      border-top: 1px solid var(--line);
-      padding: clamp(42px, 5.5vw, 64px) clamp(22px, 6vw, 76px);
-      text-align: center;
-    }
-    .contact-slim h2 {
-      font-size: clamp(32px, 4.2vw, 52px);
-      max-width: 760px;
-      margin: 0 auto;
-    }
-    .contact-slim .contact-note {
-      margin: 14px auto 0;
-      color: var(--cream-faint);
-      font-size: 12px;
-      letter-spacing: .14em;
-      text-transform: uppercase;
-    }
-    .contact-email {
-      display: inline-block;
-      margin-top: 20px;
-      color: var(--paper);
-      font-family: "Cormorant Garamond", serif;
-      font-size: 21px;
-      text-decoration: none;
-      border-bottom: 1px solid rgba(199, 164, 90, .45);
-      padding-bottom: 4px;
-    }
-    .contact-mini-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      max-width: 820px;
-      margin: 28px auto 0;
-      border: 1px solid var(--line);
-      background: rgba(0,0,0,.18);
-    }
-    .contact-mini-card {
-      padding: 18px 16px;
-      border-right: 1px solid var(--line);
-    }
-    .contact-mini-card:last-child { border-right: 0; }
-    .contact-mini-card span {
-      display: block;
-      color: var(--gold);
-      font-size: 10px;
-      letter-spacing: .22em;
-      text-transform: uppercase;
-      margin-bottom: 9px;
-    }
-    .contact-mini-card p,
-    .contact-mini-card a {
-      color: var(--paper);
-      text-decoration: none;
-      font-family: "Cormorant Garamond", serif;
-      font-size: 18px;
-      line-height: 1.5;
-    }
-
-    .email {
-      text-align: center;
-      background: #302820;
-      border-top: 1px solid var(--line);
-      border-bottom: 1px solid var(--line);
-    }
-    .email h2 { font-size: clamp(36px, 5vw, 66px); }
-    .email p:not(.eyebrow) {
-      max-width: 560px;
-      margin: 15px auto 0;
-      color: var(--cream-soft);
-      line-height: 1.8;
-    }
-    .email-form {
-      display: grid;
-      grid-template-columns: minmax(240px, 420px) 150px;
-      justify-content: center;
-      margin-top: 30px;
-    }
-    .email input {
-      min-height: 50px;
-      border: 1px solid var(--line-strong);
-      border-right: 0;
-      background: rgba(20, 17, 13, .46);
-      color: var(--cream);
-      padding: 0 18px;
-      font-family: inherit;
-    }
-    .email button {
-      border: 1px solid var(--gold);
-      background: var(--gold);
-      color: var(--black);
-      font-family: inherit;
-      font-size: 10px;
-      letter-spacing: .2em;
-      text-transform: uppercase;
-      cursor: pointer;
-    }
-
-    .footer-seo {
-      background: #100e0b;
-      padding: 62px clamp(22px, 6vw, 76px) 36px;
-      border-top: 1px solid var(--line);
-    }
-    .footer-grid {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 28px;
-      max-width: 1380px;
-      margin: 0 auto;
-    }
-    .footer-grid h3 {
-      margin-bottom: 13px;
-      color: var(--gold-light);
-      font-size: 21px;
-    }
-    .footer-grid a {
-      display: block;
-      text-decoration: none;
-      color: var(--cream-faint);
-      font-size: 13px;
-      line-height: 2;
-    }
-    .footer-grid a:hover { color: var(--cream); }
-    footer {
-      max-width: 1380px;
-      margin: 40px auto 0;
-      padding-top: 28px;
-      border-top: 1px solid var(--line);
-      color: rgba(244, 238, 229, .32);
-      font-size: 10px;
-      letter-spacing: .18em;
-      text-align: center;
-      text-transform: uppercase;
-    }
-
-    @media (max-width: 1040px) {
-      .links { display: none; }
-      .mobile-toggle { display: flex; }
-      .trust-strip { grid-template-columns: repeat(2, 1fr); }
-      .section-head, .mock-feature, .designer, .local, .intent { grid-template-columns: 1fr; }
-      .seller-grid, .path-grid, .curated-grid, .mock-strip, .media-grid, .mixed-grid, .footer-grid { grid-template-columns: 1fr; }
-      .image-card.feature { min-height: 430px; }
-      .image-card, .collection-card { min-height: 340px; }
-      .service-grid { grid-template-columns: 1fr; }
-      .email-form { grid-template-columns: 1fr; }
-      .email input { border-right: 1px solid var(--line-strong); }
-      .email button { min-height: 50px; }
-      .contact-mini-grid { grid-template-columns: 1fr; }
-      .contact-mini-card { border-right: 0; border-bottom: 1px solid var(--line); }
-      .contact-mini-card:last-child { border-bottom: 0; }
+    @media (max-width:1040px){
+      body::before{height:64px}
+      .site-nav-standard{height:64px!important}
+      .nav-toggle-standard{display:block!important}
+      .nav-links-standard{
+        position:fixed!important;
+        top:64px!important;
+        left:0!important;
+        right:0!important;
+        display:none!important;
+        flex-direction:column!important;
+        align-items:flex-start!important;
+        gap:0!important;
+        padding:18px 24px 24px!important;
+        background:rgba(14,12,9,.98)!important;
+        border-bottom:1px solid rgba(185,138,59,.22)!important;
+      }
+      .site-nav-standard.is-open .nav-links-standard{display:flex!important}
+      .nav-links-standard a{width:100%!important;padding:14px 0!important}
+      .nav-shop-standard{width:auto!important;margin-top:8px!important;padding:13px 18px!important}
+      .hero{min-height:76vh}
+      .trust-strip,.path-grid,.seller-grid,.collection-grid,.mock-strip,.env-grid,.buy-grid,.footer-grid{grid-template-columns:1fr!important}
+      .section-head,.quick-head,.mock-feature,.designer{grid-template-columns:1fr}
+      .image-card.feature{grid-column:auto;min-height:420px}
+      .image-card,.collection-card{min-height:330px}
+      .service-grid{grid-template-columns:1fr}
+      .contact-mini-grid{grid-template-columns:1fr}
+      .contact-mini-card{border-right:0;border-bottom:1px solid var(--line)}
+      .contact-mini-card:last-child{border-bottom:0}
     }
   </style>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://dsproul.com/#dan-sproul",
+      "name": "Dan Sproul",
+      "url": "https://dsproul.com",
+      "jobTitle": "Fine Art Photographer and Mixed Media Artist",
+      "description": "Dan Sproul is an Ohio-based fine art photographer and mixed media artist creating original artwork for hospitality, healthcare, corporate, wellness, and residential interiors across the United States.",
+      "homeLocation": {
+        "@type": "Place",
+        "name": "Lima, Ohio"
+      },
+      "sameAs": [
+        "https://dansproul.com",
+        "https://fineartamerica.com/profiles/1-dan-sproul",
+        "https://www.pinterest.com/dansproul/",
+        "https://medium.com/@sprould99",
+        "https://dansproulphotography.substack.com/"
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://dsproul.com/#organization",
+      "name": "Dan Sproul Fine Art Photography",
+      "url": "https://dsproul.com",
+      "founder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "email": "sproulphoto@gmail.com",
+      "description": "Original fine art photography and mixed media artwork for designers, hospitality interiors, healthcare spaces, corporate offices, wellness environments, and residential design projects."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dsproul.com/#website",
+      "url": "https://dsproul.com",
+      "name": "Dan Sproul Fine Art Photography",
+      "publisher": {
+        "@id": "https://dsproul.com/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://dsproul.com/#webpage",
+      "url": "https://dsproul.com/",
+      "name": "Fine Art Photography for Calm, Memorable Spaces | Dan Sproul",
+      "description": "Fine art photography prints by Dan Sproul for homes, offices, hospitality spaces, healthcare interiors, wellness rooms, and designers. Explore best sellers, calming nature wall art, landscape photography, and curated designer collections.",
+      "author": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "publisher": {
+        "@id": "https://dsproul.com/#organization"
+      },
+      "about": [
+        "fine art photography for interiors",
+        "artwork for healthcare interiors",
+        "hospitality wall art",
+        "executive office wall art",
+        "quiet luxury artwork",
+        "calming nature photography",
+        "restorative landscape photography"
+      ],
+      "primaryImageOfPage": {
+        "@id": "https://dsproul.com/valdez-glacier-lake-alaska-dan-sproul.jpg#image"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://dsproul.com/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dsproul.com/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://dsproul.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of artwork does Dan Sproul create?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dan Sproul creates fine art landscape, wildlife, nature, and mixed media artwork for homes, hospitality interiors, healthcare spaces, offices, wellness rooms, and design projects."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can designers request help choosing artwork?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Designers can request artwork recommendations, room mockups, sizing guidance, format suggestions, and licensing support for residential and commercial spaces."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What print formats are available?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Artwork is available through Dan Sproul's print shop in formats including framed paper, canvas, metal, acrylic, and other ready-to-hang options."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What artwork works best for calm interiors?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Atmospheric landscapes, quiet nature photography, soft water imagery, forests, monochrome landscapes, and restrained coastal scenes work well for calm interiors, wellness spaces, bedrooms, and healthcare-adjacent environments."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/valdez-glacier-lake-alaska-dan-sproul.jpg#image",
+      "contentUrl": "https://dsproul.com/valdez-glacier-lake-alaska-dan-sproul.jpg",
+      "name": "Valdez Glacier Lake Alaska atmospheric landscape photography by Dan Sproul",
+      "description": "Atmospheric Alaska landscape photography selected for calm interiors, healthcare spaces, wellness rooms, and quiet residential wall art.",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com",
+      "representativeOfPage": true
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/cannon-beach-haystack-rock-oregon-dan-sproul.jpg#image",
+      "contentUrl": "https://dsproul.com/cannon-beach-haystack-rock-oregon-dan-sproul.jpg",
+      "name": "Cannon Beach Haystack Rock Oregon Coast photography by Dan Sproul",
+      "description": "Moody Oregon Coast fine art photography for coastal interiors, boutique hospitality, and refined residential wall art.",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com",
+      "representativeOfPage": false
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/maroon-bells-dawn-autumn-dan-sproul.jpg#image",
+      "contentUrl": "https://dsproul.com/maroon-bells-dawn-autumn-dan-sproul.jpg",
+      "name": "Maroon Bells Colorado autumn sunrise photography by Dan Sproul",
+      "description": "Warm Colorado mountain landscape photography for living rooms, hospitality interiors, and statement wall art.",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com",
+      "representativeOfPage": false
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/black-bear-cub-cades-cove-tennessee-dan-sproul.jpg#image",
+      "contentUrl": "https://dsproul.com/black-bear-cub-cades-cove-tennessee-dan-sproul.jpg",
+      "name": "Cades Cove black bear cub wildlife photography by Dan Sproul",
+      "description": "Wildlife photography print by Dan Sproul for nature collectors, cabins, rustic interiors, and residential wall art.",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com",
+      "representativeOfPage": false
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/chimney-peak-colorado-autumn-dan-sproul.jpg#image",
+      "contentUrl": "https://dsproul.com/chimney-peak-colorado-autumn-dan-sproul.jpg",
+      "name": "Chimney Peak Colorado autumn photography by Dan Sproul",
+      "description": "Golden autumn Colorado landscape photography for warm residential interiors and designer-friendly nature wall art.",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com",
+      "representativeOfPage": false
+    }
+  ]
+}
+  </script>
 </head>
+
 <body>
-  <nav class="nav">
-    <a class="logo" href="/">
-      <span class="logo-name">Dan Sproul</span>
-      <span class="logo-sub">Fine Art Photography</span>
+  <nav class="site-nav-standard" aria-label="Primary navigation">
+    <a href="index.html" class="nav-logo-standard" aria-label="Dan Sproul Fine Art Photography home">
+      <span class="nav-logo-name-standard">Dan Sproul</span>
+      <span class="nav-logo-sub-standard">Fine Art Photography</span>
     </a>
-    <div class="links">
-      <a class="priority" href="#best-sellers">Best Sellers</a>
-      <a href="art-collections.html">Curated Sets</a>
+
+    <button class="nav-toggle-standard" aria-label="Open navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="nav-links-standard">
+      <a href="index.html">Home</a>
+      <a href="best-sellers.html">Best Sellers</a>
+      <a href="art-collections.html">Collections</a>
       <a href="in-your-space.html">In Your Space</a>
       <a href="for-designers.html">For Designers</a>
       <a href="#contact">Contact</a>
-      <a class="shop" href="https://dansproul.com/shop">Shop Prints</a>
+      <a href="https://dansproul.com" target="_blank" rel="noopener" class="nav-shop-standard">Shop Prints</a>
     </div>
-    <button class="mobile-toggle" id="mobileToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
   </nav>
-  <div class="mobile-panel" id="mobilePanel">
-    <button class="mobile-close" id="mobileClose" aria-label="Close menu">×</button>
-    <a href="#best-sellers">Best Sellers</a>
-    <a href="art-collections.html">Curated Sets</a>
-    <a href="in-your-space.html">In Your Space</a>
-    <a href="for-designers.html">For Designers</a>
-    <a href="#contact">Contact</a>
-    <a class="gold" href="https://dansproul.com/shop">Shop Prints</a>
-    
-  </div>
 
   <header class="hero">
     <div class="hero-content">
-      <p class="eyebrow">Landscape, wildlife & nature prints</p>
+      <p class="eyebrow">Landscape, wildlife &amp; nature prints</p>
       <h1>Fine art photography for calm, memorable <em>spaces.</em></h1>
-      <p class="hero-copy">Museum-quality nature photography by Dan Sproul for homes, offices, hotels, healthcare spaces, and designers who want artwork with atmosphere, place, and quiet impact.</p>
-      <div class="buttons">
-        <a class="btn primary" href="#best-sellers">Start With Best Sellers</a>
-        <a class="btn" href="#by-room">Shop By Room</a>
+      <p class="hero-copy">Atmospheric nature photography by Dan Sproul for homes, healthcare interiors, boutique hospitality, offices, wellness rooms, and designers who want artwork with a quiet sense of place.</p>
+      <div class="btns">
+        <a class="btn primary" href="art-collections.html">Explore Collections</a>
+        <a class="btn" href="best-sellers.html">View Best Sellers</a>
       </div>
     </div>
   </header>
 
   <div class="trust-strip">
     <div><strong>8,500+</strong> Images Available</div>
-    <div><strong>50</strong> States Shipped</div>
-    <div><strong>22</strong> Countries</div>
+    <div><strong>Interior</strong> Mockup Support</div>
     <div><strong>Trade</strong> Designer Help</div>
+    <div><strong>Ready</strong> To Hang Prints</div>
   </div>
 
-  <section id="best-sellers">
+  <section class="quick-paths" id="start-here">
+    <div class="quick-inner">
+      <div class="quick-head">
+        <div>
+          <p class="eyebrow">Start here</p>
+          <h2>Shop by space, mood, or project type.</h2>
+        </div>
+        <p>Choose artwork by how the room should feel: calm, restorative, atmospheric, warm, minimal, coastal, or grounded in nature.</p>
+      </div>
+
+      <div class="path-grid">
+        <a class="path" href="best-sellers.html">
+          <div>
+            <h3>Best Sellers</h3>
+            <p>Versatile nature prints and designer favorites that work across homes, offices, hospitality, and wellness spaces.</p>
+          </div>
+          <span>Start shopping</span>
+        </a>
+        <a class="path" href="art-collections.html">
+          <div>
+            <h3>Collections</h3>
+            <p>Curated groups organized by mood, atmosphere, interior use, and visual tone.</p>
+          </div>
+          <span>Explore collections</span>
+        </a>
+        <a class="path" href="in-your-space.html">
+          <div>
+            <h3>In Your Space</h3>
+            <p>See how large-format fine art photography looks in bedrooms, offices, living rooms, and commercial interiors.</p>
+          </div>
+          <span>View mockups</span>
+        </a>
+        <a class="path" href="for-designers.html">
+          <div>
+            <h3>For Designers</h3>
+            <p>Artwork guidance, formats, licensing, mockups, and curated support for residential and commercial projects.</p>
+          </div>
+          <span>Designer resources</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad seller-section" id="best-sellers">
     <div class="section-head">
       <div>
-        <p class="eyebrow">Start here</p>
-        <h2>Best sellers & <em>designer favorites.</em></h2>
+        <p class="eyebrow">Buyer favorites</p>
+        <h2>Best sellers &amp; designer-friendly nature prints.</h2>
       </div>
+      <p>A smaller, faster entry point than before — focused on prints that are easy to understand, easy to place, and useful for real interiors.</p>
     </div>
 
     <div class="seller-grid">
       <a class="image-card feature" href="https://dansproul.com/collections/best+sellers+and+designer+favorite+wall+art">
-        <img src="https://dsproul.com/valdez-glacier-lake-alaska-dan-sproul.jpg" alt="Valdez Glacier Lake Alaska fine art photography print by Dan Sproul">
+        <img src="https://dsproul.com/valdez-glacier-lake-alaska-dan-sproul.jpg" alt="Valdez Glacier Lake Alaska atmospheric landscape photography print by Dan Sproul" loading="eager" decoding="async" fetchpriority="high">
         <div class="card-text">
-          <span class="tag">Featured Collection</span>
+          <span class="tag">Featured collection</span>
           <h3>Best Sellers Collection</h3>
-      <p>Proven landscapes, wildlife, coastal scenes, and designer-friendly nature prints.</p>
+          <p>Proven landscapes, wildlife, coastal scenes, and designer-friendly nature prints.</p>
         </div>
       </a>
+
       <a class="image-card" href="https://dansproul.com/featured/haystack-rock-beach-dan-sproul.html">
-        <img src="https://dsproul.com/cannon-beach-haystack-rock-oregon-dan-sproul.jpg" alt="Cannon Beach Haystack Rock Oregon coast print by Dan Sproul">
+        <img src="https://dsproul.com/cannon-beach-haystack-rock-oregon-dan-sproul.jpg" alt="Cannon Beach Haystack Rock Oregon Coast fine art photography print by Dan Sproul" loading="lazy" decoding="async">
         <div class="card-text">
-          <span class="tag">Coastal Favorite</span>
+          <span class="tag">Coastal favorite</span>
           <h3>Cannon Beach</h3>
           <p>Moody Oregon Coast wall art.</p>
         </div>
       </a>
+
       <a class="image-card" href="https://dansproul.com/featured/autumn-sunrise-maroon-bells-dan-sproul.html">
-        <img src="https://dsproul.com/maroon-bells-dawn-autumn-dan-sproul.jpg" alt="Maroon Bells autumn sunrise Colorado print by Dan Sproul">
+        <img src="https://dsproul.com/maroon-bells-dawn-autumn-dan-sproul.jpg" alt="Maroon Bells autumn sunrise Colorado mountain photography print by Dan Sproul" loading="lazy" decoding="async">
         <div class="card-text">
-          <span class="tag">Mountain Favorite</span>
+          <span class="tag">Mountain favorite</span>
           <h3>Maroon Bells</h3>
           <p>Warm Colorado autumn photography.</p>
         </div>
       </a>
+
       <a class="image-card" href="https://dansproul.com/featured/cades-cove-black-bear-cub-dan-sproul.html">
-        <img src="https://dsproul.com/black-bear-cub-cades-cove-tennessee-dan-sproul.jpg" alt="Cades Cove black bear cub wildlife print by Dan Sproul">
+        <img src="https://dsproul.com/black-bear-cub-cades-cove-tennessee-dan-sproul.jpg" alt="Cades Cove black bear cub wildlife photography print by Dan Sproul" loading="lazy" decoding="async">
         <div class="card-text">
-          <span class="tag">Wildlife Favorite</span>
+          <span class="tag">Wildlife favorite</span>
           <h3>Cades Cove Bear</h3>
           <p>Giftable wildlife with warmth.</p>
         </div>
       </a>
+
       <a class="image-card" href="https://dansproul.com/featured/chimney-peak-colorado-in-autumn-dan-sproul.html">
-        <img src="https://dsproul.com/chimney-peak-colorado-autumn-dan-sproul.jpg" alt="Chimney Peak Colorado autumn print by Dan Sproul">
+        <img src="https://dsproul.com/chimney-peak-colorado-autumn-dan-sproul.jpg" alt="Chimney Peak Colorado autumn landscape photography print by Dan Sproul" loading="lazy" decoding="async">
         <div class="card-text">
-          <span class="tag">Autumn Favorite</span>
+          <span class="tag">Autumn favorite</span>
           <h3>Chimney Peak</h3>
           <p>Golden light for warm interiors.</p>
         </div>
@@ -841,191 +847,167 @@
     </div>
   </section>
 
-  <section class="light" id="by-room">
+  <section class="section-pad collections" id="collections">
     <div class="section-head">
       <div>
-        <p class="eyebrow">Shop by space</p>
-        <h2>Choose artwork by <em>space and atmosphere.</em></h2>
+        <p class="eyebrow">Curated collections</p>
+        <h2>Artwork organized by mood, atmosphere, and interior use.</h2>
       </div>
-    </div>
-    <div class="path-grid">
-      <a class="path" href="https://dansproul.com/collections/bedroom+wall+art+calming+nature+landscape+prints">
-        <div>
-          <h3>Bedroom Wall Art</h3>
-          <p>Quiet forests, soft water, mist, and peaceful nature prints for restful rooms.</p>
-        </div>
-        <span>Shop calming prints</span>
-      </a>
-      <a class="path" href="in-your-space.html">
-        <div>
-          <h3>See It In a Room</h3>
-          <p>Preview large-format nature photography in bedrooms, offices, hospitality spaces, and modern interiors.</p>
-        </div>
-        <span>View room mockups</span>
-      </a>
-      <a class="path" href="https://dansproul.com/collections/office+wall+art+inspiring+landscape+prints">
-        <div>
-          <h3>Office & Wellness</h3>
-          <p>Nature art for workspaces, clinics, therapy rooms, and hospitality interiors.</p>
-        </div>
-        <span>Shop office art</span>
-      </a>
-      <a class="path" href="https://dansproul.com/art/coastal">
-        <div>
-          <h3>Coastal Photography</h3>
-          <p>Oregon Coast, sea stacks, lighthouses, beaches, fog, and Pacific light.</p>
-        </div>
-        <span>Browse coastal prints</span>
-      </a>
-    </div>
-  </section>
-
-  <section class="curated" id="curated">
-    <div class="section-head">
-      <div>
-        <p class="eyebrow">Curated print collections</p>
-        <h2>Curated photography collections by <em>mood and interior use.</em></h2>
-      </div>
-      <p>These collections help buyers and designers shop by feeling, palette, and room atmosphere while keeping the homepage focused on fine art photography.</p>
+      <p>These collection paths make it easier to choose artwork by room feeling instead of browsing thousands of images by subject alone.</p>
     </div>
 
-    <div class="curated-grid">
+    <div class="collection-grid">
       <a class="collection-card" href="quiet-earth-collection.html">
-        <img src="https://dsproul.com/quiet-earth-appalachian-fog.jpg" alt="Quiet Earth nature print collection preview">
+        <img src="https://dsproul.com/quiet-earth-appalachian-fog.jpg" alt="Quiet Earth calming landscape photography collection by Dan Sproul" loading="lazy" decoding="async">
         <div class="card-text">
-          <span class="tag">Soft neutrals</span>
+          <span class="tag">Healthcare &amp; wellness</span>
           <h3>Quiet Earth</h3>
-          <p>Stone, mist, forest, water, and organic calm.</p>
+          <p>Calming landscapes for restorative interiors and quiet homes.</p>
         </div>
       </a>
+
+      <a class="collection-card" href="monochrome-stillness.html">
+        <img src="https://dsproul.com/denali-highway-alaska-black-white-dan-sproul.jpg" alt="Monochrome Stillness black and white landscape photography collection by Dan Sproul" loading="lazy" decoding="async">
+        <div class="card-text">
+          <span class="tag">Office &amp; restraint</span>
+          <h3>Monochrome Stillness</h3>
+          <p>Black-and-white artwork for executive and architectural spaces.</p>
+        </div>
+      </a>
+
+      <a class="collection-card" href="mountain-light-collection.html">
+        <img src="https://dsproul.com/modern%20living%20room%20with%20framed%20mountains%20in%20clouds.jpg" alt="Mountain Light framed landscape photography in a warm modern interior by Dan Sproul" loading="lazy" decoding="async">
+        <div class="card-text">
+          <span class="tag">Hospitality &amp; lodge</span>
+          <h3>Mountain Light</h3>
+          <p>Atmospheric mountain artwork for lodge modern interiors.</p>
+        </div>
+      </a>
+
       <a class="collection-card" href="coastal-atmosphere.html">
-        <img src="https://dsproul.com/proposal-rock-moody-oregon-coast-dan-sproul.jpg" alt="Coastal Atmosphere art collection preview">
+        <img src="https://dsproul.com/proposal-rock-moody-oregon-coast-dan-sproul.jpg" alt="Coastal Atmosphere moody Oregon Coast photography collection by Dan Sproul" loading="lazy" decoding="async">
         <div class="card-text">
-          <span class="tag">Sea & fog</span>
+          <span class="tag">Quiet coastal</span>
           <h3>Coastal Atmosphere</h3>
-          <p>Moody shorelines and quiet Pacific scenes.</p>
-        </div>
-      </a>
-      <a class="collection-card" href="forest-light-collection.html">
-        <img src="https://dsproul.com/golden-aspen-forest-colorado-dan-sproul.jpg" alt="Forest and fog wall art collection preview">
-        <div class="card-text">
-          <span class="tag">Forest calm</span>
-          <h3>Forest & Fog</h3>
-          <p>Woodland prints for grounded, restful rooms.</p>
-        </div>
-      </a>
-      <a class="collection-card" href="https://dansproul.com/collections/colorado+fall+landscape+photography+prints">
-        <img src="https://dsproul.com/chimney-peak-colorado-autumn-dan-sproul.jpg" alt="Warm Autumn Light collection preview">
-        <div class="card-text">
-          <span class="tag">Gold & rust</span>
-          <h3>Warm Autumn Light</h3>
-          <p>Golden landscapes for modern neutral spaces.</p>
-        </div>
-      </a>
-      <a class="collection-card" href="https://dansproul.com/art/black+and+white">
-        <img src="https://dsproul.com/denali-highway-alaska-black-white-dan-sproul.jpg" alt="Black and white fine art photography collection preview">
-        <div class="card-text">
-          <span class="tag">Minimal</span>
-          <h3>Black & White</h3>
-          <p>Timeless photography for clean interiors.</p>
+          <p>Refined shoreline imagery for calm coastal rooms.</p>
         </div>
       </a>
     </div>
   </section>
 
-  <section class="mockups" id="mockups">
+  <section class="section-pad mockups" id="in-space-preview">
     <div class="mock-feature">
       <div class="mock-image">
-        <img src="https://dsproul.com/modern%20living%20room%20with%20framed%20mountains%20in%20clouds.jpg" alt="Large black and white mountain photography print in a modern interior by Dan Sproul">
+        <img src="https://dsproul.com/modern%20living%20room%20with%20framed%20mountains%20in%20clouds.jpg" alt="Large black and white mountain photography print in a modern interior by Dan Sproul" loading="lazy" decoding="async">
       </div>
       <div class="mock-copy">
         <p class="eyebrow">In your space</p>
-        <h2>Art that <em>defines</em> the whole room.</h2>
-        <p>Preview scale, placement, and finish before choosing a print for your home, office, hotel, or wellness space.</p>
-        <div class="buttons">
-          <a class="btn primary" href="for-designers.html">For Designers</a>
-          <a class="btn" href="in-your-space.html">See All Mockups</a>
+        <h2>See how artwork changes the whole room.</h2>
+        <p>Room mockups help show scale, mood, placement, and format before choosing a print for a home, healthcare space, office, hospitality property, or wellness interior.</p>
+        <div class="btns">
+          <a class="btn primary" href="in-your-space.html">View Room Mockups</a>
+          <a class="btn" href="for-designers.html">Designer Support</a>
         </div>
       </div>
     </div>
+
     <div class="mock-strip">
       <div class="mock-tile">
-        <img src="https://dsproul.com/modern%20bedroom%20framed%20mountain%20reflection%20dan%20sproul.jpg" alt="Mountain reflection fine art print in a modern bedroom by Dan Sproul">
-        <div class="mock-label"><strong>Bedroom Calm</strong> Mountain Reflection</div>
+        <img src="https://dsproul.com/modern%20bedroom%20framed%20mountain%20reflection%20dan%20sproul.jpg" alt="Mountain reflection fine art print in a modern bedroom by Dan Sproul" loading="lazy" decoding="async">
+        <div class="mock-label"><strong>Bedroom calm</strong> quiet residential spaces</div>
       </div>
       <div class="mock-tile">
-        <img src="https://dsproul.com/modern%20dining%20room%20framed%20dreamy%20alaska%20landscape%20dan%20sproul.jpg" alt="Dreamy Alaska landscape print in a modern dining room by Dan Sproul">
-        <div class="mock-label"><strong>Dining Statement</strong> Alaska Landscape</div>
+        <img src="https://dsproul.com/modern%20dining%20room%20framed%20dreamy%20alaska%20landscape%20dan%20sproul.jpg" alt="Dreamy Alaska landscape print in a modern dining room by Dan Sproul" loading="lazy" decoding="async">
+        <div class="mock-label"><strong>Dining statement</strong> atmospheric landscapes</div>
       </div>
       <div class="mock-tile">
-        <img src="https://dsproul.com/large%20framed%20mountain%20scene%20in%20modern%20office%20sunlit.jpg" alt="Large framed mountain print in a sunlit modern office by Dan Sproul">
-        <div class="mock-label"><strong>Office Art</strong> Mountain Light</div>
+        <img src="https://dsproul.com/large%20framed%20mountain%20scene%20in%20modern%20office%20sunlit.jpg" alt="Large framed mountain print in a sunlit modern office by Dan Sproul" loading="lazy" decoding="async">
+        <div class="mock-label"><strong>Office artwork</strong> refined workplace interiors</div>
       </div>
     </div>
   </section>
 
-  <div class="intent">
-    <div>
-      <p class="eyebrow">Perfect for modern homes</p>
-      <h2>Warm-toned <em>landscapes</em></h2>
-      <p>Autumn, sunrise, and golden hour photography that brings warmth into neutral and modern interiors.</p>
+  <section class="section-pad environment" id="environment-guidance">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Choose by environment</p>
+        <h2>Artwork guidance for the spaces people actually use.</h2>
+      </div>
+      <p>The strongest artwork choices come from matching mood, scale, color, and subject to the emotional role of the room.</p>
     </div>
-    <div class="buttons">
-      <a class="btn primary" href="colorado-photography-prints.html">Colorado Autumn</a>
-      <a class="btn" href="https://dansproul.com/art/landscape">All Landscapes</a>
-    </div>
-  </div>
 
-  <section class="designer" id="designers">
+    <div class="env-grid">
+      <a class="env-card" href="quiet-earth-collection.html">
+        <h3>Healthcare &amp; Wellness</h3>
+        <p>Calming nature photography, quiet water, forests, and restorative imagery for waiting rooms, therapy offices, wellness spaces, and patient-facing interiors.</p>
+        <span>Explore Quiet Earth</span>
+      </a>
+      <a class="env-card" href="mountain-light-collection.html">
+        <h3>Hospitality &amp; Lodge</h3>
+        <p>Atmospheric mountain artwork and large statement pieces for boutique hotels, resorts, cabins, lodge modern interiors, and memorable guest spaces.</p>
+        <span>Explore Mountain Light</span>
+      </a>
+      <a class="env-card" href="monochrome-stillness.html">
+        <h3>Office &amp; Corporate</h3>
+        <p>Black-and-white landscape photography and restrained artwork for executive offices, conference rooms, reception areas, and modern workspaces.</p>
+        <span>Explore Monochrome</span>
+      </a>
+      <a class="env-card" href="coastal-atmosphere.html">
+        <h3>Residential Calm</h3>
+        <p>Quiet luxury wall art, coastal atmosphere, forest light, and soft nature prints for bedrooms, living rooms, dining rooms, and restorative homes.</p>
+        <span>Explore Coastal Atmosphere</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="section-pad buying" id="buying-help">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Practical buying help</p>
+        <h2>Best formats and sizes for real interiors.</h2>
+      </div>
+      <p>Use these starting points when choosing wall art for a room, project, or commercial space.</p>
+    </div>
+
+    <div class="buy-grid">
+      <div class="buy-card">
+        <h3>Best for</h3>
+        <p>Bedrooms, living rooms, offices, waiting rooms, hospitality lobbies, wellness spaces, cabins, lodge interiors, and quiet residential rooms.</p>
+      </div>
+      <div class="buy-card">
+        <h3>Suggested sizes</h3>
+        <p>24×36 for smaller walls, 30×40 or 32×48 for main rooms, and 40×60 or larger for statement walls, lobbies, corridors, and commercial spaces.</p>
+      </div>
+      <div class="buy-card">
+        <h3>Strongest formats</h3>
+        <p>Framed paper for refined interiors, canvas for warmth, metal for durability and modern spaces, and acrylic for polished contemporary installations.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad designer" id="designers">
     <div class="designer-image">
-      <img src="https://dsproul.com/commercial-art-installation.jpg" alt="Dan Sproul fine art photography installed in a commercial interior">
+      <img src="https://dsproul.com/commercial-art-installation.jpg" alt="Dan Sproul fine art photography installed in a commercial interior" loading="lazy" decoding="async">
     </div>
     <div>
       <p class="eyebrow">For designers and projects</p>
-      <h2>Design help for rooms, offices, and commercial <em>spaces.</em></h2>
-      <p>Designer-friendly support for sizing, materials, curated sets, room mockups, licensing, and direct print links.</p>
+      <h2>Artwork support for rooms, offices, and commercial spaces.</h2>
+      <p>Dan Sproul works with homeowners, designers, and project teams selecting artwork for residential, hospitality, healthcare, wellness, and corporate interiors.</p>
       <div class="service-grid">
         <div><strong>Mockups</strong> Preview artwork in a real room</div>
         <div><strong>Curated Sets</strong> Cohesive groups by palette and mood</div>
         <div><strong>Trade Help</strong> Sizing, materials, licensing, print links</div>
       </div>
-      <div class="buttons">
-        <a class="btn primary" href="for-designers.html">Designer Resources</a>
+      <div class="btns">
+        <a class="btn primary" href="for-designers.html">For Designers</a>
         <a class="btn" href="mailto:sproulphoto@gmail.com?subject=Wall Art Mockup Request">Request Mockup</a>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="section-head">
-      <div>
-        <p class="eyebrow">Print media</p>
-        <h2>Ready-to-hang prints in the formats buyers expect.</h2>
-      </div>
-    </div>
-    <div class="media-grid">
-      <div class="media-card">
-        <h3>Canvas</h3>
-        <p>Gallery-wrapped canvas prints with a warm, classic wall-art presence.</p>
-      </div>
-      <div class="media-card">
-        <h3>Framed</h3>
-        <p>Archival paper, matting, and professional frames for finished interiors.</p>
-      </div>
-      <div class="media-card">
-        <h3>Metal</h3>
-        <p>Vivid, clean, modern prints with a floating display style.</p>
-      </div>
-      <div class="media-card">
-        <h3>Acrylic</h3>
-        <p>Luminous depth and sharp color for contemporary spaces.</p>
       </div>
     </div>
   </section>
 
   <section class="contact-slim" id="contact">
     <p class="eyebrow">Get in touch</p>
-    <h2>Let's bring <em>nature</em> into your space.</h2>
+    <h2>Need help choosing artwork?</h2>
     <p class="contact-note">Available for print sales, licensing, mockups, and interior design projects</p>
     <a class="contact-email" href="mailto:sproulphoto@gmail.com">sproulphoto@gmail.com</a>
     <div class="contact-mini-grid">
@@ -1039,12 +1021,12 @@
       </div>
       <div class="contact-mini-card">
         <span>Shop</span>
-        <a href="https://dansproul.com/shop">dansproul.com/shop</a>
+        <a href="https://dansproul.com">dansproul.com</a>
       </div>
     </div>
   </section>
 
-  <div class="footer-seo">
+  <div id="footer" class="footer-seo">
     <div class="footer-grid">
       <div>
         <h3>Shop By Room</h3>
@@ -1054,6 +1036,7 @@
         <a href="https://dansproul.com/art/dining+room">Dining Room Art</a>
         <a href="https://dansproul.com/art/wellness">Wellness Space Prints</a>
       </div>
+
       <div>
         <h3>Shop By Subject</h3>
         <a href="https://dansproul.com/art/mountains">Mountain Prints</a>
@@ -1062,14 +1045,16 @@
         <a href="https://dansproul.com/art/waterfalls">Waterfall Prints</a>
         <a href="https://dansproul.com/art/wildlife">Wildlife Prints</a>
       </div>
+
       <div>
         <h3>Shop By Mood</h3>
         <a href="quiet-earth-collection.html">Quiet Earth Collection</a>
-        <a href="https://dansproul.com/art/black+and+white">Black & White Prints</a>
+        <a href="monochrome-stillness.html">Black &amp; White Prints</a>
         <a href="https://dansproul.com/art/autumn">Warm Autumn Light</a>
-        <a href="https://dansproul.com/art/fog">Fog & Mist Photography</a>
+        <a href="https://dansproul.com/art/fog">Fog &amp; Mist Photography</a>
         <a href="https://dansproul.com/art/calm">Calming Nature Prints</a>
       </div>
+
       <div>
         <h3>Shop By Location</h3>
         <a href="alaska-photography-prints.html">Alaska Prints</a>
@@ -1078,29 +1063,35 @@
         <a href="smoky-mountains-photography-prints.html">Smoky Mountains Art</a>
         <a href="https://dansproul.com/art/badlands">Badlands Wildlife Prints</a>
       </div>
+
       <div>
         <h3>More Collections</h3>
-        <a href="https://dansproul.com/collections/best+sellers+and+designer+favorite+wall+art">Best Sellers</a>
-        <a href="https://dansproul.com/collections/typography+and+collage">Typography & Collage</a>
-        <a href="https://dansproul.com/art/patent">Vintage Patent Art</a>
-        <a href="https://dansproul.com/art/lighthouse">Lighthouse Prints</a>
+        <a href="best-sellers.html">Best Sellers</a>
+        <a href="art-collections.html">Curated Photography Collections</a>
         <a href="for-designers.html">For Interior Designers</a>
+        <a href="coastal-atmosphere.html">Coastal Atmosphere</a>
+        <a href="wellness-waters-collection.html">Wellness Waters</a>
+        <a href="heritage-mixed-media.html">Heritage &amp; Mixed Media</a>
+        <a href="mailto:sproulphoto@gmail.com">Email Dan</a>
       </div>
     </div>
-    <footer>© 2026 Dan Sproul Fine Art Photography · Lima, Ohio · Prints ship worldwide</footer>
+
+    <footer class="footer-bottom">
+      © 2026 Dan Sproul Fine Art Photography · Original landscape photography and heritage-inspired mixed media artwork by Dan Sproul, based in Lima, Ohio · Prints ship worldwide
+    </footer>
   </div>
+
   <script>
-    (function(){
-      var button = document.getElementById('mobileToggle');
-      var panel = document.getElementById('mobilePanel');
-      var close = document.getElementById('mobileClose');
-      if(!button || !panel || !close) return;
-      function shut(){ panel.classList.remove('open'); document.body.style.overflow = ''; }
-      button.addEventListener('click', function(){ panel.classList.add('open'); document.body.style.overflow = 'hidden'; });
-      close.addEventListener('click', shut);
-      panel.querySelectorAll('a').forEach(function(link){ link.addEventListener('click', shut); });
-      document.addEventListener('keydown', function(event){ if(event.key === 'Escape') shut(); });
-    })();
+    document.addEventListener('DOMContentLoaded', function () {
+      var nav = document.querySelector('.site-nav-standard');
+      var toggle = document.querySelector('.nav-toggle-standard');
+      if (nav && toggle) {
+        toggle.addEventListener('click', function () {
+          var isOpen = nav.classList.toggle('is-open');
+          toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+      }
+    });
   </script>
 </body>
 </html>
