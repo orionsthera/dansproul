@@ -221,44 +221,212 @@
   .workflow-card{min-height:auto}
 }
 
+
+/* AI / GEO COLLECTION PAGE ADDITIONS */
+.ai-about-artist,.ai-resource-section,.ai-linking-hub{border-top:1px solid rgba(181,146,74,.14);border-bottom:1px solid rgba(181,146,74,.08)}
+.ai-two-col{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2rem,5vw,5rem);align-items:start}
+.ai-two-col p{color:rgba(244,238,229,.68);font-size:.88rem;line-height:1.95}
+.ai-section-head{max-width:980px;margin:0 auto 42px;text-align:center}
+.ai-section-head p{max-width:760px;margin:18px auto 0;color:rgba(244,238,229,.62);line-height:1.9}
+.ai-env-grid{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:2px}
+.ai-env-card{display:block;text-decoration:none;background:#12100d;border:1px solid rgba(181,146,74,.14);padding:30px;min-height:230px}
+.ai-env-card span{display:block;color:#b9934b;font-family:Arial,Helvetica,sans-serif;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;margin-bottom:18px}
+.ai-env-card h3{color:#f4eee5;font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(1.25rem,2vw,1.7rem);font-weight:400;line-height:1.05;margin-bottom:14px}
+.ai-env-card p{color:rgba(244,238,229,.58);font-size:.76rem;line-height:1.85}
+.ai-link-grid{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
+.ai-link-grid a{display:block;text-decoration:none;background:#f3efe7;color:#1b1713;padding:28px;border:1px solid rgba(40,35,30,.08)}
+.ai-link-grid strong{display:block;font-family:"Cormorant Garamond",Georgia,serif;font-size:1.65rem;font-weight:400;color:#1b1713;margin-bottom:10px}
+.ai-link-grid span{display:block;color:#5b5044;font-size:.76rem;line-height:1.75}
+@media(max-width:1040px){.ai-two-col,.ai-env-grid,.ai-link-grid{grid-template-columns:1fr}.ai-section-head{text-align:left}.ai-section-head p{margin-left:0}}
+
+
+/* IMAGE PERFORMANCE PASS */
+img{max-width:100%;height:auto}
+section{content-visibility:auto;contain-intrinsic-size:1px 900px}
+.hero,.site-header,nav{content-visibility:visible;contain-intrinsic-size:auto}
+
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://dsproul.com/#dan-sproul",
+      "name": "Dan Sproul",
+      "url": "https://dsproul.com",
+      "jobTitle": "Fine Art Photographer and Mixed Media Artist",
+      "description": "Dan Sproul is an Ohio-based fine art photographer and mixed media artist creating original artwork for hospitality, healthcare, corporate, wellness, and residential interiors across the United States.",
+      "homeLocation": {
+        "@type": "Place",
+        "name": "Lima, Ohio"
+      },
+      "sameAs": [
+        "https://dansproul.com",
+        "https://fineartamerica.com/profiles/1-dan-sproul",
+        "https://www.pinterest.com/dansproul/",
+        "https://medium.com/@sprould99",
+        "https://dansproulphotography.substack.com/"
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://dsproul.com/#organization",
+      "name": "Dan Sproul Fine Art Photography",
+      "url": "https://dsproul.com",
+      "founder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "email": "sproulphoto@gmail.com",
+      "description": "Original fine art photography and mixed media artwork for designers, hospitality interiors, healthcare spaces, corporate offices, wellness environments, and residential design projects."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://dsproul.com/wellness-waters.html#webpage",
+      "url": "https://dsproul.com/wellness-waters.html",
+      "name": "Fine Art Photography",
+      "description": "Fine art photography and mixed media artwork by Dan Sproul for interior designers, healthcare, hospitality, office, wellness, and residential interiors.",
+      "author": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "about": [
+        "artwork for healthcare interiors",
+        "hospitality wall art",
+        "executive office wall art",
+        "quiet luxury artwork",
+        "restorative landscape photography",
+        "atmospheric photography for hospitality",
+        "black-and-white office photography"
+      ],
+      "primaryImageOfPage": {
+        "@id": "https://dsproul.com/hospitality lobby waterfall mockup.jpg#image"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://dsproul.com/wellness-waters.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dsproul.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Collections",
+          "item": "https://dsproul.com/art-collections.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Fine Art Photography",
+          "item": "https://dsproul.com/wellness-waters.html"
+        }
+      ]
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/hospitality lobby waterfall mockup.jpg#image",
+      "contentUrl": "https://dsproul.com/hospitality lobby waterfall mockup.jpg",
+      "name": "Large black and white waterfall photograph installed in a warm wellness care waiting room interior b",
+      "description": "Large black and white waterfall photograph installed in a warm wellness care waiting room interior by Dan Sproul",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com",
+      "representativeOfPage": true
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/residential study waterfall mockup.jpg#image",
+      "contentUrl": "https://dsproul.com/residential study waterfall mockup.jpg",
+      "name": "Black and white Cascade Falls waterfall print shown as large framed artwork in a wellness waiting ro",
+      "description": "Black and white Cascade Falls waterfall print shown as large framed artwork in a wellness waiting room",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com",
+      "representativeOfPage": false
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/serenity spa lobby waterfall mockup.jpg#image",
+      "contentUrl": "https://dsproul.com/serenity spa lobby waterfall mockup.jpg",
+      "name": "Large blue abstract water photography print installed in a luxury spa reception interior",
+      "description": "Large blue abstract water photography print installed in a luxury spa reception interior",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com",
+      "representativeOfPage": false
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/spa room waterfall mockup.jpg#image",
+      "contentUrl": "https://dsproul.com/spa room waterfall mockup.jpg",
+      "name": "Green forest waterfall photography print displayed in a luxury spa treatment room",
+      "description": "Green forest waterfall photography print displayed in a luxury spa treatment room",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com",
+      "representativeOfPage": false
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/residential living room waterfall mockup.jpg#image",
+      "contentUrl": "https://dsproul.com/residential living room waterfall mockup.jpg",
+      "name": "Moody waterfall photograph installed in a dark luxury residential lounge with fireplace",
+      "description": "Moody waterfall photograph installed in a dark luxury residential lounge with fireplace",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com",
+      "representativeOfPage": false
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/spa massage room waterfall mockup.jpg#image",
+      "contentUrl": "https://dsproul.com/spa massage room waterfall mockup.jpg",
+      "name": "Luxury spa massage room with immersive waterfall photography by Dan Sproul",
+      "description": "Luxury spa massage room with immersive waterfall photography by Dan Sproul",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com",
+      "representativeOfPage": false
+    }
+  ]
+}
+</script>
 </head>
 <body>
-<!-- STANDARD MOBILE NAV FIX -->
-<style>
-html,body{overflow-x:hidden}
-@media(max-width:760px){
-  .ds-mobile-toggle{display:flex!important}
-  .ds-mobile-panel.open{display:flex!important}
-}
-.ds-mobile-toggle{display:none;position:fixed;top:18px;right:18px;z-index:1000;background:rgba(15,13,11,.86);border:1px solid rgba(197,160,106,.42);padding:10px;flex-direction:column;gap:5px;cursor:pointer}
-.ds-mobile-toggle span{display:block;width:24px;height:1px;background:#f4eee5}
-.ds-mobile-panel{display:none;position:fixed;inset:0;z-index:999;background:rgba(12,10,8,.98);align-items:center;justify-content:center;flex-direction:column;gap:24px;text-align:center}
-.ds-mobile-panel a{color:#f4eee5!important;text-decoration:none!important;font-family:Georgia,serif!important;font-size:1.65rem!important;letter-spacing:.04em!important;text-transform:none!important}
-.ds-mobile-panel a.ds-gold{color:#c5a06a!important}
-.ds-mobile-close{position:absolute;top:22px;right:24px;background:none;border:0;color:#f4eee5;font-size:1.9rem;cursor:pointer}
-</style>
-<button class="ds-mobile-toggle" id="dsMobileToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
-<div class="ds-mobile-panel" id="dsMobilePanel">
-  <button class="ds-mobile-close" id="dsMobileClose" aria-label="Close menu">×</button>
-  <a href="/">Home</a>
-  <a href="/art-collections.html">Collections</a>
-  <a href="/in-your-space.html">In Your Space</a>
-  <a href="/for-designers.html">For Designers</a>
-  <a href="https://dansproul.com" target="_blank" rel="noopener" class="ds-gold">Shop Prints ↗</a>
-</div>
-<script>
-(function(){
-  var b=document.getElementById('dsMobileToggle'),p=document.getElementById('dsMobilePanel'),c=document.getElementById('dsMobileClose');
-  if(!b||!p||!c)return;
-  function close(){p.classList.remove('open');document.body.style.overflow=''}
-  b.addEventListener('click',function(){p.classList.add('open');document.body.style.overflow='hidden'});
-  c.addEventListener('click',close);
-  p.querySelectorAll('a').forEach(function(a){a.addEventListener('click',close)});
-  document.addEventListener('keydown',function(e){if(e.key==='Escape')close()});
-})();
-</script>
-
   <header class="site-header"><div class="container nav"><a class="brand" href="index.html">Dan Sproul Fine Art</a><nav class="nav-links" aria-label="Main navigation"><a href="index.html">Home</a><a href="for-designers.html">For Designers</a><a href="art-collections.html">Collections</a><a href="in-your-space.html">In Your Space</a><a href="https://dansproul.com" target="_blank" rel="noopener">Shop Prints</a></nav></div></header>
   <main>
 <section class="hero">
@@ -273,16 +441,30 @@ html,body{overflow-x:hidden}
     </div>
 
     <div class="hero-image">
-      <img src="hospitality lobby waterfall mockup.jpg" alt="Large black and white waterfall photograph installed in a warm wellness care waiting room interior by Dan Sproul">
+      <img src="hospitality lobby waterfall mockup.jpg" alt="Large black and white waterfall photograph installed in a warm wellness care waiting room interior by Dan Sproul" loading="eager" decoding="async" fetchpriority="high">
     </div>
   </div>
 </section>
+
+<section class="section ai-about-artist" id="about-artist">
+  <div class="ai-two-col">
+    <div>
+      <p class="section-label">About the Artist</p>
+      <h2 class="section-title">Original artwork selected for atmosphere, interior use, and emotional fit.</h2>
+    </div>
+    <div>
+      <p>Dan Sproul is an Ohio-based fine art photographer and mixed media artist creating original artwork for hospitality, healthcare, corporate, wellness, and residential interiors across the United States.</p>
+      <p>His collections are organized by how a space should feel: quiet, restorative, atmospheric, grounded, memorable, or refined. That makes each page easier to use as a design resource instead of a traditional photography portfolio.</p>
+    </div>
+  </div>
+</section>
+
 
 <section class="mockup-feature">
   <div class="container mockup-grid">
 
     <a class="mockup-image" href="https://dansproul.com/featured/cascade-falls-minnesota-black-and-white-forest-waterfall-dan-sproul.html" target="_blank" rel="noopener">
-      <img src="residential study waterfall mockup.jpg" alt="Black and white Cascade Falls waterfall print shown as large framed artwork in a wellness waiting room">
+      <img src="residential study waterfall mockup.jpg" alt="Black and white Cascade Falls waterfall print shown as large framed artwork in a wellness waiting room" loading="lazy" decoding="async">
     </a>
 
     <div class="mockup-copy">
@@ -310,7 +492,7 @@ html,body{overflow-x:hidden}
     </div>
 
     <a class="mockup-image" href="https://dansproul.com/featured/gentle-waves-arctic-serenity-dan-sproul.html" target="_blank" rel="noopener">
-      <img src="serenity spa lobby waterfall mockup.jpg" alt="Large blue abstract water photography print installed in a luxury spa reception interior">
+      <img src="serenity spa lobby waterfall mockup.jpg" alt="Large blue abstract water photography print installed in a luxury spa reception interior" loading="lazy" decoding="async">
     </a>
 
   </div>
@@ -320,7 +502,7 @@ html,body{overflow-x:hidden}
   <div class="container mockup-grid">
 
     <a class="mockup-image" href="https://dansproul.com/featured/grotto-falls-smoky-mountains-waterfall-forest-sunlight-dan-sproul.html" target="_blank" rel="noopener">
-      <img src="spa room waterfall mockup.jpg" alt="Green forest waterfall photography print displayed in a luxury spa treatment room">
+      <img src="spa room waterfall mockup.jpg" alt="Green forest waterfall photography print displayed in a luxury spa treatment room" loading="lazy" decoding="async">
     </a>
 
     <div class="mockup-copy">
@@ -348,7 +530,7 @@ html,body{overflow-x:hidden}
     </div>
 
     <a class="mockup-image" href="https://dansproul.com/featured/hocking-hills-hidden-falls-long-exposure-dan-sproul.html" target="_blank" rel="noopener">
-      <img src="residential living room waterfall mockup.jpg" alt="Moody waterfall photograph installed in a dark luxury residential lounge with fireplace">
+      <img src="residential living room waterfall mockup.jpg" alt="Moody waterfall photograph installed in a dark luxury residential lounge with fireplace" loading="lazy" decoding="async">
     </a>
 
   </div>
@@ -358,7 +540,7 @@ html,body{overflow-x:hidden}
   <div class="container mockup-grid">
 
     <a class="mockup-image" href="https://dansproul.com/featured/grotto-falls-smoky-mountains-waterfall-forest-sunlight-dan-sproul.html" target="_blank" rel="noopener">
-      <img src="spa massage room waterfall mockup.jpg" alt="Luxury spa massage room with immersive waterfall photography by Dan Sproul">
+      <img src="spa massage room waterfall mockup.jpg" alt="Luxury spa massage room with immersive waterfall photography by Dan Sproul" loading="lazy" decoding="async">
     </a>
 
     <div class="mockup-copy">
@@ -386,7 +568,7 @@ html,body{overflow-x:hidden}
     </div>
 
     <a class="mockup-image" href="https://dansproul.com/featured/box-canyon-falls-ouray-dan-sproul.html" target="_blank" rel="noopener">
-      <img src="spa lobby waterfall mockup.jpg" alt="Large vertical waterfall artwork installed in a luxury spa corridor">
+      <img src="spa lobby waterfall mockup.jpg" alt="Large vertical waterfall artwork installed in a luxury spa corridor" loading="lazy" decoding="async">
     </a>
 
   </div>
@@ -396,7 +578,7 @@ html,body{overflow-x:hidden}
   <div class="container mockup-grid">
 
     <a class="mockup-image" href="https://dansproul.com/featured/multnomah-falls-greenery-dan-sproul.html" target="_blank" rel="noopener">
-      <img src="luxury bedroom waterfall mockup.jpg" alt="Vertical waterfall artwork displayed in a luxury bedroom interior">
+      <img src="luxury bedroom waterfall mockup.jpg" alt="Vertical waterfall artwork displayed in a luxury bedroom interior" loading="lazy" decoding="async">
     </a>
 
     <div class="mockup-copy">
@@ -421,18 +603,18 @@ html,body{overflow-x:hidden}
     </div>
 
     <div class="art-grid">
-      <a class="art-card" href="https://dansproul.com/featured/cascade-falls-minnesota-black-and-white-forest-waterfall-dan-sproul.html" target="_blank" rel="noopener"><img src="cascade-falls-minnesota-black-and-white-forest-waterfall-dan-sproul.jpg" alt="Cascade Falls Minnesota black and white forest waterfall photography by Dan Sproul"><div class="art-card-content"><h3>Cascade Falls</h3><p>Black and white waterfall</p><span class="art-card-caption">A monochrome forest waterfall selected for wellness care, waiting rooms, and quiet hospitality interiors.</span><div class="art-spec-meta"><span>Custom sizing</span><span>Framed · Canvas · Acrylic · Metal</span></div></div></a>
-      <a class="art-card" href="https://dansproul.com/featured/grotto-falls-smoky-mountains-waterfall-forest-sunlight-dan-sproul.html" target="_blank" rel="noopener"><img src="grotto-falls-smoky-mountains-waterfall-forest-sunlight-dan-sproul.jpg" alt="Grotto Falls Smoky Mountains waterfall forest sunlight photograph by Dan Sproul"><div class="art-card-content"><h3>Grotto Falls</h3><p>Smoky Mountains forest water</p><span class="art-card-caption">Soft green forest water imagery for spa treatment rooms, restorative residential spaces, and biophilic interiors.</span><div class="art-spec-meta"><span>Custom sizing</span><span>Framed · Canvas · Acrylic · Metal</span></div></div></a>
-      <a class="art-card vertical" href="https://dansproul.com/featured/multnomah-falls-greenery-dan-sproul.html" target="_blank" rel="noopener"><img src="multnomah-falls-greenery-dan-sproul.jpg" alt="Multnomah Falls greenery waterfall photography by Dan Sproul"><div class="art-card-content"><h3>Multnomah Falls</h3><p>Pacific Northwest waterfall</p><span class="art-card-caption">A vertical Pacific Northwest waterfall statement piece for entryways, bedrooms, suites, and tall architectural walls.</span><div class="art-spec-meta"><span>Custom sizing</span><span>Framed · Canvas · Acrylic · Metal</span></div></div></a>
-      <a class="art-card" href="https://dansproul.com/featured/abrams-falls-black-and-white-dan-sproul.html" target="_blank" rel="noopener"><img src="abrams-falls-black-and-white-dan-sproul.jpg" alt="Abrams Falls black and white waterfall photography by Dan Sproul"><div class="art-card-content"><h3>Abrams Falls</h3><p>Monochrome water study</p><span class="art-card-caption">Black and white moving water with a quiet gallery feel for healthcare, hospitality, and modern interiors.</span><div class="art-spec-meta"><span>Custom sizing</span><span>Framed · Canvas · Acrylic · Metal</span></div></div></a>
-      <a class="art-card" href="https://dansproul.com/featured/little-river-smoky-mountains-cascades-in-spring-dan-sproul.html" target="_blank" rel="noopener"><img src="little-river-smoky-mountains-cascades-in-spring-dan-sproul.jpg" alt="Little River Smoky Mountains cascades in spring photography by Dan Sproul"><div class="art-card-content"><h3>Little River Cascades</h3><p>Restorative spring water</p><span class="art-card-caption">Spring forest cascades with calm movement and rich greens for wellness-focused design projects.</span><div class="art-spec-meta"><span>Custom sizing</span><span>Framed · Canvas · Acrylic · Metal</span></div></div></a>
-      <a class="art-card" href="https://dansproul.com/featured/hocking-hills-hidden-falls-long-exposure-dan-sproul.html" target="_blank" rel="noopener"><img src="hocking-hills-hidden-falls-long-exposure-dan-sproul.jpg" alt="Hocking Hills hidden falls long exposure waterfall photography by Dan Sproul"><div class="art-card-content"><h3>Hidden Falls</h3><p>Moody long exposure</p><span class="art-card-caption">A darker long-exposure waterfall study for moody lounges, studies, bedrooms, and boutique interiors.</span><div class="art-spec-meta"><span>Custom sizing</span><span>Framed · Canvas · Acrylic · Metal</span></div></div></a>
-      <a class="art-card vertical" href="https://dansproul.com/featured/box-canyon-falls-ouray-dan-sproul.html" target="_blank" rel="noopener"><img src="box-canyon-falls-ouray-dan-sproul.jpg" alt="Box Canyon Falls Ouray Colorado waterfall photography by Dan Sproul"><div class="art-card-content"><h3>Box Canyon Falls</h3><p>Colorado canyon waterfall</p><span class="art-card-caption">Immersive canyon water imagery with cool tones for spa corridors, bedrooms, and commercial wellness spaces.</span><div class="art-spec-meta"><span>Custom sizing</span><span>Framed · Canvas · Acrylic · Metal</span></div></div></a>
-      <a class="art-card" href="https://dansproul.com/featured/solomon-gulch-waterfall-dan-sproul.html" target="_blank" rel="noopener"><img src="solomon-gulch-waterfall-dan-sproul.jpg" alt="Solomon Gulch waterfall Alaska photography by Dan Sproul"><div class="art-card-content"><h3>Solomon Gulch</h3><p>Alaska waterfall landscape</p><span class="art-card-caption">Alaska waterfall photography with natural movement for hospitality, lodge, and restorative nature-inspired rooms.</span><div class="art-spec-meta"><span>Custom sizing</span><span>Framed · Canvas · Acrylic · Metal</span></div></div></a>
-      <a class="art-card vertical" href="https://dansproul.com/featured/broken-rock-falls-hocking-hills-ohio-dan-sproul.html" target="_blank" rel="noopener"><img src="broken-rock-falls-hocking-hills-ohio-dan-sproul.jpg" alt="Broken Rock Falls Hocking Hills Ohio waterfall photography by Dan Sproul"><div class="art-card-content"><h3>Broken Rock Falls</h3><p>Ohio forest waterfall</p><span class="art-card-caption">Ohio forest waterfall artwork for regional projects, nature-focused interiors, and calming residential spaces.</span><div class="art-spec-meta"><span>Custom sizing</span><span>Framed · Canvas · Acrylic · Metal</span></div></div></a>
-      <a class="art-card vertical" href="https://dansproul.com/featured/horsetail-falls-alaska-ethereal-cascades-dan-sproul.html" target="_blank" rel="noopener"><img src="horsetail-falls-alaska-ethereal-cascades-dan-sproul.jpg" alt="Horsetail Falls Alaska ethereal cascades photography by Dan Sproul"><div class="art-card-content"><h3>Horsetail Falls</h3><p>Ethereal Alaska cascades</p><span class="art-card-caption">Ethereal Alaska cascades for large vertical installations, hospitality suites, and dramatic natural focal points.</span><div class="art-spec-meta"><span>Custom sizing</span><span>Framed · Canvas · Acrylic · Metal</span></div></div></a>
-      <a class="art-card vertical" href="https://dansproul.com/featured/cedar-cliff-falls-in-spring-green-dan-sproul.html" target="_blank" rel="noopener"><img src="cedar-cliff-falls-in-spring-green-dan-sproul.jpg" alt="Cedar Cliff Falls in spring green waterfall photography by Dan Sproul"><div class="art-card-content"><h3>Cedar Cliff Falls</h3><p>Spring green waterfall</p><span class="art-card-caption">Fresh spring green waterfall scenery for wellness clinics, residential interiors, and calming nature-based rooms.</span><div class="art-spec-meta"><span>Custom sizing</span><span>Framed · Canvas · Acrylic · Metal</span></div></div></a>
-      <a class="art-card" href="https://dansproul.com/featured/gentle-waves-arctic-serenity-dan-sproul.html" target="_blank" rel="noopener"><img src="gentle-waves-arctic-serenity-dan-sproul.jpg" alt="Gentle Waves Arctic Serenity abstract water photography by Dan Sproul"><div class="art-card-content"><h3>Gentle Waves</h3><p>Abstract water serenity</p><span class="art-card-caption">Abstract blue water photography for spa reception areas, coastal interiors, and modern wellness environments.</span><div class="art-spec-meta"><span>Custom sizing</span><span>Framed · Canvas · Acrylic · Metal</span></div></div></a>
+      <a class="art-card" href="https://dansproul.com/featured/cascade-falls-minnesota-black-and-white-forest-waterfall-dan-sproul.html" target="_blank" rel="noopener"><img src="cascade-falls-minnesota-black-and-white-forest-waterfall-dan-sproul.jpg" alt="Cascade Falls Minnesota black and white forest waterfall photography by Dan Sproul" loading="lazy" decoding="async"><div class="art-card-content"><h3>Cascade Falls</h3><p>Black and white waterfall</p><span class="art-card-caption">A monochrome forest waterfall selected for wellness care, waiting rooms, and quiet hospitality interiors.</span><div class="art-spec-meta"><span>Custom sizing</span><span>Framed · Canvas · Acrylic · Metal</span></div></div></a>
+      <a class="art-card" href="https://dansproul.com/featured/grotto-falls-smoky-mountains-waterfall-forest-sunlight-dan-sproul.html" target="_blank" rel="noopener"><img src="grotto-falls-smoky-mountains-waterfall-forest-sunlight-dan-sproul.jpg" alt="Grotto Falls Smoky Mountains waterfall forest sunlight photograph by Dan Sproul" loading="lazy" decoding="async"><div class="art-card-content"><h3>Grotto Falls</h3><p>Smoky Mountains forest water</p><span class="art-card-caption">Soft green forest water imagery for spa treatment rooms, restorative residential spaces, and biophilic interiors.</span><div class="art-spec-meta"><span>Custom sizing</span><span>Framed · Canvas · Acrylic · Metal</span></div></div></a>
+      <a class="art-card vertical" href="https://dansproul.com/featured/multnomah-falls-greenery-dan-sproul.html" target="_blank" rel="noopener"><img src="multnomah-falls-greenery-dan-sproul.jpg" alt="Multnomah Falls greenery waterfall photography by Dan Sproul" loading="lazy" decoding="async"><div class="art-card-content"><h3>Multnomah Falls</h3><p>Pacific Northwest waterfall</p><span class="art-card-caption">A vertical Pacific Northwest waterfall statement piece for entryways, bedrooms, suites, and tall architectural walls.</span><div class="art-spec-meta"><span>Custom sizing</span><span>Framed · Canvas · Acrylic · Metal</span></div></div></a>
+      <a class="art-card" href="https://dansproul.com/featured/abrams-falls-black-and-white-dan-sproul.html" target="_blank" rel="noopener"><img src="abrams-falls-black-and-white-dan-sproul.jpg" alt="Abrams Falls black and white waterfall photography by Dan Sproul" loading="lazy" decoding="async"><div class="art-card-content"><h3>Abrams Falls</h3><p>Monochrome water study</p><span class="art-card-caption">Black and white moving water with a quiet gallery feel for healthcare, hospitality, and modern interiors.</span><div class="art-spec-meta"><span>Custom sizing</span><span>Framed · Canvas · Acrylic · Metal</span></div></div></a>
+      <a class="art-card" href="https://dansproul.com/featured/little-river-smoky-mountains-cascades-in-spring-dan-sproul.html" target="_blank" rel="noopener"><img src="little-river-smoky-mountains-cascades-in-spring-dan-sproul.jpg" alt="Little River Smoky Mountains cascades in spring photography by Dan Sproul" loading="lazy" decoding="async"><div class="art-card-content"><h3>Little River Cascades</h3><p>Restorative spring water</p><span class="art-card-caption">Spring forest cascades with calm movement and rich greens for wellness-focused design projects.</span><div class="art-spec-meta"><span>Custom sizing</span><span>Framed · Canvas · Acrylic · Metal</span></div></div></a>
+      <a class="art-card" href="https://dansproul.com/featured/hocking-hills-hidden-falls-long-exposure-dan-sproul.html" target="_blank" rel="noopener"><img src="hocking-hills-hidden-falls-long-exposure-dan-sproul.jpg" alt="Hocking Hills hidden falls long exposure waterfall photography by Dan Sproul" loading="lazy" decoding="async"><div class="art-card-content"><h3>Hidden Falls</h3><p>Moody long exposure</p><span class="art-card-caption">A darker long-exposure waterfall study for moody lounges, studies, bedrooms, and boutique interiors.</span><div class="art-spec-meta"><span>Custom sizing</span><span>Framed · Canvas · Acrylic · Metal</span></div></div></a>
+      <a class="art-card vertical" href="https://dansproul.com/featured/box-canyon-falls-ouray-dan-sproul.html" target="_blank" rel="noopener"><img src="box-canyon-falls-ouray-dan-sproul.jpg" alt="Box Canyon Falls Ouray Colorado waterfall photography by Dan Sproul" loading="lazy" decoding="async"><div class="art-card-content"><h3>Box Canyon Falls</h3><p>Colorado canyon waterfall</p><span class="art-card-caption">Immersive canyon water imagery with cool tones for spa corridors, bedrooms, and commercial wellness spaces.</span><div class="art-spec-meta"><span>Custom sizing</span><span>Framed · Canvas · Acrylic · Metal</span></div></div></a>
+      <a class="art-card" href="https://dansproul.com/featured/solomon-gulch-waterfall-dan-sproul.html" target="_blank" rel="noopener"><img src="solomon-gulch-waterfall-dan-sproul.jpg" alt="Solomon Gulch waterfall Alaska photography by Dan Sproul" loading="lazy" decoding="async"><div class="art-card-content"><h3>Solomon Gulch</h3><p>Alaska waterfall landscape</p><span class="art-card-caption">Alaska waterfall photography with natural movement for hospitality, lodge, and restorative nature-inspired rooms.</span><div class="art-spec-meta"><span>Custom sizing</span><span>Framed · Canvas · Acrylic · Metal</span></div></div></a>
+      <a class="art-card vertical" href="https://dansproul.com/featured/broken-rock-falls-hocking-hills-ohio-dan-sproul.html" target="_blank" rel="noopener"><img src="broken-rock-falls-hocking-hills-ohio-dan-sproul.jpg" alt="Broken Rock Falls Hocking Hills Ohio waterfall photography by Dan Sproul" loading="lazy" decoding="async"><div class="art-card-content"><h3>Broken Rock Falls</h3><p>Ohio forest waterfall</p><span class="art-card-caption">Ohio forest waterfall artwork for regional projects, nature-focused interiors, and calming residential spaces.</span><div class="art-spec-meta"><span>Custom sizing</span><span>Framed · Canvas · Acrylic · Metal</span></div></div></a>
+      <a class="art-card vertical" href="https://dansproul.com/featured/horsetail-falls-alaska-ethereal-cascades-dan-sproul.html" target="_blank" rel="noopener"><img src="horsetail-falls-alaska-ethereal-cascades-dan-sproul.jpg" alt="Horsetail Falls Alaska ethereal cascades photography by Dan Sproul" loading="lazy" decoding="async"><div class="art-card-content"><h3>Horsetail Falls</h3><p>Ethereal Alaska cascades</p><span class="art-card-caption">Ethereal Alaska cascades for large vertical installations, hospitality suites, and dramatic natural focal points.</span><div class="art-spec-meta"><span>Custom sizing</span><span>Framed · Canvas · Acrylic · Metal</span></div></div></a>
+      <a class="art-card vertical" href="https://dansproul.com/featured/cedar-cliff-falls-in-spring-green-dan-sproul.html" target="_blank" rel="noopener"><img src="cedar-cliff-falls-in-spring-green-dan-sproul.jpg" alt="Cedar Cliff Falls in spring green waterfall photography by Dan Sproul" loading="lazy" decoding="async"><div class="art-card-content"><h3>Cedar Cliff Falls</h3><p>Spring green waterfall</p><span class="art-card-caption">Fresh spring green waterfall scenery for wellness clinics, residential interiors, and calming nature-based rooms.</span><div class="art-spec-meta"><span>Custom sizing</span><span>Framed · Canvas · Acrylic · Metal</span></div></div></a>
+      <a class="art-card" href="https://dansproul.com/featured/gentle-waves-arctic-serenity-dan-sproul.html" target="_blank" rel="noopener"><img src="gentle-waves-arctic-serenity-dan-sproul.jpg" alt="Gentle Waves Arctic Serenity abstract water photography by Dan Sproul" loading="lazy" decoding="async"><div class="art-card-content"><h3>Gentle Waves</h3><p>Abstract water serenity</p><span class="art-card-caption">Abstract blue water photography for spa reception areas, coastal interiors, and modern wellness environments.</span><div class="art-spec-meta"><span>Custom sizing</span><span>Framed · Canvas · Acrylic · Metal</span></div></div></a>
     </div>
   </div>
 </section>
@@ -485,7 +667,7 @@ html,body{overflow-x:hidden}
 
     <div class="workflow-support">
       <div class="workflow-image">
-        <img src="spa massage room waterfall mockup.jpg" alt="Luxury wellness spa treatment room with large waterfall artwork by Dan Sproul">
+        <img src="spa massage room waterfall mockup.jpg" alt="Luxury wellness spa treatment room with large waterfall artwork by Dan Sproul" loading="lazy" decoding="async">
       </div>
 
       <div>
@@ -569,7 +751,7 @@ html,body{overflow-x:hidden}
     <div class="related-grid">
 
       <a class="related-card image-card" href="for-designers.html">
-        <img src="mountain-light-entryway.jpg" alt="Luxury mountain entryway interior with framed fine art photography by Dan Sproul">
+        <img src="mountain-light-entryway.jpg" alt="Luxury mountain entryway interior with framed fine art photography by Dan Sproul" loading="lazy" decoding="async">
         <div class="related-overlay">
           <span>Trade & Mockups</span>
           <h3>For Designers</h3>
@@ -577,7 +759,7 @@ html,body{overflow-x:hidden}
       </a>
 
       <a class="related-card image-card" href="coastal-atmosphere.html">
-        <img src="coastal-atmosphere-bedroom.jpg" alt="Coastal atmosphere bedroom interior with ocean photography by Dan Sproul">
+        <img src="coastal-atmosphere-bedroom.jpg" alt="Coastal atmosphere bedroom interior with ocean photography by Dan Sproul" loading="lazy" decoding="async">
         <div class="related-overlay">
           <span>Quiet Luxury Coastal</span>
           <h3>Coastal Atmosphere</h3>
@@ -585,7 +767,7 @@ html,body{overflow-x:hidden}
       </a>
 
       <a class="related-card image-card" href="quiet-earth-collection.html">
-        <img src="quiet-earth-lily-pond.jpg" alt="Quiet Earth living room with reflective mountain lake photography by Dan Sproul">
+        <img src="quiet-earth-lily-pond.jpg" alt="Quiet Earth living room with reflective mountain lake photography by Dan Sproul" loading="lazy" decoding="async">
         <div class="related-overlay">
           <span>Wellness & Hospitality</span>
           <h3>Quiet Earth</h3>
@@ -593,7 +775,7 @@ html,body{overflow-x:hidden}
       </a>
 
       <a class="related-card image-card" href="in-your-space.html">
-        <img src="bedroom art.jpg" alt="Modern living room with colorful sunset lake photography by Dan Sproul">
+        <img src="bedroom art.jpg" alt="Modern living room with colorful sunset lake photography by Dan Sproul" loading="lazy" decoding="async">
         <div class="related-overlay">
           <span>Room Ideas</span>
           <h3>In Your Space</h3>
@@ -654,52 +836,6 @@ html,body{overflow-x:hidden}
   font-weight:400;
 }
 
-.footer-seo {
-  background: #100e0b;
-  padding: 62px clamp(22px, 6vw, 76px) 36px;
-  border-top: 1px solid rgba(185, 138, 59, .22);
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 28px;
-  max-width: 1380px;
-  margin: 0 auto;
-}
-
-.footer-grid h3 {
-  margin-bottom: 13px;
-  color: #d5b365;
-  font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: 21px;
-  font-weight: 400;
-}
-
-.footer-grid a {
-  display: block;
-  text-decoration: none;
-  color: rgba(244, 238, 229, .62);
-  font-size: 13px;
-  line-height: 2;
-}
-
-.footer-grid a:hover {
-  color: #f4eee5;
-}
-
-.footer-bottom {
-  max-width: 1380px;
-  margin: 40px auto 0;
-  padding-top: 28px;
-  border-top: 1px solid rgba(185, 138, 59, .22);
-  color: rgba(244, 238, 229, .32);
-  font-size: 10px;
-  letter-spacing: .18em;
-  text-align: center;
-  text-transform: uppercase;
-}
-
 @media(max-width:900px){
 
   .related-grid{
@@ -710,69 +846,69 @@ html,body{overflow-x:hidden}
     min-height:320px;
   }
 
-  .footer-grid{
-    grid-template-columns:1fr;
-  }
-
 }
 </style>
 
 
 </main>
 
-<div class="footer-seo">
-  <div class="footer-grid">
-    <div>
-      <h3>Shop By Room</h3>
-      <a href="https://dansproul.com/collections/bedroom+wall+art+calming+nature+landscape+prints">Bedroom Wall Art</a>
-      <a href="in-your-space.html">Art In Your Space</a>
-      <a href="https://dansproul.com/collections/office+wall+art+inspiring+landscape+prints">Office Wall Art</a>
-      <a href="https://dansproul.com/art/dining+room">Dining Room Art</a>
-      <a href="https://dansproul.com/art/wellness">Wellness Space Prints</a>
-    </div>
-
-    <div>
-      <h3>Shop By Subject</h3>
-      <a href="https://dansproul.com/art/mountains">Mountain Prints</a>
-      <a href="https://dansproul.com/art/forest">Forest Photography</a>
-      <a href="https://dansproul.com/art/coastal">Coastal Wall Art</a>
-      <a href="https://dansproul.com/art/waterfalls">Waterfall Prints</a>
-      <a href="https://dansproul.com/art/wildlife">Wildlife Prints</a>
-    </div>
-
-    <div>
-      <h3>Shop By Mood</h3>
-      <a href="quiet-earth-collection.html">Quiet Earth Collection</a>
-      <a href="monochrome-stillness.html">Black &amp; White Prints</a>
-      <a href="https://dansproul.com/art/autumn">Warm Autumn Light</a>
-      <a href="https://dansproul.com/art/fog">Fog &amp; Mist Photography</a>
-      <a href="https://dansproul.com/art/calm">Calming Nature Prints</a>
-    </div>
-
-    <div>
-      <h3>Shop By Location</h3>
-      <a href="alaska-photography-prints.html">Alaska Prints</a>
-      <a href="colorado-photography-prints.html">Colorado Wall Art</a>
-      <a href="oregon-coast-photography-prints.html">Oregon Coast Prints</a>
-      <a href="smoky-mountains-photography-prints.html">Smoky Mountains Art</a>
-      <a href="https://dansproul.com/art/badlands">Badlands Wildlife Prints</a>
-    </div>
-
-    <div>
-      <h3>More Collections</h3>
-      <a href="https://dansproul.com/collections/best+sellers+and+designer+favorite+wall+art">Best Sellers</a>
-      <a href="art-collections.html">Curated Photography Collections</a>
-      <a href="for-designers.html">For Interior Designers</a>
-      <a href="coastal-atmosphere.html">Coastal Atmosphere</a>
-      <a href="wellness-waters-collection.html">Wellness Waters</a>
+<footer class="site-footer">
+  <div class="container footer-content">
+    <div>Wellness Waters Collection · Fine Art Photography by Dan Sproul</div>
+    <div class="footer-contact">
+      <a href="mailto:sproulphoto@gmail.com">sproulphoto@gmail.com</a>
     </div>
   </div>
+</footer>
 
-  <footer class="footer-bottom">
-    © 2026 Dan Sproul Fine Art Photography · Lima, Ohio · Prints ship worldwide
-  </footer>
-</div>
+
+<section class="section ai-linking-hub" id="related-collection-paths">
+  <div class="ai-section-head">
+    <p class="section-label">Related Collection Paths</p>
+    <h2 class="section-title">Explore related fine art photography collections by mood and interior use.</h2>
+  </div>
+  <div class="ai-link-grid">
+    <a href="quiet-earth-collection.html"><strong>Quiet Earth</strong><span>Healthcare artwork, wellness interiors, waiting rooms, calming offices, visual calm.</span></a>
+    <a href="mountain-light-collection.html"><strong>Mountain Light</strong><span>Hospitality interiors, lodge modern artwork, resort wall art, executive offices.</span></a>
+    <a href="monochrome-stillness.html"><strong>Monochrome Stillness</strong><span>Black-and-white office artwork, healthcare corridors, minimalist interiors, executive spaces.</span></a>
+    <a href="coastal-atmosphere.html"><strong>Coastal Atmosphere</strong><span>Quiet luxury coastal artwork, boutique hospitality, refined residential interiors.</span></a>
+    <a href="forest-light-collection.html"><strong>Forest Light</strong><span>Biophilic artwork, restorative woodland imagery, organic modern interiors.</span></a>
+    <a href="heritage-mixed-media.html"><strong>Heritage &amp; Mixed Media</strong><span>Regional artwork, lodge interiors, restaurants, hospitality spaces, local identity.</span></a>
+  </div>
+</section>
 
 </body>
 </html>
+<section class="section ai-resource-section" id="artwork-by-environment">
+  <div class="ai-section-head">
+    <p class="section-label">Artwork by Environment</p>
+    <h2 class="section-title">Artwork organized by atmosphere and interior use.</h2>
+    <p>This page helps connect artwork to the spaces where it works best: healthcare, hospitality, office, wellness, and quiet residential interiors.</p>
+  </div>
+  <div class="ai-env-grid">
+    <div class="ai-env-card">
+      <span>Healthcare &amp; Wellness</span>
+      <h3>Calming nature photography and restorative landscape artwork.</h3>
+      <p>Calming nature photography and restorative landscape artwork.</p>
+    </div>
+
+    <div class="ai-env-card">
+      <span>Hospitality</span>
+      <h3>Atmospheric photography for boutique hotels and lodge interiors.</h3>
+      <p>Atmospheric photography for boutique hotels and lodge interiors.</p>
+    </div>
+
+    <div class="ai-env-card">
+      <span>Office</span>
+      <h3>Executive office wall art and calming workplace artwork.</h3>
+      <p>Executive office wall art and calming workplace artwork.</p>
+    </div>
+
+    <div class="ai-env-card">
+      <span>Residential</span>
+      <h3>Quiet luxury wall art and atmospheric interiors.</h3>
+      <p>Quiet luxury wall art and atmospheric interiors.</p>
+    </div>
+  </div>
+</section>
 
