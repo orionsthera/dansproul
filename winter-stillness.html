@@ -1,706 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Winter Stillness | Dan Sproul Fine Art Photography</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Art In Your Space — See Prints In Real Rooms | Dan Sproul Fine Art</title>
+<meta name="author" content="Dan Sproul"/>
+<meta name="description" content="See how Dan Sproul's fine art photography looks in real bedrooms, living rooms, entryways, offices, and hotels. Shop the look directly. Custom sizing and free mockups available."/>
+<link rel="canonical" href="https://dsproul.com/in-your-space.html"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet"/>
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --ink: #1c1e20;
-    --muted: #626a6d;
-    --paper: #f5f6f4;
-    --paper-cool: #e9eeef;
-    --charcoal: #111312;
-    --charcoal-soft: #1b1e1c;
-    --line: rgba(28, 30, 32, .12);
-    --gold: #c7a367;
-    --gold-soft: #dcc08c;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'Inter', sans-serif;
-    background: var(--paper);
-    color: var(--ink);
-    line-height: 1.65;
-}
-
-img {
-    max-width: 100%;
-    display: block;
-}
-
-a {
-    color: inherit;
-}
-
-.container {
-    width: min(92%, 1360px);
-    margin: 0 auto;
-}
-
-.site-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    background: rgba(8, 10, 10, .78);
-    backdrop-filter: blur(14px);
-    border-bottom: 1px solid rgba(255, 255, 255, .08);
-}
-
-.header-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 84px;
-}
-
-.logo {
-    color: #fff;
-    text-decoration: none;
-}
-
-.logo-main {
-    font-size: clamp(1.25rem, 2.4vw, 1.65rem);
-    letter-spacing: .2em;
-    font-weight: 600;
-    line-height: 1;
-}
-
-.logo-sub {
-    color: var(--gold-soft);
-    font-size: .66rem;
-    letter-spacing: .28em;
-    margin-top: 7px;
-    text-transform: uppercase;
-}
-
-.nav-links {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-}
-
-.nav-links a {
-    color: rgba(255, 255, 255, .84);
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: .68rem;
-    letter-spacing: .2em;
-    transition: color .25s ease, border-color .25s ease;
-}
-
-.nav-links a:hover {
-    color: var(--gold-soft);
-}
-
-.shop-btn {
-    border: 1px solid rgba(220, 192, 140, .45);
-    padding: 12px 18px;
-}
-
-.menu-toggle {
-    display: none;
-    width: 44px;
-    height: 44px;
-    border: 1px solid rgba(255, 255, 255, .22);
-    background: transparent;
-    color: #fff;
-    cursor: pointer;
-}
-
-.menu-toggle span {
-    display: block;
-    width: 18px;
-    height: 1px;
-    background: currentColor;
-    margin: 5px auto;
-}
-
-.hero {
-    position: relative;
-    min-height: 86vh;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    background: #101111;
-}
-
-.hero::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background:
-        linear-gradient(to right, rgba(7, 9, 9, .66), rgba(7, 9, 9, .24) 62%, rgba(7, 9, 9, .12)),
-        linear-gradient(to top, rgba(7, 9, 9, .3), transparent 42%);
-    z-index: 1;
-}
-
-.hero-image {
-    position: absolute;
-    inset: 0;
-    background-image: url('winter stillness living room mockup.jpg');
-    background-size: cover;
-    background-position: center;
-    transform: scale(1.01);
-}
-
-.hero-content {
-    position: relative;
-    z-index: 2;
-    padding-top: 104px;
-    color: #fff;
-    max-width: 720px;
-}
-
-.kicker {
-    color: var(--gold);
-    text-transform: uppercase;
-    letter-spacing: .28em;
-    font-size: .7rem;
-    font-weight: 600;
-    margin-bottom: 22px;
-}
-
-.hero h1,
-.section-heading h2,
-.card-content h3,
-.related-links span,
-.footer-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 500;
-}
-
-.hero h1 {
-    font-size: clamp(3.65rem, 7.4vw, 6.8rem);
-    line-height: .92;
-    margin-bottom: 28px;
-    letter-spacing: 0;
-}
-
-.hero p {
-    font-size: clamp(1rem, 1.5vw, 1.14rem);
-    color: rgba(255, 255, 255, .82);
-    max-width: 600px;
-}
-
-.button-row {
-    display: flex;
-    gap: 16px;
-    margin-top: 38px;
-    flex-wrap: wrap;
-}
-
-.button-row a,
-.footer-btn {
-    text-decoration: none;
-    padding: 15px 24px;
-    text-transform: uppercase;
-    letter-spacing: .14em;
-    font-size: .72rem;
-    transition: background .25s ease, border-color .25s ease, color .25s ease;
-}
-
-.primary-btn {
-    background: var(--gold);
-    color: #111;
-}
-
-.primary-btn:hover {
-    background: var(--gold-soft);
-}
-
-.secondary-btn {
-    border: 1px solid rgba(255, 255, 255, .38);
-    color: #fff;
-}
-
-.secondary-btn:hover {
-    border-color: rgba(255, 255, 255, .7);
-}
-
-.section {
-    padding: clamp(72px, 9vw, 108px) 0;
-}
-
-.section-heading {
-    max-width: 820px;
-    margin-bottom: 54px;
-}
-
-.section-heading h2 {
-    font-size: clamp(2.45rem, 5vw, 4.35rem);
-    line-height: 1;
-    letter-spacing: 0;
-    margin-top: 16px;
-}
-
-.section-heading p {
-    margin-top: 22px;
-    color: var(--muted);
-    font-size: 1.04rem;
-    max-width: 690px;
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 42px 34px;
-}
-
-.gallery-card {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-}
-
-.gallery-card img {
-    width: 100%;
-    aspect-ratio: 4 / 5;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-    border: 1px solid rgba(28, 30, 32, .08);
-    box-shadow: 0 18px 44px rgba(28, 30, 32, .08);
-    transition: transform .28s ease, box-shadow .28s ease;
-}
-
-.gallery-card:hover img {
-    transform: translateY(-4px);
-    box-shadow: 0 24px 54px rgba(28, 30, 32, .12);
-}
-
-.card-content {
-    padding: 22px 2px 0;
-}
-
-.card-content h3 {
-    font-size: 2.05rem;
-    line-height: 1.05;
-    margin-bottom: 10px;
-}
-
-.card-content p {
-    color: var(--muted);
-    font-size: .98rem;
-}
-
-.spec-section {
-    background: var(--charcoal-soft);
-    color: #fff;
-}
-
-.spec-grid {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(320px, .8fr);
-    gap: clamp(42px, 6vw, 72px);
-    align-items: center;
-}
-
-.spec-preview {
-    background: rgba(255, 255, 255, .045);
-    border: 1px solid rgba(255, 255, 255, .09);
-    border-radius: 12px;
-    padding: 18px;
-}
-
-.spec-preview img {
-    border-radius: 6px;
-    border: 1px solid rgba(255, 255, 255, .08);
-}
-
-.spec-text h2 {
-    color: #fff;
-}
-
-.spec-text p {
-    color: rgba(255, 255, 255, .72);
-}
-
-.collections-section {
-    background: var(--paper-cool);
-}
-
-.related-links {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 22px;
-}
-
-.related-links a {
-    position: relative;
-    min-height: 310px;
-    overflow: hidden;
-    display: flex;
-    align-items: flex-end;
-    padding: 28px;
-    color: white;
-    text-decoration: none;
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-}
-
-.related-links a::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to top, rgba(5, 6, 6, .76), rgba(5, 6, 6, .18));
-}
-
-.related-links span {
-    position: relative;
-    z-index: 1;
-    font-size: clamp(2rem, 4vw, 2.55rem);
-    line-height: 1;
-}
-
-.site-footer {
-    background: #070808;
-    color: rgba(255, 255, 255, .7);
-    padding: 86px 0 54px;
-    border-top: 1px solid rgba(255, 255, 255, .06);
-}
-
-.footer-inner {
-    text-align: center;
-}
-
-.footer-kicker {
-    color: var(--gold-soft);
-    text-transform: uppercase;
-    letter-spacing: .28em;
-    font-size: .7rem;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-.footer-title {
-    font-size: clamp(2.75rem, 5.5vw, 5rem);
-    color: #f3f4f0;
-    line-height: .98;
-    max-width: 960px;
-    margin: 0 auto 26px;
-}
-
-.footer-text {
-    max-width: 680px;
-    margin: 0 auto;
-    color: rgba(255, 255, 255, .68);
-}
-
-.footer-btn {
-    display: inline-block;
-    margin-top: 34px;
-    background: var(--gold);
-    color: #111;
-}
-
-.footer-bottom {
-    margin-top: 76px;
-    border-top: 1px solid rgba(255, 255, 255, .08);
-    padding-top: 24px;
-    font-size: .88rem;
-}
-
-@media (max-width: 980px) {
-    .header-inner {
-        min-height: 76px;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    .nav-links {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        display: none;
-        flex-direction: column;
-        align-items: stretch;
-        gap: 0;
-        background: rgba(8, 10, 10, .96);
-        border-top: 1px solid rgba(255, 255, 255, .08);
-        padding: 12px 4%;
-    }
-
-    .nav-links.is-open {
-        display: flex;
-    }
-
-    .nav-links a {
-        padding: 15px 0;
-        border-bottom: 1px solid rgba(255, 255, 255, .08);
-    }
-
-    .shop-btn {
-        border: 0;
-    }
-
-    .hero {
-        min-height: 78vh;
-    }
-
-    .hero::before {
-        background: linear-gradient(to right, rgba(7, 9, 9, .72), rgba(7, 9, 9, .38));
-    }
-
-    .spec-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 620px) {
-    .container {
-        width: min(90%, 1360px);
-    }
-
-    .logo-main {
-        letter-spacing: .16em;
-    }
-
-    .logo-sub {
-        letter-spacing: .22em;
-    }
-
-    .hero-content {
-        padding-top: 82px;
-    }
-
-    .button-row a,
-    .footer-btn {
-        width: 100%;
-        text-align: center;
-    }
-
-    .gallery-grid {
-        grid-template-columns: 1fr;
-    }
-}
-</style>
-</head>
-
-<body>
-
-<header class="site-header">
-    <div class="container header-inner">
-        <a href="index.html" class="logo">
-            <div class="logo-main">DAN SPROUL</div>
-            <div class="logo-sub">Fine Art Photography</div>
-        </a>
-
-        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-
-        <nav class="nav-links" aria-label="Primary navigation">
-            <a href="index.html">Home</a>
-            <a href="art-collections.html">Art Collections</a>
-            <a href="for-designers.html>For Designers</a>
-            <a href="in-your-space.html">In Your Space</a>
-            <a href="https://dansproul.com" class="shop-btn">Shop</a>
-        </nav>
-    </div>
-</header>
-
-<main>
-    <section class="hero">
-        <div class="hero-image"></div>
-
-        <div class="container hero-content">
-            <div class="kicker">Atmospheric Winter Collection</div>
-            <h1>Winter Stillness</h1>
-            <p>
-                Curated winter fine art photography designed for boutique hospitality, wellness environments, luxury residential interiors, executive offices, and restorative architectural spaces.
-            </p>
-
-            <div class="button-row">
-                <a href="#collection" class="primary-btn">Explore Collection</a>
-                <a href="#spec-sheet" class="secondary-btn">View Spec Sheet</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="section" id="collection">
-        <div class="container">
-            <div class="section-heading">
-                <div class="kicker">Featured Environments</div>
-                <h2>Winter imagery designed to shape atmosphere.</h2>
-                <p>
-                    Snow-covered forests, monochrome mountain landscapes, quiet wildlife, and soft seasonal textures curated for calm architectural interiors.
-                </p>
-            </div>
-
-            <div class="gallery-grid">
-                <a class="gallery-card" href="https://dansproul.com/featured/gentle-winter-snowflakes-dan-sproul.html">
-                    <img src="winter stillness living room mockup.jpg" alt="Winter Stillness Living Room Mockup">
-                    <div class="card-content">
-                        <h3>Quiet Residential</h3>
-                        <p>Soft winter botanical photography for refined residential interiors and quiet luxury living rooms.</p>
-                    </div>
-                </a>
-
-                <a class="gallery-card" href="https://dansproul.com/featured/black-and-white-winter-deer-dan-sproul.html">
-                    <img src="winter stillness lodge lobby mockup.jpg" alt="Winter Stillness Lodge Lobby Mockup">
-                    <div class="card-content">
-                        <h3>Boutique Lodge</h3>
-                        <p>Wildlife-focused winter imagery curated for boutique hospitality, cabins, and retreat environments.</p>
-                    </div>
-                </a>
-
-                <a class="gallery-card" href="https://dansproul.com/featured/black-and-white-fence-in-snow-dan-sproul.html">
-                    <img src="winter stillness hospitality room mockup.jpg" alt="Winter Stillness Hospitality Room Mockup">
-                    <div class="card-content">
-                        <h3>Hospitality Suites</h3>
-                        <p>Minimal monochrome winter artwork for upscale hospitality rooms and restorative guest spaces.</p>
-                    </div>
-                </a>
-
-                <a class="gallery-card" href="https://dansproul.com/featured/beautiful-winter-path-in-the-forest-dan-sproul.html">
-                    <img src="winter stillness bedroom mockup.jpg" alt="Winter Stillness Bedroom Mockup">
-                    <div class="card-content">
-                        <h3>Residential Bedrooms</h3>
-                        <p>Quiet winter forest photography designed for calm residential and wellness-oriented interiors.</p>
-                    </div>
-                </a>
-
-                <a class="gallery-card" href="https://dansproul.com/featured/winter-dawn-dan-sproul.html">
-                    <img src="winter stillness hospitality corridor mockup.jpg" alt="Winter Stillness Corridor Mockup">
-                    <div class="card-content">
-                        <h3>Healthcare & Wellness</h3>
-                        <p>Restorative monochrome winter imagery for healthcare corridors, spas, and wellness spaces.</p>
-                    </div>
-                </a>
-
-                <a class="gallery-card" href="https://dansproul.com/featured/winter-in-denali-national-park-monochrome-dan-sproul.html">
-                    <img src="winter stillness office mockup.jpg" alt="Winter Stillness Office Mockup">
-                    <div class="card-content">
-                        <h3>Executive Interiors</h3>
-                        <p>Large-format monochrome mountain photography for executive offices and architectural boardrooms.</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section class="section spec-section" id="spec-sheet">
-        <div class="container spec-grid">
-            <div class="spec-text section-heading">
-                <div class="kicker">Designer Resources</div>
-                <h2>Download the Winter Stillness Spec Sheet</h2>
-                <p>
-                    Includes collection direction, environment positioning, mockup examples, and presentation-ready artwork applications for hospitality, wellness, executive, and residential projects.
-                </p>
-
-                <div class="button-row">
-                    <a href="Winter_Stillness_Spec_Sheet.pdf" class="primary-btn" target="_blank" rel="noopener">Download PDF</a>
-                    <a href="mailto:sproulphoto@gmail.com" class="secondary-btn">Request Mockup</a>
-                </div>
-            </div>
-
-            <div class="spec-preview">
-                <a href="Winter_Stillness_Spec_Sheet.pdf" target="_blank" rel="noopener">
-                    <img src="Winter_Stillness_Spec_Sheet-1.jpg" alt="Winter Stillness Spec Sheet Preview">
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section class="section collections-section">
-        <div class="container">
-            <div class="section-heading">
-                <div class="kicker">Explore More Collections</div>
-                <h2>Continue through the atmospheric collection system.</h2>
-            </div>
-
-            <div class="related-links">
-                <a href="monochrome-stillness.html" style="background-image:url('consultation space mockup.jpg');">
-                    <span>Monochrome Stillness</span>
-                </a>
-
-                <a href="for-designers.html" style="background-image:url('winter stillness room mockup.jpg');">
-                    <span>For Designers</span>
-                </a>
-
-                <a href="quiet-earth-collection.html" style="background-image:url('quiet-earth-collection-preview.jpg');">
-                    <span>Quiet Earth</span>
-                </a>
-
-                <a href="mountain-light-collection.html" style="background-image:url('mountain-light-entryway.jpg');">
-                    <span>Mountain Light</span>
-                </a>
-            </div>
-        </div>
-    </section>
-</main>
-
-<style>
-.related-grid{
-  display:grid;
-  grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:24px;
-}
-
-.image-card{
-  position:relative;
-  overflow:hidden;
-  min-height:420px;
-  border:1px solid rgba(255,255,255,0.08);
-  background:#111;
-}
-
-.image-card img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
-  transition:transform .5s ease;
-}
-
-.image-card:hover img{
-  transform:scale(1.03);
-}
-
-.related-overlay{
-  position:absolute;
-  inset:auto 0 0 0;
-  padding:34px;
-  background:linear-gradient(to top, rgba(0,0,0,.82), rgba(0,0,0,0));
-  color:white;
-}
-
-.related-overlay span{
-  display:block;
-  font-size:.7rem;
-  letter-spacing:.18em;
-  text-transform:uppercase;
-  margin-bottom:10px;
-  opacity:.8;
-}
-
-.related-overlay h3{
-  margin:0;
-  font-size:2rem;
-  font-weight:400;
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --black:#080807;--charcoal:#1a1612;--surface:#242018;--surface-2:#1e1a14;
+  --off-white:#f2efe8;--cream:#e8e2d8;
+  --accent:#b5924a;--accent-light:#c9a45a;
+  --muted:rgba(242,239,232,.42);--muted-2:rgba(242,239,232,.62);
+  --border:rgba(181,146,74,.14);--border-strong:rgba(181,146,74,.28);
+}
+html{scroll-behavior:smooth}
+body{background:var(--charcoal);color:var(--off-white);font-family:'Jost',sans-serif;font-weight:300;letter-spacing:.04em;overflow-x:hidden}
+
+/* ── NAV ─────────────────────────────────── */
+nav.main-nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:20px 56px;background:rgba(26,22,18,.97);border-bottom:1px solid var(--border);backdrop-filter:blur(6px)}
+.nav-logo{text-decoration:none}
+.nav-logo-name{display:block;font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:300;letter-spacing:.18em;text-transform:uppercase;color:var(--off-white)}
+.nav-logo-sub{display:block;font-size:.48rem;letter-spacing:.34em;text-transform:uppercase;color:var(--accent);margin-top:2px}
+.nav-links{display:flex;gap:22px;list-style:none;align-items:center}
+.nav-links a{color:rgba(242,239,232,.72);text-decoration:none;font-size:.56rem;letter-spacing:.18em;text-transform:uppercase;transition:color .3s}
+.nav-links a:hover,.nav-links a.active{color:var(--off-white)}
+.nav-links a.designers{color:var(--accent)}
+.nav-links a.shop-btn{border:1px solid var(--border-strong);padding:7px 18px;color:var(--accent)}
+.nav-links a.shop-btn:hover{background:rgba(181,146,74,.14);border-color:var(--accent)}
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;padding:8px;cursor:pointer}
+.hamburger span{display:block;width:24px;height:1px;background:var(--off-white);transition:transform .3s,opacity .3s}
+.hamburger.active span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.hamburger.active span:nth-child(2){opacity:0}
+.hamburger.active span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.mob-nav{display:none;position:fixed;inset:0;background:rgba(26,22,18,.98);z-index:250;flex-direction:column;align-items:center;justify-content:center;gap:30px}
+.mob-nav.open{display:flex}
+.mob-nav a{color:var(--off-white);text-decoration:none;font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:300;letter-spacing:.1em;transition:color .3s}
+.mob-nav a:hover{color:var(--accent)}
+.mob-nav .mob-designers{color:var(--accent)}
+.mob-close{position:absolute;top:24px;right:28px;background:none;border:none;color:rgba(242,239,232,.5);font-size:1.6rem;cursor:pointer}
+
+/* ── HERO ────────────────────────────────── */
+.hero{padding:130px 56px 0;background:var(--surface-2);border-bottom:1px solid var(--border)}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:end}
+.hero-left{padding-bottom:56px}
+.hero-eyebrow{font-size:.52rem;letter-spacing:.38em;text-transform:uppercase;color:var(--accent);margin-bottom:22px;display:flex;align-items:center;gap:14px}
+.hero-eyebrow::after{content:'';height:1px;width:56px;background:var(--accent);opacity:.35}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.6rem,4.5vw,4rem);font-weight:300;line-height:1.07;margin-bottom:20px}
+.hero h1 em{font-style:italic;color:var(--accent)}
+/* Decision-tool explainer — the key fix */
+.hero-explainer{background:rgba(181,146,74,.08);border:1px solid var(--border);border-left:3px solid var(--accent);padding:18px 22px;margin-bottom:28px}
+.hero-explainer p{font-size:.76rem;line-height:1.9;color:var(--muted-2)}
+.hero-explainer strong{color:var(--off-white);font-weight:400}
+/* Credential bar in hero */
+.hero-creds{display:flex;gap:24px;flex-wrap:wrap;margin-bottom:28px}
+.hero-cred{font-size:.54rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:7px}
+.hero-cred::before{content:'';width:3px;height:3px;border-radius:50%;background:var(--accent);flex-shrink:0}
+.hero-ctas{display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 32px;font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;text-decoration:none;transition:all .3s;font-family:'Jost',sans-serif;cursor:pointer;border:none}
+.btn-solid{background:var(--accent);color:var(--charcoal);border:1px solid var(--accent)}
+.btn-solid:hover{background:var(--accent-light)}
+.btn-out{border:1px solid var(--border-strong);color:rgba(242,239,232,.7);background:none}
+.btn-out:hover{border-color:var(--accent);color:var(--accent)}
+/* Hero right — feature image with size badge */
+.hero-img-wrap{position:relative;overflow:hidden;height:480px}
+.hero-img-wrap img{width:100%;height:100%;object-fit:cover;display:block;object-position:center 30%;filter:brightness(.88);transition:filter .5s,transform .8s cubic-bezier(.25,.46,.45,.94)}
+.hero-img-wrap:hover img{filter:brightness(1);transform:scale(1.03)}
+.hero-img-badge{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(26,22,18,.95),transparent);padding:28px 28px 24px}
+.hib-size{font-size:.52rem;letter-spacing:.28em;text-transform:uppercase;color:var(--accent);margin-bottom:6px}
+.hib-title{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:300;color:var(--off-white);margin-bottom:10px}
+.hib-shop{display:inline-block;font-size:.54rem;letter-spacing:.2em;text-transform:uppercase;color:var(--off-white);border-bottom:1px solid rgba(181,146,74,.5);padding-bottom:2px;text-decoration:none;transition:color .3s,border-color .3s}
+.hib-shop:hover{color:var(--accent);border-color:var(--accent)}
+
+/* ── HOW TO USE THIS PAGE banner ─────────── */
+.how-banner{background:var(--surface);border-bottom:1px solid var(--border);padding:20px 56px;display:flex;align-items:center;gap:40px;flex-wrap:wrap}
+.how-item{display:flex;align-items:center;gap:10px;font-size:.6rem;letter-spacing:.12em;color:var(--muted-2)}
+.how-icon{width:22px;height:22px;border:1px solid var(--border-strong);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.7rem;color:var(--accent);flex-shrink:0}
+
+/* ── FILTER NAV ──────────────────────────── */
+.filter-nav{background:var(--surface);border-bottom:1px solid var(--border);padding:0 56px;display:flex;overflow-x:auto;scrollbar-width:none;position:sticky;top:65px;z-index:100}
+.filter-nav::-webkit-scrollbar{display:none}
+.filter-btn{background:none;border:none;border-bottom:2px solid transparent;padding:18px 22px;font-family:'Jost',sans-serif;font-size:.52rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(242,239,232,.4);cursor:pointer;white-space:nowrap;transition:color .3s,border-color .3s;flex-shrink:0}
+.filter-btn:hover{color:rgba(242,239,232,.75)}
+.filter-btn.active{color:var(--accent);border-bottom-color:var(--accent)}
+
+/* ── SECTION ─────────────────────────────── */
+.iys-section{padding:56px 56px}
+.sec-header{margin-bottom:32px}
+.sec-label{font-size:.52rem;letter-spacing:.36em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+.sec-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.7rem,2.8vw,2.6rem);font-weight:300;line-height:1.1;margin-bottom:8px}
+.sec-title em{font-style:italic;color:var(--accent)}
+/* Buying guidance pill row — the KEY addition */
+.sec-guidance{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.guidance-pill{font-size:.5rem;letter-spacing:.18em;text-transform:uppercase;background:rgba(181,146,74,.1);border:1px solid rgba(181,146,74,.22);color:var(--accent);padding:5px 12px}
+.sec-feeling{font-size:.76rem;line-height:1.9;color:var(--muted-2);font-style:italic;border-left:2px solid rgba(181,146,74,.3);padding-left:16px;margin-bottom:0}
+
+/* ── CARDS ───────────────────────────────── */
+/* Feature card — full width hero image per section */
+.feat-card{position:relative;overflow:hidden;margin-bottom:3px;cursor:pointer}
+.feat-card img{width:100%;height:540px;object-fit:cover;display:block;filter:brightness(.85);transition:filter .5s,transform .8s cubic-bezier(.25,.46,.45,.94)}
+.feat-card:hover img{filter:brightness(1);transform:scale(1.025)}
+/* Always-visible bottom info bar — NOT hover-only */
+.feat-bar{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(20,16,11,.96) 0%,rgba(20,16,11,.6) 60%,transparent 100%);padding:32px 36px 28px}
+.feat-bar-top{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:12px}
+.feat-bar-info{}
+.feat-tag{font-size:.46rem;letter-spacing:.3em;text-transform:uppercase;color:var(--accent);margin-bottom:6px}
+.feat-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.3rem,2vw,1.8rem);font-weight:300;color:var(--off-white);line-height:1.2;margin-bottom:4px}
+.feat-desc{font-size:.62rem;letter-spacing:.06em;color:rgba(242,239,232,.5);line-height:1.7}
+/* Size + Shop pill — always visible */
+.feat-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.size-badge{font-size:.5rem;letter-spacing:.2em;text-transform:uppercase;background:rgba(181,146,74,.15);border:1px solid rgba(181,146,74,.35);color:var(--accent);padding:6px 14px;white-space:nowrap}
+.shop-link{display:inline-flex;align-items:center;gap:6px;font-size:.52rem;letter-spacing:.2em;text-transform:uppercase;color:var(--off-white);background:var(--accent);padding:7px 18px;text-decoration:none;transition:background .3s;white-space:nowrap}
+.shop-link:hover{background:var(--accent-light)}
+.shop-link svg{width:11px;height:11px;stroke:currentColor;fill:none;stroke-width:2}
+
+/* Mosaic grid */
+.mosaic{display:grid;gap:3px;margin-bottom:3px}
+.mosaic-2{grid-template-columns:1fr 1fr}
+.mosaic-3{grid-template-columns:1fr 1fr 1fr}
+.mosaic-2-1{grid-template-columns:1.5fr 1fr}
+.mosaic-1-2{grid-template-columns:1fr 1.5fr}
+
+.m-card{position:relative;overflow:hidden;cursor:pointer}
+.m-card img{width:100%;height:100%;object-fit:cover;display:block;filter:brightness(.78);transition:filter .45s,transform .65s cubic-bezier(.25,.46,.45,.94)}
+.m-card:hover img{filter:brightness(.97);transform:scale(1.05)}
+/* Always-visible bottom label on mosaic cards */
+.m-bar{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(20,16,11,.92) 0%,rgba(20,16,11,.5) 45%,transparent 75%);padding:18px 18px 14px}
+.m-room{font-size:.42rem;letter-spacing:.26em;text-transform:uppercase;color:var(--accent);margin-bottom:4px}
+.m-title{font-family:'Cormorant Garamond',serif;font-size:.9rem;font-weight:300;color:var(--off-white);line-height:1.2;margin-bottom:4px}
+.m-bottom{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.m-size{font-size:.42rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(242,239,232,.4)}
+.m-shop{font-size:.44rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(181,146,74,.35);padding-bottom:1px;transition:color .2s}
+.m-shop:hover{color:var(--accent-light)}
+/* Hover reveals detail */
+.m-hover{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:18px;opacity:0;transition:opacity .3s;pointer-events:none}
+
+.h-300{height:340px}.h-360{height:400px}.h-420{height:460px}.h-260{height:300px}
+/* Better image display — use contain-like cropping approach */
+.m-card img{object-position:center center}
+.feat-card img{object-position:center 25%}
+
+/* ── SECTION DIVIDER ─────────────────────── */
+.divider{padding:0 56px}
+.divider hr{border:none;border-top:1px solid var(--border)}
+
+/* ── SHOP THIS SECTION strip ─────────────── */
+.shop-section-strip{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 0;border-top:1px solid var(--border);margin-top:20px;flex-wrap:wrap}
+.sss-text{font-size:.6rem;letter-spacing:.14em;color:var(--muted-2)}
+.sss-text strong{color:var(--off-white);font-weight:400}
+.sss-link{font-size:.56rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);text-decoration:none;display:flex;align-items:center;gap:6px;border:1px solid var(--border-strong);padding:9px 20px;transition:all .3s}
+.sss-link:hover{background:rgba(181,146,74,.1)}
+
+/* ── CTA STRIP ───────────────────────────── */
+.cta-strip{background:var(--surface);padding:64px 56px;display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap;border-top:1px solid var(--border)}
+.cta-strip h3{font-family:'Cormorant Garamond',serif;font-size:clamp(1.6rem,2.5vw,2.4rem);font-weight:300;color:var(--off-white);line-height:1.2;margin-bottom:8px}
+.cta-strip h3 em{font-style:italic;color:var(--accent)}
+.cta-strip p{font-size:.72rem;line-height:2;color:var(--muted);max-width:480px}
+.cta-actions{display:flex;gap:10px;flex-shrink:0;flex-wrap:wrap}
+
+/* ── FOOTER ──────────────────────────────── */
+footer{padding:28px 56px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;font-size:.52rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(242,239,232,.2);flex-wrap:wrap;gap:10px}
+footer a{color:rgba(242,239,232,.2);text-decoration:none;transition:color .3s}
+footer a:hover{color:var(--accent)}
+
+/* ── LIGHTBOX ────────────────────────────── */
+#lb{display:none;position:fixed;inset:0;background:rgba(8,8,7,.97);z-index:1000;align-items:center;justify-content:center;cursor:zoom-out;flex-direction:column;gap:0}
+#lb.open{display:flex}
+#lb-img{max-width:92vw;max-height:85vh;object-fit:contain;display:block}
+#lb-info{padding:16px 24px;text-align:center;max-width:700px}
+#lb-cap{font-size:.56rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(242,239,232,.4);margin-bottom:10px}
+#lb-shop{display:inline-flex;align-items:center;gap:8px;font-size:.56rem;letter-spacing:.2em;text-transform:uppercase;color:var(--charcoal);background:var(--accent);padding:10px 24px;text-decoration:none;transition:background .3s}
+#lb-shop:hover{background:var(--accent-light)}
+#lb-close{position:absolute;top:20px;right:24px;background:none;border:none;color:rgba(255,255,255,.45);font-size:2rem;cursor:pointer;line-height:1;z-index:1001;transition:color .2s}
+#lb-close:hover{color:#fff}
+
+/* ── FLOATING BTNS ───────────────────────── */
+.mockup-float{position:fixed;bottom:84px;right:28px;z-index:290;background:var(--accent);color:var(--charcoal);padding:11px 20px;font-family:'Jost',sans-serif;font-size:.55rem;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;transform:translateY(8px)}
+.mockup-float.vis{opacity:1;pointer-events:auto;transform:translateY(0)}
+.mockup-float:hover{background:var(--accent-light)}
+.scroll-top{position:fixed;bottom:28px;right:28px;width:44px;height:44px;background:rgba(26,22,18,.9);border:1px solid var(--border-strong);color:var(--accent);font-size:1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:300;opacity:0;pointer-events:none;transition:opacity .3s}
+.scroll-top.vis{opacity:1;pointer-events:auto}
+
+/* ── RESPONSIVE ──────────────────────────── */
+@media(max-width:960px){
+  nav.main-nav{padding:18px 24px}
+  .nav-links{display:none}
+  .hamburger{display:flex}
+  .hero{padding:110px 24px 0}
+  .hero-grid{grid-template-columns:1fr;gap:32px}
+  .hero-img-wrap{height:340px}
+  .how-banner{padding:16px 24px;gap:16px;flex-wrap:wrap}
+  .how-item{font-size:.55rem}
+  .filter-nav{padding:0 24px}
+  .iys-section{padding:52px 24px}
+  .mosaic-2,.mosaic-2-1,.mosaic-1-2{grid-template-columns:1fr}
+  .mosaic-3{grid-template-columns:1fr 1fr}
+  .h-300{height:300px}
+  .h-360{height:340px}
+  .h-420{height:380px}
+  .feat-card img{height:420px}
+  .feat-bar-top{flex-direction:column;gap:10px}
+  .feat-actions{flex-wrap:wrap}
+  .cta-strip{padding:48px 24px;flex-direction:column;align-items:flex-start}
+  .divider{padding:0 24px}
+  footer{padding:20px 24px;flex-direction:column;text-align:center}
+  .sss-link{font-size:.5rem;padding:8px 14px}
+}
+@media(max-width:580px){
+  .mosaic-3{grid-template-columns:1fr}
+  .h-300{height:auto;aspect-ratio:4/3}
+  .h-360{height:auto;aspect-ratio:3/2}
+  .h-420{height:auto;aspect-ratio:4/3}
+  .h-260{height:auto;aspect-ratio:4/3}
+  .hero h1{font-size:2.3rem}
+  .hero-ctas{flex-direction:column}
+  .feat-card img{height:300px}
+  .feat-bar-top{flex-direction:column;gap:12px}
+  .feat-actions{flex-wrap:wrap}
+}
+  /* ── HERO SLIDESHOW ──────────────────────────────────────────── */
+.hero-img-wrap{position:relative;overflow:hidden;height:480px}
+.hero-slide{position:absolute;inset:0;opacity:0;transition:opacity 1.2s ease-in-out}
+.hero-slide.active{opacity:1}
+.hero-slide img{width:100%;height:100%;object-fit:cover;display:block;filter:brightness(.85);object-position:center 18%}
+.hero-img-badge{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(20,16,11,.95),transparent);padding:28px 28px 24px;z-index:2}
+.hib-size{font-size:.52rem;letter-spacing:.28em;text-transform:uppercase;color:var(--accent);margin-bottom:6px}
+.hib-title{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:300;color:var(--off-white);margin-bottom:10px}
+.hib-shop{display:inline-block;font-size:.54rem;letter-spacing:.2em;text-transform:uppercase;color:var(--off-white);border-bottom:1px solid rgba(181,146,74,.5);padding-bottom:2px;text-decoration:none;transition:color .3s,border-color .3s}
+.hib-shop:hover{color:var(--accent);border-color:var(--accent)}
+/* Dot indicators */
+.slide-dots{position:absolute;bottom:72px;right:20px;display:flex;flex-direction:column;gap:6px;z-index:3}
+.slide-dot{width:5px;height:5px;border-radius:50%;background:rgba(242,239,232,.3);border:none;padding:0;cursor:pointer;transition:background .3s,transform .3s}
+.slide-dot.active{background:var(--accent);transform:scale(1.3)}
+/* Prev/next arrows */
+.slide-arrow{position:absolute;top:50%;transform:translateY(-50%);background:rgba(20,16,11,.45);border:1px solid rgba(181,146,74,.2);color:rgba(242,239,232,.7);font-size:1.1rem;width:36px;height:36px;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:3;transition:all .3s;border-radius:0}
+.slide-arrow:hover{background:rgba(181,146,74,.25);color:var(--off-white)}
+.slide-prev{left:12px}
+.slide-next{right:12px}
+@media(max-width:960px){
+  .hero-img-wrap{height:340px}
+  .slide-arrow{width:30px;height:30px;font-size:.9rem}
+}
+@media(max-width:580px){
+  .hero-img-wrap{height:280px}
+  .slide-dots{bottom:56px}
 }
 
 .footer-seo {
@@ -749,26 +297,845 @@ a {
   text-transform: uppercase;
 }
 
-@media(max-width:900px){
-
-  .related-grid{
-    grid-template-columns:1fr;
+@media (max-width: 1040px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
   }
-
-  .image-card{
-    min-height:320px;
-  }
-
-  .footer-grid{
-    grid-template-columns:1fr;
-  }
-
 }
+
+/* ── UNIFIED SITE NAV — MATCH HOMEPAGE / COLLECTION PAGES ───────────── */
+body::before{
+  content:"";
+  display:block;
+  height:66px;
+}
+.site-nav-standard{
+  position:fixed!important;
+  top:0!important;
+  left:0!important;
+  right:0!important;
+  height:66px!important;
+  z-index:99999!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:28px!important;
+  padding:0 clamp(16px,4vw,44px)!important;
+  background:rgba(14,12,9,.94)!important;
+  border-bottom:1px solid rgba(185,138,59,.18)!important;
+  backdrop-filter:blur(14px)!important;
+  -webkit-backdrop-filter:blur(14px)!important;
+  box-sizing:border-box!important;
+}
+.nav-logo-standard{
+  display:flex!important;
+  flex-direction:column!important;
+  justify-content:center!important;
+  text-decoration:none!important;
+  color:#f4eee5!important;
+  line-height:1!important;
+  min-width:max-content!important;
+}
+.nav-logo-name-standard{
+  font-family:Arial,Helvetica,sans-serif!important;
+  font-size:18px!important;
+  font-weight:700!important;
+  letter-spacing:.24em!important;
+  text-transform:uppercase!important;
+}
+.nav-logo-sub-standard{
+  margin-top:7px!important;
+  color:#b9934b!important;
+  font-family:Arial,Helvetica,sans-serif!important;
+  font-size:9px!important;
+  font-weight:400!important;
+  letter-spacing:.26em!important;
+  text-transform:uppercase!important;
+}
+.nav-links-standard{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:flex-end!important;
+  gap:clamp(18px,2vw,34px)!important;
+}
+.nav-links-standard a{
+  color:rgba(244,238,229,.78)!important;
+  text-decoration:none!important;
+  font-family:Arial,Helvetica,sans-serif!important;
+  font-size:12px!important;
+  font-weight:700!important;
+  letter-spacing:.18em!important;
+  text-transform:uppercase!important;
+  white-space:nowrap!important;
+  line-height:1!important;
+}
+.nav-links-standard a:hover{
+  color:#f4eee5!important;
+}
+.nav-shop-standard{
+  color:#d5b365!important;
+  border:1px solid rgba(213,179,101,.62)!important;
+  padding:14px 22px!important;
+}
+.nav-toggle-standard{
+  display:none!important;
+  width:42px!important;
+  height:42px!important;
+  border:1px solid rgba(213,179,101,.36)!important;
+  background:transparent!important;
+  cursor:pointer!important;
+}
+.nav-toggle-standard span{
+  display:block!important;
+  width:20px!important;
+  height:2px!important;
+  margin:5px auto!important;
+  background:#f4eee5!important;
+}
+@media (max-width:1040px){
+  body::before{height:64px}
+  .site-nav-standard{height:64px!important}
+  .nav-toggle-standard{display:block!important}
+  .nav-links-standard{
+    position:fixed!important;
+    top:64px!important;
+    left:0!important;
+    right:0!important;
+    display:none!important;
+    flex-direction:column!important;
+    align-items:flex-start!important;
+    gap:0!important;
+    padding:18px 24px 24px!important;
+    background:rgba(14,12,9,.98)!important;
+    border-bottom:1px solid rgba(185,138,59,.22)!important;
+  }
+  .site-nav-standard.is-open .nav-links-standard{
+    display:flex!important;
+  }
+  .nav-links-standard a{
+    width:100%!important;
+    padding:14px 0!important;
+  }
+  .nav-shop-standard{
+    width:auto!important;
+    margin-top:8px!important;
+    padding:13px 18px!important;
+  }
+}
+
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://dsproul.com/#dan-sproul",
+      "name": "Dan Sproul",
+      "url": "https://dsproul.com",
+      "jobTitle": "Fine Art Photographer and Mixed Media Artist",
+      "description": "Dan Sproul creates original landscape photography and heritage-inspired mixed media artwork for residential, hospitality, healthcare, wellness, and commercial interiors.",
+      "homeLocation": {
+        "@type": "Place",
+        "name": "Lima, Ohio"
+      },
+      "sameAs": [
+        "https://dansproul.com",
+        "https://fineartamerica.com/profiles/1-dan-sproul",
+        "https://www.pinterest.com/dansproul/",
+        "https://medium.com/@sprould99",
+        "https://dansproulphotography.substack.com/"
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://dsproul.com/#organization",
+      "name": "Dan Sproul Fine Art Photography",
+      "url": "https://dsproul.com",
+      "founder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "description": "Original fine art photography and mixed media artwork for homes, hospitality, healthcare, wellness, and commercial spaces."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dsproul.com/#website",
+      "url": "https://dsproul.com",
+      "name": "Dan Sproul Fine Art Photography",
+      "publisher": {
+        "@id": "https://dsproul.com/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://dsproul.com/in-your-space.html#webpage",
+      "url": "https://dsproul.com/in-your-space.html",
+      "name": "Art In Your Space — See Prints In Real Rooms | Dan Sproul Fine Art",
+      "description": "See how Dan Sproul's fine art photography looks in real bedrooms, living rooms, entryways, offices, and hotels. Custom sizing and free mockups available.",
+      "isPartOf": {
+        "@id": "https://dsproul.com/#website"
+      },
+      "about": [
+        {
+          "@id": "https://dsproul.com/#dan-sproul"
+        },
+        {
+          "@id": "https://dsproul.com/#organization"
+        }
+      ],
+      "primaryImageOfPage": {
+        "@id": "https://dsproul.com/warm modern living room mountain reflection mockup.jpg#image"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://dsproul.com/in-your-space.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dsproul.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "In Your Space",
+          "item": "https://dsproul.com/in-your-space.html"
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://dsproul.com/in-your-space.html#room-mockups",
+      "name": "Dan Sproul Artwork in Room Mockups",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "In Your Space Hero Room Mockup",
+          "url": "https://dsproul.com/in-your-space.html#Hero"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Above the Bed   Calming Statement Pieces",
+          "url": "https://dsproul.com/in-your-space.html#bedroom"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Above the Sofa   Statement Walls",
+          "url": "https://dsproul.com/in-your-space.html#living"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "First Impressions   Bold Verticals",
+          "url": "https://dsproul.com/in-your-space.html#entryway"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Grounding Views   Art That Earns Its Place",
+          "url": "https://dsproul.com/in-your-space.html#office"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "Hotels &amp; Lobbies   Multi-Piece Installations",
+          "url": "https://dsproul.com/in-your-space.html#hospitality"
+        }
+      ]
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/warm modern living room mountain reflection mockup.jpg#image",
+      "contentUrl": "https://dsproul.com/warm modern living room mountain reflection mockup.jpg",
+      "name": "In Your Space Hero Room Mockup by Dan Sproul",
+      "description": "Warm modern living room with large B&W mountain reflection print by Dan Sproul — walnut frame white mat",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com",
+      "representativeOfPage": true
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/modern bedroom framed coastal oregon scene dan sproul.jpg#image",
+      "contentUrl": "https://dsproul.com/modern bedroom framed coastal oregon scene dan sproul.jpg",
+      "name": "Above the Bed   Calming Statement Pieces by Dan Sproul",
+      "description": "Modern dark bedroom with framed coastal Oregon landscape by Dan Sproul — white frame above bed",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com",
+      "representativeOfPage": false
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/modern living room framed maine lake.jpg#image",
+      "contentUrl": "https://dsproul.com/modern living room framed maine lake.jpg",
+      "name": "Above the Sofa   Statement Walls by Dan Sproul",
+      "description": "Modern neutral living room with framed Maine lake autumn landscape by Dan Sproul — black frame above sofa",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com",
+      "representativeOfPage": false
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/modern entryway beach path dan sproul.jpg#image",
+      "contentUrl": "https://dsproul.com/modern entryway beach path dan sproul.jpg",
+      "name": "First Impressions   Bold Verticals by Dan Sproul",
+      "description": "Modern entryway with large square beach path framed print — walnut float frame",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com",
+      "representativeOfPage": false
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/large framed mountain scene in modern office sunlit.jpg#image",
+      "contentUrl": "https://dsproul.com/large framed mountain scene in modern office sunlit.jpg",
+      "name": "Grounding Views   Art That Earns Its Place by Dan Sproul",
+      "description": "Sunlit corporate office with large framed mountain scene by Dan Sproul — black float frame",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com",
+      "representativeOfPage": false
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/Waterfall_Series_Hospitality_Concept_DanSproul.jpg#image",
+      "contentUrl": "https://dsproul.com/Waterfall_Series_Hospitality_Concept_DanSproul.jpg",
+      "name": "Hotels &amp; Lobbies   Multi-Piece Installations by Dan Sproul",
+      "description": "Three-piece waterfall series in luxury hotel lobby — large format framed prints by Dan Sproul",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com",
+      "representativeOfPage": false
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav class="site-nav-standard" aria-label="Primary navigation">
+  <a href="index.html" class="nav-logo-standard" aria-label="Dan Sproul Fine Art Photography home">
+    <span class="nav-logo-name-standard">Dan Sproul</span>
+    <span class="nav-logo-sub-standard">Fine Art Photography</span>
+  </a>
+
+  <button class="nav-toggle-standard" aria-label="Open navigation menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+  <div class="nav-links-standard">
+    <a href="index.html">Home</a>
+    <a href="best-sellers.html">Best Sellers</a>
+    <a href="art-collections.html">Collections</a>
+    <a href="in-your-space.html">In Your Space</a>
+    <a href="for-designers.html">For Designers</a>
+    <a href="#contact">Contact</a>
+    <a href="https://dansproul.com" target="_blank" rel="noopener" class="nav-shop-standard">Shop Prints</a>
+  </div>
+</nav>
+
+<a href="mailto:sproulphoto@gmail.com?subject=Mockup Request" class="mockup-float" id="mf">Request Mockup</a>
+<button class="scroll-top" id="st" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<!-- LIGHTBOX — now with Shop This Look button -->
+<div id="lb" onclick="if(event.target===this||event.target.id==='lb')closeLb()">
+  <button id="lb-close" onclick="closeLb()">✕</button>
+  <img id="lb-img" src="" alt=""/>
+  <div id="lb-info">
+    <p id="lb-cap"></p>
+    <a id="lb-shop" href="https://dansproul.com/shop" target="_blank">Shop This Print at dsproul.com →</a>
+  </div>
+</div>
+
+<!-- MOBILE NAV -->
+<div class="mob-nav" id="mobNav">
+  <button class="mob-close" id="mobClose">✕</button>
+  <a href="/">Home</a>
+  <a href="best-sellers.html">Best Sellers</a>
+  <a href="art-collections.html">Collections</a>
+  <a href="in-your-space.html" style="color:var(--accent)">In Your Space</a>
+  <a href="for-designers.html" class="mob-designers">For Designers</a>
+  <a href="#contact">Contact</a>
+  <a href="https://dansproul.com/shop" target="_blank" rel="noopener" style="color:var(--accent)">Shop Prints ↗</a>
+</div>
+
+<!-- NAV -->
+<!-- ═══════════════════════════════════════
+     HERO — decision tool, not gallery intro
+═══════════════════════════════════════ -->
+<div class="hero">
+  <div class="hero-grid">
+    <div class="hero-left">
+      <p class="hero-eyebrow">In Your Space</p>
+      <h1>See exactly how it<br/><em>looks in your room.</em></h1>
+
+      <!-- The fix: orient the visitor as a buyer immediately -->
+      <div class="hero-explainer">
+        <p>Every image below is a <strong>real room with Dan Sproul's photography</strong> installed and in scale. Use this page to find the right size, style, and placement for your space — then shop directly. <strong>Not sure what size to order? Send a room photo</strong> and get a free digital mockup.</p>
+      </div>
+
+      <div class="hero-creds">
+        <span class="hero-cred">Available 8×10 to 60×40+</span>
+        <span class="hero-cred">Canvas · Metal · Framed</span>
+        <span class="hero-cred">Free mockup previews</span>
+        <span class="hero-cred">Ships nationwide</span>
+      </div>
+
+      <div class="hero-ctas">
+        <a href="https://dansproul.com/shop" target="_blank" class="btn btn-solid">Shop All Prints</a>
+        <a href="mailto:sproulphoto@gmail.com?subject=Mockup Request" class="btn btn-out">Get a Free Mockup</a>
+      </div>
+    </div>
+
+    <!-- Hero slideshow -->
+    <div class="hero-img-wrap" id="heroSlideshow">
+
+      <div class="hero-slide active">
+        <img src="warm modern living room mountain reflection mockup.jpg" alt="Warm modern living room with large B&W mountain reflection print by Dan Sproul — walnut frame white mat" style="object-position:center 30%"/>
+      </div>
+
+      <div class="hero-slide">
+        <img src="living room interior mockup framed mountain light.jpg" alt="Bright modern living room with dreamy mountain light landscape print by Dan Sproul — black float frame above credenza" style="object-position:center 22%"/>
+      </div>
+
+      <div class="hero-slide">
+        <img src="modern living room with framed mountains in clouds.jpg" alt="Modern white living room with large B&W mountains in clouds framed print by Dan Sproul — black frame above sofa" style="object-position:center 20%"/>
+      </div>
+
+      <div class="hero-slide">
+        <img src="lobby framed mountains in clouds.jpg" alt="Modern healthcare lobby with large framed mountains in clouds landscape by Dan Sproul — black frame white mat" style="object-position:center 25%"/>
+      </div>
+
+      <div class="hero-slide">
+        <img src="modern dining room framed dreamy alaska landscape dan sproul.jpg" alt="Luxury modern dining room with large framed dreamy Alaska landscape by Dan Sproul — black frame dramatic lighting" style="object-position:center 20%"/>
+      </div>
+
+      <!-- Badge updates with JS -->
+      <div class="hero-img-badge">
+        <p class="hib-size" id="hib-size">Living Room · 36×48 or custom · Walnut frame</p>
+        <p class="hib-title" id="hib-title">Mountain Reflection — B&amp;W</p>
+        <a href="https://dansproul.com/shop" target="_blank" class="hib-shop">Shop This Print →</a>
+      </div>
+
+      <!-- Arrows -->
+      <button class="slide-arrow slide-prev" onclick="slideMove(-1)" aria-label="Previous">&#8592;</button>
+      <button class="slide-arrow slide-next" onclick="slideMove(1)" aria-label="Next">&#8594;</button>
+
+      <!-- Dots -->
+      <div class="slide-dots" id="slideDots"></div>
+
+    </div>
+  </div>
+</div>
+
+<!-- HOW TO USE banner -->
+<div class="how-banner">
+  <div class="how-item"><div class="how-icon">1</div>Browse by room type below</div>
+  <div class="how-item"><div class="how-icon">2</div>Click any image to view full size</div>
+  <div class="how-item"><div class="how-icon">3</div>Use size badges to guide your order</div>
+  <div class="how-item"><div class="how-icon">→</div><strong style="color:var(--off-white)">Shop This Look</strong>&nbsp;links to the exact print</div>
+</div>
+
+<!-- FILTER NAV -->
+<nav class="filter-nav" role="tablist">
+  <button class="filter-btn active" onclick="filterTo('all',this)">All Rooms</button>
+  <button class="filter-btn" onclick="filterTo('bedroom',this)">Bedroom</button>
+  <button class="filter-btn" onclick="filterTo('living',this)">Living Room</button>
+  <button class="filter-btn" onclick="filterTo('entryway',this)">Entryway</button>
+  <button class="filter-btn" onclick="filterTo('dining',this)">Dining Room</button>
+  <button class="filter-btn" onclick="filterTo('office',this)">Office</button>
+  <button class="filter-btn" onclick="filterTo('hospitality',this)">Hospitality</button>
+</nav>
+
+<!-- ══════════════════════════════════════════
+     BEDROOM
+══════════════════════════════════════════ -->
+<section class="iys-section" data-section="bedroom" style="background:var(--charcoal)">
+  <div class="sec-header">
+    <p class="sec-label">Bedroom</p>
+    <h2 class="sec-title">Above the Bed — <em>Calming Statement Pieces</em></h2>
+    <div class="sec-guidance">
+      <span class="guidance-pill">Best size: 30×40 to 40×60</span>
+      <span class="guidance-pill">Horizontal above bed</span>
+      <span class="guidance-pill">Vertical on accent wall</span>
+      <span class="guidance-pill">Muted tones or B&amp;W</span>
+    </div>
+    <p class="sec-feeling">"The right piece above the bed transforms a bedroom from a place you sleep into a place you want to be."</p>
+  </div>
+
+  <div class="feat-card" onclick="openLb('modern bedroom framed coastal oregon scene dan sproul.jpg','Coastal Oregon Scene — Dark Modern Bedroom · White Frame · 40×60 recommended','https://dansproul.com/featured/dreamy-cannon-beach-seastacks-from-ecola-state-park-dan-sproul.html')">
+    <img src="modern bedroom framed coastal oregon scene dan sproul.jpg" alt="Modern dark bedroom with framed coastal Oregon landscape by Dan Sproul — white frame above bed"/>
+    <div class="feat-bar">
+      <div class="feat-bar-top">
+        <div class="feat-bar-info">
+          <p class="feat-tag">Bedroom · Dark Modern · Above Bed</p>
+          <p class="feat-title">Coastal Oregon Scene</p>
+          <p class="feat-desc">White frame · Warm-dark interior · Landscape orientation · Oregon Coast</p>
+        </div>
+        <div class="feat-actions">
+          <span class="size-badge">30×40 — 40×60+</span>
+          <a href="https://dansproul.com/shop" target="_blank" class="shop-link" onclick="event.stopPropagation()">Shop This Look <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mosaic mosaic-2" style="margin-bottom:3px">
+    <div class="m-card h-360" onclick="openLb('modern bedroom framed mountain reflection dan sproul.jpg','Mountain Reflection — Warm Neutral Bedroom · Walnut Frame · 30×40 recommended','https://dansproul.com/featured/moody-bow-lake-reflections-dan-sproul.html')">
+      <img src="modern bedroom framed mountain reflection dan sproul.jpg" alt="Warm neutral bedroom with framed mountain reflection canvas by Dan Sproul"/>
+      <div class="m-bar">
+        <p class="m-room">Bedroom · Warm Neutral</p>
+        <p class="m-title">Mountain Reflection</p>
+        <div class="m-bottom">
+          <span class="m-size">30×40 recommended · Walnut frame</span>
+          <a href="https://dansproul.com/shop" target="_blank" class="m-shop" onclick="event.stopPropagation()">Shop This Look →</a>
+        </div>
+      </div>
+    </div>
+    <div class="m-card h-360" onclick="openLb('modern bedroom framed waves dan sproul.jpg','Dramatic Waves — Modern Bedroom · B&W Canvas · Gold Frame · 36×48','https://dansproul.com/featured/yachats-oregon-black-and-white-stormy-coast-waves-dan-sproul.html')">
+      <img src="modern bedroom framed waves dan sproul.jpg" alt="Modern bedroom with dramatic B&W waves canvas by Dan Sproul — gold frame"/>
+      <div class="m-bar">
+        <p class="m-room">Bedroom · Contemporary B&amp;W</p>
+        <p class="m-title">Dramatic Waves</p>
+        <div class="m-bottom">
+          <span class="m-size">36×48 · Gold float frame</span>
+          <a href="https://dansproul.com/shop" target="_blank" class="m-shop" onclick="event.stopPropagation()">Shop This Look →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mosaic mosaic-2-1">
+    <div class="m-card h-360" onclick="openLb('hotel room framed mountain reflections alaska dan sproul.jpg','Alaska Mountain Reflections — Hotel Guest Room · White Frame · 24×36','https://dansproul.com/featured/denali-highway-lake-reflection-dan-sproul.html')">
+      <img src="hotel room framed mountain reflections alaska dan sproul.jpg" alt="Hotel guest room with framed Alaska mountain reflection by Dan Sproul — white frame"/>
+      <div class="m-bar">
+        <p class="m-room">Guest Room · Calm Blue Tones</p>
+        <p class="m-title">Alaska Mountain Reflections</p>
+        <div class="m-bottom">
+          <span class="m-size">24×36 · White frame</span>
+          <a href="https://dansproul.com/shop" target="_blank" class="m-shop" onclick="event.stopPropagation()">Shop →</a>
+        </div>
+      </div>
+    </div>
+    <div class="m-card h-300" onclick="openLb('modern bedroom framed garden of the gods.jpg','Garden of the Gods — Modern Bedroom · Black Frame · White Mat · 36×48','https://dansproul.com/featured/garden-of-the-gods-textured-landscape-dan-sproul.html')">
+      <img src="modern bedroom framed garden of the gods.jpg" alt="Modern bedroom with vibrant Garden of the Gods landscape by Dan Sproul — black frame white mat" style="object-position:center 25%"/>
+      <div class="m-bar">
+        <p class="m-room">Bedroom · Bold Color · Above Bed</p>
+        <p class="m-title">Garden of the Gods</p>
+        <div class="m-bottom">
+          <span class="m-size">36×48 · Black frame · White mat</span>
+          <a href="https://dansproul.com/shop" target="_blank" class="m-shop" onclick="event.stopPropagation()">Shop →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="shop-section-strip">
+    <p class="sss-text">All bedroom prints available in <strong>canvas, metal, acrylic, and framed paper</strong> — any size from 8×10 to 60×40+.</p>
+    <a href="https://dansproul.com/shop" target="_blank" class="sss-link">Browse All Bedroom Prints →</a>
+  </div>
+</section>
+
+<div class="divider"><hr/></div>
+
+<!-- ══════════════════════════════════════════
+     LIVING ROOM
+══════════════════════════════════════════ -->
+<section class="iys-section" data-section="living" style="background:var(--surface-2)">
+  <div class="sec-header">
+    <p class="sec-label">Living Room</p>
+    <h2 class="sec-title">Above the Sofa — <em>Statement Walls</em></h2>
+    <div class="sec-guidance">
+      <span class="guidance-pill">Best size: 36×48 to 60×40</span>
+      <span class="guidance-pill">Horizontal landscape</span>
+      <span class="guidance-pill">Rule of thumb: 2/3 sofa width</span>
+      <span class="guidance-pill">Neutral or coastal palettes</span>
+    </div>
+    <p class="sec-feeling">"A large horizontal piece above the sofa anchors the entire room — it's the single highest-impact art placement in any home."</p>
+  </div>
+
+  <div class="feat-card" onclick="openLb('modern living room framed maine lake.jpg','Maine Lake — Modern Living Room · Black Frame · White Mat · 36×48+','https://dansproul.com/featured/mount-katahdin-in-fall-from-abol-bridge-dan-sproul.html')">
+    <img src="modern living room framed maine lake.jpg" alt="Modern neutral living room with framed Maine lake autumn landscape by Dan Sproul — black frame above sofa" style="object-position:center 15%"/>
+    <div class="feat-bar">
+      <div class="feat-bar-top">
+        <div class="feat-bar-info">
+          <p class="feat-tag">Living Room · Modern Neutral · Above Sofa</p>
+          <p class="feat-title">Maine Lake — Autumn Reflection</p>
+          <p class="feat-desc">Black frame · White mat · Soft fall color palette · Pairs with neutral and warm interiors</p>
+        </div>
+        <div class="feat-actions">
+          <span class="size-badge">36×48 — 60×40+</span>
+          <a href="https://dansproul.com/shop" target="_blank" class="shop-link" onclick="event.stopPropagation()">Shop This Look <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mosaic mosaic-3" style="margin-top:3px;margin-bottom:3px">
+    <div class="m-card h-300" onclick="openLb('modern living room framed coastal scene dan sproul.jpg','Oregon Coast Cliffs — Living Room · Black Float Frame · 40×60','https://dansproul.com/featured/dramatic-coastal-cliff-yaquina-head-oregon-dan-sproul.html')">
+      <img src="modern living room framed coastal scene dan sproul.jpg" alt="Modern living room with Oregon coast cliffs framed print"/>
+      <div class="m-bar">
+        <p class="m-room">Living Room · Contemporary</p>
+        <p class="m-title">Oregon Coast Cliffs</p>
+        <div class="m-bottom"><span class="m-size">40×60 · Black float frame</span><a href="https://dansproul.com/shop" target="_blank" class="m-shop" onclick="event.stopPropagation()">Shop →</a></div>
+      </div>
+    </div>
+    <div class="m-card h-300" onclick="openLb('modern living room interior pier sunset dan sproul.jpg','Pier Sunset — Warm Living Room · Walnut & Gold Frame · 24×36 portrait','https://dansproul.com/featured/okaloosa-pier-pastel-sunrise-dan-sproul.html')">
+      <img src="modern living room interior pier sunset dan sproul.jpg" alt="Warm living room with pier sunset portrait framed print"/>
+      <div class="m-bar">
+        <p class="m-room">Living Room · Warm · Portrait</p>
+        <p class="m-title">Pier Sunset</p>
+        <div class="m-bottom"><span class="m-size">24×36 portrait · Walnut &amp; gold</span><a href="https://dansproul.com/shop" target="_blank" class="m-shop" onclick="event.stopPropagation()">Shop →</a></div>
+      </div>
+    </div>
+    <div class="m-card h-300" onclick="openLb('modern dining room framed dreamy alaska landscape dan sproul.jpg','Dreamy Alaska Landscape — Dining Room · Black Frame · 30×40','https://dansproul.com/featured/turnagain-arm-alaska-dreamy-landscape-dan-sproul.html')">
+      <img src="modern dining room framed dreamy alaska landscape dan sproul.jpg" alt="Modern dining room with dreamy Alaska landscape"/>
+      <div class="m-bar">
+        <p class="m-room">Dining Room · Moody</p>
+        <p class="m-title">Dreamy Alaska Landscape</p>
+        <div class="m-bottom"><span class="m-size">30×40 · Black frame</span><a href="https://dansproul.com/shop" target="_blank" class="m-shop" onclick="event.stopPropagation()">Shop →</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="shop-section-strip">
+    <p class="sss-text"><strong>Sizing tip:</strong> For above the sofa, aim for a piece that's about two-thirds the sofa width. A 60-inch sofa works well with a 36–40 inch wide print.</p>
+    <a href="mailto:sproulphoto@gmail.com?subject=Mockup Request" class="sss-link">Get a Free Room Mockup →</a>
+  </div>
+</section>
+
+<div class="divider"><hr/></div>
+
+<!-- ══════════════════════════════════════════
+     ENTRYWAY
+══════════════════════════════════════════ -->
+<section class="iys-section" data-section="entryway" style="background:var(--charcoal)">
+  <div class="sec-header">
+    <p class="sec-label">Entryway &amp; Foyer</p>
+    <h2 class="sec-title">First Impressions — <em>Bold Verticals</em></h2>
+    <div class="sec-guidance">
+      <span class="guidance-pill">Best: tall vertical or large square</span>
+      <span class="guidance-pill">20×30 to 30×40 vertical</span>
+      <span class="guidance-pill">B&amp;W for drama</span>
+      <span class="guidance-pill">One strong piece beats a gallery wall</span>
+    </div>
+    <p class="sec-feeling">"The entryway is your home's first word. One strong vertical piece does more than a wall full of small frames."</p>
+  </div>
+
+  <div class="mosaic mosaic-1-2" style="margin-bottom:3px">
+    <div class="m-card h-420" onclick="openLb('modern entryway beach path dan sproul.jpg','Beach Path — Modern Entryway · Walnut Float Frame · Large Square 36×36','https://dansproul.com/featured/path-to-the-beach-cape-san-blas-dan-sproul.html')">
+      <img src="modern entryway beach path dan sproul.jpg" alt="Modern entryway with large square beach path framed print — walnut float frame"/>
+      <div class="m-bar">
+        <p class="m-room">Entryway · Modern Coastal</p>
+        <p class="m-title">Beach Path</p>
+        <div class="m-bottom"><span class="m-size">Large square · 36×36 · Walnut float</span><a href="https://dansproul.com/shop" target="_blank" class="m-shop" onclick="event.stopPropagation()">Shop →</a></div>
+      </div>
+    </div>
+    <div class="m-card h-420" onclick="openLb('modern entryway framed waterfall dan sproul.jpg','Spring Waterfall — Modern Entryway · Gold Float Frame · 24×36 vertical','https://dansproul.com/featured/roaring-fork-motor-nature-trail-cascades-dan-sproul.html')">
+      <img src="modern entryway framed waterfall dan sproul.jpg" alt="Modern entryway with B&W foggy lake framed print — gold float frame"/>
+      <div class="m-bar">
+        <p class="m-room">Entryway · Minimal Modern · B&amp;W</p>
+        <p class="m-title">Foggy Lake — B&amp;W</p>
+        <div class="m-bottom"><span class="m-size">24×36 vertical · Gold float</span><a href="https://dansproul.com/shop" target="_blank" class="m-shop" onclick="event.stopPropagation()">Shop →</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="shop-section-strip">
+    <p class="sss-text"><strong>Entryway tip:</strong> Vertical pieces work best in narrow foyers. For wide entryways or feature walls, a large square at 36×36 or bigger makes the strongest statement.</p>
+    <a href="https://dansproul.com/shop" target="_blank" class="sss-link">Browse Vertical Prints →</a>
+  </div>
+</section>
+
+<div class="divider"><hr/></div>
+
+<!-- ══════════════════════════════════════════
+     OFFICE
+══════════════════════════════════════════ -->
+<section class="iys-section" data-section="office" style="background:var(--surface-2)">
+  <div class="sec-header">
+    <p class="sec-label">Office &amp; Workspace</p>
+    <h2 class="sec-title">Grounding Views — <em>Art That Earns Its Place</em></h2>
+    <div class="sec-guidance">
+      <span class="guidance-pill">Best: 30×40 to 40×60 horizontal</span>
+      <span class="guidance-pill">Mountains &amp; open landscapes</span>
+      <span class="guidance-pill">B&amp;W for professional settings</span>
+      <span class="guidance-pill">Hang at eye level, centered behind desk</span>
+    </div>
+    <p class="sec-feeling">"Research shows nature imagery in workspaces reduces stress and improves focus. The right landscape behind a desk isn't decoration — it's a tool."</p>
+  </div>
+
+  <div class="feat-card" onclick="openLb('large framed mountain scene in modern office sunlit.jpg','Mountain Scene — Corporate Office · Black Float Frame · 40×60 recommended','https://dansproul.com/featured/canadian-rockies-snow-capped-mountain-landscape-dan-sproul.html')">
+    <img src="large framed mountain scene in modern office sunlit.jpg" alt="Sunlit corporate office with large framed mountain scene by Dan Sproul — black float frame"/>
+    <div class="feat-bar">
+      <div class="feat-bar-top">
+        <div class="feat-bar-info">
+          <p class="feat-tag">Corporate Office · Executive · Statement</p>
+          <p class="feat-title">Mountain Scene — Large Format</p>
+          <p class="feat-desc">Black float frame · Centered behind desk · Sunlit modern office</p>
+        </div>
+        <div class="feat-actions">
+          <span class="size-badge">40×60 recommended</span>
+          <a href="https://dansproul.com/shop" target="_blank" class="shop-link" onclick="event.stopPropagation()">Shop This Look <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mosaic mosaic-3" style="margin-top:3px">
+    <div class="m-card h-300" onclick="openLb('corporate office waiting room framed black and white landscapes.jpg','B&W Landscape Diptych — Corporate Waiting Room · Walnut Frame · Two 20×30 pieces','https://dansproul.com/art/canadian+rockies+black+and+white')">
+      <img src="corporate office waiting room framed black and white landscapes.jpg" alt="Corporate waiting room with B&W landscape diptych by Dan Sproul"/>
+      <div class="m-bar">
+        <p class="m-room">Corporate · Waiting Room · Diptych</p>
+        <p class="m-title">B&amp;W Landscape Diptych</p>
+        <div class="m-bottom"><span class="m-size">Two 20×30 pieces · Walnut frame</span><a href="https://dansproul.com/shop" target="_blank" class="m-shop" onclick="event.stopPropagation()">Shop →</a></div>
+      </div>
+    </div>
+    <div class="m-card h-300" onclick="openLb('home office statement piece michigan bridge at night.jpg','Michigan Bridge at Night — Home Office · Black Float Frame · 30×40','hhttps://dansproul.com/featured/colors-of-big-mac-at-night-dan-sproul.html')">
+      <img src="home office statement piece michigan bridge at night.jpg" alt="Home office with Michigan bridge at night statement piece by Dan Sproul — black float frame" style="object-position:center 20%"/>
+      <div class="m-bar">
+        <p class="m-room">Home Office · Bold Color</p>
+        <p class="m-title">Michigan Bridge at Night</p>
+        <div class="m-bottom"><span class="m-size">30×40 · Black float frame</span><a href="https://dansproul.com/shop" target="_blank" class="m-shop" onclick="event.stopPropagation()">Shop →</a></div>
+      </div>
+    </div>
+    <div class="m-card h-300" onclick="openLb('office reception area framed beach dan sproul.jpg','Aerial Beach — Corporate Reception · Dark Float Frame · 24×36 portrait','https://dansproul.com/featured/beautiful-florida-beach-waves-vertical-dan-sproul.html')">
+      <img src="office reception area framed beach dan sproul.jpg" alt="Corporate reception area with framed aerial beach photograph" style="object-position:center 20%"/>
+      <div class="m-bar">
+        <p class="m-room">Corporate Reception · Feature Wall</p>
+        <p class="m-title">Aerial Beach</p>
+        <div class="m-bottom"><span class="m-size">24×36 portrait · Dark float</span><a href="https://dansproul.com/shop" target="_blank" class="m-shop" onclick="event.stopPropagation()">Shop →</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="shop-section-strip">
+    <p class="sss-text"><strong>Corporate orders:</strong> Multi-piece and multi-site installations available. Trade pricing for designers and procurement teams.</p>
+    <a href="for-designers.html" class="sss-link">Commercial &amp; Trade Pricing →</a>
+  </div>
+</section>
+
+<div class="divider"><hr/></div>
+
+<!-- ══════════════════════════════════════════
+     HOSPITALITY
+══════════════════════════════════════════ -->
+<section class="iys-section" data-section="hospitality" style="background:var(--charcoal)">
+  <div class="sec-header">
+    <p class="sec-label">Hospitality &amp; Commercial</p>
+    <h2 class="sec-title">Hotels &amp; Lobbies — <em>Multi-Piece Installations</em></h2>
+    <div class="sec-guidance">
+      <span class="guidance-pill">Custom sizing on all images</span>
+      <span class="guidance-pill">Multi-piece &amp; triptych programs</span>
+      <span class="guidance-pill">Trade pricing available</span>
+      <span class="guidance-pill">Drury Inn · Wexner Medical Center OSU</span>
+    </div>
+    <p class="sec-feeling">"Installed at Drury Inn Hotels and the Wexner Medical Center at Ohio State — artwork at hospitality scale, delivered ready to hang."</p>
+  </div>
+
+  <div class="feat-card" onclick="openLb('Waterfall_Series_Hospitality_Concept_DanSproul.jpg','Waterfall Series — Three-Piece Hotel Lobby Installation · Custom sizing','https://dansproul.com/art/waterfalls')">
+    <img src="Waterfall_Series_Hospitality_Concept_DanSproul.jpg" alt="Three-piece waterfall series in luxury hotel lobby — large format framed prints by Dan Sproul" style="object-position:center 20%"/>
+    <div class="feat-bar">
+      <div class="feat-bar-top">
+        <div class="feat-bar-info">
+          <p class="feat-tag">Hotel Lobby · Three-Piece Installation</p>
+          <p class="feat-title">Waterfall Series</p>
+          <p class="feat-desc">Large-format framed prints · Uniform sizing · Trade pricing for multi-piece orders</p>
+        </div>
+        <div class="feat-actions">
+          <span class="size-badge">Custom sizing</span>
+          <a href="for-designers.html" class="shop-link" onclick="event.stopPropagation()">Trade Pricing <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mosaic mosaic-2" style="margin-top:3px">
+    <div class="m-card h-360" onclick="openLb('hotel lobby framed art badlands sunrise.jpg','Badlands Sunrise — Hotel Lobby · Large Format Canvas · 48×60+','https://dansproul.com/featured/badlands-national-park-south-dakota-sunrise-golden-light-landscape-dan-sproul.html')">
+      <img src="hotel lobby framed art badlands sunrise.jpg" alt="Hotel lobby with large format Badlands sunrise canvas by Dan Sproul" style="object-position:center 30%"/>
+      <div class="m-bar">
+        <p class="m-room">Hotel Lobby · Statement Piece</p>
+        <p class="m-title">Badlands Sunrise</p>
+        <div class="m-bottom"><span class="m-size">48×60+ · Large format canvas</span><a href="https://dansproul.com/shop" target="_blank" class="m-shop" onclick="event.stopPropagation()">Shop →</a></div>
+      </div>
+    </div>
+    <div class="m-card h-360" onclick="openLb('modern office interior linear sand dan sproul.jpg','Linear Sand Dunes — Modern Office Lobby · Black Frame · 40×60','https://dansproul.com/featured/sand-lines-jockeys-ridge-state-park-dan-sproul.html')">
+      <img src="modern office interior linear sand dan sproul.jpg" alt="Modern corporate office lobby with framed linear sand dunes photograph by Dan Sproul — large format black frame" style="object-position:center 25%"/>
+      <div class="m-bar">
+        <p class="m-room">Office Lobby · Minimal · Warm Tones</p>
+        <p class="m-title">Linear Sand Dunes</p>
+        <div class="m-bottom"><span class="m-size">40×60 · Black frame · Custom sizing</span><a href="https://dansproul.com/shop" target="_blank" class="m-shop" onclick="event.stopPropagation()">Shop →</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="shop-section-strip">
+    <p class="sss-text">Working on a commercial project? <strong>Multi-piece programs, licensing, and custom sizing</strong> available for hospitality and commercial installations.</p>
+    <a href="for-designers.html" class="sss-link">Download the Spec Sheet →</a>
+  </div>
+</section>
 
 
-</main>
+<section class="iys-section" id="related-collections" style="background:var(--surface-2)">
+  <div class="sec-header">
+    <p class="sec-label">Related Collections</p>
+    <h2 class="sec-title">Continue by <em>mood, room, or collection.</em></h2>
+    <div class="sec-guidance">
+      <a class="guidance-pill" href="art-collections.html">Curated Collections</a>
+      <a class="guidance-pill" href="best-sellers.html">Best Sellers</a>
+      <a class="guidance-pill" href="heritage-mixed-media.html">Heritage &amp; Mixed Media</a>
+      <a class="guidance-pill" href="for-designers.html">For Designers</a>
+      <a class="guidance-pill" href="wellness-waters-collection.html">Wellness Waters</a>
+      <a class="guidance-pill" href="monochrome-stillness.html">Monochrome Stillness</a>
+    </div>
+    <p class="sec-feeling">Use these pages to narrow the work by atmosphere, interior purpose, or frequently selected pieces.</p>
+  </div>
+</section>
 
+<!-- CTA STRIP -->
+<div class="cta-strip" id="contact">
+  <div>
+    <h3>Not sure what size<br/>to <em>order?</em></h3>
+    <p>Send a photo of your wall and Dan will put together a free digital mockup — so you can see the exact piece in your space, at actual scale, before committing.</p>
+  </div>
+  <div class="cta-actions">
+    <a href="mailto:sproulphoto@gmail.com?subject=Free Mockup Request" class="btn btn-solid">Get a Free Mockup</a>
+    <a href="https://dansproul.com/shop" target="_blank" class="btn btn-out">Shop All Prints</a>
+  </div>
+</div>
+  
 <div class="footer-seo">
   <div class="footer-grid">
     <div>
@@ -818,9 +1185,59 @@ a {
   </div>
 
   <footer class="footer-bottom">
-    © 2026 Dan Sproul Fine Art Photography · Lima, Ohio · Prints ship worldwide
+    © 2026 Dan Sproul Fine Art Photography · Original landscape photography and heritage-inspired mixed media artwork by Dan Sproul, based in Lima, Ohio · Prints ship worldwide
   </footer>
 </div>
+
+<script>
+(function(){
+  var ham=document.getElementById('ham'),nav=document.getElementById('mobNav'),cls=document.getElementById('mobClose');
+  if(!ham||!nav||!cls)return;
+  ham.addEventListener('click',function(){nav.classList.add('open');ham.classList.add('active');document.body.style.overflow='hidden'});
+  cls.addEventListener('click',function(){nav.classList.remove('open');ham.classList.remove('active');document.body.style.overflow=''});
+  nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('open');ham.classList.remove('active');document.body.style.overflow=''})});
+})();
+
+function openLb(src,cap,shopUrl){
+  document.getElementById('lb-img').src=src;
+  document.getElementById('lb-cap').textContent=cap||'';
+  var s=document.getElementById('lb-shop');
+  s.href=shopUrl||'https://dansproul.com/shop';
+  document.getElementById('lb').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeLb(){document.getElementById('lb').classList.remove('open');document.body.style.overflow='';}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLb()});
+
+function filterTo(type,btn){
+  document.querySelectorAll('.filter-btn').forEach(function(b){b.classList.remove('active')});
+  btn.classList.add('active');
+  document.querySelectorAll('[data-section]').forEach(function(s){
+    s.style.display=(type==='all'||s.dataset.section===type)?'':'none';
+  });
+  document.querySelectorAll('.divider').forEach(function(d){d.style.display=type==='all'?'':'none';});
+}
+
+var st=document.getElementById('st'),mf=document.getElementById('mf');
+window.addEventListener('scroll',function(){
+  var v=window.scrollY>380;
+  st.classList.toggle('vis',v);
+  if(mf)mf.classList.toggle('vis',v);
+});
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var nav = document.querySelector('.site-nav-standard');
+  var toggle = document.querySelector('.nav-toggle-standard');
+  if (nav && toggle) {
+    toggle.addEventListener('click', function () {
+      var isOpen = nav.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+  }
+});
+</script>
 
 </body>
 </html>
