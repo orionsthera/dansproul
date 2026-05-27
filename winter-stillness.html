@@ -3,514 +3,174 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Winter Stillness | Dan Sproul Fine Art Photography</title>
+<title>Winter Stillness | Winter Photography for Calm Interiors | Dan Sproul</title>
+<meta name="author" content="Dan Sproul">
+<meta name="description" content="Winter Stillness by Dan Sproul is a curated collection of winter fine art photography for bedrooms, boutique lodges, wellness spaces, healthcare corridors, executive offices, and calm residential interiors.">
+<link rel="canonical" href="https://dsproul.com/winter-stillness.html">
+<meta property="og:title" content="Winter Stillness | Winter Photography for Calm Interiors | Dan Sproul">
+<meta property="og:description" content="Quiet winter photography for bedrooms, lodges, wellness spaces, healthcare corridors, executive offices, and restorative interiors.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dsproul.com/winter-stillness.html">
+<meta property="og:image" content="https://dsproul.com/winter stillness living room mockup.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--ink:#1c1e20;--muted:#626a6d;--paper:#f5f6f4;--paper-cool:#e9eeef;--charcoal:#111312;--charcoal-soft:#1b1e1c;--line:rgba(28,30,32,.12);--gold:#c7a367;--gold-soft:#dcc08c}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--paper);color:var(--ink);line-height:1.65}
+img{max-width:100%;display:block}
+a{color:inherit}
+.container{width:min(92%,1360px);margin:0 auto}
+body::before{content:"";display:block;height:66px}
 
-:root {
-    --ink: #1c1e20;
-    --muted: #626a6d;
-    --paper: #f5f6f4;
-    --paper-cool: #e9eeef;
-    --charcoal: #111312;
-    --charcoal-soft: #1b1e1c;
-    --line: rgba(28, 30, 32, .12);
-    --gold: #c7a367;
-    --gold-soft: #dcc08c;
-}
+/* Unified nav */
+.site-nav-standard{position:fixed!important;top:0!important;left:0!important;right:0!important;height:66px!important;z-index:99999!important;display:flex!important;align-items:center!important;justify-content:space-between!important;gap:28px!important;padding:0 clamp(16px,4vw,44px)!important;background:rgba(14,12,9,.94)!important;border-bottom:1px solid rgba(185,138,59,.18)!important;backdrop-filter:blur(14px)!important;-webkit-backdrop-filter:blur(14px)!important;box-sizing:border-box!important}
+.nav-logo-standard{display:flex!important;flex-direction:column!important;justify-content:center!important;text-decoration:none!important;color:#f4eee5!important;line-height:1!important;min-width:max-content!important}
+.nav-logo-name-standard{font-family:Arial,Helvetica,sans-serif!important;font-size:18px!important;font-weight:700!important;letter-spacing:.24em!important;text-transform:uppercase!important}
+.nav-logo-sub-standard{margin-top:7px!important;color:#b9934b!important;font-family:Arial,Helvetica,sans-serif!important;font-size:9px!important;font-weight:400!important;letter-spacing:.26em!important;text-transform:uppercase!important}
+.nav-links-standard{display:flex!important;align-items:center!important;justify-content:flex-end!important;gap:clamp(18px,2vw,34px)!important}
+.nav-links-standard a{color:rgba(244,238,229,.78)!important;text-decoration:none!important;font-family:Arial,Helvetica,sans-serif!important;font-size:12px!important;font-weight:700!important;letter-spacing:.18em!important;text-transform:uppercase!important;white-space:nowrap!important;line-height:1!important}
+.nav-links-standard a:hover{color:#f4eee5!important}
+.nav-shop-standard{color:#d5b365!important;border:1px solid rgba(213,179,101,.62)!important;padding:14px 22px!important}
+.nav-toggle-standard{display:none!important;width:42px!important;height:42px!important;border:1px solid rgba(213,179,101,.36)!important;background:transparent!important;cursor:pointer!important}
+.nav-toggle-standard span{display:block!important;width:20px!important;height:2px!important;margin:5px auto!important;background:#f4eee5!important}
 
-html {
-    scroll-behavior: smooth;
-}
+.hero{position:relative;min-height:86vh;display:flex;align-items:center;overflow:hidden;background:#101111}
+.hero::before{content:'';position:absolute;inset:0;background:linear-gradient(to right,rgba(7,9,9,.70),rgba(7,9,9,.30) 62%,rgba(7,9,9,.12)),linear-gradient(to top,rgba(7,9,9,.36),transparent 42%);z-index:1}
+.hero-image{position:absolute;inset:0;background-image:url('winter stillness living room mockup.jpg');background-size:cover;background-position:center;transform:scale(1.01)}
+.hero-content{position:relative;z-index:2;padding-top:104px;color:#fff;max-width:760px}
+.kicker{color:var(--gold);text-transform:uppercase;letter-spacing:.28em;font-size:.7rem;font-weight:600;margin-bottom:22px}
+.hero h1,.section-heading h2,.card-content h3,.guide-card h3,.faq-item h3,.related-links span,.footer-title{font-family:'Cormorant Garamond',serif;font-weight:500}
+.hero h1{font-size:clamp(3.65rem,7.4vw,6.8rem);line-height:.92;margin-bottom:28px}
+.hero p{font-size:clamp(1rem,1.5vw,1.14rem);color:rgba(255,255,255,.82);max-width:630px}
+.button-row{display:flex;gap:16px;margin-top:38px;flex-wrap:wrap}
+.button-row a,.footer-btn{display:inline-block;text-decoration:none;padding:15px 24px;text-transform:uppercase;letter-spacing:.14em;font-size:.72rem;transition:background .25s ease,border-color .25s ease,color .25s ease}
+.primary-btn{background:var(--gold);color:#111}
+.primary-btn:hover{background:var(--gold-soft)}
+.secondary-btn{border:1px solid rgba(255,255,255,.38);color:#fff}
+.secondary-btn:hover{border-color:rgba(255,255,255,.7)}
 
-body {
-    font-family: 'Inter', sans-serif;
-    background: var(--paper);
-    color: var(--ink);
-    line-height: 1.65;
-}
+.section{padding:clamp(72px,9vw,108px) 0}
+.section-heading{max-width:860px;margin-bottom:54px}
+.section-heading.center{text-align:center;margin-left:auto;margin-right:auto}
+.section-heading h2{font-size:clamp(2.45rem,5vw,4.35rem);line-height:1;margin-top:16px}
+.section-heading p{margin-top:22px;color:var(--muted);font-size:1.04rem;max-width:720px}
+.center .section-heading p,.section-heading.center p{margin-left:auto;margin-right:auto}
+.dark-section{background:var(--charcoal-soft);color:#fff}
+.dark-section .section-heading p,.dark-section p{color:rgba(255,255,255,.72)}
 
-img {
-    max-width: 100%;
-    display: block;
-}
+.breadcrumbs{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.58);margin-bottom:28px}
+.breadcrumbs a{color:var(--gold-soft);text-decoration:none}
 
-a {
-    color: inherit;
-}
+.intro-grid,.guide-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(36px,6vw,76px);align-items:start}
+.intro-copy p{color:var(--muted);margin-bottom:18px}
+.note-box{margin-top:26px;padding:26px 28px;background:#fff;border-left:3px solid var(--gold);box-shadow:0 16px 40px rgba(28,30,32,.06)}
+.note-box p{font-family:'Cormorant Garamond',serif;font-size:1.25rem;line-height:1.5;color:#3a3d3f;font-style:italic}
 
-.container {
-    width: min(92%, 1360px);
-    margin: 0 auto;
-}
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:42px 34px}
+.gallery-card{display:block;text-decoration:none;color:inherit}
+.gallery-card img{width:100%;aspect-ratio:4/5;height:auto;object-fit:cover;border-radius:10px;border:1px solid rgba(28,30,32,.08);box-shadow:0 18px 44px rgba(28,30,32,.08);transition:transform .28s ease,box-shadow .28s ease}
+.gallery-card:hover img{transform:translateY(-4px);box-shadow:0 24px 54px rgba(28,30,32,.12)}
+.card-content{padding:22px 2px 0}
+.card-content h3{font-size:2.05rem;line-height:1.05;margin-bottom:10px}
+.card-content p{color:var(--muted);font-size:.98rem}
+.card-content .mini-link{display:inline-block;margin-top:14px;color:#9b7335;text-transform:uppercase;letter-spacing:.14em;font-size:.68rem;text-decoration:none;font-weight:600}
 
-.hero {
-    position: relative;
-    min-height: 86vh;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    background: #101111;
-}
+.gallery-card{cursor:pointer;border:0;background:transparent;text-align:left;font-family:inherit}
+.mockup-modal{position:fixed;inset:0;z-index:100000;display:none;align-items:center;justify-content:center;padding:clamp(18px,4vw,46px);background:rgba(7,8,8,.78);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.mockup-modal.is-open{display:flex}
+.mockup-modal-card{width:min(54vw,920px);max-width:920px;background:#0f100f;border:1px solid rgba(213,179,101,.22);box-shadow:0 34px 90px rgba(0,0,0,.55);color:#f4eee5}
+.mockup-modal-card img{width:100%;max-height:72vh;object-fit:contain;background:#080808}
+.mockup-modal-copy{padding:22px 24px 24px}
+.mockup-modal-copy h3{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3vw,2.6rem);line-height:1;margin-bottom:8px;font-weight:500}
+.mockup-modal-copy p{color:rgba(244,238,229,.68);font-size:.96rem;margin-bottom:18px}
+.mockup-modal-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.mockup-modal-actions a,.mockup-modal-actions button{border:1px solid rgba(213,179,101,.5);background:transparent;color:#f4eee5;text-decoration:none;text-transform:uppercase;letter-spacing:.14em;font-size:.68rem;padding:12px 16px;cursor:pointer;font-family:Inter,sans-serif}
+.mockup-modal-actions a{background:var(--gold);color:#111;border-color:var(--gold)}
+.mockup-modal-actions a.is-hidden{display:none}
+.mockup-close{position:absolute;top:18px;right:20px;width:44px;height:44px;border:1px solid rgba(244,238,229,.34);background:rgba(0,0,0,.32);color:#fff;font-size:28px;line-height:1;cursor:pointer}
+@media(max-width:900px){.mockup-modal-card{width:94vw}.mockup-modal-card img{max-height:68vh}.mockup-close{top:10px;right:10px}}
 
-.hero::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background:
-        linear-gradient(to right, rgba(7, 9, 9, .66), rgba(7, 9, 9, .24) 62%, rgba(7, 9, 9, .12)),
-        linear-gradient(to top, rgba(7, 9, 9, .3), transparent 42%);
-    z-index: 1;
-}
+.environment-section{background:var(--paper-cool)}
+.environment-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.guide-card{background:#fff;border:1px solid var(--line);padding:28px;border-radius:10px;box-shadow:0 14px 34px rgba(28,30,32,.04)}
+.guide-card h3{font-size:1.9rem;line-height:1.05;margin-bottom:12px}
+.guide-card p{color:var(--muted);font-size:.96rem}
 
-.hero-image {
-    position: absolute;
-    inset: 0;
-    background-image: url('winter stillness living room mockup.jpg');
-    background-size: cover;
-    background-position: center;
-    transform: scale(1.01);
-}
+.choose-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.choose-item{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.09);border-radius:10px;padding:24px}
+.choose-item strong{display:block;color:var(--gold-soft);font-size:.75rem;text-transform:uppercase;letter-spacing:.16em;margin-bottom:10px}
+.choose-item span{color:rgba(255,255,255,.74);font-size:.96rem}
 
-.hero-content {
-    position: relative;
-    z-index: 2;
-    padding-top: 104px;
-    color: #fff;
-    max-width: 720px;
-}
+.spec-section{background:var(--charcoal-soft);color:#fff}
+.spec-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,.8fr);gap:clamp(42px,6vw,72px);align-items:center}
+.spec-preview{background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.09);border-radius:12px;padding:18px}
+.spec-preview img{border-radius:6px;border:1px solid rgba(255,255,255,.08)}
+.spec-text h2{color:#fff}
+.spec-text p{color:rgba(255,255,255,.72)}
 
-.kicker {
-    color: var(--gold);
-    text-transform: uppercase;
-    letter-spacing: .28em;
-    font-size: .7rem;
-    font-weight: 600;
-    margin-bottom: 22px;
-}
+.faq-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.faq-item{background:#fff;border:1px solid var(--line);padding:28px;border-radius:10px}
+.faq-item h3{font-size:1.75rem;line-height:1.08;margin-bottom:10px}
+.faq-item p{color:var(--muted);font-size:.96rem}
 
-.hero h1,
-.section-heading h2,
-.card-content h3,
-.related-links span,
-.footer-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 500;
-}
+.collections-section{background:var(--paper-cool)}
+.related-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.related-links a{position:relative;min-height:310px;overflow:hidden;display:flex;align-items:flex-end;padding:28px;color:white;text-decoration:none;background-size:cover;background-position:center;border-radius:10px}
+.related-links a::before{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(5,6,6,.76),rgba(5,6,6,.18))}
+.related-links span{position:relative;z-index:1;font-size:clamp(2rem,4vw,2.55rem);line-height:1}
 
-.hero h1 {
-    font-size: clamp(3.65rem, 7.4vw, 6.8rem);
-    line-height: .92;
-    margin-bottom: 28px;
-    letter-spacing: 0;
-}
+.footer-seo{background:#100e0b;padding:62px clamp(22px,6vw,76px) 36px;border-top:1px solid rgba(185,138,59,.22)}
+.footer-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:28px;max-width:1380px;margin:0 auto}
+.footer-grid h3{margin-bottom:13px;color:#d5b365;font-family:"Cormorant Garamond",Georgia,serif;font-size:21px;font-weight:400}
+.footer-grid a{display:block;text-decoration:none;color:rgba(244,238,229,.62);font-size:13px;line-height:2}
+.footer-grid a:hover{color:#f4eee5}
+.footer-bottom{max-width:1380px;margin:40px auto 0;padding-top:28px;border-top:1px solid rgba(185,138,59,.22);color:rgba(244,238,229,.32);font-size:10px;letter-spacing:.18em;text-align:center;text-transform:uppercase}
 
-.hero p {
-    font-size: clamp(1rem, 1.5vw, 1.14rem);
-    color: rgba(255, 255, 255, .82);
-    max-width: 600px;
+@media(max-width:1040px){
+ body::before{height:64px}.site-nav-standard{height:64px!important}.nav-toggle-standard{display:block!important}.nav-links-standard{position:fixed!important;top:64px!important;left:0!important;right:0!important;display:none!important;flex-direction:column!important;align-items:flex-start!important;gap:0!important;padding:18px 24px 24px!important;background:rgba(14,12,9,.98)!important;border-bottom:1px solid rgba(185,138,59,.22)!important}.site-nav-standard.is-open .nav-links-standard{display:flex!important}.nav-links-standard a{width:100%!important;padding:14px 0!important}.nav-shop-standard{width:auto!important;margin-top:8px!important;padding:13px 18px!important}
+ .intro-grid,.guide-grid,.spec-grid{grid-template-columns:1fr}.environment-grid{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:1fr}
 }
-
-.button-row {
-    display: flex;
-    gap: 16px;
-    margin-top: 38px;
-    flex-wrap: wrap;
+@media(max-width:680px){
+ .container{width:min(90%,1360px)}.hero{min-height:78vh}.hero-content{padding-top:82px}.button-row a,.footer-btn{width:100%;text-align:center}.gallery-grid,.environment-grid,.choose-list,.faq-grid{grid-template-columns:1fr}
 }
-
-.button-row a,
-.footer-btn {
-    text-decoration: none;
-    padding: 15px 24px;
-    text-transform: uppercase;
-    letter-spacing: .14em;
-    font-size: .72rem;
-    transition: background .25s ease, border-color .25s ease, color .25s ease;
-}
-
-.primary-btn {
-    background: var(--gold);
-    color: #111;
-}
-
-.primary-btn:hover {
-    background: var(--gold-soft);
-}
-
-.secondary-btn {
-    border: 1px solid rgba(255, 255, 255, .38);
-    color: #fff;
-}
-
-.secondary-btn:hover {
-    border-color: rgba(255, 255, 255, .7);
-}
-
-.section {
-    padding: clamp(72px, 9vw, 108px) 0;
-}
-
-.section-heading {
-    max-width: 820px;
-    margin-bottom: 54px;
-}
-
-.section-heading h2 {
-    font-size: clamp(2.45rem, 5vw, 4.35rem);
-    line-height: 1;
-    letter-spacing: 0;
-    margin-top: 16px;
-}
-
-.section-heading p {
-    margin-top: 22px;
-    color: var(--muted);
-    font-size: 1.04rem;
-    max-width: 690px;
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 42px 34px;
-}
-
-.gallery-card {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-}
-
-.gallery-card img {
-    width: 100%;
-    aspect-ratio: 4 / 5;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-    border: 1px solid rgba(28, 30, 32, .08);
-    box-shadow: 0 18px 44px rgba(28, 30, 32, .08);
-    transition: transform .28s ease, box-shadow .28s ease;
-}
-
-.gallery-card:hover img {
-    transform: translateY(-4px);
-    box-shadow: 0 24px 54px rgba(28, 30, 32, .12);
-}
-
-.card-content {
-    padding: 22px 2px 0;
-}
-
-.card-content h3 {
-    font-size: 2.05rem;
-    line-height: 1.05;
-    margin-bottom: 10px;
-}
-
-.card-content p {
-    color: var(--muted);
-    font-size: .98rem;
-}
-
-.spec-section {
-    background: var(--charcoal-soft);
-    color: #fff;
-}
-
-.spec-grid {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(320px, .8fr);
-    gap: clamp(42px, 6vw, 72px);
-    align-items: center;
-}
-
-.spec-preview {
-    background: rgba(255, 255, 255, .045);
-    border: 1px solid rgba(255, 255, 255, .09);
-    border-radius: 12px;
-    padding: 18px;
-}
-
-.spec-preview img {
-    border-radius: 6px;
-    border: 1px solid rgba(255, 255, 255, .08);
-}
-
-.spec-text h2 {
-    color: #fff;
-}
-
-.spec-text p {
-    color: rgba(255, 255, 255, .72);
-}
-
-.collections-section {
-    background: var(--paper-cool);
-}
-
-.related-links {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 22px;
-}
-
-.related-links a {
-    position: relative;
-    min-height: 310px;
-    overflow: hidden;
-    display: flex;
-    align-items: flex-end;
-    padding: 28px;
-    color: white;
-    text-decoration: none;
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-}
-
-.related-links a::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to top, rgba(5, 6, 6, .76), rgba(5, 6, 6, .18));
-}
-
-.related-links span {
-    position: relative;
-    z-index: 1;
-    font-size: clamp(2rem, 4vw, 2.55rem);
-    line-height: 1;
-}
-
-.site-footer {
-    background: #070808;
-    color: rgba(255, 255, 255, .7);
-    padding: 86px 0 54px;
-    border-top: 1px solid rgba(255, 255, 255, .06);
-}
-
-.footer-inner {
-    text-align: center;
-}
-
-.footer-kicker {
-    color: var(--gold-soft);
-    text-transform: uppercase;
-    letter-spacing: .28em;
-    font-size: .7rem;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-.footer-title {
-    font-size: clamp(2.75rem, 5.5vw, 5rem);
-    color: #f3f4f0;
-    line-height: .98;
-    max-width: 960px;
-    margin: 0 auto 26px;
-}
-
-.footer-text {
-    max-width: 680px;
-    margin: 0 auto;
-    color: rgba(255, 255, 255, .68);
-}
-
-.footer-btn {
-    display: inline-block;
-    margin-top: 34px;
-    background: var(--gold);
-    color: #111;
-}
-
-.footer-bottom {
-    margin-top: 76px;
-    border-top: 1px solid rgba(255, 255, 255, .08);
-    padding-top: 24px;
-    font-size: .88rem;
-}
-
-@media (max-width: 980px) {
-    .nav-links.is-open {
-        display: flex;
-    }
-
-    .hero {
-        min-height: 78vh;
-    }
-
-    .hero::before {
-        background: linear-gradient(to right, rgba(7, 9, 9, .72), rgba(7, 9, 9, .38));
-    }
-
-    .spec-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 620px) {
-    .container {
-        width: min(90%, 1360px);
-    }
-
-    .hero-content {
-        padding-top: 82px;
-    }
-
-    .button-row a,
-    .footer-btn {
-        width: 100%;
-        text-align: center;
-    }
-
-    .gallery-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* ── UNIFIED SITE NAV — MATCH HOMEPAGE / COLLECTION PAGES ───────────── */
-body::before{
-  content:"";
-  display:block;
-  height:66px;
-}
-.site-nav-standard{
-  position:fixed!important;
-  top:0!important;
-  left:0!important;
-  right:0!important;
-  height:66px!important;
-  z-index:99999!important;
-  display:flex!important;
-  align-items:center!important;
-  justify-content:space-between!important;
-  gap:28px!important;
-  padding:0 clamp(16px,4vw,44px)!important;
-  background:rgba(14,12,9,.94)!important;
-  border-bottom:1px solid rgba(185,138,59,.18)!important;
-  backdrop-filter:blur(14px)!important;
-  -webkit-backdrop-filter:blur(14px)!important;
-  box-sizing:border-box!important;
-}
-.nav-logo-standard{
-  display:flex!important;
-  flex-direction:column!important;
-  justify-content:center!important;
-  text-decoration:none!important;
-  color:#f4eee5!important;
-  line-height:1!important;
-  min-width:max-content!important;
-}
-.nav-logo-name-standard{
-  font-family:Arial,Helvetica,sans-serif!important;
-  font-size:18px!important;
-  font-weight:700!important;
-  letter-spacing:.24em!important;
-  text-transform:uppercase!important;
-}
-.nav-logo-sub-standard{
-  margin-top:7px!important;
-  color:#b9934b!important;
-  font-family:Arial,Helvetica,sans-serif!important;
-  font-size:9px!important;
-  font-weight:400!important;
-  letter-spacing:.26em!important;
-  text-transform:uppercase!important;
-}
-.nav-links-standard{
-  display:flex!important;
-  align-items:center!important;
-  justify-content:flex-end!important;
-  gap:clamp(18px,2vw,34px)!important;
-}
-.nav-links-standard a{
-  color:rgba(244,238,229,.78)!important;
-  text-decoration:none!important;
-  font-family:Arial,Helvetica,sans-serif!important;
-  font-size:12px!important;
-  font-weight:700!important;
-  letter-spacing:.18em!important;
-  text-transform:uppercase!important;
-  white-space:nowrap!important;
-  line-height:1!important;
-}
-.nav-links-standard a:hover{
-  color:#f4eee5!important;
-}
-.nav-shop-standard{
-  color:#d5b365!important;
-  border:1px solid rgba(213,179,101,.62)!important;
-  padding:14px 22px!important;
-}
-.nav-toggle-standard{
-  display:none!important;
-  width:42px!important;
-  height:42px!important;
-  border:1px solid rgba(213,179,101,.36)!important;
-  background:transparent!important;
-  cursor:pointer!important;
-}
-.nav-toggle-standard span{
-  display:block!important;
-  width:20px!important;
-  height:2px!important;
-  margin:5px auto!important;
-  background:#f4eee5!important;
-}
-@media (max-width:1040px){
-  body::before{height:64px}
-  .site-nav-standard{height:64px!important}
-  .nav-toggle-standard{display:block!important}
-  .nav-links-standard{
-    position:fixed!important;
-    top:64px!important;
-    left:0!important;
-    right:0!important;
-    display:none!important;
-    flex-direction:column!important;
-    align-items:flex-start!important;
-    gap:0!important;
-    padding:18px 24px 24px!important;
-    background:rgba(14,12,9,.98)!important;
-    border-bottom:1px solid rgba(185,138,59,.22)!important;
-  }
-  .site-nav-standard.is-open .nav-links-standard{
-    display:flex!important;
-  }
-  .nav-links-standard a{
-    width:100%!important;
-    padding:14px 0!important;
-  }
-  .nav-shop-standard{
-    width:auto!important;
-    margin-top:8px!important;
-    padding:13px 18px!important;
-  }
-}
-
 </style>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {"@type":"Person","@id":"https://dsproul.com/#dan-sproul","name":"Dan Sproul","url":"https://dsproul.com","jobTitle":"Fine Art Photographer and Artist","homeLocation":{"@type":"Place","name":"Lima, Ohio"}},
+    {"@type":"Organization","@id":"https://dsproul.com/#organization","name":"Dan Sproul Fine Art Photography","url":"https://dsproul.com","founder":{"@id":"https://dsproul.com/#dan-sproul"}},
+    {"@type":"WebSite","@id":"https://dsproul.com/#website","url":"https://dsproul.com","name":"Dan Sproul Fine Art Photography","publisher":{"@id":"https://dsproul.com/#organization"}},
+    {"@type":["WebPage","CollectionPage"],"@id":"https://dsproul.com/winter-stillness.html#webpage","url":"https://dsproul.com/winter-stillness.html","name":"Winter Stillness | Winter Photography for Calm Interiors","description":"Curated winter fine art photography for bedrooms, boutique lodges, wellness spaces, healthcare corridors, executive offices, and restorative residential interiors.","isPartOf":{"@id":"https://dsproul.com/#website"},"author":{"@id":"https://dsproul.com/#dan-sproul"},"publisher":{"@id":"https://dsproul.com/#organization"},"breadcrumb":{"@id":"https://dsproul.com/winter-stillness.html#breadcrumb"},"primaryImageOfPage":{"@id":"https://dsproul.com/winter stillness living room mockup.jpg#image"}},
+    {"@type":"BreadcrumbList","@id":"https://dsproul.com/winter-stillness.html#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://dsproul.com/"},{"@type":"ListItem","position":2,"name":"Collections","item":"https://dsproul.com/art-collections.html"},{"@type":"ListItem","position":3,"name":"Winter Stillness","item":"https://dsproul.com/winter-stillness.html"}]},
+    {"@type":"ImageObject","@id":"https://dsproul.com/winter stillness living room mockup.jpg#image","contentUrl":"https://dsproul.com/winter stillness living room mockup.jpg","name":"Winter Stillness living room artwork mockup by Dan Sproul","description":"Winter fine art photography shown in a quiet residential living room interior.","creator":{"@id":"https://dsproul.com/#dan-sproul"}},
+    {"@type":"FAQPage","@id":"https://dsproul.com/winter-stillness.html#faq","mainEntity":[
+      {"@type":"Question","name":"What interiors work best with winter photography?","acceptedAnswer":{"@type":"Answer","text":"Winter photography works well in bedrooms, boutique lodges, spa spaces, executive offices, healthcare corridors, wellness rooms, cabins, and quiet residential interiors."}},
+      {"@type":"Question","name":"Is winter wall art too seasonal?","acceptedAnswer":{"@type":"Answer","text":"Not when the imagery is curated around stillness, tonal restraint, quiet forests, monochrome landscapes, and soft atmosphere rather than holiday or decorative winter themes."}},
+      {"@type":"Question","name":"Does black and white winter artwork work in bedrooms?","acceptedAnswer":{"@type":"Answer","text":"Yes. Black and white winter photography can create a calm, minimal, low-distraction focal point for bedrooms and quiet residential interiors."}},
+      {"@type":"Question","name":"What size winter print works above a bed?","acceptedAnswer":{"@type":"Answer","text":"Horizontal winter prints often work well at 30x40, 36x48, or larger above beds, depending on wall width, headboard height, and room scale."}},
+      {"@type":"Question","name":"Can designers request a winter artwork mockup?","acceptedAnswer":{"@type":"Answer","text":"Yes. Designers, homeowners, and commercial buyers can send room photos, wall dimensions, or project direction for winter artwork recommendations and mockup guidance."}}
+    ]}
+  ]
+}
+</script>
 </head>
 
 <body>
-
 <nav class="site-nav-standard" aria-label="Primary navigation">
   <a href="index.html" class="nav-logo-standard" aria-label="Dan Sproul Fine Art Photography home">
     <span class="nav-logo-name-standard">Dan Sproul</span>
     <span class="nav-logo-sub-standard">Fine Art Photography</span>
   </a>
-
   <button class="nav-toggle-standard" aria-label="Open navigation menu" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
-
   <div class="nav-links-standard">
     <a href="index.html">Home</a>
     <a href="best-sellers.html">Best Sellers</a>
@@ -523,249 +183,248 @@ body::before{
 </nav>
 
 <main>
-    <section class="hero">
-        <div class="hero-image"></div>
+  <section class="hero">
+    <div class="hero-image"></div>
+    <div class="container hero-content">
+      <div class="breadcrumbs"><a href="index.html">Home</a> / <a href="art-collections.html">Collections</a> / Winter Stillness</div>
+      <div class="kicker">Atmospheric Winter Collection</div>
+      <h1>Winter Stillness</h1>
+      <p>Curated winter fine art photography for bedrooms, boutique lodges, wellness spaces, executive offices, healthcare corridors, and calm residential interiors.</p>
+      <div class="button-row">
+        <a href="#collection" class="primary-btn">Explore Collection</a>
+        <a href="#choose" class="secondary-btn">How To Choose</a>
+      </div>
+    </div>
+  </section>
 
-        <div class="container hero-content">
-            <div class="kicker">Atmospheric Winter Collection</div>
-            <h1>Winter Stillness</h1>
-            <p>
-                Curated winter fine art photography designed for boutique hospitality, wellness environments, luxury residential interiors, executive offices, and restorative architectural spaces.
-            </p>
-
-            <div class="button-row">
-                <a href="#collection" class="primary-btn">Explore Collection</a>
-                <a href="#spec-sheet" class="secondary-btn">View Spec Sheet</a>
-            </div>
+  <section class="section">
+    <div class="container intro-grid">
+      <div class="section-heading">
+        <div class="kicker">Quiet Winter Artwork</div>
+        <h2>Winter imagery selected for softness, restraint, and interior calm.</h2>
+      </div>
+      <div class="intro-copy">
+        <p>Winter artwork can easily become too cold or seasonal if it is chosen only for snow. Winter Stillness is curated around softness, quiet structure, minimal visual noise, and tonal restraint so the work can feel appropriate year-round inside calm interiors.</p>
+        <p>Snow-covered forests, monochrome wildlife, winter paths, soft botanical details, and quiet mountain landscapes work especially well in spaces where the goal is rest, focus, or emotional decompression rather than bright decoration.</p>
+        <div class="note-box">
+          <p>Dan’s Note: I think winter photographs work best when they feel quiet rather than harsh. The strongest pieces in this collection are not just about snow — they are about pause, softness, silence, and visual breathing room.</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section class="section" id="collection">
-        <div class="container">
-            <div class="section-heading">
-                <div class="kicker">Featured Environments</div>
-                <h2>Winter imagery designed to shape atmosphere.</h2>
-                <p>
-                    Snow-covered forests, monochrome mountain landscapes, quiet wildlife, and soft seasonal textures curated for calm architectural interiors.
-                </p>
-            </div>
+  <section class="section" id="collection">
+    <div class="container">
+      <div class="section-heading center">
+        <div class="kicker">Featured Environments</div>
+        <h2>Winter imagery designed to shape atmosphere.</h2>
+        <p>Six current interior examples show how this collection can work across residential, hospitality, wellness, healthcare, and executive spaces. Additional mockups can be added below this section when ready.</p>
+      </div>
 
-            <div class="gallery-grid">
-                <a class="gallery-card" href="https://dansproul.com/featured/gentle-winter-snowflakes-dan-sproul.html">
-                    <img src="winter stillness living room mockup.jpg" alt="Winter Stillness Living Room Mockup">
-                    <div class="card-content">
-                        <h3>Quiet Residential</h3>
-                        <p>Soft winter botanical photography for refined residential interiors and quiet luxury living rooms.</p>
-                    </div>
-                </a>
+      <div class="gallery-grid">
+        <button class="gallery-card" type="button" data-modal-title="Quiet Residential" data-modal-desc="Soft winter botanical photography for refined residential interiors and quiet luxury living rooms." data-modal-img="winter stillness living room mockup.jpg" data-purchase="https://dansproul.com/featured/gentle-winter-snowflakes-dan-sproul.html">
+          <img src="winter stillness living room mockup.jpg" alt="Winter Stillness living room mockup with soft winter botanical photography by Dan Sproul" loading="lazy" decoding="async">
+          <div class="card-content">
+            <h3>Quiet Residential</h3>
+            <p>Soft winter botanical photography for refined residential interiors and quiet luxury living rooms.</p>
+            <span class="mini-link">Enlarge mockup →</span>
+          </div>
+        </button>
 
-                <a class="gallery-card" href="https://dansproul.com/featured/black-and-white-winter-deer-dan-sproul.html">
-                    <img src="winter stillness lodge lobby mockup.jpg" alt="Winter Stillness Lodge Lobby Mockup">
-                    <div class="card-content">
-                        <h3>Boutique Lodge</h3>
-                        <p>Wildlife-focused winter imagery curated for boutique hospitality, cabins, and retreat environments.</p>
-                    </div>
-                </a>
+        <button class="gallery-card" type="button" data-modal-title="Boutique Lodge" data-modal-desc="Wildlife-focused winter imagery curated for boutique hospitality, cabins, and retreat environments." data-modal-img="winter stillness lodge lobby mockup.jpg" data-purchase="https://dansproul.com/featured/black-and-white-winter-deer-dan-sproul.html">
+          <img src="winter stillness lodge lobby mockup.jpg" alt="Winter deer photography in boutique lodge lobby mockup by Dan Sproul" loading="lazy" decoding="async">
+          <div class="card-content">
+            <h3>Boutique Lodge</h3>
+            <p>Wildlife-focused winter imagery curated for boutique hospitality, cabins, and retreat environments.</p>
+            <span class="mini-link">Enlarge mockup →</span>
+          </div>
+        </button>
 
-                <a class="gallery-card" href="https://dansproul.com/featured/black-and-white-fence-in-snow-dan-sproul.html">
-                    <img src="winter stillness hospitality room mockup.jpg" alt="Winter Stillness Hospitality Room Mockup">
-                    <div class="card-content">
-                        <h3>Hospitality Suites</h3>
-                        <p>Minimal monochrome winter artwork for upscale hospitality rooms and restorative guest spaces.</p>
-                    </div>
-                </a>
+        <button class="gallery-card" type="button" data-modal-title="Hospitality Suites" data-modal-desc="Minimal monochrome winter artwork for upscale hospitality rooms and restorative guest spaces." data-modal-img="winter stillness hospitality room mockup.jpg" data-purchase="https://dansproul.com/featured/black-and-white-fence-in-snow-dan-sproul.html">
+          <img src="winter stillness hospitality room mockup.jpg" alt="Black and white winter fence photography in hospitality guest room mockup by Dan Sproul" loading="lazy" decoding="async">
+          <div class="card-content">
+            <h3>Hospitality Suites</h3>
+            <p>Minimal monochrome winter artwork for upscale hospitality rooms and restorative guest spaces.</p>
+            <span class="mini-link">Enlarge mockup →</span>
+          </div>
+        </button>
 
-                <a class="gallery-card" href="https://dansproul.com/featured/beautiful-winter-path-in-the-forest-dan-sproul.html">
-                    <img src="winter stillness bedroom mockup.jpg" alt="Winter Stillness Bedroom Mockup">
-                    <div class="card-content">
-                        <h3>Residential Bedrooms</h3>
-                        <p>Quiet winter forest photography designed for calm residential and wellness-oriented interiors.</p>
-                    </div>
-                </a>
+        <button class="gallery-card" type="button" data-modal-title="Residential Bedrooms" data-modal-desc="Quiet winter forest photography designed for calm residential and wellness-oriented interiors." data-modal-img="winter stillness bedroom mockup.jpg" data-purchase="https://dansproul.com/featured/beautiful-winter-path-in-the-forest-dan-sproul.html">
+          <img src="winter stillness bedroom mockup.jpg" alt="Winter forest path photography in calm bedroom mockup by Dan Sproul" loading="lazy" decoding="async">
+          <div class="card-content">
+            <h3>Residential Bedrooms</h3>
+            <p>Quiet winter forest photography designed for calm residential and wellness-oriented interiors.</p>
+            <span class="mini-link">Enlarge mockup →</span>
+          </div>
+        </button>
 
-                <a class="gallery-card" href="https://dansproul.com/featured/winter-dawn-dan-sproul.html">
-                    <img src="winter stillness hospitality corridor mockup.jpg" alt="Winter Stillness Corridor Mockup">
-                    <div class="card-content">
-                        <h3>Healthcare & Wellness</h3>
-                        <p>Restorative monochrome winter imagery for healthcare corridors, spas, and wellness spaces.</p>
-                    </div>
-                </a>
+        <button class="gallery-card" type="button" data-modal-title="Healthcare & Wellness" data-modal-desc="Restorative monochrome winter imagery for healthcare corridors, spas, and wellness spaces." data-modal-img="winter stillness hospitality corridor mockup.jpg" data-purchase="https://dansproul.com/featured/winter-dawn-dan-sproul.html">
+          <img src="winter stillness hospitality corridor mockup.jpg" alt="Winter dawn monochrome artwork in hospitality or healthcare corridor mockup by Dan Sproul" loading="lazy" decoding="async">
+          <div class="card-content">
+            <h3>Healthcare & Wellness</h3>
+            <p>Restorative monochrome winter imagery for healthcare corridors, spas, and wellness spaces.</p>
+            <span class="mini-link">Enlarge mockup →</span>
+          </div>
+        </button>
 
-                <a class="gallery-card" href="https://dansproul.com/featured/winter-in-denali-national-park-monochrome-dan-sproul.html">
-                    <img src="winter stillness office mockup.jpg" alt="Winter Stillness Office Mockup">
-                    <div class="card-content">
-                        <h3>Executive Interiors</h3>
-                        <p>Large-format monochrome mountain photography for executive offices and architectural boardrooms.</p>
-                    </div>
-                </a>
-            </div>
+        <button class="gallery-card" type="button" data-modal-title="Executive Interiors" data-modal-desc="Large-format monochrome mountain photography for executive offices and architectural boardrooms." data-modal-img="winter stillness office mockup.jpg" data-purchase="https://dansproul.com/featured/winter-in-denali-national-park-monochrome-dan-sproul.html">
+          <img src="winter stillness office mockup.jpg" alt="Winter Denali black and white mountain photography in executive office mockup by Dan Sproul" loading="lazy" decoding="async">
+          <div class="card-content">
+            <h3>Executive Interiors</h3>
+            <p>Large-format monochrome mountain photography for executive offices and architectural boardrooms.</p>
+            <span class="mini-link">Enlarge mockup →</span>
+          </div>
+        </button>
+
+        <button class="gallery-card" type="button" data-modal-title="Frozen Waterfall Interior" data-modal-desc="Blue-toned frozen waterfall artwork for warm neutral living rooms, winter cabins, and quiet residential spaces." data-modal-img="winter-stillness-frozen-waterfall-residential.png" data-purchase="">
+          <img src="winter-stillness-frozen-waterfall-residential.png" alt="Frozen waterfall winter photography in warm residential interior mockup by Dan Sproul" loading="lazy" decoding="async">
+          <div class="card-content">
+            <h3>Frozen Waterfall Interior</h3>
+            <p>Blue-toned frozen waterfall artwork for warm neutral living rooms, winter cabins, and quiet residential spaces.</p>
+            <span class="mini-link">Enlarge mockup →</span>
+          </div>
+        </button>
+
+        <button class="gallery-card" type="button" data-modal-title="Snow Mountain Living Room" data-modal-desc="Black and white snow-covered mountain photography for winter lodge interiors and quiet residential rooms." data-modal-img="winter-stillness-rainier-snow-residential.png" data-purchase="">
+          <img src="winter-stillness-rainier-snow-residential.png" alt="Black and white snow mountain photography in residential winter living room mockup by Dan Sproul" loading="lazy" decoding="async">
+          <div class="card-content">
+            <h3>Snow Mountain Living Room</h3>
+            <p>Black and white snow-covered mountain photography for winter lodge interiors and quiet residential rooms.</p>
+            <span class="mini-link">Enlarge mockup →</span>
+          </div>
+        </button>
+
+        <button class="gallery-card" type="button" data-modal-title="Winter River Reading Space" data-modal-desc="Vertical winter river photography for reading corners, bedrooms, spa-like spaces, and softly lit residential interiors." data-modal-img="winter-stillness-mockup-residential-river.png" data-purchase="">
+          <img src="winter-stillness-mockup-residential-river.png" alt="Vertical winter river photography in cozy residential reading space mockup by Dan Sproul" loading="lazy" decoding="async">
+          <div class="card-content">
+            <h3>Winter River Reading Space</h3>
+            <p>Vertical winter river photography for reading corners, bedrooms, spa-like spaces, and softly lit residential interiors.</p>
+            <span class="mini-link">Enlarge mockup →</span>
+          </div>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section environment-section" id="where-it-works">
+    <div class="container">
+      <div class="section-heading center">
+        <div class="kicker">Where Winter Stillness Works Best</div>
+        <h2>Calm applications for residential, hospitality, wellness, and work spaces.</h2>
+        <p>Winter artwork is most successful when the room needs quiet rather than visual excitement.</p>
+      </div>
+      <div class="environment-grid">
+        <div class="guide-card"><h3>Bedrooms</h3><p>Soft snow, quiet paths, winter botanicals, and low-contrast black-and-white images help bedrooms feel restful and uncluttered.</p></div>
+        <div class="guide-card"><h3>Boutique Lodges</h3><p>Winter forests, wildlife, and mountain landscapes bring seasonal identity into lodge interiors without becoming novelty decor.</p></div>
+        <div class="guide-card"><h3>Spa & Wellness Spaces</h3><p>Quiet winter imagery supports slower environments where stillness, breath, and decompression are part of the experience.</p></div>
+        <div class="guide-card"><h3>Winter Cabins</h3><p>Snow scenes and monochrome textures pair naturally with wood, stone, linen, wool, leather, and warm neutral finishes.</p></div>
+        <div class="guide-card"><h3>Executive Offices</h3><p>Black-and-white mountain and forest images add structure and refinement while keeping the atmosphere low-distraction.</p></div>
+        <div class="guide-card"><h3>Healthcare Corridors</h3><p>Subtle winter landscapes can create visual pause in transitional spaces, especially when color and contrast are restrained.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark-section" id="choose">
+    <div class="container guide-grid">
+      <div class="section-heading">
+        <div class="kicker">How To Choose Winter Artwork</div>
+        <h2>Use winter photography by mood, room function, and wall scale.</h2>
+        <p>These guidelines help homeowners, designers, and commercial buyers choose winter imagery that feels intentional rather than seasonal.</p>
+      </div>
+      <div class="choose-list">
+        <div class="choose-item"><strong>Black & white winter prints</strong><span>Best for calm, minimal rooms, offices, corridors, and spaces that need quiet structure.</span></div>
+        <div class="choose-item"><strong>Snowy forest scenes</strong><span>Strong for bedrooms, wellness spaces, cabins, and rooms where softness matters more than drama.</span></div>
+        <div class="choose-item"><strong>Mountain winter artwork</strong><span>Useful for lodges, executive offices, hospitality interiors, and larger architectural walls.</span></div>
+        <div class="choose-item"><strong>Horizontal winter pieces</strong><span>Ideal above beds, sofas, headboards, consoles, and fireplaces where calm width is needed.</span></div>
+        <div class="choose-item"><strong>Vertical winter prints</strong><span>Good for entryways, narrow walls, reading corners, and small rooms that need height.</span></div>
+        <div class="choose-item"><strong>Soft botanical winter details</strong><span>A gentler choice for residential spaces, quiet luxury rooms, and intimate wellness settings.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section spec-section" id="spec-sheet">
+    <div class="container spec-grid">
+      <div class="spec-text section-heading">
+        <div class="kicker">Designer Resources</div>
+        <h2>Download the Winter Stillness Spec Sheet</h2>
+        <p>Includes collection direction, environment positioning, mockup examples, and presentation-ready artwork applications for hospitality, wellness, executive, and residential projects.</p>
+        <div class="button-row">
+          <a href="Winter_Stillness_Spec_Sheet.pdf" class="primary-btn" target="_blank" rel="noopener">Download PDF</a>
+          <a href="mailto:sproulphoto@gmail.com?subject=Winter%20Stillness%20Mockup%20Request" class="secondary-btn">Request Mockup</a>
         </div>
-    </section>
+      </div>
+      <div class="spec-preview">
+        <a href="Winter_Stillness_Spec_Sheet.pdf" target="_blank" rel="noopener">
+          <img src="Winter_Stillness_Spec_Sheet-1.jpg" alt="Winter Stillness Spec Sheet Preview">
+        </a>
+      </div>
+    </div>
+  </section>
 
-    <section class="section spec-section" id="spec-sheet">
-        <div class="container spec-grid">
-            <div class="spec-text section-heading">
-                <div class="kicker">Designer Resources</div>
-                <h2>Download the Winter Stillness Spec Sheet</h2>
-                <p>
-                    Includes collection direction, environment positioning, mockup examples, and presentation-ready artwork applications for hospitality, wellness, executive, and residential projects.
-                </p>
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-heading center">
+        <div class="kicker">Winter Artwork FAQ</div>
+        <h2>Common questions about winter photography in interiors.</h2>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item"><h3>What interiors work best with winter photography?</h3><p>Bedrooms, boutique lodges, spa spaces, winter cabins, executive offices, healthcare corridors, wellness rooms, and quiet residential interiors.</p></div>
+        <div class="faq-item"><h3>Is winter wall art too seasonal?</h3><p>It can be if the image feels holiday-specific. This collection focuses on stillness, tone, forests, monochrome landscapes, and softness so the work can feel appropriate year-round.</p></div>
+        <div class="faq-item"><h3>Does black and white winter artwork work in bedrooms?</h3><p>Yes. Black-and-white winter photography is often one of the strongest choices for bedrooms because it feels calm, minimal, and low-distraction.</p></div>
+        <div class="faq-item"><h3>What size winter print works above a bed?</h3><p>Many bedrooms work well with horizontal winter prints around 30×40, 36×48, or larger depending on wall width and headboard scale.</p></div>
+        <div class="faq-item"><h3>Can designers request a winter artwork mockup?</h3><p>Yes. Designers and homeowners can send a room photo, wall dimensions, or project direction for artwork placement guidance.</p></div>
+        <div class="faq-item"><h3>What formats work best for winter imagery?</h3><p>Framed fine art paper works well for refined spaces, canvas adds warmth, and metal or acrylic can strengthen crisp monochrome landscapes.</p></div>
+      </div>
+    </div>
+  </section>
 
-                <div class="button-row">
-                    <a href="Winter_Stillness_Spec_Sheet.pdf" class="primary-btn" target="_blank" rel="noopener">Download PDF</a>
-                    <a href="mailto:sproulphoto@gmail.com" class="secondary-btn">Request Mockup</a>
-                </div>
-            </div>
+  <section class="section collections-section">
+    <div class="container">
+      <div class="section-heading center">
+        <div class="kicker">Explore More Collections</div>
+        <h2>Continue through the atmospheric collection system.</h2>
+      </div>
+      <div class="related-links">
+        <a href="monochrome-stillness.html" style="background-image:url('consultation space mockup.jpg');"><span>Monochrome Stillness</span></a>
+        <a href="quiet-earth-collection.html" style="background-image:url('quiet-earth-collection-preview.jpg');"><span>Quiet Earth</span></a>
+        <a href="healthcare-artwork.html" style="background-image:url('healthcare waiting room black and white landscape mockup.jpg');"><span>Healthcare Artwork</span></a>
+        <a href="hospitality-artwork.html" style="background-image:url('hospital corridor waterfall mockup dan sproul.jpg');"><span>Hospitality Artwork</span></a>
+        <a href="mountain-light-collection.html" style="background-image:url('mountain-light-entryway.jpg');"><span>Mountain Light</span></a>
+        <a href="for-designers.html" style="background-image:url('winter stillness room mockup.jpg');"><span>For Designers</span></a>
+      </div>
+    </div>
+  </section>
 
-            <div class="spec-preview">
-                <a href="Winter_Stillness_Spec_Sheet.pdf" target="_blank" rel="noopener">
-                    <img src="Winter_Stillness_Spec_Sheet-1.jpg" alt="Winter Stillness Spec Sheet Preview">
-                </a>
-            </div>
-        </div>
-    </section>
+<section class="winter-positioning">
+    <h2>More Than Winter Landscape Photography</h2>
+    <p>
+        Winter Stillness is designed around calm, restorative interiors and atmospheric nature photography.
+        These pieces work especially well in quiet luxury homes, mountain lodge interiors, wellness-inspired spaces,
+        boutique hospitality environments, and modern residential design focused on warmth, texture, and visual calm.
+    </p>
 
-    <section class="section collections-section">
-        <div class="container">
-            <div class="section-heading">
-                <div class="kicker">Explore More Collections</div>
-                <h2>Continue through the atmospheric collection system.</h2>
-            </div>
+    <p>
+        The collection blends monochrome winter landscapes, frozen waterfalls, snowy forests, mountain scenes,
+        and contemplative natural textures into artwork that feels timeless rather than seasonal. The goal is not
+        simply winter photography prints, but emotionally grounded artwork that creates stillness within a room.
+    </p>
+</section>
 
-            <div class="related-links">
-                <a href="monochrome-stillness.html" style="background-image:url('consultation space mockup.jpg');">
-                    <span>Monochrome Stillness</span>
-                </a>
-
-                <a href="for-designers.html" style="background-image:url('winter stillness room mockup.jpg');">
-                    <span>For Designers</span>
-                </a>
-
-                <a href="quiet-earth-collection.html" style="background-image:url('quiet-earth-collection-preview.jpg');">
-                    <span>Quiet Earth</span>
-                </a>
-
-                <a href="mountain-light-collection.html" style="background-image:url('mountain-light-entryway.jpg');">
-                    <span>Mountain Light</span>
-                </a>
-            </div>
-        </div>
-    </section>
 </main>
-
-<style>
-.related-grid{
-  display:grid;
-  grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:24px;
-}
-
-.image-card{
-  position:relative;
-  overflow:hidden;
-  min-height:420px;
-  border:1px solid rgba(255,255,255,0.08);
-  background:#111;
-}
-
-.image-card img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
-  transition:transform .5s ease;
-}
-
-.image-card:hover img{
-  transform:scale(1.03);
-}
-
-.related-overlay{
-  position:absolute;
-  inset:auto 0 0 0;
-  padding:34px;
-  background:linear-gradient(to top, rgba(0,0,0,.82), rgba(0,0,0,0));
-  color:white;
-}
-
-.related-overlay span{
-  display:block;
-  font-size:.7rem;
-  letter-spacing:.18em;
-  text-transform:uppercase;
-  margin-bottom:10px;
-  opacity:.8;
-}
-
-.related-overlay h3{
-  margin:0;
-  font-size:2rem;
-  font-weight:400;
-}
-
-.footer-seo {
-  background: #100e0b;
-  padding: 62px clamp(22px, 6vw, 76px) 36px;
-  border-top: 1px solid rgba(185, 138, 59, .22);
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 28px;
-  max-width: 1380px;
-  margin: 0 auto;
-}
-
-.footer-grid h3 {
-  margin-bottom: 13px;
-  color: #d5b365;
-  font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: 21px;
-  font-weight: 400;
-}
-
-.footer-grid a {
-  display: block;
-  text-decoration: none;
-  color: rgba(244, 238, 229, .62);
-  font-size: 13px;
-  line-height: 2;
-}
-
-.footer-grid a:hover {
-  color: #f4eee5;
-}
-
-.footer-bottom {
-  max-width: 1380px;
-  margin: 40px auto 0;
-  padding-top: 28px;
-  border-top: 1px solid rgba(185, 138, 59, .22);
-  color: rgba(244, 238, 229, .32);
-  font-size: 10px;
-  letter-spacing: .18em;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-@media(max-width:900px){
-
-  .related-grid{
-    grid-template-columns:1fr;
-  }
-
-  .image-card{
-    min-height:320px;
-  }
-
-  .footer-grid{
-    grid-template-columns:1fr;
-  }
-
-}
-</style>
-
+<div class="mockup-modal" id="mockupModal" aria-hidden="true" role="dialog" aria-label="Artwork mockup preview">
+  <button class="mockup-close" type="button" aria-label="Close preview">×</button>
+  <div class="mockup-modal-card" role="document">
+    <img id="mockupModalImg" src="" alt="">
+    <div class="mockup-modal-copy">
+      <h3 id="mockupModalTitle"></h3>
+      <p id="mockupModalDesc"></p>
+      <div class="mockup-modal-actions">
+        <a id="mockupPurchaseBtn" href="#" target="_blank" rel="noopener">Purchase Print</a>
+        <button class="mockup-close-inline" type="button">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div class="footer-seo" id="contact">
   <div class="footer-grid">
@@ -777,7 +436,6 @@ body::before{
       <a href="https://dansproul.com/art/dining+room">Dining Room Art</a>
       <a href="https://dansproul.com/art/wellness">Wellness Space Prints</a>
     </div>
-
     <div>
       <h3>Shop By Subject</h3>
       <a href="https://dansproul.com/art/mountains">Mountain Prints</a>
@@ -786,40 +444,36 @@ body::before{
       <a href="https://dansproul.com/art/waterfalls">Waterfall Prints</a>
       <a href="https://dansproul.com/art/wildlife">Wildlife Prints</a>
     </div>
-
     <div>
       <h3>Shop By Mood</h3>
       <a href="quiet-earth-collection.html">Quiet Earth Collection</a>
       <a href="monochrome-stillness.html">Black &amp; White Prints</a>
-      <a href="https://dansproul.com/art/autumn">Warm Autumn Light</a>
+      <a href="winter-stillness.html">Winter Stillness</a>
       <a href="https://dansproul.com/art/fog">Fog &amp; Mist Photography</a>
       <a href="https://dansproul.com/art/calm">Calming Nature Prints</a>
     </div>
-
     <div>
       <h3>Shop By Location</h3>
+      <a href="ohio-nature-photography-prints.html">Ohio Nature Photography</a>
       <a href="alaska-photography-prints.html">Alaska Prints</a>
       <a href="colorado-photography-prints.html">Colorado Wall Art</a>
       <a href="oregon-coast-photography-prints.html">Oregon Coast Prints</a>
       <a href="smoky-mountains-photography-prints.html">Smoky Mountains Art</a>
-      <a href="https://dansproul.com/art/badlands">Badlands Wildlife Prints</a>
     </div>
-
     <div>
       <h3>More Collections</h3>
-      <a href="https://dansproul.com/collections/best+sellers+and+designer+favorite+wall+art">Best Sellers</a>
+      <a href="best-sellers.html">Best Sellers</a>
       <a href="art-collections.html">Curated Photography Collections</a>
       <a href="for-designers.html">For Interior Designers</a>
       <a href="coastal-atmosphere.html">Coastal Atmosphere</a>
       <a href="wellness-waters-collection.html">Wellness Waters</a>
+      <a href="mailto:sproulphoto@gmail.com">Email Dan</a>
     </div>
   </div>
-
   <footer class="footer-bottom">
     © 2026 Dan Sproul Fine Art Photography · Lima, Ohio · Prints ship worldwide
   </footer>
 </div>
-
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
@@ -831,9 +485,50 @@ document.addEventListener('DOMContentLoaded', function () {
       toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     });
   }
+
+  var modal = document.getElementById('mockupModal');
+  var modalImg = document.getElementById('mockupModalImg');
+  var modalTitle = document.getElementById('mockupModalTitle');
+  var modalDesc = document.getElementById('mockupModalDesc');
+  var purchaseBtn = document.getElementById('mockupPurchaseBtn');
+  var closeButtons = document.querySelectorAll('.mockup-close, .mockup-close-inline');
+
+  function openModal(card) {
+    var img = card.getAttribute('data-modal-img') || '';
+    var title = card.getAttribute('data-modal-title') || '';
+    var desc = card.getAttribute('data-modal-desc') || '';
+    var purchase = card.getAttribute('data-purchase') || '';
+    modalImg.src = img;
+    modalImg.alt = title + ' mockup preview';
+    modalTitle.textContent = title;
+    modalDesc.textContent = desc;
+    if (purchase) {
+      purchaseBtn.href = purchase;
+      purchaseBtn.classList.remove('is-hidden');
+    } else {
+      purchaseBtn.href = '#';
+      purchaseBtn.classList.add('is-hidden');
+    }
+    modal.classList.add('is-open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    modalImg.src = '';
+  }
+
+  document.querySelectorAll('.gallery-card[data-modal-img]').forEach(function(card){
+    card.addEventListener('click', function(){ openModal(card); });
+  });
+  closeButtons.forEach(function(button){ button.addEventListener('click', closeModal); });
+  modal.addEventListener('click', function(event){ if (event.target === modal) closeModal(); });
+  document.addEventListener('keydown', function(event){ if (event.key === 'Escape' && modal.classList.contains('is-open')) closeModal(); });
 });
 </script>
 
 </body>
 </html>
-
