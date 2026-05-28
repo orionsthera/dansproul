@@ -177,6 +177,152 @@ h3{font-size:30px;letter-spacing:-.03em}
 .mockup-card img,.gallery-item img,.spec-mockups img{height:auto}
 h1{font-size:54px}
 }
+
+/* Healthcare Spec Sheet Download Section */
+.healthcare-spec-resource{
+  background:#15110d;
+  color:#f4efe6;
+  padding:clamp(76px,9vw,118px) 7vw;
+  border-top:1px solid rgba(199,155,85,.24);
+  border-bottom:1px solid rgba(199,155,85,.24);
+}
+.healthcare-spec-resource .spec-resource-inner{
+  max-width:1180px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:.92fr 1.08fr;
+  gap:clamp(38px,6vw,76px);
+  align-items:center;
+}
+.healthcare-spec-resource .eyebrow{
+  margin:0 0 16px;
+  color:#c79b55;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.28em;
+  text-transform:uppercase;
+}
+.healthcare-spec-resource h2{
+  margin:0;
+  max-width:620px;
+  color:#f4efe6;
+  font-family:Georgia,'Times New Roman',serif;
+  font-size:clamp(42px,5.6vw,78px);
+  font-weight:400;
+  line-height:.95;
+  letter-spacing:-.045em;
+}
+.healthcare-spec-resource p{
+  max-width:600px;
+  margin:24px 0 0;
+  color:#d3c7b7;
+  font-size:16px;
+  line-height:1.75;
+}
+.spec-resource-actions{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+  margin-top:32px;
+}
+.spec-resource-actions a{
+  display:inline-block;
+  text-decoration:none;
+  padding:14px 22px;
+  border:1px solid rgba(199,155,85,.75);
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
+.spec-resource-actions .primary{
+  background:#c79b55;
+  color:#15110d;
+}
+.spec-resource-actions .secondary{
+  color:#f4efe6;
+}
+.spec-resource-meta{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+  margin-top:38px;
+}
+.spec-resource-meta div{
+  border:1px solid rgba(199,155,85,.22);
+  background:rgba(255,255,255,.035);
+  padding:18px;
+}
+.spec-resource-meta strong{
+  display:block;
+  margin-bottom:8px;
+  color:#c79b55;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:10px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
+.spec-resource-meta span{
+  color:#d3c7b7;
+  font-size:13px;
+  line-height:1.55;
+}
+.spec-preview-wrap{
+  position:relative;
+  max-width:520px;
+  margin-left:auto;
+}
+.spec-preview-wrap::before{
+  content:"";
+  position:absolute;
+  inset:24px -18px -18px 24px;
+  border:1px solid rgba(199,155,85,.25);
+  background:rgba(244,239,230,.05);
+  z-index:0;
+}
+.spec-preview-link{
+  position:relative;
+  z-index:1;
+  display:block;
+  background:#f1ede6;
+  padding:12px;
+  border:1px solid rgba(199,155,85,.38);
+  box-shadow:0 30px 80px rgba(0,0,0,.35);
+  transition:transform .25s ease,box-shadow .25s ease;
+}
+.spec-preview-link:hover{
+  transform:translateY(-5px);
+  box-shadow:0 38px 95px rgba(0,0,0,.48);
+}
+.spec-preview-link img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+.spec-preview-caption{
+  position:relative;
+  z-index:2;
+  margin-top:16px;
+  color:#b8aa96;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:11px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+@media(max-width:900px){
+  .healthcare-spec-resource .spec-resource-inner{
+    grid-template-columns:1fr;
+  }
+  .spec-preview-wrap{
+    margin-left:0;
+  }
+  .spec-resource-meta{
+    grid-template-columns:1fr;
+  }
+}
+
 </style>
 
 <script type="application/ld+json">
@@ -497,29 +643,49 @@ h1{font-size:54px}
   </div>
 </section>
 
-<section class="spec-download" id="spec-sheet">
-  <div class="spec-download-inner">
-    <div>
-      <p class="eyebrow">Healthcare Specification Help</p>
-      <h2>Practical sizing and format guidance with visual examples.</h2>
-      <p>Use these starting points when choosing scale, format, and visual tone for healthcare and wellness walls.</p>
-      <div class="btns"><a class="btn primary" href="mailto:sproulphoto@gmail.com?subject=Healthcare%20Artwork%20Project">Discuss a Project</a><a class="btn" href="for-designers.html">For Designers</a></div>
-    </div>
-    <div class="spec-download-box">
-      <h3>Helpful starting points</h3>
-      <ul>
-        <li><b>Waiting rooms:</b> 40x60 or larger horizontal pieces above seating or reception-adjacent walls.</li>
-        <li><b>Patient rooms:</b> 30x40 or 36x48 low-distraction artwork with softer tones.</li>
-        <li><b>Corridors:</b> 36x54, 40x60, 48x72, or panoramic formats for long sightlines.</li>
-        <li><b>Formats:</b> framed paper for refined interiors, acrylic or metal for cleaner contemporary spaces, canvas for warmer wellness rooms.</li>
-      </ul>
-      <div class="spec-mockups" style="margin-top:22px">
-        <img src="healthcare-corridor-mountain-island-sunrise-mockup.jpg" alt="Healthcare corridor artwork sizing example by Dan Sproul">
-        <img src="healthcare-patient-room-sanddune-steps-mockup.jpg" alt="Patient room artwork sizing example by Dan Sproul">
+
+<section class="healthcare-spec-resource" id="healthcare-spec-sheet">
+  <div class="spec-resource-inner">
+    <div class="spec-resource-copy">
+      <p class="eyebrow">Healthcare Specification Resource</p>
+      <h2>Download the healthcare artwork spec sheet.</h2>
+      <p>
+        A concise, designer-facing PDF for healthcare, wellness, and patient-centered interiors. 
+        It includes room-by-room artwork guidance, visual mockup examples, recommended formats, 
+        and project support details for waiting rooms, patient rooms, corridors, consultation spaces, 
+        and wellness clinics.
+      </p>
+
+      <div class="spec-resource-actions">
+        <a class="primary" href="DanSproul_HealthcareArtwork_SpecSheet.pdf" target="_blank" rel="noopener">View / Download PDF</a>
+        <a class="secondary" href="mailto:sproulphoto@gmail.com?subject=Healthcare%20Artwork%20Spec%20Sheet%20Request">Request Project Guidance</a>
       </div>
+
+      <div class="spec-resource-meta">
+        <div>
+          <strong>Built for</strong>
+          <span>Designers, facilities teams, wellness clinics, healthcare offices, and commercial buyers.</span>
+        </div>
+        <div>
+          <strong>Includes</strong>
+          <span>Patient room, waiting room, corridor, consultation, and format recommendations.</span>
+        </div>
+        <div>
+          <strong>Project ready</strong>
+          <span>Custom sizing, mockup guidance, coordinated artwork direction, and print options.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="spec-preview-wrap">
+      <a class="spec-preview-link" href="DanSproul_HealthcareArtwork_SpecSheet.pdf" target="_blank" rel="noopener" aria-label="Open Healthcare Artwork Spec Sheet PDF">
+        <img src="DanSproul_HealthcareArtwork_SpecSheet_Page1.jpg" alt="Preview of Dan Sproul Healthcare Artwork Spec Sheet PDF">
+      </a>
+      <div class="spec-preview-caption">Preview of downloadable healthcare artwork specification guide</div>
     </div>
   </div>
 </section>
+
 
 <section class="gallery-preview" id="curated-gallery">
   <div class="gallery-note">
