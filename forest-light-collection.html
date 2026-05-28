@@ -131,6 +131,86 @@ img{max-width:100%;height:auto}
 section{content-visibility:auto;contain-intrinsic-size:1px 900px}
 .hero,.site-header,nav{content-visibility:visible;contain-intrinsic-size:auto}
 
+
+/* FOREST LIGHT MOCKUP LIGHTBOX */
+.mockup-card{
+  position:relative;
+  cursor:pointer;
+}
+.mockup-card::after{
+  content:'Click to enlarge';
+  position:absolute;
+  right:14px;
+  bottom:14px;
+  background:rgba(0,0,0,.72);
+  color:#fff;
+  padding:8px 11px;
+  border:1px solid rgba(185,138,59,.28);
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.62rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  opacity:0;
+  transition:.25s ease;
+}
+.mockup-card:hover::after{
+  opacity:1;
+}
+.mockup-lightbox{
+  position:fixed;
+  inset:0;
+  z-index:999999;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:clamp(18px,4vw,46px);
+  background:rgba(0,0,0,.9);
+  backdrop-filter:blur(10px);
+}
+.mockup-lightbox.active{
+  display:flex;
+}
+.mockup-lightbox-inner{
+  width:min(92vw,1300px);
+}
+.mockup-lightbox-inner img{
+  width:100%;
+  max-height:82vh;
+  object-fit:contain;
+  background:#050505;
+  box-shadow:0 30px 90px rgba(0,0,0,.65);
+}
+.mockup-lightbox-actions{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  margin-top:16px;
+  flex-wrap:wrap;
+}
+.mockup-lightbox-actions button{
+  border:1px solid rgba(185,138,59,.4);
+  background:transparent;
+  color:#f4eee5;
+  padding:12px 18px;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.68rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  cursor:pointer;
+}
+.mockup-lightbox-close{
+  position:absolute;
+  top:18px;
+  right:22px;
+  width:46px;
+  height:46px;
+  border:1px solid rgba(255,255,255,.22);
+  background:rgba(255,255,255,.08);
+  color:#fff;
+  font-size:30px;
+  cursor:pointer;
+}
+
 </style>
 <script type="application/ld+json">
 {
@@ -562,13 +642,64 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
 </div>
 
 
+
 <script>
 (function(){
   const toggle=document.querySelector('.mobile-toggle');
   const nav=document.querySelector('.main-nav');
-  if(toggle && nav){toggle.addEventListener('click',()=>nav.classList.toggle('active'));}
+
+  if(toggle && nav){
+    toggle.addEventListener('click',()=>nav.classList.toggle('active'));
+  }
+
+  const lightbox = document.getElementById('mockupLightbox');
+  const lightboxImg = document.getElementById('mockupLightboxImg');
+
+  function closeLightbox(){
+    lightbox.classList.remove('active');
+    lightbox.setAttribute('aria-hidden','true');
+    document.body.style.overflow='';
+  }
+
+  document.querySelectorAll('.mockup-card img').forEach(function(img){
+    img.addEventListener('click', function(){
+      lightboxImg.src = img.getAttribute('src');
+      lightboxImg.alt = img.getAttribute('alt') || '';
+
+      lightbox.classList.add('active');
+      lightbox.setAttribute('aria-hidden','false');
+      document.body.style.overflow='hidden';
+    });
+  });
+
+  document.querySelector('.mockup-lightbox-close').addEventListener('click', closeLightbox);
+  document.getElementById('mockupLightboxCloseBtn').addEventListener('click', closeLightbox);
+
+  lightbox.addEventListener('click', function(e){
+    if(e.target === lightbox){
+      closeLightbox();
+    }
+  });
+
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && lightbox.classList.contains('active')){
+      closeLightbox();
+    }
+  });
+
 })();
 </script>
 
-</body></html>
 
+
+<div class="mockup-lightbox" id="mockupLightbox" aria-hidden="true">
+  <button class="mockup-lightbox-close" type="button">×</button>
+  <div class="mockup-lightbox-inner">
+    <img id="mockupLightboxImg" src="" alt="">
+    <div class="mockup-lightbox-actions">
+      <button id="mockupLightboxCloseBtn" type="button">Close</button>
+    </div>
+  </div>
+</div>
+
+</body></html>
