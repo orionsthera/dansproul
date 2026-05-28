@@ -128,20 +128,19 @@ footer{padding:45px 0;border-top:1px solid var(--line);color:#8f8679}
 
 /* IMAGE PERFORMANCE PASS */
 img{max-width:100%;height:auto}
-section{content-visibility:auto;contain-intrinsic-size:1px 900px}
-.hero,.site-header,nav{content-visibility:visible;contain-intrinsic-size:auto}
 
 
 /* FOREST LIGHT MOCKUP LIGHTBOX */
 .mockup-card{
   position:relative;
-  cursor:pointer;
+  cursor:zoom-in;
 }
 .mockup-card::after{
   content:'Click to enlarge';
   position:absolute;
   right:14px;
   bottom:14px;
+  z-index:2;
   background:rgba(0,0,0,.72);
   color:#fff;
   padding:8px 11px;
@@ -171,7 +170,8 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
   display:flex;
 }
 .mockup-lightbox-inner{
-  width:min(92vw,1300px);
+  width:min(94vw,1300px);
+  max-height:92vh;
 }
 .mockup-lightbox-inner img{
   width:100%;
@@ -644,56 +644,65 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
 
 
 <script>
-(function(){
-  const toggle=document.querySelector('.mobile-toggle');
-  const nav=document.querySelector('.main-nav');
-
-  if(toggle && nav){
-    toggle.addEventListener('click',()=>nav.classList.toggle('active'));
+document.addEventListener('DOMContentLoaded', function () {
+  const toggle = document.querySelector('.mobile-toggle');
+  const nav = document.querySelector('.main-nav');
+  if (toggle && nav) {
+    toggle.addEventListener('click', function () {
+      nav.classList.toggle('active');
+    });
   }
 
   const lightbox = document.getElementById('mockupLightbox');
   const lightboxImg = document.getElementById('mockupLightboxImg');
+  const closeTop = document.querySelector('.mockup-lightbox-close');
+  const closeBottom = document.getElementById('mockupLightboxCloseBtn');
 
-  function closeLightbox(){
-    lightbox.classList.remove('active');
-    lightbox.setAttribute('aria-hidden','true');
-    document.body.style.overflow='';
+  function openLightbox(img) {
+    if (!lightbox || !lightboxImg) return;
+    lightboxImg.src = img.getAttribute('src');
+    lightboxImg.alt = img.getAttribute('alt') || 'Forest Light artwork mockup';
+    lightbox.classList.add('active');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
   }
 
-  document.querySelectorAll('.mockup-card img').forEach(function(img){
-    img.addEventListener('click', function(){
-      lightboxImg.src = img.getAttribute('src');
-      lightboxImg.alt = img.getAttribute('alt') || '';
+  function closeLightbox() {
+    if (!lightbox || !lightboxImg) return;
+    lightbox.classList.remove('active');
+    lightbox.setAttribute('aria-hidden', 'true');
+    lightboxImg.src = '';
+    document.body.style.overflow = '';
+  }
 
-      lightbox.classList.add('active');
-      lightbox.setAttribute('aria-hidden','false');
-      document.body.style.overflow='hidden';
+  document.querySelectorAll('#mockups .mockup-card img, .designer-workflow .imgbox img').forEach(function (img) {
+    img.addEventListener('click', function (event) {
+      event.preventDefault();
+      openLightbox(img);
     });
   });
 
-  document.querySelector('.mockup-lightbox-close').addEventListener('click', closeLightbox);
-  document.getElementById('mockupLightboxCloseBtn').addEventListener('click', closeLightbox);
+  if (closeTop) closeTop.addEventListener('click', closeLightbox);
+  if (closeBottom) closeBottom.addEventListener('click', closeLightbox);
 
-  lightbox.addEventListener('click', function(e){
-    if(e.target === lightbox){
+  if (lightbox) {
+    lightbox.addEventListener('click', function (event) {
+      if (event.target === lightbox) closeLightbox();
+    });
+  }
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape' && lightbox && lightbox.classList.contains('active')) {
       closeLightbox();
     }
   });
-
-  document.addEventListener('keydown', function(e){
-    if(e.key === 'Escape' && lightbox.classList.contains('active')){
-      closeLightbox();
-    }
-  });
-
-})();
+});
 </script>
 
 
 
-<div class="mockup-lightbox" id="mockupLightbox" aria-hidden="true">
-  <button class="mockup-lightbox-close" type="button">×</button>
+<div class="mockup-lightbox" id="mockupLightbox" aria-hidden="true" role="dialog" aria-label="Forest Light mockup preview">
+  <button class="mockup-lightbox-close" type="button" aria-label="Close image">×</button>
   <div class="mockup-lightbox-inner">
     <img id="mockupLightboxImg" src="" alt="">
     <div class="mockup-lightbox-actions">
