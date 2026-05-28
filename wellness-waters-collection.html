@@ -413,6 +413,91 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
   }
 }
 
+
+/* WELLNESS WATERS LIGHTBOX */
+.mockup-image{
+  position:relative;
+  cursor:pointer;
+}
+.mockup-image::after{
+  content:'Click to enlarge';
+  position:absolute;
+  right:14px;
+  bottom:14px;
+  background:rgba(0,0,0,.72);
+  color:#fff;
+  padding:8px 11px;
+  border:1px solid rgba(185,138,59,.28);
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.62rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  opacity:0;
+  transition:.25s ease;
+}
+.mockup-image:hover::after{
+  opacity:1;
+}
+.mockup-lightbox{
+  position:fixed;
+  inset:0;
+  z-index:999999;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:clamp(18px,4vw,46px);
+  background:rgba(0,0,0,.9);
+  backdrop-filter:blur(10px);
+}
+.mockup-lightbox.active{
+  display:flex;
+}
+.mockup-lightbox-inner{
+  width:min(92vw,1200px);
+}
+.mockup-lightbox-inner img{
+  width:100%;
+  max-height:78vh;
+  object-fit:contain;
+  background:#050505;
+  box-shadow:0 30px 90px rgba(0,0,0,.65);
+}
+.mockup-lightbox-actions{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:16px;
+}
+.mockup-lightbox-actions a,
+.mockup-lightbox-actions button{
+  border:1px solid rgba(185,138,59,.4);
+  background:transparent;
+  color:#f4eee5;
+  padding:12px 18px;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.68rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  cursor:pointer;
+}
+.mockup-lightbox-actions a{
+  background:#b98a3b;
+  color:#111;
+}
+.mockup-lightbox-close{
+  position:absolute;
+  top:18px;
+  right:22px;
+  width:46px;
+  height:46px;
+  border:1px solid rgba(255,255,255,.22);
+  background:rgba(255,255,255,.08);
+  color:#fff;
+  font-size:30px;
+  cursor:pointer;
+}
+
 </style>
 <script type="application/ld+json">
 {
@@ -655,7 +740,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
 <section class="mockup-feature">
   <div class="container mockup-grid">
 
-    <a class="mockup-image" href="https://dansproul.com/featured/cascade-falls-minnesota-black-and-white-forest-waterfall-dan-sproul.html" target="_blank" rel="noopener">
+    <a class="mockup-image" data-purchase="https://dansproul.com/featured/cascade-falls-minnesota-black-and-white-forest-waterfall-dan-sproul.html" href="https://dansproul.com/featured/cascade-falls-minnesota-black-and-white-forest-waterfall-dan-sproul.html" target="_blank" rel="noopener">
       <img src="residential study waterfall mockup.jpg" alt="Black and white Cascade Falls waterfall print shown as large framed artwork in a wellness waiting room" loading="lazy" decoding="async">
     </a>
 
@@ -683,7 +768,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
       <a class="button" href="https://dansproul.com/featured/gentle-waves-arctic-serenity-dan-sproul.html" target="_blank" rel="noopener">View Artwork</a>
     </div>
 
-    <a class="mockup-image" href="https://dansproul.com/featured/gentle-waves-arctic-serenity-dan-sproul.html" target="_blank" rel="noopener">
+    <a class="mockup-image" data-purchase="https://dansproul.com/featured/gentle-waves-arctic-serenity-dan-sproul.html" href="https://dansproul.com/featured/gentle-waves-arctic-serenity-dan-sproul.html" target="_blank" rel="noopener">
       <img src="serenity spa lobby waterfall mockup.jpg" alt="Large blue abstract water photography print installed in a luxury spa reception interior" loading="lazy" decoding="async">
     </a>
 
@@ -693,7 +778,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
 <section class="mockup-feature">
   <div class="container mockup-grid">
 
-    <a class="mockup-image" href="https://dansproul.com/featured/grotto-falls-smoky-mountains-waterfall-forest-sunlight-dan-sproul.html" target="_blank" rel="noopener">
+    <a class="mockup-image" data-purchase="https://dansproul.com/featured/grotto-falls-smoky-mountains-waterfall-forest-sunlight-dan-sproul.html" href="https://dansproul.com/featured/grotto-falls-smoky-mountains-waterfall-forest-sunlight-dan-sproul.html" target="_blank" rel="noopener">
       <img src="spa room waterfall mockup.jpg" alt="Green forest waterfall photography print displayed in a luxury spa treatment room" loading="lazy" decoding="async">
     </a>
 
@@ -721,7 +806,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
       <a class="button" href="https://dansproul.com/featured/multnomah-falls-greenery-dan-sproul.html" target="_blank" rel="noopener">View Artwork</a>
     </div>
 
-    <a class="mockup-image" href="https://dansproul.com/featured/hocking-hills-hidden-falls-long-exposure-dan-sproul.html" target="_blank" rel="noopener">
+    <a class="mockup-image" data-purchase="https://dansproul.com/featured/multnomah-falls-greenery-dan-sproul.html" href="https://dansproul.com/featured/hocking-hills-hidden-falls-long-exposure-dan-sproul.html" target="_blank" rel="noopener">
       <img src="residential living room waterfall mockup.jpg" alt="Moody waterfall photograph installed in a dark luxury residential lounge with fireplace" loading="lazy" decoding="async">
     </a>
 
@@ -731,7 +816,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
 <section class="mockup-feature">
   <div class="container mockup-grid">
 
-    <a class="mockup-image" href="https://dansproul.com/featured/grotto-falls-smoky-mountains-waterfall-forest-sunlight-dan-sproul.html" target="_blank" rel="noopener">
+    <a class="mockup-image" data-purchase="https://dansproul.com/featured/little-river-smoky-mountains-cascades-in-spring-dan-sproul.html" href="https://dansproul.com/featured/grotto-falls-smoky-mountains-waterfall-forest-sunlight-dan-sproul.html" target="_blank" rel="noopener">
       <img src="spa massage room waterfall mockup.jpg" alt="Luxury spa massage room with immersive waterfall photography by Dan Sproul" loading="lazy" decoding="async">
     </a>
 
@@ -759,7 +844,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
       <a class="button" href="https://dansproul.com/featured/box-canyon-falls-ouray-dan-sproul.html" target="_blank" rel="noopener">View Artwork</a>
     </div>
 
-    <a class="mockup-image" href="https://dansproul.com/featured/box-canyon-falls-ouray-dan-sproul.html" target="_blank" rel="noopener">
+    <a class="mockup-image" data-purchase="https://dansproul.com/featured/box-canyon-falls-ouray-dan-sproul.html" href="https://dansproul.com/featured/box-canyon-falls-ouray-dan-sproul.html" target="_blank" rel="noopener">
       <img src="spa lobby waterfall mockup.jpg" alt="Large vertical waterfall artwork installed in a luxury spa corridor" loading="lazy" decoding="async">
     </a>
 
@@ -769,7 +854,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
 <section class="mockup-feature">
   <div class="container mockup-grid">
 
-    <a class="mockup-image" href="https://dansproul.com/featured/multnomah-falls-greenery-dan-sproul.html" target="_blank" rel="noopener">
+    <a class="mockup-image" data-purchase="https://dansproul.com/featured/multnomah-falls-greenery-dan-sproul.html" href="https://dansproul.com/featured/multnomah-falls-greenery-dan-sproul.html" target="_blank" rel="noopener">
       <img src="luxury bedroom waterfall mockup.jpg" alt="Vertical waterfall artwork displayed in a luxury bedroom interior" loading="lazy" decoding="async">
     </a>
 
@@ -1116,18 +1201,77 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
 </div>
 
 
+
 <script>
 document.addEventListener('DOMContentLoaded', function () {
+
   var nav = document.querySelector('.site-nav-standard');
   var toggle = document.querySelector('.nav-toggle-standard');
+
   if (nav && toggle) {
     toggle.addEventListener('click', function () {
       var isOpen = nav.classList.toggle('is-open');
       toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     });
   }
+
+  const lightbox = document.getElementById('mockupLightbox');
+  const lightboxImg = document.getElementById('mockupLightboxImg');
+  const lightboxLink = document.getElementById('mockupLightboxLink');
+
+  function closeLightbox(){
+    lightbox.classList.remove('active');
+    lightbox.setAttribute('aria-hidden','true');
+    document.body.style.overflow = '';
+  }
+
+  document.querySelectorAll('.mockup-image img').forEach(function(img){
+    img.addEventListener('click', function(e){
+      e.preventDefault();
+
+      const parent = img.closest('.mockup-image');
+      const purchase = parent.getAttribute('data-purchase') || parent.getAttribute('href');
+
+      lightboxImg.src = img.getAttribute('src');
+      lightboxImg.alt = img.getAttribute('alt') || '';
+      lightboxLink.href = purchase;
+
+      lightbox.classList.add('active');
+      lightbox.setAttribute('aria-hidden','false');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  document.querySelector('.mockup-lightbox-close').addEventListener('click', closeLightbox);
+  document.getElementById('mockupLightboxCloseBtn').addEventListener('click', closeLightbox);
+
+  lightbox.addEventListener('click', function(e){
+    if(e.target === lightbox){
+      closeLightbox();
+    }
+  });
+
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && lightbox.classList.contains('active')){
+      closeLightbox();
+    }
+  });
+
 });
 </script>
+
+
+
+<div class="mockup-lightbox" id="mockupLightbox" aria-hidden="true">
+  <button class="mockup-lightbox-close" type="button">×</button>
+  <div class="mockup-lightbox-inner">
+    <img id="mockupLightboxImg" src="" alt="">
+    <div class="mockup-lightbox-actions">
+      <a id="mockupLightboxLink" href="#" target="_blank" rel="noopener">View / Purchase Print</a>
+      <button id="mockupLightboxCloseBtn" type="button">Close</button>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
@@ -1163,4 +1307,3 @@ document.addEventListener('DOMContentLoaded', function () {
     </div>
   </div>
 </section>
-
