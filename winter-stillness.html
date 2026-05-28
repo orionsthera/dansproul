@@ -138,6 +138,29 @@ body::before{content:"";display:block;height:66px}
 @media(max-width:680px){
  .container{width:min(90%,1360px)}.hero{min-height:78vh}.hero-content{padding-top:82px}.button-row a,.footer-btn{width:100%;text-align:center}.gallery-grid,.environment-grid,.choose-list,.faq-grid{grid-template-columns:1fr}
 }
+
+.winter-positioning{
+  background:var(--charcoal-soft);
+  color:#fff;
+  padding:clamp(72px,9vw,108px) 0;
+}
+.winter-positioning .inner{
+  width:min(92%,980px);
+  margin:0 auto;
+}
+.winter-positioning h2{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(2.4rem,5vw,4rem);
+  font-weight:500;
+  line-height:1;
+  margin-bottom:24px;
+}
+.winter-positioning p{
+  color:rgba(255,255,255,.72);
+  max-width:820px;
+  margin-bottom:18px;
+}
+
 </style>
 
 <script type="application/ld+json">
@@ -276,7 +299,7 @@ body::before{content:"";display:block;height:66px}
           </div>
         </button>
 
-        <button class="gallery-card" type="button" data-modal-title="Frozen Waterfall Interior" data-modal-desc="Blue-toned frozen waterfall artwork for warm neutral living rooms, winter cabins, and quiet residential spaces." data-modal-img="winter-stillness-frozen-waterfall-residential.png" data-purchase="">
+        <button class="gallery-card" type="button" data-modal-title="Frozen Waterfall Interior" data-modal-desc="Blue-toned frozen waterfall artwork for warm neutral living rooms, winter cabins, and quiet residential spaces." data-modal-img="winter-stillness-frozen-waterfall-residential.png" data-purchase="https://dansproul.com/featured/charleston-falls-ice-cave-dan-sproul.html">
           <img src="winter-stillness-frozen-waterfall-residential.png" alt="Frozen waterfall winter photography in warm residential interior mockup by Dan Sproul" loading="lazy" decoding="async">
           <div class="card-content">
             <h3>Frozen Waterfall Interior</h3>
@@ -285,7 +308,7 @@ body::before{content:"";display:block;height:66px}
           </div>
         </button>
 
-        <button class="gallery-card" type="button" data-modal-title="Snow Mountain Living Room" data-modal-desc="Black and white snow-covered mountain photography for winter lodge interiors and quiet residential rooms." data-modal-img="winter-stillness-rainier-snow-residential.png" data-purchase="">
+        <button class="gallery-card" type="button" data-modal-title="Snow Mountain Living Room" data-modal-desc="Black and white snow-covered mountain photography for winter lodge interiors and quiet residential rooms." data-modal-img="winter-stillness-rainier-snow-residential.png" data-purchase="https://dansproul.com/featured/rainier-in-winter-black-and-white-dan-sproul.html">
           <img src="winter-stillness-rainier-snow-residential.png" alt="Black and white snow mountain photography in residential winter living room mockup by Dan Sproul" loading="lazy" decoding="async">
           <div class="card-content">
             <h3>Snow Mountain Living Room</h3>
@@ -294,7 +317,7 @@ body::before{content:"";display:block;height:66px}
           </div>
         </button>
 
-        <button class="gallery-card" type="button" data-modal-title="Winter River Reading Space" data-modal-desc="Vertical winter river photography for reading corners, bedrooms, spa-like spaces, and softly lit residential interiors." data-modal-img="winter-stillness-mockup-residential-river.png" data-purchase="">
+        <button class="gallery-card" type="button" data-modal-title="Winter River Reading Space" data-modal-desc="Vertical winter river photography for reading corners, bedrooms, spa-like spaces, and softly lit residential interiors." data-modal-img="winter-stillness-mockup-residential-river.png" data-purchase="https://dansproul.com/featured/winter-on-the-miami-river-ohio-dan-sproul.html">
           <img src="winter-stillness-mockup-residential-river.png" alt="Vertical winter river photography in cozy residential reading space mockup by Dan Sproul" loading="lazy" decoding="async">
           <div class="card-content">
             <h3>Winter River Reading Space</h3>
@@ -395,20 +418,23 @@ body::before{content:"";display:block;height:66px}
     </div>
   </section>
 
+
 <section class="winter-positioning">
+  <div class="inner">
     <h2>More Than Winter Landscape Photography</h2>
     <p>
-        Winter Stillness is designed around calm, restorative interiors and atmospheric nature photography.
-        These pieces work especially well in quiet luxury homes, mountain lodge interiors, wellness-inspired spaces,
-        boutique hospitality environments, and modern residential design focused on warmth, texture, and visual calm.
+      Winter Stillness is designed around calm, restorative interiors and atmospheric nature photography.
+      These pieces work especially well in quiet luxury homes, mountain lodge interiors, wellness-inspired spaces,
+      boutique hospitality environments, and modern residential design focused on warmth, texture, and visual calm.
     </p>
-
     <p>
-        The collection blends monochrome winter landscapes, frozen waterfalls, snowy forests, mountain scenes,
-        and contemplative natural textures into artwork that feels timeless rather than seasonal. The goal is not
-        simply winter photography prints, but emotionally grounded artwork that creates stillness within a room.
+      The collection blends monochrome winter landscapes, frozen waterfalls, snowy forests, mountain scenes,
+      and contemplative natural textures into artwork that feels timeless rather than seasonal. The goal is not
+      simply winter photography prints, but emotionally grounded artwork that creates stillness within a room.
     </p>
+  </div>
 </section>
+
 
 </main>
 <div class="mockup-modal" id="mockupModal" aria-hidden="true" role="dialog" aria-label="Artwork mockup preview">
