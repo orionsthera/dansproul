@@ -581,6 +581,62 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
   }
 }
 
+
+/* MOCKUP LIGHTBOX */
+.mockup-card{
+  position:relative;
+  cursor:pointer;
+}
+.mockup-card::after{
+  content:'Click to enlarge';
+  position:absolute;
+  bottom:14px;
+  right:14px;
+  background:rgba(10,10,10,.72);
+  color:#fff;
+  padding:8px 10px;
+  font-size:.62rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  font-family:Arial,Helvetica,sans-serif;
+  opacity:0;
+  transition:.25s ease;
+}
+.mockup-card:hover::after{
+  opacity:1;
+}
+.mockup-lightbox{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.88);
+  z-index:999999;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:40px;
+}
+.mockup-lightbox.active{
+  display:flex;
+}
+.mockup-lightbox img{
+  max-width:min(1400px,94vw);
+  max-height:90vh;
+  object-fit:contain;
+  box-shadow:0 30px 90px rgba(0,0,0,.6);
+}
+.mockup-lightbox-close{
+  position:absolute;
+  top:18px;
+  right:22px;
+  width:46px;
+  height:46px;
+  border:none;
+  background:rgba(255,255,255,.1);
+  color:#fff;
+  font-size:30px;
+  cursor:pointer;
+}
+
 </style>
 <script type="application/ld+json">
 {
@@ -959,8 +1015,8 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
       <h2>Additional curated art directions.</h2>
       <p>Pair Monochrome Stillness with atmospheric landscapes, mountain imagery, coastal scenes, or softer nature-driven collections for larger projects.</p>
       <div class="related-links">
-        <a class="button primary" href="quiet-earth.html">Quiet Earth</a>
-        <a class="button" href="mountain-light.html">Mountain Light</a>
+        <a class="button primary" href="quiet-earth-collection.html">Quiet Earth</a>
+        <a class="button" href="mountain-light-collection.html">Mountain Light</a>
         <a class="button" href="for-designers.html">For Designers</a>
         <a class="button" href="in-your-space.html">In Your Space</a>
       </div>
@@ -1039,6 +1095,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
 </div>
 
 
+
 <script>
 document.addEventListener('DOMContentLoaded', function () {
   var nav = document.querySelector('.site-nav-standard');
@@ -1049,8 +1106,50 @@ document.addEventListener('DOMContentLoaded', function () {
       toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     });
   }
+
+  var lightbox = document.getElementById('mockupLightbox');
+  var lightboxImage = document.getElementById('mockupLightboxImage');
+  var closeBtn = document.querySelector('.mockup-lightbox-close');
+
+  document.querySelectorAll('.mockup-card img').forEach(function(img){
+    img.addEventListener('click', function(){
+      lightbox.classList.add('active');
+      lightbox.setAttribute('aria-hidden','false');
+      lightboxImage.src = this.src;
+      lightboxImage.alt = this.alt;
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  function closeLightbox(){
+    lightbox.classList.remove('active');
+    lightbox.setAttribute('aria-hidden','true');
+    lightboxImage.src = '';
+    document.body.style.overflow = '';
+  }
+
+  closeBtn.addEventListener('click', closeLightbox);
+
+  lightbox.addEventListener('click', function(e){
+    if(e.target === lightbox){
+      closeLightbox();
+    }
+  });
+
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && lightbox.classList.contains('active')){
+      closeLightbox();
+    }
+  });
 });
 </script>
+
+
+
+<div class="mockup-lightbox" id="mockupLightbox" aria-hidden="true">
+  <button class="mockup-lightbox-close" aria-label="Close image">×</button>
+  <img id="mockupLightboxImage" src="" alt="">
+</div>
 
 </body>
 </html>
