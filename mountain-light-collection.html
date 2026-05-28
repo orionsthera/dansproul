@@ -259,6 +259,92 @@ img{max-width:100%;height:auto}
 section{content-visibility:auto;contain-intrinsic-size:1px 900px}
 .hero,.site-header,nav{content-visibility:visible;contain-intrinsic-size:auto}
 
+
+/* MOCKUP LIGHTBOX + PURCHASE LINKS */
+.mockup-card{
+  position:relative;
+  cursor:pointer;
+}
+.mockup-card::after{
+  content:'Click to enlarge';
+  position:absolute;
+  right:14px;
+  bottom:14px;
+  background:rgba(8,8,7,.72);
+  color:#fff;
+  padding:8px 11px;
+  border:1px solid rgba(216,198,164,.28);
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.62rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  opacity:0;
+  transition:.25s ease;
+}
+.mockup-card:hover::after{
+  opacity:1;
+}
+.mockup-lightbox{
+  position:fixed;
+  inset:0;
+  z-index:999999;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:clamp(18px,4vw,46px);
+  background:rgba(0,0,0,.88);
+  backdrop-filter:blur(10px);
+}
+.mockup-lightbox.active{
+  display:flex;
+}
+.mockup-lightbox-card{
+  width:min(92vw,1180px);
+  max-height:92vh;
+}
+.mockup-lightbox-card img{
+  width:100%;
+  max-height:78vh;
+  object-fit:contain;
+  background:#050505;
+  box-shadow:0 30px 90px rgba(0,0,0,.65);
+}
+.mockup-lightbox-actions{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:16px;
+}
+.mockup-lightbox-actions a,
+.mockup-lightbox-actions button{
+  border:1px solid rgba(216,198,164,.65);
+  background:transparent;
+  color:#f4efe7;
+  padding:12px 18px;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.68rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  cursor:pointer;
+}
+.mockup-lightbox-actions a{
+  background:#d8c6a4;
+  color:#111;
+}
+.mockup-lightbox-close{
+  position:absolute;
+  top:18px;
+  right:22px;
+  width:46px;
+  height:46px;
+  border:1px solid rgba(244,239,231,.24);
+  background:rgba(255,255,255,.08);
+  color:#fff;
+  font-size:30px;
+  cursor:pointer;
+}
+
 </style>
 <script type="application/ld+json">
 {
@@ -532,12 +618,12 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
 <p>These mockups show how large mountain landscape photography can work as statement artwork in luxury residential, lodge, hospitality, bedroom, and entryway spaces.</p>
 </div>
 <div class="mockup-grid">
-<div class="mockup-card"><img src="mountain-light-living-room.jpg" alt="Large framed mountain landscape photography above stone fireplace in warm luxury living room by Dan Sproul" loading="lazy" decoding="async"></div>
+<div class="mockup-card" data-purchase="https://dansproul.com/art/mountain+light" data-modal-title="Large framed mountain landscape photography above stone fireplace in warm luxury living room by Dan Sproul"><img src="mountain-light-living-room.jpg" alt="Large framed mountain landscape photography above stone fireplace in warm luxury living room by Dan Sproul" loading="lazy" decoding="async"></div>
 <div class="mockup-pair">
-<div class="mockup-card"><img src="mountain-light-bedroom.jpg" alt="Mountain landscape wall art above bed in warm modern rustic bedroom by Dan Sproul" loading="lazy" decoding="async"></div>
-<div class="mockup-card"><img src="mountain-light-lobby.jpg" alt="Large mountain photography print in high-end lodge lobby interior by Dan Sproul" loading="lazy" decoding="async"></div>
+<div class="mockup-card" data-purchase="https://dansproul.com/art/mountain+light" data-modal-title="Mountain landscape wall art above bed in warm modern rustic bedroom by Dan Sproul"><img src="mountain-light-bedroom.jpg" alt="Mountain landscape wall art above bed in warm modern rustic bedroom by Dan Sproul" loading="lazy" decoding="async"></div>
+<div class="mockup-card" data-purchase="https://dansproul.com/art/mountain+light" data-modal-title="Large mountain photography print in high-end lodge lobby interior by Dan Sproul"><img src="mountain-light-lobby.jpg" alt="Large mountain photography print in high-end lodge lobby interior by Dan Sproul" loading="lazy" decoding="async"></div>
 </div>
-<div class="mockup-card"><img src="mountain-light-entryway.jpg" alt="Statement mountain landscape artwork in luxury double-height entryway by Dan Sproul" loading="lazy" decoding="async"></div>
+<div class="mockup-card" data-purchase="https://dansproul.com/art/mountain+light" data-modal-title="Statement mountain landscape artwork in luxury double-height entryway by Dan Sproul"><img src="mountain-light-entryway.jpg" alt="Statement mountain landscape artwork in luxury double-height entryway by Dan Sproul" loading="lazy" decoding="async"></div>
 </div>
 </div></section>
 
@@ -755,14 +841,70 @@ Designers can request room-specific recommendations, scaled previews, orientatio
 </div>
 
 
+
 <script>
-(function(){
-  const toggle=document.querySelector('.mobile-toggle');
-  const nav=document.querySelector('.main-nav');
-  if(toggle && nav){
-    toggle.addEventListener('click',()=>nav.classList.toggle('active'));
+document.addEventListener('DOMContentLoaded', function () {
+  const toggle = document.querySelector('.mobile-toggle');
+  const nav = document.querySelector('.main-nav');
+  if (toggle && nav) {
+    toggle.addEventListener('click', () => nav.classList.toggle('active'));
   }
-})();
+
+  const lightbox = document.getElementById('mockupLightbox');
+  const lightboxImage = document.getElementById('mockupLightboxImage');
+  const purchaseLink = document.getElementById('mockupPurchaseLink');
+  const closeTop = document.querySelector('.mockup-lightbox-close');
+  const closeInline = document.getElementById('mockupCloseInline');
+
+  function closeLightbox(){
+    if (!lightbox) return;
+    lightbox.classList.remove('active');
+    lightbox.setAttribute('aria-hidden','true');
+    if (lightboxImage) lightboxImage.src = '';
+    document.body.style.overflow = '';
+  }
+
+  document.querySelectorAll('.mockup-card img').forEach(function(img){
+    img.addEventListener('click', function(){
+      const card = img.closest('.mockup-card');
+      const purchase = card && card.getAttribute('data-purchase') ? card.getAttribute('data-purchase') : 'https://dansproul.com/art/mountain+light';
+      if (lightboxImage) {
+        lightboxImage.src = img.getAttribute('src');
+        lightboxImage.alt = img.getAttribute('alt') || 'Mountain Light artwork mockup';
+      }
+      if (purchaseLink) purchaseLink.href = purchase;
+      if (lightbox) {
+        lightbox.classList.add('active');
+        lightbox.setAttribute('aria-hidden','false');
+      }
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  if (closeTop) closeTop.addEventListener('click', closeLightbox);
+  if (closeInline) closeInline.addEventListener('click', closeLightbox);
+  if (lightbox) {
+    lightbox.addEventListener('click', function(e){
+      if (e.target === lightbox) closeLightbox();
+    });
+  }
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape' && lightbox && lightbox.classList.contains('active')) closeLightbox();
+  });
+});
 </script>
+
+
+
+<div class="mockup-lightbox" id="mockupLightbox" aria-hidden="true" role="dialog" aria-label="Mountain Light mockup preview">
+  <button class="mockup-lightbox-close" type="button" aria-label="Close image">×</button>
+  <div class="mockup-lightbox-card">
+    <img id="mockupLightboxImage" src="" alt="">
+    <div class="mockup-lightbox-actions">
+      <a id="mockupPurchaseLink" href="https://dansproul.com/art/mountain+light" target="_blank" rel="noopener">View / Purchase Print</a>
+      <button id="mockupCloseInline" type="button">Close</button>
+    </div>
+  </div>
+</div>
 
 </body></html>
