@@ -54,6 +54,13 @@ body::before{content:"";display:block;height:66px}
 .secondary-btn{border:1px solid rgba(255,255,255,.38);color:#fff}
 .secondary-btn:hover{border-color:rgba(255,255,255,.7)}
 
+/* Pricing anchor strip in hero */
+.hero-pricing{display:flex;gap:clamp(18px,3vw,40px);margin-top:34px;flex-wrap:wrap}
+.hero-pricing div{padding-right:clamp(18px,3vw,40px);border-right:1px solid rgba(255,255,255,.18)}
+.hero-pricing div:last-child{border-right:none;padding-right:0}
+.hero-pricing strong{display:block;font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:500;color:#fff;line-height:1.1}
+.hero-pricing span{display:block;font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.58);margin-top:4px}
+
 .section{padding:clamp(72px,9vw,108px) 0}
 .section-heading{max-width:860px;margin-bottom:54px}
 .section-heading.center{text-align:center;margin-left:auto;margin-right:auto}
@@ -71,12 +78,20 @@ body::before{content:"";display:block;height:66px}
 .note-box{margin-top:26px;padding:26px 28px;background:#fff;border-left:3px solid var(--gold);box-shadow:0 16px 40px rgba(28,30,32,.06)}
 .note-box p{font-family:'Cormorant Garamond',serif;font-size:1.25rem;line-height:1.5;color:#3a3d3f;font-style:italic}
 
+/* Quick-pick strip before the gallery */
+.quickpick{background:#fff;border:1px solid var(--line);border-radius:10px;padding:26px 28px;margin-bottom:48px;box-shadow:0 14px 34px rgba(28,30,32,.04)}
+.quickpick-title{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:500;margin-bottom:14px}
+.quickpick-list{display:flex;flex-wrap:wrap;gap:10px}
+.quickpick-list a{display:inline-block;padding:9px 16px;border:1px solid var(--line);border-radius:999px;text-decoration:none;color:var(--ink);font-size:.82rem;transition:border-color .2s ease,color .2s ease,background .2s ease}
+.quickpick-list a:hover{border-color:var(--gold);color:#9b7335;background:rgba(199,163,103,.07)}
+
 .gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:42px 34px}
 .gallery-card{display:block;text-decoration:none;color:inherit}
 .gallery-card img{width:100%;aspect-ratio:4/5;height:auto;object-fit:cover;border-radius:10px;border:1px solid rgba(28,30,32,.08);box-shadow:0 18px 44px rgba(28,30,32,.08);transition:transform .28s ease,box-shadow .28s ease}
 .gallery-card:hover img{transform:translateY(-4px);box-shadow:0 24px 54px rgba(28,30,32,.12)}
 .card-content{padding:22px 2px 0}
-.card-content h3{font-size:2.05rem;line-height:1.05;margin-bottom:10px}
+.card-content h3{font-size:2.05rem;line-height:1.05;margin-bottom:6px}
+.card-content .image-title{display:block;font-family:'Inter',sans-serif;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:#9b7335;font-weight:600;margin-bottom:10px}
 .card-content p{color:var(--muted);font-size:.98rem}
 .card-content .mini-link{display:inline-block;margin-top:14px;color:#9b7335;text-transform:uppercase;letter-spacing:.14em;font-size:.68rem;text-decoration:none;font-weight:600}
 
@@ -86,8 +101,11 @@ body::before{content:"";display:block;height:66px}
 .mockup-modal-card{width:min(54vw,920px);max-width:920px;background:#0f100f;border:1px solid rgba(213,179,101,.22);box-shadow:0 34px 90px rgba(0,0,0,.55);color:#f4eee5}
 .mockup-modal-card img{width:100%;max-height:72vh;object-fit:contain;background:#080808}
 .mockup-modal-copy{padding:22px 24px 24px}
+.mockup-modal-copy .modal-image-title{display:block;font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-soft);font-weight:600;margin-bottom:8px}
 .mockup-modal-copy h3{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3vw,2.6rem);line-height:1;margin-bottom:8px;font-weight:500}
-.mockup-modal-copy p{color:rgba(244,238,229,.68);font-size:.96rem;margin-bottom:18px}
+.mockup-modal-copy p{color:rgba(244,238,229,.68);font-size:.96rem;margin-bottom:14px}
+.mockup-modal-spec{display:inline-flex;align-items:center;gap:8px;font-size:.72rem;letter-spacing:.08em;color:rgba(244,238,229,.52);margin-bottom:18px;padding:8px 14px;border:1px solid rgba(213,179,101,.22);border-radius:999px}
+.mockup-modal-spec::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--gold);flex-shrink:0}
 .mockup-modal-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
 .mockup-modal-actions a,.mockup-modal-actions button{border:1px solid rgba(213,179,101,.5);background:transparent;color:#f4eee5;text-decoration:none;text-transform:uppercase;letter-spacing:.14em;font-size:.68rem;padding:12px 16px;cursor:pointer;font-family:Inter,sans-serif}
 .mockup-modal-actions a{background:var(--gold);color:#111;border-color:var(--gold)}
@@ -134,9 +152,11 @@ body::before{content:"";display:block;height:66px}
 @media(max-width:1040px){
  body::before{height:64px}.site-nav-standard{height:64px!important}.nav-toggle-standard{display:block!important}.nav-links-standard{position:fixed!important;top:64px!important;left:0!important;right:0!important;display:none!important;flex-direction:column!important;align-items:flex-start!important;gap:0!important;padding:18px 24px 24px!important;background:rgba(14,12,9,.98)!important;border-bottom:1px solid rgba(185,138,59,.22)!important}.site-nav-standard.is-open .nav-links-standard{display:flex!important}.nav-links-standard a{width:100%!important;padding:14px 0!important}.nav-shop-standard{width:auto!important;margin-top:8px!important;padding:13px 18px!important}
  .intro-grid,.guide-grid,.spec-grid{grid-template-columns:1fr}.environment-grid{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:1fr}
+ .hero-pricing{gap:22px}.hero-pricing div{padding-right:22px}
 }
 @media(max-width:680px){
  .container{width:min(90%,1360px)}.hero{min-height:78vh}.hero-content{padding-top:82px}.button-row a,.footer-btn{width:100%;text-align:center}.gallery-grid,.environment-grid,.choose-list,.faq-grid{grid-template-columns:1fr}
+ .hero-pricing{flex-direction:column;gap:14px}.hero-pricing div{border-right:none;padding-right:0;border-bottom:1px solid rgba(255,255,255,.14);padding-bottom:12px}.hero-pricing div:last-child{border-bottom:none;padding-bottom:0}
 }
 
 .winter-positioning{
@@ -217,6 +237,12 @@ body::before{content:"";display:block;height:66px}
         <a href="#collection" class="primary-btn">Explore Collection</a>
         <a href="#choose" class="secondary-btn">How To Choose</a>
       </div>
+      <div class="hero-pricing">
+        <div><strong>From $85</strong><span>Canvas Prints</span></div>
+        <div><strong>From $140</strong><span>Framed Prints</span></div>
+        <div><strong>From $120</strong><span>Metal &amp; Acrylic</span></div>
+        <div><strong>Custom</strong><span>Trade &amp; Wholesale</span></div>
+      </div>
     </div>
   </section>
 
@@ -241,86 +267,105 @@ body::before{content:"";display:block;height:66px}
       <div class="section-heading center">
         <div class="kicker">Featured Environments</div>
         <h2>Winter imagery designed to shape atmosphere.</h2>
-        <p>Six current interior examples show how this collection can work across residential, hospitality, wellness, healthcare, and executive spaces. Additional mockups can be added below this section when ready.</p>
+        <p>Nine current interior examples show how this collection can work across residential, hospitality, wellness, healthcare, and executive spaces. Additional mockups can be added below this section when ready.</p>
+      </div>
+
+      <div class="quickpick">
+        <div class="quickpick-title">Not sure where to start?</div>
+        <div class="quickpick-list">
+          <a href="#where-it-works">Shop by Room Type</a>
+          <a href="#choose">Black &amp; White vs. Color</a>
+          <a href="#choose">Horizontal vs. Vertical</a>
+          <a href="mailto:sproulphoto@gmail.com?subject=Winter%20Stillness%20Mockup%20Request">Request a Free Mockup</a>
+        </div>
       </div>
 
       <div class="gallery-grid">
-        <button class="gallery-card" type="button" data-modal-title="Quiet Residential" data-modal-desc="Soft winter botanical photography for refined residential interiors and quiet luxury living rooms." data-modal-img="winter stillness living room mockup.jpg" data-purchase="https://dansproul.com/featured/gentle-winter-snowflakes-dan-sproul.html">
+        <button class="gallery-card" type="button" data-modal-title="Quiet Residential" data-image-title="Gentle Winter Snowflakes" data-modal-desc="Soft winter botanical photography for refined residential interiors and quiet luxury living rooms." data-modal-spec="Shown as a 40×30 framed print, black frame, white mat" data-modal-img="winter stillness living room mockup.jpg" data-purchase="https://dansproul.com/featured/gentle-winter-snowflakes-dan-sproul.html">
           <img src="winter stillness living room mockup.jpg" alt="Winter Stillness living room mockup with soft winter botanical photography by Dan Sproul" loading="lazy" decoding="async">
           <div class="card-content">
             <h3>Quiet Residential</h3>
+            <span class="image-title">Featuring "Gentle Winter Snowflakes"</span>
             <p>Soft winter botanical photography for refined residential interiors and quiet luxury living rooms.</p>
             <span class="mini-link">Enlarge mockup →</span>
           </div>
         </button>
 
-        <button class="gallery-card" type="button" data-modal-title="Boutique Lodge" data-modal-desc="Wildlife-focused winter imagery curated for boutique hospitality, cabins, and retreat environments." data-modal-img="winter stillness lodge lobby mockup.jpg" data-purchase="https://dansproul.com/featured/black-and-white-winter-deer-dan-sproul.html">
+        <button class="gallery-card" type="button" data-modal-title="Boutique Lodge" data-image-title="Winter Deer, Black &amp; White" data-modal-desc="Wildlife-focused winter imagery curated for boutique hospitality, cabins, and retreat environments." data-modal-spec="Shown as a 48×32 framed print, walnut frame, white mat" data-modal-img="winter stillness lodge lobby mockup.jpg" data-purchase="https://dansproul.com/featured/black-and-white-winter-deer-dan-sproul.html">
           <img src="winter stillness lodge lobby mockup.jpg" alt="Winter deer photography in boutique lodge lobby mockup by Dan Sproul" loading="lazy" decoding="async">
           <div class="card-content">
             <h3>Boutique Lodge</h3>
+            <span class="image-title">Featuring "Winter Deer, Black &amp; White"</span>
             <p>Wildlife-focused winter imagery curated for boutique hospitality, cabins, and retreat environments.</p>
             <span class="mini-link">Enlarge mockup →</span>
           </div>
         </button>
 
-        <button class="gallery-card" type="button" data-modal-title="Hospitality Suites" data-modal-desc="Minimal monochrome winter artwork for upscale hospitality rooms and restorative guest spaces." data-modal-img="winter stillness hospitality room mockup.jpg" data-purchase="https://dansproul.com/featured/beautiful-winter-path-in-the-forest-dan-sproul.html">
+        <button class="gallery-card" type="button" data-modal-title="Hospitality Suites" data-image-title="Winter Forest Path" data-modal-desc="Minimal monochrome winter artwork for upscale hospitality rooms and restorative guest spaces." data-modal-spec="Shown as a 36×24 framed print, black frame, white mat" data-modal-img="winter stillness hospitality room mockup.jpg" data-purchase="https://dansproul.com/featured/beautiful-winter-path-in-the-forest-dan-sproul.html">
           <img src="winter stillness hospitality room mockup.jpg" alt="Black and white winter fence photography in hospitality guest room mockup by Dan Sproul" loading="lazy" decoding="async">
           <div class="card-content">
             <h3>Hospitality Suites</h3>
+            <span class="image-title">Featuring "Winter Forest Path"</span>
             <p>Minimal monochrome winter artwork for upscale hospitality rooms and restorative guest spaces.</p>
             <span class="mini-link">Enlarge mockup →</span>
           </div>
         </button>
 
-        <button class="gallery-card" type="button" data-modal-title="Residential Bedrooms" data-modal-desc="Quiet winter forest photography designed for calm residential and wellness-oriented interiors." data-modal-img="winter stillness bedroom mockup.jpg" data-purchase="https://dansproul.com/featured/black-and-white-fence-in-snow-dan-sproul.html">
+        <button class="gallery-card" type="button" data-modal-title="Residential Bedrooms" data-image-title="Fence in the Snow, Black &amp; White" data-modal-desc="Quiet winter forest photography designed for calm residential and wellness-oriented interiors." data-modal-spec="Shown as a 30×20 framed print, black frame, white mat" data-modal-img="winter stillness bedroom mockup.jpg" data-purchase="https://dansproul.com/featured/black-and-white-fence-in-snow-dan-sproul.html">
           <img src="winter stillness bedroom mockup.jpg" alt="Winter forest path photography in calm bedroom mockup by Dan Sproul" loading="lazy" decoding="async">
           <div class="card-content">
             <h3>Residential Bedrooms</h3>
+            <span class="image-title">Featuring "Fence in the Snow, Black &amp; White"</span>
             <p>Quiet winter forest photography designed for calm residential and wellness-oriented interiors.</p>
             <span class="mini-link">Enlarge mockup →</span>
           </div>
         </button>
 
-        <button class="gallery-card" type="button" data-modal-title="Healthcare & Wellness" data-modal-desc="Restorative monochrome winter imagery for healthcare corridors, spas, and wellness spaces." data-modal-img="winter stillness hospitality corridor mockup.jpg" data-purchase="https://dansproul.com/featured/frosty-winter-morning-in-ohio-dan-sproul.html">
+        <button class="gallery-card" type="button" data-modal-title="Healthcare &amp; Wellness" data-image-title="Frosty Winter Morning, Ohio" data-modal-desc="Restorative monochrome winter imagery for healthcare corridors, spas, and wellness spaces." data-modal-spec="Shown as a 40×24 framed print, white frame, white mat" data-modal-img="winter stillness hospitality corridor mockup.jpg" data-purchase="https://dansproul.com/featured/frosty-winter-morning-in-ohio-dan-sproul.html">
           <img src="winter stillness hospitality corridor mockup.jpg" alt="Winter dawn monochrome artwork in hospitality or healthcare corridor mockup by Dan Sproul" loading="lazy" decoding="async">
           <div class="card-content">
-            <h3>Healthcare & Wellness</h3>
+            <h3>Healthcare &amp; Wellness</h3>
+            <span class="image-title">Featuring "Frosty Winter Morning, Ohio"</span>
             <p>Restorative monochrome winter imagery for healthcare corridors, spas, and wellness spaces.</p>
             <span class="mini-link">Enlarge mockup →</span>
           </div>
         </button>
 
-        <button class="gallery-card" type="button" data-modal-title="Executive Interiors" data-modal-desc="Large-format monochrome mountain photography for executive offices and architectural boardrooms." data-modal-img="winter stillness office mockup.jpg" data-purchase="https://dansproul.com/featured/winter-in-denali-national-park-monochrome-dan-sproul.html">
+        <button class="gallery-card" type="button" data-modal-title="Executive Interiors" data-image-title="Winter in Denali, Monochrome" data-modal-desc="Large-format monochrome mountain photography for executive offices and architectural boardrooms." data-modal-spec="Shown as a 60×40 framed print, black frame, no mat" data-modal-img="winter stillness office mockup.jpg" data-purchase="https://dansproul.com/featured/winter-in-denali-national-park-monochrome-dan-sproul.html">
           <img src="winter stillness office mockup.jpg" alt="Winter Denali black and white mountain photography in executive office mockup by Dan Sproul" loading="lazy" decoding="async">
           <div class="card-content">
             <h3>Executive Interiors</h3>
+            <span class="image-title">Featuring "Winter in Denali, Monochrome"</span>
             <p>Large-format monochrome mountain photography for executive offices and architectural boardrooms.</p>
             <span class="mini-link">Enlarge mockup →</span>
           </div>
         </button>
 
-        <button class="gallery-card" type="button" data-modal-title="Frozen Waterfall Interior" data-modal-desc="Blue-toned frozen waterfall artwork for warm neutral living rooms, winter cabins, and quiet residential spaces." data-modal-img="winter-stillness-frozen-waterfall-residential.png" data-purchase="https://dansproul.com/featured/charleston-falls-ice-cave-dan-sproul.html">
+        <button class="gallery-card" type="button" data-modal-title="Frozen Waterfall Interior" data-image-title="Charleston Falls Ice Cave" data-modal-desc="Blue-toned frozen waterfall artwork for warm neutral living rooms, winter cabins, and quiet residential spaces." data-modal-spec="Shown as a 40×30 canvas print, gallery-wrapped" data-modal-img="winter-stillness-frozen-waterfall-residential.png" data-purchase="https://dansproul.com/featured/charleston-falls-ice-cave-dan-sproul.html">
           <img src="winter-stillness-frozen-waterfall-residential.png" alt="Frozen waterfall winter photography in warm residential interior mockup by Dan Sproul" loading="lazy" decoding="async">
           <div class="card-content">
             <h3>Frozen Waterfall Interior</h3>
+            <span class="image-title">Featuring "Charleston Falls Ice Cave"</span>
             <p>Blue-toned frozen waterfall artwork for warm neutral living rooms, winter cabins, and quiet residential spaces.</p>
             <span class="mini-link">Enlarge mockup →</span>
           </div>
         </button>
 
-        <button class="gallery-card" type="button" data-modal-title="Snow Mountain Living Room" data-modal-desc="Black and white snow-covered mountain photography for winter lodge interiors and quiet residential rooms." data-modal-img="winter-stillness-rainier-snow-residential.png" data-purchase="https://dansproul.com/featured/rainier-in-winter-black-and-white-dan-sproul.html">
+        <button class="gallery-card" type="button" data-modal-title="Snow Mountain Living Room" data-image-title="Rainier in Winter, Black &amp; White" data-modal-desc="Black and white snow-covered mountain photography for winter lodge interiors and quiet residential rooms." data-modal-spec="Shown as a 48×32 canvas print, gallery-wrapped" data-modal-img="winter-stillness-rainier-snow-residential.png" data-purchase="https://dansproul.com/featured/rainier-in-winter-black-and-white-dan-sproul.html">
           <img src="winter-stillness-rainier-snow-residential.png" alt="Black and white snow mountain photography in residential winter living room mockup by Dan Sproul" loading="lazy" decoding="async">
           <div class="card-content">
             <h3>Snow Mountain Living Room</h3>
+            <span class="image-title">Featuring "Rainier in Winter, Black &amp; White"</span>
             <p>Black and white snow-covered mountain photography for winter lodge interiors and quiet residential rooms.</p>
             <span class="mini-link">Enlarge mockup →</span>
           </div>
         </button>
 
-        <button class="gallery-card" type="button" data-modal-title="Winter River Reading Space" data-modal-desc="Vertical winter river photography for reading corners, bedrooms, spa-like spaces, and softly lit residential interiors." data-modal-img="winter-stillness-mockup-residential-river.png" data-purchase="https://dansproul.com/featured/winter-on-the-miami-river-ohio-dan-sproul.html">
+        <button class="gallery-card" type="button" data-modal-title="Winter River Reading Space" data-image-title="Winter on the Miami River, Ohio" data-modal-desc="Vertical winter river photography for reading corners, bedrooms, spa-like spaces, and softly lit residential interiors." data-modal-spec="Shown as a 30×40 framed print (vertical), black frame, white mat" data-modal-img="winter-stillness-mockup-residential-river.png" data-purchase="https://dansproul.com/featured/winter-on-the-miami-river-ohio-dan-sproul.html">
           <img src="winter-stillness-mockup-residential-river.png" alt="Vertical winter river photography in cozy residential reading space mockup by Dan Sproul" loading="lazy" decoding="async">
           <div class="card-content">
             <h3>Winter River Reading Space</h3>
+            <span class="image-title">Featuring "Winter on the Miami River, Ohio"</span>
             <p>Vertical winter river photography for reading corners, bedrooms, spa-like spaces, and softly lit residential interiors.</p>
             <span class="mini-link">Enlarge mockup →</span>
           </div>
@@ -339,7 +384,7 @@ body::before{content:"";display:block;height:66px}
       <div class="environment-grid">
         <div class="guide-card"><h3>Bedrooms</h3><p>Soft snow, quiet paths, winter botanicals, and low-contrast black-and-white images help bedrooms feel restful and uncluttered.</p></div>
         <div class="guide-card"><h3>Boutique Lodges</h3><p>Winter forests, wildlife, and mountain landscapes bring seasonal identity into lodge interiors without becoming novelty decor.</p></div>
-        <div class="guide-card"><h3>Spa & Wellness Spaces</h3><p>Quiet winter imagery supports slower environments where stillness, breath, and decompression are part of the experience.</p></div>
+        <div class="guide-card"><h3>Spa &amp; Wellness Spaces</h3><p>Quiet winter imagery supports slower environments where stillness, breath, and decompression are part of the experience.</p></div>
         <div class="guide-card"><h3>Winter Cabins</h3><p>Snow scenes and monochrome textures pair naturally with wood, stone, linen, wool, leather, and warm neutral finishes.</p></div>
         <div class="guide-card"><h3>Executive Offices</h3><p>Black-and-white mountain and forest images add structure and refinement while keeping the atmosphere low-distraction.</p></div>
         <div class="guide-card"><h3>Healthcare Corridors</h3><p>Subtle winter landscapes can create visual pause in transitional spaces, especially when color and contrast are restrained.</p></div>
@@ -355,7 +400,7 @@ body::before{content:"";display:block;height:66px}
         <p>These guidelines help homeowners, designers, and commercial buyers choose winter imagery that feels intentional rather than seasonal.</p>
       </div>
       <div class="choose-list">
-        <div class="choose-item"><strong>Black & white winter prints</strong><span>Best for calm, minimal rooms, offices, corridors, and spaces that need quiet structure.</span></div>
+        <div class="choose-item"><strong>Black &amp; white winter prints</strong><span>Best for calm, minimal rooms, offices, corridors, and spaces that need quiet structure.</span></div>
         <div class="choose-item"><strong>Snowy forest scenes</strong><span>Strong for bedrooms, wellness spaces, cabins, and rooms where softness matters more than drama.</span></div>
         <div class="choose-item"><strong>Mountain winter artwork</strong><span>Useful for lodges, executive offices, hospitality interiors, and larger architectural walls.</span></div>
         <div class="choose-item"><strong>Horizontal winter pieces</strong><span>Ideal above beds, sofas, headboards, consoles, and fireplaces where calm width is needed.</span></div>
@@ -442,8 +487,10 @@ body::before{content:"";display:block;height:66px}
   <div class="mockup-modal-card" role="document">
     <img id="mockupModalImg" src="" alt="">
     <div class="mockup-modal-copy">
+      <span class="modal-image-title" id="mockupModalImageTitle"></span>
       <h3 id="mockupModalTitle"></h3>
       <p id="mockupModalDesc"></p>
+      <div class="mockup-modal-spec" id="mockupModalSpec"></div>
       <div class="mockup-modal-actions">
         <a id="mockupPurchaseBtn" href="#" target="_blank" rel="noopener">Purchase Print</a>
         <button class="mockup-close-inline" type="button">Close</button>
@@ -514,20 +561,28 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var modal = document.getElementById('mockupModal');
   var modalImg = document.getElementById('mockupModalImg');
+  var modalImageTitle = document.getElementById('mockupModalImageTitle');
   var modalTitle = document.getElementById('mockupModalTitle');
   var modalDesc = document.getElementById('mockupModalDesc');
+  var modalSpec = document.getElementById('mockupModalSpec');
   var purchaseBtn = document.getElementById('mockupPurchaseBtn');
   var closeButtons = document.querySelectorAll('.mockup-close, .mockup-close-inline');
 
   function openModal(card) {
     var img = card.getAttribute('data-modal-img') || '';
     var title = card.getAttribute('data-modal-title') || '';
+    var imageTitle = card.getAttribute('data-image-title') || '';
     var desc = card.getAttribute('data-modal-desc') || '';
+    var spec = card.getAttribute('data-modal-spec') || '';
     var purchase = card.getAttribute('data-purchase') || '';
     modalImg.src = img;
     modalImg.alt = title + ' mockup preview';
+    modalImageTitle.textContent = imageTitle ? 'Featuring "' + imageTitle + '"' : '';
+    modalImageTitle.style.display = imageTitle ? '' : 'none';
     modalTitle.textContent = title;
     modalDesc.textContent = desc;
+    modalSpec.textContent = spec;
+    modalSpec.style.display = spec ? '' : 'none';
     if (purchase) {
       purchaseBtn.href = purchase;
       purchaseBtn.classList.remove('is-hidden');
