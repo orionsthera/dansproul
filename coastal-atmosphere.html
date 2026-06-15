@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,685 +5,283 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Coastal Atmosphere Collection | Moody Coastal Fine Art Photography | Dan Sproul</title>
-
-<meta name="description" content="Moody coastal fine art photography by Dan Sproul for quiet luxury coastal interiors, boutique hospitality, bedrooms, dining rooms, wellness spaces, and refined residential projects.">
-
+<meta name="description" content="Moody coastal fine art photography by Dan Sproul for quiet luxury coastal interiors, boutique hospitality, bedrooms, living rooms, dining rooms, wellness spaces, and refined residential projects.">
 <link rel="canonical" href="https://dsproul.com/coastal-atmosphere.html">
 
-<meta property="og:title" content="Coastal Atmosphere Collection | Dan Sproul">
+<meta property="og:title" content="Coastal Atmosphere Collection | Moody Coastal Fine Art Photography | Dan Sproul">
 <meta property="og:description" content="Moody coastal wall art and atmospheric ocean photography for refined interiors and designer spaces.">
-<meta property="og:image" content="https://dsproul.com/coastal-atmosphere-diningroom.jpg">
+<meta property="og:image" content="https://dsproul.com/coastal-atmosphere-outer-banks-living-room.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dsproul.com/coastal-atmosphere.html">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preload" as="image" href="coastal-atmosphere-diningroom.jpg">
 
 <style>
 :root{
---bg:#080808;
---panel:#11110f;
---soft:#f2ede4;
---text:#f5f1ea;
---muted:#b6ab9a;
---accent:#c5a06a;
---line:rgba(255,255,255,.08);
---max:1320px;
+  --bg:#080706;
+  --panel:#11100f;
+  --panel2:#15130f;
+  --soft:#f2ede4;
+  --paper:#fffaf3;
+  --text:#f5f1ea;
+  --muted:#b6ab9a;
+  --accent:#c5a06a;
+  --line:rgba(255,255,255,.08);
+  --dark:#1f1c18;
+  --max:1320px;
 }
 
 *{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
 body{
-background:var(--bg);
-color:var(--text);
-font-family:Georgia, serif;
-line-height:1.7;
--webkit-font-smoothing:antialiased;
+  background:var(--bg);
+  color:var(--text);
+  font-family:Georgia,"Times New Roman",serif;
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
 }
-img{width:100%;display:block}
+img{width:100%;display:block;height:auto}
 a{text-decoration:none;color:inherit}
-
-.container{
-width:min(92%,var(--max));
-margin:auto;
-}
-
-section{
-padding:100px 0;
-border-top:1px solid var(--line);
-}
-
-.hero{
-min-height:95vh;
-display:flex;
-align-items:center;
-position:relative;
-overflow:hidden;
-background:
-linear-gradient(to right, rgba(0,0,0,.78), rgba(0,0,0,.35)),
-url('coastal-atmosphere-diningroom.jpg') center/cover no-repeat;
-}
-
-.hero:after{
-content:"";
-position:absolute;
-left:0;
-right:0;
-bottom:0;
-height:260px;
-background:linear-gradient(to bottom, rgba(8,8,8,0), #080808);
-}
-
-.hero-content{
-position:relative;
-z-index:2;
-max-width:760px;
-}
-
-.eyebrow{
-display:inline-block;
-margin-bottom:18px;
-color:var(--accent);
-font-size:.72rem;
-letter-spacing:.28em;
-text-transform:uppercase;
-}
-
-h1{
-font-size:clamp(3.5rem,7vw,7rem);
-line-height:.92;
-font-weight:400;
-letter-spacing:-.04em;
-margin-bottom:28px;
-}
-
-h2{
-font-size:clamp(2.2rem,4vw,4.5rem);
-line-height:1;
-font-weight:400;
-letter-spacing:-.03em;
-margin-bottom:24px;
-}
-
-h3{
-font-size:1.4rem;
-font-weight:400;
-margin-bottom:12px;
-}
-
-p{
-color:var(--muted);
-max-width:820px;
-}
-
-.hero p{
-font-size:1.08rem;
-line-height:1.9;
-margin-bottom:34px;
-color:#e5ddd0;
-}
-
-.button-row{
-display:flex;
-gap:14px;
-flex-wrap:wrap;
-margin-top:30px;
-}
-
-.btn{
-padding:14px 24px;
-border:1px solid rgba(255,255,255,.18);
-font-size:.72rem;
-letter-spacing:.16em;
-text-transform:uppercase;
-transition:.25s ease;
-}
-
-.btn.primary{
-background:#d7c2a1;
-color:#111;
-border-color:#d7c2a1;
-}
-
-.btn:hover{
-transform:translateY(-2px);
-}
-
-.intro{
-background:linear-gradient(to bottom,#080808,#11100f);
-}
-
-.intro-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:70px;
-align-items:center;
-}
-
-.intro-image{
-border-radius:14px;
-overflow:hidden;
-border:1px solid var(--line);
-box-shadow:0 30px 90px rgba(0,0,0,.45);
-}
-
-.intro-image img{
-aspect-ratio:16/10;
-object-fit:cover;
-}
-
-.mockup-section{
-background:var(--soft);
-color:#1f1c18;
-}
-
-.mockup-section p{
-color:#5f584f;
-}
-
-.mockup-grid{
-display:grid;
-gap:28px;
-margin-top:50px;
-}
-
-.mockup-pair{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:28px;
-}
-
-.mockup{
-overflow:hidden;
-border-radius:14px;
-box-shadow:0 20px 60px rgba(0,0,0,.12);
-border:1px solid rgba(0,0,0,.08);
-background:white;
-}
-
-.mockup img{
-aspect-ratio:16/10;
-object-fit:cover;
-transition:transform .4s ease;
-}
-
-.mockup:hover img{
-transform:scale(1.02);
-}
-
-.dark-section{
-background:#11100f;
-}
-
-.mood-grid{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:18px;
-margin-top:42px;
-}
-
-.mood-card{
-padding:28px;
-border-radius:14px;
-border:1px solid var(--line);
-background:rgba(255,255,255,.02);
-}
-
-.collection-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:24px;
-margin-top:46px;
-}
-
-.collection-card{
-background:#141311;
-border-radius:14px;
-overflow:hidden;
-border:1px solid var(--line);
-transition:.25s ease;
-}
-
-.collection-card:hover{
-transform:translateY(-4px);
-border-color:rgba(213,190,154,.35);
-}
-
-.collection-card img{
-aspect-ratio:4/3;
-object-fit:cover;
-}
-
-.card-copy{
-padding:24px;
-}
-
-.card-copy span{
-display:block;
-margin-bottom:10px;
-font-size:.68rem;
-letter-spacing:.18em;
-text-transform:uppercase;
-color:var(--accent);
-}
-
-.related{
-background:#0d0c0b;
-}
-
-.related-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:24px;
-margin-top:44px;
-}
-
-.related-card{
-padding:32px;
-border:1px solid var(--line);
-border-radius:14px;
-background:#12110f;
-}
-
-.faq-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:22px;
-margin-top:40px;
-}
-
-.faq{
-padding:28px;
-border-radius:14px;
-border:1px solid var(--line);
-background:rgba(255,255,255,.02);
-}
-
-footer{
-padding:42px 0;
-border-top:1px solid var(--line);
-font-size:.9rem;
-color:#847c70;
-}
-
-.site-header{
-position:fixed;
-top:0;
-left:0;
-right:0;
-z-index:900;
-display:flex;
-justify-content:space-between;
-align-items:center;
-gap:1.5rem;
-padding:1.05rem clamp(1.5rem,5vw,6rem);
-background:rgba(16,15,14,.78);
-border-bottom:1px solid rgba(255,255,255,.08);
-backdrop-filter:blur(14px);
-color:#fbf7f1;
-font-family:Arial,Helvetica,sans-serif;
-}
-
-.site-logo{
-letter-spacing:.22em;
-text-transform:uppercase;
-font-size:.76rem;
-color:#efe6dc;
-white-space:nowrap;
-}
-
-.site-nav{
-display:flex;
-align-items:center;
-gap:clamp(.8rem,2.2vw,1.8rem);
-flex-wrap:wrap;
-justify-content:flex-end;
-}
-
-.site-nav a{
-font-size:.68rem;
-letter-spacing:.16em;
-text-transform:uppercase;
-color:#d9cec2;
-transition:color .2s ease;
-}
-
-.site-nav a:hover,
-.site-nav a.active{
-color:var(--accent);
-}
-
-.site-nav .shop-print-link{
-border:1px solid rgba(197,160,106,.42);
-padding:.5rem .85rem;
-color:#d8c6a4;
-}
-
-@media(max-width:1100px){
-.intro-grid,
-.mockup-pair,
-.mood-grid,
-.collection-grid,
-.related-grid,
-.faq-grid{
-grid-template-columns:1fr;
-}
-}
-
-@media(max-width:780px){
-section{padding:72px 0}
-.hero{min-height:82vh}
-.site-header{padding:1rem 1.4rem}
-.site-nav{display:none}
-.hero-content{padding-top:4.8rem}
-}
-
-
-/* RELATED COLLECTION CARDS */
-
-
-.qe-related-collections{
-  background:#050505;
-  padding:120px 0 130px;
-  border-top:1px solid rgba(255,255,255,0.08);
-}
-
-.qe-related-inner{
-  width:min(92%,1380px);
-  margin:auto;
-}
-
-.qe-related-header{
-  max-width:780px;
-  margin-bottom:55px;
-}
-
-.qe-related-eyebrow{
-  display:block;
-  color:#b99658;
-  text-transform:uppercase;
-  letter-spacing:.22em;
-  font-size:.68rem;
+p{color:var(--muted);max-width:820px}
+.container{width:min(92%,var(--max));margin:auto}
+section{padding:100px 0;border-top:1px solid var(--line)}
+.eyebrow,
+.section-label{
+  display:inline-block;
   margin-bottom:18px;
-}
-
-.qe-related-header h2{
-  font-size:clamp(2.5rem,5vw,4.6rem);
-  line-height:.96;
-  font-weight:400;
-  color:#f3eee7;
-  margin-bottom:24px;
-  letter-spacing:-0.04em;
-}
-
-.qe-related-header p{
-  color:#b8aa98;
-  font-size:1rem;
-  line-height:1.9;
-  max-width:720px;
-}
-
-.qe-related-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:24px;
-}
-
-.qe-related-card{
-  background:#0c0c0c;
-  border:1px solid rgba(255,255,255,0.08);
-  overflow:hidden;
-  transition:.28s ease;
-  text-decoration:none;
-}
-
-.qe-related-card:hover{
-  transform:translateY(-4px);
-  border-color:rgba(185,150,88,0.45);
-}
-
-.qe-related-image{
-  aspect-ratio:16/10;
-  overflow:hidden;
-}
-
-.qe-related-image img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
-}
-
-.qe-related-content{
-  padding:26px 24px 30px;
-}
-
-.qe-related-type{
-  display:block;
-  color:#b99658;
+  color:var(--accent);
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.72rem;
+  letter-spacing:.28em;
   text-transform:uppercase;
+  font-weight:700;
+}
+h1{
+  font-size:clamp(3.5rem,7vw,7rem);
+  line-height:.92;
+  font-weight:400;
+  letter-spacing:-.04em;
+  margin-bottom:28px;
+}
+h2{
+  font-size:clamp(2.2rem,4vw,4.5rem);
+  line-height:1;
+  font-weight:400;
+  letter-spacing:-.03em;
+  margin-bottom:24px;
+}
+h3{font-size:1.4rem;font-weight:400;margin-bottom:12px}
+.button-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.btn{
+  display:inline-block;
+  padding:14px 24px;
+  border:1px solid rgba(255,255,255,.18);
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.72rem;
   letter-spacing:.16em;
-  font-size:.62rem;
-  margin-bottom:10px;
+  text-transform:uppercase;
+  transition:.25s ease;
 }
+.btn.primary{background:#d7c2a1;color:#111;border-color:#d7c2a1}
+.btn:hover{transform:translateY(-2px);border-color:rgba(197,160,106,.55)}
 
-.qe-related-content h3{
-  color:#f3eee7;
-  font-size:1.7rem;
+/* NAV */
+.site-header{
+  position:fixed;
+  top:0;left:0;width:100%;
+  z-index:9999;
+  background:rgba(8,8,8,.72);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(185,138,59,.14);
+}
+.nav-wrap{
+  max-width:1420px;
+  margin:0 auto;
+  padding:18px clamp(20px,4vw,42px);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:28px;
+}
+.logo{
+  color:#f4eee5;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:14px;
+  letter-spacing:.28em;
+  text-transform:uppercase;
   line-height:1.1;
-  font-weight:400;
-  margin-bottom:16px;
+  white-space:nowrap;
 }
-
-.qe-related-content p{
-  color:#b8aa98;
-  line-height:1.8;
-  font-size:.95rem;
-  margin-bottom:20px;
+.logo span{
+  display:block;
+  margin-top:6px;
+  font-size:9px;
+  letter-spacing:.34em;
+  color:rgba(244,238,229,.52);
 }
+.main-nav{display:flex;align-items:center;gap:28px}
+.main-nav a{
+  color:rgba(244,238,229,.72);
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:12px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  transition:.28s ease;
+}
+.main-nav a:hover,.main-nav a.active{color:#d5b365}
+.nav-shop{padding:12px 18px;border:1px solid rgba(185,138,59,.45);color:#d5b365!important}
+.nav-shop:hover{background:#d5b365;color:#0f0d0a!important}
+.mobile-toggle{display:none;background:none;border:none;cursor:pointer}
+.mobile-toggle span{display:block;width:24px;height:1px;margin:6px 0;background:#f4eee5}
 
-.qe-related-link{
-  color:#f3eee7;
-  font-size:.72rem;
-  letter-spacing:.14em;
+/* HERO */
+.hero{
+  min-height:92vh;
+  display:flex;
+  align-items:center;
+  position:relative;
+  overflow:hidden;
+  background:
+    linear-gradient(to right, rgba(0,0,0,.78), rgba(0,0,0,.35)),
+    linear-gradient(to bottom, rgba(8,8,8,0) 55%, #080706 100%),
+    url('coastal-atmosphere-diningroom.jpg') center/cover no-repeat;
+}
+.hero-content{position:relative;z-index:2;max-width:760px;padding-top:80px}
+.hero p{font-size:1.08rem;line-height:1.9;margin-bottom:34px;color:#e5ddd0}
+.trust-strip{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:28px;
+}
+.trust-strip span{
+  border:1px solid rgba(197,160,106,.26);
+  background:rgba(0,0,0,.22);
+  padding:9px 12px;
+  color:#dfd5c7;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.62rem;
+  letter-spacing:.15em;
   text-transform:uppercase;
 }
 
-@media(max-width:1100px){
-
-  .qe-related-grid{
-    grid-template-columns:1fr;
-  }
-
+/* MOCKUPS / FEATURED INSTALLATIONS */
+.mockup-section{
+  background:var(--soft);
+  color:var(--dark);
+  border-top:0;
 }
-
-
-
-/* DESIGNER WORKFLOW */
-.workflow-intro-cta{
-  background:#0b0a08;
-  padding:90px 0 0;
-  border-top:1px solid rgba(255,255,255,.08);
-  text-align:center;
+.mockup-section p{color:#5f584f}
+.section-heading{max-width:900px;margin-bottom:46px}
+.buyer-note{
+  max-width:760px;
+  margin:24px 0 0;
+  padding:16px 20px;
+  border:1px solid rgba(154,107,40,.18);
+  background:#fffaf3;
+  color:#4d4338!important;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.82rem!important;
+  letter-spacing:.04em;
+  line-height:1.7!important;
 }
-.workflow-intro-cta .container{
-  max-width:860px;
-}
-.workflow-intro-cta h2{
-  color:#f3eee7;
-  font-size:clamp(2.4rem,5vw,4.6rem);
-  line-height:.98;
-  margin-bottom:20px;
-}
-.workflow-intro-cta p{
-  margin:0 auto;
-  color:#b8aa98;
-  max-width:660px;
-}
-.designer-workflow{
-  background:#0b0a08;
-  color:#f4efe8;
-  padding:90px 0 120px;
-  border-bottom:1px solid rgba(211,177,122,.16);
-}
-.workflow-header{
-  max-width:780px;
-  margin-bottom:56px;
-}
-.workflow-header h2,
-.workflow-confidence h3,
-.workflow-cta h3{
-  font-weight:400;
-  line-height:.98;
-}
-.workflow-header h2{
-  font-size:clamp(2.6rem,5vw,4.8rem);
-  margin-bottom:24px;
-}
-.workflow-header p{
-  color:rgba(244,239,232,.72);
-  font-size:1rem;
-  max-width:680px;
-}
-.workflow-grid{
+.format-strip{
+  max-width:var(--max);
+  margin:28px auto 34px;
   display:grid;
   grid-template-columns:repeat(4,1fr);
-  gap:18px;
-  margin-bottom:54px;
+  gap:10px;
 }
-.workflow-step{
-  border:1px solid rgba(211,177,122,.18);
-  background:rgba(255,255,255,.035);
-  border-radius:14px;
-  padding:30px;
-  min-height:260px;
-}
-.workflow-number{
-  color:var(--accent);
-  font-size:.72rem;
-  letter-spacing:.22em;
+.format-strip span{
+  display:block;
+  padding:13px 14px;
+  background:#fffaf3;
+  border:1px solid rgba(40,35,30,.10);
+  color:#4d4338;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.62rem;
+  letter-spacing:.15em;
   text-transform:uppercase;
-}
-.workflow-step h3{
-  font-size:1.55rem;
-  margin:22px 0 14px;
-}
-.workflow-step p{
-  color:rgba(244,239,232,.68);
-  font-size:.95rem;
-}
-.workflow-confidence{
-  display:grid;
-  grid-template-columns:.85fr 1.15fr;
-  gap:36px;
-  padding:38px;
-  border:1px solid rgba(211,177,122,.18);
-  border-radius:14px;
-  background:rgba(255,255,255,.025);
-  margin-bottom:46px;
-}
-.workflow-confidence h3{
-  font-size:clamp(2rem,4vw,3.6rem);
-}
-.workflow-confidence ul{
-  columns:2;
-  list-style:none;
-  color:rgba(244,239,232,.72);
-  font-size:.95rem;
-}
-.workflow-confidence li{
-  margin-bottom:13px;
-  padding-left:18px;
-  position:relative;
-}
-.workflow-confidence li::before{
-  content:"—";
-  position:absolute;
-  left:0;
-  color:var(--accent);
-}
-.workflow-cta{
   text-align:center;
-  max-width:760px;
-  margin:0 auto;
-  padding-top:20px;
 }
-.workflow-cta h3{
-  font-size:clamp(2.2rem,5vw,4.2rem);
-  margin-bottom:14px;
-}
-.workflow-cta p{
-  color:rgba(244,239,232,.72);
-  margin:0 auto 30px;
-}
-@media(max-width:1100px){
-  .workflow-grid,
-  .workflow-confidence{
-    grid-template-columns:1fr;
-  }
-  .workflow-confidence ul{
-    columns:1;
-  }
-}
-
-
-/* GLOBAL NAV */
-.site-header{position:fixed;top:0;left:0;width:100%;z-index:9999;background:rgba(8,8,8,.72);backdrop-filter:blur(14px);border-bottom:1px solid rgba(185,138,59,.14);padding:0;display:block}
-.nav-wrap{max-width:1420px;margin:0 auto;padding:18px clamp(20px,4vw,42px);display:flex;align-items:center;justify-content:space-between;gap:28px}
-.logo{text-decoration:none;color:#f4eee5;font-family:Arial,Helvetica,sans-serif;font-size:14px;letter-spacing:.28em;text-transform:uppercase;line-height:1.1;white-space:nowrap}
-.logo span{display:block;margin-top:6px;font-size:9px;letter-spacing:.34em;color:rgba(244,238,229,.52)}
-.main-nav{display:flex;align-items:center;gap:28px}
-.main-nav a{text-decoration:none;color:rgba(244,238,229,.72);font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.16em;text-transform:uppercase;transition:.28s ease}
-.main-nav a:hover,.main-nav a.active{color:#d5b365}.nav-shop{padding:12px 18px;border:1px solid rgba(185,138,59,.45);color:#d5b365!important}.nav-shop:hover{background:#d5b365;color:#0f0d0a!important}
-.mobile-toggle{display:none;background:none;border:none;cursor:pointer}.mobile-toggle span{display:block;width:24px;height:1px;margin:6px 0;background:#f4eee5}
-@media(max-width:1040px){.mobile-toggle{display:block}.main-nav{position:absolute;top:100%;left:0;width:100%;background:#0b0907;border-bottom:1px solid rgba(185,138,59,.12);flex-direction:column;align-items:flex-start;padding:28px;gap:18px;display:none}.main-nav.active{display:flex}}
-
-/* BUYING HELP */
-.buying-help-section{background:#f4f0ea;color:#1f1f1d;border-top:1px solid rgba(40,35,30,.14);border-bottom:1px solid rgba(40,35,30,.14)}
-.buying-help-box{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(2rem,5vw,5rem);align-items:start}
-.buying-help-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(40,35,30,.14);border:1px solid rgba(40,35,30,.14)}
-.buying-help-item{background:#fffaf3;padding:1.35rem;min-height:160px}.buying-help-item strong{display:block;color:#9f7b3d;font-family:Arial,Helvetica,sans-serif;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;margin-bottom:.75rem}.buying-help-item p{color:#4c443c;margin:0}
-
-/* GLOBAL LINKED FOOTER */
-.footer-seo{background:#100e0b;padding:62px clamp(22px,6vw,76px) 36px;border-top:1px solid rgba(185,138,59,.22)}
-.footer-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:28px;max-width:1380px;margin:0 auto}
-.footer-grid h3{margin-bottom:13px;color:#d5b365;font-family:"Cormorant Garamond",Georgia,serif;font-size:21px;font-weight:400}
-.footer-grid a{display:block;text-decoration:none;color:rgba(244,238,229,.62);font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:2;text-transform:none;letter-spacing:0}.footer-grid a:hover{color:#f4eee5}
-.footer-bottom{max-width:1380px;margin:40px auto 0;padding-top:28px;border-top:1px solid rgba(185,138,59,.22);color:rgba(244,238,229,.32);font-family:Arial,Helvetica,sans-serif;font-size:10px;letter-spacing:.18em;text-align:center;text-transform:uppercase}
-@media(max-width:1040px){.footer-grid{grid-template-columns:1fr}}@media(max-width:980px){.buying-help-box,.buying-help-grid{grid-template-columns:1fr}}
-
-
-/* AI / GEO COLLECTION PAGE ADDITIONS */
-.ai-about-artist,.ai-resource-section,.ai-linking-hub{border-top:1px solid rgba(181,146,74,.14);border-bottom:1px solid rgba(181,146,74,.08)}
-.ai-two-col{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2rem,5vw,5rem);align-items:start}
-.ai-two-col p{color:rgba(244,238,229,.68);font-size:.88rem;line-height:1.95}
-.ai-section-head{max-width:980px;margin:0 auto 42px;text-align:center}
-.ai-section-head p{max-width:760px;margin:18px auto 0;color:rgba(244,238,229,.62);line-height:1.9}
-.ai-env-grid{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:2px}
-.ai-env-card{display:block;text-decoration:none;background:#12100d;border:1px solid rgba(181,146,74,.14);padding:30px;min-height:230px}
-.ai-env-card span{display:block;color:#b9934b;font-family:Arial,Helvetica,sans-serif;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;margin-bottom:18px}
-.ai-env-card h3{color:#f4eee5;font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(1.25rem,2vw,1.7rem);font-weight:400;line-height:1.05;margin-bottom:14px}
-.ai-env-card p{color:rgba(244,238,229,.58);font-size:.76rem;line-height:1.85}
-.ai-link-grid{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
-.ai-link-grid a{display:block;text-decoration:none;background:#f3efe7;color:#1b1713;padding:28px;border:1px solid rgba(40,35,30,.08)}
-.ai-link-grid strong{display:block;font-family:"Cormorant Garamond",Georgia,serif;font-size:1.65rem;font-weight:400;color:#1b1713;margin-bottom:10px}
-.ai-link-grid span{display:block;color:#5b5044;font-size:.76rem;line-height:1.75}
-@media(max-width:1040px){.ai-two-col,.ai-env-grid,.ai-link-grid{grid-template-columns:1fr}.ai-section-head{text-align:left}.ai-section-head p{margin-left:0}}
-
-
-/* IMAGE PERFORMANCE PASS */
-img{max-width:100%;height:auto}
-section{content-visibility:auto;contain-intrinsic-size:1px 900px}
-.hero,.site-header,nav{content-visibility:visible;contain-intrinsic-size:auto}
-
-
-/* CLICKABLE MOCKUP MODAL + CAPTIONS */
-.mockup{
+.featured-installation{
+  max-width:var(--max);
+  margin:0 auto 34px;
+  background:#fffaf3;
+  border:1px solid rgba(40,35,30,.12);
+  box-shadow:0 24px 70px rgba(0,0,0,.14);
+  overflow:hidden;
+  border-radius:14px;
+  color:#1f1c18;
   cursor:pointer;
   position:relative;
 }
-.mockup-caption{
-  padding:16px 18px 18px;
-  font-size:.9rem;
-  line-height:1.55;
-  color:#5f584f;
-  background:#fffaf3;
+.featured-installation img{
+  width:100%;
+  height:auto;
+  object-fit:cover;
+  transition:transform .65s cubic-bezier(.25,.46,.45,.94),filter .4s ease;
 }
-.mockup .quick-link{
+.featured-installation:hover img{transform:scale(1.012);filter:saturate(1.04)}
+.featured-installation-copy{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:34px;
+  padding:34px;
+  align-items:start;
+}
+.featured-installation-copy h3{
+  color:#1f1c18;
+  font-size:clamp(2rem,3vw,3.2rem);
+  line-height:1;
+  margin-bottom:14px;
+}
+.featured-installation-copy p{
+  color:#5f584f;
+  font-size:1rem;
+  line-height:1.85;
+  margin-bottom:18px;
+}
+.shop-installation-label{
+  display:inline-block;
+  margin-bottom:14px;
+  color:#9f7b3d;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.64rem;
+  letter-spacing:.20em;
+  text-transform:uppercase;
+}
+.installation-descriptor{font-style:italic;color:#746a5f!important;margin-top:-4px}
+.text-link{
+  color:#9a6b28;
+  text-decoration:none;
+  font-family:Arial,Helvetica,sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  font-size:.72rem;
+  font-weight:700;
+}
+.quick-specs,.inline-specs{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:10px;
+}
+.inline-specs{margin:16px 0 18px}
+.quick-specs span,.inline-specs span{
+  display:block;
+  padding:12px;
+  background:#f3efe8;
+  border:1px solid rgba(40,35,30,.10);
+  color:#4d4338;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.62rem;
+  letter-spacing:.12em;
+  line-height:1.55;
+  text-transform:uppercase;
+}
+.quick-link{
   position:absolute;
   right:14px;
   bottom:58px;
@@ -701,90 +298,31 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
   transform:translateY(8px);
   transition:.25s ease;
 }
-.mockup:hover .quick-link{
-  opacity:1;
-  transform:translateY(0);
-}
-.mockup-modal{
-  position:fixed;
-  inset:0;
-  z-index:10000;
-  background:rgba(0,0,0,.86);
-  display:none;
-  align-items:center;
-  justify-content:center;
-  padding:clamp(20px,4vw,56px);
-}
-.mockup-modal.active{
-  display:flex;
-}
-.mockup-modal-inner{
-  width:min(92vw,1180px);
-  max-height:90vh;
-  background:#0d0c0b;
-  border:1px solid rgba(213,190,154,.26);
-  box-shadow:0 30px 100px rgba(0,0,0,.65);
-  overflow:auto;
-}
-.mockup-modal img{
-  width:100%;
-  max-height:72vh;
-  object-fit:contain;
-  background:#080808;
-}
-.mockup-modal-content{
-  padding:22px 24px 26px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:18px;
-  flex-wrap:wrap;
-}
-.mockup-modal-content p{
-  margin:0;
-  color:#d9cec2;
-  max-width:720px;
-}
-.mockup-close{
-  position:absolute;
-  top:18px;
-  right:22px;
-  background:transparent;
-  color:#fff;
-  border:1px solid rgba(255,255,255,.35);
-  width:44px;
-  height:44px;
+.mockup:hover .quick-link,
+.featured-installation:hover .quick-link{opacity:1;transform:translateY(0)}
+
+.mockup-grid{display:grid;gap:28px;margin-top:50px}
+.mockup-pair{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.mockup{
+  overflow:hidden;
+  border-radius:14px;
+  box-shadow:0 20px 60px rgba(0,0,0,.12);
+  border:1px solid rgba(0,0,0,.08);
+  background:white;
   cursor:pointer;
-  font-size:24px;
-  line-height:1;
+  position:relative;
 }
-@media(max-width:780px){
-  .mockup .quick-link{opacity:1;transform:none;bottom:64px}
-  .mockup-modal-content{display:block}
-  .mockup-modal-content .btn{display:inline-block;margin-top:18px}
+.mockup img{aspect-ratio:16/10;object-fit:cover;transition:transform .4s ease}
+.mockup:hover img{transform:scale(1.02)}
+.mockup-caption{
+  padding:16px 18px 18px;
+  font-size:.9rem;
+  line-height:1.55;
+  color:#5f584f;
+  background:#fffaf3;
 }
 
-
-/* FEATURED INSTALLATION BLOCKS - WINTER / QUIET EARTH STYLE */
-.featured-installation{max-width:var(--max);margin:0 auto 34px;background:#fffaf3;border:1px solid rgba(40,35,30,.12);box-shadow:0 24px 70px rgba(0,0,0,.14);overflow:hidden;border-radius:14px;color:#1f1c18}
-.featured-installation img{width:100%;height:auto;object-fit:cover;transition:transform .65s cubic-bezier(.25,.46,.45,.94),filter .4s ease}
-.featured-installation:hover img{transform:scale(1.012);filter:saturate(1.04)}
-.featured-installation-copy{display:grid;grid-template-columns:1.1fr .9fr;gap:34px;padding:34px;align-items:start}
-.featured-installation-copy h3{color:#1f1c18;font-size:clamp(2rem,3vw,3.2rem);line-height:1;margin-bottom:14px}
-.featured-installation-copy p{color:#5f584f;font-size:1rem;line-height:1.85;margin-bottom:18px}
-.featured-installation .eyebrow{color:#9f7b3d}
-.quick-specs{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-.quick-specs span{display:block;padding:12px;background:#f3efe8;border:1px solid rgba(40,35,30,.10);color:#4d4338;font-family:Arial,Helvetica,sans-serif;font-size:.62rem;letter-spacing:.12em;line-height:1.55;text-transform:uppercase}
-.format-strip{max-width:var(--max);margin:28px auto 34px;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
-.format-strip span{display:block;padding:13px 14px;background:#fffaf3;border:1px solid rgba(40,35,30,.10);color:#4d4338;font-family:Arial,Helvetica,sans-serif;font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;text-align:center}
-.buyer-note{max-width:760px;margin:24px 0 0;padding:16px 20px;border:1px solid rgba(154,107,40,.18);background:#fffaf3;color:#4d4338!important;font-family:Arial,Helvetica,sans-serif;font-size:.82rem!important;letter-spacing:.04em;line-height:1.7!important}
-.modal-specs{display:grid;gap:10px;min-width:min(100%,420px);margin-top:14px}
-.modal-specs span{display:block;border:1px solid rgba(213,190,154,.20);padding:12px;background:rgba(255,255,255,.035);color:#d9cec2;font-family:Arial,Helvetica,sans-serif;font-size:.72rem;letter-spacing:.08em;line-height:1.55;text-transform:uppercase}
-@media(max-width:1100px){.featured-installation-copy{grid-template-columns:1fr}}
-@media(max-width:780px){.format-strip,.quick-specs{grid-template-columns:1fr}}
-
-
-/* BUYER UX REFINEMENTS */
+/* STORY / COLLECTION */
 .collection-story{
   background:linear-gradient(to bottom,#080808,#11100f);
   border-top:1px solid var(--line);
@@ -795,13 +333,46 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
   gap:70px;
   align-items:start;
 }
-.story-grid p{
-  margin-bottom:20px;
+.story-grid p{margin-bottom:20px}
+.ohio-credibility{
+  display:block;
+  margin-top:18px;
+  color:rgba(244,238,229,.58);
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.72rem;
+  letter-spacing:.12em;
+  text-transform:uppercase;
 }
-.room-strip{
-  background:#0d0c0b;
-  border-top:1px solid var(--line);
+
+.collection-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+  margin-top:46px;
 }
+.collection-card{
+  background:#141311;
+  border-radius:14px;
+  overflow:hidden;
+  border:1px solid var(--line);
+  transition:.25s ease;
+}
+.collection-card:hover{transform:translateY(-4px);border-color:rgba(213,190,154,.35)}
+.collection-card img{aspect-ratio:4/3;object-fit:cover}
+.card-copy{padding:24px}
+.card-copy span{
+  display:block;
+  margin-bottom:10px;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.68rem;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--accent);
+}
+.card-copy p{font-size:.95rem}
+
+/* BEST ROOMS */
+.room-strip{background:#0d0c0b;border-top:1px solid var(--line)}
 .room-strip-grid{
   display:grid;
   grid-template-columns:repeat(5,1fr);
@@ -823,89 +394,320 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
   text-transform:uppercase;
   margin-bottom:12px;
 }
-.room-strip-card h3{
-  font-size:1.35rem;
-  margin-bottom:10px;
+.room-strip-card h3{font-size:1.35rem;margin-bottom:10px}
+.room-strip-card p{font-size:.86rem}
+
+/* BUYING HELP */
+.buying-help-section{
+  background:#f4f0ea;
+  color:#1f1f1d;
+  border-top:1px solid rgba(40,35,30,.14);
+  border-bottom:1px solid rgba(40,35,30,.14);
 }
-.room-strip-card p{
-  font-size:.86rem;
+.buying-help-box{
+  max-width:1180px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:.85fr 1.15fr;
+  gap:clamp(2rem,5vw,5rem);
+  align-items:start;
 }
-.shop-installation-label{
-  display:inline-block;
-  margin-bottom:14px;
+.buying-help-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:1px;
+  background:rgba(40,35,30,.14);
+  border:1px solid rgba(40,35,30,.14);
+}
+.buying-help-item{background:#fffaf3;padding:1.35rem;min-height:160px}
+.buying-help-item strong{
+  display:block;
   color:#9f7b3d;
   font-family:Arial,Helvetica,sans-serif;
-  font-size:.64rem;
-  letter-spacing:.20em;
+  font-size:.72rem;
+  letter-spacing:.18em;
   text-transform:uppercase;
+  margin-bottom:.75rem;
 }
-.installation-descriptor{
-  font-style:italic;
-  color:#746a5f!important;
-  margin-top:-4px;
+.buying-help-item p{color:#4c443c;margin:0;font-size:.94rem}
+
+/* DESIGNER WORKFLOW */
+.workflow-intro-cta{
+  background:#0b0a08;
+  padding:90px 0 0;
+  border-top:1px solid rgba(255,255,255,.08);
+  text-align:center;
 }
-.inline-specs{
+.workflow-intro-cta .container{max-width:860px}
+.workflow-intro-cta p{margin:0 auto;color:#b8aa98;max-width:660px}
+.designer-workflow{
+  background:#0b0a08;
+  color:#f4efe8;
+  padding:90px 0 120px;
+  border-bottom:1px solid rgba(211,177,122,.16);
+}
+.workflow-header{max-width:780px;margin-bottom:56px}
+.workflow-grid{
   display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:10px;
-  margin:16px 0 18px;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+  margin-bottom:54px;
 }
-.inline-specs span{
-  display:block;
-  padding:11px 12px;
-  background:#f3efe8;
-  border:1px solid rgba(40,35,30,.10);
-  color:#4d4338;
-  font-family:Arial,Helvetica,sans-serif;
-  font-size:.62rem;
-  letter-spacing:.11em;
-  line-height:1.55;
-  text-transform:uppercase;
+.workflow-step{
+  border:1px solid rgba(211,177,122,.18);
+  background:rgba(255,255,255,.035);
+  border-radius:14px;
+  padding:30px;
+  min-height:260px;
 }
-.ohio-credibility{
-  display:block;
-  margin-top:18px;
-  color:rgba(244,238,229,.58);
+.workflow-number{
+  color:var(--accent);
   font-family:Arial,Helvetica,sans-serif;
   font-size:.72rem;
-  letter-spacing:.12em;
+  letter-spacing:.22em;
   text-transform:uppercase;
+}
+.workflow-step h3{font-size:1.55rem;margin:22px 0 14px}
+.workflow-step p{color:rgba(244,239,232,.68);font-size:.95rem}
+.workflow-confidence{
+  display:grid;
+  grid-template-columns:.85fr 1.15fr;
+  gap:36px;
+  padding:38px;
+  border:1px solid rgba(211,177,122,.18);
+  border-radius:14px;
+  background:rgba(255,255,255,.025);
+  margin-bottom:46px;
+}
+.workflow-confidence h3{font-size:clamp(2rem,4vw,3.6rem);font-weight:400;line-height:.98}
+.workflow-confidence ul{
+  columns:2;
+  list-style:none;
+  color:rgba(244,239,232,.72);
+  font-size:.95rem;
+}
+.workflow-confidence li{margin-bottom:13px;padding-left:18px;position:relative}
+.workflow-confidence li::before{content:"—";position:absolute;left:0;color:var(--accent)}
+.workflow-cta{text-align:center;max-width:760px;margin:0 auto;padding-top:20px}
+.workflow-cta p{margin:0 auto 30px}
+
+/* RELATED */
+.qe-related-collections{
+  background:#050505;
+  padding:120px 0 130px;
+  border-top:1px solid rgba(255,255,255,0.08);
+}
+.qe-related-inner{width:min(92%,1380px);margin:auto}
+.qe-related-header{max-width:780px;margin-bottom:55px}
+.qe-related-eyebrow{
+  display:block;
+  color:#b99658;
+  text-transform:uppercase;
+  letter-spacing:.22em;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.68rem;
+  margin-bottom:18px;
+}
+.qe-related-header p{color:#b8aa98;font-size:1rem;line-height:1.9;max-width:720px}
+.qe-related-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.qe-related-card{
+  background:#0c0c0c;
+  border:1px solid rgba(255,255,255,0.08);
+  overflow:hidden;
+  transition:.28s ease;
+}
+.qe-related-card:hover{transform:translateY(-4px);border-color:rgba(185,150,88,0.45)}
+.qe-related-image{aspect-ratio:16/10;overflow:hidden}
+.qe-related-image img{width:100%;height:100%;object-fit:cover}
+.qe-related-content{padding:26px 24px 30px}
+.qe-related-type{
+  display:block;
+  color:#b99658;
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.62rem;
+  margin-bottom:10px;
+}
+.qe-related-content h3{color:#f3eee7;font-size:1.7rem;line-height:1.1;font-weight:400;margin-bottom:16px}
+.qe-related-content p{color:#b8aa98;line-height:1.8;font-size:.95rem;margin-bottom:20px}
+.qe-related-link{color:#f3eee7;font-family:Arial,Helvetica,sans-serif;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase}
+
+/* FAQ / CTA */
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:40px}
+.faq{
+  padding:28px;
+  border-radius:14px;
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.02);
 }
 .pre-footer-cta{
   background:linear-gradient(to bottom,#11100f,#080808);
   text-align:center;
   border-top:1px solid rgba(197,160,106,.18);
 }
-.pre-footer-cta .container{
-  max-width:860px;
+.pre-footer-cta .container{max-width:860px}
+.pre-footer-cta p{margin:0 auto 28px}
+
+/* MODAL */
+.mockup-modal{
+  position:fixed;
+  inset:0;
+  z-index:10000;
+  background:rgba(0,0,0,.86);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:clamp(20px,4vw,56px);
 }
-.pre-footer-cta p{
-  margin:0 auto 28px;
+.mockup-modal.active{display:flex}
+.mockup-modal-inner{
+  width:min(92vw,1180px);
+  max-height:90vh;
+  background:#0d0c0b;
+  border:1px solid rgba(213,190,154,.26);
+  box-shadow:0 30px 100px rgba(0,0,0,.65);
+  overflow:auto;
 }
-@media(max-width:1100px){
-  .story-grid,.room-strip-grid{grid-template-columns:1fr}
+.mockup-modal img{width:100%;max-height:72vh;object-fit:contain;background:#080808}
+.mockup-modal-content{
+  padding:22px 24px 26px;
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:18px;
+  flex-wrap:wrap;
 }
-@media(max-width:780px){
-  .inline-specs{grid-template-columns:1fr}
+.mockup-modal-content p{margin:0;color:#d9cec2;max-width:720px}
+.modal-specs{display:grid;gap:10px;min-width:min(100%,420px);margin-top:14px}
+.modal-specs span{
+  display:block;
+  border:1px solid rgba(213,190,154,.20);
+  padding:12px;
+  background:rgba(255,255,255,.035);
+  color:#d9cec2;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.72rem;
+  letter-spacing:.08em;
+  line-height:1.55;
+  text-transform:uppercase;
+}
+.mockup-close{
+  position:absolute;
+  top:18px;
+  right:22px;
+  background:transparent;
+  color:#fff;
+  border:1px solid rgba(255,255,255,.35);
+  width:44px;
+  height:44px;
+  cursor:pointer;
+  font-size:24px;
+  line-height:1;
 }
 
+/* FOOTER */
+.footer-seo{
+  background:#100e0b;
+  padding:62px clamp(22px,6vw,76px) 36px;
+  border-top:1px solid rgba(185,138,59,.22);
+}
+.footer-grid{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:28px;
+  max-width:1380px;
+  margin:0 auto;
+}
+.footer-grid h3{
+  margin-bottom:13px;
+  color:#d5b365;
+  font-family:"Cormorant Garamond",Georgia,serif;
+  font-size:21px;
+  font-weight:400;
+}
+.footer-grid a{
+  display:block;
+  color:rgba(244,238,229,.62);
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:13px;
+  line-height:2;
+}
+.footer-grid a:hover{color:#f4eee5}
+.footer-bottom{
+  max-width:1380px;
+  margin:40px auto 0;
+  padding-top:28px;
+  border-top:1px solid rgba(185,138,59,.22);
+  color:rgba(244,238,229,.32);
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:10px;
+  letter-spacing:.18em;
+  text-align:center;
+  text-transform:uppercase;
+}
+
+/* PERFORMANCE */
+img{max-width:100%;height:auto}
+section{content-visibility:auto;contain-intrinsic-size:1px 900px}
+.hero,.site-header,nav{content-visibility:visible;contain-intrinsic-size:auto}
+
+/* RESPONSIVE */
+@media(max-width:1100px){
+  .main-nav{display:none}
+  .mobile-toggle{display:block}
+  .main-nav.active{
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:18px;
+    background:#0b0907;
+    border-bottom:1px solid rgba(185,138,59,.12);
+    padding:28px;
+  }
+  .mockup-pair,
+  .story-grid,
+  .collection-grid,
+  .room-strip-grid,
+  .buying-help-box,
+  .buying-help-grid,
+  .workflow-grid,
+  .workflow-confidence,
+  .qe-related-grid,
+  .faq-grid,
+  .featured-installation-copy{grid-template-columns:1fr}
+  .workflow-confidence ul{columns:1}
+  .footer-grid{grid-template-columns:1fr}
+}
+@media(max-width:780px){
+  section{padding:72px 0}
+  .hero{min-height:82vh}
+  .hero-content{padding-top:4.8rem}
+  .nav-wrap{padding:16px 20px}
+  .format-strip,.quick-specs,.inline-specs{grid-template-columns:1fr}
+  .mockup .quick-link,.featured-installation .quick-link{opacity:1;transform:none;bottom:64px}
+  .mockup-modal-content{display:block}
+  .mockup-modal-content .btn{display:inline-block;margin-top:18px}
+}
 </style>
+
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@graph": [
+  "@context":"https://schema.org",
+  "@graph":[
     {
-      "@type": "Person",
-      "@id": "https://dsproul.com/#dan-sproul",
-      "name": "Dan Sproul",
-      "url": "https://dsproul.com",
-      "jobTitle": "Fine Art Photographer and Mixed Media Artist",
-      "description": "Dan Sproul is an Ohio-based fine art photographer and mixed media artist creating original artwork for hospitality, healthcare, corporate, wellness, and residential interiors across the United States.",
-      "homeLocation": {
-        "@type": "Place",
-        "name": "Lima, Ohio"
-      },
-      "sameAs": [
+      "@type":"Person",
+      "@id":"https://dsproul.com/#dan-sproul",
+      "name":"Dan Sproul",
+      "url":"https://dsproul.com",
+      "jobTitle":"Fine Art Photographer and Mixed Media Artist",
+      "description":"Dan Sproul is an Ohio-based fine art photographer and mixed media artist creating original artwork for hospitality, healthcare, corporate, wellness, and residential interiors across the United States.",
+      "homeLocation":{"@type":"Place","name":"Lima, Ohio"},
+      "sameAs":[
         "https://dansproul.com",
         "https://fineartamerica.com/profiles/1-dan-sproul",
         "https://www.pinterest.com/dansproul/",
@@ -914,240 +716,114 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
       ]
     },
     {
-      "@type": "Organization",
-      "@id": "https://dsproul.com/#organization",
-      "name": "Dan Sproul Fine Art Photography",
-      "url": "https://dsproul.com",
-      "founder": {
-        "@id": "https://dsproul.com/#dan-sproul"
-      },
-      "email": "sproulphoto@gmail.com",
-      "description": "Original fine art photography and mixed media artwork for designers, hospitality interiors, healthcare spaces, corporate offices, wellness environments, and residential design projects."
+      "@type":"Organization",
+      "@id":"https://dsproul.com/#organization",
+      "name":"Dan Sproul Fine Art Photography",
+      "url":"https://dsproul.com",
+      "founder":{"@id":"https://dsproul.com/#dan-sproul"},
+      "email":"sproulphoto@gmail.com",
+      "description":"Original fine art photography and mixed media artwork for designers, hospitality interiors, healthcare spaces, corporate offices, wellness environments, and residential design projects."
     },
     {
-      "@type": "WebPage",
-      "@id": "https://dsproul.com/coastal-atmosphere.html#webpage",
-      "url": "https://dsproul.com/coastal-atmosphere.html",
-      "name": "Coastal Atmosphere",
-      "description": "Moody coastal fine art photography by Dan Sproul for quiet luxury coastal interiors, boutique hospitality, bedrooms, dining rooms, wellness spaces, and refined residential projects.",
-      "author": {
-        "@id": "https://dsproul.com/#dan-sproul"
-      },
-      "about": [
-        "artwork for healthcare interiors",
-        "hospitality wall art",
-        "executive office wall art",
-        "quiet luxury artwork",
-        "restorative landscape photography",
-        "atmospheric photography for hospitality",
-        "black-and-white office photography"
-      ],
-      "primaryImageOfPage": {
-        "@id": "https://dsproul.com/coastal-atmosphere-diningroom.jpg#image"
-      }
+      "@type":"WebSite",
+      "@id":"https://dsproul.com/#website",
+      "url":"https://dsproul.com",
+      "name":"Dan Sproul Fine Art Photography",
+      "publisher":{"@id":"https://dsproul.com/#organization"}
     },
     {
-      "@type": "BreadcrumbList",
-      "@id": "https://dsproul.com/coastal-atmosphere.html#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://dsproul.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Collections",
-          "item": "https://dsproul.com/art-collections.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Coastal Atmosphere",
-          "item": "https://dsproul.com/coastal-atmosphere.html"
-        }
+      "@type":["WebPage","CollectionPage"],
+      "@id":"https://dsproul.com/coastal-atmosphere.html#webpage",
+      "url":"https://dsproul.com/coastal-atmosphere.html",
+      "name":"Coastal Atmosphere Collection | Moody Coastal Fine Art Photography | Dan Sproul",
+      "description":"Moody coastal fine art photography by Dan Sproul for quiet luxury coastal interiors, boutique hospitality, bedrooms, living rooms, dining rooms, wellness spaces, and refined residential projects.",
+      "isPartOf":{"@id":"https://dsproul.com/#website"},
+      "author":{"@id":"https://dsproul.com/#dan-sproul"},
+      "publisher":{"@id":"https://dsproul.com/#organization"},
+      "breadcrumb":{"@id":"https://dsproul.com/coastal-atmosphere.html#breadcrumb"},
+      "primaryImageOfPage":{"@id":"https://dsproul.com/coastal-atmosphere-outer-banks-living-room.png#image"},
+      "about":[
+        {"@type":"Thing","name":"Coastal wall art"},
+        {"@type":"Thing","name":"Ocean photography prints"},
+        {"@type":"Thing","name":"Quiet luxury interiors"},
+        {"@type":"Thing","name":"Boutique hospitality artwork"},
+        {"@type":"Thing","name":"Atmospheric coastal photography"}
       ]
     },
     {
-      "@type": "ImageObject",
-      "@id": "https://dsproul.com/coastal-atmosphere-diningroom.jpg#image",
-      "contentUrl": "https://dsproul.com/coastal-atmosphere-diningroom.jpg",
-      "name": "Coastal Atmosphere hero image by Dan Sproul",
-      "description": "Coastal Atmosphere hero image by Dan Sproul",
-      "creator": {
-        "@id": "https://dsproul.com/#dan-sproul"
-      },
-      "copyrightHolder": {
-        "@id": "https://dsproul.com/#dan-sproul"
-      },
-      "creditText": "Dan Sproul",
-      "acquireLicensePage": "https://dansproul.com",
-      "representativeOfPage": true
+      "@type":"BreadcrumbList",
+      "@id":"https://dsproul.com/coastal-atmosphere.html#breadcrumb",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://dsproul.com/"},
+        {"@type":"ListItem","position":2,"name":"Collections","item":"https://dsproul.com/art-collections.html"},
+        {"@type":"ListItem","position":3,"name":"Coastal Atmosphere","item":"https://dsproul.com/coastal-atmosphere.html"}
+      ]
     },
     {
-      "@type": "ImageObject",
-      "@id": "https://dsproul.com/coastal-atmosphere-bedroom.jpg#image",
-      "contentUrl": "https://dsproul.com/coastal-atmosphere-bedroom.jpg",
-      "name": "Moody coastal photography in luxury bedroom interior by Dan Sproul",
-      "description": "Moody coastal photography in luxury bedroom interior by Dan Sproul",
-      "creator": {
-        "@id": "https://dsproul.com/#dan-sproul"
-      },
-      "copyrightHolder": {
-        "@id": "https://dsproul.com/#dan-sproul"
-      },
-      "creditText": "Dan Sproul",
-      "acquireLicensePage": "https://dansproul.com",
-      "representativeOfPage": false
+      "@type":"ImageObject",
+      "@id":"https://dsproul.com/coastal-atmosphere-outer-banks-living-room.png#image",
+      "contentUrl":"https://dsproul.com/coastal-atmosphere-outer-banks-living-room.png",
+      "name":"Outer Banks Beach Sunrise artwork installed in a quiet luxury coastal living room",
+      "description":"Outer Banks beach sunrise photography shown as a large framed coastal statement piece in a warm quiet luxury living room.",
+      "creator":{"@id":"https://dsproul.com/#dan-sproul"},
+      "copyrightHolder":{"@id":"https://dsproul.com/#dan-sproul"},
+      "creditText":"Dan Sproul",
+      "acquireLicensePage":"https://dansproul.com/featured/outer-banks-beach-sunrise-dan-sproul.html",
+      "representativeOfPage":true
     },
     {
-      "@type": "ImageObject",
-      "@id": "https://dsproul.com/coastal-atmosphere-livingroom.jpg#image",
-      "contentUrl": "https://dsproul.com/coastal-atmosphere-livingroom.jpg",
-      "name": "Black and white coastal surf wall art in moody living room by Dan Sproul",
-      "description": "Black and white coastal surf wall art in moody living room by Dan Sproul",
-      "creator": {
-        "@id": "https://dsproul.com/#dan-sproul"
-      },
-      "copyrightHolder": {
-        "@id": "https://dsproul.com/#dan-sproul"
-      },
-      "creditText": "Dan Sproul",
-      "acquireLicensePage": "https://dansproul.com",
-      "representativeOfPage": false
+      "@type":"ImageObject",
+      "@id":"https://dsproul.com/coastal-atmosphere-oregon-sea-stacks-entryway.png#image",
+      "contentUrl":"https://dsproul.com/coastal-atmosphere-oregon-sea-stacks-entryway.png",
+      "name":"Oregon Coast Sunset With Sea Stacks artwork installed in a modern coastal entryway",
+      "description":"Oregon Coast sunset sea stack photography shown as a large framed statement piece above a console in a warm modern coastal entryway.",
+      "creator":{"@id":"https://dsproul.com/#dan-sproul"},
+      "copyrightHolder":{"@id":"https://dsproul.com/#dan-sproul"},
+      "creditText":"Dan Sproul",
+      "acquireLicensePage":"https://dansproul.com/featured/oregon-coast-sunset-with-sea-stacks-dan-sproul.html",
+      "representativeOfPage":false
     },
     {
-      "@type": "ImageObject",
-      "@id": "https://dsproul.com/coastal-atmosphere-living-room.jpg#image",
-      "contentUrl": "https://dsproul.com/coastal-atmosphere-living-room.jpg",
-      "name": "Coastal sea stack artwork above fireplace in luxury living room by Dan Sproul",
-      "description": "Coastal sea stack artwork above fireplace in luxury living room by Dan Sproul",
-      "creator": {
-        "@id": "https://dsproul.com/#dan-sproul"
-      },
-      "copyrightHolder": {
-        "@id": "https://dsproul.com/#dan-sproul"
-      },
-      "creditText": "Dan Sproul",
-      "acquireLicensePage": "https://dansproul.com",
-      "representativeOfPage": false
+      "@type":"ImageObject",
+      "@id":"https://dsproul.com/coastal-atmosphere-yaquina-bay-living-room.png#image",
+      "contentUrl":"https://dsproul.com/coastal-atmosphere-yaquina-bay-living-room.png",
+      "name":"Yaquina Bay Coastal Scene artwork installed in a warm contemporary coastal living room",
+      "description":"Yaquina Bay coastal photography shown as a large framed statement piece in a warm contemporary coastal living room.",
+      "creator":{"@id":"https://dsproul.com/#dan-sproul"},
+      "copyrightHolder":{"@id":"https://dsproul.com/#dan-sproul"},
+      "creditText":"Dan Sproul",
+      "acquireLicensePage":"https://dansproul.com/featured/yaquina-bay-coastal-scene-dan-sproul.html",
+      "representativeOfPage":false
     },
     {
-      "@type": "ImageObject",
-      "@id": "https://dsproul.com/quiet-earth-lily-pond-chugach-alaska.jpg#image",
-      "contentUrl": "https://dsproul.com/quiet-earth-lily-pond-chugach-alaska.jpg",
-      "name": "Quiet Earth Collection",
-      "description": "Quiet Earth Collection",
-      "creator": {
-        "@id": "https://dsproul.com/#dan-sproul"
-      },
-      "copyrightHolder": {
-        "@id": "https://dsproul.com/#dan-sproul"
-      },
-      "creditText": "Dan Sproul",
-      "acquireLicensePage": "https://dansproul.com",
-      "representativeOfPage": false
-    },
-    {
-      "@type": "ImageObject",
-      "@id": "https://dsproul.com/spa massage room waterfall mockup.jpg#image",
-      "contentUrl": "https://dsproul.com/spa massage room waterfall mockup.jpg",
-      "name": "Wellness Waters Collection spa massage room waterfall artwork mockup",
-      "description": "Wellness Waters Collection spa massage room waterfall artwork mockup",
-      "creator": {
-        "@id": "https://dsproul.com/#dan-sproul"
-      },
-      "copyrightHolder": {
-        "@id": "https://dsproul.com/#dan-sproul"
-      },
-      "creditText": "Dan Sproul",
-      "acquireLicensePage": "https://dansproul.com",
-      "representativeOfPage": false
-    },
-    {
-      "@type": "ImageObject",
-      "@id": "https://dsproul.com/coastal-atmosphere-outer-banks-living-room.png#image",
-      "contentUrl": "https://dsproul.com/coastal-atmosphere-outer-banks-living-room.png",
-      "name": "Outer Banks Beach Sunrise artwork installed in a quiet luxury coastal living room",
-      "description": "Outer Banks beach sunrise photography shown as a large framed coastal statement piece in a warm quiet luxury living room.",
-      "creator": {"@id": "https://dsproul.com/#dan-sproul"},
-      "copyrightHolder": {"@id": "https://dsproul.com/#dan-sproul"},
-      "creditText": "Dan Sproul",
-      "acquireLicensePage": "https://dansproul.com/featured/outer-banks-beach-sunrise-dan-sproul.html",
-      "representativeOfPage": false
-    },
-    {
-      "@type": "ImageObject",
-      "@id": "https://dsproul.com/coastal-atmosphere-oregon-sea-stacks-entryway.png#image",
-      "contentUrl": "https://dsproul.com/coastal-atmosphere-oregon-sea-stacks-entryway.png",
-      "name": "Oregon Coast Sunset With Sea Stacks artwork installed in a modern coastal entryway",
-      "description": "Oregon Coast sunset sea stack photography shown as a large framed statement piece above a console in a warm modern coastal entryway.",
-      "creator": {"@id": "https://dsproul.com/#dan-sproul"},
-      "copyrightHolder": {"@id": "https://dsproul.com/#dan-sproul"},
-      "creditText": "Dan Sproul",
-      "acquireLicensePage": "https://dansproul.com/featured/oregon-coast-sunset-with-sea-stacks-dan-sproul.html",
-      "representativeOfPage": false
-    },
-    {
-      "@type": "ImageObject",
-      "@id": "https://dsproul.com/coastal-atmosphere-yaquina-bay-living-room.png#image",
-      "contentUrl": "https://dsproul.com/coastal-atmosphere-yaquina-bay-living-room.png",
-      "name": "Yaquina Bay Coastal Scene artwork installed in a warm contemporary coastal living room",
-      "description": "Yaquina Bay coastal photography shown as a large framed statement piece in a warm contemporary coastal living room.",
-      "creator": {"@id": "https://dsproul.com/#dan-sproul"},
-      "copyrightHolder": {"@id": "https://dsproul.com/#dan-sproul"},
-      "creditText": "Dan Sproul",
-      "acquireLicensePage": "https://dansproul.com/featured/yaquina-bay-coastal-scene-dan-sproul.html",
-      "representativeOfPage": false
+      "@type":"FAQPage",
+      "@id":"https://dsproul.com/coastal-atmosphere.html#faq",
+      "mainEntity":[
+        {
+          "@type":"Question",
+          "name":"What interiors work best with Coastal Atmosphere?",
+          "acceptedAnswer":{"@type":"Answer","text":"Coastal Atmosphere works well in quiet luxury homes, modern coastal interiors, boutique hospitality spaces, bedrooms, living rooms, dining rooms, wellness spaces, and contemporary residential projects."}
+        },
+        {
+          "@type":"Question",
+          "name":"Is this collection only for beach houses?",
+          "acceptedAnswer":{"@type":"Answer","text":"No. The collection is designed around atmosphere, restraint, fog, water, shoreline texture, and quiet movement rather than themed nautical decor."}
+        },
+        {
+          "@type":"Question",
+          "name":"Are oversized framed prints available?",
+          "acceptedAnswer":{"@type":"Answer","text":"Yes. Many pieces work well as oversized statement artwork in bedrooms, dining rooms, fireplaces, living rooms, and hospitality spaces."}
+        },
+        {
+          "@type":"Question",
+          "name":"Can interior designers contact Dan directly?",
+          "acceptedAnswer":{"@type":"Answer","text":"Yes. Interior designers can contact Dan Sproul directly for artwork recommendations, sizing guidance, curated selections, and room mockup support."}
+        }
+      ]
     }
   ]
 }
 </script>
-<link rel="preload" as="image" href="coastal-atmosphere-diningroom.jpg">
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What interiors work best with Coastal Atmosphere?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Coastal Atmosphere works well in quiet luxury homes, modern coastal interiors, boutique hospitality spaces, bedrooms, dining rooms, wellness spaces, and contemporary residential projects."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is this collection only for beach houses?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. The collection is designed around atmosphere, restraint, fog, water, shoreline texture, and quiet movement rather than themed nautical decor."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Are oversized framed prints available?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Many pieces work well as oversized statement artwork in luxury interiors, including bedrooms, dining rooms, fireplaces, living rooms, and hospitality spaces."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can interior designers contact Dan directly?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Interior designers can contact Dan Sproul directly for artwork recommendations, sizing guidance, curated selections, and room mockup support."
-      }
-    }
-  ]
-}
-</script>
-
 </head>
 
 <body>
@@ -1169,124 +845,460 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
 </header>
 
 <section class="hero">
-<div class="container hero-content">
-<span class="eyebrow">Atmospheric Coastal Fine Art</span>
-<h1>Coastal Atmosphere</h1>
-
-<p>
-A curated collection of moody coastal photography featuring fog, surf, sea stacks,
-shoreline texture, muted ocean palettes, and atmospheric Pacific Northwest light.
-Designed for quiet luxury interiors, refined coastal homes, boutique hospitality,
-and modern designer spaces.
-</p>
-
-<div class="button-row">
-<a href="#mockups" class="btn primary">View In Rooms</a>
-<a href="#collection" class="btn">View Print Options</a>
-</div>
-</div>
+  <div class="container hero-content">
+    <span class="eyebrow">Atmospheric Coastal Fine Art</span>
+    <h1>Coastal Atmosphere</h1>
+    <p>A curated collection of moody coastal photography featuring fog, surf, sea stacks, shoreline texture, muted ocean palettes, and atmospheric Pacific Northwest light. Designed for quiet luxury interiors, refined coastal homes, boutique hospitality, and modern designer spaces.</p>
+    <div class="button-row">
+      <a href="#mockups" class="btn primary">View In Rooms</a>
+      <a href="#collection" class="btn">View Print Options</a>
+    </div>
+    <div class="trust-strip">
+      <span>Framed Prints</span>
+      <span>Canvas</span>
+      <span>Acrylic</span>
+      <span>Metal</span>
+      <span>Custom Sizes Available</span>
+    </div>
+  </div>
 </section>
 
 <section class="mockup-section" id="mockups">
-<div class="container">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">Featured In Real Spaces</span>
+      <h2>Coastal artwork visualized in refined interiors.</h2>
+      <p>These room views show how atmospheric coastal photography can add scale, warmth, softness, and quiet movement to refined residential interiors, bedrooms, dining rooms, and coastal hospitality spaces. Click any mockup to enlarge it and view the corresponding print, with suggested size, frame, and format guidance.</p>
+      <p class="buyer-note">Available as framed prints, canvas, acrylic, metal, and fine art paper through the linked print pages.</p>
+    </div>
 
-<span class="eyebrow">Featured In Real Spaces</span>
-<h2>Designed to work in refined residential interiors.</h2>
+    <div class="format-strip">
+      <span>Framed print options</span>
+      <span>Canvas available</span>
+      <span>Acrylic available</span>
+      <span>Metal available</span>
+    </div>
 
-<p>
-These room views show how atmospheric coastal photography can add scale, warmth, softness, and quiet movement to refined residential interiors, bedrooms, dining rooms, and coastal hospitality spaces. Click any mockup to enlarge it and view the corresponding print, with suggested size, frame, and format guidance.
-</p>
+    <article class="featured-installation mockup"
+      data-img="coastal-atmosphere-outer-banks-living-room.png"
+      data-link="https://dansproul.com/featured/outer-banks-beach-sunrise-dan-sproul.html"
+      data-caption="Outer Banks Beach Sunrise shown as a large framed coastal statement piece for a warm quiet luxury living room."
+      data-size="Suggested sizes: 40×60, 45×60, 48×72, or larger statement format for living rooms and coastal homes."
+      data-frame="Frame suggestion: natural oak, white oak, walnut, warm wood, or thin matte black."
+      data-format="Available formats: framed print, canvas, acrylic, metal, and fine art paper.">
+      <img src="coastal-atmosphere-outer-banks-living-room.png" alt="Outer Banks Beach Sunrise coastal photography installed in a quiet luxury coastal living room by Dan Sproul" loading="eager" decoding="async">
+      <a class="quick-link" href="https://dansproul.com/featured/outer-banks-beach-sunrise-dan-sproul.html" target="_blank" rel="noopener" onclick="event.stopPropagation()">View Print</a>
+      <div class="featured-installation-copy">
+        <div>
+          <span class="shop-installation-label">Shop This Installation</span>
+          <span class="eyebrow">Featured Coastal Living Room</span>
+          <h3>Outer Banks Beach Sunrise</h3>
+          <p class="installation-descriptor">Soft coastal light and quiet shoreline atmosphere for calm residential interiors.</p>
+          <p>Warm sunrise light, soft sand texture, dune grass, and quiet shoreline atmosphere create a calm focal point for coastal homes, beach retreats, bedrooms, and quiet luxury living rooms.</p>
+          <div class="inline-specs">
+            <span>Most popular sizes: 40×60, 45×60, 48×72</span>
+            <span>Recommended frame: natural oak, walnut, or matte black</span>
+          </div>
+          <a class="text-link" href="https://dansproul.com/featured/outer-banks-beach-sunrise-dan-sproul.html" target="_blank" rel="noopener">View Print Options →</a>
+        </div>
+        <div class="quick-specs">
+          <span>Best sizes: 40×60, 45×60, 48×72</span>
+          <span>Formats: framed print, canvas, acrylic, metal</span>
+          <span>Frame direction: natural oak, white oak, walnut, black</span>
+          <span>Mat direction: warm white, off-white, or no mat</span>
+        </div>
+      </div>
+    </article>
 
-<p class="buyer-note">Available as framed prints, canvas, acrylic, metal, and fine art paper through the linked print pages.</p>
+    <article class="featured-installation mockup"
+      data-img="coastal-atmosphere-oregon-sea-stacks-entryway.png"
+      data-link="https://dansproul.com/featured/oregon-coast-sunset-with-sea-stacks-dan-sproul.html"
+      data-caption="Oregon Coast Sunset With Sea Stacks shown as a large framed statement piece in a warm modern coastal entryway."
+      data-size="Suggested sizes: 36×54, 40×60, 45×60, or larger statement format for entryways, consoles, and transitional spaces."
+      data-frame="Frame suggestion: natural oak, walnut, warm wood, or thin matte black."
+      data-format="Available formats: framed print, canvas, acrylic, metal, and fine art paper.">
+      <img src="coastal-atmosphere-oregon-sea-stacks-entryway.png" alt="Oregon Coast sunset sea stack photography installed above a console in a warm modern coastal entryway by Dan Sproul" loading="lazy" decoding="async">
+      <a class="quick-link" href="https://dansproul.com/featured/oregon-coast-sunset-with-sea-stacks-dan-sproul.html" target="_blank" rel="noopener" onclick="event.stopPropagation()">View Print</a>
+      <div class="featured-installation-copy">
+        <div>
+          <span class="shop-installation-label">Shop This Installation</span>
+          <span class="eyebrow">Featured Entryway Installation</span>
+          <h3>Oregon Coast Sunset With Sea Stacks</h3>
+          <p class="installation-descriptor">Warm evening color and sculptural coastal forms for statement walls.</p>
+          <p>Warm coastal sunset color, dark sea stacks, and reflective shoreline movement create a refined focal point for entryways, living rooms, hospitality spaces, and modern coastal interiors.</p>
+          <div class="inline-specs">
+            <span>Most popular sizes: 36×54, 40×60, 45×60</span>
+            <span>Recommended frame: natural oak, walnut, or matte black</span>
+          </div>
+          <a class="text-link" href="https://dansproul.com/featured/oregon-coast-sunset-with-sea-stacks-dan-sproul.html" target="_blank" rel="noopener">View Print Options →</a>
+        </div>
+        <div class="quick-specs">
+          <span>Best sizes: 36×54, 40×60, 45×60</span>
+          <span>Formats: framed print, canvas, acrylic, metal</span>
+          <span>Frame direction: natural oak, walnut, warm wood, black</span>
+          <span>Mat direction: warm white, off-white, or no mat</span>
+        </div>
+      </div>
+    </article>
 
-<div class="format-strip">
-  <span>Framed print options</span>
-  <span>Canvas available</span>
-  <span>Acrylic available</span>
-  <span>Metal available</span>
+    <article class="featured-installation mockup"
+      data-img="coastal-atmosphere-yaquina-bay-living-room.png"
+      data-link="https://dansproul.com/featured/yaquina-bay-coastal-scene-dan-sproul.html"
+      data-caption="Yaquina Bay Coastal Scene shown as a large framed coastal statement piece in a warm contemporary living room."
+      data-size="Suggested sizes: 40×60, 45×60, 48×72, or larger statement format for living rooms, fireplaces, and coastal homes."
+      data-frame="Frame suggestion: natural oak, walnut, warm wood, or thin matte black."
+      data-format="Available formats: framed print, canvas, acrylic, metal, and fine art paper.">
+      <img src="coastal-atmosphere-yaquina-bay-living-room.png" alt="Yaquina Bay Coastal Scene photography installed as a large framed statement piece in a warm contemporary coastal living room by Dan Sproul" loading="lazy" decoding="async">
+      <a class="quick-link" href="https://dansproul.com/featured/yaquina-bay-coastal-scene-dan-sproul.html" target="_blank" rel="noopener" onclick="event.stopPropagation()">View Print</a>
+      <div class="featured-installation-copy">
+        <div>
+          <span class="shop-installation-label">Shop This Installation</span>
+          <span class="eyebrow">Featured Coastal Living Room</span>
+          <h3>Yaquina Bay Coastal Scene</h3>
+          <p class="installation-descriptor">Rugged coastline, moving surf, and natural shoreline texture create a strong focal point for coastal homes and contemporary residential interiors.</p>
+          <p>Ocean movement, warm natural materials, and large-scale coastal photography create a refined statement wall for living rooms, beach homes, hospitality lounges, and modern coastal interiors.</p>
+          <div class="inline-specs">
+            <span>Most popular sizes: 40×60, 45×60, 48×72</span>
+            <span>Recommended frame: natural oak, walnut, or matte black</span>
+          </div>
+          <a class="text-link" href="https://dansproul.com/featured/yaquina-bay-coastal-scene-dan-sproul.html" target="_blank" rel="noopener">View Print Options →</a>
+        </div>
+        <div class="quick-specs">
+          <span>Best sizes: 40×60, 45×60, 48×72</span>
+          <span>Formats: framed print, canvas, acrylic, metal</span>
+          <span>Frame direction: natural oak, walnut, warm wood, black</span>
+          <span>Mat direction: warm white, off-white, or no mat</span>
+        </div>
+      </div>
+    </article>
+
+    <div class="mockup-grid">
+      <div class="mockup" data-img="coastal-atmosphere-diningroom.jpg" data-link="https://dansproul.com/featured/dreamy-haystack-rock-reflection-dan-sproul.html" data-caption="Dreamy Haystack Rock reflection artwork shown above a dining room console for a refined coastal interior.">
+        <img src="coastal-atmosphere-diningroom.jpg" alt="Moody Oregon Coast photography above a dining room console by Dan Sproul" loading="lazy" decoding="async">
+        <a class="quick-link" href="https://dansproul.com/featured/dreamy-haystack-rock-reflection-dan-sproul.html" target="_blank" rel="noopener" onclick="event.stopPropagation()">View Print</a>
+        <div class="mockup-caption">Moody Oregon Coast photography above a dining room console.</div>
+      </div>
+
+      <div class="mockup-pair">
+        <div class="mockup" data-img="coastal-atmosphere-livingroom.jpg" data-link="https://dansproul.com/featured/powerful-ocean-waves-oregon-coast-dan-sproul.html" data-caption="Powerful Oregon Coast ocean wave photography for a quiet luxury living room.">
+          <img src="coastal-atmosphere-livingroom.jpg" alt="Black and white coastal surf print for a quiet luxury living room by Dan Sproul" loading="lazy" decoding="async">
+          <a class="quick-link" href="https://dansproul.com/featured/powerful-ocean-waves-oregon-coast-dan-sproul.html" target="_blank" rel="noopener" onclick="event.stopPropagation()">View Print</a>
+          <div class="mockup-caption">Black and white coastal surf print for a quiet luxury living room.</div>
+        </div>
+
+        <div class="mockup" data-img="coastal-atmosphere-living-room.jpg" data-link="https://dansproul.com/featured/yaquina-beach-black-and-white-dan-sproul.html" data-caption="Yaquina Beach black and white coastal artwork above a fireplace in a luxury living room.">
+          <img src="coastal-atmosphere-living-room.jpg" alt="Black and white Yaquina Beach coastal artwork above fireplace in luxury living room by Dan Sproul" loading="lazy" decoding="async">
+          <a class="quick-link" href="https://dansproul.com/featured/yaquina-beach-black-and-white-dan-sproul.html" target="_blank" rel="noopener" onclick="event.stopPropagation()">View Print</a>
+          <div class="mockup-caption">Black and white coastal artwork above a fireplace in a luxury living room.</div>
+        </div>
+      </div>
+
+      <div class="mockup" data-img="coastal-atmosphere-bedroom.jpg" data-link="https://dansproul.com/featured/moody-oregon-coast-sea-stacks-dan-sproul.html" data-caption="Moody Oregon Coast sea stack artwork for a warm bedroom, wellness space, or quiet coastal retreat.">
+        <img src="coastal-atmosphere-bedroom.jpg" alt="Fog and shoreline artwork for bedrooms and wellness spaces by Dan Sproul" loading="lazy" decoding="async">
+        <a class="quick-link" href="https://dansproul.com/featured/moody-oregon-coast-sea-stacks-dan-sproul.html" target="_blank" rel="noopener" onclick="event.stopPropagation()">View Print</a>
+        <div class="mockup-caption">Fog and shoreline artwork for bedrooms and wellness spaces.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="collection-story" id="why-coastal-atmosphere">
+  <div class="container story-grid">
+    <div>
+      <span class="eyebrow">Why Coastal Atmosphere</span>
+      <h2>Coastal artwork chosen for atmosphere instead of cliché.</h2>
+    </div>
+    <div>
+      <p>Coastal Atmosphere focuses on refined ocean imagery rather than bright decorative beach art. The collection centers around fog, sea stacks, crashing surf, muted water tones, shoreline texture, and quiet movement designed to support calm architectural interiors.</p>
+      <p>I built this collection around the quieter side of the shoreline: fog, dark rock, silver water, sea stacks, and weather-softened light. These are pieces I would use when a room needs calm, texture, and movement without turning into obvious beach décor.</p>
+      <p class="ohio-credibility">Created by Ohio fine art photographer Dan Sproul. Prints ship worldwide.</p>
+    </div>
+  </div>
+</section>
+
+<section id="collection">
+  <div class="container">
+    <span class="eyebrow">Shop The Collection</span>
+    <h2>Atmospheric ocean photography curated for interiors.</h2>
+    <p>Available as framed prints, canvas, acrylic, metal, and fine art paper through the linked print pages.</p>
+
+    <div class="collection-grid">
+      <a href="https://dansproul.com/featured/outer-banks-beach-sunrise-dan-sproul.html" class="collection-card" target="_blank" rel="noopener">
+        <img src="coastal-atmosphere-outer-banks-living-room.png" alt="Outer Banks Beach Sunrise coastal photography print shown in a quiet luxury living room by Dan Sproul" loading="lazy" decoding="async">
+        <div class="card-copy">
+          <span>Warm Coastal Sunrise Print</span>
+          <h3>Outer Banks Beach Sunrise</h3>
+          <p>Soft dune grass, warm sunrise light, and quiet shoreline atmosphere for refined coastal homes and calm residential interiors.</p>
+        </div>
+      </a>
+
+      <a href="https://dansproul.com/featured/oregon-coast-sunset-with-sea-stacks-dan-sproul.html" class="collection-card" target="_blank" rel="noopener">
+        <img src="coastal-atmosphere-oregon-sea-stacks-entryway.png" alt="Oregon Coast Sunset With Sea Stacks coastal photography print shown in warm modern entryway by Dan Sproul" loading="lazy" decoding="async">
+        <div class="card-copy">
+          <span>Oregon Coast Sunset Print</span>
+          <h3>Oregon Coast Sunset With Sea Stacks</h3>
+          <p>Warm sunset color, dark sea stacks, and reflective shoreline movement for entryways, living rooms, and hospitality spaces.</p>
+        </div>
+      </a>
+
+      <a href="https://dansproul.com/featured/yaquina-bay-coastal-scene-dan-sproul.html" class="collection-card" target="_blank" rel="noopener">
+        <img src="coastal-atmosphere-yaquina-bay-living-room.png" alt="Yaquina Bay Coastal Scene coastal photography print shown in a warm contemporary living room by Dan Sproul" loading="lazy" decoding="async">
+        <div class="card-copy">
+          <span>Rugged Coastline Wall Art</span>
+          <h3>Yaquina Bay Coastal Scene</h3>
+          <p>Rugged shoreline texture, moving surf, and refined coastal atmosphere for living rooms, beach homes, and hospitality interiors.</p>
+        </div>
+      </a>
+
+      <a href="https://dansproul.com/featured/dreamy-haystack-rock-reflection-dan-sproul.html" class="collection-card" target="_blank" rel="noopener">
+        <img src="coastal-atmosphere-diningroom.jpg" alt="Haystack Rock coastal photography print by Dan Sproul" loading="lazy" decoding="async">
+        <div class="card-copy">
+          <span>Oregon Coast Wall Art</span>
+          <h3>Haystack Rock Reflections</h3>
+          <p>Large-scale coastal photography designed for dining rooms, hospitality spaces, and modern coastal homes.</p>
+        </div>
+      </a>
+
+      <a href="https://dansproul.com/featured/powerful-ocean-waves-oregon-coast-dan-sproul.html" class="collection-card" target="_blank" rel="noopener">
+        <img src="coastal-atmosphere-livingroom.jpg" alt="Black and white coastal surf photography by Dan Sproul" loading="lazy" decoding="async">
+        <div class="card-copy">
+          <span>Monochrome Coastal</span>
+          <h3>Surf Texture Studies</h3>
+          <p>Moody black and white surf photography for darker interiors and architectural modern spaces.</p>
+        </div>
+      </a>
+
+      <a href="https://dansproul.com/featured/moody-oregon-coast-sea-stacks-dan-sproul.html" class="collection-card" target="_blank" rel="noopener">
+        <img src="coastal-atmosphere-bedroom.jpg" alt="Moody coastal bedroom artwork by Dan Sproul" loading="lazy" decoding="async">
+        <div class="card-copy">
+          <span>Quiet Coastal Interiors</span>
+          <h3>Fog & Shoreline Atmosphere</h3>
+          <p>Soft atmospheric coastal imagery suited for bedrooms, wellness spaces, and refined residential interiors.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="collection-story" id="coastal-wall-art-modern-homes">
+  <div class="container story-grid">
+    <div>
+      <span class="eyebrow">Coastal Photography Wall Art</span>
+      <h2>Coastal photography wall art for modern homes.</h2>
+    </div>
+    <div>
+      <p>Coastal Atmosphere is a curated collection of coastal wall art and ocean photography prints designed for modern homes, beach houses, quiet luxury interiors, and refined hospitality spaces. Rather than bright nautical décor, the collection focuses on atmospheric shoreline imagery: sea stacks, surf, fog, dunes, textured sand, reflected light, and rugged coastal forms.</p>
+      <p>These coastal photography prints work especially well as living room art, bedroom wall art, entryway artwork, dining room focal pieces, and large framed statements for coastal homes or vacation properties. Oversized horizontal prints can create a strong focal point above a sofa, console, fireplace, or hospitality lounge wall, while quieter shoreline scenes can soften bedrooms and wellness-inspired interiors.</p>
+      <p>The collection includes Oregon Coast photography, Outer Banks beach imagery, sea stack sunsets, and moody ocean scenes selected for warmth, movement, and visual calm. Each piece links to available print formats including framed prints, canvas, acrylic, metal, and fine art paper.</p>
+    </div>
+  </div>
+</section>
+
+<section class="room-strip" id="best-rooms">
+  <div class="container">
+    <span class="eyebrow">Best Rooms For This Collection</span>
+    <h2>Where Coastal Atmosphere works best.</h2>
+    <div class="room-strip-grid">
+      <div class="room-strip-card"><span>Living Rooms</span><h3>Large focal walls</h3><p>Oversized horizontal coastal prints above sofas, consoles, and quiet luxury seating areas.</p></div>
+      <div class="room-strip-card"><span>Bedrooms</span><h3>Soft shoreline calm</h3><p>Warm sunrise, fog, and muted ocean imagery for restful residential spaces.</p></div>
+      <div class="room-strip-card"><span>Boutique Hotels</span><h3>Hospitality atmosphere</h3><p>Coastal artwork for guest suites, corridors, lounges, and destination-inspired interiors.</p></div>
+      <div class="room-strip-card"><span>Coastal Homes</span><h3>Refined beach mood</h3><p>Atmospheric shoreline work without obvious nautical themes or beach décor clichés.</p></div>
+      <div class="room-strip-card"><span>Wellness Spaces</span><h3>Water and quiet movement</h3><p>Soft surf, fog, and reflective shoreline textures for calming wellness environments.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="buying-help-section" id="buying-help">
+  <div class="buying-help-box">
+    <div>
+      <span class="eyebrow">Buying Guidance</span>
+      <h2>Best for coastal homes, boutique hospitality, bedrooms, and quiet luxury interiors.</h2>
+    </div>
+    <div class="buying-help-grid">
+      <div class="buying-help-item"><strong>Best for</strong><p>Coastal bedrooms, dining rooms, boutique hotel suites, spa spaces, refined living rooms, oceanfront rentals, and interiors that need calm shoreline atmosphere.</p></div>
+      <div class="buying-help-item"><strong>Suggested sizes</strong><p>24×36 for bedrooms and small feature walls, 30×40 above consoles, and 40×60 or larger for dining rooms, lobbies, fireplaces, and hospitality spaces.</p></div>
+      <div class="buying-help-item"><strong>Strongest formats</strong><p>Framed fine art paper for refined residential interiors, canvas for warmth, and metal or acrylic for high-traffic hospitality and coastal commercial spaces.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="workflow-intro-cta">
+  <div class="container">
+    <span class="eyebrow">Designer Support</span>
+    <h2>Need this collection visualized in a bedroom, spa, lobby, or coastal home?</h2>
+    <p>Email a room photo or project note and receive a complimentary mockup preview with artwork recommendations, sizing direction, and presentation guidance.</p>
+  </div>
+</section>
+
+<section class="designer-workflow">
+  <div class="container">
+    <div class="workflow-header">
+      <span class="eyebrow">Designer Workflow</span>
+      <h2>From room photo to artwork recommendation.</h2>
+      <p>A simple process for designers, stagers, hospitality teams, wellness spaces, and residential clients who want artwork chosen with scale, atmosphere, and placement in mind.</p>
+    </div>
+
+    <div class="workflow-grid">
+      <div class="workflow-step"><span class="workflow-number">Step 01</span><h3>Share Your Space</h3><p>Send a room photo, wall dimensions, project type, preferred atmosphere, and any inspiration images or finish notes.</p></div>
+      <div class="workflow-step"><span class="workflow-number">Step 02</span><h3>Receive Curated Options</h3><p>Dan recommends artwork options, sizing direction, orientation, collection fit, and presentation formats.</p></div>
+      <div class="workflow-step"><span class="workflow-number">Step 03</span><h3>Review Mockups</h3><p>See selected artwork visualized in your space with scale, placement, and alternate image options when needed.</p></div>
+      <div class="workflow-step"><span class="workflow-number">Step 04</span><h3>Specify & Order</h3><p>Available as framed prints, canvas, acrylic, metal, and custom-sized pieces for residential and commercial interiors.</p></div>
+    </div>
+
+    <div class="workflow-confidence">
+      <div><span class="eyebrow">Trade Confidence</span><h3>Built for easier specification.</h3></div>
+      <ul>
+        <li>Custom sizing available</li>
+        <li>Framed, canvas, acrylic, and metal options</li>
+        <li>Large-format artwork for statement walls</li>
+        <li>Collection PDFs and spec sheets available</li>
+        <li>Room mockups available before ordering</li>
+        <li>Support for residential, hospitality, healthcare, and wellness projects</li>
+      </ul>
+    </div>
+
+    <div class="workflow-cta">
+      <h3>Need artwork visualized in your project?</h3>
+      <p>Email a room photo or project note for a complimentary mockup preview.</p>
+      <a href="mailto:sproulphoto@gmail.com?subject=Coastal%20Atmosphere%20Mockup%20Request" class="btn primary">Request Mockup</a>
+      <a href="for-designers.html" class="btn">For Designers</a>
+    </div>
+  </div>
+</section>
+
+<section class="qe-related-collections">
+  <div class="qe-related-inner">
+    <div class="qe-related-header">
+      <span class="qe-related-eyebrow">Explore More</span>
+      <h2>Explore related fine art photography collections.</h2>
+      <p>Browse additional atmospheric collections featuring coastal photography, forest landscapes, mountain imagery, and artwork created for refined residential and hospitality interiors.</p>
+    </div>
+
+    <div class="qe-related-grid">
+      <a class="qe-related-card" href="quiet-earth-collection.html">
+        <div class="qe-related-image"><img src="quiet-earth-lily-pond-chugach-alaska.jpg" alt="Quiet Earth Collection" loading="lazy" decoding="async"></div>
+        <div class="qe-related-content"><span class="qe-related-type">Residential & Hospitality</span><h3>Quiet Earth</h3><p>Atmospheric landscape photography created for interiors that need calm, depth, and a grounded connection to nature.</p><span class="qe-related-link">Explore Collection →</span></div>
+      </a>
+
+      <a class="qe-related-card" href="wellness-waters-collection.html">
+        <div class="qe-related-image"><img src="spa massage room waterfall mockup.jpg" alt="Wellness Waters Collection spa massage room waterfall artwork mockup" loading="lazy" decoding="async"></div>
+        <div class="qe-related-content"><span class="qe-related-type">Spa · Healthcare · Wellness</span><h3>Wellness Waters</h3><p>Restorative waterfall, flowing water, forest stream, and calming nature photography selected for wellness and hospitality.</p><span class="qe-related-link">Explore Collection →</span></div>
+      </a>
+
+      <a class="qe-related-card" href="forest-light-collection.html">
+        <div class="qe-related-image"><img src="forest-light-lodge-lobby.jpg" alt="Forest Light Collection" loading="lazy" decoding="async"></div>
+        <div class="qe-related-content"><span class="qe-related-type">Residential & Hospitality</span><h3>Forest Light</h3><p>Atmospheric forest photography featuring woodland trails, filtered light, immersive green landscapes, and calming nature scenes.</p><span class="qe-related-link">Explore Collection →</span></div>
+      </a>
+
+      <a class="qe-related-card" href="mountain-light-collection.html">
+        <div class="qe-related-image"><img src="mountain-light-entryway.jpg" alt="Mountain Light Collection" loading="lazy" decoding="async"></div>
+        <div class="qe-related-content"><span class="qe-related-type">Residential & Hospitality</span><h3>Mountain Light</h3><p>Atmospheric mountain photography featuring alpine landscapes, dramatic peaks, expansive wilderness scenes, and elevated natural light.</p><span class="qe-related-link">Explore Collection →</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="collection-story" id="faq">
+  <div class="container">
+    <span class="eyebrow">Coastal Artwork FAQ</span>
+    <h2>Frequently asked questions.</h2>
+
+    <div class="faq-grid">
+      <div class="faq"><h3>What interiors work best with Coastal Atmosphere?</h3><p>Quiet luxury homes, modern coastal interiors, boutique hospitality spaces, bedrooms, dining rooms, wellness spaces, and contemporary residential projects.</p></div>
+      <div class="faq"><h3>Is this collection only for beach houses?</h3><p>No. The collection is designed around atmosphere and restraint rather than themed nautical décor.</p></div>
+      <div class="faq"><h3>Are oversized framed prints available?</h3><p>Yes. Many pieces work especially well as oversized statement artwork in luxury interiors.</p></div>
+      <div class="faq"><h3>Can interior designers contact you directly?</h3><p>Absolutely. Designers can reach out for artwork recommendations, sizing guidance, and curated suggestions.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="pre-footer-cta" id="coastal-help">
+  <div class="container">
+    <span class="eyebrow">Artwork Selection Help</span>
+    <h2>Need help choosing coastal artwork for a room?</h2>
+    <p>Send a room photo, wall dimensions, or project note and I can suggest artwork, size direction, and presentation options from the Coastal Atmosphere collection.</p>
+    <div class="button-row" style="justify-content:center">
+      <a href="mailto:sproulphoto@gmail.com?subject=Coastal%20Atmosphere%20Artwork%20Help" class="btn primary">Email Dan</a>
+      <a href="for-designers.html" class="btn">For Designers</a>
+    </div>
+  </div>
+</section>
+
+<div id="contact" class="footer-seo">
+  <div class="footer-grid">
+    <div><h3>Shop By Room</h3><a href="https://dansproul.com/collections/bedroom+wall+art+calming+nature+landscape+prints">Bedroom Wall Art</a><a href="in-your-space.html">Art In Your Space</a><a href="https://dansproul.com/collections/office+wall+art+inspiring+landscape+prints">Office Wall Art</a><a href="https://dansproul.com/art/dining+room">Dining Room Art</a><a href="https://dansproul.com/art/wellness">Wellness Space Prints</a></div>
+    <div><h3>Shop By Subject</h3><a href="https://dansproul.com/art/mountains">Mountain Prints</a><a href="https://dansproul.com/art/forest">Forest Photography</a><a href="https://dansproul.com/art/coastal">Coastal Wall Art</a><a href="https://dansproul.com/art/waterfalls">Waterfall Prints</a><a href="https://dansproul.com/art/wildlife">Wildlife Prints</a></div>
+    <div><h3>Shop By Mood</h3><a href="quiet-earth-collection.html">Quiet Earth Collection</a><a href="monochrome-stillness.html">Black &amp; White Prints</a><a href="https://dansproul.com/art/autumn">Warm Autumn Light</a><a href="https://dansproul.com/art/fog">Fog &amp; Mist Photography</a><a href="https://dansproul.com/art/calm">Calming Nature Prints</a></div>
+    <div><h3>Shop By Location</h3><a href="alaska-photography-prints.html">Alaska Prints</a><a href="colorado-photography-prints.html">Colorado Wall Art</a><a href="oregon-coast-photography-prints.html">Oregon Coast Prints</a><a href="smoky-mountains-photography-prints.html">Smoky Mountains Art</a><a href="badlands-photography-prints.html">Badlands Prints</a><a href="ohio-nature-photography-prints.html">Ohio Nature Photography</a></div>
+    <div><h3>More Collections</h3><a href="best-sellers.html">Best Sellers</a><a href="art-collections.html">Curated Photography Collections</a><a href="for-designers.html">For Interior Designers</a><a href="heritage-mixed-media.html">Heritage &amp; Mixed Media</a><a href="coastal-atmosphere.html">Coastal Atmosphere</a><a href="wellness-waters-collection.html">Wellness Waters</a><a href="mailto:sproulphoto@gmail.com">Email Dan</a></div>
+  </div>
+  <footer class="footer-bottom">© 2026 Dan Sproul Fine Art Photography · Original landscape photography and heritage-inspired mixed media artwork by Dan Sproul, based in Lima, Ohio · Prints ship worldwide</footer>
 </div>
 
-
-<article class="featured-installation mockup"
-  data-img="coastal-atmosphere-outer-banks-living-room.png"
-  data-link="https://dansproul.com/featured/outer-banks-beach-sunrise-dan-sproul.html"
-  data-caption="Outer Banks Beach Sunrise shown as a large framed coastal statement piece for a warm quiet luxury living room."
-  data-size="Suggested sizes: 40×60, 45×60, 48×72, or larger statement format for living rooms and coastal homes."
-  data-frame="Frame suggestion: natural oak, white oak, walnut, warm wood, or thin matte black."
-  data-format="Available formats: framed print, canvas, acrylic, metal, and fine art paper.">
-  <img src="coastal-atmosphere-outer-banks-living-room.png" alt="Outer Banks Beach Sunrise coastal photography installed in a quiet luxury coastal living room by Dan Sproul" loading="eager" decoding="async">
-  <a class="quick-link" href="https://dansproul.com/featured/outer-banks-beach-sunrise-dan-sproul.html" target="_blank" rel="noopener" onclick="event.stopPropagation()">View Print</a>
-  <div class="featured-installation-copy">
-    <div>
-      <span class="shop-installation-label">Shop This Installation</span>
-      <span class="eyebrow">Featured Coastal Living Room</span>
-      <h3>Outer Banks Beach Sunrise</h3>
-      <p class="installation-descriptor">Soft coastal light and quiet shoreline atmosphere for calm residential interiors.</p>
-      <p>Warm sunrise light, soft sand texture, dune grass, and quiet shoreline atmosphere create a calm focal point for coastal homes, beach retreats, bedrooms, and quiet luxury living rooms.</p>
-      <div class="inline-specs"><span>Most popular sizes: 40×60, 45×60, 48×72</span><span>Recommended frame: natural oak, walnut, or matte black</span></div>
-      <a class="text-link" href="https://dansproul.com/featured/outer-banks-beach-sunrise-dan-sproul.html" target="_blank" rel="noopener">View Print Options →</a>
-    </div>
-    <div class="quick-specs">
-      <span>Best sizes: 40×60, 45×60, 48×72</span>
-      <span>Formats: framed print, canvas, acrylic, metal</span>
-      <span>Frame direction: natural oak, white oak, walnut, black</span>
-      <span>Mat direction: warm white, off-white, or no mat</span>
+<div class="mockup-modal" id="mockupModal" aria-hidden="true">
+  <button class="mockup-close" type="button" aria-label="Close preview">×</button>
+  <div class="mockup-modal-inner">
+    <img id="mockupModalImg" src="" alt="">
+    <div class="mockup-modal-content">
+      <div>
+        <p id="mockupModalCaption"></p>
+        <div class="modal-specs">
+          <span id="mockupModalSize"></span>
+          <span id="mockupModalFrame"></span>
+          <span id="mockupModalFormat"></span>
+        </div>
+      </div>
+      <a id="mockupModalLink" class="btn primary" href="#" target="_blank" rel="noopener">Purchase Print</a>
     </div>
   </div>
-</article>
+</div>
 
-<article class="featured-installation mockup"
-  data-img="coastal-atmosphere-oregon-sea-stacks-entryway.png"
-  data-link="https://dansproul.com/featured/oregon-coast-sunset-with-sea-stacks-dan-sproul.html"
-  data-caption="Oregon Coast Sunset With Sea Stacks shown as a large framed statement piece in a warm modern coastal entryway."
-  data-size="Suggested sizes: 36×54, 40×60, 45×60, or larger statement format for entryways, consoles, and transitional spaces."
-  data-frame="Frame suggestion: natural oak, walnut, warm wood, or thin matte black."
-  data-format="Available formats: framed print, canvas, acrylic, metal, and fine art paper.">
-  <img src="coastal-atmosphere-oregon-sea-stacks-entryway.png" alt="Oregon Coast sunset sea stack photography installed above a console in a warm modern coastal entryway by Dan Sproul" loading="lazy" decoding="async">
-  <a class="quick-link" href="https://dansproul.com/featured/oregon-coast-sunset-with-sea-stacks-dan-sproul.html" target="_blank" rel="noopener" onclick="event.stopPropagation()">View Print</a>
-  <div class="featured-installation-copy">
-    <div>
-      <span class="shop-installation-label">Shop This Installation</span>
-      <span class="eyebrow">Featured Entryway Installation</span>
-      <h3>Oregon Coast Sunset With Sea Stacks</h3>
-      <p class="installation-descriptor">Warm evening color and sculptural coastal forms for statement walls.</p>
-      <p>Warm coastal sunset color, dark sea stacks, and reflective shoreline movement create a refined focal point for entryways, living rooms, hospitality spaces, and modern coastal interiors.</p>
-      <div class="inline-specs"><span>Most popular sizes: 36×54, 40×60, 45×60</span><span>Recommended frame: natural oak, walnut, or matte black</span></div>
-      <a class="text-link" href="https://dansproul.com/featured/oregon-coast-sunset-with-sea-stacks-dan-sproul.html" target="_blank" rel="noopener">View Print Options →</a>
-    </div>
-    <div class="quick-specs">
-      <span>Best sizes: 36×54, 40×60, 45×60</span>
-      <span>Formats: framed print, canvas, acrylic, metal</span>
-      <span>Frame direction: natural oak, walnut, warm wood, black</span>
-      <span>Mat direction: warm white, off-white, or no mat</span>
-    </div>
-  </div>
-</article>
+<script>
+(function(){
+  const toggle=document.querySelector('.mobile-toggle');
+  const nav=document.querySelector('.main-nav');
+  if(toggle && nav){
+    toggle.addEventListener('click',()=>nav.classList.toggle('active'));
+  }
+})();
+</script>
 
-<article class="featured-installation mockup"
-  data-img="coastal-atmosphere-yaquina-bay-living-room.png"
-  data-link="https://dansproul.com/featured/yaquina-bay-coastal-scene-dan-sproul.html"
-  data-caption="Yaquina Bay Coastal Scene shown as a large framed coastal statement piece in a warm contemporary living room."
-  data-size="Suggested sizes: 40×60, 45×60, 48×72, or larger statement format for living rooms, fireplaces, and coastal homes."
-  data-frame="Frame suggestion: natural oak, walnut, warm wood, or thin matte black."
-  data-format="Available formats: framed print, canvas, acrylic, metal, and fine art paper.">
-  <img src="coastal-atmosphere-yaquina-bay-living-room.png" alt="Yaquina Bay Coastal Scene photography installed as a large framed statement piece in a warm contemporary coastal living room by Dan Sproul" loading="lazy" decoding="async">
-  <a class="quick-link" href="https://dansproul.com/featured/yaquina-bay-coastal-scene-dan-sproul.html" target="_blank" rel="noopener" onclick="event.stopPropagation()">View Print</a>
-  <div class="featured-installation-copy">
-    <div>
-      <span class="shop-installation-label">Shop This Installation</span>
-      <span class="eyebrow">Featured Coastal Living Room</span>
-      <h3>Yaquina Bay Coastal Scene</h3>
-      <p class="installation-descriptor">Rugged coastline, moving surf, and natural shoreline texture create a strong focal point for coastal homes and contemporary residential interiors.</p>
-      <p>Ocean movement, warm natural materials, and large-scale coastal photography create a refined statement wall for living rooms, beach homes, hospitality lounges, and modern coastal interiors.</p>
-      <div class="inline-specs"><span>Most popular sizes: 40×60, 45×60, 48×72</span><span>Recommended frame: natural oak, walnut, or matte black</span></div>
-      <a class="text-link" href="https://dansproul.com/featured/yaquina-bay-coastal-scene-dan-sproul.html" target="_blank" rel="noopener">View Print Options →</a>
-    </div>
-    <div class="quick-specs">
-      <span>Best sizes: 40×60, 45×60, 48×72</span>
-      <span>Formats: framed print, canvas, acrylic, metal</span>
-      <span>Frame direction: natural oak, walnut, warm wood, black</span>
-      <span>Mat direction: warm white, off-white, or no mat</span>
-    </div>
-  </div>
-</article>
+<script>
+(function(){
+  const modal = document.getElementById('mockupModal');
+  const modalImg = document.getElementById('mockupModalImg');
+  const modalCaption = document.getElementById('mockupModalCaption');
+  const modalLink = document.getElementById('mockupModalLink');
+  const modalSize = document.getElementById('mockupModalSize');
+  const modalFrame = document.getElementById('mockupModalFrame');
+  const modalFormat = document.getElementById('mockupModalFormat');
+  const closeBtn = document.querySelector('.mockup-close');
+
+  document.querySelectorAll('.mockup[data-img]').forEach((mockup)=>{
+    mockup.addEventListener('click', ()=>{
+      modalImg.src = mockup.dataset.img;
+      modalImg.alt = mockup.querySelector('img')?.alt || 'Coastal artwork interior mockup by Dan Sproul';
+      modalCaption.textContent = mockup.dataset.caption || '';
+      modalLink.href = mockup.dataset.link || '#';
+      if(modalSize) modalSize.textContent = mockup.dataset.size || 'Suggested sizes vary by room and artwork orientation.';
+      if(modalFrame) modalFrame.textContent = mockup.dataset.frame || 'Frame suggestion: natural wood, walnut, white, or thin black depending on the interior.';
+      if(modalFormat) modalFormat.textContent = mockup.dataset.format || 'Available formats: framed print, canvas, acrylic, metal, and fine art paper.';
+      modal.classList.add('active');
+      modal.setAttribute('aria-hidden','false');
+    });
+  });
+
+  function closeModal(){
+    modal.classList.remove('active');
+    modal.setAttribute('aria-hidden','true');
+    modalImg.src = '';
+  }
+
+  if(closeBtn) closeBtn.addEventListener('click', closeModal);
+  if(modal) modal.addEventListener('click', (e)=>{ if(e.target === modal) closeModal(); });
+  document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') closeModal(); });
+})();
+</script>
+
+</body>
+</html>
