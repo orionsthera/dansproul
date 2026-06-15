@@ -6,359 +6,405 @@
 
   <title>Quiet Earth Collection | Atmospheric Landscape Prints for Calm Modern Interiors | Dan Sproul</title>
   <meta name="description" content="Quiet Earth is a curated fine art landscape photography collection by Dan Sproul featuring atmospheric mountain, lake, forest, fog, and reflection prints for wellness spaces, hospitality interiors, modern homes, and interior design projects." />
+  <link rel="canonical" href="https://dsproul.com/quiet-earth-collection.html" />
 
-  <meta property="og:title" content="Quiet Earth Collection | Atmospheric Landscape Photography by Dan Sproul">
-  <meta property="og:description" content="Fine art landscape prints for calm modern interiors, wellness spaces, hospitality projects, and refined residential design.">
-  <meta property="og:image" content="https://dsproul.com/images/quiet-earth-preview.jpg">
+  <meta property="og:title" content="Quiet Earth Collection | Atmospheric Landscape Prints for Calm Modern Interiors | Dan Sproul">
+  <meta property="og:description" content="Fine art landscape prints selected for calm modern interiors, wellness spaces, hospitality projects, and refined residential design.">
+  <meta property="og:image" content="https://dsproul.com/quiet-earth-lily-pond.jpg">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://dsproul.com/quiet-earth-collection.html">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preload" as="image" href="quiet-earth-turnagain-arm-alaska.jpg">
 
   <style>
-    :root {
-      --bg:#080807;
-      --panel:#12110f;
-      --panel2:#f3efe8;
-      --cream:#f4efe7;
-      --muted:#b5aa9b;
-      --soft:#d8d0c3;
-      --earth:#9b7a55;
-      --line:rgba(255,255,255,.11);
-      --dark-line:rgba(40,35,30,.18);
-      --max:1320px;
+    :root{
+      --bg:#090806;
+      --panel:#12100d;
+      --panel-soft:#17130f;
+      --paper:#eee7dc;
+      --paper2:#fffaf1;
+      --ink:#f4efe6;
+      --muted:#b5aa99;
+      --dark:#201b15;
+      --gold:#c79b55;
+      --line:rgba(199,155,85,.24);
+      --line2:rgba(255,255,255,.09);
+      --max:1180px;
     }
-
-    *{margin:0;padding:0;box-sizing:border-box}
+    *{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth}
-    body{background:var(--bg);color:var(--cream);font-family:Georgia,serif;line-height:1.7;-webkit-font-smoothing:antialiased}
-    img{width:100%;display:block}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--ink);
+      font-family:Georgia,'Times New Roman',serif;
+      -webkit-font-smoothing:antialiased;
+      line-height:1.75;
+    }
+    img{display:block;max-width:100%;height:auto}
     a{color:inherit;text-decoration:none}
-    .container{width:min(91%,var(--max));margin:auto}
-    section{padding:92px 0;border-top:1px solid var(--line)}
+    p{color:var(--muted);font-size:16px;line-height:1.82}
+    .container{max-width:var(--max);margin:auto;padding:0 7vw}
+    .eyebrow{
+      display:block;
+      margin-bottom:14px;
+      color:var(--gold);
+      font-family:Arial,Helvetica,sans-serif;
+      font-size:11px;
+      letter-spacing:.28em;
+      text-transform:uppercase;
+      font-weight:700;
+    }
+    h1,h2,h3{font-weight:400;line-height:.96;margin:0}
+    h1{font-size:clamp(52px,8vw,108px);letter-spacing:-.05em}
+    h2{font-size:clamp(36px,5vw,68px);letter-spacing:-.04em}
+    h3{font-size:30px;letter-spacing:-.025em}
+    .btns{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+    .btn{
+      display:inline-block;
+      padding:14px 22px;
+      border:1px solid var(--gold);
+      font-family:Arial,Helvetica,sans-serif;
+      font-size:11px;
+      letter-spacing:.16em;
+      text-transform:uppercase;
+      text-decoration:none;
+    }
+    .btn.primary{background:var(--gold);color:#14100b}
+    .btn:hover{background:rgba(199,155,85,.12)}
 
-    .site-header{position:absolute;top:0;left:0;width:100%;z-index:20;padding:18px 32px;background:rgba(0,0,0,.72);border-bottom:1px solid rgba(255,255,255,.08);display:flex;align-items:flex-start;justify-content:space-between;gap:28px}
-    .brand{line-height:1;letter-spacing:.24em;text-transform:uppercase;font-size:1.05rem;color:#fff}
-    .brand span{display:block;margin-top:8px;font-size:.48rem;color:#c2a36e;letter-spacing:.28em}
-    .site-nav{display:flex;align-items:center;gap:30px;font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.86)}
-    .site-nav a:hover{color:#d8c6a4}
-    .shop-link{border:1px solid rgba(216,198,164,.42);padding:9px 17px;color:#d8c6a4}
+    .site-nav-standard{
+      position:fixed!important; top:0!important; left:0!important; right:0!important;
+      height:66px!important; z-index:9999!important;
+      display:flex!important; align-items:center!important; justify-content:space-between!important;
+      gap:28px!important; padding:0 clamp(16px,4vw,44px)!important;
+      background:rgba(14,12,9,.94)!important;
+      border-bottom:1px solid rgba(185,138,59,.18)!important;
+      backdrop-filter:blur(14px)!important; -webkit-backdrop-filter:blur(14px)!important;
+    }
+    .nav-logo-standard{
+      display:flex!important; flex-direction:column!important;
+      text-decoration:none!important; color:#f4eee5!important;
+      line-height:1!important; min-width:max-content!important;
+    }
+    .nav-logo-name-standard{
+      font-family:Arial,Helvetica,sans-serif!important; font-size:18px!important;
+      font-weight:700!important; letter-spacing:.24em!important; text-transform:uppercase!important;
+    }
+    .nav-logo-sub-standard{
+      margin-top:7px!important; color:#b9934b!important;
+      font-family:Arial,Helvetica,sans-serif!important; font-size:9px!important;
+      letter-spacing:.26em!important; text-transform:uppercase!important;
+    }
+    .nav-links-standard{
+      display:flex!important; align-items:center!important; justify-content:flex-end!important;
+      gap:clamp(18px,2vw,34px)!important;
+    }
+    .nav-links-standard a{
+      color:rgba(244,238,229,.78)!important;
+      text-decoration:none!important;
+      font-family:Arial,Helvetica,sans-serif!important;
+      font-size:12px!important; font-weight:700!important;
+      letter-spacing:.18em!important; text-transform:uppercase!important;
+      white-space:nowrap!important;
+    }
+    .nav-links-standard a:hover{color:#f4eee5!important}
+    .nav-shop-standard{
+      color:#d5b365!important;
+      border:1px solid rgba(213,179,101,.62)!important;
+      padding:14px 22px!important;
+    }
+    .nav-toggle-standard{
+      display:none!important; width:42px!important; height:42px!important;
+      border:1px solid rgba(213,179,101,.36)!important;
+      background:transparent!important; cursor:pointer!important;
+    }
+    .nav-toggle-standard span{
+      display:block!important; width:20px!important; height:2px!important;
+      margin:5px auto!important; background:#f4eee5!important;
+    }
 
-    .eyebrow{display:inline-block;margin-bottom:17px;color:#c2a36e;font-size:.68rem;letter-spacing:.27em;text-transform:uppercase}
-    h1{font-size:clamp(3rem,6.5vw,6.8rem);line-height:.92;font-weight:400;letter-spacing:-.04em;margin-bottom:24px}
-    h2{font-size:clamp(2.05rem,4.6vw,4.35rem);line-height:.98;font-weight:400;letter-spacing:-.028em;margin-bottom:24px}
-    h3{font-size:1.35rem;font-weight:400;line-height:1.25;margin-bottom:10px}
-    p{max-width:820px;color:var(--muted)}
+    .breadcrumbs{
+      padding:92px 7vw 0;
+      color:#9f927f;
+      font-family:Arial,Helvetica,sans-serif;
+      text-transform:uppercase;
+      letter-spacing:.16em;
+      font-size:10px;
+      background:#090806;
+    }
+    .breadcrumbs a{color:#c79b55;text-decoration:none}
 
-    .btn-wrap{display:flex;gap:15px;flex-wrap:wrap;align-items:center}
-    .btn{display:inline-block;padding:13px 25px;border:1px solid rgba(216,198,164,.65);letter-spacing:.13em;text-transform:uppercase;font-size:.7rem;transition:.28s ease}
-    .btn.primary{background:#d8c6a4;color:#111;border-color:#d8c6a4}
-    .btn:hover{transform:translateY(-2px);box-shadow:0 16px 38px rgba(0,0,0,.32)}
+    .hero{
+      min-height:86vh;
+      display:flex;
+      align-items:end;
+      padding:120px 7vw 90px;
+      background:
+        linear-gradient(90deg,rgba(0,0,0,.82),rgba(0,0,0,.32),rgba(0,0,0,.76)),
+        linear-gradient(0deg,rgba(9,8,6,1),rgba(9,8,6,0) 52%),
+        url('quiet-earth-turnagain-arm-alaska.jpg') center/cover no-repeat;
+    }
+    .hero-inner{max-width:840px}
+    .hero p{max-width:710px;color:#e8dfd1;font-size:17px}
+    .trust-strip{margin-top:30px;display:flex;flex-wrap:wrap;gap:10px}
+    .trust-strip span{
+      border:1px solid rgba(199,155,85,.22);
+      background:rgba(0,0,0,.24);
+      color:#dfd5c7;
+      padding:9px 12px;
+      font-family:Arial,Helvetica,sans-serif;
+      font-size:10px;
+      letter-spacing:.15em;
+      text-transform:uppercase;
+    }
 
-    .hero{min-height:92vh;display:flex;align-items:center;position:relative;overflow:hidden;border-top:none;background:linear-gradient(to right,rgba(0,0,0,.74),rgba(0,0,0,.28),rgba(0,0,0,.74)),url('quiet-earth-turnagain-arm-alaska.jpg') center/cover no-repeat}
-    .hero::after{content:"";position:absolute;inset:auto 0 0 0;height:35%;background:linear-gradient(to bottom,rgba(8,8,7,0),var(--bg))}
-    .hero-content{max-width:720px;padding-top:92px;position:relative;z-index:2}
-    .hero p{font-size:1.08rem;line-height:1.82;color:#e0d7c8;margin-bottom:32px}
-    .trust-strip{margin-top:34px;display:flex;flex-wrap:wrap;gap:10px}
-    .trust-strip span{padding:8px 11px;border:1px solid rgba(255,255,255,.13);color:rgba(255,255,255,.72);font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;background:rgba(0,0,0,.22)}
+    .intro{
+      padding:96px 7vw;
+      border-top:1px solid var(--line2);
+      border-bottom:1px solid var(--line2);
+      background:linear-gradient(180deg,#090806,#100e0b);
+    }
+    .intro-grid{
+      max-width:var(--max);
+      margin:auto;
+      display:grid;
+      grid-template-columns:.86fr 1.14fr;
+      gap:70px;
+      align-items:start;
+    }
+    .intro p{margin-bottom:18px}
 
-    .intro{background:linear-gradient(to bottom,#080807,#11100e)}
-    .intro-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:70px;align-items:center}
-    .intro-copy p{font-size:1.03rem;line-height:1.95;margin-bottom:18px}
-    .intro-image{border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 28px 90px rgba(0,0,0,.42);background:#14110e}
-    .intro-image img{aspect-ratio:16/10;object-fit:cover;object-position:center}
+    .mockups{
+      padding:100px 7vw;
+      background:var(--paper);
+      color:var(--dark);
+      border-top:0;
+    }
+    .mockups p{color:#5b5145}
+    .section-heading{max-width:880px;margin:0 auto 50px;text-align:center}
+    .section-heading p{margin:18px auto 0}
+    .buyer-note{
+      max-width:740px;
+      margin:26px auto 0;
+      padding:16px 20px;
+      border:1px solid rgba(154,107,40,.18);
+      background:#fffaf1;
+      color:#4d4338!important;
+      font-family:Arial,Helvetica,sans-serif;
+      font-size:13px!important;
+      letter-spacing:.04em;
+      line-height:1.7!important;
+      text-align:center;
+    }
+    .format-strip{
+      max-width:var(--max);
+      margin:0 auto 34px;
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:10px;
+    }
+    .format-strip span{
+      display:block;
+      padding:13px 14px;
+      background:#fffaf1;
+      border:1px solid rgba(40,35,30,.10);
+      color:#4d4338;
+      font-family:Arial,Helvetica,sans-serif;
+      font-size:10px;
+      letter-spacing:.15em;
+      text-transform:uppercase;
+      text-align:center;
+    }
+    .mockup-grid{
+      max-width:var(--max);
+      margin:auto;
+      display:grid;
+      grid-template-columns:1.2fr .8fr;
+      gap:24px;
+      align-items:stretch;
+    }
+    .mockup-stack{display:grid;gap:24px}
+    .mockup-card{
+      background:#fffaf1;
+      border:1px solid rgba(40,35,30,.12);
+      overflow:hidden;
+      box-shadow:0 18px 50px rgba(0,0,0,.10);
+    }
+    .mockup-card.feature{min-height:100%}
+    .mockup-image-button{
+      display:block;width:100%;border:0;padding:0;background:transparent;cursor:zoom-in;overflow:hidden;
+    }
+    .mockup-card img{
+      width:100%;height:310px;object-fit:cover;
+      transition:transform .65s cubic-bezier(.25,.46,.45,.94), filter .4s ease;
+    }
+    .mockup-card.feature img{height:620px}
+    .mockup-card:hover img{transform:scale(1.025);filter:saturate(1.04)}
+    .mockup-copy{padding:26px}
+    .mockup-copy h3{font-size:28px;margin-bottom:10px}
+    .mockup-copy p{font-size:14px;margin:0 0 18px;color:#5b5145}
+    .text-link{
+      color:#9a6b28;
+      text-decoration:none;
+      font-family:Arial,Helvetica,sans-serif;
+      text-transform:uppercase;
+      letter-spacing:.16em;
+      font-size:11px;
+      font-weight:700;
+    }
 
-    .light-section{background:var(--panel2);color:#22201c;border-top:0}
-    .light-section .eyebrow{color:#9b7a55}
-    .light-section p{color:#5e574f}
-    .applications{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:42px}
-    .application-card{background:#fffaf1;border:1px solid var(--dark-line);border-radius:14px;overflow:hidden;box-shadow:0 18px 50px rgba(0,0,0,.08)}
-    .application-card img{aspect-ratio:16/10;object-fit:cover}
-    .application-copy{padding:26px}
-    .application-copy span{display:block;margin-bottom:9px;color:#9b7a55;font-size:.66rem;letter-spacing:.22em;text-transform:uppercase}
 
-    .mockup-section{background:#f3efe8;color:#24211d;border-top:1px solid rgba(0,0,0,.08)}
-    .mockup-section p{color:#625b52}
-    .mockup-wrap{margin-top:42px;border:1px solid rgba(40,35,30,.16);box-shadow:0 22px 70px rgba(0,0,0,.12);background:#fff;overflow:hidden}
-    .mockup-wrap img{aspect-ratio:16/9;object-fit:cover;object-position:center}
+    .featured-installation{
+      max-width:var(--max);
+      margin:0 auto 34px;
+      background:#fffaf1;
+      border:1px solid rgba(40,35,30,.12);
+      box-shadow:0 24px 70px rgba(0,0,0,.13);
+      overflow:hidden;
+    }
+    .featured-installation img{
+      width:100%;
+      height:auto;
+      object-fit:cover;
+      transition:transform .65s cubic-bezier(.25,.46,.45,.94), filter .4s ease;
+    }
+    .featured-installation:hover img{transform:scale(1.012);filter:saturate(1.04)}
+    .featured-installation-copy{
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:34px;
+      padding:34px;
+      align-items:start;
+    }
+    .featured-installation-copy h3{
+      font-size:34px;
+      margin-bottom:12px;
+    }
+    .featured-installation-copy p{
+      font-size:15px;
+      color:#5b5145;
+      margin-bottom:18px;
+    }
+    .quick-specs{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:10px;
+    }
+    .quick-specs span{
+      display:block;
+      padding:12px;
+      background:#f3efe8;
+      border:1px solid rgba(40,35,30,.10);
+      color:#4d4338;
+      font-family:Arial,Helvetica,sans-serif;
+      font-size:10px;
+      letter-spacing:.12em;
+      line-height:1.55;
+      text-transform:uppercase;
+    }
 
-    .mood-section{background:#10100e}
-    .mood-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:42px}
-    .mood-card{background:rgba(255,255,255,.025);border:1px solid var(--line);border-radius:12px;padding:27px}
-    .mood-card p{font-size:.92rem}
+    .use-section{padding:94px 7vw;background:#0d0b08;border-top:1px solid rgba(255,255,255,.08)}
+    .use-grid{max-width:var(--max);margin:42px auto 0;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .use-card{background:#12100d;border:1px solid rgba(199,155,85,.18);padding:28px;min-height:220px}
+    .use-card h3{font-size:26px;margin-bottom:12px}
+    .use-card p{font-size:14px;margin:0}
 
-    .featured-image{background:#11100e}
-    .image-split{display:grid;grid-template-columns:1.1fr .9fr;gap:54px;align-items:center}
-    .image-split figure{border-radius:14px;overflow:hidden;border:1px solid var(--line);box-shadow:0 26px 80px rgba(0,0,0,.36)}
-    .image-split figure img{aspect-ratio:16/10;object-fit:cover}
+    .featured-art{padding:100px 7vw;background:#090806;border-top:1px solid rgba(255,255,255,.08)}
+    .art-grid{max-width:var(--max);margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    .art-card{background:var(--panel);border:1px solid rgba(199,155,85,.18);overflow:hidden;transition:.3s ease}
+    .art-card:hover{transform:translateY(-4px);border-color:rgba(199,155,85,.48);box-shadow:0 24px 70px rgba(0,0,0,.35)}
+    .art-card img{width:100%;height:270px;object-fit:cover}
+    .art-card-copy{padding:24px}
+    .art-card-copy span{display:block;color:#c79b55;font-family:Arial,Helvetica,sans-serif;font-size:10px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:10px}
+    .art-card-copy h3{font-size:27px;line-height:1.05;margin-bottom:12px}
+    .art-card-copy p{font-size:14px;margin-bottom:16px}
 
-    .art-section{background:#080807}
-    .section-heading{max-width:880px;margin-bottom:46px}
-    .section-heading.center{text-align:center;margin-left:auto;margin-right:auto}
-    .section-heading.center p{margin:0 auto}
+    .buying{padding:94px 7vw;background:#15110d;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .buying-grid{max-width:var(--max);margin:42px auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .buy-box{border:1px solid rgba(199,155,85,.22);background:rgba(255,255,255,.035);padding:28px}
+    .buy-box h3{font-size:27px;margin-bottom:12px}
+    .buy-box p{font-size:14px;margin:0}
 
-    .featured-art-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;margin-top:42px;margin-bottom:28px}
-    .art-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
-    .art-card{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;transition:.3s ease;min-height:100%}
-    .art-card:hover{transform:translateY(-5px);border-color:rgba(216,198,164,.45);box-shadow:0 22px 54px rgba(0,0,0,.28)}
-    .art-card img{aspect-ratio:4/3;object-fit:cover;object-position:center;background:#21170d}
-    .feature-card img{aspect-ratio:16/9}
-    .art-card-copy{padding:22px}
-    .art-card-copy span{color:#c2a36e;font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;display:block;margin-bottom:9px}
-    .art-card-copy p{font-size:.88rem;line-height:1.62;margin-bottom:14px}
-    .art-card-copy em{color:#d8c6a4;font-style:normal;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase}
+    .seo-copy{padding:96px 7vw;background:var(--paper);color:var(--dark)}
+    .seo-copy p{color:#544b40}
+    .seo-columns{max-width:1120px;columns:2;column-gap:64px;margin-top:28px}
+    .seo-columns p{break-inside:avoid;margin-bottom:20px;font-size:16px;line-height:1.95}
+    .seo-columns a{color:#9a6b28;text-decoration:none;border-bottom:1px solid rgba(154,107,40,.25)}
 
-    .seo-copy{background:#11100e}
-    .seo-columns{columns:2;column-gap:64px;max-width:1120px}
-    .seo-columns p{break-inside:avoid;margin-bottom:20px;font-size:1rem;line-height:1.95}
+    .faq{padding:94px 7vw;background:#0b0907;border-top:1px solid rgba(255,255,255,.08)}
+    .faq-grid{max-width:var(--max);margin:42px auto 0;display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .faq-item{background:#12100d;border:1px solid rgba(199,155,85,.18);padding:28px}
+    .faq-item h3{font-size:26px;margin-bottom:12px}
+    .faq-item p{font-size:14px;margin:0}
 
-    .related{background:#0c0b09}
-    .related-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:38px}
-    .related-card{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;transition:.28s ease}
-    .related-card:hover{transform:translateY(-4px);border-color:rgba(216,198,164,.4)}
-    .related-card img{aspect-ratio:16/10;object-fit:cover}
-    .related-card div{padding:24px}
-    .related-card p{font-size:.92rem}
+    .related{padding:94px 7vw;background:#090806;border-top:1px solid rgba(255,255,255,.08)}
+    .related-grid{max-width:var(--max);margin:42px auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .related-card{display:block;background:#12100d;border:1px solid rgba(199,155,85,.18);padding:30px;min-height:220px;text-decoration:none}
+    .related-card h3{font-size:30px;margin-bottom:12px}
+    .related-card p{font-size:14px;margin:0}
+    .related-card span{display:inline-block;margin-top:20px;color:#c79b55;font-family:Arial,Helvetica,sans-serif;text-transform:uppercase;letter-spacing:.16em;font-size:11px;font-weight:700}
 
-    .email-capture{text-align:center;background:linear-gradient(to bottom,#151411,#080807)}
-    .email-capture p{margin:0 auto 30px}
-    .email-form{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}
-    .email-form input{width:min(430px,100%);padding:15px 16px;background:#050504;border:1px solid rgba(255,255,255,.16);color:var(--cream);font-family:inherit}
-    .email-form button{border:0;padding:15px 24px;background:#d8c6a4;color:#111;letter-spacing:.13em;text-transform:uppercase;font-size:.7rem;cursor:pointer}
+    .footer-cta{padding:100px 7vw;text-align:center;background:linear-gradient(180deg,#12100d,#060504);border-top:1px solid var(--line)}
+    .footer-cta p{max-width:680px;margin:18px auto 0}
+    .footer-cta .btns{justify-content:center}
 
-    .cta{text-align:center;background:#090908}
-    .cta p{margin:0 auto 32px}
-    footer{padding:45px 0;border-top:1px solid var(--line);color:#8f8679;font-size:.9rem}
+    .modal{display:none;position:fixed;z-index:10000;inset:0;background:rgba(0,0,0,.91);padding:34px;overflow:auto}
+    .modal.is-open{display:flex;align-items:center;justify-content:center;flex-direction:column}
+    .modal-card{width:min(1120px,94vw);background:#100e0b;border:1px solid rgba(199,155,85,.34);box-shadow:0 30px 90px rgba(0,0,0,.65)}
+    .modal-card img{width:100%;max-height:72vh;object-fit:contain;background:#070605}
+    .modal-info{display:grid;grid-template-columns:1fr 1fr;gap:24px;padding:26px;border-top:1px solid rgba(199,155,85,.20)}
+    .modal-info h3{font-size:30px;margin-bottom:10px}
+    .modal-info p{font-size:14px;margin-bottom:10px}
+    .modal-specs{display:grid;gap:10px;font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#d8cbb9;text-transform:uppercase;letter-spacing:.08em}
+    .modal-specs span{display:block;border:1px solid rgba(199,155,85,.20);padding:12px;background:rgba(255,255,255,.03)}
+    .modal-close{position:fixed;top:20px;right:30px;background:transparent;border:0;color:white;font-size:42px;cursor:pointer}
 
+    .footer-seo{background:#100e0b!important;padding:62px clamp(22px,6vw,76px) 36px!important;border-top:1px solid rgba(185,138,59,.22)!important}
+    .footer-grid{display:grid!important;grid-template-columns:repeat(5,1fr)!important;gap:28px!important;max-width:1380px!important;margin:0 auto!important}
+    .footer-grid h3{margin:0 0 13px!important;color:#d5b365!important;font-family:"Cormorant Garamond",Georgia,serif!important;font-size:21px!important;line-height:1.2!important;font-weight:400!important;text-transform:none!important;letter-spacing:0!important}
+    .footer-grid a{display:block!important;text-decoration:none!important;color:rgba(244,238,229,.62)!important;font-family:Arial,Helvetica,sans-serif!important;font-size:13px!important;line-height:2!important;text-transform:none!important;letter-spacing:0!important}
+    .footer-grid a:hover{color:#f4eee5!important}
+    .footer-bottom{display:block!important;max-width:1380px!important;margin:40px auto 0!important;padding-top:28px!important;border-top:1px solid rgba(185,138,59,.22)!important;color:rgba(244,238,229,.32)!important;font-family:Arial,Helvetica,sans-serif!important;font-size:10px!important;letter-spacing:.18em!important;line-height:1.8!important;text-align:center!important;text-transform:uppercase!important}
 
-    .mockup-gallery{display:grid;grid-template-columns:1fr;gap:32px;margin-top:48px}
-    .mockup-pair{display:grid;grid-template-columns:1fr 1fr;gap:28px}
-    .mockup-wrap img{transition:transform .5s ease}
-    .mockup-wrap:hover img{transform:scale(1.01)}
-    .related-card h3,.application-copy h3,.mood-card h3{letter-spacing:-0.02em}
-    .seo-copy a{color:#d8c6a4;text-decoration:none;border-bottom:1px solid rgba(216,198,164,.3)}
-    .seo-copy a:hover{border-color:#d8c6a4}
-    .faq-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;margin-top:46px}
-    .faq-item{background:rgba(255,255,255,.025);border:1px solid var(--line);border-radius:12px;padding:30px}
-    .faq-item p{font-size:.95rem;line-height:1.9}
-
-    @media(max-width:1120px){
-      .intro-grid,.applications,.mood-grid,.image-split,.featured-art-grid,.art-grid,.related-grid,.mockup-pair,.faq-grid{grid-template-columns:1fr}
+    @media(max-width:1040px){
+      .site-nav-standard{height:64px!important}
+      .nav-toggle-standard{display:block!important}
+      .nav-links-standard{position:fixed!important;top:64px!important;left:0!important;right:0!important;display:none!important;flex-direction:column!important;align-items:flex-start!important;gap:0!important;padding:18px 24px 24px!important;background:rgba(14,12,9,.98)!important;border-bottom:1px solid rgba(185,138,59,.22)!important}
+      .site-nav-standard.is-open .nav-links-standard{display:flex!important}
+      .nav-links-standard a{width:100%!important;padding:14px 0!important}
+      .nav-shop-standard{width:auto!important;margin-top:8px!important;padding:13px 18px!important}
+      .footer-grid{grid-template-columns:1fr!important}
+    }
+    @media(max-width:1000px){
+      .intro-grid,.mockup-grid,.use-grid,.art-grid,.buying-grid,.faq-grid,.related-grid,.modal-info,.featured-installation-copy{grid-template-columns:1fr}
+      .mockup-card.feature img,.mockup-card img{height:auto}
       .seo-columns{columns:1}
+      .format-strip,.quick-specs{grid-template-columns:repeat(2,1fr)}
     }
-    @media(max-width:780px){
-      .site-header{position:relative;flex-direction:column;align-items:center;padding:22px 18px}
-      .site-nav{flex-wrap:wrap;justify-content:center;gap:14px 20px;font-size:.56rem}
-      .hero{min-height:78vh}
-      section{padding:72px 0}
+    @media(max-width:680px){
+      .breadcrumbs{padding:84px 24px 0}
+      .hero{min-height:76vh;padding:88px 24px 58px}
+      .intro,.mockups,.use-section,.featured-art,.buying,.seo-copy,.faq,.related,.footer-cta{padding:64px 24px}
+      h1{font-size:52px}
+      .format-strip,.quick-specs{grid-template-columns:1fr}
     }
-  
-/* AI / GEO COLLECTION PAGE ADDITIONS */
-.ai-about-artist,.ai-resource-section,.ai-linking-hub{border-top:1px solid rgba(181,146,74,.14);border-bottom:1px solid rgba(181,146,74,.08)}
-.ai-two-col{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2rem,5vw,5rem);align-items:start}
-.ai-two-col p{color:rgba(244,238,229,.68);font-size:.88rem;line-height:1.95}
-.ai-section-head{max-width:980px;margin:0 auto 42px;text-align:center}
-.ai-section-head p{max-width:760px;margin:18px auto 0;color:rgba(244,238,229,.62);line-height:1.9}
-.ai-env-grid{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:2px}
-.ai-env-card{display:block;text-decoration:none;background:#12100d;border:1px solid rgba(181,146,74,.14);padding:30px;min-height:230px}
-.ai-env-card span{display:block;color:#b9934b;font-family:Arial,Helvetica,sans-serif;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;margin-bottom:18px}
-.ai-env-card h3{color:#f4eee5;font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(1.25rem,2vw,1.7rem);font-weight:400;line-height:1.05;margin-bottom:14px}
-.ai-env-card p{color:rgba(244,238,229,.58);font-size:.76rem;line-height:1.85}
-.ai-link-grid{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
-.ai-link-grid a{display:block;text-decoration:none;background:#f3efe7;color:#1b1713;padding:28px;border:1px solid rgba(40,35,30,.08)}
-.ai-link-grid strong{display:block;font-family:"Cormorant Garamond",Georgia,serif;font-size:1.65rem;font-weight:400;color:#1b1713;margin-bottom:10px}
-.ai-link-grid span{display:block;color:#5b5044;font-size:.76rem;line-height:1.75}
-@media(max-width:1040px){.ai-two-col,.ai-env-grid,.ai-link-grid{grid-template-columns:1fr}.ai-section-head{text-align:left}.ai-section-head p{margin-left:0}}
+  </style>
 
-
-/* IMAGE PERFORMANCE PASS */
-img{max-width:100%;height:auto}
-section{content-visibility:auto;contain-intrinsic-size:1px 900px}
-.hero,.site-header,nav{content-visibility:visible;contain-intrinsic-size:auto}
-
-
-/* ── STANDARD NAV + FOOTER SYSTEM ───────────────────────────── */
-.site-nav-standard{
-  position:fixed!important;
-  top:0!important;
-  left:0!important;
-  right:0!important;
-  height:66px!important;
-  z-index:9999!important;
-  display:flex!important;
-  align-items:center!important;
-  justify-content:space-between!important;
-  gap:28px!important;
-  padding:0 clamp(16px,4vw,44px)!important;
-  background:rgba(14,12,9,.94)!important;
-  border-bottom:1px solid rgba(185,138,59,.18)!important;
-  backdrop-filter:blur(14px)!important;
-  -webkit-backdrop-filter:blur(14px)!important;
-  box-sizing:border-box!important;
-}
-.nav-logo-standard{
-  display:flex!important;
-  flex-direction:column!important;
-  text-decoration:none!important;
-  color:#f4eee5!important;
-  line-height:1!important;
-  min-width:max-content!important;
-}
-.nav-logo-name-standard{
-  font-family:Arial,Helvetica,sans-serif!important;
-  font-size:18px!important;
-  font-weight:700!important;
-  letter-spacing:.24em!important;
-  text-transform:uppercase!important;
-}
-.nav-logo-sub-standard{
-  margin-top:7px!important;
-  color:#b9934b!important;
-  font-family:Arial,Helvetica,sans-serif!important;
-  font-size:9px!important;
-  letter-spacing:.26em!important;
-  text-transform:uppercase!important;
-}
-.nav-links-standard{
-  display:flex!important;
-  align-items:center!important;
-  justify-content:flex-end!important;
-  gap:clamp(18px,2vw,34px)!important;
-}
-.nav-links-standard a{
-  color:rgba(244,238,229,.78)!important;
-  text-decoration:none!important;
-  font-family:Arial,Helvetica,sans-serif!important;
-  font-size:12px!important;
-  font-weight:700!important;
-  letter-spacing:.18em!important;
-  text-transform:uppercase!important;
-  white-space:nowrap!important;
-}
-.nav-links-standard a:hover{
-  color:#f4eee5!important;
-}
-.nav-shop-standard{
-  color:#d5b365!important;
-  border:1px solid rgba(213,179,101,.62)!important;
-  padding:14px 22px!important;
-}
-.nav-toggle-standard{
-  display:none!important;
-  width:42px!important;
-  height:42px!important;
-  border:1px solid rgba(213,179,101,.36)!important;
-  background:transparent!important;
-  cursor:pointer!important;
-}
-.nav-toggle-standard span{
-  display:block!important;
-  width:20px!important;
-  height:2px!important;
-  margin:5px auto!important;
-  background:#f4eee5!important;
-}
-.footer-seo{
-  background:#100e0b!important;
-  padding:62px clamp(22px,6vw,76px) 36px!important;
-  border-top:1px solid rgba(185,138,59,.22)!important;
-}
-.footer-grid{
-  display:grid!important;
-  grid-template-columns:repeat(5,1fr)!important;
-  gap:28px!important;
-  max-width:1380px!important;
-  margin:0 auto!important;
-}
-.footer-grid h3{
-  margin:0 0 13px!important;
-  color:#d5b365!important;
-  font-family:"Cormorant Garamond",Georgia,serif!important;
-  font-size:21px!important;
-  line-height:1.2!important;
-  font-weight:400!important;
-  text-transform:none!important;
-  letter-spacing:0!important;
-}
-.footer-grid a{
-  display:block!important;
-  text-decoration:none!important;
-  color:rgba(244,238,229,.62)!important;
-  font-family:Arial,Helvetica,sans-serif!important;
-  font-size:13px!important;
-  line-height:2!important;
-  text-transform:none!important;
-  letter-spacing:0!important;
-}
-.footer-grid a:hover{
-  color:#f4eee5!important;
-}
-.footer-bottom{
-  display:block!important;
-  max-width:1380px!important;
-  margin:40px auto 0!important;
-  padding-top:28px!important;
-  border-top:1px solid rgba(185,138,59,.22)!important;
-  color:rgba(244,238,229,.32)!important;
-  font-family:Arial,Helvetica,sans-serif!important;
-  font-size:10px!important;
-  letter-spacing:.18em!important;
-  line-height:1.8!important;
-  text-align:center!important;
-  text-transform:uppercase!important;
-}
-@media (max-width:1040px){
-  .site-nav-standard{
-    height:64px!important;
-  }
-  .nav-toggle-standard{
-    display:block!important;
-  }
-  .nav-links-standard{
-    position:fixed!important;
-    top:64px!important;
-    left:0!important;
-    right:0!important;
-    display:none!important;
-    flex-direction:column!important;
-    align-items:flex-start!important;
-    gap:0!important;
-    padding:18px 24px 24px!important;
-    background:rgba(14,12,9,.98)!important;
-    border-bottom:1px solid rgba(185,138,59,.22)!important;
-  }
-  .site-nav-standard.is-open .nav-links-standard{
-    display:flex!important;
-  }
-  .nav-links-standard a{
-    width:100%!important;
-    padding:14px 0!important;
-  }
-  .nav-shop-standard{
-    width:auto!important;
-    margin-top:8px!important;
-    padding:13px 18px!important;
-  }
-  .footer-grid{
-    grid-template-columns:1fr!important;
-  }
-}
-
-</style>
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@graph": [
+  "@context":"https://schema.org",
+  "@graph":[
     {
-      "@type": "Person",
-      "@id": "https://dsproul.com/#dan-sproul",
-      "name": "Dan Sproul",
-      "url": "https://dsproul.com",
-      "jobTitle": "Fine Art Photographer and Mixed Media Artist",
-      "description": "Dan Sproul is an Ohio-based fine art photographer and mixed media artist creating original artwork for hospitality, healthcare, corporate, wellness, and residential interiors across the United States.",
-      "homeLocation": {
-        "@type": "Place",
-        "name": "Lima, Ohio"
-      },
-      "sameAs": [
+      "@type":"Person",
+      "@id":"https://dsproul.com/#dan-sproul",
+      "name":"Dan Sproul",
+      "url":"https://dsproul.com",
+      "jobTitle":"Fine Art Photographer and Mixed Media Artist",
+      "description":"Dan Sproul is an Ohio-based fine art photographer and mixed media artist creating original artwork for hospitality, healthcare, corporate, wellness, and residential interiors across the United States.",
+      "homeLocation":{"@type":"Place","name":"Lima, Ohio"},
+      "sameAs":[
         "https://dansproul.com",
         "https://fineartamerica.com/profiles/1-dan-sproul",
         "https://www.pinterest.com/dansproul/",
@@ -367,167 +413,89 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
       ]
     },
     {
-      "@type": "Organization",
-      "@id": "https://dsproul.com/#organization",
-      "name": "Dan Sproul Fine Art Photography",
-      "url": "https://dsproul.com",
-      "founder": {
-        "@id": "https://dsproul.com/#dan-sproul"
-      },
-      "email": "sproulphoto@gmail.com",
-      "description": "Original fine art photography and mixed media artwork for designers, hospitality interiors, healthcare spaces, corporate offices, wellness environments, and residential design projects."
+      "@type":"Organization",
+      "@id":"https://dsproul.com/#organization",
+      "name":"Dan Sproul Fine Art Photography",
+      "url":"https://dsproul.com",
+      "founder":{"@id":"https://dsproul.com/#dan-sproul"},
+      "email":"sproulphoto@gmail.com",
+      "description":"Original fine art photography and mixed media artwork for designers, hospitality interiors, healthcare spaces, corporate offices, wellness environments, and residential design projects."
     },
     {
-      "@type": "WebPage",
-      "@id": "https://dsproul.com/quiet-earth-collection.html#webpage",
-      "url": "https://dsproul.com/quiet-earth-collection.html",
-      "name": "Fine Art Photography",
-      "description": "Fine art photography and mixed media artwork by Dan Sproul for interior designers, healthcare, hospitality, office, wellness, and residential interiors.",
-      "author": {
-        "@id": "https://dsproul.com/#dan-sproul"
-      },
-      "about": [
-        "artwork for healthcare interiors",
-        "hospitality wall art",
-        "executive office wall art",
-        "quiet luxury artwork",
-        "restorative landscape photography",
-        "atmospheric photography for hospitality",
-        "black-and-white office photography"
-      ],
-      "primaryImageOfPage": {
-        "@id": "https://dsproul.com/quiet-earth-turnagain-arm-alaska.jpg#image"
-      }
+      "@type":"WebSite",
+      "@id":"https://dsproul.com/#website",
+      "url":"https://dsproul.com",
+      "name":"Dan Sproul Fine Art Photography",
+      "publisher":{"@id":"https://dsproul.com/#organization"}
     },
     {
-      "@type": "BreadcrumbList",
-      "@id": "https://dsproul.com/quiet-earth-collection.html#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://dsproul.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Collections",
-          "item": "https://dsproul.com/art-collections.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Fine Art Photography",
-          "item": "https://dsproul.com/quiet-earth-collection.html"
-        }
+      "@type":["WebPage","CollectionPage"],
+      "@id":"https://dsproul.com/quiet-earth-collection.html#webpage",
+      "url":"https://dsproul.com/quiet-earth-collection.html",
+      "name":"Quiet Earth Collection | Atmospheric Landscape Prints for Calm Modern Interiors | Dan Sproul",
+      "description":"Quiet Earth is a curated fine art landscape photography collection by Dan Sproul featuring atmospheric mountain, lake, forest, fog, and reflection prints for wellness spaces, hospitality interiors, modern homes, and interior design projects.",
+      "isPartOf":{"@id":"https://dsproul.com/#website"},
+      "author":{"@id":"https://dsproul.com/#dan-sproul"},
+      "publisher":{"@id":"https://dsproul.com/#organization"},
+      "breadcrumb":{"@id":"https://dsproul.com/quiet-earth-collection.html#breadcrumb"},
+      "primaryImageOfPage":{"@id":"https://dsproul.com/quiet-earth-turnagain-arm-alaska.jpg#image"},
+      "about":[
+        {"@type":"Thing","name":"Atmospheric landscape photography"},
+        {"@type":"Thing","name":"Calming artwork for interiors"},
+        {"@type":"Thing","name":"Wellness wall art"},
+        {"@type":"Thing","name":"Hospitality artwork"},
+        {"@type":"Thing","name":"Quiet luxury interiors"}
       ]
     },
     {
-      "@type": "ImageObject",
-      "@id": "https://dsproul.com/quiet-earth-turnagain-arm-alaska.jpg#image",
-      "contentUrl": "https://dsproul.com/quiet-earth-turnagain-arm-alaska.jpg",
-      "name": "Fine Art Photography hero image by Dan Sproul",
-      "description": "Fine Art Photography hero image by Dan Sproul",
-      "creator": {
-        "@id": "https://dsproul.com/#dan-sproul"
-      },
-      "copyrightHolder": {
-        "@id": "https://dsproul.com/#dan-sproul"
-      },
-      "creditText": "Dan Sproul",
-      "acquireLicensePage": "https://dansproul.com",
-      "representativeOfPage": true
+      "@type":"BreadcrumbList",
+      "@id":"https://dsproul.com/quiet-earth-collection.html#breadcrumb",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://dsproul.com/"},
+        {"@type":"ListItem","position":2,"name":"Collections","item":"https://dsproul.com/art-collections.html"},
+        {"@type":"ListItem","position":3,"name":"Quiet Earth Collection","item":"https://dsproul.com/quiet-earth-collection.html"}
+      ]
+    },
+
+    {
+      "@type":"ImageObject",
+      "@id":"https://dsproul.com/quiet-earth-autumn-beginnings-fireplace-mockup.png#image",
+      "contentUrl":"https://dsproul.com/quiet-earth-autumn-beginnings-fireplace-mockup.png",
+      "name":"Autumn Beginnings Wyoming landscape artwork installed above a fireplace",
+      "description":"Warm autumn Wyoming landscape photography shown as a large framed statement piece above a fireplace in a lodge-inspired living room.",
+      "creator":{"@id":"https://dsproul.com/#dan-sproul"},
+      "copyrightHolder":{"@id":"https://dsproul.com/#dan-sproul"},
+      "creditText":"Dan Sproul",
+      "acquireLicensePage":"https://dansproul.com/featured/autumn-beginnings-wyoming-landscape-dan-sproul.html"
     },
     {
-      "@type": "ImageObject",
-      "@id": "https://dsproul.com/quiet-earth-lily-pond-chugach-alaska.jpg#image",
-      "contentUrl": "https://dsproul.com/quiet-earth-lily-pond-chugach-alaska.jpg",
-      "name": "Atmospheric mountain lake reflection fine art landscape print for wellness interiors by Dan Sproul",
-      "description": "Atmospheric mountain lake reflection fine art landscape print for wellness interiors by Dan Sproul",
-      "creator": {
-        "@id": "https://dsproul.com/#dan-sproul"
-      },
-      "copyrightHolder": {
-        "@id": "https://dsproul.com/#dan-sproul"
-      },
-      "creditText": "Dan Sproul",
-      "acquireLicensePage": "https://dansproul.com",
-      "representativeOfPage": false
-    },
-    {
-      "@type": "ImageObject",
-      "@id": "https://dsproul.com/quiet-earth-lily-pond.jpg#image",
-      "contentUrl": "https://dsproul.com/quiet-earth-lily-pond.jpg",
-      "name": "Large framed mountain reflection landscape photography above modern fireplace in luxury residential ",
-      "description": "Large framed mountain reflection landscape photography above modern fireplace in luxury residential interior by Dan Sproul",
-      "creator": {
-        "@id": "https://dsproul.com/#dan-sproul"
-      },
-      "copyrightHolder": {
-        "@id": "https://dsproul.com/#dan-sproul"
-      },
-      "creditText": "Dan Sproul",
-      "acquireLicensePage": "https://dansproul.com",
-      "representativeOfPage": false
-    },
-    {
-      "@type": "ImageObject",
-      "@id": "https://dsproul.com/quiet-earth-mountains-homeoffice.jpg#image",
-      "contentUrl": "https://dsproul.com/quiet-earth-mountains-homeoffice.jpg",
-      "name": "Quiet Earth mountain landscape fine art photography in warm modern home office by Dan Sproul",
-      "description": "Quiet Earth mountain landscape fine art photography in warm modern home office by Dan Sproul",
-      "creator": {
-        "@id": "https://dsproul.com/#dan-sproul"
-      },
-      "copyrightHolder": {
-        "@id": "https://dsproul.com/#dan-sproul"
-      },
-      "creditText": "Dan Sproul",
-      "acquireLicensePage": "https://dansproul.com",
-      "representativeOfPage": false
-    },
-    {
-      "@type": "ImageObject",
-      "@id": "https://dsproul.com/quiet-earth-appalachian-fog.jpg#image",
-      "contentUrl": "https://dsproul.com/quiet-earth-appalachian-fog.jpg",
-      "name": "Atmospheric foggy Appalachian landscape photography above bed in quiet luxury bedroom interior by Da",
-      "description": "Atmospheric foggy Appalachian landscape photography above bed in quiet luxury bedroom interior by Dan Sproul",
-      "creator": {
-        "@id": "https://dsproul.com/#dan-sproul"
-      },
-      "copyrightHolder": {
-        "@id": "https://dsproul.com/#dan-sproul"
-      },
-      "creditText": "Dan Sproul",
-      "acquireLicensePage": "https://dansproul.com",
-      "representativeOfPage": false
-    },
-    {
-      "@type": "ImageObject",
-      "@id": "https://dsproul.com/quiet-earth-spa-waterfall.jpg#image",
-      "contentUrl": "https://dsproul.com/quiet-earth-spa-waterfall.jpg",
-      "name": "Waterfall fine art photography in spa and wellness inspired residential interior by Dan Sproul",
-      "description": "Waterfall fine art photography in spa and wellness inspired residential interior by Dan Sproul",
-      "creator": {
-        "@id": "https://dsproul.com/#dan-sproul"
-      },
-      "copyrightHolder": {
-        "@id": "https://dsproul.com/#dan-sproul"
-      },
-      "creditText": "Dan Sproul",
-      "acquireLicensePage": "https://dansproul.com",
-      "representativeOfPage": false
+      "@type":"FAQPage",
+      "@id":"https://dsproul.com/quiet-earth-collection.html#faq",
+      "mainEntity":[
+        {
+          "@type":"Question",
+          "name":"What interiors work best with Quiet Earth artwork?",
+          "acceptedAnswer":{"@type":"Answer","text":"Quiet Earth works best in calm contemporary interiors, wellness-inspired spaces, hospitality suites, bedrooms, living rooms, offices, therapy rooms, and refined natural design projects."}
+        },
+        {
+          "@type":"Question",
+          "name":"Are Quiet Earth prints available framed with mats?",
+          "acceptedAnswer":{"@type":"Answer","text":"Yes. Prints are available through Dan Sproul's print shop in multiple sizes with paper, canvas, metal, acrylic, framing, and mat options depending on the selected artwork."}
+        },
+        {
+          "@type":"Question",
+          "name":"Can interior designers request artwork recommendations?",
+          "acceptedAnswer":{"@type":"Answer","text":"Yes. Designers can contact Dan Sproul for artwork recommendations, sizing guidance, mockup support, and coordinated collection suggestions for residential or commercial projects."}
+        }
+      ]
     }
   ]
 }
 </script>
-<link rel="preload" as="image" href="quiet-earth-turnagain-arm-alaska.jpg">
 </head>
 
 <body>
 
-<!-- STANDARD SITE NAV -->
 <nav class="site-nav-standard" aria-label="Primary navigation">
   <a href="index.html" class="nav-logo-standard" aria-label="Dan Sproul Fine Art Photography home">
     <span class="nav-logo-name-standard">Dan Sproul</span>
@@ -549,362 +517,370 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
   </div>
 </nav>
 
-
-<header class="site-header">
-  <a href="index.html" class="brand">Dan Sproul<span>Fine Art Photography</span></a>
-</header>
+<div class="breadcrumbs">
+  <a href="index.html">Home</a> /
+  <a href="art-collections.html">Collections</a> /
+  Quiet Earth Collection
+</div>
 
 <section class="hero">
-  <div class="container hero-content">
+  <div class="hero-inner">
     <span class="eyebrow">Quiet Earth Collection</span>
-    <h1>Atmospheric Landscape Prints for Calm Modern Interiors</h1>
-    <p>Fine art landscape photography built around stillness, reflection, fog, soft mountain light, and natural texture — curated for wellness spaces, hospitality interiors, refined homes, and interior design projects.</p>
-    <div class="btn-wrap">
-      <a href="#collection" class="btn primary">View Selected Artwork</a>
-      <a href="for-designers.html" class="btn">For Designers</a>
+    <h1>Atmospheric landscape prints for calm modern interiors.</h1>
+    <p>Fine art landscape photography built around stillness, reflection, fog, soft mountain light, and natural texture — curated for wellness spaces, hospitality interiors, refined homes, and quiet design projects.</p>
+    <div class="btns">
+      <a href="#mockups" class="btn primary">View In Rooms</a>
+      <a href="#collection" class="btn">View Print Options</a>
     </div>
     <div class="trust-strip">
-      <span>Landscape Wall Art</span>
-      <span>Wellness Interiors</span>
-      <span>Hospitality Artwork</span>
+      <span>Framed Prints</span>
+      <span>Canvas</span>
+      <span>Acrylic</span>
+      <span>Metal</span>
       <span>Custom Sizes Available</span>
     </div>
   </div>
 </section>
 
-<section class="section ai-about-artist" id="about-artist">
-  <div class="ai-two-col">
-    <div>
-      <p class="section-label">About the Artist</p>
-      <h2 class="section-title">Original artwork selected for atmosphere, interior use, and emotional fit.</h2>
-    </div>
-    <div>
-      <p>Dan Sproul is an Ohio-based fine art photographer and mixed media artist creating original artwork for hospitality, healthcare, corporate, wellness, and residential interiors across the United States.</p>
-      <p>His collections are organized by how a space should feel: quiet, restorative, atmospheric, grounded, memorable, or refined. That makes each page easier to use as a design resource instead of a traditional photography portfolio.</p>
-    </div>
-  </div>
-</section>
-
-
 <section class="intro">
-  <div class="container intro-grid">
-    <div class="intro-copy">
-      <span class="eyebrow">Calm, Scale & Natural Texture</span>
-      <h2>Landscape photography chosen for the way it feels in a room.</h2>
-      <p>Quiet Earth is a curated collection of atmospheric landscape photography created for interiors that need calm, depth, and a grounded connection to nature. The collection includes mountain reflections, quiet lakes, foggy roads, forest edges, coastal Alaska scenes, and earth-toned landscapes selected for their ability to soften modern spaces.</p>
-      <p>Rather than organizing artwork only by location, this collection is built around mood and interior use. These fine art landscape prints work especially well in hospitality suites, wellness environments, waiting rooms, residential bedrooms, living rooms, mountain homes, and quiet commercial spaces where artwork needs to create a sense of ease.</p>
-      <p>The palette leans into blue-gray atmosphere, soft greens, muted earth tones, reflective water, and natural texture. Many of the images are strong enough for oversized framed statement pieces while still remaining peaceful enough for restorative interiors.</p>
-      <div class="btn-wrap">
-        <a href="#interior-uses" class="btn">Interior Applications</a>
-        <a href="in-your-space.html" class="btn">View In Your Space</a>
-      </div>
-    </div>
-
-    <div class="intro-image">
-      <img src="quiet-earth-lily-pond-chugach-alaska.jpg" alt="Atmospheric mountain lake reflection fine art landscape print for wellness interiors by Dan Sproul" loading="eager" decoding="async" fetchpriority="high">
-    </div>
-  </div>
-</section>
-
-<section class="mockup-section">
-  <div class="container">
-    <div class="section-heading center">
-      <span class="eyebrow">Shown In Context</span>
-      <h2>Quiet landscape artwork designed for real interiors.</h2>
-      <p>
-        Quiet Earth was created for homes, wellness-inspired rooms, offices, and calm residential interiors that benefit from natural atmosphere. These mockups show how oversized landscape photography can anchor a room without overwhelming it.
-      </p>
-    </div>
-
-    <div class="mockup-gallery">
-      <div class="mockup-wrap">
-        <img src="quiet-earth-lily-pond.jpg" alt="Large framed mountain reflection landscape photography above modern fireplace in luxury residential interior by Dan Sproul" loading="lazy" decoding="async">
-      </div>
-
-      <div class="mockup-pair">
-        <div class="mockup-wrap">
-          <img src="quiet-earth-mountains-homeoffice.jpg" alt="Quiet Earth mountain landscape fine art photography in warm modern home office by Dan Sproul" loading="lazy" decoding="async">
-        </div>
-
-        <div class="mockup-wrap">
-          <img src="quiet-earth-appalachian-fog.jpg" alt="Atmospheric foggy Appalachian landscape photography above bed in quiet luxury bedroom interior by Dan Sproul" loading="lazy" decoding="async">
-        </div>
-      </div>
-
-      <div class="mockup-wrap">
-        <img src="quiet-earth-spa-waterfall.jpg" alt="Waterfall fine art photography in spa and wellness inspired residential interior by Dan Sproul" loading="lazy" decoding="async">
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="light-section" id="interior-uses">
-  <div class="container">
-    <div class="section-heading center">
-      <span class="eyebrow">Designed for Interiors</span>
-      <h2>Where Quiet Earth works best.</h2>
-      <p>These artworks are selected for spaces where a designer needs calm visual impact, natural texture, and a refined connection to the outdoors.</p>
-    </div>
-
-    <div class="applications">
-      <div class="application-card">
-        <img src="quiet-earth-mount-hood-trillium-lake.jpg" alt="Mountain reflection landscape print for calm bedroom and living room interiors by Dan Sproul" loading="lazy" decoding="async">
-        <div class="application-copy">
-          <span>Residential</span>
-          <h3>Refined Modern Homes</h3>
-          <p>Large framed landscape photography for living rooms, bedrooms, dining rooms, hallways, and quiet statement walls.</p>
-        </div>
-      </div>
-      <div class="application-card">
-        <img src="quiet-earth-foggy-hyatt-lane-cades-cove.jpg" alt="Foggy country lane nature photography print for wellness spaces and calming interiors by Dan Sproul" loading="lazy" decoding="async">
-        <div class="application-copy">
-          <span>Wellness</span>
-          <h3>Restorative Spaces</h3>
-          <p>Soft, atmospheric imagery suited for spas, clinics, therapy spaces, wellness rooms, and hospitality environments.</p>
-        </div>
-      </div>
-      <div class="application-card">
-        <img src="quiet-earth-turnagain-arm-alaska.jpg" alt="Moody Alaska mountain landscape print for boutique hotel and hospitality interiors by Dan Sproul" loading="lazy" decoding="async">
-        <div class="application-copy">
-          <span>Hospitality</span>
-          <h3>Boutique Hospitality</h3>
-          <p>Atmospheric wall art for suites, lounges, lobbies, corridors, and destination-inspired interiors.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="mood-section">
-  <div class="container">
-    <div class="section-heading center">
-      <span class="eyebrow">Collection Mood</span>
-      <h2>Stillness, atmosphere, and grounded natural color.</h2>
-      <p>Quiet Earth is built for interior projects that need artwork to feel intentional, calming, and connected to the natural world.</p>
-    </div>
-
-    <div class="mood-grid">
-      <div class="mood-card"><h3>Soft Color Palettes</h3><p>Blue-gray skies, quiet greens, warm earth, muted autumn tones, and low-contrast atmosphere for refined interiors.</p></div>
-      <div class="mood-card"><h3>Large Statement Scale</h3><p>Many images are composed to work as oversized framed prints above sofas, beds, consoles, and hospitality focal walls.</p></div>
-      <div class="mood-card"><h3>Wellness-Focused</h3><p>The collection emphasizes visual calm, still water, fog, negative space, and restorative natural imagery.</p></div>
-      <div class="mood-card"><h3>Designer-Friendly</h3><p>Curated by mood and interior application instead of overwhelming buyers with a broad landscape archive.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="featured-image">
-  <div class="container image-split">
-    <figure>
-      <img src="quiet-earth-mount-hood-trillium-lake.jpg" alt="Mount Hood reflected in Trillium Lake fine art landscape print by Dan Sproul" loading="lazy" decoding="async">
-    </figure>
+  <div class="intro-grid">
     <div>
-      <span class="eyebrow">Oversized Landscape Wall Art</span>
-      <h2>A calmer way to create a focal point.</h2>
-      <p>Quiet Earth works best when used with scale. A large framed landscape print can anchor a room without becoming visually loud, giving designers a focal point that feels peaceful, natural, and architectural.</p>
-      <p>For hospitality projects, wellness environments, and refined residential interiors, these photographs can help shape the emotional tone of a space while still feeling timeless and restrained.</p>
+      <span class="eyebrow">Why Quiet Earth Exists</span>
+      <h2>Landscape photography chosen for the way it feels in a room.</h2>
+    </div>
+    <div>
+      <p>Quiet Earth grew from photographs I kept returning to over the years — not necessarily the loudest landscapes, but the ones that felt grounded, atmospheric, and restorative. This collection focuses on still water, fog, distant mountains, forest edges, soft weather, and natural textures that can support a room without competing with it.</p>
+      <p>The goal is simple: artwork that helps a space feel calmer, more connected to nature, and visually complete. Rather than organizing only by location, Quiet Earth is curated around mood, scale, palette, and interior use.</p>
     </div>
   </div>
 </section>
 
-<section class="art-section" id="collection">
-  <div class="container">
-    <div class="section-heading">
-      <span class="eyebrow">Selected Works</span>
-      <h2>Quiet landscape photography prints for interiors.</h2>
-      <p>Click any artwork to view print options, sizes, and available formats through the product page.</p>
-    </div>
+<section class="mockups" id="mockups">
+  <div class="section-heading">
+    <span class="eyebrow">Shown In Context</span>
+    <h2>See how Quiet Earth prints feel inside real spaces.</h2>
+    <p>Click any room view to enlarge it and see recommended size, mat, frame, and purchase information.</p>
+    <p class="buyer-note">Available as framed prints, canvas, acrylic, metal, and fine art paper through the linked print pages.</p>
+  </div>
 
-    <div class="featured-art-grid">
-      
-        <a class="art-card feature-card" href="https://dansproul.com/featured/turnagain-arm-alaska-dreamy-landscape-dan-sproul.html" target="_blank" rel="noopener">
-          <img src="quiet-earth-turnagain-arm-alaska.jpg" alt="Turnagain Arm Alaska oversized fine art landscape wall art for calm modern interiors by Dan Sproul" loading="lazy" decoding="async">
-          <div class="art-card-copy">
-            <span>Moody Alaska Landscape Print</span>
-            <h3>Turnagain Arm Alaska</h3>
-            <p>Atmospheric Alaska mountain and water landscape for calm modern interiors.</p>
-            <em>View print options →</em>
-          </div>
-        </a>
-        <a class="art-card feature-card" href="https://dansproul.com/featured/sparks-lake-oregon-sunset-reflections-dan-sproul.html" target="_blank" rel="noopener">
-          <img src="quiet-earth-mount-hood-trillium-lake.jpg" alt="Mount Hood at Trillium Lake oversized fine art landscape wall art for calm modern interiors by Dan Sproul" loading="lazy" decoding="async">
-          <div class="art-card-copy">
-            <span>Mountain Reflection Wall Art</span>
-            <h3>Mount Hood at Trillium Lake</h3>
-            <p>Still water, evening color, and soft mountain reflection for refined rooms.</p>
-            <em>View print options →</em>
-          </div>
-        </a>
+  <div class="format-strip">
+    <span>Framed print options</span>
+    <span>Canvas available</span>
+    <span>Acrylic available</span>
+    <span>Metal available</span>
+  </div>
+
+
+  <article class="featured-installation">
+    <button class="mockup-image-button" type="button"
+      data-img="quiet-earth-autumn-beginnings-fireplace-mockup.png"
+      data-title="Autumn Beginnings Wyoming Landscape"
+      data-link="https://dansproul.com/featured/autumn-beginnings-wyoming-landscape-dan-sproul.html"
+      data-size="Suggested sizes: 40×60, 36×54, or larger statement format for fireplace and lodge-style interiors"
+      data-mat="Mat suggestion: no mat for a clean contemporary lodge installation, or warm white for a more traditional framed presentation"
+      data-frame="Frame suggestion: walnut, natural oak, warm wood, or thin matte black">
+      <img src="quiet-earth-autumn-beginnings-fireplace-mockup.png" alt="Autumn Wyoming landscape photography installed above a fireplace in a warm lodge-inspired living room by Dan Sproul" loading="eager" decoding="async">
+    </button>
+    <div class="featured-installation-copy">
+      <div>
+        <span class="eyebrow">Featured Interior Installation</span>
+        <h3>Autumn Beginnings — Wyoming Landscape</h3>
+        <p>Warm autumn light and open western landscape atmosphere create a calming focal point for lodge-inspired homes, mountain retreats, hospitality spaces, and rustic modern interiors.</p>
+        <a class="text-link" href="https://dansproul.com/featured/autumn-beginnings-wyoming-landscape-dan-sproul.html" target="_blank" rel="noopener">View Print Options →</a>
+      </div>
+      <div class="quick-specs">
+        <span>Best sizes: 36×54, 40×60, or larger</span>
+        <span>Formats: framed print, canvas, acrylic, metal</span>
+        <span>Frame direction: walnut, natural oak, warm wood, black</span>
+        <span>Mat direction: warm white, off-white, or no mat</span>
+      </div>
     </div>
-    <div class="art-grid">
-      
-        <a class="art-card" href="https://dansproul.com/featured/moody-lily-pond-chugach-national-forest-dan-sproul.html" target="_blank" rel="noopener">
-          <img src="quiet-earth-lily-pond-chugach-alaska.jpg" alt="Lily Pond, Chugach National Forest fine art landscape photography print for wellness, hospitality, and residential interiors by Dan Sproul" loading="lazy" decoding="async">
-          <div class="art-card-copy">
-            <span>Alaska Mountain Reflection Print</span>
-            <h3>Lily Pond, Chugach National Forest</h3>
-            <p>Cool atmospheric tones and restorative stillness for wellness-oriented interiors.</p>
-            <em>View print options →</em>
-          </div>
-        </a>
-        <a class="art-card" href="https://dansproul.com/featured/foggy-hyatt-lane-cades-cove-dan-sproul.html" target="_blank" rel="noopener">
-          <img src="quiet-earth-foggy-hyatt-lane-cades-cove.jpg" alt="Foggy Hyatt Lane fine art landscape photography print for wellness, hospitality, and residential interiors by Dan Sproul" loading="lazy" decoding="async">
-          <div class="art-card-copy">
-            <span>Soft Pastoral Landscape Print</span>
-            <h3>Foggy Hyatt Lane</h3>
-            <p>A quiet fog-filled country lane for bedrooms, wellness spaces, and calming corridors.</p>
-            <em>View print options →</em>
-          </div>
-        </a>
-        <a class="art-card" href="https://dansproul.com/featured/denali-highway-alaska-lake-reflection-landscape-scene-dan-sproul.html" target="_blank" rel="noopener">
-          <img src="quiet-earth-denali-highway-lake-reflection.jpg" alt="Denali Highway Reflection fine art landscape photography print for wellness, hospitality, and residential interiors by Dan Sproul" loading="lazy" decoding="async">
-          <div class="art-card-copy">
-            <span>Alaska Lake Landscape Print</span>
-            <h3>Denali Highway Reflection</h3>
-            <p>A dramatic mountain lake reflection with scale, stillness, and natural depth.</p>
-            <em>View print options →</em>
-          </div>
-        </a>
-        <a class="art-card" href="https://dansproul.com/featured/badlands-spring-morning-landscape-dan-sproul.html" target="_blank" rel="noopener">
-          <img src="quiet-earth-badlands-spring-morning.jpg" alt="Badlands Spring Morning fine art landscape photography print for wellness, hospitality, and residential interiors by Dan Sproul" loading="lazy" decoding="async">
-          <div class="art-card-copy">
-            <span>Earth-Tone Landscape Print</span>
-            <h3>Badlands Spring Morning</h3>
-            <p>Warm texture and soft natural color for modern rustic interiors.</p>
-            <em>View print options →</em>
-          </div>
-        </a>
-        <a class="art-card" href="https://dansproul.com/featured/kenai-fjords-national-park-coastal-majesty-dan-sproul.html" target="_blank" rel="noopener">
-          <img src="quiet-earth-kenai-fjords-coastal-majesty.jpg" alt="Kenai Fjords Coastal Majesty fine art landscape photography print for wellness, hospitality, and residential interiors by Dan Sproul" loading="lazy" decoding="async">
-          <div class="art-card-copy">
-            <span>Alaska Statement Landscape Print</span>
-            <h3>Kenai Fjords Coastal Majesty</h3>
-            <p>Rock, water, and mountain atmosphere for large hospitality and residential walls.</p>
-            <em>View print options →</em>
-          </div>
-        </a>
-        <a class="art-card" href="https://dansproul.com/featured/teton-mountain-reflection-in-fall-dan-sproul.html" target="_blank" rel="noopener">
-          <img src="quiet-earth-grand-tetons-reflection.jpg" alt="Teton Mountain Reflection fine art landscape photography print for wellness, hospitality, and residential interiors by Dan Sproul" loading="lazy" decoding="async">
-          <div class="art-card-copy">
-            <span>Cool-Tone Mountain Wall Art</span>
-            <h3>Teton Mountain Reflection</h3>
-            <p>A refined Teton reflection scene with blue tones and quiet autumn texture.</p>
-            <em>View print options →</em>
-          </div>
-        </a>
+  </article>
+
+  <div class="mockup-grid">
+    <article class="mockup-card feature">
+      <button class="mockup-image-button" type="button"
+        data-img="quiet-earth-lily-pond.jpg"
+        data-title="Lily Pond, Chugach National Forest"
+        data-link="https://dansproul.com/featured/moody-lily-pond-chugach-national-forest-dan-sproul.html"
+        data-size="Suggested sizes: 40×60, 36×54, or oversized statement format"
+        data-mat="Mat suggestion: warm white or no mat for a cleaner modern fireplace installation"
+        data-frame="Frame suggestion: light oak, walnut, or thin matte black">
+        <img src="quiet-earth-lily-pond.jpg" alt="Large framed mountain reflection landscape photography above modern fireplace in luxury residential interior by Dan Sproul" loading="eager" decoding="async">
+      </button>
+      <div class="mockup-copy">
+        <h3>Large fireplace statement piece</h3>
+        <p>A quiet mountain reflection shown at statement scale for a calm modern living space.</p>
+        <a class="text-link" href="https://dansproul.com/featured/moody-lily-pond-chugach-national-forest-dan-sproul.html" target="_blank" rel="noopener">View Print Options →</a>
+      </div>
+    </article>
+
+    <div class="mockup-stack">
+      <article class="mockup-card">
+        <button class="mockup-image-button" type="button"
+          data-img="quiet-earth-mountains-homeoffice.jpg"
+          data-title="Denali Highway Reflection"
+          data-link="https://dansproul.com/featured/denali-highway-alaska-lake-reflection-landscape-scene-dan-sproul.html"
+          data-size="Suggested sizes: 30×40, 32×48, or 40×60"
+          data-mat="Mat suggestion: white mat for office refinement or no mat for a contemporary look"
+          data-frame="Frame suggestion: walnut, black, or natural wood">
+          <img src="quiet-earth-mountains-homeoffice.jpg" alt="Quiet Earth mountain landscape fine art photography in warm modern home office by Dan Sproul" loading="lazy" decoding="async">
+        </button>
+        <div class="mockup-copy">
+          <h3>Warm modern office</h3>
+          <p>Mountain atmosphere for workspaces that need quiet focus instead of visual noise.</p>
+          <a class="text-link" href="https://dansproul.com/featured/denali-highway-alaska-lake-reflection-landscape-scene-dan-sproul.html" target="_blank" rel="noopener">View Print Options →</a>
+        </div>
+      </article>
+
+      <article class="mockup-card">
+        <button class="mockup-image-button" type="button"
+          data-img="quiet-earth-appalachian-fog.jpg"
+          data-title="Foggy Hyatt Lane"
+          data-link="https://dansproul.com/featured/foggy-hyatt-lane-cades-cove-dan-sproul.html"
+          data-size="Suggested sizes: 30×40, 24×36, or 36×54"
+          data-mat="Mat suggestion: warm white mat for soft bedroom atmosphere"
+          data-frame="Frame suggestion: natural oak, walnut, or matte black">
+          <img src="quiet-earth-appalachian-fog.jpg" alt="Atmospheric foggy Appalachian landscape photography above bed in quiet luxury bedroom interior by Dan Sproul" loading="lazy" decoding="async">
+        </button>
+        <div class="mockup-copy">
+          <h3>Quiet bedroom atmosphere</h3>
+          <p>Fog and soft landscape detail for rooms that need calm without feeling empty.</p>
+          <a class="text-link" href="https://dansproul.com/featured/foggy-hyatt-lane-cades-cove-dan-sproul.html" target="_blank" rel="noopener">View Print Options →</a>
+        </div>
+      </article>
     </div>
+  </div>
+</section>
+
+<section class="use-section" id="interior-uses">
+  <div class="section-heading">
+    <span class="eyebrow">Interior Applications</span>
+    <h2>Where Quiet Earth works best.</h2>
+    <p>These images are selected for spaces where artwork should create a sense of calm, depth, and connection to nature.</p>
+  </div>
+
+  <div class="use-grid">
+    <article class="use-card">
+      <h3>Living Rooms</h3>
+      <p>Oversized landscape prints for fireplaces, sofas, console walls, and calm residential focal points.</p>
+    </article>
+    <article class="use-card">
+      <h3>Bedrooms</h3>
+      <p>Soft fog, water, and mountain images for quiet rooms where the artwork should feel restful.</p>
+    </article>
+    <article class="use-card">
+      <h3>Wellness Spaces</h3>
+      <p>Atmospheric nature imagery for therapy rooms, clinics, spas, and calming patient-facing interiors.</p>
+    </article>
+    <article class="use-card">
+      <h3>Hospitality</h3>
+      <p>Muted landscape artwork for boutique hotels, guest suites, lounges, corridors, and destination-inspired spaces.</p>
+    </article>
+  </div>
+</section>
+
+<section class="featured-art" id="collection">
+  <div class="section-heading">
+    <span class="eyebrow">Selected Works</span>
+    <h2>Quiet landscape photography prints for interiors.</h2>
+    <p>These selected pieces represent the core Quiet Earth mood: stillness, atmosphere, natural texture, and calm visual scale.</p>
+  </div>
+
+  <div class="art-grid">
+
+    <a class="art-card" href="https://dansproul.com/featured/autumn-beginnings-wyoming-landscape-dan-sproul.html" target="_blank" rel="noopener">
+      <img src="quiet-earth-autumn-beginnings-fireplace-mockup.png" alt="Autumn Beginnings Wyoming landscape print shown in a warm lodge-inspired living room interior by Dan Sproul" loading="lazy" decoding="async">
+      <div class="art-card-copy">
+        <span>Warm Western Landscape Print</span>
+        <h3>Autumn Beginnings Wyoming Landscape</h3>
+        <p>Warm autumn color and open western atmosphere for lodge, hospitality, and quiet residential interiors.</p>
+        <span class="text-link">View Print Options →</span>
+      </div>
+    </a>
+
+    <a class="art-card" href="https://dansproul.com/featured/turnagain-arm-alaska-dreamy-landscape-dan-sproul.html" target="_blank" rel="noopener">
+      <img src="quiet-earth-turnagain-arm-alaska.jpg" alt="Turnagain Arm Alaska oversized fine art landscape wall art for calm modern interiors by Dan Sproul" loading="lazy" decoding="async">
+      <div class="art-card-copy">
+        <span>Moody Alaska Landscape Print</span>
+        <h3>Turnagain Arm Alaska</h3>
+        <p>Atmospheric Alaska mountain and water landscape for calm modern interiors.</p>
+        <span class="text-link">View Print Options →</span>
+      </div>
+    </a>
+
+    <a class="art-card" href="https://dansproul.com/featured/moody-lily-pond-chugach-national-forest-dan-sproul.html" target="_blank" rel="noopener">
+      <img src="quiet-earth-lily-pond-chugach-alaska.jpg" alt="Lily Pond Chugach National Forest fine art landscape photography print for wellness and residential interiors by Dan Sproul" loading="lazy" decoding="async">
+      <div class="art-card-copy">
+        <span>Alaska Mountain Reflection Print</span>
+        <h3>Lily Pond, Chugach National Forest</h3>
+        <p>Cool atmospheric tones and restorative stillness for wellness-oriented interiors.</p>
+        <span class="text-link">View Print Options →</span>
+      </div>
+    </a>
+
+    <a class="art-card" href="https://dansproul.com/featured/foggy-hyatt-lane-cades-cove-dan-sproul.html" target="_blank" rel="noopener">
+      <img src="quiet-earth-foggy-hyatt-lane-cades-cove.jpg" alt="Foggy Hyatt Lane fine art landscape photography print for wellness, hospitality, and residential interiors by Dan Sproul" loading="lazy" decoding="async">
+      <div class="art-card-copy">
+        <span>Soft Pastoral Landscape Print</span>
+        <h3>Foggy Hyatt Lane</h3>
+        <p>A quiet fog-filled country lane for bedrooms, wellness spaces, and calming corridors.</p>
+        <span class="text-link">View Print Options →</span>
+      </div>
+    </a>
+
+    <a class="art-card" href="https://dansproul.com/featured/denali-highway-alaska-lake-reflection-landscape-scene-dan-sproul.html" target="_blank" rel="noopener">
+      <img src="quiet-earth-denali-highway-lake-reflection.jpg" alt="Denali Highway Reflection fine art landscape photography print for wellness and hospitality interiors by Dan Sproul" loading="lazy" decoding="async">
+      <div class="art-card-copy">
+        <span>Alaska Lake Landscape Print</span>
+        <h3>Denali Highway Reflection</h3>
+        <p>A dramatic mountain lake reflection with scale, stillness, and natural depth.</p>
+        <span class="text-link">View Print Options →</span>
+      </div>
+    </a>
+
+    <a class="art-card" href="https://dansproul.com/featured/badlands-spring-morning-landscape-dan-sproul.html" target="_blank" rel="noopener">
+      <img src="quiet-earth-badlands-spring-morning.jpg" alt="Badlands Spring Morning fine art landscape photography print for calm modern interiors by Dan Sproul" loading="lazy" decoding="async">
+      <div class="art-card-copy">
+        <span>Earth-Tone Landscape Print</span>
+        <h3>Badlands Spring Morning</h3>
+        <p>Warm texture and soft natural color for modern rustic interiors.</p>
+        <span class="text-link">View Print Options →</span>
+      </div>
+    </a>
+
+    <a class="art-card" href="https://dansproul.com/featured/teton-mountain-reflection-in-fall-dan-sproul.html" target="_blank" rel="noopener">
+      <img src="quiet-earth-grand-tetons-reflection.jpg" alt="Teton Mountain Reflection fine art landscape photography print for quiet luxury interiors by Dan Sproul" loading="lazy" decoding="async">
+      <div class="art-card-copy">
+        <span>Cool-Tone Mountain Wall Art</span>
+        <h3>Teton Mountain Reflection</h3>
+        <p>A refined Teton reflection scene with blue tones and quiet autumn texture.</p>
+        <span class="text-link">View Print Options →</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section class="buying">
+  <div class="section-heading">
+    <span class="eyebrow">Print Buying Help</span>
+    <h2>Sizes, mats, frames, and formats.</h2>
+    <p>Quiet Earth images are available through Dan Sproul’s print shop with multiple product formats and custom sizing options depending on the selected artwork.</p>
+  </div>
+
+  <div class="buying-grid">
+    <article class="buy-box">
+      <h3>Suggested Sizes</h3>
+      <p>24×36 for smaller rooms, 30×40 or 32×48 for bedrooms and offices, and 40×60 or larger for fireplaces, sofas, hospitality spaces, and statement walls.</p>
+    </article>
+    <article class="buy-box">
+      <h3>Mat & Frame Direction</h3>
+      <p>Warm white mats, natural oak, walnut, thin black frames, and no-mat modern framing all work well depending on the room style and artwork palette.</p>
+    </article>
+    <article class="buy-box">
+      <h3>Available Formats</h3>
+      <p>Fine art paper, framed prints, canvas, acrylic, metal, and other formats are available through the linked product pages.</p>
+    </article>
   </div>
 </section>
 
 <section class="seo-copy">
   <div class="container">
-    <span class="eyebrow">Fine Art Landscape Prints</span>
+    <span class="eyebrow">Atmospheric Landscape Prints</span>
     <h2>Artwork for interiors that need calm, atmosphere, and natural depth.</h2>
     <div class="seo-columns">
-      <p>The Quiet Earth Collection brings together fine art landscape photography selected for calming interior design projects. These images are not simply grouped by location; they are curated around stillness, reflection, soft weather, mountain atmosphere, forest texture, and natural color palettes that work beautifully in modern interiors.</p>
+      <p>The Quiet Earth Collection brings together fine art landscape photography selected for calming interior design projects. These images are curated around stillness, reflection, soft weather, mountain atmosphere, forest texture, and natural color palettes that work beautifully in modern interiors.</p>
       <p>For interior designers, landscape wall art often needs to do more than fill an empty wall. It needs to support the mood of the room, complement the palette, and feel intentional within the architecture. Quiet Earth was created for that purpose, with images suited for large framed prints in living rooms, bedrooms, hospitality suites, wellness spaces, office lounges, and quiet commercial environments.</p>
       <p>The collection includes atmospheric Alaska photography, mountain lake reflections, misty forest scenes, soft pastoral imagery, Badlands earth tones, and dramatic natural landscapes with a refined visual presence. These works pair especially well with natural oak, walnut, plaster, linen, stone, leather, warm neutrals, and contemporary quiet-luxury interiors.</p>
-      <p>Whether used as oversized artwork above a sofa, a calming bedroom print, a hospitality lobby focal point, or a series of coordinated landscape prints for a corridor, Quiet Earth offers a more curated approach to nature photography for interiors. The goal is simple: artwork that helps a space feel grounded, calm, and connected to the outdoors.</p>
-      <p>
-        Explore additional curated fine art photography collections including
-        <a href="/coastal-atmosphere.html">Coastal Atmosphere</a> for moody Oregon Coast photography,
-        <a href="/heritage-sporting.html">Heritage Sporting</a> for rustic lodge and sporting interiors,
-        and the <a href="for-designers.html">For Designers</a> resource page for artwork recommendations,
-        oversized print guidance, and project support.
-      </p>
+      <p>Explore additional curated fine art photography collections including <a href="coastal-atmosphere.html">Coastal Atmosphere</a>, <a href="monochrome-stillness.html">Monochrome Stillness</a>, <a href="wellness-waters-collection.html">Wellness Waters</a>, and the <a href="for-designers.html">For Designers</a> resource page.</p>
     </div>
   </div>
 </section>
 
-<section class="seo-copy">
-  <div class="container">
-    <span class="eyebrow">Fine Art Photography FAQ</span>
-    <h2>Frequently asked questions about Quiet Earth artwork.</h2>
+<section class="faq">
+  <div class="section-heading">
+    <span class="eyebrow">Quiet Earth FAQ</span>
+    <h2>Common questions before choosing a print.</h2>
+  </div>
 
-    <div class="faq-grid">
-      <div class="faq-item">
-        <h3>What interiors work best with Quiet Earth?</h3>
-        <p>Quiet Earth was created for calm contemporary interiors, wellness-inspired spaces, mountain homes, boutique hospitality projects, minimalist residential interiors, and refined natural design aesthetics.</p>
-      </div>
-
-      <div class="faq-item">
-        <h3>Are these images available as oversized framed prints?</h3>
-        <p>Yes. Many Quiet Earth photographs work especially well as oversized statement artwork above beds, fireplaces, dining room consoles, office walls, and hospitality focal walls.</p>
-      </div>
-
-      <div class="faq-item">
-        <h3>Can designers request recommendations?</h3>
-        <p>Absolutely. Interior designers can email directly for coordinated artwork suggestions, sizing guidance, or help selecting multiple pieces for residential or commercial projects.</p>
-      </div>
-
-      <div class="faq-item">
-        <h3>Why organize by atmosphere instead of location?</h3>
-        <p>Quiet Earth is curated around mood, tone, palette, and interior compatibility. This creates a more useful experience for designers and homeowners searching for artwork that fits the feeling of a room.</p>
-      </div>
-    </div>
+  <div class="faq-grid">
+    <article class="faq-item">
+      <h3>What interiors work best with Quiet Earth?</h3>
+      <p>Quiet Earth works best in calm contemporary interiors, wellness-inspired spaces, mountain homes, boutique hospitality projects, minimalist residential interiors, and refined natural design aesthetics.</p>
+    </article>
+    <article class="faq-item">
+      <h3>Are these available as oversized framed prints?</h3>
+      <p>Yes. Many Quiet Earth photographs work well as oversized statement artwork above beds, fireplaces, sofas, office walls, and hospitality focal walls.</p>
+    </article>
+    <article class="faq-item">
+      <h3>Can designers request recommendations?</h3>
+      <p>Yes. Interior designers can email directly for coordinated artwork suggestions, sizing guidance, or help selecting several pieces for residential or commercial projects.</p>
+    </article>
+    <article class="faq-item">
+      <h3>Why organize by atmosphere instead of location?</h3>
+      <p>Quiet Earth is curated around mood, tone, palette, and interior compatibility, making it easier to choose artwork that fits the feeling of a room.</p>
+    </article>
   </div>
 </section>
 
 <section class="related">
-  <div class="container">
+  <div class="section-heading">
     <span class="eyebrow">Explore More</span>
-    <h2>Explore related fine art photography collections.</h2>
-    <p>Browse additional atmospheric collections featuring coastal photography, rustic sporting artwork, designer resources, and fine art photography shown in realistic residential and hospitality interiors.</p>
-    <div class="related-grid">
-      <a href="/coastal-atmosphere.html" class="related-card">
-        <img src="coastal-atmosphere-preview.jpg" alt="Coastal and atmospheric artwork collection preview for interior designers by Dan Sproul" loading="lazy" decoding="async">
-        <div><h3>Coastal Atmosphere</h3><p>Moody Oregon Coast photography for quiet luxury coastal homes and boutique hospitality spaces.</p></div>
-      </a>
-      <a href="/heritage-sporting.html" class="related-card">
-        <img src="heritage-sporting-preview.jpg" alt="Heritage and rustic artwork collection link for designer interiors by Dan Sproul" loading="lazy" decoding="async">
-        <div><h3>Heritage Sporting</h3><p>Rustic sporting patent artwork for lodge interiors, mountain homes, offices, and collected spaces.</p></div>
-      </a>
-      <a href="for-designers.html" class="related-card">
-        <img src="quiet-earth-mount-hood-trillium-lake.jpg" alt="Designer resources for fine art photography projects by Dan Sproul" loading="lazy" decoding="async">
-        <div><h3>For Designers</h3><p>Trade resources, custom sizing, artwork recommendations, and designer-focused support.</p></div>
-      </a>
-      <a href="in-your-space.html" class="related-card">
-        <img src="corporate office waiting room framed black and white landscapes.jpg" alt="Fine art photography shown in realistic interior spaces by Dan Sproul" loading="lazy" decoding="async">
-        <div><h3>In Your Space</h3><p>View realistic interior mockups showing fine art photography in residential and commercial spaces.</p></div>
-      </a>
-    </div>
+    <h2>Related collections by mood and interior use.</h2>
   </div>
-</section>
 
-<section class="email-capture">
-  <div class="container">
-    <span class="eyebrow">Designer Resources</span>
-    <h2>Need Help Choosing Artwork?</h2>
-    <p>
-      Send me a note about your space, project, or room style and I can recommend
-      pieces from the Quiet Earth Collection or create a simple artwork direction for you.
-    </p>
-
-    <a 
-      class="btn primary"
-      href="mailto:sproulphoto@gmail.com?subject=Quiet%20Earth%20Artwork%20Inquiry&body=Hi%20Dan,%0D%0A%0D%0AI%27m%20interested%20in%20the%20Quiet%20Earth%20Collection.%20Here%20are%20a%20few%20details%20about%20my%20space%20or%20project:%0D%0A%0D%0A"
-    >
-      Email Dan
+  <div class="related-grid">
+    <a class="related-card" href="wellness-waters-collection.html">
+      <h3>Wellness Waters</h3>
+      <p>Water-focused landscape photography for spaces that need openness, calm, and visual softness.</p>
+      <span>View Collection →</span>
+    </a>
+    <a class="related-card" href="monochrome-stillness.html">
+      <h3>Monochrome Stillness</h3>
+      <p>Quiet black-and-white photography for office, healthcare, hospitality, and minimalist interiors.</p>
+      <span>View Collection →</span>
+    </a>
+    <a class="related-card" href="coastal-atmosphere.html">
+      <h3>Coastal Atmosphere</h3>
+      <p>Moody coastal photography for quiet luxury homes and boutique hospitality spaces.</p>
+      <span>View Collection →</span>
     </a>
   </div>
 </section>
-<section class="section ai-linking-hub" id="related-collection-paths">
-  <div class="ai-section-head">
-    <p class="section-label">Related Collection Paths</p>
-    <h2 class="section-title">Explore related fine art photography collections by mood and interior use.</h2>
-  </div>
-  <div class="ai-link-grid">
-    <a href="quiet-earth-collection.html"><strong>Quiet Earth</strong><span>Healthcare artwork, wellness interiors, waiting rooms, calming offices, visual calm.</span></a>
-    <a href="mountain-light-collection.html"><strong>Mountain Light</strong><span>Hospitality interiors, lodge modern artwork, resort wall art, executive offices.</span></a>
-    <a href="monochrome-stillness.html"><strong>Monochrome Stillness</strong><span>Black-and-white office artwork, healthcare corridors, minimalist interiors, executive spaces.</span></a>
-    <a href="coastal-atmosphere.html"><strong>Coastal Atmosphere</strong><span>Quiet luxury coastal artwork, boutique hospitality, refined residential interiors.</span></a>
-    <a href="forest-light-collection.html"><strong>Forest Light</strong><span>Biophilic artwork, restorative woodland imagery, organic modern interiors.</span></a>
-    <a href="heritage-mixed-media.html"><strong>Heritage &amp; Mixed Media</strong><span>Regional artwork, lodge interiors, restaurants, hospitality spaces, local identity.</span></a>
+
+<section class="footer-cta" id="contact">
+  <span class="eyebrow">Designer Resources</span>
+  <h2>Need help choosing artwork?</h2>
+  <p>Send me a note about your space, project, or room style and I can recommend pieces from the Quiet Earth Collection or suggest a direction for your wall.</p>
+  <div class="btns">
+    <a class="btn primary" href="mailto:sproulphoto@gmail.com?subject=Quiet%20Earth%20Artwork%20Inquiry">Email Dan</a>
+    <a class="btn" href="https://dansproul.com" target="_blank" rel="noopener">Shop Full Catalog</a>
   </div>
 </section>
 
+<div id="image-modal" class="modal" aria-hidden="true">
+  <button class="modal-close" type="button" aria-label="Close image preview">&times;</button>
+  <div class="modal-card">
+    <img id="modal-img" src="" alt="">
+    <div class="modal-info">
+      <div>
+        <span class="eyebrow">Print Details</span>
+        <h3 id="modal-title">Artwork Title</h3>
+        <p>Click below to view available print sizes, paper, canvas, acrylic, metal, mat, and frame options on the product page.</p>
+        <div class="btns">
+          <a id="modal-link" class="btn primary" href="#" target="_blank" rel="noopener">View Print Options</a>
+        </div>
+      </div>
+      <div class="modal-specs">
+        <span id="modal-size"></span>
+        <span id="modal-mat"></span>
+        <span id="modal-frame"></span>
+      </div>
+    </div>
+  </div>
+</div>
 
-<!-- STANDARD SITE FOOTER -->
-<div id="contact" class="footer-seo">
+<div class="footer-seo">
   <div class="footer-grid">
     <div>
       <h3>Shop By Room</h3>
@@ -949,7 +925,6 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
       <a href="for-designers.html">For Interior Designers</a>
       <a href="coastal-atmosphere.html">Coastal Atmosphere</a>
       <a href="wellness-waters-collection.html">Wellness Waters</a>
-      <a href="heritage-mixed-media.html">Heritage &amp; Mixed Media</a>
       <a href="mailto:sproulphoto@gmail.com">Email Dan</a>
     </div>
   </div>
@@ -959,21 +934,57 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
   </footer>
 </div>
 
-
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-  var nav = document.querySelector('.site-nav-standard');
-  var toggle = document.querySelector('.nav-toggle-standard');
+  const nav = document.querySelector('.site-nav-standard');
+  const toggle = document.querySelector('.nav-toggle-standard');
   if (nav && toggle) {
     toggle.addEventListener('click', function () {
-      var isOpen = nav.classList.toggle('is-open');
+      const isOpen = nav.classList.toggle('is-open');
       toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     });
   }
+
+  const modal = document.getElementById('image-modal');
+  const modalImg = document.getElementById('modal-img');
+  const modalTitle = document.getElementById('modal-title');
+  const modalLink = document.getElementById('modal-link');
+  const modalSize = document.getElementById('modal-size');
+  const modalMat = document.getElementById('modal-mat');
+  const modalFrame = document.getElementById('modal-frame');
+  const closeBtn = document.querySelector('.modal-close');
+
+  document.querySelectorAll('.mockup-image-button').forEach(button => {
+    button.addEventListener('click', () => {
+      modalImg.src = button.dataset.img;
+      modalImg.alt = button.querySelector('img').alt;
+      modalTitle.textContent = button.dataset.title;
+      modalLink.href = button.dataset.link;
+      modalSize.textContent = button.dataset.size;
+      modalMat.textContent = button.dataset.mat;
+      modalFrame.textContent = button.dataset.frame;
+      modal.classList.add('is-open');
+      modal.setAttribute('aria-hidden','false');
+    });
+  });
+
+  function closeModal(){
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden','true');
+    modalImg.src = '';
+  }
+
+  if(closeBtn) closeBtn.addEventListener('click', closeModal);
+  if(modal){
+    modal.addEventListener('click', e => {
+      if(e.target === modal) closeModal();
+    });
+  }
+  document.addEventListener('keydown', e => {
+    if(e.key === 'Escape' && modal.classList.contains('is-open')) closeModal();
+  });
 });
 </script>
 
 </body>
 </html>
-
-
