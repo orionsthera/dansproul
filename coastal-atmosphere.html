@@ -764,6 +764,131 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
   .mockup-modal-content .btn{display:inline-block;margin-top:18px}
 }
 
+
+/* FEATURED INSTALLATION BLOCKS - WINTER / QUIET EARTH STYLE */
+.featured-installation{max-width:var(--max);margin:0 auto 34px;background:#fffaf3;border:1px solid rgba(40,35,30,.12);box-shadow:0 24px 70px rgba(0,0,0,.14);overflow:hidden;border-radius:14px;color:#1f1c18}
+.featured-installation img{width:100%;height:auto;object-fit:cover;transition:transform .65s cubic-bezier(.25,.46,.45,.94),filter .4s ease}
+.featured-installation:hover img{transform:scale(1.012);filter:saturate(1.04)}
+.featured-installation-copy{display:grid;grid-template-columns:1.1fr .9fr;gap:34px;padding:34px;align-items:start}
+.featured-installation-copy h3{color:#1f1c18;font-size:clamp(2rem,3vw,3.2rem);line-height:1;margin-bottom:14px}
+.featured-installation-copy p{color:#5f584f;font-size:1rem;line-height:1.85;margin-bottom:18px}
+.featured-installation .eyebrow{color:#9f7b3d}
+.quick-specs{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.quick-specs span{display:block;padding:12px;background:#f3efe8;border:1px solid rgba(40,35,30,.10);color:#4d4338;font-family:Arial,Helvetica,sans-serif;font-size:.62rem;letter-spacing:.12em;line-height:1.55;text-transform:uppercase}
+.format-strip{max-width:var(--max);margin:28px auto 34px;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.format-strip span{display:block;padding:13px 14px;background:#fffaf3;border:1px solid rgba(40,35,30,.10);color:#4d4338;font-family:Arial,Helvetica,sans-serif;font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;text-align:center}
+.buyer-note{max-width:760px;margin:24px 0 0;padding:16px 20px;border:1px solid rgba(154,107,40,.18);background:#fffaf3;color:#4d4338!important;font-family:Arial,Helvetica,sans-serif;font-size:.82rem!important;letter-spacing:.04em;line-height:1.7!important}
+.modal-specs{display:grid;gap:10px;min-width:min(100%,420px);margin-top:14px}
+.modal-specs span{display:block;border:1px solid rgba(213,190,154,.20);padding:12px;background:rgba(255,255,255,.035);color:#d9cec2;font-family:Arial,Helvetica,sans-serif;font-size:.72rem;letter-spacing:.08em;line-height:1.55;text-transform:uppercase}
+@media(max-width:1100px){.featured-installation-copy{grid-template-columns:1fr}}
+@media(max-width:780px){.format-strip,.quick-specs{grid-template-columns:1fr}}
+
+
+/* BUYER UX REFINEMENTS */
+.collection-story{
+  background:linear-gradient(to bottom,#080808,#11100f);
+  border-top:1px solid var(--line);
+}
+.story-grid{
+  display:grid;
+  grid-template-columns:.85fr 1.15fr;
+  gap:70px;
+  align-items:start;
+}
+.story-grid p{
+  margin-bottom:20px;
+}
+.room-strip{
+  background:#0d0c0b;
+  border-top:1px solid var(--line);
+}
+.room-strip-grid{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:12px;
+  margin-top:34px;
+}
+.room-strip-card{
+  border:1px solid rgba(197,160,106,.20);
+  background:rgba(255,255,255,.025);
+  padding:24px;
+  min-height:160px;
+}
+.room-strip-card span{
+  display:block;
+  color:var(--accent);
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.62rem;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  margin-bottom:12px;
+}
+.room-strip-card h3{
+  font-size:1.35rem;
+  margin-bottom:10px;
+}
+.room-strip-card p{
+  font-size:.86rem;
+}
+.shop-installation-label{
+  display:inline-block;
+  margin-bottom:14px;
+  color:#9f7b3d;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.64rem;
+  letter-spacing:.20em;
+  text-transform:uppercase;
+}
+.installation-descriptor{
+  font-style:italic;
+  color:#746a5f!important;
+  margin-top:-4px;
+}
+.inline-specs{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:10px;
+  margin:16px 0 18px;
+}
+.inline-specs span{
+  display:block;
+  padding:11px 12px;
+  background:#f3efe8;
+  border:1px solid rgba(40,35,30,.10);
+  color:#4d4338;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.62rem;
+  letter-spacing:.11em;
+  line-height:1.55;
+  text-transform:uppercase;
+}
+.ohio-credibility{
+  display:block;
+  margin-top:18px;
+  color:rgba(244,238,229,.58);
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.72rem;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+.pre-footer-cta{
+  background:linear-gradient(to bottom,#11100f,#080808);
+  text-align:center;
+  border-top:1px solid rgba(197,160,106,.18);
+}
+.pre-footer-cta .container{
+  max-width:860px;
+}
+.pre-footer-cta p{
+  margin:0 auto 28px;
+}
+@media(max-width:1100px){
+  .story-grid,.room-strip-grid{grid-template-columns:1fr}
+}
+@media(max-width:780px){
+  .inline-specs{grid-template-columns:1fr}
+}
+
 </style>
 <script type="application/ld+json">
 {
@@ -940,6 +1065,42 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
       "creditText": "Dan Sproul",
       "acquireLicensePage": "https://dansproul.com",
       "representativeOfPage": false
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/coastal-atmosphere-outer-banks-living-room.png#image",
+      "contentUrl": "https://dsproul.com/coastal-atmosphere-outer-banks-living-room.png",
+      "name": "Outer Banks Beach Sunrise artwork installed in a quiet luxury coastal living room",
+      "description": "Outer Banks beach sunrise photography shown as a large framed coastal statement piece in a warm quiet luxury living room.",
+      "creator": {"@id": "https://dsproul.com/#dan-sproul"},
+      "copyrightHolder": {"@id": "https://dsproul.com/#dan-sproul"},
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com/featured/outer-banks-beach-sunrise-dan-sproul.html",
+      "representativeOfPage": false
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/coastal-atmosphere-oregon-sea-stacks-entryway.png#image",
+      "contentUrl": "https://dsproul.com/coastal-atmosphere-oregon-sea-stacks-entryway.png",
+      "name": "Oregon Coast Sunset With Sea Stacks artwork installed in a modern coastal entryway",
+      "description": "Oregon Coast sunset sea stack photography shown as a large framed statement piece above a console in a warm modern coastal entryway.",
+      "creator": {"@id": "https://dsproul.com/#dan-sproul"},
+      "copyrightHolder": {"@id": "https://dsproul.com/#dan-sproul"},
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com/featured/oregon-coast-sunset-with-sea-stacks-dan-sproul.html",
+      "representativeOfPage": false
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/coastal-atmosphere-yaquina-bay-living-room.png#image",
+      "contentUrl": "https://dsproul.com/coastal-atmosphere-yaquina-bay-living-room.png",
+      "name": "Yaquina Bay Coastal Scene artwork installed in a warm contemporary coastal living room",
+      "description": "Yaquina Bay coastal photography shown as a large framed statement piece in a warm contemporary coastal living room.",
+      "creator": {"@id": "https://dsproul.com/#dan-sproul"},
+      "copyrightHolder": {"@id": "https://dsproul.com/#dan-sproul"},
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com/featured/yaquina-bay-coastal-scene-dan-sproul.html",
+      "representativeOfPage": false
     }
   ]
 }
@@ -1020,612 +1181,112 @@ and modern designer spaces.
 </p>
 
 <div class="button-row">
-<a href="#collection" class="btn primary">Explore Collection</a>
-<a href="for-designers.html" class="btn">For Designers</a>
+<a href="#mockups" class="btn primary">View In Rooms</a>
+<a href="#collection" class="btn">View Print Options</a>
 </div>
 </div>
 </section>
 
-<section class="section ai-about-artist" id="about-artist">
-  <div class="ai-two-col">
-    <div>
-      <p class="section-label">About the Artist</p>
-      <h2 class="section-title">Original artwork selected for atmosphere, interior use, and emotional fit.</h2>
-    </div>
-    <div>
-      <p>Dan Sproul is an Ohio-based fine art photographer and mixed media artist creating original artwork for hospitality, healthcare, corporate, wellness, and residential interiors across the United States.</p>
-      <p>His collections are organized by how a space should feel: quiet, restorative, atmospheric, grounded, memorable, or refined. That makes each page easier to use as a design resource instead of a traditional photography portfolio.</p>
-    </div>
-  </div>
-</section>
-
-
-<section class="intro">
-<div class="container intro-grid">
-
-<div>
-<span class="eyebrow">Quiet Coastal Mood</span>
-<h2>Coastal artwork chosen for atmosphere instead of cliché.</h2>
-
-<p>
-Coastal Atmosphere focuses on refined ocean imagery rather than bright decorative beach art.
-The collection centers around fog, sea stacks, crashing surf, muted water tones,
-shoreline texture, and quiet movement designed to support calm architectural interiors.
-</p>
-
-<br>
-
-<p>
-These coastal fine art prints work especially well in luxury bedrooms, modern living rooms,
-coastal residences, boutique hospitality spaces, wellness environments, and designer-focused interiors
-that need softness, depth, and a grounded connection to nature.
-</p>
-
-<br>
-
-<p>
-The overall palette leans into warm neutrals, black rock, gray-blue fog, silver surf,
-and atmospheric weather patterns that pair naturally with wood, plaster, linen,
-travertine, and contemporary organic design.
-</p>
-</div>
-
-<div class="intro-image">
-<img src="coastal-atmosphere-bedroom.jpg" alt="Moody coastal photography in luxury bedroom interior by Dan Sproul" loading="eager" decoding="async" fetchpriority="high">
-</div>
-
-</div>
-</section>
-
-<section class="dark-section" id="dans-note">
-  <div class="container intro-grid">
-    <div>
-      <span class="eyebrow">Dan’s Note</span>
-      <h2>The quieter side of the shoreline.</h2>
-    </div>
-    <div>
-      <p>
-        I built Coastal Atmosphere around the quieter side of the shoreline: fog, dark rock,
-        silver water, sea stacks, and weather-softened light. I’m drawn to coastal images that
-        feel lived with rather than decorative.
-      </p>
-      <br>
-      <p>
-        These are pieces I would use when a room needs calm, texture, and movement without
-        turning into obvious beach décor. The goal is atmosphere first: coastal artwork that
-        feels refined, grounded, and easy to live with.
-      </p>
-    </div>
-  </div>
-</section>
-
-<section class="mockup-section">
+<section class="mockup-section" id="mockups">
 <div class="container">
 
-<span class="eyebrow">Shown In Interior Spaces</span>
+<span class="eyebrow">Featured In Real Spaces</span>
 <h2>Designed to work in refined residential interiors.</h2>
 
 <p>
-These room views show how atmospheric coastal photography can add scale, softness, and quiet movement to refined residential interiors, bedrooms, dining rooms, and coastal hospitality spaces. Click any mockup to enlarge it, then use the purchase button to view the corresponding print.
+These room views show how atmospheric coastal photography can add scale, warmth, softness, and quiet movement to refined residential interiors, bedrooms, dining rooms, and coastal hospitality spaces. Click any mockup to enlarge it and view the corresponding print, with suggested size, frame, and format guidance.
 </p>
 
-<div class="mockup-grid">
+<p class="buyer-note">Available as framed prints, canvas, acrylic, metal, and fine art paper through the linked print pages.</p>
 
-<div class="mockup" data-img="coastal-atmosphere-diningroom.jpg" data-link="https://dansproul.com/featured/dreamy-haystack-rock-reflection-dan-sproul.html" data-caption="Dreamy Haystack Rock reflection artwork shown above a dining room console for a refined coastal interior.">
-<img src="coastal-atmosphere-diningroom.jpg" alt="Moody Oregon Coast photography above a dining room console by Dan Sproul" loading="lazy" decoding="async">
-<a class="quick-link" href="https://dansproul.com/featured/dreamy-haystack-rock-reflection-dan-sproul.html" target="_blank" rel="noopener" onclick="event.stopPropagation()">View Print</a>
-<div class="mockup-caption">Moody Oregon Coast photography above a dining room console.</div>
+<div class="format-strip">
+  <span>Framed print options</span>
+  <span>Canvas available</span>
+  <span>Acrylic available</span>
+  <span>Metal available</span>
 </div>
 
-<div class="mockup-pair">
 
-<div class="mockup" data-img="coastal-atmosphere-livingroom.jpg" data-link="https://dansproul.com/featured/powerful-ocean-waves-oregon-coast-dan-sproul.html" data-caption="Powerful Oregon Coast ocean wave photography for a quiet luxury living room.">
-<img src="coastal-atmosphere-livingroom.jpg" alt="Black and white coastal surf print for a quiet luxury living room by Dan Sproul" loading="lazy" decoding="async">
-<a class="quick-link" href="https://dansproul.com/featured/powerful-ocean-waves-oregon-coast-dan-sproul.html" target="_blank" rel="noopener" onclick="event.stopPropagation()">View Print</a>
-<div class="mockup-caption">Black and white coastal surf print for a quiet luxury living room.</div>
-</div>
-
-<div class="mockup" data-img="coastal-atmosphere-living-room.jpg" data-link="https://dansproul.com/featured/yaquina-beach-black-and-white-dan-sproul.html" data-caption="Yaquina Beach black and white coastal artwork above a fireplace in a luxury living room.">
-<img src="coastal-atmosphere-living-room.jpg" alt="Black and white Yaquina Beach coastal artwork above fireplace in luxury living room by Dan Sproul" loading="lazy" decoding="async">
-<a class="quick-link" href="https://dansproul.com/featured/yaquina-beach-black-and-white-dan-sproul.html" target="_blank" rel="noopener" onclick="event.stopPropagation()">View Print</a>
-<div class="mockup-caption">Black and white coastal artwork above a fireplace in a luxury living room.</div>
-</div>
-
-</div>
-
-<div class="mockup" data-img="coastal-atmosphere-bedroom.jpg" data-link="https://dansproul.com/featured/moody-oregon-coast-sea-stacks-dan-sproul.html" data-caption="Moody Oregon Coast sea stack artwork for a warm bedroom, wellness space, or quiet coastal retreat.">
-<img src="coastal-atmosphere-bedroom.jpg" alt="Fog and shoreline artwork for bedrooms and wellness spaces by Dan Sproul" loading="lazy" decoding="async">
-<a class="quick-link" href="https://dansproul.com/featured/moody-oregon-coast-sea-stacks-dan-sproul.html" target="_blank" rel="noopener" onclick="event.stopPropagation()">View Print</a>
-<div class="mockup-caption">Fog and shoreline artwork for bedrooms and wellness spaces.</div>
-</div>
-
-</div>
-</div>
-</section>
-
-
-
-<section class="section ai-resource-section"<section class="section ai-resource-section" id="artwork-by-environment">
-  <div class="ai-section-head">
-    <p class="section-label">Artwork by Environment</p>
-    <h2 class="section-title">Coastal artwork for quiet luxury, hospitality, and refined residential interiors.</h2>
-    <p>Coastal Atmosphere is built around fog, surf, shoreline texture, and restraint rather than beach clichés, making it useful for boutique hospitality, bedrooms, dining rooms, and refined coastal homes.</p>
-  </div>
-  <div class="ai-env-grid">
-    <div class="ai-env-card">
-      <span>Boutique Hospitality</span>
-      <h3>Atmospheric photography for boutique hotels</h3>
-      <p>Atmospheric photography for boutique hotels, coastal hospitality wall art, resort wall art, and elevated guest suites.</p>
-    </div>
-
-    <div class="ai-env-card">
-      <span>Quiet Luxury Residential</span>
-      <h3>Quiet luxury artwork</h3>
-      <p>Quiet luxury artwork, atmospheric bedroom wall art, coastal wall art, and refined ocean photography for calm homes.</p>
-    </div>
-
-    <div class="ai-env-card">
-      <span>Wellness Spaces</span>
-      <h3>Restorative shoreline imagery</h3>
-      <p>Restorative shoreline imagery, visual calm, soft surf, fog, and contemplative landscape photography.</p>
-    </div>
-
-    <div class="ai-env-card">
-      <span>Dining &amp; Living Rooms</span>
-      <h3>Large coastal prints for dining rooms</h3>
-      <p>Large coastal prints for dining rooms, fireplaces, living rooms, and statement walls.</p>
-    </div>
-  </div>
-</section>
-
-<section class="buying-help-section" id="buying-help">
-  <div class="buying-help-box">
+<article class="featured-installation mockup"
+  data-img="coastal-atmosphere-outer-banks-living-room.png"
+  data-link="https://dansproul.com/featured/outer-banks-beach-sunrise-dan-sproul.html"
+  data-caption="Outer Banks Beach Sunrise shown as a large framed coastal statement piece for a warm quiet luxury living room."
+  data-size="Suggested sizes: 40×60, 45×60, 48×72, or larger statement format for living rooms and coastal homes."
+  data-frame="Frame suggestion: natural oak, white oak, walnut, warm wood, or thin matte black."
+  data-format="Available formats: framed print, canvas, acrylic, metal, and fine art paper.">
+  <img src="coastal-atmosphere-outer-banks-living-room.png" alt="Outer Banks Beach Sunrise coastal photography installed in a quiet luxury coastal living room by Dan Sproul" loading="eager" decoding="async">
+  <a class="quick-link" href="https://dansproul.com/featured/outer-banks-beach-sunrise-dan-sproul.html" target="_blank" rel="noopener" onclick="event.stopPropagation()">View Print</a>
+  <div class="featured-installation-copy">
     <div>
-      <span class="eyebrow">Buying Guidance</span>
-      <h2>Best for coastal homes, boutique hospitality, bedrooms, and quiet luxury interiors.</h2>
+      <span class="shop-installation-label">Shop This Installation</span>
+      <span class="eyebrow">Featured Coastal Living Room</span>
+      <h3>Outer Banks Beach Sunrise</h3>
+      <p class="installation-descriptor">Soft coastal light and quiet shoreline atmosphere for calm residential interiors.</p>
+      <p>Warm sunrise light, soft sand texture, dune grass, and quiet shoreline atmosphere create a calm focal point for coastal homes, beach retreats, bedrooms, and quiet luxury living rooms.</p>
+      <div class="inline-specs"><span>Most popular sizes: 40×60, 45×60, 48×72</span><span>Recommended frame: natural oak, walnut, or matte black</span></div>
+      <a class="text-link" href="https://dansproul.com/featured/outer-banks-beach-sunrise-dan-sproul.html" target="_blank" rel="noopener">View Print Options →</a>
     </div>
-    <div class="buying-help-grid">
-      <div class="buying-help-item"><strong>Best for</strong><p>Coastal bedrooms, dining rooms, boutique hotel suites, spa spaces, refined living rooms, oceanfront rentals, and interiors that need calm shoreline atmosphere.</p></div>
-      <div class="buying-help-item"><strong>Suggested sizes</strong><p>24×36 for bedrooms and small feature walls, 30×40 above consoles, and 40×60 or larger for dining rooms, lobbies, fireplaces, and hospitality spaces.</p></div>
-      <div class="buying-help-item"><strong>Strongest formats</strong><p>Framed fine art paper for refined residential interiors, canvas for warmth, and metal or acrylic for high-traffic hospitality and coastal commercial spaces.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="section ai-resource-section" id="room-sizing">
-  <div class="ai-section-head">
-    <p class="section-label">Room-by-Room Guidance</p>
-    <h2 class="section-title">How to use coastal artwork by room.</h2>
-    <p>Use these simple sizing and placement notes as a starting point when choosing coastal artwork for homes, hospitality spaces, and wellness interiors.</p>
-  </div>
-  <div class="ai-env-grid">
-    <div class="ai-env-card">
-      <span>Bedroom</span>
-      <h3>Soft fog and shoreline calm</h3>
-      <p>Choose quieter fog, surf, or sea stack pieces. Suggested sizes: 30×40 to 40×60 above a bed, depending on wall width.</p>
-    </div>
-    <div class="ai-env-card">
-      <span>Living Room</span>
-      <h3>Large horizontal statements</h3>
-      <p>Use oversized sea stack, surf, or shoreline prints above a sofa, fireplace, or console. Horizontal pieces often work best.</p>
-    </div>
-    <div class="ai-env-card">
-      <span>Dining Room</span>
-      <h3>Muted coastal focal point</h3>
-      <p>A large moody coastal image above a sideboard or console can add movement without overpowering the room.</p>
-    </div>
-    <div class="ai-env-card">
-      <span>Wellness & Hospitality</span>
-      <h3>Fog, water, and texture</h3>
-      <p>Soft coastal imagery works well in spa rooms, boutique hotel lounges, corridors, guest rooms, and wellness spaces.</p>
+    <div class="quick-specs">
+      <span>Best sizes: 40×60, 45×60, 48×72</span>
+      <span>Formats: framed print, canvas, acrylic, metal</span>
+      <span>Frame direction: natural oak, white oak, walnut, black</span>
+      <span>Mat direction: warm white, off-white, or no mat</span>
     </div>
   </div>
-</section>
+</article>
 
-<section class="dark-section">
-<div class="container">
-
-<span class="eyebrow">Collection Direction</span>
-<h2>Built for modern coastal interiors, boutique hospitality, and calm architectural spaces.</h2>
-
-<div class="mood-grid">
-
-<div class="mood-card">
-<h3>Muted Coastal Color</h3>
-<p>
-Soft ocean grays, black shoreline rock, silver surf, and foggy blue tones designed for refined interiors.
-</p>
-</div>
-
-<div class="mood-card">
-<h3>Oversized Statement Pieces</h3>
-<p>
-Many pieces are intentionally composed to work as large framed artwork above fireplaces, beds, and dining spaces.
-</p>
-</div>
-
-<div class="mood-card">
-<h3>Quiet Luxury Aesthetic</h3>
-<p>
-The collection avoids obvious nautical themes and instead focuses on atmosphere, restraint, and mood.
-</p>
-</div>
-
-<div class="mood-card">
-<h3>Designer-Friendly Curation</h3>
-<p>
-Organized around interior feeling, palette, and environment instead of only geographic location.
-</p>
-</div>
-
-</div>
-</div>
-</section>
-
-<section id="collection">
-<div class="container">
-
-<span class="eyebrow">Selected Coastal Artwork</span>
-<h2>Atmospheric ocean photography curated for interiors.</h2>
-
-<div class="collection-grid">
-
-<a href="https://dansproul.com/featured/dreamy-haystack-rock-reflection-dan-sproul.html" class="collection-card" target="_blank" rel="noopener">
-<img src="coastal-atmosphere-diningroom.jpg" alt="Haystack Rock coastal photography print by Dan Sproul" loading="lazy" decoding="async">
-<div class="card-copy">
-<span>Oregon Coast Wall Art</span>
-<h3>Haystack Rock Reflections</h3>
-<p>
-Large-scale coastal photography designed for dining rooms, hospitality spaces, and modern coastal homes.
-</p>
-</div>
-</a>
-
-<a href="https://dansproul.com/featured/powerful-ocean-waves-oregon-coast-dan-sproul.html" class="collection-card" target="_blank" rel="noopener">
-<img src="coastal-atmosphere-livingroom.jpg" alt="Black and white coastal surf photography by Dan Sproul" loading="lazy" decoding="async">
-<div class="card-copy">
-<span>Monochrome Coastal</span>
-<h3>Surf Texture Studies</h3>
-<p>
-Moody black and white surf photography for darker interiors and architectural modern spaces.
-</p>
-</div>
-</a>
-
-<a href="https://dansproul.com/featured/moody-oregon-coast-sea-stacks-dan-sproul.html" class="collection-card" target="_blank" rel="noopener">
-<img src="coastal-atmosphere-bedroom.jpg" alt="Moody coastal bedroom artwork by Dan Sproul" loading="lazy" decoding="async">
-<div class="card-copy">
-<span>Quiet Coastal Interiors</span>
-<h3>Fog & Shoreline Atmosphere</h3>
-<p>
-Soft atmospheric coastal imagery suited for bedrooms, wellness spaces, and refined residential interiors.
-</p>
-</div>
-</a>
-
-</div>
-</div>
-</section>
-
-
-<section class="workflow-intro-cta">
-<div class="container">
-<span class="eyebrow">Designer Support</span>
-<h2>Need this collection visualized in a bedroom, spa, lobby, or coastal home?</h2>
-<p>Email a room photo or project note and receive a complimentary mockup preview with artwork recommendations, sizing direction, and presentation guidance.</p>
-</div>
-</section>
-
-<section class="designer-workflow">
-  <div class="container">
-    <div class="workflow-header">
-      <span class="eyebrow">Designer Workflow</span>
-      <h2>From room photo to artwork recommendation.</h2>
-      <p>
-        A simple process for designers, stagers, hospitality teams, wellness spaces,
-        and residential clients who want artwork chosen with scale, atmosphere, and placement in mind.
-      </p>
+<article class="featured-installation mockup"
+  data-img="coastal-atmosphere-oregon-sea-stacks-entryway.png"
+  data-link="https://dansproul.com/featured/oregon-coast-sunset-with-sea-stacks-dan-sproul.html"
+  data-caption="Oregon Coast Sunset With Sea Stacks shown as a large framed statement piece in a warm modern coastal entryway."
+  data-size="Suggested sizes: 36×54, 40×60, 45×60, or larger statement format for entryways, consoles, and transitional spaces."
+  data-frame="Frame suggestion: natural oak, walnut, warm wood, or thin matte black."
+  data-format="Available formats: framed print, canvas, acrylic, metal, and fine art paper.">
+  <img src="coastal-atmosphere-oregon-sea-stacks-entryway.png" alt="Oregon Coast sunset sea stack photography installed above a console in a warm modern coastal entryway by Dan Sproul" loading="lazy" decoding="async">
+  <a class="quick-link" href="https://dansproul.com/featured/oregon-coast-sunset-with-sea-stacks-dan-sproul.html" target="_blank" rel="noopener" onclick="event.stopPropagation()">View Print</a>
+  <div class="featured-installation-copy">
+    <div>
+      <span class="shop-installation-label">Shop This Installation</span>
+      <span class="eyebrow">Featured Entryway Installation</span>
+      <h3>Oregon Coast Sunset With Sea Stacks</h3>
+      <p class="installation-descriptor">Warm evening color and sculptural coastal forms for statement walls.</p>
+      <p>Warm coastal sunset color, dark sea stacks, and reflective shoreline movement create a refined focal point for entryways, living rooms, hospitality spaces, and modern coastal interiors.</p>
+      <div class="inline-specs"><span>Most popular sizes: 36×54, 40×60, 45×60</span><span>Recommended frame: natural oak, walnut, or matte black</span></div>
+      <a class="text-link" href="https://dansproul.com/featured/oregon-coast-sunset-with-sea-stacks-dan-sproul.html" target="_blank" rel="noopener">View Print Options →</a>
     </div>
-
-    <div class="workflow-grid">
-      <div class="workflow-step">
-        <span class="workflow-number">Step 01</span>
-        <h3>Share Your Space</h3>
-        <p>
-          Send a room photo, wall dimensions, project type, preferred atmosphere,
-          and any inspiration images or finish notes.
-        </p>
-      </div>
-
-      <div class="workflow-step">
-        <span class="workflow-number">Step 02</span>
-        <h3>Receive Curated Options</h3>
-        <p>
-          Dan recommends artwork options, sizing direction, orientation,
-          collection fit, and presentation formats.
-        </p>
-      </div>
-
-      <div class="workflow-step">
-        <span class="workflow-number">Step 03</span>
-        <h3>Review Mockups</h3>
-        <p>
-          See selected artwork visualized in your space with scale,
-          placement, and alternate image options when needed.
-        </p>
-      </div>
-
-      <div class="workflow-step">
-        <span class="workflow-number">Step 04</span>
-        <h3>Specify & Order</h3>
-        <p>
-          Available as framed prints, canvas, acrylic, metal, and custom-sized
-          pieces for residential and commercial interiors.
-        </p>
-      </div>
-    </div>
-
-    <div class="workflow-confidence">
-      <div>
-        <span class="eyebrow">Trade Confidence</span>
-        <h3>Built for easier specification.</h3>
-      </div>
-
-      <ul>
-        <li>Custom sizing available</li>
-        <li>Framed, canvas, acrylic, and metal options</li>
-        <li>Large-format artwork for statement walls</li>
-        <li>Collection PDFs and spec sheets available</li>
-        <li>Room mockups available before ordering</li>
-        <li>Support for residential, hospitality, healthcare, and wellness projects</li>
-      </ul>
-    </div>
-
-    <div class="workflow-cta">
-      <h3>Need artwork visualized in your project?</h3>
-      <p>Email a room photo or project note for a complimentary mockup preview.</p>
-      <a href="mailto:sproulphoto@gmail.com?subject=Coastal%20Atmosphere%20Mockup%20Request" class="btn primary">Request Mockup</a>
-      <a href="for-designers.html" class="btn">For Designers</a>
+    <div class="quick-specs">
+      <span>Best sizes: 36×54, 40×60, 45×60</span>
+      <span>Formats: framed print, canvas, acrylic, metal</span>
+      <span>Frame direction: natural oak, walnut, warm wood, black</span>
+      <span>Mat direction: warm white, off-white, or no mat</span>
     </div>
   </div>
-</section>
+</article>
 
-<section class="qe-related-collections">
-
-  <div class="qe-related-inner">
-
-    <div class="qe-related-header">
-      <span class="qe-related-eyebrow">Explore More</span>
-      <h2>Explore related fine art photography collections.</h2>
-
-      <p>
-        Browse additional atmospheric collections featuring coastal photography,
-        forest landscapes, mountain imagery, and artwork created for refined
-        residential and hospitality interiors.
-      </p>
+<article class="featured-installation mockup"
+  data-img="coastal-atmosphere-yaquina-bay-living-room.png"
+  data-link="https://dansproul.com/featured/yaquina-bay-coastal-scene-dan-sproul.html"
+  data-caption="Yaquina Bay Coastal Scene shown as a large framed coastal statement piece in a warm contemporary living room."
+  data-size="Suggested sizes: 40×60, 45×60, 48×72, or larger statement format for living rooms, fireplaces, and coastal homes."
+  data-frame="Frame suggestion: natural oak, walnut, warm wood, or thin matte black."
+  data-format="Available formats: framed print, canvas, acrylic, metal, and fine art paper.">
+  <img src="coastal-atmosphere-yaquina-bay-living-room.png" alt="Yaquina Bay Coastal Scene photography installed as a large framed statement piece in a warm contemporary coastal living room by Dan Sproul" loading="lazy" decoding="async">
+  <a class="quick-link" href="https://dansproul.com/featured/yaquina-bay-coastal-scene-dan-sproul.html" target="_blank" rel="noopener" onclick="event.stopPropagation()">View Print</a>
+  <div class="featured-installation-copy">
+    <div>
+      <span class="shop-installation-label">Shop This Installation</span>
+      <span class="eyebrow">Featured Coastal Living Room</span>
+      <h3>Yaquina Bay Coastal Scene</h3>
+      <p class="installation-descriptor">Rugged coastline, moving surf, and natural shoreline texture create a strong focal point for coastal homes and contemporary residential interiors.</p>
+      <p>Ocean movement, warm natural materials, and large-scale coastal photography create a refined statement wall for living rooms, beach homes, hospitality lounges, and modern coastal interiors.</p>
+      <div class="inline-specs"><span>Most popular sizes: 40×60, 45×60, 48×72</span><span>Recommended frame: natural oak, walnut, or matte black</span></div>
+      <a class="text-link" href="https://dansproul.com/featured/yaquina-bay-coastal-scene-dan-sproul.html" target="_blank" rel="noopener">View Print Options →</a>
     </div>
-
-    <div class="qe-related-grid">
-
-      <!-- Quiet Earth -->
-      <a class="qe-related-card" href="quiet-earth-collection.html">
-        <div class="qe-related-image">
-          <img src="quiet-earth-lily-pond-chugach-alaska.jpg" alt="Quiet Earth Collection" loading="lazy" decoding="async">
-        </div>
-
-        <div class="qe-related-content">
-          <span class="qe-related-type">Residential & Hospitality</span>
-
-          <h3>Quiet Earth</h3>
-
-          <p>
-            Quiet Earth is a curated collection of atmospheric landscape photography
-            created for interiors that need calm, depth, and a grounded connection to nature.
-          </p>
-
-          <span class="qe-related-link">
-            Explore Collection →
-          </span>
-        </div>
-      </a>
-
-
-      <!-- Wellness Waters -->
-      <a class="qe-related-card" href="wellness-waters-collection.html">
-        <div class="qe-related-image">
-          <img src="spa massage room waterfall mockup.jpg" alt="Wellness Waters Collection spa massage room waterfall artwork mockup" loading="lazy" decoding="async">
-        </div>
-
-        <div class="qe-related-content">
-          <span class="qe-related-type">Spa · Healthcare · Wellness</span>
-
-          <h3>Wellness Waters</h3>
-
-          <p>
-            Restorative waterfall, flowing water, forest stream, and calming nature photography selected for wellness clinics, spa interiors, healthcare waiting rooms, and boutique hospitality.
-          </p>
-
-          <span class="qe-related-link">
-            Explore Collection →
-          </span>
-        </div>
-      </a>
-
-     <!-- Forest Light -->
-      <a class="qe-related-card" href="forest-light-collection.html">
-        <div class="qe-related-image">
-          <img src="forest-light-lodge-lobby.jpg" alt="Forest Light Collection" loading="lazy" decoding="async">
-        </div>
-
-        <div class="qe-related-content">
-          <span class="qe-related-type">Residential & Hospitality</span>
-
-          <h3>Forest Light</h3>
-
-          <p>
-            Atmospheric forest photography featuring woodland trails,
-            filtered light, immersive green landscapes, and calming nature scenes.
-          </p>
-
-          <span class="qe-related-link">
-            Explore Collection →
-          </span>
-        </div>
-      </a>
-
-      <!-- Mountain Light -->
-      <a class="qe-related-card" href="mountain-light-collection.html">
-        <div class="qe-related-image">
-          <img src="mountain-light-entryway.jpg" alt="Mountain Light Collection" loading="lazy" decoding="async">
-        </div>
-
-        <div class="qe-related-content">
-          <span class="qe-related-type">Residential & Hospitality</span>
-
-          <h3>Mountain Light</h3>
-
-          <p>
-            Atmospheric mountain photography featuring alpine landscapes,
-            dramatic peaks, expansive wilderness scenes, and elevated natural light.
-          </p>
-
-          <span class="qe-related-link">
-            Explore Collection →
-          </span>
-        </div>
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
-
-<section class="dark-section">
-<div class="container">
-
-<span class="eyebrow">Coastal Artwork FAQ</span>
-<h2>Frequently asked questions.</h2>
-
-<div class="faq-grid">
-
-<div class="faq">
-<h3>What interiors work best with Coastal Atmosphere?</h3>
-<p>
-Quiet luxury homes, modern coastal interiors, boutique hospitality spaces,
-bedrooms, dining rooms, wellness spaces, and contemporary residential projects.
-</p>
-</div>
-
-<div class="faq">
-<h3>Is this collection only for beach houses?</h3>
-<p>
-No. The collection is designed around atmosphere and restraint rather than themed nautical décor.
-</p>
-</div>
-
-<div class="faq">
-<h3>Are oversized framed prints available?</h3>
-<p>
-Yes. Many pieces work especially well as oversized statement artwork in luxury interiors.
-</p>
-</div>
-
-<div class="faq">
-<h3>Can interior designers contact you directly?</h3>
-<p>
-Absolutely. Designers can reach out for artwork recommendations, sizing guidance, and curated suggestions.
-</p>
-</div>
-
-</div>
-
-<div class="button-row" style="margin-top:50px">
-<a href="mailto:sproulphoto@gmail.com" class="btn primary">Email Dan</a>
-<a href="art-collections.html" class="btn">More Collections</a>
-</div>
-
-</div>
-</section>
-
-
-<section class="section ai-linking-hub" id="related-collection-paths">
-  <div class="ai-section-head">
-    <p class="section-label">Related Collection Paths</p>
-    <h2 class="section-title">Explore related fine art photography collections by mood and interior use.</h2>
-  </div>
-  <div class="ai-link-grid">
-    <a href="quiet-earth-collection.html"><strong>Quiet Earth</strong><span>Healthcare artwork, wellness interiors, waiting rooms, calming offices, visual calm.</span></a>
-    <a href="mountain-light-collection.html"><strong>Mountain Light</strong><span>Hospitality interiors, lodge modern artwork, resort wall art, executive offices.</span></a>
-    <a href="monochrome-stillness.html"><strong>Monochrome Stillness</strong><span>Black-and-white office artwork, healthcare corridors, minimalist interiors, executive spaces.</span></a>
-    <a href="coastal-atmosphere.html"><strong>Coastal Atmosphere</strong><span>Quiet luxury coastal artwork, boutique hospitality, refined residential interiors.</span></a>
-    <a href="forest-light-collection.html"><strong>Forest Light</strong><span>Biophilic artwork, restorative woodland imagery, organic modern interiors.</span></a>
-    <a href="heritage-mixed-media.html"><strong>Heritage &amp; Mixed Media</strong><span>Regional artwork, lodge interiors, restaurants, hospitality spaces, local identity.</span></a>
-  </div>
-</section>
-
-<div id="contact" class="footer-seo">
-  <div class="footer-grid">
-    <div><h3>Shop By Room</h3><a href="https://dansproul.com/collections/bedroom+wall+art+calming+nature+landscape+prints">Bedroom Wall Art</a><a href="in-your-space.html">Art In Your Space</a><a href="https://dansproul.com/collections/office+wall+art+inspiring+landscape+prints">Office Wall Art</a><a href="https://dansproul.com/art/dining+room">Dining Room Art</a><a href="https://dansproul.com/art/wellness">Wellness Space Prints</a></div>
-    <div><h3>Shop By Subject</h3><a href="https://dansproul.com/art/mountains">Mountain Prints</a><a href="https://dansproul.com/art/forest">Forest Photography</a><a href="https://dansproul.com/art/coastal">Coastal Wall Art</a><a href="https://dansproul.com/art/waterfalls">Waterfall Prints</a><a href="https://dansproul.com/art/wildlife">Wildlife Prints</a></div>
-    <div><h3>Shop By Mood</h3><a href="quiet-earth-collection.html">Quiet Earth Collection</a><a href="monochrome-stillness.html">Black &amp; White Prints</a><a href="https://dansproul.com/art/autumn">Warm Autumn Light</a><a href="https://dansproul.com/art/fog">Fog &amp; Mist Photography</a><a href="https://dansproul.com/art/calm">Calming Nature Prints</a></div>
-    <div><h3>Shop By Location</h3><a href="alaska-photography-prints.html">Alaska Prints</a><a href="colorado-photography-prints.html">Colorado Wall Art</a><a href="oregon-coast-photography-prints.html">Oregon Coast Prints</a><a href="smoky-mountains-photography-prints.html">Smoky Mountains Art</a><a href="badlands-photography-prints.html">Badlands Prints</a><a href="ohio-nature-photography-prints.html">Ohio Nature Photography</a></div>
-    <div><h3>More Collections</h3><a href="best-sellers.html">Best Sellers</a><a href="art-collections.html">Curated Photography Collections</a><a href="for-designers.html">For Interior Designers</a><a href="heritage-mixed-media.html">Heritage &amp; Mixed Media</a><a href="coastal-atmosphere.html">Coastal Atmosphere</a><a href="wellness-waters-collection.html">Wellness Waters</a><a href="mailto:sproulphoto@gmail.com">Email Dan</a></div>
-  </div>
-  <footer class="footer-bottom">© 2026 Dan Sproul Fine Art Photography · Original landscape photography and heritage-inspired mixed media artwork by Dan Sproul, based in Lima, Ohio · Prints ship worldwide</footer>
-</div>
-
-
-<script>
-(function(){
-  const toggle=document.querySelector('.mobile-toggle');
-  const nav=document.querySelector('.main-nav');
-  if(toggle && nav){toggle.addEventListener('click',()=>nav.classList.toggle('active'));}
-})();
-</script>
-
-<div class="mockup-modal" id="mockupModal" aria-hidden="true">
-  <button class="mockup-close" type="button" aria-label="Close preview">×</button>
-  <div class="mockup-modal-inner">
-    <img id="mockupModalImg" src="" alt="">
-    <div class="mockup-modal-content">
-      <p id="mockupModalCaption"></p>
-      <a id="mockupModalLink" class="btn primary" href="#" target="_blank" rel="noopener">Purchase Print</a>
+    <div class="quick-specs">
+      <span>Best sizes: 40×60, 45×60, 48×72</span>
+      <span>Formats: framed print, canvas, acrylic, metal</span>
+      <span>Frame direction: natural oak, walnut, warm wood, black</span>
+      <span>Mat direction: warm white, off-white, or no mat</span>
     </div>
   </div>
-</div>
-
-
-<script>
-(function(){
-  const modal = document.getElementById('mockupModal');
-  const modalImg = document.getElementById('mockupModalImg');
-  const modalCaption = document.getElementById('mockupModalCaption');
-  const modalLink = document.getElementById('mockupModalLink');
-  const closeBtn = document.querySelector('.mockup-close');
-
-  document.querySelectorAll('.mockup[data-img]').forEach((mockup)=>{
-    mockup.addEventListener('click', ()=>{
-      modalImg.src = mockup.dataset.img;
-      modalImg.alt = mockup.querySelector('img')?.alt || 'Coastal artwork interior mockup by Dan Sproul';
-      modalCaption.textContent = mockup.dataset.caption || '';
-      modalLink.href = mockup.dataset.link || '#';
-      modal.classList.add('active');
-      modal.setAttribute('aria-hidden','false');
-    });
-  });
-
-  function closeModal(){
-    modal.classList.remove('active');
-    modal.setAttribute('aria-hidden','true');
-    modalImg.src = '';
-  }
-
-  if(closeBtn) closeBtn.addEventListener('click', closeModal);
-  if(modal) modal.addEventListener('click', (e)=>{ if(e.target === modal) closeModal(); });
-  document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') closeModal(); });
-})();
-</script>
-
-</body>
-</html>
+</article>
