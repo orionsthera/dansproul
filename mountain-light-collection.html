@@ -169,6 +169,40 @@ h1{max-width:980px;font-size:clamp(44px,6.7vw,92px);letter-spacing:-.018em}
 .footer-grid a:hover{color:#f4eee5!important}
 .footer-bottom{display:block!important;max-width:1380px!important;margin:40px auto 0!important;padding-top:28px!important;border-top:1px solid rgba(185,138,59,.22)!important;color:rgba(244,238,229,.32)!important;font-family:Arial,Helvetica,sans-serif!important;font-size:10px!important;letter-spacing:.18em!important;line-height:1.8!important;text-align:center!important;text-transform:uppercase!important}
 
+
+
+/* ── LIGHT SECTION BUTTON VISIBILITY + ANCHOR OFFSET FIX ───────────── */
+#mockups,#collection,#best-rooms,#buying-help,#designer-workflow,#faq,#related,#contact{
+  scroll-margin-top:88px;
+}
+.mockups .btn,
+.light-section .btn{
+  color:var(--light-ink)!important;
+  border-color:rgba(33,27,20,.34)!important;
+  background:transparent;
+}
+.mockups .btn:hover,
+.light-section .btn:hover{
+  color:#87672d!important;
+  border-color:#87672d!important;
+}
+.mockups .btn.primary,
+.light-section .btn.primary{
+  color:var(--black)!important;
+  background:var(--gold)!important;
+  border-color:var(--gold)!important;
+}
+.mockups .btn.primary:hover,
+.light-section .btn.primary:hover{
+  background:var(--gold-light)!important;
+  border-color:var(--gold-light)!important;
+  color:var(--black)!important;
+}
+.mockup-copy .btns{
+  position:relative;
+  z-index:2;
+}
+
 /* Lightbox */
 .mockup-lightbox{position:fixed;inset:0;z-index:999999;display:none;align-items:center;justify-content:center;padding:clamp(18px,4vw,46px);background:rgba(0,0,0,.88);backdrop-filter:blur(10px)}
 .mockup-lightbox.active{display:flex}
@@ -236,7 +270,7 @@ h1{max-width:980px;font-size:clamp(44px,6.7vw,92px);letter-spacing:-.018em}
 
 <section class="section-pad mockups" id="mockups">
   <div class="mockup-feature">
-    <div class="mockup-image mockup-trigger" data-purchase="https://dansproul.com/featured/magical-mountain-light-dan-sproul.html">
+    <div class="mockup-image mockup-trigger" data-purchase="https://dansproul.com/featured/alaska-kenai-fjords-landscape-dan-sproul.html">
       <img src="mountain-light-living-room.jpg" alt="Large atmospheric mountain artwork above a stone fireplace in a warm luxury living room by Dan Sproul" loading="eager" decoding="async">
     </div>
     <div class="mockup-copy">
@@ -251,8 +285,8 @@ h1{max-width:980px;font-size:clamp(44px,6.7vw,92px);letter-spacing:-.018em}
   </div>
   <div class="mock-strip">
     <div class="mock-tile mockup-trigger" data-purchase="https://dansproul.com/featured/last-light-on-colter-bay-dan-sproul.html"><img src="mountain-light-bedroom.jpg" alt="Mountain artwork above a bed in a warm modern rustic bedroom by Dan Sproul" loading="lazy" decoding="async"><div class="mock-label"><strong>Bedroom calm</strong> alpine reflection and warm evening light</div></div>
-    <div class="mock-tile mockup-trigger" data-purchase="https://dansproul.com/featured/magical-mountain-light-dan-sproul.html"><img src="mountain-light-lobby.jpg" alt="Large mountain artwork in a high-end lodge lobby interior by Dan Sproul" loading="lazy" decoding="async"><div class="mock-label"><strong>Lodge lobby</strong> hospitality scale and destination atmosphere</div></div>
-    <div class="mock-tile mockup-trigger" data-purchase="https://dansproul.com/featured/autumn-beginnings-wyoming-landscape-dan-sproul.html"><img src="mountain-light-entryway.jpg" alt="Statement mountain landscape artwork in a luxury double-height entryway by Dan Sproul" loading="lazy" decoding="async"><div class="mock-label"><strong>Entry statement</strong> immediate architectural presence</div></div>
+    <div class="mock-tile mockup-trigger" data-purchase="https://dansproul.com/featured/kayaking-moraine-lake-dan-sproul.html"><img src="mountain-light-lobby.jpg" alt="Large mountain artwork in a high-end lodge lobby interior by Dan Sproul" loading="lazy" decoding="async"><div class="mock-label"><strong>Lodge lobby</strong> hospitality scale and destination atmosphere</div></div>
+    <div class="mock-tile mockup-trigger" data-purchase="https://dansproul.com/featured/magical-mountain-light-dan-sproul.html"><img src="mountain-light-entryway.jpg" alt="Statement mountain landscape artwork in a luxury double-height entryway by Dan Sproul" loading="lazy" decoding="async"><div class="mock-label"><strong>Entry statement</strong> immediate architectural presence</div></div>
   </div>
 </section>
 
