@@ -219,6 +219,157 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
   }
 }
 
+
+/* ── COLLECTION HUB REORDER + NEW SECTIONS ───────────────────────────── */
+body{padding-top:66px}
+.site-header{display:none!important}
+#about-artist{display:none!important}
+.collections-preview-note{
+  background:#0f0e0b;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  padding:34px 0;
+}
+.collections-preview-note p{
+  margin:auto;
+  max-width:940px;
+  text-align:center;
+  color:rgba(244,238,231,.72);
+}
+.section-intro{
+  max-width:820px;
+  margin:0 auto 44px;
+  text-align:center;
+}
+.section-intro p{margin:auto}
+.feature-card-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+  margin-top:44px;
+}
+.feature-card{
+  position:relative;
+  min-height:430px;
+  overflow:hidden;
+  border-radius:16px;
+  border:1px solid rgba(255,255,255,.12);
+  background:#111;
+  box-shadow:0 18px 60px rgba(0,0,0,.18);
+}
+.light .feature-card{border-color:rgba(35,30,24,.16)}
+.feature-card img{
+  height:100%;
+  object-fit:cover;
+  transition:.55s ease;
+}
+.feature-card:hover img{transform:scale(1.035)}
+.feature-card:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(to top,rgba(0,0,0,.84),rgba(0,0,0,.18) 58%,transparent);
+}
+.feature-card-copy{
+  position:absolute;
+  z-index:2;
+  left:0;
+  right:0;
+  bottom:0;
+  padding:30px;
+}
+.feature-card-copy span{
+  display:block;
+  color:#d8c6a4;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.66rem;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  margin-bottom:10px;
+}
+.feature-card-copy h3{
+  color:#fff;
+  font-size:clamp(1.75rem,3vw,2.7rem);
+}
+.feature-card-copy p{
+  color:rgba(255,255,255,.72);
+  margin-top:10px;
+}
+.compact-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+  margin-top:42px;
+}
+.compact-card{
+  background:rgba(255,255,255,.026);
+  border:1px solid var(--line);
+  border-radius:14px;
+  overflow:hidden;
+  transition:.25s ease;
+}
+.compact-card:hover{transform:translateY(-3px);border-color:rgba(216,198,164,.38)}
+.compact-card img{aspect-ratio:16/10;object-fit:cover}
+.compact-card .copy{padding:22px}
+.compact-card .copy p{font-size:.9rem}
+.light .compact-card{
+  background:#fff;
+  border-color:rgba(35,30,24,.14);
+}
+.interior-grid{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:1px;
+  background:var(--line);
+  border:1px solid var(--line);
+  margin-top:42px;
+}
+.interior-card{
+  background:#12110f;
+  padding:28px;
+  min-height:230px;
+}
+.interior-card span{
+  display:block;
+  color:var(--gold);
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.62rem;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  margin-bottom:14px;
+}
+.interior-card h3{color:var(--cream);font-size:1.55rem}
+.interior-card p{font-size:.88rem;line-height:1.75}
+@media(max-width:1100px){
+  .feature-card-grid,.compact-grid{grid-template-columns:repeat(2,1fr)}
+  .interior-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:700px){
+  .feature-card-grid,.compact-grid,.interior-grid{grid-template-columns:1fr}
+  .feature-card{min-height:340px}
+}
+
+
+#shop-by-place .compact-grid{
+  grid-template-columns:repeat(2,1fr);
+  max-width:920px;
+  margin-left:auto;
+  margin-right:auto;
+}
+#heritage-mixed-media .feature-card-grid{
+  grid-template-columns:1fr;
+  max-width:920px;
+  margin-left:auto;
+  margin-right:auto;
+}
+#heritage-mixed-media .feature-card{
+  min-height:520px;
+}
+@media(max-width:700px){
+  #shop-by-place .compact-grid{grid-template-columns:1fr}
+  #heritage-mixed-media .feature-card{min-height:360px}
+}
+
 </style>
 <script type="application/ld+json">
 {
@@ -255,10 +406,10 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
       "description": "Original fine art photography and mixed media artwork for designers, hospitality interiors, healthcare spaces, corporate offices, wellness environments, and residential design projects."
     },
     {
-      "@type": "WebPage",
-      "@id": "https://dsproul.com/art_collections_updated_final.html#webpage",
-      "url": "https://dsproul.com/art_collections_updated_final.html",
-      "name": "Fine Art Photography",
+      "@type": "CollectionPage",
+      "@id": "https://dsproul.com/art-collections.html#collectionpage",
+      "url": "https://dsproul.com/art-collections.html",
+      "name": "Fine Art Photography Collections | Dan Sproul",
       "description": "Fine art photography and mixed media artwork by Dan Sproul for interior designers, healthcare, hospitality, office, wellness, and residential interiors.",
       "author": {
         "@id": "https://dsproul.com/#dan-sproul"
@@ -278,7 +429,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://dsproul.com/art_collections_updated_final.html#breadcrumb",
+      "@id": "https://dsproul.com/art-collections.html#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -296,7 +447,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
           "@type": "ListItem",
           "position": 3,
           "name": "Fine Art Photography",
-          "item": "https://dsproul.com/art_collections_updated_final.html"
+          "item": "https://dsproul.com/art-collections.html"
         }
       ]
     },
@@ -424,98 +575,6 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
     <a href="https://dansproul.com" target="_blank" rel="noopener" class="nav-shop-standard">Shop Prints</a>
   </div>
 </nav>
-
-<!-- STANDARD MOBILE NAV FIX -->
-<style>
-html,body{overflow-x:hidden}
-@media(max-width:760px){
-  .ds-mobile-toggle{display:flex!important}
-  .ds-mobile-panel.open{display:flex!important}
-}
-.ds-mobile-toggle{display:none;position:fixed;top:18px;right:18px;z-index:1000;background:rgba(15,13,11,.86);border:1px solid rgba(197,160,106,.42);padding:10px;flex-direction:column;gap:5px;cursor:pointer}
-.ds-mobile-toggle span{display:block;width:24px;height:1px;background:#f4eee5}
-.ds-mobile-panel{display:none;position:fixed;inset:0;z-index:999;background:rgba(12,10,8,.98);align-items:center;justify-content:center;flex-direction:column;gap:24px;text-align:center}
-.ds-mobile-panel a{color:#f4eee5!important;text-decoration:none!important;font-family:Georgia,serif!important;font-size:1.65rem!important;letter-spacing:.04em!important;text-transform:none!important}
-.ds-mobile-panel a.ds-gold{color:#c5a06a!important}
-.ds-mobile-close{position:absolute;top:22px;right:24px;background:none;border:0;color:#f4eee5;font-size:1.9rem;cursor:pointer}
-
-.footer-seo {
-  background: #100e0b;
-  padding: 62px clamp(22px, 6vw, 76px) 36px;
-  border-top: 1px solid rgba(185, 138, 59, .22);
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 28px;
-  max-width: 1380px;
-  margin: 0 auto;
-}
-
-.footer-grid h3 {
-  margin-bottom: 13px;
-  color: #d5b365;
-  font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: 21px;
-  font-weight: 400;
-}
-
-.footer-grid a {
-  display: block;
-  text-decoration: none;
-  color: rgba(244, 238, 229, .62);
-  font-size: 13px;
-  line-height: 2;
-}
-
-.footer-grid a:hover {
-  color: #f4eee5;
-}
-
-.footer-bottom {
-  max-width: 1380px;
-  margin: 40px auto 0;
-  padding-top: 28px;
-  border-top: 1px solid rgba(185, 138, 59, .22);
-  color: rgba(244, 238, 229, .32);
-  font-size: 10px;
-  letter-spacing: .18em;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-@media (max-width: 1040px) {
-  .footer-grid {
-    grid-template-columns: 1fr;
-  }
-}
-</style>
-<button class="ds-mobile-toggle" id="dsMobileToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
-<div class="ds-mobile-panel" id="dsMobilePanel">
-  <button class="ds-mobile-close" id="dsMobileClose" aria-label="Close menu">×</button>
-  <a href="index.html">Home</a>
-  <a href="art-collections.html">Collections</a>
-  <a href="in-your-space.html">In Your Space</a>
-  <a href="for-designers.html">For Designers</a>
-  <a href="https://dansproul.com" target="_blank" rel="noopener" class="ds-gold">Shop Prints ↗</a>
-</div>
-<script>
-(function(){
-  var b=document.getElementById('dsMobileToggle'),p=document.getElementById('dsMobilePanel'),c=document.getElementById('dsMobileClose');
-  if(!b||!p||!c)return;
-  function close(){p.classList.remove('open');document.body.style.overflow=''}
-  b.addEventListener('click',function(){p.classList.add('open');document.body.style.overflow='hidden'});
-  c.addEventListener('click',close);
-  p.querySelectorAll('a').forEach(function(a){a.addEventListener('click',close)});
-  document.addEventListener('keydown',function(e){if(e.key==='Escape')close()});
-})();
-</script>
-
-<header class="site-header">
-<a href="index.html" class="brand">Dan Sproul<span>Fine Art Photography</span></a>
-</header>
-
 <section class="hero"><div class="container hero-content">
 <span class="eyebrow">Curated Art Collections</span>
 <h1>Fine Art Photography Organized by Mood, Place, and Interior Use</h1>
@@ -524,27 +583,8 @@ html,body{overflow-x:hidden}
 <div class="trust"><span>Quiet Earth</span><span>Winter Stillness</span><span>Wellness Waters</span><span>Coastal Atmosphere</span><span>Mountain Light</span><span>Forest Light</span><span>Monochrome Stillness</span></div>
 </div></section>
 
-<section class="section ai-about-artist" id="about-artist">
-  <div class="ai-two-col">
-    <div>
-      <p class="section-label">About the Artist</p>
-      <h2 class="section-title">Original artwork selected for atmosphere, interior use, and emotional fit.</h2>
-    </div>
-    <div>
-      <p>Dan Sproul is an Ohio-based fine art photographer and mixed media artist creating original artwork for hospitality, healthcare, corporate, wellness, and residential interiors across the United States.</p>
-      <p>His collections are organized by how a space should feel: quiet, restorative, atmospheric, grounded, memorable, or refined. That makes each page easier to use as a design resource instead of a traditional photography portfolio.</p>
-    </div>
-  </div>
-</section>
-
-
-<section><div class="container grid2">
-<div><span class="eyebrow">A Clearer Way To Explore The Work</span><h2>Built for homeowners, designers, hospitality buyers, and collectors.</h2>
-<p>This page organizes Dan Sproul’s work into curated collection directions instead of forcing visitors to sort through a large catalog all at once.</p>
-<p>The primary atmospheric collections focus on how the artwork feels in a space: calm and grounded, coastal and moody, luminous and alpine, or restorative and woodland-focused.</p>
-<p>Each collection is built around mood, palette, subject, and interior use so visitors can move quickly from inspiration to a focused body of work.</p>
-<a href="for-designers.html" class="btn">For Interior Designers</a></div>
-<div class="imgbox"><img src="hospitality-art-systems.jpg" alt="Hospitality wall art system featuring nature photography by Dan Sproul" loading="eager" decoding="async" fetchpriority="high"></div>
+<section class="collections-preview-note"><div class="container">
+<p>Browse first by atmosphere, then by heritage/mixed media, location, or interior use. This keeps the page useful for homeowners, designers, hospitality buyers, and collectors without forcing everyone into one large catalog.</p>
 </div></section>
 
 <section class="light" id="atmospheric"><div class="container">
@@ -559,51 +599,67 @@ html,body{overflow-x:hidden}
 <a class="card" href="/monochrome-stillness.html"><img src="recovery hallway mockup.jpg" alt="Monochrome Stillness black and white landscape photography collection by Dan Sproul in a healthcare hallway interior" loading="lazy" decoding="async"><div class="copy"><span>Monochrome / Restorative / Architectural</span><h3>Monochrome Stillness</h3><p>Restrained black and white landscape photography featuring mist, reflection, quiet pathways, and mountain atmosphere for healthcare, wellness, hospitality, executive, and refined residential interiors.</p><div class="meta"><em>Healthcare</em><em>Hospitality</em><em>Executive</em></div><b class="link">View Collection</b></div></a>
 </div></div></section>
 
-<section class="dark"><div class="container"><div class="center"><span class="eyebrow">Interior-Focused Uses</span><h2>Artwork collections arranged around how they function in a space.</h2><p>Beyond subject matter, these collections are designed to help visitors and designers quickly understand where the work fits.</p></div>
-<div class="cards3">
-<a class="mini" href="for-designers.html"><img src="commercial-art-installation.jpg" alt="Large framed artwork in hospitality lobby" loading="lazy" decoding="async"><div class="copy"><span>Commercial & Hospitality</span><h3>Environmental Art Systems</h3><p>Large-scale focal pieces, corridor sequences, reception walls, and calming art programs for professional interiors.</p></div></a>
-<a class="mini" href="in-your-space.html"><img src="residential-art-resource.jpg" alt="Residential interior with framed coastal artwork" loading="lazy" decoding="async"><div class="copy"><span>Residential</span><h3>Artwork In Your Space</h3><p>Mockups and interior previews showing how large photography prints can work in bedrooms, living rooms, and entryways.</p></div></a>
-<a class="mini" href="https://dansproul.com"><img src="hospitality-art-systems.jpg" alt="Multi-piece nature photography installation" loading="lazy" decoding="async"><div class="copy"><span>Full Catalog</span><h3>Shop All Artwork</h3><p>Browse the broader Dan Sproul catalog for regional landscapes, wildlife, city scenes, mixed media, and specialty works.</p></div></a>
-</div></div></section>
-
-<section><div class="container"><span class="eyebrow">Fine Art Photography Collections</span><h2>Curated photography collections for wall art, interiors, designers, and collectors.</h2><div class="cols">
-<p>Dan Sproul’s fine art photography collections are organized to make browsing easier for homeowners, collectors, interior designers, hospitality buyers, and anyone looking for large nature photography prints with a clear visual direction.</p>
-<p>The primary atmospheric collections include Quiet Earth, Winter Stillness, Wellness Waters, Coastal Atmosphere, Mountain Light, Forest Light, and Monochrome Stillness. Each collection is curated around mood, atmosphere, palette, and interior use rather than simply by location.</p>
-<p>Quiet Earth focuses on calming landscapes and grounded natural tones. Winter Stillness adds soft snow, quiet woodland scenes, and neutral winter atmosphere for restful interiors. Wellness Waters features waterfalls, flowing streams, and restorative water imagery for spas, healthcare, and hospitality spaces. Coastal Atmosphere highlights moody shoreline imagery and refined coastal scenes. Mountain Light emphasizes luminous alpine landscapes and dramatic mountain atmosphere. Forest Light brings woodland trails, filtered sunlight, trees, and biophilic calm into focus. Monochrome Stillness adds restrained black and white landscapes for healthcare, hospitality, executive, and wellness-oriented spaces.</p>
-<p>For project-specific sourcing, visit the <a href="for-designers.html">For Designers</a> page or explore how artwork looks in interiors through <a href="in-your-space.html">In Your Space</a>.</p>
-</div></div></section>
-
-
-<section class="light related-collections" id="related-collections">
+<section class="dark" id="heritage-mixed-media">
   <div class="container">
-    <div class="center">
-      <span class="eyebrow">Related Collections</span>
-      <h2>Continue exploring curated artwork directions.</h2>
-      <p>These related pages connect the main collection paths across the site without forcing every visitor into the full catalog at once.</p>
+    <div class="section-intro">
+      <span class="eyebrow">Heritage & Mixed Media</span>
+      <h2>Layered artwork inspired by history, place, patents, and regional identity.</h2>
+      <p>These collections are more graphic, historic, and story-driven than the atmospheric landscape collections. They work especially well for hospitality, lodge interiors, restaurants, clubhouses, libraries, offices, and regional design projects.</p>
     </div>
-    <div class="cards3">
-      <a class="mini" href="/quiet-earth-collection.html">
-        <div class="copy"><span>Atmospheric Landscapes</span><h3>Quiet Earth</h3><p>Calm, grounded nature photography for quiet residential, hospitality, and wellness interiors.</p></div>
-      </a>
-      <a class="mini" href="/wellness-waters-collection.html">
-        <div class="copy"><span>Restorative Water</span><h3>Wellness Waters</h3><p>Waterfalls, streams, and flowing water imagery for spa, healthcare, and calming interiors.</p></div>
-      </a>
-      <a class="mini" href="/monochrome-stillness.html">
-        <div class="copy"><span>Black &amp; White</span><h3>Monochrome Stillness</h3><p>Quiet black and white landscapes for refined, restorative, and executive spaces.</p></div>
-      </a>
-      <a class="mini" href="/coastal-atmosphere.html">
-        <div class="copy"><span>Coastal Mood</span><h3>Coastal Atmosphere</h3><p>Moody shoreline imagery and refined coastal scenes for elevated interiors.</p></div>
-      </a>
-      <a class="mini" href="/heritage-mixed-media.html">
-        <div class="copy"><span>Layered Place-Based Work</span><h3>Heritage &amp; Mixed Media</h3><p>Vintage maps, typography, regional landmarks, wildlife, and layered mixed media artwork.</p></div>
-      </a>
-      <a class="mini" href="best-sellers.html">
-        <div class="copy"><span>Popular Works</span><h3>Best Sellers</h3><p>A focused entry point for frequently purchased and designer-favorite artwork.</p></div>
+    <div class="feature-card-grid">
+      <a class="feature-card" href="/heritage-mixed-media.html">
+        <img src="maine lighthouse mixed media mockup inn lobby.jpg" alt="Heritage and Mixed Media coastal lighthouse artwork installed in a luxury New England inn lobby" loading="lazy" decoding="async">
+        <div class="feature-card-copy">
+          <span>Maps / Patents / Americana</span>
+          <h3>Heritage & Mixed Media</h3>
+          <p>Historic maps, patents, lighthouses, waterways, sporting heritage, and regional Americana reimagined as atmospheric statement artwork.</p>
+        </div>
       </a>
     </div>
   </div>
 </section>
 
+<section class="light" id="shop-by-place">
+  <div class="container">
+    <div class="section-intro">
+      <span class="eyebrow">Shop by Place</span>
+      <h2>Regional artwork collections for place-based interiors and collectors.</h2>
+      <p>Location pages help visitors find artwork connected to specific regions while also supporting hospitality, healthcare, office, and residential projects that want a sense of place.</p>
+    </div>
+    <div class="compact-grid">
+      <a class="compact-card" href="/alaska-photography-prints.html"><img src="reflections-lake-alaska-in-autumn-dan-sproul.jpg" alt="Alaska photography prints by Dan Sproul" loading="lazy" decoding="async"><div class="copy"><span>Wilderness / Mountains / Glaciers</span><h3>Alaska Prints</h3><p>Glacier lakes, mountain reflections, autumn tundra, waterfalls, and wilderness imagery for statement interiors.</p></div></a>
+      <a class="compact-card" href="/ohio-nature-photography-prints.html"><img src="hocking-hills-hidden-falls-long-exposure-dan-sproul.jpg" alt="Ohio nature photography prints by Dan Sproul" loading="lazy" decoding="async"><div class="copy"><span>Regional / Healthcare / Hospitality</span><h3>Ohio Nature Photography</h3><p>Ohio landscape and nature artwork for regional interiors, healthcare spaces, offices, hospitality, and collectors.</p></div></a>
+    </div>
+  </div>
+</section>
+
+<section class="dark" id="browse-by-use">
+  <div class="container">
+    <div class="section-intro">
+      <span class="eyebrow">Browse by Interior Use</span>
+      <h2>Find artwork by room type, project type, or design need.</h2>
+      <p>These pages connect the collection system to commercial and residential buying intent.</p>
+    </div>
+    <div class="interior-grid">
+      <a class="interior-card" href="/healthcare-artwork.html"><span>Healthcare</span><h3>Healthcare Artwork</h3><p>Calming nature artwork for waiting rooms, patient spaces, oncology, therapy, and wellness-oriented care environments.</p></a>
+      <a class="interior-card" href="/hospitality-artwork.html"><span>Hospitality</span><h3>Hospitality Artwork</h3><p>Artwork for boutique hotels, lodges, guest suites, restaurants, lounges, and destination interiors.</p></a>
+      <a class="interior-card" href="/senior-living-artwork.html"><span>Senior Living</span><h3>Senior Living Artwork</h3><p>Artwork for gathering spaces, corridors, wellness rooms, dining, lounges, and resident environments.</p></a>
+      <a class="interior-card" href="/for-designers.html"><span>Trade Support</span><h3>For Designers</h3><p>Mockups, sizing guidance, project recommendations, and designer-friendly artwork sourcing support.</p></a>
+      <a class="interior-card" href="/in-your-space.html"><span>Room Preview</span><h3>In Your Space</h3><p>Upload a room photo and preview selected artwork directly on your wall before purchasing.</p></a>
+    </div>
+  </div>
+</section>
+
+<section class="light" id="atmospheric"><div class="container">
+<div class="center"><span class="eyebrow">Primary Atmospheric Collections</span><h2>Seven collection directions for refined interiors.</h2><p>These curated nature photography collections are organized for residential, hospitality, wellness, healthcare, and design-focused spaces.</p></div>
+<div class="collection-grid">
+<a class="card" href="/quiet-earth-collection.html"><img src="quiet-earth-appalachian-fog.jpg" onerror="this.src='quiet-earth-fallback.jpg'" alt="Quiet Earth fine art photography collection by Dan Sproul" loading="lazy" decoding="async"><div class="copy"><span>Calm / Grounded / Atmospheric</span><h3>Quiet Earth</h3><p>Muted landscapes, still water, mountain atmosphere, and grounded natural tones for calming residential, wellness, and hospitality interiors.</p><div class="meta"><em>Wellness</em><em>Hospitality</em><em>Quiet Luxury</em></div><b class="link">View Collection</b></div></a>
+<a class="card" href="/winter-stillness.html"><img src="winter stillness living room mockup.jpg" alt="Winter Stillness fine art photography collection by Dan Sproul shown in a calm living room interior" loading="lazy" decoding="async"><div class="copy"><span>Winter / Quiet / Neutral</span><h3>Winter Stillness</h3><p>Soft winter landscapes, quiet snow, muted woodland atmosphere, and neutral nature photography for calm homes, hospitality rooms, offices, and restful interiors.</p><div class="meta"><em>Calm Interiors</em><em>Neutral Palette</em><em>Hospitality</em></div><b class="link">View Collection</b></div></a>
+<a class="card" href="/wellness-waters-collection.html"><img src="spa massage room waterfall mockup.jpg" alt="Wellness Waters fine art ph art photography collections are organized to make browsing easier for homeowners, collectors, interior designers, hospitality buyers, and anyone looking for large nature photography prints with a clear visual direction.</p>
+<p>The primary atmospheric collections include Quiet Earth, Winter Stillness, Wellness Waters, Coastal Atmosphere, Mountain Light, Forest Light, and Monochrome Stillness. Each collection is curated around mood, atmosphere, palette, and interior use rather than simply by location.</p>
+<p>Quiet Earth focuses on calming landscapes and grounded natural tones. Winter Stillness adds soft snow, quiet woodland scenes, and neutral winter atmosphere for restful interiors. Wellness Waters features waterfalls, flowing streams, and restorative water imagery for spas, healthcare, and hospitality spaces. Coastal Atmosphere highlights moody shoreline imagery and refined coastal scenes. Mountain Light emphasizes luminous alpine landscapes and dramatic mountain atmosphere. Forest Light brings woodland trails, filtered sunlight, trees, and biophilic calm into focus. Monochrome Stillness adds restrained black and white landscapes for healthcare, hospitality, executive, and wellness-oriented spaces.</p>
+<p>For project-specific sourcing, visit the <a href="for-designers.html">For Designers</a> page or explore how artwork looks in interiors through <a href="in-your-space.html">In Your Space</a>.</p>
+</div></div></section>
 <section class="email"><div class="container"><span class="eyebrow">Artwork Guidance</span><h2>Need help choosing a collection?</h2><p>Send a note about the space, room style, palette, or project type and I can suggest the strongest collection direction.</p><a class="btn primary" href="mailto:sproulphoto@gmail.com?subject=Artwork%20Collection%20Inquiry">Email Dan</a></div></section>
 <div class="footer-seo">
   <div class="footer-grid">
@@ -674,9 +730,3 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 
 </body></html>
-
-
-
-  </div>
-</section>
-
