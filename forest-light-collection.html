@@ -235,6 +235,129 @@ img{max-width:100%;height:auto}
   .healthcare-forest-grid,.healthcare-uses{grid-template-columns:1fr}
 }
 
+
+/* ── FOREST LIGHT MODAL SPEC SYSTEM ───────────────────────────── */
+.mockup-card{
+  position:relative;
+  display:block;
+  cursor:zoom-in;
+}
+.mockup-card::after{
+  content:'Click to enlarge';
+  position:absolute;
+  right:14px;
+  bottom:14px;
+  z-index:3;
+  background:rgba(0,0,0,.72);
+  color:#fff;
+  padding:8px 11px;
+  border:1px solid rgba(185,138,59,.28);
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.62rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  opacity:0;
+  transition:.25s ease;
+}
+.mockup-card:hover::after{opacity:1}
+.mockup-card .mockup-spec{display:none}
+.mockup-lightbox{
+  position:fixed;
+  inset:0;
+  z-index:999999;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:clamp(18px,4vw,46px);
+  background:rgba(0,0,0,.90);
+  backdrop-filter:blur(10px);
+}
+.mockup-lightbox.active{display:flex}
+.mockup-lightbox-card{
+  width:min(92vw,1180px);
+  max-height:92vh;
+}
+.mockup-lightbox-card img{
+  width:100%;
+  max-height:64vh;
+  object-fit:contain;
+  background:#050505;
+  box-shadow:0 30px 90px rgba(0,0,0,.65);
+}
+.mockup-lightbox-title{
+  margin:14px auto 10px;
+  max-width:920px;
+  color:#f4eee5;
+  font-family:Georgia,serif;
+  font-size:clamp(22px,2.4vw,34px);
+  font-weight:400;
+  line-height:1.25;
+  text-align:center;
+}
+.mockup-spec-panel{
+  max-width:920px;
+  margin:14px auto 0;
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:10px;
+}
+.mockup-spec-item{
+  border:1px solid rgba(216,198,164,.28);
+  background:rgba(255,255,255,.035);
+  padding:13px 15px;
+  color:rgba(244,238,229,.76);
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:12px;
+  line-height:1.55;
+  letter-spacing:.08em;
+}
+.mockup-spec-item strong{
+  display:block;
+  margin-bottom:4px;
+  color:#d8c6a4;
+  font-size:10px;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+}
+.mockup-lightbox-actions{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:16px;
+}
+.mockup-lightbox-actions a,
+.mockup-lightbox-actions button{
+  border:1px solid rgba(216,198,164,.65);
+  background:transparent;
+  color:#f4efe7;
+  padding:12px 18px;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.68rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  cursor:pointer;
+}
+.mockup-lightbox-actions a{
+  background:#d8c6a4;
+  color:#111;
+}
+.mockup-lightbox-close{
+  position:absolute;
+  top:18px;
+  right:22px;
+  width:46px;
+  height:46px;
+  border:1px solid rgba(255,255,255,.22);
+  background:rgba(255,255,255,.08);
+  color:#fff;
+  font-size:30px;
+  cursor:pointer;
+}
+@media(max-width:680px){
+  .mockup-spec-panel{grid-template-columns:1fr}
+}
+
 </style>
 <script type="application/ld+json">
 {
@@ -504,81 +627,67 @@ img{max-width:100%;height:auto}
 </section>
 
 
+
 <section class="mockups" id="mockups"><div class="container">
 <div class="center">
 <span class="eyebrow">Shown In Context</span>
 <h2>Forest Light artwork in organic modern, wellness, lodge, and hospitality interiors.</h2>
-<p>Each mockup links to the corresponding artwork purchase page and includes suggested size, frame, mat, and format guidance.</p>
+<p>Click each mockup to enlarge the room view, review suggested sizes, frame direction, mat guidance, format options, and purchase the corresponding print.</p>
 </div>
 
 <div class="mockup-grid">
 
-<a class="mockup-card" href="https://dansproul.com/featured/pictured-rocks-hiking-trail-morning-light-forest-michigan-dan-sproul.html" target="_blank" rel="noopener">
+<div class="mockup-card"
+  data-purchase="https://dansproul.com/featured/pictured-rocks-hiking-trail-morning-light-forest-michigan-dan-sproul.html"
+  data-title="Pictured Rocks Hiking Trail shown as a large forest statement piece for an organic modern living room."
+  data-sizes="40x60 • 45x60 • 48x72"
+  data-frames="Natural Oak • White Oak • Walnut"
+  data-mat="No mat recommended for this large statement format"
+  data-formats="Framed Print • Canvas • Acrylic"
+  data-rooms="Organic Modern Living Rooms • Great Rooms • Wellness Spaces">
   <img src="forest-light-living-room.jpg" alt="Large framed forest photography in organic modern living room by Dan Sproul" loading="lazy" decoding="async">
-  <div class="mockup-spec">
-    <h3>Organic Modern Living Room</h3>
-    <p>Pictured Rocks Hiking Trail shown as a large forest statement piece for a warm natural living room.</p>
-    <div class="spec-list">
-      <div><strong>Suggested Sizes:</strong> 40x60 • 45x60 • 48x72</div>
-      <div><strong>Frame:</strong> Natural Oak • White Oak • Walnut</div>
-      <div><strong>Mat:</strong> No mat recommended for this large statement format</div>
-      <div><strong>Formats:</strong> Framed Print • Canvas • Acrylic</div>
-    </div>
-    <span class="spec-cta">View / Purchase Print</span>
-  </div>
-</a>
+</div>
 
 <div class="mockup-pair">
 
-<a class="mockup-card" href="https://dansproul.com/featured/forest-light-dan-sproul.html" target="_blank" rel="noopener">
+<div class="mockup-card"
+  data-purchase="https://dansproul.com/featured/forest-light-dan-sproul.html"
+  data-title="Forest Light shown as a calming woodland focal point for a warm bedroom or wellness suite."
+  data-sizes="30x40 • 36x48 • 40x60"
+  data-frames="White Oak • Natural Oak"
+  data-mat="3 inch white mat for framed paper"
+  data-formats="Framed Print • Canvas"
+  data-rooms="Bedrooms • Wellness Suites • Therapy Offices">
   <img src="forest-light-bedroom.png" alt="Vertical blank forest artwork mockup above bed in warm wellness bedroom by Dan Sproul" loading="lazy" decoding="async">
-  <div class="mockup-spec">
-    <h3>Wellness Bedroom</h3>
-    <p>Forest Light shown as a calming woodland focal point for a warm bedroom or wellness suite.</p>
-    <div class="spec-list">
-      <div><strong>Suggested Sizes:</strong> 30x40 • 36x48 • 40x60</div>
-      <div><strong>Frame:</strong> White Oak • Natural Oak</div>
-      <div><strong>Mat:</strong> 3 inch white mat for framed paper</div>
-      <div><strong>Formats:</strong> Framed Print • Canvas</div>
-    </div>
-    <span class="spec-cta">View / Purchase Print</span>
-  </div>
-</a>
+</div>
 
-<a class="mockup-card" href="https://dansproul.com/featured/forest-stream-in-sunlit-woods-oregon-dan-sproul.html" target="_blank" rel="noopener">
+<div class="mockup-card"
+  data-purchase="https://dansproul.com/featured/forest-stream-in-sunlit-woods-oregon-dan-sproul.html"
+  data-title="Forest Stream in Sunlit Woods shown as immersive woodland artwork for a lodge, spa, or wellness retreat."
+  data-sizes="40x60 • 48x72"
+  data-frames="Walnut • Natural Oak"
+  data-mat="No mat recommended"
+  data-formats="Acrylic • Framed Print • Canvas"
+  data-rooms="Spa Retreats • Wellness Centers • Boutique Hospitality">
   <img src="forest-light-lodge-lobby.jpg" alt="Large horizontal forest photography in luxury hiking lodge lobby by Dan Sproul" loading="lazy" decoding="async">
-  <div class="mockup-spec">
-    <h3>Spa & Wellness Retreat</h3>
-    <p>Forest Stream in Sunlit Woods shown as immersive woodland artwork for a lodge, spa, or wellness retreat.</p>
-    <div class="spec-list">
-      <div><strong>Suggested Sizes:</strong> 40x60 • 48x72</div>
-      <div><strong>Frame:</strong> Walnut • Natural Oak</div>
-      <div><strong>Mat:</strong> No mat recommended</div>
-      <div><strong>Formats:</strong> Acrylic • Framed Print • Canvas</div>
-    </div>
-    <span class="spec-cta">View / Purchase Print</span>
-  </div>
-</a>
+</div>
 
 </div>
 
-<a class="mockup-card" href="https://dansproul.com/featured/cades-cove-morning-tree-dan-sproul.html" target="_blank" rel="noopener">
+<div class="mockup-card"
+  data-purchase="https://dansproul.com/featured/cades-cove-morning-tree-dan-sproul.html"
+  data-title="Cades Cove Morning Tree shown as vertical woodland artwork for hospitality, wellness, or transitional interiors."
+  data-sizes="24x36 • 30x45 • 36x54"
+  data-frames="Matte Black • Walnut"
+  data-mat="3 inch white mat for framed paper"
+  data-formats="Framed Print • Metal Print"
+  data-rooms="Corridors • Hospitality Spaces • Healthcare Interiors">
   <img src="forest-light-hallway.jpg" alt="Vertical forest photography in moody modern hospitality corridor by Dan Sproul" loading="lazy" decoding="async">
-  <div class="mockup-spec">
-    <h3>Hospitality Corridor</h3>
-    <p>Cades Cove Morning Tree shown as vertical woodland artwork for hospitality, wellness, or transitional interiors.</p>
-    <div class="spec-list">
-      <div><strong>Suggested Sizes:</strong> 24x36 • 30x45 • 36x54</div>
-      <div><strong>Frame:</strong> Matte Black • Walnut</div>
-      <div><strong>Mat:</strong> 3 inch white mat for framed paper</div>
-      <div><strong>Formats:</strong> Framed Print • Metal Print</div>
-    </div>
-    <span class="spec-cta">View / Purchase Print</span>
-  </div>
-</a>
+</div>
 
 </div>
 </div></section>
+
 
 
 <section class="light" id="interior-uses"><div class="container">
@@ -735,6 +844,7 @@ img{max-width:100%;height:auto}
 
 
 
+
 <script>
 document.addEventListener('DOMContentLoaded', function () {
   const toggle = document.querySelector('.mobile-toggle');
@@ -744,6 +854,88 @@ document.addEventListener('DOMContentLoaded', function () {
       nav.classList.toggle('active');
     });
   }
+
+  const lightbox = document.getElementById('mockupLightbox');
+  const lightboxImg = document.getElementById('mockupLightboxImg');
+  const lightboxTitle = document.getElementById('mockupLightboxTitle');
+  const purchaseLink = document.getElementById('mockupPurchaseLink');
+  const specSizes = document.getElementById('mockupSpecSizes');
+  const specFrames = document.getElementById('mockupSpecFrames');
+  const specMat = document.getElementById('mockupSpecMat');
+  const specFormats = document.getElementById('mockupSpecFormats');
+  const specRooms = document.getElementById('mockupSpecRooms');
+  const closeTop = document.querySelector('.mockup-lightbox-close');
+  const closeBottom = document.getElementById('mockupLightboxCloseBtn');
+
+  function openLightbox(card) {
+    const img = card.querySelector('img');
+    if (!lightbox || !lightboxImg || !img) return;
+
+    lightboxImg.src = img.getAttribute('src');
+    lightboxImg.alt = img.getAttribute('alt') || 'Forest Light artwork mockup';
+    if (lightboxTitle) lightboxTitle.textContent = card.getAttribute('data-title') || '';
+    if (purchaseLink) purchaseLink.href = card.getAttribute('data-purchase') || '#';
+    if (specSizes) specSizes.textContent = card.getAttribute('data-sizes') || '';
+    if (specFrames) specFrames.textContent = card.getAttribute('data-frames') || '';
+    if (specMat) specMat.textContent = card.getAttribute('data-mat') || '';
+    if (specFormats) specFormats.textContent = card.getAttribute('data-formats') || '';
+    if (specRooms) specRooms.textContent = card.getAttribute('data-rooms') || '';
+
+    lightbox.classList.add('active');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    if (!lightbox || !lightboxImg) return;
+    lightbox.classList.remove('active');
+    lightbox.setAttribute('aria-hidden', 'true');
+    lightboxImg.src = '';
+    if (lightboxTitle) lightboxTitle.textContent = '';
+    document.body.style.overflow = '';
+  }
+
+  document.querySelectorAll('#mockups .mockup-card').forEach(function (card) {
+    card.addEventListener('click', function () {
+      openLightbox(card);
+    });
+  });
+
+  if (closeTop) closeTop.addEventListener('click', closeLightbox);
+  if (closeBottom) closeBottom.addEventListener('click', closeLightbox);
+
+  if (lightbox) {
+    lightbox.addEventListener('click', function (event) {
+      if (event.target === lightbox) closeLightbox();
+    });
+  }
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape' && lightbox && lightbox.classList.contains('active')) {
+      closeLightbox();
+    }
+  });
 });
 </script>
+
+
+<div class="mockup-lightbox" id="mockupLightbox" aria-hidden="true" role="dialog" aria-label="Forest Light mockup preview">
+  <button class="mockup-lightbox-close" type="button" aria-label="Close image">×</button>
+  <div class="mockup-lightbox-card">
+    <img id="mockupLightboxImg" src="" alt="">
+    <div class="mockup-lightbox-title" id="mockupLightboxTitle"></div>
+    <div class="mockup-spec-panel">
+      <div class="mockup-spec-item"><strong>Suggested Sizes</strong><span id="mockupSpecSizes"></span></div>
+      <div class="mockup-spec-item"><strong>Frame Suggestions</strong><span id="mockupSpecFrames"></span></div>
+      <div class="mockup-spec-item"><strong>Mat Recommendation</strong><span id="mockupSpecMat"></span></div>
+      <div class="mockup-spec-item"><strong>Available Formats</strong><span id="mockupSpecFormats"></span></div>
+      <div class="mockup-spec-item"><strong>Best Rooms</strong><span id="mockupSpecRooms"></span></div>
+    </div>
+    <div class="mockup-lightbox-actions">
+      <a id="mockupPurchaseLink" href="#" target="_blank" rel="noopener">View / Purchase Print</a>
+      <button id="mockupLightboxCloseBtn" type="button">Close</button>
+    </div>
+  </div>
+</div>
+
 </body></html>
