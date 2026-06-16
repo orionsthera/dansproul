@@ -216,6 +216,47 @@ h1{max-width:980px;font-size:clamp(44px,6.7vw,92px);letter-spacing:-.018em}
 @media(max-width:1180px){.card-grid,.related-grid{grid-template-columns:repeat(2,1fr)}.rooms-grid{grid-template-columns:repeat(2,1fr)}.dark-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:1040px){body::before{height:64px}.site-nav-standard{height:64px!important}.nav-toggle-standard{display:block!important}.nav-links-standard{position:fixed!important;top:64px!important;left:0!important;right:0!important;display:none!important;flex-direction:column!important;align-items:flex-start!important;gap:0!important;padding:18px 24px 24px!important;background:rgba(14,12,9,.98)!important;border-bottom:1px solid rgba(185,138,59,.22)!important}.site-nav-standard.is-open .nav-links-standard{display:flex!important}.nav-links-standard a{width:100%!important;padding:14px 0!important}.nav-shop-standard{width:auto!important;margin-top:8px!important;padding:13px 18px!important}.section-head,.mockup-feature,.story-grid{grid-template-columns:1fr}.mock-strip,.info-grid,.footer-grid{grid-template-columns:1fr!important}.hero{min-height:76vh}.mockup-image{aspect-ratio:4/3}.seo-columns{columns:1}.art-card,.related-card{min-height:330px}}
 @media(max-width:680px){.card-grid,.related-grid,.rooms-grid,.dark-grid,.faq-grid{grid-template-columns:1fr}h1{font-size:44px}.section-pad{padding:56px 22px}.mock-tile{min-height:260px}.hero-badges span{font-size:9px}}
+
+/* Tailored mockup specification panel */
+.mockup-lightbox-title{
+  margin:14px auto 10px;
+  max-width:920px;
+  color:#f4eee5;
+  font-family:"Cormorant Garamond",Georgia,serif;
+  font-size:clamp(22px,2.4vw,34px);
+  font-weight:300;
+  line-height:1.25;
+  text-align:center;
+}
+.mockup-spec-panel{
+  max-width:920px;
+  margin:14px auto 0;
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:10px;
+}
+.mockup-spec-item{
+  border:1px solid rgba(216,198,164,.28);
+  background:rgba(255,255,255,.035);
+  padding:13px 15px;
+  color:rgba(244,238,229,.74);
+  font-family:"Jost",Arial,sans-serif;
+  font-size:12px;
+  line-height:1.55;
+  letter-spacing:.08em;
+}
+.mockup-spec-item strong{
+  display:block;
+  margin-bottom:4px;
+  color:#d8c6a4;
+  font-size:10px;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+}
+@media(max-width:680px){
+  .mockup-spec-panel{grid-template-columns:1fr}
+}
+
 </style>
 <script type="application/ld+json">
 {
@@ -270,7 +311,7 @@ h1{max-width:980px;font-size:clamp(44px,6.7vw,92px);letter-spacing:-.018em}
 
 <section class="section-pad mockups" id="mockups">
   <div class="mockup-feature">
-    <div class="mockup-image mockup-trigger" data-purchase="https://dansproul.com/featured/alaska-kenai-fjords-landscape-dan-sproul.html">
+    <div class="mockup-image mockup-trigger" data-purchase="https://dansproul.com/featured/alaska-kenai-fjords-landscape-dan-sproul.html" data-title="Alaska Kenai Fjords Landscape shown as a large fireplace statement piece for a lodge-inspired living room." data-sizes="40x60 • 45x68 • 48x72 or larger" data-frames="Walnut • Warm Oak • Matte Black" data-formats="Framed Print • Canvas • Acrylic" data-rooms="Living Rooms • Great Rooms • Mountain Homes • Lodge Lounges">
       <img src="mountain-light-living-room.jpg" alt="Large atmospheric mountain artwork above a stone fireplace in a warm luxury living room by Dan Sproul" loading="eager" decoding="async">
     </div>
     <div class="mockup-copy">
@@ -284,9 +325,9 @@ h1{max-width:980px;font-size:clamp(44px,6.7vw,92px);letter-spacing:-.018em}
     </div>
   </div>
   <div class="mock-strip">
-    <div class="mock-tile mockup-trigger" data-purchase="https://dansproul.com/featured/last-light-on-colter-bay-dan-sproul.html"><img src="mountain-light-bedroom.jpg" alt="Mountain artwork above a bed in a warm modern rustic bedroom by Dan Sproul" loading="lazy" decoding="async"><div class="mock-label"><strong>Bedroom calm</strong> alpine reflection and warm evening light</div></div>
-    <div class="mock-tile mockup-trigger" data-purchase="https://dansproul.com/featured/kayaking-moraine-lake-dan-sproul.html"><img src="mountain-light-lobby.jpg" alt="Large mountain artwork in a high-end lodge lobby interior by Dan Sproul" loading="lazy" decoding="async"><div class="mock-label"><strong>Lodge lobby</strong> hospitality scale and destination atmosphere</div></div>
-    <div class="mock-tile mockup-trigger" data-purchase="https://dansproul.com/featured/magical-mountain-light-dan-sproul.html"><img src="mountain-light-entryway.jpg" alt="Statement mountain landscape artwork in a luxury double-height entryway by Dan Sproul" loading="lazy" decoding="async"><div class="mock-label"><strong>Entry statement</strong> immediate architectural presence</div></div>
+    <div class="mock-tile mockup-trigger" data-purchase="https://dansproul.com/featured/last-light-on-colter-bay-dan-sproul.html" data-title="Last Light on Colter Bay shown as a calming alpine focal point for a refined bedroom." data-sizes="30x45 • 36x54 • 40x60" data-frames="Natural Oak • Warm Oak • Walnut" data-formats="Framed Print • Canvas" data-rooms="Bedrooms • Guest Suites • Boutique Hospitality • Quiet Residential Rooms"><img src="mountain-light-bedroom.jpg" alt="Mountain artwork above a bed in a warm modern rustic bedroom by Dan Sproul" loading="lazy" decoding="async"><div class="mock-label"><strong>Bedroom calm</strong> alpine reflection and warm evening light</div></div>
+    <div class="mock-tile mockup-trigger" data-purchase="https://dansproul.com/featured/kayaking-moraine-lake-dan-sproul.html" data-title="Kayaking Moraine Lake shown as a hospitality-scale focal piece for a lodge lobby or resort lounge." data-sizes="40x60 • 48x72 • Oversized Statement Format" data-frames="Walnut • Matte Black • Warm Oak" data-formats="Canvas • Acrylic • Framed Print" data-rooms="Hotel Lobbies • Resort Lounges • Hospitality Spaces • Lodge Interiors"><img src="mountain-light-lobby.jpg" alt="Large mountain artwork in a high-end lodge lobby interior by Dan Sproul" loading="lazy" decoding="async"><div class="mock-label"><strong>Lodge lobby</strong> hospitality scale and destination atmosphere</div></div>
+    <div class="mock-tile mockup-trigger" data-purchase="https://dansproul.com/featured/magical-mountain-light-dan-sproul.html" data-title="Magical Mountain Light shown as a dramatic architectural statement piece for an entryway or executive interior." data-sizes="36x54 • 40x60 • 45x68" data-frames="Walnut • Matte Black • Warm Oak" data-formats="Framed Print • Acrylic • Canvas" data-rooms="Entryways • Executive Offices • Reception Areas • Statement Walls"><img src="mountain-light-entryway.jpg" alt="Statement mountain landscape artwork in a luxury double-height entryway by Dan Sproul" loading="lazy" decoding="async"><div class="mock-label"><strong>Entry statement</strong> immediate architectural presence</div></div>
   </div>
 </section>
 
@@ -445,6 +486,13 @@ h1{max-width:980px;font-size:clamp(44px,6.7vw,92px);letter-spacing:-.018em}
   <button class="mockup-lightbox-close" type="button" aria-label="Close image">×</button>
   <div class="mockup-lightbox-card">
     <img id="mockupLightboxImage" src="" alt="">
+    <div class="mockup-lightbox-title" id="mockupLightboxTitle"></div>
+    <div class="mockup-spec-panel" id="mockupSpecPanel">
+      <div class="mockup-spec-item"><strong>Suggested Sizes</strong><span id="mockupSpecSizes"></span></div>
+      <div class="mockup-spec-item"><strong>Frame Suggestions</strong><span id="mockupSpecFrames"></span></div>
+      <div class="mockup-spec-item"><strong>Available Formats</strong><span id="mockupSpecFormats"></span></div>
+      <div class="mockup-spec-item"><strong>Best Rooms</strong><span id="mockupSpecRooms"></span></div>
+    </div>
     <div class="mockup-lightbox-actions">
       <a id="mockupPurchaseLink" href="https://dansproul.com/art/mountain+light" target="_blank" rel="noopener">View / Purchase Print</a>
       <button id="mockupCloseInline" type="button">Close</button>
@@ -466,6 +514,11 @@ document.addEventListener('DOMContentLoaded', function () {
   var lightbox = document.getElementById('mockupLightbox');
   var lightboxImage = document.getElementById('mockupLightboxImage');
   var purchaseLink = document.getElementById('mockupPurchaseLink');
+  var lightboxTitle = document.getElementById('mockupLightboxTitle');
+  var specSizes = document.getElementById('mockupSpecSizes');
+  var specFrames = document.getElementById('mockupSpecFrames');
+  var specFormats = document.getElementById('mockupSpecFormats');
+  var specRooms = document.getElementById('mockupSpecRooms');
   var closeTop = document.querySelector('.mockup-lightbox-close');
   var closeInline = document.getElementById('mockupCloseInline');
 
@@ -474,6 +527,7 @@ document.addEventListener('DOMContentLoaded', function () {
     lightbox.classList.remove('active');
     lightbox.setAttribute('aria-hidden','true');
     if (lightboxImage) lightboxImage.src = '';
+    if (lightboxTitle) lightboxTitle.textContent = '';
     document.body.style.overflow = '';
   }
 
@@ -486,6 +540,11 @@ document.addEventListener('DOMContentLoaded', function () {
         lightboxImage.alt = img.getAttribute('alt') || 'Mountain Light artwork mockup';
       }
       if (purchaseLink) purchaseLink.href = purchase;
+      if (lightboxTitle) lightboxTitle.textContent = card.getAttribute('data-title') || '';
+      if (specSizes) specSizes.textContent = card.getAttribute('data-sizes') || '';
+      if (specFrames) specFrames.textContent = card.getAttribute('data-frames') || '';
+      if (specFormats) specFormats.textContent = card.getAttribute('data-formats') || '';
+      if (specRooms) specRooms.textContent = card.getAttribute('data-rooms') || '';
       if (lightbox) {
         lightbox.classList.add('active');
         lightbox.setAttribute('aria-hidden','false');
