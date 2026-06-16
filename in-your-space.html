@@ -423,6 +423,48 @@ body::before{
   }
 }
 
+
+
+/* ── SEE ARTWORK IN YOUR ROOM PREVIEW TOOL ───────────────────── */
+.room-preview-tool{background:#100e0b;border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:64px 56px}
+.preview-wrap{max-width:1380px;margin:0 auto}
+.preview-intro{display:grid;grid-template-columns:1fr 1.1fr;gap:42px;align-items:start;margin-bottom:34px}
+.preview-intro p{font-size:.76rem;line-height:1.95;color:var(--muted-2);max-width:620px}
+.preview-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.preview-step{border:1px solid var(--border);background:rgba(181,146,74,.055);padding:16px 18px}
+.preview-step strong{display:block;font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:300;color:var(--off-white);margin-bottom:6px}
+.preview-step span{display:block;font-size:.52rem;letter-spacing:.16em;line-height:1.7;text-transform:uppercase;color:var(--muted-2)}
+.preview-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(320px,.75fr);gap:28px;align-items:start}
+.preview-stage{position:relative;min-height:520px;background:rgba(242,239,232,.035);border:1px solid var(--border);overflow:hidden;display:flex;align-items:center;justify-content:center}
+.preview-placeholder{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:36px;color:rgba(242,239,232,.45);font-size:.62rem;letter-spacing:.18em;line-height:1.9;text-transform:uppercase;z-index:1}
+.preview-room-img{width:100%;height:100%;object-fit:contain;display:none;position:absolute;inset:0;z-index:2;background:#100e0b}
+.preview-artwork{position:absolute;left:50%;top:38%;width:34%;transform:translate(-50%,-50%);z-index:5;display:none;cursor:grab;box-shadow:0 20px 46px rgba(0,0,0,.42);border:10px solid #1f1b15;background:#eee;touch-action:none}
+.preview-artwork.oak{border-color:#b08a55}.preview-artwork.walnut{border-color:#5c3b25}.preview-artwork.black{border-color:#111}.preview-artwork.white{border-color:#efeae1}
+.preview-panel{border:1px solid var(--border);background:var(--surface-2);padding:24px}
+.preview-panel label{display:block;font-size:.5rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin:18px 0 8px}
+.preview-panel label:first-child{margin-top:0}
+.preview-panel select,.preview-panel input[type="range"],.preview-panel input[type="file"]{width:100%}
+.preview-panel select{appearance:none;background:#100e0b;color:var(--off-white);border:1px solid var(--border-strong);padding:12px 14px;font-family:'Jost',sans-serif;font-size:.72rem;letter-spacing:.06em}
+.preview-panel input[type="file"]{font-size:.62rem;color:var(--muted-2);border:1px dashed var(--border-strong);padding:14px;background:rgba(181,146,74,.06)}
+.preview-panel input[type="range"]{accent-color:var(--accent)}
+.preview-info{margin-top:22px;padding-top:18px;border-top:1px solid var(--border)}
+.preview-title{font-family:'Cormorant Garamond',serif;font-size:1.45rem;font-weight:300;color:var(--off-white);line-height:1.2;margin-bottom:8px}
+.preview-meta{font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.preview-detail{font-size:.67rem;line-height:1.85;color:var(--muted-2);margin-bottom:10px}
+.preview-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px}
+.purchase-artwork-btn,.save-preview-btn,.reset-preview-btn{display:inline-block;padding:12px 18px;font-size:.53rem;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;border:1px solid var(--border-strong);cursor:pointer;font-family:'Jost',sans-serif}
+.purchase-artwork-btn{background:var(--accent);color:var(--charcoal);border-color:var(--accent)}
+.purchase-artwork-btn:hover{background:var(--accent-light)}
+.save-preview-btn,.reset-preview-btn{background:transparent;color:var(--off-white)}
+.save-preview-btn:hover,.reset-preview-btn:hover{border-color:var(--accent);color:var(--accent)}
+.preview-note{font-size:.58rem;line-height:1.8;color:rgba(242,239,232,.38);margin-top:14px}
+.preview-thumbs{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-top:18px}
+.preview-thumb{border:1px solid transparent;background:none;padding:0;cursor:pointer;aspect-ratio:4/3;overflow:hidden;opacity:.62;transition:opacity .25s,border-color .25s}
+.preview-thumb.active,.preview-thumb:hover{opacity:1;border-color:var(--accent)}
+.preview-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+@media(max-width:960px){.room-preview-tool{padding:52px 24px}.preview-intro,.preview-grid{grid-template-columns:1fr}.preview-steps{grid-template-columns:1fr}.preview-stage{min-height:420px}.preview-thumbs{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:580px){.preview-stage{min-height:320px}.preview-artwork{border-width:7px}.preview-thumbs{grid-template-columns:repeat(2,1fr)}}
+
 </style>
 <script type="application/ld+json">
 {
@@ -764,6 +806,72 @@ body::before{
     </div>
   </div>
 </div>
+
+
+
+<!-- SEE ARTWORK IN YOUR ROOM TOOL -->
+<section class="room-preview-tool" id="room-preview-tool">
+  <div class="preview-wrap">
+    <div class="preview-intro">
+      <div>
+        <p class="sec-label">Interactive Preview</p>
+        <h2 class="sec-title">See artwork in <em>your own room.</em></h2>
+        <p>Upload a photo of your wall, choose one of the curated images below, then resize and position the artwork before purchasing. This is a simple wall preview tool for homeowners and designers, not true AR.</p>
+      </div>
+      <div class="preview-steps">
+        <div class="preview-step"><strong>1</strong><span>Upload a room photo</span></div>
+        <div class="preview-step"><strong>2</strong><span>Choose artwork and frame</span></div>
+        <div class="preview-step"><strong>3</strong><span>Preview, save, or purchase</span></div>
+      </div>
+    </div>
+
+    <div class="preview-grid">
+      <div class="preview-stage" id="previewStage">
+        <div class="preview-placeholder" id="previewPlaceholder">Upload a straight-on photo of your wall to begin<br/>then drag the artwork into position</div>
+        <img id="roomImage" class="preview-room-img" alt="Uploaded room preview"/>
+        <img id="artworkImage" class="preview-artwork oak" alt="Selected Dan Sproul artwork preview"/>
+      </div>
+
+      <aside class="preview-panel">
+        <label for="roomUpload">Upload Room Photo</label>
+        <input type="file" id="roomUpload" accept="image/*"/>
+
+        <label for="collectionFilter">Collection</label>
+        <select id="collectionFilter"></select>
+
+        <label for="artworkSelect">Artwork</label>
+        <select id="artworkSelect"></select>
+
+        <label for="frameSelect">Frame Style</label>
+        <select id="frameSelect">
+          <option value="oak">Warm Oak</option>
+          <option value="walnut">Walnut</option>
+          <option value="black">Matte Black</option>
+          <option value="white">White</option>
+        </select>
+
+        <label for="artworkSize">Artwork Size</label>
+        <input type="range" id="artworkSize" min="18" max="70" value="34"/>
+
+        <div class="preview-info">
+          <h3 class="preview-title" id="previewTitle"></h3>
+          <p class="preview-meta" id="previewMeta"></p>
+          <p class="preview-detail" id="previewSizes"></p>
+          <p class="preview-detail" id="previewFrames"></p>
+          <p class="preview-detail" id="previewRooms"></p>
+          <div class="preview-actions">
+            <a id="purchaseArtworkBtn" class="purchase-artwork-btn" href="#" target="_blank" rel="noopener">Purchase This Print</a>
+            <button type="button" id="savePreviewBtn" class="save-preview-btn">Save Screenshot</button>
+            <button type="button" id="resetPreviewBtn" class="reset-preview-btn">Reset</button>
+          </div>
+          <p class="preview-note">For best results, upload a level photo taken straight toward the wall. Final print scale may vary depending on room-photo perspective.</p>
+        </div>
+
+        <div class="preview-thumbs" id="previewThumbs" aria-label="Artwork thumbnail choices"></div>
+      </aside>
+    </div>
+  </div>
+</section>
 
 <!-- HOW TO USE banner -->
 <div class="how-banner">
@@ -1239,6 +1347,96 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 
+
+
+<script>
+const artworkOptions = [
+  {title:"Yaquina Bay Coastal Scene",image:"images/yaquina-bay-coastal-scene-dan-sproul.jpg",collection:"Coastal Atmosphere",purchaseUrl:"https://dansproul.com/featured/yaquina-bay-coastal-scene-dan-sproul.html",suggestedSizes:"30×45, 36×54, or 40×60",frameRecommendations:"Warm oak, walnut, or matte black",bestRooms:"Living rooms, coastal bedrooms, hospitality suites"},
+  {title:"Oregon Coast Sunset with Sea Stacks",image:"images/oregon-coast-sunset-with-sea-stacks-dan-sproul.jpg",collection:"Coastal Atmosphere",purchaseUrl:"https://dansproul.com/featured/oregon-coast-sunset-with-sea-stacks-dan-sproul.html",suggestedSizes:"24×36, 30×45, or 40×60",frameRecommendations:"Walnut or matte black",bestRooms:"Bedrooms, lounges, warm coastal interiors"},
+  {title:"Misty Coast Oregon",image:"images/misty-coast-oregon-dan-sproul.jpg",collection:"Coastal Atmosphere",purchaseUrl:"https://dansproul.com/featured/misty-coast-oregon-dan-sproul.html",suggestedSizes:"30×40, 36×48, or 45×60",frameRecommendations:"Matte black, walnut, or white",bestRooms:"Modern living rooms, offices, quiet hospitality spaces"},
+  {title:"Dreamy Cannon Beach Seastacks",image:"images/dreamy-cannon-beach-seastacks-from-ecola-state-park-dan-sproul.jpg",collection:"Coastal Atmosphere",purchaseUrl:"https://dansproul.com/featured/dreamy-cannon-beach-seastacks-from-ecola-state-park-dan-sproul.html",suggestedSizes:"30×45, 36×54, or 40×60",frameRecommendations:"Warm oak or walnut",bestRooms:"Bedrooms, living rooms, boutique hospitality"},
+  {title:"Morning Light at Schwabacher Landing",image:"images/morning-light-schwabachers-landing-tetons-dan-sproul.jpg",collection:"Mountain Light",purchaseUrl:"https://dansproul.com/featured/morning-light-schwabachers-landing-tetons-dan-sproul.html",suggestedSizes:"30×45, 36×54, or 40×60",frameRecommendations:"Walnut, warm oak, or matte black",bestRooms:"Living rooms, lodges, executive offices"},
+  {title:"Magical Mountain Light",image:"images/magical-mountain-light-dan-sproul.jpg",collection:"Mountain Light",purchaseUrl:"https://dansproul.com/featured/magical-mountain-light-dan-sproul.html",suggestedSizes:"24×48, 30×60, or custom panoramic",frameRecommendations:"Walnut or matte black",bestRooms:"Hospitality lounges, executive offices, large feature walls"},
+  {title:"Autumn Beginnings Wyoming",image:"images/autumn-beginnings-wyoming-landscape-dan-sproul.jpg",collection:"Mountain Light",purchaseUrl:"https://dansproul.com/featured/autumn-beginnings-wyoming-landscape-dan-sproul.html",suggestedSizes:"24×36, 30×45, or 36×54",frameRecommendations:"Warm oak or walnut",bestRooms:"Living rooms, offices, rustic-modern interiors"},
+  {title:"Grotto Falls Smoky Mountains",image:"images/grotto-falls-smoky-mountains-waterfall-forest-sunlight-dan-sproul.jpg",collection:"Wellness Waters",purchaseUrl:"https://dansproul.com/featured/grotto-falls-smoky-mountains-waterfall-forest-sunlight-dan-sproul.html",suggestedSizes:"30×40, 36×48, or 45×60",frameRecommendations:"Warm oak, walnut, or matte black",bestRooms:"Wellness rooms, healthcare spaces, bedrooms"},
+  {title:"Hocking Hills Hidden Falls",image:"images/hocking-hills-hidden-falls-long-exposure-dan-sproul.jpg",collection:"Wellness Waters",purchaseUrl:"https://dansproul.com/featured/hocking-hills-hidden-falls-long-exposure-dan-sproul.html",suggestedSizes:"24×30, 30×40, or 36×48",frameRecommendations:"Walnut or matte black",bestRooms:"Spa rooms, waiting rooms, Ohio homes"},
+  {title:"Grafton Notch Sunburst",image:"images/grafton-notch-state-park-sunburst-dan-sproul.jpg",collection:"Wellness Waters",purchaseUrl:"https://dansproul.com/featured/grafton-notch-state-park-sunburst-dan-sproul.html",suggestedSizes:"24×36, 30×45, or 36×54",frameRecommendations:"Warm oak or walnut",bestRooms:"Wellness spaces, therapy offices, nature-inspired rooms"},
+  {title:"Reflections Lake Alaska",image:"images/reflections-lake-alaska-in-autumn-dan-sproul.jpg",collection:"Quiet Earth",purchaseUrl:"https://dansproul.com/featured/reflections-lake-alaska-in-autumn-dan-sproul.html",suggestedSizes:"30×45, 36×54, or 40×60",frameRecommendations:"Walnut, warm oak, or matte black",bestRooms:"Living rooms, dining rooms, hospitality suites"},
+  {title:"Moody Lily Pond Chugach National Forest",image:"images/moody-lily-pond-chugach-national-forest-dan-sproul.jpg",collection:"Quiet Earth",purchaseUrl:"https://dansproul.com/featured/moody-lily-pond-chugach-national-forest-dan-sproul.html",suggestedSizes:"30×45, 36×54, or 40×60",frameRecommendations:"Walnut or matte black",bestRooms:"Quiet bedrooms, offices, contemplative interiors"},
+  {title:"Dramatic Bow Lake Reflection",image:"images/dramatic-bow-lake-reflection-dan-sproul.jpg",collection:"Monochrome Stillness",purchaseUrl:"https://dansproul.com/featured/dramatic-bow-lake-reflection-dan-sproul.html",suggestedSizes:"30×40, 36×48, or 45×60",frameRecommendations:"Matte black or walnut",bestRooms:"Law offices, executive rooms, modern living spaces"},
+  {title:"Monochrome Maligne Lake Boathouse",image:"images/monochrome-maligne-lake-boathouse-dan-sproul.jpg",collection:"Monochrome Stillness",purchaseUrl:"https://dansproul.com/featured/monochrome-maligne-lake-boathouse-dan-sproul.html",suggestedSizes:"30×40, 36×48, or 45×60",frameRecommendations:"Matte black or walnut",bestRooms:"Offices, hospitality, quiet luxury residential"},
+  {title:"Winter Monochrome Denali",image:"images/winter-monochrome-denali-national-park-dan-sproul.jpg",collection:"Monochrome Stillness",purchaseUrl:"https://dansproul.com/featured/winter-monochrome-denali-national-park-dan-sproul.html",suggestedSizes:"30×45, 36×54, or 40×60",frameRecommendations:"Matte black, walnut, or white",bestRooms:"Executive offices, minimalist living rooms, bedrooms"}
+];
+
+(function(){
+  const collectionFilter=document.getElementById('collectionFilter');
+  const artworkSelect=document.getElementById('artworkSelect');
+  const artworkImage=document.getElementById('artworkImage');
+  const roomUpload=document.getElementById('roomUpload');
+  const roomImage=document.getElementById('roomImage');
+  const placeholder=document.getElementById('previewPlaceholder');
+  const frameSelect=document.getElementById('frameSelect');
+  const artworkSize=document.getElementById('artworkSize');
+  const purchaseBtn=document.getElementById('purchaseArtworkBtn');
+  const thumbs=document.getElementById('previewThumbs');
+  const title=document.getElementById('previewTitle');
+  const meta=document.getElementById('previewMeta');
+  const sizes=document.getElementById('previewSizes');
+  const frames=document.getElementById('previewFrames');
+  const rooms=document.getElementById('previewRooms');
+  const resetBtn=document.getElementById('resetPreviewBtn');
+  const saveBtn=document.getElementById('savePreviewBtn');
+  const stage=document.getElementById('previewStage');
+  if(!collectionFilter||!artworkSelect)return;
+
+  const collections=['All Collections',...Array.from(new Set(artworkOptions.map(a=>a.collection)))];
+  collectionFilter.innerHTML=collections.map(c=>`<option value="${c}">${c}</option>`).join('');
+
+  function filtered(){return collectionFilter.value==='All Collections'?artworkOptions:artworkOptions.filter(a=>a.collection===collectionFilter.value)}
+  function renderArtworkList(){
+    const list=filtered();
+    artworkSelect.innerHTML=list.map((a,i)=>`<option value="${artworkOptions.indexOf(a)}">${a.title}</option>`).join('');
+    renderThumbs();
+    updateArtwork();
+  }
+  function renderThumbs(){
+    thumbs.innerHTML=filtered().map(a=>`<button type="button" class="preview-thumb" data-index="${artworkOptions.indexOf(a)}" aria-label="Preview ${a.title}"><img src="${a.image}" alt="${a.title} thumbnail"></button>`).join('');
+    thumbs.querySelectorAll('.preview-thumb').forEach(btn=>btn.addEventListener('click',function(){artworkSelect.value=this.dataset.index;updateArtwork();}));
+  }
+  function updateArtwork(){
+    const selected=artworkOptions[Number(artworkSelect.value)]||artworkOptions[0];
+    artworkImage.src=selected.image;
+    artworkImage.alt=selected.title;
+    artworkImage.style.display='block';
+    purchaseBtn.href=selected.purchaseUrl;
+    purchaseBtn.textContent='Purchase This Print';
+    title.textContent=selected.title;
+    meta.textContent=selected.collection;
+    sizes.textContent='Suggested sizes: '+selected.suggestedSizes;
+    frames.textContent='Frame suggestions: '+selected.frameRecommendations;
+    rooms.textContent='Best rooms: '+selected.bestRooms;
+    document.querySelectorAll('.preview-thumb').forEach(b=>b.classList.toggle('active',Number(b.dataset.index)===artworkOptions.indexOf(selected)));
+  }
+  collectionFilter.addEventListener('change',renderArtworkList);
+  artworkSelect.addEventListener('change',updateArtwork);
+  frameSelect.addEventListener('change',()=>{artworkImage.className='preview-artwork '+frameSelect.value;});
+  artworkSize.addEventListener('input',()=>{artworkImage.style.width=artworkSize.value+'%';});
+  roomUpload.addEventListener('change',function(){
+    const file=this.files&&this.files[0]; if(!file)return;
+    const url=URL.createObjectURL(file);
+    roomImage.src=url; roomImage.style.display='block'; placeholder.style.display='none';
+  });
+  resetBtn.addEventListener('click',()=>{artworkImage.style.left='50%';artworkImage.style.top='38%';artworkSize.value=34;artworkImage.style.width='34%';});
+  saveBtn.addEventListener('click',()=>alert('Use your browser or phone screenshot command to save this preview.'));
+
+  let dragging=false,offsetX=0,offsetY=0;
+  artworkImage.addEventListener('pointerdown',function(e){dragging=true;artworkImage.setPointerCapture(e.pointerId);const r=artworkImage.getBoundingClientRect();offsetX=e.clientX-r.left;offsetY=e.clientY-r.top;artworkImage.style.cursor='grabbing';});
+  artworkImage.addEventListener('pointermove',function(e){if(!dragging)return;const sr=stage.getBoundingClientRect();const x=((e.clientX-sr.left-offsetX+artworkImage.offsetWidth/2)/sr.width)*100;const y=((e.clientY-sr.top-offsetY+artworkImage.offsetHeight/2)/sr.height)*100;artworkImage.style.left=Math.max(5,Math.min(95,x))+'%';artworkImage.style.top=Math.max(5,Math.min(95,y))+'%';});
+  artworkImage.addEventListener('pointerup',function(){dragging=false;artworkImage.style.cursor='grab';});
+
+  renderArtworkList();
+})();
+</script>
+
 </body>
 </html>
-
