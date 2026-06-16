@@ -1406,9 +1406,14 @@ const artworkOptions = [
   }
   function updateArtwork(){
     const selected=artworkOptions[Number(artworkSelect.value)]||artworkOptions[0];
-    artworkImage.src=selected.image;
+
+    // Clear the previous image first so a missing file can never keep showing the last selected artwork.
+    artworkImage.removeAttribute('src');
     artworkImage.alt=selected.title;
     artworkImage.style.display='block';
+    artworkImage.dataset.currentArtwork=selected.title;
+    artworkImage.src=selected.image;
+
     purchaseBtn.href=selected.purchaseUrl;
     purchaseBtn.textContent='Purchase This Print';
     title.textContent=selected.title;
