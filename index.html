@@ -317,6 +317,90 @@
     .collection-card img{height:100%;filter:brightness(.9) saturate(.88)}
     .collection-card h3{font-size:32px}
 
+
+    /* ── COLLECTION SLIDESHOW ───────────────────────────── */
+    .collection-carousel{
+      max-width:1280px;
+      margin:0 auto;
+      position:relative;
+    }
+    .collection-viewport{
+      overflow:hidden;
+      border:1px solid rgba(195,158,83,.14);
+      background:#090806;
+    }
+    .collection-track{
+      display:flex;
+      transition:transform .55s cubic-bezier(.22,.61,.36,1);
+      will-change:transform;
+    }
+    .collection-slide{
+      flex:0 0 25%;
+      min-height:430px;
+      position:relative;
+      overflow:hidden;
+      text-decoration:none;
+      color:var(--cream);
+      background:var(--panel);
+      border-right:4px solid #100e0b;
+    }
+    .collection-slide::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(to top,rgba(20,17,13,.95),rgba(20,17,13,.24) 62%,transparent);
+      pointer-events:none;
+    }
+    .collection-slide img{
+      height:100%;
+      filter:brightness(.88) saturate(.88);
+      transition:transform .7s ease,filter .7s ease;
+    }
+    .collection-slide:hover img{transform:scale(1.045);filter:brightness(1) saturate(1)}
+    .collection-controls{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:18px;
+      margin-top:18px;
+    }
+    .collection-arrows{display:flex;gap:10px}
+    .collection-arrow{
+      width:44px;
+      height:44px;
+      border:1px solid var(--line-strong);
+      background:transparent;
+      color:var(--gold-light);
+      cursor:pointer;
+      font-size:20px;
+      transition:.25s ease;
+    }
+    .collection-arrow:hover{border-color:var(--gold-light);background:rgba(199,164,90,.08)}
+    .collection-dots{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}
+    .collection-dot{
+      width:7px;
+      height:7px;
+      border-radius:50%;
+      border:0;
+      background:rgba(244,238,229,.28);
+      cursor:pointer;
+      padding:0;
+    }
+    .collection-dot.active{background:var(--gold-light)}
+    .collection-mobile-link{
+      display:none;
+      margin-top:18px;
+    }
+    @media (max-width:1180px){
+      .collection-slide{flex-basis:50%;min-height:390px}
+    }
+    @media (max-width:680px){
+      .collection-slide{flex-basis:100%;min-height:360px}
+      .collection-controls{align-items:flex-start;flex-direction:column}
+      .collection-dots{justify-content:flex-start}
+      .collection-mobile-link{display:inline-flex}
+    }
+
     .mockups{background:var(--deep)}
     .mock-feature{
       max-width:1280px;
@@ -856,42 +940,110 @@
       <p>These collection paths make it easier to choose artwork by room feeling instead of browsing thousands of images by subject alone.</p>
     </div>
 
-    <div class="collection-grid">
-      <a class="collection-card" href="quiet-earth-collection.html">
-        <img src="https://dsproul.com/quiet-earth-appalachian-fog.jpg" alt="Quiet Earth calming landscape photography collection by Dan Sproul" loading="lazy" decoding="async">
-        <div class="card-text">
-          <span class="tag">Healthcare &amp; wellness</span>
-          <h3>Quiet Earth</h3>
-          <p>Calming landscapes for restorative interiors and quiet homes.</p>
-        </div>
-      </a>
+    <div class="collection-carousel" aria-label="Curated artwork collection slideshow">
+      <div class="collection-viewport">
+        <div class="collection-track" id="collectionTrack">
+          <a class="collection-slide" href="quiet-earth-collection.html">
+            <img src="https://dsproul.com/quiet-earth-appalachian-fog.jpg" alt="Quiet Earth calming landscape photography collection by Dan Sproul" loading="lazy" decoding="async">
+            <div class="card-text">
+              <span class="tag">Calm / grounded / atmospheric</span>
+              <h3>Quiet Earth</h3>
+              <p>Muted landscapes, still water, mountain atmosphere, and grounded natural tones for calming interiors.</p>
+            </div>
+          </a>
 
-      <a class="collection-card" href="monochrome-stillness.html">
-        <img src="https://dsproul.com/denali-highway-alaska-black-white-dan-sproul.jpg" alt="Monochrome Stillness black and white landscape photography collection by Dan Sproul" loading="lazy" decoding="async">
-        <div class="card-text">
-          <span class="tag">Office &amp; restraint</span>
-          <h3>Monochrome Stillness</h3>
-          <p>Black-and-white artwork for executive and architectural spaces.</p>
-        </div>
-      </a>
+          <a class="collection-slide" href="wellness-waters-collection.html">
+            <img src="https://dsproul.com/grotto-falls-smoky-mountains-waterfall-forest-sunlight-dan-sproul.jpg" alt="Wellness Waters restorative waterfall photography collection by Dan Sproul" loading="lazy" decoding="async">
+            <div class="card-text">
+              <span class="tag">Water / wellness / restorative</span>
+              <h3>Wellness Waters</h3>
+              <p>Waterfalls, streams, and flowing water photography for spas, healthcare, hospitality, and calm homes.</p>
+            </div>
+          </a>
 
-      <a class="collection-card" href="mountain-light-collection.html">
-        <img src="mountain-light-lobby.jpg" alt="Mountain Light framed landscape photography in a warm modern interior by Dan Sproul" loading="lazy" decoding="async">
-        <div class="card-text">
-          <span class="tag">Hospitality &amp; lodge</span>
-          <h3>Mountain Light</h3>
-          <p>Atmospheric mountain artwork for lodge modern interiors.</p>
-        </div>
-      </a>
+          <a class="collection-slide" href="monochrome-stillness.html">
+            <img src="https://dsproul.com/denali-highway-alaska-black-white-dan-sproul.jpg" alt="Monochrome Stillness black and white landscape photography collection by Dan Sproul" loading="lazy" decoding="async">
+            <div class="card-text">
+              <span class="tag">Monochrome / architectural / refined</span>
+              <h3>Monochrome Stillness</h3>
+              <p>Restrained black-and-white landscapes for healthcare, hospitality, executive, and refined interiors.</p>
+            </div>
+          </a>
 
-      <a class="collection-card" href="coastal-atmosphere.html">
-        <img src="https://dsproul.com/proposal-rock-moody-oregon-coast-dan-sproul.jpg" alt="Coastal Atmosphere moody Oregon Coast photography collection by Dan Sproul" loading="lazy" decoding="async">
-        <div class="card-text">
-          <span class="tag">Quiet coastal</span>
-          <h3>Coastal Atmosphere</h3>
-          <p>Refined shoreline imagery for calm coastal rooms.</p>
+          <a class="collection-slide" href="mountain-light-collection.html">
+            <img src="https://dsproul.com/mountain-light-lobby.jpg" alt="Mountain Light framed landscape photography in a warm modern interior by Dan Sproul" loading="lazy" decoding="async">
+            <div class="card-text">
+              <span class="tag">Alpine / luminous / statement</span>
+              <h3>Mountain Light</h3>
+              <p>Atmospheric mountain photography for lodge modern interiors, hospitality, and statement rooms.</p>
+            </div>
+          </a>
+
+          <a class="collection-slide" href="coastal-atmosphere.html">
+            <img src="https://dsproul.com/proposal-rock-moody-oregon-coast-dan-sproul.jpg" alt="Coastal Atmosphere moody Oregon Coast photography collection by Dan Sproul" loading="lazy" decoding="async">
+            <div class="card-text">
+              <span class="tag">Moody / coastal / refined</span>
+              <h3>Coastal Atmosphere</h3>
+              <p>Refined shoreline imagery for calm coastal rooms, boutique hospitality, and elevated interiors.</p>
+            </div>
+          </a>
+
+          <a class="collection-slide" href="forest-light-collection.html">
+            <img src="https://dsproul.com/forest-light-living-room.jpg" alt="Forest Light woodland photography collection by Dan Sproul" loading="lazy" decoding="async">
+            <div class="card-text">
+              <span class="tag">Woodland / biophilic / restorative</span>
+              <h3>Forest Light</h3>
+              <p>Woodland trails, filtered morning light, immersive greens, and calming natural texture.</p>
+            </div>
+          </a>
+
+          <a class="collection-slide" href="winter-stillness.html">
+            <img src="https://dsproul.com/winter-monochrome-denali-national-park-dan-sproul.jpg" alt="Winter Stillness quiet winter landscape photography collection by Dan Sproul" loading="lazy" decoding="async">
+            <div class="card-text">
+              <span class="tag">Winter / quiet / neutral</span>
+              <h3>Winter Stillness</h3>
+              <p>Soft winter landscapes, quiet snow, muted woodland atmosphere, and neutral nature photography.</p>
+            </div>
+          </a>
+
+          <a class="collection-slide" href="heritage-mixed-media.html">
+            <img src="maine lighthouse mixed media mockup inn lobby.jpg" alt="Heritage and Mixed Media coastal lighthouse artwork installed in a luxury New England inn lobby" loading="lazy" decoding="async">
+            <div class="card-text">
+              <span class="tag">Heritage / mixed media / Americana</span>
+              <h3>Heritage &amp; Mixed Media</h3>
+              <p>Historic maps, patents, lighthouses, waterways, sporting heritage, and regional Americana reimagined as atmospheric statement artwork for hospitality, clubhouses, lodges, and refined interiors.</p>
+            </div>
+          </a>
+
+          <a class="collection-slide" href="alaska-photography-prints.html">
+            <img src="https://dsproul.com/valdez-glacier-lake-alaska-dan-sproul.jpg" alt="Alaska landscape photography prints for atmospheric interiors by Dan Sproul" loading="lazy" decoding="async">
+            <div class="card-text">
+              <span class="tag">Alaska / scale / atmosphere</span>
+              <h3>Alaska Prints</h3>
+              <p>Glacier blues, mountain atmosphere, autumn tundra, and wilderness imagery for statement interiors.</p>
+            </div>
+          </a>
+
+          <a class="collection-slide" href="ohio-nature-photography-prints.html">
+            <img src="https://dsproul.com/hocking-hills-hidden-falls-long-exposure-dan-sproul.jpg" alt="Ohio nature photography for healthcare hospitality wellness and residential interiors by Dan Sproul" loading="lazy" decoding="async">
+            <div class="card-text">
+              <span class="tag">Ohio / regional / interior artwork</span>
+              <h3>Ohio Nature Photography</h3>
+              <p>Regional nature artwork for Ohio healthcare, hospitality, wellness, executive, and residential interiors.</p>
+            </div>
+          </a>
         </div>
-      </a>
+      </div>
+
+      <div class="collection-controls">
+        <div class="collection-arrows">
+          <button class="collection-arrow" type="button" id="collectionPrev" aria-label="Previous collection">‹</button>
+          <button class="collection-arrow" type="button" id="collectionNext" aria-label="Next collection">›</button>
+        </div>
+        <div class="collection-dots" id="collectionDots" aria-label="Collection slideshow navigation"></div>
+      </div>
+
+      <a class="btn collection-mobile-link" href="art-collections.html">View All Collections</a>
     </div>
   </section>
 
@@ -1080,6 +1232,84 @@
       © 2026 Dan Sproul Fine Art Photography · Original landscape photography and heritage-inspired mixed media artwork by Dan Sproul, based in Lima, Ohio · Prints ship worldwide
     </footer>
   </div>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var track = document.getElementById('collectionTrack');
+      var dotsWrap = document.getElementById('collectionDots');
+      var prev = document.getElementById('collectionPrev');
+      var next = document.getElementById('collectionNext');
+      if (!track || !dotsWrap || !prev || !next) return;
+
+      var slides = Array.prototype.slice.call(track.querySelectorAll('.collection-slide'));
+      var index = 0;
+      var autoplay;
+
+      function visibleCount(){
+        if (window.innerWidth <= 680) return 1;
+        if (window.innerWidth <= 1180) return 2;
+        return 4;
+      }
+
+      function maxIndex(){
+        return Math.max(0, slides.length - visibleCount());
+      }
+
+      function renderDots(){
+        dotsWrap.innerHTML = '';
+        for (var i = 0; i <= maxIndex(); i++) {
+          var dot = document.createElement('button');
+          dot.className = 'collection-dot' + (i === index ? ' active' : '');
+          dot.type = 'button';
+          dot.setAttribute('aria-label', 'Go to collection slide ' + (i + 1));
+          dot.addEventListener('click', (function(n){ return function(){ goTo(n); resetAutoplay(); }; })(i));
+          dotsWrap.appendChild(dot);
+        }
+      }
+
+      function update(){
+        index = Math.min(index, maxIndex());
+        var slideWidth = slides[0].getBoundingClientRect().width;
+        track.style.transform = 'translateX(' + (-index * slideWidth) + 'px)';
+        Array.prototype.slice.call(dotsWrap.children).forEach(function(dot, i){
+          dot.classList.toggle('active', i === index);
+        });
+      }
+
+      function goTo(n){
+        index = Math.max(0, Math.min(n, maxIndex()));
+        update();
+      }
+
+      function move(dir){
+        if (dir > 0 && index >= maxIndex()) index = 0;
+        else if (dir < 0 && index <= 0) index = maxIndex();
+        else index += dir;
+        update();
+      }
+
+      function startAutoplay(){
+        autoplay = window.setInterval(function(){ move(1); }, 5000);
+      }
+
+      function resetAutoplay(){
+        window.clearInterval(autoplay);
+        startAutoplay();
+      }
+
+      prev.addEventListener('click', function(){ move(-1); resetAutoplay(); });
+      next.addEventListener('click', function(){ move(1); resetAutoplay(); });
+      window.addEventListener('resize', function(){ renderDots(); update(); });
+
+      track.addEventListener('mouseenter', function(){ window.clearInterval(autoplay); });
+      track.addEventListener('mouseleave', startAutoplay);
+
+      renderDots();
+      update();
+      startAutoplay();
+    });
+  </script>
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
