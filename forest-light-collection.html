@@ -874,7 +874,10 @@ document.addEventListener('DOMContentLoaded', function () {
     lightboxImg.src = img.getAttribute('src');
     lightboxImg.alt = img.getAttribute('alt') || 'Forest Light artwork mockup';
     if (lightboxTitle) lightboxTitle.textContent = card.getAttribute('data-title') || '';
-    if (purchaseLink) purchaseLink.href = card.getAttribute('data-purchase') || '#';
+    if (purchaseLink) {
+      purchaseLink.href = card.getAttribute('data-purchase') || '#';
+      purchaseLink.textContent = 'View / Purchase Print';
+    }
     if (specSizes) specSizes.textContent = card.getAttribute('data-sizes') || '';
     if (specFrames) specFrames.textContent = card.getAttribute('data-frames') || '';
     if (specMat) specMat.textContent = card.getAttribute('data-mat') || '';
