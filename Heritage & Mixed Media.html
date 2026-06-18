@@ -7,6 +7,109 @@
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif}img{max-width:100%;display:block}a{color:inherit}
 .nav{position:fixed;inset:0 0 auto 0;z-index:10;height:58px;display:flex;align-items:center;justify-content:space-between;padding:0 28px;background:rgba(8,7,5,.78);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.08);font-family:Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;font-size:11px}
 .brand strong{display:block;color:#fff;letter-spacing:.22em;font-size:15px}.brand span{color:var(--gold);font-size:9px}.nav-links{display:flex;gap:28px;align-items:center}.shop{border:1px solid var(--gold);padding:11px 18px;color:var(--gold);text-decoration:none}
+
+/* ── STANDARD NAV ───────────────────────────── */
+body::before{content:"";display:block;height:66px}
+.site-nav-standard{
+  position:fixed!important;
+  top:0!important;
+  left:0!important;
+  right:0!important;
+  height:66px!important;
+  z-index:9999!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:28px!important;
+  padding:0 clamp(16px,4vw,44px)!important;
+  background:rgba(14,12,9,.94)!important;
+  border-bottom:1px solid rgba(185,138,59,.18)!important;
+  backdrop-filter:blur(14px)!important;
+  -webkit-backdrop-filter:blur(14px)!important;
+}
+.nav-logo-standard{
+  display:flex!important;
+  flex-direction:column!important;
+  text-decoration:none!important;
+  color:#f4eee5!important;
+  line-height:1!important;
+  min-width:max-content!important;
+}
+.nav-logo-name-standard{
+  font-family:Arial,Helvetica,sans-serif!important;
+  font-size:18px!important;
+  font-weight:700!important;
+  letter-spacing:.24em!important;
+  text-transform:uppercase!important;
+}
+.nav-logo-sub-standard{
+  margin-top:7px!important;
+  color:#b9934b!important;
+  font-family:Arial,Helvetica,sans-serif!important;
+  font-size:9px!important;
+  letter-spacing:.26em!important;
+  text-transform:uppercase!important;
+}
+.nav-links-standard{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:flex-end!important;
+  gap:clamp(18px,2vw,34px)!important;
+}
+.nav-links-standard a{
+  color:rgba(244,238,229,.78)!important;
+  text-decoration:none!important;
+  font-family:Arial,Helvetica,sans-serif!important;
+  font-size:12px!important;
+  font-weight:700!important;
+  letter-spacing:.18em!important;
+  text-transform:uppercase!important;
+  white-space:nowrap!important;
+}
+.nav-links-standard a:hover{color:#f4eee5!important}
+.nav-shop-standard{
+  color:#d5b365!important;
+  border:1px solid rgba(213,179,101,.62)!important;
+  padding:14px 22px!important;
+}
+.nav-toggle-standard{
+  display:none!important;
+  width:42px!important;
+  height:42px!important;
+  border:1px solid rgba(213,179,101,.36)!important;
+  background:transparent!important;
+  cursor:pointer!important;
+}
+.nav-toggle-standard span{
+  display:block!important;
+  width:20px!important;
+  height:2px!important;
+  margin:5px auto!important;
+  background:#f4eee5!important;
+}
+
+@media(max-width:1040px){
+  body::before{height:64px}
+  .site-nav-standard{height:64px!important}
+  .nav-toggle-standard{display:block!important}
+  .nav-links-standard{
+    position:fixed!important;
+    top:64px!important;
+    left:0!important;
+    right:0!important;
+    display:none!important;
+    flex-direction:column!important;
+    align-items:flex-start!important;
+    gap:0!important;
+    padding:18px 24px 24px!important;
+    background:rgba(14,12,9,.98)!important;
+    border-bottom:1px solid rgba(185,138,59,.22)!important;
+  }
+  .site-nav-standard.is-open .nav-links-standard{display:flex!important}
+  .nav-links-standard a{width:100%!important;padding:14px 0!important}
+  .nav-shop-standard{width:auto!important;margin-top:8px!important;padding:13px 18px!important}
+}
+
 .hero{min-height:86vh;display:flex;align-items:end;padding:120px 7vw 90px;background:linear-gradient(90deg,rgba(0,0,0,.84),rgba(0,0,0,.36),rgba(0,0,0,.76)),linear-gradient(0deg,rgba(9,8,6,1),rgba(9,8,6,0) 45%),url('assets/jennette-s-pier-mixed-media.jpg') center/cover no-repeat}
 .hero-inner{max-width:760px}.eyebrow{margin:0 0 14px;font-family:Arial,sans-serif;text-transform:uppercase;letter-spacing:.28em;color:var(--gold);font-size:11px;font-weight:700}
 h1,h2,h3{margin:0;font-weight:400;line-height:.95}h1{font-size:clamp(52px,8vw,112px);letter-spacing:-.045em}h2{font-size:clamp(36px,5vw,68px);letter-spacing:-.04em}h3{font-size:30px;letter-spacing:-.03em}p{color:var(--muted);line-height:1.75;font-size:16px}.hero p{max-width:650px;color:#e8dfd1}
@@ -22,7 +125,28 @@ h1,h2,h3{margin:0;font-weight:400;line-height:.95}h1{font-size:clamp(52px,8vw,11
 @media(max-width:1000px){.intro-grid,.featured-grid,.confidence-inner{grid-template-columns:1fr}.collection-cards,.work-grid,.steps,.confidence-list{grid-template-columns:1fr 1fr}.feature-large img,.feature-stack img{height:auto}}
 @media(max-width:680px){.nav{position:static;height:auto;padding:18px;align-items:flex-start;gap:12px}.nav-links{gap:12px;flex-wrap:wrap;font-size:9px}.hero{min-height:75vh;padding:80px 24px 50px}.intro,.collection-nav,.featured,.collection-section,.workflow,.footer-cta,.confidence{padding:64px 24px}.collection-cards,.work-grid,.steps,.confidence-list{grid-template-columns:1fr}h1{font-size:54px}footer{display:block}}
 </style></head><body>
-<header class="nav"><div class="brand"><strong>Dan Sproul</strong><span>Fine Art Photography</span></div><nav class="nav-links"><a href="https://dsproul.com/">Home</a><a href="https://dsproul.com/art-collections.html">Collections</a><a href="https://dsproul.com/for-designers.html">For Designers</a><a href="mailto:sproulphoto@gmail.com">Contact</a><a class="shop" href="https://dansproul.com/" target="_blank" rel="noopener">Shop ↗</a></nav></header>
+<nav class="site-nav-standard" aria-label="Primary navigation">
+  <a href="/" class="nav-logo-standard" aria-label="Dan Sproul Fine Art Photography home">
+    <span class="nav-logo-name-standard">Dan Sproul</span>
+    <span class="nav-logo-sub-standard">Fine Art Photography</span>
+  </a>
+
+  <button class="nav-toggle-standard" aria-label="Open navigation menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <div class="nav-links-standard">
+    <a href="/">Home</a>
+    <a href="best-sellers.html">Best Sellers</a>
+    <a href="art-collections.html">Collections</a>
+    <a href="about-dan-sproul.html">About</a>
+    <a href="in-your-space.html">In Your Space</a>
+    <a href="for-designers.html">For Designers</a>
+    <a href="https://dansproul.com" target="_blank" rel="noopener" class="nav-shop-standard">Shop Prints</a>
+  </div>
+</nav>
 <section class="hero"><div class="hero-inner"><p class="eyebrow">Mixed Media Collections</p><h1>Regional artwork with a sense of place.</h1><p>Curated mixed media art by Dan Sproul blending vintage maps, typography, regional landmarks, wildlife, and layered textures for hospitality, residential, commercial, lodge, and coastal interiors.</p><div class="btns"><a class="btn primary" href="#collections">Explore Collections</a><a class="btn" href="mailto:sproulphoto@gmail.com?subject=Mixed%20Media%20Artwork%20Mockup%20Request">Request Mockup</a></div></div></section>
 <section class="intro"><div class="intro-grid"><div><p class="eyebrow">Designer Resource</p><h2>Mixed media artwork selected by interior atmosphere, not just subject.</h2></div><div><p>This page organizes mixed media mockups into designer-facing directions: Coastal Cartography, Rustic Modern Lodge, Heritage America, Southern Heritage, Vintage State & Wildlife, and Agricultural & Rural Heritage.</p><p>Each image links directly to its corresponding artwork listing. The structure can work as a curated mixed media landing page now and later expand into standalone collection pages for the strongest directions.</p></div></div></section>
 <section class="collection-nav" id="collections"><div class="section-heading center"><p class="eyebrow">Collection Architecture</p><h2>Curated directions for hospitality, residential, and commercial interiors.</h2><p>These groupings help buyers and designers understand where each artwork naturally belongs.</p></div><div class="collection-cards"><div class="collection-card"><p class="eyebrow">8 pieces</p><h3>Coastal Cartography</h3><p>Vintage coastal maps, piers, lighthouses, and shoreline imagery for beach homes, boutique hotels, lake houses, and coastal rentals.</p><a href="#coastal-cartography">Explore direction →</a></div><div class="collection-card"><p class="eyebrow">4 pieces</p><h3>Rustic Modern Lodge</h3><p>Mountain landscapes, cabins, lake heritage, and wilderness cartography for lodge, resort, cabin, and retreat interiors.</p><a href="#rustic-modern-lodge">Explore direction →</a></div><div class="collection-card"><p class="eyebrow">8 pieces</p><h3>Heritage America</h3><p>Regional cityscapes, historic places, local typography, and layered Americana for restaurants, offices, and commercial interiors.</p><a href="#heritage-america">Explore direction →</a></div><div class="collection-card"><p class="eyebrow">2 pieces</p><h3>Southern Heritage</h3><p>Historic southern locations, garden imagery, and soft regional textures for boutique hospitality and residential spaces.</p><a href="#southern-heritage">Explore direction →</a></div><div class="collection-card"><p class="eyebrow">4 pieces</p><h3>Vintage State &amp; Wildlife</h3><p>Birds, wildlife, maps, and natural-history inspired mixed media for collected residential and nature-focused interiors.</p><a href="#vintage-state-wildlife">Explore direction →</a></div><div class="collection-card"><p class="eyebrow">2 pieces</p><h3>Agricultural &amp; Rural Heritage</h3><p>Farm, barn, rural newspaper, and agricultural heritage artwork for country businesses, farmhouse interiors, and rural hospitality.</p><a href="#agricultural-rural-heritage">Explore direction →</a></div></div></section>
@@ -40,4 +164,18 @@ h1,h2,h3{margin:0;font-weight:400;line-height:.95}h1{font-size:clamp(52px,8vw,11
 <section class="workflow"><div class="section-heading center"><p class="eyebrow">Designer Workflow</p><h2>Simple support for specifying mixed media artwork.</h2><p>For designers, hospitality owners, commercial spaces, or homeowners who want the artwork visualized before ordering.</p></div><div class="steps"><div class="step"><span>01</span><h3>Share Your Space</h3><p>Send room photos, dimensions, style references, or the type of atmosphere you want to create.</p></div><div class="step"><span>02</span><h3>Receive Direction</h3><p>Get curated artwork recommendations based on region, interior style, scale, and project use.</p></div><div class="step"><span>03</span><h3>Review Mockups</h3><p>See artwork placement examples, sizing direction, and alternate options before committing.</p></div><div class="step"><span>04</span><h3>Specify & Order</h3><p>Available as framed prints, canvas, acrylic, metal, and custom sizing for residential or commercial projects.</p></div></div></section>
 <section class="footer-cta"><p class="eyebrow">Project Support</p><h2>Need help choosing artwork for a regional interior?</h2><p>Send a space photo, project type, or location theme and I can recommend mixed media pieces that fit the room.</p><div class="btns" style="justify-content:center"><a class="btn primary" href="mailto:sproulphoto@gmail.com?subject=Mixed%20Media%20Artwork%20Recommendation">Email Dan</a><a class="btn" href="https://dsproul.com/for-designers.html">For Designers</a></div></section>
 <footer><span>© Dan Sproul — Mixed Media Collections</span><span>Combined page using uploaded mockups</span></footer>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var nav = document.querySelector('.site-nav-standard');
+  var toggle = document.querySelector('.nav-toggle-standard');
+
+  if (nav && toggle) {
+    toggle.addEventListener('click', function () {
+      var isOpen = nav.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+  }
+});
+</script>
+
 </body></html>
