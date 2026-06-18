@@ -401,6 +401,39 @@
       .collection-mobile-link{display:inline-flex}
     }
 
+
+    .about-dan{
+      background:var(--light-bg);
+      color:var(--light-ink);
+    }
+    .about-dan-inner{
+      max-width:1280px;
+      margin:0 auto;
+      display:grid;
+      grid-template-columns:minmax(0,.9fr) minmax(300px,1.1fr);
+      gap:clamp(34px,5vw,74px);
+      align-items:center;
+    }
+    .about-dan-panel{
+      min-height:360px;
+      padding:clamp(30px,4vw,54px);
+      display:flex;
+      flex-direction:column;
+      justify-content:flex-end;
+      background:
+        linear-gradient(to top,rgba(20,17,13,.94),rgba(20,17,13,.30)),
+        url("https://dsproul.com/hocking-hills-hidden-falls-long-exposure-dan-sproul.jpg") center/cover no-repeat;
+      color:var(--cream);
+      border:1px solid rgba(33,27,20,.12);
+    }
+    .about-dan-panel h3{font-size:clamp(34px,4vw,56px)}
+    .about-dan-panel p{margin-top:12px;color:var(--cream-soft);line-height:1.8;font-size:14px}
+    .about-dan-copy h2{font-size:clamp(36px,5vw,66px)}
+    .about-dan-copy p{margin-top:18px;color:rgba(33,27,20,.70);line-height:1.9;font-size:15px}
+    .about-dan-copy .eyebrow{color:#87672d}
+    .about-dan-copy .btn{color:var(--light-ink);border-color:rgba(33,27,20,.24)}
+    .about-dan-copy .btn:hover{color:#87672d;border-color:#87672d}
+
     .mockups{background:var(--deep)}
     .mock-feature{
       max-width:1280px;
@@ -577,7 +610,7 @@
       .nav-shop-standard{width:auto!important;margin-top:8px!important;padding:13px 18px!important}
       .hero{min-height:76vh}
       .trust-strip,.path-grid,.seller-grid,.collection-grid,.mock-strip,.env-grid,.buy-grid,.footer-grid{grid-template-columns:1fr!important}
-      .section-head,.quick-head,.mock-feature,.designer{grid-template-columns:1fr}
+      .section-head,.quick-head,.mock-feature,.designer,.about-dan-inner{grid-template-columns:1fr}
       .image-card.feature{grid-column:auto;min-height:420px}
       .image-card,.collection-card{min-height:330px}
       .service-grid{grid-template-columns:1fr}
@@ -827,8 +860,8 @@
   <div class="trust-strip">
     <div><strong>8,500+</strong> Images Available</div>
     <div><strong>Free</strong> Room Mockups</div>
-    <div><strong>Framed</strong> Canvas &amp; Metal Prints</div>
-    <div><strong>Ships</strong> Ready To Hang</div>
+    <div><strong>Multiple</strong> Print Formats</div>
+    <div><strong>Ready</strong> To Hang Options</div>
   </div>
 
   <section class="quick-paths" id="start-here">
@@ -1074,6 +1107,26 @@
     </div>
   </section>
 
+  <section class="section-pad about-dan" id="about-dan-preview">
+    <div class="about-dan-inner">
+      <div class="about-dan-panel">
+        <p class="eyebrow">Ohio-based artist</p>
+        <h3>Based in Ohio. Photographed across America.</h3>
+        <p>Atmospheric landscapes, wildlife, waterfalls, coastlines, forests, and mountain light selected for homes and interior spaces.</p>
+      </div>
+      <div class="about-dan-copy">
+        <p class="eyebrow">About Dan Sproul</p>
+        <h2>Nature artwork with atmosphere, place, and a quiet sense of connection.</h2>
+        <p>Dan Sproul is a fine art photographer based in Lima, Ohio, creating atmospheric landscape, wildlife, coastal, waterfall, and nature artwork for homes, collectors, and interior designers.</p>
+        <p>His work explores quiet natural places across the United States — from Ohio, the Great Lakes, and Appalachians to Alaska, the Rockies, the Pacific Coast, and beyond. The goal is simple: artwork that brings calm, warmth, and a stronger connection to place into the rooms people live in.</p>
+        <div class="btns">
+          <a class="btn primary" href="about-dan-sproul.html">Learn More About Dan</a>
+          <a class="btn" href="ohio-nature-photography-prints.html">Explore Ohio Artwork</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="section-pad mockups" id="in-space-preview">
     <div class="mock-feature">
       <div class="mock-image">
@@ -1170,8 +1223,8 @@
     </div>
     <div>
       <p class="eyebrow">For designers and projects</p>
-      <h2>Designer and project support is available when you need it.</h2>
-      <p>For larger homes, design projects, healthcare spaces, hospitality interiors, senior living communities, offices, and wellness environments, Dan can help narrow imagery, sizing, format, and room mockup options.</p>
+      <h2>Need help with a larger project?</h2>
+      <p>For larger homes, interior design projects, healthcare spaces, hospitality environments, senior living communities, offices, and wellness environments, Dan can help narrow imagery, sizing, format, and room mockup options.</p>
       <div class="service-grid">
         <div><strong>Mockups</strong> Preview artwork in a real room</div>
         <div><strong>Curated Sets</strong> Cohesive groups by palette and mood</div>
@@ -1186,8 +1239,8 @@
 
   <section class="contact-slim" id="contact">
     <p class="eyebrow">Get in touch</p>
-    <h2>Need help choosing artwork?</h2>
-    <p class="contact-note">Available for print questions, room mockups, licensing, and interior design projects</p>
+    <h2>Not sure what will work best in your space?</h2>
+    <p class="contact-note">Send a room photo and I can help suggest artwork, sizing, and formats</p>
     <a class="contact-email" href="mailto:sproulphoto@gmail.com">sproulphoto@gmail.com</a>
     <div class="contact-mini-grid">
       <div class="contact-mini-card">
@@ -1251,6 +1304,7 @@
         <a href="coastal-atmosphere.html">Coastal Atmosphere</a>
         <a href="wellness-waters-collection.html">Wellness Waters</a>
         <a href="heritage-mixed-media.html">Heritage &amp; Mixed Media</a>
+        <a href="about-dan-sproul.html">About Dan Sproul</a>
         <a href="mailto:sproulphoto@gmail.com">Email Dan</a>
       </div>
     </div>
