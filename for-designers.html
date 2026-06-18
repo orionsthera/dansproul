@@ -34,27 +34,6 @@
 html{scroll-behavior:smooth}
 body{background:var(--black);color:var(--off-white);font-family:'Jost',sans-serif;font-weight:300;letter-spacing:.04em;overflow-x:hidden}
 
-/* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:24px 56px;background:linear-gradient(to bottom,rgba(8,8,7,.96) 0%,transparent 100%)}
-.nav-logo{text-decoration:none}
-.nav-logo-name{display:block;font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:300;letter-spacing:.18em;text-transform:uppercase;color:var(--off-white)}
-.nav-logo-sub{display:block;font-size:.5rem;letter-spacing:.35em;text-transform:uppercase;color:var(--accent);margin-top:2px}
-.nav-links{display:flex;gap:28px;list-style:none;align-items:center}
-.nav-links a{color:var(--off-white);text-decoration:none;font-size:.62rem;font-weight:200;letter-spacing:.2em;text-transform:uppercase;transition:color .3s}
-.nav-links a:hover{color:var(--accent)}
-.nav-links a.nav-shop{border:1px solid rgba(181,146,74,.4);padding:6px 16px;color:var(--accent)}
-.nav-links a.nav-shop:hover{background:rgba(181,146,74,.12)}
-.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;padding:8px;cursor:pointer;z-index:300}
-.hamburger span{display:block;width:24px;height:1px;background:var(--off-white);transition:transform .3s,opacity .3s}
-.hamburger.active span:nth-child(1){transform:translateY(6px) rotate(45deg)}
-.hamburger.active span:nth-child(2){opacity:0}
-.hamburger.active span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
-.mobile-nav{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(8,8,7,.98);z-index:250;flex-direction:column;align-items:center;justify-content:center;gap:32px}
-.mobile-nav.open{display:flex}
-.mobile-nav a{color:var(--off-white);text-decoration:none;font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;letter-spacing:.1em;transition:color .3s}
-.mobile-nav a:hover{color:var(--accent)}
-.mobile-nav .close-btn{position:absolute;top:28px;right:28px;background:none;border:none;color:var(--off-white);font-size:1.5rem;cursor:pointer;padding:8px}
-
 /* HERO */
 .hero{height:90vh;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;text-align:center}
 .hero-bg{position:absolute;inset:0;background-image:url('hospitality-mockup-hotel-lobby-bnw-mountains.jpg');background-size:cover;background-position:center 30%;filter:brightness(.35) saturate(.7)}
@@ -971,7 +950,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
       "@type": "WebPage",
       "@id": "https://dsproul.com/for-designers.html#webpage",
       "url": "https://dsproul.com/for-designers.html",
-      "name": "Fine Art Photography",
+      "name": "Fine Art Photography for Interior Designers | Dan Sproul",
       "description": "Fine art photography and mixed media artwork by Dan Sproul for interior designers, healthcare, hospitality, office, wellness, and residential interiors.",
       "author": {
         "@id": "https://dsproul.com/#dan-sproul"
@@ -1002,13 +981,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "Collections",
-          "item": "https://dsproul.com/art-collections.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Fine Art Photography",
+          "name": "For Designers",
           "item": "https://dsproul.com/for-designers.html"
         }
       ]
@@ -1117,29 +1090,28 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
 <body>
 
 <!-- STANDARD SITE NAV -->
-<nav class="site-nav-standard" aria-label="Primary navigation">
-  <a href="index.html" class="nav-logo-standard" aria-label="Dan Sproul Fine Art Photography home">
+<nav aria-label="Primary navigation" class="site-nav-standard">
+  <a aria-label="Dan Sproul Fine Art Photography home" class="nav-logo-standard" href="/">
     <span class="nav-logo-name-standard">Dan Sproul</span>
     <span class="nav-logo-sub-standard">Fine Art Photography</span>
   </a>
 
-  <button class="nav-toggle-standard" aria-label="Open navigation menu" aria-expanded="false">
+  <button aria-expanded="false" aria-label="Open navigation menu" class="nav-toggle-standard" type="button">
     <span></span><span></span><span></span>
   </button>
 
   <div class="nav-links-standard">
-    <a href="index.html">Home</a>
+    <a href="/">Home</a>
     <a href="best-sellers.html">Best Sellers</a>
     <a href="art-collections.html">Collections</a>
+    <a href="about-dan-sproul.html">About</a>
     <a href="in-your-space.html">In Your Space</a>
     <a href="for-designers.html">For Designers</a>
-    <a href="#contact">Contact</a>
-    <a href="https://dansproul.com" target="_blank" rel="noopener" class="nav-shop-standard">Shop Prints</a>
+    <a class="nav-shop-standard" href="https://dansproul.com" target="_blank" rel="noopener">Shop Prints</a>
   </div>
 </nav>
 
 
-<!-- NAV -->
 <!-- HERO -->
 <div class="hero">
   <div class="hero-bg"></div>
@@ -1898,20 +1870,6 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
 
 <!-- FOOTER -->
 <script>
-(function(){
-  var ham = document.getElementById('hamburger');
-  var nav = document.getElementById('mobileNav');
-  var cls = document.getElementById('mobileClose');
-  if(!ham||!nav||!cls) return;
-  function openMenu(){ nav.classList.add('open'); ham.classList.add('active'); document.body.style.overflow='hidden'; }
-  function closeMenu(){ nav.classList.remove('open'); ham.classList.remove('active'); document.body.style.overflow=''; }
-  ham.addEventListener('click', openMenu);
-  cls.addEventListener('click', closeMenu);
-  nav.addEventListener('click', function(e){ if(e.target===nav) closeMenu(); });
-  nav.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', closeMenu); });
-  document.addEventListener('keydown', function(e){ if(e.key==='Escape'){ closeMenu(); closeFDLightbox(); } });
-})();
-
 function openFDLightbox(card){
   var img = card.querySelector('img');
   var lb  = document.getElementById('fd-lightbox');
@@ -1956,13 +1914,13 @@ function closeFDLightbox(){
 
 
 
-<div id="contact" class="footer-seo">
+<div class="footer-seo">
   <div class="footer-grid">
     <div><h3>Shop By Room</h3><a href="https://dansproul.com/collections/bedroom+wall+art+calming+nature+landscape+prints">Bedroom Wall Art</a><a href="in-your-space.html">Art In Your Space</a><a href="https://dansproul.com/collections/office+wall+art+inspiring+landscape+prints">Office Wall Art</a><a href="https://dansproul.com/art/dining+room">Dining Room Art</a><a href="https://dansproul.com/art/wellness">Wellness Space Prints</a></div>
     <div><h3>Shop By Subject</h3><a href="https://dansproul.com/art/mountains">Mountain Prints</a><a href="https://dansproul.com/art/forest">Forest Photography</a><a href="https://dansproul.com/art/coastal">Coastal Wall Art</a><a href="https://dansproul.com/art/waterfalls">Waterfall Prints</a><a href="https://dansproul.com/art/wildlife">Wildlife Prints</a></div>
     <div><h3>Shop By Mood</h3><a href="quiet-earth-collection.html">Quiet Earth Collection</a><a href="monochrome-stillness.html">Black &amp; White Prints</a><a href="https://dansproul.com/art/autumn">Warm Autumn Light</a><a href="https://dansproul.com/art/fog">Fog &amp; Mist Photography</a><a href="https://dansproul.com/art/calm">Calming Nature Prints</a></div>
-    <div><h3>Shop By Location</h3><a href="alaska-photography-prints.html">Alaska Prints</a><a href="colorado-photography-prints.html">Colorado Wall Art</a><a href="oregon-coast-photography-prints.html">Oregon Coast Prints</a><a href="smoky-mountains-photography-prints.html">Smoky Mountains Art</a><a href="https://dansproul.com/art/badlands">Badlands Wildlife Prints</a></div>
-    <div><h3>More Collections</h3><a href="best-sellers.html">Best Sellers</a><a href="art-collections.html">Curated Photography Collections</a><a href="for-designers.html">For Interior Designers</a><a href="heritage-mixed-media.html">Heritage &amp; Mixed Media</a><a href="coastal-atmosphere.html">Coastal Atmosphere</a><a href="wellness-waters-collection.html">Wellness Waters</a><a href="mailto:sproulphoto@gmail.com">Email Dan</a></div>
+    <div><h3>Shop By Location</h3><a href="ohio-nature-photography-prints.html">Ohio Nature Photography Prints</a><a href="alaska-photography-prints.html">Alaska Photography Prints</a><a href="colorado-photography-prints.html">Colorado Wall Art</a><a href="oregon-coast-photography-prints.html">Oregon Coast Prints</a></div>
+    <div><h3>More Collections</h3><a href="about-dan-sproul.html">About Dan Sproul</a><a href="best-sellers.html">Best Sellers</a><a href="art-collections.html">Curated Photography Collections</a><a href="for-designers.html">For Interior Designers</a><a href="heritage-mixed-media.html">Heritage &amp; Mixed Media</a><a href="coastal-atmosphere.html">Coastal Atmosphere</a><a href="wellness-waters-collection.html">Wellness Waters</a><a href="mailto:sproulphoto@gmail.com">Email Dan</a></div>
   </div>
   <footer class="footer-bottom">© 2026 Dan Sproul Fine Art Photography · Original landscape photography and heritage-inspired mixed media artwork by Dan Sproul, based in Lima, Ohio · Prints ship worldwide</footer>
 </div>
