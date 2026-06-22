@@ -939,6 +939,232 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
   .install-grid{grid-template-columns:1fr}
 }
 
+
+/* FOR DESIGNERS UX REORDER + RESOURCE LIBRARY REFINEMENTS */
+.designer-resource-intro{
+  background:#0b0a08;
+  padding:84px 56px;
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+}
+.designer-resource-intro .resource-head{
+  max-width:860px;
+  margin:0 auto 46px;
+  text-align:center;
+}
+.designer-resource-intro .resource-head .section-label{
+  justify-content:center;
+  margin-bottom:26px;
+}
+.designer-resource-intro .resource-head p:not(.section-label){
+  max-width:720px;
+  margin:0 auto;
+  color:rgba(242,239,232,.58);
+  font-size:.78rem;
+  line-height:2;
+}
+.designer-resource-grid{
+  max-width:1120px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:3px;
+}
+.designer-resource-card{
+  display:block;
+  text-decoration:none;
+  color:var(--off-white);
+  background:#0f0d0a;
+  border:1px solid rgba(181,146,74,.14);
+  overflow:hidden;
+  transition:transform .32s ease,border-color .32s ease,background .32s ease;
+}
+.designer-resource-card:hover{
+  transform:translateY(-5px);
+  border-color:rgba(181,146,74,.48);
+  background:#15110d;
+}
+.designer-resource-image{
+  height:185px;
+  overflow:hidden;
+  background:#14100c;
+}
+.designer-resource-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  filter:brightness(.86) saturate(.92);
+  transition:transform .65s cubic-bezier(.25,.46,.45,.94),filter .35s ease;
+}
+.designer-resource-card:hover .designer-resource-image img{
+  transform:scale(1.035);
+  filter:brightness(.98) saturate(1);
+}
+.designer-resource-copy{
+  padding:30px 28px 32px;
+}
+.designer-resource-copy span{
+  display:block;
+  color:var(--accent);
+  font-size:.52rem;
+  letter-spacing:.3em;
+  text-transform:uppercase;
+  margin-bottom:15px;
+}
+.designer-resource-copy h3{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(1.75rem,3vw,2.35rem);
+  font-weight:300;
+  line-height:1.06;
+  margin-bottom:13px;
+}
+.designer-resource-copy p{
+  color:rgba(242,239,232,.58);
+  font-size:.72rem;
+  line-height:1.9;
+  margin-bottom:22px;
+}
+.designer-resource-link{
+  color:var(--accent)!important;
+  font-size:.56rem!important;
+  letter-spacing:.24em!important;
+  text-transform:uppercase!important;
+  margin:0!important;
+}
+.mockup-callout{
+  background:#f2efe8;
+  color:#171512;
+  padding:72px 56px;
+  border-top:1px solid rgba(181,146,74,.18);
+  border-bottom:1px solid rgba(181,146,74,.18);
+}
+.mockup-callout-wrap{
+  max-width:1120px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:46px;
+  align-items:center;
+}
+.mockup-callout .section-label{
+  color:#8f7137;
+  margin-bottom:22px;
+}
+.mockup-callout h2{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(2.25rem,4vw,3.6rem);
+  line-height:1.05;
+  font-weight:400;
+  margin-bottom:18px;
+}
+.mockup-callout h2 em{color:#8f7137;font-style:italic}
+.mockup-callout p{
+  max-width:720px;
+  color:#51483d;
+  font-size:.82rem;
+  line-height:1.95;
+}
+.mockup-callout .btn-solid{
+  min-width:240px;
+  text-align:center;
+}
+.designer-use-section{
+  background:#0b0a08;
+  padding:84px 56px;
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+}
+.designer-use-grid{
+  max-width:1120px;
+  margin:46px auto 0;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:2px;
+}
+.designer-use-card{
+  background:#0f0d0a;
+  border:1px solid rgba(181,146,74,.12);
+  padding:32px 28px;
+  min-height:168px;
+}
+.designer-use-card span{
+  display:block;
+  font-family:'Cormorant Garamond',serif;
+  color:rgba(181,146,74,.28);
+  font-size:2.4rem;
+  line-height:1;
+  margin-bottom:16px;
+}
+.designer-use-card h3{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.35rem;
+  font-weight:300;
+  margin-bottom:10px;
+}
+.designer-use-card p{
+  color:rgba(242,239,232,.56);
+  font-size:.68rem;
+  line-height:1.85;
+}
+.spec-section{
+  padding-top:82px!important;
+  padding-bottom:86px!important;
+}
+.spec-section > .section-label,
+.spec-section > .section-title,
+.spec-section > p{
+  max-width:1120px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.spec-cards.spec-cards-three{
+  max-width:1120px;
+  margin-left:auto;
+  margin-right:auto;
+  gap:14px!important;
+}
+.spec-cards.spec-cards-three .spec-card{
+  border:1px solid rgba(181,146,74,.14);
+}
+.spec-cards.spec-cards-three .spec-card-preview{
+  height:118px!important;
+  border-bottom:1px solid rgba(181,146,74,.12);
+}
+.spec-cards.spec-cards-three .spec-card-body{
+  min-height:250px!important;
+  padding:28px 26px 30px!important;
+}
+.spec-card-title{
+  font-size:1.38rem!important;
+}
+.spec-card-desc{
+  margin-bottom:22px!important;
+}
+.ai-about-artist{
+  padding-top:82px!important;
+  padding-bottom:84px!important;
+}
+.ai-about-artist .section-title{
+  font-size:clamp(2rem,3.6vw,3.3rem)!important;
+}
+#about{
+  display:none!important;
+}
+@media(max-width:1040px){
+  .designer-resource-grid,.designer-use-grid{grid-template-columns:1fr}
+  .mockup-callout-wrap{grid-template-columns:1fr}
+  .mockup-callout .btn-solid{width:max-content}
+}
+@media(max-width:680px){
+  .designer-resource-intro,.mockup-callout,.designer-use-section{padding:64px 24px}
+  .designer-resource-intro .resource-head{text-align:left}
+  .designer-resource-intro .resource-head .section-label{justify-content:flex-start}
+  .designer-resource-intro .resource-head p:not(.section-label){margin-left:0}
+  .designer-resource-image{height:170px}
+  .mockup-callout .btn-solid{width:100%}
+}
+
 </style>
 <script type="application/ld+json">
 {
@@ -1200,10 +1426,10 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
   <div class="hero-content">
     <p class="hero-eyebrow">For Interior Designers &amp; Commercial Clients</p>
     <h1 class="hero-title">Art That <em>Transforms</em><br/>Any Space</h1>
-    <p class="hero-sub">Museum-quality fine art photography for hospitality, healthcare, corporate, and residential interiors. Custom sizing, multiple formats, and digital licensing available.</p>
+    <p class="hero-sub">Environmental artwork resources for healthcare, hospitality, senior living, wellness, and residential interiors. Mockups, spec sheets, custom sizing, and trade support available.</p>
     <div class="hero-ctas">
       <a href="mailto:sproulphoto@gmail.com?subject=Mockup%20Request" class="btn btn-solid">Request a Mockup</a>
-      <a href="#formats" class="btn btn-out">View Print Formats</a>
+      <a href="#designer-resources" class="btn btn-out">Browse Resources</a>
     </div>
   </div>
 </div>
@@ -1218,69 +1444,149 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
   <span class="trust-item">Ships Worldwide</span>
 </div>
 
-<!-- SELECTED INSTALLATIONS -->
-<section class="selected-installations" id="selected-installations">
-  <div class="install-head">
-    <p class="section-label">Selected Installations</p>
-    <h2 class="section-title">Artwork used in <em>healthcare, hospitality, residential, and professional interiors.</em></h2>
-    <p>Selected installations and project types help designers, procurement teams, and commercial buyers understand where Dan Sproul's artwork has already been placed and how it can support future interiors.</p>
+<section class="designer-resource-intro" id="designer-resources">
+  <div class="resource-head">
+    <p class="section-label">Designer Resources</p>
+    <h2 class="section-title">Artwork resources for <em>healthcare, hospitality, and senior living interiors.</em></h2>
+    <p>Start with the environment closest to your project. Each resource is organized by use case, atmosphere, artwork scale, and design application so artwork can be evaluated quickly for real interiors.</p>
   </div>
-  <div class="install-grid">
-    <article class="install-card">
-      <span>Healthcare</span>
-      <h3>Ohio State Wexner Medical Center</h3>
-      <p>Healthcare installation featuring calming nature imagery for patient-facing environments. Additional installation photography will be added when available.</p>
-    </article>
-    <article class="install-card">
-      <span>Hospitality</span>
-      <h3>Drury Inn Projects</h3>
-      <p>Hospitality artwork used in hotel environments to support public spaces, guest experience, and large-format interior artwork programs.</p>
-    </article>
-    <article class="install-card">
-      <span>Residential</span>
-      <h3>Private Homes</h3>
-      <p>Fine art photography and mixed media artwork selected for living rooms, bedrooms, entryways, lake homes, and quiet luxury residential interiors.</p>
-    </article>
-    <article class="install-card">
-      <span>Commercial</span>
-      <h3>Businesses & Offices</h3>
-      <p>Artwork for executive offices, waiting areas, conference rooms, workplace interiors, and professional environments needing atmosphere and visual calm.</p>
-    </article>
-  </div>
-</section>
 
+  <div class="designer-resource-grid">
+    <a class="designer-resource-card" href="healthcare-artwork.html">
+      <div class="designer-resource-image">
+        <img src="healthcare injection area oncology mockup waterfall.jpg" alt="Healthcare room with calming waterfall artwork by Dan Sproul" loading="lazy" decoding="async">
+      </div>
+      <div class="designer-resource-copy">
+        <span>Healthcare &amp; Wellness</span>
+        <h3>Healthcare Artwork</h3>
+        <p>Calming landscape photography for waiting rooms, oncology spaces, patient rooms, wellness environments, therapy offices, and healthcare corridors.</p>
+        <span class="designer-resource-link">Explore Healthcare →</span>
+      </div>
+    </a>
 
-<!-- INTRO -->
-<section class="section" id="about">
-  <div class="intro-grid">
-    <div class="intro-img">
-      <img src="room-drury-inn-hotel-lobby-st-louis.jpg" alt="Fine art photography installed in a Drury Inn hotel lobby by Dan Sproul"/ loading="eager" decoding="async" fetchpriority="high">
-    </div>
-    <div class="intro-text">
-      <p class="section-label">About the Work</p>
-      <h2 class="section-title">Original artwork built for<br/><em>professional interiors</em></h2>
-      <p>Dan Sproul creates original fine art photography and mixed media artwork for hospitality, healthcare, corporate, and residential interiors across the United States. From the misty cliffs of the Oregon Coast to the glacier lakes of Alaska, each image is crafted with the final print in mind — sharp, rich, and designed to hold at large format.</p>
-      <p><strong>Every file is print-optimized</strong> at full resolution with careful attention to tonal range, shadow detail, and color accuracy across canvas, metal, acrylic, and fine art paper. The result is wall art that looks as intentional at 60 inches as it does at 20.</p>
-      <p>Dan works directly with designers, procurement teams, and project managers to source the right images for each space — whether that's a single statement piece or a curated collection across an entire floor or facility.</p>
-      <a href="mailto:sproulphoto@gmail.com?subject=Mockup%20Request" class="btn btn-out" style="margin-top:24px;display:inline-block">Request a Mockup</a>
-    </div>
+    <a class="designer-resource-card" href="hospitality-artwork.html">
+      <div class="designer-resource-image">
+        <img src="hospitality corridor mockup.jpg" alt="Hospitality interior with atmospheric landscape artwork by Dan Sproul" loading="lazy" decoding="async">
+      </div>
+      <div class="designer-resource-copy">
+        <span>Hospitality &amp; Resort</span>
+        <h3>Hospitality Artwork</h3>
+        <p>Atmospheric artwork for boutique hotel lobbies, guest suites, resort lounges, restaurants, spa retreats, corridors, and destination properties.</p>
+        <span class="designer-resource-link">Explore Hospitality →</span>
+      </div>
+    </a>
+
+    <a class="designer-resource-card" href="senior-living-artwork.html">
+      <div class="designer-resource-image">
+        <img src="lima-ohio-lake-senior-living-room.png" alt="Senior living lounge with warm nature artwork by Dan Sproul" loading="lazy" decoding="async">
+      </div>
+      <div class="designer-resource-copy">
+        <span>Senior Living</span>
+        <h3>Senior Living Artwork</h3>
+        <p>Residential-feeling nature artwork for resident suites, gathering spaces, dining rooms, wellness areas, corridors, lounges, and community interiors.</p>
+        <span class="designer-resource-link">Explore Senior Living →</span>
+      </div>
+    </a>
   </div>
 </section>
 
-<section class="section ai-about-artist" id="about-artist">
-  <div class="ai-two-col">
+
+<section class="mockup-callout" id="mockup-request">
+  <div class="mockup-callout-wrap">
     <div>
-      <p class="section-label">About the Artist</p>
-      <h2 class="section-title">Original artwork selected for atmosphere, interior use, and emotional fit.</h2>
+      <p class="section-label">Complimentary Mockups</p>
+      <h2>Need help <em>visualizing artwork</em> in a project?</h2>
+      <p>Send a rendering, room photo, floorplan, finish palette, or project direction. I can provide artwork recommendations and mockup previews to help evaluate scale, mood, placement, and visual fit before you specify or purchase.</p>
     </div>
-    <div>
-      <p>Dan Sproul is an Ohio-based fine art photographer and mixed media artist creating original artwork for hospitality, healthcare, corporate, wellness, and residential interiors across the United States.</p>
-      <p>His collections are organized by how a space should feel: quiet, restorative, atmospheric, grounded, memorable, or refined. That makes each page easier to use as a design resource instead of a traditional photography portfolio.</p>
-    </div>
+    <a href="mailto:sproulphoto@gmail.com?subject=Mockup%20Request" class="btn btn-solid">Request a Mockup</a>
   </div>
 </section>
 
-<!-- COMMERCIAL ARTWORK SOLUTIONS -->
+<section class="spec-section" id="resources">
+  <p class="section-label">Designer Resources</p>
+  <h2 class="section-title">Download the <em>Spec Sheets</em></h2>
+  <p style="font-size:.78rem;line-height:2;color:rgba(242,239,232,.5);max-width:640px;margin-bottom:0">Procurement-ready PDF resources for project files, client presentations, sourcing submissions, and design review.</p>
+  <div class="spec-cards spec-cards-three">
+
+    <div class="spec-card">
+      <div class="spec-card-preview" onclick="openFDLightboxSrc('DanSproul_HealthcareArtwork_SpecSheet_Page1.jpg','Healthcare Artwork Spec Sheet — Dan Sproul')" style="cursor:zoom-in">
+        <img src="DanSproul_HealthcareArtwork_SpecSheet_Page1.jpg" alt="Healthcare artwork spec sheet preview" loading="lazy" decoding="async">
+        <div class="preview-hint">Click to enlarge</div>
+      </div>
+      <div class="spec-card-body">
+        <div>
+          <p class="spec-card-tag">Healthcare &amp; Wellness</p>
+          <h3 class="spec-card-title">Healthcare Art <em>Resource</em></h3>
+          <p class="spec-card-desc">Artwork guidance for waiting rooms, oncology centers, consultation rooms, wellness spaces, patient rooms, therapy offices, and healthcare corridors.</p>
+        </div>
+        <div class="spec-card-footer">
+          <a href="DanSproul_HealthcareSpec.pdf" download="DanSproul_HealthcareSpec.pdf" class="btn-download">
+            <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Spec Sheet
+          </a>
+          <span class="spec-file-info">PDF resource</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="spec-card">
+      <div class="spec-card-preview" onclick="openFDLightboxSrc('DanSproul_HospitalitySpec.jpg','Hospitality Artwork Spec Sheet — Dan Sproul')" style="cursor:zoom-in">
+        <img src="DanSproul_HospitalitySpec.jpg" alt="Hospitality artwork spec sheet preview" loading="lazy" decoding="async">
+        <div class="preview-hint">Click to enlarge</div>
+      </div>
+      <div class="spec-card-body">
+        <div>
+          <p class="spec-card-tag">Hospitality &amp; Commercial</p>
+          <h3 class="spec-card-title">Hospitality Art <em>Systems</em></h3>
+          <p class="spec-card-desc">Artwork guidance for hotel lobbies, guest suites, corridors, restaurants, wellness spaces, spa retreats, lounges, and multi-site hospitality programs.</p>
+        </div>
+        <div class="spec-card-footer">
+          <a href="DanSproul_HospitalitySpec.pdf" download="DanSproul_HospitalitySpec.pdf" class="btn-download">
+            <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Spec Sheet
+          </a>
+          <span class="spec-file-info">PDF resource</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="spec-card">
+      <div class="spec-card-preview" onclick="openFDLightboxSrc('Dan_Sproul_Senior_Living_Artwork_Spec_Sheet-sample.jpg','Senior Living Artwork Spec Sheet — Dan Sproul')" style="cursor:zoom-in">
+        <img src="Dan_Sproul_Senior_Living_Artwork_Spec_Sheet-sample.jpg" alt="Senior living artwork spec sheet preview" loading="lazy" decoding="async">
+        <div class="preview-hint">Click to enlarge</div>
+      </div>
+      <div class="spec-card-body">
+        <div>
+          <p class="spec-card-tag">Senior Living</p>
+          <h3 class="spec-card-title">Senior Living <em>Artwork</em></h3>
+          <p class="spec-card-desc">Artwork guidance for resident rooms, lounges, dining rooms, gathering areas, corridors, wellness spaces, memory care areas, and community interiors.</p>
+        </div>
+        <div class="spec-card-footer">
+          <a href="DanSproul_SeniorLivingSpec.pdf" download="DanSproul_SeniorLivingSpec.pdf" class="btn-download">
+            <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Spec Sheet
+          </a>
+          <span class="spec-file-info">PDF resource</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="designer-use-section" id="how-designers-use-this-resource">
+  <p class="section-label">How Designers Use This Resource</p>
+  <h2 class="section-title">Built for presentations, sourcing, and specification.</h2>
+  <div class="designer-use-grid">
+    <article class="designer-use-card"><span>01</span><h3>Concept Development</h3><p>Use the collections to establish mood, atmosphere, subject direction, and artwork language early in the design process.</p></article>
+    <article class="designer-use-card"><span>02</span><h3>Client Presentations</h3><p>Spec sheets, mockups, and curated collections help clients understand scale, placement, and emotional fit before ordering.</p></article>
+    <article class="designer-use-card"><span>03</span><h3>FF&amp;E Specification</h3><p>Artwork can be reviewed by room type, format, size, and installation setting for healthcare, hospitality, and senior living interiors.</p></article>
+    <article class="designer-use-card"><span>04</span><h3>Procurement Packages</h3><p>Downloadable PDFs and direct links make it easier to organize project files, purchasing options, and presentation resources.</p></article>
+    <article class="designer-use-card"><span>05</span><h3>Multi-Room Programs</h3><p>Curated image families can be used across guest rooms, corridors, patient spaces, dining areas, lounges, and public environments.</p></article>
+    <article class="designer-use-card"><span>06</span><h3>Trade Support</h3><p>Designers can request trade pricing, custom sizing, licensing, and project guidance for designer-managed or direct print production.</p></article>
+  </div>
+</section>
+
 <section class="commercial-solutions" id="commercial-artwork-solutions">
   <div class="solutions-head">
     <p class="section-label">Commercial Artwork Solutions</p>
@@ -1314,6 +1620,62 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
     </a>
   </div>
 </section>
+<section class="selected-installations" id="selected-installations">
+  <div class="install-head">
+    <p class="section-label">Selected Installations</p>
+    <h2 class="section-title">Artwork used in <em>healthcare, hospitality, residential, and professional interiors.</em></h2>
+    <p>Selected installations and project types help designers, procurement teams, and commercial buyers understand where Dan Sproul's artwork has already been placed and how it can support future interiors.</p>
+  </div>
+  <div class="install-grid">
+    <article class="install-card">
+      <span>Healthcare</span>
+      <h3>Ohio State Wexner Medical Center</h3>
+      <p>Healthcare installation featuring calming nature imagery for patient-facing environments. Additional installation photography will be added when available.</p>
+    </article>
+    <article class="install-card">
+      <span>Hospitality</span>
+      <h3>Drury Inn Projects</h3>
+      <p>Hospitality artwork used in hotel environments to support public spaces, guest experience, and large-format interior artwork programs.</p>
+    </article>
+    <article class="install-card">
+      <span>Residential</span>
+      <h3>Private Homes</h3>
+      <p>Fine art photography and mixed media artwork selected for living rooms, bedrooms, entryways, lake homes, and quiet luxury residential interiors.</p>
+    </article>
+    <article class="install-card">
+      <span>Commercial</span>
+      <h3>Businesses & Offices</h3>
+      <p>Artwork for executive offices, waiting areas, conference rooms, workplace interiors, and professional environments needing atmosphere and visual calm.</p>
+    </article>
+  </div>
+</section>
+
+
+<!-- SELECTED INSTALLATIONS -->
+
+
+
+<!-- INTRO -->
+<section class="section" id="about">
+  <div class="intro-grid">
+    <div class="intro-img">
+      <img src="room-drury-inn-hotel-lobby-st-louis.jpg" alt="Fine art photography installed in a Drury Inn hotel lobby by Dan Sproul"/ loading="eager" decoding="async" fetchpriority="high">
+    </div>
+    <div class="intro-text">
+      <p class="section-label">About the Work</p>
+      <h2 class="section-title">Original artwork built for<br/><em>professional interiors</em></h2>
+      <p>Dan Sproul creates original fine art photography and mixed media artwork for hospitality, healthcare, corporate, and residential interiors across the United States. From the misty cliffs of the Oregon Coast to the glacier lakes of Alaska, each image is crafted with the final print in mind — sharp, rich, and designed to hold at large format.</p>
+      <p><strong>Every file is print-optimized</strong> at full resolution with careful attention to tonal range, shadow detail, and color accuracy across canvas, metal, acrylic, and fine art paper. The result is wall art that looks as intentional at 60 inches as it does at 20.</p>
+      <p>Dan works directly with designers, procurement teams, and project managers to source the right images for each space — whether that's a single statement piece or a curated collection across an entire floor or facility.</p>
+      <a href="mailto:sproulphoto@gmail.com?subject=Mockup%20Request" class="btn btn-out" style="margin-top:24px;display:inline-block">Request a Mockup</a>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- COMMERCIAL ARTWORK SOLUTIONS -->
+
 
 
 <!-- PRICING ANCHOR — removes friction for designers evaluating cost -->
@@ -1606,77 +1968,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
 </section>
 
 <!-- SPEC SHEET DOWNLOADS — placed here so designers see it right after the gallery -->
-<section class="spec-section" id="resources">
-  <p class="section-label">Designer Resources</p>
-  <h2 class="section-title">Download the <em>Spec Sheets</em></h2>
-  <p style="font-size:.78rem;line-height:2;color:rgba(242,239,232,.5);max-width:640px;margin-bottom:0">Procurement-ready PDF resources for project files, client presentations, sourcing submissions, and design review.</p>
-  <div class="spec-cards spec-cards-three">
 
-    <div class="spec-card">
-      <div class="spec-card-preview" onclick="openFDLightboxSrc('DanSproul_HealthcareArtwork_SpecSheet_Page1.jpg','Healthcare Artwork Spec Sheet — Dan Sproul')" style="cursor:zoom-in">
-        <img src="DanSproul_HealthcareArtwork_SpecSheet_Page1.jpg" alt="Healthcare artwork spec sheet preview" loading="lazy" decoding="async">
-        <div class="preview-hint">Click to enlarge</div>
-      </div>
-      <div class="spec-card-body">
-        <div>
-          <p class="spec-card-tag">Healthcare &amp; Wellness</p>
-          <h3 class="spec-card-title">Healthcare Art <em>Resource</em></h3>
-          <p class="spec-card-desc">Artwork guidance for waiting rooms, oncology centers, consultation rooms, wellness spaces, patient rooms, therapy offices, and healthcare corridors.</p>
-        </div>
-        <div class="spec-card-footer">
-          <a href="DanSproul_HealthcareSpec.pdf" download="DanSproul_HealthcareSpec.pdf" class="btn-download">
-            <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Download Spec Sheet
-          </a>
-          <span class="spec-file-info">PDF resource</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="spec-card">
-      <div class="spec-card-preview" onclick="openFDLightboxSrc('DanSproul_HospitalitySpec.jpg','Hospitality Artwork Spec Sheet — Dan Sproul')" style="cursor:zoom-in">
-        <img src="DanSproul_HospitalitySpec.jpg" alt="Hospitality artwork spec sheet preview" loading="lazy" decoding="async">
-        <div class="preview-hint">Click to enlarge</div>
-      </div>
-      <div class="spec-card-body">
-        <div>
-          <p class="spec-card-tag">Hospitality &amp; Commercial</p>
-          <h3 class="spec-card-title">Hospitality Art <em>Systems</em></h3>
-          <p class="spec-card-desc">Artwork guidance for hotel lobbies, guest suites, corridors, restaurants, wellness spaces, spa retreats, lounges, and multi-site hospitality programs.</p>
-        </div>
-        <div class="spec-card-footer">
-          <a href="DanSproul_HospitalitySpec.pdf" download="DanSproul_HospitalitySpec.pdf" class="btn-download">
-            <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Download Spec Sheet
-          </a>
-          <span class="spec-file-info">PDF resource</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="spec-card">
-      <div class="spec-card-preview" onclick="openFDLightboxSrc('Dan_Sproul_Senior_Living_Artwork_Spec_Sheet-sample.jpg','Senior Living Artwork Spec Sheet — Dan Sproul')" style="cursor:zoom-in">
-        <img src="Dan_Sproul_Senior_Living_Artwork_Spec_Sheet-sample.jpg" alt="Senior living artwork spec sheet preview" loading="lazy" decoding="async">
-        <div class="preview-hint">Click to enlarge</div>
-      </div>
-      <div class="spec-card-body">
-        <div>
-          <p class="spec-card-tag">Senior Living</p>
-          <h3 class="spec-card-title">Senior Living <em>Artwork</em></h3>
-          <p class="spec-card-desc">Artwork guidance for resident rooms, lounges, dining rooms, gathering areas, corridors, wellness spaces, memory care areas, and community interiors.</p>
-        </div>
-        <div class="spec-card-footer">
-          <a href="DanSproul_SeniorLivingSpec.pdf" download="DanSproul_SeniorLivingSpec.pdf" class="btn-download">
-            <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Download Spec Sheet
-          </a>
-          <span class="spec-file-info">PDF resource</span>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
 
 <!-- FD LIGHTBOX -->
 <div id="fd-lightbox" onclick="if(event.target===this)closeFDLightbox()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.94);z-index:1000;align-items:center;justify-content:center;cursor:zoom-out">
@@ -1722,48 +2014,9 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
 </section>
 
 
-<section class="section ai-resource-section" id="artwork-by-environment">
-  <div class="ai-section-head">
-    <p class="section-label">Artwork by Environment</p>
-    <h2 class="section-title">Artwork organized by atmosphere and interior use.</h2>
-    <p>This page helps connect artwork to the spaces where it works best: healthcare, hospitality, office, wellness, and quiet residential interiors.</p>
-  </div>
-  <div class="ai-env-grid">
-    <div class="ai-env-card">
-      <span>Healthcare &amp; Wellness</span>
-      <h3>Calming nature photography and restorative landscape artwork.</h3>
-      <p>Calming nature photography and restorative landscape artwork.</p>
-    </div>
 
-    <div class="ai-env-card">
-      <span>Hospitality</span>
-      <h3>Atmospheric photography for boutique hotels and lodge interiors.</h3>
-      <p>Atmospheric photography for boutique hotels and lodge interiors.</p>
-    </div>
 
-    <div class="ai-env-card">
-      <span>Office</span>
-      <h3>Executive office wall art and calming workplace artwork.</h3>
-      <p>Executive office wall art and calming workplace artwork.</p>
-    </div>
 
-    <div class="ai-env-card">
-      <span>Residential</span>
-      <h3>Quiet luxury wall art and atmospheric interiors.</h3>
-      <p>Quiet luxury wall art and atmospheric interiors.</p>
-    </div>
-  </div>
-</section>
-
-<section class="section buying-help-block" id="buying-help">
-  <p class="section-label">Buying Guidance</p>
-  <h2 class="section-title">Best for hospitality, healthcare, corporate offices, and residential design.</h2>
-  <div class="buying-help-grid">
-    <div><h3>Best for</h3><p>Hotel lobbies, guest rooms, healthcare corridors, wellness spaces, executive offices, waiting rooms, restaurants, senior living interiors, and refined residential projects.</p></div>
-    <div><h3>Suggested sizes</h3><p>24×36 for smaller rooms, 30×40 above consoles or beds, 40×60 for statement walls, and 48×72 or larger for hospitality, healthcare, and corporate feature areas.</p></div>
-    <div><h3>Strongest formats</h3><p>Framed paper for refined interiors, canvas for warmth, metal for high-traffic spaces, acrylic for polished modern settings, and licensed files for designer-managed production.</p></div>
-  </div>
-</section>
 
 <!-- FORMATS -->
 <section class="formats-section section" id="formats">
@@ -1968,20 +2221,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
 </section>
 
 
-<section class="section ai-linking-hub" id="related-collection-paths">
-  <div class="ai-section-head">
-    <p class="section-label">Related Collection Paths</p>
-    <h2 class="section-title">Explore related fine art photography collections by mood and interior use.</h2>
-  </div>
-  <div class="ai-link-grid">
-    <a href="quiet-earth-collection.html"><strong>Quiet Earth</strong><span>Healthcare artwork, wellness interiors, waiting rooms, calming offices, visual calm.</span></a>
-    <a href="mountain-light-collection.html"><strong>Mountain Light</strong><span>Hospitality interiors, lodge modern artwork, resort wall art, executive offices.</span></a>
-    <a href="monochrome-stillness.html"><strong>Monochrome Stillness</strong><span>Black-and-white office artwork, healthcare corridors, minimalist interiors, executive spaces.</span></a>
-    <a href="coastal-atmosphere.html"><strong>Coastal Atmosphere</strong><span>Quiet luxury coastal artwork, boutique hospitality, refined residential interiors.</span></a>
-    <a href="forest-light-collection.html"><strong>Forest Light</strong><span>Biophilic artwork, restorative woodland imagery, organic modern interiors.</span></a>
-    <a href="heritage-mixed-media.html"><strong>Heritage &amp; Mixed Media</strong><span>Regional artwork, lodge interiors, restaurants, hospitality spaces, local identity.</span></a>
-  </div>
-</section>
+
 
 
 <!-- DESIGNER FAQ -->
@@ -2016,6 +2256,32 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
   </div>
 </section>
 
+<section class="section ai-linking-hub" id="related-collection-paths">
+  <div class="ai-section-head">
+    <p class="section-label">Related Collection Paths</p>
+    <h2 class="section-title">Explore related fine art photography collections by mood and interior use.</h2>
+  </div>
+  <div class="ai-link-grid">
+    <a href="quiet-earth-collection.html"><strong>Quiet Earth</strong><span>Healthcare artwork, wellness interiors, waiting rooms, calming offices, visual calm.</span></a>
+    <a href="mountain-light-collection.html"><strong>Mountain Light</strong><span>Hospitality interiors, lodge modern artwork, resort wall art, executive offices.</span></a>
+    <a href="monochrome-stillness.html"><strong>Monochrome Stillness</strong><span>Black-and-white office artwork, healthcare corridors, minimalist interiors, executive spaces.</span></a>
+    <a href="coastal-atmosphere.html"><strong>Coastal Atmosphere</strong><span>Quiet luxury coastal artwork, boutique hospitality, refined residential interiors.</span></a>
+    <a href="forest-light-collection.html"><strong>Forest Light</strong><span>Biophilic artwork, restorative woodland imagery, organic modern interiors.</span></a>
+    <a href="heritage-mixed-media.html"><strong>Heritage &amp; Mixed Media</strong><span>Regional artwork, lodge interiors, restaurants, hospitality spaces, local identity.</span></a>
+  </div>
+</section>
+<section class="section ai-about-artist" id="about-artist">
+  <div class="ai-two-col">
+    <div>
+      <p class="section-label">About the Artist</p>
+      <h2 class="section-title">Original artwork selected for atmosphere, interior use, and emotional fit.</h2>
+    </div>
+    <div>
+      <p>Dan Sproul is an Ohio-based fine art photographer and mixed media artist creating original artwork for hospitality, healthcare, corporate, wellness, and residential interiors across the United States.</p>
+      <p>His collections are organized by how a space should feel: quiet, restorative, atmospheric, grounded, memorable, or refined. That makes each page easier to use as a design resource instead of a traditional photography portfolio.</p>
+    </div>
+  </div>
+</section>
 <!-- CONTACT -->
 <div class="contact-section" id="contact">
   <p class="section-label" style="justify-content:center">Work Together</p>
@@ -2035,7 +2301,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
       <p class="cc-val">Lima, Ohio<br/><span style="font-size:.65rem;color:var(--muted)">Ships worldwide · All 50 states</span></p>
     </div>
   </div>
-  <a href="mailto:sproulphoto@gmail.com" class="btn btn-solid" style="font-size:.65rem;padding:16px 52px">Get in Touch</a>
+  <a href="mailto:sproulphoto@gmail.com?subject=Mockup%20Request" class="btn btn-solid" style="font-size:.65rem;padding:16px 52px">Request a Mockup</a>
 </div>
 
 <!-- FOOTER -->
