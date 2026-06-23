@@ -533,57 +533,7 @@
     .contact-mini-card:last-child{border-right:0}
     .contact-mini-card span{display:block;color:var(--gold);font-size:10px;letter-spacing:.22em;text-transform:uppercase;margin-bottom:9px}
     .contact-mini-card p,.contact-mini-card a{color:var(--paper);text-decoration:none;font-family:"Cormorant Garamond",Georgia,serif;font-size:18px;line-height:1.5}
-
-    /* ── STANDARD FOOTER ───────────────────────────── */
-    .footer-seo{
-      background:#100e0b!important;
-      padding:62px clamp(22px,6vw,76px) 36px!important;
-      border-top:1px solid rgba(185,138,59,.22)!important;
-    }
-    .footer-grid{
-      display:grid!important;
-      grid-template-columns:repeat(5,1fr)!important;
-      gap:28px!important;
-      max-width:1380px!important;
-      margin:0 auto!important;
-    }
-    .footer-grid h3{
-      margin:0 0 13px!important;
-      color:#d5b365!important;
-      font-family:"Cormorant Garamond",Georgia,serif!important;
-      font-size:21px!important;
-      line-height:1.2!important;
-      font-weight:400!important;
-      text-transform:none!important;
-      letter-spacing:0!important;
-    }
-    .footer-grid a{
-      display:block!important;
-      text-decoration:none!important;
-      color:rgba(244,238,229,.62)!important;
-      font-family:Arial,Helvetica,sans-serif!important;
-      font-size:13px!important;
-      line-height:2!important;
-      text-transform:none!important;
-      letter-spacing:0!important;
-    }
-    .footer-grid a:hover{color:#f4eee5!important}
-    .footer-bottom{
-      display:block!important;
-      max-width:1380px!important;
-      margin:40px auto 0!important;
-      padding-top:28px!important;
-      border-top:1px solid rgba(185,138,59,.22)!important;
-      color:rgba(244,238,229,.32)!important;
-      font-family:Arial,Helvetica,sans-serif!important;
-      font-size:10px!important;
-      letter-spacing:.18em!important;
-      line-height:1.8!important;
-      text-align:center!important;
-      text-transform:uppercase!important;
-    }
-
-    @media (max-width:1180px){
+@media (max-width:1180px){
       .seller-grid{grid-template-columns:repeat(2,1fr)}
       .image-card.feature{grid-column:span 2}
       .collection-grid,.env-grid{grid-template-columns:repeat(2,1fr)}
@@ -609,7 +559,8 @@
       .nav-links-standard a{width:100%!important;padding:14px 0!important}
       .nav-shop-standard{width:auto!important;margin-top:8px!important;padding:13px 18px!important}
       .hero{min-height:76vh}
-      .trust-strip,.path-grid,.seller-grid,.collection-grid,.mock-strip,.env-grid,.buy-grid,.footer-grid{grid-template-columns:1fr!important}
+      .trust-strip,.path-grid,.seller-grid,.collection-grid,.mock-strip,.env-grid,.buy-grid,
+
       .section-head,.quick-head,.mock-feature,.designer,.about-dan-inner{grid-template-columns:1fr}
       .image-card.feature{grid-column:auto;min-height:420px}
       .image-card,.collection-card{min-height:330px}
@@ -618,7 +569,192 @@
       .contact-mini-card{border-right:0;border-bottom:1px solid var(--line)}
       .contact-mini-card:last-child{border-bottom:0}
     }
-  </style>
+  
+/* HOMEPAGE FOOTER + MOBILE FIXES */
+.site-footer{
+  display:block!important;
+  width:100%!important;
+  background:#100e0b!important;
+  padding:62px clamp(22px,6vw,76px) 36px!important;
+  border-top:1px solid rgba(185,138,59,.22)!important;
+  color:#f4eee5!important;
+}
+.site-footer .footer-grid{
+  display:grid!important;
+  grid-template-columns:repeat(5,minmax(0,1fr))!important;
+  gap:32px!important;
+  max-width:1380px!important;
+  margin:0 auto!important;
+  background:transparent!important;
+  border:0!important;
+}
+.site-footer .footer-grid > div{
+  display:block!important;
+  min-width:0!important;
+}
+.site-footer .footer-grid h3{
+  display:block!important;
+  margin:0 0 13px!important;
+  color:#d5b365!important;
+  font-family:"Cormorant Garamond",Georgia,serif!important;
+  font-size:21px!important;
+  line-height:1.2!important;
+  font-weight:400!important;
+  text-transform:none!important;
+  letter-spacing:0!important;
+}
+.site-footer .footer-grid a{
+  display:block!important;
+  width:auto!important;
+  text-decoration:none!important;
+  color:rgba(244,238,229,.66)!important;
+  font-family:Arial,Helvetica,sans-serif!important;
+  font-size:13px!important;
+  line-height:2!important;
+  text-transform:none!important;
+  letter-spacing:0!important;
+  margin:0 0 2px!important;
+  padding:0!important;
+  border:0!important;
+  background:transparent!important;
+  float:none!important;
+  clear:both!important;
+  white-space:normal!important;
+}
+.site-footer .footer-grid a:hover{
+  color:#f4eee5!important;
+}
+.site-footer .footer-bottom{
+  display:block!important;
+  max-width:1380px!important;
+  margin:40px auto 0!important;
+  padding-top:28px!important;
+  border-top:1px solid rgba(185,138,59,.22)!important;
+  color:rgba(244,238,229,.34)!important;
+  font-family:Arial,Helvetica,sans-serif!important;
+  font-size:10px!important;
+  letter-spacing:.18em!important;
+  line-height:1.8!important;
+  text-align:center!important;
+  text-transform:uppercase!important;
+}
+
+/* Phase 2 homepage mobile tightening */
+@media(max-width:768px){
+  h1{
+    font-size:clamp(2.55rem,10vw,3.7rem)!important;
+    line-height:1.02!important;
+  }
+  .section-head h2,
+  .quick-head h2,
+  .mock-copy h2,
+  .about-dan-copy h2,
+  .designer h2,
+  .contact-slim h2,
+  h2{
+    font-size:clamp(2rem,8vw,3rem)!important;
+    line-height:1.08!important;
+  }
+}
+@media(max-width:680px){
+  .section-pad,
+  .quick-paths,
+  .contact-slim{
+    padding:48px 22px!important;
+  }
+  .hero{
+    min-height:70vh!important;
+    padding:72px 22px 48px!important;
+  }
+  .hero-copy,
+  .section-head p,
+  .quick-head p,
+  .mock-copy p,
+  .about-dan-copy p,
+  .designer p,
+  p{
+    font-size:14px!important;
+    line-height:1.65!important;
+  }
+  .btns{
+    gap:9px!important;
+    margin-top:20px!important;
+  }
+  .btn{
+    width:100%!important;
+    text-align:center!important;
+    padding:12px 14px!important;
+    font-size:10px!important;
+  }
+  .trust-strip,
+  .path-grid,
+  .seller-grid,
+  .mock-strip,
+  .env-grid,
+  .buy-grid,
+  .service-grid,
+  .contact-mini-grid{
+    grid-template-columns:1fr!important;
+  }
+  .trust-strip div{
+    min-height:auto!important;
+    padding:14px 18px!important;
+    border-right:0!important;
+    border-bottom:1px solid var(--line)!important;
+  }
+  .trust-strip strong{
+    font-size:22px!important;
+  }
+  .section-head,
+  .quick-head,
+  .mock-feature,
+  .designer,
+  .about-dan-inner{
+    grid-template-columns:1fr!important;
+    gap:24px!important;
+  }
+  .image-card,
+  .image-card.feature,
+  .collection-slide,
+  .mock-tile{
+    min-height:300px!important;
+  }
+  .path,
+  .env-card,
+  .buy-card{
+    min-height:auto!important;
+    padding:22px!important;
+  }
+  .card-text{
+    padding:18px!important;
+  }
+  .site-footer{
+    padding:48px 22px 30px!important;
+  }
+  .site-footer .footer-grid{
+    grid-template-columns:1fr!important;
+    gap:30px!important;
+  }
+  .site-footer .footer-grid h3{
+    margin-bottom:10px!important;
+  }
+  .site-footer .footer-grid a{
+    display:block!important;
+    margin-bottom:7px!important;
+    line-height:1.75!important;
+  }
+  .site-footer .footer-bottom{
+    text-align:left!important;
+    margin-top:34px!important;
+  }
+}
+@media(min-width:681px) and (max-width:1040px){
+  .site-footer .footer-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+}
+
+</style>
 
   <script type="application/ld+json">
 {
@@ -1258,61 +1394,61 @@
     </div>
   </section>
 
-  <div id="footer" class="footer-seo">
-    <div class="footer-grid">
-      <div>
-        <h3>Shop By Room</h3>
-        <a href="https://dansproul.com/collections/bedroom+wall+art+calming+nature+landscape+prints">Bedroom Wall Art</a>
-        <a href="in-your-space.html">Art In Your Space</a>
-        <a href="https://dansproul.com/collections/office+wall+art+inspiring+landscape+prints">Office Wall Art</a>
-        <a href="https://dansproul.com/art/dining+room">Dining Room Art</a>
-        <a href="https://dansproul.com/art/wellness">Wellness Space Prints</a>
-      </div>
-
-      <div>
-        <h3>Shop By Subject</h3>
-        <a href="https://dansproul.com/art/mountains">Mountain Prints</a>
-        <a href="https://dansproul.com/art/forest">Forest Photography</a>
-        <a href="https://dansproul.com/art/coastal">Coastal Wall Art</a>
-        <a href="https://dansproul.com/art/waterfalls">Waterfall Prints</a>
-        <a href="https://dansproul.com/art/wildlife">Wildlife Prints</a>
-      </div>
-
-      <div>
-        <h3>Shop By Mood</h3>
-        <a href="quiet-earth-collection.html">Quiet Earth Collection</a>
-        <a href="monochrome-stillness.html">Black &amp; White Prints</a>
-        <a href="https://dansproul.com/art/autumn">Warm Autumn Light</a>
-        <a href="https://dansproul.com/art/fog">Fog &amp; Mist Photography</a>
-        <a href="https://dansproul.com/art/calm">Calming Nature Prints</a>
-      </div>
-
-      <div>
-        <h3>Shop By Location</h3>
-        <a href="ohio-nature-photography-prints.html">Ohio Nature Photography Prints</a>
-        <a href="alaska-photography-prints.html">Alaska Photography Prints</a>
-        <a href="colorado-photography-prints.html">Colorado Wall Art</a>
-        <a href="oregon-coast-photography-prints.html">Oregon Coast Prints</a>
-        <a href="smoky-mountains-photography-prints.html">Smoky Mountains Art</a>
-      </div>
-
-      <div>
-        <h3>More Collections</h3>
-        <a href="best-sellers.html">Best Sellers</a>
-        <a href="art-collections.html">Curated Photography Collections</a>
-        <a href="for-designers.html">For Interior Designers</a>
-        <a href="coastal-atmosphere.html">Coastal Atmosphere</a>
-        <a href="wellness-waters-collection.html">Wellness Waters</a>
-        <a href="heritage-mixed-media.html">Heritage &amp; Mixed Media</a>
-        <a href="about-dan-sproul.html">About Dan Sproul</a>
-        <a href="mailto:sproulphoto@gmail.com">Email Dan</a>
-      </div>
+<footer id="footer" class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <h3>Shop By Room</h3>
+      <a href="https://dansproul.com/collections/bedroom+wall+art+calming+nature+landscape+prints">Bedroom Wall Art</a>
+      <a href="in-your-space.html">Art In Your Space</a>
+      <a href="https://dansproul.com/collections/office+wall+art+inspiring+landscape+prints">Office Wall Art</a>
+      <a href="https://dansproul.com/art/dining+room">Dining Room Art</a>
+      <a href="https://dansproul.com/art/wellness">Wellness Space Prints</a>
     </div>
 
-    <footer class="footer-bottom">
-      © 2026 Dan Sproul Fine Art Photography · Original landscape photography and heritage-inspired mixed media artwork by Dan Sproul, based in Lima, Ohio · Prints ship worldwide
-    </footer>
+    <div>
+      <h3>Shop By Subject</h3>
+      <a href="https://dansproul.com/art/mountains">Mountain Prints</a>
+      <a href="https://dansproul.com/art/forest">Forest Photography</a>
+      <a href="https://dansproul.com/art/coastal">Coastal Wall Art</a>
+      <a href="https://dansproul.com/art/waterfalls">Waterfall Prints</a>
+      <a href="https://dansproul.com/art/wildlife">Wildlife Prints</a>
+    </div>
+
+    <div>
+      <h3>Shop By Mood</h3>
+      <a href="quiet-earth-collection.html">Quiet Earth Collection</a>
+      <a href="monochrome-stillness.html">Black &amp; White Prints</a>
+      <a href="https://dansproul.com/art/autumn">Warm Autumn Light</a>
+      <a href="https://dansproul.com/art/fog">Fog &amp; Mist Photography</a>
+      <a href="https://dansproul.com/art/calm">Calming Nature Prints</a>
+    </div>
+
+    <div>
+      <h3>Shop By Location</h3>
+      <a href="ohio-nature-photography-prints.html">Ohio Nature Photography Prints</a>
+      <a href="alaska-photography-prints.html">Alaska Photography Prints</a>
+      <a href="colorado-photography-prints.html">Colorado Wall Art</a>
+      <a href="oregon-coast-photography-prints.html">Oregon Coast Prints</a>
+      <a href="smoky-mountains-photography-prints.html">Smoky Mountains Art</a>
+    </div>
+
+    <div>
+      <h3>More Collections</h3>
+      <a href="best-sellers.html">Best Sellers</a>
+      <a href="art-collections.html">Curated Photography Collections</a>
+      <a href="for-designers.html">For Interior Designers</a>
+      <a href="coastal-atmosphere.html">Coastal Atmosphere</a>
+      <a href="wellness-waters-collection.html">Wellness Waters</a>
+      <a href="heritage-mixed-media.html">Heritage &amp; Mixed Media</a>
+      <a href="about-dan-sproul.html">About Dan Sproul</a>
+      <a href="mailto:sproulphoto@gmail.com">Email Dan</a>
+    </div>
   </div>
+
+  <div class="footer-bottom">
+    © 2026 Dan Sproul Fine Art Photography · Original landscape photography and heritage-inspired mixed media artwork by Dan Sproul, based in Lima, Ohio · Prints ship worldwide
+  </div>
+</footer>
 
 
   <script>
@@ -1383,8 +1519,8 @@
       next.addEventListener('click', function(){ move(1); resetAutoplay(); });
       window.addEventListener('resize', function(){ renderDots(); update(); });
 
-      track.addEventListener('mouseenter', function(){ window.clearInterval(autoplay); });
-      track.addEventListener('mouseleave', startAutoplay);
+      track?.addEventListener('mouseenter', function(){ window.clearInterval(autoplay); });
+      track?.addEventListener('mouseleave', startAutoplay);
 
       renderDots();
       update();
