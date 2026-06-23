@@ -181,10 +181,6 @@ body{background:var(--black);color:var(--off-white);font-family:'Jost',sans-seri
 .cc-val a{color:var(--off-white);text-decoration:none;transition:color .3s}
 .cc-val a:hover{color:var(--accent)}
 
-/* FOOTER */
-footer{padding:28px 56px;border-top:1px solid rgba(255,255,255,.05);display:flex;justify-content:space-between;align-items:center;font-size:.54rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(242,239,232,.18);flex-wrap:wrap;gap:10px}
-footer a{color:rgba(242,239,232,.18);text-decoration:none;transition:color .3s}
-footer a:hover{color:var(--accent)}
 
 @keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
 
@@ -687,19 +683,6 @@ footer a:hover{color:var(--accent)}
 }
 
 
-/* FINAL SITEWIDE + PAGE UPDATES */
-.footer-seo{background:#100e0b;padding:62px clamp(22px,6vw,76px) 36px;border-top:1px solid rgba(185,138,59,.22)}
-.footer-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:28px;max-width:1380px;margin:0 auto}
-.footer-grid h3{margin-bottom:13px;color:#d5b365;font-family:"Cormorant Garamond",Georgia,serif;font-size:21px;font-weight:400}
-.footer-grid a{display:block;text-decoration:none;color:rgba(244,238,229,.62);font-size:13px;line-height:2;text-transform:none;letter-spacing:0}.footer-grid a:hover{color:#f4eee5}
-.footer-bottom{max-width:1380px;margin:40px auto 0;padding-top:28px;border-top:1px solid rgba(185,138,59,.22);color:rgba(244,238,229,.32);font-size:10px;letter-spacing:.18em;text-align:center;text-transform:uppercase}
-.intro-grid{max-width:1180px;margin:0 auto}.intro-img img{aspect-ratio:16/11;object-fit:cover}
-.compact-collections{padding-top:76px!important;padding-bottom:78px!important}.fd-three-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important;max-width:1060px}.compact-collections .fd-section-heading{margin-bottom:38px!important}.compact-collections .fd-collection-image{aspect-ratio:16/8.6}.compact-collections .fd-collection-content{padding:22px 22px 24px}.compact-collections .fd-collection-content h3{font-size:clamp(1.45rem,2.2vw,2rem)}.compact-collections .fd-collection-content p{font-size:.67rem;line-height:1.75}
-.hospitality-carousel-section{padding:72px 0 78px!important}.hospitality-carousel-head{margin-bottom:28px!important}.hospitality-slide{flex-basis:min(74vw,820px)!important}.hospitality-slide img{height:clamp(300px,38vw,470px)!important}.hospitality-slide-caption{padding:58px 26px 24px!important}
-.licensing-section{padding-top:72px!important;padding-bottom:78px!important}.licensing-img img{aspect-ratio:16/9!important;object-fit:cover}
-.buying-help-block{background:#f2efe8;color:#171512;border-top:1px solid rgba(181,146,74,.18);border-bottom:1px solid rgba(181,146,74,.18)}.buying-help-block .section-label,.buying-help-block .section-title{color:#171512}.buying-help-block .section-label{color:#8f7137}.buying-help-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:38px}.buying-help-grid>div{background:#fffaf3;border:1px solid rgba(40,35,30,.08);padding:30px}.buying-help-grid h3{font-family:"Cormorant Garamond",serif;font-size:1.45rem;font-weight:400;margin-bottom:12px;color:#1b1713}.buying-help-grid p{font-size:.76rem;line-height:1.9;color:#51483d}
-@media(max-width:1040px){.footer-grid{grid-template-columns:1fr}.fd-three-grid,.buying-help-grid{grid-template-columns:1fr!important}.hospitality-slide{flex-basis:88vw!important}}
-
 
 /* AI / GEO COLLECTION PAGE ADDITIONS */
 .ai-about-artist,.ai-resource-section,.ai-linking-hub{border-top:1px solid rgba(181,146,74,.14);border-bottom:1px solid rgba(181,146,74,.08)}
@@ -725,136 +708,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
 .hero,.site-header,nav{content-visibility:visible;contain-intrinsic-size:auto}
 
 
-/* ── STANDARD NAV + FOOTER SYSTEM ───────────────────────────── */
-.site-nav-standard{
-  position:fixed!important;
-  top:0!important;
-  left:0!important;
-  right:0!important;
-  height:66px!important;
-  z-index:9999!important;
-  display:flex!important;
-  align-items:center!important;
-  justify-content:space-between!important;
-  gap:28px!important;
-  padding:0 clamp(16px,4vw,44px)!important;
-  background:rgba(14,12,9,.94)!important;
-  border-bottom:1px solid rgba(185,138,59,.18)!important;
-  backdrop-filter:blur(14px)!important;
-  -webkit-backdrop-filter:blur(14px)!important;
-  box-sizing:border-box!important;
-}
-.nav-logo-standard{
-  display:flex!important;
-  flex-direction:column!important;
-  text-decoration:none!important;
-  color:#f4eee5!important;
-  line-height:1!important;
-  min-width:max-content!important;
-}
-.nav-logo-name-standard{
-  font-family:Arial,Helvetica,sans-serif!important;
-  font-size:18px!important;
-  font-weight:700!important;
-  letter-spacing:.24em!important;
-  text-transform:uppercase!important;
-}
-.nav-logo-sub-standard{
-  margin-top:7px!important;
-  color:#b9934b!important;
-  font-family:Arial,Helvetica,sans-serif!important;
-  font-size:9px!important;
-  letter-spacing:.26em!important;
-  text-transform:uppercase!important;
-}
-.nav-links-standard{
-  display:flex!important;
-  align-items:center!important;
-  justify-content:flex-end!important;
-  gap:clamp(18px,2vw,34px)!important;
-}
-.nav-links-standard a{
-  color:rgba(244,238,229,.78)!important;
-  text-decoration:none!important;
-  font-family:Arial,Helvetica,sans-serif!important;
-  font-size:12px!important;
-  font-weight:700!important;
-  letter-spacing:.18em!important;
-  text-transform:uppercase!important;
-  white-space:nowrap!important;
-}
-.nav-links-standard a:hover{
-  color:#f4eee5!important;
-}
-.nav-shop-standard{
-  color:#d5b365!important;
-  border:1px solid rgba(213,179,101,.62)!important;
-  padding:14px 22px!important;
-}
-.nav-toggle-standard{
-  display:none!important;
-  width:42px!important;
-  height:42px!important;
-  border:1px solid rgba(213,179,101,.36)!important;
-  background:transparent!important;
-  cursor:pointer!important;
-}
-.nav-toggle-standard span{
-  display:block!important;
-  width:20px!important;
-  height:2px!important;
-  margin:5px auto!important;
-  background:#f4eee5!important;
-}
-.footer-seo{
-  background:#100e0b!important;
-  padding:62px clamp(22px,6vw,76px) 36px!important;
-  border-top:1px solid rgba(185,138,59,.22)!important;
-}
-.footer-grid{
-  display:grid!important;
-  grid-template-columns:repeat(5,1fr)!important;
-  gap:28px!important;
-  max-width:1380px!important;
-  margin:0 auto!important;
-}
-.footer-grid h3{
-  margin:0 0 13px!important;
-  color:#d5b365!important;
-  font-family:"Cormorant Garamond",Georgia,serif!important;
-  font-size:21px!important;
-  line-height:1.2!important;
-  font-weight:400!important;
-  text-transform:none!important;
-  letter-spacing:0!important;
-}
-.footer-grid a{
-  display:block!important;
-  text-decoration:none!important;
-  color:rgba(244,238,229,.62)!important;
-  font-family:Arial,Helvetica,sans-serif!important;
-  font-size:13px!important;
-  line-height:2!important;
-  text-transform:none!important;
-  letter-spacing:0!important;
-}
-.footer-grid a:hover{
-  color:#f4eee5!important;
-}
-.footer-bottom{
-  display:block!important;
-  max-width:1380px!important;
-  margin:40px auto 0!important;
-  padding-top:28px!important;
-  border-top:1px solid rgba(185,138,59,.22)!important;
-  color:rgba(244,238,229,.32)!important;
-  font-family:Arial,Helvetica,sans-serif!important;
-  font-size:10px!important;
-  letter-spacing:.18em!important;
-  line-height:1.8!important;
-  text-align:center!important;
-  text-transform:uppercase!important;
-}
+
 @media (max-width:1040px){
   .site-nav-standard{
     height:64px!important;
@@ -887,9 +741,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
     margin-top:8px!important;
     padding:13px 18px!important;
   }
-  .footer-grid{
-    grid-template-columns:1fr!important;
-  }
+  
 }
 
 
@@ -1165,6 +1017,245 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
   .mockup-callout .btn-solid{width:100%}
 }
 
+
+/* FINAL FOR DESIGNERS UPDATE: TRUST, PORTRAIT SPEC SHEETS, FOOTER, MOBILE */
+.designer-trust-band{
+  background:#0b0a08;
+  padding:82px 56px;
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+}
+.designer-trust-inner{max-width:1180px;margin:0 auto}
+.designer-trust-head{max-width:820px;margin:0 auto 42px;text-align:center}
+.designer-trust-head .section-label{justify-content:center;margin-bottom:26px}
+.designer-trust-head p:not(.section-label){
+  color:rgba(242,239,232,.58);
+  font-size:.78rem;
+  line-height:2;
+  max-width:700px;
+  margin:0 auto;
+}
+.designer-trust-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:2px;
+  margin-top:44px;
+}
+.designer-trust-grid article{
+  background:#0f0d0a;
+  border:1px solid rgba(181,146,74,.14);
+  padding:32px 28px;
+  min-height:220px;
+}
+.designer-trust-grid span{
+  display:block;
+  color:rgba(181,146,74,.36);
+  font-family:'Cormorant Garamond',Georgia,serif;
+  font-size:2.4rem;
+  line-height:1;
+  margin-bottom:18px;
+}
+.designer-trust-grid h3{
+  font-family:'Cormorant Garamond',Georgia,serif;
+  font-size:1.35rem;
+  font-weight:300;
+  line-height:1.15;
+  color:var(--off-white);
+  margin-bottom:12px;
+}
+.designer-trust-grid p{
+  color:rgba(242,239,232,.56);
+  font-size:.68rem;
+  line-height:1.9;
+}
+.designer-proof-row{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:2px;
+  margin-top:3px;
+  background:rgba(181,146,74,.1);
+  border:1px solid rgba(181,146,74,.14);
+}
+.designer-proof-row div{
+  background:#100e0b;
+  padding:24px;
+  text-align:center;
+}
+.designer-proof-row strong{
+  display:block;
+  color:var(--off-white);
+  font-family:'Cormorant Garamond',Georgia,serif;
+  font-size:2.2rem;
+  font-weight:300;
+  line-height:1;
+  margin-bottom:8px;
+}
+.designer-proof-row span{
+  color:rgba(242,239,232,.48);
+  font-size:.56rem;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+}
+
+/* Portrait spec sheet cards */
+.spec-cards.spec-cards-three{
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:18px!important;
+  max-width:1120px!important;
+}
+.spec-cards.spec-cards-three .spec-card{
+  display:flex!important;
+  flex-direction:column!important;
+  background:#111009!important;
+  border:1px solid rgba(181,146,74,.16)!important;
+  min-height:100%!important;
+}
+.spec-cards.spec-cards-three .spec-card-preview{
+  width:100%!important;
+  height:auto!important;
+  aspect-ratio:8.5/11!important;
+  max-height:420px!important;
+  background:#e8e1d4!important;
+  border-bottom:1px solid rgba(181,146,74,.16)!important;
+}
+.spec-cards.spec-cards-three .spec-card-preview img{
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  object-position:top center!important;
+}
+.spec-cards.spec-cards-three .spec-card-body{
+  min-height:285px!important;
+  padding:30px 28px 32px!important;
+}
+.spec-card-title{font-size:1.42rem!important}
+
+/* Clean site footer */
+.site-footer{
+  display:block!important;
+  width:100%!important;
+  background:#100e0b!important;
+  padding:62px clamp(22px,6vw,76px) 36px!important;
+  border-top:1px solid rgba(185,138,59,.22)!important;
+  color:#f4eee5!important;
+  text-transform:none!important;
+  letter-spacing:0!important;
+  font-family:Arial,Helvetica,sans-serif!important;
+}
+.site-footer .footer-grid{
+  display:grid!important;
+  grid-template-columns:repeat(5,minmax(0,1fr))!important;
+  gap:32px!important;
+  max-width:1380px!important;
+  margin:0 auto!important;
+  background:transparent!important;
+  border:0!important;
+}
+.site-footer .footer-grid > div{display:block!important;min-width:0!important}
+.site-footer .footer-grid h3{
+  display:block!important;
+  margin:0 0 13px!important;
+  color:#d5b365!important;
+  font-family:"Cormorant Garamond",Georgia,serif!important;
+  font-size:21px!important;
+  line-height:1.2!important;
+  font-weight:400!important;
+  text-transform:none!important;
+  letter-spacing:0!important;
+}
+.site-footer .footer-grid a{
+  display:block!important;
+  width:auto!important;
+  text-decoration:none!important;
+  color:rgba(244,238,229,.66)!important;
+  font-family:Arial,Helvetica,sans-serif!important;
+  font-size:13px!important;
+  line-height:2!important;
+  text-transform:none!important;
+  letter-spacing:0!important;
+  margin:0 0 2px!important;
+  padding:0!important;
+  border:0!important;
+  background:transparent!important;
+  float:none!important;
+  white-space:normal!important;
+}
+.site-footer .footer-grid a:hover{color:#f4eee5!important}
+.site-footer .footer-bottom{
+  display:block!important;
+  max-width:1380px!important;
+  margin:40px auto 0!important;
+  padding-top:28px!important;
+  border-top:1px solid rgba(185,138,59,.22)!important;
+  color:rgba(244,238,229,.34)!important;
+  font-family:Arial,Helvetica,sans-serif!important;
+  font-size:10px!important;
+  letter-spacing:.18em!important;
+  line-height:1.8!important;
+  text-align:center!important;
+  text-transform:uppercase!important;
+}
+
+/* Preserve/repair standard nav if needed */
+.site-nav-standard{
+  position:fixed!important;top:0!important;left:0!important;right:0!important;height:66px!important;z-index:9999!important;
+  display:flex!important;align-items:center!important;justify-content:space-between!important;gap:28px!important;
+  padding:0 clamp(16px,4vw,44px)!important;background:rgba(14,12,9,.94)!important;
+  border-bottom:1px solid rgba(185,138,59,.18)!important;backdrop-filter:blur(14px)!important;-webkit-backdrop-filter:blur(14px)!important;
+}
+.nav-logo-standard{display:flex!important;flex-direction:column!important;text-decoration:none!important;color:#f4eee5!important;line-height:1!important;min-width:max-content!important}
+.nav-logo-name-standard{font-family:Arial,Helvetica,sans-serif!important;font-size:18px!important;font-weight:700!important;letter-spacing:.24em!important;text-transform:uppercase!important}
+.nav-logo-sub-standard{margin-top:7px!important;color:#b9934b!important;font-family:Arial,Helvetica,sans-serif!important;font-size:9px!important;letter-spacing:.26em!important;text-transform:uppercase!important}
+.nav-links-standard{display:flex!important;align-items:center!important;justify-content:flex-end!important;gap:clamp(18px,2vw,34px)!important}
+.nav-links-standard a{color:rgba(244,238,229,.78)!important;text-decoration:none!important;font-family:Arial,Helvetica,sans-serif!important;font-size:12px!important;font-weight:700!important;letter-spacing:.18em!important;text-transform:uppercase!important;white-space:nowrap!important}
+.nav-links-standard a:hover{color:#f4eee5!important}
+.nav-shop-standard{color:#d5b365!important;border:1px solid rgba(213,179,101,.62)!important;padding:14px 22px!important}
+.nav-toggle-standard{display:none!important;width:42px!important;height:42px!important;border:1px solid rgba(213,179,101,.36)!important;background:transparent!important;cursor:pointer!important}
+.nav-toggle-standard span{display:block!important;width:20px!important;height:2px!important;margin:5px auto!important;background:#f4eee5!important}
+
+/* Mobile pass */
+@media(max-width:1040px){
+  .site-nav-standard{height:64px!important}
+  .nav-toggle-standard{display:block!important}
+  .nav-links-standard{
+    position:fixed!important;top:64px!important;left:0!important;right:0!important;display:none!important;
+    flex-direction:column!important;align-items:flex-start!important;gap:0!important;padding:18px 24px 24px!important;
+    background:rgba(14,12,9,.98)!important;border-bottom:1px solid rgba(185,138,59,.22)!important;
+  }
+  .site-nav-standard.is-open .nav-links-standard{display:flex!important}
+  .nav-links-standard a{width:100%!important;padding:14px 0!important}
+  .nav-shop-standard{width:auto!important;margin-top:8px!important;padding:13px 18px!important}
+  .designer-trust-grid,.designer-proof-row{grid-template-columns:repeat(2,1fr)!important}
+  .site-footer .footer-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  .spec-cards.spec-cards-three{grid-template-columns:1fr!important;max-width:620px!important}
+  .spec-cards.spec-cards-three .spec-card-preview{max-height:none!important}
+}
+@media(max-width:768px){
+  h1,.hero-title{font-size:clamp(2.35rem,9vw,3.2rem)!important;line-height:1.02!important}
+  h2,.section-title{font-size:clamp(1.9rem,7vw,2.65rem)!important;line-height:1.08!important}
+}
+@media(max-width:680px){
+  .section,.designer-resource-intro,.mockup-callout,.designer-use-section,.selected-installations,.designer-trust-band,.spec-section,.commercial-solutions,.venues-section,.formats-section,.licensing-section,.process-section,.trade-section,.faq-designer,.ai-linking-hub,.ai-about-artist,.contact-section{
+    padding:56px 24px!important;
+  }
+  .hero{height:72vh!important;min-height:520px!important}
+  .hero-content{padding:0 24px!important}
+  p{font-size:14px!important;line-height:1.65!important}
+  .designer-trust-head,.selected-installations .install-head,.designer-resource-intro .resource-head{text-align:left!important}
+  .designer-trust-head .section-label,.selected-installations .install-head .section-label,.designer-resource-intro .resource-head .section-label{justify-content:flex-start!important}
+  .designer-trust-head p:not(.section-label){margin-left:0!important}
+  .designer-trust-grid,.designer-proof-row{grid-template-columns:1fr!important}
+  .install-grid{grid-template-columns:1fr!important}
+  .spec-cards.spec-cards-three .spec-card-body{min-height:auto!important;padding:24px 22px 26px!important}
+  .spec-cards.spec-cards-three .spec-card-preview{aspect-ratio:8.5/11!important}
+  .btn,.btn-solid,.btn-out,.btn-download{width:100%!important;text-align:center!important;justify-content:center!important}
+  .sticky-cta{display:none!important}
+  .site-footer{padding:48px 22px 30px!important}
+  .site-footer .footer-grid{grid-template-columns:1fr!important;gap:30px!important}
+  .site-footer .footer-grid a{display:block!important;margin-bottom:7px!important;line-height:1.75!important}
+  .site-footer .footer-bottom{text-align:left!important;margin-top:34px!important}
+}
+
 </style>
 <script type="application/ld+json">
 {
@@ -1201,6 +1292,15 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
       "description": "Original fine art photography and mixed media artwork for designers, hospitality interiors, healthcare spaces, corporate offices, wellness environments, and residential design projects."
     },
     {
+      "@type": "WebSite",
+      "@id": "https://dsproul.com/#website",
+      "url": "https://dsproul.com",
+      "name": "Dan Sproul Fine Art Photography",
+      "publisher": {
+        "@id": "https://dsproul.com/#organization"
+      }
+    },
+    {
       "@type": "WebPage",
       "@id": "https://dsproul.com/for-designers.html#webpage",
       "url": "https://dsproul.com/for-designers.html",
@@ -1220,7 +1320,14 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
       ],
       "primaryImageOfPage": {
         "@id": "https://dsproul.com/hospitality-mockup-hotel-lobby-bnw-mountains.jpg#image"
-      }
+      },
+      "hasPart": [
+        {"@type":"WebPageElement","name":"Designer Resources"},
+        {"@type":"WebPageElement","name":"Downloadable Spec Sheets"},
+        {"@type":"WebPageElement","name":"Selected Installations"},
+        {"@type":"WebPageElement","name":"Designer Confidence"},
+        {"@type":"WebPageElement","name":"Trade Program"}
+      ]
     },
     {
       "@type": "BreadcrumbList",
@@ -1650,6 +1757,30 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
   </div>
 </section>
 
+<section class="designer-trust-band" id="designer-trust-signals">
+  <div class="designer-trust-inner">
+    <div class="designer-trust-head">
+      <p class="section-label">Designer Confidence</p>
+      <h2 class="section-title">Artwork support for real projects, presentations, and procurement.</h2>
+      <p>These practical details help designers, art consultants, and commercial buyers evaluate artwork quickly before requesting mockups, pricing, or finished prints.</p>
+    </div>
+
+    <div class="designer-trust-grid">
+      <article><span>01</span><h3>Multiple Print Formats</h3><p>Framed prints, canvas, acrylic, metal, and fine art paper options are available for residential and commercial interiors.</p></article>
+      <article><span>02</span><h3>Large Format Ready</h3><p>Artwork can be selected for statement walls, corridors, lobbies, lounges, patient-facing rooms, and multi-piece installations.</p></article>
+      <article><span>03</span><h3>Designer Mockups</h3><p>Send a room photo, rendering, or wall dimensions to review artwork scale, placement, and visual fit before ordering.</p></article>
+      <article><span>04</span><h3>Trade-Friendly Support</h3><p>Designers can request trade pricing, custom sizing guidance, curated recommendations, and direct project support.</p></article>
+    </div>
+
+    <div class="designer-proof-row">
+      <div><strong>8,000+</strong><span>available images</span></div>
+      <div><strong>50+</strong><span>curated FAA collections</span></div>
+      <div><strong>6</strong><span>primary print formats</span></div>
+      <div><strong>U.S.</strong><span>print fulfillment</span></div>
+    </div>
+  </div>
+</section>
+
 
 <!-- SELECTED INSTALLATIONS -->
 
@@ -1659,7 +1790,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
 <section class="section" id="about">
   <div class="intro-grid">
     <div class="intro-img">
-      <img src="room-drury-inn-hotel-lobby-st-louis.jpg" alt="Fine art photography installed in a Drury Inn hotel lobby by Dan Sproul"/ loading="eager" decoding="async" fetchpriority="high">
+      <img src="room-drury-inn-hotel-lobby-st-louis.jpg" alt="Fine art photography installed in a Drury Inn hotel lobby by Dan Sproul" loading="eager" decoding="async" fetchpriority="high">
     </div>
     <div class="intro-text">
       <p class="section-label">About the Work</p>
@@ -1718,7 +1849,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
   <!-- ROW 1: Waterfall triptych spans full width — most impressive installation -->
   <div style="margin-bottom:3px">
     <div class="placement-card pzoom" style="aspect-ratio:16/7;width:100%" onclick="openFDLightbox(this)">
-      <img src="Waterfall_Series_Hospitality_Concept_DanSproul.jpg" alt="Three-piece waterfall photography series installed in luxury hotel lobby by Dan Sproul"/ loading="lazy" decoding="async">
+      <img src="Waterfall_Series_Hospitality_Concept_DanSproul.jpg" alt="Three-piece waterfall photography series installed in luxury hotel lobby by Dan Sproul" loading="lazy" decoding="async">
       <div class="placement-overlay">
         <span class="pl-venue">Hotel Lobby · Multi-Piece Installation</span>
         <p class="pl-title">Waterfall Series — Three-Piece Hospitality Installation</p>
@@ -1730,7 +1861,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
   <!-- ROW 2: Lobby Badlands (wide) + Hotel Bedroom (tall) -->
   <div style="display:grid;grid-template-columns:1.4fr 1fr;gap:3px;margin-bottom:3px">
     <div class="placement-card pzoom" style="aspect-ratio:16/10" onclick="openFDLightbox(this)">
-      <img src="hotel lobby framed art badlands sunrise.jpg" alt="Badlands sunrise large format framed canvas in luxury hotel lobby by Dan Sproul"/ loading="lazy" decoding="async">
+      <img src="hotel lobby framed art badlands sunrise.jpg" alt="Badlands sunrise large format framed canvas in luxury hotel lobby by Dan Sproul" loading="lazy" decoding="async">
       <div class="placement-overlay">
         <span class="pl-venue">Hotel Lobby · Statement Piece</span>
         <p class="pl-title">Badlands Sunrise — Hotel Lobby Canvas</p>
@@ -1738,7 +1869,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
       </div>
     </div>
     <div class="placement-card pzoom" onclick="openFDLightbox(this)">
-      <img src="hotel bedroom framed art foggy lake canada dan sproul.jpg" alt="Foggy lake Canada framed art in modern hotel bedroom by Dan Sproul"/ loading="lazy" decoding="async">
+      <img src="hotel bedroom framed art foggy lake canada dan sproul.jpg" alt="Foggy lake Canada framed art in modern hotel bedroom by Dan Sproul" loading="lazy" decoding="async">
       <div class="placement-overlay">
         <span class="pl-venue">Hotel Guest Room · Above Bed</span>
         <p class="pl-title">Foggy Lake — Hotel Bedroom</p>
@@ -1750,7 +1881,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
   <!-- ROW 3: Hotel Hallway (tall) + Mount Hood Dining (tall) + Oregon Bedroom (tall) -->
   <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:3px;margin-bottom:3px">
     <div class="placement-card pzoom" onclick="openFDLightbox(this)">
-      <img src="hotel floor framed art canada rockies landscape.jpg" alt="Canadian Rockies large format framed art in hotel corridor by Dan Sproul"/ loading="lazy" decoding="async">
+      <img src="hotel floor framed art canada rockies landscape.jpg" alt="Canadian Rockies large format framed art in hotel corridor by Dan Sproul" loading="lazy" decoding="async">
       <div class="placement-overlay">
         <span class="pl-venue">Hotel Corridor · Statement Wall</span>
         <p class="pl-title">Canadian Rockies — Hotel Corridor</p>
@@ -1758,7 +1889,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
       </div>
     </div>
     <div class="placement-card pzoom" onclick="openFDLightbox(this)">
-      <img src="mount hood sunset reflection in modern room.jpg" alt="Mount Hood sunset reflection metal print in modern dining room by Dan Sproul" style="object-position:center 20%"/ loading="lazy" decoding="async">
+      <img src="mount hood sunset reflection in modern room.jpg" alt="Mount Hood sunset reflection metal print in modern dining room by Dan Sproul" style="object-position:center 20%" loading="lazy" decoding="async">
       <div class="placement-overlay">
         <span class="pl-venue">Residential / Dining Room</span>
         <p class="pl-title">Mount Hood Reflection — Dining Room</p>
@@ -1766,7 +1897,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
       </div>
     </div>
     <div class="placement-card pzoom" onclick="openFDLightbox(this)">
-      <img src="modern bedroom framed coastal oregon scene dan sproul.jpg" alt="Oregon Coast framed print in modern dark bedroom by Dan Sproul"/ loading="lazy" decoding="async">
+      <img src="modern bedroom framed coastal oregon scene dan sproul.jpg" alt="Oregon Coast framed print in modern dark bedroom by Dan Sproul" loading="lazy" decoding="async">
       <div class="placement-overlay">
         <span class="pl-venue">Residential / Bedroom</span>
         <p class="pl-title">Oregon Coast — Modern Bedroom</p>
@@ -1778,7 +1909,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
   <!-- ROW 5: 3 new mockups — corporate waiting, bedroom mountain, warm living -->
   <div class="pl-row-3" style="margin-top:3px">
     <div class="placement-card pzoom" onclick="openFDLightbox(this)">
-      <img src="corporate office waiting room framed black and white landscapes.jpg" alt="Corporate office waiting room with framed B&W landscape diptych by Dan Sproul"/ loading="lazy" decoding="async">
+      <img src="corporate office waiting room framed black and white landscapes.jpg" alt="Corporate office waiting room with framed B&W landscape diptych by Dan Sproul" loading="lazy" decoding="async">
       <div class="placement-overlay">
         <span class="pl-venue">Corporate · Waiting Room</span>
         <p class="pl-title">B&amp;W Landscape Diptych — Corporate Reception</p>
@@ -1786,7 +1917,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
       </div>
     </div>
     <div class="placement-card pzoom" onclick="openFDLightbox(this)">
-      <img src="modern bedroom framed mountain reflection dan sproul.jpg" alt="Modern bedroom with framed mountain reflection landscape by Dan Sproul"/ loading="lazy" decoding="async">
+      <img src="modern bedroom framed mountain reflection dan sproul.jpg" alt="Modern bedroom with framed mountain reflection landscape by Dan Sproul" loading="lazy" decoding="async">
       <div class="placement-overlay">
         <span class="pl-venue">Residential · Primary Bedroom</span>
         <p class="pl-title">Mountain Reflection — Modern Bedroom</p>
@@ -1794,7 +1925,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
       </div>
     </div>
     <div class="placement-card pzoom" onclick="openFDLightbox(this)">
-      <img src="warm modern living room mountain reflection mockup.jpg" alt="Warm modern living room with B&W mountain reflection framed print by Dan Sproul"/ loading="lazy" decoding="async">
+      <img src="warm modern living room mountain reflection mockup.jpg" alt="Warm modern living room with B&W mountain reflection framed print by Dan Sproul" loading="lazy" decoding="async">
       <div class="placement-overlay">
         <span class="pl-venue">Residential · Living Room</span>
         <p class="pl-title">Mountain Reflection — Warm Living Room</p>
@@ -1840,7 +1971,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
   <div class="hospitality-carousel-wrap">
     <div class="hospitality-carousel" aria-label="Hospitality fine art photography mockup carousel">
       <div class="hospitality-slide" onclick="openFDLightbox(this)">
-        <img src="hospitality lobby moody mockup.jpg" alt="Boutique hotel reception area with large framed mountain cloud fine art photography by Dan Sproul"/ loading="lazy" decoding="async">
+        <img src="hospitality lobby moody mockup.jpg" alt="Boutique hotel reception area with large framed mountain cloud fine art photography by Dan Sproul" loading="lazy" decoding="async">
         <div class="hospitality-slide-caption">
           <span>Reception · Arrival Moment</span>
           <h3>Statement Artwork for Boutique Hotel Reception</h3>
@@ -1849,7 +1980,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
       </div>
 
       <div class="hospitality-slide" onclick="openFDLightbox(this)">
-        <img src="hospitality corridor moody mockup.jpg" alt="Luxury hospitality corridor with large moody mountain landscape photography by Dan Sproul"/ loading="lazy" decoding="async">
+        <img src="hospitality corridor moody mockup.jpg" alt="Luxury hospitality corridor with large moody mountain landscape photography by Dan Sproul" loading="lazy" decoding="async">
         <div class="hospitality-slide-caption">
           <span>Corridor · Guest Journey</span>
           <h3>Quiet Luxury for Hospitality Corridors</h3>
@@ -1858,7 +1989,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
       </div>
 
       <div class="hospitality-slide" onclick="openFDLightbox(this)">
-        <img src="hospitality lounge bar moody mockup.jpg" alt="Executive lounge with black and white mountain reflection photography by Dan Sproul"/ loading="lazy" decoding="async">
+        <img src="hospitality lounge bar moody mockup.jpg" alt="Executive lounge with black and white mountain reflection photography by Dan Sproul" loading="lazy" decoding="async">
         <div class="hospitality-slide-caption">
           <span>Executive Lounge · Private Club</span>
           <h3>Black and White Landscapes for Refined Lounges</h3>
@@ -1867,7 +1998,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
       </div>
 
       <div class="hospitality-slide" onclick="openFDLightbox(this)">
-        <img src="hospitality winery moody mockup.jpg" alt="Boutique restaurant and wine lounge with moody black and white lake island photography by Dan Sproul"/ loading="lazy" decoding="async">
+        <img src="hospitality winery moody mockup.jpg" alt="Boutique restaurant and wine lounge with moody black and white lake island photography by Dan Sproul" loading="lazy" decoding="async">
         <div class="hospitality-slide-caption">
           <span>Wine Lounge · Restaurant</span>
           <h3>Atmospheric Artwork for Intimate Dining Spaces</h3>
@@ -1876,7 +2007,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
       </div>
 
       <div class="hospitality-slide" onclick="openFDLightbox(this)">
-        <img src="hospitality lobby mockup waterfall.jpg" alt="Moody hospitality lounge with large vertical waterfall fine art photography by Dan Sproul"/ loading="lazy" decoding="async">
+        <img src="hospitality lobby mockup waterfall.jpg" alt="Moody hospitality lounge with large vertical waterfall fine art photography by Dan Sproul" loading="lazy" decoding="async">
         <div class="hospitality-slide-caption">
           <span>Lounge · Natural Drama</span>
           <h3>Waterfall Photography for Moody Hospitality Spaces</h3>
@@ -1885,7 +2016,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
       </div>
 
       <div class="hospitality-slide" onclick="openFDLightbox(this)">
-        <img src="hospitality spa moody mockup.jpg" alt="Luxury spa relaxation room with large black and white rock reflection fine art photography by Dan Sproul"/ loading="lazy" decoding="async">
+        <img src="hospitality spa moody mockup.jpg" alt="Luxury spa relaxation room with large black and white rock reflection fine art photography by Dan Sproul" loading="lazy" decoding="async">
         <div class="hospitality-slide-caption">
           <span>Spa Relaxation · Wellness</span>
           <h3>Calming Artwork for Wellness Interiors</h3>
@@ -1909,7 +2040,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
   <div class="hospitality-carousel-wrap">
     <div class="hospitality-carousel" aria-label="Healthcare fine art photography mockup carousel">
       <div class="hospitality-slide" onclick="openFDLightbox(this)">
-        <img src="healthcare reception mockup.jpg" alt="Healthcare reception area with large framed Canadian Rockies fine art photography by Dan Sproul"/ loading="lazy" decoding="async">
+        <img src="healthcare reception mockup.jpg" alt="Healthcare reception area with large framed Canadian Rockies fine art photography by Dan Sproul" loading="lazy" decoding="async">
         <div class="hospitality-slide-caption">
           <span>Reception · Wellness Arrival</span>
           <h3>Calming Statement Artwork for Healthcare Reception</h3>
@@ -1918,7 +2049,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
       </div>
 
       <div class="hospitality-slide" onclick="openFDLightbox(this)">
-        <img src="healthcare hallway mockup.jpg" alt="Healthcare corridor with large framed blue misty river valley fine art photography by Dan Sproul"/ loading="lazy" decoding="async">
+        <img src="healthcare hallway mockup.jpg" alt="Healthcare corridor with large framed blue misty river valley fine art photography by Dan Sproul" loading="lazy" decoding="async">
         <div class="hospitality-slide-caption">
           <span>Corridor · Patient Journey</span>
           <h3>Nature Photography for Healthcare Corridors</h3>
@@ -1927,7 +2058,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
       </div>
 
       <div class="hospitality-slide" onclick="openFDLightbox(this)">
-        <img src="consultation space mockup.jpg" alt="Healthcare consultation room with black and white mountain reflection photography by Dan Sproul"/ loading="lazy" decoding="async">
+        <img src="consultation space mockup.jpg" alt="Healthcare consultation room with black and white mountain reflection photography by Dan Sproul" loading="lazy" decoding="async">
         <div class="hospitality-slide-caption">
           <span>Consultation · Exam Space</span>
           <h3>Quiet Landscape Artwork for Clinical Rooms</h3>
@@ -1936,7 +2067,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
       </div>
 
       <div class="hospitality-slide" onclick="openFDLightbox(this)">
-        <img src="patient room mockup.jpg" alt="Modern patient room with framed foggy road black and white fine art photography by Dan Sproul"/ loading="lazy" decoding="async">
+        <img src="patient room mockup.jpg" alt="Modern patient room with framed foggy road black and white fine art photography by Dan Sproul" loading="lazy" decoding="async">
         <div class="hospitality-slide-caption">
           <span>Patient Room · Restorative Focus</span>
           <h3>Artwork That Feels Hopeful Without Feeling Clinical</h3>
@@ -1945,7 +2076,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
       </div>
 
       <div class="hospitality-slide" onclick="openFDLightbox(this)">
-        <img src="waiting area mockup.jpg" alt="Healthcare waiting area with large framed Spirit Island black and white fine art photography by Dan Sproul"/ loading="lazy" decoding="async">
+        <img src="waiting area mockup.jpg" alt="Healthcare waiting area with large framed Spirit Island black and white fine art photography by Dan Sproul" loading="lazy" decoding="async">
         <div class="hospitality-slide-caption">
           <span>Waiting Area · Family Lounge</span>
           <h3>Reflective Imagery for Family Waiting Spaces</h3>
@@ -1954,7 +2085,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
       </div>
 
       <div class="hospitality-slide" onclick="openFDLightbox(this)">
-        <img src="recovery hallway mockup.jpg" alt="Rehabilitation corridor with framed black and white tree pathway photography by Dan Sproul"/ loading="lazy" decoding="async">
+        <img src="recovery hallway mockup.jpg" alt="Rehabilitation corridor with framed black and white tree pathway photography by Dan Sproul" loading="lazy" decoding="async">
         <div class="hospitality-slide-caption">
           <span>Recovery Corridor · Rehabilitation</span>
           <h3>Pathway Imagery for Recovery and Therapy Spaces</h3>
@@ -1973,7 +2104,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
 <!-- FD LIGHTBOX -->
 <div id="fd-lightbox" onclick="if(event.target===this)closeFDLightbox()" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.94);z-index:1000;align-items:center;justify-content:center;cursor:zoom-out">
   <button onclick="closeFDLightbox()" style="position:absolute;top:20px;right:24px;background:none;border:none;color:rgba(255,255,255,.6);font-size:2rem;cursor:pointer;z-index:1001;line-height:1;transition:color .2s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.6)'">✕</button>
-  <img id="fd-lightbox-img" src="" alt="" style="max-width:94vw;max-height:90vh;object-fit:contain;display:block"/ loading="lazy" decoding="async">
+  <img id="fd-lightbox-img" src="" alt="" style="max-width:94vw;max-height:90vh;object-fit:contain;display:block" loading="lazy" decoding="async">
 </div>
 
 <!-- VENUES -->
@@ -2092,7 +2223,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
   <p class="section-label">Digital Licensing</p>
   <h2 class="section-title">Print It <em>Your Way</em></h2>
   <div class="licensing-grid">
-    <div class="licensing-img"><img src="corporate office waiting room framed black and white landscapes.jpg" alt="Black and white landscape photography specified for a professional office interior by Dan Sproul"/ loading="lazy" decoding="async"></div>
+    <div class="licensing-img"><img src="corporate office waiting room framed black and white landscapes.jpg" alt="Black and white landscape photography specified for a professional office interior by Dan Sproul" loading="lazy" decoding="async"></div>
     <div class="license-options">
       <p style="font-size:.78rem;line-height:2;color:rgba(242,239,232,.55);margin-bottom:8px">For designers who prefer to manage their own print production, high-resolution digital files are available for direct licensing. All files are delivered print-ready and color-profiled for professional output.</p>
 
@@ -2350,18 +2481,59 @@ function closeFDLightbox(){
 
 
 
-<div class="footer-seo">
+
+<footer id="contact-footer" class="site-footer">
   <div class="footer-grid">
-    <div><h3>Shop By Room</h3><a href="https://dansproul.com/collections/bedroom+wall+art+calming+nature+landscape+prints">Bedroom Wall Art</a><a href="in-your-space.html">Art In Your Space</a><a href="https://dansproul.com/collections/office+wall+art+inspiring+landscape+prints">Office Wall Art</a><a href="https://dansproul.com/art/dining+room">Dining Room Art</a><a href="https://dansproul.com/art/wellness">Wellness Space Prints</a></div>
-    <div><h3>Shop By Subject</h3><a href="https://dansproul.com/art/mountains">Mountain Prints</a><a href="https://dansproul.com/art/forest">Forest Photography</a><a href="https://dansproul.com/art/coastal">Coastal Wall Art</a><a href="https://dansproul.com/art/waterfalls">Waterfall Prints</a><a href="https://dansproul.com/art/wildlife">Wildlife Prints</a></div>
-    <div><h3>Shop By Mood</h3><a href="quiet-earth-collection.html">Quiet Earth Collection</a><a href="monochrome-stillness.html">Black &amp; White Prints</a><a href="https://dansproul.com/art/autumn">Warm Autumn Light</a><a href="https://dansproul.com/art/fog">Fog &amp; Mist Photography</a><a href="https://dansproul.com/art/calm">Calming Nature Prints</a></div>
-    <div><h3>Shop By Location</h3><a href="ohio-nature-photography-prints.html">Ohio Nature Photography Prints</a><a href="alaska-photography-prints.html">Alaska Photography Prints</a><a href="colorado-photography-prints.html">Colorado Wall Art</a><a href="oregon-coast-photography-prints.html">Oregon Coast Prints</a></div>
-    <div><h3>More Collections</h3><a href="about-dan-sproul.html">About Dan Sproul</a><a href="best-sellers.html">Best Sellers</a><a href="art-collections.html">Curated Photography Collections</a><a href="for-designers.html">For Interior Designers</a><a href="heritage-mixed-media.html">Heritage &amp; Mixed Media</a><a href="coastal-atmosphere.html">Coastal Atmosphere</a><a href="wellness-waters-collection.html">Wellness Waters</a><a href="mailto:sproulphoto@gmail.com">Email Dan</a></div>
+    <div>
+      <h3>Collections</h3>
+      <a href="quiet-earth-collection.html">Quiet Earth</a>
+      <a href="wellness-waters-collection.html">Wellness Waters</a>
+      <a href="coastal-atmosphere.html">Coastal Atmosphere</a>
+      <a href="mountain-light-collection.html">Mountain Light</a>
+      <a href="monochrome-stillness.html">Monochrome Stillness</a>
+      <a href="forest-light-collection.html">Forest Light</a>
+    </div>
+
+    <div>
+      <h3>Project Types</h3>
+      <a href="healthcare-artwork.html">Healthcare Artwork</a>
+      <a href="hospitality-artwork.html">Hospitality Artwork</a>
+      <a href="senior-living-artwork.html">Senior Living Artwork</a>
+      <a href="residential-artwork.html">Residential Artwork</a>
+      <a href="in-your-space.html">Art In Your Space</a>
+    </div>
+
+    <div>
+      <h3>Resources</h3>
+      <a href="for-designers.html">For Designers</a>
+      <a href="#resources">Spec Sheets</a>
+      <a href="#trade">Trade Program</a>
+      <a href="best-sellers.html">Best Sellers</a>
+      <a href="about-dan-sproul.html">About Dan Sproul</a>
+    </div>
+
+    <div>
+      <h3>Shop By Subject</h3>
+      <a href="https://dansproul.com/art/mountains" target="_blank" rel="noopener">Mountain Prints</a>
+      <a href="https://dansproul.com/art/forest" target="_blank" rel="noopener">Forest Photography</a>
+      <a href="https://dansproul.com/art/coastal" target="_blank" rel="noopener">Coastal Wall Art</a>
+      <a href="https://dansproul.com/art/waterfalls" target="_blank" rel="noopener">Waterfall Prints</a>
+      <a href="https://dansproul.com/art/wildlife" target="_blank" rel="noopener">Wildlife Prints</a>
+    </div>
+
+    <div>
+      <h3>Contact</h3>
+      <a href="mailto:sproulphoto@gmail.com?subject=Mockup%20Request">Request a Mockup</a>
+      <a href="mailto:sproulphoto@gmail.com?subject=Trade%20Pricing%20Inquiry">Trade Pricing</a>
+      <a href="https://dansproul.com" target="_blank" rel="noopener">Shop Prints</a>
+      <a href="mailto:sproulphoto@gmail.com">Email Dan</a>
+    </div>
   </div>
-  <footer class="footer-bottom">© 2026 Dan Sproul Fine Art Photography · Original landscape photography and heritage-inspired mixed media artwork by Dan Sproul, based in Lima, Ohio · Prints ship worldwide</footer>
-</div>
 
-
+  <div class="footer-bottom">
+    © 2026 Dan Sproul Fine Art Photography · Original landscape photography and heritage-inspired mixed media artwork by Dan Sproul, based in Lima, Ohio · Prints ship worldwide
+  </div>
+</footer>
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
