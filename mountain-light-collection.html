@@ -162,12 +162,12 @@ h1{max-width:980px;font-size:clamp(44px,6.7vw,92px);letter-spacing:-.018em}
 .cta-section .btns{justify-content:center}
 
 /* Footer */
-.footer-seo{background:#100e0b!important;padding:62px clamp(22px,6vw,76px) 36px!important;border-top:1px solid rgba(185,138,59,.22)!important}
-.footer-grid{display:grid!important;grid-template-columns:repeat(5,1fr)!important;gap:28px!important;max-width:1380px!important;margin:0 auto!important}
-.footer-grid h3{margin:0 0 13px!important;color:#d5b365!important;font-family:"Cormorant Garamond",Georgia,serif!important;font-size:21px!important;line-height:1.2!important;font-weight:400!important;text-transform:none!important;letter-spacing:0!important}
-.footer-grid a{display:block!important;text-decoration:none!important;color:rgba(244,238,229,.62)!important;font-family:Arial,Helvetica,sans-serif!important;font-size:13px!important;line-height:2!important;text-transform:none!important;letter-spacing:0!important}
-.footer-grid a:hover{color:#f4eee5!important}
-.footer-bottom{display:block!important;max-width:1380px!important;margin:40px auto 0!important;padding-top:28px!important;border-top:1px solid rgba(185,138,59,.22)!important;color:rgba(244,238,229,.32)!important;font-family:Arial,Helvetica,sans-serif!important;font-size:10px!important;letter-spacing:.18em!important;line-height:1.8!important;text-align:center!important;text-transform:uppercase!important}
+
+
+
+
+
+
 
 
 
@@ -214,7 +214,7 @@ h1{max-width:980px;font-size:clamp(44px,6.7vw,92px);letter-spacing:-.018em}
 .mockup-lightbox-close{position:absolute;top:18px;right:22px;width:46px;height:46px;border:1px solid rgba(244,239,231,.24);background:rgba(255,255,255,.08);color:#fff;font-size:30px;cursor:pointer}
 
 @media(max-width:1180px){.card-grid,.related-grid{grid-template-columns:repeat(2,1fr)}.rooms-grid{grid-template-columns:repeat(2,1fr)}.dark-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:1040px){body::before{height:64px}.site-nav-standard{height:64px!important}.nav-toggle-standard{display:block!important}.nav-links-standard{position:fixed!important;top:64px!important;left:0!important;right:0!important;display:none!important;flex-direction:column!important;align-items:flex-start!important;gap:0!important;padding:18px 24px 24px!important;background:rgba(14,12,9,.98)!important;border-bottom:1px solid rgba(185,138,59,.22)!important}.site-nav-standard.is-open .nav-links-standard{display:flex!important}.nav-links-standard a{width:100%!important;padding:14px 0!important}.nav-shop-standard{width:auto!important;margin-top:8px!important;padding:13px 18px!important}.section-head,.mockup-feature,.story-grid{grid-template-columns:1fr}.mock-strip,.info-grid,.footer-grid{grid-template-columns:1fr!important}.hero{min-height:76vh}.mockup-image{aspect-ratio:4/3}.seo-columns{columns:1}.art-card,.related-card{min-height:330px}}
+@media(max-width:1040px){body::before{height:64px}.site-nav-standard{height:64px!important}.nav-toggle-standard{display:block!important}.nav-links-standard{position:fixed!important;top:64px!important;left:0!important;right:0!important;display:none!important;flex-direction:column!important;align-items:flex-start!important;gap:0!important;padding:18px 24px 24px!important;background:rgba(14,12,9,.98)!important;border-bottom:1px solid rgba(185,138,59,.22)!important}.site-nav-standard.is-open .nav-links-standard{display:flex!important}.nav-links-standard a{width:100%!important;padding:14px 0!important}.nav-shop-standard{width:auto!important;margin-top:8px!important;padding:13px 18px!important}.section-head,.mockup-feature,.story-grid{grid-template-columns:1fr}.mock-strip,.info-grid,.hero{min-height:76vh}.mockup-image{aspect-ratio:4/3}.seo-columns{columns:1}.art-card,.related-card{min-height:330px}}
 @media(max-width:680px){.card-grid,.related-grid,.rooms-grid,.dark-grid,.faq-grid{grid-template-columns:1fr}h1{font-size:44px}.section-pad{padding:56px 22px}.mock-tile{min-height:260px}.hero-badges span{font-size:9px}}
 
 /* Tailored mockup specification panel */
@@ -257,6 +257,212 @@ h1{max-width:980px;font-size:clamp(44px,6.7vw,92px);letter-spacing:-.018em}
   .mockup-spec-panel{grid-template-columns:1fr}
 }
 
+
+/* SITEWIDE FOOTER + STANDARDIZED MOBILE OPTIMIZATION */
+.sitewide-footer-cta{background:#0b0a08!important;padding:90px 24px!important;text-align:center!important;border-top:1px solid rgba(185,147,75,.22)!important;border-bottom:1px solid rgba(185,147,75,.22)!important}
+.sitewide-footer-cta p{color:#b9934b!important;font-family:"Jost",Arial,sans-serif!important;font-size:.62rem!important;letter-spacing:.36em!important;text-transform:uppercase!important;margin:0 0 20px!important}
+.sitewide-footer-cta h2{max-width:980px!important;margin:0 auto!important;color:#f4eee5!important;font-family:"Cormorant Garamond",Georgia,serif!important;font-size:clamp(2.2rem,5vw,4.6rem)!important;font-weight:300!important;line-height:1.08!important}
+.footer-cta-buttons{display:flex!important;justify-content:center!important;gap:14px!important;margin-top:36px!important;flex-wrap:wrap!important}
+.footer-cta-buttons a{display:inline-flex!important;align-items:center!important;justify-content:center!important;padding:15px 28px!important;min-width:180px!important;border:1px solid rgba(185,147,75,.55)!important;color:#f4eee5!important;text-decoration:none!important;font-family:"Jost",Arial,sans-serif!important;font-size:.58rem!important;letter-spacing:.22em!important;text-transform:uppercase!important}
+.footer-cta-buttons a:first-child{background:#b9934b!important;color:#14110d!important}
+.site-footer{background:#0b0a08!important;padding:64px clamp(24px,6vw,80px) 36px!important;border-top:1px solid rgba(185,147,75,.12)!important;color:#f4eee5!important}
+.site-footer 
+.site-footer 
+.site-footer 
+.site-footer 
+.site-footer 
+
+/* Added collection guidance */
+.why-mountain-section{background:var(--light-bg);color:var(--light-ink)}
+.why-mountain-section p{color:rgba(33,27,20,.68)}
+.why-mountain-grid{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(34px,5vw,72px);align-items:start}
+.why-mountain-copy h2{font-size:clamp(36px,5vw,68px)}
+.why-mountain-copy p{margin-top:18px;font-size:15px}
+.why-mountain-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(33,27,20,.16);border:1px solid rgba(33,27,20,.16)}
+.why-mountain-card{background:#fbf8f1;padding:28px;min-height:220px}
+.why-mountain-card span{display:block;margin-bottom:10px;color:#87672d;font-size:10px;letter-spacing:.22em;text-transform:uppercase}
+.why-mountain-card h3{font-size:30px;margin-bottom:12px;color:var(--light-ink)}
+.why-mountain-card p{font-size:14px;line-height:1.8}
+.recommended-collections{background:#100e0b}
+.recommended-collections-grid{max-width:1280px;margin:42px auto 0;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.recommended-collection-card{background:#12100d;padding:28px;min-height:245px;text-decoration:none}
+.recommended-collection-card span{display:block;margin-bottom:10px;color:var(--gold);font-size:10px;letter-spacing:.22em;text-transform:uppercase}
+.recommended-collection-card h3{font-size:30px;margin-bottom:12px}
+.recommended-collection-card p{font-size:13px;line-height:1.8}
+.recommended-collection-card ul{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:7px}
+.recommended-collection-card li{color:var(--cream-soft);font-size:12px;line-height:1.5}
+
+@media(max-width:900px){.site-footer .why-mountain-grid,.why-mountain-cards,.recommended-collections-grid{grid-template-columns:1fr!important}}
+@media(max-width:768px){.hero h1,h1{font-size:clamp(2.25rem,8.6vw,3rem)!important;line-height:1.02!important}.section-head h2,.section-heading h2,h2{font-size:clamp(1.9rem,7vw,2.65rem)!important;line-height:1.08!important}}
+@media(max-width:680px){
+  .section-pad{padding:48px 22px!important}
+  .hero{min-height:68vh!important;padding:72px 22px 42px!important}
+  .hero-copy,p{font-size:14px!important;line-height:1.65!important}
+  .btns{gap:9px!important;margin-top:20px!important}
+  .btn{width:100%!important;text-align:center!important;padding:12px 14px!important;font-size:10px!important}
+  .hero-badges{gap:7px!important;margin-top:20px!important}
+  .hero-badges span{font-size:8.5px!important;line-height:1.45!important}
+  .mock-tile{min-height:230px!important}
+  .art-card{min-height:340px!important}
+  .related-card{min-height:280px!important}
+  .info-card,.room-card,.dark-card,.faq-card,.why-mountain-card,.recommended-collection-card{padding:22px!important;min-height:auto!important}
+  .card-text{padding:20px!important}
+  .info-card h3,.room-card h3,.dark-card h3,.faq-card h3,.why-mountain-card h3,.recommended-collection-card h3{font-size:24px!important;line-height:1.08!important}
+  .rooms-grid,.dark-grid,.faq-grid,.card-grid,.related-grid{grid-template-columns:1fr!important}
+  .seo-columns{columns:1!important}
+  .sitewide-footer-cta{padding:58px 22px!important}
+  .sitewide-footer-cta h2{font-size:clamp(2rem,9vw,3rem)!important}
+  .footer-cta-buttons{flex-direction:column!important}
+  .footer-cta-buttons a{width:100%!important}
+  .site-footer 
+  .site-footer 
+  .site-footer 
+}
+
+
+/* FINAL FOOTER REPAIR — scoped so collection grids are not affected */
+.sitewide-footer-cta{
+  background:#0b0a08!important;
+  padding:90px 24px!important;
+  text-align:center!important;
+  border-top:1px solid rgba(185,147,75,.22)!important;
+  border-bottom:1px solid rgba(185,147,75,.22)!important;
+  content-visibility:visible!important;
+}
+.sitewide-footer-cta p{
+  color:#b9934b!important;
+  font-family:"Jost",Arial,sans-serif!important;
+  font-size:.62rem!important;
+  letter-spacing:.36em!important;
+  text-transform:uppercase!important;
+  margin:0 0 20px!important;
+}
+.sitewide-footer-cta h2{
+  max-width:980px!important;
+  margin:0 auto!important;
+  color:#f4eee5!important;
+  font-family:"Cormorant Garamond",Georgia,serif!important;
+  font-size:clamp(2.2rem,5vw,4.6rem)!important;
+  font-weight:300!important;
+  line-height:1.08!important;
+}
+.footer-cta-buttons{
+  display:flex!important;
+  justify-content:center!important;
+  gap:14px!important;
+  margin-top:36px!important;
+  flex-wrap:wrap!important;
+}
+.footer-cta-buttons a{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  padding:15px 28px!important;
+  min-width:180px!important;
+  border:1px solid rgba(185,147,75,.55)!important;
+  color:#f4eee5!important;
+  text-decoration:none!important;
+  font-family:"Jost",Arial,sans-serif!important;
+  font-size:.58rem!important;
+  letter-spacing:.22em!important;
+  text-transform:uppercase!important;
+}
+.footer-cta-buttons a:first-child{
+  background:#b9934b!important;
+  color:#14110d!important;
+}
+.site-footer{
+  display:block!important;
+  background:#0b0a08!important;
+  padding:64px clamp(24px,6vw,80px) 36px!important;
+  border-top:1px solid rgba(185,147,75,.12)!important;
+  color:#f4eee5!important;
+  content-visibility:visible!important;
+}
+.site-footer .footer-grid{
+  max-width:1320px!important;
+  margin:0 auto!important;
+  display:grid!important;
+  grid-template-columns:repeat(5,minmax(0,1fr))!important;
+  gap:44px!important;
+  background:transparent!important;
+  border:0!important;
+}
+.site-footer .footer-grid > div{
+  min-width:0!important;
+}
+.site-footer .footer-grid h3{
+  color:#d0ad63!important;
+  font-family:"Cormorant Garamond",Georgia,serif!important;
+  font-size:1.35rem!important;
+  font-weight:300!important;
+  margin:0 0 18px!important;
+  line-height:1.2!important;
+  text-transform:none!important;
+  letter-spacing:0!important;
+}
+.site-footer .footer-grid a{
+  display:block!important;
+  color:rgba(244,238,229,.68)!important;
+  text-decoration:none!important;
+  font-family:"Jost",Arial,sans-serif!important;
+  font-size:.82rem!important;
+  line-height:1.9!important;
+  margin:0 0 4px!important;
+  text-transform:none!important;
+  letter-spacing:0!important;
+  padding:0!important;
+  border:0!important;
+}
+.site-footer .footer-grid a:hover{
+  color:#f4eee5!important;
+}
+.site-footer .footer-bottom{
+  display:block!important;
+  max-width:1320px!important;
+  margin:52px auto 0!important;
+  padding-top:28px!important;
+  border-top:1px solid rgba(185,147,75,.22)!important;
+  color:rgba(244,238,229,.38)!important;
+  font-family:"Jost",Arial,sans-serif!important;
+  font-size:.58rem!important;
+  letter-spacing:.18em!important;
+  line-height:1.8!important;
+  text-align:center!important;
+  text-transform:uppercase!important;
+}
+@media(max-width:900px){
+  .site-footer .footer-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+}
+@media(max-width:680px){
+  .sitewide-footer-cta{
+    padding:58px 22px!important;
+  }
+  .sitewide-footer-cta h2{
+    font-size:clamp(2rem,9vw,3rem)!important;
+  }
+  .footer-cta-buttons{
+    flex-direction:column!important;
+  }
+  .footer-cta-buttons a{
+    width:100%!important;
+  }
+  .site-footer .footer-grid{
+    grid-template-columns:1fr!important;
+    gap:30px!important;
+  }
+  .site-footer .footer-grid a{
+    display:block!important;
+    margin-bottom:7px!important;
+    line-height:1.7!important;
+  }
+  .site-footer .footer-bottom{
+    text-align:left!important;
+  }
+}
+
 </style>
 <script type="application/ld+json">
 {
@@ -264,7 +470,8 @@ h1{max-width:980px;font-size:clamp(44px,6.7vw,92px);letter-spacing:-.018em}
   "@graph": [
     {"@type":"Person","@id":"https://dsproul.com/#dan-sproul","name":"Dan Sproul","url":"https://dsproul.com","jobTitle":"Fine Art Photographer and Mixed Media Artist","description":"Dan Sproul creates atmospheric environmental artwork for residential, hospitality, healthcare, wellness, senior living, and commercial interiors.","homeLocation":{"@type":"Place","name":"Lima, Ohio"},"sameAs":["https://dansproul.com","https://fineartamerica.com/profiles/1-dan-sproul","https://www.pinterest.com/dansproul/","https://medium.com/@sprould99","https://dansproulphotography.substack.com/"]},
     {"@type":"Organization","@id":"https://dsproul.com/#organization","name":"Dan Sproul Fine Art Photography","url":"https://dsproul.com","founder":{"@id":"https://dsproul.com/#dan-sproul"}},
-    {"@type":"CollectionPage","@id":"https://dsproul.com/mountain-light-collection.html#collectionpage","url":"https://dsproul.com/mountain-light-collection.html","name":"Mountain Light Collection | Atmospheric Mountain Artwork for Interiors | Dan Sproul","description":"Mountain Light is a curated collection of atmospheric mountain artwork by Dan Sproul for hospitality spaces, lodge modern interiors, executive offices, luxury residential rooms, mountain homes, and refined nature-inspired interiors.","author":{"@id":"https://dsproul.com/#dan-sproul"},"isPartOf":{"@id":"https://dsproul.com/#website"},"primaryImageOfPage":{"@id":"https://dsproul.com/mountain-light-living-room.jpg#image"}},
+    {"@type":"WebSite","@id":"https://dsproul.com/#website","url":"https://dsproul.com","name":"Dan Sproul Fine Art Photography","publisher":{"@id":"https://dsproul.com/#organization"}},
+    {"@type":"CollectionPage","@id":"https://dsproul.com/mountain-light-collection.html#collectionpage","url":"https://dsproul.com/mountain-light-collection.html","name":"Mountain Light Collection | Atmospheric Mountain Artwork for Interiors | Dan Sproul","description":"Mountain Light is a curated collection of atmospheric mountain artwork by Dan Sproul for hospitality spaces, lodge modern interiors, executive offices, luxury residential rooms, mountain homes, and refined nature-inspired interiors.","author":{"@id":"https://dsproul.com/#dan-sproul"},"isPartOf":{"@id":"https://dsproul.com/#website"},"primaryImageOfPage":{"@id":"https://dsproul.com/mountain-light-living-room.jpg#image"},"hasPart":[{"@type":"WebPageElement","name":"Why Mountain Artwork Works"},{"@type":"WebPageElement","name":"Recommended Collections"},{"@type":"WebPageElement","name":"Mountain Light Interior Mockups"}]},
     {"@type":"BreadcrumbList","@id":"https://dsproul.com/mountain-light-collection.html#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://dsproul.com/"},{"@type":"ListItem","position":2,"name":"Collections","item":"https://dsproul.com/art-collections.html"},{"@type":"ListItem","position":3,"name":"Mountain Light","item":"https://dsproul.com/mountain-light-collection.html"}]},
     {"@type":"FAQPage","@id":"https://dsproul.com/mountain-light-collection.html#faq","mainEntity":[{"@type":"Question","name":"What interiors work best with Mountain Light artwork?","acceptedAnswer":{"@type":"Answer","text":"Mountain Light works well in living rooms, bedrooms, mountain homes, executive offices, hospitality lounges, boutique hotels, resort properties, lodges, wellness spaces, and nature-inspired interiors."}},{"@type":"Question","name":"How is Mountain Light different from Quiet Earth?","acceptedAnswer":{"@type":"Answer","text":"Quiet Earth is calmer and more grounded, while Mountain Light is brighter, more expansive, and built around sunrise, last light, alpine glow, and dramatic illumination."}},{"@type":"Question","name":"Are these available as oversized framed prints?","acceptedAnswer":{"@type":"Answer","text":"Many Mountain Light images are strong candidates for oversized framed prints above fireplaces, sofas, beds, office walls, and hospitality focal points."}},{"@type":"Question","name":"Can designers request recommendations?","acceptedAnswer":{"@type":"Answer","text":"Interior designers can email directly for mountain artwork suggestions, sizing guidance, room mockups, and coordinated recommendations."}}]},
     {"@type":"ImageObject","@id":"https://dsproul.com/mountain-light-living-room.jpg#image","contentUrl":"https://dsproul.com/mountain-light-living-room.jpg","name":"Mountain Light interior artwork mockup","description":"Atmospheric mountain artwork displayed above a stone fireplace in a warm refined interior by Dan Sproul.","creator":{"@id":"https://dsproul.com/#dan-sproul"},"copyrightHolder":{"@id":"https://dsproul.com/#dan-sproul"},"creditText":"Dan Sproul","acquireLicensePage":"https://dansproul.com","representativeOfPage":true},
@@ -343,6 +550,36 @@ h1{max-width:980px;font-size:clamp(44px,6.7vw,92px);letter-spacing:-.018em}
     <div class="image-box"><img src="denali highway lake reflection.jpg" alt="Denali Highway lake reflection mountain artwork by Dan Sproul" loading="lazy" decoding="async"></div>
   </div>
 </section>
+
+<section class="section-pad why-mountain-section" id="why-mountain-artwork-works">
+  <div class="why-mountain-grid">
+    <div class="why-mountain-copy">
+      <p class="eyebrow">Why Mountain Artwork Works</p>
+      <h2>Mountain landscapes bring scale, perspective, and visual escape into a room.</h2>
+      <p>Mountain artwork has a natural ability to make interiors feel larger, calmer, and more connected to the outside world. Peaks, valleys, reflective lakes, and alpine light create visual depth that helps a room feel grounded without feeling overly decorated.</p>
+      <p>In residential interiors, mountain landscapes often become focal points that anchor a living room, bedroom, entryway, or great room. In hospitality environments, they help create atmosphere, identity, and a stronger connection to place.</p>
+    </div>
+    <div class="why-mountain-cards">
+      <article class="why-mountain-card">
+        <span>Residential</span>
+        <h3>Anchors the Room</h3>
+        <p>Large mountain prints work well above fireplaces, sofas, beds, and console walls where the artwork needs to feel substantial and intentional.</p>
+      </article>
+      <article class="why-mountain-card">
+        <span>Hospitality</span>
+        <h3>Creates Identity</h3>
+        <p>Mountain imagery helps lodges, hotels, guest suites, and resort lounges feel more memorable and connected to destination atmosphere.</p>
+      </article>
+      <article class="why-mountain-card">
+        <span>Workplace</span>
+        <h3>Adds Perspective</h3>
+        <p>In offices and executive interiors, mountain artwork can bring calm authority, distance, and visual breathing room into the space.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+
 
 <section class="section-pad collection-section" id="collection">
   <div class="section-head">
@@ -431,6 +668,59 @@ h1{max-width:980px;font-size:clamp(44px,6.7vw,92px);letter-spacing:-.018em}
   </div>
 </section>
 
+
+<section class="section-pad recommended-collections" id="recommended-collections">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">Recommended Collections</p>
+      <h2>Related collections that pair well with Mountain Light.</h2>
+    </div>
+    <p>These collection paths help buyers and designers move from dramatic mountain artwork into calmer, architectural, restorative, or hospitality-friendly directions.</p>
+  </div>
+  <div class="recommended-collections-grid">
+    <a class="recommended-collection-card" href="quiet-earth-collection.html">
+      <span>Calmer & Grounded</span>
+      <h3>Quiet Earth</h3>
+      <p>For interiors that need quieter landscape atmosphere.</p>
+      <ul>
+        <li>Cabins</li>
+        <li>Wellness spaces</li>
+        <li>Calmer interiors</li>
+      </ul>
+    </a>
+    <a class="recommended-collection-card" href="monochrome-stillness.html">
+      <span>Architectural</span>
+      <h3>Monochrome Stillness</h3>
+      <p>Black-and-white landscape artwork for refined, structured spaces.</p>
+      <ul>
+        <li>Executive offices</li>
+        <li>Architectural interiors</li>
+        <li>Professional environments</li>
+      </ul>
+    </a>
+    <a class="recommended-collection-card" href="wellness-waters-collection.html">
+      <span>Restorative</span>
+      <h3>Wellness Waters</h3>
+      <p>Water-focused artwork for softer, more restorative rooms.</p>
+      <ul>
+        <li>Spa-inspired spaces</li>
+        <li>Restorative rooms</li>
+        <li>Quiet residential interiors</li>
+      </ul>
+    </a>
+    <a class="recommended-collection-card" href="coastal-atmosphere.html">
+      <span>Brighter Hospitality</span>
+      <h3>Coastal Atmosphere</h3>
+      <p>Coastal artwork for lighter hospitality and residential settings.</p>
+      <ul>
+        <li>Brighter hospitality environments</li>
+        <li>Guest suites</li>
+        <li>Coastal-inspired interiors</li>
+      </ul>
+    </a>
+  </div>
+</section>
+
 <section class="section-pad seo" id="faq">
   <div class="section-head">
     <div><p class="eyebrow">Mountain Artwork FAQ</p><h2>Frequently asked questions about Mountain Light artwork.</h2></div>
@@ -471,16 +761,63 @@ h1{max-width:980px;font-size:clamp(44px,6.7vw,92px);letter-spacing:-.018em}
   </div>
 </section>
 
-<div id="contact" class="footer-seo">
-  <div class="footer-grid">
-    <div><h3>Shop By Room</h3><a href="https://dansproul.com/collections/bedroom+wall+art+calming+nature+landscape+prints">Bedroom Wall Art</a><a href="in-your-space.html">Art In Your Space</a><a href="https://dansproul.com/collections/office+wall+art+inspiring+landscape+prints">Office Wall Art</a><a href="https://dansproul.com/art/dining+room">Dining Room Art</a><a href="https://dansproul.com/art/wellness">Wellness Space Prints</a></div>
-    <div><h3>Shop By Subject</h3><a href="https://dansproul.com/art/mountains">Mountain Prints</a><a href="https://dansproul.com/art/forest">Forest Photography</a><a href="https://dansproul.com/art/coastal">Coastal Wall Art</a><a href="https://dansproul.com/art/waterfalls">Waterfall Prints</a><a href="https://dansproul.com/art/wildlife">Wildlife Prints</a></div>
-    <div><h3>Shop By Mood</h3><a href="quiet-earth-collection.html">Quiet Earth Collection</a><a href="monochrome-stillness.html">Black &amp; White Prints</a><a href="https://dansproul.com/art/autumn">Warm Autumn Light</a><a href="https://dansproul.com/art/fog">Fog &amp; Mist Photography</a><a href="https://dansproul.com/art/calm">Calming Nature Prints</a></div>
-    <div><h3>Shop By Location</h3><a href="ohio-nature-photography-prints.html">Ohio Nature Photography Prints</a><a href="alaska-photography-prints.html">Alaska Photography Prints</a><a href="colorado-photography-prints.html">Colorado Wall Art</a><a href="oregon-coast-photography-prints.html">Oregon Coast Prints</a><a href="smoky-mountains-photography-prints.html">Smoky Mountains Art</a></div>
-    <div><h3>More Collections</h3><a href="about-dan-sproul.html">About Dan Sproul</a><a href="best-sellers.html">Best Sellers</a><a href="art-collections.html">Curated Photography Collections</a><a href="for-designers.html">For Interior Designers</a><a href="coastal-atmosphere.html">Coastal Atmosphere</a><a href="wellness-waters-collection.html">Wellness Waters</a><a href="mountain-light-collection.html">Mountain Light</a><a href="mailto:sproulphoto@gmail.com">Email Dan</a></div>
+
+<section class="sitewide-footer-cta">
+  <p>Need Help Choosing Artwork?</p>
+  <h2>Send a room photo, wall dimensions, or project details and I’ll help narrow the options.</h2>
+  <div class="footer-cta-buttons">
+    <a href="mailto:sproulphoto@gmail.com?subject=Artwork%20Mockup%20Request">Request Mockups</a>
+    <a href="mailto:sproulphoto@gmail.com">Contact Dan</a>
   </div>
-  <footer class="footer-bottom">© 2026 Dan Sproul Fine Art Photography · Original landscape photography and heritage-inspired mixed media artwork by Dan Sproul, based in Lima, Ohio · Prints ship worldwide</footer>
-</div>
+</section>
+
+<footer class="site-footer" id="contact">
+  <div class="footer-grid">
+    <div>
+      <h3>Collections</h3>
+      <a href="quiet-earth-collection.html">Quiet Earth</a>
+      <a href="wellness-waters-collection.html">Wellness Waters</a>
+      <a href="coastal-atmosphere.html">Coastal Atmosphere</a>
+      <a href="mountain-light-collection.html">Mountain Light</a>
+      <a href="monochrome-stillness.html">Monochrome Stillness</a>
+    </div>
+    <div>
+      <h3>Featured Pages</h3>
+      <a href="best-sellers.html">Best Sellers</a>
+      <a href="in-your-space.html">In Your Space</a>
+      <a href="ohio-nature-photography-prints.html">Ohio Nature Photography</a>
+      <a href="alaska-photography-prints.html">Alaska Prints</a>
+      <a href="about-dan-sproul.html">About Dan Sproul</a>
+    </div>
+    <div>
+      <h3>Designer Resources</h3>
+      <a href="for-designers.html">For Designers</a>
+      <a href="healthcare-artwork.html">Healthcare Artwork</a>
+      <a href="hospitality-artwork.html">Hospitality Artwork</a>
+      <a href="senior-living-artwork.html">Senior Living Artwork</a>
+      <a href="mailto:sproulphoto@gmail.com?subject=Artwork%20Mockup%20Request">Request Mockups</a>
+    </div>
+    <div>
+      <h3>Artwork Themes</h3>
+      <a href="https://dansproul.com/art/waterfall" target="_blank" rel="noopener">Waterfall Prints</a>
+      <a href="https://dansproul.com/art/forest" target="_blank" rel="noopener">Forest Photography</a>
+      <a href="https://dansproul.com/art/coastal" target="_blank" rel="noopener">Coastal Wall Art</a>
+      <a href="https://dansproul.com/art/mountain" target="_blank" rel="noopener">Mountain Photography</a>
+      <a href="https://dansproul.com/art/wildlife" target="_blank" rel="noopener">Wildlife Photography</a>
+    </div>
+    <div>
+      <h3>Shop Prints</h3>
+      <a href="https://dansproul.com" target="_blank" rel="noopener">Fine Art America Store</a>
+      <a href="https://dansproul.com/collections/best+sellers+and+designer+favorite+wall+art" target="_blank" rel="noopener">Best Sellers Collection</a>
+      <a href="https://dansproul.com/art/mixed+media" target="_blank" rel="noopener">Heritage &amp; Mixed Media</a>
+      <a href="mailto:sproulphoto@gmail.com">Email Dan</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2026 Dan Sproul Fine Art Photography · Original landscape photography and heritage-inspired mixed media artwork by Dan Sproul, based in Lima, Ohio · Prints ship worldwide
+  </div>
+</footer>
+
 
 <div class="mockup-lightbox" id="mockupLightbox" aria-hidden="true" role="dialog" aria-label="Mountain Light mockup preview">
   <button class="mockup-lightbox-close" type="button" aria-label="Close image">×</button>
