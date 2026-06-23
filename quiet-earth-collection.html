@@ -346,9 +346,9 @@
     .related-card p{font-size:14px;margin:0}
     .related-card span{display:inline-block;margin-top:20px;color:#c79b55;font-family:Arial,Helvetica,sans-serif;text-transform:uppercase;letter-spacing:.16em;font-size:11px;font-weight:700}
 
-    .footer-cta{padding:100px 7vw;text-align:center;background:linear-gradient(180deg,#12100d,#060504);border-top:1px solid var(--line)}
-    .footer-cta p{max-width:680px;margin:18px auto 0}
-    .footer-cta .btns{justify-content:center}
+    
+    
+    
 
     .modal{display:none;position:fixed;z-index:10000;inset:0;background:rgba(0,0,0,.91);padding:34px;overflow:auto}
     .modal.is-open{display:flex;align-items:center;justify-content:center;flex-direction:column}
@@ -361,12 +361,12 @@
     .modal-specs span{display:block;border:1px solid rgba(199,155,85,.20);padding:12px;background:rgba(255,255,255,.03)}
     .modal-close{position:fixed;top:20px;right:30px;background:transparent;border:0;color:white;font-size:42px;cursor:pointer}
 
-    .footer-seo{background:#100e0b!important;padding:62px clamp(22px,6vw,76px) 36px!important;border-top:1px solid rgba(185,138,59,.22)!important}
-    .footer-grid{display:grid!important;grid-template-columns:repeat(5,1fr)!important;gap:28px!important;max-width:1380px!important;margin:0 auto!important}
-    .footer-grid h3{margin:0 0 13px!important;color:#d5b365!important;font-family:"Cormorant Garamond",Georgia,serif!important;font-size:21px!important;line-height:1.2!important;font-weight:400!important;text-transform:none!important;letter-spacing:0!important}
-    .footer-grid a{display:block!important;text-decoration:none!important;color:rgba(244,238,229,.62)!important;font-family:Arial,Helvetica,sans-serif!important;font-size:13px!important;line-height:2!important;text-transform:none!important;letter-spacing:0!important}
-    .footer-grid a:hover{color:#f4eee5!important}
-    .footer-bottom{display:block!important;max-width:1380px!important;margin:40px auto 0!important;padding-top:28px!important;border-top:1px solid rgba(185,138,59,.22)!important;color:rgba(244,238,229,.32)!important;font-family:Arial,Helvetica,sans-serif!important;font-size:10px!important;letter-spacing:.18em!important;line-height:1.8!important;text-align:center!important;text-transform:uppercase!important}
+    
+    
+    
+    
+    
+    
 
     @media(max-width:1040px){
       .site-nav-standard{height:64px!important}
@@ -375,7 +375,7 @@
       .site-nav-standard.is-open .nav-links-standard{display:flex!important}
       .nav-links-standard a{width:100%!important;padding:14px 0!important}
       .nav-shop-standard{width:auto!important;margin-top:8px!important;padding:13px 18px!important}
-      .footer-grid{grid-template-columns:1fr!important}
+      
     }
     @media(max-width:1000px){
       .intro-grid,.mockup-grid,.use-grid,.art-grid,.buying-grid,.faq-grid,.related-grid,.modal-info,.featured-installation-copy{grid-template-columns:1fr}
@@ -390,7 +390,172 @@
       h1{font-size:52px}
       .format-strip,.quick-specs{grid-template-columns:1fr}
     }
-  </style>
+  
+/* SITEWIDE FOOTER + STANDARDIZED MOBILE OPTIMIZATION */
+.sitewide-footer-cta{
+  background:#0b0a08!important;
+  padding:90px 24px!important;
+  text-align:center!important;
+  border-top:1px solid rgba(185,147,75,.22)!important;
+  border-bottom:1px solid rgba(185,147,75,.22)!important;
+}
+.sitewide-footer-cta p{
+  color:#b9934b!important;
+  font-family:Arial,Helvetica,sans-serif!important;
+  font-size:.62rem!important;
+  letter-spacing:.36em!important;
+  text-transform:uppercase!important;
+  margin:0 0 20px!important;
+  max-width:none!important;
+}
+.sitewide-footer-cta h2{
+  max-width:980px!important;
+  margin:0 auto!important;
+  color:#f4eee5!important;
+  font-family:Georgia,'Times New Roman',serif!important;
+  font-size:clamp(2.2rem,5vw,4.6rem)!important;
+  font-weight:400!important;
+  line-height:1.08!important;
+}
+.footer-cta-buttons{
+  display:flex!important;
+  justify-content:center!important;
+  gap:14px!important;
+  margin-top:36px!important;
+  flex-wrap:wrap!important;
+}
+.footer-cta-buttons a{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  padding:15px 28px!important;
+  min-width:180px!important;
+  border:1px solid rgba(185,147,75,.55)!important;
+  color:#f4eee5!important;
+  text-decoration:none!important;
+  font-family:Arial,Helvetica,sans-serif!important;
+  font-size:.58rem!important;
+  letter-spacing:.22em!important;
+  text-transform:uppercase!important;
+}
+.footer-cta-buttons a:first-child{
+  background:#b9934b!important;
+  color:#14110d!important;
+}
+.site-footer{
+  background:#0b0a08!important;
+  padding:64px clamp(24px,6vw,80px) 36px!important;
+  border-top:1px solid rgba(185,147,75,.12)!important;
+  color:#f4eee5!important;
+}
+.site-footer .footer-grid{
+  max-width:1320px!important;
+  margin:0 auto!important;
+  display:grid!important;
+  grid-template-columns:repeat(5,1fr)!important;
+  gap:44px!important;
+}
+.site-footer .footer-grid h3{
+  color:#d0ad63!important;
+  font-family:Georgia,'Times New Roman',serif!important;
+  font-size:1.35rem!important;
+  font-weight:400!important;
+  margin:0 0 18px!important;
+  line-height:1.2!important;
+  text-transform:none!important;
+  letter-spacing:0!important;
+}
+.site-footer .footer-grid a{
+  display:block!important;
+  color:rgba(244,238,229,.68)!important;
+  text-decoration:none!important;
+  font-family:Arial,Helvetica,sans-serif!important;
+  font-size:.82rem!important;
+  line-height:1.9!important;
+  margin-bottom:4px!important;
+  text-transform:none!important;
+  letter-spacing:0!important;
+}
+.site-footer .footer-grid a:hover{color:#f4eee5!important}
+.site-footer .footer-bottom{
+  max-width:1320px!important;
+  margin:52px auto 0!important;
+  padding-top:28px!important;
+  border-top:1px solid rgba(185,147,75,.22)!important;
+  color:rgba(244,238,229,.38)!important;
+  font-family:Arial,Helvetica,sans-serif!important;
+  font-size:.58rem!important;
+  letter-spacing:.18em!important;
+  line-height:1.8!important;
+  text-align:center!important;
+  text-transform:uppercase!important;
+}
+
+/* Phase 2 typography */
+@media(max-width:768px){
+  .hero h1,h1{
+    font-size:clamp(2.35rem,9vw,3.25rem)!important;
+    line-height:1.02!important;
+  }
+  .section-heading h2,h2{
+    font-size:clamp(1.9rem,7vw,2.65rem)!important;
+    line-height:1.08!important;
+  }
+}
+
+/* Standardized mobile compaction */
+@media(max-width:680px){
+  .breadcrumbs{padding:78px 22px 0!important}
+  .hero{min-height:68vh!important;padding:72px 22px 42px!important}
+  .hero p{font-size:15px!important;line-height:1.65!important}
+  .btns{gap:9px!important;margin-top:20px!important}
+  .btn{width:100%!important;text-align:center!important;padding:12px 14px!important;font-size:10px!important}
+  .intro,.mockups,.use-section,.featured-art,.buying,.seo-copy,.faq,.related,.footer-cta{
+    padding:48px 22px!important;
+  }
+  .section-heading{margin-bottom:30px!important}
+  .section-heading p,p{font-size:14px!important;line-height:1.62!important}
+  .trust-strip{gap:8px!important;margin-top:22px!important}
+  .trust-strip span{font-size:9px!important;line-height:1.45!important;padding:8px 10px!important}
+  .featured-installation{margin-bottom:24px!important}
+  .featured-installation-copy{padding:22px!important;gap:18px!important}
+  .featured-installation-copy h3{font-size:28px!important;line-height:1.08!important}
+  .featured-installation-copy p{font-size:14px!important}
+  .quick-specs{grid-template-columns:1fr!important;gap:8px!important}
+  .quick-specs span{padding:10px!important;font-size:9px!important;line-height:1.45!important}
+  .format-strip{gap:8px!important;margin-bottom:24px!important}
+  .format-strip span{padding:10px!important;font-size:9px!important}
+  .mockup-grid{gap:16px!important}
+  .mockup-copy{padding:18px!important}
+  .mockup-copy h3,.use-card h3,.art-card-copy h3,.buy-box h3,.faq-item h3,.related-card h3{
+    font-size:22px!important;
+    line-height:1.08!important;
+  }
+  .mockup-card.feature img,.mockup-card img,.art-card img{
+    height:auto!important;
+    max-height:270px!important;
+    object-fit:cover!important;
+  }
+  .use-card,.buy-box,.faq-item,.related-card{padding:20px!important;min-height:auto!important}
+  .art-grid,.use-grid,.buying-grid,.faq-grid,.related-grid,.modal-info,.featured-installation-copy,.mockup-grid{
+    grid-template-columns:1fr!important;
+  }
+  .art-card-copy{padding:18px!important}
+  .seo-columns{columns:1!important;margin-top:20px!important}
+  .seo-columns p{font-size:14px!important;line-height:1.72!important;margin-bottom:14px!important}
+  .sitewide-footer-cta{padding:58px 22px!important}
+  .sitewide-footer-cta h2{font-size:clamp(2rem,9vw,3rem)!important}
+  .footer-cta-buttons{flex-direction:column!important}
+  .footer-cta-buttons a{width:100%!important}
+  .site-footer .footer-grid{grid-template-columns:1fr!important;gap:30px!important}
+  .site-footer .footer-grid a{display:block!important;margin-bottom:7px!important;line-height:1.7!important}
+  .site-footer .footer-bottom{text-align:left!important}
+}
+@media(min-width:681px) and (max-width:900px){
+  .site-footer .footer-grid{grid-template-columns:repeat(2,1fr)!important}
+}
+
+</style>
 
 <script type="application/ld+json">
 {
@@ -439,6 +604,12 @@
       "publisher":{"@id":"https://dsproul.com/#organization"},
       "breadcrumb":{"@id":"https://dsproul.com/quiet-earth-collection.html#breadcrumb"},
       "primaryImageOfPage":{"@id":"https://dsproul.com/quiet-earth-turnagain-arm-alaska.jpg#image"},
+      "hasPart":[
+        {"@type":"WebPageElement","name":"Quiet Earth room mockups"},
+        {"@type":"WebPageElement","name":"Quiet Earth selected works"},
+        {"@type":"WebPageElement","name":"Quiet Earth print buying help"},
+        {"@type":"WebPageElement","name":"Quiet Earth interior applications"}
+      ],
       "about":[
         {"@type":"Thing","name":"Atmospheric landscape photography"},
         {"@type":"Thing","name":"Calming artwork for interiors"},
@@ -902,20 +1073,75 @@
   </div>
 </section>
 
-<section class="footer-cta" id="contact">
-  <span class="eyebrow">Designer Resources</span>
-  <h2>Need help choosing artwork?</h2>
-  <p>Send me a note about your space, project, or room style and I can recommend pieces from the Quiet Earth Collection or suggest a direction for your wall.</p>
-  <div class="btns">
-    <a class="btn primary" href="mailto:sproulphoto@gmail.com?subject=Quiet%20Earth%20Artwork%20Inquiry">Email Dan</a>
-    <a class="btn" href="https://dansproul.com" target="_blank" rel="noopener">Shop Full Catalog</a>
+
+<section class="footer-cta sitewide-footer-cta">
+  <p>Need Help Choosing Artwork?</p>
+  <h2>Send a room photo, wall dimensions, or project details and I’ll help narrow the options.</h2>
+  <div class="footer-cta-buttons">
+    <a href="mailto:sproulphoto@gmail.com?subject=Artwork%20Mockup%20Request">Request Mockups</a>
+    <a href="mailto:sproulphoto@gmail.com">Contact Dan</a>
   </div>
 </section>
+
+<footer class="site-footer" id="contact">
+  <div class="footer-grid">
+
+    <div>
+      <h3>Collections</h3>
+      <a href="quiet-earth-collection.html">Quiet Earth</a>
+      <a href="wellness-waters-collection.html">Wellness Waters</a>
+      <a href="coastal-atmosphere.html">Coastal Atmosphere</a>
+      <a href="mountain-light-collection.html">Mountain Light</a>
+      <a href="monochrome-stillness.html">Monochrome Stillness</a>
+    </div>
+
+    <div>
+      <h3>Featured Pages</h3>
+      <a href="best-sellers.html">Best Sellers</a>
+      <a href="in-your-space.html">In Your Space</a>
+      <a href="ohio-nature-photography-prints.html">Ohio Nature Photography</a>
+      <a href="alaska-photography-prints.html">Alaska Prints</a>
+      <a href="about-dan-sproul.html">About Dan Sproul</a>
+    </div>
+
+    <div>
+      <h3>Designer Resources</h3>
+      <a href="for-designers.html">For Designers</a>
+      <a href="healthcare-artwork.html">Healthcare Artwork</a>
+      <a href="hospitality-artwork.html">Hospitality Artwork</a>
+      <a href="senior-living-artwork.html">Senior Living Artwork</a>
+      <a href="mailto:sproulphoto@gmail.com?subject=Artwork%20Mockup%20Request">Request Mockups</a>
+    </div>
+
+    <div>
+      <h3>Artwork Themes</h3>
+      <a href="https://dansproul.com/art/waterfall" target="_blank" rel="noopener">Waterfall Prints</a>
+      <a href="https://dansproul.com/art/forest" target="_blank" rel="noopener">Forest Photography</a>
+      <a href="https://dansproul.com/art/coastal" target="_blank" rel="noopener">Coastal Wall Art</a>
+      <a href="https://dansproul.com/art/mountain" target="_blank" rel="noopener">Mountain Photography</a>
+      <a href="https://dansproul.com/art/wildlife" target="_blank" rel="noopener">Wildlife Photography</a>
+    </div>
+
+    <div>
+      <h3>Shop Prints</h3>
+      <a href="https://dansproul.com" target="_blank" rel="noopener">Fine Art America Store</a>
+      <a href="https://dansproul.com/collections/best+sellers+and+designer+favorite+wall+art" target="_blank" rel="noopener">Best Sellers Collection</a>
+      <a href="https://dansproul.com/art/mixed+media" target="_blank" rel="noopener">Heritage &amp; Mixed Media</a>
+      <a href="mailto:sproulphoto@gmail.com">Email Dan</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Dan Sproul Fine Art Photography · Original landscape photography and heritage-inspired mixed media artwork by Dan Sproul, based in Lima, Ohio · Prints ship worldwide
+  </div>
+</footer>
+
 
 <div id="image-modal" class="modal" aria-hidden="true">
   <button class="modal-close" type="button" aria-label="Close image preview">&times;</button>
   <div class="modal-card">
-    <img id="modal-img" src="" alt="">
+    <img decoding="async" loading="lazy" id="modal-img" src="" alt="">
     <div class="modal-info">
       <div>
         <span class="eyebrow">Print Details</span>
@@ -934,61 +1160,6 @@
   </div>
 </div>
 
-<div class="footer-seo">
-  <div class="footer-grid">
-    <div>
-      <h3>Shop By Room</h3>
-      <a href="https://dansproul.com/collections/bedroom+wall+art+calming+nature+landscape+prints">Bedroom Wall Art</a>
-      <a href="in-your-space.html">Art In Your Space</a>
-      <a href="https://dansproul.com/collections/office+wall+art+inspiring+landscape+prints">Office Wall Art</a>
-      <a href="https://dansproul.com/art/dining+room">Dining Room Art</a>
-      <a href="https://dansproul.com/art/wellness">Wellness Space Prints</a>
-    </div>
-
-    <div>
-      <h3>Shop By Subject</h3>
-      <a href="https://dansproul.com/art/mountains">Mountain Prints</a>
-      <a href="https://dansproul.com/art/forest">Forest Photography</a>
-      <a href="https://dansproul.com/art/coastal">Coastal Wall Art</a>
-      <a href="https://dansproul.com/art/waterfalls">Waterfall Prints</a>
-      <a href="https://dansproul.com/art/wildlife">Wildlife Prints</a>
-    </div>
-
-    <div>
-      <h3>Shop By Mood</h3>
-      <a href="quiet-earth-collection.html">Quiet Earth Collection</a>
-      <a href="monochrome-stillness.html">Black &amp; White Prints</a>
-      <a href="https://dansproul.com/art/autumn">Warm Autumn Light</a>
-      <a href="https://dansproul.com/art/fog">Fog &amp; Mist Photography</a>
-      <a href="https://dansproul.com/art/calm">Calming Nature Prints</a>
-    </div>
-
-    <div>
-      <h3>Shop By Location</h3>
-      <a href="ohio-nature-photography-prints.html">Ohio Nature Photography Prints</a>
-      <a href="alaska-photography-prints.html">Alaska Prints</a>
-      <a href="colorado-photography-prints.html">Colorado Wall Art</a>
-      <a href="oregon-coast-photography-prints.html">Oregon Coast Prints</a>
-      <a href="smoky-mountains-photography-prints.html">Smoky Mountains Art</a>
-      <a href="https://dansproul.com/art/badlands">Badlands Wildlife Prints</a>
-    </div>
-
-    <div>
-      <h3>More Collections</h3>
-      <a href="about-dan-sproul.html">About Dan Sproul</a>
-      <a href="best-sellers.html">Best Sellers</a>
-      <a href="art-collections.html">Curated Photography Collections</a>
-      <a href="for-designers.html">For Interior Designers</a>
-      <a href="coastal-atmosphere.html">Coastal Atmosphere</a>
-      <a href="wellness-waters-collection.html">Wellness Waters</a>
-      <a href="mailto:sproulphoto@gmail.com">Email Dan</a>
-    </div>
-  </div>
-
-  <footer class="footer-bottom">
-    © 2026 Dan Sproul Fine Art Photography · Original landscape photography and heritage-inspired mixed media artwork by Dan Sproul, based in Lima, Ohio · Prints ship worldwide
-  </footer>
-</div>
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
@@ -1012,6 +1183,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   document.querySelectorAll('.mockup-image-button').forEach(button => {
     button.addEventListener('click', () => {
+      if(!modal || !modalImg) return;
       modalImg.src = button.dataset.img;
       modalImg.alt = button.querySelector('img').alt;
       modalTitle.textContent = button.dataset.title;
@@ -1037,7 +1209,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
   document.addEventListener('keydown', e => {
-    if(e.key === 'Escape' && modal.classList.contains('is-open')) closeModal();
+    if(e.key === 'Escape' && modal && modal.classList.contains('is-open')) closeModal();
   });
 });
 </script>
