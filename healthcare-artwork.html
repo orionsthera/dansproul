@@ -135,13 +135,6 @@ h3{font-size:30px;letter-spacing:-.03em}
 .footer-cta p{max-width:650px;margin:20px auto}
 .footer-cta .btns{justify-content:center}
 
-/* footer */
-.footer-seo{background:#100e0b!important;padding:62px clamp(22px,6vw,76px) 36px!important;border-top:1px solid rgba(185,138,59,.22)!important}
-.footer-grid{display:grid!important;grid-template-columns:repeat(5,1fr)!important;gap:28px!important;max-width:1380px!important;margin:0 auto!important}
-.footer-grid h3{margin:0 0 13px!important;color:#d5b365!important;font-family:Georgia,serif!important;font-size:21px!important;line-height:1.2!important;font-weight:400!important}
-.footer-grid a{display:block!important;text-decoration:none!important;color:rgba(244,238,229,.62)!important;font-family:Arial,Helvetica,sans-serif!important;font-size:13px!important;line-height:2!important}
-.footer-grid a:hover{color:#f4eee5!important}
-.footer-bottom{display:block!important;max-width:1380px!important;margin:40px auto 0!important;padding-top:28px!important;border-top:1px solid rgba(185,138,59,.22)!important;color:rgba(244,238,229,.32)!important;font-family:Arial,Helvetica,sans-serif!important;font-size:10px!important;letter-spacing:.18em!important;line-height:1.8!important;text-align:center!important;text-transform:uppercase!important}
 
 /* modal */
 .mockup-modal{position:fixed;inset:0;z-index:999999;display:none;align-items:center;justify-content:center;padding:clamp(18px,4vw,46px);background:rgba(0,0,0,.9);backdrop-filter:blur(10px)}
@@ -162,7 +155,8 @@ h3{font-size:30px;letter-spacing:-.03em}
 .nav-links-standard{position:fixed!important;top:64px!important;left:0!important;right:0!important;display:none!important;flex-direction:column!important;align-items:flex-start!important;gap:0!important;padding:18px 24px 24px!important;background:rgba(14,12,9,.98)!important}
 .site-nav-standard.is-open .nav-links-standard{display:flex!important}
 .nav-links-standard a{width:100%!important;padding:14px 0!important}
-.footer-grid{grid-template-columns:1fr!important}
+
+
 }
 @media(max-width:1000px){
 .intro-grid,.project-wrap,.spec-download-inner,.jump-inner,.group-heading{grid-template-columns:1fr}
@@ -323,6 +317,122 @@ h1{font-size:54px}
   }
 }
 
+
+/* CLEAN SITE FOOTER + MOBILE FIXES */
+.site-footer{
+  display:block!important;
+  width:100%!important;
+  background:#100e0b!important;
+  padding:62px clamp(22px,6vw,76px) 36px!important;
+  border-top:1px solid rgba(185,138,59,.22)!important;
+  color:#f4eee5!important;
+  text-transform:none!important;
+  letter-spacing:0!important;
+  font-family:Arial,Helvetica,sans-serif!important;
+}
+.site-footer .footer-grid{
+  display:grid!important;
+  grid-template-columns:repeat(5,minmax(0,1fr))!important;
+  gap:32px!important;
+  max-width:1380px!important;
+  margin:0 auto!important;
+  background:transparent!important;
+  border:0!important;
+}
+.site-footer .footer-grid > div{display:block!important;min-width:0!important}
+.site-footer .footer-grid h3{
+  display:block!important;
+  margin:0 0 13px!important;
+  color:#d5b365!important;
+  font-family:Georgia,"Times New Roman",serif!important;
+  font-size:21px!important;
+  line-height:1.2!important;
+  font-weight:400!important;
+  text-transform:none!important;
+  letter-spacing:0!important;
+}
+.site-footer .footer-grid a{
+  display:block!important;
+  width:auto!important;
+  text-decoration:none!important;
+  color:rgba(244,238,229,.66)!important;
+  font-family:Arial,Helvetica,sans-serif!important;
+  font-size:13px!important;
+  line-height:2!important;
+  text-transform:none!important;
+  letter-spacing:0!important;
+  margin:0 0 2px!important;
+  padding:0!important;
+  border:0!important;
+  background:transparent!important;
+  float:none!important;
+  clear:both!important;
+  white-space:normal!important;
+}
+.site-footer .footer-grid a:hover{color:#f4eee5!important}
+.site-footer .footer-bottom{
+  display:block!important;
+  max-width:1380px!important;
+  margin:40px auto 0!important;
+  padding-top:28px!important;
+  border-top:1px solid rgba(185,138,59,.22)!important;
+  color:rgba(244,238,229,.34)!important;
+  font-family:Arial,Helvetica,sans-serif!important;
+  font-size:10px!important;
+  letter-spacing:.18em!important;
+  line-height:1.8!important;
+  text-align:center!important;
+  text-transform:uppercase!important;
+}
+.mockup-modal-specs{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:12px;
+  margin:22px 0;
+}
+.mockup-modal-specs div{
+  border:1px solid rgba(199,155,85,.22);
+  background:rgba(255,255,255,.035);
+  padding:14px;
+}
+.mockup-modal-specs strong{
+  display:block;
+  color:#c79b55;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:10px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  margin-bottom:6px;
+}
+.mockup-modal-specs span{
+  color:#d8cbb9;
+  font-size:13px;
+  line-height:1.6;
+}
+@media(max-width:768px){
+  h1{font-size:clamp(2.35rem,9vw,3.25rem)!important;line-height:1.02!important}
+  h2{font-size:clamp(1.9rem,7vw,2.65rem)!important;line-height:1.08!important}
+}
+@media(max-width:1040px){
+  .site-footer .footer-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+@media(max-width:680px){
+  .breadcrumbs{padding:78px 22px 0!important}
+  .health-hero{min-height:70vh!important;padding:82px 22px 52px!important}
+  .intro,.jump-section,.mockup-feature,.project-details,.spec-download,.gallery-preview,.faq-section,.related-collections,.footer-cta,.healthcare-spec-resource{padding:52px 22px!important}
+  p{font-size:14px!important;line-height:1.65!important}
+  .btns{gap:9px!important;margin-top:20px!important}
+  .btn{width:100%!important;text-align:center!important;padding:12px 14px!important;font-size:10px!important}
+  .mockup-copy,.project-card,.faq-item,.related-card{padding:20px!important}
+  .mockup-modal-specs{grid-template-columns:1fr!important}
+  .mockup-modal-actions a,.mockup-modal-actions button{width:100%!important;text-align:center!important}
+  .site-footer{padding:48px 22px 30px!important}
+  .site-footer .footer-grid{grid-template-columns:1fr!important;gap:30px!important}
+  .site-footer .footer-grid h3{margin-bottom:10px!important}
+  .site-footer .footer-grid a{display:block!important;margin-bottom:7px!important;line-height:1.75!important}
+  .site-footer .footer-bottom{text-align:left!important;margin-top:34px!important}
+}
+
 </style>
 
 <script type="application/ld+json">
@@ -406,8 +516,8 @@ h1{font-size:54px}
     },
     {
       "@type":"ImageObject",
-      "@id":"https://dsproul.com/senior-living-lounge-foggy-hyatt-lane-dan-sproul.jpg#image",
-      "contentUrl":"https://dsproul.com/senior-living-lounge-foggy-hyatt-lane-dan-sproul.jpg",
+      "@id":"https://dsproul.com/senior-living-lobby-mockup-foggy-road.jpg#image",
+      "contentUrl":"https://dsproul.com/senior-living-lobby-mockup-foggy-road.jpg",
       "name":"Senior living lounge with Foggy Hyatt Lane photography by Dan Sproul",
       "description":"A calming foggy country lane landscape photograph displayed in a senior living resident lounge, designed to create warmth, familiarity, and a residential atmosphere.",
       "creator":{"@id":"https://dsproul.com/#dan-sproul"},
@@ -478,23 +588,23 @@ h1{font-size:54px}
       <p>Waiting rooms need artwork that softens the clinical experience while still feeling professional, warm, and intentional.</p>
     </div>
     <div class="mockup-grid">
-      <article class="mockup-card priority" data-title="Foggy River Wellness Waiting Room" data-desc="A quiet river scene becomes a strong wellness waiting room anchor without feeling corporate or sterile." data-img="healthcare-office-lobby-mockup-foggy-river.jpg" data-print="https://dansproul.com/featured/foggy-autumn-river-dan-sproul.html">
+      <article class="mockup-card priority" data-title="Foggy River Wellness Waiting Room" data-desc="A quiet river scene becomes a strong wellness waiting room anchor without feeling corporate or sterile." data-img="healthcare-office-lobby-mockup-foggy-river.jpg" data-print="https://dansproul.com/featured/foggy-autumn-river-dan-sproul.html" data-size="40x60, 45x60, or 48x72 for larger waiting rooms; 30x40 for smaller reception walls." data-frame="Natural oak, walnut, or matte black depending on seating, flooring, and millwork." data-format="Framed fine art paper, acrylic, or canvas depending on the desired warmth and durability." data-best="Healthcare waiting rooms, wellness lobbies, family lounges, reception spaces, and patient-facing entry areas.">
         <img src="healthcare-office-lobby-mockup-foggy-river.jpg" alt="Healthcare wellness lobby with foggy river forest artwork by Dan Sproul" loading="eager" decoding="async">
         <div class="mockup-copy"><span class="priority-label">Waiting Room</span><h3>Fog and Water Stillness</h3><p>A quiet river scene becomes a strong wellness waiting room anchor without feeling corporate or sterile.</p><div class="mockup-actions"><button type="button">Enlarge</button><a href="https://dansproul.com/featured/foggy-autumn-river-dan-sproul.html" target="_blank" rel="noopener">View This Print</a></div></div>
       </article>
-      <article class="mockup-card priority" data-title="Mountain Wildflower Waiting Room" data-desc="Warm floral foreground and mountain forms create an optimistic waiting room tone while remaining natural and calm." data-img="healthcare-waiting-room-flowers-mountains-mockups.jpg" data-print="https://dansproul.com/featured/wildflowers-in-the-tetons-dan-sproul.html">
+      <article class="mockup-card priority" data-title="Mountain Wildflower Waiting Room" data-desc="Warm floral foreground and mountain forms create an optimistic waiting room tone while remaining natural and calm." data-img="healthcare-waiting-room-flowers-mountains-mockups.jpg" data-print="https://dansproul.com/featured/wildflowers-in-the-tetons-dan-sproul.html" data-size="40x60, 45x60, or 48x72 for larger waiting rooms; 30x40 for smaller reception walls." data-frame="Natural oak, walnut, or matte black depending on seating, flooring, and millwork." data-format="Framed fine art paper, acrylic, or canvas depending on the desired warmth and durability." data-best="Healthcare waiting rooms, wellness lobbies, family lounges, reception spaces, and patient-facing entry areas.">
         <img src="healthcare-waiting-room-flowers-mountains-mockups.jpg" alt="Healthcare waiting room with mountain wildflower artwork by Dan Sproul" loading="lazy" decoding="async">
         <div class="mockup-copy"><span class="priority-label">Waiting Room</span><h3>Welcoming Color</h3><p>Warm floral foreground and mountain forms create an optimistic waiting room tone while remaining natural and calm.</p><div class="mockup-actions"><button type="button">Enlarge</button><a href="https://dansproul.com/featured/wildflowers-in-the-tetons-dan-sproul.html" target="_blank" rel="noopener">View This Print</a></div></div>
       </article>
-      <article class="mockup-card" data-title="Surgery Waiting Area" data-desc="A quiet black-and-white landscape gives the waiting area structure and calm without adding strong color or visual clutter." data-img="hospital waiting area black and white mockup dan sproul.jpg" data-print="">
+      <article class="mockup-card" data-title="Surgery Waiting Area" data-desc="A quiet black-and-white landscape gives the waiting area structure and calm without adding strong color or visual clutter." data-img="hospital waiting area black and white mockup dan sproul.jpg" data-print="" data-size="40x60, 45x60, or 48x72 for larger waiting rooms; 30x40 for smaller reception walls." data-frame="Natural oak, walnut, or matte black depending on seating, flooring, and millwork." data-format="Framed fine art paper, acrylic, or canvas depending on the desired warmth and durability." data-best="Healthcare waiting rooms, wellness lobbies, family lounges, reception spaces, and patient-facing entry areas.">
         <img src="hospital waiting area black and white mockup dan sproul.jpg" alt="Surgery waiting area with black and white quiet landscape artwork by Dan Sproul" loading="lazy" decoding="async">
         <div class="mockup-copy"><span class="priority-label">Surgery Waiting</span><h3>Neutral Waiting Room Calm</h3><p>A quiet black-and-white landscape gives the waiting area structure and calm without adding strong color or visual clutter.</p><div class="mockup-actions"><button type="button">Enlarge</button><a class="pending" href="#" target="_blank" rel="noopener">View This Print</a></div></div>
       </article>
-      <article class="mockup-card" data-title="Wellness Waiting Space" data-desc="Waterfall imagery adds natural movement and a restorative focal point for wellness clinics and patient-facing lounge spaces." data-img="wellness center framed waterfall mockup.jpg" data-print="">
+      <article class="mockup-card" data-title="Wellness Waiting Space" data-desc="Waterfall imagery adds natural movement and a restorative focal point for wellness clinics and patient-facing lounge spaces." data-img="wellness center framed waterfall mockup.jpg" data-print="" data-size="30x40, 32x48, or 36x48 for patient rooms; larger only when the wall has enough breathing room." data-frame="Light oak, natural maple, or simple matte black." data-format="Framed fine art paper with a white or off-white mat for the calmest presentation." data-best="Patient rooms, consultation rooms, recovery spaces, and low-distraction healthcare interiors.">
         <img src="wellness center framed waterfall mockup.jpg" alt="Wellness center waiting space with framed waterfall photography by Dan Sproul" loading="lazy" decoding="async">
         <div class="mockup-copy"><span class="priority-label">Wellness Waiting</span><h3>Waterfall as a Soft Focal Point</h3><p>Waterfall imagery adds natural movement and a restorative focal point for wellness clinics and patient-facing lounge spaces.</p><div class="mockup-actions"><button type="button">Enlarge</button><a class="pending" href="#" target="_blank" rel="noopener">View This Print</a></div></div>
       </article>
-      <article class="mockup-card" data-title="Restorative Health Lobby" data-desc="A moody coastal landscape creates a calm arrival moment for restorative health, wellness, or hospitality-inspired care settings." data-img="a_wide_well_lit_modern_reception_waiting_room_int.png" data-print="">
+      <article class="mockup-card" data-title="Restorative Health Lobby" data-desc="A moody coastal landscape creates a calm arrival moment for restorative health, wellness, or hospitality-inspired care settings." data-img="a_wide_well_lit_modern_reception_waiting_room_int.png" data-print="" data-size="40x60, 45x60, or 48x72 for larger waiting rooms; 30x40 for smaller reception walls." data-frame="Natural oak, walnut, or matte black depending on seating, flooring, and millwork." data-format="Framed fine art paper, acrylic, or canvas depending on the desired warmth and durability." data-best="Healthcare waiting rooms, wellness lobbies, family lounges, reception spaces, and patient-facing entry areas.">
         <img src="a_wide_well_lit_modern_reception_waiting_room_int.png" alt="Restorative health wellness center lobby with atmospheric coastal landscape art by Dan Sproul" loading="lazy" decoding="async">
         <div class="mockup-copy"><span class="priority-label">Restorative Lobby</span><h3>Atmospheric Arrival Space</h3><p>A moody coastal landscape creates a calm arrival moment for restorative health, wellness, or hospitality-inspired care settings.</p><div class="mockup-actions"><button type="button">Enlarge</button><a class="pending" href="#" target="_blank" rel="noopener">View This Print</a></div></div>
       </article>
@@ -507,15 +617,15 @@ h1{font-size:54px}
       <p>Patient rooms usually benefit from simpler compositions, softer contrast, quieter horizons, and nature images that do not demand too much attention.</p>
     </div>
     <div class="mockup-grid">
-      <article class="mockup-card priority" data-title="Foggy Island Patient Room" data-desc="A foggy island scene gives the patient room a quiet focal point without adding visual clutter or harsh color." data-img="healthcare-patient-room-mockup-foggy-island.jpg" data-print="https://dansproul.com/featured/moody-lake-superior-island-dan-sproul.html">
+      <article class="mockup-card priority" data-title="Foggy Island Patient Room" data-desc="A foggy island scene gives the patient room a quiet focal point without adding visual clutter or harsh color." data-img="healthcare-patient-room-mockup-foggy-island.jpg" data-print="https://dansproul.com/featured/moody-lake-superior-island-dan-sproul.html" data-size="30x40, 32x48, or 36x48 for patient rooms; larger only when the wall has enough breathing room." data-frame="Light oak, natural maple, or simple matte black." data-format="Framed fine art paper with a white or off-white mat for the calmest presentation." data-best="Patient rooms, consultation rooms, recovery spaces, and low-distraction healthcare interiors.">
         <img src="healthcare-patient-room-mockup-foggy-island.jpg" alt="Patient room with quiet foggy island landscape photography by Dan Sproul" loading="lazy" decoding="async">
         <div class="mockup-copy"><span class="priority-label">Patient Room</span><h3>Soft Monochrome Calm</h3><p>A foggy island scene gives the patient room a quiet focal point without adding visual clutter or harsh color.</p><div class="mockup-actions"><button type="button">Enlarge</button><a href="https://dansproul.com/featured/moody-lake-superior-island-dan-sproul.html" target="_blank" rel="noopener">View This Print</a></div></div>
       </article>
-      <article class="mockup-card priority" data-title="Sand Dune Path Patient Room" data-desc="Monochrome dune tracks create a quiet directional image, ideal for patient rooms where calm and simplicity matter." data-img="healthcare-patient-room-sanddune-steps-mockup.jpg" data-print="https://dansproul.com/featured/turtle-tracks-black-and-white-dan-sproul.html">
+      <article class="mockup-card priority" data-title="Sand Dune Path Patient Room" data-desc="Monochrome dune tracks create a quiet directional image, ideal for patient rooms where calm and simplicity matter." data-img="healthcare-patient-room-sanddune-steps-mockup.jpg" data-print="https://dansproul.com/featured/turtle-tracks-black-and-white-dan-sproul.html" data-size="30x40, 32x48, or 36x48 for patient rooms; larger only when the wall has enough breathing room." data-frame="Light oak, natural maple, or simple matte black." data-format="Framed fine art paper with a white or off-white mat for the calmest presentation." data-best="Patient rooms, consultation rooms, recovery spaces, and low-distraction healthcare interiors.">
         <img src="healthcare-patient-room-sanddune-steps-mockup.jpg" alt="Patient room with black and white sand dune path artwork by Dan Sproul" loading="lazy" decoding="async">
         <div class="mockup-copy"><span class="priority-label">Patient Room</span><h3>Low-Distraction Pathway</h3><p>Monochrome dune tracks create a quiet directional image, ideal for patient rooms where calm and simplicity matter.</p><div class="mockup-actions"><button type="button">Enlarge</button><a href="https://dansproul.com/featured/turtle-tracks-black-and-white-dan-sproul.html" target="_blank" rel="noopener">View This Print</a></div></div>
       </article>
-      <article class="mockup-card" data-title="Calm Lake Patient Room" data-desc="A lake and dock image brings soft blue tones and visual quiet into a modern patient room." data-img="hospital patient room lake mockup dan sproul.jpg" data-print="">
+      <article class="mockup-card" data-title="Calm Lake Patient Room" data-desc="A lake and dock image brings soft blue tones and visual quiet into a modern patient room." data-img="hospital patient room lake mockup dan sproul.jpg" data-print="" data-size="30x40, 32x48, or 36x48 for patient rooms; larger only when the wall has enough breathing room." data-frame="Light oak, natural maple, or simple matte black." data-format="Framed fine art paper with a white or off-white mat for the calmest presentation." data-best="Patient rooms, consultation rooms, recovery spaces, and low-distraction healthcare interiors.">
         <img src="hospital patient room lake mockup dan sproul.jpg" alt="Patient room with calm lake landscape photography print by Dan Sproul" loading="lazy" decoding="async">
         <div class="mockup-copy"><span class="priority-label">Patient Room</span><h3>Gentle Lake View</h3><p>A lake and dock image brings soft blue tones and visual quiet into a modern patient room.</p><div class="mockup-actions"><button type="button">Enlarge</button><a class="pending" href="#" target="_blank" rel="noopener">View This Print</a></div></div>
       </article>
@@ -528,23 +638,23 @@ h1{font-size:54px}
       <p>Corridors can support more scale and stronger landscape rhythm, especially when the image creates calm direction through the space.</p>
     </div>
     <div class="mockup-grid">
-      <article class="mockup-card priority" data-title="Mountain Lake Corridor" data-desc="A large atmospheric lake and mountain scene adds depth and orientation to a transitional healthcare corridor." data-img="healthcare-corridor-mountain-island-sunrise-mockup.jpg" data-print="https://dansproul.com/featured/moody-morning-view-pyramid-lake-canada-dan-sproul.html">
+      <article class="mockup-card priority" data-title="Mountain Lake Corridor" data-desc="A large atmospheric lake and mountain scene adds depth and orientation to a transitional healthcare corridor." data-img="healthcare-corridor-mountain-island-sunrise-mockup.jpg" data-print="https://dansproul.com/featured/moody-morning-view-pyramid-lake-canada-dan-sproul.html" data-size="40x60, 45x60, 48x72, or a coordinated horizontal series for longer walls." data-frame="Natural oak, walnut, or matte black depending on the corridor finishes." data-format="Framed paper or acrylic for a clean commercial presentation; metal can work in high-traffic areas." data-best="Healthcare corridors, transition spaces, wayfinding walls, family waiting areas, and large circulation zones.">
         <img src="healthcare-corridor-mountain-island-sunrise-mockup.jpg" alt="Healthcare corridor with large mountain lake sunrise landscape artwork by Dan Sproul" loading="lazy" decoding="async">
         <div class="mockup-copy"><span class="priority-label">Healthcare Corridor</span><h3>Long Sightline Artwork</h3><p>A large atmospheric lake and mountain scene adds depth and orientation to a transitional healthcare corridor.</p><div class="mockup-actions"><button type="button">Enlarge</button><a href="https://dansproul.com/featured/moody-morning-view-pyramid-lake-canada-dan-sproul.html" target="_blank" rel="noopener">View This Print</a></div></div>
       </article>
-      <article class="mockup-card" data-title="Autumn Forest Corridor" data-desc="Autumn color can add gentle warmth to wellness corridors when balanced with natural wood and neutral finishes." data-img="healthcare-corridor-autumn-forest-mockup.jpg" data-print="https://dansproul.com/featured/fog-filled-autumn-forest-dan-sproul.html">
+      <article class="mockup-card" data-title="Autumn Forest Corridor" data-desc="Autumn color can add gentle warmth to wellness corridors when balanced with natural wood and neutral finishes." data-img="healthcare-corridor-autumn-forest-mockup.jpg" data-print="https://dansproul.com/featured/fog-filled-autumn-forest-dan-sproul.html" data-size="40x60, 45x60, 48x72, or a coordinated horizontal series for longer walls." data-frame="Natural oak, walnut, or matte black depending on the corridor finishes." data-format="Framed paper or acrylic for a clean commercial presentation; metal can work in high-traffic areas." data-best="Healthcare corridors, transition spaces, wayfinding walls, family waiting areas, and large circulation zones.">
         <img src="healthcare-corridor-autumn-forest-mockup.jpg" alt="Healthcare corridor with autumn forest mountain artwork by Dan Sproul" loading="lazy" decoding="async">
         <div class="mockup-copy"><span class="priority-label">Corridor / Wellness</span><h3>Warm Corridor Movement</h3><p>Autumn color can add gentle warmth to wellness corridors when balanced with natural wood and neutral finishes.</p><div class="mockup-actions"><button type="button">Enlarge</button><a href="https://dansproul.com/featured/fog-filled-autumn-forest-dan-sproul.html" target="_blank" rel="noopener">View This Print</a></div></div>
       </article>
-      <article class="mockup-card" data-title="Waterfall Corridor Waiting Area" data-desc="A large waterfall landscape softens a healthcare corridor and creates a restorative visual pause near waiting or transition zones." data-img="hospital corridor waterfall mockup dan sproul.jpg" data-print="">
+      <article class="mockup-card" data-title="Waterfall Corridor Waiting Area" data-desc="A large waterfall landscape softens a healthcare corridor and creates a restorative visual pause near waiting or transition zones." data-img="hospital corridor waterfall mockup dan sproul.jpg" data-print="" data-size="40x60, 45x60, 48x72, or a coordinated horizontal series for longer walls." data-frame="Natural oak, walnut, or matte black depending on the corridor finishes." data-format="Framed paper or acrylic for a clean commercial presentation; metal can work in high-traffic areas." data-best="Healthcare corridors, transition spaces, wayfinding walls, family waiting areas, and large circulation zones.">
         <img src="hospital corridor waterfall mockup dan sproul.jpg" alt="Hospital corridor waiting area with large waterfall landscape wall art by Dan Sproul" loading="lazy" decoding="async">
         <div class="mockup-copy"><span class="priority-label">Corridor / Waiting</span><h3>Water Movement in Transition Space</h3><p>A large waterfall landscape softens a healthcare corridor and creates a restorative visual pause near waiting or transition zones.</p><div class="mockup-actions"><button type="button">Enlarge</button><a class="pending" href="#" target="_blank" rel="noopener">View This Print</a></div></div>
       </article>
-      <article class="mockup-card" data-title="Black and White Mountain Corridor" data-desc="Monochrome mountain and lake photography gives a corridor structure, depth, and a refined low-distraction atmosphere." data-img="hospital corridor black and white mountains mockup dan sproul.jpg" data-print="">
+      <article class="mockup-card" data-title="Black and White Mountain Corridor" data-desc="Monochrome mountain and lake photography gives a corridor structure, depth, and a refined low-distraction atmosphere." data-img="hospital corridor black and white mountains mockup dan sproul.jpg" data-print="" data-size="40x60, 45x60, 48x72, or a coordinated horizontal series for longer walls." data-frame="Natural oak, walnut, or matte black depending on the corridor finishes." data-format="Framed paper or acrylic for a clean commercial presentation; metal can work in high-traffic areas." data-best="Healthcare corridors, transition spaces, wayfinding walls, family waiting areas, and large circulation zones.">
         <img src="hospital corridor black and white mountains mockup dan sproul.jpg" alt="Hospital corridor with black and white mountain lake photography by Dan Sproul" loading="lazy" decoding="async">
         <div class="mockup-copy"><span class="priority-label">Healthcare Corridor</span><h3>Refined Monochrome Scale</h3><p>Monochrome mountain and lake photography gives a corridor structure, depth, and a refined low-distraction atmosphere.</p><div class="mockup-actions"><button type="button">Enlarge</button><a class="pending" href="#" target="_blank" rel="noopener">View This Print</a></div></div>
       </article>
-      <article class="mockup-card" data-title="Atmospheric River Healthcare Hallway" data-desc="A foggy river landscape supports a calm hallway experience with soft movement and natural depth." data-img="healthcare hallway mockup(2).jpg" data-print="">
+      <article class="mockup-card" data-title="Atmospheric River Healthcare Hallway" data-desc="A foggy river landscape supports a calm hallway experience with soft movement and natural depth." data-img="healthcare hallway mockup(2).jpg" data-print="" data-size="40x60, 45x60, 48x72, or a coordinated horizontal series for longer walls." data-frame="Natural oak, walnut, or matte black depending on the corridor finishes." data-format="Framed paper or acrylic for a clean commercial presentation; metal can work in high-traffic areas." data-best="Healthcare corridors, transition spaces, wayfinding walls, family waiting areas, and large circulation zones.">
         <img src="healthcare hallway mockup(2).jpg" alt="Healthcare hallway with atmospheric river landscape artwork by Dan Sproul" loading="lazy" decoding="async">
         <div class="mockup-copy"><span class="priority-label">Healthcare Hallway</span><h3>Fog and Flow Along the Corridor</h3><p>A foggy river landscape supports a calm hallway experience with soft movement and natural depth.</p><div class="mockup-actions"><button type="button">Enlarge</button><a class="pending" href="#" target="_blank" rel="noopener">View This Print</a></div></div>
       </article>
@@ -557,7 +667,7 @@ h1{font-size:54px}
       <p>Therapy and consultation spaces often work best with nature imagery that feels grounded, organic, and private rather than dramatic.</p>
     </div>
     <div class="mockup-grid">
-      <article class="mockup-card priority" data-title="Tree Canopy Consultation Office" data-desc="A green canopy scene supports a softer consultation atmosphere and brings organic texture into private care spaces." data-img="healthcare-consultation-lobby-tree-mockup.jpg" data-print="https://dansproul.com/featured/angel-oak-wide-angle-dan-sproul.html">
+      <article class="mockup-card priority" data-title="Tree Canopy Consultation Office" data-desc="A green canopy scene supports a softer consultation atmosphere and brings organic texture into private care spaces." data-img="healthcare-consultation-lobby-tree-mockup.jpg" data-print="https://dansproul.com/featured/angel-oak-wide-angle-dan-sproul.html" data-size="24x36, 30x40, or 32x48 depending on wall size and seating distance." data-frame="Natural oak, walnut, or matte black." data-format="Framed fine art paper with a white or off-white mat for private care environments." data-best="Therapy offices, consultation rooms, private care spaces, wellness offices, and quiet professional interiors.">
         <img src="healthcare-consultation-lobby-tree-mockup.jpg" alt="Healthcare consultation office with green tree canopy artwork by Dan Sproul" loading="lazy" decoding="async">
         <div class="mockup-copy"><span class="priority-label">Therapy / Consultation</span><h3>Biophilic Office Focus</h3><p>A green canopy scene supports a softer consultation atmosphere and brings organic texture into private care spaces.</p><div class="mockup-actions"><button type="button">Enlarge</button><a href="https://dansproul.com/featured/angel-oak-wide-angle-dan-sproul.html" target="_blank" rel="noopener">View This Print</a></div></div>
       </article>
@@ -570,15 +680,15 @@ h1{font-size:54px}
       <p>Artwork for senior living environments should feel warm, familiar, and residential rather than institutional. Nature photography can help create comfortable gathering spaces, resident lounges, dining rooms, wellness areas, and community corridors that feel welcoming and connected to the outdoors.</p>
     </div>
     <div class="mockup-grid">
-      <article class="mockup-card priority" data-title="Foggy Hyatt Lane Resident Lounge" data-desc="A quiet country lane brings familiarity, softness, and a more residential sense of place into senior living lounges and family gathering areas." data-img="senior-living-lounge-foggy-hyatt-lane-dan-sproul.jpg" data-print="https://dansproul.com/featured/foggy-hyatt-lane-dan-sproul.html">
+      <article class="mockup-card priority" data-title="Foggy Hyatt Lane Resident Lounge" data-desc="A quiet country lane brings familiarity, softness, and a more residential sense of place into senior living lounges and family gathering areas." data-img="senior-living-lobby-mockup-foggy-road.jpg" data-print="https://dansproul.com/featured/foggy-hyatt-lane-dan-sproul.html" data-size="40x60, 45x60, or 48x72 for resident lounges and gathering spaces." data-frame="Natural oak or medium walnut for a warmer residential feeling." data-format="Framed fine art paper; canvas can work where a softer residential texture is preferred." data-best="Resident lounges, family gathering areas, memory care common areas, community living rooms, and assisted living corridors.">
         <img src="senior-living-lobby-mockup-foggy-road.jpg" alt="Senior living resident lounge with Foggy Hyatt Lane landscape photography by Dan Sproul" loading="lazy" decoding="async">
         <div class="mockup-copy"><span class="priority-label">Resident Lounge</span><h3>Comfort, Familiarity & Connection</h3><p>A peaceful fog-covered country lane creates a warm residential feeling for senior living communities, family spaces, and memory care environments.</p><div class="mockup-actions"><button type="button">Enlarge</button><a href="https://dansproul.com/featured/foggy-hyatt-lane-dan-sproul.html" target="_blank" rel="noopener">View This Print</a></div></div>
       </article>
-      <article class="mockup-card priority" data-title="Senior Living Mountain Lounge" data-desc="A monochrome mountain reflection provides a premium, familiar, and peaceful statement piece for senior living lounges." data-img="healthcare-senior-living-lobby-bnw-mountains-mockup.jpg" data-print="https://dansproul.com/featured/string-lake-kayaks-black-and-white-dan-sproul.html">
+      <article class="mockup-card priority" data-title="Senior Living Mountain Lounge" data-desc="A monochrome mountain reflection provides a premium, familiar, and peaceful statement piece for senior living lounges." data-img="healthcare-senior-living-lobby-bnw-mountains-mockup.jpg" data-print="https://dansproul.com/featured/string-lake-kayaks-black-and-white-dan-sproul.html" data-size="40x60, 45x60, or 48x72 for resident lounges and gathering spaces." data-frame="Natural oak or medium walnut for a warmer residential feeling." data-format="Framed fine art paper; canvas can work where a softer residential texture is preferred." data-best="Resident lounges, family gathering areas, memory care common areas, community living rooms, and assisted living corridors.">
         <img src="healthcare-senior-living-lobby-bnw-mountains-mockup.jpg" alt="Senior living lounge with black and white mountain lake photography by Dan Sproul" loading="lazy" decoding="async">
         <div class="mockup-copy"><span class="priority-label">Senior Living Lounge</span><h3>Refined Shared Lounge</h3><p>A monochrome mountain reflection provides a premium, familiar, and peaceful statement piece for senior living lounges.</p><div class="mockup-actions"><button type="button">Enlarge</button><a href="https://dansproul.com/featured/string-lake-kayaks-black-and-white-dan-sproul.html" target="_blank" rel="noopener">View This Print</a></div></div>
       </article>
-      <article class="mockup-card" data-title="Healthcare Family Lounge" data-desc="A large black-and-white rock formation landscape creates a premium but restrained focal point for family waiting and lounge spaces." data-img="healthcare waiting area black and white landscape mockup.jpg" data-print="senior-living-artwork.html">
+      <article class="mockup-card" data-title="Healthcare Family Lounge" data-desc="A large black-and-white rock formation landscape creates a premium but restrained focal point for family waiting and lounge spaces." data-img="healthcare waiting area black and white landscape mockup.jpg" data-print="senior-living-artwork.html" data-size="40x60, 45x60, or 48x72 for resident lounges and gathering spaces." data-frame="Natural oak or medium walnut for a warmer residential feeling." data-format="Framed fine art paper; canvas can work where a softer residential texture is preferred." data-best="Resident lounges, family gathering areas, memory care common areas, community living rooms, and assisted living corridors.">
         <img src="healthcare waiting area black and white landscape mockup.jpg" alt="Senior living family lounge with black and white landscape artwork by Dan Sproul" loading="lazy" decoding="async">
         <div class="mockup-copy"><span class="priority-label">Family Lounge</span><h3>Large Monochrome Statement</h3><p>A large black-and-white landscape creates a premium but restrained focal point for family waiting, assisted living lounges, and shared restorative rooms.</p><div class="mockup-actions"><button type="button">Enlarge</button><a href="senior-living-artwork.html">Explore Senior Living Page</a></div></div>
       </article>
@@ -605,7 +715,7 @@ h1{font-size:54px}
       <p>A focused healthcare pathway for infusion bays, oncology waiting areas, treatment corridors, and patient-centered environments where visual calm is especially important.</p>
     </div>
     <div class="mockup-grid">
-      <article class="mockup-card priority" data-title="Oncology Infusion Artwork" data-desc="Calming landscape photography for infusion bays, oncology waiting rooms, treatment corridors, and patient-centered healthcare interiors." data-img="healthcare injection room mockup turquoise river.jpg" data-print="healthcare-oncology.html">
+      <article class="mockup-card priority" data-title="Oncology Infusion Artwork" data-desc="Calming landscape photography for infusion bays, oncology waiting rooms, treatment corridors, and patient-centered healthcare interiors." data-img="healthcare injection room mockup turquoise river.jpg" data-print="healthcare-oncology.html" data-size="30x40, 32x48, or 36x48 for patient rooms; larger only when the wall has enough breathing room." data-frame="Light oak, natural maple, or simple matte black." data-format="Framed fine art paper with a white or off-white mat for the calmest presentation." data-best="Patient rooms, consultation rooms, recovery spaces, and low-distraction healthcare interiors.">
         <img src="healthcare injection room mockup turquoise river.jpg" alt="Oncology infusion room with calming landscape photography by Dan Sproul" loading="lazy" decoding="async">
         <div class="mockup-copy"><span class="priority-label">Oncology Artwork</span><h3>Specialized Care Page</h3><p>Calming landscape photography for infusion bays, oncology waiting rooms, treatment corridors, and patient-centered healthcare interiors.</p><div class="mockup-actions"><button type="button">Enlarge</button><a href="healthcare-oncology.html">Explore Oncology Page</a></div></div>
       </article>
@@ -895,16 +1005,63 @@ h1{font-size:54px}
   <div class="btns"><a class="btn primary" href="mailto:sproulphoto@gmail.com?subject=Healthcare%20Artwork%20Mockup%20Request">Request Mockup</a><a class="btn" href="for-designers.html">For Designers</a></div>
 </section>
 
-<div id="contact" class="footer-seo">
+
+<footer id="contact" class="site-footer">
   <div class="footer-grid">
-    <div><h3>Shop By Room</h3><a href="https://dansproul.com/collections/bedroom+wall+art+calming+nature+landscape+prints">Bedroom Wall Art</a><a href="in-your-space.html">Art In Your Space</a><a href="https://dansproul.com/collections/office+wall+art+inspiring+landscape+prints">Office Wall Art</a><a href="senior-living-artwork.html">Senior Living Artwork</a><a href="healthcare-oncology.html">Oncology Artwork</a></div>
-    <div><h3>Shop By Subject</h3><a href="https://dansproul.com/art/mountains">Mountain Prints</a><a href="https://dansproul.com/art/forest">Forest Photography</a><a href="https://dansproul.com/art/coastal">Coastal Wall Art</a><a href="https://dansproul.com/art/waterfalls">Waterfall Prints</a></div>
-    <div><h3>Shop By Mood</h3><a href="quiet-earth-collection.html">Quiet Earth Collection</a><a href="monochrome-stillness.html">Black &amp; White Prints</a><a href="winter-stillness.html">Winter Stillness</a><a href="https://dansproul.com/art/calm">Calming Nature Prints</a></div>
-    <div><h3>Shop By Location</h3><a href="alaska-photography-prints.html">Alaska Prints</a><a href="colorado-photography-prints.html">Colorado Wall Art</a><a href="ohio-nature-photography-prints.html">Ohio Nature Photography</a><a href="oregon-coast-photography-prints.html">Oregon Coast Prints</a></div>
-    <div><h3>More Collections</h3><a href="about-dan-sproul.html">About Dan Sproul</a><a href="best-sellers.html">Best Sellers</a><a href="art-collections.html">Curated Photography Collections</a><a href="for-designers.html">For Interior Designers</a><a href="senior-living-artwork.html">Senior Living Artwork</a><a href="coastal-atmosphere.html">Coastal Atmosphere</a><a href="wellness-waters-collection.html">Wellness Waters</a><a href="mailto:sproulphoto@gmail.com">Email Dan</a></div>
+    <div>
+      <h3>Shop By Room</h3>
+      <a href="https://dansproul.com/collections/bedroom+wall+art+calming+nature+landscape+prints" target="_blank" rel="noopener">Bedroom Wall Art</a>
+      <a href="in-your-space.html">Art In Your Space</a>
+      <a href="healthcare-artwork.html">Healthcare Artwork</a>
+      <a href="senior-living-artwork.html">Senior Living Artwork</a>
+      <a href="healthcare-oncology.html">Oncology Artwork</a>
+    </div>
+
+    <div>
+      <h3>Shop By Subject</h3>
+      <a href="https://dansproul.com/art/mountains" target="_blank" rel="noopener">Mountain Prints</a>
+      <a href="https://dansproul.com/art/forest" target="_blank" rel="noopener">Forest Photography</a>
+      <a href="https://dansproul.com/art/coastal" target="_blank" rel="noopener">Coastal Wall Art</a>
+      <a href="https://dansproul.com/art/waterfalls" target="_blank" rel="noopener">Waterfall Prints</a>
+      <a href="https://dansproul.com/art/wildlife" target="_blank" rel="noopener">Wildlife Prints</a>
+    </div>
+
+    <div>
+      <h3>Shop By Mood</h3>
+      <a href="quiet-earth-collection.html">Quiet Earth Collection</a>
+      <a href="wellness-waters-collection.html">Wellness Waters</a>
+      <a href="monochrome-stillness.html">Black &amp; White Prints</a>
+      <a href="winter-stillness.html">Winter Stillness</a>
+      <a href="https://dansproul.com/art/calm" target="_blank" rel="noopener">Calming Nature Prints</a>
+    </div>
+
+    <div>
+      <h3>Shop By Location</h3>
+      <a href="ohio-nature-photography-prints.html">Ohio Nature Photography</a>
+      <a href="alaska-photography-prints.html">Alaska Prints</a>
+      <a href="colorado-photography-prints.html">Colorado Wall Art</a>
+      <a href="oregon-coast-photography-prints.html">Oregon Coast Prints</a>
+      <a href="https://dansproul.com/art/badlands" target="_blank" rel="noopener">Badlands Wildlife Prints</a>
+    </div>
+
+    <div>
+      <h3>More Collections</h3>
+      <a href="about-dan-sproul.html">About Dan Sproul</a>
+      <a href="best-sellers.html">Best Sellers</a>
+      <a href="art-collections.html">Curated Photography Collections</a>
+      <a href="for-designers.html">For Interior Designers</a>
+      <a href="hospitality-artwork.html">Hospitality Artwork</a>
+      <a href="coastal-atmosphere.html">Coastal Atmosphere</a>
+      <a href="mailto:sproulphoto@gmail.com">Email Dan</a>
+    </div>
   </div>
-  <footer class="footer-bottom">© 2026 Dan Sproul Fine Art Photography · Original landscape photography by Dan Sproul, based in Lima, Ohio · Prints ship worldwide</footer>
-</div>
+
+  <div class="footer-bottom">
+    © 2026 Dan Sproul Fine Art Photography · Original landscape photography and heritage-inspired mixed media artwork by Dan Sproul, based in Lima, Ohio · Prints ship worldwide
+  </div>
+</footer>
+
+
 
 <div class="mockup-modal" id="mockupModal" aria-hidden="true" role="dialog" aria-label="Healthcare mockup preview">
   <button class="mockup-modal-close" type="button" aria-label="Close image">×</button>
@@ -913,6 +1070,12 @@ h1{font-size:54px}
     <div class="mockup-modal-copy">
       <h3 id="mockupModalTitle"></h3>
       <p id="mockupModalDesc"></p>
+      <div class="mockup-modal-specs">
+        <div><strong>Recommended Size</strong><span id="mockupModalSize"></span></div>
+        <div><strong>Recommended Frame</strong><span id="mockupModalFrame"></span></div>
+        <div><strong>Recommended Format</strong><span id="mockupModalFormat"></span></div>
+        <div><strong>Works Best In</strong><span id="mockupModalBest"></span></div>
+      </div>
       <div class="mockup-modal-actions">
         <a id="mockupModalPrint" href="#" target="_blank" rel="noopener" class="pending">View This Print</a>
         <a href="mailto:sproulphoto@gmail.com?subject=Healthcare%20Artwork%20Mockup%20Request">Request Similar Mockup</a>
@@ -921,6 +1084,7 @@ h1{font-size:54px}
     </div>
   </div>
 </div>
+
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
@@ -938,8 +1102,13 @@ document.addEventListener('DOMContentLoaded', function () {
   const modalTitle = document.getElementById('mockupModalTitle');
   const modalDesc = document.getElementById('mockupModalDesc');
   const modalPrint = document.getElementById('mockupModalPrint');
+  const modalSize = document.getElementById('mockupModalSize');
+  const modalFrame = document.getElementById('mockupModalFrame');
+  const modalFormat = document.getElementById('mockupModalFormat');
+  const modalBest = document.getElementById('mockupModalBest');
 
   function openModal(card){
+    if(!modal || !modalImg) return;
     const img = card.getAttribute('data-img') || card.querySelector('img')?.src || '';
     const title = card.getAttribute('data-title') || card.querySelector('h3')?.textContent || 'Healthcare artwork mockup';
     const desc = card.getAttribute('data-desc') || card.querySelector('p')?.textContent || '';
@@ -949,11 +1118,15 @@ document.addEventListener('DOMContentLoaded', function () {
     modalImg.alt = title + ' preview';
     modalTitle.textContent = title;
     modalDesc.textContent = desc;
+    modalSize.textContent = card.getAttribute('data-size') || '30x40, 40x60, or larger depending on wall scale and viewing distance.';
+    modalFrame.textContent = card.getAttribute('data-frame') || 'Natural oak, walnut, or matte black depending on the interior finishes.';
+    modalFormat.textContent = card.getAttribute('data-format') || 'Framed fine art paper, acrylic, canvas, or metal depending on the room type.';
+    modalBest.textContent = card.getAttribute('data-best') || 'Healthcare interiors, wellness spaces, corridors, waiting rooms, and commercial environments.';
 
     if(print){
       modalPrint.href = print;
       modalPrint.classList.remove('pending');
-      modalPrint.textContent = print.includes('healthcare-oncology') ? 'Explore Oncology Page' : 'View This Print';
+      modalPrint.textContent = print.includes('healthcare-oncology') ? 'Explore Oncology Page' : print.includes('senior-living') ? 'Explore Senior Living Page' : 'View This Print';
     } else {
       modalPrint.href = '#';
       modalPrint.classList.add('pending');
@@ -965,9 +1138,10 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function closeModal(){
+    if(!modal) return;
     modal.classList.remove('active');
     modal.setAttribute('aria-hidden','true');
-    modalImg.src='';
+    if(modalImg) modalImg.src='';
     document.body.style.overflow='';
   }
 
@@ -986,6 +1160,10 @@ document.addEventListener('DOMContentLoaded', function () {
           if(attr === 'data-title') return img.getAttribute('alt') || 'Healthcare artwork sizing example';
           if(attr === 'data-desc') return 'Sizing and placement example for healthcare and wellness interiors.';
           if(attr === 'data-print') return '';
+          if(attr === 'data-size') return '30x40, 40x60, or larger depending on the wall and project.';
+          if(attr === 'data-frame') return 'Natural oak, walnut, or matte black.';
+          if(attr === 'data-format') return 'Framed fine art paper, acrylic, canvas, or metal.';
+          if(attr === 'data-best') return 'Healthcare waiting rooms, patient areas, wellness offices, corridors, and project planning.';
           return '';
         },
         querySelector: function(){ return null; }
@@ -993,11 +1171,12 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  document.querySelector('.mockup-modal-close').addEventListener('click', closeModal);
-  document.getElementById('mockupModalCloseInline').addEventListener('click', closeModal);
-  modal.addEventListener('click', function(e){ if(e.target === modal) closeModal(); });
-  document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && modal.classList.contains('active')) closeModal(); });
+  document.querySelector('.mockup-modal-close')?.addEventListener('click', closeModal);
+  document.getElementById('mockupModalCloseInline')?.addEventListener('click', closeModal);
+  modal?.addEventListener('click', function(e){ if(e.target === modal) closeModal(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && modal && modal.classList.contains('active')) closeModal(); });
 });
 </script>
+
 </body>
 </html>
