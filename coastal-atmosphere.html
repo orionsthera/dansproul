@@ -86,7 +86,7 @@ h3{font-size:1.4rem;font-weight:400;margin-bottom:12px}
 .btn.primary{background:#d7c2a1;color:#111;border-color:#d7c2a1}
 .btn:hover{transform:translateY(-2px);border-color:rgba(197,160,106,.55)}
 
-/* NAV */
+
 .site-header{
   position:fixed;
   top:0;left:0;width:100%;
@@ -136,7 +136,7 @@ h3{font-size:1.4rem;font-weight:400;margin-bottom:12px}
 .mobile-toggle{display:none;background:none;border:none;cursor:pointer}
 .mobile-toggle span{display:block;width:24px;height:1px;margin:6px 0;background:#f4eee5}
 
-/* HERO */
+
 .hero{
   min-height:92vh;
   display:flex;
@@ -167,7 +167,7 @@ h3{font-size:1.4rem;font-weight:400;margin-bottom:12px}
   text-transform:uppercase;
 }
 
-/* MOCKUPS / FEATURED INSTALLATIONS */
+
 .mockup-section{
   background:var(--soft);
   color:var(--dark);
@@ -322,7 +322,7 @@ h3{font-size:1.4rem;font-weight:400;margin-bottom:12px}
   background:#fffaf3;
 }
 
-/* STORY / COLLECTION */
+
 .collection-story{
   background:linear-gradient(to bottom,#080808,#11100f);
   border-top:1px solid var(--line);
@@ -371,7 +371,7 @@ h3{font-size:1.4rem;font-weight:400;margin-bottom:12px}
 }
 .card-copy p{font-size:.95rem}
 
-/* BEST ROOMS */
+
 .room-strip{background:#0d0c0b;border-top:1px solid var(--line)}
 .room-strip-grid{
   display:grid;
@@ -397,7 +397,7 @@ h3{font-size:1.4rem;font-weight:400;margin-bottom:12px}
 .room-strip-card h3{font-size:1.35rem;margin-bottom:10px}
 .room-strip-card p{font-size:.86rem}
 
-/* BUYING HELP */
+
 .buying-help-section{
   background:#f4f0ea;
   color:#1f1f1d;
@@ -431,7 +431,7 @@ h3{font-size:1.4rem;font-weight:400;margin-bottom:12px}
 }
 .buying-help-item p{color:#4c443c;margin:0;font-size:.94rem}
 
-/* DESIGNER WORKFLOW */
+
 .workflow-intro-cta{
   background:#0b0a08;
   padding:90px 0 0;
@@ -491,7 +491,7 @@ h3{font-size:1.4rem;font-weight:400;margin-bottom:12px}
 .workflow-cta{text-align:center;max-width:760px;margin:0 auto;padding-top:20px}
 .workflow-cta p{margin:0 auto 30px}
 
-/* RELATED */
+
 .qe-related-collections{
   background:#050505;
   padding:120px 0 130px;
@@ -533,7 +533,7 @@ h3{font-size:1.4rem;font-weight:400;margin-bottom:12px}
 .qe-related-content p{color:#b8aa98;line-height:1.8;font-size:.95rem;margin-bottom:20px}
 .qe-related-link{color:#f3eee7;font-family:Arial,Helvetica,sans-serif;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase}
 
-/* FAQ / CTA */
+
 .faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:40px}
 .faq{
   padding:28px;
@@ -549,7 +549,7 @@ h3{font-size:1.4rem;font-weight:400;margin-bottom:12px}
 .pre-footer-cta .container{max-width:860px}
 .pre-footer-cta p{margin:0 auto 28px}
 
-/* MODAL */
+
 .mockup-modal{
   position:fixed;
   inset:0;
@@ -607,12 +607,12 @@ h3{font-size:1.4rem;font-weight:400;margin-bottom:12px}
 }
 
 
-/* PERFORMANCE */
+
 img{max-width:100%;height:auto}
 section{content-visibility:auto;contain-intrinsic-size:1px 900px}
 .hero,.site-header,nav{content-visibility:visible;contain-intrinsic-size:auto}
 
-/* RESPONSIVE */
+
 @media(max-width:1100px){
   .main-nav{display:none}
   .mobile-toggle{display:block}
@@ -654,7 +654,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
   .mockup-modal-content .btn{display:inline-block;margin-top:18px}
 }
 
-/* SITEWIDE FOOTER + PHASE 2 MOBILE FIXES */
+
 .site-footer{
   display:block!important;
   width:100%!important;
@@ -845,6 +845,33 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
   }
 }
 
+
+
+/* FINAL CLEANUP: BUYER GUIDANCE + MOBILE FIXES */
+.mockup-caption strong{color:#9f7b3d;font-family:Arial,Helvetica,sans-serif;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase}
+.mockup-modal{align-items:flex-start!important;overflow-y:auto!important;padding:58px 14px 18px!important}
+.mockup-modal-inner{width:min(100%,1180px)!important;max-height:none!important;overflow:visible!important}
+.mockup-modal img{max-height:42vh!important;object-fit:contain!important}
+.mockup-modal-content{max-height:none!important;overflow:visible!important;padding:22px!important}
+@media(max-width:768px){
+  h1{font-size:clamp(2.3rem,9vw,3.4rem)!important;line-height:1.02!important;letter-spacing:-.04em!important}
+  h2{font-size:clamp(1.9rem,7.5vw,2.75rem)!important;line-height:1.05!important}
+  .hero{min-height:78vh!important;background-position:center!important}
+  .hero p{max-width:100%!important}
+  .section-heading{margin-bottom:32px!important}
+  .buyer-note{padding:14px 16px!important;margin-top:18px!important}
+  .featured-installation{margin-bottom:24px!important;border-radius:12px!important}
+  .featured-installation-copy{padding:22px!important}
+  .quick-specs,.inline-specs{grid-template-columns:1fr!important}
+  .mockup-grid{gap:22px!important;margin-top:34px!important}
+  .mockup-pair{gap:22px!important}
+  .workflow-intro-cta{padding:58px 0 0!important}
+  .designer-workflow{padding:58px 0 72px!important}
+  .workflow-grid{gap:14px!important;margin-bottom:34px!important}
+  .workflow-confidence{gap:20px!important;margin-bottom:32px!important}
+  .qe-related-collections{padding:72px 0!important}
+}
+
 </style>
 
 <script type="application/ld+json">
@@ -1000,7 +1027,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
   <div class="container hero-content">
     <span class="eyebrow">Atmospheric Coastal Fine Art</span>
     <h1>Coastal Atmosphere</h1>
-    <p>A curated collection of moody coastal photography featuring fog, surf, sea stacks, shoreline texture, muted ocean palettes, and atmospheric Pacific Northwest light. Designed for quiet luxury interiors, refined coastal homes, boutique hospitality, and modern designer spaces.</p>
+    <p>A curated collection of moody coastal photography featuring fog, surf, sea stacks, shoreline texture, muted ocean palettes, and atmospheric Pacific Northwest light. Created for calm bedrooms, living rooms, coastal homes, guest spaces, wellness rooms, and interiors that feel better with a quiet connection to water.</p>
     <div class="button-row">
       <a href="#mockups" class="btn primary">View In Rooms</a>
       <a href="#collection" class="btn">View Print Options</a>
@@ -1020,7 +1047,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
     <div class="section-heading">
       <span class="eyebrow">Featured In Real Spaces</span>
       <h2>Coastal artwork visualized in refined interiors.</h2>
-      <p>These room views show how atmospheric coastal photography can add scale, warmth, softness, and quiet movement to refined residential interiors, bedrooms, dining rooms, and coastal hospitality spaces. Click any mockup to enlarge it and view the corresponding print, with suggested size, frame, and format guidance.</p>
+      <p>These room views show how coastal photography can feel at home above a sofa, bed, console, dining room wall, or quiet guest space. Click any mockup to enlarge it and see the related print with suggested size, frame, and format guidance.</p>
       <p class="buyer-note">Available as framed prints, canvas, acrylic, metal, and fine art paper through the linked print pages.</p>
     </div>
 
@@ -1125,30 +1152,30 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
     </article>
 
     <div class="mockup-grid">
-      <div class="mockup" data-img="coastal-atmosphere-diningroom.jpg" data-link="https://dansproul.com/featured/dreamy-haystack-rock-reflection-dan-sproul.html" data-caption="Dreamy Haystack Rock reflection artwork shown above a dining room console for a refined coastal interior.">
+      <div class="mockup" data-img="coastal-atmosphere-diningroom.jpg" data-link="https://dansproul.com/featured/dreamy-haystack-rock-reflection-dan-sproul.html" data-caption="Dreamy Haystack Rock reflection artwork shown above a dining room console for a refined coastal interior." data-size="Suggested sizes: 30×40, 36×48, 40×60, or larger depending on console and wall width." data-frame="Frame suggestion: white oak, natural oak, walnut, or thin matte black." data-format="Available formats: framed print, canvas, acrylic, metal, and fine art paper.">
         <img src="coastal-atmosphere-diningroom.jpg" alt="Moody Oregon Coast photography above a dining room console by Dan Sproul" loading="lazy" decoding="async">
         <a class="quick-link" href="https://dansproul.com/featured/dreamy-haystack-rock-reflection-dan-sproul.html" target="_blank" rel="noopener" onclick="event.stopPropagation()">View Print</a>
-        <div class="mockup-caption">Moody Oregon Coast photography above a dining room console.</div>
+        <div class="mockup-caption"><strong>Best for:</strong> dining rooms, consoles, and calm coastal homes. Suggested sizes: 30×40 to 40×60.</div>
       </div>
 
       <div class="mockup-pair">
-        <div class="mockup" data-img="coastal-atmosphere-livingroom.jpg" data-link="https://dansproul.com/featured/powerful-ocean-waves-oregon-coast-dan-sproul.html" data-caption="Powerful Oregon Coast ocean wave photography for a quiet luxury living room.">
+        <div class="mockup" data-img="coastal-atmosphere-livingroom.jpg" data-link="https://dansproul.com/featured/powerful-ocean-waves-oregon-coast-dan-sproul.html" data-caption="Powerful Oregon Coast ocean wave photography for a quiet luxury living room." data-size="Suggested sizes: 36×54, 40×60, 45×60, or larger for sofas and main living room walls." data-frame="Frame suggestion: thin matte black, walnut, or natural wood for contrast." data-format="Available formats: framed print, canvas, acrylic, metal, and fine art paper.">
           <img src="coastal-atmosphere-livingroom.jpg" alt="Black and white coastal surf print for a quiet luxury living room by Dan Sproul" loading="lazy" decoding="async">
           <a class="quick-link" href="https://dansproul.com/featured/powerful-ocean-waves-oregon-coast-dan-sproul.html" target="_blank" rel="noopener" onclick="event.stopPropagation()">View Print</a>
-          <div class="mockup-caption">Black and white coastal surf print for a quiet luxury living room.</div>
+          <div class="mockup-caption"><strong>Best for:</strong> living rooms and darker modern interiors. Suggested sizes: 36×54 to 45×60.</div>
         </div>
 
-        <div class="mockup" data-img="coastal-atmosphere-living-room.jpg" data-link="https://dansproul.com/featured/yaquina-beach-black-and-white-dan-sproul.html" data-caption="Yaquina Beach black and white coastal artwork above a fireplace in a luxury living room.">
+        <div class="mockup" data-img="coastal-atmosphere-living-room.jpg" data-link="https://dansproul.com/featured/yaquina-beach-black-and-white-dan-sproul.html" data-caption="Yaquina Beach black and white coastal artwork above a fireplace in a luxury living room." data-size="Suggested sizes: 30×40, 36×48, 40×60, or custom sizing above fireplaces and mantels." data-frame="Frame suggestion: matte black, walnut, or warm natural wood." data-format="Available formats: framed print, canvas, acrylic, metal, and fine art paper.">
           <img src="coastal-atmosphere-living-room.jpg" alt="Black and white Yaquina Beach coastal artwork above fireplace in luxury living room by Dan Sproul" loading="lazy" decoding="async">
           <a class="quick-link" href="https://dansproul.com/featured/yaquina-beach-black-and-white-dan-sproul.html" target="_blank" rel="noopener" onclick="event.stopPropagation()">View Print</a>
-          <div class="mockup-caption">Black and white coastal artwork above a fireplace in a luxury living room.</div>
+          <div class="mockup-caption"><strong>Best for:</strong> fireplaces, mantels, and statement seating areas. Natural wood or matte black frames work well.</div>
         </div>
       </div>
 
-      <div class="mockup" data-img="coastal-atmosphere-bedroom.jpg" data-link="https://dansproul.com/featured/moody-oregon-coast-sea-stacks-dan-sproul.html" data-caption="Moody Oregon Coast sea stack artwork for a warm bedroom, wellness space, or quiet coastal retreat.">
+      <div class="mockup" data-img="coastal-atmosphere-bedroom.jpg" data-link="https://dansproul.com/featured/moody-oregon-coast-sea-stacks-dan-sproul.html" data-caption="Moody Oregon Coast sea stack artwork for a warm bedroom, wellness space, or quiet coastal retreat." data-size="Suggested sizes: 24×36, 30×40, 36×48, or a pair of smaller prints for bedrooms." data-frame="Frame suggestion: natural oak, white oak, walnut, or soft black." data-format="Available formats: framed print, canvas, acrylic, metal, and fine art paper.">
         <img src="coastal-atmosphere-bedroom.jpg" alt="Fog and shoreline artwork for bedrooms and wellness spaces by Dan Sproul" loading="lazy" decoding="async">
         <a class="quick-link" href="https://dansproul.com/featured/moody-oregon-coast-sea-stacks-dan-sproul.html" target="_blank" rel="noopener" onclick="event.stopPropagation()">View Print</a>
-        <div class="mockup-caption">Fog and shoreline artwork for bedrooms and wellness spaces.</div>
+        <div class="mockup-caption"><strong>Best for:</strong> bedrooms, wellness rooms, and quiet retreats. Suggested sizes: 24×36 to 36×48.</div>
       </div>
     </div>
   </div>
@@ -1277,40 +1304,40 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
 <section class="workflow-intro-cta">
   <div class="container">
     <span class="eyebrow">Designer Support</span>
-    <h2>Need this collection visualized in a bedroom, spa, lobby, or coastal home?</h2>
-    <p>Email a room photo or project note and receive a complimentary mockup preview with artwork recommendations, sizing direction, and presentation guidance.</p>
+    <h2>Want to see how coastal artwork might look in your room?</h2>
+    <p>Email a room photo, wall dimensions, or a short note about the space and I can suggest artwork, size, and presentation options.</p>
   </div>
 </section>
 
 <section class="designer-workflow">
   <div class="container">
     <div class="workflow-header">
-      <span class="eyebrow">Designer Workflow</span>
-      <h2>From room photo to artwork recommendation.</h2>
-      <p>A simple process for designers, stagers, hospitality teams, wellness spaces, and residential clients who want artwork chosen with scale, atmosphere, and placement in mind.</p>
+      <span class="eyebrow">Artwork Selection Help</span>
+      <h2>From room photo to confident artwork choice.</h2>
+      <p>A simple process for homeowners, designers, guest spaces, wellness rooms, and anyone who wants help choosing the right coastal print for a specific wall.</p>
     </div>
 
     <div class="workflow-grid">
       <div class="workflow-step"><span class="workflow-number">Step 01</span><h3>Share Your Space</h3><p>Send a room photo, wall dimensions, project type, preferred atmosphere, and any inspiration images or finish notes.</p></div>
       <div class="workflow-step"><span class="workflow-number">Step 02</span><h3>Receive Curated Options</h3><p>Dan recommends artwork options, sizing direction, orientation, collection fit, and presentation formats.</p></div>
       <div class="workflow-step"><span class="workflow-number">Step 03</span><h3>Review Mockups</h3><p>See selected artwork visualized in your space with scale, placement, and alternate image options when needed.</p></div>
-      <div class="workflow-step"><span class="workflow-number">Step 04</span><h3>Specify & Order</h3><p>Available as framed prints, canvas, acrylic, metal, and custom-sized pieces for residential and commercial interiors.</p></div>
+      <div class="workflow-step"><span class="workflow-number">Step 04</span><h3>Choose & Order</h3><p>Available as framed prints, canvas, acrylic, metal, and custom-sized pieces for homes and larger spaces.</p></div>
     </div>
 
     <div class="workflow-confidence">
-      <div><span class="eyebrow">Trade Confidence</span><h3>Built for easier specification.</h3></div>
+      <div><span class="eyebrow">Ordering Confidence</span><h3>Helpful details before ordering.</h3></div>
       <ul>
         <li>Custom sizing available</li>
         <li>Framed, canvas, acrylic, and metal options</li>
         <li>Large-format artwork for statement walls</li>
         <li>Collection PDFs and spec sheets available</li>
         <li>Room mockups available before ordering</li>
-        <li>Support for residential, hospitality, healthcare, and wellness projects</li>
+        <li>Support for homes, offices, hospitality, healthcare, and wellness spaces</li>
       </ul>
     </div>
 
     <div class="workflow-cta">
-      <h3>Need artwork visualized in your project?</h3>
+      <h3>Need artwork visualized in your space?</h3>
       <p>Email a room photo or project note for a complimentary mockup preview.</p>
       <a href="mailto:sproulphoto@gmail.com?subject=Coastal%20Atmosphere%20Mockup%20Request" class="btn primary">Request Mockup</a>
       <a href="for-designers.html" class="btn">For Designers</a>
@@ -1377,7 +1404,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
 </section>
 
 
-<footer id="contact-footer" class="site-footer">
+<footer id="footer" class="site-footer">
   <div class="footer-grid">
     <div>
       <h3>Collections</h3>
@@ -1386,50 +1413,43 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
       <a href="coastal-atmosphere.html">Coastal Atmosphere</a>
       <a href="mountain-light-collection.html">Mountain Light</a>
       <a href="monochrome-stillness.html">Monochrome Stillness</a>
-      <a href="forest-light-collection.html">Forest Light</a>
     </div>
-
     <div>
-      <h3>Project Types</h3>
+      <h3>Featured Pages</h3>
+      <a href="best-sellers.html">Best Sellers</a>
+      <a href="in-your-space.html">In Your Space</a>
+      <a href="ohio-nature-photography-prints.html">Ohio Nature Photography</a>
+      <a href="alaska-photography-prints.html">Alaska Prints</a>
+      <a href="about-dan-sproul.html">About Dan Sproul</a>
+    </div>
+    <div>
+      <h3>Designer Resources</h3>
+      <a href="for-designers.html">For Designers</a>
       <a href="healthcare-artwork.html">Healthcare Artwork</a>
       <a href="hospitality-artwork.html">Hospitality Artwork</a>
       <a href="senior-living-artwork.html">Senior Living Artwork</a>
-      <a href="residential-artwork.html">Residential Artwork</a>
-      <a href="in-your-space.html">Art In Your Space</a>
+      <a href="mailto:sproulphoto@gmail.com?subject=Mockup%20Request">Request Mockups</a>
     </div>
-
     <div>
-      <h3>Resources</h3>
-      <a href="for-designers.html">For Designers</a>
-      <a href="best-sellers.html">Best Sellers</a>
-      <a href="art-collections.html">Curated Collections</a>
-      <a href="about-dan-sproul.html">About Dan Sproul</a>
-      <a href="mailto:sproulphoto@gmail.com?subject=Coastal%20Atmosphere%20Mockup%20Request">Request Mockup</a>
-    </div>
-
-    <div>
-      <h3>Shop By Subject</h3>
-      <a href="https://dansproul.com/art/coastal" target="_blank" rel="noopener">Coastal Wall Art</a>
-      <a href="https://dansproul.com/art/ocean" target="_blank" rel="noopener">Ocean Prints</a>
-      <a href="https://dansproul.com/art/beach" target="_blank" rel="noopener">Beach Photography</a>
-      <a href="https://dansproul.com/art/waterfalls" target="_blank" rel="noopener">Waterfall Prints</a>
+      <h3>Artwork Themes</h3>
+      <a href="https://dansproul.com/art/waterfall" target="_blank" rel="noopener">Waterfall Prints</a>
       <a href="https://dansproul.com/art/forest" target="_blank" rel="noopener">Forest Photography</a>
+      <a href="https://dansproul.com/art/coastal" target="_blank" rel="noopener">Coastal Wall Art</a>
+      <a href="https://dansproul.com/art/mountain" target="_blank" rel="noopener">Mountain Photography</a>
+      <a href="https://dansproul.com/art/wildlife" target="_blank" rel="noopener">Wildlife Photography</a>
     </div>
-
     <div>
-      <h3>Contact</h3>
-      <a href="mailto:sproulphoto@gmail.com?subject=Coastal%20Atmosphere%20Artwork%20Help">Email Dan</a>
-      <a href="mailto:sproulphoto@gmail.com?subject=Trade%20Pricing%20Inquiry">Trade Pricing</a>
-      <a href="https://dansproul.com" target="_blank" rel="noopener">Shop Prints</a>
-      <a href="https://dansproul.com/collections/best+sellers+and+designer+favorite+wall+art" target="_blank" rel="noopener">Best Sellers Store</a>
+      <h3>Shop Prints</h3>
+      <a href="https://dansproul.com" target="_blank" rel="noopener">Fine Art America Store</a>
+      <a href="https://dansproul.com/collections/best+sellers" target="_blank" rel="noopener">Best Sellers Collection</a>
+      <a href="heritage-mixed-media.html">Heritage &amp; Mixed Media</a>
+      <a href="mailto:sproulphoto@gmail.com">Email Dan</a>
     </div>
   </div>
-
   <div class="footer-bottom">
-    © 2026 Dan Sproul Fine Art Photography · Original landscape photography and heritage-inspired mixed media artwork by Dan Sproul, based in Lima, Ohio · Prints ship worldwide
+    © 2026 DAN SPROUL FINE ART PHOTOGRAPHY · ORIGINAL LANDSCAPE PHOTOGRAPHY AND HERITAGE-INSPIRED MIXED MEDIA ARTWORK BY DAN SPROUL, BASED IN LIMA, OHIO · PRINTS SHIP WORLDWIDE
   </div>
 </footer>
-
 
 <div class="mockup-modal" id="mockupModal" aria-hidden="true">
   <button class="mockup-close" type="button" aria-label="Close preview">×</button>
