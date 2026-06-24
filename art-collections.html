@@ -13,9 +13,9 @@
 *{margin:0;padding:0;box-sizing:border-box}body{background:var(--bg);color:var(--cream);font-family:Georgia,serif;line-height:1.7}img{width:100%;display:block}a{color:inherit;text-decoration:none}.container{width:min(91%,var(--max));margin:auto}section{padding:92px 0;border-top:1px solid var(--line)}
 .site-header{position:absolute;top:0;width:100%;z-index:2;padding:18px 32px;background:rgba(0,0,0,.72);display:flex;justify-content:space-between;gap:28px}.brand{letter-spacing:.24em;text-transform:uppercase}.brand span{display:block;font-size:.55rem;color:var(--gold)}.site-nav{display:flex;gap:26px;font-size:.65rem;letter-spacing:.18em;text-transform:uppercase}.shop-link{border:1px solid rgba(216,198,164,.42);padding:8px 15px;color:#d8c6a4}
 .eyebrow{display:inline-block;margin-bottom:17px;color:var(--gold);font-size:.68rem;letter-spacing:.27em;text-transform:uppercase}h1{font-size:clamp(3rem,7vw,7rem);line-height:.92;font-weight:400;letter-spacing:-.045em;margin-bottom:24px}h2{font-size:clamp(2rem,4.5vw,4rem);line-height:1;font-weight:400;margin-bottom:24px}h3{font-size:1.45rem;font-weight:400;margin-bottom:10px}p{max-width:820px;color:var(--muted)}
-.btn{display:inline-block;padding:13px 25px;border:1px solid rgba(216,198,164,.65);letter-spacing:.13em;text-transform:uppercase;font-size:.7rem;margin-right:12px;margin-top:10px}.primary{background:#d8c6a4;color:#111!important}.hero{min-height:88vh;display:flex;align-items:center;position:relative;border-top:none;background:linear-gradient(to right,rgba(0,0,0,.82),rgba(0,0,0,.38),rgba(0,0,0,.74)),url('forest-light-preview.jpg') center/cover no-repeat}.hero:after{content:"";position:absolute;inset:auto 0 0 0;height:34%;background:linear-gradient(to bottom,rgba(8,8,7,0),var(--bg))}.hero-content{max-width:820px;padding-top:92px;position:relative;z-index:1}.hero p{font-size:1.08rem;color:#e2d7c8}
+.btn{display:inline-block;padding:13px 25px;border:1px solid rgba(216,198,164,.65);letter-spacing:.13em;text-transform:uppercase;font-size:.7rem;margin-right:12px;margin-top:10px}.primary{background:#d8c6a4;color:#111!important}.hero{min-height:86vh;display:flex;align-items:center;position:relative;border-top:none;background:linear-gradient(to right,rgba(0,0,0,.86) 0%,rgba(0,0,0,.58) 36%,rgba(0,0,0,.16) 68%,rgba(0,0,0,.28) 100%),url('panning waves in bedroom mockup.png') center right/cover no-repeat}.hero:after{content:"";position:absolute;inset:auto 0 0 0;height:28%;background:linear-gradient(to bottom,rgba(8,8,7,0),var(--bg))}.hero-content{max-width:760px;padding-top:84px;position:relative;z-index:1}.hero p{font-size:1.03rem;color:#e9dfd1}.hero .btn{margin-top:18px}
 .trust{margin-top:32px;display:flex;flex-wrap:wrap;gap:10px}.trust span{padding:8px 11px;border:1px solid rgba(255,255,255,.13);font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;background:rgba(0,0,0,.22)}
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.imgbox{border:1px solid var(--line);border-radius:14px;overflow:hidden}.imgbox img{aspect-ratio:16/10;object-fit:cover}.light{background:var(--soft);color:var(--ink);border-top:0}.light p{color:#5e574f}.center{text-align:center;margin:auto}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.imgbox{border:1px solid var(--line);border-radius:14px;overflow:hidden}.imgbox img{aspect-ratio:16/10;object-fit:cover}.light{background:var(--soft);color:var(--ink);border-top:0}.light p{color:#5e574f}.center{text-align:center;margin:auto}.center p{margin-left:auto;margin-right:auto;text-align:center}
 .collection-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:30px;margin-top:48px}.card{background:#fff;border:1px solid var(--darkline);border-radius:16px;overflow:hidden;box-shadow:0 18px 60px rgba(0,0,0,.12)}.card img{aspect-ratio:16/10;object-fit:cover;background:#ddd}.copy{padding:28px}.copy span{display:block;margin-bottom:10px;color:#8c7450;font-size:.66rem;letter-spacing:.18em;text-transform:uppercase}.copy p{color:#625b52}.meta{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 8px}.meta em{font-style:normal;background:#eee6da;color:#655a4c;padding:6px 10px;font-size:.65rem;letter-spacing:.12em;text-transform:uppercase}.link{display:inline-block;margin-top:18px;color:#3c3328;font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;border-bottom:1px solid rgba(60,51,40,.35)}
 .dark{background:#10100e}.cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:42px}.mini{background:rgba(255,255,255,.026);border:1px solid var(--line);border-radius:14px;overflow:hidden}.mini img{aspect-ratio:16/10;object-fit:cover}.mini .copy p{color:var(--muted)}.mini .copy span{color:var(--gold)}
 .cols{columns:2;column-gap:64px;max-width:1120px}.cols p{break-inside:avoid;margin-bottom:20px}.email{text-align:center;background:linear-gradient(to bottom,#151411,#080807)}footer{padding:45px 0;border-top:1px solid var(--line);color:#8f8679}
@@ -133,7 +133,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
   margin:5px auto!important;
   background:#f4eee5!important;
 }
-.footer-seo{
+.footer-seo,.site-footer{
   background:#100e0b!important;
   padding:62px clamp(22px,6vw,76px) 36px!important;
   border-top:1px solid rgba(185,138,59,.22)!important;
@@ -224,17 +224,61 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
 body{padding-top:66px}
 .site-header{display:none!important}
 #about-artist{display:none!important}
-.collections-preview-note{
+.starting-prices{
   background:#0f0e0b;
   border-top:1px solid var(--line);
   border-bottom:1px solid var(--line);
-  padding:34px 0;
+  padding:32px 0 34px;
 }
-.collections-preview-note p{
-  margin:auto;
-  max-width:940px;
+.price-heading{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:18px;
+  color:var(--gold);
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.68rem;
+  letter-spacing:.24em;
+  text-transform:uppercase;
+  margin-bottom:22px;
+}
+.price-heading:before,.price-heading:after{content:"";display:block;width:72px;height:1px;background:rgba(199,162,93,.42)}
+.price-grid{
+  max-width:980px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:0;
+}
+.price-item{
   text-align:center;
-  color:rgba(244,238,231,.72);
+  padding:0 22px;
+  border-right:1px solid rgba(255,255,255,.18);
+}
+.price-item:last-child{border-right:0}
+.price-item strong{
+  display:block;
+  color:#f4efe7;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:1rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  margin-bottom:6px;
+}
+.price-item span{
+  display:block;
+  color:rgba(244,238,231,.64);
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.64rem;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+}
+.price-note{
+  margin:20px auto 0;
+  max-width:760px;
+  text-align:center;
+  color:rgba(199,162,93,.82);
+  font-size:.86rem;
 }
 .section-intro{
   max-width:820px;
@@ -409,6 +453,20 @@ body{padding-top:66px}
   #shop-by-place .compact-grid{grid-template-columns:1fr!important}
 }
 
+/* Buyer-focused cleanup */
+.hero h1{max-width:760px}
+@media(max-width:900px){
+  .hero{min-height:82vh;background-position:center right}
+  h1{font-size:clamp(2.3rem,9vw,3.4rem);line-height:1.02;letter-spacing:-.04em}
+  h2{font-size:clamp(1.9rem,7.5vw,2.75rem);line-height:1.05}
+  section{padding:52px 22px}
+  .price-grid{grid-template-columns:1fr 1fr;gap:18px}
+  .price-item{border-right:0;border-bottom:1px solid rgba(255,255,255,.12);padding:0 10px 18px}
+  .price-item:last-child{border-bottom:0}
+  .price-heading:before,.price-heading:after{width:34px}
+}
+@media(max-width:560px){.price-grid{grid-template-columns:1fr}.hero-content{padding-top:42px}}
+
 </style>
 <script type="application/ld+json">
 {
@@ -463,7 +521,7 @@ body{padding-top:66px}
         "black-and-white office photography"
       ],
       "primaryImageOfPage": {
-        "@id": "https://dsproul.com/forest-light-preview.jpg#image"
+        "@id": "https://dsproul.com/panning waves in bedroom mockup.png#image"
       }
     },
     {
@@ -492,10 +550,10 @@ body{padding-top:66px}
     },
     {
       "@type": "ImageObject",
-      "@id": "https://dsproul.com/forest-light-preview.jpg#image",
-      "contentUrl": "https://dsproul.com/forest-light-preview.jpg",
-      "name": "Fine Art Photography hero image by Dan Sproul",
-      "description": "Fine Art Photography hero image by Dan Sproul",
+      "@id": "https://dsproul.com/panning waves in bedroom mockup.png#image",
+      "contentUrl": "https://dsproul.com/panning waves in bedroom mockup.png",
+      "name": "Fine art photography bedroom mockup showing large framed water artwork by Dan Sproul",
+      "description": "Fine art photography bedroom mockup showing large framed water artwork by Dan Sproul",
       "creator": {
         "@id": "https://dsproul.com/#dan-sproul"
       },
@@ -589,7 +647,7 @@ body{padding-top:66px}
   ]
 }
 </script>
-<link rel="preload" as="image" href="forest-light-preview.jpg">
+<link rel="preload" as="image" href="panning waves in bedroom mockup.png">
 </head>
 <body>
 
@@ -617,17 +675,24 @@ body{padding-top:66px}
 <section class="hero"><div class="container hero-content">
 <span class="eyebrow">Curated Art Collections</span>
 <h1>Fine Art Photography Organized by Mood, Place, and Interior Use</h1>
-<p>Explore atmospheric nature photography collections by Dan Sproul, curated for modern homes, hospitality interiors, wellness spaces, offices, and collectors looking for artwork with a clear sense of place and feeling.</p>
-<a href="#atmospheric" class="btn primary">Atmospheric Collections</a><a href="https://dansproul.com" class="btn">Shop Full Catalog</a>
+<p>Explore atmospheric nature photography collections by Dan Sproul, curated for homes, hospitality interiors, wellness spaces, offices, healthcare environments, and collectors looking for artwork with a clear sense of place and feeling.</p>
+<a href="#atmospheric" class="btn primary">Atmospheric Collections</a><a href="https://dansproul.com" class="btn" target="_blank" rel="noopener">Shop Full Catalog</a>
 <div class="trust"><span>Quiet Earth</span><span>Winter Stillness</span><span>Wellness Waters</span><span>Coastal Atmosphere</span><span>Mountain Light</span><span>Forest Light</span><span>Monochrome Stillness</span></div>
 </div></section>
 
-<section class="collections-preview-note"><div class="container">
-<p>Browse first by atmosphere, then by heritage/mixed media, location, or interior use. This keeps the page useful for homeowners, designers, hospitality buyers, and collectors without forcing everyone into one large catalog.</p>
+<section class="starting-prices" aria-label="Starting price points"><div class="container">
+  <div class="price-heading">Starting Price Points</div>
+  <div class="price-grid">
+    <div class="price-item"><strong>From $85</strong><span>Canvas Prints</span></div>
+    <div class="price-item"><strong>From $140</strong><span>Framed Prints</span></div>
+    <div class="price-item"><strong>From $120</strong><span>Metal &amp; Acrylic</span></div>
+    <div class="price-item"><strong>From $35</strong><span>Fine Art Prints</span></div>
+  </div>
+  <p class="price-note">Available in a range of sizes for bedrooms, living rooms, offices, hospitality spaces, healthcare environments, and quiet statement walls.</p>
 </div></section>
 
 <section class="light" id="atmospheric"><div class="container">
-<div class="center"><span class="eyebrow">Primary Atmospheric Collections</span><h2>Seven collection directions for refined interiors.</h2><p>These curated nature photography collections are organized for residential, hospitality, wellness, healthcare, and design-focused spaces.</p></div>
+<div class="center"><span class="eyebrow">Primary Atmospheric Collections</span><h2>Seven collection directions for refined interiors.</h2><p>Each collection is curated to bring a sense of calm, clarity, and connection to interiors. Explore by atmosphere, location, or interior application to find the right artwork for your space.</p></div>
 <div class="collection-grid">
 <a class="card" href="/quiet-earth-collection.html"><img src="quiet-earth-appalachian-fog.jpg" onerror="this.src='quiet-earth-fallback.jpg'" alt="Quiet Earth fine art photography collection by Dan Sproul" loading="lazy" decoding="async"><div class="copy"><span>Calm / Grounded / Atmospheric</span><h3>Quiet Earth</h3><p>Muted landscapes, still water, mountain atmosphere, and grounded natural tones for calming residential, wellness, and hospitality interiors.</p><div class="meta"><em>Wellness</em><em>Hospitality</em><em>Quiet Luxury</em></div><b class="link">View Collection</b></div></a>
 <a class="card" href="/winter-stillness.html"><img src="winter stillness living room mockup.jpg" alt="Winter Stillness fine art photography collection by Dan Sproul shown in a calm living room interior" loading="lazy" decoding="async"><div class="copy"><span>Winter / Quiet / Neutral</span><h3>Winter Stillness</h3><p>Soft winter landscapes, quiet snow, muted woodland atmosphere, and neutral nature photography for calm homes, hospitality rooms, offices, and restful interiors.</p><div class="meta"><em>Calm Interiors</em><em>Neutral Palette</em><em>Hospitality</em></div><b class="link">View Collection</b></div></a>
@@ -663,7 +728,7 @@ body{padding-top:66px}
     <div class="section-intro">
       <span class="eyebrow">Shop by Place</span>
       <h2>Regional artwork collections for place-based interiors and collectors.</h2>
-      <p>Location pages help visitors find artwork connected to specific regions while also supporting hospitality, healthcare, office, and residential projects that want a sense of place.</p>
+      <p>Choose regional artwork when a room, business, or project needs a meaningful connection to place — from Alaska wilderness and mountain scenery to Ohio waterfalls, forests, and local nature prints.</p>
     </div>
 
     <div class="compact-grid">
@@ -694,8 +759,8 @@ body{padding-top:66px}
   <div class="container">
     <div class="section-intro">
       <span class="eyebrow">Browse by Interior Use</span>
-      <h2>Browse artwork by room type, project type, and design need.</h2>
-      <p>These pages connect the collection system to commercial and residential buying intent.</p>
+      <h2>Find artwork for the way a room should feel.</h2>
+      <p>Looking for artwork for a specific space? Explore ideas for living rooms, bedrooms, offices, hospitality interiors, healthcare environments, and other settings where nature-inspired artwork can create a calm and welcoming atmosphere.</p>
     </div>
 
     <div class="interior-grid">
@@ -787,8 +852,7 @@ body{padding-top:66px}
   <div class="footer-bottom">
     © 2026 DAN SPROUL FINE ART PHOTOGRAPHY · ORIGINAL LANDSCAPE PHOTOGRAPHY AND HERITAGE-INSPIRED MIXED MEDIA ARTWORK BY DAN SPROUL, BASED IN LIMA, OHIO · PRINTS SHIP WORLDWIDE
   </div>
-
-
+</footer>
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
