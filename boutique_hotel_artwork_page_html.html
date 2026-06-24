@@ -17,13 +17,245 @@
 :root{--bg:#090806;--panel:#12100d;--paper:#eee7dc;--ink:#f4efe6;--muted:#b5aa99;--dark:#201b15;--gold:#c79b55;--line:rgba(199,155,85,.24);--soft:#fffaf1}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;-webkit-font-smoothing:antialiased}img{max-width:100%;display:block}a{color:inherit}.eyebrow{margin:0 0 14px;font-family:Arial,Helvetica,sans-serif;text-transform:uppercase;letter-spacing:.28em;color:var(--gold);font-size:11px;font-weight:700}h1,h2,h3{margin:0;font-weight:400;line-height:.96}h1{font-size:clamp(48px,7.3vw,106px);letter-spacing:-.052em}h2{font-size:clamp(34px,4.8vw,66px);letter-spacing:-.045em}h3{font-size:30px;letter-spacing:-.03em}p{color:var(--muted);line-height:1.78;font-size:16px}.btns{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;text-decoration:none;padding:14px 22px;border:1px solid var(--gold);font-family:Arial,Helvetica,sans-serif;font-size:11px;letter-spacing:.16em;text-transform:uppercase}.btn.primary{background:var(--gold);color:#14100b}.btn:hover{background:rgba(199,155,85,.12)}.text-link{color:#c79b55;text-decoration:none;font-family:Arial,Helvetica,sans-serif;text-transform:uppercase;letter-spacing:.16em;font-size:11px;font-weight:700}.section-heading{max-width:900px;margin:0 auto 52px;text-align:center}.section-heading p{margin-bottom:0}
 /* STANDARD NAV + FOOTER */
-.site-nav-standard{position:fixed!important;top:0!important;left:0!important;right:0!important;height:66px!important;z-index:9999!important;display:flex!important;align-items:center!important;justify-content:space-between!important;gap:28px!important;padding:0 clamp(16px,4vw,44px)!important;background:rgba(14,12,9,.94)!important;border-bottom:1px solid rgba(185,138,59,.18)!important;backdrop-filter:blur(14px)!important;-webkit-backdrop-filter:blur(14px)!important}.nav-logo-standard{display:flex!important;flex-direction:column!important;text-decoration:none!important;color:#f4eee5!important;line-height:1!important;min-width:max-content!important}.nav-logo-name-standard{font-family:Arial,Helvetica,sans-serif!important;font-size:18px!important;font-weight:700!important;letter-spacing:.24em!important;text-transform:uppercase!important}.nav-logo-sub-standard{margin-top:7px!important;color:#b9934b!important;font-family:Arial,Helvetica,sans-serif!important;font-size:9px!important;letter-spacing:.26em!important;text-transform:uppercase!important}.nav-links-standard{display:flex!important;align-items:center!important;justify-content:flex-end!important;gap:clamp(18px,2vw,34px)!important}.nav-links-standard a{color:rgba(244,238,229,.78)!important;text-decoration:none!important;font-family:Arial,Helvetica,sans-serif!important;font-size:12px!important;font-weight:700!important;letter-spacing:.18em!important;text-transform:uppercase!important;white-space:nowrap!important}.nav-links-standard a:hover{color:#f4eee5!important}.nav-shop-standard{color:#d5b365!important;border:1px solid rgba(213,179,101,.62)!important;padding:14px 22px!important}.nav-toggle-standard{display:none!important;width:42px!important;height:42px!important;border:1px solid rgba(213,179,101,.36)!important;background:transparent!important;cursor:pointer!important}.nav-toggle-standard span{display:block!important;width:20px!important;height:2px!important;margin:5px auto!important;background:#f4eee5!important}.footer-seo{background:#100e0b!important;padding:62px clamp(22px,6vw,76px) 36px!important;border-top:1px solid rgba(185,138,59,.22)!important}.footer-grid{display:grid!important;grid-template-columns:repeat(5,1fr)!important;gap:28px!important;max-width:1380px!important;margin:0 auto!important}.footer-grid h3{margin:0 0 13px!important;color:#d5b365!important;font-family:"Cormorant Garamond",Georgia,serif!important;font-size:21px!important;line-height:1.2!important;font-weight:400!important;text-transform:none!important;letter-spacing:0!important}.footer-grid a{display:block!important;text-decoration:none!important;color:rgba(244,238,229,.62)!important;font-family:Arial,Helvetica,sans-serif!important;font-size:13px!important;line-height:2!important;text-transform:none!important;letter-spacing:0!important}.footer-grid a:hover{color:#f4eee5!important}.footer-bottom{display:block!important;max-width:1380px!important;margin:40px auto 0!important;padding-top:28px!important;border-top:1px solid rgba(185,138,59,.22)!important;color:rgba(244,238,229,.32)!important;font-family:Arial,Helvetica,sans-serif!important;font-size:10px!important;letter-spacing:.18em!important;line-height:1.8!important;text-align:center!important;text-transform:uppercase!important}
+.site-nav-standard{position:fixed!important;top:0!important;left:0!important;right:0!important;height:66px!important;z-index:9999!important;display:flex!important;align-items:center!important;justify-content:space-between!important;gap:28px!important;padding:0 clamp(16px,4vw,44px)!important;background:rgba(14,12,9,.94)!important;border-bottom:1px solid rgba(185,138,59,.18)!important;backdrop-filter:blur(14px)!important;-webkit-backdrop-filter:blur(14px)!important}.nav-logo-standard{display:flex!important;flex-direction:column!important;text-decoration:none!important;color:#f4eee5!important;line-height:1!important;min-width:max-content!important}.nav-logo-name-standard{font-family:Arial,Helvetica,sans-serif!important;font-size:18px!important;font-weight:700!important;letter-spacing:.24em!important;text-transform:uppercase!important}.nav-logo-sub-standard{margin-top:7px!important;color:#b9934b!important;font-family:Arial,Helvetica,sans-serif!important;font-size:9px!important;letter-spacing:.26em!important;text-transform:uppercase!important}.nav-links-standard{display:flex!important;align-items:center!important;justify-content:flex-end!important;gap:clamp(18px,2vw,34px)!important}.nav-links-standard a{color:rgba(244,238,229,.78)!important;text-decoration:none!important;font-family:Arial,Helvetica,sans-serif!important;font-size:12px!important;font-weight:700!important;letter-spacing:.18em!important;text-transform:uppercase!important;white-space:nowrap!important}.nav-links-standard a:hover{color:#f4eee5!important}.nav-shop-standard{color:#d5b365!important;border:1px solid rgba(213,179,101,.62)!important;padding:14px 22px!important}.nav-toggle-standard{display:none!important;width:42px!important;height:42px!important;border:1px solid rgba(213,179,101,.36)!important;background:transparent!important;cursor:pointer!important}.nav-toggle-standard span{display:block!important;width:20px!important;height:2px!important;margin:5px auto!important;background:#f4eee5!important}
 /* PAGE */
 .breadcrumbs{padding:92px 7vw 0;background:#090806;color:#9f927f;font-family:Arial,Helvetica,sans-serif;text-transform:uppercase;letter-spacing:.16em;font-size:10px}.breadcrumbs a{text-decoration:none;color:#c79b55}.boutique-hero{min-height:88vh;display:flex;align-items:end;padding:122px 7vw 92px;background:linear-gradient(90deg,rgba(0,0,0,.86),rgba(0,0,0,.22),rgba(0,0,0,.75)),linear-gradient(0deg,rgba(9,8,6,1),rgba(9,8,6,0) 52%),url('hospitality-boutique-hotel-mockup-bnw-glacier-river.jpg') center/cover no-repeat}.hero-inner{max-width:860px}.hero-inner p{max-width:720px;color:#e8dfd1;font-size:17px}.trust-strip{padding:24px 7vw;background:#14100c;border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:grid;grid-template-columns:repeat(6,1fr);gap:1px}.trust-strip span{font-family:Arial,sans-serif;text-transform:uppercase;letter-spacing:.14em;color:#d8cbb9;font-size:10px;text-align:center}.intro,.dans-note,.applications,.mockups,.buying,.spec-sheet,.approach,.best-sellers,.faq-section,.related-collections,.footer-cta{padding:96px 7vw}.intro{border-bottom:1px solid rgba(255,255,255,.08)}.intro-grid,.note-grid,.spec-grid,.approach-grid{max-width:1180px;margin:auto;display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:start}.intro p,.dans-note p{margin-top:0}.dans-note,.spec-sheet,.related-collections{background:var(--paper);color:var(--dark)}.dans-note p,.spec-sheet p,.related-collections p{color:#544b40}.note-card,.spec-box{background:#fffaf1;border:1px solid rgba(0,0,0,.08);padding:34px;box-shadow:0 18px 48px rgba(0,0,0,.08)}.applications{background:#0d0b08;border-top:1px solid rgba(255,255,255,.08)}.application-grid{max-width:1180px;margin:42px auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.application-card{background:#12100d;border:1px solid rgba(199,155,85,.18);padding:26px}.application-card h3{font-size:27px;margin-bottom:10px}.application-card p{font-size:14px;margin:0}.mockups{background:#090806;border-top:1px solid rgba(255,255,255,.08)}.mockup-grid{max-width:1180px;margin:auto;display:grid;grid-template-columns:repeat(2,1fr);gap:24px}.mockup-card{background:#12100d;border:1px solid rgba(199,155,85,.18);box-shadow:0 24px 70px rgba(0,0,0,.35);overflow:hidden}.mockup-image-button{display:block;width:100%;padding:0;border:0;background:transparent;cursor:zoom-in;overflow:hidden}.mockup-card img{width:100%;height:430px;object-fit:cover;transition:transform .65s cubic-bezier(.25,.46,.45,.94),filter .4s;filter:brightness(.9) saturate(.94)}.mockup-card:hover img{transform:scale(1.025);filter:brightness(1) saturate(1)}.mockup-copy{padding:28px}.mockup-copy h3{font-size:30px;margin-bottom:12px}.mockup-copy p{font-size:14px;margin:0 0 18px}.buying{background:#15110d;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.buying-grid{max-width:1180px;margin:42px auto 0;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.buy-box{border:1px solid rgba(199,155,85,.22);background:rgba(255,255,255,.035);padding:26px}.buy-box h3{font-size:25px;margin-bottom:12px}.buy-box p{font-size:14px;margin:0}.spec-box ul{margin:16px 0 0;padding-left:19px;color:#544b40;line-height:1.9}.approach{background:#100d0a;border-top:1px solid var(--line)}.approach-panel{border:1px solid rgba(199,155,85,.2);background:#15110d;padding:34px}.approach-panel p{margin-top:0}.best-sellers{background:#0d0b08;border-top:1px solid rgba(255,255,255,.08)}.seller-grid,.related-grid{max-width:1180px;margin:42px auto 0;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.seller-card,.related-card{display:block;text-decoration:none;background:#12100d;border:1px solid rgba(199,155,85,.18);overflow:hidden}.seller-card img{height:190px;width:100%;object-fit:cover}.seller-card div,.related-card{padding:22px}.seller-card h3,.related-card h3{font-size:24px;margin-bottom:8px}.seller-card p,.related-card p{font-size:13px;margin:0}.faq-section{background:#0b0907;border-top:1px solid rgba(255,255,255,.08)}.faq-grid{max-width:1180px;margin:42px auto 0;display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.faq-item{border:1px solid rgba(199,155,85,.2);background:#12100d;padding:26px}.faq-item h3{font-size:25px;margin-bottom:10px}.faq-item p{font-size:14px;margin:0}.related-card{background:#fffaf1;border-color:rgba(0,0,0,.08)}.related-card span{display:inline-block;margin-bottom:14px;color:#9a6b28;font-family:Arial,sans-serif;text-transform:uppercase;letter-spacing:.16em;font-size:11px;font-weight:700}.footer-cta{text-align:center;background:linear-gradient(180deg,#12100d,#060504);border-top:1px solid var(--line)}.footer-cta p{max-width:690px;margin:20px auto}.footer-cta .btns{justify-content:center}
 /* MODAL */
 .modal{display:none;position:fixed;z-index:10000;inset:0;background:rgba(0,0,0,.92);padding:30px}.modal.is-open{display:flex;align-items:center;justify-content:center}.modal-panel{width:min(1180px,96vw);max-height:90vh;display:grid;grid-template-columns:1.35fr .75fr;background:#111;border:1px solid rgba(199,155,85,.34);box-shadow:0 30px 90px rgba(0,0,0,.7);overflow:hidden}.modal-image-wrap{background:#050505;display:flex;align-items:center;justify-content:center}.modal img{max-width:100%;max-height:90vh;object-fit:contain}.modal-copy{padding:34px;overflow:auto}.modal-copy h3{font-size:34px;margin-bottom:14px}.modal-copy p{font-size:14px}.modal-copy ul{margin:10px 0 0;padding-left:18px;color:#cfc2b1;line-height:1.8;font-size:14px}.modal-close{position:absolute;top:18px;right:28px;background:transparent;border:0;color:white;font-size:42px;cursor:pointer}.modal .btns{margin-top:22px}.use{color:#d7cab8;font-size:13px;margin-top:12px}
-@media(max-width:1040px){.site-nav-standard{height:64px!important}.nav-toggle-standard{display:block!important}.nav-links-standard{position:fixed!important;top:64px!important;left:0!important;right:0!important;display:none!important;flex-direction:column!important;align-items:flex-start!important;gap:0!important;padding:18px 24px 24px!important;background:rgba(14,12,9,.98)!important;border-bottom:1px solid rgba(185,138,59,.22)!important}.site-nav-standard.is-open .nav-links-standard{display:flex!important}.nav-links-standard a{width:100%!important;padding:14px 0!important}.nav-shop-standard{width:auto!important;margin-top:8px!important;padding:13px 18px!important}.footer-grid{grid-template-columns:1fr!important}.trust-strip{grid-template-columns:repeat(3,1fr)}.intro-grid,.note-grid,.spec-grid,.approach-grid{grid-template-columns:1fr}.application-grid,.buying-grid,.seller-grid,.related-grid{grid-template-columns:repeat(2,1fr)}.modal-panel{grid-template-columns:1fr}.modal img{max-height:58vh}.modal-copy{max-height:32vh}}
+@media(max-width:1040px){.site-nav-standard{height:64px!important}.nav-toggle-standard{display:block!important}.nav-links-standard{position:fixed!important;top:64px!important;left:0!important;right:0!important;display:none!important;flex-direction:column!important;align-items:flex-start!important;gap:0!important;padding:18px 24px 24px!important;background:rgba(14,12,9,.98)!important;border-bottom:1px solid rgba(185,138,59,.22)!important}.site-nav-standard.is-open .nav-links-standard{display:flex!important}.nav-links-standard a{width:100%!important;padding:14px 0!important}.nav-shop-standard{width:auto!important;margin-top:8px!important;padding:13px 18px!important}.trust-strip{grid-template-columns:repeat(3,1fr)}.intro-grid,.note-grid,.spec-grid,.approach-grid{grid-template-columns:1fr}.application-grid,.buying-grid,.seller-grid,.related-grid{grid-template-columns:repeat(2,1fr)}.modal-panel{grid-template-columns:1fr}.modal img{max-height:58vh}.modal-copy{max-height:32vh}}
 @media(max-width:680px){.breadcrumbs{padding:84px 24px 0}.boutique-hero{min-height:76vh;padding:88px 24px 58px}.intro,.dans-note,.applications,.mockups,.buying,.spec-sheet,.approach,.best-sellers,.faq-section,.related-collections,.footer-cta{padding:64px 24px}.trust-strip,.application-grid,.mockup-grid,.buying-grid,.seller-grid,.faq-grid,.related-grid{grid-template-columns:1fr}.mockup-card img,.seller-card img{height:auto}h1{font-size:50px}.modal{padding:14px}.modal-copy{padding:24px}.modal-close{top:8px;right:14px}}
+
+/* FINAL BOUTIQUE HOTEL FOOTER + MOBILE FIXES */
+.site-footer{
+  display:block!important;
+  width:100%!important;
+  background:#100e0b!important;
+  padding:62px clamp(22px,6vw,76px) 36px!important;
+  border-top:1px solid rgba(185,138,59,.22)!important;
+  color:#f4eee5!important;
+  text-transform:none!important;
+  letter-spacing:0!important;
+  font-family:Arial,Helvetica,sans-serif!important;
+}
+.site-footer .footer-grid{
+  display:grid!important;
+  grid-template-columns:repeat(5,minmax(0,1fr))!important;
+  gap:32px!important;
+  max-width:1380px!important;
+  margin:0 auto!important;
+  background:transparent!important;
+  border:0!important;
+}
+.site-footer .footer-grid > div{display:block!important;min-width:0!important}
+.site-footer .footer-grid h3{
+  display:block!important;
+  margin:0 0 13px!important;
+  color:#d5b365!important;
+  font-family:Georgia,"Times New Roman",serif!important;
+  font-size:21px!important;
+  line-height:1.2!important;
+  font-weight:400!important;
+  text-transform:none!important;
+  letter-spacing:0!important;
+}
+.site-footer .footer-grid a{
+  display:block!important;
+  width:auto!important;
+  text-decoration:none!important;
+  color:rgba(244,238,229,.66)!important;
+  font-family:Arial,Helvetica,sans-serif!important;
+  font-size:13px!important;
+  line-height:2!important;
+  text-transform:none!important;
+  letter-spacing:0!important;
+  margin:0 0 2px!important;
+  padding:0!important;
+  border:0!important;
+  background:transparent!important;
+  float:none!important;
+  white-space:normal!important;
+}
+.site-footer .footer-grid a:hover{color:#f4eee5!important}
+.site-footer .footer-bottom{
+  display:block!important;
+  max-width:1380px!important;
+  margin:40px auto 0!important;
+  padding-top:28px!important;
+  border-top:1px solid rgba(185,138,59,.22)!important;
+  color:rgba(244,238,229,.34)!important;
+  font-family:Arial,Helvetica,sans-serif!important;
+  font-size:10px!important;
+  letter-spacing:.18em!important;
+  line-height:1.8!important;
+  text-align:center!important;
+  text-transform:uppercase!important;
+}
+
+@media(max-width:1040px){
+  .site-footer .footer-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+
+@media(max-width:768px){
+  h1{
+    font-size:clamp(2.35rem,9vw,3.25rem)!important;
+    line-height:1.02!important;
+    letter-spacing:-.035em!important;
+  }
+  h2{
+    font-size:clamp(1.9rem,7.5vw,2.75rem)!important;
+    line-height:1.05!important;
+  }
+}
+
+@media(max-width:680px){
+  .breadcrumbs{
+    padding:78px 22px 0!important;
+    font-size:9px!important;
+    line-height:1.6!important;
+  }
+  .boutique-hero{
+    min-height:68vh!important;
+    padding:78px 22px 46px!important;
+  }
+  .hero-inner p,
+  p{
+    font-size:14px!important;
+    line-height:1.65!important;
+  }
+  .btns{
+    gap:9px!important;
+    margin-top:20px!important;
+  }
+  .btn{
+    width:100%!important;
+    text-align:center!important;
+    justify-content:center!important;
+    padding:12px 14px!important;
+    font-size:10px!important;
+    line-height:1.35!important;
+  }
+  .trust-strip{
+    grid-template-columns:repeat(2,1fr)!important;
+    padding:16px 22px!important;
+    gap:8px!important;
+  }
+  .trust-strip span{
+    border:1px solid rgba(199,155,85,.22)!important;
+    padding:9px 8px!important;
+    font-size:9px!important;
+    line-height:1.35!important;
+  }
+  .intro,
+  .dans-note,
+  .applications,
+  .mockups,
+  .buying,
+  .spec-sheet,
+  .approach,
+  .best-sellers,
+  .faq-section,
+  .related-collections,
+  .footer-cta{
+    padding:52px 22px!important;
+  }
+  .section-heading{
+    margin-bottom:32px!important;
+    text-align:left!important;
+  }
+  .intro-grid,
+  .note-grid,
+  .spec-grid,
+  .approach-grid{
+    gap:24px!important;
+  }
+  .note-card,
+  .spec-box,
+  .application-card,
+  .buy-box,
+  .approach-panel,
+  .faq-item{
+    padding:22px!important;
+  }
+  .application-grid,
+  .mockup-grid,
+  .buying-grid,
+  .seller-grid,
+  .faq-grid,
+  .related-grid{
+    grid-template-columns:1fr!important;
+    gap:14px!important;
+  }
+  .mockup-card img{
+    height:auto!important;
+    max-height:310px!important;
+    object-fit:cover!important;
+  }
+  .mockup-copy{
+    padding:22px!important;
+  }
+  .mockup-copy h3,
+  .application-card h3,
+  .buy-box h3,
+  .seller-card h3,
+  .related-card h3,
+  .faq-item h3{
+    font-size:24px!important;
+    line-height:1.1!important;
+  }
+  .seller-card img{
+    height:auto!important;
+    max-height:240px!important;
+    object-fit:cover!important;
+  }
+  .modal{
+    align-items:flex-start!important;
+    overflow-y:auto!important;
+    padding:58px 14px 18px!important;
+  }
+  .modal-panel{
+    width:100%!important;
+    max-height:none!important;
+    grid-template-columns:1fr!important;
+  }
+  .modal img{
+    max-height:42vh!important;
+    object-fit:contain!important;
+  }
+  .modal-copy{
+    padding:22px!important;
+    max-height:none!important;
+    overflow:visible!important;
+  }
+  .modal-copy h3{
+    font-size:26px!important;
+    line-height:1.1!important;
+  }
+  .modal-close{
+    position:fixed!important;
+    top:8px!important;
+    right:12px!important;
+    font-size:34px!important;
+    z-index:10001!important;
+  }
+  .site-footer{
+    padding:48px 22px 30px!important;
+  }
+  .site-footer .footer-grid{
+    grid-template-columns:1fr!important;
+    gap:30px!important;
+  }
+  .site-footer .footer-grid h3{margin-bottom:10px!important}
+  .site-footer .footer-grid a{
+    display:block!important;
+    margin-bottom:7px!important;
+    line-height:1.75!important;
+  }
+  .site-footer .footer-bottom{
+    text-align:left!important;
+    margin-top:34px!important;
+  }
+}
+
 </style>
 <script type="application/ld+json">
 {
@@ -32,7 +264,7 @@
     {"@type":"Person","@id":"https://dsproul.com/#dan-sproul","name":"Dan Sproul","url":"https://dsproul.com","jobTitle":"Fine Art Photographer and Artist","description":"Dan Sproul creates atmospheric landscape photography and fine art collections for healthcare, hospitality, wellness, office, residential, and commercial interiors.","homeLocation":{"@type":"Place","name":"Lima, Ohio"},"sameAs":["https://dansproul.com","https://fineartamerica.com/profiles/1-dan-sproul","https://www.pinterest.com/dansproul/","https://medium.com/@sprould99","https://dansproulphotography.substack.com/","https://www.linkedin.com/in/dan-sproul-bb55015a/"]},
     {"@type":"Organization","@id":"https://dsproul.com/#organization","name":"Dan Sproul Fine Art Photography","url":"https://dsproul.com","founder":{"@id":"https://dsproul.com/#dan-sproul"},"description":"Original atmospheric fine art photography for healthcare, hospitality, wellness, office, residential, and commercial interiors."},
     {"@type":"WebSite","@id":"https://dsproul.com/#website","url":"https://dsproul.com","name":"Dan Sproul Fine Art Photography","publisher":{"@id":"https://dsproul.com/#organization"}},
-    {"@type":["WebPage","CollectionPage"],"@id":"https://dsproul.com/boutique-hotel-artwork.html#webpage","url":"https://dsproul.com/boutique-hotel-artwork.html","name":"Boutique Hotel Artwork & Atmospheric Photography for Guest Interiors | Dan Sproul","description":"Atmospheric fine art photography for boutique hotel interiors, guest rooms, lounges, corridors, restaurants, lodge spaces, and quiet luxury hospitality environments by Dan Sproul.","isPartOf":{"@id":"https://dsproul.com/#website"},"about":[{"@type":"Thing","name":"Boutique hotel artwork"},{"@type":"Thing","name":"Hospitality artwork"},{"@type":"Thing","name":"Quiet luxury interiors"},{"@type":"Thing","name":"Atmospheric nature photography"},{"@type":"Thing","name":"Guest room wall art"}],"author":{"@id":"https://dsproul.com/#dan-sproul"},"publisher":{"@id":"https://dsproul.com/#organization"},"primaryImageOfPage":{"@id":"https://dsproul.com/hospitality-boutique-hotel-mockup-bnw-glacier-river.jpg#image"},"breadcrumb":{"@id":"https://dsproul.com/boutique-hotel-artwork.html#breadcrumb"},"mainEntity":{"@id":"https://dsproul.com/boutique-hotel-artwork.html#boutique-hotel-artwork-service"}},
+    {"@type":["WebPage","CollectionPage"],"@id":"https://dsproul.com/boutique-hotel-artwork.html#webpage","url":"https://dsproul.com/boutique-hotel-artwork.html","name":"Boutique Hotel Artwork & Atmospheric Photography for Guest Interiors | Dan Sproul","description":"Atmospheric fine art photography for boutique hotel interiors, guest rooms, lounges, corridors, restaurants, lodge spaces, and quiet luxury hospitality environments by Dan Sproul.","isPartOf":{"@id":"https://dsproul.com/#website"},"about":[{"@type":"Thing","name":"Boutique hotel artwork"},{"@type":"Thing","name":"Hospitality artwork"},{"@type":"Thing","name":"Quiet luxury interiors"},{"@type":"Thing","name":"Atmospheric nature photography"},{"@type":"Thing","name":"Guest room wall art"}],"author":{"@id":"https://dsproul.com/#dan-sproul"},"publisher":{"@id":"https://dsproul.com/#organization"},"primaryImageOfPage":{"@id":"https://dsproul.com/hospitality-boutique-hotel-mockup-bnw-glacier-river.jpg#image"},"breadcrumb":{"@id":"https://dsproul.com/boutique-hotel-artwork.html#breadcrumb"},"mainEntity":{"@id":"https://dsproul.com/boutique-hotel-artwork.html#boutique-hotel-artwork-service"},"hasPart":[{"@type":"WebPageElement","name":"Featured Boutique Hotel Installations"},{"@type":"WebPageElement","name":"Boutique Hotel Spec Sheet"},{"@type":"WebPageElement","name":"Specification Guidance"},{"@type":"WebPageElement","name":"Boutique Hotel Artwork FAQ"}]},
     {"@type":"Service","@id":"https://dsproul.com/boutique-hotel-artwork.html#boutique-hotel-artwork-service","name":"Boutique Hotel Artwork and Fine Art Photography Specification","serviceType":"Boutique hotel artwork specification and atmospheric fine art photography for hospitality interiors","provider":{"@id":"https://dsproul.com/#organization"},"areaServed":{"@type":"Country","name":"United States"},"audience":[{"@type":"Audience","audienceType":"Interior designers"},{"@type":"Audience","audienceType":"Hospitality designers"},{"@type":"Audience","audienceType":"Boutique hotel owners"},{"@type":"Audience","audienceType":"Hospitality procurement teams"}],"description":"Designer-facing boutique hotel artwork guidance and atmospheric fine art photography for guest rooms, lobby lounges, restaurants, corridors, lodge spaces, spa environments, and quiet luxury hospitality interiors.","url":"https://dsproul.com/boutique-hotel-artwork.html","image":"https://dsproul.com/hospitality-boutique-hotel-mockup-bnw-glacier-river.jpg","offers":{"@type":"Offer","url":"https://dsproul.com/boutique-hotel-artwork.html","availability":"https://schema.org/InStock","description":"Boutique hotel artwork consultation, custom sizing guidance, complimentary project mockups, and fine art photography print options for hospitality interiors."}},
     {"@type":"BreadcrumbList","@id":"https://dsproul.com/boutique-hotel-artwork.html#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://dsproul.com/"},{"@type":"ListItem","position":2,"name":"For Designers","item":"https://dsproul.com/for-designers.html"},{"@type":"ListItem","position":3,"name":"Hospitality Artwork","item":"https://dsproul.com/hospitality-artwork.html"},{"@type":"ListItem","position":4,"name":"Boutique Hotel Artwork","item":"https://dsproul.com/boutique-hotel-artwork.html"}]},
     {"@type":"FAQPage","@id":"https://dsproul.com/boutique-hotel-artwork.html#faq","mainEntity":[{"@type":"Question","name":"What artwork works best in boutique hotel interiors?","acceptedAnswer":{"@type":"Answer","text":"Boutique hotels often benefit from atmospheric landscape photography, quiet monochrome imagery, moody coastal scenes, reflective water, soft mountain environments, and artwork that creates memory without overwhelming the design."}},{"@type":"Question","name":"What artwork works best in boutique hotel guest rooms?","acceptedAnswer":{"@type":"Answer","text":"Guest rooms usually work best with calming, low-distraction imagery such as misty forests, quiet water, monochrome mountain scenes, muted coastal photographs, and atmospheric nature photography that supports rest."}},{"@type":"Question","name":"Can artwork be customized for boutique hotel projects?","acceptedAnswer":{"@type":"Answer","text":"Yes. Many Dan Sproul images are available in custom sizes and multiple formats for boutique hotel lobbies, guest rooms, restaurant spaces, corridors, lounges, and spa interiors."}},{"@type":"Question","name":"Do you provide mockups for hotel designers?","acceptedAnswer":{"@type":"Answer","text":"Yes. Designers and hospitality teams can request complimentary mockup guidance using room photos, renderings, wall dimensions, finish palettes, or project direction."}},{"@type":"Question","name":"What formats are recommended for boutique hotels?","acceptedAnswer":{"@type":"Answer","text":"Framed fine art paper, canvas, acrylic, and metal prints can all work depending on lighting, durability needs, wall scale, and whether the space is a lobby, corridor, guest room, restaurant, or lounge."}}]},
@@ -122,17 +354,61 @@
 </section>
 <section class="footer-cta"><p class="eyebrow">Project Support</p><h2>Need help choosing artwork for a boutique hotel project?</h2><p>Send a room photo, wall dimensions, finish palette, or project direction and I can suggest atmospheric fine art photography that fits the guest experience.</p><div class="btns"><a class="btn primary" href="mailto:sproulphoto@gmail.com?subject=Boutique%20Hotel%20Artwork%20Recommendation">Email Dan</a><a class="btn" href="for-designers.html">For Designers</a></div></section>
 <div id="image-modal" class="modal" aria-hidden="true"><button class="modal-close" type="button" aria-label="Close image preview">&times;</button><div class="modal-panel"><div class="modal-image-wrap"><img id="modal-img" src="" alt=""></div><div class="modal-copy"><p class="eyebrow">Installation Preview</p><h3 id="modal-title">Artwork Title</h3><p id="modal-desc"></p><p class="use"><b>Works best in:</b></p><ul id="modal-spaces"></ul><div class="btns"><a id="modal-link" class="btn primary" href="#" target="_blank" rel="noopener">View Print & Purchase</a><a class="btn" href="mailto:sproulphoto@gmail.com?subject=Boutique%20Hotel%20Artwork%20Mockup%20Request">Request Mockup</a></div></div></div></div>
-<!-- STANDARD SITE FOOTER -->
-<div id="contact" class="footer-seo">
+
+<footer id="contact" class="site-footer">
   <div class="footer-grid">
-    <div><h3>Shop By Room</h3><a href="https://dansproul.com/collections/bedroom+wall+art+calming+nature+landscape+prints">Bedroom Wall Art</a><a href="in-your-space.html">Art In Your Space</a><a href="https://dansproul.com/collections/office+wall+art+inspiring+landscape+prints">Office Wall Art</a><a href="https://dansproul.com/art/dining+room">Dining Room Art</a><a href="https://dansproul.com/art/wellness">Wellness Space Prints</a><a href="hospitality-artwork.html">Hospitality Artwork</a><a href="boutique-hotel-artwork.html">Boutique Hotel Artwork</a></div>
-    <div><h3>Shop By Subject</h3><a href="https://dansproul.com/art/mountains">Mountain Prints</a><a href="https://dansproul.com/art/forest">Forest Photography</a><a href="https://dansproul.com/art/coastal">Coastal Wall Art</a><a href="https://dansproul.com/art/waterfalls">Waterfall Prints</a><a href="https://dansproul.com/art/wildlife">Wildlife Prints</a></div>
-    <div><h3>Shop By Mood</h3><a href="quiet-earth-collection.html">Quiet Earth Collection</a><a href="monochrome-stillness.html">Black &amp; White Prints</a><a href="https://dansproul.com/art/autumn">Warm Autumn Light</a><a href="https://dansproul.com/art/fog">Fog &amp; Mist Photography</a><a href="https://dansproul.com/art/calm">Calming Nature Prints</a></div>
-    <div><h3>Shop By Location</h3><a href="alaska-photography-prints.html">Alaska Prints</a><a href="colorado-photography-prints.html">Colorado Wall Art</a><a href="oregon-coast-photography-prints.html">Oregon Coast Prints</a><a href="smoky-mountains-photography-prints.html">Smoky Mountains Art</a><a href="https://dansproul.com/art/badlands">Badlands Wildlife Prints</a></div>
-    <div><h3>More Collections</h3><a href="best-sellers.html">Best Sellers</a><a href="art-collections.html">Curated Photography Collections</a><a href="for-designers.html">For Interior Designers</a><a href="healthcare-artwork.html">Healthcare Artwork</a><a href="coastal-atmosphere.html">Coastal Atmosphere</a><a href="wellness-waters-collection.html">Wellness Waters</a><a href="heritage-mixed-media.html">Heritage &amp; Mixed Media</a><a href="mailto:sproulphoto@gmail.com">Email Dan</a></div>
+    <div>
+      <h3>Collections</h3>
+      <a href="quiet-earth-collection.html">Quiet Earth</a>
+      <a href="wellness-waters-collection.html">Wellness Waters</a>
+      <a href="coastal-atmosphere.html">Coastal Atmosphere</a>
+      <a href="mountain-light-collection.html">Mountain Light</a>
+      <a href="monochrome-stillness.html">Monochrome Stillness</a>
+      <a href="forest-light-collection.html">Forest Light</a>
+    </div>
+
+    <div>
+      <h3>Project Types</h3>
+      <a href="hospitality-artwork.html">Hospitality Artwork</a>
+      <a href="boutique-hotel-artwork.html">Boutique Hotel Artwork</a>
+      <a href="healthcare-artwork.html">Healthcare Artwork</a>
+      <a href="senior-living-artwork.html">Senior Living Artwork</a>
+      <a href="in-your-space.html">Art In Your Space</a>
+    </div>
+
+    <div>
+      <h3>Resources</h3>
+      <a href="for-designers.html">For Designers</a>
+      <a href="boutique-hotel-artwork-specification-guide.pdf" target="_blank" rel="noopener">Boutique Hotel Spec Sheet</a>
+      <a href="best-sellers.html">Best Sellers</a>
+      <a href="art-collections.html">Curated Collections</a>
+      <a href="about-dan-sproul.html">About Dan Sproul</a>
+    </div>
+
+    <div>
+      <h3>Shop By Subject</h3>
+      <a href="https://dansproul.com/art/mountains" target="_blank" rel="noopener">Mountain Prints</a>
+      <a href="https://dansproul.com/art/forest" target="_blank" rel="noopener">Forest Photography</a>
+      <a href="https://dansproul.com/art/coastal" target="_blank" rel="noopener">Coastal Wall Art</a>
+      <a href="https://dansproul.com/art/waterfalls" target="_blank" rel="noopener">Waterfall Prints</a>
+      <a href="https://dansproul.com/art/wildlife" target="_blank" rel="noopener">Wildlife Prints</a>
+    </div>
+
+    <div>
+      <h3>Contact</h3>
+      <a href="mailto:sproulphoto@gmail.com?subject=Boutique%20Hotel%20Artwork%20Mockup%20Request">Request Mockup</a>
+      <a href="mailto:sproulphoto@gmail.com?subject=Trade%20Pricing%20Inquiry">Trade Pricing</a>
+      <a href="https://dansproul.com" target="_blank" rel="noopener">Shop Prints</a>
+      <a href="mailto:sproulphoto@gmail.com">Email Dan</a>
+    </div>
   </div>
-  <footer class="footer-bottom">© 2026 Dan Sproul Fine Art Photography · Original landscape photography and heritage-inspired mixed media artwork by Dan Sproul, based in Lima, Ohio · Prints ship worldwide</footer>
-</div>
+
+  <div class="footer-bottom">
+    © 2026 Dan Sproul Fine Art Photography · Original landscape photography and heritage-inspired mixed media artwork by Dan Sproul, based in Lima, Ohio · Prints ship worldwide
+  </div>
+</footer>
+
+
 <script>
 document.addEventListener('DOMContentLoaded', function () {
   var nav = document.querySelector('.site-nav-standard');
