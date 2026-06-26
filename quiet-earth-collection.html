@@ -555,6 +555,84 @@
   .site-footer .footer-grid{grid-template-columns:repeat(2,1fr)!important}
 }
 
+
+
+/* QUIET EARTH FINAL MOBILE + MODAL CLEANUP */
+@media(max-width:680px){
+  .hero{
+    min-height:66vh!important;
+    padding:72px 22px 40px!important;
+    background-position:center center!important;
+  }
+  .hero-inner{max-width:100%!important;}
+  .hero h1{
+    font-size:clamp(2.3rem,9vw,3.2rem)!important;
+    line-height:1.02!important;
+    letter-spacing:-.04em!important;
+  }
+  .hero p{
+    max-width:100%!important;
+  }
+  .mockup-card.feature img,
+  .featured-installation img{
+    max-height:320px!important;
+    height:auto!important;
+    object-fit:cover!important;
+  }
+  .mockup-card img,
+  .art-card img{
+    max-height:300px!important;
+  }
+  .mockup-image-button{cursor:pointer!important;}
+}
+
+@media(max-width:760px){
+  .modal{
+    align-items:flex-start!important;
+    justify-content:flex-start!important;
+    overflow-y:auto!important;
+    padding:58px 14px 18px!important;
+  }
+  .modal.is-open{
+    display:flex!important;
+    align-items:flex-start!important;
+    justify-content:flex-start!important;
+  }
+  .modal-card{
+    width:100%!important;
+    max-height:none!important;
+  }
+  .modal-card img{
+    max-height:42vh!important;
+    object-fit:contain!important;
+  }
+  .modal-info{
+    grid-template-columns:1fr!important;
+    gap:16px!important;
+    padding:22px!important;
+  }
+  .modal-info h3{
+    font-size:clamp(1.55rem,7vw,2.1rem)!important;
+    line-height:1.08!important;
+  }
+  .modal-specs{
+    gap:8px!important;
+    font-size:10px!important;
+    line-height:1.45!important;
+  }
+  .modal-specs span{
+    padding:10px!important;
+  }
+  .modal-close{
+    top:10px!important;
+    right:12px!important;
+    font-size:34px!important;
+    z-index:10001!important;
+  }
+  .modal .btns{margin-top:16px!important;}
+  .modal .btn{width:100%!important;text-align:center!important;}
+}
+
 </style>
 
 <script type="application/ld+json">
@@ -1193,13 +1271,16 @@ document.addEventListener('DOMContentLoaded', function () {
       modalFrame.textContent = button.dataset.frame;
       modal.classList.add('is-open');
       modal.setAttribute('aria-hidden','false');
+      document.body.style.overflow = 'hidden';
     });
   });
 
   function closeModal(){
+    if(!modal || !modalImg) return;
     modal.classList.remove('is-open');
     modal.setAttribute('aria-hidden','true');
     modalImg.src = '';
+    document.body.style.overflow = '';
   }
 
   if(closeBtn) closeBtn.addEventListener('click', closeModal);
