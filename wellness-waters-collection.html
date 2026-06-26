@@ -780,6 +780,226 @@ main{display:block}
   }
 }
 
+
+/* ── WELLNESS WATERS MOBILE CLEANUP PASS ─────────────────────────────
+   Fixes: shorter mobile hero, tighter mobile spacing, cleaner standard nav,
+   scrollable phone lightbox, and consolidated related-card styling.
+*/
+.site-header,.nav,.brand,.nav-links{display:none!important}
+
+.related-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:24px;
+}
+.image-card{
+  position:relative;
+  overflow:hidden;
+  min-height:420px;
+  border:1px solid rgba(255,255,255,0.08);
+  background:#111;
+}
+.image-card img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  transition:transform .5s ease;
+}
+.image-card:hover img{transform:scale(1.03)}
+.related-overlay{
+  position:absolute;
+  inset:auto 0 0 0;
+  padding:34px;
+  background:linear-gradient(to top, rgba(0,0,0,.82), rgba(0,0,0,0));
+  color:white;
+}
+.related-overlay span{
+  display:block;
+  font-size:.7rem;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  margin-bottom:10px;
+  opacity:.8;
+}
+.related-overlay h3{
+  margin:0;
+  font-size:2rem;
+  font-weight:400;
+}
+
+@media(max-width:900px){
+  .related-grid{grid-template-columns:1fr}
+  .image-card{min-height:320px}
+}
+
+@media(max-width:768px){
+  body{letter-spacing:.02em!important}
+  .container{
+    width:min(100% - 44px,1180px)!important;
+  }
+  .hero{
+    min-height:70vh!important;
+    padding:88px 22px 56px!important;
+    align-items:end!important;
+  }
+  .hero .container{
+    width:100%!important;
+  }
+  .hero h1{
+    font-size:clamp(2.25rem,8.6vw,3.2rem)!important;
+    line-height:1.04!important;
+    letter-spacing:-.025em!important;
+    margin-bottom:18px!important;
+  }
+  .hero p{
+    font-size:14px!important;
+    line-height:1.65!important;
+    max-width:100%!important;
+  }
+  .hero-actions{
+    margin-top:22px!important;
+    gap:10px!important;
+  }
+  .hero-badges{
+    margin-top:20px!important;
+    gap:8px!important;
+  }
+  .hero-badges span{
+    font-size:9px!important;
+    letter-spacing:.13em!important;
+    padding:7px 9px!important;
+  }
+
+  .featured-installations,
+  .why-waters-section,
+  .mockup-feature,
+  .best-rooms-section,
+  .comparison-section,
+  .collection-gallery,
+  .workflow-intro,
+  .designer-section,
+  .project-cta,
+  .ai-about-artist,
+  .related{
+    padding:52px 0!important;
+  }
+
+  .section-heading{
+    margin-bottom:30px!important;
+  }
+  .section-heading h2,
+  .mockup-copy h2,
+  .workflow-note h2,
+  .workflow-support h2,
+  .designer-box h2,
+  .project-cta-box h2,
+  .ai-about-artist h2{
+    font-size:clamp(1.9rem,7vw,2.65rem)!important;
+    line-height:1.08!important;
+  }
+
+  .featured-installation-card div,
+  .why-waters-grid article,
+  .room-card,
+  .comparison-card,
+  .workflow-card,
+  .designer-box,
+  .project-cta-box{
+    padding:24px 22px!important;
+  }
+
+  .mockup-grid,
+  .mockup-grid.reverse,
+  .workflow-support,
+  .designer-box,
+  .ai-two-col{
+    gap:28px!important;
+  }
+
+  .mockup-feature + .mockup-feature{
+    padding-top:46px!important;
+  }
+
+  .button,
+  .footer-cta-buttons a{
+    width:100%!important;
+    text-align:center!important;
+  }
+
+  .mockup-lightbox{
+    align-items:flex-start!important;
+    justify-content:flex-start!important;
+    overflow-y:auto!important;
+    padding:58px 14px 18px!important;
+  }
+  .mockup-lightbox-inner{
+    width:100%!important;
+    max-width:100%!important;
+  }
+  .mockup-lightbox-inner img{
+    max-height:42vh!important;
+    object-fit:contain!important;
+  }
+  .mockup-lightbox-title{
+    font-size:clamp(1.2rem,5.8vw,1.6rem)!important;
+    line-height:1.2!important;
+    margin:14px 0 10px!important;
+  }
+  .mockup-spec-panel{
+    grid-template-columns:1fr!important;
+    gap:8px!important;
+    margin-top:10px!important;
+  }
+  .mockup-spec-item{
+    padding:10px 12px!important;
+    font-size:11px!important;
+    line-height:1.4!important;
+  }
+  .mockup-lightbox-actions{
+    flex-direction:column!important;
+    margin-top:12px!important;
+  }
+  .mockup-lightbox-actions a,
+  .mockup-lightbox-actions button{
+    width:100%!important;
+    text-align:center!important;
+    justify-content:center!important;
+  }
+  .mockup-lightbox-close{
+    top:10px!important;
+    right:12px!important;
+    width:40px!important;
+    height:40px!important;
+    font-size:26px!important;
+  }
+}
+
+@media(max-width:480px){
+  .container{
+    width:min(100% - 36px,1180px)!important;
+  }
+  .hero{
+    min-height:68vh!important;
+    padding-bottom:46px!important;
+  }
+  .hero h1{
+    font-size:clamp(2.05rem,9vw,2.8rem)!important;
+  }
+  .hero-badges span:nth-child(4){
+    display:none;
+  }
+  .image-card{
+    min-height:280px!important;
+  }
+  .related-overlay{
+    padding:24px!important;
+  }
+  .related-overlay h3{
+    font-size:1.55rem!important;
+  }
+}
+
 </style>
 <script type="application/ld+json">
 {
@@ -1395,86 +1615,7 @@ main{display:block}
   </div>
 </section>
 
-<style>
-.related-grid{
-  display:grid;
-  grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:24px;
-}
-
-.image-card{
-  position:relative;
-  overflow:hidden;
-  min-height:420px;
-  border:1px solid rgba(255,255,255,0.08);
-  background:#111;
-}
-
-.image-card img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
-  transition:transform .5s ease;
-}
-
-.image-card:hover img{
-  transform:scale(1.03);
-}
-
-.related-overlay{
-  position:absolute;
-  inset:auto 0 0 0;
-  padding:34px;
-  background:linear-gradient(to top, rgba(0,0,0,.82), rgba(0,0,0,0));
-  color:white;
-}
-
-.related-overlay span{
-  display:block;
-  font-size:.7rem;
-  letter-spacing:.18em;
-  text-transform:uppercase;
-  margin-bottom:10px;
-  opacity:.8;
-}
-
-.related-overlay h3{
-  margin:0;
-  font-size:2rem;
-  font-weight:400;
-}
-
-@media(max-width:900px){
-
-  .related-grid{
-    grid-template-columns:1fr;
-  }
-
-  .image-card{
-    min-height:320px;
-  }
-
-}
-</style>
-
-
 </main>
-<section class="section ai-linking-hub" id="related-collection-paths">
-  <div class="ai-section-head">
-    <p class="section-label">Related Collection Paths</p>
-    <h2 class="section-title">Explore related fine art photography collections by mood and interior use.</h2>
-  </div>
-  <div class="ai-link-grid">
-    <a href="quiet-earth-collection.html"><strong>Quiet Earth</strong><span>Healthcare artwork, wellness interiors, waiting rooms, calming offices, visual calm.</span></a>
-    <a href="mountain-light-collection.html"><strong>Mountain Light</strong><span>Hospitality interiors, lodge modern artwork, resort wall art, executive offices.</span></a>
-    <a href="monochrome-stillness.html"><strong>Monochrome Stillness</strong><span>Black-and-white office artwork, healthcare corridors, minimalist interiors, executive spaces.</span></a>
-    <a href="coastal-atmosphere.html"><strong>Coastal Atmosphere</strong><span>Quiet luxury coastal artwork, boutique hospitality, refined residential interiors.</span></a>
-    <a href="forest-light-collection.html"><strong>Forest Light</strong><span>Biophilic artwork, restorative woodland imagery, organic modern interiors.</span></a>
-    <a href="heritage-mixed-media.html"><strong>Heritage &amp; Mixed Media</strong><span>Regional artwork, lodge interiors, restaurants, hospitality spaces, local identity.</span></a>
-  </div>
-</section>
-
 
 
 <section class="footer-cta">
