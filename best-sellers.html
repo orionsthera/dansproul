@@ -35,6 +35,143 @@ html{scroll-behavior:smooth}body{background:var(--charcoal);color:var(--text);fo
 .site-footer{background:#100e0b;padding:62px clamp(22px,6vw,76px) 36px;border-top:1px solid var(--line)}.site-footer .footer-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:28px;max-width:1380px;margin:0 auto}.site-footer .footer-grid h3{margin:0 0 13px;color:#d5b365;font-family:"Cormorant Garamond",Georgia,serif;font-size:21px;font-weight:400}.site-footer .footer-grid a{display:block;text-decoration:none;color:rgba(244,238,229,.62);font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:2;text-transform:none;letter-spacing:0}.site-footer .footer-grid a:hover{color:#f4eee5}.site-footer .footer-bottom{display:block;max-width:1380px;margin:40px auto 0;padding-top:28px;border-top:1px solid var(--line);color:rgba(244,238,229,.32);font-family:Arial,Helvetica,sans-serif;font-size:10px;letter-spacing:.18em;line-height:1.8;text-align:center;text-transform:uppercase}
 @media(max-width:1040px){.nav-toggle-standard{display:block}.nav-links-standard{position:fixed;top:64px;left:0;right:0;display:none;flex-direction:column;align-items:flex-start;gap:0;padding:18px 24px 24px;background:rgba(14,12,9,.98);border-bottom:1px solid var(--line)}.site-nav-standard.is-open .nav-links-standard{display:flex}.nav-links-standard a{width:100%;padding:14px 0}.hero{min-height:88vh}.trust-strip{grid-template-columns:repeat(2,1fr)}.trust-item:nth-child(2){border-right:0}.trust-item:nth-child(-n+2){border-bottom:1px solid var(--line)}.section-head,.buying-box,.mockup-wrap{display:block}.buying-grid,.use-grid,.print-grid,.related-grid,.set-grid,.faq-grid,.site-footer .footer-grid{grid-template-columns:1fr 1fr}.mockup-wrap .btn{margin-top:26px}}
 @media(max-width:680px){section{padding:52px 22px}.hero{min-height:86vh;padding-bottom:54px}h1{font-size:clamp(2.3rem,9vw,3.4rem);line-height:1.02;letter-spacing:-.04em}h2,.section-title{font-size:clamp(1.9rem,7.5vw,2.75rem);line-height:1.05}.hero-ctas{flex-direction:column;align-items:stretch}.btn{width:100%}.hero-price-points,.trust-strip,.buying-grid,.use-grid,.print-grid,.related-grid,.set-grid,.faq-grid,.site-footer .footer-grid{grid-template-columns:1fr}.site-footer .footer-grid{gap:30px}.buying-box{padding:24px}.hero-price{border-right:0;border-bottom:1px solid rgba(244,238,229,.14);padding:13px 16px}.hero-price:last-child{border-bottom:0}.trust-item{border-right:0;border-bottom:1px solid var(--line)}.trust-item:last-child{border-bottom:0}}
+
+/* MOBILE CLEANUP PASS — Best Sellers */
+@media(max-width:1040px){
+  .site-nav-standard{height:64px}
+  .hero{min-height:78vh;padding:96px 24px 54px;background-position:center center}
+  .section-head{gap:22px}
+  .buying-box{gap:22px}
+}
+
+@media(max-width:680px){
+  body{letter-spacing:.025em}
+  section{padding:48px 22px}
+  .hero{
+    min-height:72vh;
+    padding:88px 22px 42px;
+    align-items:flex-end;
+    background-position:center center;
+  }
+  .hero::after{background:linear-gradient(to top,rgba(8,8,7,.52),transparent 58%)}
+  .hero-content{max-width:100%}
+  .eyebrow,.section-label{
+    font-size:.52rem;
+    letter-spacing:.28em;
+    margin-bottom:12px;
+  }
+  h1{
+    font-size:clamp(2.25rem,9vw,3.25rem);
+    line-height:1.02;
+    letter-spacing:-.04em;
+  }
+  h2,.section-title{
+    font-size:clamp(1.85rem,7.5vw,2.55rem);
+    line-height:1.06;
+  }
+  .hero-copy{
+    margin-top:18px;
+    font-size:.82rem;
+    line-height:1.72;
+    max-width:100%;
+  }
+  .hero-ctas{
+    margin-top:22px;
+    gap:10px;
+  }
+  .btn{
+    width:100%;
+    min-height:42px;
+    padding:12px 16px;
+    font-size:.54rem;
+    letter-spacing:.18em;
+    text-align:center;
+  }
+  .hero-price-points{
+    grid-template-columns:1fr;
+    margin-top:18px;
+    max-width:100%;
+  }
+  .hero-price{
+    padding:12px 14px;
+    border-right:0;
+    border-bottom:1px solid rgba(244,238,229,.14);
+  }
+  .hero-price:last-child{border-bottom:0}
+  .hero-price strong{font-size:1.18rem}
+  .hero-price span{font-size:.46rem;letter-spacing:.2em}
+
+  .trust-strip{grid-template-columns:1fr}
+  .trust-item{
+    padding:18px 22px;
+    border-right:0!important;
+    border-bottom:1px solid var(--line);
+  }
+  .trust-item:last-child{border-bottom:0}
+  .trust-v{font-size:1.18rem}
+
+  .section-head{
+    display:block;
+    margin-bottom:26px;
+  }
+  .section-sub{
+    margin-top:12px;
+    font-size:.75rem;
+    line-height:1.75;
+  }
+
+  .buying-help{padding-top:44px;padding-bottom:44px}
+  .buying-box{
+    display:block;
+    padding:22px;
+  }
+  .buying-grid{
+    grid-template-columns:1fr;
+    gap:10px;
+    margin-top:20px;
+  }
+  .buying-item{padding:16px}
+
+  .use-grid,
+  .print-grid,
+  .related-grid,
+  .set-grid,
+  .faq-grid{
+    grid-template-columns:1fr;
+    gap:12px;
+  }
+  .use-card{min-height:auto;padding:22px}
+  .print-body{padding:18px}
+  .print-img{aspect-ratio:4/4.5}
+  .related-card,.set-card,.faq-item{padding:22px;min-height:auto}
+
+  .mockup-wrap{
+    display:block;
+  }
+  .mockup-wrap .btn{margin-top:20px}
+
+  .site-footer{padding:48px 22px 30px}
+  .site-footer .footer-grid{
+    grid-template-columns:1fr!important;
+    gap:30px;
+  }
+  .site-footer .footer-grid a{
+    line-height:1.7;
+    margin-bottom:7px;
+  }
+  .site-footer .footer-bottom{
+    margin-top:34px;
+    text-align:left;
+  }
+}
+
+@media(max-width:420px){
+  .hero{min-height:74vh;padding-top:84px}
+  .nav-logo-name-standard{font-size:16px}
+  .nav-logo-sub-standard{font-size:8px;letter-spacing:.22em}
+  .hero-copy{font-size:.8rem}
+}
+
 </style>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
