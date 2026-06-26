@@ -28,6 +28,18 @@
 
     .proof-strip{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#100e0b}.proof-strip div{min-height:92px;padding:20px;text-align:center;border-right:1px solid var(--line);color:var(--cream-faint);font-size:10px;letter-spacing:.22em;text-transform:uppercase}.proof-strip strong{display:block;margin-bottom:5px;color:var(--cream);font-family:"Cormorant Garamond",Georgia,serif;font-size:28px;font-weight:300;letter-spacing:.02em;text-transform:none}
 
+
+    .local-page-feature{background:#100e0b;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .local-feature-box{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(280px,.95fr);gap:clamp(30px,5vw,70px);align-items:center;padding:clamp(38px,5vw,64px);border:1px solid var(--line);background:linear-gradient(135deg,rgba(244,238,229,.035),rgba(199,164,90,.035));box-shadow:0 24px 80px rgba(0,0,0,.22)}
+    .local-feature-copy h2{font-size:clamp(34px,5vw,64px);letter-spacing:-.01em}
+    .local-feature-copy p{max-width:760px;margin-top:18px;color:var(--cream-soft);font-size:15px;line-height:1.9}
+    .local-feature-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:24px}
+    .local-feature-list span{display:block;border:1px solid rgba(195,158,83,.18);background:rgba(0,0,0,.16);padding:11px 13px;color:rgba(244,238,229,.68);font-family:Arial,Helvetica,sans-serif;font-size:10px;line-height:1.5;letter-spacing:.16em;text-transform:uppercase}
+    .local-feature-card{padding:30px;border:1px solid rgba(195,158,83,.24);background:#17130f}
+    .local-feature-card h3{font-size:34px;margin-bottom:14px}
+    .local-feature-card p{color:var(--cream-soft);font-size:14px;line-height:1.85}
+    .local-feature-card .btns{margin-top:24px}
+
     .light{background:var(--light-bg);color:var(--light-ink)}.section-head{max-width:1280px;margin:0 auto 38px;display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,520px);gap:34px;align-items:end}.section-head h2{font-size:clamp(34px,5vw,68px)}.section-head p{color:rgba(33,27,20,.67);line-height:1.9;font-size:15px}.place-grid{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(33,27,20,.16)}.place-card{background:#fbf8f1;padding:28px;min-height:240px}.place-card h3{font-size:31px;color:var(--light-ink)}.place-card p{margin-top:12px;color:rgba(33,27,20,.68);font-size:14px;line-height:1.75}
 
     .two-col{background:var(--panel)}.two-col-grid{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:clamp(34px,5vw,76px);align-items:center}.two-col h2{font-size:clamp(36px,5vw,66px)}.two-col p{margin-top:18px;color:var(--cream-soft);font-size:15px;line-height:1.9}.image-panel{aspect-ratio:4/3;overflow:hidden;background:var(--deep);border:1px solid var(--line)}.image-panel img{height:100%;filter:brightness(.9) saturate(.92)}
@@ -41,7 +53,7 @@
     .footer-seo{background:#100e0b!important;padding:62px clamp(22px,6vw,76px) 36px!important;border-top:1px solid rgba(185,138,59,.22)!important}.footer-grid{display:grid!important;grid-template-columns:repeat(5,1fr)!important;gap:28px!important;max-width:1380px!important;margin:0 auto!important}.footer-grid h3{margin:0 0 13px!important;color:#d5b365!important;font-family:"Cormorant Garamond",Georgia,serif!important;font-size:21px!important;line-height:1.2!important;font-weight:400!important;text-transform:none!important;letter-spacing:0!important}.footer-grid a{display:block!important;text-decoration:none!important;color:rgba(244,238,229,.62)!important;font-family:Arial,Helvetica,sans-serif!important;font-size:13px!important;line-height:2!important;text-transform:none!important;letter-spacing:0!important}.footer-grid a:hover{color:#f4eee5!important}.footer-bottom{display:block!important;max-width:1380px!important;margin:40px auto 0!important;padding-top:28px!important;border-top:1px solid rgba(185,138,59,.22)!important;color:rgba(244,238,229,.32)!important;font-family:Arial,Helvetica,sans-serif!important;font-size:10px!important;letter-spacing:.18em!important;line-height:1.8!important;text-align:center!important;text-transform:uppercase!important}
 
     @media (max-width:1180px){.collection-grid{grid-template-columns:repeat(2,1fr)}}
-    @media (max-width:1040px){body::before{height:64px}.site-nav-standard{height:64px!important}.nav-toggle-standard{display:block!important}.nav-links-standard{position:fixed!important;top:64px!important;left:0!important;right:0!important;display:none!important;flex-direction:column!important;align-items:flex-start!important;gap:0!important;padding:18px 24px 24px!important;background:rgba(14,12,9,.98)!important;border-bottom:1px solid rgba(185,138,59,.22)!important}.site-nav-standard.is-open .nav-links-standard{display:flex!important}.nav-links-standard a{width:100%!important;padding:14px 0!important}.nav-shop-standard{width:auto!important;margin-top:8px!important;padding:13px 18px!important}.hero{min-height:68vh}.intro-grid,.section-head,.two-col-grid{grid-template-columns:1fr}.proof-strip,.place-grid,.card-grid,.collection-grid,.footer-grid{grid-template-columns:1fr!important}.portrait{width:170px}.place-card,.dark-card{min-height:auto}.collection-card{min-height:330px}}
+    @media (max-width:1040px){body::before{height:64px}.site-nav-standard{height:64px!important}.nav-toggle-standard{display:block!important}.nav-links-standard{position:fixed!important;top:64px!important;left:0!important;right:0!important;display:none!important;flex-direction:column!important;align-items:flex-start!important;gap:0!important;padding:18px 24px 24px!important;background:rgba(14,12,9,.98)!important;border-bottom:1px solid rgba(185,138,59,.22)!important}.site-nav-standard.is-open .nav-links-standard{display:flex!important}.nav-links-standard a{width:100%!important;padding:14px 0!important}.nav-shop-standard{width:auto!important;margin-top:8px!important;padding:13px 18px!important}.hero{min-height:68vh}.intro-grid,.section-head,.two-col-grid{grid-template-columns:1fr}.proof-strip,.place-grid,.card-grid,.collection-grid,.footer-grid,.local-feature-box,.local-feature-list{grid-template-columns:1fr!important}.local-feature-box{padding:28px}.portrait{width:170px}.place-card,.dark-card{min-height:auto}.collection-card{min-height:330px}}
   </style>
 
   <script type="application/ld+json">
@@ -68,7 +80,7 @@
         "description":"About Dan Sproul, a Lima, Ohio-based fine art nature and landscape photographer creating atmospheric artwork for homes, collectors, designers, and interiors.",
         "author":{"@id":"https://dsproul.com/#dan-sproul"},
         "primaryImageOfPage":{"@id":"https://dsproul.com/holmes%20county%20ohio%20winter%20road.jpg#image"},
-        "about":["Lima Ohio photographer","Northwest Ohio photographer","Ohio landscape photographer","Ohio nature photographer","fine art nature photography","artwork for homes"]
+        "about":["Lima Ohio photographer","Northwest Ohio photographer","Ohio landscape photographer","Ohio nature photographer","fine art nature photography","artwork for homes","fine art photographer Lima Ohio","Lima Ohio fine art"]
       },
       {
         "@type":"BreadcrumbList",
@@ -147,6 +159,31 @@
     <div><strong>8,500+</strong> Images Available</div>
     <div><strong>Homes</strong> Designers & Projects</div>
   </div>
+
+
+  <section class="section-pad local-page-feature" aria-labelledby="lima-local-page-heading">
+    <div class="local-feature-box">
+      <div class="local-feature-copy">
+        <p class="eyebrow">Fine art photography in Lima, Ohio</p>
+        <h2 id="lima-local-page-heading">Looking for nature artwork from a local Lima artist?</h2>
+        <p>Dan's dedicated Lima, Ohio fine art page highlights local nature photography, Ohio wall art, direct ordering options for nearby buyers, and artwork ideas for homes, offices, healthcare spaces, hospitality interiors, and local businesses throughout Northwest Ohio.</p>
+        <div class="local-feature-list" aria-label="Local fine art page highlights">
+          <span>Lima Ohio wall art</span>
+          <span>Nature artwork for homes</span>
+          <span>Local direct ordering</span>
+          <span>Northwest Ohio service area</span>
+        </div>
+      </div>
+      <div class="local-feature-card">
+        <h3>Local roots, regional artwork.</h3>
+        <p>If you are searching for a fine art photographer in Lima, Ohio, this page is the best starting point for regional prints, local ordering guidance, and artwork selected for everyday interiors.</p>
+        <div class="btns">
+          <a class="btn primary" href="lima-ohio-fine-art-photographer.html">Lima Ohio Fine Art</a>
+          <a class="btn" href="mailto:sproulphoto@gmail.com?subject=Lima%20Ohio%20Artwork%20Inquiry">Ask About Local Ordering</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section class="section-pad light">
     <div class="section-head">
@@ -258,7 +295,7 @@
       <a href="best-sellers.html">Best Sellers</a>
       <a href="in-your-space.html">In Your Space</a>
       <a href="ohio-nature-photography-prints.html">Ohio Nature Photography</a>
-      <a href="alaska-photography-prints.html">Alaska Prints</a>
+      <a href="lima-ohio-fine-art-photographer.html">Lima Ohio Fine Art</a>
       <a href="about-dan-sproul.html">About Dan Sproul</a>
     </div>
 
