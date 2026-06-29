@@ -1,347 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Blog — Dan Sproul Fine Art Photography | Lima, Ohio</title>
-<meta name="description" content="Stories from the field by Dan Sproul — fine art photographer based in Lima, Ohio. Location guides, behind-the-lens stories, and photography tips from America's wild places."/>
-<meta name="robots" content="index, follow"/>
-<link rel="canonical" href="https://dansproul.com/blog.html"/>
-<meta property="og:title" content="Blog — Dan Sproul Fine Art Photography"/>
-<meta property="og:description" content="Photography stories, location guides and field notes from Dan Sproul — Lima, Ohio fine art photographer."/>
-<meta property="og:image" content="https://dansproul.com/valdez-glacier-lake-alaska-dan-sproul.jpg"/>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet"/>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Journal & Artwork Guides | Dan Sproul Fine Art Photography</title>
+<meta name="description" content="Artwork guides, field notes, and interior design ideas from Dan Sproul, a Lima, Ohio fine art nature photographer creating landscape artwork for homes, healthcare, hospitality, and design projects." />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://dsproul.com/blog.html" />
+<meta property="og:title" content="Journal & Artwork Guides | Dan Sproul Fine Art Photography" />
+<meta property="og:description" content="Artwork guides, field notes, and interior design ideas for choosing nature photography prints by room, mood, size, and place." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://dsproul.com/blog.html" />
+<meta property="og:image" content="https://dsproul.com/denali%20national%20park%20autumn.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" as="image" href="denali national park autumn.jpg" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
 <style>
-  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-  :root{--black:#080807;--off-white:#f2efe8;--accent:#b5924a;--dark-brown:#1c1710;--muted:rgba(242,239,232,0.45);}
-  html{scroll-behavior:smooth;}
-  body{background:var(--black);color:var(--off-white);font-family:'Jost',sans-serif;font-weight:300;letter-spacing:.04em;cursor:none;overflow-x:hidden;}
-  .cursor{position:fixed;width:9px;height:9px;background:var(--off-white);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);mix-blend-mode:difference;transition:width .3s,height .3s;}
-  .cursor.hover{width:44px;height:44px;}
-
-  /* NAV */
-  nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:26px 56px;background:rgba(8,8,7,.96);border-bottom:1px solid rgba(181,146,74,.1);}
-  .nav-logo{text-decoration:none;}
-  .nav-logo-name{display:block;font-family:'Cormorant Garamond',serif;font-size:1.12rem;font-weight:300;letter-spacing:.18em;text-transform:uppercase;color:var(--off-white);}
-  .nav-logo-sub{display:block;font-size:.52rem;letter-spacing:.35em;text-transform:uppercase;color:var(--accent);margin-top:2px;}
-  .nav-links{display:flex;gap:30px;list-style:none;align-items:center;}
-  .nav-links a{color:var(--off-white);text-decoration:none;font-size:.63rem;font-weight:200;letter-spacing:.2em;text-transform:uppercase;transition:color .3s;}
-  .nav-links a:not(.nav-shop):hover{color:var(--accent);}
-  .nav-links a.nav-shop{border:1px solid rgba(181,146,74,.4);padding:7px 16px;color:var(--accent);}
-  .nav-links a.nav-shop:hover{background:rgba(181,146,74,.12);}
-  .nav-links a.active{color:var(--accent);}
-
-  /* BLOG HERO */
-  .blog-hero{padding:160px 56px 72px;border-bottom:1px solid rgba(181,146,74,.1);}
-  .blog-hero-label{font-size:.56rem;letter-spacing:.4em;text-transform:uppercase;color:var(--accent);margin-bottom:20px;display:flex;align-items:center;gap:14px;}
-  .blog-hero-label::after{content:'';height:1px;width:80px;background:linear-gradient(to right,var(--accent),transparent);opacity:.4;}
-  .blog-hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,6vw,5rem);font-weight:300;line-height:.95;margin-bottom:20px;}
-  .blog-hero h1 em{font-style:italic;color:var(--accent);}
-  .blog-hero p{font-size:.78rem;line-height:1.9;color:var(--muted);max-width:520px;}
-  .medium-link{display:inline-flex;align-items:center;gap:10px;margin-top:28px;padding:12px 28px;border:1px solid rgba(181,146,74,.3);font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);text-decoration:none;transition:background .3s,border-color .3s;}
-  .medium-link:hover{background:rgba(181,146,74,.1);border-color:var(--accent);}
-  .medium-link svg{width:16px;height:16px;fill:var(--accent);}
-
-  /* LIVE FEED BANNER */
-  .feed-banner{background:var(--dark-brown);padding:16px 56px;display:flex;align-items:center;gap:14px;font-size:.58rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid rgba(181,146,74,.08);}
-  .feed-dot{width:7px;height:7px;background:#4CAF50;border-radius:50%;flex-shrink:0;animation:pulse 2s infinite;}
-  @keyframes pulse{0%,100%{opacity:1;}50%{opacity:.4;}}
-
-  /* BLOG GRID */
-  .blog-section{padding:72px 56px;}
-  .blog-section-title{font-size:.56rem;letter-spacing:.38em;text-transform:uppercase;color:var(--accent);margin-bottom:48px;display:flex;align-items:center;gap:14px;}
-  .blog-section-title::after{content:'';height:1px;max-width:100px;flex:1;background:linear-gradient(to right,var(--accent),transparent);opacity:.4;}
-
-  /* FEATURED POST */
-  .post-featured{display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-bottom:4px;}
-  .post-featured-img{height:420px;overflow:hidden;position:relative;}
-  .post-featured-img img{width:100%;height:100%;object-fit:cover;filter:brightness(.7) saturate(.85);transition:transform .8s,filter .7s;}
-  .post-featured:hover .post-featured-img img{transform:scale(1.04);filter:brightness(.85) saturate(1);}
-  .post-featured-img-bg{width:100%;height:100%;display:flex;align-items:center;justify-content:center;}
-  .post-featured-content{background:#0d0b08;padding:48px 40px;display:flex;flex-direction:column;justify-content:center;}
-  .post-tag{font-size:.5rem;letter-spacing:.32em;text-transform:uppercase;color:var(--accent);margin-bottom:14px;}
-  .post-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.4rem,2.5vw,2.2rem);font-weight:300;line-height:1.15;margin-bottom:16px;color:var(--off-white);}
-  .post-excerpt{font-size:.74rem;line-height:1.95;color:rgba(242,239,232,.55);margin-bottom:24px;}
-  .post-meta{font-size:.56rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(242,239,232,.3);margin-bottom:20px;}
-  .post-link{display:inline-block;font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(181,146,74,.3);padding-bottom:3px;transition:border-color .3s;}
-  .post-link:hover{border-color:var(--accent);}
-
-  /* GRID POSTS */
-  .posts-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;margin-bottom:56px;}
-  .post-card{background:#0d0b08;cursor:none;transition:background .3s;}
-  .post-card:hover{background:#121009;}
-  .post-card-img{height:200px;overflow:hidden;position:relative;}
-  .post-card-img img{width:100%;height:100%;object-fit:cover;filter:brightness(.75) saturate(.82);transition:transform .8s,filter .7s;}
-  .post-card:hover .post-card-img img{transform:scale(1.05);filter:brightness(.9) saturate(1);}
-  .post-card-img-bg{width:100%;height:100%;}
-  .post-card-body{padding:28px 24px;}
-  .post-card-tag{font-size:.48rem;letter-spacing:.3em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;}
-  .post-card-title{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:300;line-height:1.2;margin-bottom:12px;color:var(--off-white);}
-  .post-card-excerpt{font-size:.68rem;line-height:1.85;color:rgba(242,239,232,.48);margin-bottom:16px;}
-  .post-card-meta{font-size:.52rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(242,239,232,.25);margin-bottom:14px;}
-  .post-card-link{font-size:.54rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(181,146,74,.25);padding-bottom:2px;transition:border-color .3s;}
-  .post-card-link:hover{border-color:var(--accent);}
-
-  /* LIVE FEED SECTION */
-  #live-feed{padding:56px;background:#0b0a08;border-top:1px solid rgba(181,146,74,.08);}
-  .feed-posts{display:grid;grid-template-columns:1fr 1fr;gap:4px;}
-  .feed-post{background:#0e0c09;padding:32px 28px;cursor:none;transition:background .3s;}
-  .feed-post:hover{background:#141109;}
-  .feed-post-tag{font-size:.48rem;letter-spacing:.3em;text-transform:uppercase;color:var(--accent);margin-bottom:8px;}
-  .feed-post-title{font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:300;line-height:1.2;margin-bottom:10px;color:var(--off-white);}
-  .feed-post-meta{font-size:.52rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(242,239,232,.25);margin-bottom:12px;}
-  .feed-post-link{font-size:.52rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(181,146,74,.2);padding-bottom:2px;transition:border-color .3s;}
-  .feed-post-link:hover{border-color:var(--accent);}
-  .feed-loading{text-align:center;padding:40px;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);}
-  .feed-error{display:none;}
-
-  /* MEDIUM CTA */
-  .medium-cta{background:var(--dark-brown);padding:64px 56px;text-align:center;border-top:1px solid rgba(181,146,74,.1);}
-  .medium-cta h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3vw,2.8rem);font-weight:300;margin-bottom:14px;color:var(--off-white);}
-  .medium-cta h2 em{font-style:italic;color:var(--accent);}
-  .medium-cta p{font-size:.72rem;letter-spacing:.12em;color:var(--muted);margin-bottom:28px;line-height:1.9;}
-
-  /* FOOTER */
-  footer{padding:28px 56px;border-top:1px solid rgba(255,255,255,.05);display:flex;justify-content:space-between;align-items:center;font-size:.54rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(242,239,232,.18);flex-wrap:wrap;gap:10px;}
-  footer a{color:rgba(242,239,232,.18);text-decoration:none;transition:color .3s;}
-  footer a:hover{color:var(--accent);}
-
-  @media(max-width:900px){
-    nav{padding:18px 24px;}.nav-links{display:none;}
-    .blog-hero,.blog-section,#live-feed,.medium-cta{padding-left:24px;padding-right:24px;}
-    .feed-banner{padding:16px 24px;}
-    .post-featured{grid-template-columns:1fr;}
-    .posts-grid{grid-template-columns:1fr 1fr;}
-    .feed-posts{grid-template-columns:1fr;}
-    footer{padding:24px;flex-direction:column;text-align:center;}
-  }
-  @media(max-width:560px){.posts-grid{grid-template-columns:1fr;}}
+:root{--black:#14110d;--deep:#1f1a14;--panel:#29231c;--panel2:#332b22;--cream:#f4eee5;--cream-soft:rgba(244,238,229,.68);--cream-faint:rgba(244,238,229,.44);--line:rgba(195,158,83,.18);--line-strong:rgba(195,158,83,.36);--gold:#c7a45a;--gold-light:#e4c77d;--paper:#eee7dc;--paper2:#fffaf1;--light-ink:#211b14;--max:1280px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--black);color:var(--cream);font-family:"Jost",Arial,sans-serif;font-weight:300;letter-spacing:.035em;overflow-x:hidden}body::before{content:"";display:block;height:66px}img{display:block;width:100%;height:auto;max-width:100%;object-fit:cover}a{color:inherit}h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:300;margin:0;line-height:1.04}p{margin:0}.eyebrow{margin-bottom:15px;color:var(--gold);font-size:10px;letter-spacing:.38em;text-transform:uppercase}.section-pad{padding:clamp(58px,7vw,104px) clamp(22px,6vw,76px)}.section-head{max-width:var(--max);margin:0 auto 42px;display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,540px);gap:34px;align-items:end}.section-head h2{font-size:clamp(34px,5vw,68px)}.section-head p{color:var(--cream-soft);line-height:1.9;font-size:15px}.btns{display:flex;flex-wrap:wrap;gap:13px;margin-top:30px}.btn{min-height:45px;display:inline-flex;align-items:center;justify-content:center;padding:0 23px;border:1px solid var(--line-strong);text-decoration:none;color:var(--cream);font-size:10px;letter-spacing:.22em;text-transform:uppercase;transition:.25s ease}.btn:hover{border-color:var(--gold-light);color:var(--gold-light)}.btn.primary{background:var(--gold);border-color:var(--gold);color:var(--black);font-weight:500}.btn.primary:hover{background:var(--gold-light);color:var(--black)}
+.site-nav-standard{position:fixed!important;top:0!important;left:0!important;right:0!important;height:66px!important;z-index:9999!important;display:flex!important;align-items:center!important;justify-content:space-between!important;gap:28px!important;padding:0 clamp(16px,4vw,44px)!important;background:rgba(14,12,9,.94)!important;border-bottom:1px solid rgba(185,138,59,.18)!important;backdrop-filter:blur(14px)!important;-webkit-backdrop-filter:blur(14px)!important}.nav-logo-standard{display:flex!important;flex-direction:column!important;text-decoration:none!important;color:#f4eee5!important;line-height:1!important;min-width:max-content!important}.nav-logo-name-standard{font-family:Arial,Helvetica,sans-serif!important;font-size:18px!important;font-weight:700!important;letter-spacing:.24em!important;text-transform:uppercase!important}.nav-logo-sub-standard{margin-top:7px!important;color:#b9934b!important;font-family:Arial,Helvetica,sans-serif!important;font-size:9px!important;letter-spacing:.26em!important;text-transform:uppercase!important}.nav-links-standard{display:flex!important;align-items:center!important;justify-content:flex-end!important;gap:clamp(18px,2vw,34px)!important}.nav-links-standard a{color:rgba(244,238,229,.78)!important;text-decoration:none!important;font-family:Arial,Helvetica,sans-serif!important;font-size:12px!important;font-weight:700!important;letter-spacing:.18em!important;text-transform:uppercase!important;white-space:nowrap!important}.nav-links-standard a:hover,.nav-links-standard a.active{color:#f4eee5!important}.nav-shop-standard{color:#d5b365!important;border:1px solid rgba(213,179,101,.62)!important;padding:14px 22px!important}.nav-toggle-standard{display:none!important;width:42px!important;height:42px!important;border:1px solid rgba(213,179,101,.36)!important;background:transparent!important;cursor:pointer!important}.nav-toggle-standard span{display:block!important;width:20px!important;height:2px!important;margin:5px auto!important;background:#f4eee5!important}
+.hero{min-height:82vh;position:relative;display:grid;align-items:end;padding:clamp(92px,10vw,138px) clamp(22px,6vw,76px) clamp(64px,8vw,96px);overflow:hidden}.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(20,17,13,.98) 0%,rgba(20,17,13,.70) 38%,rgba(20,17,13,.18) 100%),url("denali national park autumn.jpg") center/cover no-repeat;filter:brightness(.82) saturate(.92);transform:scale(1.01)}.hero-content{position:relative;max-width:950px}.hero h1{max-width:900px;font-size:clamp(46px,7vw,96px);letter-spacing:-.025em}.hero h1 em{color:var(--gold-light);font-style:italic}.hero-copy{max-width:700px;margin-top:22px;color:var(--cream-soft);font-size:clamp(15px,1.35vw,18px);line-height:1.85}
+.intro-strip{background:var(--deep);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:26px clamp(22px,6vw,76px)}.intro-strip-inner{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line)}.intro-card{background:#15120e;padding:24px}.intro-card strong{display:block;color:var(--cream);font-family:"Cormorant Garamond",Georgia,serif;font-size:28px;font-weight:300;margin-bottom:8px}.intro-card p{color:var(--cream-soft);font-size:13px;line-height:1.7}
+.blog-posts{background:var(--paper);color:var(--light-ink)}.blog-posts .section-head p{color:rgba(33,27,20,.68)}.post-grid{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.post-card{display:grid;grid-template-columns:1fr;min-height:420px;background:var(--paper2);border:1px solid rgba(33,27,20,.13);text-decoration:none;color:var(--light-ink);overflow:hidden;transition:.25s ease}.post-card:hover{transform:translateY(-3px);border-color:rgba(154,107,40,.36)}.post-image{min-height:260px;background:#211b14}.post-image img{height:100%;filter:brightness(.9) saturate(.9);transition:.7s ease}.post-card:hover .post-image img{filter:brightness(1) saturate(1);transform:scale(1.035)}.post-body{padding:30px}.post-kicker{color:#91692d;font-family:Arial,Helvetica,sans-serif;font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-bottom:14px}.post-body h2{font-size:clamp(30px,3vw,44px);letter-spacing:-.03em;color:var(--light-ink)}.post-body p{margin-top:14px;color:rgba(33,27,20,.70);font-size:15px;line-height:1.8}.post-meta{display:block;margin-top:22px;color:#91692d;font-family:Arial,Helvetica,sans-serif;font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}.archive-grid{max-width:var(--max);margin:42px auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:4px}.archive-card{display:block;min-height:250px;background:#12100d;text-decoration:none;color:var(--cream);padding:26px;border:1px solid var(--line)}.archive-card span{display:block;color:var(--gold);font-size:10px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:16px}.archive-card h3{font-size:31px;margin-bottom:12px}.archive-card p{color:var(--cream-soft);font-size:14px;line-height:1.75}.contact-slim{background:#0f0d0a;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.contact-slim .section-head{margin-bottom:26px}
+.site-footer{background:#100e0b!important;padding:62px clamp(22px,6vw,76px) 36px!important;border-top:1px solid rgba(185,138,59,.22)!important;color:#f4eee5!important}.site-footer .footer-grid{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:32px!important;max-width:1380px!important;margin:0 auto!important}.site-footer h3{margin:0 0 13px!important;color:#d5b365!important;font-family:"Cormorant Garamond",Georgia,serif!important;font-size:21px!important;font-weight:400!important}.site-footer a{display:block!important;text-decoration:none!important;color:rgba(244,238,229,.66)!important;font-family:Arial,Helvetica,sans-serif!important;font-size:13px!important;line-height:2!important}.site-footer a:hover{color:#f4eee5!important}.footer-bottom{max-width:1380px!important;margin:40px auto 0!important;padding-top:28px!important;border-top:1px solid rgba(185,138,59,.22)!important;color:rgba(244,238,229,.34)!important;font-family:Arial,Helvetica,sans-serif!important;font-size:10px!important;letter-spacing:.18em!important;line-height:1.8!important;text-align:center!important;text-transform:uppercase!important}
+@media(max-width:1040px){body::before{height:64px}.site-nav-standard{height:64px!important}.nav-toggle-standard{display:block!important}.nav-links-standard{position:fixed!important;top:64px!important;left:0!important;right:0!important;display:none!important;flex-direction:column!important;align-items:flex-start!important;gap:0!important;padding:18px 24px 24px!important;background:rgba(14,12,9,.98)!important;border-bottom:1px solid rgba(185,138,59,.22)!important}.site-nav-standard.is-open .nav-links-standard{display:flex!important}.nav-links-standard a{width:100%!important;padding:14px 0!important}.nav-shop-standard{width:auto!important;margin-top:8px!important;padding:13px 18px!important}.section-head{grid-template-columns:1fr}.intro-strip-inner,.archive-grid{grid-template-columns:1fr}.site-footer .footer-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}@media(max-width:760px){.hero{min-height:70vh;padding:72px 22px 46px}.hero h1{font-size:clamp(2.35rem,9vw,3.25rem);line-height:1.02}.section-pad{padding:52px 22px}.post-grid{grid-template-columns:1fr}.post-card{min-height:auto}.post-image{min-height:220px}.btns{flex-direction:column}.btn{width:100%;text-align:center}.site-footer{padding:48px 22px 30px!important}.site-footer .footer-grid{grid-template-columns:1fr!important;gap:30px!important}.footer-bottom{text-align:left!important}}
 </style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://dsproul.com/#dan-sproul","name":"Dan Sproul","url":"https://dsproul.com","jobTitle":"Fine Art Photographer and Mixed Media Artist","homeLocation":{"@type":"Place","name":"Lima, Ohio"},"sameAs":["https://dansproul.com","https://dansproulphotography.substack.com/","https://medium.com/@sprould99"]},{"@type":"Organization","@id":"https://dsproul.com/#organization","name":"Dan Sproul Fine Art Photography","url":"https://dsproul.com","founder":{"@id":"https://dsproul.com/#dan-sproul"}},{"@type":"WebSite","@id":"https://dsproul.com/#website","url":"https://dsproul.com","name":"Dan Sproul Fine Art Photography","publisher":{"@id":"https://dsproul.com/#organization"}},{"@type":["WebPage","Blog"],"@id":"https://dsproul.com/blog.html#webpage","url":"https://dsproul.com/blog.html","name":"Journal & Artwork Guides | Dan Sproul Fine Art Photography","description":"Artwork guides, field notes, and interior design ideas from Dan Sproul.","isPartOf":{"@id":"https://dsproul.com/#website"},"author":{"@id":"https://dsproul.com/#dan-sproul"},"about":["fine art photography blog","wall art guides","nature artwork for interiors","landscape photography field notes","Lima Ohio fine art photographer"]},{"@type":"BreadcrumbList","@id":"https://dsproul.com/blog.html#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://dsproul.com/"},{"@type":"ListItem","position":2,"name":"Journal & Artwork Guides","item":"https://dsproul.com/blog.html"},{"@type":"Blog","@id":"https://dsproul.com/blog.html#blog","url":"https://dsproul.com/blog.html","name":"Dan Sproul Journal & Artwork Guides","description":"Artwork guides, field notes, and interior inspiration from Dan Sproul Fine Art Photography.","publisher":{"@id":"https://dsproul.com/#organization"},"author":{"@id":"https://dsproul.com/#dan-sproul"}}]}</script>
 </head>
 <body>
-
-<div class="cursor" id="cursor"></div>
-
-<!-- NAV -->
-<div class="mobile-nav" id="mobileNav">
-  <button class="close-btn" id="mobileClose" aria-label="Close menu">✕</button>
-  <a href="/">Home</a>
-  <a href="/#collections">Collections</a>
-  <a href="/#gallery">Gallery</a>
-  <a href="/in-your-space.html">In Your Space</a>
-  <a href="/for-designers.html">For Designers</a>
-  <a href="/#about">About</a>
-  <a href="/blog.html">Blog</a>
-  <a href="/#contact">Contact</a>
-  <a href="https://dansproul.com/shop" target="_blank" style="color:#b5924a">Shop ↗</a>
-</div>
-
-<nav>
-  <a href="/" class="nav-logo">
-    <span class="nav-logo-name">Dan Sproul</span>
-    <span class="nav-logo-sub">Fine Art Photography</span>
-  </a>
-  <ul class="nav-links">
-    <li><a href="/">Home</a></li>
-    <li><a href="/#collections">Collections</a></li>
-    <li><a href="/in-your-space.html">In Your Space</a></li>
-    <li><a href="/for-designers.html">For Designers</a></li>
-    <li><a href="/#about">About</a></li>
-    <li><a href="/blog.html">Blog</a></li>
-    <li><a href="/#contact">Contact</a></li>
-    <li><a href="https://dansproul.com/shop" target="_blank" class="nav-shop">Shop ↗</a></li>
-  </ul>
-  <button class="hamburger" id="hamburger" aria-label="Open menu">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
-
-<!-- HERO -->
-<div class="blog-hero">
-  <p class="blog-hero-label">Field Notes &amp; Stories</p>
-  <h1>Stories from the <em>Field</em></h1>
-  <p>Photography guides, location stories, and behind-the-lens insights from Dan's travels across America's most iconic wild places — updated on Medium and mirrored here.</p>
-  <a href="https://medium.com/@sprould99" target="_blank" class="medium-link">
-    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
-    Follow on Medium
-  </a>
-</div>
-
-<!-- LIVE FEED BANNER -->
-<div class="feed-banner">
-  <div class="feed-dot"></div>
-  <span>Latest posts auto-loaded from Medium · <a href="https://medium.com/@sprould99" target="_blank" style="color:var(--accent);text-decoration:none;">medium.com/@sprould99</a></span>
-</div>
-
-<!-- ARCHIVED POSTS — from your existing Medium articles -->
-<div class="blog-section">
-  <p class="blog-section-title">From the Archive</p>
-
-  <!-- FEATURED POST -->
-  <div class="post-featured">
-    <div class="post-featured-img">
-      <div class="post-featured-img-bg" style="background:linear-gradient(160deg,#1a2a14,#0e1a08,#1e2e18)">
-        <img src="little-river-smoky-mountains-long-exposure-dan-sproul.jpg"
-             onerror="this.style.display='none'"
-             alt="Little River Smoky Mountains long exposure waterfall by Dan Sproul"/>
-      </div>
-    </div>
-    <div class="post-featured-content">
-      <p class="post-tag">Waterfalls · Great Smoky Mountains</p>
-      <h2 class="post-title">Ricketts Glen &amp; Watkins Glen — Two Parks, One Trip</h2>
-      <p class="post-excerpt">A beautiful experience combining both Ricketts Glen and Watkins Glen State Park into the same trip. The early summer greens accentuated the stunning waterfalls found in these two parks in New York and Pennsylvania.</p>
-      <p class="post-meta">August 2023 · 3 min read</p>
-      <a href="https://medium.com/@sprould99" target="_blank" class="post-link">Read on Medium →</a>
-    </div>
-  </div>
-
-  <!-- GRID POSTS -->
-  <div class="posts-grid" style="margin-top:4px;">
-
-    <div class="post-card">
-      <div class="post-card-img">
-        <div class="post-card-img-bg" style="background:linear-gradient(160deg,#1a1010,#100808,#201414)">
-          <img src="black-bear-cub-cades-cove-tennessee-dan-sproul.jpg"
-               onerror="this.style.display='none'"
-               alt="Black Bear Cub wildlife photography"/>
-        </div>
-      </div>
-      <div class="post-card-body">
-        <p class="post-card-tag">Wildlife · Portrait</p>
-        <h3 class="post-card-title">48 Hours in the Smoky Mountains: A Photographer’s Journey Through Wild Beauty</h3>
-        <p class="post-card-excerpt">Spending two full days immersed in the natural splendor of Great Smoky Mountains National Park was nothing short of extraordinary.</p>
-        <p class="post-card-meta">August 21, 2023 · 2 min read</p>
-        <a href="https://medium.com/@sprould99/new-ventures-b50d97d4280f" target="_blank" class="post-card-link">Read on Medium →</a>
-      </div>
-    </div>
-
-    <div class="post-card">
-      <div class="post-card-img">
-        <div class="post-card-img-bg" style="background:linear-gradient(160deg,#141e10,#0c1408,#1a2414)">
-          <img src="moose in water reflection.jpg"
-               onerror="this.style.display='none'"
-               alt="Alaska wilderness photography"/>
-        </div>
-      </div>
-      <div class="post-card-body">
-        <p class="post-card-tag">Wilderness · Minnesota</p>
-        <h3 class="post-card-title">Into the Wild — Gunflint Trail, Minnesota</h3>
-        <p class="post-card-excerpt">Venturing into the heart of the untamed wilderness along the Gunflint Trail in Minnesota, I found myself immersed in a world of awe and anticipation.</p>
-        <p class="post-card-meta">August 25, 2023 · 3 min read</p>
-        <a href="https://medium.com/@sprould99" target="_blank" class="post-card-link">Read on Medium →</a>
-      </div>
-    </div>
-
-    <div class="post-card">
-      <div class="post-card-img">
-        <div class="post-card-img-bg" style="background:linear-gradient(160deg,#1a1408,#120e04,#201a0c)">
-          <img src="maroon-bells-dawn-autumn-dan-sproul.jpg"
-               onerror="this.style.display='none'"
-               alt="Maroon Bells Colorado autumn photography"/>
-        </div>
-      </div>
-      <div class="post-card-body">
-        <p class="post-card-tag">Landscape · Colorado</p>
-        <h3 class="post-card-title">Chasing Fall Color — Maroon Bells at Dawn</h3>
-        <p class="post-card-excerpt">The Maroon Bells are one of the most photographed peaks in North America for good reason. Arriving before sunrise for the golden hour reflection is an experience unlike any other.</p>
-        <p class="post-card-meta">August 8, 2023 · 2 min read</p>
-        <a href="https://medium.com/@sprould99" target="_blank" class="post-card-link">Read on Medium →</a>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<!-- LIVE MEDIUM FEED — auto-loads latest posts via RSS2JSON -->
-<div id="live-feed">
-  <p class="blog-section-title" style="padding:0 0 0 0;margin-bottom:32px;">Latest from Medium</p>
-  <div id="feed-container" class="feed-posts">
-    <div class="feed-loading" style="grid-column:1/-1;">Loading latest posts from Medium…</div>
-  </div>
-</div>
-
-<!-- MEDIUM CTA -->
-<div class="medium-cta">
-  <h2>Read more on <em>Medium</em></h2>
-  <p>New stories posted regularly — follow along for location guides,<br/>gear tips, and behind-the-scenes photography adventures.</p>
-  <a href="https://medium.com/@sprould99" target="_blank" class="medium-link" style="display:inline-flex;">
-    <svg viewBox="0 0 24 24" width="16" height="16" style="fill:var(--accent)"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
-    Visit Dan on Medium
-  </a>
-</div>
-
-<!-- FOOTER -->
-<footer>
-  <span>© 2026 Dan Sproul Fine Art Photography — Lima, Ohio</span>
-  <span><a href="index.html">← Back to Portfolio</a></span>
-  <span><a href="https://dansproul.com/shop" target="_blank">Shop Prints</a></span>
-</footer>
-
+<nav class="site-nav-standard" aria-label="Primary navigation"><a href="/" class="nav-logo-standard" aria-label="Dan Sproul Fine Art Photography home"><span class="nav-logo-name-standard">Dan Sproul</span><span class="nav-logo-sub-standard">Fine Art Photography</span></a><button class="nav-toggle-standard" aria-label="Open navigation menu" aria-expanded="false"><span></span><span></span><span></span></button><div class="nav-links-standard"><a href="/">Home</a><a href="best-sellers.html">Best Sellers</a><a href="art-collections.html">Collections</a><a href="about-dan-sproul.html">About</a><a href="in-your-space.html">In Your Space</a><a href="for-designers.html">For Designers</a><a href="blog.html" class="active">Blog</a><a href="https://dansproul.com" target="_blank" rel="noopener" class="nav-shop-standard">Shop Prints</a></div></nav>
+<header class="hero"><div class="hero-content"><p class="eyebrow">Journal & Artwork Guides</p><h1>Field notes, artwork guidance, and interior inspiration from <em>nature.</em></h1><p class="hero-copy">Practical artwork guides, field notes, and interior inspiration from Dan Sproul — a Lima, Ohio fine art nature photographer creating landscape artwork for homes, healthcare, hospitality, offices, and residential interiors.</p><div class="btns"><a class="btn primary" href="#latest-guides">Read Latest Guides</a><a class="btn" href="artwork-guides.html">Artwork Guides</a><a class="btn" href="https://dansproulphotography.substack.com/" target="_blank" rel="noopener">Follow on Substack</a></div></div></header>
+<section class="intro-strip"><div class="intro-strip-inner"><div class="intro-card"><strong>Artwork Guides</strong><p>Advice on size, format, framing, placement, and choosing nature photography for real rooms.</p></div><div class="intro-card"><strong>Field Notes</strong><p>Stories from national parks, Ohio landscapes, waterfalls, coastlines, mountains, and wild places.</p></div><div class="intro-card"><strong>Interior Ideas</strong><p>How nature artwork supports homes, wellness spaces, healthcare, hospitality, and offices.</p></div></div></section>
+<section class="section-pad blog-posts" id="latest-guides"><div class="section-head"><div><p class="eyebrow">Featured Guides</p><h2>Featured artwork and interior guides.</h2></div><p>Start here for practical guidance on choosing artwork by scale, mood, subject, and the feeling you want a room to hold.</p></div><div class="post-grid"><a class="post-card" href="https://dansproulphotography.substack.com/p/how-to-choose-large-wall-art-for" target="_blank" rel="noopener"><div class="post-image"><img src="residential coastal living room framed coast dan sproul.jpg" alt="Large wall art in a refined living room interior by Dan Sproul" loading="lazy" decoding="async" onerror="this.src='denali national park autumn.jpg'"></div><div class="post-body"><p class="post-kicker">Living Room Artwork</p><h2>How to Choose Large Wall Art for a Living Room</h2><p>A practical designer-style guide to scale, mood, interior style, and print materials for choosing oversized wall art with confidence.</p><span class="post-meta">Large Wall Art Guide →</span></div></a><a class="post-card" href="https://dansproulphotography.substack.com/p/why-water-imagery-creates-some-of" target="_blank" rel="noopener"><div class="post-image"><img src="grotto-falls-smoky-mountains-waterfall-forest-sunlight-dan-sproul.jpg" alt="Water imagery and waterfall artwork for restorative interiors by Dan Sproul" loading="lazy" decoding="async" onerror="this.src='denali national park autumn.jpg'"></div><div class="post-body"><p class="post-kicker">Wellness & Water Imagery</p><h2>Why Water Imagery Creates Restorative Interior Spaces</h2><p>How waterfalls, lakes, rivers, and coastal imagery can shape calm interiors for homes, healthcare spaces, spas, hotels, and wellness rooms.</p><span class="post-meta">Water Artwork Guide →</span></div></a></div></section>
+<section class="section-pad"><div class="section-head"><div><p class="eyebrow">Field Notes</p><h2>Field notes and location stories.</h2></div><p>Travel stories, park notes, and behind-the-lens posts help connect the finished artwork back to the places, weather, light, and experiences behind each image.</p></div><div class="archive-grid"><a class="archive-card" href="https://medium.com/@sprould99" target="_blank" rel="noopener"><span>Waterfalls · Travel Story</span><h3>Ricketts Glen & Watkins Glen</h3><p>A travel and waterfall story connected to mist, movement, and the kind of water imagery that works beautifully in calm interiors.</p></a><a class="archive-card" href="https://medium.com/@sprould99/new-ventures-b50d97d4280f" target="_blank" rel="noopener"><span>Wildlife · Smoky Mountains</span><h3>48 Hours in the Smokies</h3><p>A behind-the-lens wildlife story from one of the most beloved national park landscapes in the eastern United States.</p></a><a class="archive-card" href="https://medium.com/@sprould99" target="_blank" rel="noopener"><span>Landscape · Colorado</span><h3>Maroon Bells at Dawn</h3><p>A location-based mountain story connected to fall color, early light, and destination-inspired artwork.</p></a></div></section>
+<section class="section-pad contact-slim" id="journal-contact"><div class="section-head"><div><p class="eyebrow">Need Help Choosing Artwork?</p><h2>Use the journal as a starting point, then find the right print for your space.</h2></div><p>Send a room photo, wall dimensions, or project direction and I can help recommend artwork, sizing, format, and collection paths.</p></div><div class="btns" style="max-width:var(--max);margin:0 auto;"><a class="btn primary" href="mailto:sproulphoto@gmail.com?subject=Artwork%20Guidance%20Request">Request Guidance</a><a class="btn" href="art-collections.html">Browse Collections</a><a class="btn" href="artwork-guides.html">Artwork Guides</a></div></section>
+<footer class="site-footer"><div class="footer-grid"><div><h3>Collections</h3><a href="quiet-earth-collection.html">Quiet Earth</a><a href="wellness-waters-collection.html">Wellness Waters</a><a href="coastal-atmosphere.html">Coastal Atmosphere</a><a href="mountain-light-collection.html">Mountain Light</a><a href="monochrome-stillness.html">Monochrome Stillness</a></div><div><h3>Featured Pages</h3><a href="best-sellers.html">Best Sellers</a><a href="in-your-space.html">In Your Space</a><a href="artwork-guides.html">Artwork Guides</a><a href="lima-ohio-fine-art-photographer.html">Lima Ohio Fine Art</a><a href="ohio-nature-photography-prints.html">Ohio Nature Photography</a></div><div><h3>Designer Resources</h3><a href="for-designers.html">For Designers</a><a href="healthcare-artwork.html">Healthcare Artwork</a><a href="hospitality-artwork.html">Hospitality Artwork</a><a href="senior-living-artwork.html">Senior Living Artwork</a><a href="mailto:sproulphoto@gmail.com?subject=Mockup%20Request">Request Mockups</a></div><div><h3>Artwork Themes</h3><a href="https://dansproul.com/art/waterfall" target="_blank" rel="noopener">Waterfall Prints</a><a href="https://dansproul.com/art/forest" target="_blank" rel="noopener">Forest Photography</a><a href="https://dansproul.com/art/coastal" target="_blank" rel="noopener">Coastal Wall Art</a><a href="https://dansproul.com/art/mountain" target="_blank" rel="noopener">Mountain Photography</a><a href="https://dansproul.com/art/wildlife" target="_blank" rel="noopener">Wildlife Photography</a></div><div><h3>Shop Prints</h3><a href="https://dansproul.com" target="_blank" rel="noopener">Fine Art America Store</a><a href="https://dansproul.com/collections/best+sellers" target="_blank" rel="noopener">Best Sellers Collection</a><a href="heritage-mixed-media.html">Heritage & Mixed Media</a><a href="blog.html">Journal & Guides</a><a href="mailto:sproulphoto@gmail.com">Email Dan</a></div></div><div class="footer-bottom">© 2026 DAN SPROUL FINE ART PHOTOGRAPHY · ORIGINAL LANDSCAPE PHOTOGRAPHY AND HERITAGE-INSPIRED MIXED MEDIA ARTWORK BY DAN SPROUL, BASED IN LIMA, OHIO · PRINTS SHIP WORLDWIDE</div></footer>
+<script>document.addEventListener('DOMContentLoaded',function(){var nav=document.querySelector('.site-nav-standard');var toggle=document.querySelector('.nav-toggle-standard');if(nav&&toggle){toggle.addEventListener('click',function(){var isOpen=nav.classList.toggle('is-open');toggle.setAttribute('aria-expanded',isOpen?'true':'false');});}});</script>
 <script>
-  // Cursor
-  const cursor = document.getElementById('cursor');
-  document.addEventListener('mousemove', e => {
-    cursor.style.left = e.clientX + 'px';
-    cursor.style.top  = e.clientY + 'px';
-  });
-  document.querySelectorAll('a, .post-card, .feed-post').forEach(el => {
-    el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
-    el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
-  });
-
-  // ── LIVE MEDIUM RSS FEED via rss2json ──
-  // Uses free rss2json.com to convert Medium RSS to JSON (no API key needed for basic use)
-  async function loadMediumFeed() {
-    const container = document.getElementById('feed-container');
-    try {
-      const rssUrl = encodeURIComponent('https://medium.com/feed/@sprould99');
-      const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${rssUrl}&count=4`;
-      const res = await fetch(apiUrl);
-      const data = await res.json();
-
-      if (data.status !== 'ok' || !data.items || data.items.length === 0) {
-        throw new Error('No posts found');
-      }
-
-      container.innerHTML = '';
-
-      data.items.forEach(post => {
-        // Strip HTML from content, get first 120 chars
-        const tmp = document.createElement('div');
-        tmp.innerHTML = post.description || '';
-        const excerpt = (tmp.textContent || '').replace(/\s+/g,' ').trim().substring(0, 140) + '…';
-        const date = new Date(post.pubDate).toLocaleDateString('en-US', {year:'numeric', month:'long', day:'numeric'});
-
-        // Try to extract thumbnail image
-        const imgMatch = (post.content || '').match(/<img[^>]+src="([^"]+)"/);
-        const imgSrc = imgMatch ? imgMatch[1] : null;
-
-        const card = document.createElement('div');
-        card.className = 'feed-post';
-        card.innerHTML = `
-          ${imgSrc ? `<div style="height:160px;overflow:hidden;margin-bottom:20px;"><img src="${imgSrc}" alt="${post.title}" style="width:100%;height:100%;object-fit:cover;filter:brightness(.8);"/></div>` : ''}
-          <p class="feed-post-tag">Medium · Latest</p>
-          <h3 class="feed-post-title">${post.title}</h3>
-          <p class="feed-post-meta">${date}</p>
-          <p style="font-size:.66rem;line-height:1.85;color:rgba(242,239,232,.48);margin-bottom:14px;">${excerpt}</p>
-          <a href="${post.link}" target="_blank" class="feed-post-link">Read on Medium →</a>
-        `;
-        container.appendChild(card);
-      });
-    } catch(e) {
-      container.innerHTML = `
-        <div style="grid-column:1/-1;text-align:center;padding:40px;">
-          <p style="font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(242,239,232,.3);margin-bottom:16px;">Live posts temporarily unavailable</p>
-          <a href="https://medium.com/@sprould99" target="_blank" style="font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(181,146,74,.3);padding-bottom:3px;">Read all posts on Medium →</a>
-        </div>`;
-    }
-  }
-
-  loadMediumFeed();
 </script>
 </body>
 </html>
-
- 
