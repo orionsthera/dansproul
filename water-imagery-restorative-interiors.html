@@ -1,116 +1,786 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Why Water Imagery Creates Restorative Interior Spaces | Dan Sproul</title>
-  <meta name="description" content="Discover why water imagery is widely used in residential, healthcare, and wellness interiors to create calm, restorative environments.">
-  <link rel="canonical" href="https://dsproul.com/water-imagery-restorative-interiors.html">
+  <meta name="description" content="An editorial guide by Dan Sproul on why water imagery works in living rooms, bedrooms, healthcare, hospitality, and wellness interiors." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://dsproul.com/water-imagery-restorative-interiors.html" />
+  <meta property="og:title" content="Why Water Imagery Creates Restorative Interior Spaces | Dan Sproul" />
+  <meta property="og:description" content="Why waterfall, lake, shoreline, and moving-water imagery helps create calm, restorative rooms." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://dsproul.com/water-imagery-restorative-interiors.html" />
+  <meta property="og:image" content="https://dsproul.com/waterfall-long-exposure-over-couch.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="image" href="waterfall-long-exposure-over-couch.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --black: #14110d;
+      --deep: #1f1a14;
+      --cream: #f4eee5;
+      --cream-soft: rgba(244, 238, 229, .72);
+      --gold: #c7a45a;
+      --gold-light: #e4c77d;
+      --line: rgba(195, 158, 83, .22);
+      --line-strong: rgba(195, 158, 83, .42);
+      --paper: #f2ece2;
+      --paper-soft: #fffaf1;
+      --paper-warm: #e7dccd;
+      --ink: #211b14;
+      --muted: rgba(33, 27, 20, .68);
+      --article: 820px;
+      --wide: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Jost", Arial, sans-serif;
+      font-weight: 300;
+      letter-spacing: .015em;
+      overflow-x: hidden;
+    }
+    body::before {
+      content: "";
+      display: block;
+      height: 66px;
+    }
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    a { color: inherit; }
+    h1, h2, h3 {
+      margin: 0;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-weight: 300;
+      line-height: 1.05;
+      letter-spacing: -.02em;
+    }
+    p { margin: 0; }
+    .eyebrow {
+      margin-bottom: 16px;
+      color: #8b642d;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .28em;
+      text-transform: uppercase;
+    }
+    .btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+    .btn {
+      min-height: 45px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 22px;
+      border: 1px solid var(--line-strong);
+      color: var(--ink);
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      transition: border-color .25s ease, color .25s ease, background .25s ease;
+    }
+    .btn:hover {
+      color: #8b642d;
+      border-color: rgba(139, 100, 45, .55);
+    }
+    .btn.primary {
+      background: var(--gold);
+      border-color: var(--gold);
+      color: var(--black);
+    }
+    .btn.primary:hover {
+      background: var(--gold-light);
+      color: var(--black);
+    }
+    .dark .btn {
+      color: var(--cream);
+    }
+
+    .site-nav-standard {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 66px;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+      padding: 0 clamp(16px, 4vw, 44px);
+      background: rgba(14, 12, 9, .94);
+      border-bottom: 1px solid rgba(185, 138, 59, .18);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+    .nav-logo-standard {
+      display: flex;
+      flex-direction: column;
+      color: var(--cream);
+      line-height: 1;
+      min-width: max-content;
+      text-decoration: none;
+    }
+    .nav-logo-name-standard {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: .24em;
+      text-transform: uppercase;
+    }
+    .nav-logo-sub-standard {
+      margin-top: 7px;
+      color: var(--gold);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 9px;
+      letter-spacing: .26em;
+      text-transform: uppercase;
+    }
+    .nav-links-standard {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: clamp(16px, 1.8vw, 30px);
+    }
+    .nav-links-standard a {
+      color: rgba(244, 238, 229, .78);
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .17em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .nav-links-standard a:hover,
+    .nav-links-standard a.active {
+      color: var(--cream);
+    }
+    .nav-shop-standard {
+      color: #d5b365 !important;
+      border: 1px solid rgba(213, 179, 101, .62);
+      padding: 13px 20px;
+    }
+    .nav-toggle-standard {
+      display: none;
+      width: 42px;
+      height: 42px;
+      border: 1px solid rgba(213, 179, 101, .36);
+      background: transparent;
+      cursor: pointer;
+    }
+    .nav-toggle-standard span {
+      display: block;
+      width: 20px;
+      height: 2px;
+      margin: 5px auto;
+      background: var(--cream);
+    }
+
+    .article-hero {
+      padding: clamp(54px, 7vw, 96px) clamp(20px, 5vw, 72px) 0;
+      background: var(--paper);
+    }
+    .hero-inner {
+      max-width: var(--article);
+      margin: 0 auto;
+      text-align: left;
+    }
+    .article-hero h1 {
+      font-size: clamp(46px, 6vw, 78px);
+      color: var(--ink);
+    }
+    .dek {
+      margin-top: 24px;
+      color: rgba(33, 27, 20, .76);
+      font-size: clamp(18px, 2vw, 23px);
+      line-height: 1.75;
+    }
+    .byline {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+      color: rgba(33, 27, 20, .54);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+    .lead-image {
+      max-width: var(--wide);
+      margin: clamp(36px, 5vw, 58px) auto 0;
+      background: var(--paper-soft);
+      border: 1px solid rgba(33, 27, 20, .12);
+      overflow: hidden;
+    }
+    .lead-image img {
+      aspect-ratio: 1.34 / 1;
+      height: 100%;
+    }
+    figcaption {
+      padding: 14px 18px 16px;
+      color: rgba(33, 27, 20, .58);
+      font-size: 12px;
+      line-height: 1.65;
+    }
+
+    .article-body {
+      padding: clamp(54px, 7vw, 92px) clamp(20px, 5vw, 72px);
+      background: var(--paper);
+    }
+    .article-content {
+      max-width: var(--article);
+      margin: 0 auto;
+    }
+    .article-content h2 {
+      margin: 54px 0 18px;
+      font-size: clamp(34px, 4vw, 52px);
+      color: var(--ink);
+    }
+    .article-content h2:first-child { margin-top: 0; }
+    .article-content p {
+      color: rgba(33, 27, 20, .80);
+      font-size: 18px;
+      line-height: 1.92;
+    }
+    .article-content p + p { margin-top: 18px; }
+    .article-content a {
+      color: #846027;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 4px;
+    }
+    .article-figure {
+      margin: 34px auto 42px;
+      background: var(--paper-soft);
+      border: 1px solid rgba(33, 27, 20, .12);
+      overflow: hidden;
+    }
+    .article-figure.wide {
+      width: min(var(--wide), calc(100vw - 40px));
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+    .article-figure img {
+      aspect-ratio: 1.34 / 1;
+      height: 100%;
+    }
+    .soft-rule {
+      width: 100%;
+      height: 1px;
+      margin: 48px 0;
+      background: rgba(33, 27, 20, .14);
+    }
+    .pull-quote {
+      margin: 46px 0;
+      padding: 28px 0 30px;
+      border-top: 1px solid rgba(33, 27, 20, .15);
+      border-bottom: 1px solid rgba(33, 27, 20, .15);
+      color: var(--ink);
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: clamp(30px, 4vw, 44px);
+      line-height: 1.16;
+    }
+    .notes-box {
+      margin-top: 46px;
+      padding: clamp(26px, 4vw, 38px);
+      background: var(--paper-soft);
+      border: 1px solid rgba(33, 27, 20, .12);
+    }
+    .notes-box h3 {
+      margin-bottom: 18px;
+      font-size: 34px;
+    }
+    .notes-box ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .notes-box li {
+      color: rgba(33, 27, 20, .76);
+      font-size: 16px;
+      line-height: 1.85;
+    }
+    .notes-box li + li { margin-top: 10px; }
+
+    .image-story {
+      padding: clamp(58px, 7vw, 98px) clamp(20px, 5vw, 72px);
+      background: var(--paper-warm);
+    }
+    .image-story-inner {
+      max-width: var(--wide);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(300px, 420px);
+      gap: clamp(28px, 5vw, 58px);
+      align-items: center;
+    }
+    .image-story img {
+      aspect-ratio: 1.32 / 1;
+      height: 100%;
+      border: 1px solid rgba(33, 27, 20, .13);
+    }
+    .image-story h2 {
+      margin-bottom: 18px;
+      font-size: clamp(36px, 5vw, 64px);
+    }
+    .image-story p {
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.85;
+    }
+
+    .cta {
+      padding: clamp(62px, 8vw, 108px) clamp(20px, 5vw, 72px);
+      background: #0f0d0a;
+      color: var(--cream);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+    .cta-inner {
+      max-width: var(--wide);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(280px, 470px);
+      gap: 38px;
+      align-items: center;
+    }
+    .cta .eyebrow { color: var(--gold); }
+    .cta h2 {
+      font-size: clamp(40px, 5.8vw, 76px);
+    }
+    .cta p {
+      color: var(--cream-soft);
+      font-size: 16px;
+      line-height: 1.85;
+    }
+
+    .site-footer {
+      background: #100e0b;
+      padding: 62px clamp(22px, 6vw, 76px) 36px;
+      color: var(--cream);
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 32px;
+      max-width: 1380px;
+      margin: 0 auto;
+    }
+    .site-footer h3 {
+      margin: 0 0 13px;
+      color: #d5b365;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 21px;
+      font-weight: 400;
+    }
+    .site-footer a {
+      display: block;
+      text-decoration: none;
+      color: rgba(244, 238, 229, .66);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      line-height: 2;
+    }
+    .site-footer a:hover { color: var(--cream); }
+    .footer-bottom {
+      max-width: 1380px;
+      margin: 40px auto 0;
+      padding-top: 28px;
+      border-top: 1px solid rgba(185, 138, 59, .22);
+      color: rgba(244, 238, 229, .34);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10px;
+      letter-spacing: .18em;
+      line-height: 1.8;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 1120px) {
+      .nav-toggle-standard { display: block; }
+      .nav-links-standard {
+        position: fixed;
+        top: 66px;
+        left: 0;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        padding: 18px 24px 24px;
+        background: rgba(14, 12, 9, .98);
+        border-bottom: 1px solid rgba(185, 138, 59, .22);
+      }
+      .site-nav-standard.is-open .nav-links-standard { display: flex; }
+      .nav-links-standard a {
+        width: 100%;
+        padding: 14px 0;
+      }
+      .nav-shop-standard {
+        width: auto !important;
+        margin-top: 8px;
+        padding: 13px 18px;
+      }
+      .image-story-inner,
+      .cta-inner {
+        grid-template-columns: 1fr;
+      }
+      .footer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 760px) {
+      body::before { height: 64px; }
+      .site-nav-standard { height: 64px; }
+      .nav-links-standard { top: 64px; }
+      .nav-logo-name-standard { font-size: 15px; }
+      .nav-logo-sub-standard { font-size: 8px; }
+      .article-hero {
+        padding: 42px 20px 0;
+      }
+      .article-hero h1 {
+        font-size: clamp(2.55rem, 10vw, 4rem);
+      }
+      .dek { font-size: 17px; }
+      .lead-image img,
+      .article-figure img,
+      .image-story img {
+        aspect-ratio: 1.05 / 1;
+      }
+      .article-body,
+      .image-story,
+      .cta {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .article-content p {
+        font-size: 16px;
+      }
+      .btns { flex-direction: column; }
+      .btn { width: 100%; }
+      .site-footer { padding: 48px 22px 30px; }
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+      .footer-bottom { text-align: left; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://dsproul.com/#dan-sproul",
+        "name": "Dan Sproul",
+        "url": "https://dsproul.com",
+        "jobTitle": "Fine Art Photographer and Mixed Media Artist",
+        "homeLocation": {
+          "@type": "Place",
+          "name": "Lima, Ohio"
+        },
+        "sameAs": [
+          "https://dansproul.com",
+          "https://dansproulphotography.substack.com/",
+          "https://www.pinterest.com/dansproul/"
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "https://dsproul.com/water-imagery-restorative-interiors.html#article",
+        "headline": "Why Water Imagery Creates Restorative Interior Spaces",
+        "description": "An editorial guide by Dan Sproul on why water imagery works in residential, healthcare, hospitality, and wellness interiors.",
+        "image": "https://dsproul.com/waterfall-long-exposure-over-couch.png",
+        "author": { "@id": "https://dsproul.com/#dan-sproul" },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Dan Sproul Fine Art Photography",
+          "url": "https://dsproul.com"
+        },
+        "mainEntityOfPage": "https://dsproul.com/water-imagery-restorative-interiors.html"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://dsproul.com/water-imagery-restorative-interiors.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://dsproul.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Journal",
+            "item": "https://dsproul.com/blog.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Why Water Imagery Creates Restorative Interior Spaces",
+            "item": "https://dsproul.com/water-imagery-restorative-interiors.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
-
 <body>
+  <nav class="site-nav-standard" aria-label="Primary navigation">
+    <a href="/" class="nav-logo-standard" aria-label="Dan Sproul Fine Art Photography home">
+      <span class="nav-logo-name-standard">Dan Sproul</span>
+      <span class="nav-logo-sub-standard">Fine Art Photography</span>
+    </a>
 
-<header class="page-header">
-  <h1>Why Water Imagery Creates Restorative Interior Spaces</h1>
-  <p class="intro">
-    Water imagery is one of the most effective ways to create calm, grounded interiors. From living rooms to bedrooms and wellness spaces, it introduces movement, softness, and a sense of quiet that feels natural rather than designed.
-  </p>
-</header>
+    <button class="nav-toggle-standard" type="button" aria-label="Open navigation menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
-<section class="content">
+    <div class="nav-links-standard">
+      <a href="/">Home</a>
+      <a href="best-sellers.html">Best Sellers</a>
+      <a href="art-collections.html">Collections</a>
+      <a href="about-dan-sproul.html">About</a>
+      <a href="in-your-space.html">In Your Space</a>
+      <a href="for-designers.html">For Designers</a>
+      <a href="blog.html" class="active">Blog</a>
+      <a href="https://dansproul.com" target="_blank" rel="noopener" class="nav-shop-standard">Shop Prints</a>
+    </div>
+  </nav>
 
-  <!-- HERO IMAGE -->
+  <header class="article-hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Water &amp; Wellness Interiors</p>
+      <h1>Why water imagery creates restorative interior spaces.</h1>
+      <p class="dek">
+        Water imagery has a way of changing the emotional temperature of a room. It can soften a living space, quiet a bedroom, and make wellness or healthcare interiors feel more grounded without making the design feel overly themed.
+      </p>
+      <div class="byline">
+        <span>By Dan Sproul</span>
+        <span>Artwork Guidance</span>
+        <span>Living Rooms, Bedrooms &amp; Wellness Spaces</span>
+      </div>
+    </div>
 
-<img src="waterfall long exposure over couch.png"
-    alt="Large waterfall wall art above couch in modern living room"
-    loading="eager" style="width:100%; margin:20px 0;">
+    <figure class="lead-image">
+      <img src="waterfall-long-exposure-over-couch.png" alt="Large waterfall long exposure wall art above a couch in a modern living room" loading="eager" decoding="async" />
+      <figcaption>Waterfall artwork introduces motion and quiet at the same time, which is why it works so well as a living room focal point.</figcaption>
+    </figure>
+  </header>
 
-  <h2>Water Has a Natural Connection to Calm</h2>
-  <p>
-    Water is universally associated with stillness, rhythm, and continuity. Unlike more complex or busy imagery, it draws attention without overwhelming a space.
-  </p>
+  <main class="article-body">
+    <article class="article-content">
+      <h2>Water has a natural connection to calm.</h2>
+      <p>
+        There is a reason people return to water when they need a room to feel slower. Lakes, waterfalls, shorelines, rivers, and moving reflections all carry a rhythm that feels familiar before it feels decorative.
+      </p>
+      <p>
+        In artwork, water can hold attention without becoming loud. It gives the eye movement, texture, and depth, but it usually does not demand the same visual effort as a busy scene or high-contrast subject.
+      </p>
 
-  <p>
-    This is why water-based artwork consistently works in interiors designed to feel calm, comfortable, and balanced.
-  </p>
+      <div class="pull-quote">
+        The best water imagery does not simply decorate a wall. It changes how the room feels.
+      </div>
 
-  <!-- LIVING ROOM IMAGE -->
+      <h2>Why it works so well in living rooms.</h2>
+      <p>
+        Living rooms need artwork that can hold a wall from across the space. At the same time, they are rooms built for conversation, rest, and daily use. Water imagery is useful because it can create a strong focal point while still feeling easy to live with.
+      </p>
 
-<img src="cascading water in residential living room.png"
-    alt="Cascading waterfall artwork in a warm residential living room"
-    loading="lazy" style="width:100%; margin:20px 0;">
+      <figure class="article-figure wide">
+        <img src="cascading-water-in-residential-living-room.png" alt="Cascading waterfall artwork in a warm residential living room" loading="lazy" decoding="async" />
+        <figcaption>Cascading water pairs naturally with wood, linen, stone, warm neutrals, and layered residential textures.</figcaption>
+      </figure>
 
-  <h2>Why Water Imagery Works So Well in Living Rooms</h2>
-  <p>
-    In living rooms, large-scale artwork becomes a focal point. Water imagery adds movement and depth without introducing visual clutter, making it ideal for spaces built around comfort and conversation.
-  </p>
+      <p>
+        A large waterfall or lake image can anchor the seating area, especially above a sofa, fireplace, or console. The movement in the image keeps the wall from feeling flat, while the natural subject keeps the room from feeling overworked.
+      </p>
 
-  <p>
-    It also pairs naturally with neutral palettes, wood tones, and layered textures commonly found in residential interiors.
-  </p>
+      <div class="soft-rule"></div>
 
-  <h2>Creating a Calm Bedroom Environment</h2>
-  <p>
-    In bedrooms, the goal shifts slightly—from visual impact to emotional tone. Water imagery supports rest by softening the space and reinforcing a slower, more relaxed atmosphere.
-  </p>
+      <h2>Bedrooms need a quieter kind of movement.</h2>
+      <p>
+        In bedrooms, the role of artwork changes. The goal is less about making a statement and more about supporting the atmosphere of rest. This is where soft, abstract, or blurred water imagery can work beautifully.
+      </p>
 
-  <!-- BEDROOM IMAGE -->
+      <figure class="article-figure">
+        <img src="panning-waves-in-bedroom-mockup.png" alt="Soft abstract water artwork above a bed in a calm bedroom interior" loading="lazy" decoding="async" />
+        <figcaption>Soft water movement can feel immersive without asking for too much attention in a bedroom.</figcaption>
+      </figure>
 
-<img src="panning waves in bedroom mockup.png"
-    alt="Soft abstract water artwork above bed in calm bedroom interior"
-    loading="lazy" style="width:100%; margin:20px 0;">
+      <p>
+        A misted shoreline, a slow exposure waterfall, or a softly panned wave pattern can bring atmosphere to the room without introducing too much detail. That restraint matters. The bedroom should not feel like a gallery wall competing for attention.
+      </p>
 
-  <p>
-    More abstract or softly blurred water scenes often work best here, as they feel immersive without drawing too much attention.
-  </p>
+      <h2>Warm water and cool water create different rooms.</h2>
+      <p>
+        The temperature of the image matters as much as the subject. Cool water imagery often feels minimal, clean, and spa-like. Warmer water imagery, especially sunset reflections, can feel richer and more residential.
+      </p>
 
-  <!-- BEDROOM SUNSET IMAGE -->
+      <figure class="article-figure wide">
+        <img src="sunset-waters-on-the-beach-in-modern-bedroom.png" alt="Warm sunset water artwork in a modern bedroom interior" loading="lazy" decoding="async" />
+        <figcaption>Warm water imagery can soften modern interiors and add depth without adding visual clutter.</figcaption>
+      </figure>
 
-<img src="sunset waters on the beach in modern bedroom.png"
-    alt="Warm sunset water artwork in modern bedroom interior"
-    loading="lazy" style="width:100%; margin:20px 0;">
+      <p>
+        This is one of the reasons water imagery adapts so well across different spaces. The same subject can feel crisp, quiet, romantic, moody, restorative, or dramatic depending on the light, palette, and print presentation.
+      </p>
 
-  <h2>Warm vs Cool Water Imagery</h2>
-  <p>
-    The tone of the water matters just as much as the subject. Cooler tones tend to feel clean and minimal, while warmer tones—like sunset reflections—add depth and a more collected, residential feel.
-  </p>
+      <h2>Why designers return to water again and again.</h2>
+      <p>
+        Water imagery is versatile. It works in homes, offices, clinics, waiting rooms, guest rooms, spa environments, senior living interiors, and hospitality spaces because the subject is familiar without feeling generic.
+      </p>
+      <p>
+        In healthcare and wellness spaces, water can help soften the emotional tone of a room. In hospitality, it can create a sense of place and retreat. In residential interiors, it brings natural movement into a room that might otherwise feel still or overly arranged.
+      </p>
 
-  <h2>Why Designers Return to Water Again and Again</h2>
-  <p>
-    Designers often rely on water imagery because it adapts easily across different types of spaces. It works in residential interiors, wellness environments, and even commercial settings without feeling out of place.
-  </p>
+      <div class="notes-box">
+        <h3>Where water imagery works especially well</h3>
+        <ul>
+          <li>Above a sofa, where the image can anchor the seating area.</li>
+          <li>In bedrooms, where softer water movement supports rest.</li>
+          <li>In waiting rooms and wellness spaces, where calm matters immediately.</li>
+          <li>In hospitality interiors, where water can suggest retreat, place, and atmosphere.</li>
+          <li>In neutral rooms that need life, depth, and natural texture.</li>
+        </ul>
+      </div>
 
-  <!-- FINAL IMAGE -->
+      <h2>Atmosphere matters more than decoration.</h2>
+      <p>
+        The most successful interiors are not built only around objects. They are built around feeling. Water imagery contributes to that feeling through subtle movement, softness, reflection, and rhythm.
+      </p>
+      <p>
+        Collections like <a href="wellness-waters-collection.html">Wellness Waters</a> are useful when the goal is a quieter, more grounded atmosphere. The right piece should not simply match the room. It should help the room exhale.
+      </p>
+    </article>
+  </main>
 
-<img src="moving sunset water over living room couch.png"
-    alt="Large sunset water artwork creating focal point in living room"
-    loading="lazy" style="width:100%; margin:20px 0;">
+  <section class="image-story">
+    <div class="image-story-inner">
+      <img src="moving-sunset-water-over-living-room-couch.png" alt="Large sunset water artwork creating a focal point above a living room couch" loading="lazy" decoding="async" />
+      <div>
+        <p class="eyebrow">Final Thought</p>
+        <h2>Choose the feeling first, then the image.</h2>
+        <p>
+          If the room needs calm, look for softness and rhythm. If it needs warmth, look for sunset or reflected light. If it needs structure, choose a strong horizon, darker frame, or larger format. Water gives you room to make those choices without losing the natural quiet that makes the subject so useful.
+        </p>
+        <div class="btns">
+          <a class="btn" href="wellness-waters-collection.html">View Wellness Waters</a>
+          <a class="btn" href="how-to-choose-large-wall-art-living-room.html">Living Room Art Guide</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <h2>Atmosphere Matters More Than Decoration</h2>
-  <p>
-    The most successful interiors are not built around decoration, but around how a space feels. Water imagery contributes to that feeling by introducing subtle movement, depth, and calm.
-  </p>
+  <section class="cta dark">
+    <div class="cta-inner">
+      <div>
+        <p class="eyebrow">Need Help Choosing Artwork?</p>
+        <h2>Send the room, the wall, and the mood you want.</h2>
+      </div>
+      <div>
+        <p>
+          If you are selecting artwork for a specific space, Dan can help recommend water, landscape, or quiet nature pieces based on room size, palette, layout, and overall design direction.
+        </p>
+        <div class="btns">
+          <a class="btn primary" href="mailto:sproulphoto@gmail.com?subject=Water%20Artwork%20Recommendations">Request Artwork Recommendations</a>
+          <a class="btn" href="art-collections.html">Browse Collections</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <p>
-    Collections like <a href="wellness-waters-collection.html">Wellness Waters</a> are often used in spaces where a quiet, grounded atmosphere is the goal.
-  </p>
+  <footer id="footer" class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <h3>Explore</h3>
+        <a href="/">Home</a>
+        <a href="best-sellers.html">Best Sellers</a>
+        <a href="art-collections.html">Collections</a>
+        <a href="in-your-space.html">In Your Space</a>
+        <a href="for-designers.html">For Designers</a>
+        <a href="https://dansproul.com" target="_blank" rel="noopener">Shop Prints</a>
+        <a href="mailto:sproulphoto@gmail.com">Contact</a>
+      </div>
 
-  <h2>Final Thoughts</h2>
-  <p>
-    Water imagery remains one of the most versatile and effective choices for interior artwork. It works across styles and environments while maintaining a consistent emotional impact.
-  </p>
+      <div>
+        <h3>Collections</h3>
+        <a href="quiet-earth-collection.html">Quiet Earth</a>
+        <a href="forest-light-collection.html">Forest Light</a>
+        <a href="wellness-waters-collection.html">Wellness Waters</a>
+        <a href="coastal-atmosphere.html">Coastal Atmosphere</a>
+        <a href="mountain-light-collection.html">Mountain Light</a>
+        <a href="monochrome-stillness.html">Monochrome Stillness</a>
+        <a href="heritage-mixed-media.html">Heritage &amp; Mixed Media</a>
+      </div>
 
-  <h2>Need Help Choosing Artwork?</h2>
-  <p>
-    If you're selecting artwork for a specific space, I can help recommend pieces based on layout, scale, and overall design direction.
-  </p>
+      <div>
+        <h3>Resources</h3>
+        <a href="artwork-guides.html">Artwork Guides</a>
+        <a href="blog.html">Journal</a>
+        <a href="lima-ohio-fine-art-photographer.html">Lima Fine Art Photographer</a>
+        <a href="about-dan-sproul.html">About Dan</a>
+        <a href="ohio-nature-photography-prints.html">Ohio Nature Photography</a>
+        <a href="alaska-photography-prints.html">Alaska Photography</a>
+      </div>
 
-  <p>
-    <a href="for-designers.html" class="btn primary">Request Artwork Recommendations</a>
-  </p>
+      <div>
+        <h3>For Designers</h3>
+        <a href="for-designers.html">Designer Resources</a>
+        <a href="healthcare-artwork.html">Healthcare</a>
+        <a href="hospitality-artwork.html">Hospitality</a>
+        <a href="senior-living-artwork.html">Senior Living</a>
+        <a href="mailto:sproulphoto@gmail.com?subject=Project Inquiry">Project Inquiry</a>
+        <a href="mailto:sproulphoto@gmail.com?subject=Mockup Request">Request Mockup</a>
+      </div>
 
-</section>
+      <div>
+        <h3>Connect</h3>
+        <a href="mailto:sproulphoto@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/dan-sproul-bb55015a/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.pinterest.com/dansproul/" target="_blank" rel="noopener">Pinterest</a>
+      </div>
+    </div>
 
+    <div class="footer-bottom">
+      &copy; 2026 Dan Sproul Fine Art Photography &middot; Based in Lima, Ohio &middot; Original Nature Photography &amp; Heritage-Inspired Artwork
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var nav = document.querySelector(".site-nav-standard");
+      var toggle = document.querySelector(".nav-toggle-standard");
+      if (!nav || !toggle) return;
+
+      toggle.addEventListener("click", function () {
+        var isOpen = nav.classList.toggle("is-open");
+        toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      });
+    });
+  </script>
 </body>
 </html>
