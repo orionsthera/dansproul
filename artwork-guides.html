@@ -47,6 +47,84 @@
 .sitewide-footer-cta{background:#0b0a08!important;padding:90px 24px!important;text-align:center!important;border-top:1px solid rgba(185,147,75,.22)!important;border-bottom:1px solid rgba(185,147,75,.22)!important}.sitewide-footer-cta p{color:#b9934b!important;font-family:Arial,Helvetica,sans-serif!important;font-size:.62rem!important;letter-spacing:.36em!important;text-transform:uppercase!important;margin:0 0 20px!important}.sitewide-footer-cta h2{max-width:980px!important;margin:0 auto!important;color:#f4eee5!important;font-size:clamp(2.2rem,5vw,4.6rem)!important;font-weight:400!important;line-height:1.08!important}.footer-cta-buttons{display:flex!important;justify-content:center!important;gap:14px!important;margin-top:36px!important;flex-wrap:wrap!important}.footer-cta-buttons a{display:inline-flex!important;align-items:center!important;justify-content:center!important;padding:15px 28px!important;min-width:180px!important;border:1px solid rgba(185,147,75,.55)!important;color:#f4eee5!important;text-decoration:none!important;font-family:Arial,Helvetica,sans-serif!important;font-size:.58rem!important;letter-spacing:.22em!important;text-transform:uppercase!important}.footer-cta-buttons a:first-child{background:#b9934b!important;color:#14110d!important}.site-footer{background:#0b0a08!important;padding:64px clamp(24px,6vw,80px) 36px!important;border-top:1px solid rgba(185,147,75,.12)!important;color:#f4eee5!important}.site-footer .footer-grid{max-width:1320px!important;margin:0 auto!important;display:grid!important;grid-template-columns:repeat(5,1fr)!important;gap:44px!important}.site-footer .footer-grid h3{color:#d0ad63!important;font-size:1.35rem!important;font-weight:400!important;margin:0 0 18px!important;line-height:1.2!important}.site-footer .footer-grid a{display:block!important;color:rgba(244,238,229,.68)!important;text-decoration:none!important;font-family:Arial,Helvetica,sans-serif!important;font-size:.82rem!important;line-height:1.9!important;margin-bottom:4px!important}.site-footer .footer-bottom{max-width:1320px!important;margin:52px auto 0!important;padding-top:28px!important;border-top:1px solid rgba(185,147,75,.22)!important;color:rgba(244,238,229,.38)!important;font-family:Arial,Helvetica,sans-serif!important;font-size:.58rem!important;letter-spacing:.18em!important;line-height:1.8!important;text-align:center!important;text-transform:uppercase!important}
 @media(max-width:1040px){body::before{height:64px}.site-nav-standard{height:64px!important}.nav-toggle-standard{display:block!important}.nav-links-standard{position:fixed!important;top:64px!important;left:0!important;right:0!important;display:none!important;flex-direction:column!important;align-items:flex-start!important;gap:0!important;padding:18px 24px 24px!important;background:rgba(14,12,9,.98)!important;border-bottom:1px solid rgba(185,138,59,.22)!important}.site-nav-standard.is-open .nav-links-standard{display:flex!important}.nav-links-standard a{width:100%!important;padding:14px 0!important}.nav-shop-standard{width:auto!important;margin-top:8px!important;padding:13px 18px!important}.intro-grid,.section-head,.local-box{grid-template-columns:1fr}.guide-grid,.room-grid,.format-grid,.related-grid{grid-template-columns:repeat(2,1fr)}.site-footer .footer-grid{grid-template-columns:repeat(2,1fr)!important}}
 @media(max-width:680px){.hero{min-height:72vh;padding:76px 22px 48px}.hero-copy{font-size:15px;line-height:1.7}.section-pad{padding:52px 22px}.guide-grid,.room-grid,.format-grid,.faq-grid,.related-grid{grid-template-columns:1fr}.local-box{padding:26px}.btns{flex-direction:column}.btn{width:100%;text-align:center}.sitewide-footer-cta{padding:58px 22px!important}.footer-cta-buttons{flex-direction:column!important}.footer-cta-buttons a{width:100%!important}.site-footer .footer-grid{grid-template-columns:1fr!important;gap:30px!important}.site-footer .footer-bottom{text-align:left!important}}
+
+/* FINAL READABILITY FIXES FOR LIGHT-SECTIONS BUTTONS / TABS */
+.featured-guides .btn,
+.visual-education .btn,
+.inspiration-section .btn,
+.local-callout .btn,
+.related .btn,
+.popular-guides .btn{
+  color:#211b14!important;
+  border-color:rgba(33,27,20,.24)!important;
+  background:transparent!important;
+}
+.featured-guides .btn:hover,
+.visual-education .btn:hover,
+.inspiration-section .btn:hover,
+.local-callout .btn:hover,
+.related .btn:hover,
+.popular-guides .btn:hover{
+  color:#91692d!important;
+  border-color:#91692d!important;
+}
+.featured-guides .btn.primary,
+.visual-education .btn.primary,
+.inspiration-section .btn.primary,
+.local-callout .btn.primary,
+.related .btn.primary,
+.popular-guides .btn.primary{
+  background:var(--gold)!important;
+  border-color:var(--gold)!important;
+  color:#14100b!important;
+  font-weight:700!important;
+}
+.featured-guides .btn.primary:hover,
+.visual-education .btn.primary:hover,
+.inspiration-section .btn.primary:hover,
+.local-callout .btn.primary:hover,
+.related .btn.primary:hover,
+.popular-guides .btn.primary:hover{
+  background:var(--gold2)!important;
+  border-color:var(--gold2)!important;
+  color:#14100b!important;
+}
+.inspiration-section .btn:not(.primary),
+.local-callout .btn:not(.primary){
+  background:#fffaf1!important;
+  color:#211b14!important;
+  border:1px solid rgba(33,27,20,.20)!important;
+}
+.inspiration-section .btn:not(.primary):hover,
+.local-callout .btn:not(.primary):hover{
+  color:#91692d!important;
+  border-color:#91692d!important;
+}
+.popular-guide{
+  color:#211b14!important;
+}
+.popular-guide:hover{
+  background:#fffdf7!important;
+}
+.popular-guide span:last-child{
+  color:#211b14!important;
+}
+.hero-links a:focus,
+.popular-guide:focus,
+.guide-card:focus,
+.room-card:focus,
+.related-card:focus,
+.btn:focus{
+  outline:2px solid var(--gold2);
+  outline-offset:3px;
+}
+@media(max-width:680px){
+  .inspiration-section .btn,
+  .local-callout .btn{
+    width:100%!important;
+  }
+}
+
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://dsproul.com/#dan-sproul","name":"Dan Sproul","url":"https://dsproul.com","jobTitle":"Fine Art Photographer and Mixed Media Artist","homeLocation":{"@type":"Place","name":"Lima, Ohio"}},{"@type":"Organization","@id":"https://dsproul.com/#organization","name":"Dan Sproul Fine Art Photography","url":"https://dsproul.com","founder":{"@id":"https://dsproul.com/#dan-sproul"}},{"@type":"WebSite","@id":"https://dsproul.com/#website","url":"https://dsproul.com","name":"Dan Sproul Fine Art Photography","publisher":{"@id":"https://dsproul.com/#organization"}},{"@type":["WebPage","CollectionPage"],"@id":"https://dsproul.com/artwork-guides.html#webpage","url":"https://dsproul.com/artwork-guides.html","name":"Artwork Guides | How to Choose Wall Art for Homes & Interiors | Dan Sproul","description":"Guides for choosing fine art nature prints by size, room, frame, format, atmosphere, and interior use.","isPartOf":{"@id":"https://dsproul.com/#website"},"author":{"@id":"https://dsproul.com/#dan-sproul"},"breadcrumb":{"@id":"https://dsproul.com/artwork-guides.html#breadcrumb"},"about":["how to choose wall art","fine art print sizes","framed print vs canvas","nature artwork for interiors","artwork for living rooms","artwork for healthcare spaces"],"hasPart":[{"@type":"WebPageElement","name":"Wall art size guides"},{"@type":"WebPageElement","name":"Room artwork guides"},{"@type":"WebPageElement","name":"Print format guidance"},{"@type":"WebPageElement","name":"Local Lima Ohio print guidance"}]},{"@type":"BreadcrumbList","@id":"https://dsproul.com/artwork-guides.html#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://dsproul.com/"},{"@type":"ListItem","position":2,"name":"Artwork Guides","item":"https://dsproul.com/artwork-guides.html"}]},{"@type":"FAQPage","@id":"https://dsproul.com/artwork-guides.html#faq","mainEntity":[{"@type":"Question","name":"How do I choose the right size wall art?","acceptedAnswer":{"@type":"Answer","text":"Start with the wall and furniture below it. Smaller rooms often work well with 24x36 or 30x40 prints, while sofas, beds, fireplaces, lobbies, and statement walls often need 40x60 or larger artwork."}},{"@type":"Question","name":"Should I choose framed prints, canvas, acrylic, or metal?","acceptedAnswer":{"@type":"Answer","text":"Framed paper prints feel refined and residential, canvas adds warmth, acrylic gives a polished contemporary look, and metal can work well in high-traffic or commercial spaces."}},{"@type":"Question","name":"Can local buyers order directly from Dan Sproul?","acceptedAnswer":{"@type":"Answer","text":"Lima and Northwest Ohio buyers can contact Dan directly for personalized recommendations, sizing guidance, and eligible local pickup or direct ordering options."}}]}]}</script>
 </head>
