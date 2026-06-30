@@ -1324,6 +1324,122 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
   .site-footer .footer-bottom{text-align:left!important;margin-top:34px!important}
 }
 
+
+
+/* ==========================================================
+   JULY 2026 MOBILE TIGHTENING PASS
+   Goal: reduce scroll fatigue on phones without changing desktop.
+   ========================================================== */
+
+.hero{
+  height:78vh;
+  min-height:520px;
+  max-height:740px;
+}
+
+@media(max-width:900px){
+  /* limit very long resource / use lists */
+  .designer-resource-card:nth-of-type(n+7),
+  .designer-use-card:nth-of-type(n+4){
+    display:none !important;
+  }
+}
+
+@media(max-width:680px){
+  /* shorter overall section padding */
+  .section,
+  .designer-resource-intro,
+  .mockup-callout,
+  .designer-use-section,
+  .selected-installations,
+  .designer-trust-band,
+  .spec-section,
+  .commercial-solutions,
+  .venues-section,
+  .formats-section,
+  .licensing-section,
+  .process-section,
+  .trade-section,
+  .faq-designer,
+  .ai-linking-hub,
+  .ai-about-artist,
+  .contact-section{
+    padding-top:48px!important;
+    padding-bottom:50px!important;
+  }
+
+  /* shorter hero on small phones */
+  .hero{
+    height:68vh!important;
+    min-height:480px!important;
+  }
+
+  /* tighten placement / collection sections */
+  .placement-section,
+  .fd-designer-collections{
+    padding-top:60px!important;
+    padding-bottom:64px!important;
+  }
+
+  /* smaller cards */
+  .placement-card{
+    aspect-ratio:4/3.2!important;
+  }
+
+  .fd-collection-image{
+    aspect-ratio:16/9!important;
+  }
+}
+
+
+/* ==========================================================
+   JULY 2026 MOBILE CONDENSE PASS — Designer page
+   Goal: Cut vertical scroll on phones for:
+   1. "Art for Every Environment" grid
+   2. Print Formats cards
+   3. Digital Licensing cards
+   ========================================================== */
+
+/* ---------- 1. ART FOR EVERY ENVIRONMENT ---------- */
+@media(max-width:900px){
+  /* hide cards after the 3rd to keep section short */
+  .designer-use-card:nth-of-type(n+4){display:none!important;}
+}
+@media(max-width:680px){
+  .designer-use-card{padding:22px 20px!important;}
+  .designer-use-card span{font-size:1.8rem!important;}
+  .designer-use-card p{font-size:.64rem!important;line-height:1.8!important;}
+}
+
+/* ---------- 2. PRINT FORMATS ---------- */
+@media(max-width:680px){
+  /* reduce padding & hide long descriptions/specs */
+  .format-card{padding:26px 22px!important;}
+  .format-desc,
+  .format-specs{display:none!important;}
+  .format-title{margin-bottom:4px!important;}
+}
+
+/* ---------- 3. DIGITAL LICENSING ---------- */
+@media(max-width:680px){
+  /* collapse individual licence detail cards */
+  .license-options{display:none!important;}
+  .licensing-section::after{
+    content:'Tap to view digital licensing details';
+    display:block;
+    margin-top:24px;
+    text-align:center;
+    font-size:.58rem;
+    letter-spacing:.22em;
+    color:var(--accent);
+    cursor:pointer;
+  }
+}
+/* simple toggle when user taps anywhere in the licensing section */
+@media(max-width:680px){
+  .licensing-section.expanded .license-options{display:flex!important;}
+  .licensing-section.expanded::after{display:none!important;}
+}
 </style>
 <script type="application/ld+json">
 {
@@ -2623,5 +2739,18 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  var lic = document.querySelector('.licensing-section');
+  if(lic){
+    lic.addEventListener('click',function(){
+      if(window.innerWidth <= 680){
+        lic.classList.toggle('expanded');
+      }
+    },{passive:true});
+  }
+});
+</script>
 </body>
 </html>
