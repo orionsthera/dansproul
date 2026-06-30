@@ -750,6 +750,172 @@
   }
 }
 
+/* ── RESIDENTIAL HOMES GALLERY ───────────────────────────── */
+.residential-gallery{
+  background:#15110e;
+  border-top:1px solid rgba(195,158,83,.14);
+  border-bottom:1px solid rgba(195,158,83,.14);
+}
+.home-gallery-grid{
+  max-width:1280px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:4px;
+}
+.home-art-card{
+  position:relative;
+  min-height:390px;
+  overflow:hidden;
+  border:0;
+  padding:0;
+  background:#211b15;
+  color:var(--cream);
+  cursor:pointer;
+  text-align:left;
+  font-family:"Jost",Arial,sans-serif;
+}
+.home-art-card::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(to top,rgba(20,17,13,.94),rgba(20,17,13,.18) 62%,transparent);
+  pointer-events:none;
+}
+.home-art-card img{
+  height:100%;
+  filter:brightness(.9) saturate(.94);
+  transition:transform .7s ease,filter .7s ease;
+}
+.home-art-card:hover img{
+  transform:scale(1.035);
+  filter:brightness(1) saturate(1);
+}
+.home-art-text{
+  position:absolute;
+  inset:auto 0 0;
+  z-index:2;
+  padding:24px;
+}
+.home-art-text h3{
+  font-size:clamp(27px,3vw,38px);
+}
+.home-art-text p{
+  margin-top:8px;
+  color:var(--cream-soft);
+  font-size:13px;
+  line-height:1.65;
+}
+.home-art-text span{
+  display:inline-block;
+  margin-top:14px;
+  color:var(--gold-light);
+  font-size:9px;
+  letter-spacing:.24em;
+  text-transform:uppercase;
+}
+.art-modal{
+  position:fixed;
+  inset:0;
+  z-index:10000;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+  background:rgba(10,8,6,.88);
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+}
+.art-modal.is-open{display:flex}
+.art-modal-inner{
+  width:min(1120px,96vw);
+  max-height:92vh;
+  display:grid;
+  grid-template-columns:minmax(0,1.25fr) minmax(280px,.75fr);
+  background:#17130f;
+  border:1px solid rgba(199,164,90,.30);
+  box-shadow:0 30px 80px rgba(0,0,0,.5);
+  overflow:auto;
+}
+.art-modal-image{
+  min-height:520px;
+  background:#0d0b08;
+}
+.art-modal-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.art-modal-info{
+  padding:34px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.art-modal-info h3{
+  font-size:clamp(34px,4vw,52px);
+}
+.art-modal-info p{
+  margin-top:15px;
+  color:var(--cream-soft);
+  line-height:1.85;
+  font-size:14px;
+}
+.art-modal-specs{
+  display:grid;
+  gap:1px;
+  margin:24px 0 8px;
+  background:var(--line);
+}
+.art-modal-specs div{
+  background:#211b15;
+  padding:15px;
+  color:var(--cream-soft);
+  font-size:12px;
+  line-height:1.65;
+}
+.art-modal-specs strong{
+  display:block;
+  margin-bottom:4px;
+  color:var(--gold-light);
+  font-size:10px;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+}
+.art-modal-close{
+  position:absolute;
+  top:18px;
+  right:18px;
+  width:44px;
+  height:44px;
+  border:1px solid rgba(199,164,90,.40);
+  background:#14110d;
+  color:var(--cream);
+  font-size:26px;
+  line-height:1;
+  cursor:pointer;
+}
+
+.art-modal-secondary-link{
+  margin-top:10px;
+}
+.env-card p{font-size:12.5px}
+
+@media(max-width:1040px){
+  .home-gallery-grid{grid-template-columns:repeat(2,1fr)}
+  .art-modal-inner{grid-template-columns:1fr}
+  .art-modal-image{min-height:360px}
+}
+@media(max-width:680px){
+  .home-gallery-grid{grid-template-columns:1fr}
+  .home-art-card{min-height:320px}
+  .art-modal{padding:12px}
+  .art-modal-inner{width:100%;max-height:94vh}
+  .art-modal-info{padding:24px}
+  .art-modal-image{min-height:280px}
+}
+
+
     .art-guides-home{
       background:#0f0d0b;
       border-top:1px solid rgba(195,158,83,.14);
@@ -832,6 +998,72 @@
 @media(min-width:801px){
   .sticky-cta{display:none;}
 }
+
+/* ── COMPACT SOCIAL PROOF + BUY INTENT ───────────────────────────── */
+.proof-buybar{
+  background:#17130f;
+  border-bottom:1px solid rgba(195,158,83,.16);
+  padding:22px clamp(22px,6vw,76px);
+}
+.proof-buybar-inner{
+  max-width:1280px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:22px;
+  align-items:center;
+}
+.proof-copy{
+  color:rgba(244,238,229,.72);
+  font-size:13px;
+  line-height:1.7;
+  letter-spacing:.08em;
+}
+.proof-copy strong{
+  color:#f4eee5;
+  font-family:"Cormorant Garamond",Georgia,serif;
+  font-size:23px;
+  font-weight:300;
+  letter-spacing:.02em;
+}
+.shop-intent-links{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+  gap:9px;
+}
+.shop-intent-links a{
+  min-height:40px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:0 15px;
+  border:1px solid rgba(213,179,101,.46);
+  color:#d5b365;
+  text-decoration:none;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:9px;
+  font-weight:700;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  white-space:nowrap;
+}
+.shop-intent-links a:hover{
+  border-color:#e4c77d;
+  color:#e4c77d;
+}
+.shop-intent-links a.primary-shop{
+  background:#d5b365;
+  border-color:#d5b365;
+  color:#14110d;
+}
+@media(max-width:820px){
+  .proof-buybar{padding:20px 22px;}
+  .proof-buybar-inner{grid-template-columns:1fr;gap:16px;}
+  .shop-intent-links{justify-content:flex-start;}
+  .shop-intent-links a{flex:1;min-width:calc(50% - 6px);}
+}
+
 </style>
 
   <script type="application/ld+json">
@@ -1031,6 +1263,102 @@
       "creditText": "Dan Sproul",
       "acquireLicensePage": "https://dansproul.com",
       "representativeOfPage": false
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/therapist%20lounge%20foggy%20island%20dan%20sproul.jpg#image",
+      "contentUrl": "https://dsproul.com/therapist%20lounge%20foggy%20island%20dan%20sproul.jpg",
+      "name": "Pyramid Island bridge in fog Jasper National Park living room artwork mockup by Dan Sproul",
+      "description": "Large Pyramid Island bridge in fog Jasper National Park photography print shown in a calm residential living room with warm neutral furnishings.",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com/featured/pyramid-island-bridge-in-fog-jasper-national-park-photography-print-dan-sproul.html",
+      "representativeOfPage": false
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/modern%20bedroom%20cades%20cove%20sunrise%20dan%20sproul.jpg#image",
+      "contentUrl": "https://dsproul.com/modern%20bedroom%20cades%20cove%20sunrise%20dan%20sproul.jpg",
+      "name": "Dreamy sunrise in Cades Cove bedroom artwork mockup by Dan Sproul",
+      "description": "Dreamy Cades Cove Smoky Mountains sunrise photography print displayed above a bed in a warm calm bedroom interior.",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com/featured/dreamy-sunrise-in-cades-cove-smoky-mountains-dan-sproul.html",
+      "representativeOfPage": false
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/entryway%20large%20moose%20in%20autumn%20foliage%20dan%20sproul.jpg#image",
+      "contentUrl": "https://dsproul.com/entryway%20large%20moose%20in%20autumn%20foliage%20dan%20sproul.jpg",
+      "name": "Bull moose autumn entryway artwork mockup by Dan Sproul",
+      "description": "Bull moose wrapped in fall leaves wildlife photography print displayed as large statement artwork in a rustic residential entryway.",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com/featured/bull-moose-wrapped-in-fall-leaves-dan-sproul.html",
+      "representativeOfPage": false
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/modern%20home%20stairwell%20framed%20mountains%20dan%20sproul.jpg#image",
+      "contentUrl": "https://dsproul.com/modern%20home%20stairwell%20framed%20mountains%20dan%20sproul.jpg",
+      "name": "Mount Moran stairwell artwork mockup by Dan Sproul",
+      "description": "Vertical Mount Moran Grand Teton landscape photography print displayed in a modern residential stairwell and entry hall.",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com/featured/mount-moran-framed-dan-sproul.html",
+      "representativeOfPage": false
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/modern%20living%20room%20black%20and%20white%20lighthouse%20framed%20dan%20sproul.jpg#image",
+      "contentUrl": "https://dsproul.com/modern%20living%20room%20black%20and%20white%20lighthouse%20framed%20dan%20sproul.jpg",
+      "name": "Heceta Head Lighthouse black and white living room artwork mockup by Dan Sproul",
+      "description": "Heceta Head Lighthouse Oregon Coast black and white photography print displayed over a sofa in a refined modern living room.",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com/featured/heceta-head-lighthouse-oregon-coast-black-and-white-dan-sproul.html",
+      "representativeOfPage": false
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/modern%20living%20room%20desoto%20falls%20framed%20dan%20sproul.jpg#image",
+      "contentUrl": "https://dsproul.com/modern%20living%20room%20desoto%20falls%20framed%20dan%20sproul.jpg",
+      "name": "Little River Canyon waterfall living room artwork mockup by Dan Sproul",
+      "description": "Little River Canyon waterfall long exposure photography print displayed as large square wall art in a warm modern residential living room.",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com/featured/little-river-canyon-waterfall-long-exposure-dan-sproul.html",
+      "representativeOfPage": false
     }
   ]
 }
@@ -1087,7 +1415,7 @@
       <p class="price-anchor">Prints from $85 &middot; Framed from $140</p>
       <div class="btns">
         <a class="btn primary" href="art-collections.html">Explore Collections</a>
-        <a class="btn" href="best-sellers.html">View Best Sellers</a>
+        <a class="btn" href="best-sellers.html">Shop Best Sellers</a>
       </div>
     </div>
   </header>
@@ -1098,6 +1426,19 @@
     <div><strong>Multiple</strong> Print Formats</div>
     <div><strong>Ready</strong> To Hang Options</div>
   </div>
+
+
+  <section class="proof-buybar" aria-label="Social proof and shopping links">
+    <div class="proof-buybar-inner">
+      <p class="proof-copy"><strong>Collected by homeowners, designers, and businesses across the United States.</strong><br>Atmospheric nature artwork for living rooms, bedrooms, offices, healthcare spaces, hospitality interiors, and meaningful gifts.</p>
+      <div class="shop-intent-links" aria-label="Shop artwork by popular buying intent">
+        <a class="primary-shop" href="best-sellers.html">Shop Best Sellers</a>
+        <a href="art-collections.html">Shop Collections</a>
+        <a href="in-your-space.html">Large Wall Art</a>
+        <a href="https://dansproul.com" target="_blank" rel="noopener">Shop Prints</a>
+      </div>
+    </div>
+  </section>
 
   <section class="quick-paths" id="start-here">
     <div class="quick-inner">
@@ -1115,14 +1456,14 @@
             <h3>Best Sellers</h3>
             <p>Customer favorite landscapes, wildlife prints, coastal scenes, and mountain artwork that are easy to place in real homes.</p>
           </div>
-          <span>Start shopping</span>
+          <span>Shop best sellers</span>
         </a>
         <a class="path" href="art-collections.html">
           <div>
             <h3>Collections</h3>
             <p>Curated groups organized by mood, atmosphere, place, color, and natural subject matter.</p>
           </div>
-          <span>Explore collections</span>
+          <span>Shop collections</span>
         </a>
         <a class="path" href="in-your-space.html">
           <div>
@@ -1374,37 +1715,131 @@
     </div>
   </section>
 
-  <section class="section-pad mockups" id="in-space-preview">
-    <div class="mock-feature">
-      <div class="mock-image">
-        <img src="https://dsproul.com/modern%20living%20room%20with%20framed%20mountains%20in%20clouds.jpg" alt="Large black and white mountain photography print in a modern interior by Dan Sproul" loading="lazy" decoding="async">
+  <section class="section-pad residential-gallery" id="collected-homes">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Collected in homes</p>
+        <h2>Artwork chosen for real rooms and everyday living.</h2>
       </div>
-      <div class="mock-copy">
-        <p class="eyebrow">In your space</p>
-        <h2>See how artwork changes the whole room.</h2>
-        <p>Room mockups help show scale, mood, placement, and format before choosing a print for a bedroom, living room, dining room, home office, or larger project.</p>
-        <div class="btns">
-          <a class="btn primary" href="in-your-space.html">View Room Mockups</a>
-          <a class="btn" href="mailto:sproulphoto@gmail.com?subject=Room Mockup Request">Request A Mockup</a>
-        </div>
-      </div>
+      <p>From quiet bedrooms and lake homes to mountain retreats, entryways, and comfortable living spaces, these atmospheric nature prints are selected to create warmth, calm, and a genuine sense of place.</p>
     </div>
 
-    <div class="mock-strip">
-      <div class="mock-tile">
-        <img src="https://dsproul.com/modern%20bedroom%20framed%20mountain%20reflection%20dan%20sproul.jpg" alt="Mountain reflection fine art print in a modern bedroom by Dan Sproul" loading="lazy" decoding="async">
-        <div class="mock-label"><strong>Bedroom calm</strong> quiet residential spaces</div>
-      </div>
-      <div class="mock-tile">
-        <img src="https://dsproul.com/modern%20dining%20room%20framed%20dreamy%20alaska%20landscape%20dan%20sproul.jpg" alt="Dreamy Alaska landscape print in a modern dining room by Dan Sproul" loading="lazy" decoding="async">
-        <div class="mock-label"><strong>Dining statement</strong> atmospheric landscapes</div>
-      </div>
-      <div class="mock-tile">
-        <img src="https://dsproul.com/large%20framed%20mountain%20scene%20in%20modern%20office%20sunlit.jpg" alt="Large framed mountain print in a sunlit modern office by Dan Sproul" loading="lazy" decoding="async">
-        <div class="mock-label"><strong>Office artwork</strong> refined workplace interiors</div>
-      </div>
+    <div class="home-gallery-grid">
+      <button class="home-art-card" type="button"
+        data-title="Foggy Island Living Room"
+        data-src="therapist lounge foggy island dan sproul.jpg"
+        data-alt="Large Pyramid Island bridge in fog Jasper National Park fine art photography print displayed above a sofa in a warm residential living room by Dan Sproul"
+        data-size="Suggested size: 40×60, 36×54, or larger for a main living room wall."
+        data-frame="Best format: framed paper, canvas, or acrylic in a thin black, walnut, or natural wood frame."
+        data-note="A calm blue-gray landscape direction for lake homes, quiet living rooms, therapy-adjacent spaces, and restful interiors."
+        data-link="https://dansproul.com/featured/pyramid-island-bridge-in-fog-jasper-national-park-photography-print-dan-sproul.html"
+        data-works="Works best: living rooms, lake homes, quiet sitting areas, counseling offices, bedrooms, and calm transitional interiors."
+        data-collection="quiet-earth-collection.html">
+        <img src="therapist lounge foggy island dan sproul.jpg" alt="Pyramid Island bridge in fog Jasper National Park landscape photography print shown as large framed wall art in a warm modern living room by Dan Sproul" loading="lazy" decoding="async">
+        <div class="home-art-text">
+          <h3>Living room calm</h3>
+          <p>Soft fog, still water, and a quiet blue-gray palette for restful gathering spaces.</p>
+          <span>View sizing + purchase</span>
+        </div>
+      </button>
+
+      <button class="home-art-card" type="button"
+        data-title="Cades Cove Bedroom"
+        data-src="modern bedroom cades cove sunrise dan sproul.jpg"
+        data-alt="Dreamy sunrise in Cades Cove Smoky Mountains fine art photography print above a bed in a warm modern bedroom by Dan Sproul"
+        data-size="Suggested size: 36×54, 40×60, or larger above a queen or king bed."
+        data-frame="Best format: framed paper or canvas with a warm wood or thin black frame."
+        data-note="A peaceful bedroom choice with warm sunrise color, soft atmosphere, and a restorative mood."
+        data-link="https://dansproul.com/featured/dreamy-sunrise-in-cades-cove-smoky-mountains-dan-sproul.html"
+        data-works="Works best: bedrooms, primary suites, guest rooms, warm living rooms, cabins, and peaceful residential spaces."
+        data-collection="quiet-earth-collection.html">
+        <img src="modern bedroom cades cove sunrise dan sproul.jpg" alt="Dreamy Cades Cove sunrise landscape photography print displayed above a bed in a calm warm bedroom by Dan Sproul" loading="lazy" decoding="async">
+        <div class="home-art-text">
+          <h3>Bedroom warmth</h3>
+          <p>Soft sunrise color and quiet mountain atmosphere for a calm place to begin and end the day.</p>
+          <span>View sizing + purchase</span>
+        </div>
+      </button>
+
+      <button class="home-art-card" type="button"
+        data-title="Moose Entryway Statement"
+        data-src="entryway large moose in autumn foliage dan sproul.jpg"
+        data-alt="Bull moose wrapped in fall leaves wildlife photography print displayed as large statement wall art in a rustic mountain home entryway by Dan Sproul"
+        data-size="Suggested size: 32×48, 36×54, or 40×60 for an entryway, lodge, cabin, or tall feature wall."
+        data-frame="Best format: framed paper, canvas, or metal in a thin black or dark wood frame."
+        data-note="A memorable wildlife statement piece for mountain homes, cabins, lake houses, and nature collectors."
+        data-link="https://dansproul.com/featured/bull-moose-wrapped-in-fall-leaves-dan-sproul.html"
+        data-works="Works best: entryways, cabins, mountain homes, lake houses, lodges, rustic interiors, and wildlife collector spaces."
+        data-collection="best-sellers.html">
+        <img src="entryway large moose in autumn foliage dan sproul.jpg" alt="Large bull moose autumn wildlife photography print in a rustic mountain home entryway with warm wood interiors by Dan Sproul" loading="lazy" decoding="async">
+        <div class="home-art-text">
+          <h3>Entryway statement</h3>
+          <p>A bold wildlife piece with autumn warmth for mountain homes, cabins, and memorable first impressions.</p>
+          <span>View sizing + purchase</span>
+        </div>
+      </button>
+
+      <button class="home-art-card" type="button"
+        data-title="Mount Moran Stairwell"
+        data-src="modern home stairwell framed mountains dan sproul.jpg"
+        data-alt="Vertical Mount Moran Grand Teton mountain landscape photography print displayed on a tall stairwell wall in a modern mountain home by Dan Sproul"
+        data-size="Suggested size: 30×45, 32×48, or taller vertical formats for stairwells and transition spaces."
+        data-frame="Best format: framed paper, canvas, or metal in a thin black frame."
+        data-note="A vertical mountain print for stairwells, entry halls, and tall walls where artwork adds scale and direction."
+        data-link="https://dansproul.com/featured/mount-moran-framed-dan-sproul.html"
+        data-works="Works best: stairwells, entry halls, tall feature walls, mountain homes, cabins, and transitional spaces."
+        data-collection="mountain-light-collection.html">
+        <img src="modern home stairwell framed mountains dan sproul.jpg" alt="Mount Moran Grand Teton vertical landscape photography print shown as tall framed artwork in a modern home stairwell by Dan Sproul" loading="lazy" decoding="async">
+        <div class="home-art-text">
+          <h3>Stairwell scale</h3>
+          <p>Vertical mountain artwork for tall walls, entry halls, and transitional spaces that need presence.</p>
+          <span>View sizing + purchase</span>
+        </div>
+      </button>
+
+      <button class="home-art-card" type="button"
+        data-title="Black-and-White Lighthouse Living Room"
+        data-src="modern living room black and white lighthouse framed dan sproul.jpg"
+        data-alt="Heceta Head Lighthouse Oregon Coast black and white photography print displayed over a sofa in a quiet luxury modern living room by Dan Sproul"
+        data-size="Suggested size: 40×60, 36×54, or larger over a sofa or primary living room wall."
+        data-frame="Best format: framed paper or acrylic in a thin black frame for a refined monochrome look."
+        data-note="A sophisticated coastal black-and-white direction for modern homes, quiet luxury interiors, and neutral rooms."
+        data-link="https://dansproul.com/featured/heceta-head-lighthouse-oregon-coast-black-and-white-dan-sproul.html"
+        data-works="Works best: living rooms, coastal homes, offices, neutral interiors, monochrome rooms, and quiet luxury spaces."
+        data-collection="monochrome-stillness.html">
+        <img src="modern living room black and white lighthouse framed dan sproul.jpg" alt="Black and white Heceta Head Lighthouse Oregon Coast photography print shown above a sofa in a refined neutral living room by Dan Sproul" loading="lazy" decoding="async">
+        <div class="home-art-text">
+          <h3>Coastal monochrome</h3>
+          <p>Refined black-and-white coastal artwork for neutral living rooms and quiet luxury interiors.</p>
+          <span>View sizing + purchase</span>
+        </div>
+      </button>
+
+      <button class="home-art-card" type="button"
+        data-title="Little River Canyon Falls Living Room"
+        data-src="modern living room desoto falls framed dan sproul.jpg"
+        data-alt="Little River Canyon waterfall long exposure photography print displayed as large square wall art above a sofa in a warm modern living room by Dan Sproul"
+        data-size="Suggested size: 36×36, 40×40, or larger square formats above a sofa, fireplace, or feature wall."
+        data-frame="Best format: canvas, framed paper, or metal in a thin black or warm wood frame."
+        data-note="A restorative water image for living rooms, wellness-inspired homes, family rooms, and calm gathering spaces."
+        data-link="https://dansproul.com/featured/little-river-canyon-waterfall-long-exposure-dan-sproul.html"
+        data-works="Works best: living rooms, wellness-inspired homes, family rooms, spa-like interiors, bedrooms, and calm gathering spaces."
+        data-collection="wellness-waters-collection.html">
+        <img src="modern living room desoto falls framed dan sproul.jpg" alt="Little River Canyon waterfall long exposure photography print shown as square framed artwork in a warm modern living room by Dan Sproul" loading="lazy" decoding="async">
+        <div class="home-art-text">
+          <h3>Restorative water</h3>
+          <p>Flowing water and deep greens for living rooms that need calm, movement, and natural texture.</p>
+          <span>View sizing + purchase</span>
+        </div>
+      </button>
+    </div>
+
+    <div class="btns" style="max-width:1280px;margin:34px auto 0;">
+      <a class="btn primary" href="in-your-space.html">Explore Residential Ideas</a>
+      <a class="btn" href="mailto:sproulphoto@gmail.com?subject=Room Mockup Request">Request A Room Mockup</a>
     </div>
   </section>
+
 
   <section class="section-pad environment" id="environment-guidance">
     <div class="section-head">
@@ -1412,7 +1847,7 @@
         <p class="eyebrow">Choose by room</p>
         <h2>Artwork ideas for the spaces you live in.</h2>
       </div>
-      <p>Start with the room, then choose the mood: quiet, warm, coastal, woodland, dramatic, minimal, or restorative.</p>
+      <p>Choose a room first, then browse artwork by mood, scale, and subject.</p>
     </div>
 
     <div class="env-grid">
@@ -1431,10 +1866,10 @@
         <p>Black-and-white mountains, refined landscapes, and focused artwork for offices, studies, and work-from-home spaces.</p>
         <span>Explore Monochrome</span>
       </a>
-      <a class="env-card" href="for-designers.html">
-        <h3>Designer Projects</h3>
-        <p>Dedicated artwork support for healthcare, hospitality, senior living, offices, wellness spaces, and residential designers.</p>
-        <span>Commercial resources</span>
+      <a class="env-card" href="mountain-light-collection.html">
+        <h3>Entryways &amp; Tall Walls</h3>
+        <p>Vertical landscapes and larger statement pieces for stairwells, halls, cabins, and open residential spaces.</p>
+        <span>Explore Mountain Light</span>
       </a>
     </div>
   </section>
@@ -1519,6 +1954,31 @@
     </div>
   </section>
 
+
+
+  <div class="art-modal" id="artModal" aria-hidden="true" role="dialog" aria-label="Artwork mockup details">
+    <button class="art-modal-close" type="button" aria-label="Close artwork details">×</button>
+    <div class="art-modal-inner">
+      <div class="art-modal-image">
+        <img id="artModalImg" src="" alt="" loading="lazy" decoding="async">
+      </div>
+      <div class="art-modal-info">
+        <p class="eyebrow">Residential artwork preview</p>
+        <h3 id="artModalTitle"></h3>
+        <p id="artModalNote"></p>
+        <div class="art-modal-specs">
+          <div><strong>Suggested size</strong><span id="artModalSize"></span></div>
+          <div><strong>Frame / format</strong><span id="artModalFrame"></span></div>
+          <div><strong>Works best</strong><span id="artModalWorks"></span></div>
+        </div>
+        <div class="btns">
+          <a class="btn primary" id="artModalLink" href="#" target="_blank" rel="noopener">Purchase Print</a>
+          <a class="btn" id="artModalCollection" href="art-collections.html">View Related Collection</a>
+          <a class="btn" href="mailto:sproulphoto@gmail.com?subject=Room Mockup Request">Ask About This Room</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
 <footer id="footer" class="site-footer">
 
@@ -1679,6 +2139,56 @@
   <a class="cta-btn primary" href="https://dansproul.com" target="_blank" rel="noopener">Shop Prints</a>
   <a class="cta-btn" href="mailto:sproulphoto@gmail.com?subject=Room Mockup Request">Request Mockup</a>
 </div>
+
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  var modal=document.getElementById('artModal');
+  if(!modal) return;
+  var modalImg=document.getElementById('artModalImg');
+  var modalTitle=document.getElementById('artModalTitle');
+  var modalNote=document.getElementById('artModalNote');
+  var modalSize=document.getElementById('artModalSize');
+  var modalFrame=document.getElementById('artModalFrame');
+  var modalWorks=document.getElementById('artModalWorks');
+  var modalLink=document.getElementById('artModalLink');
+  var modalCollection=document.getElementById('artModalCollection');
+  var closeBtn=modal.querySelector('.art-modal-close');
+
+  function openModal(card){
+    modalImg.src=card.dataset.src || '';
+    modalImg.alt=card.dataset.alt || '';
+    modalTitle.textContent=card.dataset.title || '';
+    modalNote.textContent=card.dataset.note || '';
+    modalSize.textContent=card.dataset.size || '';
+    modalFrame.textContent=card.dataset.frame || '';
+    modalWorks.textContent=card.dataset.works || '';
+    modalLink.href=card.dataset.link || '#';
+    modalCollection.href=card.dataset.collection || 'art-collections.html';
+    modal.classList.add('is-open');
+    modal.setAttribute('aria-hidden','false');
+    document.body.style.overflow='hidden';
+  }
+
+  function closeModal(){
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden','true');
+    document.body.style.overflow='';
+    modalImg.removeAttribute('src');
+  }
+
+  document.querySelectorAll('.home-art-card').forEach(function(card){
+    card.addEventListener('click',function(){openModal(card);});
+  });
+  closeBtn.addEventListener('click',closeModal);
+  modal.addEventListener('click',function(e){
+    if(e.target===modal) closeModal();
+  });
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape' && modal.classList.contains('is-open')) closeModal();
+  });
+});
+</script>
 
 <script>
 document.addEventListener('DOMContentLoaded',function(){
