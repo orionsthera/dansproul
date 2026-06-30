@@ -1716,6 +1716,103 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
   }
 }
 
+
+/* ==========================================================
+   FIX: Art for Every Environment layout
+   Replaces broken mosaic/span behavior with a clean 5-card designer grid.
+   ========================================================== */
+.compact-environments{
+  padding-top:82px!important;
+  padding-bottom:86px!important;
+}
+.compact-environments .section-label,
+.compact-environments .section-title,
+.compact-environments .section-intro{
+  max-width:1180px!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+}
+.compact-environments .section-intro{
+  margin-bottom:42px!important;
+}
+.compact-env-grid{
+  max-width:1180px!important;
+  margin:0 auto!important;
+  display:grid!important;
+  grid-template-columns:repeat(6,minmax(0,1fr))!important;
+  gap:16px!important;
+}
+.compact-env-card,
+.compact-feature{
+  grid-column:span 2!important;
+  grid-row:auto!important;
+  aspect-ratio:16/10!important;
+  min-height:0!important;
+  width:100%!important;
+}
+.compact-env-card:nth-child(4),
+.compact-env-card:nth-child(5){
+  grid-column:span 3!important;
+}
+.compact-env-card img{
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+}
+.compact-env-card .placement-overlay{
+  padding:24px 22px!important;
+  background:linear-gradient(to top,rgba(8,8,7,.9) 0%,rgba(8,8,7,.46) 42%,transparent 76%)!important;
+}
+.compact-env-card .pl-venue{
+  font-size:.48rem!important;
+  letter-spacing:.28em!important;
+}
+.compact-env-card .pl-title{
+  font-size:1.05rem!important;
+  line-height:1.18!important;
+}
+.compact-env-card .pl-desc{
+  font-size:.56rem!important;
+  line-height:1.55!important;
+  letter-spacing:.08em!important;
+  max-width:92%!important;
+}
+@media(max-width:1040px){
+  .compact-env-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:14px!important;
+  }
+  .compact-env-card,
+  .compact-feature,
+  .compact-env-card:nth-child(4),
+  .compact-env-card:nth-child(5){
+    grid-column:span 1!important;
+    aspect-ratio:16/10!important;
+  }
+}
+@media(max-width:680px){
+  .compact-environments{
+    padding:50px 22px!important;
+  }
+  .compact-env-grid{
+    grid-template-columns:1fr!important;
+    gap:12px!important;
+  }
+  .compact-env-card,
+  .compact-feature,
+  .compact-env-card:nth-child(4),
+  .compact-env-card:nth-child(5){
+    grid-column:1/-1!important;
+    aspect-ratio:16/9!important;
+  }
+  .compact-env-card .placement-overlay{
+    padding:18px!important;
+  }
+  .compact-env-card .pl-desc{
+    display:none!important;
+  }
+}
+
 </style>
 <script type="application/ld+json">
 {
@@ -2346,7 +2443,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
 <section class="placement-section section compact-environments" id="placements">
   <p class="section-label">Seen In</p>
   <h2 class="section-title">Art for Every <em>Environment</em></h2>
-  <p class="section-intro">A tighter designer-focused overview of where the work fits best. These five examples keep the visual impact of the original section while reducing mobile length.</p>
+  <p class="section-intro">Five focused examples showing where the work fits best across hospitality, healthcare, senior living, boutique hotels, and professional office interiors.</p>
 
   <div class="compact-env-grid">
     <div class="placement-card pzoom compact-env-card compact-feature" onclick="openFDLightbox(this)">
