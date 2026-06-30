@@ -467,6 +467,27 @@ body{padding-top:66px}
 }
 @media(max-width:560px){.price-grid{grid-template-columns:1fr}.hero-content{padding-top:42px}}
 
+
+
+/* ==========================================================
+   JULY 2026 MOBILE CONDENSE PASS — Collections page
+   Goals:
+   1. Reduce hero height on phones
+   2. Trim collection grid to first 4 cards (≤900px)
+   3. Trim interior-use grid to first 3 cards (≤680px)
+   ========================================================== */
+
+@media(max-width:900px){
+  /* Hero slightly shorter */
+  .hero{min-height:78vh!important;}
+  /* Hide additional collection cards beyond 4 */
+  .collection-grid .card:nth-of-type(n+5){display:none!important;}
+}
+
+@media(max-width:680px){
+  /* Hide extra interior cards after third */
+  .interior-grid .interior-card:nth-of-type(n+4){display:none!important;}
+}
 </style>
 <script type="application/ld+json">
 {
