@@ -1440,6 +1440,282 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
   .licensing-section.expanded .license-options{display:flex!important;}
   .licensing-section.expanded::after{display:none!important;}
 }
+
+/* FOR DESIGNERS COMPACT HUB UPDATE — mobile length reduction + crawlable resource accordion */
+.section-intro{
+  font-size:.78rem;
+  line-height:2;
+  color:rgba(242,239,232,.54);
+  max-width:680px;
+  margin:0 auto 42px;
+}
+.compact-environments{
+  padding-top:82px!important;
+  padding-bottom:86px!important;
+}
+.compact-environments .section-label,
+.compact-environments .section-title,
+.compact-environments .section-intro{
+  max-width:1180px;
+  margin-left:auto!important;
+  margin-right:auto!important;
+}
+.compact-env-grid{
+  max-width:1180px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:3px;
+}
+.compact-env-card{
+  aspect-ratio:4/3!important;
+  min-height:260px;
+}
+.compact-feature{
+  grid-column:span 2;
+  grid-row:span 2;
+  aspect-ratio:4/3!important;
+}
+.compact-env-card img{
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+}
+.compact-env-card .pl-title{font-size:1rem}
+.compact-env-card .pl-desc{font-size:.54rem;line-height:1.55;letter-spacing:.08em}
+.further-resources-section{
+  background:#0b0a08;
+  padding:88px 56px;
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+}
+.further-resources-inner{max-width:1120px;margin:0 auto}
+.further-resources-head{
+  max-width:820px;
+  margin:0 auto 42px;
+  text-align:center;
+}
+.further-resources-head .section-label{
+  justify-content:center;
+  margin-bottom:26px;
+}
+.further-resources-head p:not(.section-label){
+  color:rgba(242,239,232,.58);
+  font-size:.78rem;
+  line-height:2;
+  max-width:720px;
+  margin:0 auto;
+}
+.resource-accordion{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.resource-accordion details{
+  background:#0f0d0a;
+  border:1px solid rgba(181,146,74,.18);
+  overflow:hidden;
+}
+.resource-accordion summary{
+  list-style:none;
+  cursor:pointer;
+  padding:26px 30px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+}
+.resource-accordion summary::-webkit-details-marker{display:none}
+.resource-accordion summary span{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(1.35rem,2.4vw,2rem);
+  color:var(--off-white);
+  line-height:1.1;
+}
+.resource-accordion summary em{
+  font-style:normal;
+  color:rgba(242,239,232,.46);
+  font-size:.58rem;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  text-align:right;
+  line-height:1.6;
+}
+.resource-accordion summary::after{
+  content:'+';
+  color:var(--accent);
+  font-family:'Cormorant Garamond',serif;
+  font-size:2rem;
+  line-height:1;
+  flex-shrink:0;
+}
+.resource-accordion details[open] summary::after{content:'–'}
+.resource-panel{
+  padding:0 30px 30px;
+  color:rgba(242,239,232,.62);
+  font-size:.76rem;
+  line-height:1.9;
+}
+.resource-download-grid,
+.mini-resource-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;
+}
+.resource-download-grid a,
+.resource-link-list a,
+.mini-resource-grid div{
+  background:#14110d;
+  border:1px solid rgba(181,146,74,.13);
+  padding:22px;
+  color:rgba(242,239,232,.64);
+  text-decoration:none;
+}
+.resource-download-grid strong,
+.mini-resource-grid strong{
+  display:block;
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.22rem;
+  font-weight:300;
+  color:var(--off-white);
+  margin-bottom:8px;
+}
+.resource-download-grid span,
+.mini-resource-grid p{
+  display:block;
+  font-size:.68rem;
+  line-height:1.8;
+  color:rgba(242,239,232,.52);
+}
+.resource-trade-panel{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:34px;
+  align-items:start;
+}
+.resource-trade-panel ul{
+  margin:18px 0 0 18px;
+  color:rgba(242,239,232,.58);
+}
+.resource-trade-panel li{margin-bottom:8px}
+.compact-trade-form{
+  padding:28px!important;
+}
+.resource-link-list{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;
+}
+.resource-link-list a{
+  color:var(--accent);
+  font-size:.7rem;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+}
+@media(max-width:900px){
+  .compact-env-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+  .compact-feature{
+    grid-column:1/-1;
+    grid-row:auto;
+  }
+  .compact-env-card{
+    min-height:230px;
+  }
+  .resource-download-grid,
+  .mini-resource-grid,
+  .resource-trade-panel,
+  .resource-link-list{
+    grid-template-columns:1fr;
+  }
+}
+@media(max-width:680px){
+  .hero{
+    min-height:500px!important;
+    height:66vh!important;
+    max-height:620px!important;
+  }
+  .trust-bar{
+    gap:10px!important;
+    padding:14px 18px!important;
+  }
+  .trust-item{
+    font-size:.48rem!important;
+    letter-spacing:.18em!important;
+  }
+  .compact-environments,
+  .further-resources-section{
+    padding:56px 22px!important;
+  }
+  .compact-environments .section-intro,
+  .further-resources-head p:not(.section-label){
+    font-size:13px!important;
+    line-height:1.65!important;
+  }
+  .compact-env-grid{
+    grid-template-columns:1fr;
+    gap:12px;
+  }
+  .compact-env-card{
+    aspect-ratio:16/11!important;
+    min-height:0!important;
+  }
+  .compact-env-card .placement-overlay{
+    padding:18px!important;
+  }
+  .compact-env-card .pl-desc{
+    display:none;
+  }
+  .hospitality-carousel-section{
+    padding-top:56px!important;
+    padding-bottom:58px!important;
+  }
+  .hospitality-carousel-head{
+    margin-bottom:26px!important;
+  }
+  .hospitality-slide img{
+    height:300px!important;
+  }
+  .hospitality-slide-caption{
+    padding:54px 18px 18px!important;
+  }
+  .hospitality-slide-caption p{
+    display:none!important;
+  }
+  .fd-designer-collections,
+  .selected-installations,
+  .designer-trust-band,
+  .designer-use-section,
+  .mockup-callout{
+    padding-top:54px!important;
+    padding-bottom:56px!important;
+  }
+  .resource-accordion summary{
+    padding:20px 18px;
+    align-items:flex-start;
+  }
+  .resource-accordion summary{
+    flex-wrap:wrap;
+  }
+  .resource-accordion summary em{
+    text-align:left;
+    width:100%;
+    font-size:.5rem;
+  }
+  .resource-panel{
+    padding:0 18px 22px;
+  }
+  .resource-download-grid a,
+  .resource-link-list a,
+  .mini-resource-grid div{
+    padding:18px;
+  }
+  .compact-trade-form{
+    padding:22px!important;
+  }
+}
+
 </style>
 <script type="application/ld+json">
 {
@@ -1793,75 +2069,163 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
   </div>
 </section>
 
-<section class="spec-section" id="resources">
-  <p class="section-label">Designer Resources</p>
-  <h2 class="section-title">Download the <em>Spec Sheets</em></h2>
-  <p style="font-size:.78rem;line-height:2;color:rgba(242,239,232,.5);max-width:640px;margin-bottom:0">Procurement-ready PDF resources for project files, client presentations, sourcing submissions, and design review.</p>
-  <div class="spec-cards spec-cards-three">
-
-    <div class="spec-card">
-      <div class="spec-card-preview" onclick="openFDLightboxSrc('DanSproul_HealthcareArtwork_SpecSheet_Page1.jpg','Healthcare Artwork Spec Sheet — Dan Sproul')" style="cursor:zoom-in">
-        <img src="DanSproul_HealthcareArtwork_SpecSheet_Page1.jpg" alt="Healthcare artwork spec sheet preview" loading="lazy" decoding="async">
-        <div class="preview-hint">Click to enlarge</div>
-      </div>
-      <div class="spec-card-body">
-        <div>
-          <p class="spec-card-tag">Healthcare &amp; Wellness</p>
-          <h3 class="spec-card-title">Healthcare Art <em>Resource</em></h3>
-          <p class="spec-card-desc">Artwork guidance for waiting rooms, oncology centers, consultation rooms, wellness spaces, patient rooms, therapy offices, and healthcare corridors.</p>
-        </div>
-        <div class="spec-card-footer">
-          <a href="DanSproul_HealthcareSpec.pdf" download="DanSproul_HealthcareSpec.pdf" class="btn-download">
-            <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Download Spec Sheet
-          </a>
-          <span class="spec-file-info">PDF resource</span>
-        </div>
-      </div>
+<section class="further-resources-section" id="further-resources">
+  <div class="further-resources-inner">
+    <div class="further-resources-head">
+      <p class="section-label">Further Resources</p>
+      <h2 class="section-title">Spec sheets, trade support, sizing guidance, and next steps.</h2>
+      <p>Designer support materials are kept here so the page stays lighter on mobile while the resources remain easy to find, easy to scan, and crawlable for search engines.</p>
     </div>
 
-    <div class="spec-card">
-      <div class="spec-card-preview" onclick="openFDLightboxSrc('DanSproul_HospitalitySpec.jpg','Hospitality Artwork Spec Sheet — Dan Sproul')" style="cursor:zoom-in">
-        <img src="DanSproul_HospitalitySpec.jpg" alt="Hospitality artwork spec sheet preview" loading="lazy" decoding="async">
-        <div class="preview-hint">Click to enlarge</div>
-      </div>
-      <div class="spec-card-body">
-        <div>
-          <p class="spec-card-tag">Hospitality &amp; Commercial</p>
-          <h3 class="spec-card-title">Hospitality Art <em>Systems</em></h3>
-          <p class="spec-card-desc">Artwork guidance for hotel lobbies, guest suites, corridors, restaurants, wellness spaces, spa retreats, lounges, and multi-site hospitality programs.</p>
-        </div>
-        <div class="spec-card-footer">
-          <a href="DanSproul_HospitalitySpec.pdf" download="DanSproul_HospitalitySpec.pdf" class="btn-download">
-            <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Download Spec Sheet
-          </a>
-          <span class="spec-file-info">PDF resource</span>
-        </div>
-      </div>
-    </div>
+    <div class="resource-accordion">
 
-    <div class="spec-card">
-      <div class="spec-card-preview" onclick="openFDLightboxSrc('Dan_Sproul_Senior_Living_Artwork_Spec_Sheet-sample.jpg','Senior Living Artwork Spec Sheet — Dan Sproul')" style="cursor:zoom-in">
-        <img src="Dan_Sproul_Senior_Living_Artwork_Spec_Sheet-sample.jpg" alt="Senior living artwork spec sheet preview" loading="lazy" decoding="async">
-        <div class="preview-hint">Click to enlarge</div>
-      </div>
-      <div class="spec-card-body">
-        <div>
-          <p class="spec-card-tag">Senior Living</p>
-          <h3 class="spec-card-title">Senior Living <em>Artwork</em></h3>
-          <p class="spec-card-desc">Artwork guidance for resident rooms, lounges, dining rooms, gathering areas, corridors, wellness spaces, memory care areas, and community interiors.</p>
+      <details open>
+        <summary>
+          <span>Download Spec Sheets</span>
+          <em>Healthcare, hospitality, and senior living PDFs</em>
+        </summary>
+        <div class="resource-panel">
+          <div class="resource-download-grid">
+            <a href="DanSproul_HealthcareSpec.pdf" download="DanSproul_HealthcareSpec.pdf">
+              <strong>Healthcare Artwork Spec Sheet</strong>
+              <span>Waiting rooms, oncology, consultation, wellness, patient rooms, and corridors.</span>
+            </a>
+            <a href="DanSproul_HospitalitySpec.pdf" download="DanSproul_HospitalitySpec.pdf">
+              <strong>Hospitality Artwork Spec Sheet</strong>
+              <span>Hotel lobbies, guest rooms, restaurants, spas, corridors, and resort interiors.</span>
+            </a>
+            <a href="DanSproul_SeniorLivingSpec.pdf" download="DanSproul_SeniorLivingSpec.pdf">
+              <strong>Senior Living Artwork Spec Sheet</strong>
+              <span>Resident rooms, lounges, dining rooms, corridors, memory care, and gathering spaces.</span>
+            </a>
+          </div>
         </div>
-        <div class="spec-card-footer">
-          <a href="DanSproul_SeniorLivingSpec.pdf" download="DanSproul_SeniorLivingSpec.pdf" class="btn-download">
-            <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Download Spec Sheet
-          </a>
-          <span class="spec-file-info">PDF resource</span>
-        </div>
-      </div>
-    </div>
+      </details>
 
+      <details>
+        <summary>
+          <span>Trade Pricing &amp; Project Support</span>
+          <em>Mockups, preferred pricing, and direct help</em>
+        </summary>
+        <div class="resource-panel resource-trade-panel">
+          <div>
+            <p>Dan works directly with interior designers, architects, stagers, art consultants, and commercial procurement teams. Trade accounts receive preferred pricing, complimentary custom mockups, custom sizing, and priority response for active projects.</p>
+            <ul>
+              <li>Preferred pricing on print formats and sizes</li>
+              <li>Complimentary room mockups for active projects</li>
+              <li>Custom sizing on every image</li>
+              <li>Multi-piece and multi-site artwork support</li>
+              <li>Digital licensing available when local production is preferred</li>
+            </ul>
+          </div>
+          <form class="trade-form compact-trade-form" id="tradeFormWrap" action="https://formspree.io/f/mkoyzwal" method="POST">
+            <p class="tf-title">Trade Account Application</p>
+            <div class="tf-row">
+              <div class="tf-field">
+                <label for="tf-name">Your Name</label>
+                <input type="text" id="tf-name" name="name" placeholder="Jane Smith" required>
+              </div>
+              <div class="tf-field">
+                <label for="tf-firm">Firm / Company</label>
+                <input type="text" id="tf-firm" name="firm" placeholder="Smith Interiors LLC" required>
+              </div>
+            </div>
+            <div class="tf-field">
+              <label for="tf-email">Business Email</label>
+              <input type="email" id="tf-email" name="email" placeholder="jane@smithinteriors.com" required>
+            </div>
+            <div class="tf-field">
+              <label for="tf-type">Design Focus</label>
+              <select id="tf-type" name="type">
+                <option value="">Select one…</option>
+                <option>Residential Interior Design</option>
+                <option>Commercial / Hospitality</option>
+                <option>Healthcare / Senior Living</option>
+                <option>Staging &amp; Real Estate</option>
+                <option>Architecture</option>
+                <option>Procurement / Purchasing</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="tf-field">
+              <label for="tf-project">Project Notes</label>
+              <textarea id="tf-project" name="project" placeholder="Tell me about the room, project type, timeline, or artwork direction."></textarea>
+            </div>
+            <button type="submit" class="tf-submit">Submit Application →</button>
+            <p class="tf-privacy">Response within one business day. You can also email directly at sproulphoto@gmail.com.</p>
+          </form>
+        </div>
+      </details>
+
+      <details>
+        <summary>
+          <span>Print Formats, Sizing &amp; Licensing</span>
+          <em>Framed, canvas, metal, acrylic, and digital files</em>
+        </summary>
+        <div class="resource-panel">
+          <div class="mini-resource-grid">
+            <div>
+              <strong>Recommended formats</strong>
+              <p>Framed paper for refined interiors, canvas for warmth, metal for durable modern spaces, and acrylic for polished contemporary installations.</p>
+            </div>
+            <div>
+              <strong>Common project sizes</strong>
+              <p>24×36 for smaller walls, 30×40 or 32×48 for main rooms, and 40×60 or larger for statement walls, lobbies, corridors, and hospitality spaces.</p>
+            </div>
+            <div>
+              <strong>Digital licensing</strong>
+              <p>Digital licensing is available for projects that require local print production, custom fabrication, regional installers, or multi-site artwork programs.</p>
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <details>
+        <summary>
+          <span>Designer FAQ</span>
+          <em>Mockups, customization, commercial projects, and ordering</em>
+        </summary>
+        <div class="resource-panel">
+          <div class="mini-resource-grid faq-mini-grid">
+            <div>
+              <strong>Do you provide custom mockups?</strong>
+              <p>Yes. Send a room photo and receive complimentary artwork mockups before purchasing or presenting options to a client.</p>
+            </div>
+            <div>
+              <strong>Can artwork be customized?</strong>
+              <p>Yes. Most images can be adjusted for size, crop, format, framing direction, and project use.</p>
+            </div>
+            <div>
+              <strong>Do you work on commercial projects?</strong>
+              <p>Yes. Healthcare, hospitality, senior living, corporate, wellness, and residential design projects are all supported.</p>
+            </div>
+            <div>
+              <strong>Where should I start?</strong>
+              <p>Start with the environment-specific pages or email a project description and room photo for curated suggestions.</p>
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <details>
+        <summary>
+          <span>Explore Deeper Pages</span>
+          <em>Keep browsing by environment, guide, or collection</em>
+        </summary>
+        <div class="resource-panel">
+          <div class="resource-link-list">
+            <a href="healthcare-artwork.html">Healthcare Artwork</a>
+            <a href="hospitality-artwork.html">Hospitality Artwork</a>
+            <a href="senior-living-artwork.html">Senior Living Artwork</a>
+            <a href="artwork-guides.html">Artwork Guides</a>
+            <a href="art-collections.html">Curated Collections</a>
+            <a href="about-dan-sproul.html">About Dan Sproul</a>
+            <a href="mailto:sproulphoto@gmail.com?subject=Mockup Request">Request a Mockup</a>
+          </div>
+        </div>
+      </details>
+
+    </div>
   </div>
 </section>
 
@@ -1878,39 +2242,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
   </div>
 </section>
 
-<section class="commercial-solutions" id="commercial-artwork-solutions">
-  <div class="solutions-head">
-    <p class="section-label">Commercial Artwork Solutions</p>
-    <h2 class="section-title">Focused paths for healthcare and hospitality projects</h2>
-    <p>For designers and commercial buyers who need a clearer starting point, these environment-specific pages organize Dan Sproul's fine art photography by how the space should feel and function.</p>
-  </div>
 
-  <div class="solution-grid">
-    <a class="solution-card" href="healthcare-artwork.html">
-      <div class="solution-image">
-        <img src="healthcare injection area oncology mockup waterfall.jpg" alt="Healthcare infusion room with calming waterfall artwork by Dan Sproul" loading="lazy" decoding="async">
-      </div>
-      <div class="solution-copy">
-        <span class="solution-type">Healthcare &amp; Wellness</span>
-        <h3>Healthcare Artwork</h3>
-        <p>Calming landscape photography for waiting rooms, oncology environments, patient spaces, wellness centers, and restorative healthcare interiors.</p>
-        <span class="solution-link">Explore Healthcare Artwork →</span>
-      </div>
-    </a>
-
-    <a class="solution-card" href="hospitality-artwork.html">
-      <div class="solution-image">
-        <img src="hospitality corridor mockup.jpg" alt="Luxury hospitality lobby with large landscape artwork by Dan Sproul" loading="lazy" decoding="async">
-      </div>
-      <div class="solution-copy">
-        <span class="solution-type">Hospitality &amp; Resort</span>
-        <h3>Hospitality Artwork</h3>
-        <p>Atmospheric nature photography for boutique hotels, resort lounges, spa retreats, restaurant spaces, guest suites, and lodge-modern interiors.</p>
-        <span class="solution-link">Explore Hospitality Artwork →</span>
-      </div>
-    </a>
-  </div>
-</section>
 <section class="selected-installations" id="selected-installations">
   <div class="install-head">
     <p class="section-label">Selected Installations</p>
@@ -1971,21 +2303,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
 
 
 <!-- INTRO -->
-<section class="section" id="about">
-  <div class="intro-grid">
-    <div class="intro-img">
-      <img src="room-drury-inn-hotel-lobby-st-louis.jpg" alt="Fine art photography installed in a Drury Inn hotel lobby by Dan Sproul" loading="eager" decoding="async" fetchpriority="high">
-    </div>
-    <div class="intro-text">
-      <p class="section-label">About the Work</p>
-      <h2 class="section-title">Original artwork built for<br/><em>professional interiors</em></h2>
-      <p>Dan Sproul creates original fine art photography and mixed media artwork for hospitality, healthcare, corporate, and residential interiors across the United States. From the misty cliffs of the Oregon Coast to the glacier lakes of Alaska, each image is crafted with the final print in mind — sharp, rich, and designed to hold at large format.</p>
-      <p><strong>Every file is print-optimized</strong> at full resolution with careful attention to tonal range, shadow detail, and color accuracy across canvas, metal, acrylic, and fine art paper. The result is wall art that looks as intentional at 60 inches as it does at 20.</p>
-      <p>Dan works directly with designers, procurement teams, and project managers to source the right images for each space — whether that's a single statement piece or a curated collection across an entire floor or facility.</p>
-      <a href="mailto:sproulphoto@gmail.com?subject=Mockup%20Request" class="btn btn-out" style="margin-top:24px;display:inline-block">Request a Mockup</a>
-    </div>
-  </div>
-</section>
+
 
 
 
@@ -2025,95 +2343,54 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
 </div>
 
 <!-- PLACEMENT GALLERY -->
-<section class="placement-section section" id="placements">
+<section class="placement-section section compact-environments" id="placements">
   <p class="section-label">Seen In</p>
   <h2 class="section-title">Art for Every <em>Environment</em></h2>
-  <p style="font-size:.78rem;line-height:2;color:rgba(242,239,232,.5);max-width:580px;margin-bottom:48px">From quiet hotel corridors to dramatic lobby walls — fine art photography transforms commercial and residential spaces. Click any image to enlarge.</p>
+  <p class="section-intro">A tighter designer-focused overview of where the work fits best. These five examples keep the visual impact of the original section while reducing mobile length.</p>
 
-  <!-- ROW 1: Waterfall triptych spans full width — most impressive installation -->
-  <div style="margin-bottom:3px">
-    <div class="placement-card pzoom" style="aspect-ratio:16/7;width:100%" onclick="openFDLightbox(this)">
+  <div class="compact-env-grid">
+    <div class="placement-card pzoom compact-env-card compact-feature" onclick="openFDLightbox(this)">
       <img src="Waterfall_Series_Hospitality_Concept_DanSproul.jpg" alt="Three-piece waterfall photography series installed in luxury hotel lobby by Dan Sproul" loading="lazy" decoding="async">
       <div class="placement-overlay">
-        <span class="pl-venue">Hotel Lobby · Multi-Piece Installation</span>
-        <p class="pl-title">Waterfall Series — Three-Piece Hospitality Installation</p>
-        <p class="pl-desc">Three large-format framed waterfall prints · Custom sizing · Trade pricing available</p>
+        <span class="pl-venue">Hospitality · Lobby Installation</span>
+        <p class="pl-title">Waterfall Series — Three-Piece Statement Wall</p>
+        <p class="pl-desc">Large-format framed photography for hotel, resort, and wellness interiors.</p>
       </div>
     </div>
-  </div>
 
-  <!-- ROW 2: Lobby Badlands (wide) + Hotel Bedroom (tall) -->
-  <div style="display:grid;grid-template-columns:1.4fr 1fr;gap:3px;margin-bottom:3px">
-    <div class="placement-card pzoom" style="aspect-ratio:16/10" onclick="openFDLightbox(this)">
+    <div class="placement-card pzoom compact-env-card" onclick="openFDLightbox(this)">
+      <img src="healthcare injection area oncology mockup waterfall.jpg" alt="Healthcare infusion room with calming waterfall artwork by Dan Sproul" loading="lazy" decoding="async">
+      <div class="placement-overlay">
+        <span class="pl-venue">Healthcare · Wellness Spaces</span>
+        <p class="pl-title">Waterfall Artwork — Calming Care Environment</p>
+        <p class="pl-desc">Soft nature imagery for oncology, waiting rooms, therapy, and patient-facing spaces.</p>
+      </div>
+    </div>
+
+    <div class="placement-card pzoom compact-env-card" onclick="openFDLightbox(this)">
+      <img src="lima-ohio-lake-senior-living-room.png" alt="Senior living lounge with warm lake nature artwork by Dan Sproul" loading="lazy" decoding="async">
+      <div class="placement-overlay">
+        <span class="pl-venue">Senior Living · Lounge</span>
+        <p class="pl-title">Regional Nature Artwork — Resident Gathering Space</p>
+        <p class="pl-desc">Warm, familiar landscapes for lounges, corridors, dining, and resident rooms.</p>
+      </div>
+    </div>
+
+    <div class="placement-card pzoom compact-env-card" onclick="openFDLightbox(this)">
       <img src="hotel lobby framed art badlands sunrise.jpg" alt="Badlands sunrise large format framed canvas in luxury hotel lobby by Dan Sproul" loading="lazy" decoding="async">
       <div class="placement-overlay">
-        <span class="pl-venue">Hotel Lobby · Statement Piece</span>
+        <span class="pl-venue">Boutique Hotel · Statement Piece</span>
         <p class="pl-title">Badlands Sunrise — Hotel Lobby Canvas</p>
-        <p class="pl-desc">Large format canvas · Warm lobby tones · Dramatic natural light</p>
+        <p class="pl-desc">Warm atmosphere, scale, and natural drama for arrival spaces.</p>
       </div>
     </div>
-    <div class="placement-card pzoom" onclick="openFDLightbox(this)">
-      <img src="hotel bedroom framed art foggy lake canada dan sproul.jpg" alt="Foggy lake Canada framed art in modern hotel bedroom by Dan Sproul" loading="lazy" decoding="async">
-      <div class="placement-overlay">
-        <span class="pl-venue">Hotel Guest Room · Above Bed</span>
-        <p class="pl-title">Foggy Lake — Hotel Bedroom</p>
-        <p class="pl-desc">Black frame · Calming blue tones · Guest room installation</p>
-      </div>
-    </div>
-  </div>
 
-  <!-- ROW 3: Hotel Hallway (tall) + Mount Hood Dining (tall) + Oregon Bedroom (tall) -->
-  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:3px;margin-bottom:3px">
-    <div class="placement-card pzoom" onclick="openFDLightbox(this)">
-      <img src="hotel floor framed art canada rockies landscape.jpg" alt="Canadian Rockies large format framed art in hotel corridor by Dan Sproul" loading="lazy" decoding="async">
+    <div class="placement-card pzoom compact-env-card" onclick="openFDLightbox(this)">
+      <img src="corporate office waiting room framed black and white landscapes.jpg" alt="Corporate office waiting room with framed black and white landscape diptych by Dan Sproul" loading="lazy" decoding="async">
       <div class="placement-overlay">
-        <span class="pl-venue">Hotel Corridor · Statement Wall</span>
-        <p class="pl-title">Canadian Rockies — Hotel Corridor</p>
-        <p class="pl-desc">Floor-to-ceiling scale · Black float frame · Athabasca Falls</p>
-      </div>
-    </div>
-    <div class="placement-card pzoom" onclick="openFDLightbox(this)">
-      <img src="mount hood sunset reflection in modern room.jpg" alt="Mount Hood sunset reflection metal print in modern dining room by Dan Sproul" style="object-position:center 20%" loading="lazy" decoding="async">
-      <div class="placement-overlay">
-        <span class="pl-venue">Residential / Dining Room</span>
-        <p class="pl-title">Mount Hood Reflection — Dining Room</p>
-        <p class="pl-desc">Metal print · Modern architectural interior · Oregon</p>
-      </div>
-    </div>
-    <div class="placement-card pzoom" onclick="openFDLightbox(this)">
-      <img src="modern bedroom framed coastal oregon scene dan sproul.jpg" alt="Oregon Coast framed print in modern dark bedroom by Dan Sproul" loading="lazy" decoding="async">
-      <div class="placement-overlay">
-        <span class="pl-venue">Residential / Bedroom</span>
-        <p class="pl-title">Oregon Coast — Modern Bedroom</p>
-        <p class="pl-desc">White frame · Dark wood interior · Cannon Beach</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- ROW 5: 3 new mockups — corporate waiting, bedroom mountain, warm living -->
-  <div class="pl-row-3" style="margin-top:3px">
-    <div class="placement-card pzoom" onclick="openFDLightbox(this)">
-      <img src="corporate office waiting room framed black and white landscapes.jpg" alt="Corporate office waiting room with framed B&W landscape diptych by Dan Sproul" loading="lazy" decoding="async">
-      <div class="placement-overlay">
-        <span class="pl-venue">Corporate · Waiting Room</span>
-        <p class="pl-title">B&amp;W Landscape Diptych — Corporate Reception</p>
-        <p class="pl-desc">Two-piece installation · Walnut frame · White mat</p>
-      </div>
-    </div>
-    <div class="placement-card pzoom" onclick="openFDLightbox(this)">
-      <img src="modern bedroom framed mountain reflection dan sproul.jpg" alt="Modern bedroom with framed mountain reflection landscape by Dan Sproul" loading="lazy" decoding="async">
-      <div class="placement-overlay">
-        <span class="pl-venue">Residential · Primary Bedroom</span>
-        <p class="pl-title">Mountain Reflection — Modern Bedroom</p>
-        <p class="pl-desc">Canvas · Walnut float frame · Above-bed installation</p>
-      </div>
-    </div>
-    <div class="placement-card pzoom" onclick="openFDLightbox(this)">
-      <img src="warm modern living room mountain reflection mockup.jpg" alt="Warm modern living room with B&W mountain reflection framed print by Dan Sproul" loading="lazy" decoding="async">
-      <div class="placement-overlay">
-        <span class="pl-venue">Residential · Living Room</span>
-        <p class="pl-title">Mountain Reflection — Warm Living Room</p>
-        <p class="pl-desc">B&amp;W fine art print · Walnut frame · White mat · Statement piece</p>
+        <span class="pl-venue">Professional Office · Reception</span>
+        <p class="pl-title">B&amp;W Landscape Diptych — Refined Waiting Area</p>
+        <p class="pl-desc">Quiet, polished artwork for law, finance, executive, and workplace interiors.</p>
       </div>
     </div>
   </div>
@@ -2292,41 +2569,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
 </div>
 
 <!-- VENUES -->
-<section class="venues-section section" id="venues">
-  <p class="section-label">Industries Served</p>
-  <h2 class="section-title">Trusted Across <em>Commercial</em> Sectors</h2>
-  <p style="font-size:.78rem;line-height:2;color:rgba(242,239,232,.5);max-width:580px;margin-bottom:0">Fine art photography is proven to improve wellbeing, reduce stress, and elevate the perceived quality of any environment.</p>
-  <div class="venues-grid">
-    <div class="venue-card">
-      <div class="venue-icon">
-        <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-      </div>
-      <h3 class="venue-title">Hotels &amp; Resorts</h3>
-      <p class="venue-desc">Guest rooms, lobbies, corridors, restaurants, and spa environments. Available for full-property procurement with consistent series across floors and wings.</p>
-    </div>
-    <div class="venue-card">
-      <div class="venue-icon">
-        <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-      </div>
-      <h3 class="venue-title">Hospitals &amp; Healthcare</h3>
-      <p class="venue-desc">Patient rooms, waiting areas, corridors, and healing gardens. Nature imagery is clinically shown to support patient recovery and reduce anxiety in care environments.</p>
-    </div>
-    <div class="venue-card">
-      <div class="venue-icon">
-        <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-      </div>
-      <h3 class="venue-title">Senior &amp; Nursing Homes</h3>
-      <p class="venue-desc">Peaceful landscape and nature imagery creates a calming, familiar atmosphere in common areas, dining rooms, and resident corridors.</p>
-    </div>
-    <div class="venue-card">
-      <div class="venue-icon">
-        <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
-      </div>
-      <h3 class="venue-title">Corporate &amp; Office</h3>
-      <p class="venue-desc">Lobbies, conference rooms, executive offices, and open work environments. Statement pieces and curated collections for brand-aligned interiors.</p>
-    </div>
-  </div>
-</section>
+
 
 
 
@@ -2334,269 +2577,30 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
 
 
 <!-- FORMATS -->
-<section class="formats-section section" id="formats">
-  <p class="section-label">Print Formats</p>
-  <h2 class="section-title">Every Format, <em>Any Scale</em></h2>
-  <p style="font-size:.78rem;line-height:2;color:rgba(242,239,232,.5);max-width:580px">All prints are produced on professional-grade materials through certified fine art labs. Custom sizing available on all formats.</p>
-  <div class="formats-grid">
-    <div class="format-card">
-      <div class="format-num">01</div>
-      <h3 class="format-title">Canvas Prints</h3>
-      <p class="format-desc">Gallery-wrapped on 1.5" or 2" solid wood stretcher bars using archival canvas and UV-resistant inks. Ready to hang. Available as single panels or multi-panel split installations up to 120" wide.</p>
-      <div class="format-specs">
-        <p class="format-spec">Standard sizes: 12×18 to 60×90</p>
-        <p class="format-spec">Custom sizing available</p>
-        <p class="format-spec">75-year archival rating</p>
-      </div>
-    </div>
-    <div class="format-card">
-      <div class="format-num">02</div>
-      <h3 class="format-title">Metal Prints</h3>
-      <p class="format-desc">Dye-sublimation infused directly into aluminum sheet. Produces vivid, luminous color with exceptional depth and a semi-gloss or matte finish. Ideal for high-traffic or high-humidity environments including spas, restaurants, and lobbies.</p>
-      <div class="format-specs">
-        <p class="format-spec">Standard sizes: 8×10 to 48×72</p>
-        <p class="format-spec">Flush mount or float mount</p>
-        <p class="format-spec">Waterproof · Scratch resistant</p>
-      </div>
-    </div>
-    <div class="format-card">
-      <div class="format-num">03</div>
-      <h3 class="format-title">Framed Prints</h3>
-      <p class="format-desc">Archival fine art paper prints with acid-free mat and professional framing. Available in black, white, natural wood, and silver. Custom mat sizing and double-mat options. Ideal for healthcare environments where a traditional, approachable aesthetic is preferred.</p>
-      <div class="format-specs">
-        <p class="format-spec">Frame finishes: 4 options</p>
-        <p class="format-spec">Mat: single or double</p>
-        <p class="format-spec">Museum glass available</p>
-      </div>
-    </div>
-    <div class="format-card">
-      <div class="format-num">04</div>
-      <h3 class="format-title">Acrylic Face Mounts</h3>
-      <p class="format-desc">Print face-mounted behind 1/4" optical-quality acrylic. Creates a floating, gallery-depth appearance with vivid color. Particularly effective for large statement pieces in hotel lobbies, executive suites, and architectural interiors.</p>
-      <div class="format-specs">
-        <p class="format-spec">Standard sizes: 16×24 to 48×72</p>
-        <p class="format-spec">Standoff or flush wall mount</p>
-        <p class="format-spec">High gloss finish</p>
-      </div>
-    </div>
-    <div class="format-card">
-      <div class="format-num">05</div>
-      <h3 class="format-title">Fine Art Paper</h3>
-      <p class="format-desc">Giclée prints on 100% cotton rag or baryta paper using 12-color archival ink sets. For designers who prefer to frame locally or through their own vendors. Printed and shipped flat or rolled in archival tubes.</p>
-      <div class="format-specs">
-        <p class="format-spec">Papers: cotton rag, baryta, lustre</p>
-        <p class="format-spec">Ships flat or rolled</p>
-        <p class="format-spec">100+ year archival rating</p>
-      </div>
-    </div>
-    <div class="format-card">
-      <div class="format-num">06</div>
-      <h3 class="format-title">Digital Licensing</h3>
-      <p class="format-desc">Purchase high-resolution digital files and print through your preferred local or commercial lab. Full-resolution TIFF or JPEG files delivered digitally within 24 hours. Single-use and multi-use commercial licenses available.</p>
-      <div class="format-specs">
-        <p class="format-spec">Files: TIFF / JPEG / sRGB or AdobeRGB</p>
-        <p class="format-spec">Single-use or multi-use license</p>
-        <p class="format-spec">Delivered within 24 hours</p>
-      </div>
-    </div>
-  </div>
-</section>
+
 
 <!-- LICENSING DETAIL -->
-<section class="licensing-section section" id="licensing">
-  <p class="section-label">Digital Licensing</p>
-  <h2 class="section-title">Print It <em>Your Way</em></h2>
-  <div class="licensing-grid">
-    <div class="licensing-img"><img src="corporate office waiting room framed black and white landscapes.jpg" alt="Black and white landscape photography specified for a professional office interior by Dan Sproul" loading="lazy" decoding="async"></div>
-    <div class="license-options">
-      <p style="font-size:.78rem;line-height:2;color:rgba(242,239,232,.55);margin-bottom:8px">For designers who prefer to manage their own print production, high-resolution digital files are available for direct licensing. All files are delivered print-ready and color-profiled for professional output.</p>
 
-      <div class="license-card">
-        <h4 class="lc-title">Single Project License</h4>
-        <p class="lc-desc">One-time use for a single installation or project. Includes full-resolution file, color profiles, and basic print guidance notes. Ideal for one-off residential or commercial installations.</p>
-        <span class="lc-tag">Per image · Per project</span>
-      </div>
-
-      <div class="license-card">
-        <h4 class="lc-title">Commercial Multi-Use License</h4>
-        <p class="lc-desc">Covers use across multiple locations, rooms, or properties under the same project or brand. Includes extended commercial use rights, multiple file formats, and direct support from Dan for print calibration.</p>
-        <span class="lc-tag">Multi-location · Extended use</span>
-      </div>
-
-      <div class="license-card">
-        <h4 class="lc-title">Exclusive Licensing</h4>
-        <p class="lc-desc">Exclusive rights for a specific image within a defined territory or industry. Pricing based on scope of use. Contact directly to discuss requirements and terms.</p>
-        <span class="lc-tag">Custom · Contact for pricing</span>
-      </div>
-    </div>
-  </div>
-</section>
 
 
 <!-- HOW IT WORKS -->
-<section class="section process-section" id="process">
-  <p class="section-label">Designer Workflow</p>
-  <h2 class="section-title">From <em>concept to installation</em></h2>
-  <div class="process-steps">
-    <div class="step">
-      <span class="step-num">01</span>
-      <p class="step-title">Browse Collections</p>
-      <p class="step-desc">Explore curated artwork collections organized by mood, environment, subject, and design application.</p>
-    </div>
-    <div class="step">
-      <span class="step-num">02</span>
-      <p class="step-title">Request Mockups</p>
-      <p class="step-desc">Send room photos, project direction, wall dimensions, or a mood board and receive complimentary artwork mockups for review.</p>
-    </div>
-    <div class="step">
-      <span class="step-num">03</span>
-      <p class="step-title">Review Options</p>
-      <p class="step-desc">Compare artwork choices, sizes, formats, framing options, placement recommendations, and trade pricing.</p>
-    </div>
-    <div class="step">
-      <span class="step-num">04</span>
-      <p class="step-title">Specify &amp; Install</p>
-      <p class="step-desc">Order finished prints ready for installation or license files for designer-managed production through your preferred vendor.</p>
-    </div>
-  </div>
-</section>
+
 
 
 
 
   <!-- TRADE ACCOUNT FORM -->
-<section class="trade-section" id="trade">
-  <div class="trade-grid">
-    <div class="trade-left">
-      <p class="section-label">Trade Program</p>
-      <h2>Apply for <em>Trade Pricing</em></h2>
-      <p>Dan works directly with interior designers, architects, stagers, and commercial procurement teams. Trade accounts receive preferred pricing, priority response, and complimentary custom mockup previews for active projects.</p>
-      <p>Fill out the form and you'll hear back within one business day.</p>
-      <ul class="trade-benefits">
-        <li>Preferred pricing on all print formats and sizes</li>
-        <li>Complimentary custom mockups — send a room photo, get a preview</li>
-        <li>Direct access to 8,500+ high-resolution images</li>
-        <li>Custom sizing on every image at no additional fee</li>
-        <li>Multi-piece and multi-site installation programs</li>
-        <li>Direct-to-install delivery with hardware included</li>
-        <li>Priority email response within 24 hours</li>
-        <li>Digital licensing available for local print production</li>
-      </ul>
-    </div>
-    <div>
-      <form class="trade-form" id="tradeFormWrap" action="https://formspree.io/f/mkoyzwal" method="POST">
-        <p class="tf-title">Trade Account Application</p>
-        <div class="tf-row">
-          <div class="tf-field">
-            <label for="tf-name">Your Name</label>
-            <input type="text" id="tf-name" name="name" placeholder="Jane Smith" required/>
-          </div>
-          <div class="tf-field">
-            <label for="tf-firm">Firm / Company Name</label>
-            <input type="text" id="tf-firm" name="firm" placeholder="Smith Interiors LLC" required/>
-          </div>
-        </div>
-        <div class="tf-field">
-          <label for="tf-email">Business Email</label>
-          <input type="email" id="tf-email" name="email" placeholder="jane@smithinteriors.com" required/>
-        </div>
-        <div class="tf-row">
-          <div class="tf-field">
-            <label for="tf-website">Website (optional)</label>
-            <input type="url" id="tf-website" name="website" placeholder="https://smithinteriors.com"/>
-          </div>
-          <div class="tf-field">
-            <label for="tf-type">Design Focus</label>
-            <select id="tf-type" name="type">
-              <option value="">Select one…</option>
-              <option>Residential Interior Design</option>
-              <option>Commercial / Hospitality</option>
-              <option>Healthcare / Senior Living</option>
-              <option>Staging &amp; Real Estate</option>
-              <option>Architecture</option>
-              <option>Procurement / Purchasing</option>
-              <option>Other</option>
-            </select>
-          </div>
-        </div>
-        <div class="tf-field">
-          <label for="tf-project">Tell me about a current or upcoming project (optional)</label>
-          <textarea id="tf-project" name="project" placeholder="e.g. We're furnishing a 24-room boutique hotel in Columbus and need artwork for guest rooms and the lobby…"></textarea>
-        </div>
-        <button type="submit" class="tf-submit">Submit Application →</button>
-        <p class="tf-privacy">Your information is never shared. Response within one business day.</p>
-          </form>
-      </div>
-      <div class="tf-success" id="tfSuccess">
-        <h3>Application <em>received.</em></h3>
-        <p>Thanks — Dan will review your application and follow up within one business day at the email you provided. If you have an urgent project, email directly at <a href="mailto:sproulphoto@gmail.com" style="color:var(--accent)">sproulphoto@gmail.com</a>.</p>
-      </div>
-    </div>
-  </div>
-</section>
+
 
 
 
 
 
 <!-- DESIGNER FAQ -->
-<section class="section faq-designer" id="faq">
-  <p class="section-label">Frequently Asked Questions</p>
-  <h2 class="section-title">Designer <em>questions</em></h2>
-  <div class="formats-grid">
-    <div class="format-card">
-      <h3 class="format-title">Do you provide custom mockups?</h3>
-      <p class="format-desc">Yes. Designers can send room photos and receive complimentary artwork mockups before purchasing or presenting options to a client.</p>
-    </div>
-    <div class="format-card">
-      <h3 class="format-title">Do you work with healthcare projects?</h3>
-      <p class="format-desc">Yes. Artwork is available for waiting rooms, oncology spaces, patient rooms, wellness environments, therapy offices, and healthcare corridors.</p>
-    </div>
-    <div class="format-card">
-      <h3 class="format-title">Do you work with hospitality projects?</h3>
-      <p class="format-desc">Yes. Artwork is available for guest rooms, hotel lobbies, corridors, restaurants, lounges, spa retreats, and resort properties.</p>
-    </div>
-    <div class="format-card">
-      <h3 class="format-title">What sizes are available?</h3>
-      <p class="format-desc">Most artwork can be produced from smaller framed pieces through large-format installations exceeding 60 inches.</p>
-    </div>
-    <div class="format-card">
-      <h3 class="format-title">Is trade pricing available?</h3>
-      <p class="format-desc">Yes. Interior designers, architects, stagers, and procurement professionals may apply for trade pricing.</p>
-    </div>
-    <div class="format-card">
-      <h3 class="format-title">Do you offer licensing?</h3>
-      <p class="format-desc">Yes. High-resolution files can be licensed for commercial projects and designer-managed print production.</p>
-    </div>
-  </div>
-</section>
 
-<section class="section ai-linking-hub" id="related-collection-paths">
-  <div class="ai-section-head">
-    <p class="section-label">Related Collection Paths</p>
-    <h2 class="section-title">Explore related fine art photography collections by mood and interior use.</h2>
-  </div>
-  <div class="ai-link-grid">
-    <a href="quiet-earth-collection.html"><strong>Quiet Earth</strong><span>Healthcare artwork, wellness interiors, waiting rooms, calming offices, visual calm.</span></a>
-    <a href="mountain-light-collection.html"><strong>Mountain Light</strong><span>Hospitality interiors, lodge modern artwork, resort wall art, executive offices.</span></a>
-    <a href="monochrome-stillness.html"><strong>Monochrome Stillness</strong><span>Black-and-white office artwork, healthcare corridors, minimalist interiors, executive spaces.</span></a>
-    <a href="coastal-atmosphere.html"><strong>Coastal Atmosphere</strong><span>Quiet luxury coastal artwork, boutique hospitality, refined residential interiors.</span></a>
-    <a href="forest-light-collection.html"><strong>Forest Light</strong><span>Biophilic artwork, restorative woodland imagery, organic modern interiors.</span></a>
-    <a href="heritage-mixed-media.html"><strong>Heritage &amp; Mixed Media</strong><span>Regional artwork, lodge interiors, restaurants, hospitality spaces, local identity.</span></a>
-  </div>
-</section>
-<section class="section ai-about-artist" id="about-artist">
-  <div class="ai-two-col">
-    <div>
-      <p class="section-label">About the Artist</p>
-      <h2 class="section-title">Original artwork selected for atmosphere, interior use, and emotional fit.</h2>
-    </div>
-    <div>
-      <p>Dan Sproul is an Ohio-based fine art photographer and mixed media artist creating original artwork for hospitality, healthcare, corporate, wellness, and residential interiors across the United States.</p>
-      <p>His collections are organized by how a space should feel: quiet, restorative, atmospheric, grounded, memorable, or refined. That makes each page easier to use as a design resource instead of a traditional photography portfolio.</p>
-    </div>
-  </div>
-</section>
+
+
+
 <!-- CONTACT -->
 <div class="contact-section" id="contact">
   <p class="section-label" style="justify-content:center">Work Together</p>
