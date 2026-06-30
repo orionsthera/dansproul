@@ -40,6 +40,79 @@ h2{font-size:clamp(1.9rem,7vw,2.7rem)!important}
 .intro,.analysis,.mockups,.buying,.spec-sheet,.best-sellers,.faq-section,.related-collections,.footer-cta{padding:56px 24px!important}
 }
 
+
+
+/* ==========================================================
+   JULY 2026 MOBILE CONDENSE PASS — Hospitality page
+   Goal: reduce vertical scroll on phones without altering desktop.
+   1. Mockup grid trimmed to first 4 cards (≤900px)
+   2. Buying guidance cards collapsed on phones (≤680px)
+   3. FAQ accordions on phones (≤680px)
+   4. Spec Sheet bullet list collapsed on phones (≤680px)
+   ========================================================== */
+
+/* ---------- 1. MOCKUP GRID ---------- */
+@media(max-width:900px){
+  .mockup-grid .mockup-card:nth-of-type(n+5){display:none!important;}
+}
+
+/* ---------- 2. BUYING GUIDANCE ---------- */
+@media(max-width:680px){
+  /* hide buying cards, show toggle */
+  .buying-grid{position:relative;}
+  .buying-grid .buy-box{display:none;}
+  .buying-grid::after{
+    content:'Tap to view buying guidance';
+    display:block;
+    padding:14px;
+    text-align:center;
+    font-size:.58rem;
+    letter-spacing:.22em;
+    color:var(--gold);
+    border:1px solid rgba(199,155,85,.3);
+    cursor:pointer;
+  }
+  .buying-grid.open .buy-box{display:block;}
+  .buying-grid.open::after{display:none;}
+}
+
+/* ---------- 3. FAQ ACCORDIONS ---------- */
+@media(max-width:680px){
+  .faq-item p{display:none;}
+  .faq-item{cursor:pointer;}
+  .faq-item::after{
+    content:'+';
+    float:right;
+    font-size:20px;
+    line-height:1;
+    color:var(--gold);
+  }
+  .faq-item.open::after{content:'–';}
+  .faq-item.open p{display:block;}
+}
+
+/* ---------- 4. SPEC SHEET DETAILS ---------- */
+@media(max-width:680px){
+  .spec-box ul{display:none;}
+  .spec-box{
+    position:relative;
+  }
+  .spec-box.toggle::after{
+    content:'Tap for details';
+    position:absolute;
+    inset:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:.58rem;
+    letter-spacing:.22em;
+    color:var(--gold);
+    background:rgba(255,255,255,.06);
+    cursor:pointer;
+  }
+  .spec-box.open ul{display:block;}
+  .spec-box.open::after{display:none;}
+}
 </style>
 <script type="application/ld+json">
 {
@@ -328,5 +401,37 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  // FAQ toggle
+  document.querySelectorAll('.faq-item').forEach(function(item){
+    item.addEventListener('click',function(){
+      if(window.innerWidth <= 680){
+        item.classList.toggle('open');
+      }
+    },{passive:true});
+  });
+  // Buying guidance toggle
+  var buyingGrid = document.querySelector('.buying-grid');
+  if(buyingGrid){
+    buyingGrid.addEventListener('click',function(){
+      if(window.innerWidth <= 680){
+        buyingGrid.classList.toggle('open');
+      }
+    },{passive:true});
+  }
+  // Spec sheet toggle
+  var specBox = document.querySelector('.spec-box');
+  if(specBox){
+    specBox.classList.add('toggle');
+    specBox.addEventListener('click',function(){
+      if(window.innerWidth <= 680){
+        specBox.classList.toggle('open');
+      }
+    },{passive:true});
+  }
+});
+</script>
 </body>
 </html>
