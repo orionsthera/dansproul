@@ -402,36 +402,6 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 
 
-<script>
-document.addEventListener('DOMContentLoaded',function(){
-  // FAQ toggle
-  document.querySelectorAll('.faq-item').forEach(function(item){
-    item.addEventListener('click',function(){
-      if(window.innerWidth <= 680){
-        item.classList.toggle('open');
-      }
-    },{passive:true});
-  });
-  // Buying guidance toggle
-  var buyingGrid = document.querySelector('.buying-grid');
-  if(buyingGrid){
-    buyingGrid.addEventListener('click',function(){
-      if(window.innerWidth <= 680){
-        buyingGrid.classList.toggle('open');
-      }
-    },{passive:true});
-  }
-  // Spec sheet toggle
-  var specBox = document.querySelector('.spec-box');
-  if(specBox){
-    specBox.classList.add('toggle');
-    specBox.addEventListener('click',function(){
-      if(window.innerWidth <= 680){
-        specBox.classList.toggle('open');
-      }
-    },{passive:true});
-  }
-});
-</script>
+
 </body>
 </html>
