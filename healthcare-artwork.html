@@ -433,6 +433,61 @@ h1{font-size:54px}
   .site-footer .footer-bottom{text-align:left!important;margin-top:34px!important}
 }
 
+
+
+/* ==========================================================
+   JULY 2026 MOBILE CONDENSE PASS — Healthcare page
+   Goal: reduce vertical scroll on phones without changing desktop.
+   1. Hide mockup cards after third per group (≤900px)
+   2. FAQ accordions on phones (≤680px)
+   3. Collapse Spec‑Download details on phones (≤680px)
+   ========================================================== */
+
+/* ---------- 1. MOCKUP GRIDS ---------- */
+@media(max-width:900px){
+  .mockup-grid .mockup-card:nth-of-type(n+4){display:none!important;}
+}
+
+/* ---------- 2. FAQ ACCORDIONS ---------- */
+@media(max-width:680px){
+  .faq-item p{display:none;}
+  .faq-item{cursor:pointer;}
+  .faq-item::after{
+    content:'+';
+    float:right;
+    font-size:20px;
+    line-height:1;
+    color:var(--gold);
+  }
+  .faq-item.open::after{content:'–';}
+  .faq-item.open p{display:block;}
+}
+
+/* ---------- 3. SPEC DOWNLOAD ---------- */
+@media(max-width:680px){
+  .spec-download-box ul{display:none;}
+  .spec-download-inner{grid-template-columns:1fr!important;}
+  .spec-resource-toggle{
+    display:block;
+    margin-top:14px;
+    font-size:.58rem;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    color:var(--gold);
+    cursor:pointer;
+  }
+  .spec-download-box.closed ul{display:none;}
+  .spec-download-box.closed::after{
+    content:'Tap to view details';
+    display:block;
+    margin-top:12px;
+    font-size:.58rem;
+    letter-spacing:.22em;
+    color:var(--gold);
+  }
+  .spec-download-box.open ul{display:block;}
+  .spec-download-box.open::after{display:none;}
+}
 </style>
 
 <script type="application/ld+json">
@@ -1184,5 +1239,32 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+
+  // FAQ accordion
+  var faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(function(it){
+    it.addEventListener('click',function(){
+      if(window.innerWidth <= 680){
+        it.classList.toggle('open');
+      }
+    },{passive:true});
+  });
+
+  // Spec box toggle
+  var specBox = document.querySelector('.spec-download-box');
+  if(specBox){
+    specBox.classList.add('closed');
+    specBox.addEventListener('click',function(){
+      if(window.innerWidth <= 680){
+        specBox.classList.toggle('open');
+        specBox.classList.toggle('closed');
+      }
+    },{passive:true});
+  }
+});
+</script>
 </body>
 </html>
