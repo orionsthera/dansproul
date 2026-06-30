@@ -791,6 +791,47 @@
   text-transform:uppercase;
   letter-spacing:.18em;
 }
+
+/* ── STICKY MOBILE CTA ───────────────────────────── */
+.sticky-cta{
+  position:fixed;
+  left:0;
+  right:0;
+  bottom:-120px; /* start hidden */
+  z-index:9998;
+  display:flex;
+  gap:8px;
+  justify-content:center;
+  padding:14px 18px;
+  background:#0e0c09;
+  border-top:1px solid rgba(185,138,59,.22);
+  transition:transform .5s ease;
+  transform:translateY(100%);
+}
+.sticky-cta.show{
+  transform:translateY(0);
+}
+.sticky-cta .cta-btn{
+  flex:1;
+  text-align:center;
+  text-decoration:none;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  padding:13px 18px;
+  border:1px solid rgba(213,179,101,.62);
+  color:#d5b365;
+}
+.sticky-cta .cta-btn.primary{
+  background:#d5b365;
+  color:#14100b;
+  border-color:#d5b365;
+}
+@media(min-width:801px){
+  .sticky-cta{display:none;}
+}
 </style>
 
   <script type="application/ld+json">
@@ -1043,7 +1084,7 @@
       <p class="eyebrow">Landscape, wildlife &amp; nature prints</p>
       <h1>Fine art nature photography for the rooms you <em>live in.</em></h1>
       <p class="hero-copy">Atmospheric landscapes, wildlife, coastal scenes, mountains, forests, waterfalls, and quiet natural places chosen to bring calm, warmth, and a sense of place into your home. Designer and project support is also available.</p>
-      <p class="price-anchor">Prints from $25 &middot; Framed from $85</p>
+      <p class="price-anchor">Prints from $85 &middot; Framed from $140</p>
       <div class="btns">
         <a class="btn primary" href="art-collections.html">Explore Collections</a>
         <a class="btn" href="best-sellers.html">View Best Sellers</a>
@@ -1633,5 +1674,25 @@
       }
     });
   </script>
+
+<div class="sticky-cta" id="stickyCta">
+  <a class="cta-btn primary" href="https://dansproul.com" target="_blank" rel="noopener">Shop Prints</a>
+  <a class="cta-btn" href="mailto:sproulphoto@gmail.com?subject=Room Mockup Request">Request Mockup</a>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  var cta=document.getElementById('stickyCta');
+  if(!cta) return;
+  var revealPoint=window.innerHeight*0.25;
+  window.addEventListener('scroll',function(){
+    if(window.scrollY>revealPoint){
+      cta.classList.add('show');
+    }else{
+      cta.classList.remove('show');
+    }
+  },{passive:true});
+});
+</script>
 </body>
 </html>
