@@ -1813,6 +1813,114 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
   }
 }
 
+
+/* ==========================================================
+   FINAL FIX — Art for Every Environment card layout
+   This overrides earlier placement-section mosaic rules that were
+   forcing the first row into shallow, uneven cards.
+   ========================================================== */
+.placement-section.compact-environments{
+  padding-top:84px!important;
+  padding-bottom:88px!important;
+}
+
+.placement-section.compact-environments > .section-label,
+.placement-section.compact-environments > .section-title,
+.placement-section.compact-environments > .section-intro{
+  max-width:1180px!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+}
+
+.placement-section.compact-environments > .compact-env-grid{
+  max-width:1180px!important;
+  width:100%!important;
+  margin:0 auto!important;
+  display:grid!important;
+  grid-template-columns:repeat(6,minmax(0,1fr))!important;
+  gap:18px!important;
+  align-items:stretch!important;
+}
+
+.placement-section.compact-environments > .compact-env-grid > .placement-card.compact-env-card,
+.placement-section.compact-environments > .compact-env-grid > .placement-card.compact-feature{
+  grid-row:auto!important;
+  grid-column:span 2!important;
+  aspect-ratio:16/9!important;
+  max-height:none!important;
+  min-height:0!important;
+  height:auto!important;
+  width:100%!important;
+  display:block!important;
+}
+
+.placement-section.compact-environments > .compact-env-grid > .placement-card.compact-env-card:nth-child(4),
+.placement-section.compact-environments > .compact-env-grid > .placement-card.compact-env-card:nth-child(5){
+  grid-column:span 3!important;
+}
+
+.placement-section.compact-environments > .compact-env-grid > .placement-card.compact-env-card img,
+.placement-section.compact-environments > .compact-env-grid > .placement-card.compact-feature img{
+  width:100%!important;
+  height:100%!important;
+  max-width:none!important;
+  object-fit:cover!important;
+  display:block!important;
+}
+
+.placement-section.compact-environments .placement-overlay{
+  padding:24px 24px 22px!important;
+  background:linear-gradient(to top,rgba(8,8,7,.92) 0%,rgba(8,8,7,.58) 44%,rgba(8,8,7,.08) 76%,transparent 100%)!important;
+}
+
+.placement-section.compact-environments .pl-title{
+  font-size:1.12rem!important;
+  line-height:1.16!important;
+}
+
+.placement-section.compact-environments .pl-desc{
+  max-width:92%!important;
+  font-size:.58rem!important;
+  line-height:1.55!important;
+}
+
+@media(max-width:1040px){
+  .placement-section.compact-environments > .compact-env-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:14px!important;
+  }
+  .placement-section.compact-environments > .compact-env-grid > .placement-card.compact-env-card,
+  .placement-section.compact-environments > .compact-env-grid > .placement-card.compact-feature,
+  .placement-section.compact-environments > .compact-env-grid > .placement-card.compact-env-card:nth-child(4),
+  .placement-section.compact-environments > .compact-env-grid > .placement-card.compact-env-card:nth-child(5){
+    grid-column:span 1!important;
+    aspect-ratio:16/9!important;
+  }
+}
+
+@media(max-width:680px){
+  .placement-section.compact-environments{
+    padding:50px 22px!important;
+  }
+  .placement-section.compact-environments > .compact-env-grid{
+    grid-template-columns:1fr!important;
+    gap:12px!important;
+  }
+  .placement-section.compact-environments > .compact-env-grid > .placement-card.compact-env-card,
+  .placement-section.compact-environments > .compact-env-grid > .placement-card.compact-feature,
+  .placement-section.compact-environments > .compact-env-grid > .placement-card.compact-env-card:nth-child(4),
+  .placement-section.compact-environments > .compact-env-grid > .placement-card.compact-env-card:nth-child(5){
+    grid-column:1/-1!important;
+    aspect-ratio:16/10!important;
+  }
+  .placement-section.compact-environments .placement-overlay{
+    padding:18px!important;
+  }
+  .placement-section.compact-environments .pl-desc{
+    display:none!important;
+  }
+}
+
 </style>
 <script type="application/ld+json">
 {
