@@ -512,7 +512,21 @@
       }
       .footer-bottom { text-align: left; }
     }
-  </style>
+  
+
+/* ==========================================================
+   JULY 2026 MOBILE CONDENSE PASS — Blog landing page
+   1. Slightly shorter hero on phones
+   2. Trim archive grid to first 2 cards on phones (≤760px)
+   3. Reduce intro strip vertical padding on phones
+   ========================================================== */
+
+@media(max-width:760px){
+  .hero{min-height:66vh!important;padding:68px 22px 46px!important;}
+  .archive-grid .archive-card:nth-of-type(n+3){display:none!important;}
+  .intro-strip{padding:32px 22px!important;}
+}
+</style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
