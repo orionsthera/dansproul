@@ -280,6 +280,252 @@ body { overflow-x: hidden; }
   .site-footer .footer-grid{grid-template-columns:repeat(2,1fr)!important}
 }
 
+/* Mobile-only senior page compaction and accordions */
+.mobile-accordion-toggle{
+  display:none;
+}
+.mobile-accordion-panel{
+  display:block;
+}
+@media(max-width:680px){
+  .breadcrumbs{
+    padding:18px 20px 0!important;
+    font-size:9px!important;
+    line-height:1.5!important;
+  }
+  .hero{
+    min-height:58vh!important;
+    padding:56px 20px 34px!important;
+  }
+  .hero .hero-inner{
+    max-width:100%!important;
+  }
+  .hero h1,h1{
+    font-size:clamp(2.2rem,8.8vw,3.05rem)!important;
+    line-height:1.03!important;
+    letter-spacing:-.035em!important;
+  }
+  .hero .eyebrow{
+    margin-bottom:10px!important;
+  }
+  .hero p{
+    max-width:100%!important;
+    font-size:14.5px!important;
+    line-height:1.58!important;
+    margin-top:14px!important;
+  }
+  p,.section-heading p,.group-heading p,.detail-card p,.faq-item p,.related-card p,.gallery-item p{
+    font-size:14px!important;
+    line-height:1.58!important;
+  }
+  h2,.section-heading h2{
+    font-size:clamp(1.85rem,6.7vw,2.45rem)!important;
+    line-height:1.08!important;
+  }
+  h3,.mockup-copy h3,.detail-card h3,.related-card h3,.faq-item h3,.gallery-item h3{
+    font-size:21px!important;
+    line-height:1.1!important;
+  }
+  .intro,.jump-section,.mockup-feature,.detail-section,.gallery-preview,.faq-section,.related-collections,.footer-cta,.spec-sheet-feature{
+    padding:44px 20px!important;
+  }
+  .spec-sheet-feature{
+    padding-top:38px!important;
+  }
+  .section-heading{
+    margin-bottom:22px!important;
+  }
+  .intro-grid,.jump-inner,.detail-wrap,.group-heading{
+    gap:18px!important;
+  }
+  .dan-note{
+    margin-top:16px!important;
+    padding:18px!important;
+  }
+  .dan-note p{
+    font-size:15px!important;
+    line-height:1.55!important;
+  }
+  .trust-strip{
+    padding:12px 20px!important;
+    gap:6px!important;
+  }
+  .trust-strip span{
+    padding:8px 6px!important;
+    font-size:8.5px!important;
+    line-height:1.35!important;
+    min-height:38px!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+  }
+  .jump-section{
+    padding-top:34px!important;
+    padding-bottom:34px!important;
+  }
+  .jump-links{
+    gap:7px!important;
+  }
+  .jump-links a{
+    min-height:42px!important;
+    display:inline-flex!important;
+    align-items:center!important;
+    padding:9px 10px!important;
+    font-size:8.8px!important;
+    line-height:1.25!important;
+  }
+  .btns{
+    gap:8px!important;
+    margin-top:16px!important;
+  }
+  .btn,.mockup-actions button,.mockup-actions a,.footer-cta-buttons a{
+    min-height:42px!important;
+    padding:10px 12px!important;
+    font-size:9px!important;
+    line-height:1.25!important;
+  }
+  .mockup-group{
+    margin-bottom:34px!important;
+  }
+  .group-heading{
+    margin-bottom:14px!important;
+    padding-bottom:14px!important;
+  }
+  .mockup-grid,.mini-gallery,.related-grid,.detail-card-grid,.faq-grid{
+    gap:12px!important;
+  }
+  .mockup-card img{
+    height:220px!important;
+    max-height:220px!important;
+    object-fit:cover!important;
+  }
+  .gallery-item img,.spec-sheet-preview img{
+    height:210px!important;
+    max-height:210px!important;
+    object-fit:cover!important;
+  }
+  .mockup-copy,.detail-card,.faq-item,.related-card,.gallery-item div{
+    padding:16px!important;
+  }
+  .mockup-copy p,.gallery-item p,.related-card p{
+    margin-top:8px!important;
+    margin-bottom:0!important;
+  }
+  .mockup-copy .use,.gallery-item .use{
+    margin-top:9px!important;
+    font-size:11px!important;
+  }
+  .mockup-actions{
+    gap:7px!important;
+    margin-top:11px!important;
+  }
+  .related-card{
+    min-height:auto!important;
+  }
+  .spec-sheet-card{
+    padding:20px!important;
+  }
+  .spec-sheet-points{
+    gap:8px!important;
+    margin-top:16px!important;
+  }
+  .spec-sheet-points span{
+    padding:11px 10px!important;
+    font-size:9px!important;
+  }
+  .mobile-collapsible-source{
+    padding-top:0!important;
+    padding-bottom:0!important;
+    border-top:1px solid var(--line)!important;
+  }
+  .mobile-accordion-toggle{
+    width:100%;
+    min-height:54px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:16px;
+    padding:16px 20px;
+    border:0;
+    background:rgba(18,16,13,.98);
+    color:#f4efe6;
+    font-family:Arial,Helvetica,sans-serif;
+    font-size:10px;
+    font-weight:700;
+    letter-spacing:.18em;
+    text-align:left;
+    text-transform:uppercase;
+    cursor:pointer;
+  }
+  .detail-section.alt .mobile-accordion-toggle,
+  .faq-section .mobile-accordion-toggle{
+    background:#fffaf1;
+    color:#201b15;
+    border-bottom:1px solid rgba(32,27,21,.08);
+  }
+  .mobile-accordion-toggle::after{
+    content:"+";
+    flex:0 0 auto;
+    color:var(--gold);
+    font-size:20px;
+    line-height:1;
+  }
+  .mobile-collapsible-source.is-mobile-open .mobile-accordion-toggle::after{
+    content:"-";
+  }
+  .mobile-accordion-panel{
+    display:none;
+    padding:34px 20px 40px;
+  }
+  .mobile-collapsible-source.is-mobile-open .mobile-accordion-panel{
+    display:block;
+  }
+  .mobile-accordion-panel .detail-wrap,
+  .mobile-accordion-panel .faq-grid{
+    width:100%!important;
+  }
+  .faq-section .section-heading{
+    margin-bottom:18px!important;
+  }
+  .sitewide-footer-cta{
+    padding:42px 20px!important;
+  }
+  .sitewide-footer-cta p{
+    margin-bottom:12px!important;
+    font-size:8.5px!important;
+  }
+  .sitewide-footer-cta h2{
+    font-size:clamp(1.75rem,8vw,2.45rem)!important;
+    line-height:1.12!important;
+  }
+  .footer-cta-buttons{
+    gap:8px!important;
+    margin-top:22px!important;
+  }
+  .site-footer{
+    padding:42px 20px 28px!important;
+  }
+  .site-footer .footer-grid{
+    gap:22px!important;
+  }
+  .site-footer .footer-grid h3{
+    margin-bottom:9px!important;
+    font-size:1.15rem!important;
+  }
+  .site-footer .footer-grid a{
+    min-height:30px!important;
+    display:flex!important;
+    align-items:center!important;
+    font-size:.78rem!important;
+    line-height:1.35!important;
+    margin-bottom:1px!important;
+  }
+  .site-footer .footer-bottom{
+    margin-top:28px!important;
+    padding-top:20px!important;
+  }
+}
+
 </style>
   <script type="application/ld+json">
    {
@@ -1124,7 +1370,7 @@ body { overflow-x: hidden; }
     </div>
    </div>
   </section>
-  <section class="detail-section" id="senior-living-design-approach">
+  <section class="detail-section mobile-collapsible-source" id="senior-living-design-approach" data-mobile-collapse="Senior Living Design Approach">
    <div class="detail-wrap">
     <div>
      <p class="eyebrow">
@@ -1176,7 +1422,7 @@ body { overflow-x: hidden; }
     </div>
    </div>
   </section>
-  <section class="detail-section alt" id="senior-living-project-guidance">
+  <section class="detail-section alt mobile-collapsible-source" id="senior-living-project-guidance" data-mobile-collapse="Senior Living Artwork Guidance">
    <div class="detail-wrap">
     <div>
      <p class="eyebrow">
@@ -1228,7 +1474,7 @@ body { overflow-x: hidden; }
     </div>
    </div>
   </section>
-  <section class="detail-section alt">
+  <section class="detail-section alt mobile-collapsible-source" id="formats-project-support" data-mobile-collapse="Formats &amp; Project Support">
    <div class="detail-wrap">
     <div>
      <p class="eyebrow">
@@ -1277,7 +1523,7 @@ body { overflow-x: hidden; }
     </div>
    </div>
   </section>
-  <section class="detail-section" id="procurement-support">
+  <section class="detail-section mobile-collapsible-source" id="procurement-support" data-mobile-collapse="Procurement &amp; Installation Support">
    <div class="detail-wrap">
     <div>
      <p class="eyebrow">
@@ -1527,7 +1773,7 @@ body { overflow-x: hidden; }
     </article>
    </div>
   </section>
-<section class="detail-section" id="why-dan-sproul">
+<section class="detail-section mobile-collapsible-source" id="why-dan-sproul" data-mobile-collapse="Why Dan Sproul">
    <div class="detail-wrap">
     <div>
      <p class="eyebrow">
@@ -1579,7 +1825,7 @@ body { overflow-x: hidden; }
     </div>
    </div>
   </section>
-  <section class="faq-section">
+  <section class="faq-section mobile-collapsible-source" data-mobile-collapse="Senior Living Artwork FAQ">
    <div class="section-heading">
     <p class="eyebrow">
      Senior Living Artwork FAQ
@@ -1664,7 +1910,7 @@ body { overflow-x: hidden; }
       <a href="coastal-atmosphere.html">Coastal Atmosphere</a>
       <a href="mountain-light-collection.html">Mountain Light</a>
       <a href="monochrome-stillness.html">Monochrome Stillness</a>
-      <a href="heritage-mixed-media.html">Heritage & Mixed Media</a>
+      <a href="heritage-mixed-media.html">Heritage &amp; Mixed Media</a>
     </div>
 
     <div>
@@ -1697,7 +1943,7 @@ body { overflow-x: hidden; }
   </div>
 
   <div class="footer-bottom">
-    © 2026 Dan Sproul Fine Art Photography · Based in Lima, Ohio · Original Nature Photography & Heritage-Inspired Artwork
+    &copy; 2026 Dan Sproul Fine Art Photography &middot; Based in Lima, Ohio &middot; Original Nature Photography &amp; Heritage-Inspired Artwork
   </div>
 
 </footer>
@@ -1728,7 +1974,88 @@ body { overflow-x: hidden; }
    </div>
   </div>
   <script>
-   document.addEventListener('DOMContentLoaded',function(){var nav=document.querySelector('.site-nav-standard');var toggle=document.querySelector('.nav-toggle-standard');if(nav&&toggle){toggle.addEventListener('click',function(){var isOpen=nav.classList.toggle('is-open');toggle.setAttribute('aria-expanded',isOpen?'true':'false')})}const modal=document.getElementById('mockupModal');const modalImg=document.getElementById('mockupModalImg');const modalTitle=document.getElementById('mockupModalTitle');const modalDesc=document.getElementById('mockupModalDesc');const modalPrint=document.getElementById('mockupModalPrint');function openModal(card){const img=card.getAttribute('data-img')||card.querySelector('img')?.src||'';const title=card.getAttribute('data-title')||card.querySelector('h3')?.textContent||'Senior living artwork mockup';const desc=card.getAttribute('data-desc')||card.querySelector('p')?.textContent||'';const print=card.getAttribute('data-print')||'https://dansproul.com';modalImg.src=img;modalImg.alt=title+' preview';modalTitle.textContent=title;modalDesc.textContent=desc;modalPrint.href=print;modalPrint.textContent=print==='https://dansproul.com'?'Browse Prints':'View This Print';modal.classList.add('active');modal.setAttribute('aria-hidden','false');document.body.style.overflow='hidden'}function closeModal(){modal.classList.remove('active');modal.setAttribute('aria-hidden','true');modalImg.src='';document.body.style.overflow=''}document.querySelectorAll('.mockup-card').forEach(function(card){card.addEventListener('click',function(e){if(e.target.tagName.toLowerCase()==='a')return;openModal(card)})});document.querySelector('.mockup-modal-close')?.addEventListener('click',closeModal);document.getElementById('mockupModalCloseInline')?.addEventListener('click',closeModal);modal?.addEventListener('click',function(e){if(e.target===modal)closeModal()});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&modal.classList.contains('active'))closeModal()})});
+   document.addEventListener('DOMContentLoaded',function(){
+    var nav=document.querySelector('.site-nav-standard');
+    var toggle=document.querySelector('.nav-toggle-standard');
+    if(nav&&toggle){
+     toggle.addEventListener('click',function(){
+      var isOpen=nav.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded',isOpen?'true':'false');
+     });
+    }
+
+    document.querySelectorAll('.mobile-collapsible-source').forEach(function(section,index){
+     if(section.querySelector('.mobile-accordion-toggle')) return;
+
+     var label=section.getAttribute('data-mobile-collapse')||'Section';
+     var button=document.createElement('button');
+     button.type='button';
+     button.className='mobile-accordion-toggle';
+     button.setAttribute('aria-expanded','false');
+     button.textContent=label;
+
+     var panel=document.createElement('div');
+     panel.className='mobile-accordion-panel';
+     panel.id='mobile-panel-'+index;
+     button.setAttribute('aria-controls',panel.id);
+
+     while(section.firstChild){
+      panel.appendChild(section.firstChild);
+     }
+
+     section.appendChild(button);
+     section.appendChild(panel);
+
+     button.addEventListener('click',function(){
+      var isOpen=section.classList.toggle('is-mobile-open');
+      button.setAttribute('aria-expanded',isOpen?'true':'false');
+     });
+    });
+
+    var modal=document.getElementById('mockupModal');
+    var modalImg=document.getElementById('mockupModalImg');
+    var modalTitle=document.getElementById('mockupModalTitle');
+    var modalDesc=document.getElementById('mockupModalDesc');
+    var modalPrint=document.getElementById('mockupModalPrint');
+
+    function openModal(card){
+     var img=card.getAttribute('data-img')||card.querySelector('img')?.src||'';
+     var title=card.getAttribute('data-title')||card.querySelector('h3')?.textContent||'Senior living artwork mockup';
+     var desc=card.getAttribute('data-desc')||card.querySelector('p')?.textContent||'';
+     var print=card.getAttribute('data-print')||'https://dansproul.com';
+     modalImg.src=img;
+     modalImg.alt=title+' preview';
+     modalTitle.textContent=title;
+     modalDesc.textContent=desc;
+     modalPrint.href=print;
+     modalPrint.textContent=print==='https://dansproul.com'?'Browse Prints':'View This Print';
+     modal.classList.add('active');
+     modal.setAttribute('aria-hidden','false');
+     document.body.style.overflow='hidden';
+    }
+
+    function closeModal(){
+     modal.classList.remove('active');
+     modal.setAttribute('aria-hidden','true');
+     modalImg.src='';
+     document.body.style.overflow='';
+    }
+
+    document.querySelectorAll('.mockup-card').forEach(function(card){
+     card.addEventListener('click',function(e){
+      if(e.target.tagName.toLowerCase()==='a') return;
+      openModal(card);
+     });
+    });
+    document.querySelector('.mockup-modal-close')?.addEventListener('click',closeModal);
+    document.getElementById('mockupModalCloseInline')?.addEventListener('click',closeModal);
+    modal?.addEventListener('click',function(e){
+     if(e.target===modal) closeModal();
+    });
+    document.addEventListener('keydown',function(e){
+     if(e.key==='Escape'&&modal.classList.contains('active')) closeModal();
+    });
+   });
   </script>
  </body>
 </html>
