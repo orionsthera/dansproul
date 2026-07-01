@@ -435,59 +435,248 @@ h1{font-size:54px}
 
 
 
-/* ==========================================================
-   JULY 2026 MOBILE CONDENSE PASS — Healthcare page
-   Goal: reduce vertical scroll on phones without changing desktop.
-   1. Hide mockup cards after third per group (≤900px)
-   2. FAQ accordions on phones (≤680px)
-   3. Collapse Spec‑Download details on phones (≤680px)
-   ========================================================== */
 
-/* ---------- 1. MOCKUP GRIDS ---------- */
+
+/* FINAL HEALTHCARE MOBILE CONDENSE + COMPACT FOOTER PASS */
+.mobile-page-jump{display:none}
 @media(max-width:900px){
-  .mockup-grid .mockup-card:nth-of-type(n+4){display:none!important;}
+  .mockup-group.mobile-expanded .mockup-grid .mockup-card{display:block!important}
+  .mockup-grid .mockup-card:nth-of-type(n+4){display:none!important}
+  .show-more-mobile{
+    display:block;
+    width:100%;
+    margin:16px 0 0;
+    padding:13px 16px;
+    border:1px solid rgba(199,155,85,.45);
+    background:rgba(199,155,85,.08);
+    color:#c79b55;
+    font-family:Arial,Helvetica,sans-serif;
+    font-size:10px;
+    font-weight:700;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    cursor:pointer;
+  }
 }
-
-/* ---------- 2. FAQ ACCORDIONS ---------- */
+@media(min-width:901px){
+  .show-more-mobile{display:none!important}
+}
+@media(max-width:768px){
+  h1{font-size:clamp(2.2rem,9vw,3.05rem)!important;line-height:1.02!important;letter-spacing:-.04em!important}
+  h2{font-size:clamp(1.75rem,7vw,2.55rem)!important;line-height:1.06!important}
+  h3{font-size:clamp(1.35rem,5.4vw,1.75rem)!important;line-height:1.08!important}
+}
 @media(max-width:680px){
-  .faq-item p{display:none;}
-  .faq-item{cursor:pointer;}
+  .breadcrumbs{display:none!important}
+  .health-hero{
+    min-height:62vh!important;
+    padding:86px 22px 42px!important;
+    background-position:center!important;
+  }
+  .health-hero p{font-size:14px!important;line-height:1.55!important}
+  .health-hero .btns{display:grid!important;grid-template-columns:1fr!important;gap:9px!important;margin-top:18px!important}
+  .btn{width:100%!important;text-align:center!important;padding:12px 14px!important;font-size:10px!important;line-height:1.3!important}
+
+  .trust-strip{
+    display:grid!important;
+    grid-template-columns:repeat(2,1fr)!important;
+    gap:1px!important;
+    padding:10px 12px!important;
+  }
+  .trust-strip span{
+    border:1px solid rgba(199,155,85,.16)!important;
+    padding:9px 7px!important;
+    font-size:9px!important;
+    line-height:1.3!important;
+  }
+
+  .mobile-page-jump{
+    position:sticky;
+    top:64px;
+    z-index:90;
+    display:flex!important;
+    gap:7px;
+    overflow-x:auto;
+    scrollbar-width:none;
+    padding:10px 12px;
+    background:#100d0a;
+    border-bottom:1px solid var(--line);
+  }
+  .mobile-page-jump::-webkit-scrollbar{display:none}
+  .mobile-page-jump a{
+    flex:0 0 auto;
+    text-decoration:none;
+    border:1px solid rgba(199,155,85,.28);
+    background:rgba(199,155,85,.07);
+    color:#d8cbb9;
+    padding:8px 10px;
+    font-family:Arial,Helvetica,sans-serif;
+    font-size:9px;
+    font-weight:700;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+  }
+
+  .intro,.jump-section,.mockup-feature,.project-details,.spec-download,.gallery-preview,.faq-section,.related-collections,.footer-cta,.healthcare-spec-resource{
+    padding:42px 22px!important;
+  }
+  .section-heading{margin-bottom:28px!important}
+  .intro-grid,.project-wrap,.spec-download-inner,.jump-inner,.group-heading,.healthcare-spec-resource .spec-resource-inner{
+    grid-template-columns:1fr!important;
+    gap:22px!important;
+  }
+  .group-heading{
+    margin-bottom:18px!important;
+    padding-bottom:16px!important;
+  }
+  .mockup-group{
+    margin-bottom:42px!important;
+  }
+  .mockup-grid,.mini-gallery,.related-grid,.trust-strip,.project-card-grid,.faq-grid,.spec-mockups,.spec-resource-meta{
+    grid-template-columns:1fr!important;
+    gap:12px!important;
+  }
+  .mockup-card img{
+    height:220px!important;
+    object-fit:cover!important;
+  }
+  .mockup-copy,.project-card,.faq-item,.related-card,.gallery-item div,.spec-download-box{
+    padding:18px!important;
+  }
+  .mockup-copy p,.project-card p,.faq-item p,.related-card p,.gallery-item p,p{
+    font-size:13.5px!important;
+    line-height:1.55!important;
+  }
+  .mockup-actions{
+    margin-top:13px!important;
+    gap:8px!important;
+  }
+  .mockup-actions button,.mockup-actions a{
+    width:100%!important;
+    text-align:center!important;
+    padding:10px 11px!important;
+    font-size:9px!important;
+  }
+
+  /* Collapse heavier text blocks on mobile without removing content */
+  .project-details .project-wrap > div:first-child p:nth-of-type(n+3),
+  .intro .intro-grid > div:last-child p:nth-of-type(n+2),
+  #why-nature-artwork-works .intro-grid > div:last-child p:nth-of-type(n+2),
+  #procurement-support .project-wrap > div:first-child p:nth-of-type(n+3){
+    display:none!important;
+  }
+
+  .jump-section{
+    display:none!important;
+  }
+
+  .spec-resource-copy p{
+    max-height:4.8em;
+    overflow:hidden;
+  }
+  .spec-resource-meta{
+    margin-top:22px!important;
+  }
+  .spec-preview-wrap::before{display:none!important}
+  .spec-preview-link{padding:8px!important}
+  .spec-preview-caption{font-size:9px!important;line-height:1.4!important}
+
+  .gallery-item img{height:170px!important;object-fit:cover!important}
+  .mini-gallery .gallery-item:nth-of-type(n+3){display:none!important}
+
+  .related-grid .related-card:nth-of-type(n+5){display:none!important}
+  .related-card{min-height:auto!important}
+
+  /* FAQ accordion */
+  .faq-item{cursor:pointer!important}
+  .faq-item p{display:none}
   .faq-item::after{
     content:'+';
     float:right;
+    color:var(--gold);
     font-size:20px;
     line-height:1;
-    color:var(--gold);
+    margin-top:-22px;
   }
-  .faq-item.open::after{content:'–';}
-  .faq-item.open p{display:block;}
+  .faq-item.open::after{content:'–'}
+  .faq-item.open p{display:block}
+
+  .footer-cta{
+    padding:42px 22px!important;
+  }
+  .footer-cta h2{max-width:100%!important}
+
+  /* Keep same footer content, but make it much shorter and easier on mobile */
+  .site-footer{
+    padding:30px 18px 24px!important;
+  }
+  .site-footer .footer-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:20px 16px!important;
+    max-width:680px!important;
+  }
+  .site-footer .footer-grid h3{
+    font-size:18px!important;
+    margin-bottom:8px!important;
+  }
+  .site-footer .footer-grid a{
+    font-size:11.5px!important;
+    line-height:1.35!important;
+    margin-bottom:7px!important;
+  }
+  .site-footer .footer-bottom{
+    text-align:left!important;
+    margin-top:24px!important;
+    padding-top:18px!important;
+    font-size:8.5px!important;
+    letter-spacing:.11em!important;
+    line-height:1.65!important;
+  }
+
+  /* Mobile modal */
+  .mockup-modal{
+    align-items:flex-start!important;
+    overflow-y:auto!important;
+    padding:56px 12px 16px!important;
+  }
+  .mockup-modal-card{
+    width:100%!important;
+    max-height:none!important;
+  }
+  .mockup-modal-card img{
+    max-height:42vh!important;
+  }
+  .mockup-modal-copy{
+    padding:18px!important;
+  }
+  .mockup-modal-specs{
+    grid-template-columns:1fr!important;
+    gap:8px!important;
+    margin:14px 0!important;
+  }
+  .mockup-modal-specs div{
+    padding:11px!important;
+  }
+  .mockup-modal-actions a,.mockup-modal-actions button{
+    width:100%!important;
+    text-align:center!important;
+  }
+  .mockup-modal-close{
+    position:fixed!important;
+    top:8px!important;
+    right:10px!important;
+    width:40px!important;
+    height:40px!important;
+    font-size:26px!important;
+  }
+}
+@media(max-width:430px){
+  .site-footer .footer-grid{
+    grid-template-columns:1fr 1fr!important;
+    gap:18px 12px!important;
+  }
 }
 
-/* ---------- 3. SPEC DOWNLOAD ---------- */
-@media(max-width:680px){
-  .spec-download-box ul{display:none;}
-  .spec-download-inner{grid-template-columns:1fr!important;}
-  .spec-resource-toggle{
-    display:block;
-    margin-top:14px;
-    font-size:.58rem;
-    letter-spacing:.22em;
-    text-transform:uppercase;
-    color:var(--gold);
-    cursor:pointer;
-  }
-  .spec-download-box.closed ul{display:none;}
-  .spec-download-box.closed::after{
-    content:'Tap to view details';
-    display:block;
-    margin-top:12px;
-    font-size:.58rem;
-    letter-spacing:.22em;
-    color:var(--gold);
-  }
-  .spec-download-box.open ul{display:block;}
-  .spec-download-box.open::after{display:none;}
-}
 </style>
 
 <script type="application/ld+json">
@@ -630,6 +819,16 @@ h1{font-size:54px}
   <span>Healthcare Corridors</span>
   <span>Oncology &amp; Wellness</span>
 </section>
+
+<nav class="mobile-page-jump" aria-label="Healthcare page quick links">
+  <a href="#waiting-rooms">Waiting</a>
+  <a href="#patient-rooms">Patient</a>
+  <a href="#corridors">Corridors</a>
+  <a href="#therapy">Therapy</a>
+  <a href="#healthcare-spec-sheet">Spec Sheet</a>
+  <a href="#curated-gallery">Gallery</a>
+</nav>
+
 <section class="mockup-feature">
   <div class="section-heading center">
     <p class="eyebrow">Artwork in Healthcare Spaces</p>
@@ -1240,31 +1439,28 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 
 
+
+
 <script>
 document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('.show-more-mobile').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var group = btn.closest('.mockup-group');
+      if(!group) return;
+      var expanded = group.classList.toggle('mobile-expanded');
+      btn.textContent = expanded ? 'Show fewer examples' : 'Show more examples';
+    });
+  });
 
-  // FAQ accordion
-  var faqItems = document.querySelectorAll('.faq-item');
-  faqItems.forEach(function(it){
+  document.querySelectorAll('.faq-item').forEach(function(it){
     it.addEventListener('click',function(){
       if(window.innerWidth <= 680){
         it.classList.toggle('open');
       }
     },{passive:true});
   });
-
-  // Spec box toggle
-  var specBox = document.querySelector('.spec-download-box');
-  if(specBox){
-    specBox.classList.add('closed');
-    specBox.addEventListener('click',function(){
-      if(window.innerWidth <= 680){
-        specBox.classList.toggle('open');
-        specBox.classList.toggle('closed');
-      }
-    },{passive:true});
-  }
 });
 </script>
+
 </body>
 </html>
