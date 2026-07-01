@@ -606,9 +606,12 @@ body::before{
   }
 }
 
-/* ── FINAL CENTERED LOWER SECTIONS + ARTWORK GUIDES FIX ───────────── */
+
+
+/* FINAL IN YOUR SPACE COMPACT GUIDES + ORIGINAL FOOTER MOBILE UX */
 #related-collections{
   text-align:center;
+  padding-bottom:34px!important;
 }
 #related-collections .sec-header{
   max-width:980px;
@@ -630,6 +633,8 @@ body::before{
   text-align:center;
   flex-direction:column;
   align-items:center;
+  margin-bottom:0!important;
+  border-bottom:1px solid var(--border);
 }
 .cta-strip.cta-centered p{
   margin:0 auto;
@@ -638,56 +643,254 @@ body::before{
   justify-content:center;
 }
 
-.artwork-guides-help{
+.artwork-guides-card-section{
   background:#100e0b;
-  border-top:1px solid var(--border);
+  padding:34px 56px 42px;
   border-bottom:1px solid var(--border);
-  padding:64px 56px;
-  text-align:center;
 }
-.artwork-guides-help .guides-inner{
-  max-width:880px;
+.artwork-guides-card{
+  max-width:1180px;
   margin:0 auto;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:28px;
+  align-items:center;
+  padding:30px 34px;
+  background:linear-gradient(135deg,rgba(181,146,74,.10),rgba(242,239,232,.035));
+  border:1px solid rgba(181,146,74,.20);
 }
-.artwork-guides-help .guides-title{
-  max-width:760px;
-  margin:0 auto 18px;
-  font-family:'Cormorant Garamond',serif;
-  font-size:clamp(1.8rem,3vw,2.7rem);
-  font-weight:300;
-  line-height:1.08;
-  color:var(--off-white);
-}
-.artwork-guides-help .guides-copy{
-  max-width:720px;
-  margin:0 auto;
-  color:var(--muted-2);
-  font-size:.76rem;
-  line-height:1.9;
-}
-.artwork-guides-help .guides-actions{
-  margin-top:28px;
-  display:flex;
-  justify-content:center;
-}
-.artwork-guides-help .eyebrow{
+.artwork-guides-card .eyebrow{
   display:block;
-  margin-bottom:14px;
+  margin-bottom:10px;
   color:var(--accent);
   font-size:.52rem;
   letter-spacing:.36em;
   text-transform:uppercase;
 }
-@media(max-width:680px){
-  .artwork-guides-help{
-    padding:48px 22px!important;
+.artwork-guides-card h2{
+  margin:0 0 10px;
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(1.7rem,2.6vw,2.45rem);
+  font-weight:300;
+  line-height:1.08;
+  color:var(--off-white);
+}
+.artwork-guides-card p{
+  max-width:760px;
+  color:var(--muted-2);
+  font-size:.76rem;
+  line-height:1.85;
+}
+.guides-card-actions{
+  display:flex;
+  justify-content:flex-end;
+}
+
+/* Keep original footer content and desktop appearance, only improve mobile behavior */
+.site-footer{
+  display:block!important;
+}
+.site-footer .footer-grid{
+  max-width:1380px!important;
+}
+.site-footer .footer-grid a{
+  overflow-wrap:anywhere!important;
+}
+@media(max-width:960px){
+  .artwork-guides-card{
+    grid-template-columns:1fr;
+    gap:20px;
+    text-align:left;
   }
-  .artwork-guides-help .guides-copy{
+  .guides-card-actions{
+    justify-content:flex-start;
+  }
+}
+@media(max-width:768px){
+  .hero h1,
+  h1{
+    font-size:clamp(2.25rem,9vw,3rem)!important;
+    line-height:1.04!important;
+  }
+  .sec-title,
+  .preview-intro h2,
+  .cta-strip h3,
+  h2{
+    font-size:clamp(1.85rem,7vw,2.7rem)!important;
+    line-height:1.08!important;
+  }
+  #lb{
+    align-items:flex-start!important;
+    overflow-y:auto!important;
+    padding:56px 14px 18px!important;
+  }
+  #lb-img{
+    max-width:100%!important;
+    max-height:58vh!important;
+  }
+  #lb-info{
+    padding:14px 8px 0!important;
+  }
+  #lb-shop{
+    width:100%!important;
+    justify-content:center!important;
+  }
+  #lb-close{
+    position:fixed!important;
+    top:10px!important;
+    right:12px!important;
+  }
+}
+@media(max-width:680px){
+  .hero{
+    padding:92px 22px 0!important;
+  }
+  .hero-left{
+    padding-bottom:34px!important;
+  }
+  .hero-img-wrap{
+    height:300px!important;
+  }
+  .hero-explainer{
+    padding:16px 18px!important;
+    margin-bottom:22px!important;
+  }
+  .hero-explainer p,
+  .preview-intro p,
+  .sec-feeling,
+  .cta-strip p,
+  p{
     font-size:14px!important;
     line-height:1.65!important;
   }
+  .room-preview-tool,
+  .iys-section,
+  .cta-strip{
+    padding:44px 22px!important;
+  }
+  .how-banner{
+    padding:16px 22px!important;
+    gap:12px!important;
+  }
+  .filter-nav{
+    padding:0 22px!important;
+    top:64px!important;
+  }
+  .filter-btn{
+    padding:15px 16px!important;
+  }
+  .feat-card img{
+    height:310px!important;
+  }
+  .feat-bar{
+    padding:22px 20px 18px!important;
+  }
+  .feat-bar-top,
+  .m-bottom,
+  .shop-section-strip,
+  .cta-strip{
+    flex-direction:column!important;
+    align-items:flex-start!important;
+  }
+  .cta-strip.cta-centered{
+    align-items:center!important;
+    text-align:center!important;
+  }
+  .m-bar{
+    padding:16px!important;
+  }
+  .preview-stage{
+    min-height:320px!important;
+  }
+  .preview-panel{
+    padding:20px!important;
+  }
+  .preview-actions{
+    flex-direction:column!important;
+  }
+  .purchase-artwork-btn,
+  .save-preview-btn,
+  .reset-preview-btn,
+  .btn,
+  .sss-link{
+    width:100%!important;
+    text-align:center!important;
+    justify-content:center!important;
+  }
+
+  #related-collections{
+    padding:40px 22px!important;
+  }
   #related-collections .sec-guidance{
-    justify-content:flex-start;
+    display:grid!important;
+    grid-template-columns:1fr 1fr!important;
+    gap:8px!important;
+    justify-content:stretch!important;
+  }
+  #related-collections .guidance-pill{
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    min-height:38px!important;
+    padding:8px 9px!important;
+    line-height:1.35!important;
+    text-align:center!important;
+  }
+
+  .artwork-guides-card-section{
+    padding:22px 16px 30px!important;
+  }
+  .artwork-guides-card{
+    padding:22px 20px!important;
+    gap:18px!important;
+  }
+  .artwork-guides-card p{
+    font-size:14px!important;
+    line-height:1.65!important;
+  }
+
+  /* More compact but same footer content */
+  .site-footer{
+    padding:32px 18px 26px!important;
+  }
+  .site-footer .footer-grid{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:22px 18px!important;
+    max-width:680px!important;
+    margin:0 auto!important;
+  }
+  .site-footer .footer-grid h3{
+    font-size:18px!important;
+    margin-bottom:8px!important;
+  }
+  .site-footer .footer-grid a{
+    font-size:12px!important;
+    line-height:1.45!important;
+    margin-bottom:8px!important;
+  }
+  .site-footer .footer-grid > div{
+    padding:0!important;
+  }
+  .site-footer .footer-bottom{
+    text-align:left!important;
+    margin-top:24px!important;
+    padding-top:18px!important;
+    font-size:9px!important;
+    letter-spacing:.12em!important;
+    line-height:1.7!important;
+  }
+}
+@media(max-width:430px){
+  .site-footer .footer-grid{
+    grid-template-columns:1fr 1fr!important;
+    gap:20px 14px!important;
+  }
+  .site-footer .footer-grid h3{
+    font-size:17px!important;
+  }
+  .site-footer .footer-grid a{
+    font-size:11.5px!important;
   }
 }
 
@@ -753,7 +956,14 @@ body::before{
       ],
       "primaryImageOfPage": {
         "@id": "https://dsproul.com/warm modern living room mountain reflection mockup.jpg#image"
-      }
+      },
+      "hasPart": [
+        {"@type":"WebPageElement","name":"Interactive Room Preview Tool"},
+        {"@type":"WebPageElement","name":"Bedroom Artwork Mockups"},
+        {"@type":"WebPageElement","name":"Living Room Artwork Mockups"},
+        {"@type":"WebPageElement","name":"Office and Hospitality Artwork Mockups"},
+        {"@type":"WebPageElement","name":"Artwork Guides"}
+      ]
     },
     {
       "@type": "BreadcrumbList",
@@ -1469,19 +1679,20 @@ body::before{
     <a href="https://dansproul.com/shop" target="_blank" class="btn btn-out">Shop All Prints</a>
   </div>
 </div>
-<section class="artwork-guides-help" id="artwork-guides-help">
-  <div class="guides-inner">
-    <p class="eyebrow">Artwork Guides</p>
-    <h2 class="guides-title">Learn how to choose the right artwork for your space.</h2>
-    <p class="guides-copy">
-      Explore practical guides on artwork sizing, framing, placement, and choosing nature photography
-      for living rooms, bedrooms, offices, hospitality spaces, and everyday interiors.
-    </p>
-    <div class="guides-actions">
-      <a class="btn btn-solid" href="artwork-guides.html">Visit Artwork Guides</a>
+
+<section class="artwork-guides-card-section" id="artwork-guides-help">
+  <div class="artwork-guides-card">
+    <div class="guides-card-copy">
+      <p class="eyebrow">Artwork Guides</p>
+      <h2>Learn how to choose artwork for your home or project.</h2>
+      <p>Explore guides on sizing, framing, placement, and selecting nature artwork for living rooms, bedrooms, offices, hospitality spaces, and healthcare environments.</p>
+    </div>
+    <div class="guides-card-actions">
+      <a class="btn btn-solid" href="artwork-guides.html">Explore Guides</a>
     </div>
   </div>
 </section>
+
 
 
  
@@ -1489,52 +1700,6 @@ body::before{
 
 
 <!-- FOOTER -->
-<script>
-function openFDLightbox(card){
-  var img = card.querySelector('img');
-  var lb  = document.getElementById('fd-lightbox');
-  var lbi = document.getElementById('fd-lightbox-img');
-  lbi.src = img.src;
-  lbi.alt = img.alt;
-  lb.style.display = 'flex';
-  document.body.style.overflow = 'hidden';
-}
-function openFDLightboxSrc(src, alt){
-  var lb  = document.getElementById('fd-lightbox');
-  var lbi = document.getElementById('fd-lightbox-img');
-  lbi.src = src;
-  lbi.alt = alt || '';
-  lb.style.display = 'flex';
-  document.body.style.overflow = 'hidden';
-}
-function closeFDLightbox(){
-  document.getElementById('fd-lightbox').style.display = 'none';
-  document.body.style.overflow = '';
-}
-</script>
-<!-- STICKY BOTTOM CTA — appears after scroll -->
-<div class="sticky-cta" id="stickyCta">
-  <p class="sticky-cta-text"><strong>Ready to source art for a project?</strong> Send a room photo and get a free digital mockup.</p>
-  <div class="sticky-cta-actions">
-    <a href="mailto:sproulphoto@gmail.com?subject=Mockup Request" class="btn-download" style="text-decoration:none">Request a Mockup</a>
-    <a href="#resources" class="btn-download" style="background:transparent;color:var(--accent);border-color:rgba(181,146,74,.4)">Download Specs</a>
-  </div>
-</div>
-
-<script>
-// Sticky CTA visibility
-(function(){
-  var bar = document.getElementById('stickyCta');
-  if(!bar) return;
-  window.addEventListener('scroll', function(){
-    bar.classList.toggle('visible', window.scrollY > 400);
-  });
-})();
-</script>
-
-
-
-
 <footer id="footer" class="site-footer">
 
   <div class="footer-grid">
@@ -1595,21 +1760,6 @@ function closeFDLightbox(){
   </div>
 
 </footer>
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  var nav = document.querySelector('.site-nav-standard');
-  var toggle = document.querySelector('.nav-toggle-standard');
-  if (nav && toggle) {
-    toggle.addEventListener('click', function () {
-      var isOpen = nav.classList.toggle('is-open');
-      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-    });
-  }
-});
-</script>
-
-</body>
-</html>
 
 
 <script>
@@ -1641,18 +1791,7 @@ window.addEventListener('scroll',function(){
 });
 </script>
 
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  var nav = document.querySelector('.site-nav-standard');
-  var toggle = document.querySelector('.nav-toggle-standard');
-  if (nav && toggle) {
-    toggle.addEventListener('click', function () {
-      var isOpen = nav.classList.toggle('is-open');
-      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-    });
-  }
-});
-</script>
+
 
 
 
@@ -1750,5 +1889,18 @@ const artworkOptions = [
 })();
 </script>
 
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var nav = document.querySelector('.site-nav-standard');
+  var toggle = document.querySelector('.nav-toggle-standard');
+  if (nav && toggle) {
+    toggle.addEventListener('click', function () {
+      var isOpen = nav.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+  }
+});
+</script>
 </body>
 </html>
