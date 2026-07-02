@@ -93,74 +93,47 @@ h3{font-size:30px;letter-spacing:-.03em}
 .mockup-card:focus-within{outline:2px solid rgba(199,155,85,.55);outline-offset:3px}
 
 
-/* Therapy office guide resource card */
-.therapy-resource-card{
-  margin-top:28px;
+/* Focused healthcare guide pathways */
+.focused-pathways{
+  padding:clamp(76px,8vw,108px) 7vw;
+  background:#15110d;
+  color:#f4efe6;
+  border-top:1px solid rgba(199,155,85,.24);
+  border-bottom:1px solid rgba(199,155,85,.24);
+}
+.focused-pathways-inner{max-width:1180px;margin:0 auto}
+.focused-pathways-head{
   display:grid;
-  grid-template-columns:minmax(0,1.05fr) minmax(280px,.95fr);
-  gap:22px;
-  align-items:stretch;
-  border:1px solid rgba(199,155,85,.26);
-  background:linear-gradient(135deg,rgba(255,255,255,.045),rgba(199,155,85,.055));
-  box-shadow:0 22px 60px rgba(0,0,0,.24);
+  grid-template-columns:minmax(0,.95fr) minmax(320px,1.05fr);
+  gap:38px;
+  align-items:end;
+  margin-bottom:34px;
 }
-.therapy-resource-copy{
-  padding:clamp(24px,3vw,34px);
-}
-.therapy-resource-copy h3{
-  margin:0 0 12px;
-  max-width:620px;
-  font-size:clamp(30px,3.3vw,46px);
-  line-height:1.02;
-}
-.therapy-resource-copy p{
-  max-width:660px;
-  margin:0;
-  color:#d8cbb9;
-  font-size:15px;
-  line-height:1.75;
-}
-.therapy-resource-actions{
+.focused-pathways-head h2{font-size:clamp(36px,4.8vw,64px)}
+.focused-pathways-head p{margin:0;color:#d3c7b7;max-width:620px}
+.focused-pathway-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.focused-pathway-card{
   display:flex;
-  flex-wrap:wrap;
-  gap:12px;
-  margin-top:24px;
-}
-.therapy-resource-actions a{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  min-height:42px;
-  padding:0 18px;
-  border:1px solid rgba(199,155,85,.55);
+  flex-direction:column;
+  min-height:100%;
+  background:#100d0a;
+  border:1px solid rgba(199,155,85,.22);
   color:#f4efe6;
   text-decoration:none;
-  font-family:Arial,Helvetica,sans-serif;
-  font-size:10px;
-  font-weight:700;
-  letter-spacing:.14em;
-  text-transform:uppercase;
+  overflow:hidden;
+  box-shadow:0 22px 60px rgba(0,0,0,.28);
+  transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;
 }
-.therapy-resource-actions a.primary{
-  background:var(--gold);
-  border-color:var(--gold);
-  color:#14100b;
+.focused-pathway-card:hover{
+  transform:translateY(-4px);
+  border-color:rgba(199,155,85,.55);
+  box-shadow:0 30px 78px rgba(0,0,0,.38);
 }
-.therapy-resource-list{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:1px;
-  background:rgba(199,155,85,.20);
-  border-left:1px solid rgba(199,155,85,.20);
-}
-.therapy-resource-list div{
-  min-height:100%;
-  padding:22px;
-  background:#15110d;
-}
-.therapy-resource-list strong{
+.focused-pathway-card img{height:235px;width:100%;object-fit:cover}
+.focused-pathway-copy{display:flex;flex-direction:column;flex:1;padding:24px}
+.focused-pathway-copy span{
   display:block;
-  margin-bottom:8px;
+  margin-bottom:12px;
   color:#c79b55;
   font-family:Arial,Helvetica,sans-serif;
   font-size:10px;
@@ -168,23 +141,29 @@ h3{font-size:30px;letter-spacing:-.03em}
   letter-spacing:.16em;
   text-transform:uppercase;
 }
-.therapy-resource-list span{
-  color:#d8cbb9;
-  font-size:13px;
-  line-height:1.6;
+.focused-pathway-copy h3{font-size:clamp(27px,2.7vw,36px);margin-bottom:10px}
+.focused-pathway-copy p{color:#d8cbb9;font-size:14px;line-height:1.65;margin:0}
+.focused-pathway-copy .pathway-cta{
+  margin-top:auto;
+  padding-top:22px;
+  color:#d5b365;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.16em;
+  text-transform:uppercase;
 }
 @media(max-width:1000px){
-  .therapy-resource-card{grid-template-columns:1fr}
-  .therapy-resource-list{border-left:0;border-top:1px solid rgba(199,155,85,.20)}
+  .focused-pathways-head{grid-template-columns:1fr}
+  .focused-pathway-grid{grid-template-columns:1fr 1fr}
 }
 @media(max-width:680px){
-  .therapy-resource-card{margin-top:18px!important}
-  .therapy-resource-copy{padding:18px!important}
-  .therapy-resource-copy p{font-size:13.5px!important;line-height:1.55!important}
-  .therapy-resource-actions{display:grid!important;grid-template-columns:1fr!important;gap:9px!important;margin-top:18px!important}
-  .therapy-resource-actions a{width:100%!important;text-align:center!important;padding:11px 12px!important;font-size:9px!important;line-height:1.3!important}
-  .therapy-resource-list{grid-template-columns:1fr!important}
-  .therapy-resource-list div{padding:16px!important}
+  .focused-pathways{padding:42px 22px!important}
+  .focused-pathways-head{gap:18px;margin-bottom:22px}
+  .focused-pathway-grid{grid-template-columns:1fr!important;gap:13px!important}
+  .focused-pathway-card img{height:190px!important}
+  .focused-pathway-copy{padding:18px!important}
+  .focused-pathway-copy p{font-size:13.5px!important;line-height:1.55!important}
 }
 
 /* detail and spec */
@@ -921,7 +900,7 @@ h1{font-size:54px}
   <a href="#patient-rooms">Patient</a>
   <a href="#corridors">Corridors</a>
   <a href="#therapy">Therapy</a>
-  <a href="calming-water-art-therapy-offices.html">Water Guide</a>
+  <a href="#focused-pathways">Guides</a>
   <a href="#healthcare-spec-sheet">Spec Sheet</a>
   <a href="#curated-gallery">Gallery</a>
 </nav>
@@ -1023,23 +1002,6 @@ h1{font-size:54px}
         <div class="mockup-copy"><span class="priority-label">Therapy / Consultation</span><h3>Biophilic Office Focus</h3><p>A green canopy scene supports a softer consultation atmosphere and brings organic texture into private care spaces.</p><div class="mockup-actions"><button type="button">Enlarge</button><a href="https://dansproul.com/featured/angel-oak-wide-angle-dan-sproul.html" target="_blank" rel="noopener">View This Print</a></div></div>
       </article>
     </div>
-
-    <aside class="therapy-resource-card" aria-label="Related therapy office water artwork guide">
-      <div class="therapy-resource-copy">
-        <p class="eyebrow">Related Therapy Office Guide</p>
-        <h3>10 Calming Water Images for Therapy Offices</h3>
-        <p>A focused guide for counseling rooms, private practices, wellness offices, and waiting areas that need softer water-based artwork. Includes room mockups, placement notes, format guidance, and direct print links.</p>
-        <div class="therapy-resource-actions">
-          <a class="primary" href="calming-water-art-therapy-offices.html">View Water Artwork Guide</a>
-          <a href="wellness-waters-collection.html">Browse Wellness Waters</a>
-        </div>
-      </div>
-      <div class="therapy-resource-list">
-        <div><strong>Best for</strong><span>Therapy offices, counseling rooms, wellness clinics, and quiet waiting areas.</span></div>
-        <div><strong>Includes</strong><span>Four room mockups plus ten calming water image selections with purchase links.</span></div>
-        <div><strong>Use when</strong><span>A healthcare space needs softer motion, natural calm, and a less clinical feeling.</span></div>
-      </div>
-    </aside>
   </div>
 
   <div class="mockup-group" id="senior-living">
@@ -1137,6 +1099,51 @@ h1{font-size:54px}
     </div>
   </div>
 </section>
+
+<section class="focused-pathways" id="focused-pathways" aria-label="Focused healthcare artwork guide pathways">
+  <div class="focused-pathways-inner">
+    <div class="focused-pathways-head">
+      <div>
+        <p class="eyebrow">Focused Artwork Guides</p>
+        <h2>Choose a focused artwork path.</h2>
+      </div>
+      <p>For more specific projects, start with one of these focused resources. Each pathway gives the healthcare page a clearer next step without making this overview page too long.</p>
+    </div>
+
+    <div class="focused-pathway-grid">
+      <a class="focused-pathway-card" href="healthcare-oncology.html">
+        <img src="healthcare injection room mockup turquoise river.jpg" alt="Oncology infusion room with calming turquoise river landscape artwork by Dan Sproul" loading="lazy" decoding="async">
+        <div class="focused-pathway-copy">
+          <span>Specialized Care</span>
+          <h3>Oncology Artwork</h3>
+          <p>Calming nature photography for infusion spaces, oncology waiting areas, treatment rooms, and patient-centered healthcare interiors.</p>
+          <div class="pathway-cta">Explore Oncology Page &rarr;</div>
+        </div>
+      </a>
+
+      <a class="focused-pathway-card" href="senior-living-artwork.html">
+        <img src="senior-living-lobby-mockup-foggy-road.jpg" alt="Senior living lounge with warm foggy country lane artwork by Dan Sproul" loading="lazy" decoding="async">
+        <div class="focused-pathway-copy">
+          <span>Senior Living</span>
+          <h3>Senior Living Artwork</h3>
+          <p>Warm, familiar nature photography for resident lounges, assisted living corridors, dining spaces, wellness areas, and shared community interiors.</p>
+          <div class="pathway-cta">Explore Senior Living Page &rarr;</div>
+        </div>
+      </a>
+
+      <a class="focused-pathway-card" href="calming-water-art-therapy-offices.html">
+        <img src="wellness lobby water scene.jpg" alt="Wellness office with calming forest stream water artwork by Dan Sproul" loading="lazy" decoding="async">
+        <div class="focused-pathway-copy">
+          <span>Therapy &amp; Wellness</span>
+          <h3>Calming Water for Therapy Offices</h3>
+          <p>A curated guide to calming water images for therapy offices, counseling rooms, wellness practices, and quieter healthcare interiors.</p>
+          <div class="pathway-cta">View Therapy Water Guide &rarr;</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
 <section class="jump-section">
   <div class="jump-inner">
     <div>
@@ -1150,7 +1157,7 @@ h1{font-size:54px}
       <a href="#patient-rooms">Patient Rooms</a>
       <a href="#corridors">Corridors</a>
       <a href="#therapy">Therapy Offices</a>
-      <a href="calming-water-art-therapy-offices.html">Therapy Water Guide</a>
+      <a href="#focused-pathways">Focused Guides</a>
       <a href="#senior-living">Senior Living</a>
       <a href="senior-living-artwork.html">Senior Living Page</a>
       <a href="healthcare-oncology.html">Oncology</a>
