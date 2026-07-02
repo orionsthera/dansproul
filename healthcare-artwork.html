@@ -92,6 +92,101 @@ h3{font-size:30px;letter-spacing:-.03em}
 .mockup-actions a.pending{display:none}
 .mockup-card:focus-within{outline:2px solid rgba(199,155,85,.55);outline-offset:3px}
 
+
+/* Therapy office guide resource card */
+.therapy-resource-card{
+  margin-top:28px;
+  display:grid;
+  grid-template-columns:minmax(0,1.05fr) minmax(280px,.95fr);
+  gap:22px;
+  align-items:stretch;
+  border:1px solid rgba(199,155,85,.26);
+  background:linear-gradient(135deg,rgba(255,255,255,.045),rgba(199,155,85,.055));
+  box-shadow:0 22px 60px rgba(0,0,0,.24);
+}
+.therapy-resource-copy{
+  padding:clamp(24px,3vw,34px);
+}
+.therapy-resource-copy h3{
+  margin:0 0 12px;
+  max-width:620px;
+  font-size:clamp(30px,3.3vw,46px);
+  line-height:1.02;
+}
+.therapy-resource-copy p{
+  max-width:660px;
+  margin:0;
+  color:#d8cbb9;
+  font-size:15px;
+  line-height:1.75;
+}
+.therapy-resource-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:24px;
+}
+.therapy-resource-actions a{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:42px;
+  padding:0 18px;
+  border:1px solid rgba(199,155,85,.55);
+  color:#f4efe6;
+  text-decoration:none;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
+.therapy-resource-actions a.primary{
+  background:var(--gold);
+  border-color:var(--gold);
+  color:#14100b;
+}
+.therapy-resource-list{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:1px;
+  background:rgba(199,155,85,.20);
+  border-left:1px solid rgba(199,155,85,.20);
+}
+.therapy-resource-list div{
+  min-height:100%;
+  padding:22px;
+  background:#15110d;
+}
+.therapy-resource-list strong{
+  display:block;
+  margin-bottom:8px;
+  color:#c79b55;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
+.therapy-resource-list span{
+  color:#d8cbb9;
+  font-size:13px;
+  line-height:1.6;
+}
+@media(max-width:1000px){
+  .therapy-resource-card{grid-template-columns:1fr}
+  .therapy-resource-list{border-left:0;border-top:1px solid rgba(199,155,85,.20)}
+}
+@media(max-width:680px){
+  .therapy-resource-card{margin-top:18px!important}
+  .therapy-resource-copy{padding:18px!important}
+  .therapy-resource-copy p{font-size:13.5px!important;line-height:1.55!important}
+  .therapy-resource-actions{display:grid!important;grid-template-columns:1fr!important;gap:9px!important;margin-top:18px!important}
+  .therapy-resource-actions a{width:100%!important;text-align:center!important;padding:11px 12px!important;font-size:9px!important;line-height:1.3!important}
+  .therapy-resource-list{grid-template-columns:1fr!important}
+  .therapy-resource-list div{padding:16px!important}
+}
+
 /* detail and spec */
 .project-details{padding:95px 7vw;background:#100d0a;border-top:1px solid var(--line)}
 .project-details.alt{background:var(--paper);color:var(--dark)}
@@ -729,6 +824,7 @@ h1{font-size:54px}
       "hasPart":[
         {"@type":"WebPage","name":"Oncology Artwork for Infusion Centers and Healing Spaces","url":"https://dsproul.com/healthcare-oncology.html"},
         {"@type":"WebPage","name":"Senior Living Artwork for Assisted Living and Residential Care Communities","url":"https://dsproul.com/senior-living-artwork.html"},
+        {"@type":"WebPage","name":"10 Calming Water Images for Therapy Offices","url":"https://dsproul.com/calming-water-art-therapy-offices.html"},
         {"@type":"WebPageElement","name":"Healthcare artwork applications by room type"},
         {"@type":"WebPageElement","name":"Healthcare artwork project process"},
         {"@type":"WebPageElement","name":"Healthcare waiting room artwork examples"},
@@ -825,6 +921,7 @@ h1{font-size:54px}
   <a href="#patient-rooms">Patient</a>
   <a href="#corridors">Corridors</a>
   <a href="#therapy">Therapy</a>
+  <a href="calming-water-art-therapy-offices.html">Water Guide</a>
   <a href="#healthcare-spec-sheet">Spec Sheet</a>
   <a href="#curated-gallery">Gallery</a>
 </nav>
@@ -926,6 +1023,23 @@ h1{font-size:54px}
         <div class="mockup-copy"><span class="priority-label">Therapy / Consultation</span><h3>Biophilic Office Focus</h3><p>A green canopy scene supports a softer consultation atmosphere and brings organic texture into private care spaces.</p><div class="mockup-actions"><button type="button">Enlarge</button><a href="https://dansproul.com/featured/angel-oak-wide-angle-dan-sproul.html" target="_blank" rel="noopener">View This Print</a></div></div>
       </article>
     </div>
+
+    <aside class="therapy-resource-card" aria-label="Related therapy office water artwork guide">
+      <div class="therapy-resource-copy">
+        <p class="eyebrow">Related Therapy Office Guide</p>
+        <h3>10 Calming Water Images for Therapy Offices</h3>
+        <p>A focused guide for counseling rooms, private practices, wellness offices, and waiting areas that need softer water-based artwork. Includes room mockups, placement notes, format guidance, and direct print links.</p>
+        <div class="therapy-resource-actions">
+          <a class="primary" href="calming-water-art-therapy-offices.html">View Water Artwork Guide</a>
+          <a href="wellness-waters-collection.html">Browse Wellness Waters</a>
+        </div>
+      </div>
+      <div class="therapy-resource-list">
+        <div><strong>Best for</strong><span>Therapy offices, counseling rooms, wellness clinics, and quiet waiting areas.</span></div>
+        <div><strong>Includes</strong><span>Four room mockups plus ten calming water image selections with purchase links.</span></div>
+        <div><strong>Use when</strong><span>A healthcare space needs softer motion, natural calm, and a less clinical feeling.</span></div>
+      </div>
+    </aside>
   </div>
 
   <div class="mockup-group" id="senior-living">
@@ -1036,6 +1150,7 @@ h1{font-size:54px}
       <a href="#patient-rooms">Patient Rooms</a>
       <a href="#corridors">Corridors</a>
       <a href="#therapy">Therapy Offices</a>
+      <a href="calming-water-art-therapy-offices.html">Therapy Water Guide</a>
       <a href="#senior-living">Senior Living</a>
       <a href="senior-living-artwork.html">Senior Living Page</a>
       <a href="healthcare-oncology.html">Oncology</a>
