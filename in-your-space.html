@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Art In Your Space — See Prints In Real Rooms | Dan Sproul Fine Art</title>
 <meta name="author" content="Dan Sproul"/>
-<meta name="description" content="See how Dan Sproul's fine art photography looks in real bedrooms, living rooms, entryways, offices, and hotels. Shop the look directly. Custom sizing and free mockups available."/>
+<meta name="description" content="See how Dan Sproul's fine art photography looks in real bedrooms, living rooms, entryways, offices, residential interiors, and hotels. Shop the look directly. Custom sizing and free mockups available."/>
 <link rel="canonical" href="https://dsproul.com/in-your-space.html"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -894,6 +894,64 @@ body::before{
   }
 }
 
+/* UX refinement: room mockups should show the whole installed artwork.
+   The previous cover crop looked dramatic, but it cut off too much context for buyers. */
+.feat-card,
+.m-card{
+  background:#100e0b!important;
+}
+.feat-card img,
+.m-card img{
+  object-fit:contain!important;
+  object-position:center center!important;
+  background:#100e0b!important;
+}
+.feat-card:hover img,
+.m-card:hover img{
+  transform:scale(1.012)!important;
+}
+.residential-path{
+  padding:34px 56px;
+  background:#14110d;
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+}
+.residential-path-inner{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:28px;
+  align-items:center;
+  max-width:1180px;
+  margin:0 auto;
+  padding:28px;
+  border:1px solid rgba(181,146,74,.22);
+  background:rgba(181,146,74,.055);
+}
+.residential-path h2{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(1.55rem,2.8vw,2.35rem);
+  font-weight:300;
+  line-height:1.08;
+  margin-bottom:8px;
+}
+.residential-path h2 em{
+  color:var(--accent);
+  font-style:italic;
+}
+.residential-path p{
+  max-width:760px;
+  color:var(--muted-2);
+  font-size:.74rem;
+  line-height:1.9;
+}
+@media(max-width:760px){
+  .residential-path{padding:26px 22px}
+  .residential-path-inner{
+    grid-template-columns:1fr;
+    padding:22px;
+  }
+}
+
 </style>
 <script type="application/ld+json">
 {
@@ -942,7 +1000,7 @@ body::before{
       "@id": "https://dsproul.com/in-your-space.html#webpage",
       "url": "https://dsproul.com/in-your-space.html",
       "name": "Art In Your Space — See Prints In Real Rooms | Dan Sproul Fine Art",
-      "description": "See how Dan Sproul's fine art photography looks in real bedrooms, living rooms, entryways, offices, and hotels. Custom sizing and free mockups available.",
+      "description": "See how Dan Sproul's fine art photography looks in real bedrooms, living rooms, entryways, offices, residential interiors, and hotels. Custom sizing and free mockups available.",
       "isPartOf": {
         "@id": "https://dsproul.com/#website"
       },
@@ -962,6 +1020,7 @@ body::before{
         {"@type":"WebPageElement","name":"Bedroom Artwork Mockups"},
         {"@type":"WebPageElement","name":"Living Room Artwork Mockups"},
         {"@type":"WebPageElement","name":"Office and Hospitality Artwork Mockups"},
+        {"@type":"WebPageElement","name":"Residential Artwork Guide"},
         {"@type":"WebPageElement","name":"Artwork Guides"}
       ]
     },
@@ -1023,6 +1082,12 @@ body::before{
           "position": 6,
           "name": "Hotels &amp; Lobbies   Multi-Piece Installations",
           "url": "https://dsproul.com/in-your-space.html#hospitality"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "name": "Residential Artwork for Homes",
+          "url": "https://dsproul.com/residential-nature-wall-art.html"
         }
       ]
     },
@@ -1199,6 +1264,7 @@ body::before{
       <div class="hero-ctas">
         <a href="https://dansproul.com/shop" target="_blank" class="btn btn-solid">Shop All Prints</a>
         <a href="mailto:sproulphoto@gmail.com?subject=Mockup Request" class="btn btn-out">Get a Free Mockup</a>
+        <a href="residential-nature-wall-art.html" class="btn btn-out">Residential Artwork</a>
       </div>
     </div>
 
@@ -1309,6 +1375,17 @@ body::before{
   </div>
 </section>
 
+<section class="residential-path" aria-label="Residential artwork guide">
+  <div class="residential-path-inner">
+    <div>
+      <p class="sec-label">For Homes &amp; Residential Interiors</p>
+      <h2>Choosing artwork for a <em>living room, bedroom, cabin, or lake house?</em></h2>
+      <p>The residential artwork guide organizes room mockups by home setting, with sizing, framing, format, and placement recommendations for individual print buyers and residential designers.</p>
+    </div>
+    <a href="residential-nature-wall-art.html" class="btn btn-solid">Explore Residential Artwork</a>
+  </div>
+</section>
+
 <!-- HOW TO USE banner -->
 <div class="how-banner">
   <div class="how-item"><div class="how-icon">1</div>Browse by room type below</div>
@@ -1331,7 +1408,7 @@ body::before{
 <!-- ══════════════════════════════════════════
      BEDROOM
 ══════════════════════════════════════════ -->
-<section class="iys-section" data-section="bedroom" style="background:var(--charcoal)">
+<section class="iys-section" id="bedroom" data-section="bedroom" style="background:var(--charcoal)">
   <div class="sec-header">
     <p class="sec-label">Bedroom</p>
     <h2 class="sec-title">Above the Bed — <em>Calming Statement Pieces</em></h2>
@@ -1421,7 +1498,7 @@ body::before{
 <!-- ══════════════════════════════════════════
      LIVING ROOM
 ══════════════════════════════════════════ -->
-<section class="iys-section" data-section="living" style="background:var(--surface-2)">
+<section class="iys-section" id="living" data-section="living" style="background:var(--surface-2)">
   <div class="sec-header">
     <p class="sec-label">Living Room</p>
     <h2 class="sec-title">Above the Sofa — <em>Statement Walls</em></h2>
@@ -1488,7 +1565,7 @@ body::before{
 <!-- ══════════════════════════════════════════
      ENTRYWAY
 ══════════════════════════════════════════ -->
-<section class="iys-section" data-section="entryway" style="background:var(--charcoal)">
+<section class="iys-section" id="entryway" data-section="entryway" style="background:var(--charcoal)">
   <div class="sec-header">
     <p class="sec-label">Entryway &amp; Foyer</p>
     <h2 class="sec-title">First Impressions — <em>Bold Verticals</em></h2>
@@ -1530,7 +1607,7 @@ body::before{
 <!-- ══════════════════════════════════════════
      OFFICE
 ══════════════════════════════════════════ -->
-<section class="iys-section" data-section="office" style="background:var(--surface-2)">
+<section class="iys-section" id="office" data-section="office" style="background:var(--surface-2)">
   <div class="sec-header">
     <p class="sec-label">Office &amp; Workspace</p>
     <h2 class="sec-title">Grounding Views — <em>Art That Earns Its Place</em></h2>
@@ -1597,7 +1674,7 @@ body::before{
 <!-- ══════════════════════════════════════════
      HOSPITALITY
 ══════════════════════════════════════════ -->
-<section class="iys-section" data-section="hospitality" style="background:var(--charcoal)">
+<section class="iys-section" id="hospitality" data-section="hospitality" style="background:var(--charcoal)">
   <div class="sec-header">
     <p class="sec-label">Hospitality &amp; Commercial</p>
     <h2 class="sec-title">Hotels &amp; Lobbies — <em>Multi-Piece Installations</em></h2>
@@ -1657,6 +1734,7 @@ body::before{
     <p class="sec-label">Related Collections</p>
     <h2 class="sec-title">Continue by <em>mood, room, or collection.</em></h2>
     <div class="sec-guidance">
+      <a class="guidance-pill" href="residential-nature-wall-art.html">Residential Artwork</a>
       <a class="guidance-pill" href="art-collections.html">Curated Collections</a>
       <a class="guidance-pill" href="best-sellers.html">Best Sellers</a>
       <a class="guidance-pill" href="heritage-mixed-media.html">Heritage &amp; Mixed Media</a>
