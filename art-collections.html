@@ -362,7 +362,7 @@ body{padding-top:66px}
 }
 .interior-grid{
   display:grid;
-  grid-template-columns:repeat(5,1fr);
+  grid-template-columns:repeat(3,1fr);
   gap:1px;
   background:var(--line);
   border:1px solid var(--line);
@@ -474,7 +474,7 @@ body{padding-top:66px}
    Goals:
    1. Reduce hero height on phones
    2. Trim collection grid to first 4 cards (≤900px)
-   3. Trim interior-use grid to first 3 cards (≤680px)
+   3. Keep interior-use cards visible so residential buyers can find room-based guidance
    ========================================================== */
 
 @media(max-width:900px){
@@ -485,8 +485,7 @@ body{padding-top:66px}
 }
 
 @media(max-width:680px){
-  /* Hide extra interior cards after third */
-  .interior-grid .interior-card:nth-of-type(n+4){display:none!important;}
+  .interior-grid .interior-card{display:block!important;}
 }
 </style>
 <script type="application/ld+json">
@@ -535,6 +534,10 @@ body{padding-top:66px}
       "about": [
         "artwork for healthcare interiors",
         "hospitality wall art",
+        "residential nature wall art",
+        "living room wall art",
+        "bedroom nature prints",
+        "home office artwork",
         "executive office wall art",
         "quiet luxury artwork",
         "restorative landscape photography",
@@ -781,10 +784,16 @@ body{padding-top:66px}
     <div class="section-intro">
       <span class="eyebrow">Browse by Interior Use</span>
       <h2>Find artwork for the way a room should feel.</h2>
-      <p>Looking for artwork for a specific space? Explore ideas for living rooms, bedrooms, offices, hospitality interiors, healthcare environments, and other settings where nature-inspired artwork can create a calm and welcoming atmosphere.</p>
+      <p>Looking for artwork for a specific space? Explore ideas for living rooms, bedrooms, home offices, hospitality interiors, healthcare environments, and other settings where nature-inspired artwork can create a calm and welcoming atmosphere.</p>
     </div>
 
     <div class="interior-grid">
+      <a class="interior-card" href="/residential-nature-wall-art.html">
+        <span>Homes &amp; Residences</span>
+        <h3>Residential Artwork</h3>
+        <p>Nature wall art for living rooms, bedrooms, home offices, cabins, lake houses, and residential design projects.</p>
+      </a>
+
       <a class="interior-card" href="/healthcare-artwork.html">
         <span>Healthcare</span>
         <h3>Healthcare Artwork</h3>
