@@ -292,6 +292,7 @@ function openFDLightbox(card){
   lb.style.display = 'flex';
   document.body.style.overflow = 'hidden';
 }
+
 function openFDLightboxSrc(src, alt){
   var lb  = document.getElementById('fd-lightbox');
   var lbi = document.getElementById('fd-lightbox-img');
@@ -300,19 +301,16 @@ function openFDLightboxSrc(src, alt){
   lb.style.display = 'flex';
   document.body.style.overflow = 'hidden';
 }
+
 function closeFDLightbox(){
   document.getElementById('fd-lightbox').style.display = 'none';
   document.body.style.overflow = '';
 }
-
-
-
-
+</script>
 
 <footer id="footer" class="site-footer">
-
   <div class="footer-grid">
- <div>
+    <div>
       <h3>Explore</h3>
       <a href="/">Home</a>
       <a href="best-sellers.html">Best Sellers</a>
@@ -344,16 +342,15 @@ function closeFDLightbox(){
       <a href="alaska-photography-prints.html">Alaska Photography</a>
     </div>
 
-  <div>
-  <h3>For Designers</h3>
-  <a href="/for-designers.html">Designer Resources</a>
-  <a href="/healthcare-artwork.html">Healthcare</a>
-  <a href="/hospitality-artwork.html">Hospitality</a>
-  <a href="/office-artwork.html">Office</a>
-  <a href="/residential-nature-wall-art.html">Residential</a>
-  <a href="/senior-living-artwork.html">Senior Living</a>
-</div>
-
+    <div>
+      <h3>For Designers</h3>
+      <a href="/for-designers.html">Designer Resources</a>
+      <a href="/healthcare-artwork.html">Healthcare</a>
+      <a href="/hospitality-artwork.html">Hospitality</a>
+      <a href="/office-artwork.html">Office</a>
+      <a href="/residential-nature-wall-art.html">Residential</a>
+      <a href="/senior-living-artwork.html">Senior Living</a>
+    </div>
 
     <div>
       <h3>Connect</h3>
@@ -361,18 +358,18 @@ function closeFDLightbox(){
       <a href="https://www.linkedin.com/in/dan-sproul-bb55015a/" target="_blank" rel="noopener">LinkedIn</a>
       <a href="https://www.pinterest.com/dansproul/" target="_blank" rel="noopener">Pinterest</a>
     </div>
-
   </div>
 
   <div class="footer-bottom">
     © 2026 Dan Sproul Fine Art Photography · Based in Lima, Ohio · Original Nature Photography & Heritage-Inspired Artwork
   </div>
-
 </footer>
+
 <script>
 document.addEventListener('DOMContentLoaded', function () {
   var nav = document.querySelector('.site-nav-standard');
   var toggle = document.querySelector('.nav-toggle-standard');
+
   if (nav && toggle) {
     toggle.addEventListener('click', function () {
       var isOpen = nav.classList.toggle('is-open');
@@ -381,8 +378,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 </script>
-
-
 
 </body>
 </html>
