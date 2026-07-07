@@ -304,26 +304,7 @@ function closeFDLightbox(){
   document.getElementById('fd-lightbox').style.display = 'none';
   document.body.style.overflow = '';
 }
-</script>
-<!-- STICKY BOTTOM CTA — appears after scroll -->
-<div class="sticky-cta" id="stickyCta">
-  <p class="sticky-cta-text"><strong>Ready to source art for a project?</strong> Send a room photo and get a free digital mockup.</p>
-  <div class="sticky-cta-actions">
-    <a href="mailto:sproulphoto@gmail.com?subject=Mockup Request" class="btn-download" style="text-decoration:none">Request a Mockup</a>
-    <a href="#resources" class="btn-download" style="background:transparent;color:var(--accent);border-color:rgba(181,146,74,.4)">Download Specs</a>
-  </div>
-</div>
 
-<script>
-// Sticky CTA visibility
-(function(){
-  var bar = document.getElementById('stickyCta');
-  if(!bar) return;
-  window.addEventListener('scroll', function(){
-    bar.classList.toggle('visible', window.scrollY > 400);
-  });
-})();
-</script>
 
 
 
@@ -331,8 +312,7 @@ function closeFDLightbox(){
 <footer id="footer" class="site-footer">
 
   <div class="footer-grid">
-
-    <div>
+ <div>
       <h3>Explore</h3>
       <a href="/">Home</a>
       <a href="best-sellers.html">Best Sellers</a>
@@ -340,7 +320,7 @@ function closeFDLightbox(){
       <a href="in-your-space.html">In Your Space</a>
       <a href="for-designers.html">For Designers</a>
       <a href="https://dansproul.com" target="_blank" rel="noopener">Shop Prints</a>
-      <a href="#contact">Contact</a>
+      <a href="mailto:sproulphoto@gmail.com">Contact</a>
     </div>
 
     <div>
@@ -364,15 +344,16 @@ function closeFDLightbox(){
       <a href="alaska-photography-prints.html">Alaska Photography</a>
     </div>
 
-    <div>
-      <h3>For Designers</h3>
-      <a href="for-designers.html">Designer Resources</a>
-      <a href="healthcare-artwork.html">Healthcare</a>
-      <a href="hospitality-artwork.html">Hospitality</a>
-      <a href="senior-living-artwork.html">Senior Living</a>
-      <a href="mailto:sproulphoto@gmail.com?subject=Project Inquiry">Project Inquiry</a>
-      <a href="mailto:sproulphoto@gmail.com?subject=Mockup Request">Request Mockup</a>
-    </div>
+  <div>
+  <h3>For Designers</h3>
+  <a href="/for-designers.html">Designer Resources</a>
+  <a href="/healthcare-artwork.html">Healthcare</a>
+  <a href="/hospitality-artwork.html">Hospitality</a>
+  <a href="/office-artwork.html">Office</a>
+  <a href="/residential-nature-wall-art.html">Residential</a>
+  <a href="/senior-living-artwork.html">Senior Living</a>
+</div>
+
 
     <div>
       <h3>Connect</h3>
