@@ -231,13 +231,95 @@
       overflow: hidden;
     }
 
-    .tag-row span {
+    .tag-row span,
+    .tag-row a {
+      display: block;
       background: var(--charcoal);
       color: #e8d9bd;
       padding: 16px 12px;
       text-align: center;
       font-size: 11px;
       letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .tag-row a:hover,
+    .tag-row a:focus-visible {
+      background: #211e19;
+      color: #fff4dd;
+      outline: none;
+    }
+
+    .buyer-path {
+      padding: 28px 0;
+      background: #100e0b;
+      border-bottom: 1px solid rgba(181,146,74,0.22);
+      color: var(--white);
+    }
+
+    .buyer-path-inner {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+      gap: 22px;
+      align-items: center;
+    }
+
+    .buyer-proof,
+    .simple-steps {
+      display: grid;
+      gap: 10px;
+    }
+
+    .buyer-proof {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .buyer-proof span {
+      border: 1px solid rgba(216,181,108,0.26);
+      background: rgba(255,255,255,0.035);
+      padding: 13px 14px;
+      color: rgba(255,255,255,0.78);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      line-height: 1.35;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .simple-steps {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .simple-steps div {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 10px;
+      align-items: center;
+      border: 1px solid rgba(216,181,108,0.22);
+      background: rgba(216,181,108,0.08);
+      padding: 12px 13px;
+    }
+
+    .simple-steps strong {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background: var(--warm-strong);
+      color: #211a10;
+      font-size: 12px;
+      line-height: 1;
+    }
+
+    .simple-steps span {
+      color: rgba(255,255,255,0.82);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      line-height: 1.3;
       text-transform: uppercase;
     }
 
@@ -397,6 +479,41 @@
       color: rgba(255,255,255,0.68);
       font-size: 15px;
       margin: 0;
+    }
+
+    .card-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-top: 18px;
+    }
+
+    .card-actions button,
+    .card-actions a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 38px;
+      padding: 10px 12px;
+      border: 1px solid rgba(224,197,142,0.58);
+      border-radius: 0;
+      font-family: "Jost", Arial, sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      line-height: 1.2;
+      text-transform: uppercase;
+    }
+
+    .card-actions button {
+      background: transparent;
+      color: rgba(255,255,255,0.86);
+      cursor: pointer;
+    }
+
+    .card-actions a {
+      background: #e0c58e;
+      color: #211a10;
     }
 
     .split-feature {
@@ -727,8 +844,11 @@
 
       .hero { min-height: 590px; }
       .tag-row { grid-template-columns: repeat(2, 1fr); }
+      .buyer-proof,
+      .simple-steps { grid-template-columns: repeat(2, 1fr); }
 
       .split-feature,
+      .buyer-path-inner,
       .room-grid,
       .spec-grid,
       .collection-grid,
@@ -766,13 +886,21 @@
       .hero-copy { font-size: 15px; line-height: 1.75; }
       section { padding: 58px 0; }
       .tag-row,
+      .buyer-proof,
+      .simple-steps,
       .mockup-grid { grid-template-columns: 1fr; }
+      .buyer-path { padding: 20px 0; }
+      .buyer-proof span,
+      .simple-steps div { text-align: left; }
       .room-card,
       .spec-card,
       .collection-card,
       .faq-card,
       .feature-panel,
       .cta-band { padding: 22px; }
+      .card-actions { display: grid; grid-template-columns: 1fr; }
+      .card-actions button,
+      .card-actions a { width: 100%; }
     }
   </style>
 
@@ -926,18 +1054,119 @@
         <p class="hero-copy">Atmospheric landscape, wildlife, coastal, mountain, and waterfall artwork selected for living rooms, bedrooms, home offices, cabins, lake houses, entryways, and warm residential interiors.</p>
         <div class="button-row">
           <a class="btn btn-primary" href="#residential-mockups">View Room Mockups</a>
-          <a class="btn btn-secondary" href="mailto:sproulphoto@gmail.com?subject=Residential%20Artwork%20Recommendation">Ask For Recommendations</a>
+          <a class="btn btn-secondary" href="https://dansproul.com" target="_blank" rel="noopener">Shop Residential Prints</a>
         </div>
       </div>
     </section>
 
     <div class="tag-row" aria-label="Residential artwork applications">
-      <span>Living Rooms</span>
-      <span>Bedrooms</span>
-      <span>Home Offices</span>
-      <span>Lake Houses</span>
-      <span>Cabins</span>
+      <a href="#living-room-art">Living Rooms</a>
+      <a href="#bedroom-art">Bedrooms</a>
+      <a href="#home-office-art">Home Offices</a>
+      <a href="#lake-house-art">Lake Houses</a>
+      <a href="#cabin-art">Cabins</a>
     </div>
+
+    <section class="buyer-path" aria-label="How to buy residential nature artwork">
+      <div class="section-inner buyer-path-inner">
+        <div class="buyer-proof">
+          <span>Prints from $85</span>
+          <span>Framed from $140</span>
+          <span>Canvas, metal, acrylic, framed paper</span>
+          <span>Free room mockup help</span>
+        </div>
+        <div class="simple-steps" aria-label="Simple buying process">
+          <div><strong>1</strong><span>See it in a room</span></div>
+          <div><strong>2</strong><span>Open the print page</span></div>
+          <div><strong>3</strong><span>Choose size and format</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark-band" id="residential-mockups">
+      <div class="section-inner">
+        <div class="section-head">
+          <div class="section-kicker">Shown In Real Rooms</div>
+          <h2>Residential nature artwork mockups for living rooms, bedrooms, offices, and lake homes.</h2>
+          <p class="section-lead">Use the buttons on each room preview to either review sizing and framing details or go straight to the print page.</p>
+        </div>
+
+        <div class="mockup-grid">
+          <article class="mockup-card" id="living-room-art" tabindex="0" data-img="residential lodge room framed cliff.jpg" data-title="Lodge Living Room Cliff Artwork" data-note="A large framed cliff and water landscape for warm lodge-style living rooms, cabins, and fireplace-centered homes." data-size="40x60 or larger for a sofa wall; 30x40 if the wall is narrower." data-frame="Natural wood frame with a white mat for warmth and breathing room." data-format="Framed paper or canvas for a residential lodge feeling." data-rooms="Living rooms, cabins, lake houses, lodge rooms, fireplace walls." data-purchase="https://dansproul.com/featured/palisade-head-minnesota-dan-sproul.html">
+            <div class="card-media"><img src="residential lodge room framed cliff.jpg" alt="Large framed cliff and water landscape artwork above a leather sofa in a lodge living room by Dan Sproul" loading="lazy"><span>Lodge living room</span></div>
+            <div class="card-body">
+              <h3>Lodge Living Room</h3>
+              <p>Large framed landscape artwork for warm rooms with stone, leather, and wood.</p>
+            </div>
+          </article>
+
+          <article class="mockup-card" id="home-office-art" tabindex="0" data-img="residential home office canvas spring landscape badlands.jpg" data-title="Home Office Badlands Canvas" data-note="A bright, open landscape direction for home offices that need energy, sunlight, and natural focus." data-size="30x40, 32x48, or 40x60 depending on desk width and wall height." data-frame="Canvas works well here; black or walnut framing can make it more formal." data-format="Canvas, framed paper, acrylic, or metal." data-rooms="Home offices, studies, reading rooms, creative workspaces." data-purchase="https://dansproul.com/featured/dreamy-summer-landscape-badlands-park-dan-sproul.html">
+            <div class="card-media"><img src="residential home office canvas spring landscape badlands.jpg" alt="Large Badlands landscape canvas displayed in a warm residential home office by Dan Sproul" loading="lazy"><span>Home office</span></div>
+            <div class="card-body">
+              <h3>Home Office Energy</h3>
+              <p>Open landscape artwork for a home workspace that needs focus and warmth.</p>
+            </div>
+          </article>
+
+          <article class="mockup-card" id="lake-house-art" tabindex="0" data-img="residential room canvas black and white lake boat.jpg" data-title="Black-and-White Lake Boat Living Room Artwork" data-note="A classic black-and-white water scene for lake houses, living rooms, and rooms with a timeless or nostalgic mood." data-size="40x60 above a sofa; 30x45 or 32x48 for smaller walls." data-frame="Black frame for contrast, or canvas for a more relaxed lake house feel." data-format="Framed paper, canvas, or acrylic." data-rooms="Living rooms, lake houses, cabins, den spaces, fireplace rooms." data-purchase="https://dansproul.com/featured/katahdin-boat-reflection-black-and-white-dan-sproul.html">
+            <div class="card-media"><img src="residential room canvas black and white lake boat.jpg" alt="Black and white lake boat artwork displayed above a sofa in a warm residential room by Dan Sproul" loading="lazy"><span>Lake house living</span></div>
+            <div class="card-body">
+              <h3>Classic Lake House</h3>
+              <p>Black-and-white water imagery for rooms with quiet heritage character.</p>
+            </div>
+          </article>
+
+          <article class="mockup-card" tabindex="0" data-img="residential living room framed autumn mountains.jpg" data-title="Autumn Mountain Living Room Artwork" data-note="A warm autumn mountain scene for neutral living rooms that need color, depth, and seasonal atmosphere." data-size="30x40 or 40x60 depending on sofa width." data-frame="Warm wood frame with a white mat for a refined residential look." data-format="Framed paper is strongest; canvas works well for softer rooms." data-rooms="Living rooms, mountain homes, cabins, family rooms." data-purchase="https://dansproul.com/featured/autumn-marsh-beneath-the-chugach-mountains-alaska-dan-sproul.html">
+            <div class="card-media"><img src="residential living room framed autumn mountains.jpg" alt="Autumn mountain landscape print framed above a sofa in a warm residential living room by Dan Sproul" loading="lazy"><span>Autumn living room</span></div>
+            <div class="card-body">
+              <h3>Warm Mountain Calm</h3>
+              <p>Autumn color and mountain atmosphere for neutral living rooms.</p>
+            </div>
+          </article>
+
+          <article class="mockup-card" tabindex="0" data-img="residential room framed vertical autumn waterfall.jpg" data-title="Vertical Waterfall Artwork for Living Rooms" data-note="A vertical waterfall piece for taller walls, fireplace-adjacent spaces, stair landings, and rooms that need upward movement." data-size="24x36, 30x45, or larger vertical sizing depending on wall height." data-frame="Black frame for contrast, or warm wood to soften the autumn palette." data-format="Framed paper, canvas, or acrylic." data-rooms="Living rooms, entryways, stair landings, fireplace-adjacent walls." data-purchase="https://dansproul.com/featured/whitewater-falls-in-autumn-dan-sproul.html">
+            <div class="card-media portrait"><img src="residential room framed vertical autumn waterfall.jpg" alt="Vertical autumn waterfall artwork framed in a warm residential living room by Dan Sproul" loading="lazy"><span>Vertical statement</span></div>
+            <div class="card-body">
+              <h3>Vertical Waterfall</h3>
+              <p>A tall statement piece for rooms that need movement and height.</p>
+            </div>
+          </article>
+
+          <article class="mockup-card" tabindex="0" data-img="residential great room framed landscape sunset.jpg" data-title="Great Room Sunset Landscape Artwork" data-note="A warm sunset landscape for great rooms, family rooms, and open living spaces that need a calming focal point." data-size="40x60 or larger for wide sofa walls and great rooms." data-frame="Slim black frame for definition, or canvas for a softer modern lodge feeling." data-format="Canvas, framed paper, metal, or acrylic." data-rooms="Great rooms, living rooms, family rooms, open residential interiors." data-purchase="https://dansproul.com/featured/sunset-over-the-bear-butte-dan-sproul.html">
+            <div class="card-media"><img src="residential great room framed landscape sunset.jpg" alt="Large sunset landscape artwork displayed above a sofa in a residential great room by Dan Sproul" loading="lazy"><span>Great room</span></div>
+            <div class="card-body">
+              <h3>Soft Sunset Focal Wall</h3>
+              <p>A large warm landscape for the main gathering space in a home.</p>
+            </div>
+          </article>
+
+          <article class="mockup-card" id="bedroom-art" tabindex="0" data-img="residential coastal bedroom oregon beach framed.jpg" data-title="Coastal Bedroom Artwork" data-note="A warm coastal sunset direction for bedrooms, guest rooms, and vacation homes that need calm and color." data-size="30x40, 32x48, or wider horizontal sizing above a bed." data-frame="Black frame for definition, natural wood for softer coastal warmth." data-format="Canvas, framed paper, or acrylic." data-rooms="Bedrooms, guest rooms, coastal homes, vacation rentals." data-purchase="https://dansproul.com/featured/face-rock-oregon-sunrise-dan-sproul.html">
+            <div class="card-media"><img src="residential coastal bedroom oregon beach framed.jpg" alt="Warm Oregon coast sunset artwork above a bed in a residential coastal bedroom by Dan Sproul" loading="lazy"><span>Bedroom artwork</span></div>
+            <div class="card-body">
+              <h3>Coastal Bedroom Calm</h3>
+              <p>Sunset water and soft color for bedrooms and guest rooms.</p>
+            </div>
+          </article>
+
+          <article class="mockup-card" id="cabin-art" tabindex="0" data-img="residential living room framed moose.jpg" data-title="Moose Wildlife Artwork for Cabins" data-note="A wildlife statement piece for cabins, lake homes, mountain homes, and living rooms that can handle a strong natural subject." data-size="40x60 or larger for a primary living room wall." data-frame="Black frame for modern contrast, or canvas for a more relaxed cabin feel." data-format="Canvas, framed paper, metal, or acrylic." data-rooms="Cabins, lodges, lake homes, living rooms, family rooms." data-purchase="https://dansproul.com/featured/gunflint-trail-moose-reflection-dan-sproul.html">
+            <div class="card-media"><img src="residential living room framed moose.jpg" alt="Large moose wildlife artwork displayed in a warm residential cabin living room by Dan Sproul" loading="lazy"><span>Wildlife statement</span></div>
+            <div class="card-body">
+              <h3>Cabin Wildlife Statement</h3>
+              <p>Moose artwork for homes that want stronger nature identity.</p>
+            </div>
+          </article>
+
+          <article class="mockup-card" tabindex="0" data-img="residential lakehouse living room framed landscape.jpg" data-title="Lakehouse Mountain Landscape Artwork" data-note="A calm mountain lake direction for lake houses, living rooms, and residential interiors that need depth without visual clutter." data-size="40x60 or larger for a sofa wall; 30x40 for smaller living rooms." data-frame="Slim black frame for definition, or natural wood for a warmer residential finish." data-format="Canvas, framed paper, acrylic, or metal." data-rooms="Lake houses, living rooms, cabins, mountain homes, fireplace rooms." data-purchase="https://dansproul.com/featured/canoes-on-emerald-lake-in-the-canadian-rockies-dan-sproul.html">
+            <div class="card-media"><img src="residential lakehouse living room framed landscape.jpg" alt="Large mountain lake artwork displayed above a sofa in a lakehouse living room by Dan Sproul" loading="lazy"><span>Lakehouse wall art</span></div>
+            <div class="card-body">
+              <h3>Lakehouse Mountain Calm</h3>
+              <p>Blue-green water and mountain atmosphere for relaxed residential spaces.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
 
     <section>
       <div class="section-inner split-feature">
@@ -991,90 +1220,6 @@
             <h3>Lake Houses</h3>
             <p>Water, mountain lakes, boats, harbors, and calm shoreline imagery can help a vacation home feel connected to place.</p>
           </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="dark-band" id="residential-mockups">
-      <div class="section-inner">
-        <div class="section-head">
-          <div class="section-kicker">Shown In Real Rooms</div>
-          <h2>Residential nature artwork mockups for living rooms, bedrooms, offices, and lake homes.</h2>
-          <p class="section-lead">Click any room preview to enlarge it and review suggested sizes, framing direction, formats, best room placements, and the direct print page.</p>
-        </div>
-
-        <div class="mockup-grid">
-          <button class="mockup-card" data-img="residential lodge room framed cliff.jpg" data-title="Lodge Living Room Cliff Artwork" data-note="A large framed cliff and water landscape for warm lodge-style living rooms, cabins, and fireplace-centered homes." data-size="40x60 or larger for a sofa wall; 30x40 if the wall is narrower." data-frame="Natural wood frame with a white mat for warmth and breathing room." data-format="Framed paper or canvas for a residential lodge feeling." data-rooms="Living rooms, cabins, lake houses, lodge rooms, fireplace walls." data-purchase="https://dansproul.com/featured/palisade-head-minnesota-dan-sproul.html">
-            <div class="card-media"><img src="residential lodge room framed cliff.jpg" alt="Large framed cliff and water landscape artwork above a leather sofa in a lodge living room by Dan Sproul" loading="lazy"><span>Lodge living room</span></div>
-            <div class="card-body">
-              <h3>Lodge Living Room</h3>
-              <p>Large framed landscape artwork for warm rooms with stone, leather, and wood.</p>
-            </div>
-          </button>
-
-          <button class="mockup-card" data-img="residential home office canvas spring landscape badlands.jpg" data-title="Home Office Badlands Canvas" data-note="A bright, open landscape direction for home offices that need energy, sunlight, and natural focus." data-size="30x40, 32x48, or 40x60 depending on desk width and wall height." data-frame="Canvas works well here; black or walnut framing can make it more formal." data-format="Canvas, framed paper, acrylic, or metal." data-rooms="Home offices, studies, reading rooms, creative workspaces." data-purchase="https://dansproul.com/featured/dreamy-summer-landscape-badlands-park-dan-sproul.html">
-            <div class="card-media"><img src="residential home office canvas spring landscape badlands.jpg" alt="Large Badlands landscape canvas displayed in a warm residential home office by Dan Sproul" loading="lazy"><span>Home office</span></div>
-            <div class="card-body">
-              <h3>Home Office Energy</h3>
-              <p>Open landscape artwork for a home workspace that needs focus and warmth.</p>
-            </div>
-          </button>
-
-          <button class="mockup-card" data-img="residential room canvas black and white lake boat.jpg" data-title="Black-and-White Lake Boat Living Room Artwork" data-note="A classic black-and-white water scene for lake houses, living rooms, and rooms with a timeless or nostalgic mood." data-size="40x60 above a sofa; 30x45 or 32x48 for smaller walls." data-frame="Black frame for contrast, or canvas for a more relaxed lake house feel." data-format="Framed paper, canvas, or acrylic." data-rooms="Living rooms, lake houses, cabins, den spaces, fireplace rooms." data-purchase="https://dansproul.com/featured/katahdin-boat-reflection-black-and-white-dan-sproul.html">
-            <div class="card-media"><img src="residential room canvas black and white lake boat.jpg" alt="Black and white lake boat artwork displayed above a sofa in a warm residential room by Dan Sproul" loading="lazy"><span>Lake house living</span></div>
-            <div class="card-body">
-              <h3>Classic Lake House</h3>
-              <p>Black-and-white water imagery for rooms with quiet heritage character.</p>
-            </div>
-          </button>
-
-          <button class="mockup-card" data-img="residential living room framed autumn mountains.jpg" data-title="Autumn Mountain Living Room Artwork" data-note="A warm autumn mountain scene for neutral living rooms that need color, depth, and seasonal atmosphere." data-size="30x40 or 40x60 depending on sofa width." data-frame="Warm wood frame with a white mat for a refined residential look." data-format="Framed paper is strongest; canvas works well for softer rooms." data-rooms="Living rooms, mountain homes, cabins, family rooms." data-purchase="https://dansproul.com/featured/autumn-marsh-beneath-the-chugach-mountains-alaska-dan-sproul.html">
-            <div class="card-media"><img src="residential living room framed autumn mountains.jpg" alt="Autumn mountain landscape print framed above a sofa in a warm residential living room by Dan Sproul" loading="lazy"><span>Autumn living room</span></div>
-            <div class="card-body">
-              <h3>Warm Mountain Calm</h3>
-              <p>Autumn color and mountain atmosphere for neutral living rooms.</p>
-            </div>
-          </button>
-
-          <button class="mockup-card" data-img="residential room framed vertical autumn waterfall.jpg" data-title="Vertical Waterfall Artwork for Living Rooms" data-note="A vertical waterfall piece for taller walls, fireplace-adjacent spaces, stair landings, and rooms that need upward movement." data-size="24x36, 30x45, or larger vertical sizing depending on wall height." data-frame="Black frame for contrast, or warm wood to soften the autumn palette." data-format="Framed paper, canvas, or acrylic." data-rooms="Living rooms, entryways, stair landings, fireplace-adjacent walls." data-purchase="https://dansproul.com/featured/whitewater-falls-in-autumn-dan-sproul.html">
-            <div class="card-media portrait"><img src="residential room framed vertical autumn waterfall.jpg" alt="Vertical autumn waterfall artwork framed in a warm residential living room by Dan Sproul" loading="lazy"><span>Vertical statement</span></div>
-            <div class="card-body">
-              <h3>Vertical Waterfall</h3>
-              <p>A tall statement piece for rooms that need movement and height.</p>
-            </div>
-          </button>
-
-          <button class="mockup-card" data-img="residential great room framed landscape sunset.jpg" data-title="Great Room Sunset Landscape Artwork" data-note="A warm sunset landscape for great rooms, family rooms, and open living spaces that need a calming focal point." data-size="40x60 or larger for wide sofa walls and great rooms." data-frame="Slim black frame for definition, or canvas for a softer modern lodge feeling." data-format="Canvas, framed paper, metal, or acrylic." data-rooms="Great rooms, living rooms, family rooms, open residential interiors." data-purchase="https://dansproul.com/featured/sunset-over-the-bear-butte-dan-sproul.html">
-            <div class="card-media"><img src="residential great room framed landscape sunset.jpg" alt="Large sunset landscape artwork displayed above a sofa in a residential great room by Dan Sproul" loading="lazy"><span>Great room</span></div>
-            <div class="card-body">
-              <h3>Soft Sunset Focal Wall</h3>
-              <p>A large warm landscape for the main gathering space in a home.</p>
-            </div>
-          </button>
-
-          <button class="mockup-card" data-img="residential coastal bedroom oregon beach framed.jpg" data-title="Coastal Bedroom Artwork" data-note="A warm coastal sunset direction for bedrooms, guest rooms, and vacation homes that need calm and color." data-size="30x40, 32x48, or wider horizontal sizing above a bed." data-frame="Black frame for definition, natural wood for softer coastal warmth." data-format="Canvas, framed paper, or acrylic." data-rooms="Bedrooms, guest rooms, coastal homes, vacation rentals." data-purchase="https://dansproul.com/featured/face-rock-oregon-sunrise-dan-sproul.html">
-            <div class="card-media"><img src="residential coastal bedroom oregon beach framed.jpg" alt="Warm Oregon coast sunset artwork above a bed in a residential coastal bedroom by Dan Sproul" loading="lazy"><span>Bedroom artwork</span></div>
-            <div class="card-body">
-              <h3>Coastal Bedroom Calm</h3>
-              <p>Sunset water and soft color for bedrooms and guest rooms.</p>
-            </div>
-          </button>
-
-          <button class="mockup-card" data-img="residential living room framed moose.jpg" data-title="Moose Wildlife Artwork for Cabins" data-note="A wildlife statement piece for cabins, lake homes, mountain homes, and living rooms that can handle a strong natural subject." data-size="40x60 or larger for a primary living room wall." data-frame="Black frame for modern contrast, or canvas for a more relaxed cabin feel." data-format="Canvas, framed paper, metal, or acrylic." data-rooms="Cabins, lodges, lake homes, living rooms, family rooms." data-purchase="https://dansproul.com/featured/gunflint-trail-moose-reflection-dan-sproul.html">
-            <div class="card-media"><img src="residential living room framed moose.jpg" alt="Large moose wildlife artwork displayed in a warm residential cabin living room by Dan Sproul" loading="lazy"><span>Wildlife statement</span></div>
-            <div class="card-body">
-              <h3>Cabin Wildlife Statement</h3>
-              <p>Moose artwork for homes that want stronger nature identity.</p>
-            </div>
-          </button>
-
-          <button class="mockup-card" data-img="residential lakehouse living room framed landscape.jpg" data-title="Lakehouse Mountain Landscape Artwork" data-note="A calm mountain lake direction for lake houses, living rooms, and residential interiors that need depth without visual clutter." data-size="40x60 or larger for a sofa wall; 30x40 for smaller living rooms." data-frame="Slim black frame for definition, or natural wood for a warmer residential finish." data-format="Canvas, framed paper, acrylic, or metal." data-rooms="Lake houses, living rooms, cabins, mountain homes, fireplace rooms." data-purchase="https://dansproul.com/featured/canoes-on-emerald-lake-in-the-canadian-rockies-dan-sproul.html">
-            <div class="card-media"><img src="residential lakehouse living room framed landscape.jpg" alt="Large mountain lake artwork displayed above a sofa in a lakehouse living room by Dan Sproul" loading="lazy"><span>Lakehouse wall art</span></div>
-            <div class="card-body">
-              <h3>Lakehouse Mountain Calm</h3>
-              <p>Blue-green water and mountain atmosphere for relaxed residential spaces.</p>
-            </div>
-          </button>
         </div>
       </div>
     </section>
@@ -1358,7 +1503,26 @@
     }
 
     document.querySelectorAll(".mockup-card").forEach((card) => {
-      card.addEventListener("click", () => openModal(card));
+      const cardBody = card.querySelector(".card-body");
+      if (cardBody && card.dataset.purchase) {
+        const actions = document.createElement("div");
+        actions.className = "card-actions";
+        actions.innerHTML = '<button type="button" class="mockup-details">View Room Details</button><a class="quick-shop" href="' + card.dataset.purchase + '" target="_blank" rel="noopener">Shop This Print</a>';
+        cardBody.appendChild(actions);
+      }
+
+      card.addEventListener("click", (event) => {
+        if (event.target.closest(".quick-shop")) return;
+        openModal(card);
+      });
+
+      card.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          if (event.target.closest(".quick-shop")) return;
+          event.preventDefault();
+          openModal(card);
+        }
+      });
     });
 
     closeButton.addEventListener("click", closeModal);
