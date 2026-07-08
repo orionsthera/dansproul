@@ -1011,6 +1011,102 @@ footer.site-footer .footer-bottom{
 @media(max-width:980px){.buyer-points{grid-template-columns:repeat(2,1fr)}.mockup-grid{grid-template-columns:1fr!important}.mockup-card{min-height:320px!important}}
 @media(max-width:680px){.buyer-reassurance{padding:22px}.buyer-points{grid-template-columns:1fr;gap:8px}.buyer-reassurance p{font-size:13px}.mockup-actions{position:relative;left:auto;right:auto;bottom:auto;padding:0 18px 18px;display:grid;grid-template-columns:1fr}.mockup-card figcaption{position:relative!important;bottom:auto!important;background:#111;padding:18px!important}.mockup-card::before{display:none}.mockup-card{min-height:auto!important}.mockup-actions button,.mockup-actions a{width:100%}.mockup-lightbox{padding:58px 14px 18px!important}.mockup-lightbox-card img{max-height:42vh!important}.mockup-lightbox-actions a,.mockup-lightbox-actions button{width:100%;text-align:center}.hero h1{font-size:clamp(2.25rem,9vw,3.05rem)!important}.button-row .button{width:100%}}
 
+
+
+/* MONOCHROME STILLNESS — QUIET EARTH STYLE PRINT CARDS */
+.buyer-points{
+  grid-template-columns:repeat(6,1fr)!important;
+}
+.monochrome-shop-intro{
+  max-width:920px;
+  margin-bottom:2.4rem;
+}
+.monochrome-shop-intro p{
+  max-width:780px;
+  color:#4c443c!important;
+  font-size:1rem;
+  line-height:1.8;
+}
+.monochrome-print-grid{
+  margin-top:2.2rem!important;
+}
+.monochrome-print-grid .art-card{
+  display:flex;
+  flex-direction:column;
+  padding:0!important;
+  background:#fffaf3!important;
+  border:1px solid var(--line)!important;
+  min-height:100%;
+  overflow:hidden;
+}
+.monochrome-print-grid .art-card img{
+  aspect-ratio:4 / 3!important;
+  object-fit:cover!important;
+  background:#ddd;
+}
+.art-card-copy{
+  padding:1.25rem 1.2rem 1.35rem;
+  display:flex;
+  flex-direction:column;
+  gap:.55rem;
+  flex:1;
+}
+.print-label{
+  color:#8f6e42;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.64rem;
+  font-weight:700;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+}
+.art-card-copy h3{
+  color:#1f1f1d;
+  font-size:clamp(1.35rem,2vw,1.75rem)!important;
+  line-height:1.08!important;
+  margin:0!important;
+}
+.field-note{
+  color:#514a42;
+  font-size:.94rem;
+  line-height:1.72;
+  margin:0;
+}
+.print-meta{
+  color:#645a50;
+  font-family:"Jost",Arial,sans-serif;
+  font-size:.78rem;
+  line-height:1.55;
+  margin:0;
+}
+.print-meta strong{
+  color:#2d2823;
+  font-weight:500;
+}
+.shop-card-link{
+  margin-top:auto;
+  padding-top:.55rem;
+  color:#8f6e42;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.68rem;
+  font-weight:700;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
+.monochrome-print-grid .art-card span::after{
+  content:''!important;
+  display:none!important;
+}
+@media(max-width:1120px){
+  .buyer-points{grid-template-columns:repeat(3,1fr)!important;}
+}
+@media(max-width:980px){
+  .buyer-points{grid-template-columns:repeat(2,1fr)!important;}
+}
+@media(max-width:680px){
+  .buyer-points{grid-template-columns:1fr!important;}
+  .monochrome-shop-intro p{font-size:14px!important;line-height:1.65!important;}
+}
+
 </style>
 <script type="application/ld+json">
 {
@@ -1260,9 +1356,11 @@ footer.site-footer .footer-bottom{
       <span>Prints from $45</span>
       <span>Framed from $100</span>
       <span>Canvas · Metal · Acrylic</span>
+      <span>Ships worldwide</span>
+      <span>30-day print guarantee</span>
       <span>Free mockup help</span>
     </div>
-    <p>Browse the room examples and selected black-and-white prints below. Click <strong>Purchase Print</strong> or <strong>Shop This Print</strong> to open my secure print storefront, where you can choose size, frame, and format options.</p>
+    <p>Browse the room examples and selected black-and-white prints below. Click <strong>Purchase Print</strong> or <strong>Shop This Print</strong> to open my secure print storefront, where you can choose size, frame, canvas, metal, acrylic, or paper options. Fulfillment, shipping, and return details are handled through the print storefront.</p>
   </div>
 </section>
 
@@ -1307,49 +1405,189 @@ footer.site-footer .footer-bottom{
       </div>
     </section>
 <section class="gallery grouped-gallery" id="collection">
-  <div class="section-head">
+  <div class="section-head monochrome-shop-intro">
     <div class="section-label">Shop the Collection</div>
     <h2>Shop selected black-and-white prints.</h2>
-    <p>Choose a print below to view sizes, frames, canvas, metal, acrylic, and paper options on my print storefront.</p>
+    <p>Browse monochrome landscape photography selected for offices, bedrooms, corridors, hospitality spaces, and refined residential interiors. Click any print to choose size, frame, canvas, acrylic, metal, or paper options through my secure print storefront.</p>
   </div>
 
-  <div class="collection-group">
-    <div class="group-head">
-      <div class="section-label">Architectural Calm</div>
-      <h3>Quiet reflections and softened landscape forms for refined interiors.</h3>
-      <p>These pieces are best for living rooms, bedrooms, hospitality suites, and spaces that need stillness without feeling empty.</p>
-    </div>
-    <div class="art-grid">
-      <a class="art-card" href="https://dansproul.com/featured/monochrome-maligne-lake-boathouse-dan-sproul.html" target="_blank" rel="noopener"><img src="monochrome-maligne-lake-boathouse-dan-sproul (1).jpg" alt="Monochrome Maligne Lake Boathouse black and white fine art photography by Dan Sproul" loading="lazy" decoding="async"><span>Monochrome Maligne Lake Boathouse</span></a>
-      <a class="art-card" href="https://dansproul.com/featured/dreamy-mountainscape-canada-black-and-white-dan-sproul.html" target="_blank" rel="noopener"><img src="dreamy-mountainscape-canada-black-and-white-dan-sproul.jpg" alt="Dreamy Mountainscape Canada black and white fine art photography by Dan Sproul" loading="lazy" decoding="async"><span>Dreamy Mountainscape Canada</span></a>
-      <a class="art-card" href="https://dansproul.com/featured/foggy-patricia-lake-sunrise-canada-dan-sproul.html" target="_blank" rel="noopener"><img src="foggy-patricia-lake-sunrise-canada-dan-sproul.jpg" alt="Foggy Patricia Lake Sunrise black and white fine art photography by Dan Sproul" loading="lazy" decoding="async"><span>Foggy Patricia Lake Sunrise</span></a>
-    </div>
-  </div>
-
-  <div class="collection-group">
-    <div class="group-head">
-      <div class="section-label">Executive Statement Pieces</div>
-      <h3>Large-format monochrome landscapes for offices, boardrooms, and hospitality focal walls.</h3>
-      <p>These works carry more scale and presence while maintaining a restrained, polished feeling.</p>
-    </div>
-    <div class="art-grid">
-      <a class="art-card" href="https://dansproul.com/featured/denali-highway-mystique-landscape-dan-sproul.html" target="_blank" rel="noopener"><img src="denali-highway-mystique-landscape-dan-sproul.jpg" alt="Denali Highway Mystique black and white fine art photography by Dan Sproul" loading="lazy" decoding="async"><span>Denali Highway Mystique</span></a>
-      <a class="art-card" href="https://dansproul.com/featured/denali-highway-reflection-black-and-white-dan-sproul.html" target="_blank" rel="noopener"><img src="denali-highway-reflection-black-and-white-dan-sproul.jpg" alt="Denali Highway Reflection black and white fine art photography by Dan Sproul" loading="lazy" decoding="async"><span>Denali Highway Reflection</span></a>
-      <a class="art-card" href="https://dansproul.com/featured/monochrome-moraine-lake-canada-dan-sproul.html" target="_blank" rel="noopener"><img src="monochrome-moraine-lake-canada-dan-sproul.jpg" alt="Monochrome Moraine Lake black and white fine art photography by Dan Sproul" loading="lazy" decoding="async"><span>Monochrome Moraine Lake</span></a>
-    </div>
-  </div>
-
-  <div class="collection-group">
-    <div class="group-head">
-      <div class="section-label">Wellness & Corridor Artwork</div>
-      <h3>Quiet movement, paths, and reflective landscapes for transitional or restorative spaces.</h3>
-      <p>These selections work well in healthcare corridors, therapy spaces, wellness rooms, and calm commercial interiors.</p>
-    </div>
-    <div class="art-grid">
-      <a class="art-card" href="https://dansproul.com/featured/waterfall-sunburst-black-and-white-dan-sproul.html" target="_blank" rel="noopener"><img src="waterfall-sunburst-black-and-white-dan-sproul.jpg" alt="Waterfall Sunburst black and white fine art photography by Dan Sproul" loading="lazy" decoding="async"><span>Waterfall Sunburst</span></a>
-      <a class="art-card" href="https://dansproul.com/featured/morning-forest-path-black-and-white-dan-sproul.html" target="_blank" rel="noopener"><img src="morning-forest-path-black-and-white-dan-sproul.jpg" alt="Morning Forest Path black and white fine art photography by Dan Sproul" loading="lazy" decoding="async"><span>Morning Forest Path</span></a>
-      <a class="art-card" href="https://dansproul.com/featured/schwabachers-reflection-black-and-white-dan-sproul.html" target="_blank" rel="noopener"><img src="schwabachers-reflection-black-and-white-dan-sproul.jpg" alt="Schwabacher’s Reflection black and white fine art photography by Dan Sproul" loading="lazy" decoding="async"><span>Schwabacher’s Reflection</span></a>
-    </div>
+  <div class="art-grid monochrome-print-grid">
+      <a class="art-card" href="https://dansproul.com/featured/monochrome-maligne-lake-boathouse-dan-sproul.html" target="_blank" rel="noopener">
+        <img src="monochrome-maligne-lake-boathouse-dan-sproul (1).jpg" alt="Monochrome Maligne Lake Boathouse black and white fine art photography by Dan Sproul" loading="lazy" decoding="async">
+        <div class="art-card-copy">
+          <div class="print-label">Canadian Rockies Print</div>
+          <h3>Monochrome Maligne Lake Boathouse</h3>
+          <p class="field-note">I liked the old boathouse against Maligne Lake because the scene already felt quiet before I ever removed the color.</p>
+          <p class="print-meta"><strong>Best for:</strong> living rooms, bedrooms, hospitality suites, and refined lake house interiors.</p>
+          <p class="print-meta"><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
+          <div class="shop-card-link">Shop This Print →</div>
+        </div>
+      </a>
+      <a class="art-card" href="https://dansproul.com/featured/dreamy-mountainscape-canada-black-and-white-dan-sproul.html" target="_blank" rel="noopener">
+        <img src="dreamy-mountainscape-canada-black-and-white-dan-sproul.jpg" alt="Dreamy Mountainscape Canada black and white fine art photography by Dan Sproul" loading="lazy" decoding="async">
+        <div class="art-card-copy">
+          <div class="print-label">Misty Mountain Print</div>
+          <h3>Dreamy Mountainscape Canada</h3>
+          <p class="field-note">This was one of those Canadian mountain scenes where the clouds and shape were stronger than the color, so black and white kept it honest.</p>
+          <p class="print-meta"><strong>Best for:</strong> offices, bedrooms, hospitality lounges, and calm modern interiors.</p>
+          <p class="print-meta"><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
+          <div class="shop-card-link">Shop This Print →</div>
+        </div>
+      </a>
+      <a class="art-card" href="https://dansproul.com/featured/foggy-patricia-lake-sunrise-canada-dan-sproul.html" target="_blank" rel="noopener">
+        <img src="foggy-patricia-lake-sunrise-canada-dan-sproul.jpg" alt="Foggy Patricia Lake Sunrise black and white fine art photography by Dan Sproul" loading="lazy" decoding="async">
+        <div class="art-card-copy">
+          <div class="print-label">Foggy Lake Print</div>
+          <h3>Foggy Patricia Lake Sunrise</h3>
+          <p class="field-note">Patricia Lake had that soft, foggy morning feeling where the reflection and shoreline were enough without needing much else.</p>
+          <p class="print-meta"><strong>Best for:</strong> bedrooms, therapy offices, reading rooms, and quiet residential walls.</p>
+          <p class="print-meta"><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
+          <div class="shop-card-link">Shop This Print →</div>
+        </div>
+      </a>
+      <a class="art-card" href="https://dansproul.com/featured/denali-highway-mystique-landscape-dan-sproul.html" target="_blank" rel="noopener">
+        <img src="denali-highway-mystique-landscape-dan-sproul.jpg" alt="Denali Highway Mystique black and white fine art photography by Dan Sproul" loading="lazy" decoding="async">
+        <div class="art-card-copy">
+          <div class="print-label">Alaska Landscape Print</div>
+          <h3>Denali Highway Mystique</h3>
+          <p class="field-note">The Denali Highway has this wide, lonely feeling; in black and white the weather and distance become the subject.</p>
+          <p class="print-meta"><strong>Best for:</strong> executive offices, boardrooms, lodges, and large statement walls.</p>
+          <p class="print-meta"><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
+          <div class="shop-card-link">Shop This Print →</div>
+        </div>
+      </a>
+      <a class="art-card" href="https://dansproul.com/featured/denali-highway-reflection-black-and-white-dan-sproul.html" target="_blank" rel="noopener">
+        <img src="denali-highway-reflection-black-and-white-dan-sproul.jpg" alt="Denali Highway Reflection black and white fine art photography by Dan Sproul" loading="lazy" decoding="async">
+        <div class="art-card-copy">
+          <div class="print-label">Alaska Reflection Print</div>
+          <h3>Denali Highway Reflection</h3>
+          <p class="field-note">I stopped for the reflection first, but the quiet around the lake is what made this image stay with me.</p>
+          <p class="print-meta"><strong>Best for:</strong> living rooms, offices, lodge interiors, and calm gallery-style rooms.</p>
+          <p class="print-meta"><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
+          <div class="shop-card-link">Shop This Print →</div>
+        </div>
+      </a>
+      <a class="art-card" href="https://dansproul.com/featured/monochrome-moraine-lake-canada-dan-sproul.html" target="_blank" rel="noopener">
+        <img src="monochrome-moraine-lake-canada-dan-sproul.jpg" alt="Monochrome Moraine Lake black and white fine art photography by Dan Sproul" loading="lazy" decoding="async">
+        <div class="art-card-copy">
+          <div class="print-label">Moraine Lake Print</div>
+          <h3>Monochrome Moraine Lake</h3>
+          <p class="field-note">Moraine Lake is usually all about color, but I liked stripping it down to mountain shape, dark trees, and water.</p>
+          <p class="print-meta"><strong>Best for:</strong> great rooms, offices, hospitality lounges, and refined residential interiors.</p>
+          <p class="print-meta"><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
+          <div class="shop-card-link">Shop This Print →</div>
+        </div>
+      </a>
+      <a class="art-card" href="https://dansproul.com/featured/waterfall-sunburst-black-and-white-dan-sproul.html" target="_blank" rel="noopener">
+        <img src="waterfall-sunburst-black-and-white-dan-sproul.jpg" alt="Waterfall Sunburst black and white fine art photography by Dan Sproul" loading="lazy" decoding="async">
+        <div class="art-card-copy">
+          <div class="print-label">Waterfall Print</div>
+          <h3>Waterfall Sunburst</h3>
+          <p class="field-note">I waited for the light to break through the trees and hit the waterfall just enough to give the scene some lift.</p>
+          <p class="print-meta"><strong>Best for:</strong> wellness rooms, spa spaces, corridors, and restorative interiors.</p>
+          <p class="print-meta"><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
+          <div class="shop-card-link">Shop This Print →</div>
+        </div>
+      </a>
+      <a class="art-card" href="https://dansproul.com/featured/morning-forest-path-black-and-white-dan-sproul.html" target="_blank" rel="noopener">
+        <img src="morning-forest-path-black-and-white-dan-sproul.jpg" alt="Morning Forest Path black and white fine art photography by Dan Sproul" loading="lazy" decoding="async">
+        <div class="art-card-copy">
+          <div class="print-label">Forest Path Print</div>
+          <h3>Morning Forest Path</h3>
+          <p class="field-note">This path felt quiet enough that black and white made sense — less color, more depth and direction.</p>
+          <p class="print-meta"><strong>Best for:</strong> healthcare corridors, therapy offices, bedrooms, and transitional spaces.</p>
+          <p class="print-meta"><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
+          <div class="shop-card-link">Shop This Print →</div>
+        </div>
+      </a>
+      <a class="art-card" href="https://dansproul.com/featured/schwabachers-reflection-black-and-white-dan-sproul.html" target="_blank" rel="noopener">
+        <img src="schwabachers-reflection-black-and-white-dan-sproul.jpg" alt="Schwabacher’s Reflection black and white fine art photography by Dan Sproul" loading="lazy" decoding="async">
+        <div class="art-card-copy">
+          <div class="print-label">Grand Teton Print</div>
+          <h3>Schwabacher’s Reflection</h3>
+          <p class="field-note">At Schwabacher’s Landing, the reflection did most of the work; black and white keeps attention on the Tetons and the water.</p>
+          <p class="print-meta"><strong>Best for:</strong> living rooms, bedrooms, offices, and quiet statement walls.</p>
+          <p class="print-meta"><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
+          <div class="shop-card-link">Shop This Print →</div>
+        </div>
+      </a>
+      <a class="art-card" href="https://dansproul.com/featured/spirit-island-black-and-white-dan-sproul.html" target="_blank" rel="noopener">
+        <img src="spirit-island-black-and-white-dan-sproul (1).jpg" alt="Spirit Island black and white fine art photography by Dan Sproul" loading="lazy" decoding="async">
+        <div class="art-card-copy">
+          <div class="print-label">Spirit Island Print</div>
+          <h3>Spirit Island Black and White</h3>
+          <p class="field-note">Spirit Island is photographed often, but I liked this version because the clouds and lake had enough drama to stand without color.</p>
+          <p class="print-meta"><strong>Best for:</strong> offices, lodges, living rooms, and refined mountain interiors.</p>
+          <p class="print-meta"><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
+          <div class="shop-card-link">Shop This Print →</div>
+        </div>
+      </a>
+      <a class="art-card" href="https://dansproul.com/featured/canadian-mountain-magic-dan-sproul.html" target="_blank" rel="noopener">
+        <img src="canadian-mountain-magic-dan-sproul.jpg" alt="Canadian Mountain Magic black and white fine art photography by Dan Sproul" loading="lazy" decoding="async">
+        <div class="art-card-copy">
+          <div class="print-label">Canadian Rockies Print</div>
+          <h3>Canadian Mountain Magic</h3>
+          <p class="field-note">This was one of those Canadian Rockies scenes where the mountain shape, low cloud, and quiet lake did all the work.</p>
+          <p class="print-meta"><strong>Best for:</strong> bedrooms, offices, lodge interiors, and calm hospitality suites.</p>
+          <p class="print-meta"><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
+          <div class="shop-card-link">Shop This Print →</div>
+        </div>
+      </a>
+      <a class="art-card" href="https://dansproul.com/featured/wilderness-waters-at-natural-bridge-dan-sproul.html" target="_blank" rel="noopener">
+        <img src="wilderness-waters-at-natural-bridge-dan-sproul.jpg" alt="Wilderness Waters at Natural Bridge black and white fine art photography by Dan Sproul" loading="lazy" decoding="async">
+        <div class="art-card-copy">
+          <div class="print-label">Natural Bridge Print</div>
+          <h3>Wilderness Waters at Natural Bridge</h3>
+          <p class="field-note">At Natural Bridge the water is loud, but in black and white the scene becomes more about movement, rock, and texture.</p>
+          <p class="print-meta"><strong>Best for:</strong> wellness spaces, corridors, lodge interiors, and nature-focused offices.</p>
+          <p class="print-meta"><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
+          <div class="shop-card-link">Shop This Print →</div>
+        </div>
+      </a>
+      <a class="art-card" href="https://dansproul.com/featured/hallett-peak-black-and-white-dan-sproul.html" target="_blank" rel="noopener">
+        <img src="hallett-peak-black-and-white-dan-sproul.jpg" alt="Hallett Peak black and white fine art photography by Dan Sproul" loading="lazy" decoding="async">
+        <div class="art-card-copy">
+          <div class="print-label">Rocky Mountain Print</div>
+          <h3>Hallett Peak Black and White</h3>
+          <p class="field-note">I photographed Hallett Peak with a rugged, vertical feel; the black and white conversion brought out the rock, snow, and scale.</p>
+          <p class="print-meta"><strong>Best for:</strong> offices, entryways, mountain homes, and vertical statement walls.</p>
+          <p class="print-meta"><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
+          <div class="shop-card-link">Shop This Print →</div>
+        </div>
+      </a>
+      <a class="art-card" href="https://dansproul.com/featured/dramatic-black-and-white-landscape-badlands-dan-sproul.html" target="_blank" rel="noopener">
+        <img src="dramatic-black-and-white-landscape-badlands-dan-sproul.jpg" alt="Dramatic Black and White Landscape Badlands fine art photography by Dan Sproul" loading="lazy" decoding="async">
+        <div class="art-card-copy">
+          <div class="print-label">Badlands Print</div>
+          <h3>Dramatic Black and White Badlands</h3>
+          <p class="field-note">Badlands light can be harsh, but that contrast works in black and white; the shapes become almost architectural.</p>
+          <p class="print-meta"><strong>Best for:</strong> modern offices, hospitality corridors, boardrooms, and contemporary interiors.</p>
+          <p class="print-meta"><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
+          <div class="shop-card-link">Shop This Print →</div>
+        </div>
+      </a>
+      <a class="art-card" href="https://dansproul.com/featured/devils-tower-bison-black-and-white-dan-sproul.html" target="_blank" rel="noopener">
+        <img src="devils-tower-bison-black-and-white-dan-sproul.jpg" alt="Devils Tower Bison black and white fine art photography by Dan Sproul" loading="lazy" decoding="async">
+        <div class="art-card-copy">
+          <div class="print-label">Western Landscape Print</div>
+          <h3>Devils Tower Bison Black and White</h3>
+          <p class="field-note">I liked the scale here — bison in the foreground, Devils Tower behind them, and enough open space to let the image breathe.</p>
+          <p class="print-meta"><strong>Best for:</strong> offices, lodges, western interiors, and masculine quiet luxury spaces.</p>
+          <p class="print-meta"><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
+          <div class="shop-card-link">Shop This Print →</div>
+        </div>
+      </a>
+      <a class="art-card" href="https://dansproul.com/featured/three-graces-garden-of-the-gods-dan-sproul.html" target="_blank" rel="noopener">
+        <img src="three-graces-garden-of-the-gods-dan-sproul (1).jpg" alt="Three Graces Garden of the Gods black and white fine art photography by Dan Sproul" loading="lazy" decoding="async">
+        <div class="art-card-copy">
+          <div class="print-label">Garden of the Gods Print</div>
+          <h3>Three Graces Garden of the Gods</h3>
+          <p class="field-note">Garden of the Gods has strong forms already, so black and white lets the rock shapes and shadows carry the image.</p>
+          <p class="print-meta"><strong>Best for:</strong> offices, entryways, modern living rooms, and clean architectural interiors.</p>
+          <p class="print-meta"><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
+          <div class="shop-card-link">Shop This Print →</div>
+        </div>
+      </a>
   </div>
 </section>
     <section class="intro supporting-copy">
@@ -1358,8 +1596,8 @@ footer.site-footer .footer-bottom{
         <h2>Quiet contrast for spaces that need calm, depth, and permanence.</h2>
       </div>
       <div class="intro-text">
-        <p>Monochrome Stillness brings together black-and-white nature photography selected for rooms that need calm contrast, architectural structure, and timeless atmosphere.</p>
-        <p>Use this collection for living rooms, offices, hospitality lounges, corridors, bedrooms, and refined interiors where color should stay quiet.</p>
+        <p>Monochrome Stillness is a restrained collection of black-and-white nature photography selected for calm contrast, architectural structure, and quiet atmosphere.</p>
+        <p>Use it when a room needs depth and focus without adding more color: offices, bedrooms, hospitality lounges, corridors, and refined residential interiors.</p>
       </div>
     </section>
     <section>
