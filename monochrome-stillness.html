@@ -978,6 +978,39 @@ footer.site-footer .footer-bottom{
   }
 }
 
+
+
+/* BUYER-FIRST MONOCHROME PURCHASE PATH */
+#mockups,#collection,#best-rooms{scroll-margin-top:88px}
+.buyer-reassurance{
+  background:#100f0e;
+  color:#fbf7f1;
+  padding:28px clamp(22px,5vw,76px);
+  border-top:1px solid rgba(185,146,98,.28);
+  border-bottom:1px solid rgba(185,146,98,.28);
+}
+.buyer-reassurance-inner{max-width:1180px;margin:0 auto;text-align:center}
+.buyer-points{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:14px}
+.buyer-points span{display:block;border:1px solid rgba(185,146,98,.28);background:rgba(255,255,255,.035);padding:12px 10px;color:#d8c6a4;font-family:Arial,Helvetica,sans-serif;font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+.buyer-reassurance p{max-width:860px;margin:0 auto;color:rgba(251,247,241,.72);font-family:"Jost",Arial,sans-serif;font-size:14px;line-height:1.7}
+.buyer-reassurance strong{color:#fbf7f1;font-weight:500}
+.mockup-actions{position:absolute;left:22px;right:22px;bottom:22px;z-index:4;display:flex;gap:10px;flex-wrap:wrap;transform:translateY(4px)}
+.mockup-card figcaption{bottom:58px!important;padding-bottom:18px!important}
+.mockup-actions button,.mockup-actions a{display:inline-flex;align-items:center;justify-content:center;min-height:38px;padding:10px 13px;border:1px solid rgba(216,198,164,.7);font-family:Arial,Helvetica,sans-serif;font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;cursor:pointer}
+.mockup-actions button{background:rgba(0,0,0,.35);color:#fbf7f1}
+.mockup-actions a{background:#d8c6a4;color:#111!important;border-color:#d8c6a4}
+.art-card span::after{content:'Shop This Print →';display:block;margin-top:10px;color:#8f6e42;font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+.grouped-gallery{padding-top:clamp(4rem,7vw,6rem)!important}
+.group-head h3{font-size:clamp(1.7rem,3vw,2.55rem)!important;line-height:1.1!important}
+.mockup-lightbox{align-items:flex-start!important;overflow-y:auto!important;padding-top:54px!important;padding-bottom:26px!important}
+.mockup-lightbox-card{background:#0d0c0b;border:1px solid rgba(185,146,98,.35);box-shadow:0 30px 90px rgba(0,0,0,.7);padding:0 0 24px;max-height:none!important}
+.mockup-lightbox-image-wrap{background:#050505;border-bottom:1px solid rgba(185,146,98,.24)}
+.mockup-lightbox-card img{box-shadow:none!important;max-height:58vh!important}
+.mockup-lightbox-actions a{background:#d8c6a4!important;color:#111!important;border-color:#d8c6a4!important}
+.mockup-lightbox-actions a::after{content:''!important}
+@media(max-width:980px){.buyer-points{grid-template-columns:repeat(2,1fr)}.mockup-grid{grid-template-columns:1fr!important}.mockup-card{min-height:320px!important}}
+@media(max-width:680px){.buyer-reassurance{padding:22px}.buyer-points{grid-template-columns:1fr;gap:8px}.buyer-reassurance p{font-size:13px}.mockup-actions{position:relative;left:auto;right:auto;bottom:auto;padding:0 18px 18px;display:grid;grid-template-columns:1fr}.mockup-card figcaption{position:relative!important;bottom:auto!important;background:#111;padding:18px!important}.mockup-card::before{display:none}.mockup-card{min-height:auto!important}.mockup-actions button,.mockup-actions a{width:100%}.mockup-lightbox{padding:58px 14px 18px!important}.mockup-lightbox-card img{max-height:42vh!important}.mockup-lightbox-actions a,.mockup-lightbox-actions button{width:100%;text-align:center}.hero h1{font-size:clamp(2.25rem,9vw,3.05rem)!important}.button-row .button{width:100%}}
+
 </style>
 <script type="application/ld+json">
 {
@@ -1205,12 +1238,12 @@ footer.site-footer .footer-bottom{
 <section class="hero">
   <div class="hero-inner">
     <div class="eyebrow">Monochrome Stillness Collection</div>
-    <h1>Black and White Artwork for Executive Offices, Healthcare Corridors, and Quiet Luxury <em>Interiors.</em></h1>
-    <p>Monochrome Stillness is a curated collection of black-and-white landscape artwork selected for refined spaces where artwork should feel calm, architectural, timeless, and emotionally restrained.</p>
+    <h1>Black and white landscape prints for refined modern interiors.</h1>
+    <p>Shop black-and-white nature photography for offices, living rooms, bedrooms, hospitality spaces, healthcare corridors, and quiet modern interiors.</p>
     <div class="button-row">
       <a class="button primary" href="#mockups">View In Interiors</a>
-      <a class="button" href="#collection">Shop Collection</a>
-      <a class="button" href="mailto:sproulphoto@gmail.com?subject=Trade%20Inquiry%20-%20Monochrome%20Stillness">Request Trade Info</a>
+      <a class="button" href="#collection">Shop Monochrome Prints</a>
+      <a class="button" href="mailto:sproulphoto@gmail.com?subject=Trade%20Inquiry%20-%20Monochrome%20Stillness">Request Mockup Help</a>
     </div>
     <div class="hero-badges">
       <span>Executive Offices</span>
@@ -1221,98 +1254,63 @@ footer.site-footer .footer-bottom{
   </div>
 </section>
 
+<section class="buyer-reassurance" aria-label="Monochrome print purchase information">
+  <div class="buyer-reassurance-inner">
+    <div class="buyer-points">
+      <span>Prints from $45</span>
+      <span>Framed from $100</span>
+      <span>Canvas · Metal · Acrylic</span>
+      <span>Free mockup help</span>
+    </div>
+    <p>Browse the room examples and selected black-and-white prints below. Click <strong>Purchase Print</strong> or <strong>Shop This Print</strong> to open my secure print storefront, where you can choose size, frame, and format options.</p>
+  </div>
+</section>
 
 
-    <section class="mockups">
+    <section class="mockups" id="mockups">
       <div class="section-head">
         <div class="section-label">In Space</div>
-        <h2>Designed for refined interiors.</h2>
-        <p>Large-format monochrome landscapes create a calm focal point in rooms that rely on texture, lighting, architecture, and restraint.</p>
+        <h2>See how monochrome prints look in finished rooms.</h2>
+        <p>Click a room example to enlarge the mockup, or use Purchase Print to go straight to the artwork page.</p>
       </div>
       <div class="mockup-grid">
           <figure class="mockup-card" data-purchase="https://dansproul.com/featured/lake-louise-morning-light-black-and-white-dan-sproul.html" data-title="Lake Louise Morning Light shown as refined black-and-white artwork for a boutique hospitality corridor." data-sizes="24x36 • 30x45 • 36x54" data-frames="Matte Black • Walnut • Slim Black Metal" data-formats="Framed Print • Acrylic • Metal" data-rooms="Hospitality Corridors • Healthcare Corridors • Office Hallways">
             <img src="hospitality corridor mockup.jpg" alt="Boutique hospitality corridor with black and white mountain lake artwork" loading="eager" decoding="async" fetchpriority="high">
             <figcaption><strong>Hospitality corridor</strong> refined black-and-white wayfinding artwork</figcaption>
+            <div class="mockup-actions"><button type="button">View Room Details</button><a href="https://dansproul.com/featured/lake-louise-morning-light-black-and-white-dan-sproul.html" target="_blank" rel="noopener">Purchase Print</a></div>
           </figure>
           <figure class="mockup-card" data-purchase="https://dansproul.com/featured/schwabachers-reflection-black-and-white-dan-sproul.html" data-title="Schwabacher’s Reflection shown as a quiet monochrome focal point for a minimal residential living room." data-sizes="30x40 • 36x48 • 40x60" data-frames="Warm Oak • Walnut • Matte Black" data-formats="Framed Print • Canvas • Acrylic" data-rooms="Living Rooms • Bedrooms • Quiet Residential Spaces">
             <img src="residential living room black and white.jpg" alt="Minimal residential living room with monochrome mountain reflection artwork" loading="lazy" decoding="async">
             <figcaption><strong>Minimal living room</strong> quiet luxury mountain reflection</figcaption>
+            <div class="mockup-actions"><button type="button">View Room Details</button><a href="https://dansproul.com/featured/schwabachers-reflection-black-and-white-dan-sproul.html" target="_blank" rel="noopener">Purchase Print</a></div>
           </figure>
           <figure class="mockup-card" data-purchase="https://dansproul.com/featured/monochrome-moraine-lake-canada-dan-sproul.html" data-title="Monochrome Moraine Lake shown as warm residential statement artwork in a quiet living room." data-sizes="30x45 • 36x54 • 40x60" data-frames="Walnut • Warm Oak • Matte Black" data-formats="Framed Print • Canvas • Acrylic" data-rooms="Living Rooms • Great Rooms • Refined Residential Interiors">
             <img src="residential living room mockup.jpg" alt="Warm residential living room with black and white Moraine Lake artwork" loading="lazy" decoding="async">
             <figcaption><strong>Warm residential</strong> monochrome lake statement</figcaption>
+            <div class="mockup-actions"><button type="button">View Room Details</button><a href="https://dansproul.com/featured/monochrome-moraine-lake-canada-dan-sproul.html" target="_blank" rel="noopener">Purchase Print</a></div>
           </figure>
           <figure class="mockup-card" data-purchase="https://dansproul.com/art/athabasca" data-title="Large monochrome glacier panorama shown in an executive suite as calm statement artwork." data-sizes="36x54 • 40x60 • 45x68" data-frames="Matte Black • Walnut • Slim Black Metal" data-formats="Framed Print • Acrylic • Metal" data-rooms="Executive Offices • Boardrooms • Reception Areas">
             <img src="executive suite mockup.jpg" alt="Executive suite with large monochrome glacier panorama artwork" loading="lazy" decoding="async">
             <figcaption><strong>Executive suite</strong> scale, permanence, and calm authority</figcaption>
+            <div class="mockup-actions"><button type="button">View Room Details</button><a href="https://dansproul.com/art/athabasca" target="_blank" rel="noopener">Purchase Print</a></div>
           </figure>
           <figure class="mockup-card" data-purchase="https://dansproul.com/art/canada+black+and+white" data-title="Dramatic black-and-white Canada mountain artwork shown as a hospitality lounge focal point." data-sizes="36x54 • 40x60 • Oversized Statement" data-frames="Walnut • Matte Black • Warm Oak" data-formats="Canvas • Acrylic • Framed Print" data-rooms="Hospitality Lounges • Boutique Suites • Lodge Modern Interiors">
             <img src="hospitality suite mockup.jpg" alt="Boutique hospitality lounge with dramatic black and white mountain artwork" loading="lazy" decoding="async">
             <figcaption><strong>Hospitality lounge</strong> dramatic but restrained destination atmosphere</figcaption>
+            <div class="mockup-actions"><button type="button">View Room Details</button><a href="https://dansproul.com/art/canada+black+and+white" target="_blank" rel="noopener">Purchase Print</a></div>
           </figure>
           <figure class="mockup-card" data-purchase="https://dansproul.com/art/sylvan" data-title="Oversized monochrome rock reflection artwork shown in a moody hospitality spa environment." data-sizes="30x40 • 36x48 • 40x60" data-frames="Matte Black • Walnut • Warm Oak" data-formats="Framed Print • Canvas • Acrylic" data-rooms="Spa Lounges • Wellness Spaces • Hospitality Retreats">
             <img src="hospitality spa moody mockup.jpg" alt="Moody hospitality spa with oversized monochrome rock reflection artwork" loading="lazy" decoding="async">
             <figcaption><strong>Moody spa lounge</strong> atmospheric monochrome calm</figcaption>
+            <div class="mockup-actions"><button type="button">View Room Details</button><a href="https://dansproul.com/art/sylvan" target="_blank" rel="noopener">Purchase Print</a></div>
           </figure>
       </div>
     </section>
-
-    <section class="intro">
-      <div>
-        <div class="section-label">Collection Concept</div>
-        <h2>Quiet contrast for spaces that need calm, depth, and permanence.</h2>
-      </div>
-      <div class="intro-text">
-        <p>Monochrome Stillness brings together black and white nature photography by Dan Sproul with a focus on atmosphere, reflection, mountain forms, mist, and soft visual rhythm. The collection is built for interiors where artwork needs to support the emotional tone of a room without overpowering the architecture.</p>
-        <p>These pieces work especially well in hospitality lounges, wellness spaces, healthcare corridors, residential living rooms, executive offices, and boutique environments where designers need artwork that feels sophisticated, grounded, and easy to specify across multiple rooms.</p>
-      </div>
-    </section>
-
-    <section>
-      <div class="section-head">
-        <div class="section-label">Where It Works</div>
-        <h2>Built for interiors with restraint.</h2>
-      </div>
-      <div class="use-cases">
-        <div class="use-card">
-          <h3>Hospitality</h3>
-          <p>Guest corridors, spa lounges, boutique suites, reception walls, and quiet destination-inspired spaces.</p>
-        </div>
-        <div class="use-card">
-          <h3>Healthcare</h3>
-          <p>Waiting areas, wellness corridors, patient rooms, therapy spaces, and restorative environments.</p>
-        </div>
-        <div class="use-card">
-          <h3>Residential</h3>
-          <p>Living rooms, bedrooms, entryways, reading areas, and calm gallery-style interiors.</p>
-        </div>
-        <div class="use-card">
-          <h3>Commercial</h3>
-          <p>Executive offices, conference rooms, reception areas, and refined professional spaces.</p>
-        </div>
-      </div>
-    </section>
-<section class="best-rooms-section" id="best-rooms">
-  <div class="section-head">
-    <div class="section-label">Best Rooms for Monochrome Stillness</div>
-    <h2>Where black-and-white artwork works best.</h2>
-    <p>Monochrome Stillness is strongest in spaces that benefit from restraint, quiet contrast, architectural calm, and a polished gallery feeling.</p>
-  </div>
-  <div class="rooms-grid">
-    <div class="room-card"><span>Executive</span><h3>Private Offices</h3><p>Large monochrome landscapes convey calm authority, permanence, and visual focus without distracting from the room.</p></div>
-    <div class="room-card"><span>Healthcare</span><h3>Corridors</h3><p>Black-and-white nature imagery can make transitional healthcare spaces feel calmer, more mature, and less clinical.</p></div>
-    <div class="room-card"><span>Hospitality</span><h3>Lounges & Suites</h3><p>Monochrome artwork brings boutique-hotel refinement while pairing easily with wood, stone, leather, linen, and neutral palettes.</p></div>
-    <div class="room-card"><span>Workplace</span><h3>Conference Rooms</h3><p>Restrained landscape artwork adds depth and atmosphere to boardrooms, meeting rooms, and client-facing spaces.</p></div>
-    <div class="room-card"><span>Residential</span><h3>Living Rooms</h3><p>Quiet black-and-white landscapes work well above sofas, fireplaces, consoles, and gallery-style focal walls.</p></div>
-    <div class="room-card"><span>Wellness</span><h3>Spa & Therapy Rooms</h3><p>Mist, water, mountains, and soft tonal gradients support interiors designed for calm and reflection.</p></div>
-  </div>
-</section>
-
 <section class="gallery grouped-gallery" id="collection">
   <div class="section-head">
     <div class="section-label">Shop the Collection</div>
-    <h2>Black-and-white artwork grouped by atmosphere and interior use.</h2>
-    <p>These works are organized by how they function in a room: architectural calm, executive statement pieces, and wellness or corridor artwork.</p>
+    <h2>Shop selected black-and-white prints.</h2>
+    <p>Choose a print below to view sizes, frames, canvas, metal, acrylic, and paper options on my print storefront.</p>
   </div>
 
   <div class="collection-group">
@@ -1354,6 +1352,58 @@ footer.site-footer .footer-bottom{
     </div>
   </div>
 </section>
+    <section class="intro supporting-copy">
+      <div>
+        <div class="section-label">Collection Concept</div>
+        <h2>Quiet contrast for spaces that need calm, depth, and permanence.</h2>
+      </div>
+      <div class="intro-text">
+        <p>Monochrome Stillness brings together black-and-white nature photography selected for rooms that need calm contrast, architectural structure, and timeless atmosphere.</p>
+        <p>Use this collection for living rooms, offices, hospitality lounges, corridors, bedrooms, and refined interiors where color should stay quiet.</p>
+      </div>
+    </section>
+    <section>
+      <div class="section-head">
+        <div class="section-label">Where It Works</div>
+        <h2>Built for interiors with restraint.</h2>
+      </div>
+      <div class="use-cases">
+        <div class="use-card">
+          <h3>Hospitality</h3>
+          <p>Guest corridors, spa lounges, boutique suites, reception walls, and quiet destination-inspired spaces.</p>
+        </div>
+        <div class="use-card">
+          <h3>Healthcare</h3>
+          <p>Waiting areas, wellness corridors, patient rooms, therapy spaces, and restorative environments.</p>
+        </div>
+        <div class="use-card">
+          <h3>Residential</h3>
+          <p>Living rooms, bedrooms, entryways, reading areas, and calm gallery-style interiors.</p>
+        </div>
+        <div class="use-card">
+          <h3>Commercial</h3>
+          <p>Executive offices, conference rooms, reception areas, and refined professional spaces.</p>
+        </div>
+      </div>
+    </section>
+<section class="best-rooms-section" id="best-rooms">
+  <div class="section-head">
+    <div class="section-label">Best Rooms for Monochrome Stillness</div>
+    <h2>Where black-and-white artwork works best.</h2>
+    <p>Monochrome Stillness is strongest in spaces that benefit from restraint, quiet contrast, architectural calm, and a polished gallery feeling.</p>
+  </div>
+  <div class="rooms-grid">
+    <div class="room-card"><span>Executive</span><h3>Private Offices</h3><p>Large monochrome landscapes convey calm authority, permanence, and visual focus without distracting from the room.</p></div>
+    <div class="room-card"><span>Healthcare</span><h3>Corridors</h3><p>Black-and-white nature imagery can make transitional healthcare spaces feel calmer, more mature, and less clinical.</p></div>
+    <div class="room-card"><span>Hospitality</span><h3>Lounges & Suites</h3><p>Monochrome artwork brings boutique-hotel refinement while pairing easily with wood, stone, leather, linen, and neutral palettes.</p></div>
+    <div class="room-card"><span>Workplace</span><h3>Conference Rooms</h3><p>Restrained landscape artwork adds depth and atmosphere to boardrooms, meeting rooms, and client-facing spaces.</p></div>
+    <div class="room-card"><span>Residential</span><h3>Living Rooms</h3><p>Quiet black-and-white landscapes work well above sofas, fireplaces, consoles, and gallery-style focal walls.</p></div>
+    <div class="room-card"><span>Wellness</span><h3>Spa & Therapy Rooms</h3><p>Mist, water, mountains, and soft tonal gradients support interiors designed for calm and reflection.</p></div>
+  </div>
+</section>
+
+
+
 
 
     
@@ -1491,13 +1541,31 @@ footer.site-footer .footer-bottom{
 
   </div>
 
-  </div>
-
   <div class="footer-bottom">
     © 2026 Dan Sproul Fine Art Photography · Based in Lima, Ohio · Original Nature Photography & Heritage-Inspired Artwork
   </div>
 
 </footer>
+
+
+<div class="mockup-lightbox" id="mockupLightbox" aria-hidden="true" role="dialog" aria-label="Monochrome Stillness mockup preview">
+  <button class="mockup-lightbox-close" type="button" aria-label="Close preview">×</button>
+  <div class="mockup-lightbox-card">
+    <div class="mockup-lightbox-image-wrap">
+      <img id="mockupLightboxImage" src="" alt="">
+    </div>
+    <div class="mockup-lightbox-title" id="mockupLightboxTitle"></div>
+    <div class="mockup-spec-panel">
+      <div class="mockup-spec-item"><strong>Suggested Sizes</strong><span id="mockupSpecSizes"></span></div>
+      <div class="mockup-spec-item"><strong>Frame Suggestions</strong><span id="mockupSpecFrames"></span></div>
+      <div class="mockup-spec-item"><strong>Available Formats</strong><span id="mockupSpecFormats"></span></div>
+      <div class="mockup-spec-item"><strong>Best Rooms</strong><span id="mockupSpecRooms"></span></div>
+    </div>
+    <div class="mockup-lightbox-actions">
+      <a id="mockupPurchaseLink" href="https://dansproul.com/art/black+and+white" target="_blank" rel="noopener">Purchase Print</a>
+      <button id="mockupCloseInline" type="button">Close Preview</button>
+    </div>
+  </div>
 </div>
 
 <script>
@@ -1532,7 +1600,8 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   document.querySelectorAll('.mockup-card').forEach(function(card){
-    card.addEventListener('click', function(){
+    card.addEventListener('click', function(e){
+      if (e.target && e.target.closest && e.target.closest('a')) return;
       var img = card.querySelector('img');
       if (!img || !lightbox) return;
       lightbox.classList.add('active');
