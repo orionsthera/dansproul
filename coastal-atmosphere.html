@@ -847,6 +847,66 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
 
 
 
+/* BUYER REASSURANCE STRIP + SIMPLE PURCHASE PATH */
+.buyer-reassurance{
+  background:#f4f0ea;
+  color:#1f1f1d;
+  border-top:1px solid rgba(40,35,30,.14);
+  border-bottom:1px solid rgba(40,35,30,.14);
+  padding:28px 0 32px;
+}
+.buyer-reassurance .container{max-width:1180px}
+.reassurance-strip{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:1px;
+  border:1px solid rgba(40,35,30,.14);
+  background:rgba(40,35,30,.14);
+}
+.reassurance-strip span{
+  display:block;
+  background:#fffaf3;
+  color:#3b342d;
+  padding:15px 14px;
+  text-align:center;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.66rem;
+  font-weight:700;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
+.how-to-buy-note{
+  max-width:880px;
+  margin:18px auto 0;
+  color:#4f473e;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.82rem;
+  line-height:1.75;
+  text-align:center;
+}
+.collection-card .card-copy::after{
+  content:'Shop This Print →';
+  display:inline-block;
+  margin-top:16px;
+  color:#d8c6a4;
+  border-bottom:1px solid rgba(216,198,164,.34);
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.68rem;
+  font-weight:700;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+}
+@media(max-width:900px){
+  .reassurance-strip{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:680px){
+  .buyer-reassurance{padding:20px 0 24px!important}
+  .reassurance-strip{grid-template-columns:1fr!important}
+  .reassurance-strip span{font-size:.58rem!important;padding:12px 10px!important}
+  .how-to-buy-note{font-size:.76rem!important;line-height:1.6!important;text-align:left!important}
+}
+
+
 /* FINAL CLEANUP: BUYER GUIDANCE + MOBILE FIXES */
 .mockup-caption strong{color:#9f7b3d;font-family:Arial,Helvetica,sans-serif;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase}
 .mockup-modal{align-items:flex-start!important;overflow-y:auto!important;padding:58px 14px 18px!important}
@@ -1030,7 +1090,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
     <p>A curated collection of moody coastal photography featuring fog, surf, sea stacks, shoreline texture, muted ocean palettes, and atmospheric Pacific Northwest light. Created for calm bedrooms, living rooms, coastal homes, guest spaces, wellness rooms, and interiors that feel better with a quiet connection to water.</p>
     <div class="button-row">
       <a href="#mockups" class="btn primary">View In Rooms</a>
-      <a href="#collection" class="btn">View Print Options</a>
+      <a href="#collection" class="btn">Shop Coastal Prints</a>
     </div>
     <div class="trust-strip">
       <span>Framed Prints</span>
@@ -1042,13 +1102,25 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
   </div>
 </section>
 
+<section class="buyer-reassurance" aria-label="Coastal Atmosphere print buying information">
+  <div class="container">
+    <div class="reassurance-strip">
+      <span>Prints from $45</span>
+      <span>Framed from $100</span>
+      <span>Canvas · Metal · Acrylic</span>
+      <span>Free mockup help</span>
+    </div>
+    <p class="how-to-buy-note">Browse the room examples and selected Coastal Atmosphere prints below. Click any purchase link to open my secure print storefront, where you can choose size, frame, canvas, metal, acrylic, or paper options.</p>
+  </div>
+</section>
+
 <section class="mockup-section" id="mockups">
   <div class="container">
     <div class="section-heading">
       <span class="eyebrow">Featured In Real Spaces</span>
       <h2>Coastal artwork visualized in refined interiors.</h2>
-      <p>These room views show how coastal photography can feel at home above a sofa, bed, console, dining room wall, or quiet guest space. Click any mockup to enlarge it and see the related print with suggested size, frame, and format guidance.</p>
-      <p class="buyer-note">Available as framed prints, canvas, acrylic, metal, and fine art paper through the linked print pages.</p>
+      <p>See how each coastal print feels in a finished room. Click a mockup to enlarge it, or use the purchase link to open the print page and choose size, frame, and format options.</p>
+      <p class="buyer-note">Purchases open in a secure print storefront with available sizes, frames, canvas, acrylic, metal, and fine art paper options.</p>
     </div>
 
     <div class="format-strip">
@@ -1066,7 +1138,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
       data-frame="Frame suggestion: natural oak, white oak, walnut, warm wood, or thin matte black."
       data-format="Available formats: framed print, canvas, acrylic, metal, and fine art paper.">
       <img src="coastal atmosphere living room dan sproul outer banks.png" alt="Outer Banks Beach Sunrise coastal photography installed in a quiet luxury coastal living room by Dan Sproul" loading="eager" decoding="async">
-      <a class="quick-link" href="https://dansproul.com/featured/outer-banks-beach-sunrise-dan-sproul.html" target="_blank" rel="noopener" onclick="event.stopPropagation()">View Print</a>
+      <a class="quick-link" href="https://dansproul.com/featured/outer-banks-beach-sunrise-dan-sproul.html" target="_blank" rel="noopener" onclick="event.stopPropagation()">Purchase Print</a>
       <div class="featured-installation-copy">
         <div>
           <span class="shop-installation-label">Shop This Installation</span>
@@ -1097,7 +1169,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
       data-frame="Frame suggestion: natural oak, walnut, warm wood, or thin matte black."
       data-format="Available formats: framed print, canvas, acrylic, metal, and fine art paper.">
       <img src="coastal atmosphere sea stack sunset entryway dan sproul.png" alt="Oregon Coast sunset sea stack photography installed above a console in a warm modern coastal entryway by Dan Sproul" loading="lazy" decoding="async">
-      <a class="quick-link" href="https://dansproul.com/featured/oregon-coast-sunset-with-sea-stacks-dan-sproul.html" target="_blank" rel="noopener" onclick="event.stopPropagation()">View Print</a>
+      <a class="quick-link" href="https://dansproul.com/featured/oregon-coast-sunset-with-sea-stacks-dan-sproul.html" target="_blank" rel="noopener" onclick="event.stopPropagation()">Purchase Print</a>
       <div class="featured-installation-copy">
         <div>
           <span class="shop-installation-label">Shop This Installation</span>
@@ -1128,7 +1200,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
       data-frame="Frame suggestion: natural oak, walnut, warm wood, or thin matte black."
       data-format="Available formats: framed print, canvas, acrylic, metal, and fine art paper.">
       <img src="coastal atmosphere rugged coastline in living room dan sproul.png" alt="Yaquina Bay Coastal Scene photography installed as a large framed statement piece in a warm contemporary coastal living room by Dan Sproul" loading="lazy" decoding="async">
-      <a class="quick-link" href="https://dansproul.com/featured/yaquina-bay-coastal-scene-dan-sproul.html" target="_blank" rel="noopener" onclick="event.stopPropagation()">View Print</a>
+      <a class="quick-link" href="https://dansproul.com/featured/yaquina-bay-coastal-scene-dan-sproul.html" target="_blank" rel="noopener" onclick="event.stopPropagation()">Purchase Print</a>
       <div class="featured-installation-copy">
         <div>
           <span class="shop-installation-label">Shop This Installation</span>
@@ -1154,27 +1226,27 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
     <div class="mockup-grid">
       <div class="mockup" data-img="coastal-atmosphere-diningroom.jpg" data-link="https://dansproul.com/featured/dreamy-haystack-rock-reflection-dan-sproul.html" data-caption="Dreamy Haystack Rock reflection artwork shown above a dining room console for a refined coastal interior." data-size="Suggested sizes: 30×40, 36×48, 40×60, or larger depending on console and wall width." data-frame="Frame suggestion: white oak, natural oak, walnut, or thin matte black." data-format="Available formats: framed print, canvas, acrylic, metal, and fine art paper.">
         <img src="coastal-atmosphere-diningroom.jpg" alt="Moody Oregon Coast photography above a dining room console by Dan Sproul" loading="lazy" decoding="async">
-        <a class="quick-link" href="https://dansproul.com/featured/dreamy-haystack-rock-reflection-dan-sproul.html" target="_blank" rel="noopener" onclick="event.stopPropagation()">View Print</a>
+        <a class="quick-link" href="https://dansproul.com/featured/dreamy-haystack-rock-reflection-dan-sproul.html" target="_blank" rel="noopener" onclick="event.stopPropagation()">Purchase Print</a>
         <div class="mockup-caption"><strong>Best for:</strong> dining rooms, consoles, and calm coastal homes. Suggested sizes: 30×40 to 40×60.</div>
       </div>
 
       <div class="mockup-pair">
         <div class="mockup" data-img="coastal-atmosphere-livingroom.jpg" data-link="https://dansproul.com/featured/powerful-ocean-waves-oregon-coast-dan-sproul.html" data-caption="Powerful Oregon Coast ocean wave photography for a quiet luxury living room." data-size="Suggested sizes: 36×54, 40×60, 45×60, or larger for sofas and main living room walls." data-frame="Frame suggestion: thin matte black, walnut, or natural wood for contrast." data-format="Available formats: framed print, canvas, acrylic, metal, and fine art paper.">
           <img src="coastal-atmosphere-livingroom.jpg" alt="Black and white coastal surf print for a quiet luxury living room by Dan Sproul" loading="lazy" decoding="async">
-          <a class="quick-link" href="https://dansproul.com/featured/powerful-ocean-waves-oregon-coast-dan-sproul.html" target="_blank" rel="noopener" onclick="event.stopPropagation()">View Print</a>
+          <a class="quick-link" href="https://dansproul.com/featured/powerful-ocean-waves-oregon-coast-dan-sproul.html" target="_blank" rel="noopener" onclick="event.stopPropagation()">Purchase Print</a>
           <div class="mockup-caption"><strong>Best for:</strong> living rooms and darker modern interiors. Suggested sizes: 36×54 to 45×60.</div>
         </div>
 
         <div class="mockup" data-img="coastal-atmosphere-living-room.jpg" data-link="https://dansproul.com/featured/yaquina-beach-black-and-white-dan-sproul.html" data-caption="Yaquina Beach black and white coastal artwork above a fireplace in a luxury living room." data-size="Suggested sizes: 30×40, 36×48, 40×60, or custom sizing above fireplaces and mantels." data-frame="Frame suggestion: matte black, walnut, or warm natural wood." data-format="Available formats: framed print, canvas, acrylic, metal, and fine art paper.">
           <img src="coastal-atmosphere-living-room.jpg" alt="Black and white Yaquina Beach coastal artwork above fireplace in luxury living room by Dan Sproul" loading="lazy" decoding="async">
-          <a class="quick-link" href="https://dansproul.com/featured/yaquina-beach-black-and-white-dan-sproul.html" target="_blank" rel="noopener" onclick="event.stopPropagation()">View Print</a>
+          <a class="quick-link" href="https://dansproul.com/featured/yaquina-beach-black-and-white-dan-sproul.html" target="_blank" rel="noopener" onclick="event.stopPropagation()">Purchase Print</a>
           <div class="mockup-caption"><strong>Best for:</strong> fireplaces, mantels, and statement seating areas. Natural wood or matte black frames work well.</div>
         </div>
       </div>
 
       <div class="mockup" data-img="coastal-atmosphere-bedroom.jpg" data-link="https://dansproul.com/featured/moody-oregon-coast-sea-stacks-dan-sproul.html" data-caption="Moody Oregon Coast sea stack artwork for a warm bedroom, wellness space, or quiet coastal retreat." data-size="Suggested sizes: 24×36, 30×40, 36×48, or a pair of smaller prints for bedrooms." data-frame="Frame suggestion: natural oak, white oak, walnut, or soft black." data-format="Available formats: framed print, canvas, acrylic, metal, and fine art paper.">
         <img src="coastal-atmosphere-bedroom.jpg" alt="Fog and shoreline artwork for bedrooms and wellness spaces by Dan Sproul" loading="lazy" decoding="async">
-        <a class="quick-link" href="https://dansproul.com/featured/moody-oregon-coast-sea-stacks-dan-sproul.html" target="_blank" rel="noopener" onclick="event.stopPropagation()">View Print</a>
+        <a class="quick-link" href="https://dansproul.com/featured/moody-oregon-coast-sea-stacks-dan-sproul.html" target="_blank" rel="noopener" onclick="event.stopPropagation()">Purchase Print</a>
         <div class="mockup-caption"><strong>Best for:</strong> bedrooms, wellness rooms, and quiet retreats. Suggested sizes: 24×36 to 36×48.</div>
       </div>
     </div>
@@ -1199,7 +1271,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
   <div class="container">
     <span class="eyebrow">Shop The Collection</span>
     <h2>Atmospheric ocean photography curated for interiors.</h2>
-    <p>Available as framed prints, canvas, acrylic, metal, and fine art paper through the linked print pages.</p>
+    <p>Click any image below to shop the print and choose available sizes, frames, canvas, acrylic, metal, or paper options.</p>
 
     <div class="collection-grid">
       <a href="https://dansproul.com/featured/outer-banks-beach-sunrise-dan-sproul.html" class="collection-card" target="_blank" rel="noopener">
