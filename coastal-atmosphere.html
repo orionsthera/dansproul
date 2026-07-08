@@ -932,6 +932,69 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
   .qe-related-collections{padding:72px 0!important}
 }
 
+
+/* QUIET EARTH STYLE PRINT CARDS FOR COASTAL ATMOSPHERE */
+.reassurance-strip{
+  grid-template-columns:repeat(6,1fr);
+}
+.print-card-grid .collection-card{
+  display:flex;
+  flex-direction:column;
+  min-height:100%;
+}
+.collection-card.vertical img{
+  aspect-ratio:3/4;
+}
+.print-card-grid .card-copy{
+  display:flex;
+  flex-direction:column;
+  flex:1;
+}
+.print-card-grid .card-copy h3{
+  color:#f5f1ea;
+  font-size:clamp(1.45rem,2vw,1.9rem);
+  line-height:1.08;
+  margin-bottom:14px;
+}
+.print-card-grid .card-copy .field-note{
+  color:rgba(245,241,234,.78);
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:.96rem;
+  line-height:1.75;
+  margin-bottom:16px;
+}
+.print-card-grid .card-copy .best-for,
+.print-card-grid .card-copy .available-as{
+  max-width:none;
+  color:rgba(244,238,229,.58);
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.73rem;
+  line-height:1.65;
+  letter-spacing:.05em;
+  text-transform:none;
+  margin-bottom:10px;
+}
+.print-card-grid .card-copy .best-for strong,
+.print-card-grid .card-copy .available-as strong{
+  color:#c5a06a;
+  font-weight:700;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  font-size:.64rem;
+}
+.print-card-grid .collection-card .card-copy::after{
+  margin-top:auto;
+  padding-top:16px;
+}
+@media(max-width:1100px){
+  .reassurance-strip{grid-template-columns:repeat(3,1fr)!important;}
+}
+@media(max-width:680px){
+  .print-card-grid .card-copy .field-note{font-size:14px!important;line-height:1.65!important;}
+  .print-card-grid .card-copy .best-for,
+  .print-card-grid .card-copy .available-as{font-size:12px!important;line-height:1.55!important;}
+}
+
 </style>
 
 <script type="application/ld+json">
@@ -1093,11 +1156,11 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
       <a href="#collection" class="btn">Shop Coastal Prints</a>
     </div>
     <div class="trust-strip">
-      <span>Framed Prints</span>
-      <span>Canvas</span>
-      <span>Acrylic</span>
-      <span>Metal</span>
-      <span>Custom Sizes Available</span>
+      <span>Prints from $45</span>
+      <span>Framed from $100</span>
+      <span>Canvas · Metal · Acrylic</span>
+      <span>Ships Worldwide</span>
+      <span>Free Mockup Help</span>
     </div>
   </div>
 </section>
@@ -1108,9 +1171,11 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
       <span>Prints from $45</span>
       <span>Framed from $100</span>
       <span>Canvas · Metal · Acrylic</span>
-      <span>Free mockup help</span>
+      <span>Fine Art Paper</span>
+      <span>Ships Worldwide</span>
+      <span>30-Day Print Guarantee</span>
     </div>
-    <p class="how-to-buy-note">Browse the room examples and selected Coastal Atmosphere prints below. Click any purchase link to open my secure print storefront, where you can choose size, frame, canvas, metal, acrylic, or paper options.</p>
+    <p class="how-to-buy-note">Browse the room examples and selected Coastal Atmosphere prints below. Click any purchase link to open my secure print storefront, where you can choose size, frame, canvas, metal, acrylic, or paper options. Shipping, fulfillment, and 30-day return details are handled through the print storefront at checkout.</p>
   </div>
 </section>
 
@@ -1269,62 +1334,129 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
 
 <section id="collection">
   <div class="container">
-    <span class="eyebrow">Shop The Collection</span>
-    <h2>Atmospheric ocean photography curated for interiors.</h2>
-    <p>Click any image below to shop the print and choose available sizes, frames, canvas, acrylic, metal, or paper options.</p>
+    <span class="eyebrow">Shop Coastal Prints</span>
+    <h2>Coastal fine art prints with notes from the field.</h2>
+    <p>These selected coastal prints are shown as individual artwork options instead of more room mockups. Click any image to open the secure print page and choose size, frame, canvas, acrylic, metal, or paper options.</p>
 
-    <div class="collection-grid">
-      <a href="https://dansproul.com/featured/outer-banks-beach-sunrise-dan-sproul.html" class="collection-card" target="_blank" rel="noopener">
-        <img src="coastal atmosphere living room dan sproul outer banks.png" alt="Outer Banks Beach Sunrise coastal photography print shown in a quiet luxury living room by Dan Sproul" loading="lazy" decoding="async">
+    <div class="collection-grid print-card-grid">
+      <a href="https://dansproul.com/featured/yaquina-bay-coastal-waves-dan-sproul.html" class="collection-card" target="_blank" rel="noopener">
+        <img src="yaquina-bay-coastal-waves-dan-sproul.jpg" alt="Yaquina Bay coastal waves and rocky Oregon shoreline fine art print by Dan Sproul" loading="lazy" decoding="async">
         <div class="card-copy">
-          <span>Warm Coastal Sunrise Print</span>
-          <h3>Outer Banks Beach Sunrise</h3>
-          <p>Soft dune grass, warm sunrise light, and quiet shoreline atmosphere for refined coastal homes and calm residential interiors.</p>
+          <span>Oregon Coast Wave Print</span>
+          <h3>Yaquina Bay Coastal Waves</h3>
+          <p class="field-note">Yaquina Bay had the kind of surf and rock texture I like best on the Oregon Coast — rough, layered, and not too polished.</p>
+          <p class="best-for"><strong>Best for:</strong> living rooms, coastal homes, hospitality lounges, and statement walls.</p>
+          <p class="available-as"><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal.</p>
         </div>
       </a>
 
-      <a href="https://dansproul.com/featured/oregon-coast-sunset-with-sea-stacks-dan-sproul.html" class="collection-card" target="_blank" rel="noopener">
-        <img src="coastal atmosphere sea stack sunset entryway dan sproul.png" alt="Oregon Coast Sunset With Sea Stacks coastal photography print shown in warm modern entryway by Dan Sproul" loading="lazy" decoding="async">
+      <a href="https://dansproul.com/featured/oregon-coast-seagulls-and-sea-stacks-dan-sproul.html" class="collection-card" target="_blank" rel="noopener">
+        <img src="oregon-coast-seagulls-and-sea-stacks-dan-sproul.jpg" alt="Oregon Coast seagulls and sea stacks coastal photography print by Dan Sproul" loading="lazy" decoding="async">
         <div class="card-copy">
-          <span>Oregon Coast Sunset Print</span>
-          <h3>Oregon Coast Sunset With Sea Stacks</h3>
-          <p>Warm sunset color, dark sea stacks, and reflective shoreline movement for entryways, living rooms, and hospitality spaces.</p>
+          <span>Sea Stack Coastal Print</span>
+          <h3>Oregon Coast Seagulls and Sea Stacks</h3>
+          <p class="field-note">I was drawn to the gulls here as much as the rocks. They gave scale to the sea stacks and made the shoreline feel alive.</p>
+          <p class="best-for"><strong>Best for:</strong> bedrooms, quiet coastal homes, entryways, and refined beach interiors.</p>
+          <p class="available-as"><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal.</p>
         </div>
       </a>
 
-      <a href="https://dansproul.com/featured/yaquina-bay-coastal-scene-dan-sproul.html" class="collection-card" target="_blank" rel="noopener">
-        <img src="coastal atmosphere rugged coastline in living room dan sproul.png" alt="Yaquina Bay Coastal Scene coastal photography print shown in a warm contemporary living room by Dan Sproul" loading="lazy" decoding="async">
+      <a href="https://dansproul.com/featured/l-pod-orca-swimming-dan-sproul.html" class="collection-card" target="_blank" rel="noopener">
+        <img src="l-pod-orca-swimming-dan-sproul.jpg" alt="L Pod orca swimming in Pacific Northwest water with mountains by Dan Sproul" loading="lazy" decoding="async">
         <div class="card-copy">
-          <span>Rugged Coastline Wall Art</span>
-          <h3>Yaquina Bay Coastal Scene</h3>
-          <p>Rugged shoreline texture, moving surf, and refined coastal atmosphere for living rooms, beach homes, and hospitality interiors.</p>
+          <span>Pacific Northwest Orca Print</span>
+          <h3>L Pod Orca Swimming</h3>
+          <p class="field-note">Seeing orcas against mountain water in the Pacific Northwest is one of those moments that stays with you long after the boat ride ends.</p>
+          <p class="best-for"><strong>Best for:</strong> coastal homes, offices, wildlife collectors, lake houses, and Pacific Northwest interiors.</p>
+          <p class="available-as"><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal.</p>
         </div>
       </a>
 
-      <a href="https://dansproul.com/featured/dreamy-haystack-rock-reflection-dan-sproul.html" class="collection-card" target="_blank" rel="noopener">
-        <img src="coastal-atmosphere-diningroom.jpg" alt="Haystack Rock coastal photography print by Dan Sproul" loading="lazy" decoding="async">
+      <a href="https://dansproul.com/featured/marblehead-lighthouse-lake-erie-waves-ohio-dan-sproul.html" class="collection-card vertical" target="_blank" rel="noopener">
+        <img src="marblehead-lighthouse-and-waves-vertical-dan-sproul.jpg" alt="Marblehead Lighthouse Lake Erie waves vertical coastal print by Dan Sproul" loading="lazy" decoding="async">
         <div class="card-copy">
-          <span>Oregon Coast Wall Art</span>
-          <h3>Haystack Rock Reflections</h3>
-          <p>Large-scale coastal photography designed for dining rooms, hospitality spaces, and modern coastal homes.</p>
+          <span>Lake Erie Lighthouse Print</span>
+          <h3>Marblehead Lighthouse and Lake Erie Waves</h3>
+          <p class="field-note">Marblehead is close enough to home to feel familiar, but when Lake Erie is moving it can feel much larger and wilder than people expect.</p>
+          <p class="best-for"><strong>Best for:</strong> entryways, lake houses, Ohio interiors, stair landings, and narrow walls.</p>
+          <p class="available-as"><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal.</p>
         </div>
       </a>
 
-      <a href="https://dansproul.com/featured/powerful-ocean-waves-oregon-coast-dan-sproul.html" class="collection-card" target="_blank" rel="noopener">
-        <img src="coastal-atmosphere-livingroom.jpg" alt="Black and white coastal surf photography by Dan Sproul" loading="lazy" decoding="async">
+      <a href="https://dansproul.com/featured/split-rock-lighthouse-photography-print-minnesota-lake-superior-foggy-morning-dan-sproul.html" class="collection-card" target="_blank" rel="noopener">
+        <img src="split-rock-lighthouse-in-morning-fog-dan-sproul.jpg" alt="Split Rock Lighthouse in Lake Superior fog coastal photography print by Dan Sproul" loading="lazy" decoding="async">
         <div class="card-copy">
-          <span>Monochrome Coastal</span>
-          <h3>Surf Texture Studies</h3>
-          <p>Moody black and white surf photography for darker interiors and architectural modern spaces.</p>
+          <span>Lake Superior Fog Print</span>
+          <h3>Split Rock Lighthouse in Morning Fog</h3>
+          <p class="field-note">Split Rock in fog has a completely different mood. The lighthouse almost disappears into Lake Superior weather instead of standing apart from it.</p>
+          <p class="best-for"><strong>Best for:</strong> cabins, lake houses, bedrooms, offices, and moody hospitality spaces.</p>
+          <p class="available-as"><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal.</p>
         </div>
       </a>
 
-      <a href="https://dansproul.com/featured/moody-oregon-coast-sea-stacks-dan-sproul.html" class="collection-card" target="_blank" rel="noopener">
-        <img src="coastal-atmosphere-bedroom.jpg" alt="Moody coastal bedroom artwork by Dan Sproul" loading="lazy" decoding="async">
+      <a href="https://dansproul.com/featured/jennettes-pier-outer-banks-dan-sproul.html" class="collection-card vertical" target="_blank" rel="noopener">
+        <img src="jennettes-pier-outer-banks-dan-sproul.jpg" alt="Jennette's Pier Outer Banks long exposure coastal photography by Dan Sproul" loading="lazy" decoding="async">
         <div class="card-copy">
-          <span>Quiet Coastal Interiors</span>
-          <h3>Fog & Shoreline Atmosphere</h3>
-          <p>Soft atmospheric coastal imagery suited for bedrooms, wellness spaces, and refined residential interiors.</p>
+          <span>Outer Banks Pier Print</span>
+          <h3>Jennette's Pier Outer Banks</h3>
+          <p class="field-note">This was one of those long-exposure mornings where the surf softened into bands and the pier gave the whole scene a quiet anchor.</p>
+          <p class="best-for"><strong>Best for:</strong> bedrooms, beach houses, bathrooms, hallways, and calm coastal rentals.</p>
+          <p class="available-as"><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal.</p>
+        </div>
+      </a>
+
+      <a href="https://dansproul.com/featured/face-rock-oregon-sunrise-dan-sproul.html" class="collection-card" target="_blank" rel="noopener">
+        <img src="face-rock-oregon-sunrise-dan-sproul.jpg" alt="Face Rock Oregon sunrise coastal photography print by Dan Sproul" loading="lazy" decoding="async">
+        <div class="card-copy">
+          <span>Oregon Sunrise Print</span>
+          <h3>Face Rock Oregon Sunrise</h3>
+          <p class="field-note">This was one of those Oregon Coast mornings where the color came up fast and the wet sand turned the whole scene into a mirror.</p>
+          <p class="best-for"><strong>Best for:</strong> living rooms, bedrooms, coastal homes, and warm statement walls.</p>
+          <p class="available-as"><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal.</p>
+        </div>
+      </a>
+
+      <a href="https://dansproul.com/featured/okaloosa-pier-pastel-sunrise-dan-sproul.html" class="collection-card" target="_blank" rel="noopener">
+        <img src="okaloosa-pier-pastel-sunrise-dan-sproul.jpg" alt="Okaloosa Pier pastel sunrise long exposure coastal print by Dan Sproul" loading="lazy" decoding="async">
+        <div class="card-copy">
+          <span>Pastel Gulf Coast Print</span>
+          <h3>Okaloosa Pier Pastel Sunrise</h3>
+          <p class="field-note">I made this before the beach got busy, when the Gulf was soft and pastel and the pier was just a line fading into morning light.</p>
+          <p class="best-for"><strong>Best for:</strong> bedrooms, beach houses, nursery-soft palettes, coastal rentals, and calm rooms.</p>
+          <p class="available-as"><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal.</p>
+        </div>
+      </a>
+
+      <a href="https://dansproul.com/featured/oregon-coast-sandy-beach-with-sea-stacks-and-pacific-ocean-waves-dan-sproul.html" class="collection-card" target="_blank" rel="noopener">
+        <img src="oregon-coast-sandy-beach-with-sea-stacks-and-pacific-ocean-waves-dan-sproul.jpg" alt="Oregon Coast sandy beach with sea stacks and Pacific Ocean waves print by Dan Sproul" loading="lazy" decoding="async">
+        <div class="card-copy">
+          <span>Moody Oregon Beach Print</span>
+          <h3>Oregon Coast Sandy Beach and Sea Stacks</h3>
+          <p class="field-note">I liked this beach because it was not polished or postcard-perfect. The broken clouds, empty sand, and sea stacks had the real Oregon Coast mood.</p>
+          <p class="best-for"><strong>Best for:</strong> quiet coastal homes, bedrooms, offices, vacation rentals, and relaxed interiors.</p>
+          <p class="available-as"><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal.</p>
+        </div>
+      </a>
+
+      <a href="https://dansproul.com/featured/looking-down-on-heceta-head-lighthouse-dan-sproul.html" class="collection-card" target="_blank" rel="noopener">
+        <img src="looking-down-on-heceta-head-lighthouse-dan-sproul.jpg" alt="Looking down on Heceta Head Lighthouse Oregon coast photography print by Dan Sproul" loading="lazy" decoding="async">
+        <div class="card-copy">
+          <span>Heceta Head Lighthouse Print</span>
+          <h3>Looking Down on Heceta Head Lighthouse</h3>
+          <p class="field-note">I remember looking down through the trees at Heceta Head, with the Pacific throwing light back toward the lens and the lighthouse tucked into the coast.</p>
+          <p class="best-for"><strong>Best for:</strong> coastal homes, entryways, offices, hospitality suites, and lighthouse collectors.</p>
+          <p class="available-as"><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal.</p>
+        </div>
+      </a>
+
+      <a href="https://dansproul.com/featured/lone-orca-in-puget-sound-dan-sproul.html" class="collection-card" target="_blank" rel="noopener">
+        <img src="lone-orca-in-puget-sound-dan-sproul.jpg" alt="Lone orca in Puget Sound coastal wildlife photography print by Dan Sproul" loading="lazy" decoding="async">
+        <div class="card-copy">
+          <span>Puget Sound Orca Print</span>
+          <h3>Lone Orca in Puget Sound</h3>
+          <p class="field-note">This closer orca frame felt quieter to me — less about spectacle and more about a single fin cutting through blue water.</p>
+          <p class="best-for"><strong>Best for:</strong> offices, coastal homes, wildlife rooms, Pacific Northwest interiors, and conversation spaces.</p>
+          <p class="available-as"><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal.</p>
         </div>
       </a>
     </div>
