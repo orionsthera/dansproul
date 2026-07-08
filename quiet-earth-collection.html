@@ -172,7 +172,7 @@
       max-width:var(--max);
       margin:0 auto;
       display:grid;
-      grid-template-columns:repeat(4,1fr);
+      grid-template-columns:repeat(3,1fr);
       gap:10px;
     }
     .buyer-reassurance-item{
@@ -408,9 +408,32 @@
     .art-card-copy span{display:block;color:#c79b55;font-family:Arial,Helvetica,sans-serif;font-size:10px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:10px}
     .art-card-copy h3{font-size:27px;line-height:1.05;margin-bottom:12px}
     .art-card-copy p{font-size:14px;margin-bottom:16px}
+    .art-field-note{
+      color:#d8cbb9;
+      border-left:1px solid rgba(199,155,85,.38);
+      padding-left:14px;
+      margin:12px 0 14px;
+      font-style:italic;
+    }
+    .art-best-for,
+    .art-format-note{
+      color:#a99b87;
+      font-size:13px!important;
+      line-height:1.65!important;
+      margin-bottom:12px!important;
+    }
+    .art-best-for strong,
+    .art-format-note strong{
+      color:#c79b55;
+      font-family:Arial,Helvetica,sans-serif;
+      font-size:10px;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+      font-style:normal;
+    }
 
     .buying{padding:94px 7vw;background:#15110d;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-    .buying-grid{max-width:var(--max);margin:42px auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .buying-grid{max-width:var(--max);margin:42px auto 0;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
     .buy-box{border:1px solid rgba(199,155,85,.22);background:rgba(255,255,255,.035);padding:28px}
     .buy-box h3{font-size:27px;margin-bottom:12px}
     .buy-box p{font-size:14px;margin:0}
@@ -863,7 +886,7 @@
         {
           "@type":"Question",
           "name":"Are Quiet Earth prints available framed with mats?",
-          "acceptedAnswer":{"@type":"Answer","text":"Yes. Prints are available through Dan Sproul's print shop in multiple sizes with paper, canvas, metal, acrylic, framing, and mat options depending on the selected artwork."}
+          "acceptedAnswer":{"@type":"Answer","text":"Yes. Prints are available through Dan Sproul's print shop in multiple sizes with paper, canvas, metal, acrylic, framing, and mat options depending on the selected artwork. Product pages include current shipping, fulfillment, and guarantee details."}
         },
         {
           "@type":"Question",
@@ -932,9 +955,11 @@
     <div class="buyer-reassurance-item"><strong>Prints from $45</strong><span>Affordable Starting Point</span></div>
     <div class="buyer-reassurance-item"><strong>Framed from $100</strong><span>Ready-To-Hang Options</span></div>
     <div class="buyer-reassurance-item"><strong>Canvas · Metal · Acrylic</strong><span>Multiple Formats</span></div>
+    <div class="buyer-reassurance-item"><strong>Ships Worldwide</strong><span>Print Storefront Fulfillment</span></div>
+    <div class="buyer-reassurance-item"><strong>30-Day Guarantee</strong><span>Handled Through Checkout</span></div>
     <div class="buyer-reassurance-item"><strong>Free Mockup Help</strong><span>Send A Room Photo</span></div>
   </div>
-  <p class="buyer-how-to">Browse the room examples and selected Quiet Earth prints below. Click <strong>Purchase Print</strong> or <strong>Shop This Print</strong> to open my secure print storefront, where you can choose size, frame, mat, canvas, metal, acrylic, or paper options.</p>
+  <p class="buyer-how-to">Browse the room examples and selected Quiet Earth prints below. Click <strong>Purchase Print</strong> or <strong>Shop This Print</strong> to open my secure print storefront. From there you can choose the size, frame, mat, canvas, metal, acrylic, or paper option that fits your room.</p>
 </section>
 
 <section class="mockups" id="mockups">
@@ -946,10 +971,10 @@
   </div>
 
   <div class="format-strip">
-    <span>Framed print options</span>
-    <span>Canvas available</span>
-    <span>Acrylic available</span>
-    <span>Metal available</span>
+    <span>Framed fine art paper</span>
+    <span>Canvas with archival inks</span>
+    <span>Acrylic and metal options</span>
+    <span>Worldwide shipping</span>
   </div>
 
 
@@ -1107,7 +1132,7 @@
   <div class="section-heading">
     <span class="eyebrow">Selected Works</span>
     <h2>Quiet landscape photography prints for interiors.</h2>
-    <p>These selected pieces represent the core Quiet Earth mood: stillness, atmosphere, natural texture, and calm visual scale.</p>
+    <p>These selected pieces represent the core Quiet Earth mood: stillness, atmosphere, natural texture, and calm visual scale. Each card includes a short field note and links directly to the print page.</p>
   </div>
 
   <div class="art-grid">
@@ -1118,10 +1143,12 @@
         <span>Warm Western Landscape Print</span>
         <h3>Autumn Beginnings Wyoming Landscape</h3>
         <p>Warm autumn color and open western atmosphere for lodge, hospitality, and quiet residential interiors.</p>
+        <p class="art-field-note">I was drawn to the early fall color here before the scene became too busy. The open Wyoming horizon gives the image room to breathe.</p>
+        <p class="art-best-for"><strong>Best for:</strong> Living rooms, cabins, fireplace walls, mountain homes, lodge-inspired spaces.</p>
+        <p class="art-format-note"><strong>Available as:</strong> Framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
         <span class="text-link">Shop This Print →</span>
       </div>
     </a>
-
 
     <a class="art-card" href="https://dansproul.com/featured/morning-light-schwabachers-landing-tetons-dan-sproul.html" target="_blank" rel="noopener">
       <img src="modern living room framed mountains quiet earth dan sproul.png" alt="Morning Light Schwabacher's Landing Tetons landscape print shown in a quiet luxury living room by Dan Sproul" loading="lazy" decoding="async">
@@ -1129,11 +1156,12 @@
         <span>Teton Mountain Reflection Print</span>
         <h3>Morning Light Schwabacher's Landing</h3>
         <p>Soft mountain light, reflective water, and natural greens for modern residential and quiet luxury interiors.</p>
+        <p class="art-field-note">Schwabacher's Landing is all about waiting for the wind to stay down. This frame has the quiet reflection and soft Teton light I was hoping for.</p>
+        <p class="art-best-for"><strong>Best for:</strong> Quiet luxury living rooms, bedrooms, offices, and refined residential interiors.</p>
+        <p class="art-format-note"><strong>Available as:</strong> Framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
         <span class="text-link">Shop This Print →</span>
       </div>
     </a>
-
-
 
     <a class="art-card" href="https://dansproul.com/featured/turnagain-arm-alaska-dreamy-landscape-dan-sproul.html" target="_blank" rel="noopener">
       <img src="quiet-earth-turnagain-arm-alaska.jpg" alt="Turnagain Arm Alaska oversized fine art landscape wall art for calm modern interiors by Dan Sproul" loading="lazy" decoding="async">
@@ -1141,6 +1169,9 @@
         <span>Moody Alaska Landscape Print</span>
         <h3>Turnagain Arm Alaska</h3>
         <p>Atmospheric Alaska mountain and water landscape for calm modern interiors.</p>
+        <p class="art-field-note">Driving Turnagain Arm is one of those Alaska experiences where the light changes every few minutes. I kept this one because the mountains stay big, but the color remains quiet.</p>
+        <p class="art-best-for"><strong>Best for:</strong> Bedrooms, offices, reading rooms, lake houses, and calm modern interiors.</p>
+        <p class="art-format-note"><strong>Available as:</strong> Framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
         <span class="text-link">Shop This Print →</span>
       </div>
     </a>
@@ -1151,6 +1182,9 @@
         <span>Alaska Mountain Reflection Print</span>
         <h3>Lily Pond, Chugach National Forest</h3>
         <p>Cool atmospheric tones and restorative stillness for wellness-oriented interiors.</p>
+        <p class="art-field-note">I stopped here because the pond was doing exactly what I wanted — holding the mountain shape without a lot of extra distraction.</p>
+        <p class="art-best-for"><strong>Best for:</strong> Wellness rooms, bedrooms, fireplaces, therapy offices, and quiet living spaces.</p>
+        <p class="art-format-note"><strong>Available as:</strong> Framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
         <span class="text-link">Shop This Print →</span>
       </div>
     </a>
@@ -1161,6 +1195,9 @@
         <span>Soft Pastoral Landscape Print</span>
         <h3>Foggy Hyatt Lane</h3>
         <p>A quiet fog-filled country lane for bedrooms, wellness spaces, and calming corridors.</p>
+        <p class="art-field-note">Cades Cove is at its best before the road fills up. The fog on Hyatt Lane gave this scene the simple, honest mood I always look for there.</p>
+        <p class="art-best-for"><strong>Best for:</strong> Bedrooms, hallways, therapy spaces, guest rooms, and quiet residential interiors.</p>
+        <p class="art-format-note"><strong>Available as:</strong> Framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
         <span class="text-link">Shop This Print →</span>
       </div>
     </a>
@@ -1171,6 +1208,9 @@
         <span>Alaska Lake Landscape Print</span>
         <h3>Denali Highway Reflection</h3>
         <p>A dramatic mountain lake reflection with scale, stillness, and natural depth.</p>
+        <p class="art-field-note">The Denali Highway can feel empty in the best way. This was one of those pull-off moments where the lake made the whole landscape feel larger and quieter.</p>
+        <p class="art-best-for"><strong>Best for:</strong> Home offices, larger living rooms, lodge interiors, and statement walls.</p>
+        <p class="art-format-note"><strong>Available as:</strong> Framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
         <span class="text-link">Shop This Print →</span>
       </div>
     </a>
@@ -1181,6 +1221,9 @@
         <span>Earth-Tone Landscape Print</span>
         <h3>Badlands Spring Morning</h3>
         <p>Warm texture and soft natural color for modern rustic interiors.</p>
+        <p class="art-field-note">The Badlands can be harsh, but spring softens the edges. I liked how this scene kept the earth color and texture without becoming too loud.</p>
+        <p class="art-best-for"><strong>Best for:</strong> Modern rustic homes, offices, dining rooms, and warm neutral interiors.</p>
+        <p class="art-format-note"><strong>Available as:</strong> Framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
         <span class="text-link">Shop This Print →</span>
       </div>
     </a>
@@ -1191,9 +1234,65 @@
         <span>Cool-Tone Mountain Wall Art</span>
         <h3>Teton Mountain Reflection</h3>
         <p>A refined Teton reflection scene with blue tones and quiet autumn texture.</p>
+        <p class="art-field-note">I keep coming back to Teton reflections because they give the mountains space. This one feels clean, cool, and easy to place in a room.</p>
+        <p class="art-best-for"><strong>Best for:</strong> Bedrooms, living rooms, offices, cabins, and quiet luxury interiors.</p>
+        <p class="art-format-note"><strong>Available as:</strong> Framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
         <span class="text-link">Shop This Print →</span>
       </div>
     </a>
+
+    <a class="art-card" href="https://dansproul.com/featured/moody-lake-superior-island-dan-sproul.html" target="_blank" rel="noopener">
+      <img src="moody-lake-superior-island-dan-sproul.jpg" alt="Moody Lake Superior island fine art landscape print by Dan Sproul" loading="lazy" decoding="async">
+      <div class="art-card-copy">
+        <span>Moody Lake Superior Print</span>
+        <h3>Moody Lake Superior Island</h3>
+        <p>Soft fog, dark island shapes, and quiet water for refined rooms that need atmosphere.</p>
+        <p class="art-field-note">Lake Superior mornings can be all mood. I liked the way the fog slid across this little island and left just enough trees showing through.</p>
+        <p class="art-best-for"><strong>Best for:</strong> Bedrooms, offices, lake houses, reading rooms, and calm modern walls.</p>
+        <p class="art-format-note"><strong>Available as:</strong> Framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
+        <span class="text-link">Shop This Print →</span>
+      </div>
+    </a>
+
+    <a class="art-card" href="https://dansproul.com/featured/sleeping-bear-dunes-overlook-dan-sproul.html" target="_blank" rel="noopener">
+      <img src="sleeping-bear-dunes-overlook-dan-sproul.jpg" alt="Sleeping Bear Dunes Overlook Lake Michigan landscape print by Dan Sproul" loading="lazy" decoding="async">
+      <div class="art-card-copy">
+        <span>Lake Michigan Dunes Print</span>
+        <h3>Sleeping Bear Dunes Overlook</h3>
+        <p>Warm dune grasses, Lake Michigan distance, and quiet shoreline color for residential interiors.</p>
+        <p class="art-field-note">Sleeping Bear is known for the big overlook, but I liked this quieter edge of the dune with grass, warm light, and the shoreline falling away in the distance.</p>
+        <p class="art-best-for"><strong>Best for:</strong> Lake homes, living rooms, bedrooms, coastal-inspired spaces, and warm neutral interiors.</p>
+        <p class="art-format-note"><strong>Available as:</strong> Framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
+        <span class="text-link">Shop This Print →</span>
+      </div>
+    </a>
+
+    <a class="art-card" href="https://dansproul.com/featured/lake-crescent-olympic-national-park-dan-sproul.html" target="_blank" rel="noopener">
+      <img src="lake-crescent-olympic-national-park-dan-sproul.jpg" alt="Lake Crescent Olympic National Park blue lake mountain landscape print by Dan Sproul" loading="lazy" decoding="async">
+      <div class="art-card-copy">
+        <span>Olympic National Park Lake Print</span>
+        <h3>Lake Crescent Olympic National Park</h3>
+        <p>Clean blue water, forested mountains, and open lake atmosphere for fresh calm interiors.</p>
+        <p class="art-field-note">Lake Crescent has that deep blue water that almost doesn't look real. I kept this frame simple because the line of water and forest did enough.</p>
+        <p class="art-best-for"><strong>Best for:</strong> Bedrooms, lake houses, offices, wellness rooms, and brighter modern interiors.</p>
+        <p class="art-format-note"><strong>Available as:</strong> Framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
+        <span class="text-link">Shop This Print →</span>
+      </div>
+    </a>
+
+    <a class="art-card" href="https://dansproul.com/featured/fall-landscape-canadian-rockies-dan-sproul.html" target="_blank" rel="noopener">
+      <img src="fall-landscape-canadian-rockies-dan-sproul.jpg" alt="Fall Landscape Canadian Rockies fine art mountain print by Dan Sproul" loading="lazy" decoding="async">
+      <div class="art-card-copy">
+        <span>Canadian Rockies Fall Print</span>
+        <h3>Fall Landscape Canadian Rockies</h3>
+        <p>Autumn color, mountain scale, and layered forest texture for statement walls and lodge interiors.</p>
+        <p class="art-field-note">Visiting the Canadian Rockies in fall presents endless photography opportunities. I liked this one because the foreground color grounds the whole valley.</p>
+        <p class="art-best-for"><strong>Best for:</strong> Cabins, lodge interiors, living rooms, offices, hospitality spaces, and large statement walls.</p>
+        <p class="art-format-note"><strong>Available as:</strong> Framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
+        <span class="text-link">Shop This Print →</span>
+      </div>
+    </a>
+
   </div>
 </section>
 
@@ -1214,8 +1313,12 @@
       <p>Warm white mats, natural oak, walnut, thin black frames, and no-mat modern framing all work well depending on the room style and artwork palette.</p>
     </article>
     <article class="buy-box">
-      <h3>Available Formats</h3>
-      <p>Fine art paper, framed prints, canvas, acrylic, metal, and other formats are available through the linked product pages.</p>
+      <h3>Print Quality</h3>
+      <p>Product pages include framed fine art paper, canvas, acrylic, metal, and paper options. Framed and canvas prints are produced with archival inks through the print storefront.</p>
+    </article>
+    <article class="buy-box">
+      <h3>Fulfillment & Returns</h3>
+      <p>Checkout, production, worldwide shipping, customer support, and the 30-day print guarantee are handled through the secure print storefront.</p>
     </article>
   </div>
 </section>
@@ -1246,7 +1349,7 @@
     </article>
     <article class="faq-item">
       <h3>Are these available as oversized framed prints?</h3>
-      <p>Yes. Many Quiet Earth photographs work well as oversized statement artwork above beds, fireplaces, sofas, office walls, and hospitality focal walls.</p>
+      <p>Yes. Many Quiet Earth photographs work well as oversized statement artwork above beds, fireplaces, sofas, office walls, and hospitality focal walls. Product pages include current size, frame, mat, shipping, and 30-day guarantee details.</p>
     </article>
     <article class="faq-item">
       <h3>Can designers request recommendations?</h3>
