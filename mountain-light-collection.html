@@ -82,6 +82,9 @@ h1{max-width:980px;font-size:clamp(44px,6.7vw,92px);letter-spacing:-.018em}
 .buy-strip-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(24px,4vw,54px);align-items:center}
 .buy-strip h2{font-size:clamp(30px,4vw,48px);color:var(--light-ink)}
 .buy-strip .buy-intro{max-width:540px;margin-top:14px;font-size:15px;line-height:1.75}
+.buyer-reassurance{max-width:1280px;margin:0 auto 24px;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(33,27,20,.14);border:1px solid rgba(33,27,20,.14)}
+.reassurance-item{background:#fbf8f1;padding:16px 18px;text-align:center;color:var(--light-ink);font-family:"Jost",Arial,sans-serif;font-size:11px;font-weight:500;letter-spacing:.16em;text-transform:uppercase}
+.reassurance-item strong{color:#87672d;font-weight:500}
 .buy-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(33,27,20,.14);border:1px solid rgba(33,27,20,.14)}
 .buy-step{background:#fbf8f1;padding:24px;min-height:175px}
 .buy-step span{display:block;margin-bottom:10px;color:#87672d;font-size:10px;letter-spacing:.22em;text-transform:uppercase}
@@ -108,6 +111,8 @@ h1{max-width:980px;font-size:clamp(44px,6.7vw,92px);letter-spacing:-.018em}
 .mock-tile::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(20,17,13,.9),transparent 62%)}
 .mock-label{position:absolute;inset:auto 0 0;z-index:2;padding:20px;color:var(--cream-soft);font-size:10px;letter-spacing:.2em;text-transform:uppercase}
 .mock-label strong{display:block;color:var(--cream);font-family:"Cormorant Garamond",Georgia,serif;font-size:26px;font-weight:300;letter-spacing:.02em;text-transform:none;margin-bottom:4px}
+.mock-purchase{position:absolute;z-index:3;right:16px;bottom:16px;display:inline-flex;align-items:center;justify-content:center;min-height:36px;padding:0 13px;border:1px solid rgba(199,164,90,.9);background:rgba(199,164,90,.94);color:#14110d!important;font-family:"Jost",Arial,sans-serif;font-size:9px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;transition:.25s ease}
+.mock-purchase:hover{background:var(--gold-light);border-color:var(--gold-light);transform:translateY(-1px)}
 
 /* Story */
 .story{background:var(--black)}
@@ -1094,9 +1099,13 @@ h1{max-width:980px;font-size:clamp(44px,6.7vw,92px);letter-spacing:-.018em}
 }
 @media(max-width:680px){
   .buy-strip{padding:38px 22px!important}
+  .buyer-reassurance{grid-template-columns:1fr 1fr!important;margin-bottom:18px!important}
+  .reassurance-item{padding:13px 10px!important;font-size:9px!important;line-height:1.35!important}
   .buy-strip h2{font-size:clamp(1.8rem,7.2vw,2.45rem)!important;line-height:1.08!important}
   .buy-strip .buy-intro,.buy-step p,.buy-note{font-size:13.5px!important;line-height:1.55!important}
   .buy-step{padding:20px!important}
+  .mock-purchase{left:18px!important;right:18px!important;bottom:16px!important;width:auto!important;min-height:38px!important;font-size:9px!important}
+  .mock-label{padding-bottom:66px!important}
   .card-cta{width:100%;justify-content:center;text-align:center;padding:10px 12px!important;font-size:9px!important}
 }
 
@@ -1154,15 +1163,21 @@ h1{max-width:980px;font-size:clamp(44px,6.7vw,92px);letter-spacing:-.018em}
 </header>
 
 <section class="buy-strip" id="how-to-buy" aria-label="How to buy Mountain Light prints">
+  <div class="buyer-reassurance" aria-label="Print buying reassurance">
+    <div class="reassurance-item"><strong>Prints</strong> from $45</div>
+    <div class="reassurance-item"><strong>Framed</strong> from $100</div>
+    <div class="reassurance-item"><strong>Canvas · Metal · Acrylic</strong></div>
+    <div class="reassurance-item"><strong>Free</strong> mockup help</div>
+  </div>
   <div class="buy-strip-inner">
     <div>
       <p class="eyebrow">How To Buy</p>
       <h2>Browse the room views, then open the print you like.</h2>
-      <p class="buy-intro">Click <strong>Shop This Print</strong> or <strong>Purchase Print</strong> to open the Dan Sproul print storefront, where you can choose size, frame, canvas, metal, acrylic, or paper options.</p>
+      <p class="buy-intro">Browse the room examples and mountain prints below. Click <strong>Purchase Print</strong> or <strong>Shop This Print</strong> to open my secure print storefront, where you can choose size, frame, canvas, metal, acrylic, or paper options.</p>
     </div>
     <div class="buy-steps">
       <article class="buy-step"><span>Step 01</span><h3>See It In Rooms</h3><p>Start with the interior mockups to picture scale, mood, and placement.</p></article>
-      <article class="buy-step"><span>Step 02</span><h3>Shop The Print</h3><p>Selected images link directly to their print pages for available sizes and formats.</p></article>
+      <article class="buy-step"><span>Step 02</span><h3>Purchase Print</h3><p>Selected images link directly to their print pages for available sizes, frames, and formats.</p></article>
       <article class="buy-step"><span>Step 03</span><h3>Ask For Help</h3><p>Send a room photo or wall size and I can suggest mountain artwork options.</p></article>
     </div>
   </div>
@@ -1179,18 +1194,19 @@ h1{max-width:980px;font-size:clamp(44px,6.7vw,92px);letter-spacing:-.018em}
       <h2>Mountain Light artwork in warm architectural interiors.</h2>
       <p>Large mountain artwork works best when scale, light, and placement are considered together. These interior previews show how Mountain Light can anchor fireplace walls, guest lounges, bedrooms, executive offices, and lodge-inspired rooms.</p>
       <div class="btns">
-        <a class="btn primary" href="mailto:sproulphoto@gmail.com?subject=Mountain%20Light%20Mockup%20Request">Request Mockup</a>
+        <a class="btn primary" href="https://dansproul.com/featured/alaska-kenai-fjords-landscape-dan-sproul.html" target="_blank" rel="noopener">Purchase Print</a>
+        <a class="btn" href="mailto:sproulphoto@gmail.com?subject=Mountain%20Light%20Mockup%20Request">Request Mockup</a>
         <a class="btn" href="#collection">Shop Mountain Prints</a>
       </div>
     </div>
   </div>
   <div class="mock-strip">
-    <div class="mock-tile mockup-trigger" data-purchase="https://dansproul.com/featured/alaska-range-fog-black-and-white-dan-sproul.html" data-title="Last Light on Colter Bay shown as a calming alpine focal point for a refined bedroom." data-sizes="30x45 • 36x54 • 40x60" data-frames="Natural Oak • Warm Oak • Walnut" data-formats="Framed Print • Canvas" data-rooms="Bedrooms • Guest Suites • Boutique Hospitality • Quiet Residential Rooms"><img src="mountain-light-bedroom.jpg" alt="Mountain artwork above a bed in a warm modern rustic bedroom by Dan Sproul" loading="lazy" decoding="async"><div class="mock-label"><strong>Bedroom calm</strong> alpine reflection and warm evening light</div></div>
-    <div class="mock-tile mockup-trigger" data-purchase="https://dansproul.com/featured/kayaking-moraine-lake-dan-sproul.html" data-title="Kayaking Moraine Lake shown as a hospitality-scale focal piece for a lodge lobby or resort lounge." data-sizes="40x60 • 48x72 • Oversized Statement Format" data-frames="Walnut • Matte Black • Warm Oak" data-formats="Canvas • Acrylic • Framed Print" data-rooms="Hotel Lobbies • Resort Lounges • Hospitality Spaces • Lodge Interiors"><img src="mountain-light-lobby.jpg" alt="Large mountain artwork in a high-end lodge lobby interior by Dan Sproul" loading="lazy" decoding="async"><div class="mock-label"><strong>Lodge lobby</strong> hospitality scale and destination atmosphere</div></div>
-    <div class="mock-tile mockup-trigger" data-purchase="https://dansproul.com/featured/magical-mountain-light-dan-sproul.html" data-title="Magical Mountain Light shown as a dramatic architectural statement piece for an entryway or executive interior." data-sizes="36x54 • 40x60 • 45x68" data-frames="Walnut • Matte Black • Warm Oak" data-formats="Framed Print • Acrylic • Canvas" data-rooms="Entryways • Executive Offices • Reception Areas • Statement Walls"><img src="mountain-light-entryway.jpg" alt="Statement mountain landscape artwork in a luxury double-height entryway by Dan Sproul" loading="lazy" decoding="async"><div class="mock-label"><strong>Entry statement</strong> immediate architectural presence</div></div>
+    <div class="mock-tile mockup-trigger" data-purchase="https://dansproul.com/featured/alaska-range-fog-black-and-white-dan-sproul.html" data-title="Last Light on Colter Bay shown as a calming alpine focal point for a refined bedroom." data-sizes="30x45 • 36x54 • 40x60" data-frames="Natural Oak • Warm Oak • Walnut" data-formats="Framed Print • Canvas" data-rooms="Bedrooms • Guest Suites • Boutique Hospitality • Quiet Residential Rooms"><img src="mountain-light-bedroom.jpg" alt="Mountain artwork above a bed in a warm modern rustic bedroom by Dan Sproul" loading="lazy" decoding="async"><div class="mock-label"><strong>Bedroom calm</strong> alpine reflection and warm evening light</div><a class="mock-purchase" href="https://dansproul.com/featured/alaska-range-fog-black-and-white-dan-sproul.html" target="_blank" rel="noopener" aria-label="Purchase this Mountain Light print">Purchase Print</a></div>
+    <div class="mock-tile mockup-trigger" data-purchase="https://dansproul.com/featured/kayaking-moraine-lake-dan-sproul.html" data-title="Kayaking Moraine Lake shown as a hospitality-scale focal piece for a lodge lobby or resort lounge." data-sizes="40x60 • 48x72 • Oversized Statement Format" data-frames="Walnut • Matte Black • Warm Oak" data-formats="Canvas • Acrylic • Framed Print" data-rooms="Hotel Lobbies • Resort Lounges • Hospitality Spaces • Lodge Interiors"><img src="mountain-light-lobby.jpg" alt="Large mountain artwork in a high-end lodge lobby interior by Dan Sproul" loading="lazy" decoding="async"><div class="mock-label"><strong>Lodge lobby</strong> hospitality scale and destination atmosphere</div><a class="mock-purchase" href="https://dansproul.com/featured/kayaking-moraine-lake-dan-sproul.html" target="_blank" rel="noopener" aria-label="Purchase this Mountain Light print">Purchase Print</a></div>
+    <div class="mock-tile mockup-trigger" data-purchase="https://dansproul.com/featured/magical-mountain-light-dan-sproul.html" data-title="Magical Mountain Light shown as a dramatic architectural statement piece for an entryway or executive interior." data-sizes="36x54 • 40x60 • 45x68" data-frames="Walnut • Matte Black • Warm Oak" data-formats="Framed Print • Acrylic • Canvas" data-rooms="Entryways • Executive Offices • Reception Areas • Statement Walls"><img src="mountain-light-entryway.jpg" alt="Statement mountain landscape artwork in a luxury double-height entryway by Dan Sproul" loading="lazy" decoding="async"><div class="mock-label"><strong>Entry statement</strong> immediate architectural presence</div><a class="mock-purchase" href="https://dansproul.com/featured/magical-mountain-light-dan-sproul.html" target="_blank" rel="noopener" aria-label="Purchase this Mountain Light print">Purchase Print</a></div>
   
-    <div class="mock-tile mockup-trigger" data-purchase="https://dansproul.com/featured/ethereal-mountain-light-in-alaska-dan-sproul.html" data-title="Ethereal Mountain Light in Alaska shown as an oversized statement piece in a mountain lodge reception and resort lounge." data-sizes="48x72 • 54x81 • Oversized Statement Format" data-frames="Walnut • Matte Black • Warm Oak" data-formats="Framed Print • Canvas • Acrylic" data-rooms="Lodge Lobbies • Resort Reception • Hospitality Spaces • Great Rooms"><img src="mountain lodge moody mountain light framed dan sproul.jpg" alt="Ethereal Mountain Light in Alaska shown in a luxury mountain lodge lobby" loading="lazy" decoding="async"><div class="mock-label"><strong>Resort lobby</strong> oversized mountain atmosphere and destination character</div></div>
-    <div class="mock-tile mockup-trigger" data-purchase="https://dansproul.com/featured/valdez-alaska-glacial-lake-black-and-white-dan-sproul.html" data-title="Valdez Alaska Glacial Lake Black and White shown as a calming framed print for a refined mountain bedroom." data-sizes="30x30 • 36x36 • 40x40" data-frames="Matte Black • Warm Oak • Walnut" data-formats="Framed Print • Canvas" data-rooms="Bedrooms • Guest Suites • Mountain Homes • Quiet Retreats"><img src="mountain reflections in modern bedroom.jpg" alt="Valdez Alaska Glacial Lake Black and White artwork in a warm mountain bedroom" loading="lazy" decoding="async"><div class="mock-label"><strong>Bedroom retreat</strong> monochrome alpine calm and reflection</div></div>
+    <div class="mock-tile mockup-trigger" data-purchase="https://dansproul.com/featured/ethereal-mountain-light-in-alaska-dan-sproul.html" data-title="Ethereal Mountain Light in Alaska shown as an oversized statement piece in a mountain lodge reception and resort lounge." data-sizes="48x72 • 54x81 • Oversized Statement Format" data-frames="Walnut • Matte Black • Warm Oak" data-formats="Framed Print • Canvas • Acrylic" data-rooms="Lodge Lobbies • Resort Reception • Hospitality Spaces • Great Rooms"><img src="mountain lodge moody mountain light framed dan sproul.jpg" alt="Ethereal Mountain Light in Alaska shown in a luxury mountain lodge lobby" loading="lazy" decoding="async"><div class="mock-label"><strong>Resort lobby</strong> oversized mountain atmosphere and destination character</div><a class="mock-purchase" href="https://dansproul.com/featured/ethereal-mountain-light-in-alaska-dan-sproul.html" target="_blank" rel="noopener" aria-label="Purchase this Mountain Light print">Purchase Print</a></div>
+    <div class="mock-tile mockup-trigger" data-purchase="https://dansproul.com/featured/valdez-alaska-glacial-lake-black-and-white-dan-sproul.html" data-title="Valdez Alaska Glacial Lake Black and White shown as a calming framed print for a refined mountain bedroom." data-sizes="30x30 • 36x36 • 40x40" data-frames="Matte Black • Warm Oak • Walnut" data-formats="Framed Print • Canvas" data-rooms="Bedrooms • Guest Suites • Mountain Homes • Quiet Retreats"><img src="mountain reflections in modern bedroom.jpg" alt="Valdez Alaska Glacial Lake Black and White artwork in a warm mountain bedroom" loading="lazy" decoding="async"><div class="mock-label"><strong>Bedroom retreat</strong> monochrome alpine calm and reflection</div><a class="mock-purchase" href="https://dansproul.com/featured/valdez-alaska-glacial-lake-black-and-white-dan-sproul.html" target="_blank" rel="noopener" aria-label="Purchase this Mountain Light print">Purchase Print</a></div>
 
   </div>
 </section>
