@@ -48,6 +48,7 @@ p{max-width:820px;color:var(--muted)}
 .light .eyebrow{color:#73804f}
 .light p{color:#5e574f}
 .center{text-align:center;margin:auto}
+.center p{margin-left:auto;margin-right:auto;text-align:center}
 .mockups{background:#f3efe8;color:#24211d}
 .mockups p{color:#625b52}
 .mockup-grid{display:grid;gap:30px;margin-top:48px}
@@ -604,6 +605,31 @@ img{max-width:100%;height:auto}
   .how-to-buy-note{font-size:.76rem!important;line-height:1.6!important;text-align:left!important}
   .mockup-actions-inline{padding:14px!important;gap:8px!important}
   .mockup-actions-inline button,.mockup-actions-inline a{width:100%!important;font-size:.58rem!important}
+}
+
+
+/* FOREST LIGHT CENTERED INTRO TEXT FIX */
+.center p,
+.mockups .center p,
+.light .center p,
+.designer-workflow .center p{
+  max-width:820px!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+  text-align:center!important;
+}
+.mockups .center,
+.light .center,
+.designer-workflow .center{
+  text-align:center!important;
+}
+@media(max-width:680px){
+  .center p,
+  .mockups .center p,
+  .light .center p,
+  .designer-workflow .center p{
+    text-align:left!important;
+  }
 }
 
 </style>
