@@ -1000,6 +1000,85 @@ main{display:block}
   }
 }
 
+
+/* BUYER REASSURANCE + EASY PURCHASE PATH */
+.buyer-reassurance{
+  background:#f3efe7;
+  color:#1b1713;
+  border-top:1px solid rgba(40,35,30,.14);
+  border-bottom:1px solid rgba(40,35,30,.14);
+  padding:28px 0 32px;
+}
+.buyer-reassurance .container{max-width:1180px!important}
+.reassurance-strip{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:1px;
+  background:rgba(40,35,30,.14);
+  border:1px solid rgba(40,35,30,.14);
+}
+.reassurance-strip span{
+  display:block;
+  background:#fbf8f1;
+  color:#342d27;
+  padding:15px 14px;
+  text-align:center;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.66rem;
+  font-weight:700;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
+.purchase-instructions{
+  max-width:880px;
+  margin:18px auto 0;
+  color:#4f473e;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.82rem;
+  line-height:1.75;
+  text-align:center;
+}
+.easy-buy-steps{
+  max-width:880px;
+  margin:18px auto 0;
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:10px;
+}
+.easy-buy-steps span{
+  display:block;
+  background:#fffaf3;
+  border:1px solid rgba(40,35,30,.10);
+  color:#4f473e;
+  padding:12px 14px;
+  text-align:center;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.66rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
+#collection .art-card-content::after{
+  content:'Shop This Print →';
+  display:inline-block;
+  margin-top:16px;
+  color:#d8c6a4;
+  border-bottom:1px solid rgba(216,198,164,.34);
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.68rem;
+  font-weight:700;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+}
+@media(max-width:900px){
+  .reassurance-strip,.easy-buy-steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:680px){
+  .buyer-reassurance{padding:22px 0 26px!important}
+  .reassurance-strip,.easy-buy-steps{grid-template-columns:1fr!important}
+  .reassurance-strip span,.easy-buy-steps span{font-size:.58rem!important;padding:12px 10px!important}
+  .purchase-instructions{text-align:left!important;font-size:.76rem!important;line-height:1.6!important}
+}
+
 </style>
 <script type="application/ld+json">
 {
@@ -1250,9 +1329,9 @@ main{display:block}
     <p>Wellness Waters is a residential-first collection of flowing water, waterfalls, streams, and abstract water motion selected for rooms that need calm, restoration, and visual breathing space — from living rooms and primary suites to spa-inspired retreats, boutique hospitality, wellness spaces, and quiet healthcare interiors.</p>
 
     <div class="hero-actions">
-      <a class="button primary" href="#collection">View Collection</a>
+      <a class="button primary" href="#mockups">View In Rooms</a>
+      <a class="button" href="#collection">Shop Water Prints</a>
       <a class="button" href="mailto:sproulphoto@gmail.com?subject=Wellness%20Waters%20Mockup%20Request">Request Mockup</a>
-      <a class="button" href="for-designers.html">Designer Information</a>
     </div>
 
     <div class="hero-badges">
@@ -1268,21 +1347,25 @@ main{display:block}
   </div>
 </section>
 
-<section class="featured-installations" id="featured-installations">
+<section class="buyer-reassurance" aria-label="Wellness Waters print buying information">
   <div class="container">
-    <div class="section-heading">
-      <span class="eyebrow">Featured Residential Installations</span>
-      <h2>Restorative water artwork for rooms that need calm, movement, and atmosphere.</h2>
-      <p>Wellness Waters is positioned first as a residential wellness collection, with commercial applications for hospitality, spa, healthcare, and senior living environments lower on the page.</p>
+    <div class="reassurance-strip">
+      <span>Prints from $45</span>
+      <span>Framed from $100</span>
+      <span>Canvas · Metal · Acrylic</span>
+      <span>Free mockup help</span>
     </div>
-    <div class="featured-installation-grid">
-      <a class="featured-installation-card" href="https://dansproul.com/featured/shawnee-falls-ricketts-glen-state-park-waterfall-pennsylvania-falls-trail-dan-sproul.html" target="_blank" rel="noopener"><img src="waterfall long exposure over couch.png" alt="Warm residential living room with large framed waterfall artwork above a sofa by Dan Sproul" loading="lazy" decoding="async"><div><span>Living Rooms</span><h3>Waterfall statement artwork</h3><p>Large-scale water imagery for warm residential gathering spaces.</p></div></a>
-      <a class="featured-installation-card" href="https://dansproul.com/featured/flowing-spring-water-long-exposure-cascades-ricketts-glen-state-park-pennsylvania-dan-sproul.html" target="_blank" rel="noopener"><img src="cascading water in residential living room.png" alt="Quiet luxury residential living room with large framed flowing water artwork by Dan Sproul" loading="lazy" decoding="async"><div><span>Quiet Luxury</span><h3>Flowing stream movement</h3><p>Soft water rhythm for living rooms, lounges, and retreat spaces.</p></div></a>
-      <a class="featured-installation-card" href="https://dansproul.com/featured/sunset-motion-dan-sproul.html" target="_blank" rel="noopener"><img src="sunset waters on the beach in modern bedroom.png" alt="Modern bedroom with large framed sunset water motion artwork by Dan Sproul" loading="lazy" decoding="async"><div><span>Bedrooms</span><h3>Warm sunset water</h3><p>Restorative color and calm for bedrooms and primary suites.</p></div></a>
-      <a class="featured-installation-card" href="https://dansproul.com/featured/panning-water-waves-dan-sproul.html" target="_blank" rel="noopener"><img src="panning waves in bedroom mockup.png" alt="Luxury bedroom with large framed abstract panning water waves artwork by Dan Sproul" loading="lazy" decoding="async"><div><span>Abstract Water</span><h3>Atmospheric motion</h3><p>A contemporary option for rooms that need calm without literal scenery.</p></div></a>
+    <p class="purchase-instructions">Browse the room examples and water prints below. Click any purchase link to open my secure print storefront, where you can choose size, frame, canvas, metal, acrylic, or paper options.</p>
+    <div class="easy-buy-steps">
+      <span>See it in a room</span>
+      <span>Open the print page</span>
+      <span>Choose size and format</span>
     </div>
   </div>
 </section>
+
+
+
 
 <section class="why-waters-section" id="why-wellness-waters-works">
   <div class="container">
@@ -1299,7 +1382,7 @@ main{display:block}
   </div>
 </section>
 
-<section class="mockup-feature residential-mockup">
+<section class="mockup-feature residential-mockup" id="mockups">
   <div class="container mockup-grid">
     <a class="mockup-image" data-purchase="https://dansproul.com/featured/shawnee-falls-ricketts-glen-state-park-waterfall-pennsylvania-falls-trail-dan-sproul.html" href="https://dansproul.com/featured/shawnee-falls-ricketts-glen-state-park-waterfall-pennsylvania-falls-trail-dan-sproul.html" target="_blank" rel="noopener" data-title="Shawnee Falls shown as a large framed waterfall artwork for a quiet luxury residential living room." data-sizes="30x40 • 36x48 • 40x60+" data-frames="Warm Oak • Natural Wood • Walnut" data-formats="Framed Print • Canvas • Acrylic" data-rooms="Living Rooms • Mountain Homes • Reading Rooms • Vacation Homes">
       <img src="waterfall long exposure over couch.png" alt="Warm residential living room with large framed waterfall artwork above a sofa by Dan Sproul" loading="lazy" decoding="async">
@@ -1309,7 +1392,7 @@ main{display:block}
       <span class="eyebrow">Residential Living Rooms</span>
       <h2>Restorative water as a residential focal point.</h2>
       <p>A large waterfall piece can bring natural movement and visual breathing room into a warm living room without making the space feel commercial or clinical.</p>
-      <a class="button" href="https://dansproul.com/featured/shawnee-falls-ricketts-glen-state-park-waterfall-pennsylvania-falls-trail-dan-sproul.html" target="_blank" rel="noopener">View Artwork</a>
+      <a class="button" href="https://dansproul.com/featured/shawnee-falls-ricketts-glen-state-park-waterfall-pennsylvania-falls-trail-dan-sproul.html" target="_blank" rel="noopener">Purchase Print</a>
     </div>
   </div>
 </section>
@@ -1320,7 +1403,7 @@ main{display:block}
       <span class="eyebrow">Quiet Luxury Living</span>
       <h2>Soft stream movement for calm everyday rooms.</h2>
       <p>Flowing water imagery works especially well in rooms designed for slowing down: living rooms, lounges, reading areas, and spaces where calm rhythm matters more than dramatic scenery.</p>
-      <a class="button" href="https://dansproul.com/featured/flowing-spring-water-long-exposure-cascades-ricketts-glen-state-park-pennsylvania-dan-sproul.html" target="_blank" rel="noopener">View Artwork</a>
+      <a class="button" href="https://dansproul.com/featured/flowing-spring-water-long-exposure-cascades-ricketts-glen-state-park-pennsylvania-dan-sproul.html" target="_blank" rel="noopener">Purchase Print</a>
     </div>
 
     <a class="mockup-image" data-purchase="https://dansproul.com/featured/flowing-spring-water-long-exposure-cascades-ricketts-glen-state-park-pennsylvania-dan-sproul.html" href="https://dansproul.com/featured/flowing-spring-water-long-exposure-cascades-ricketts-glen-state-park-pennsylvania-dan-sproul.html" target="_blank" rel="noopener" data-title="Flowing Spring Water shown as a refined water artwork for a calm residential living room." data-sizes="30x45 • 36x54 • 40x60+" data-frames="Natural Oak • Warm Oak • Matte Black" data-formats="Framed Print • Canvas • Acrylic" data-rooms="Living Rooms • Lounges • Reading Rooms • Wellness Retreats">
@@ -1339,7 +1422,7 @@ main{display:block}
       <span class="eyebrow">Bedrooms & Retreat Spaces</span>
       <h2>Warm water abstraction for restful bedrooms.</h2>
       <p>Soft sunset water motion introduces warmth, calm, and atmosphere above a bed while still feeling sophisticated enough for luxury residential interiors.</p>
-      <a class="button" href="https://dansproul.com/featured/sunset-motion-dan-sproul.html" target="_blank" rel="noopener">View Artwork</a>
+      <a class="button" href="https://dansproul.com/featured/sunset-motion-dan-sproul.html" target="_blank" rel="noopener">Purchase Print</a>
     </div>
   </div>
 </section>
@@ -1350,7 +1433,7 @@ main{display:block}
       <span class="eyebrow">Abstract Water</span>
       <h2>Water movement without literal scenery.</h2>
       <p>Abstract water pieces give bedrooms and quiet spaces a more contemporary wellness feel, adding softness and motion without becoming overly thematic.</p>
-      <a class="button" href="https://dansproul.com/featured/panning-water-waves-dan-sproul.html" target="_blank" rel="noopener">View Artwork</a>
+      <a class="button" href="https://dansproul.com/featured/panning-water-waves-dan-sproul.html" target="_blank" rel="noopener">Purchase Print</a>
     </div>
 
     <a class="mockup-image" data-purchase="https://dansproul.com/featured/panning-water-waves-dan-sproul.html" href="https://dansproul.com/featured/panning-water-waves-dan-sproul.html" target="_blank" rel="noopener" data-title="Panning Water Waves shown as a calm abstract water artwork for a luxury residential bedroom." data-sizes="30x45 • 36x54 • 40x60+" data-frames="Natural Oak • White • Warm Oak" data-formats="Framed Print • Acrylic • Canvas" data-rooms="Bedrooms • Primary Suites • Wellness Rooms • Quiet Luxury Homes">
@@ -1414,9 +1497,9 @@ main{display:block}
 <section class="collection-gallery" id="collection">
   <div class="container">
     <div class="section-heading">
-      <span class="eyebrow">Available Artwork</span>
+      <span class="eyebrow">Shop Water Prints</span>
       <h2>Browse the Wellness Waters collection.</h2>
-      <p>Each artwork below links directly to the purchase page on Dan Sproul Fine Art, where prints can be ordered in multiple sizes and formats including framed prints, canvas, acrylic, and metal.</p>
+      <p>Click any image below to open the secure print page and choose size, frame, canvas, acrylic, metal, or paper options.</p>
     </div>
 
     <div class="art-grid">
@@ -1770,7 +1853,7 @@ document.addEventListener('DOMContentLoaded', function () {
       <div class="mockup-spec-item"><strong>Best Rooms</strong><span id="mockupSpecRooms"></span></div>
     </div>
     <div class="mockup-lightbox-actions">
-      <a id="mockupLightboxLink" href="#" target="_blank" rel="noopener">View / Purchase Print</a>
+      <a id="mockupLightboxLink" href="#" target="_blank" rel="noopener">Purchase Print</a>
       <button id="mockupLightboxCloseBtn" type="button">Close</button>
     </div>
   </div>
