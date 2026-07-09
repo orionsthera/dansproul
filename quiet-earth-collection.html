@@ -778,6 +778,229 @@
   .modal .btn{width:100%!important;text-align:center!important;}
 }
 
+
+/* QUIET EARTH MOBILE GRID + BUYER PATH PASS */
+.mobile-mockup-gallery{display:none}
+@media(max-width:680px){
+  .mockups > .featured-installation,
+  .mockups > .mockup-grid{
+    display:none!important;
+  }
+  .mobile-mockup-gallery{
+    display:grid!important;
+    max-width:var(--max);
+    margin:0 auto!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:.75rem!important;
+  }
+  .mobile-mockup-card{
+    border-radius:.65rem!important;
+    box-shadow:0 14px 34px rgba(0,0,0,.12)!important;
+  }
+  .mobile-mockup-card img{
+    width:100%!important;
+    aspect-ratio:1/1!important;
+    height:auto!important;
+    max-height:none!important;
+    object-fit:cover!important;
+  }
+  .mobile-mockup-card .mockup-copy{
+    padding:.72rem .68rem .78rem!important;
+  }
+  .mobile-mockup-card .eyebrow{
+    font-size:.48rem!important;
+    letter-spacing:.12em!important;
+    margin-bottom:.35rem!important;
+  }
+  .mobile-mockup-card h3{
+    font-size:.98rem!important;
+    line-height:1.06!important;
+    margin-bottom:.45rem!important;
+  }
+  .mobile-mockup-card .mockup-actions{
+    margin-top:.4rem!important;
+  }
+  .mobile-mockup-card .mockup-actions .text-link{
+    width:100%!important;
+    min-height:2rem!important;
+    padding:.45rem .35rem!important;
+    font-size:.49rem!important;
+    line-height:1.2!important;
+    letter-spacing:.08em!important;
+  }
+
+  .format-strip{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:.5rem!important;
+    margin-bottom:1rem!important;
+  }
+  .format-strip span{
+    padding:.58rem .45rem!important;
+    font-size:.52rem!important;
+    letter-spacing:.1em!important;
+    line-height:1.25!important;
+  }
+
+  .featured-art{
+    padding:2.35rem 1.35rem!important;
+  }
+  .featured-art .section-heading{
+    text-align:left!important;
+    margin-bottom:1.2rem!important;
+  }
+  .featured-art .section-heading p{
+    display:none!important;
+  }
+  .featured-art .art-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:.75rem!important;
+  }
+  .featured-art .art-card{
+    border-radius:.65rem!important;
+  }
+  .featured-art .art-card img{
+    width:100%!important;
+    aspect-ratio:1/1!important;
+    height:auto!important;
+    max-height:none!important;
+    object-fit:cover!important;
+  }
+  .featured-art .art-card-copy{
+    padding:.72rem .68rem .82rem!important;
+  }
+  .featured-art .art-card-copy > span:first-child{
+    font-size:.48rem!important;
+    letter-spacing:.11em!important;
+    line-height:1.25!important;
+    margin-bottom:.35rem!important;
+  }
+  .featured-art .art-card-copy h3{
+    font-size:.96rem!important;
+    line-height:1.06!important;
+    margin-bottom:.38rem!important;
+  }
+  .featured-art .art-card-copy > p:not(.art-field-note):not(.art-best-for):not(.art-format-note){
+    display:none!important;
+  }
+  .featured-art .art-field-note{
+    border-left:0!important;
+    padding-left:0!important;
+    margin:.4rem 0 .45rem!important;
+    color:rgba(244,239,231,.74)!important;
+    font-size:.72rem!important;
+    line-height:1.42!important;
+    display:-webkit-box!important;
+    -webkit-line-clamp:4!important;
+    -webkit-box-orient:vertical!important;
+    overflow:hidden!important;
+  }
+  .featured-art .art-best-for{
+    font-size:.62rem!important;
+    line-height:1.34!important;
+    margin-bottom:.35rem!important;
+    display:-webkit-box!important;
+    -webkit-line-clamp:3!important;
+    -webkit-box-orient:vertical!important;
+    overflow:hidden!important;
+  }
+  .featured-art .art-format-note{
+    display:none!important;
+  }
+  .featured-art .art-best-for strong{
+    display:block!important;
+    margin-bottom:.12rem!important;
+    font-size:.48rem!important;
+    letter-spacing:.1em!important;
+  }
+  .featured-art .art-card .text-link{
+    width:100%!important;
+    min-height:1.9rem!important;
+    margin-top:.35rem!important;
+    padding:.45rem .35rem!important;
+    font-size:.49rem!important;
+    line-height:1.2!important;
+    letter-spacing:.08em!important;
+    text-align:center!important;
+  }
+
+  .compact-intro{
+    padding:2.2rem 1.35rem!important;
+  }
+  .compact-intro .intro-grid{
+    gap:1rem!important;
+  }
+  .compact-intro p:nth-of-type(n+2){
+    display:none!important;
+  }
+  .use-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:.75rem!important;
+  }
+  .use-card{
+    padding:.95rem!important;
+  }
+  .use-card h3{
+    font-size:1rem!important;
+    margin-bottom:.35rem!important;
+  }
+  .use-card p{
+    font-size:.72rem!important;
+    line-height:1.38!important;
+    display:-webkit-box!important;
+    -webkit-line-clamp:3!important;
+    -webkit-box-orient:vertical!important;
+    overflow:hidden!important;
+  }
+  .buying-grid,
+  .faq-grid,
+  .related-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:.75rem!important;
+  }
+  .buy-box,.faq-item,.related-card{
+    padding:.95rem!important;
+  }
+  .buy-box h3,.faq-item h3,.related-card h3{
+    font-size:1rem!important;
+    line-height:1.08!important;
+    margin-bottom:.35rem!important;
+  }
+  .buy-box p,.faq-item p,.related-card p{
+    font-size:.72rem!important;
+    line-height:1.38!important;
+    display:-webkit-box!important;
+    -webkit-line-clamp:4!important;
+    -webkit-box-orient:vertical!important;
+    overflow:hidden!important;
+  }
+  .related-card span{
+    font-size:.52rem!important;
+    margin-top:.65rem!important;
+  }
+  .seo-copy{
+    padding:2.35rem 1.35rem!important;
+  }
+  .seo-copy .seo-columns p:nth-of-type(n+3){
+    display:none!important;
+  }
+}
+@media(max-width:390px){
+  .mobile-mockup-gallery,
+  .featured-art .art-grid,
+  .use-grid,
+  .buying-grid,
+  .faq-grid,
+  .related-grid{
+    grid-template-columns:1fr!important;
+  }
+  .format-strip{
+    grid-template-columns:1fr!important;
+  }
+  .featured-art .art-field-note{
+    -webkit-line-clamp:5!important;
+  }
+}
+
 </style>
 
 <script type="application/ld+json">
@@ -977,6 +1200,93 @@
     <span>Worldwide shipping</span>
   </div>
 
+  <div class="mobile-mockup-gallery" aria-label="Quiet Earth mobile room examples">
+    <article class="mobile-mockup-card mockup-card">
+      <button class="mockup-image-button" type="button"
+        data-img="residential living room with fireplace autumn landscape dan sproul mockup.png"
+        data-title="Autumn Beginnings Wyoming Landscape"
+        data-link="https://dansproul.com/featured/autumn-beginnings-wyoming-landscape-dan-sproul.html"
+        data-size="Suggested sizes: 40×60, 36×54, or larger statement format for fireplace and lodge-style interiors"
+        data-mat="Mat suggestion: no mat for a clean contemporary lodge installation, or warm white for a more traditional framed presentation"
+        data-frame="Frame suggestion: walnut, natural oak, warm wood, or thin matte black">
+        <img src="residential living room with fireplace autumn landscape dan sproul mockup.png" alt="Autumn Wyoming landscape photography installed above a fireplace in a warm lodge-inspired living room by Dan Sproul" loading="lazy" decoding="async">
+      </button>
+      <div class="mockup-copy">
+        <span class="eyebrow">Living Room</span>
+        <h3>Autumn Beginnings</h3>
+        <div class="mockup-actions"><a class="text-link primary-action" href="https://dansproul.com/featured/autumn-beginnings-wyoming-landscape-dan-sproul.html" target="_blank" rel="noopener">Purchase Print →</a></div>
+      </div>
+    </article>
+
+    <article class="mobile-mockup-card mockup-card">
+      <button class="mockup-image-button" type="button"
+        data-img="modern living room framed mountains quiet earth dan sproul.png"
+        data-title="Morning Light — Schwabacher's Landing Tetons"
+        data-link="https://dansproul.com/featured/morning-light-schwabachers-landing-tetons-dan-sproul.html"
+        data-size="Suggested sizes: 40×60, 45×60, 48×72, or larger statement format for living rooms and quiet luxury interiors"
+        data-mat="Mat suggestion: warm white, off-white, or no mat for a clean contemporary presentation"
+        data-frame="Frame suggestion: natural oak, walnut, warm wood, or thin matte black">
+        <img src="modern living room framed mountains quiet earth dan sproul.png" alt="Morning Light Schwabacher's Landing Tetons landscape photography installed in a quiet luxury living room by Dan Sproul" loading="lazy" decoding="async">
+      </button>
+      <div class="mockup-copy">
+        <span class="eyebrow">Living Room</span>
+        <h3>Morning Light</h3>
+        <div class="mockup-actions"><a class="text-link primary-action" href="https://dansproul.com/featured/morning-light-schwabachers-landing-tetons-dan-sproul.html" target="_blank" rel="noopener">Purchase Print →</a></div>
+      </div>
+    </article>
+
+    <article class="mobile-mockup-card mockup-card">
+      <button class="mockup-image-button" type="button"
+        data-img="quiet-earth-lily-pond.jpg"
+        data-title="Lily Pond, Chugach National Forest"
+        data-link="https://dansproul.com/featured/moody-lily-pond-chugach-national-forest-dan-sproul.html"
+        data-size="Suggested sizes: 40×60, 36×54, or oversized statement format"
+        data-mat="Mat suggestion: warm white or no mat for a cleaner modern fireplace installation"
+        data-frame="Frame suggestion: light oak, walnut, or thin matte black">
+        <img src="quiet-earth-lily-pond.jpg" alt="Large framed mountain reflection landscape photography above modern fireplace in luxury residential interior by Dan Sproul" loading="lazy" decoding="async">
+      </button>
+      <div class="mockup-copy">
+        <span class="eyebrow">Fireplace</span>
+        <h3>Lily Pond</h3>
+        <div class="mockup-actions"><a class="text-link primary-action" href="https://dansproul.com/featured/moody-lily-pond-chugach-national-forest-dan-sproul.html" target="_blank" rel="noopener">Purchase Print →</a></div>
+      </div>
+    </article>
+
+    <article class="mobile-mockup-card mockup-card">
+      <button class="mockup-image-button" type="button"
+        data-img="quiet-earth-mountains-homeoffice.jpg"
+        data-title="Denali Highway Reflection"
+        data-link="https://dansproul.com/featured/denali-highway-alaska-lake-reflection-landscape-scene-dan-sproul.html"
+        data-size="Suggested sizes: 30×40, 32×48, or 40×60"
+        data-mat="Mat suggestion: white mat for office refinement or no mat for a contemporary look"
+        data-frame="Frame suggestion: walnut, black, or natural wood">
+        <img src="quiet-earth-mountains-homeoffice.jpg" alt="Quiet Earth mountain landscape fine art photography in warm modern home office by Dan Sproul" loading="lazy" decoding="async">
+      </button>
+      <div class="mockup-copy">
+        <span class="eyebrow">Office</span>
+        <h3>Denali Reflection</h3>
+        <div class="mockup-actions"><a class="text-link primary-action" href="https://dansproul.com/featured/denali-highway-alaska-lake-reflection-landscape-scene-dan-sproul.html" target="_blank" rel="noopener">Purchase Print →</a></div>
+      </div>
+    </article>
+
+    <article class="mobile-mockup-card mockup-card">
+      <button class="mockup-image-button" type="button"
+        data-img="quiet-earth-appalachian-fog.jpg"
+        data-title="Foggy Hyatt Lane"
+        data-link="https://dansproul.com/featured/foggy-hyatt-lane-cades-cove-dan-sproul.html"
+        data-size="Suggested sizes: 30×40, 24×36, or 36×54"
+        data-mat="Mat suggestion: warm white mat for soft bedroom atmosphere"
+        data-frame="Frame suggestion: natural oak, walnut, or matte black">
+        <img src="quiet-earth-appalachian-fog.jpg" alt="Atmospheric foggy Appalachian landscape photography above bed in quiet luxury bedroom interior by Dan Sproul" loading="lazy" decoding="async">
+      </button>
+      <div class="mockup-copy">
+        <span class="eyebrow">Bedroom</span>
+        <h3>Foggy Hyatt Lane</h3>
+        <div class="mockup-actions"><a class="text-link primary-action" href="https://dansproul.com/featured/foggy-hyatt-lane-cades-cove-dan-sproul.html" target="_blank" rel="noopener">Purchase Print →</a></div>
+      </div>
+    </article>
+  </div>
+
 
   <article class="featured-installation">
     <button class="mockup-image-button" type="button"
@@ -1084,47 +1394,6 @@
         </div>
       </article>
     </div>
-  </div>
-</section>
-
-<section class="intro compact-intro">
-  <div class="intro-grid">
-    <div>
-      <span class="eyebrow">Why Quiet Earth Exists</span>
-      <h2>Calm landscape prints chosen for how they feel at home.</h2>
-    </div>
-    <div>
-      <p>Quiet Earth is a collection of softer mountain, lake, forest, fog, and reflection photographs selected for rooms that need warmth, depth, and natural stillness.</p>
-      <p>The goal is simple: artwork that helps a room feel calmer and more connected to nature without adding visual clutter.</p>
-    </div>
-  </div>
-</section>
-
-
-<section class="use-section" id="interior-uses">
-  <div class="section-heading">
-    <span class="eyebrow">Interior Applications</span>
-    <h2>Where Quiet Earth works best.</h2>
-    <p>These images are selected for spaces where artwork should create a sense of calm, depth, and connection to nature.</p>
-  </div>
-
-  <div class="use-grid">
-    <article class="use-card">
-      <h3>Living Rooms</h3>
-      <p>Oversized landscape prints for fireplaces, sofas, console walls, and calm residential focal points.</p>
-    </article>
-    <article class="use-card">
-      <h3>Bedrooms</h3>
-      <p>Soft fog, water, and mountain images for quiet rooms where the artwork should feel restful.</p>
-    </article>
-    <article class="use-card">
-      <h3>Wellness Spaces</h3>
-      <p>Atmospheric nature imagery for therapy rooms, clinics, spas, and calming patient-facing interiors.</p>
-    </article>
-    <article class="use-card">
-      <h3>Hospitality</h3>
-      <p>Muted landscape artwork for boutique hotels, guest suites, lounges, corridors, and destination-inspired spaces.</p>
-    </article>
   </div>
 </section>
 
@@ -1293,6 +1562,47 @@
       </div>
     </a>
 
+  </div>
+</section>
+
+<section class="intro compact-intro">
+  <div class="intro-grid">
+    <div>
+      <span class="eyebrow">Why Quiet Earth Exists</span>
+      <h2>Calm landscape prints chosen for how they feel at home.</h2>
+    </div>
+    <div>
+      <p>Quiet Earth is a collection of softer mountain, lake, forest, fog, and reflection photographs selected for rooms that need warmth, depth, and natural stillness.</p>
+      <p>The goal is simple: artwork that helps a room feel calmer and more connected to nature without adding visual clutter.</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="use-section" id="interior-uses">
+  <div class="section-heading">
+    <span class="eyebrow">Interior Applications</span>
+    <h2>Where Quiet Earth works best.</h2>
+    <p>These images are selected for spaces where artwork should create a sense of calm, depth, and connection to nature.</p>
+  </div>
+
+  <div class="use-grid">
+    <article class="use-card">
+      <h3>Living Rooms</h3>
+      <p>Oversized landscape prints for fireplaces, sofas, console walls, and calm residential focal points.</p>
+    </article>
+    <article class="use-card">
+      <h3>Bedrooms</h3>
+      <p>Soft fog, water, and mountain images for quiet rooms where the artwork should feel restful.</p>
+    </article>
+    <article class="use-card">
+      <h3>Wellness Spaces</h3>
+      <p>Atmospheric nature imagery for therapy rooms, clinics, spas, and calming patient-facing interiors.</p>
+    </article>
+    <article class="use-card">
+      <h3>Hospitality</h3>
+      <p>Muted landscape artwork for boutique hotels, guest suites, lounges, corridors, and destination-inspired spaces.</p>
+    </article>
   </div>
 </section>
 
