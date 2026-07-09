@@ -1179,6 +1179,56 @@
   .site-footer .footer-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;}
 }
 
+
+/* HOMEPAGE MOBILE POLISH PASS — quick path + room cards */
+@media(max-width:680px){
+  .quick-paths .quick-head p,
+  .seller-section .section-head p,
+  .collections .section-head p,
+  .residential-gallery .section-head p,
+  .environment .section-head p,
+  .buying .section-head p{
+    display:none!important;
+  }
+
+  .path-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    background:transparent!important;
+    gap:4px!important;
+  }
+  .path{
+    min-height:118px!important;
+    padding:14px!important;
+    border:1px solid rgba(33,27,20,.13)!important;
+  }
+  .path p{display:none!important;}
+  .path h3{font-size:1.18rem!important;line-height:1.04!important;}
+  .path span{font-size:7.6px!important;letter-spacing:.13em!important;line-height:1.35!important;margin-top:10px!important;}
+
+  .environment .env-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    background:transparent!important;
+    gap:4px!important;
+  }
+  .environment .env-card{
+    min-height:118px!important;
+    padding:14px!important;
+    border:1px solid rgba(195,158,83,.16)!important;
+  }
+  .environment .env-card p{display:none!important;}
+  .environment .env-card h3{font-size:1.12rem!important;line-height:1.05!important;margin-bottom:0!important;}
+  .environment .env-card span{font-size:7.5px!important;letter-spacing:.13em!important;line-height:1.35!important;margin-top:10px!important;}
+
+  .buy-grid{background:transparent!important;gap:4px!important;}
+  .buy-card{border:1px solid rgba(195,158,83,.16)!important;}
+}
+@media(max-width:430px){
+  .path{min-height:108px!important;}
+  .path h3{font-size:1.05rem!important;}
+  .environment .env-card{min-height:108px!important;}
+  .environment .env-card h3{font-size:1.02rem!important;}
+}
+
 </style>
 
   <script type="application/ld+json">
@@ -1486,7 +1536,7 @@
   "name": "Dan Sproul Fine Art Photography",
   "url": "https://dsproul.com",
   "image": "https://dsproul.com/brand-social.jpg",
-  "telephone": "+1-419-555-0123",
+  "email": "sproulphoto@gmail.com",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Lima",
