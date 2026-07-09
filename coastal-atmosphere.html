@@ -1099,6 +1099,172 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
   .featured-installation img{max-height:220px !important;}
 }
 
+
+/* COASTAL ATMOSPHERE — FINAL MOBILE GRID PASS */
+.featured-installations-grid{display:block;}
+
+@media(max-width:680px){
+  section{
+    content-visibility:visible!important;
+    contain-intrinsic-size:auto!important;
+  }
+
+  /* Featured room mockups become fast-scanning cards on phones */
+  .featured-installations-grid{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:.78rem!important;
+    margin:0 0 1rem!important;
+  }
+  .featured-installations-grid .featured-installation{
+    display:flex!important;
+    flex-direction:column!important;
+    min-height:100%!important;
+    margin:0!important;
+    border-radius:10px!important;
+  }
+  .featured-installations-grid .featured-installation img{
+    aspect-ratio:1/1!important;
+    max-height:none!important;
+    height:auto!important;
+    object-fit:cover!important;
+  }
+  .featured-installations-grid .featured-installation-copy{
+    display:block!important;
+    padding:.74rem .68rem .86rem!important;
+  }
+  .featured-installations-grid .featured-installation-copy .eyebrow,
+  .featured-installations-grid .featured-installation-copy p:not(.installation-descriptor),
+  .featured-installations-grid .inline-specs,
+  .featured-installations-grid .quick-specs,
+  .featured-installations-grid .quick-link{
+    display:none!important;
+  }
+  .featured-installations-grid .shop-installation-label{
+    display:block!important;
+    font-size:.48rem!important;
+    letter-spacing:.12em!important;
+    margin:0 0 .35rem!important;
+  }
+  .featured-installations-grid .featured-installation-copy h3{
+    font-size:1rem!important;
+    line-height:1.05!important;
+    margin:0 0 .35rem!important;
+  }
+  .featured-installations-grid .installation-descriptor{
+    display:-webkit-box!important;
+    -webkit-line-clamp:2!important;
+    -webkit-box-orient:vertical!important;
+    overflow:hidden!important;
+    font-size:.73rem!important;
+    line-height:1.35!important;
+    margin:0 0 .45rem!important;
+  }
+  .featured-installations-grid .text-link{
+    display:inline-block!important;
+    font-size:.53rem!important;
+    letter-spacing:.1em!important;
+    line-height:1.25!important;
+  }
+
+  /* Secondary mockups become a true two-column phone grid */
+  .mockup-grid{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:.78rem!important;
+    margin-top:1rem!important;
+  }
+  .mockup-pair{
+    display:contents!important;
+  }
+  .mockup-grid > .mockup,
+  .mockup-pair > .mockup{
+    min-width:0!important;
+    border-radius:10px!important;
+  }
+  .mockup-grid .mockup img{
+    aspect-ratio:1/1!important;
+    object-fit:cover!important;
+  }
+  .mockup-grid .mockup-caption{
+    padding:.65rem .68rem!important;
+    font-size:.68rem!important;
+    line-height:1.35!important;
+    display:-webkit-box!important;
+    -webkit-line-clamp:3!important;
+    -webkit-box-orient:vertical!important;
+    overflow:hidden!important;
+  }
+  .mockup-grid .quick-link{
+    position:static!important;
+    display:block!important;
+    opacity:1!important;
+    transform:none!important;
+    margin:.55rem .65rem 0!important;
+    padding:.48rem .55rem!important;
+    text-align:center!important;
+    font-size:.5rem!important;
+    letter-spacing:.1em!important;
+  }
+
+  /* Keep the purchasable artwork near the top and compact */
+  #collection{
+    padding-top:2.55rem!important;
+  }
+  .collection-grid.print-card-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:.78rem!important;
+  }
+
+  /* Reduce lower-page repetition on mobile while preserving SEO/content on desktop */
+  #coastal-wall-art-modern-homes,
+  .workflow-intro-cta,
+  .workflow-confidence,
+  .pre-footer-cta{
+    display:none!important;
+  }
+  .designer-workflow{
+    padding:2.35rem 0 2.65rem!important;
+  }
+  .workflow-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:.72rem!important;
+    margin-bottom:1rem!important;
+  }
+  .workflow-step{
+    padding:.85rem!important;
+  }
+  .workflow-step p{
+    display:none!important;
+  }
+  .workflow-step h3{
+    font-size:1rem!important;
+    line-height:1.05!important;
+    margin:.5rem 0 0!important;
+  }
+  .workflow-cta{
+    padding-top:.35rem!important;
+  }
+
+  .room-strip-grid,
+  .qe-related-grid,
+  .faq-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+}
+
+@media(max-width:380px){
+  .featured-installations-grid,
+  .mockup-grid,
+  .collection-grid.print-card-grid,
+  .room-strip-grid,
+  .qe-related-grid,
+  .faq-grid,
+  .workflow-grid{
+    grid-template-columns:1fr!important;
+  }
+}
+
 </style>
 
 <script type="application/ld+json">
@@ -1299,6 +1465,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
       <span>Metal available</span>
     </div>
 
+    <div class="featured-installations-grid">
     <article class="featured-installation mockup"
       data-img="coastal atmosphere living room dan sproul outer banks.png"
       data-link="https://dansproul.com/featured/outer-banks-beach-sunrise-dan-sproul.html"
@@ -1391,6 +1558,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
         </div>
       </div>
     </article>
+    </div>
 
     <div class="mockup-grid">
       <div class="mockup" data-img="coastal-atmosphere-diningroom.jpg" data-link="https://dansproul.com/featured/dreamy-haystack-rock-reflection-dan-sproul.html" data-caption="Dreamy Haystack Rock reflection artwork shown above a dining room console for a refined coastal interior." data-size="Suggested sizes: 30×40, 36×48, 40×60, or larger depending on console and wall width." data-frame="Frame suggestion: white oak, natural oak, walnut, or thin matte black." data-format="Available formats: framed print, canvas, acrylic, metal, and fine art paper.">
@@ -1418,20 +1586,6 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
         <a class="quick-link" href="https://dansproul.com/featured/moody-oregon-coast-sea-stacks-dan-sproul.html" target="_blank" rel="noopener" onclick="event.stopPropagation()">Purchase Print</a>
         <div class="mockup-caption"><strong>Best for:</strong> bedrooms, wellness rooms, and quiet retreats. Suggested sizes: 24×36 to 36×48.</div>
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="collection-story" id="why-coastal-atmosphere">
-  <div class="container story-grid">
-    <div>
-      <span class="eyebrow">Why Coastal Atmosphere</span>
-      <h2>Coastal artwork chosen for atmosphere instead of cliché.</h2>
-    </div>
-    <div>
-      <p>Coastal Atmosphere focuses on refined ocean imagery rather than bright decorative beach art. The collection centers around fog, sea stacks, crashing surf, muted water tones, shoreline texture, and quiet movement designed to support calm architectural interiors.</p>
-      <p>I built this collection around the quieter side of the shoreline: fog, dark rock, silver water, sea stacks, and weather-softened light. These are pieces I would use when a room needs calm, texture, and movement without turning into obvious beach décor.</p>
-      <p class="ohio-credibility">Created by Ohio fine art photographer Dan Sproul. Prints ship worldwide.</p>
     </div>
   </div>
 </section>
@@ -1563,6 +1717,21 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
           <p class="available-as"><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal.</p>
         </div>
       </a>
+    </div>
+  </div>
+</section>
+
+
+<section class="collection-story" id="why-coastal-atmosphere">
+  <div class="container story-grid">
+    <div>
+      <span class="eyebrow">Why Coastal Atmosphere</span>
+      <h2>Coastal artwork chosen for atmosphere instead of cliché.</h2>
+    </div>
+    <div>
+      <p>Coastal Atmosphere focuses on refined ocean imagery rather than bright decorative beach art. The collection centers around fog, sea stacks, crashing surf, muted water tones, shoreline texture, and quiet movement designed to support calm architectural interiors.</p>
+      <p>I built this collection around the quieter side of the shoreline: fog, dark rock, silver water, sea stacks, and weather-softened light. These are pieces I would use when a room needs calm, texture, and movement without turning into obvious beach décor.</p>
+      <p class="ohio-credibility">Created by Ohio fine art photographer Dan Sproul. Prints ship worldwide.</p>
     </div>
   </div>
 </section>
