@@ -473,20 +473,70 @@ body{padding-top:66px}
    JULY 2026 MOBILE CONDENSE PASS — Collections page
    Goals:
    1. Reduce hero height on phones
-   2. Trim collection grid to first 4 cards (≤900px)
+   2. Keep all primary collection cards visible on mobile
    3. Keep interior-use cards visible so residential buyers can find room-based guidance
    ========================================================== */
 
 @media(max-width:900px){
   /* Hero slightly shorter */
   .hero{min-height:78vh!important;}
-  /* Hide additional collection cards beyond 4 */
-  .collection-grid .card:nth-of-type(n+5){display:none!important;}
+  /* Keep all primary collection cards visible on mobile. */
+  .collection-grid .card{display:block!important;}
 }
 
 @media(max-width:680px){
   .interior-grid .interior-card{display:block!important;}
 }
+
+
+/* JULY 2026 MOBILE VISIBILITY REPAIR — keep all collection cards accessible */
+@media(max-width:900px){
+  section{
+    content-visibility:visible!important;
+    contain-intrinsic-size:auto!important;
+  }
+  .collection-grid,
+  .feature-card-grid,
+  .compact-grid,
+  .interior-grid{
+    display:grid!important;
+    overflow:visible!important;
+  }
+  .collection-grid .card,
+  .collection-grid .card:nth-of-type(n+5),
+  .feature-card,
+  .compact-card,
+  .interior-card{
+    display:block!important;
+    visibility:visible!important;
+    opacity:1!important;
+  }
+  .collection-grid{
+    grid-template-columns:1fr!important;
+    gap:20px!important;
+  }
+  .collection-grid .card img{
+    max-height:260px!important;
+    object-fit:cover!important;
+  }
+  .collection-grid .copy{
+    padding:22px!important;
+  }
+}
+@media(max-width:560px){
+  .collection-grid .card img{
+    max-height:230px!important;
+  }
+  .collection-grid .copy p{
+    font-size:.92rem!important;
+    line-height:1.6!important;
+  }
+  .collection-grid .meta{
+    margin:14px 0 6px!important;
+    gap:6px!important;
+  }
+}
+
 </style>
 <script type="application/ld+json">
 {
