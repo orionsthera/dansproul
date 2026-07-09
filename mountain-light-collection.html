@@ -1331,6 +1331,208 @@ h1{max-width:980px;font-size:clamp(44px,6.7vw,92px);letter-spacing:-.018em}
   }
 }
 
+
+
+/* MOUNTAIN LIGHT FINAL MOBILE GRID PASS — mockups + image cards */
+@media(max-width:768px){
+  /* Keep the buyer reassurance compact without losing trust cues */
+  .buyer-reassurance{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:1px!important;
+    margin-bottom:16px!important;
+  }
+
+  /* Convert secondary mockups from single-file scrolling into a fast image grid */
+  .mock-strip{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:10px!important;
+    background:transparent!important;
+    border:0!important;
+  }
+  .mock-tile{
+    min-height:0!important;
+    aspect-ratio:1/1!important;
+    border-radius:12px!important;
+    border:1px solid rgba(33,27,20,.12)!important;
+    box-shadow:0 12px 28px rgba(0,0,0,.10)!important;
+  }
+  .mock-tile img{
+    width:100%!important;
+    height:100%!important;
+    object-fit:cover!important;
+  }
+  .mock-label{
+    padding:10px 9px 48px!important;
+    font-size:0!important;
+    letter-spacing:0!important;
+    line-height:1.1!important;
+  }
+  .mock-label strong{
+    display:block!important;
+    font-size:.98rem!important;
+    line-height:1.05!important;
+    margin-bottom:0!important;
+  }
+  .mock-purchase{
+    left:9px!important;
+    right:9px!important;
+    bottom:9px!important;
+    width:auto!important;
+    min-height:32px!important;
+    padding:7px 6px!important;
+    font-size:7.2px!important;
+    letter-spacing:.09em!important;
+    text-align:center!important;
+  }
+
+  /* Keep print cards in a Forest Light style grid on normal phones */
+  .mountain-print-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:12px!important;
+  }
+  .mountain-print-card{
+    border-radius:12px!important;
+  }
+  .mountain-print-card img{
+    aspect-ratio:1/1!important;
+    object-fit:cover!important;
+  }
+  .mountain-card-copy{
+    padding:12px 11px 13px!important;
+    gap:7px!important;
+  }
+  .mountain-print-label{
+    font-size:7.4px!important;
+    letter-spacing:.13em!important;
+    line-height:1.25!important;
+  }
+  .mountain-card-copy h3{
+    font-size:1.02rem!important;
+    line-height:1.05!important;
+  }
+  .mountain-field-note{
+    font-size:.82rem!important;
+    line-height:1.36!important;
+    display:-webkit-box!important;
+    -webkit-line-clamp:4!important;
+    -webkit-box-orient:vertical!important;
+    overflow:hidden!important;
+    margin:0!important;
+  }
+  .mountain-print-meta{
+    font-size:.64rem!important;
+    line-height:1.35!important;
+    margin:0!important;
+  }
+  .mountain-available{
+    display:none!important;
+  }
+  .mountain-shop-link{
+    min-height:32px!important;
+    font-size:7.4px!important;
+    letter-spacing:.1em!important;
+    padding:7px 8px!important;
+    text-align:center!important;
+  }
+
+  /* Image-based related collections become scannable instead of full-width stacks */
+  .related-grid{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:10px!important;
+    background:transparent!important;
+    border:0!important;
+  }
+  .related-card{
+    min-height:0!important;
+    aspect-ratio:1/1!important;
+    border-radius:12px!important;
+    border:1px solid rgba(195,158,83,.16)!important;
+  }
+  .related-card img{
+    width:100%!important;
+    height:100%!important;
+    object-fit:cover!important;
+  }
+  .related-card .card-text{
+    padding:12px 10px!important;
+  }
+  .related-card .tag{
+    font-size:7px!important;
+    letter-spacing:.13em!important;
+    margin-bottom:5px!important;
+  }
+  .related-card h3{
+    font-size:1.03rem!important;
+    line-height:1.05!important;
+  }
+  .related-card p{
+    display:none!important;
+  }
+
+  /* Lower comparison/recommendation cards stay useful but shorter */
+  .recommended-collections-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:10px!important;
+    background:transparent!important;
+    border:0!important;
+  }
+  .recommended-collection-card{
+    min-height:auto!important;
+    padding:16px 14px!important;
+    border-radius:12px!important;
+    border:1px solid rgba(195,158,83,.16)!important;
+  }
+  .recommended-collection-card span{
+    font-size:7.4px!important;
+    letter-spacing:.13em!important;
+    margin-bottom:7px!important;
+  }
+  .recommended-collection-card h3{
+    font-size:1.08rem!important;
+    line-height:1.08!important;
+    margin-bottom:7px!important;
+  }
+  .recommended-collection-card p{
+    font-size:.72rem!important;
+    line-height:1.42!important;
+  }
+  .recommended-collection-card ul{
+    display:none!important;
+  }
+
+  /* Remove duplicate mobile CTA before the universal footer CTA */
+  .cta-section{
+    display:none!important;
+  }
+}
+
+@media(min-width:381px) and (max-width:430px){
+  .mountain-print-grid,
+  .mock-strip,
+  .related-grid,
+  .recommended-collections-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+}
+
+@media(max-width:380px){
+  .mountain-print-grid,
+  .mock-strip,
+  .related-grid,
+  .recommended-collections-grid{
+    grid-template-columns:1fr!important;
+  }
+  .mountain-field-note{
+    -webkit-line-clamp:5!important;
+  }
+  .mock-tile,
+  .related-card{
+    aspect-ratio:4/3!important;
+  }
+}
+
 </style>
 <script type="application/ld+json">
 {
@@ -1587,7 +1789,6 @@ h1{max-width:980px;font-size:clamp(44px,6.7vw,92px);letter-spacing:-.018em}
         <span class="mountain-shop-link">Shop This Print →</span>
       </div>
     </a>
-    
 
     <a class="mountain-print-card" href="https://dansproul.com/featured/mount-forbes-in-snow-dan-sproul.html" target="_blank" rel="noopener">
       <img src="mount-forbes-in-snow-dan-sproul.jpg" alt="Mount Forbes in Snow panoramic mountain print by Dan Sproul" loading="lazy" decoding="async">
