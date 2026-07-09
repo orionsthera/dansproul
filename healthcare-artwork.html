@@ -743,7 +743,6 @@ h1{font-size:54px}
   /* Collapse heavier text blocks on mobile without removing content */
   .project-details .project-wrap > div:first-child p:nth-of-type(n+3),
   .intro .intro-grid > div:last-child p:nth-of-type(n+2),
-  #why-nature-artwork-works .intro-grid > div:last-child p:nth-of-type(n+2),
   #procurement-support .project-wrap > div:first-child p:nth-of-type(n+3){
     display:none!important;
   }
@@ -895,6 +894,103 @@ h1{font-size:54px}
   }
 }
 
+
+
+/* HEALTHCARE STREAMLINE PASS — less repetition + stronger mobile flow */
+.healthcare-compact-guide{
+  border-top:1px solid rgba(199,155,85,.18);
+}
+.healthcare-compact-guide .intro-grid{
+  align-items:center;
+}
+.project-support-compact .project-card-grid{
+  grid-template-columns:repeat(4,minmax(0,1fr));
+}
+.project-support-compact .project-card{
+  min-height:100%;
+}
+.compact-artist-note{
+  margin-top:24px;
+  padding:22px 24px;
+}
+.compact-artist-note p{
+  font-size:16px;
+  line-height:1.65;
+}
+@media(max-width:1000px){
+  .project-support-compact .project-card-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+@media(max-width:900px){
+  .mockup-grid .mockup-card:nth-of-type(n+3){display:none!important;}
+  .mockup-group.mobile-expanded .mockup-grid .mockup-card{display:block!important;}
+  .show-more-mobile{display:block!important;}
+}
+@media(max-width:680px){
+  .health-hero{min-height:58vh!important;padding:82px 22px 38px!important;}
+  .health-hero p{max-width:100%!important;}
+  .trust-strip{grid-template-columns:repeat(2,minmax(0,1fr))!important;}
+  .trust-strip span{min-height:48px!important;display:flex!important;align-items:center!important;justify-content:center!important;}
+
+  .mockup-feature .section-heading p:not(.eyebrow){display:none!important;}
+  .group-heading p:not(.eyebrow){display:none!important;}
+  .mockup-card img{height:205px!important;}
+  .mockup-copy{padding:15px!important;}
+  .mockup-copy p{display:none!important;}
+  .mockup-actions{margin-top:12px!important;}
+  .show-more-mobile{
+    margin:12px 0 0!important;
+    padding:12px 14px!important;
+    font-size:9px!important;
+    letter-spacing:.14em!important;
+  }
+
+  .focused-pathway-card img{display:none!important;}
+  .focused-pathway-copy{padding:17px!important;}
+  .focused-pathway-copy p{display:none!important;}
+  .focused-pathway-copy .pathway-cta{padding-top:12px!important;}
+
+  .healthcare-compact-guide .intro-grid > div:last-child p:nth-of-type(n+2){display:none!important;}
+  #healthcare-project-guidance .project-wrap > div:first-child p:nth-of-type(n+2){display:none!important;}
+  .project-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important;}
+  .project-card{padding:14px!important;min-height:auto!important;}
+  .project-card h3{font-size:1.05rem!important;line-height:1.08!important;margin-bottom:0!important;}
+  .project-card p{display:none!important;}
+
+  .healthcare-spec-resource p{max-height:4.8em!important;overflow:hidden!important;}
+  .spec-resource-meta{display:none!important;}
+  .spec-preview-wrap{max-width:300px!important;}
+
+  .project-support-compact .project-wrap{gap:24px!important;}
+  .compact-artist-note{display:none!important;}
+
+  .mini-gallery{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important;}
+  .mini-gallery .gallery-item:nth-of-type(n+3){display:block!important;}
+  .gallery-item img{height:128px!important;object-fit:cover!important;}
+  .gallery-item div{padding:12px!important;}
+  .gallery-item h3{font-size:1rem!important;line-height:1.08!important;}
+  .gallery-item p:not(.eyebrow),.gallery-item .use{display:none!important;}
+  .gallery-item .text-link{font-size:9px!important;line-height:1.3!important;}
+
+  .related-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important;}
+  .related-grid .related-card:nth-of-type(n+5){display:block!important;}
+  .related-card{padding:14px!important;min-height:auto!important;}
+  .related-card h3{font-size:1.05rem!important;line-height:1.08!important;margin:8px 0 0!important;}
+  .related-card p{display:none!important;}
+
+  .site-footer .footer-contact-boxes{display:none!important;}
+}
+@media(max-width:430px){
+  .gallery-item img{height:112px!important;}
+  .project-card h3,.related-card h3{font-size:.98rem!important;}
+}
+
+
+/* Healthcare footer contact block removed: compact footer spacing */
+.site-footer{padding-top:46px!important;}
+@media(max-width:680px){.site-footer{padding-top:28px!important;}}
+
 </style>
 
 <script type="application/ld+json">
@@ -949,7 +1045,7 @@ h1{font-size:54px}
         {"@type":"WebPage","name":"Senior Living Artwork for Assisted Living and Residential Care Communities","url":"https://dsproul.com/senior-living-artwork.html"},
         {"@type":"WebPage","name":"10 Calming Water Images for Therapy Offices","url":"https://dsproul.com/calming-water-art-therapy-offices.html"},
         {"@type":"WebPageElement","name":"Healthcare artwork applications by room type"},
-        {"@type":"WebPageElement","name":"Healthcare artwork project process"},
+        {"@type":"WebPageElement","name":"Healthcare artwork project support"},
         {"@type":"WebPageElement","name":"Healthcare waiting room artwork examples"},
         {"@type":"WebPageElement","name":"Patient room artwork examples"},
         {"@type":"WebPageElement","name":"Healthcare corridor artwork examples"},
@@ -1083,6 +1179,7 @@ h1{font-size:54px}
         <div class="mockup-copy"><span class="priority-label">Restorative Lobby</span><h3>Atmospheric Arrival Space</h3><p>A moody coastal landscape creates a calm arrival moment for restorative health, wellness, or hospitality-inspired care settings.</p><div class="mockup-actions"><button type="button">Enlarge</button><a href="https://dansproul.com/featured/cavern-cascade-gorge-trail-watkins-glen-falls-dan-sproul.html" target="_blank" rel="noopener">View This Print</a></div></div>
       </article>
     </div>
+    <button class="show-more-mobile" type="button">Show more examples</button>
   </div>
 
   <div class="mockup-group" id="patient-rooms">
@@ -1104,6 +1201,7 @@ h1{font-size:54px}
         <div class="mockup-copy"><span class="priority-label">Patient Room</span><h3>Gentle Lake View</h3><p>A lake and dock image brings soft blue tones and visual quiet into a modern patient room.</p><div class="mockup-actions"><button type="button">Enlarge</button><a href="https://dansproul.com/featured/moosehead-lake-dock-morning-light-maine-dan-sproul.html" target="_blank" rel="noopener">View This Print</a></div></div>
       </article>
     </div>
+    <button class="show-more-mobile" type="button">Show more examples</button>
   </div>
 
   <div class="mockup-group" id="corridors">
@@ -1133,6 +1231,7 @@ h1{font-size:54px}
         <div class="mockup-copy"><span class="priority-label">Healthcare Hallway</span><h3>Fog and Flow Along the Corridor</h3><p>A foggy river landscape supports a calm hallway experience with soft movement and natural depth.</p><div class="mockup-actions"><button type="button">Enlarge</button><a class="pending" href="#" target="_blank" rel="noopener">View This Print</a></div></div>
       </article>
     </div>
+    <button class="show-more-mobile" type="button">Show more examples</button>
   </div>
 
   <div class="mockup-group" id="therapy">
@@ -1195,15 +1294,15 @@ h1{font-size:54px}
 </section>
 
 
-<section class="intro">
+<section class="intro healthcare-compact-guide" id="healthcare-artwork-guide">
   <div class="intro-grid">
     <div>
       <p class="eyebrow">Healthcare Artwork Guide</p>
-      <h2>Artwork selected by emotional atmosphere, room function, and visual calm.</h2>
+      <h2>Artwork selected by room function, visual calm, and atmosphere.</h2>
     </div>
     <div>
-      <p>Healthcare interiors need artwork that feels intentional without creating visual stress. Quiet landscape photography, reflective water, soft mountain forms, fog, forests, and gentle natural movement can help a space feel calmer, warmer, and more considered.</p>
-      <p>This healthcare artwork guide brings together room mockups, practical sizing guidance, and curated nature photography selected for patient-facing interiors, wellness spaces, corridors, and restorative commercial environments.</p>
+      <p>Healthcare interiors often need artwork that is quiet, legible, and reassuring without feeling generic. Soft water, forests, fog, open skies, muted mountains, and low-distraction natural scenes work especially well in patient-facing rooms.</p>
+      <p>Use the examples on this page as a starting point for waiting rooms, patient rooms, corridors, therapy offices, oncology spaces, wellness clinics, and senior living environments.</p>
     </div>
   </div>
 </section>
@@ -1227,60 +1326,8 @@ h1{font-size:54px}
   </div>
 </section>
 
-<section class="intro" id="why-nature-artwork-works">
-  <div class="intro-grid">
-    <div>
-      <p class="eyebrow">Why Nature Artwork Works</p>
-      <h2>Creating calmer healthcare experiences through nature.</h2>
-    </div>
-    <div>
-      <p>Nature-based artwork is frequently selected for healthcare environments because it introduces visual calm, softens clinical settings, and helps create a more welcoming atmosphere for patients, visitors, and staff.</p>
-      <p>Water, forests, mountains, open skies, and quiet natural scenes provide visual respite without creating distraction. These environments often benefit from artwork that feels restorative rather than decorative.</p>
-      <p>Whether used in waiting rooms, oncology centers, wellness clinics, therapy offices, or patient rooms, carefully selected nature photography can support a more comfortable and human-centered experience.</p>
-    </div>
-  </div>
-</section>
 
 
-
-<section class="jump-section">
-  <div class="jump-inner">
-    <div>
-      <p class="eyebrow">Choose by Space</p>
-      <h2 style="font-size:clamp(30px,3.4vw,48px)">Find artwork by healthcare environment.</h2>
-      <p>Browse by the healthcare environment you are planning, then use the examples below for scale, mood, and placement direction.</p>
-    </div>
-    <div class="jump-links">
-      <a href="#healthcare-artwork-applications">Applications</a>
-      <a href="#waiting-rooms">Waiting Rooms</a>
-      <a href="#patient-rooms">Patient Rooms</a>
-      <a href="#corridors">Corridors</a>
-      <a href="#therapy">Therapy Offices</a>
-      <a href="#focused-pathways">Focused Guides</a>
-      <a href="senior-living-artwork.html">Senior Living Page</a>
-      <a href="healthcare-oncology.html">Oncology</a>
-    </div>
-  </div>
-</section>
-
-
-<section class="project-details alt" id="healthcare-project-process">
-  <div class="project-wrap">
-    <div>
-      <p class="eyebrow">Healthcare Project Process</p>
-      <h2>How healthcare artwork projects work.</h2>
-      <p>Designers, facilities teams, and healthcare buyers can use the page as a practical starting point for selecting calming artwork by room type, scale, and project atmosphere.</p>
-    </div>
-    <div class="project-card-grid">
-      <article class="project-card"><h3>Browse Collections</h3><p>Review healthcare-friendly artwork examples, room mockups, and related collections by mood, subject, and environment.</p></article>
-      <article class="project-card"><h3>Request Mockups</h3><p>Send room photos, wall dimensions, renderings, or project direction for artwork recommendations and visual placement guidance.</p></article>
-      <article class="project-card"><h3>Review Options</h3><p>Compare size, format, mood, framing direction, and coordinated artwork choices for waiting rooms, patient rooms, corridors, and wellness spaces.</p></article>
-      <article class="project-card"><h3>Specify Artwork</h3><p>Select final artwork for individual rooms, multi-room programs, or coordinated healthcare and wellness interiors.</p></article>
-      <article class="project-card"><h3>Order Prints</h3><p>Finished prints can be ordered through Fine Art America / Pixels in multiple sizes and formats, with custom sizing available on many images.</p></article>
-      <article class="project-card"><h3>Project Support</h3><p>Additional guidance is available for trade pricing, licensing, commercial procurement, and designer-managed production.</p></article>
-    </div>
-  </div>
-</section>
 
 <section class="project-details" id="healthcare-project-guidance">
   <div class="project-wrap">
@@ -1343,29 +1390,15 @@ h1{font-size:54px}
 </section>
 
 
-<section class="project-details alt" id="procurement-support">
-
+<section class="project-details alt project-support-compact" id="procurement-support">
   <div class="project-wrap">
-
     <div>
-      <p class="eyebrow">Procurement &amp; Installation Support</p>
-
-      <h2>Artwork support for healthcare, wellness, senior living, and commercial projects.</h2>
-
-      <p>
-      Selecting artwork for healthcare environments involves more than choosing images. Designers, facilities teams, and project managers often need guidance on sizing, room-to-room consistency, print formats, project logistics, and long-term durability.
-      </p>
-
-      <p>
-      Dan Sproul works with designers, healthcare facilities, wellness centers, senior living communities, and commercial projects to help create cohesive artwork programs that support the atmosphere and function of each space.
-      </p>
-
-      <p>
-      Many of these same artwork considerations apply to assisted living, memory care, independent living, and active adult communities. Explore the dedicated
-      <a href="senior-living-artwork.html">Senior Living Artwork page</a>
-      for examples organized around resident lounges, dining spaces, memory care environments, and wellness-focused community spaces.
-      </p>
-
+      <p class="eyebrow">Project Support</p>
+      <h2>Healthcare artwork support without overcomplicating the process.</h2>
+      <p>For healthcare, wellness, senior living, and commercial interiors, Dan can help narrow imagery, scale, format, and room-to-room artwork direction so projects feel calm, cohesive, and appropriate for the space.</p>
+      <div class="dan-note compact-artist-note">
+        <p>Dan’s note: I’m drawn to quieter landscapes — fog, water movement, winter forests, muted coastlines, and low-distraction natural scenes. Those images naturally fit healthcare and wellness interiors where the goal is calm rather than stimulation.</p>
+      </div>
       <div class="btns">
         <a class="btn primary" href="mailto:sproulphoto@gmail.com?subject=Artwork%20Project%20Consultation">Discuss a Project</a>
         <a class="btn" href="for-designers.html">Designer Resources</a>
@@ -1373,39 +1406,12 @@ h1{font-size:54px}
     </div>
 
     <div class="project-card-grid">
-      <article class="project-card">
-        <h3>Custom Sizing</h3>
-        <p>Artwork can be specified for waiting rooms, patient rooms, corridors, wellness spaces, family lounges, and large-scale feature walls.</p>
-      </article>
-
-      <article class="project-card">
-        <h3>Recommended Formats</h3>
-        <p>Framed fine art paper for residential-feel healthcare spaces, acrylic and metal for contemporary or high-traffic environments, and canvas for warmer wellness settings.</p>
-      </article>
-
-      <article class="project-card">
-        <h3>Multi-Room Curation</h3>
-        <p>Artwork can be curated as coordinated series across corridors, waiting rooms, family lounges, patient areas, and wellness environments.</p>
-      </article>
-
-      <article class="project-card">
-        <h3>Project Delivery</h3>
-        <p>Direct-to-project shipping available. Artwork is compatible with professional commercial framing and installation services.</p>
-      </article>
-
-      <article class="project-card">
-        <h3>Licensing Options</h3>
-        <p>Select imagery may be available for digital licensing, large-format production, and project-specific applications.</p>
-      </article>
-
-      <article class="project-card">
-        <h3>Designer Support</h3>
-        <p>Room photographs, wall dimensions, and project goals can be reviewed to help identify artwork that best supports the intended atmosphere.</p>
-      </article>
+      <article class="project-card"><h3>Mockups</h3><p>Send room photos, wall dimensions, renderings, or project direction for artwork recommendations and placement guidance.</p></article>
+      <article class="project-card"><h3>Sizing &amp; Formats</h3><p>Guidance is available for framed paper, canvas, acrylic, metal, and custom sizing by room type and viewing distance.</p></article>
+      <article class="project-card"><h3>Coordinated Sets</h3><p>Artwork can be curated as a cohesive program across waiting rooms, corridors, patient rooms, wellness spaces, and family lounges.</p></article>
+      <article class="project-card"><h3>Procurement &amp; Licensing</h3><p>Support is available for print links, commercial procurement, project delivery, and select licensing needs.</p></article>
     </div>
-
   </div>
-
 </section>
 
 <section class="gallery-preview" id="curated-gallery">
@@ -1422,20 +1428,6 @@ h1{font-size:54px}
   </div>
 </section>
 
-
-<section class="intro" id="dan-note-context">
-  <div class="intro-grid">
-    <div>
-      <p class="eyebrow">Artist Perspective</p>
-      <h2>Quiet landscapes selected for rooms that need visual breathing space.</h2>
-    </div>
-    <div>
-      <div class="dan-note">
-        <p>Dan’s note: I’ve always been drawn to quieter landscapes — fog, water movement, winter forests, muted coastlines, and low-distraction natural scenes. Over time I noticed these images naturally fit healthcare and wellness interiors where the goal is calm rather than stimulation. The work here is not meant to feel like decorative filler; it is meant to help a room breathe.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
 <section class="faq-section">
   <div class="section-heading">
@@ -1476,30 +1468,6 @@ h1{font-size:54px}
 
 
 <footer class="site-footer">
-  <div class="footer-contact">
-    <div class="footer-contact-inner">
-      <div class="footer-kicker">Get In Touch</div>
-      <h2>Not sure what will work best in your space?</h2>
-      <p>Send a room photo and I can help suggest artwork, sizing, and formats</p>
-      <a class="footer-email-large" href="mailto:sproulphoto@gmail.com">sproulphoto@gmail.com</a>
-
-      <div class="footer-contact-boxes">
-        <div class="footer-contact-box">
-          <strong>Location</strong>
-          <span>Lima, Ohio<br>United States</span>
-        </div>
-        <div class="footer-contact-box">
-          <strong>Email</strong>
-          <a href="mailto:sproulphoto@gmail.com">sproulphoto@gmail.com</a>
-        </div>
-        <div class="footer-contact-box">
-          <strong>Shop</strong>
-          <a href="https://dansproul.com" target="_blank" rel="noopener">dansproul.com</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <div class="footer-links">
     <div class="footer-grid">
 
