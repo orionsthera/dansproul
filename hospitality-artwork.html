@@ -113,6 +113,107 @@ h2{font-size:clamp(1.9rem,7vw,2.7rem)!important}
   .spec-box.open ul{display:block;}
   .spec-box.open::after{display:none;}
 }
+
+
+/* HOSPITALITY MOBILE FIXES — mockups, toggles, compact cards */
+@media(max-width:900px){
+  .mockup-grid .mockup-card:nth-of-type(n+5){display:block!important;}
+}
+@media(max-width:680px){
+  .breadcrumbs{display:none!important;}
+  .hospitality-hero{min-height:62vh!important;padding:82px 22px 42px!important;background-position:center!important;}
+  .hero-inner p{font-size:14px!important;line-height:1.55!important;}
+  .hero-inner .btns{display:grid!important;grid-template-columns:1fr!important;gap:9px!important;margin-top:18px!important;}
+  .btn{width:100%!important;text-align:center!important;justify-content:center!important;padding:12px 13px!important;font-size:9.5px!important;line-height:1.3!important;}
+
+  .trust-strip{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:1px!important;padding:10px 12px!important;}
+  .trust-strip span{border:1px solid rgba(199,155,85,.16)!important;padding:9px 7px!important;font-size:8.5px!important;line-height:1.3!important;letter-spacing:.11em!important;}
+
+  .section-heading{margin-bottom:24px!important;}
+  .section-heading p:not(.eyebrow),
+  .intro-grid > div:last-child p:nth-of-type(n+2){display:none!important;}
+  .intro,.dans-note,.analysis,.mockups,.buying,.spec-sheet,.best-sellers,.faq-section,.related-collections,.footer-cta{padding:42px 22px!important;}
+  .intro-grid,.note-grid,.spec-grid{gap:20px!important;}
+  p{font-size:13.5px!important;line-height:1.55!important;}
+  h1{font-size:clamp(2.15rem,9vw,2.95rem)!important;line-height:1.02!important;}
+  h2{font-size:clamp(1.7rem,7vw,2.35rem)!important;line-height:1.06!important;}
+  h3{font-size:clamp(1.15rem,5vw,1.55rem)!important;line-height:1.08!important;}
+  .eyebrow{font-size:8px!important;letter-spacing:.18em!important;margin-bottom:8px!important;}
+
+  /* Show all hospitality mockups in a compact two-column mobile grid */
+  .mockup-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important;}
+  .mockup-grid .mockup-card{display:block!important;min-width:0!important;}
+  .mockup-card img{height:150px!important;object-fit:cover!important;}
+  .mockup-copy{padding:11px!important;}
+  .mockup-copy .eyebrow{font-size:6.6px!important;letter-spacing:.12em!important;margin-bottom:6px!important;line-height:1.25!important;}
+  .mockup-copy h3{font-size:1rem!important;line-height:1.05!important;margin-bottom:7px!important;}
+  .mockup-copy p{display:none!important;}
+  .mockup-copy .text-link{font-size:7px!important;letter-spacing:.11em!important;line-height:1.35!important;display:inline-block!important;}
+
+  /* Compact general cards on mobile */
+  .analysis-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important;}
+  .analysis-card{padding:14px!important;}
+  .analysis-card h3{font-size:1.05rem!important;margin-bottom:6px!important;}
+  .analysis-card p{font-size:12px!important;line-height:1.45!important;}
+
+  .seller-grid,.related-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important;}
+  .seller-card img{height:120px!important;object-fit:cover!important;}
+  .seller-card div,.related-card{padding:12px!important;min-height:auto!important;}
+  .seller-card h3,.related-card h3{font-size:1rem!important;line-height:1.05!important;margin:7px 0 4px!important;}
+  .seller-card p,.related-card p{display:none!important;}
+  .related-card span{font-size:7px!important;letter-spacing:.12em!important;margin-bottom:6px!important;}
+
+  /* Working mobile toggle states */
+  .buying-grid.mobile-toggle-grid{display:grid!important;grid-template-columns:1fr!important;gap:8px!important;}
+  .buying-grid.mobile-toggle-grid .buy-box{display:none!important;}
+  .buying-grid.mobile-toggle-grid::after{content:attr(data-mobile-label)!important;display:block!important;padding:13px 14px!important;text-align:center!important;font-family:Arial,Helvetica,sans-serif!important;font-size:8px!important;font-weight:700!important;letter-spacing:.16em!important;text-transform:uppercase!important;color:var(--gold)!important;border:1px solid rgba(199,155,85,.32)!important;background:rgba(199,155,85,.07)!important;cursor:pointer!important;}
+  .buying-grid.mobile-toggle-grid.open{grid-template-columns:repeat(2,minmax(0,1fr))!important;}
+  .buying-grid.mobile-toggle-grid.open .buy-box{display:block!important;padding:14px!important;}
+  .buying-grid.mobile-toggle-grid.open::after{display:none!important;}
+  .buy-box h3{font-size:1rem!important;margin-bottom:6px!important;}
+  .buy-box p{font-size:12px!important;line-height:1.45!important;}
+
+  .spec-box.toggle{padding:20px!important;cursor:pointer!important;}
+  .spec-box.toggle ul{display:none!important;}
+  .spec-box.toggle::after{content:'Tap for details'!important;position:static!important;margin-top:12px!important;display:block!important;padding:12px!important;text-align:center!important;font-family:Arial,Helvetica,sans-serif!important;font-size:8px!important;font-weight:700!important;letter-spacing:.16em!important;text-transform:uppercase!important;color:var(--gold)!important;background:rgba(199,155,85,.07)!important;border:1px solid rgba(199,155,85,.24)!important;}
+  .spec-box.toggle.open ul{display:block!important;}
+  .spec-box.toggle.open::after{display:none!important;}
+
+  .faq-grid{grid-template-columns:1fr!important;gap:8px!important;}
+  .faq-item{padding:16px!important;cursor:pointer!important;}
+  .faq-item h3{font-size:1.05rem!important;margin:0!important;padding-right:24px!important;}
+  .faq-item p{display:none!important;margin-top:10px!important;font-size:12.5px!important;line-height:1.5!important;}
+  .faq-item.open p{display:block!important;}
+  .faq-item::after{content:'+'!important;float:right!important;color:var(--gold)!important;font-size:20px!important;line-height:1!important;margin-top:-20px!important;}
+  .faq-item.open::after{content:'–'!important;}
+
+  #guest-experience{display:none!important;}
+  #ohio-based-hospitality-resource{display:none!important;}
+
+  .footer-cta{padding:40px 22px!important;}
+  .footer-cta p{font-size:13.5px!important;line-height:1.55!important;}
+  .site-footer{padding:34px 20px 28px!important;}
+  .site-footer .footer-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:20px 14px!important;}
+  .site-footer .footer-grid h3{font-size:18px!important;margin-bottom:8px!important;}
+  .site-footer .footer-grid a{font-size:11.5px!important;line-height:1.35!important;margin-bottom:7px!important;}
+  .site-footer .footer-bottom{text-align:left!important;margin-top:24px!important;padding-top:18px!important;font-size:8.5px!important;line-height:1.55!important;letter-spacing:.11em!important;}
+
+  .modal{align-items:flex-start!important;overflow-y:auto!important;padding:54px 12px 16px!important;}
+  .modal-panel{width:100%!important;max-height:none!important;grid-template-columns:1fr!important;}
+  .modal img{max-height:42vh!important;}
+  .modal-copy{max-height:none!important;padding:18px!important;}
+  .modal-copy h3{font-size:1.65rem!important;line-height:1.05!important;}
+  .modal-copy p,.modal-copy li{font-size:13px!important;line-height:1.55!important;}
+  .modal .btns{display:grid!important;grid-template-columns:1fr!important;gap:8px!important;}
+  .modal-close{position:fixed!important;top:8px!important;right:10px!important;width:40px!important;height:40px!important;font-size:30px!important;z-index:10001!important;background:rgba(0,0,0,.75)!important;border:1px solid rgba(199,155,85,.32)!important;}
+}
+@media(max-width:430px){
+  .mockup-card img{height:132px!important;}
+  .analysis-card,.buying-grid.mobile-toggle-grid.open .buy-box,.seller-card div,.related-card{padding:10px!important;}
+  .mockup-copy h3,.seller-card h3,.related-card h3,.buy-box h3{font-size:.92rem!important;}
+  .site-footer .footer-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;}
+}
+
 </style>
 <script type="application/ld+json">
 {
@@ -215,7 +316,7 @@ h2{font-size:clamp(1.9rem,7vw,2.7rem)!important}
         <a class="btn" href="boutique-hotel-artwork-specification-guide.pdf" target="_blank" rel="noopener">Download Boutique Spec Sheet</a>
       </div>
     </div>
-    <div class="spec-box">
+    <div class="spec-box toggle mobile-toggle-spec">
       <h3>Best for boutique hotel projects</h3>
       <ul>
         <li>Guest rooms and quiet luxury suites</li>
@@ -231,10 +332,10 @@ h2{font-size:clamp(1.9rem,7vw,2.7rem)!important}
 
 <section class="buying" id="buying-help">
   <div class="section-heading"><p class="eyebrow">Specification Guidance</p><h2>Practical buying guidance for hospitality interiors.</h2></div>
-  <div class="buying-grid"><article class="buy-box"><h3>Best Formats</h3><p>Framed fine art paper for boutique warmth, acrylic for clean luxury interiors, metal for high-traffic areas, and canvas for softer lodge and resort spaces.</p></article><article class="buy-box"><h3>Suggested Sizes</h3><p>Use oversized statement pieces for lobbies, moderate framed work for suites, and cohesive horizontal series for guest corridors.</p></article><article class="buy-box"><h3>Artwork Mood</h3><p>Monochrome supports quiet luxury, coastal sunsets create dining atmosphere, mountain scenes fit lodges, and water imagery supports spa environments.</p></article><article class="buy-box"><h3>Project Support</h3><p>Send a room photo, finish palette, or project direction for curated artwork recommendations and complimentary mockup guidance.</p></article></div>
+  <div class="buying-grid mobile-toggle-grid" data-mobile-label="Tap to view buying guidance"><article class="buy-box"><h3>Best Formats</h3><p>Framed fine art paper for boutique warmth, acrylic for clean luxury interiors, metal for high-traffic areas, and canvas for softer lodge and resort spaces.</p></article><article class="buy-box"><h3>Suggested Sizes</h3><p>Use oversized statement pieces for lobbies, moderate framed work for suites, and cohesive horizontal series for guest corridors.</p></article><article class="buy-box"><h3>Artwork Mood</h3><p>Monochrome supports quiet luxury, coastal sunsets create dining atmosphere, mountain scenes fit lodges, and water imagery supports spa environments.</p></article><article class="buy-box"><h3>Project Support</h3><p>Send a room photo, finish palette, or project direction for curated artwork recommendations and complimentary mockup guidance.</p></article></div>
 </section>
 <section class="spec-sheet" id="spec-sheet">
-  <div class="spec-grid"><div><p class="eyebrow">Hospitality Spec Sheet</p><h2>Download the hospitality artwork specification guide.</h2><p>A concise PDF overview for designers, hospitality teams, and procurement conversations. It summarizes recommended applications, format guidance, sizing direction, project support, and visual examples.</p><div class="btns"><a class="btn primary" href="hospitality-artwork-specification-guide.pdf" target="_blank" rel="noopener">Download Spec Sheet</a><a class="btn" href="mailto:sproulphoto@gmail.com?subject=Hospitality%20Artwork%20Mockup%20Request">Request Mockup Preview</a></div></div><div class="spec-box"><h3>Included in the guide</h3><ul><li>Hospitality and resort use cases</li><li>Lobby, spa, restaurant, lodge, and corridor examples</li><li>Recommended sizes and formats</li><li>Mockup support and project guidance</li></ul></div></div>
+  <div class="spec-grid"><div><p class="eyebrow">Hospitality Spec Sheet</p><h2>Download the hospitality artwork specification guide.</h2><p>A concise PDF overview for designers, hospitality teams, and procurement conversations. It summarizes recommended applications, format guidance, sizing direction, project support, and visual examples.</p><div class="btns"><a class="btn primary" href="hospitality-artwork-specification-guide.pdf" target="_blank" rel="noopener">Download Spec Sheet</a><a class="btn" href="mailto:sproulphoto@gmail.com?subject=Hospitality%20Artwork%20Mockup%20Request">Request Mockup Preview</a></div></div><div class="spec-box toggle mobile-toggle-spec"><h3>Included in the guide</h3><ul><li>Hospitality and resort use cases</li><li>Lobby, spa, restaurant, lodge, and corridor examples</li><li>Recommended sizes and formats</li><li>Mockup support and project guidance</li></ul></div></div>
 </section>
 <section class="best-sellers">
   <div class="section-heading"><p class="eyebrow">Hospitality-Compatible Best Sellers</p><h2>Strong starting points for commercial interiors.</h2><p>A short selection of artwork directions that pair well with hospitality, wellness, lodge, and resort interiors.</p></div>
@@ -248,7 +349,7 @@ h2{font-size:clamp(1.9rem,7vw,2.7rem)!important}
     <p class="eyebrow">Recommended Collections</p>
     <h2>Collections commonly specified for hospitality projects.</h2>
   </div>
-  <div class="buying-grid">
+  <div class="buying-grid mobile-toggle-grid" data-mobile-label="Tap to view recommended collections">
     <article class="buy-box"><h3>Coastal Atmosphere</h3><p>Beach resorts, boutique coastal properties, guest suites, and waterfront hospitality environments.</p></article>
     <article class="buy-box"><h3>Quiet Earth</h3><p>Wellness hospitality, spa retreats, calm lounges, and restorative guest experiences.</p></article>
     <article class="buy-box"><h3>Monochrome Stillness</h3><p>Luxury corridors, executive lounges, refined hospitality spaces, and quiet luxury interiors.</p></article>
@@ -263,7 +364,7 @@ h2{font-size:clamp(1.9rem,7vw,2.7rem)!important}
   <div class="section-heading"><p class="eyebrow">Related Collections</p><h2>Continue exploring atmospheric artwork for interiors.</h2></div>
   <div class="related-grid"><a class="related-card" href="boutique_hotel.html"><span>Boutique Hotels</span><h3>Boutique Hotel Artwork</h3><p>Atmospheric photography for guest rooms, lounges, corridors, restaurants, and quiet luxury hotel interiors.</p></a><a class="related-card" href="mountain-light-collection.html"><span>Atmospheric</span><h3>Mountain Light</h3><p>Warm mountain imagery for lodge, resort, and executive hospitality interiors.</p></a><a class="related-card" href="coastal-atmosphere.html"><span>Coastal</span><h3>Coastal Atmosphere</h3><p>Moody shoreline and ocean imagery for restaurants, resorts, and guest spaces.</p></a><a class="related-card" href="wellness-waters-collection.html"><span>Wellness</span><h3>Wellness Waters</h3><p>Water-focused imagery for spa, wellness, and restorative interiors.</p></a><a class="related-card" href="monochrome-stillness.html"><span>Black &amp; White</span><h3>Monochrome Stillness</h3><p>Refined black-and-white photography for quiet luxury hospitality spaces.</p></a><a class="related-card" href="quiet-earth-collection.html"><span>Restorative</span><h3>Quiet Earth</h3><p>Calm landscape imagery for spaces that need visual softness and atmosphere.</p></a><a class="related-card" href="healthcare-artwork.html"><span>Restorative Interiors</span><h3>Healthcare Artwork</h3><p>Calming nature photography for wellness, patient, and restorative environments.</p></a><a class="related-card" href="for-designers.html"><span>Designer Resources</span><h3>For Designers</h3><p>Trade resources, mockup support, specification sheets, and project guidance for interior designers and hospitality teams.</p></a></div>
 </section>
-<section class="intro">
+<section class="intro" id="ohio-based-hospitality-resource">
   <div class="intro-grid">
     <div>
       <p class="eyebrow">Ohio-Based Artwork Resource</p>
@@ -376,6 +477,111 @@ document.addEventListener('DOMContentLoaded', function () {
       toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     });
   }
+});
+</script>
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var modal = document.getElementById('image-modal');
+  var modalImg = document.getElementById('modal-img');
+  var modalTitle = document.getElementById('modal-title');
+  var modalDesc = document.getElementById('modal-desc');
+  var modalSpaces = document.getElementById('modal-spaces');
+  var modalLink = document.getElementById('modal-link');
+  var modalClose = document.querySelector('.modal-close');
+
+  function openHospitalityModal(button){
+    if(!modal || !modalImg) return;
+    var img = button.getAttribute('data-img') || (button.querySelector('img') ? button.querySelector('img').getAttribute('src') : '');
+    var title = button.getAttribute('data-title') || 'Hospitality artwork preview';
+    var desc = button.getAttribute('data-desc') || '';
+    var spaces = button.getAttribute('data-spaces') || '';
+    var link = button.getAttribute('data-link') || '#';
+
+    modalImg.src = img;
+    modalImg.alt = title + ' hospitality artwork preview';
+    modalTitle.textContent = title;
+    modalDesc.textContent = desc;
+    modalLink.href = link;
+
+    modalSpaces.innerHTML = '';
+    spaces.split('|').filter(Boolean).forEach(function(space){
+      var li = document.createElement('li');
+      li.textContent = space;
+      modalSpaces.appendChild(li);
+    });
+
+    modal.classList.add('is-open');
+    modal.setAttribute('aria-hidden','false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeHospitalityModal(){
+    if(!modal) return;
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden','true');
+    if(modalImg) modalImg.removeAttribute('src');
+    document.body.style.overflow = '';
+  }
+
+  document.querySelectorAll('.mockup-image-button').forEach(function(button){
+    button.addEventListener('click', function(e){
+      e.preventDefault();
+      openHospitalityModal(button);
+    });
+  });
+
+  if(modalClose) modalClose.addEventListener('click', closeHospitalityModal);
+  if(modal){
+    modal.addEventListener('click', function(e){
+      if(e.target === modal) closeHospitalityModal();
+    });
+  }
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && modal && modal.classList.contains('is-open')) closeHospitalityModal();
+  });
+
+  document.querySelectorAll('.mobile-toggle-grid').forEach(function(grid){
+    grid.setAttribute('role','button');
+    grid.setAttribute('tabindex','0');
+    grid.addEventListener('click', function(e){
+      if(window.innerWidth > 680) return;
+      if(grid.classList.contains('open') && e.target.closest('.buy-box')) return;
+      grid.classList.toggle('open');
+    });
+    grid.addEventListener('keydown', function(e){
+      if(window.innerWidth > 680) return;
+      if(e.key === 'Enter' || e.key === ' '){
+        e.preventDefault();
+        grid.classList.toggle('open');
+      }
+    });
+  });
+
+  document.querySelectorAll('.spec-box.toggle').forEach(function(box){
+    box.setAttribute('role','button');
+    box.setAttribute('tabindex','0');
+    box.addEventListener('click', function(e){
+      if(window.innerWidth > 680) return;
+      if(e.target.closest('a')) return;
+      box.classList.toggle('open');
+    });
+    box.addEventListener('keydown', function(e){
+      if(window.innerWidth > 680) return;
+      if(e.key === 'Enter' || e.key === ' '){
+        e.preventDefault();
+        box.classList.toggle('open');
+      }
+    });
+  });
+
+  document.querySelectorAll('.faq-item').forEach(function(item){
+    item.addEventListener('click', function(){
+      if(window.innerWidth <= 680) item.classList.toggle('open');
+    });
+  });
 });
 </script>
 
