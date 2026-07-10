@@ -526,6 +526,229 @@ body { overflow-x: hidden; }
   }
 }
 
+
+
+/* SENIOR LIVING — MOBILE GRID + SCANABILITY PASS */
+@media(max-width:680px){
+  .trust-strip{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+  .jump-links{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    width:100%!important;
+    gap:7px!important;
+  }
+  .jump-links a{
+    justify-content:center!important;
+    text-align:center!important;
+    width:100%!important;
+  }
+  .spec-sheet-points{
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  }
+  .mockup-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:12px!important;
+  }
+  .mockup-card{
+    min-width:0!important;
+  }
+  .mockup-card::after{
+    display:none!important;
+  }
+  .mockup-card img{
+    width:100%!important;
+    height:auto!important;
+    max-height:none!important;
+    aspect-ratio:1/1!important;
+    object-fit:cover!important;
+  }
+  .mockup-copy{
+    padding:12px!important;
+  }
+  .priority-label{
+    margin-bottom:7px!important;
+    font-size:8px!important;
+    letter-spacing:.13em!important;
+  }
+  .mockup-copy h3{
+    font-size:17px!important;
+    line-height:1.08!important;
+    letter-spacing:-.02em!important;
+  }
+  .mockup-copy p{
+    margin-top:6px!important;
+    margin-bottom:0!important;
+    font-size:12.5px!important;
+    line-height:1.42!important;
+    display:-webkit-box!important;
+    -webkit-line-clamp:3!important;
+    -webkit-box-orient:vertical!important;
+    overflow:hidden!important;
+  }
+  .mockup-copy .use{
+    display:none!important;
+  }
+  .mockup-actions{
+    display:grid!important;
+    grid-template-columns:1fr!important;
+    gap:6px!important;
+    margin-top:9px!important;
+  }
+  .mockup-actions button{
+    display:none!important;
+  }
+  .mockup-actions a{
+    width:100%!important;
+    min-height:36px!important;
+    padding:8px 7px!important;
+    font-size:8.2px!important;
+    line-height:1.2!important;
+    letter-spacing:.10em!important;
+    text-align:center!important;
+  }
+  .mini-gallery{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:12px!important;
+  }
+  .gallery-item img{
+    width:100%!important;
+    height:auto!important;
+    max-height:none!important;
+    aspect-ratio:1/1!important;
+    object-fit:cover!important;
+  }
+  .gallery-item div{
+    padding:12px!important;
+  }
+  .gallery-item h3{
+    font-size:17px!important;
+    line-height:1.08!important;
+  }
+  .gallery-item p:not(.eyebrow):not(.use){
+    margin-top:6px!important;
+    font-size:12.5px!important;
+    line-height:1.42!important;
+    display:-webkit-box!important;
+    -webkit-line-clamp:3!important;
+    -webkit-box-orient:vertical!important;
+    overflow:hidden!important;
+  }
+  .gallery-item .use{
+    display:none!important;
+  }
+  .text-link{
+    margin-top:8px!important;
+    font-size:8.5px!important;
+    line-height:1.25!important;
+    letter-spacing:.11em!important;
+  }
+  .related-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:12px!important;
+  }
+  .related-card{
+    padding:14px!important;
+    min-height:auto!important;
+  }
+  .related-card span{
+    font-size:8.5px!important;
+    letter-spacing:.12em!important;
+  }
+  .related-card h3{
+    margin:8px 0 0!important;
+    font-size:18px!important;
+    line-height:1.08!important;
+  }
+  .related-card p{
+    display:none!important;
+  }
+  .mobile-accordion-panel .detail-card-grid,
+  .detail-card-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:10px!important;
+  }
+  .detail-card{
+    padding:14px!important;
+  }
+  .detail-card h3{
+    font-size:17px!important;
+    line-height:1.08!important;
+  }
+  .detail-card p{
+    font-size:12.5px!important;
+    line-height:1.42!important;
+    display:-webkit-box!important;
+    -webkit-line-clamp:3!important;
+    -webkit-box-orient:vertical!important;
+    overflow:hidden!important;
+  }
+  .mockup-modal{
+    align-items:flex-start!important;
+    overflow-y:auto!important;
+    padding:54px 12px 18px!important;
+  }
+  .mockup-modal-card{
+    width:100%!important;
+    max-height:none!important;
+    overflow:visible!important;
+  }
+  .mockup-modal-card img{
+    max-height:42vh!important;
+  }
+  .mockup-modal-copy{
+    padding:16px!important;
+  }
+  .mockup-modal-actions{
+    display:grid!important;
+    grid-template-columns:1fr!important;
+    gap:8px!important;
+  }
+  .mockup-modal-actions a,
+  .mockup-modal-actions button{
+    width:100%!important;
+    text-align:center!important;
+  }
+}
+@media(max-width:430px){
+  .trust-strip,
+  .jump-links,
+  .spec-sheet-points,
+  .mockup-grid,
+  .mini-gallery,
+  .related-grid,
+  .mobile-accordion-panel .detail-card-grid,
+  .detail-card-grid{
+    grid-template-columns:1fr!important;
+  }
+  .mockup-copy p,
+  .gallery-item p:not(.eyebrow):not(.use),
+  .detail-card p{
+    -webkit-line-clamp:4!important;
+  }
+}
+
+
+
+/* SENIOR LIVING UX TIGHTENING PASS — mockups sooner, clearer interaction */
+@media(min-width:681px){
+  .jump-section{padding-top:46px!important;padding-bottom:46px!important;}
+  .mockup-feature{padding-top:82px!important;}
+  .spec-sheet-feature{padding-top:68px!important;padding-bottom:68px!important;}
+}
+@media(max-width:680px){
+  .jump-section{padding-top:28px!important;padding-bottom:28px!important;}
+  .jump-links{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;}
+  .jump-links a{justify-content:center!important;text-align:center!important;}
+  .mockup-feature{padding-top:38px!important;}
+  .mockup-feature .section-heading p strong{color:#f4efe6!important;}
+  .spec-sheet-feature{padding-top:38px!important;}
+}
+@media(max-width:380px){
+  .jump-links{grid-template-columns:1fr!important;}
+}
+
 </style>
   <script type="application/ld+json">
    {
@@ -816,7 +1039,7 @@ body { overflow-x: hidden; }
      Calming nature photography for senior living environments that feel like home.
     </h1>
     <p>
-     Atmospheric landscape photography by Dan Sproul selected for senior living communities, assisted living residences, memory care spaces, wellness lounges, corridors, and hospitality-inspired environments where comfort, familiarity, and emotional connection matter.
+     Atmospheric landscape photography selected for senior living communities, assisted living residences, memory care-adjacent spaces, wellness lounges, corridors, dining areas, and resident suites where comfort and familiarity matter.
     </p>
     <div class="btns">
      <a class="btn primary" href="#lounges">
@@ -849,88 +1072,17 @@ body { overflow-x: hidden; }
    </span>
   </section>
 
-  <section class="spec-sheet-feature" id="senior-living-spec-sheet">
-   <div class="spec-sheet-wrap">
-    <div class="spec-sheet-card">
-     <p class="eyebrow">
-      Designer Resource
-     </p>
-     <h2>
-      Download the senior living artwork spec sheet.
-     </h2>
-     <p>
-      A concise two-page guide for senior living designers, operators, architects, and procurement teams. It shows artwork applications for resident lounges, dining rooms, private suites, corridors, and restorative community spaces.
-     </p>
-     <div class="spec-sheet-points">
-      <span>
-       Application Guide
-      </span>
-      <span>
-       Sizing Notes
-      </span>
-      <span>
-       Project Support
-      </span>
-     </div>
-     <div class="btns">
-      <a class="btn primary" href="Dan_Sproul_Senior_Living_Artwork_Spec_Sheet.pdf" rel="noopener" target="_blank">
-       Download PDF
-      </a>
-      <a class="btn" href="mailto:sproulphoto@gmail.com?subject=Senior%20Living%20Artwork%20Spec%20Sheet">
-       Discuss a Project
-      </a>
-     </div>
-    </div>
-    <div class="spec-sheet-preview">
-     <img alt="Senior living artwork spec sheet preview with resident lounge artwork by Dan Sproul" decoding="async" loading="lazy" src="senior-living-lobby-mockup-foggy-road.jpg"/>
-     <div>
-      <strong>
-       Senior Living Artwork Collection
-      </strong>
-      <p>
-       Atmospheric environmental artwork for resident-centered interiors and senior living communities.
-      </p>
-     </div>
-    </div>
-   </div>
-  </section>
-
-  <section class="intro">
-   <div class="intro-grid">
-    <div>
-     <p class="eyebrow">
-      Hospitality-Inspired Care
-     </p>
-     <h2>
-      Nature photography for communities that need warmth, familiarity, and calm.
-     </h2>
-    </div>
-    <div>
-     <p>
-      Senior living artwork sits in a different category than hospital artwork. The strongest pieces usually feel residential first: warm, familiar, nature-focused, and emotionally easy to live with every day.
-     </p>
-     <p>
-      For assisted living, independent living, memory care-adjacent spaces, lounges, corridors, dining areas, wellness rooms, and resident suites, the goal is not simply decoration. The right artwork can help a community feel more hospitality-inspired, less institutional, and more connected to the natural world.
-     </p>
-     <div class="dan-note">
-      <p>
-       Dan&rsquo;s note: For senior living interiors, I usually look for images that feel calm without feeling cold. Forests, reflections, soft water, autumn color, and open landscapes can bring comfort and familiarity into shared spaces while still feeling refined enough for modern community design.
-      </p>
-     </div>
-    </div>
-   </div>
-  </section>
-  <section class="jump-section">
+<section class="jump-section">
    <div class="jump-inner">
     <div>
      <p class="eyebrow">
       Choose by Space
      </p>
      <h2 style="font-size:clamp(30px,3.4vw,48px)">
-      Find artwork by senior living environment.
+      Choose artwork by senior living space.
      </h2>
      <p>
-      Grouped by the kinds of rooms designers and communities are actually specifying.
+      Jump directly to the room type you are specifying.
      </p>
     </div>
     <div class="jump-links">
@@ -958,7 +1110,8 @@ body { overflow-x: hidden; }
     </div>
    </div>
   </section>
-  <section class="mockup-feature">
+
+<section class="mockup-feature">
    <div class="section-heading center">
     <p class="eyebrow">
      Senior Living Mockups
@@ -967,7 +1120,7 @@ body { overflow-x: hidden; }
      Artwork shown in residential, wellness, and community environments.
     </h2>
     <p>
-     These examples use healthcare, wellness, and hospitality-adjacent mockups adapted for senior living positioning &mdash; warmer language, less clinical framing, and a stronger focus on resident experience.
+     Browse senior living room examples by environment. Tap any card to enlarge the mockup, or use <strong>View This Print</strong> to open purchase options.
     </p>
    </div>
    <div class="mockup-group" id="lounges">
@@ -1370,6 +1523,196 @@ body { overflow-x: hidden; }
     </div>
    </div>
   </section>
+
+<section class="gallery-preview" id="curated-gallery">
+   <div class="gallery-note">
+    <p class="eyebrow">
+     Curated Print Starting Points
+    </p>
+    <h2>
+     Senior-living-friendly nature photography selections.
+    </h2>
+    <p>
+     A smaller starting point for designers and communities looking for calm, warm, familiar, and residential-feeling artwork.
+    </p>
+   </div>
+   <div class="mini-gallery">
+    <article class="gallery-item">
+     <a href="https://dansproul.com/featured/fog-filled-autumn-forest-dan-sproul.html" rel="noopener" target="_blank">
+      <img decoding="async" loading="lazy" alt="Fog filled autumn forest photography by Dan Sproul for senior living artwork" src="fog-filled-autumn-forest-dan-sproul (1).jpg"/>
+     </a>
+     <div>
+      <p class="eyebrow">
+       Warm Forest Calm
+      </p>
+      <h3>
+       Fog Filled Autumn Forest
+      </h3>
+      <p>
+       Soft woodland atmosphere and autumn warmth for lounges, corridors, and shared rooms.
+      </p>
+      <p class="use">
+       <b>
+        Best for:
+       </b>
+       lounges, corridors, dining areas
+      </p>
+      <a class="text-link" href="https://dansproul.com/featured/fog-filled-autumn-forest-dan-sproul.html" rel="noopener" target="_blank">
+       View print options &rarr;
+      </a>
+     </div>
+    </article>
+    <article class="gallery-item">
+     <a href="https://dansproul.com/featured/moody-morning-view-pyramid-lake-canada-dan-sproul.html" rel="noopener" target="_blank">
+      <img decoding="async" loading="lazy" alt="Pyramid Lake morning landscape photography by Dan Sproul for senior living interiors" src="moody-morning-view-pyramid-lake-canada-dan-sproul.jpg"/>
+     </a>
+     <div>
+      <p class="eyebrow">
+       Reflective Mountain Calm
+      </p>
+      <h3>
+       Pyramid Lake Morning
+      </h3>
+      <p>
+       Quiet water and soft mountains for upscale community lounges and reception spaces.
+      </p>
+      <p class="use">
+       <b>
+        Best for:
+       </b>
+       lounges, suites, reception
+      </p>
+      <a class="text-link" href="https://dansproul.com/featured/moody-morning-view-pyramid-lake-canada-dan-sproul.html" rel="noopener" target="_blank">
+       View print options &rarr;
+      </a>
+     </div>
+    </article>
+    <article class="gallery-item">
+     <a href="https://dansproul.com/featured/foggy-autumn-river-dan-sproul.html" rel="noopener" target="_blank">
+      <img decoding="async" loading="lazy" alt="Foggy autumn river photography by Dan Sproul for senior living wellness interiors" src="foggy-autumn-river-dan-sproul.jpg"/>
+     </a>
+     <div>
+      <p class="eyebrow">
+       Soft Water Movement
+      </p>
+      <h3>
+       Foggy Autumn River
+      </h3>
+      <p>
+       Quiet water and warm seasonal atmosphere for wellness rooms and sitting areas.
+      </p>
+      <p class="use">
+       <b>
+        Best for:
+       </b>
+       wellness rooms, gathering spaces
+      </p>
+      <a class="text-link" href="https://dansproul.com/featured/foggy-autumn-river-dan-sproul.html" rel="noopener" target="_blank">
+       View print options &rarr;
+      </a>
+     </div>
+    </article>
+    <article class="gallery-item">
+     <a href="https://dansproul.com/featured/reflections-lake-alaska-in-autumn-dan-sproul.html" rel="noopener" target="_blank">
+      <img decoding="async" loading="lazy" alt="Alaska autumn lake reflection photography by Dan Sproul for senior living wall art" src="reflections-lake-alaska-in-autumn-dan-sproul.jpg"/>
+     </a>
+     <div>
+      <p class="eyebrow">
+       Autumn Reflection
+      </p>
+      <h3>
+       Alaska Lake Reflections
+      </h3>
+      <p>
+       Mountain reflection and autumn color for a balanced, peaceful nature focal point.
+      </p>
+      <p class="use">
+       <b>
+        Best for:
+       </b>
+       lounges, resident suites, offices
+      </p>
+      <a class="text-link" href="https://dansproul.com/featured/reflections-lake-alaska-in-autumn-dan-sproul.html" rel="noopener" target="_blank">
+       View print options &rarr;
+      </a>
+     </div>
+    </article>
+   </div>
+  </section>
+
+<section class="spec-sheet-feature" id="senior-living-spec-sheet">
+   <div class="spec-sheet-wrap">
+    <div class="spec-sheet-card">
+     <p class="eyebrow">
+      Designer Resource
+     </p>
+     <h2>
+      Download the senior living artwork spec sheet.
+     </h2>
+     <p>
+      A concise guide for senior living designers, operators, architects, and procurement teams, with artwork applications for lounges, dining rooms, suites, corridors, and restorative community spaces.
+     </p>
+     <div class="spec-sheet-points">
+      <span>
+       Application Guide
+      </span>
+      <span>
+       Sizing Notes
+      </span>
+      <span>
+       Project Support
+      </span>
+     </div>
+     <div class="btns">
+      <a class="btn primary" href="Dan_Sproul_Senior_Living_Artwork_Spec_Sheet.pdf" rel="noopener" target="_blank">
+       Download PDF
+      </a>
+      <a class="btn" href="mailto:sproulphoto@gmail.com?subject=Senior%20Living%20Artwork%20Spec%20Sheet">
+       Discuss a Project
+      </a>
+     </div>
+    </div>
+    <div class="spec-sheet-preview">
+     <img alt="Senior living artwork spec sheet preview with resident lounge artwork by Dan Sproul" decoding="async" loading="lazy" src="senior-living-lobby-mockup-foggy-road.jpg"/>
+     <div>
+      <strong>
+       Senior Living Artwork Collection
+      </strong>
+      <p>
+       Atmospheric environmental artwork for resident-centered interiors and senior living communities.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+
+<section class="intro">
+   <div class="intro-grid">
+    <div>
+     <p class="eyebrow">
+      Hospitality-Inspired Care
+     </p>
+     <h2>
+      Nature photography for communities that need warmth, familiarity, and calm.
+     </h2>
+    </div>
+    <div>
+     <p>
+      Senior living artwork works best when it feels residential first: warm, familiar, nature-focused, and easy to live with every day.
+     </p>
+     <p>
+      For assisted living, independent living, memory care-adjacent spaces, lounges, corridors, dining areas, wellness rooms, and resident suites, the right artwork can make a community feel warmer, less institutional, and more connected to nature.
+     </p>
+     <div class="dan-note">
+      <p>
+       Dan&rsquo;s note: For senior living interiors, I look for images that feel calm without feeling cold. Forests, reflections, soft water, autumn color, and open landscapes can bring comfort and familiarity into shared spaces while still feeling refined.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+
+
   <section class="detail-section mobile-collapsible-source" id="senior-living-design-approach" data-mobile-collapse="Senior Living Design Approach">
    <div class="detail-wrap">
     <div>
@@ -1658,121 +2001,7 @@ body { overflow-x: hidden; }
     </a>
    </div>
   </section>
-  <section class="gallery-preview" id="curated-gallery">
-   <div class="gallery-note">
-    <p class="eyebrow">
-     Curated Print Starting Points
-    </p>
-    <h2>
-     Senior-living-friendly nature photography selections.
-    </h2>
-    <p>
-     A smaller starting point for designers and communities looking for calm, warm, familiar, and residential-feeling artwork.
-    </p>
-   </div>
-   <div class="mini-gallery">
-    <article class="gallery-item">
-     <a href="https://dansproul.com/featured/fog-filled-autumn-forest-dan-sproul.html" rel="noopener" target="_blank">
-      <img decoding="async" loading="lazy" alt="Fog filled autumn forest photography by Dan Sproul for senior living artwork" src="fog-filled-autumn-forest-dan-sproul (1).jpg"/>
-     </a>
-     <div>
-      <p class="eyebrow">
-       Warm Forest Calm
-      </p>
-      <h3>
-       Fog Filled Autumn Forest
-      </h3>
-      <p>
-       Soft woodland atmosphere and autumn warmth for lounges, corridors, and shared rooms.
-      </p>
-      <p class="use">
-       <b>
-        Best for:
-       </b>
-       lounges, corridors, dining areas
-      </p>
-      <a class="text-link" href="https://dansproul.com/featured/fog-filled-autumn-forest-dan-sproul.html" rel="noopener" target="_blank">
-       View print options &rarr;
-      </a>
-     </div>
-    </article>
-    <article class="gallery-item">
-     <a href="https://dansproul.com/featured/moody-morning-view-pyramid-lake-canada-dan-sproul.html" rel="noopener" target="_blank">
-      <img decoding="async" loading="lazy" alt="Pyramid Lake morning landscape photography by Dan Sproul for senior living interiors" src="moody-morning-view-pyramid-lake-canada-dan-sproul.jpg"/>
-     </a>
-     <div>
-      <p class="eyebrow">
-       Reflective Mountain Calm
-      </p>
-      <h3>
-       Pyramid Lake Morning
-      </h3>
-      <p>
-       Quiet water and soft mountains for upscale community lounges and reception spaces.
-      </p>
-      <p class="use">
-       <b>
-        Best for:
-       </b>
-       lounges, suites, reception
-      </p>
-      <a class="text-link" href="https://dansproul.com/featured/moody-morning-view-pyramid-lake-canada-dan-sproul.html" rel="noopener" target="_blank">
-       View print options &rarr;
-      </a>
-     </div>
-    </article>
-    <article class="gallery-item">
-     <a href="https://dansproul.com/featured/foggy-autumn-river-dan-sproul.html" rel="noopener" target="_blank">
-      <img decoding="async" loading="lazy" alt="Foggy autumn river photography by Dan Sproul for senior living wellness interiors" src="foggy-autumn-river-dan-sproul.jpg"/>
-     </a>
-     <div>
-      <p class="eyebrow">
-       Soft Water Movement
-      </p>
-      <h3>
-       Foggy Autumn River
-      </h3>
-      <p>
-       Quiet water and warm seasonal atmosphere for wellness rooms and sitting areas.
-      </p>
-      <p class="use">
-       <b>
-        Best for:
-       </b>
-       wellness rooms, gathering spaces
-      </p>
-      <a class="text-link" href="https://dansproul.com/featured/foggy-autumn-river-dan-sproul.html" rel="noopener" target="_blank">
-       View print options &rarr;
-      </a>
-     </div>
-    </article>
-    <article class="gallery-item">
-     <a href="https://dansproul.com/featured/reflections-lake-alaska-in-autumn-dan-sproul.html" rel="noopener" target="_blank">
-      <img decoding="async" loading="lazy" alt="Alaska autumn lake reflection photography by Dan Sproul for senior living wall art" src="reflections-lake-alaska-in-autumn-dan-sproul.jpg"/>
-     </a>
-     <div>
-      <p class="eyebrow">
-       Autumn Reflection
-      </p>
-      <h3>
-       Alaska Lake Reflections
-      </h3>
-      <p>
-       Mountain reflection and autumn color for a balanced, peaceful nature focal point.
-      </p>
-      <p class="use">
-       <b>
-        Best for:
-       </b>
-       lounges, resident suites, offices
-      </p>
-      <a class="text-link" href="https://dansproul.com/featured/reflections-lake-alaska-in-autumn-dan-sproul.html" rel="noopener" target="_blank">
-       View print options &rarr;
-      </a>
-     </div>
-    </article>
-   </div>
-  </section>
+  
 <section class="detail-section mobile-collapsible-source" id="why-dan-sproul" data-mobile-collapse="Why Dan Sproul">
    <div class="detail-wrap">
     <div>
