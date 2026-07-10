@@ -991,6 +991,88 @@ h1{font-size:54px}
 .site-footer{padding-top:46px!important;}
 @media(max-width:680px){.site-footer{padding-top:28px!important;}}
 
+
+/* EVIDENCE-INFORMED HEALTHCARE DESIGN NOTE */
+.evidence-note{
+  margin-top:24px;
+  padding:22px 24px;
+  border:1px solid rgba(199,155,85,.26);
+  background:rgba(199,155,85,.055);
+}
+.evidence-note .eyebrow{
+  margin-bottom:10px;
+}
+.evidence-note h3{
+  font-size:clamp(24px,2.4vw,32px);
+  line-height:1.05;
+  margin-bottom:12px;
+}
+.evidence-note p{
+  color:#d8cbb9;
+  font-size:14px;
+  line-height:1.65;
+  margin:0;
+}
+.evidence-source{
+  display:grid;
+  grid-template-columns:auto 1fr;
+  gap:12px;
+  align-items:center;
+  margin-top:16px;
+  padding-top:14px;
+  border-top:1px solid rgba(199,155,85,.18);
+}
+.evidence-source a{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:34px;
+  padding:8px 11px;
+  border:1px solid rgba(199,155,85,.42);
+  color:#c79b55;
+  text-decoration:none;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:9px;
+  font-weight:700;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  white-space:nowrap;
+}
+.evidence-source span{
+  color:#bdb1a2;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:12px;
+  line-height:1.55;
+}
+@media(max-width:680px){
+  .evidence-note{
+    margin-top:18px!important;
+    padding:16px!important;
+  }
+  .evidence-note h3{
+    font-size:1.25rem!important;
+    line-height:1.08!important;
+    margin-bottom:10px!important;
+  }
+  .evidence-note p{
+    font-size:13px!important;
+    line-height:1.5!important;
+  }
+  .evidence-source{
+    grid-template-columns:1fr!important;
+    gap:8px!important;
+    margin-top:12px!important;
+    padding-top:12px!important;
+  }
+  .evidence-source a{
+    width:100%!important;
+    text-align:center!important;
+  }
+  .evidence-source span{
+    display:none!important;
+  }
+}
+
 </style>
 
 <script type="application/ld+json">
@@ -1046,6 +1128,7 @@ h1{font-size:54px}
         {"@type":"WebPage","name":"10 Calming Water Images for Therapy Offices","url":"https://dsproul.com/calming-water-art-therapy-offices.html"},
         {"@type":"WebPageElement","name":"Healthcare artwork applications by room type"},
         {"@type":"WebPageElement","name":"Healthcare artwork project support"},
+        {"@type":"WebPageElement","name":"Evidence-informed nature imagery note"},
         {"@type":"WebPageElement","name":"Healthcare waiting room artwork examples"},
         {"@type":"WebPageElement","name":"Patient room artwork examples"},
         {"@type":"WebPageElement","name":"Healthcare corridor artwork examples"},
@@ -1149,7 +1232,7 @@ h1{font-size:54px}
   <div class="section-heading center">
     <p class="eyebrow">Artwork in Healthcare Spaces</p>
     <h2>Room examples grouped by environment.</h2>
-    <p>Click any mockup to enlarge the room view. Available artwork links open separately so the page remains easy to browse.</p>
+    <p>Click any mockup to enlarge the room view, then use the artwork link to view print and purchase options.</p>
   </div>
 
   <div class="mockup-group" id="waiting-rooms">
@@ -1298,11 +1381,21 @@ h1{font-size:54px}
   <div class="intro-grid">
     <div>
       <p class="eyebrow">Healthcare Artwork Guide</p>
-      <h2>Artwork selected by room function, visual calm, and atmosphere.</h2>
+      <h2>Artwork selected by room function, visual calm, and evidence-informed nature connection.</h2>
     </div>
     <div>
       <p>Healthcare interiors often need artwork that is quiet, legible, and reassuring without feeling generic. Soft water, forests, fog, open skies, muted mountains, and low-distraction natural scenes work especially well in patient-facing rooms.</p>
       <p>Use the examples on this page as a starting point for waiting rooms, patient rooms, corridors, therapy offices, oncology spaces, wellness clinics, and senior living environments.</p>
+
+      <aside class="evidence-note" aria-label="Evidence-informed nature imagery note">
+        <p class="eyebrow">Evidence-Informed Nature Imagery</p>
+        <h3>Nature connection is a healthcare design principle, not just decoration.</h3>
+        <p>Healthcare design research has long recognized nature views and positive visual distraction as useful parts of patient-centered environments. Roger Ulrich&rsquo;s widely cited 1984 study found more favorable recovery patterns for surgical patients with views of trees than for patients facing a brick wall.</p>
+        <div class="evidence-source">
+          <a href="https://pubmed.ncbi.nlm.nih.gov/6143402/" target="_blank" rel="noopener">Ulrich, Science, 1984</a>
+          <span>Applied here as calm landscapes, water, forests, soft horizons, and low-distraction natural imagery.</span>
+        </div>
+      </aside>
     </div>
   </div>
 </section>
