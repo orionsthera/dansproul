@@ -11,6 +11,7 @@
   <meta property="og:description" content="Nature artwork and large-format landscape prints for executive offices, law firms, reception areas, conference rooms, and professional interiors." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://dsproul.com/office-artwork.html" />
+  <meta property="og:image" content="https://dsproul.com/executive office canadian mountain train.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -248,28 +249,48 @@
       transform: translateY(-1px);
     }
 
-    .tag-row {
+    .office-reassurance-strip {
       width: 100%;
       margin: 0 auto;
       position: relative;
       z-index: 3;
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(5, minmax(0, 1fr));
       gap: 1px;
       overflow: hidden;
       border-top: 1px solid rgba(181,146,74,0.2);
       border-bottom: 1px solid rgba(181,146,74,0.2);
+      background: rgba(181,146,74,0.2);
     }
 
-    .tag-row span {
+    .office-reassurance-item {
       background: var(--charcoal);
       color: #e8d9bd;
-      font-family: "Jost", Arial, sans-serif;
-      font-size: 11px;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
       text-align: center;
-      padding: 16px 12px;
+      padding: 16px 12px 15px;
+      min-width: 0;
+    }
+
+    .office-reassurance-item strong {
+      display: block;
+      color: #fff7e8;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 19px;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+      line-height: 1.05;
+      margin-bottom: 6px;
+    }
+
+    .office-reassurance-item span {
+      display: block;
+      color: rgba(232,217,189,0.78);
+      font-family: "Jost", Arial, sans-serif;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      line-height: 1.3;
+      text-transform: uppercase;
     }
 
     main {
@@ -822,8 +843,8 @@
         min-height: 580px;
       }
 
-      .tag-row {
-        grid-template-columns: repeat(2, 1fr);
+      .office-reassurance-strip {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
       .two-col,
@@ -888,7 +909,6 @@
         line-height: 1.75;
       }
 
-      .tag-row,
       .mockup-grid {
         grid-template-columns: 1fr;
       }
@@ -908,6 +928,516 @@
         margin-right: -12px;
       }
     }
+
+
+    /* OFFICE UX + MOBILE GRID PASS */
+    .office-buying-help {
+      background: #f4efe7;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      padding: 54px 0;
+    }
+
+    .office-buying-inner {
+      display: grid;
+      grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.22fr);
+      gap: 34px;
+      align-items: center;
+    }
+
+    .office-buying-help h2 {
+      font-size: clamp(30px, 3.4vw, 46px);
+      margin-bottom: 10px;
+    }
+
+    .office-buying-help .section-lead {
+      margin-bottom: 0;
+      max-width: 560px;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+
+    .office-buying-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1px;
+      background: rgba(31,29,26,0.13);
+      border: 1px solid rgba(31,29,26,0.13);
+    }
+
+    .office-buying-grid article {
+      background: #fffaf3;
+      padding: 20px;
+      min-height: 150px;
+    }
+
+    .office-buying-grid strong {
+      display: block;
+      color: var(--warm-dark);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      line-height: 1.45;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    .office-buying-grid span {
+      display: block;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.65;
+    }
+
+    @media (max-width: 900px) {
+      .office-buying-inner {
+        grid-template-columns: 1fr;
+        gap: 22px;
+      }
+      .office-buying-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 680px) {
+      .office-buying-help {
+        padding: 32px 0 !important;
+      }
+
+      .office-buying-inner,
+      .section-inner {
+        width: min(100% - 24px, 1180px) !important;
+      }
+
+      .office-buying-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+      }
+
+      .office-buying-grid article:last-child {
+        grid-column: 1 / -1 !important;
+      }
+
+      .office-buying-grid article {
+        min-height: auto !important;
+        padding: 13px 10px !important;
+      }
+
+      .office-buying-grid strong {
+        font-size: 8.5px !important;
+        letter-spacing: 0.11em !important;
+        line-height: 1.35 !important;
+        margin-bottom: 6px !important;
+      }
+
+      .office-buying-grid span {
+        font-size: 11px !important;
+        line-height: 1.45 !important;
+      }
+
+      section {
+        padding: 44px 0 !important;
+      }
+
+      .hero {
+        min-height: 520px !important;
+      }
+
+      .hero-inner {
+        width: min(100% - 28px, 1180px) !important;
+        padding: 76px 0 58px !important;
+      }
+
+      h1 {
+        font-size: clamp(2.45rem, 9vw, 3.3rem) !important;
+        line-height: 0.98 !important;
+      }
+
+      h2 {
+        font-size: clamp(1.9rem, 7vw, 2.45rem) !important;
+        line-height: 1.05 !important;
+        margin-bottom: 12px !important;
+      }
+
+      .hero-copy,
+      .section-lead {
+        font-size: 14px !important;
+        line-height: 1.62 !important;
+        margin-bottom: 22px !important;
+      }
+
+      .eyebrow,
+      .section-kicker {
+        font-size: 9px !important;
+        letter-spacing: 0.22em !important;
+        margin-bottom: 10px !important;
+      }
+
+      .button-row,
+      .modal-actions {
+        gap: 8px !important;
+      }
+
+      .btn {
+        width: 100% !important;
+        min-height: 42px !important;
+        padding: 10px 12px !important;
+        font-size: 9px !important;
+        line-height: 1.25 !important;
+      }
+
+      .office-reassurance-strip {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+      }
+
+      .office-reassurance-item {
+        padding: 11px 8px !important;
+        min-height: 54px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+      }
+
+      .office-reassurance-item strong {
+        font-size: 16px !important;
+        margin-bottom: 4px !important;
+      }
+
+      .office-reassurance-item span {
+        font-size: 8px !important;
+        letter-spacing: 0.1em !important;
+        line-height: 1.25 !important;
+      }
+
+      .office-reassurance-item:last-child {
+        grid-column: 1 / -1 !important;
+      }
+
+      .two-col {
+        gap: 24px !important;
+      }
+
+      .quiet-panel,
+      .app-card,
+      .spec-card,
+      .collection-card,
+      .faq-card,
+      .cta {
+        padding: 16px !important;
+        border-radius: 6px !important;
+      }
+
+      .benefit-list {
+        gap: 10px !important;
+        font-size: 13px !important;
+        line-height: 1.45 !important;
+      }
+
+      .benefit-list li {
+        padding-bottom: 10px !important;
+      }
+
+      .app-grid,
+      .collection-grid,
+      .spec-grid,
+      .faq-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 10px !important;
+      }
+
+      .app-card h3,
+      .spec-card h3,
+      .collection-card h3,
+      .faq-card h3,
+      .card-body h3 {
+        font-size: 18px !important;
+        line-height: 1.08 !important;
+        margin-bottom: 6px !important;
+      }
+
+      .app-card p,
+      .collection-card p,
+      .spec-card p,
+      .faq-card p {
+        font-size: 12.5px !important;
+        line-height: 1.45 !important;
+      }
+
+      .app-card p {
+        display: -webkit-box !important;
+        -webkit-line-clamp: 3 !important;
+        -webkit-box-orient: vertical !important;
+        overflow: hidden !important;
+      }
+
+      .mockup-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 10px !important;
+      }
+
+      .mockup-card {
+        border-radius: 6px !important;
+      }
+
+      .card-media {
+        aspect-ratio: 1 / 1 !important;
+        padding: 10px !important;
+      }
+
+      .card-media span {
+        font-size: 8px !important;
+        letter-spacing: 0.07em !important;
+        padding: 6px 7px !important;
+      }
+
+      .card-body {
+        padding: 12px !important;
+      }
+
+      .card-body p {
+        display: -webkit-box !important;
+        -webkit-line-clamp: 2 !important;
+        -webkit-box-orient: vertical !important;
+        overflow: hidden !important;
+        color: rgba(255,255,255,0.66) !important;
+        font-size: 12px !important;
+        line-height: 1.4 !important;
+      }
+
+      .room-types {
+        gap: 6px !important;
+        margin-top: 16px !important;
+      }
+
+      .room-types span {
+        padding: 8px 9px !important;
+        font-size: 9px !important;
+        letter-spacing: 0.06em !important;
+      }
+
+      .footer-contact {
+        padding: 46px 0 38px !important;
+      }
+
+      .footer-contact h2 {
+        font-size: clamp(2rem, 8vw, 2.75rem) !important;
+        line-height: 1.08 !important;
+        margin-bottom: 14px !important;
+      }
+
+      .footer-contact p {
+        font-size: 9px !important;
+        letter-spacing: 0.14em !important;
+        line-height: 1.5 !important;
+      }
+
+      .footer-email-large {
+        font-size: 17px !important;
+        margin-bottom: 24px !important;
+      }
+
+      .footer-contact-boxes {
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+      }
+
+      .footer-contact-box {
+        min-height: auto !important;
+        padding: 14px 8px !important;
+        border-bottom: 0 !important;
+        border-right: 1px solid rgba(201,154,53,0.18) !important;
+      }
+
+      .footer-contact-box:last-child {
+        border-right: 0 !important;
+      }
+
+      .footer-contact-box strong {
+        font-size: 8px !important;
+        letter-spacing: 0.16em !important;
+        margin-bottom: 6px !important;
+      }
+
+      .footer-contact-box span,
+      .footer-contact-box a {
+        font-size: 12px !important;
+        line-height: 1.35 !important;
+      }
+
+      .footer-links {
+        padding: 42px 0 24px !important;
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 22px 16px !important;
+      }
+
+      .footer-col h3 {
+        font-size: 18px !important;
+        margin-bottom: 10px !important;
+      }
+
+      .footer-col a {
+        font-size: 12px !important;
+        line-height: 1.35 !important;
+        margin-bottom: 8px !important;
+      }
+
+      .copyright {
+        text-align: left !important;
+        font-size: 8.5px !important;
+        line-height: 1.6 !important;
+        letter-spacing: 0.11em !important;
+        margin-top: 28px !important;
+      }
+
+      .modal {
+        align-items: flex-start !important;
+        overflow-y: auto !important;
+        padding: 54px 12px 16px !important;
+      }
+
+      .modal-card {
+        display: block !important;
+        max-height: none !important;
+        overflow: visible !important;
+      }
+
+      .modal-image {
+        min-height: 260px !important;
+        aspect-ratio: 1 / 1 !important;
+        padding: 14px !important;
+        font-size: 10px !important;
+      }
+
+      .modal-content {
+        padding: 18px !important;
+      }
+
+      .modal-title {
+        font-size: 26px !important;
+      }
+
+      .recommendations {
+        gap: 10px !important;
+        margin-bottom: 18px !important;
+      }
+
+      .rec-item {
+        padding-top: 10px !important;
+      }
+
+      .modal-close {
+        position: fixed !important;
+        top: 9px !important;
+        right: 10px !important;
+        z-index: 9999 !important;
+      }
+    }
+
+
+
+    /* OFFICE BOTTOM LIGHTENING PASS */
+    .office-types-compact {
+      padding: 46px 0;
+      background: #f4efe7;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .office-types-inner {
+      display: grid;
+      grid-template-columns: minmax(260px, 0.42fr) minmax(0, 0.58fr);
+      gap: 34px;
+      align-items: center;
+    }
+
+    .office-types-intro h2 {
+      font-size: clamp(26px, 3vw, 40px);
+      margin-bottom: 10px;
+    }
+
+    .office-types-intro p {
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    .office-types-compact .room-types {
+      margin-top: 0;
+      justify-content: flex-start;
+    }
+
+    @media (max-width: 900px) {
+      .office-types-inner {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+    }
+
+    @media (max-width: 680px) {
+      .office-types-compact {
+        padding: 28px 0 !important;
+      }
+
+      .office-types-inner {
+        gap: 14px !important;
+      }
+
+      .office-types-intro h2 {
+        font-size: clamp(1.55rem, 6vw, 2rem) !important;
+        margin-bottom: 6px !important;
+      }
+
+      .office-types-intro p {
+        display: none !important;
+      }
+
+      .office-types-compact .room-types {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 6px !important;
+      }
+
+      .office-types-compact .room-types span {
+        width: 100% !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        min-height: 34px !important;
+        border-radius: 999px !important;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .office-buying-grid,
+      .mockup-grid,
+      .app-grid,
+      .collection-grid,
+      .spec-grid,
+      .faq-grid,
+      .footer-contact-boxes,
+      .footer-grid {
+        grid-template-columns: 1fr !important;
+      }
+
+      .card-body p {
+        -webkit-line-clamp: 3 !important;
+      }
+    }
+
+
+    /* OFFICE HERO REASSURANCE STRIP FINAL PASS */
+    @media (max-width: 380px) {
+      .office-reassurance-strip {
+        grid-template-columns: 1fr !important;
+      }
+      .office-reassurance-item:last-child {
+        grid-column: auto !important;
+      }
+    }
+
   </style>
 
   <script type="application/ld+json">
@@ -928,7 +1458,7 @@
         "creator": {
           "@type": "Person",
           "name": "Dan Sproul",
-          "url": "https://dsproul.com/about.html",
+          "url": "https://dsproul.com/about-dan-sproul.html",
           "homeLocation": {
             "@type": "Place",
             "name": "Lima, Ohio"
@@ -1064,63 +1594,33 @@
       </div>
     </section>
 
-    <div class="tag-row" aria-label="Office artwork applications">
-      <span>Executive Offices</span>
-      <span>Law Firms</span>
-      <span>Conference Rooms</span>
-      <span>Reception Areas</span>
-      <span>Financial Offices</span>
+    <div class="office-reassurance-strip" aria-label="Office artwork buying reassurance">
+      <div class="office-reassurance-item"><strong>Prints from $45</strong><span>Paper print starting point</span></div>
+      <div class="office-reassurance-item"><strong>Framed from $100</strong><span>Refined office-ready options</span></div>
+      <div class="office-reassurance-item"><strong>Canvas · Metal · Acrylic</strong><span>Professional wall formats</span></div>
+      <div class="office-reassurance-item"><strong>Free Mockup Help</strong><span>Send a room photo or wall size</span></div>
+      <div class="office-reassurance-item"><strong>Office · Law · Financial · Medical</strong><span>Artwork for professional interiors</span></div>
     </div>
 
-    <section>
-      <div class="section-inner two-col">
+    <section class="office-buying-help" id="office-buying-help" aria-label="Office artwork buying guidance">
+      <div class="section-inner office-buying-inner">
         <div>
-          <div class="section-kicker">Artwork With Purpose</div>
-          <h2>Designed to make professional spaces feel calmer, warmer, and more intentional.</h2>
-          <p class="section-lead">Office artwork should do more than fill a wall. It should support how clients, employees, and visitors experience the space.</p>
+          <div class="section-kicker">Practical Buying Help</div>
+          <h2>Start with the room, then confirm scale.</h2>
+          <p class="section-lead">Use the mockups below to compare office types, artwork mood, size direction, framing, and print formats before choosing a final piece.</p>
         </div>
-        <div class="quiet-panel">
-          <ul class="benefit-list">
-            <li>Creates a more memorable first impression in reception and waiting areas.</li>
-            <li>Softens hard corporate finishes with natural atmosphere, scale, and texture.</li>
-            <li>Supports calm focus in executive offices, conference rooms, and workspaces.</li>
-            <li>Adds visual authority without relying on generic corporate artwork.</li>
-            <li>Helps offices feel polished, grounded, and connected to place.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="section-inner">
-        <div class="section-kicker">Professional Applications</div>
-        <h2>Artwork for the rooms clients and teams remember.</h2>
-        <p class="section-lead">These office artwork directions are organized by how the artwork functions in a real professional environment.</p>
-
-        <div class="app-grid">
-          <article class="app-card">
-            <h3>Executive Offices</h3>
-            <p>Large mountain, wildlife, monochrome, and atmospheric landscapes for private offices that need calm authority and visual weight.</p>
+        <div class="office-buying-grid">
+          <article>
+            <strong>01 · Choose the space</strong>
+            <span>Executive office, law firm reception, conference room, advisor office, or corridor.</span>
           </article>
-          <article class="app-card">
-            <h3>Conference Rooms</h3>
-            <p>Wide statement pieces that create focus, depth, and a more refined meeting environment without visual clutter.</p>
+          <article>
+            <strong>02 · Open a mockup</strong>
+            <span>Tap any room example for suggested sizes, frame direction, format notes, and purchase link.</span>
           </article>
-          <article class="app-card">
-            <h3>Reception Areas</h3>
-            <p>Warm, memorable artwork for law offices, medical offices, financial advisors, real estate firms, and client-facing spaces.</p>
-          </article>
-          <article class="app-card">
-            <h3>Law Firms</h3>
-            <p>Restrained black-and-white landscapes, mountain light, and quiet nature imagery for polished attorney offices and lobbies.</p>
-          </article>
-          <article class="app-card">
-            <h3>Wealth Management</h3>
-            <p>Atmospheric artwork with permanence, scale, and restraint for financial planning offices and advisory spaces.</p>
-          </article>
-          <article class="app-card">
-            <h3>Medical Offices</h3>
-            <p>Calming nature artwork for waiting rooms, consultation areas, staff spaces, and patient-facing professional interiors.</p>
+          <article>
+            <strong>03 · Need help?</strong>
+            <span>Send a room photo or wall dimensions for artwork and sizing recommendations.</span>
           </article>
         </div>
       </div>
@@ -1248,6 +1748,8 @@
       </div>
     </section>
 
+
+
     <section>
       <div class="section-inner">
         <div class="section-kicker">Recommended Directions</div>
@@ -1283,29 +1785,7 @@
       </div>
     </section>
 
-    <section>
-      <div class="section-inner">
-        <div class="section-kicker">Common Office Types</div>
-        <h2>Built for offices where atmosphere matters.</h2>
-        <p class="section-lead">The strongest office artwork choices are usually the ones that match the room’s purpose, client experience, and finish palette.</p>
-        <div class="room-types">
-          <span>Law Firms</span>
-          <span>Financial Advisors</span>
-          <span>Medical Offices</span>
-          <span>Real Estate Offices</span>
-          <span>Architecture Studios</span>
-          <span>Consulting Firms</span>
-          <span>Executive Suites</span>
-          <span>Conference Rooms</span>
-          <span>Reception Areas</span>
-          <span>Private Offices</span>
-          <span>Coworking Spaces</span>
-          <span>Corporate Headquarters</span>
-        </div>
-      </div>
-    </section>
-
-    <section>
+<section>
       <div class="section-inner">
         <div class="section-kicker">Specification Guidance</div>
         <h2>Simple starting points for office artwork scale and format.</h2>
@@ -1326,7 +1806,31 @@
       </div>
     </section>
 
-    <section>
+    <section class="office-types-compact" aria-label="Common office types for office artwork">
+      <div class="section-inner office-types-inner">
+        <div class="office-types-intro">
+          <div class="section-kicker">Common Office Types</div>
+          <h2>Built for professional spaces where atmosphere matters.</h2>
+          <p>Use these room types as a quick fit check when choosing artwork direction, scale, and finish.</p>
+        </div>
+        <div class="room-types">
+          <span>Law Firms</span>
+          <span>Financial Advisors</span>
+          <span>Medical Offices</span>
+          <span>Real Estate Offices</span>
+          <span>Architecture Studios</span>
+          <span>Consulting Firms</span>
+          <span>Executive Suites</span>
+          <span>Conference Rooms</span>
+          <span>Reception Areas</span>
+          <span>Private Offices</span>
+          <span>Coworking Spaces</span>
+          <span>Corporate Headquarters</span>
+        </div>
+      </div>
+    </section>
+
+<section>
       <div class="section-inner">
         <div class="section-kicker">Office Artwork FAQ</div>
         <h2>Frequently asked questions.</h2>
