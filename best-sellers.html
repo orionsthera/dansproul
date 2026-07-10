@@ -174,6 +174,208 @@ html{scroll-behavior:smooth}body{background:var(--charcoal);color:var(--text);fo
   .hero-copy{font-size:.8rem}
 }
 
+
+/* BEST SELLERS BUYER-FIRST MOBILE GRID PASS */
+@media(max-width:680px){
+  .hero-price-points{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    margin-top:18px!important;
+  }
+  .hero-price{
+    border-right:1px solid rgba(244,238,229,.14)!important;
+    border-bottom:1px solid rgba(244,238,229,.14)!important;
+    padding:11px 10px!important;
+  }
+  .hero-price:nth-child(2){border-right:0!important;}
+  .hero-price:nth-child(3){grid-column:1/-1;border-right:0!important;border-bottom:0!important;}
+  .hero-price strong{font-size:1.02rem!important;line-height:1.05!important;}
+  .hero-price span{font-size:.42rem!important;letter-spacing:.16em!important;}
+
+  .trust-strip{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+  .trust-item{
+    padding:14px 14px!important;
+    border-right:1px solid var(--line)!important;
+    border-bottom:1px solid var(--line)!important;
+  }
+  .trust-item:nth-child(2n){border-right:0!important;}
+  .trust-item:nth-child(n+3){border-bottom:0!important;}
+  .trust-k{font-size:.44rem!important;letter-spacing:.2em!important;margin-bottom:6px!important;}
+  .trust-v{font-size:1rem!important;line-height:1.12!important;}
+
+  .featured{
+    padding-top:44px!important;
+    padding-bottom:46px!important;
+  }
+  .print-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:12px!important;
+  }
+  .print-card{
+    border-radius:10px!important;
+    overflow:hidden!important;
+  }
+  .print-img{
+    aspect-ratio:1/1!important;
+  }
+  .print-body{
+    padding:12px 11px 13px!important;
+  }
+  .print-type{
+    font-size:.42rem!important;
+    letter-spacing:.14em!important;
+    margin-bottom:6px!important;
+  }
+  .print-name{
+    font-size:1rem!important;
+    line-height:1.05!important;
+    margin-bottom:6px!important;
+  }
+  .print-note{
+    font-size:.66rem!important;
+    line-height:1.42!important;
+    display:-webkit-box!important;
+    -webkit-line-clamp:3!important;
+    -webkit-box-orient:vertical!important;
+    overflow:hidden!important;
+  }
+  .print-body::after{
+    margin-top:10px!important;
+    font-size:.47rem!important;
+    letter-spacing:.11em!important;
+  }
+
+  .buying-help{
+    padding-top:40px!important;
+    padding-bottom:40px!important;
+  }
+  .buying-box{
+    padding:20px!important;
+  }
+  .buying-box p{
+    font-size:.74rem!important;
+    line-height:1.6!important;
+  }
+  .buying-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:10px!important;
+  }
+  .buying-item{
+    padding:13px!important;
+  }
+  .buying-item strong{
+    font-size:.52rem!important;
+    letter-spacing:.13em!important;
+  }
+  .buying-item p{
+    font-size:.68rem!important;
+    line-height:1.42!important;
+  }
+  .buying-item:nth-child(3){grid-column:1/-1;}
+
+  .use-paths{
+    padding-top:42px!important;
+    padding-bottom:42px!important;
+  }
+  .use-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:10px!important;
+    border:0!important;
+    background:transparent!important;
+  }
+  .use-card{
+    min-height:132px!important;
+    padding:16px 14px!important;
+    border:1px solid var(--line)!important;
+    border-radius:10px!important;
+  }
+  .use-card span{
+    font-size:.42rem!important;
+    letter-spacing:.16em!important;
+    margin-bottom:9px!important;
+  }
+  .use-card h3{
+    font-size:1rem!important;
+    line-height:1.08!important;
+    margin-bottom:0!important;
+  }
+  .use-card p{
+    display:none!important;
+  }
+  .use-card small{
+    margin-top:14px!important;
+    font-size:.47rem!important;
+    letter-spacing:.13em!important;
+  }
+
+  .related-grid,
+  .set-grid,
+  .faq-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:10px!important;
+  }
+  .related-card,
+  .set-card,
+  .faq-item{
+    padding:16px 14px!important;
+    border-radius:10px!important;
+  }
+  .related-card span{
+    font-size:.42rem!important;
+    letter-spacing:.16em!important;
+    margin-bottom:8px!important;
+  }
+  .related-card h3,
+  .set-card h3,
+  .faq-item h3{
+    font-size:1.04rem!important;
+    line-height:1.08!important;
+    margin-bottom:7px!important;
+  }
+  .related-card p,
+  .set-card p,
+  .faq-item p{
+    font-size:.68rem!important;
+    line-height:1.45!important;
+  }
+  .related-card p{
+    display:none!important;
+  }
+  .set-card ul{
+    display:none!important;
+  }
+
+  .mockup-cta{
+    padding-top:42px!important;
+    padding-bottom:42px!important;
+  }
+  .mockup-wrap p{
+    font-size:.75rem!important;
+    line-height:1.6!important;
+  }
+}
+
+@media(max-width:380px){
+  .print-grid,
+  .buying-grid,
+  .use-grid,
+  .related-grid,
+  .set-grid,
+  .faq-grid,
+  .trust-strip{
+    grid-template-columns:1fr!important;
+  }
+  .hero-price-points{
+    grid-template-columns:1fr!important;
+  }
+  .hero-price:nth-child(3){grid-column:auto!important;}
+  .trust-item,
+  .hero-price{
+    border-right:0!important;
+  }
+}
+
 </style>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -318,9 +520,9 @@ html{scroll-behavior:smooth}body{background:var(--charcoal);color:var(--text);fo
     <p class="hero-copy">A focused selection of Dan Sproul's most versatile fine art prints for living rooms, bedrooms, offices, hospitality projects, healthcare interiors, wellness spaces, and buyers who want an easy place to begin.</p>
     <div class="hero-ctas"><a class="btn btn-solid" href="#featured">View Featured Prints</a><a class="btn btn-out" href="https://dansproul.com/collections/best+sellers+and+designer+favorite+wall+art" target="_blank" rel="noopener">Shop Full Collection</a><a class="btn btn-out" href="mailto:sproulphoto@gmail.com?subject=Free%20Wall%20Mockup%20Request">Request Wall Mockup</a></div>
     <div class="hero-price-points" aria-label="Starting price points">
-      <div class="hero-price"><strong>From $85</strong><span>Canvas Prints</span></div>
+      <div class="hero-price"><strong>From $45</strong><span>Fine Art Prints</span></div>
       <div class="hero-price"><strong>From $100</strong><span>Framed Prints</span></div>
-      <div class="hero-price"><strong>From $120</strong><span>Metal &amp; Acrylic</span></div>
+      <div class="hero-price"><strong>Canvas · Metal · Acrylic</strong><span>Multiple Formats</span></div>
     </div>
   </div>
 </header>
@@ -335,7 +537,8 @@ html{scroll-behavior:smooth}body{background:var(--charcoal);color:var(--text);fo
 
 <section class="buying-help" id="buying-help"><div class="buying-box"><div><p class="eyebrow">Practical Buying Help</p><h2>How to buy a print.</h2><p>Browse the featured prints below, then click any artwork to open my secure print storefront. From there you can choose the size, frame, mat, canvas, metal, acrylic, or paper option that fits your room.</p><p>Final pricing, shipping, checkout, and return details are handled directly through the print storefront so the purchase process stays secure and easy.</p><p style="margin-top:14px"><a href="https://dansproul.com/collections/best+sellers+and+designer+favorite+wall+art" target="_blank" rel="noopener" style="color:#8b6a2c;font-weight:400">Shop the full Best Sellers &amp; Designer Favorites collection →</a></p></div><div class="buying-grid"><div class="buying-item"><strong>Step 01</strong><p>Start with the room: bedroom, living room, office, waiting area, hospitality space, or wellness interior.</p></div><div class="buying-item"><strong>Step 02</strong><p>Open the print page to compare sizes, frames, canvas, metal, acrylic, and fine art paper options.</p></div><div class="buying-item"><strong>Step 03</strong><p>Not sure on scale? Send a room photo or wall dimensions and I can suggest a size or mockup direction.</p></div></div></div></section>
 
-<section class="use-paths" id="shop-by-use"><div class="section-head"><div><p class="section-label">Shop By Use</p><h2 class="section-title">Choose art by <em>room, mood, or project</em></h2></div></div><div class="use-grid"><a class="use-card" href="residential-nature-wall-art.html"><div><span>Home</span><h3>Bedrooms & Living Rooms</h3><p>Calm water, forest, mountain, and coastal prints for residential rooms that need warmth and atmosphere.</p></div><small>Shop Residential →</small></a><a class="use-card" href="healthcare-artwork.html"><div><span>Healthcare</span><h3>Waiting Rooms & Wellness</h3><p>Nature-based artwork for waiting rooms, therapy offices, patient-facing spaces, and healthcare corridors.</p></div><small>View Healthcare →</small></a><a class="use-card" href="hospitality-artwork.html"><div><span>Hospitality</span><h3>Hotels & Guest Spaces</h3><p>Atmospheric pieces for boutique hotels, guest suites, lounges, corridors, restaurants, and spa environments.</p></div><small>View Hospitality →</small></a><a class="use-card" href="for-designers.html"><div><span>Design Trade</span><h3>Mockups & Spec Support</h3><p>For designers who need artwork recommendations, wall mockups, spec sheets, sizing guidance, and trade support.</p></div><small>Designer Resources →</small></a></div></section>
+
+
 
 <section class="featured" id="featured"><div class="section-head"><div><p class="section-label">Featured Favorites</p><h2 class="section-title">Versatile prints that work in <em>real rooms</em></h2></div><p class="section-sub">Click any print to open the secure purchase page, where you can choose the size, frame, canvas, metal, acrylic, or paper option for your room.</p></div><div class="print-grid"><a class="print-card" href="https://dansproul.com/featured/valdez-glacier-lake-dan-sproul.html" target="_blank" rel="noopener">
       <div class="print-img"><img src="valdez-glacier-lake-alaska-dan-sproul.jpg" alt="Valdez Glacier Lake Alaska fine art photography print by Dan Sproul" loading="eager" decoding="async" fetchpriority="high"></div>
@@ -374,6 +577,10 @@ html{scroll-behavior:smooth}body{background:var(--charcoal);color:var(--text);fo
       <div class="print-img"><img src="sunlit-badlands-burrowing-owl-dan-sproul.jpg" alt="Sunlit Badlands Burrowing Owl wildlife print by Dan Sproul" loading="lazy" decoding="async"></div>
       <div class="print-body"><p class="print-type">Badlands Wildlife</p><h3 class="print-name">Sunlit Burrowing Owl</h3><p class="print-note">A small, character-rich wildlife print for collectors and nature-inspired rooms.</p></div>
     </a></div></section>
+
+
+
+<section class="use-paths" id="shop-by-use"><div class="section-head"><div><p class="section-label">Shop By Use</p><h2 class="section-title">Choose art by <em>room, mood, or project</em></h2></div></div><div class="use-grid"><a class="use-card" href="residential-nature-wall-art.html"><div><span>Home</span><h3>Bedrooms & Living Rooms</h3><p>Calm water, forest, mountain, and coastal prints for residential rooms that need warmth and atmosphere.</p></div><small>Shop Residential →</small></a><a class="use-card" href="healthcare-artwork.html"><div><span>Healthcare</span><h3>Waiting Rooms & Wellness</h3><p>Nature-based artwork for waiting rooms, therapy offices, patient-facing spaces, and healthcare corridors.</p></div><small>View Healthcare →</small></a><a class="use-card" href="hospitality-artwork.html"><div><span>Hospitality</span><h3>Hotels & Guest Spaces</h3><p>Atmospheric pieces for boutique hotels, guest suites, lounges, corridors, restaurants, and spa environments.</p></div><small>View Hospitality →</small></a><a class="use-card" href="for-designers.html"><div><span>Design Trade</span><h3>Mockups & Spec Support</h3><p>For designers who need artwork recommendations, wall mockups, spec sheets, sizing guidance, and trade support.</p></div><small>Designer Resources →</small></a></div></section>
 
 <section class="related-links" id="related-collections"><div class="section-head"><div><p class="section-label">Related Collection Paths</p><h2 class="section-title">Continue from best sellers into <em>stronger directions</em></h2></div></div><div class="related-grid"><a class="related-card" href="quiet-earth-collection.html"><span>Calm Atmosphere</span><h3>Quiet Earth</h3><p>Soft, atmospheric landscape photography for bedrooms, wellness interiors, and quiet living spaces.</p></a><a class="related-card" href="in-your-space.html"><span>Shop By Room</span><h3>In Your Space</h3><p>Room-based wall art guidance for bedrooms, offices, dining rooms, and living spaces.</p></a><a class="related-card" href="art-collections.html"><span>Collection Hub</span><h3>Curated Collections</h3><p>Explore the larger collection architecture by mood, subject, and interior use.</p></a><a class="related-card" href="heritage-mixed-media.html"><span>Place-Based Artwork</span><h3>Heritage &amp; Mixed Media</h3><p>Layered maps, typography, landmarks, wildlife, and regional artwork for distinctive interiors.</p></a></div></section>
 
