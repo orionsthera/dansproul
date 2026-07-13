@@ -410,9 +410,24 @@
       filter: brightness(.86) saturate(.95);
       transition: filter .35s ease, transform .35s ease;
     }
+
+    .archive-card.archive-card-image.image-contain-card {
+      grid-template-rows: 220px 1fr;
+    }
+
+    .archive-card.archive-card-image.image-contain-card img {
+      object-fit: contain;
+      object-position: center;
+      background: #0c130d;
+    }
     .archive-card.archive-card-image:hover img {
       filter: brightness(1) saturate(1.05);
       transform: scale(1.025);
+    }
+
+    .archive-card.archive-card-image.image-contain-card:hover img {
+      filter: brightness(1) saturate(1.02);
+      transform: none;
     }
     .archive-card.archive-card-image .archive-card-content {
       padding: 24px 28px 28px;
@@ -668,6 +683,9 @@
   }
   .archive-card.archive-card-image{
     grid-template-rows:120px 1fr!important;
+  }
+  .archive-card.archive-card-image.image-contain-card{
+    grid-template-rows:150px 1fr!important;
   }
   .archive-card.archive-card-image .archive-card-content,
   .archive-card{
@@ -957,7 +975,7 @@
       </div>
 
       <div class="archive-grid">
-        <a class="archive-card archive-card-image" href="lima-ohio-nature-wildlife-photography.html">
+        <a class="archive-card archive-card-image image-contain-card" href="lima-ohio-nature-wildlife-photography.html">
           <img src="blue-heron-lima-ohio.jpg" alt="Great blue heron reflected in green water in Lima Ohio nature photography by Dan Sproul" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='denali national park autumn.jpg';" />
           <div class="archive-card-content">
             <span>Field Notes &middot; Lima, Ohio</span>
