@@ -286,8 +286,18 @@
     }
 
     .wide-figure img {
-      max-height: 720px;
-      object-fit: cover;
+      object-fit: contain;
+    }
+
+    .wide-figure.featured-heron {
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .wide-figure.featured-heron img {
+      max-height: none;
+      background: #10180f;
     }
 
     figcaption {
@@ -431,6 +441,12 @@
     .gallery-card img {
       aspect-ratio: 1 / 1;
       object-fit: cover;
+    }
+
+    .gallery-card.contain-image img {
+      object-fit: contain;
+      object-position: center;
+      background: #10180f;
     }
 
     .gallery-card h3 {
@@ -743,7 +759,7 @@
           </aside>
         </div>
 
-        <figure class="wide-figure">
+        <figure class="wide-figure featured-heron">
           <a class="print-image-link" href="https://dansproul.com/featured/blue-heron-reflection-dan-sproul.html" target="_blank" rel="noopener">
             <img src="blue-heron-lima-ohio.jpg" width="855" height="900" alt="Great blue heron standing over green reflected water in Lima Ohio" loading="eager" decoding="async" />
           </a>
@@ -868,7 +884,7 @@
             <a class="print-link" href="https://dansproul.com/featured/winter-deer-dan-sproul.html" target="_blank" rel="noopener">View this print</a>
           </article>
 
-          <article class="gallery-card">
+          <article class="gallery-card contain-image">
             <a class="print-image-link" href="https://dansproul.com/featured/blue-heron-reflection-dan-sproul.html" target="_blank" rel="noopener">
               <img src="blue-heron-lima-ohio.jpg" width="855" height="900" alt="Great blue heron reflected in dark green water near Lima Ohio" loading="lazy" decoding="async" />
             </a>
