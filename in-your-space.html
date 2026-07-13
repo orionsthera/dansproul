@@ -1,15 +1,16 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Art In Your Space — See Prints In Real Rooms | Dan Sproul Fine Art</title>
-<meta name="author" content="Dan Sproul"/>
-<meta name="description" content="See how Dan Sproul's fine art photography looks in real bedrooms, living rooms, entryways, offices, residential interiors, and hotels. Shop the look directly. Custom sizing and free mockups available."/>
-<link rel="canonical" href="https://dsproul.com/in-your-space.html"/>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet"/>
+<meta content="Dan Sproul" name="author"/>
+<meta content="See how Dan Sproul's fine art photography looks in real bedrooms, living rooms, entryways, offices, residential interiors, and hotels. Shop the look directly. Custom sizing and free mockups available." name="description"/>
+<link href="https://dsproul.com/in-your-space.html" rel="canonical"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&amp;family=Jost:wght@200;300;400&amp;display=swap" rel="stylesheet"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -952,6 +953,367 @@ body::before{
   }
 }
 
+
+
+/* IN YOUR SPACE — UX CONCEPT PASS: faster buyer path + compact room sections */
+.room-start-strip{
+  padding:30px 56px;
+  background:#100e0b;
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+}
+.room-start-inner{
+  max-width:1380px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:minmax(0,.72fr) minmax(520px,1.28fr);
+  gap:26px;
+  align-items:center;
+}
+.room-start-copy h2{
+  margin:0 0 8px;
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(1.55rem,2.45vw,2.25rem);
+  font-weight:300;
+  line-height:1.08;
+}
+.room-start-copy p:not(.sec-label){
+  max-width:620px;
+  color:var(--muted-2);
+  font-size:.72rem;
+  line-height:1.8;
+}
+.room-start-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:8px;
+}
+.room-start-grid a{
+  display:block;
+  min-height:82px;
+  padding:16px;
+  text-decoration:none;
+  background:rgba(181,146,74,.065);
+  border:1px solid rgba(181,146,74,.18);
+  transition:border-color .22s ease,background .22s ease,transform .22s ease;
+}
+.room-start-grid a:hover{
+  border-color:rgba(181,146,74,.44);
+  background:rgba(181,146,74,.105);
+  transform:translateY(-2px);
+}
+.room-start-grid span{
+  display:block;
+  margin-bottom:8px;
+  color:var(--accent);
+  font-size:.48rem;
+  font-weight:400;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+}
+.room-start-grid strong{
+  display:block;
+  color:var(--off-white);
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.12rem;
+  font-weight:300;
+  line-height:1.05;
+}
+
+/* Keep the top quick path tighter now that the custom upload tool lives lower on the page. */
+.how-banner{
+  justify-content:center;
+  padding-top:16px!important;
+  padding-bottom:16px!important;
+}
+.filter-nav{
+  justify-content:center;
+}
+
+/* Shorter desktop room blocks without removing the useful examples. */
+@media(min-width:961px){
+  .iys-section{
+    padding-top:44px!important;
+    padding-bottom:44px!important;
+  }
+  .sec-header,
+  .feat-card,
+  .mosaic,
+  .shop-section-strip{
+    max-width:1180px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .sec-header{
+    margin-bottom:24px!important;
+  }
+  .sec-title{
+    margin-bottom:10px!important;
+  }
+  .feat-card img{
+    height:430px!important;
+  }
+  .h-300{height:270px!important}
+  .h-360{height:315px!important}
+  .h-420{height:350px!important}
+  .h-260{height:250px!important}
+  .shop-section-strip{
+    margin-top:14px!important;
+    padding-top:13px!important;
+    padding-bottom:0!important;
+  }
+  .cta-strip.cta-centered{
+    padding-top:54px!important;
+    padding-bottom:54px!important;
+  }
+}
+
+/* Optional upload tool moved below room examples; make it feel like a helpful next step, not the main page. */
+.room-preview-tool{
+  border-top:1px solid rgba(181,146,74,.22)!important;
+}
+.room-preview-tool .preview-intro{
+  margin-bottom:24px!important;
+}
+.room-preview-tool .preview-stage{
+  min-height:430px;
+}
+
+/* Mobile: keep the page visual, compact, and scannable instead of one endless stack. */
+@media(max-width:760px){
+  .room-start-strip{
+    padding:24px 18px!important;
+  }
+  .room-start-inner{
+    grid-template-columns:1fr!important;
+    gap:18px!important;
+  }
+  .room-start-copy p:not(.sec-label){
+    display:none!important;
+  }
+  .room-start-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:8px!important;
+  }
+  .room-start-grid a{
+    min-height:72px!important;
+    padding:13px 12px!important;
+  }
+  .room-start-grid span{
+    font-size:8.5px!important;
+    margin-bottom:6px!important;
+  }
+  .room-start-grid strong{
+    font-size:1rem!important;
+  }
+
+  .how-banner{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:8px!important;
+    padding:12px 14px!important;
+  }
+  .how-item{
+    min-height:48px!important;
+    padding:8px!important;
+    border:1px solid rgba(181,146,74,.14)!important;
+    background:rgba(181,146,74,.045)!important;
+    font-size:9px!important;
+    line-height:1.35!important;
+    letter-spacing:.12em!important;
+  }
+  .how-icon{
+    width:20px!important;
+    height:20px!important;
+    font-size:10px!important;
+  }
+
+  .filter-nav{
+    padding:0 10px!important;
+  }
+  .filter-btn{
+    padding:13px 12px!important;
+    font-size:8.5px!important;
+  }
+
+  .iys-section{
+    padding:34px 16px!important;
+  }
+  .sec-header{
+    margin-bottom:18px!important;
+  }
+  .sec-guidance{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:7px!important;
+    margin-bottom:10px!important;
+  }
+  .guidance-pill{
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    min-height:34px!important;
+    padding:7px 8px!important;
+    text-align:center!important;
+    font-size:8.5px!important;
+    line-height:1.3!important;
+    letter-spacing:.12em!important;
+  }
+  .sec-feeling{
+    display:none!important;
+  }
+
+  .feat-card{
+    margin-bottom:8px!important;
+  }
+  .feat-card img{
+    height:230px!important;
+    object-fit:contain!important;
+  }
+  .feat-bar{
+    position:relative!important;
+    background:#100e0b!important;
+    padding:14px!important;
+    border:1px solid rgba(181,146,74,.16)!important;
+    border-top:0!important;
+  }
+  .feat-tag,
+  .feat-desc,
+  .size-badge{
+    display:none!important;
+  }
+  .feat-title{
+    font-size:1.15rem!important;
+    margin-bottom:10px!important;
+  }
+  .feat-actions{
+    width:100%!important;
+  }
+  .shop-link{
+    width:100%!important;
+    justify-content:center!important;
+    padding:9px 12px!important;
+    font-size:8.5px!important;
+  }
+
+  .mosaic,
+  .mosaic-2,
+  .mosaic-2-1,
+  .mosaic-1-2,
+  .mosaic-3{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:8px!important;
+    margin-bottom:8px!important;
+  }
+  .m-card,
+  .h-260,
+  .h-300,
+  .h-360,
+  .h-420{
+    height:auto!important;
+    aspect-ratio:1/1!important;
+  }
+  .m-card img{
+    object-fit:contain!important;
+  }
+  .m-bar{
+    position:absolute!important;
+    padding:10px!important;
+  }
+  .m-room,
+  .m-size{
+    display:none!important;
+  }
+  .m-title{
+    font-size:.92rem!important;
+    line-height:1.05!important;
+    margin-bottom:6px!important;
+  }
+  .m-bottom{
+    display:block!important;
+  }
+  .m-shop{
+    display:inline-block!important;
+    font-size:8px!important;
+    letter-spacing:.12em!important;
+  }
+  .shop-section-strip{
+    margin-top:10px!important;
+    padding:12px!important;
+    border:1px solid rgba(181,146,74,.16)!important;
+    background:rgba(181,146,74,.045)!important;
+  }
+  .sss-text{
+    display:none!important;
+  }
+  .sss-link{
+    width:100%!important;
+    justify-content:center!important;
+    text-align:center!important;
+    font-size:8.5px!important;
+  }
+
+  .room-preview-tool{
+    padding:38px 16px!important;
+  }
+  .preview-intro{
+    gap:14px!important;
+    margin-bottom:18px!important;
+  }
+  .preview-steps{
+    display:grid!important;
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+    gap:6px!important;
+  }
+  .preview-step{
+    padding:10px 8px!important;
+  }
+  .preview-step strong{
+    font-size:1.05rem!important;
+  }
+  .preview-step span{
+    font-size:8px!important;
+    line-height:1.3!important;
+  }
+  .preview-stage{
+    min-height:280px!important;
+  }
+  .preview-panel{
+    padding:16px!important;
+  }
+  .preview-title{
+    font-size:1.25rem!important;
+  }
+  .preview-detail{
+    display:none!important;
+  }
+  .preview-thumbs{
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  }
+
+  .residential-path{
+    padding:22px 16px!important;
+  }
+  .residential-path-inner{
+    padding:18px!important;
+  }
+}
+@media(max-width:380px){
+  .room-start-grid,
+  .mosaic,
+  .mosaic-2,
+  .mosaic-2-1,
+  .mosaic-1-2,
+  .mosaic-3{
+    grid-template-columns:1fr!important;
+  }
+  .how-banner,
+  .sec-guidance{
+    grid-template-columns:1fr!important;
+  }
+}
+
 </style>
 <script type="application/ld+json">
 {
@@ -1192,657 +1554,596 @@ body::before{
 </script>
 </head>
 <body>
-
-<nav class="site-nav-standard" aria-label="Primary navigation">
-  <a href="/" class="nav-logo-standard" aria-label="Dan Sproul Fine Art Photography home">
-    <span class="nav-logo-name-standard">Dan Sproul</span>
-    <span class="nav-logo-sub-standard">Fine Art Photography</span>
-  </a>
-
-  <button class="nav-toggle-standard" aria-label="Open navigation menu" aria-expanded="false">
-    <span></span><span></span><span></span>
-  </button>
-
-  <div class="nav-links-standard">
-    <a href="/">Home</a>
-    <a href="best-sellers.html">Best Sellers</a>
-    <a href="art-collections.html">Collections</a>
-    <a href="about-dan-sproul.html">About</a>
-    <a href="in-your-space.html">In Your Space</a>
-    <a href="for-designers.html">For Designers</a>
-    <a href="https://dansproul.com" target="_blank" rel="noopener" class="nav-shop-standard">Shop Prints</a>
-  </div>
+<nav aria-label="Primary navigation" class="site-nav-standard">
+<a aria-label="Dan Sproul Fine Art Photography home" class="nav-logo-standard" href="/">
+<span class="nav-logo-name-standard">Dan Sproul</span>
+<span class="nav-logo-sub-standard">Fine Art Photography</span>
+</a>
+<button aria-expanded="false" aria-label="Open navigation menu" class="nav-toggle-standard">
+<span></span><span></span><span></span>
+</button>
+<div class="nav-links-standard">
+<a href="/">Home</a>
+<a href="best-sellers.html">Best Sellers</a>
+<a href="art-collections.html">Collections</a>
+<a href="about-dan-sproul.html">About</a>
+<a href="in-your-space.html">In Your Space</a>
+<a href="for-designers.html">For Designers</a>
+<a class="nav-shop-standard" href="https://dansproul.com" rel="noopener" target="_blank">Shop Prints</a>
+</div>
 </nav>
-
-<a href="mailto:sproulphoto@gmail.com?subject=Mockup Request" class="mockup-float" id="mf">Request Mockup</a>
+<a class="mockup-float" href="mailto:sproulphoto@gmail.com?subject=Mockup Request" id="mf">Request Mockup</a>
 <button class="scroll-top" id="st" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
-
 <!-- LIGHTBOX — now with Shop This Look button -->
 <div id="lb" onclick="if(event.target===this||event.target.id==='lb')closeLb()">
-  <button id="lb-close" onclick="closeLb()">✕</button>
-  <img id="lb-img" src="" alt=""/>
-  <div id="lb-info">
-    <p id="lb-cap"></p>
-    <a id="lb-shop" href="https://dansproul.com/shop" target="_blank">Shop This Print at dsproul.com →</a>
-  </div>
+<button id="lb-close" onclick="closeLb()">✕</button>
+<img alt="" id="lb-img" src=""/>
+<div id="lb-info">
+<p id="lb-cap"></p>
+<a href="https://dansproul.com/shop" id="lb-shop" target="_blank">Shop This Print →</a>
 </div>
-
+</div>
 <!-- MOBILE NAV -->
 <div class="mob-nav" id="mobNav">
-  <button class="mob-close" id="mobClose">✕</button>
-  <a href="/">Home</a>
-  <a href="best-sellers.html">Best Sellers</a>
-  <a href="art-collections.html">Collections</a>
-  <a href="about-dan-sproul.html">About</a>
-  <a href="in-your-space.html" style="color:var(--accent)">In Your Space</a>
-  <a href="for-designers.html" class="mob-designers">For Designers</a>
-  <a href="https://dansproul.com/shop" target="_blank" rel="noopener" style="color:var(--accent)">Shop Prints ↗</a>
+<button class="mob-close" id="mobClose">✕</button>
+<a href="/">Home</a>
+<a href="best-sellers.html">Best Sellers</a>
+<a href="art-collections.html">Collections</a>
+<a href="about-dan-sproul.html">About</a>
+<a href="in-your-space.html" style="color:var(--accent)">In Your Space</a>
+<a class="mob-designers" href="for-designers.html">For Designers</a>
+<a href="https://dansproul.com/shop" rel="noopener" style="color:var(--accent)" target="_blank">Shop Prints ↗</a>
 </div>
-
 <!-- NAV -->
 <!-- ═══════════════════════════════════════
      HERO — decision tool, not gallery intro
 ═══════════════════════════════════════ -->
 <div class="hero">
-  <div class="hero-grid">
-    <div class="hero-left">
-      <p class="hero-eyebrow">In Your Space</p>
-      <h1>See exactly how it<br/><em>looks in your room.</em></h1>
-
-      <!-- The fix: orient the visitor as a buyer immediately -->
-      <div class="hero-explainer">
-        <p>Every image below is a <strong>real room with Dan Sproul's photography</strong> installed and in scale. Use this page to find the right size, style, and placement for your space — then shop directly. <strong>Not sure what size to order? Send a room photo</strong> and get a free digital mockup.</p>
-      </div>
-
-      <div class="hero-creds">
-        <span class="hero-cred">Available 8×10 to 60×40+</span>
-        <span class="hero-cred">Canvas · Metal · Framed</span>
-        <span class="hero-cred">Free mockup previews</span>
-        <span class="hero-cred">Ships nationwide</span>
-      </div>
-
-      <div class="hero-ctas">
-        <a href="https://dansproul.com/shop" target="_blank" class="btn btn-solid">Shop All Prints</a>
-        <a href="mailto:sproulphoto@gmail.com?subject=Mockup Request" class="btn btn-out">Get a Free Mockup</a>
-        <a href="residential-nature-wall-art.html" class="btn btn-out">Residential Artwork</a>
-      </div>
-    </div>
-
-    <!-- Hero slideshow -->
-    <div class="hero-img-wrap" id="heroSlideshow">
-
-      <div class="hero-slide active">
-        <img src="warm modern living room mountain reflection mockup.jpg" alt="Warm modern living room with large B&W mountain reflection print by Dan Sproul — walnut frame white mat" style="object-position:center 30%"/>
-      </div>
-
-      <div class="hero-slide">
-        <img src="living room interior mockup framed mountain light.jpg" alt="Bright modern living room with dreamy mountain light landscape print by Dan Sproul — black float frame above credenza" style="object-position:center 22%"/>
-      </div>
-
-      <div class="hero-slide">
-        <img src="modern living room with framed mountains in clouds.jpg" alt="Modern white living room with large B&W mountains in clouds framed print by Dan Sproul — black frame above sofa" style="object-position:center 20%"/>
-      </div>
-
-      <div class="hero-slide">
-        <img src="lobby framed mountains in clouds.jpg" alt="Modern healthcare lobby with large framed mountains in clouds landscape by Dan Sproul — black frame white mat" style="object-position:center 25%"/>
-      </div>
-
-      <div class="hero-slide">
-        <img src="modern dining room framed dreamy alaska landscape dan sproul.jpg" alt="Luxury modern dining room with large framed dreamy Alaska landscape by Dan Sproul — black frame dramatic lighting" style="object-position:center 20%"/>
-      </div>
-
-      <!-- Badge updates with JS -->
-      <div class="hero-img-badge">
-        <p class="hib-size" id="hib-size">Living Room · 36×48 or custom · Walnut frame</p>
-        <p class="hib-title" id="hib-title">Mountain Reflection — B&amp;W</p>
-        <a href="https://dansproul.com/featured/black-and-white-canadian-rockies-reflection-dan-sproul.html" target="_blank" class="hib-shop">Shop This Print →</a>
-      </div>
-
-      <!-- Arrows -->
-      <button class="slide-arrow slide-prev" onclick="slideMove(-1)" aria-label="Previous">&#8592;</button>
-      <button class="slide-arrow slide-next" onclick="slideMove(1)" aria-label="Next">&#8594;</button>
-
-      <!-- Dots -->
-      <div class="slide-dots" id="slideDots"></div>
-
-    </div>
-  </div>
+<div class="hero-grid">
+<div class="hero-left">
+<p class="hero-eyebrow">In Your Space</p>
+<h1>See exactly how it<br/><em>looks in your room.</em></h1>
+<!-- The fix: orient the visitor as a buyer immediately -->
+<div class="hero-explainer">
+<p>Every image below is a <strong>real room with Dan Sproul's photography</strong> installed and in scale. Use this page to find the right size, style, and placement for your space — then shop directly. <strong>Not sure what size to order? Send a room photo</strong> and get a free digital mockup.</p>
 </div>
-
-
-
-<!-- SEE ARTWORK IN YOUR ROOM TOOL -->
-<section class="room-preview-tool" id="room-preview-tool">
-  <div class="preview-wrap">
-    <div class="preview-intro">
-      <div>
-        <p class="sec-label">Interactive Preview</p>
-        <h2 class="sec-title">See artwork in <em>your own room.</em></h2>
-        <p>Upload a photo of your wall, choose one of the curated images below, then resize and position the artwork before purchasing. For the cleanest result, use a straight-on room photo with visible wall space. This is a simple wall preview tool, not true AR.</p>
-      </div>
-      <div class="preview-steps">
-        <div class="preview-step"><strong>1</strong><span>Upload a room photo</span></div>
-        <div class="preview-step"><strong>2</strong><span>Choose artwork and frame</span></div>
-        <div class="preview-step"><strong>3</strong><span>Preview, save, or purchase</span></div>
-      </div>
-    </div>
-
-    <div class="preview-grid">
-      <div class="preview-stage" id="previewStage">
-        <div class="preview-placeholder" id="previewPlaceholder">Upload a straight-on photo of your wall to begin<br/>then drag the artwork into position</div>
-        <img id="roomImage" class="preview-room-img" alt="Uploaded room preview"/>
-        <img id="artworkImage" class="preview-artwork oak" alt="Selected Dan Sproul artwork preview"/>
-      </div>
-
-      <aside class="preview-panel">
-        <label for="roomUpload">Upload Room Photo</label>
-        <input type="file" id="roomUpload" accept="image/*"/>
-
-        <label for="collectionFilter">Collection</label>
-        <select id="collectionFilter"></select>
-
-        <label for="artworkSelect">Artwork</label>
-        <select id="artworkSelect"></select>
-
-        <label for="frameSelect">Frame Style</label>
-        <select id="frameSelect">
-          <option value="oak">Warm Oak</option>
-          <option value="walnut">Walnut</option>
-          <option value="black">Matte Black</option>
-          <option value="white">White</option>
-        </select>
-
-        <label for="artworkSize">Artwork Size</label>
-        <input type="range" id="artworkSize" min="18" max="70" value="34"/>
-
-        <div class="preview-info">
-          <h3 class="preview-title" id="previewTitle"></h3>
-          <p class="preview-meta" id="previewMeta"></p>
-          <p class="preview-detail" id="previewSizes"></p>
-          <p class="preview-detail" id="previewFrames"></p>
-          <p class="preview-detail" id="previewRooms"></p>
-          <div class="preview-actions">
-            <a id="purchaseArtworkBtn" class="purchase-artwork-btn" href="#" target="_blank" rel="noopener">Purchase This Print</a>
-            <button type="button" id="savePreviewBtn" class="save-preview-btn">Save Screenshot</button>
-            <button type="button" id="resetPreviewBtn" class="reset-preview-btn">Reset</button>
-          </div>
-          <p class="preview-note">For best results, upload a level photo taken straight toward the wall. Final print scale may vary depending on room-photo perspective.</p>
-        </div>
-
-        <div class="preview-thumbs" id="previewThumbs" aria-label="Artwork thumbnail choices"></div>
-      </aside>
-    </div>
-  </div>
+<div class="hero-creds">
+<span class="hero-cred">Available 8×10 to 60×40+</span>
+<span class="hero-cred">Canvas · Metal · Framed</span>
+<span class="hero-cred">Free mockup previews</span>
+<span class="hero-cred">Ships nationwide</span>
+</div>
+<div class="hero-ctas">
+<a class="btn btn-solid" href="https://dansproul.com/shop" target="_blank">Shop All Prints</a>
+<a class="btn btn-out" href="mailto:sproulphoto@gmail.com?subject=Mockup Request">Get a Free Mockup</a>
+<a class="btn btn-out" href="residential-nature-wall-art.html">Residential Artwork</a>
+</div>
+</div>
+<!-- Hero slideshow -->
+<div class="hero-img-wrap" id="heroSlideshow">
+<div class="hero-slide active">
+<img alt="Warm modern living room with large B&amp;W mountain reflection print by Dan Sproul — walnut frame white mat" src="warm modern living room mountain reflection mockup.jpg" style="object-position:center 30%"/>
+</div>
+<div class="hero-slide">
+<img alt="Bright modern living room with dreamy mountain light landscape print by Dan Sproul — black float frame above credenza" src="living room interior mockup framed mountain light.jpg" style="object-position:center 22%"/>
+</div>
+<div class="hero-slide">
+<img alt="Modern white living room with large B&amp;W mountains in clouds framed print by Dan Sproul — black frame above sofa" src="modern living room with framed mountains in clouds.jpg" style="object-position:center 20%"/>
+</div>
+<div class="hero-slide">
+<img alt="Modern healthcare lobby with large framed mountains in clouds landscape by Dan Sproul — black frame white mat" src="lobby framed mountains in clouds.jpg" style="object-position:center 25%"/>
+</div>
+<div class="hero-slide">
+<img alt="Luxury modern dining room with large framed dreamy Alaska landscape by Dan Sproul — black frame dramatic lighting" src="modern dining room framed dreamy alaska landscape dan sproul.jpg" style="object-position:center 20%"/>
+</div>
+<!-- Badge updates with JS -->
+<div class="hero-img-badge">
+<p class="hib-size" id="hib-size">Living Room · 36×48 or custom · Walnut frame</p>
+<p class="hib-title" id="hib-title">Mountain Reflection — B&amp;W</p>
+<a class="hib-shop" href="https://dansproul.com/featured/black-and-white-canadian-rockies-reflection-dan-sproul.html" target="_blank">Shop This Print →</a>
+</div>
+<!-- Arrows -->
+<button aria-label="Previous" class="slide-arrow slide-prev" onclick="slideMove(-1)">←</button>
+<button aria-label="Next" class="slide-arrow slide-next" onclick="slideMove(1)">→</button>
+<!-- Dots -->
+<div class="slide-dots" id="slideDots"></div>
+</div>
+</div>
+</div>
+<section aria-label="Start by room type" class="room-start-strip">
+<div class="room-start-inner">
+<div class="room-start-copy">
+<p class="sec-label">Start by Room</p>
+<h2>Browse the space closest to yours.</h2>
+<p>Choose a room type first, then compare scale, frame style, and mood before opening the exact print link.</p>
+</div>
+<div class="room-start-grid">
+<a href="#bedroom"><span>Bedroom</span><strong>Above the bed</strong></a>
+<a href="#living"><span>Living Room</span><strong>Above the sofa</strong></a>
+<a href="#entryway"><span>Entryway</span><strong>Vertical impact</strong></a>
+<a href="#office"><span>Office</span><strong>Professional calm</strong></a>
+<a href="#hospitality"><span>Hospitality</span><strong>Large installations</strong></a>
+<a href="#room-preview-tool"><span>Preview Tool</span><strong>Try your own room</strong></a>
+</div>
+</div>
 </section>
-
-<section class="residential-path" aria-label="Residential artwork guide">
-  <div class="residential-path-inner">
-    <div>
-      <p class="sec-label">For Homes &amp; Residential Interiors</p>
-      <h2>Choosing artwork for a <em>living room, bedroom, cabin, or lake house?</em></h2>
-      <p>The residential artwork guide organizes room mockups by home setting, with sizing, framing, format, and placement recommendations for individual print buyers and residential designers.</p>
-    </div>
-    <a href="residential-nature-wall-art.html" class="btn btn-solid">Explore Residential Artwork</a>
-  </div>
-</section>
-
 <!-- HOW TO USE banner -->
 <div class="how-banner">
-  <div class="how-item"><div class="how-icon">1</div>Browse by room type below</div>
-  <div class="how-item"><div class="how-icon">2</div>Click any image to view full size</div>
-  <div class="how-item"><div class="how-icon">3</div>Use size badges to guide your order</div>
-  <div class="how-item"><div class="how-icon">→</div><strong style="color:var(--off-white)">Shop This Look</strong>&nbsp;links to the exact print</div>
+<div class="how-item"><div class="how-icon">1</div>Browse by room type below</div>
+<div class="how-item"><div class="how-icon">2</div>Click any image to view full size</div>
+<div class="how-item"><div class="how-icon">3</div>Use size badges to guide your order</div>
+<div class="how-item"><div class="how-icon">→</div><strong style="color:var(--off-white)">Shop This Look</strong> links to the exact print</div>
 </div>
-
 <!-- FILTER NAV -->
 <nav class="filter-nav" role="tablist">
-  <button class="filter-btn active" onclick="filterTo('all',this)">All Rooms</button>
-  <button class="filter-btn" onclick="filterTo('bedroom',this)">Bedroom</button>
-  <button class="filter-btn" onclick="filterTo('living',this)">Living Room</button>
-  <button class="filter-btn" onclick="filterTo('entryway',this)">Entryway</button>
-  <button class="filter-btn" onclick="filterTo('dining',this)">Dining Room</button>
-  <button class="filter-btn" onclick="filterTo('office',this)">Office</button>
-  <button class="filter-btn" onclick="filterTo('hospitality',this)">Hospitality</button>
+<button class="filter-btn active" onclick="filterTo('all',this)">All Rooms</button>
+<button class="filter-btn" onclick="filterTo('bedroom',this)">Bedroom</button>
+<button class="filter-btn" onclick="filterTo('living',this)">Living Room</button>
+<button class="filter-btn" onclick="filterTo('entryway',this)">Entryway</button>
+<button class="filter-btn" onclick="filterTo('living',this)">Dining Room</button>
+<button class="filter-btn" onclick="filterTo('office',this)">Office</button>
+<button class="filter-btn" onclick="filterTo('hospitality',this)">Hospitality</button>
 </nav>
-
 <!-- ══════════════════════════════════════════
      BEDROOM
 ══════════════════════════════════════════ -->
-<section class="iys-section" id="bedroom" data-section="bedroom" style="background:var(--charcoal)">
-  <div class="sec-header">
-    <p class="sec-label">Bedroom</p>
-    <h2 class="sec-title">Above the Bed — <em>Calming Statement Pieces</em></h2>
-    <div class="sec-guidance">
-      <span class="guidance-pill">Best size: 30×40 to 40×60</span>
-      <span class="guidance-pill">Horizontal above bed</span>
-      <span class="guidance-pill">Vertical on accent wall</span>
-      <span class="guidance-pill">Muted tones or B&amp;W</span>
-    </div>
-    <p class="sec-feeling">"The right piece above the bed transforms a bedroom from a place you sleep into a place you want to be."</p>
-  </div>
-
-  <div class="feat-card" onclick="openLb('modern bedroom framed coastal oregon scene dan sproul.jpg','Coastal Oregon Scene — Dark Modern Bedroom · White Frame · 40×60 recommended','https://dansproul.com/featured/dreamy-cannon-beach-seastacks-from-ecola-state-park-dan-sproul.html')">
-    <img src="modern bedroom framed coastal oregon scene dan sproul.jpg" alt="Modern dark bedroom with framed coastal Oregon landscape by Dan Sproul — white frame above bed"/>
-    <div class="feat-bar">
-      <div class="feat-bar-top">
-        <div class="feat-bar-info">
-          <p class="feat-tag">Bedroom · Dark Modern · Above Bed</p>
-          <p class="feat-title">Coastal Oregon Scene</p>
-          <p class="feat-desc">White frame · Warm-dark interior · Landscape orientation · Oregon Coast</p>
-        </div>
-        <div class="feat-actions">
-          <span class="size-badge">30×40 — 40×60+</span>
-          <a href="https://dansproul.com/shop" target="_blank" class="shop-link" onclick="event.stopPropagation()">Shop This Look <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="mosaic mosaic-2" style="margin-bottom:3px">
-    <div class="m-card h-360" onclick="openLb('modern bedroom framed mountain reflection dan sproul.jpg','Mountain Reflection — Warm Neutral Bedroom · Walnut Frame · 30×40 recommended','https://dansproul.com/featured/moody-bow-lake-reflections-dan-sproul.html')">
-      <img src="modern bedroom framed mountain reflection dan sproul.jpg" alt="Warm neutral bedroom with framed mountain reflection canvas by Dan Sproul"/>
-      <div class="m-bar">
-        <p class="m-room">Bedroom · Warm Neutral</p>
-        <p class="m-title">Mountain Reflection</p>
-        <div class="m-bottom">
-          <span class="m-size">30×40 recommended · Walnut frame</span>
-          <a href="https://dansproul.com/shop" target="_blank" class="m-shop" onclick="event.stopPropagation()">Shop This Look →</a>
-        </div>
-      </div>
-    </div>
-    <div class="m-card h-360" onclick="openLb('modern bedroom framed waves dan sproul.jpg','Dramatic Waves — Modern Bedroom · B&W Canvas · Gold Frame · 36×48','https://dansproul.com/featured/yachats-oregon-black-and-white-stormy-coast-waves-dan-sproul.html')">
-      <img src="modern bedroom framed waves dan sproul.jpg" alt="Modern bedroom with dramatic B&W waves canvas by Dan Sproul — gold frame"/>
-      <div class="m-bar">
-        <p class="m-room">Bedroom · Contemporary B&amp;W</p>
-        <p class="m-title">Dramatic Waves</p>
-        <div class="m-bottom">
-          <span class="m-size">36×48 · Gold float frame</span>
-          <a href="https://dansproul.com/shop" target="_blank" class="m-shop" onclick="event.stopPropagation()">Shop This Look →</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="mosaic mosaic-2-1">
-    <div class="m-card h-360" onclick="openLb('hotel room framed mountain reflections alaska dan sproul.jpg','Alaska Mountain Reflections — Hotel Guest Room · White Frame · 24×36','https://dansproul.com/featured/denali-highway-lake-reflection-dan-sproul.html')">
-      <img src="hotel room framed mountain reflections alaska dan sproul.jpg" alt="Hotel guest room with framed Alaska mountain reflection by Dan Sproul — white frame"/>
-      <div class="m-bar">
-        <p class="m-room">Guest Room · Calm Blue Tones</p>
-        <p class="m-title">Alaska Mountain Reflections</p>
-        <div class="m-bottom">
-          <span class="m-size">24×36 · White frame</span>
-          <a href="https://dansproul.com/shop" target="_blank" class="m-shop" onclick="event.stopPropagation()">Shop →</a>
-        </div>
-      </div>
-    </div>
-    <div class="m-card h-300" onclick="openLb('modern bedroom framed garden of the gods.jpg','Garden of the Gods — Modern Bedroom · Black Frame · White Mat · 36×48','https://dansproul.com/featured/garden-of-the-gods-textured-landscape-dan-sproul.html')">
-      <img src="modern bedroom framed garden of the gods.jpg" alt="Modern bedroom with vibrant Garden of the Gods landscape by Dan Sproul — black frame white mat" style="object-position:center 25%"/>
-      <div class="m-bar">
-        <p class="m-room">Bedroom · Bold Color · Above Bed</p>
-        <p class="m-title">Garden of the Gods</p>
-        <div class="m-bottom">
-          <span class="m-size">36×48 · Black frame · White mat</span>
-          <a href="https://dansproul.com/shop" target="_blank" class="m-shop" onclick="event.stopPropagation()">Shop →</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="shop-section-strip">
-    <p class="sss-text">All bedroom prints available in <strong>canvas, metal, acrylic, and framed paper</strong> — any size from 8×10 to 60×40+.</p>
-    <a href="https://dansproul.com/shop" target="_blank" class="sss-link">Browse All Bedroom Prints →</a>
-  </div>
+<section class="iys-section" data-section="bedroom" id="bedroom" style="background:var(--charcoal)">
+<div class="sec-header">
+<p class="sec-label">Bedroom</p>
+<h2 class="sec-title">Above the Bed — <em>Calming Statement Pieces</em></h2>
+<div class="sec-guidance">
+<span class="guidance-pill">Best size: 30×40 to 40×60</span>
+<span class="guidance-pill">Horizontal above bed</span>
+<span class="guidance-pill">Vertical on accent wall</span>
+<span class="guidance-pill">Muted tones or B&amp;W</span>
+</div>
+<p class="sec-feeling">"The right piece above the bed transforms a bedroom from a place you sleep into a place you want to be."</p>
+</div>
+<div class="feat-card" onclick="openLb('modern bedroom framed coastal oregon scene dan sproul.jpg','Coastal Oregon Scene — Dark Modern Bedroom · White Frame · 40×60 recommended','https://dansproul.com/featured/dreamy-cannon-beach-seastacks-from-ecola-state-park-dan-sproul.html')">
+<img alt="Modern dark bedroom with framed coastal Oregon landscape by Dan Sproul — white frame above bed" src="modern bedroom framed coastal oregon scene dan sproul.jpg"/>
+<div class="feat-bar">
+<div class="feat-bar-top">
+<div class="feat-bar-info">
+<p class="feat-tag">Bedroom · Dark Modern · Above Bed</p>
+<p class="feat-title">Coastal Oregon Scene</p>
+<p class="feat-desc">White frame · Warm-dark interior · Landscape orientation · Oregon Coast</p>
+</div>
+<div class="feat-actions">
+<span class="size-badge">30×40 — 40×60+</span>
+<a class="shop-link" href="https://dansproul.com/featured/dreamy-cannon-beach-seastacks-from-ecola-state-park-dan-sproul.html" onclick="event.stopPropagation()" target="_blank">Shop This Look <svg viewbox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" x2="21" y1="14" y2="3"></line></svg></a>
+</div>
+</div>
+</div>
+</div>
+<div class="mosaic mosaic-2" style="margin-bottom:3px">
+<div class="m-card h-360" onclick="openLb('modern bedroom framed mountain reflection dan sproul.jpg','Mountain Reflection — Warm Neutral Bedroom · Walnut Frame · 30×40 recommended','https://dansproul.com/featured/moody-bow-lake-reflections-dan-sproul.html')">
+<img alt="Warm neutral bedroom with framed mountain reflection canvas by Dan Sproul" src="modern bedroom framed mountain reflection dan sproul.jpg"/>
+<div class="m-bar">
+<p class="m-room">Bedroom · Warm Neutral</p>
+<p class="m-title">Mountain Reflection</p>
+<div class="m-bottom">
+<span class="m-size">30×40 recommended · Walnut frame</span>
+<a class="m-shop" href="https://dansproul.com/featured/moody-bow-lake-reflections-dan-sproul.html" onclick="event.stopPropagation()" target="_blank">Shop This Look →</a>
+</div>
+</div>
+</div>
+<div class="m-card h-360" onclick="openLb('modern bedroom framed waves dan sproul.jpg','Dramatic Waves — Modern Bedroom · B&amp;W Canvas · Gold Frame · 36×48','https://dansproul.com/featured/yachats-oregon-black-and-white-stormy-coast-waves-dan-sproul.html')">
+<img alt="Modern bedroom with dramatic B&amp;W waves canvas by Dan Sproul — gold frame" src="modern bedroom framed waves dan sproul.jpg"/>
+<div class="m-bar">
+<p class="m-room">Bedroom · Contemporary B&amp;W</p>
+<p class="m-title">Dramatic Waves</p>
+<div class="m-bottom">
+<span class="m-size">36×48 · Gold float frame</span>
+<a class="m-shop" href="https://dansproul.com/featured/yachats-oregon-black-and-white-stormy-coast-waves-dan-sproul.html" onclick="event.stopPropagation()" target="_blank">Shop This Look →</a>
+</div>
+</div>
+</div>
+</div>
+<div class="mosaic mosaic-2-1">
+<div class="m-card h-360" onclick="openLb('hotel room framed mountain reflections alaska dan sproul.jpg','Alaska Mountain Reflections — Hotel Guest Room · White Frame · 24×36','https://dansproul.com/featured/denali-highway-lake-reflection-dan-sproul.html')">
+<img alt="Hotel guest room with framed Alaska mountain reflection by Dan Sproul — white frame" src="hotel room framed mountain reflections alaska dan sproul.jpg"/>
+<div class="m-bar">
+<p class="m-room">Guest Room · Calm Blue Tones</p>
+<p class="m-title">Alaska Mountain Reflections</p>
+<div class="m-bottom">
+<span class="m-size">24×36 · White frame</span>
+<a class="m-shop" href="https://dansproul.com/featured/denali-highway-lake-reflection-dan-sproul.html" onclick="event.stopPropagation()" target="_blank">Shop →</a>
+</div>
+</div>
+</div>
+<div class="m-card h-300" onclick="openLb('modern bedroom framed garden of the gods.jpg','Garden of the Gods — Modern Bedroom · Black Frame · White Mat · 36×48','https://dansproul.com/featured/garden-of-the-gods-textured-landscape-dan-sproul.html')">
+<img alt="Modern bedroom with vibrant Garden of the Gods landscape by Dan Sproul — black frame white mat" src="modern bedroom framed garden of the gods.jpg" style="object-position:center 25%"/>
+<div class="m-bar">
+<p class="m-room">Bedroom · Bold Color · Above Bed</p>
+<p class="m-title">Garden of the Gods</p>
+<div class="m-bottom">
+<span class="m-size">36×48 · Black frame · White mat</span>
+<a class="m-shop" href="https://dansproul.com/featured/garden-of-the-gods-textured-landscape-dan-sproul.html" onclick="event.stopPropagation()" target="_blank">Shop →</a>
+</div>
+</div>
+</div>
+</div>
+<div class="shop-section-strip">
+<p class="sss-text">All bedroom prints available in <strong>canvas, metal, acrylic, and framed paper</strong> — any size from 8×10 to 60×40+.</p>
+<a class="sss-link" href="https://dansproul.com/shop" target="_blank">Browse All Bedroom Prints →</a>
+</div>
 </section>
-
 <div class="divider"><hr/></div>
-
 <!-- ══════════════════════════════════════════
      LIVING ROOM
 ══════════════════════════════════════════ -->
-<section class="iys-section" id="living" data-section="living" style="background:var(--surface-2)">
-  <div class="sec-header">
-    <p class="sec-label">Living Room</p>
-    <h2 class="sec-title">Above the Sofa — <em>Statement Walls</em></h2>
-    <div class="sec-guidance">
-      <span class="guidance-pill">Best size: 36×48 to 60×40</span>
-      <span class="guidance-pill">Horizontal landscape</span>
-      <span class="guidance-pill">Rule of thumb: 2/3 sofa width</span>
-      <span class="guidance-pill">Neutral or coastal palettes</span>
-    </div>
-    <p class="sec-feeling">"A large horizontal piece above the sofa anchors the entire room — it's the single highest-impact art placement in any home."</p>
-  </div>
-
-  <div class="feat-card" onclick="openLb('modern living room framed maine lake.jpg','Maine Lake — Modern Living Room · Black Frame · White Mat · 36×48+','https://dansproul.com/featured/mount-katahdin-in-fall-from-abol-bridge-dan-sproul.html')">
-    <img src="modern living room framed maine lake.jpg" alt="Modern neutral living room with framed Maine lake autumn landscape by Dan Sproul — black frame above sofa" style="object-position:center 15%"/>
-    <div class="feat-bar">
-      <div class="feat-bar-top">
-        <div class="feat-bar-info">
-          <p class="feat-tag">Living Room · Modern Neutral · Above Sofa</p>
-          <p class="feat-title">Maine Lake — Autumn Reflection</p>
-          <p class="feat-desc">Black frame · White mat · Soft fall color palette · Pairs with neutral and warm interiors</p>
-        </div>
-        <div class="feat-actions">
-          <span class="size-badge">36×48 — 60×40+</span>
-          <a href="https://dansproul.com/shop" target="_blank" class="shop-link" onclick="event.stopPropagation()">Shop This Look <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="mosaic mosaic-3" style="margin-top:3px;margin-bottom:3px">
-    <div class="m-card h-300" onclick="openLb('modern living room framed coastal scene dan sproul.jpg','Oregon Coast Cliffs — Living Room · Black Float Frame · 40×60','https://dansproul.com/featured/dramatic-coastal-cliff-yaquina-head-oregon-dan-sproul.html')">
-      <img src="modern living room framed coastal scene dan sproul.jpg" alt="Modern living room with Oregon coast cliffs framed print"/>
-      <div class="m-bar">
-        <p class="m-room">Living Room · Contemporary</p>
-        <p class="m-title">Oregon Coast Cliffs</p>
-        <div class="m-bottom"><span class="m-size">40×60 · Black float frame</span><a href="https://dansproul.com/shop" target="_blank" class="m-shop" onclick="event.stopPropagation()">Shop →</a></div>
-      </div>
-    </div>
-    <div class="m-card h-300" onclick="openLb('modern living room interior pier sunset dan sproul.jpg','Pier Sunset — Warm Living Room · Walnut & Gold Frame · 24×36 portrait','https://dansproul.com/featured/okaloosa-pier-pastel-sunrise-dan-sproul.html')">
-      <img src="modern living room interior pier sunset dan sproul.jpg" alt="Warm living room with pier sunset portrait framed print"/>
-      <div class="m-bar">
-        <p class="m-room">Living Room · Warm · Portrait</p>
-        <p class="m-title">Pier Sunset</p>
-        <div class="m-bottom"><span class="m-size">24×36 portrait · Walnut &amp; gold</span><a href="https://dansproul.com/shop" target="_blank" class="m-shop" onclick="event.stopPropagation()">Shop →</a></div>
-      </div>
-    </div>
-    <div class="m-card h-300" onclick="openLb('modern dining room framed dreamy alaska landscape dan sproul.jpg','Dreamy Alaska Landscape — Dining Room · Black Frame · 30×40','https://dansproul.com/featured/turnagain-arm-alaska-dreamy-landscape-dan-sproul.html')">
-      <img src="modern dining room framed dreamy alaska landscape dan sproul.jpg" alt="Modern dining room with dreamy Alaska landscape"/>
-      <div class="m-bar">
-        <p class="m-room">Dining Room · Moody</p>
-        <p class="m-title">Dreamy Alaska Landscape</p>
-        <div class="m-bottom"><span class="m-size">30×40 · Black frame</span><a href="https://dansproul.com/shop" target="_blank" class="m-shop" onclick="event.stopPropagation()">Shop →</a></div>
-      </div>
-    </div>
-  </div>
-  <div class="shop-section-strip">
-    <p class="sss-text"><strong>Sizing tip:</strong> For above the sofa, aim for a piece that's about two-thirds the sofa width. A 60-inch sofa works well with a 36–40 inch wide print.</p>
-    <a href="mailto:sproulphoto@gmail.com?subject=Mockup Request" class="sss-link">Get a Free Room Mockup →</a>
-  </div>
+<section class="iys-section" data-section="living" id="living" style="background:var(--surface-2)">
+<div class="sec-header">
+<p class="sec-label">Living Room</p>
+<h2 class="sec-title">Above the Sofa — <em>Statement Walls</em></h2>
+<div class="sec-guidance">
+<span class="guidance-pill">Best size: 36×48 to 60×40</span>
+<span class="guidance-pill">Horizontal landscape</span>
+<span class="guidance-pill">Rule of thumb: 2/3 sofa width</span>
+<span class="guidance-pill">Neutral or coastal palettes</span>
+</div>
+<p class="sec-feeling">"A large horizontal piece above the sofa anchors the entire room — it's the single highest-impact art placement in any home."</p>
+</div>
+<div class="feat-card" onclick="openLb('modern living room framed maine lake.jpg','Maine Lake — Modern Living Room · Black Frame · White Mat · 36×48+','https://dansproul.com/featured/mount-katahdin-in-fall-from-abol-bridge-dan-sproul.html')">
+<img alt="Modern neutral living room with framed Maine lake autumn landscape by Dan Sproul — black frame above sofa" src="modern living room framed maine lake.jpg" style="object-position:center 15%"/>
+<div class="feat-bar">
+<div class="feat-bar-top">
+<div class="feat-bar-info">
+<p class="feat-tag">Living Room · Modern Neutral · Above Sofa</p>
+<p class="feat-title">Maine Lake — Autumn Reflection</p>
+<p class="feat-desc">Black frame · White mat · Soft fall color palette · Pairs with neutral and warm interiors</p>
+</div>
+<div class="feat-actions">
+<span class="size-badge">36×48 — 60×40+</span>
+<a class="shop-link" href="https://dansproul.com/featured/mount-katahdin-in-fall-from-abol-bridge-dan-sproul.html" onclick="event.stopPropagation()" target="_blank">Shop This Look <svg viewbox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" x2="21" y1="14" y2="3"></line></svg></a>
+</div>
+</div>
+</div>
+</div>
+<div class="mosaic mosaic-3" style="margin-top:3px;margin-bottom:3px">
+<div class="m-card h-300" onclick="openLb('modern living room framed coastal scene dan sproul.jpg','Oregon Coast Cliffs — Living Room · Black Float Frame · 40×60','https://dansproul.com/featured/dramatic-coastal-cliff-yaquina-head-oregon-dan-sproul.html')">
+<img alt="Modern living room with Oregon coast cliffs framed print" src="modern living room framed coastal scene dan sproul.jpg"/>
+<div class="m-bar">
+<p class="m-room">Living Room · Contemporary</p>
+<p class="m-title">Oregon Coast Cliffs</p>
+<div class="m-bottom"><span class="m-size">40×60 · Black float frame</span><a class="m-shop" href="https://dansproul.com/featured/dramatic-coastal-cliff-yaquina-head-oregon-dan-sproul.html" onclick="event.stopPropagation()" target="_blank">Shop →</a></div>
+</div>
+</div>
+<div class="m-card h-300" onclick="openLb('modern living room interior pier sunset dan sproul.jpg','Pier Sunset — Warm Living Room · Walnut &amp; Gold Frame · 24×36 portrait','https://dansproul.com/featured/okaloosa-pier-pastel-sunrise-dan-sproul.html')">
+<img alt="Warm living room with pier sunset portrait framed print" src="modern living room interior pier sunset dan sproul.jpg"/>
+<div class="m-bar">
+<p class="m-room">Living Room · Warm · Portrait</p>
+<p class="m-title">Pier Sunset</p>
+<div class="m-bottom"><span class="m-size">24×36 portrait · Walnut &amp; gold</span><a class="m-shop" href="https://dansproul.com/featured/okaloosa-pier-pastel-sunrise-dan-sproul.html" onclick="event.stopPropagation()" target="_blank">Shop →</a></div>
+</div>
+</div>
+<div class="m-card h-300" onclick="openLb('modern dining room framed dreamy alaska landscape dan sproul.jpg','Dreamy Alaska Landscape — Dining Room · Black Frame · 30×40','https://dansproul.com/featured/turnagain-arm-alaska-dreamy-landscape-dan-sproul.html')">
+<img alt="Modern dining room with dreamy Alaska landscape" src="modern dining room framed dreamy alaska landscape dan sproul.jpg"/>
+<div class="m-bar">
+<p class="m-room">Dining Room · Moody</p>
+<p class="m-title">Dreamy Alaska Landscape</p>
+<div class="m-bottom"><span class="m-size">30×40 · Black frame</span><a class="m-shop" href="https://dansproul.com/featured/turnagain-arm-alaska-dreamy-landscape-dan-sproul.html" onclick="event.stopPropagation()" target="_blank">Shop →</a></div>
+</div>
+</div>
+</div>
+<div class="shop-section-strip">
+<p class="sss-text"><strong>Sizing tip:</strong> For above the sofa, aim for a piece that's about two-thirds the sofa width. A 60-inch sofa works well with a 36–40 inch wide print.</p>
+<a class="sss-link" href="mailto:sproulphoto@gmail.com?subject=Mockup Request">Get a Free Room Mockup →</a>
+</div>
 </section>
-
 <div class="divider"><hr/></div>
-
 <!-- ══════════════════════════════════════════
      ENTRYWAY
 ══════════════════════════════════════════ -->
-<section class="iys-section" id="entryway" data-section="entryway" style="background:var(--charcoal)">
-  <div class="sec-header">
-    <p class="sec-label">Entryway &amp; Foyer</p>
-    <h2 class="sec-title">First Impressions — <em>Bold Verticals</em></h2>
-    <div class="sec-guidance">
-      <span class="guidance-pill">Best: tall vertical or large square</span>
-      <span class="guidance-pill">20×30 to 30×40 vertical</span>
-      <span class="guidance-pill">B&amp;W for drama</span>
-      <span class="guidance-pill">One strong piece beats a gallery wall</span>
-    </div>
-    <p class="sec-feeling">"The entryway is your home's first word. One strong vertical piece does more than a wall full of small frames."</p>
-  </div>
-
-  <div class="mosaic mosaic-1-2" style="margin-bottom:3px">
-    <div class="m-card h-420" onclick="openLb('modern entryway beach path dan sproul.jpg','Beach Path — Modern Entryway · Walnut Float Frame · Large Square 36×36','https://dansproul.com/featured/path-to-the-beach-cape-san-blas-dan-sproul.html')">
-      <img src="modern entryway beach path dan sproul.jpg" alt="Modern entryway with large square beach path framed print — walnut float frame"/>
-      <div class="m-bar">
-        <p class="m-room">Entryway · Modern Coastal</p>
-        <p class="m-title">Beach Path</p>
-        <div class="m-bottom"><span class="m-size">Large square · 36×36 · Walnut float</span><a href="https://dansproul.com/shop" target="_blank" class="m-shop" onclick="event.stopPropagation()">Shop →</a></div>
-      </div>
-    </div>
-    <div class="m-card h-420" onclick="openLb('modern entryway framed waterfall dan sproul.jpg','Spring Waterfall — Modern Entryway · Gold Float Frame · 24×36 vertical','https://dansproul.com/featured/roaring-fork-motor-nature-trail-cascades-dan-sproul.html')">
-      <img src="modern entryway framed waterfall dan sproul.jpg" alt="Modern entryway with B&W foggy lake framed print — gold float frame"/>
-      <div class="m-bar">
-        <p class="m-room">Entryway · Minimal Modern · B&amp;W</p>
-        <p class="m-title">Foggy Lake — B&amp;W</p>
-        <div class="m-bottom"><span class="m-size">24×36 vertical · Gold float</span><a href="https://dansproul.com/shop" target="_blank" class="m-shop" onclick="event.stopPropagation()">Shop →</a></div>
-      </div>
-    </div>
-  </div>
-  <div class="shop-section-strip">
-    <p class="sss-text"><strong>Entryway tip:</strong> Vertical pieces work best in narrow foyers. For wide entryways or feature walls, a large square at 36×36 or bigger makes the strongest statement.</p>
-    <a href="https://dansproul.com/shop" target="_blank" class="sss-link">Browse Vertical Prints →</a>
-  </div>
+<section class="iys-section" data-section="entryway" id="entryway" style="background:var(--charcoal)">
+<div class="sec-header">
+<p class="sec-label">Entryway &amp; Foyer</p>
+<h2 class="sec-title">First Impressions — <em>Bold Verticals</em></h2>
+<div class="sec-guidance">
+<span class="guidance-pill">Best: tall vertical or large square</span>
+<span class="guidance-pill">20×30 to 30×40 vertical</span>
+<span class="guidance-pill">B&amp;W for drama</span>
+<span class="guidance-pill">One strong piece beats a gallery wall</span>
+</div>
+<p class="sec-feeling">"The entryway is your home's first word. One strong vertical piece does more than a wall full of small frames."</p>
+</div>
+<div class="mosaic mosaic-1-2" style="margin-bottom:3px">
+<div class="m-card h-420" onclick="openLb('modern entryway beach path dan sproul.jpg','Beach Path — Modern Entryway · Walnut Float Frame · Large Square 36×36','https://dansproul.com/featured/path-to-the-beach-cape-san-blas-dan-sproul.html')">
+<img alt="Modern entryway with large square beach path framed print — walnut float frame" src="modern entryway beach path dan sproul.jpg"/>
+<div class="m-bar">
+<p class="m-room">Entryway · Modern Coastal</p>
+<p class="m-title">Beach Path</p>
+<div class="m-bottom"><span class="m-size">Large square · 36×36 · Walnut float</span><a class="m-shop" href="https://dansproul.com/featured/path-to-the-beach-cape-san-blas-dan-sproul.html" onclick="event.stopPropagation()" target="_blank">Shop →</a></div>
+</div>
+</div>
+<div class="m-card h-420" onclick="openLb('modern entryway framed waterfall dan sproul.jpg','Spring Waterfall — Modern Entryway · Gold Float Frame · 24×36 vertical','https://dansproul.com/featured/roaring-fork-motor-nature-trail-cascades-dan-sproul.html')">
+<img alt="Modern entryway with B&amp;W foggy lake framed print — gold float frame" src="modern entryway framed waterfall dan sproul.jpg"/>
+<div class="m-bar">
+<p class="m-room">Entryway · Minimal Modern · B&amp;W</p>
+<p class="m-title">Foggy Lake — B&amp;W</p>
+<div class="m-bottom"><span class="m-size">24×36 vertical · Gold float</span><a class="m-shop" href="https://dansproul.com/featured/roaring-fork-motor-nature-trail-cascades-dan-sproul.html" onclick="event.stopPropagation()" target="_blank">Shop →</a></div>
+</div>
+</div>
+</div>
+<div class="shop-section-strip">
+<p class="sss-text"><strong>Entryway tip:</strong> Vertical pieces work best in narrow foyers. For wide entryways or feature walls, a large square at 36×36 or bigger makes the strongest statement.</p>
+<a class="sss-link" href="https://dansproul.com/shop" target="_blank">Browse Vertical Prints →</a>
+</div>
 </section>
-
 <div class="divider"><hr/></div>
-
 <!-- ══════════════════════════════════════════
      OFFICE
 ══════════════════════════════════════════ -->
-<section class="iys-section" id="office" data-section="office" style="background:var(--surface-2)">
-  <div class="sec-header">
-    <p class="sec-label">Office &amp; Workspace</p>
-    <h2 class="sec-title">Grounding Views — <em>Art That Earns Its Place</em></h2>
-    <div class="sec-guidance">
-      <span class="guidance-pill">Best: 30×40 to 40×60 horizontal</span>
-      <span class="guidance-pill">Mountains &amp; open landscapes</span>
-      <span class="guidance-pill">B&amp;W for professional settings</span>
-      <span class="guidance-pill">Hang at eye level, centered behind desk</span>
-    </div>
-    <p class="sec-feeling">"Research shows nature imagery in workspaces reduces stress and improves focus. The right landscape behind a desk isn't decoration — it's a tool."</p>
-  </div>
-
-  <div class="feat-card" onclick="openLb('large framed mountain scene in modern office sunlit.jpg','Mountain Scene — Corporate Office · Black Float Frame · 40×60 recommended','https://dansproul.com/featured/canadian-rockies-snow-capped-mountain-landscape-dan-sproul.html')">
-    <img src="large framed mountain scene in modern office sunlit.jpg" alt="Sunlit corporate office with large framed mountain scene by Dan Sproul — black float frame"/>
-    <div class="feat-bar">
-      <div class="feat-bar-top">
-        <div class="feat-bar-info">
-          <p class="feat-tag">Corporate Office · Executive · Statement</p>
-          <p class="feat-title">Mountain Scene — Large Format</p>
-          <p class="feat-desc">Black float frame · Centered behind desk · Sunlit modern office</p>
-        </div>
-        <div class="feat-actions">
-          <span class="size-badge">40×60 recommended</span>
-          <a href="https://dansproul.com/shop" target="_blank" class="shop-link" onclick="event.stopPropagation()">Shop This Look <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="mosaic mosaic-3" style="margin-top:3px">
-    <div class="m-card h-300" onclick="openLb('corporate office waiting room framed black and white landscapes.jpg','B&W Landscape Diptych — Corporate Waiting Room · Walnut Frame · Two 20×30 pieces','https://dansproul.com/art/canadian+rockies+black+and+white')">
-      <img src="corporate office waiting room framed black and white landscapes.jpg" alt="Corporate waiting room with B&W landscape diptych by Dan Sproul"/>
-      <div class="m-bar">
-        <p class="m-room">Corporate · Waiting Room · Diptych</p>
-        <p class="m-title">B&amp;W Landscape Diptych</p>
-        <div class="m-bottom"><span class="m-size">Two 20×30 pieces · Walnut frame</span><a href="https://dansproul.com/shop" target="_blank" class="m-shop" onclick="event.stopPropagation()">Shop →</a></div>
-      </div>
-    </div>
-    <div class="m-card h-300" onclick="openLb('home office statement piece michigan bridge at night.jpg','Michigan Bridge at Night — Home Office · Black Float Frame · 30×40','https://dansproul.com/featured/colors-of-big-mac-at-night-dan-sproul.html')">
-      <img src="home office statement piece michigan bridge at night.jpg" alt="Home office with Michigan bridge at night statement piece by Dan Sproul — black float frame" style="object-position:center 20%"/>
-      <div class="m-bar">
-        <p class="m-room">Home Office · Bold Color</p>
-        <p class="m-title">Michigan Bridge at Night</p>
-        <div class="m-bottom"><span class="m-size">30×40 · Black float frame</span><a href="https://dansproul.com/shop" target="_blank" class="m-shop" onclick="event.stopPropagation()">Shop →</a></div>
-      </div>
-    </div>
-    <div class="m-card h-300" onclick="openLb('office reception area framed beach dan sproul.jpg','Aerial Beach — Corporate Reception · Dark Float Frame · 24×36 portrait','https://dansproul.com/featured/beautiful-florida-beach-waves-vertical-dan-sproul.html')">
-      <img src="office reception area framed beach dan sproul.jpg" alt="Corporate reception area with framed aerial beach photograph" style="object-position:center 20%"/>
-      <div class="m-bar">
-        <p class="m-room">Corporate Reception · Feature Wall</p>
-        <p class="m-title">Aerial Beach</p>
-        <div class="m-bottom"><span class="m-size">24×36 portrait · Dark float</span><a href="https://dansproul.com/shop" target="_blank" class="m-shop" onclick="event.stopPropagation()">Shop →</a></div>
-      </div>
-    </div>
-  </div>
-  <div class="shop-section-strip">
-    <p class="sss-text"><strong>Corporate orders:</strong> Multi-piece and multi-site installations available. Trade pricing for designers and procurement teams.</p>
-    <a href="for-designers.html" class="sss-link">Commercial &amp; Trade Pricing →</a>
-  </div>
+<section class="iys-section" data-section="office" id="office" style="background:var(--surface-2)">
+<div class="sec-header">
+<p class="sec-label">Office &amp; Workspace</p>
+<h2 class="sec-title">Grounding Views — <em>Art That Earns Its Place</em></h2>
+<div class="sec-guidance">
+<span class="guidance-pill">Best: 30×40 to 40×60 horizontal</span>
+<span class="guidance-pill">Mountains &amp; open landscapes</span>
+<span class="guidance-pill">B&amp;W for professional settings</span>
+<span class="guidance-pill">Hang at eye level, centered behind desk</span>
+</div>
+<p class="sec-feeling">"Research shows nature imagery in workspaces reduces stress and improves focus. The right landscape behind a desk isn't decoration — it's a tool."</p>
+</div>
+<div class="feat-card" onclick="openLb('large framed mountain scene in modern office sunlit.jpg','Mountain Scene — Corporate Office · Black Float Frame · 40×60 recommended','https://dansproul.com/featured/canadian-rockies-snow-capped-mountain-landscape-dan-sproul.html')">
+<img alt="Sunlit corporate office with large framed mountain scene by Dan Sproul — black float frame" src="large framed mountain scene in modern office sunlit.jpg"/>
+<div class="feat-bar">
+<div class="feat-bar-top">
+<div class="feat-bar-info">
+<p class="feat-tag">Corporate Office · Executive · Statement</p>
+<p class="feat-title">Mountain Scene — Large Format</p>
+<p class="feat-desc">Black float frame · Centered behind desk · Sunlit modern office</p>
+</div>
+<div class="feat-actions">
+<span class="size-badge">40×60 recommended</span>
+<a class="shop-link" href="https://dansproul.com/featured/canadian-rockies-snow-capped-mountain-landscape-dan-sproul.html" onclick="event.stopPropagation()" target="_blank">Shop This Look <svg viewbox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" x2="21" y1="14" y2="3"></line></svg></a>
+</div>
+</div>
+</div>
+</div>
+<div class="mosaic mosaic-3" style="margin-top:3px">
+<div class="m-card h-300" onclick="openLb('corporate office waiting room framed black and white landscapes.jpg','B&amp;W Landscape Diptych — Corporate Waiting Room · Walnut Frame · Two 20×30 pieces','https://dansproul.com/art/canadian+rockies+black+and+white')">
+<img alt="Corporate waiting room with B&amp;W landscape diptych by Dan Sproul" src="corporate office waiting room framed black and white landscapes.jpg"/>
+<div class="m-bar">
+<p class="m-room">Corporate · Waiting Room · Diptych</p>
+<p class="m-title">B&amp;W Landscape Diptych</p>
+<div class="m-bottom"><span class="m-size">Two 20×30 pieces · Walnut frame</span><a class="m-shop" href="https://dansproul.com/art/canadian+rockies+black+and+white" onclick="event.stopPropagation()" target="_blank">Shop →</a></div>
+</div>
+</div>
+<div class="m-card h-300" onclick="openLb('home office statement piece michigan bridge at night.jpg','Michigan Bridge at Night — Home Office · Black Float Frame · 30×40','https://dansproul.com/featured/colors-of-big-mac-at-night-dan-sproul.html')">
+<img alt="Home office with Michigan bridge at night statement piece by Dan Sproul — black float frame" src="home office statement piece michigan bridge at night.jpg" style="object-position:center 20%"/>
+<div class="m-bar">
+<p class="m-room">Home Office · Bold Color</p>
+<p class="m-title">Michigan Bridge at Night</p>
+<div class="m-bottom"><span class="m-size">30×40 · Black float frame</span><a class="m-shop" href="https://dansproul.com/featured/colors-of-big-mac-at-night-dan-sproul.html" onclick="event.stopPropagation()" target="_blank">Shop →</a></div>
+</div>
+</div>
+<div class="m-card h-300" onclick="openLb('office reception area framed beach dan sproul.jpg','Aerial Beach — Corporate Reception · Dark Float Frame · 24×36 portrait','https://dansproul.com/featured/beautiful-florida-beach-waves-vertical-dan-sproul.html')">
+<img alt="Corporate reception area with framed aerial beach photograph" src="office reception area framed beach dan sproul.jpg" style="object-position:center 20%"/>
+<div class="m-bar">
+<p class="m-room">Corporate Reception · Feature Wall</p>
+<p class="m-title">Aerial Beach</p>
+<div class="m-bottom"><span class="m-size">24×36 portrait · Dark float</span><a class="m-shop" href="https://dansproul.com/featured/beautiful-florida-beach-waves-vertical-dan-sproul.html" onclick="event.stopPropagation()" target="_blank">Shop →</a></div>
+</div>
+</div>
+</div>
+<div class="shop-section-strip">
+<p class="sss-text"><strong>Corporate orders:</strong> Multi-piece and multi-site installations available. Trade pricing for designers and procurement teams.</p>
+<a class="sss-link" href="for-designers.html">Commercial &amp; Trade Pricing →</a>
+</div>
 </section>
-
 <div class="divider"><hr/></div>
-
 <!-- ══════════════════════════════════════════
      HOSPITALITY
 ══════════════════════════════════════════ -->
-<section class="iys-section" id="hospitality" data-section="hospitality" style="background:var(--charcoal)">
-  <div class="sec-header">
-    <p class="sec-label">Hospitality &amp; Commercial</p>
-    <h2 class="sec-title">Hotels &amp; Lobbies — <em>Multi-Piece Installations</em></h2>
-    <div class="sec-guidance">
-      <span class="guidance-pill">Custom sizing on all images</span>
-      <span class="guidance-pill">Multi-piece &amp; triptych programs</span>
-      <span class="guidance-pill">Trade pricing available</span>
-      <span class="guidance-pill">Drury Inn · Wexner Medical Center OSU</span>
-    </div>
-    <p class="sec-feeling">"Installed at Drury Inn Hotels and the Wexner Medical Center at Ohio State — artwork at hospitality scale, delivered ready to hang."</p>
-  </div>
-
-  <div class="feat-card" onclick="openLb('Waterfall_Series_Hospitality_Concept_DanSproul.jpg','Waterfall Series — Three-Piece Hotel Lobby Installation · Custom sizing','https://dansproul.com/art/waterfalls')">
-    <img src="Waterfall_Series_Hospitality_Concept_DanSproul.jpg" alt="Three-piece waterfall series in luxury hotel lobby — large format framed prints by Dan Sproul" style="object-position:center 20%"/>
-    <div class="feat-bar">
-      <div class="feat-bar-top">
-        <div class="feat-bar-info">
-          <p class="feat-tag">Hotel Lobby · Three-Piece Installation</p>
-          <p class="feat-title">Waterfall Series</p>
-          <p class="feat-desc">Large-format framed prints · Uniform sizing · Trade pricing for multi-piece orders</p>
-        </div>
-        <div class="feat-actions">
-          <span class="size-badge">Custom sizing</span>
-          <a href="for-designers.html" class="shop-link" onclick="event.stopPropagation()">Trade Pricing <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="mosaic mosaic-2" style="margin-top:3px">
-    <div class="m-card h-360" onclick="openLb('hotel lobby framed art badlands sunrise.jpg','Badlands Sunrise — Hotel Lobby · Large Format Canvas · 48×60+','https://dansproul.com/featured/badlands-national-park-south-dakota-sunrise-golden-light-landscape-dan-sproul.html')">
-      <img src="hotel lobby framed art badlands sunrise.jpg" alt="Hotel lobby with large format Badlands sunrise canvas by Dan Sproul" style="object-position:center 30%"/>
-      <div class="m-bar">
-        <p class="m-room">Hotel Lobby · Statement Piece</p>
-        <p class="m-title">Badlands Sunrise</p>
-        <div class="m-bottom"><span class="m-size">48×60+ · Large format canvas</span><a href="https://dansproul.com/shop" target="_blank" class="m-shop" onclick="event.stopPropagation()">Shop →</a></div>
-      </div>
-    </div>
-    <div class="m-card h-360" onclick="openLb('modern office interior linear sand dan sproul.jpg','Linear Sand Dunes — Modern Office Lobby · Black Frame · 40×60','https://dansproul.com/featured/sand-lines-jockeys-ridge-state-park-dan-sproul.html')">
-      <img src="modern office interior linear sand dan sproul.jpg" alt="Modern corporate office lobby with framed linear sand dunes photograph by Dan Sproul — large format black frame" style="object-position:center 25%"/>
-      <div class="m-bar">
-        <p class="m-room">Office Lobby · Minimal · Warm Tones</p>
-        <p class="m-title">Linear Sand Dunes</p>
-        <div class="m-bottom"><span class="m-size">40×60 · Black frame · Custom sizing</span><a href="https://dansproul.com/shop" target="_blank" class="m-shop" onclick="event.stopPropagation()">Shop →</a></div>
-      </div>
-    </div>
-  </div>
-  <div class="shop-section-strip">
-    <p class="sss-text">Working on a commercial project? <strong>Multi-piece programs, licensing, and custom sizing</strong> available for hospitality and commercial installations.</p>
-    <a href="for-designers.html" class="sss-link">Download the Spec Sheet →</a>
-  </div>
+<section class="iys-section" data-section="hospitality" id="hospitality" style="background:var(--charcoal)">
+<div class="sec-header">
+<p class="sec-label">Hospitality &amp; Commercial</p>
+<h2 class="sec-title">Hotels &amp; Lobbies — <em>Multi-Piece Installations</em></h2>
+<div class="sec-guidance">
+<span class="guidance-pill">Custom sizing on all images</span>
+<span class="guidance-pill">Multi-piece &amp; triptych programs</span>
+<span class="guidance-pill">Trade pricing available</span>
+<span class="guidance-pill">Drury Inn · Wexner Medical Center OSU</span>
+</div>
+<p class="sec-feeling">"Installed at Drury Inn Hotels and the Wexner Medical Center at Ohio State — artwork at hospitality scale, delivered ready to hang."</p>
+</div>
+<div class="feat-card" onclick="openLb('Waterfall_Series_Hospitality_Concept_DanSproul.jpg','Waterfall Series — Three-Piece Hotel Lobby Installation · Custom sizing','https://dansproul.com/art/waterfalls')">
+<img alt="Three-piece waterfall series in luxury hotel lobby — large format framed prints by Dan Sproul" src="Waterfall_Series_Hospitality_Concept_DanSproul.jpg" style="object-position:center 20%"/>
+<div class="feat-bar">
+<div class="feat-bar-top">
+<div class="feat-bar-info">
+<p class="feat-tag">Hotel Lobby · Three-Piece Installation</p>
+<p class="feat-title">Waterfall Series</p>
+<p class="feat-desc">Large-format framed prints · Uniform sizing · Trade pricing for multi-piece orders</p>
+</div>
+<div class="feat-actions">
+<span class="size-badge">Custom sizing</span>
+<a class="shop-link" href="for-designers.html" onclick="event.stopPropagation()">Trade Pricing <svg viewbox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" x2="21" y1="14" y2="3"></line></svg></a>
+</div>
+</div>
+</div>
+</div>
+<div class="mosaic mosaic-2" style="margin-top:3px">
+<div class="m-card h-360" onclick="openLb('hotel lobby framed art badlands sunrise.jpg','Badlands Sunrise — Hotel Lobby · Large Format Canvas · 48×60+','https://dansproul.com/featured/badlands-national-park-south-dakota-sunrise-golden-light-landscape-dan-sproul.html')">
+<img alt="Hotel lobby with large format Badlands sunrise canvas by Dan Sproul" src="hotel lobby framed art badlands sunrise.jpg" style="object-position:center 30%"/>
+<div class="m-bar">
+<p class="m-room">Hotel Lobby · Statement Piece</p>
+<p class="m-title">Badlands Sunrise</p>
+<div class="m-bottom"><span class="m-size">48×60+ · Large format canvas</span><a class="m-shop" href="https://dansproul.com/featured/badlands-national-park-south-dakota-sunrise-golden-light-landscape-dan-sproul.html" onclick="event.stopPropagation()" target="_blank">Shop →</a></div>
+</div>
+</div>
+<div class="m-card h-360" onclick="openLb('modern office interior linear sand dan sproul.jpg','Linear Sand Dunes — Modern Office Lobby · Black Frame · 40×60','https://dansproul.com/featured/sand-lines-jockeys-ridge-state-park-dan-sproul.html')">
+<img alt="Modern corporate office lobby with framed linear sand dunes photograph by Dan Sproul — large format black frame" src="modern office interior linear sand dan sproul.jpg" style="object-position:center 25%"/>
+<div class="m-bar">
+<p class="m-room">Office Lobby · Minimal · Warm Tones</p>
+<p class="m-title">Linear Sand Dunes</p>
+<div class="m-bottom"><span class="m-size">40×60 · Black frame · Custom sizing</span><a class="m-shop" href="https://dansproul.com/featured/sand-lines-jockeys-ridge-state-park-dan-sproul.html" onclick="event.stopPropagation()" target="_blank">Shop →</a></div>
+</div>
+</div>
+</div>
+<div class="shop-section-strip">
+<p class="sss-text">Working on a commercial project? <strong>Multi-piece programs, licensing, and custom sizing</strong> available for hospitality and commercial installations.</p>
+<a class="sss-link" href="for-designers.html">Download the Spec Sheet →</a>
+</div>
 </section>
-
-
+<!-- SEE ARTWORK IN YOUR ROOM TOOL -->
+<section class="room-preview-tool" id="room-preview-tool">
+<div class="preview-wrap">
+<div class="preview-intro">
+<div>
+<p class="sec-label">Interactive Preview</p>
+<h2 class="sec-title">See artwork in <em>your own room.</em></h2>
+<p>Upload a photo of your wall, choose one of the curated images below, then resize and position the artwork before purchasing. For the cleanest result, use a straight-on room photo with visible wall space. This is a simple wall preview tool, not true AR.</p>
+</div>
+<div class="preview-steps">
+<div class="preview-step"><strong>1</strong><span>Upload a room photo</span></div>
+<div class="preview-step"><strong>2</strong><span>Choose artwork and frame</span></div>
+<div class="preview-step"><strong>3</strong><span>Preview, save, or purchase</span></div>
+</div>
+</div>
+<div class="preview-grid">
+<div class="preview-stage" id="previewStage">
+<div class="preview-placeholder" id="previewPlaceholder">Upload a straight-on photo of your wall to begin<br/>then drag the artwork into position</div>
+<img alt="Uploaded room preview" class="preview-room-img" id="roomImage"/>
+<img alt="Selected Dan Sproul artwork preview" class="preview-artwork oak" id="artworkImage"/>
+</div>
+<aside class="preview-panel">
+<label for="roomUpload">Upload Room Photo</label>
+<input accept="image/*" id="roomUpload" type="file"/>
+<label for="collectionFilter">Collection</label>
+<select id="collectionFilter"></select>
+<label for="artworkSelect">Artwork</label>
+<select id="artworkSelect"></select>
+<label for="frameSelect">Frame Style</label>
+<select id="frameSelect">
+<option value="oak">Warm Oak</option>
+<option value="walnut">Walnut</option>
+<option value="black">Matte Black</option>
+<option value="white">White</option>
+</select>
+<label for="artworkSize">Artwork Size</label>
+<input id="artworkSize" max="70" min="18" type="range" value="34"/>
+<div class="preview-info">
+<h3 class="preview-title" id="previewTitle"></h3>
+<p class="preview-meta" id="previewMeta"></p>
+<p class="preview-detail" id="previewSizes"></p>
+<p class="preview-detail" id="previewFrames"></p>
+<p class="preview-detail" id="previewRooms"></p>
+<div class="preview-actions">
+<a class="purchase-artwork-btn" href="#" id="purchaseArtworkBtn" rel="noopener" target="_blank">Purchase This Print</a>
+<button class="save-preview-btn" id="savePreviewBtn" type="button">Save Screenshot</button>
+<button class="reset-preview-btn" id="resetPreviewBtn" type="button">Reset</button>
+</div>
+<p class="preview-note">For best results, upload a level photo taken straight toward the wall. Final print scale may vary depending on room-photo perspective.</p>
+</div>
+<div aria-label="Artwork thumbnail choices" class="preview-thumbs" id="previewThumbs"></div>
+</aside>
+</div>
+</div>
+</section>
+<section aria-label="Residential artwork guide" class="residential-path">
+<div class="residential-path-inner">
+<div>
+<p class="sec-label">For Homes &amp; Residential Interiors</p>
+<h2>Choosing artwork for a <em>living room, bedroom, cabin, or lake house?</em></h2>
+<p>The residential artwork guide organizes room mockups by home setting, with sizing, framing, format, and placement recommendations for individual print buyers and residential designers.</p>
+</div>
+<a class="btn btn-solid" href="residential-nature-wall-art.html">Explore Residential Artwork</a>
+</div>
+</section>
 <section class="iys-section" id="related-collections" style="background:var(--surface-2)">
-  <div class="sec-header">
-    <p class="sec-label">Related Collections</p>
-    <h2 class="sec-title">Continue by <em>mood, room, or collection.</em></h2>
-    <div class="sec-guidance">
-      <a class="guidance-pill" href="residential-nature-wall-art.html">Residential Artwork</a>
-      <a class="guidance-pill" href="art-collections.html">Curated Collections</a>
-      <a class="guidance-pill" href="best-sellers.html">Best Sellers</a>
-      <a class="guidance-pill" href="heritage-mixed-media.html">Heritage &amp; Mixed Media</a>
-      <a class="guidance-pill" href="for-designers.html">For Designers</a>
-      <a class="guidance-pill" href="wellness-waters-collection.html">Wellness Waters</a>
-      <a class="guidance-pill" href="monochrome-stillness.html">Monochrome Stillness</a>
-    </div>
-    <p class="sec-feeling">Use these pages to narrow the work by atmosphere, interior purpose, or frequently selected pieces.</p>
-  </div>
+<div class="sec-header">
+<p class="sec-label">Related Collections</p>
+<h2 class="sec-title">Continue by <em>mood, room, or collection.</em></h2>
+<div class="sec-guidance">
+<a class="guidance-pill" href="residential-nature-wall-art.html">Residential Artwork</a>
+<a class="guidance-pill" href="art-collections.html">Curated Collections</a>
+<a class="guidance-pill" href="best-sellers.html">Best Sellers</a>
+<a class="guidance-pill" href="heritage-mixed-media.html">Heritage &amp; Mixed Media</a>
+<a class="guidance-pill" href="for-designers.html">For Designers</a>
+<a class="guidance-pill" href="wellness-waters-collection.html">Wellness Waters</a>
+<a class="guidance-pill" href="monochrome-stillness.html">Monochrome Stillness</a>
+</div>
+<p class="sec-feeling">Use these pages to narrow the work by atmosphere, interior purpose, or frequently selected pieces.</p>
+</div>
 </section>
-
 <!-- CTA STRIP -->
 <div class="cta-strip cta-centered" id="contact">
-  <div>
-    <h3>Not sure what size<br/>to <em>order?</em></h3>
-    <p>Send a photo of your wall and Dan will put together a free digital mockup — so you can see the exact piece in your space, at actual scale, before committing.</p>
-  </div>
-  <div class="cta-actions">
-    <a href="mailto:sproulphoto@gmail.com?subject=Free Mockup Request" class="btn btn-solid">Get a Free Mockup</a>
-    <a href="https://dansproul.com/shop" target="_blank" class="btn btn-out">Shop All Prints</a>
-  </div>
+<div>
+<h3>Not sure what size<br/>to <em>order?</em></h3>
+<p>Send a photo of your wall and Dan will put together a free digital mockup — so you can see the exact piece in your space, at actual scale, before committing.</p>
 </div>
-
+<div class="cta-actions">
+<a class="btn btn-solid" href="mailto:sproulphoto@gmail.com?subject=Free Mockup Request">Get a Free Mockup</a>
+<a class="btn btn-out" href="https://dansproul.com/shop" target="_blank">Shop All Prints</a>
+</div>
+</div>
 <section class="artwork-guides-card-section" id="artwork-guides-help">
-  <div class="artwork-guides-card">
-    <div class="guides-card-copy">
-      <p class="eyebrow">Artwork Guides</p>
-      <h2>Learn how to choose artwork for your home or project.</h2>
-      <p>Explore guides on sizing, framing, placement, and selecting nature artwork for living rooms, bedrooms, offices, hospitality spaces, and healthcare environments.</p>
-    </div>
-    <div class="guides-card-actions">
-      <a class="btn btn-solid" href="artwork-guides.html">Explore Guides</a>
-    </div>
-  </div>
-</section>
-
-
-
- 
-
-
-
-<!-- FOOTER -->
-<footer id="footer" class="site-footer">
-
-  <div class="footer-grid">
-
-  <div>
-      <h3>Explore</h3>
-      <a href="/">Home</a>
-      <a href="best-sellers.html">Best Sellers</a>
-      <a href="art-collections.html">Collections</a>
-      <a href="in-your-space.html">In Your Space</a>
-      <a href="for-designers.html">For Designers</a>
-      <a href="https://dansproul.com" target="_blank" rel="noopener">Shop Prints</a>
-      <a href="mailto:sproulphoto@gmail.com">Contact</a>
-    </div>
-
-    <div>
-      <h3>Collections</h3>
-      <a href="quiet-earth-collection.html">Quiet Earth</a>
-      <a href="forest-light-collection.html">Forest Light</a>
-      <a href="wellness-waters-collection.html">Wellness Waters</a>
-      <a href="coastal-atmosphere.html">Coastal Atmosphere</a>
-      <a href="mountain-light-collection.html">Mountain Light</a>
-      <a href="monochrome-stillness.html">Monochrome Stillness</a>
-      <a href="heritage-mixed-media.html">Heritage & Mixed Media</a>
-    </div>
-
-    <div>
-      <h3>Resources</h3>
-      <a href="artwork-guides.html">Artwork Guides</a>
-      <a href="blog.html">Journal</a>
-      <a href="lima-ohio-fine-art-photographer.html">Lima Fine Art Photographer</a>
-      <a href="about-dan-sproul.html">About Dan</a>
-      <a href="ohio-nature-photography-prints.html">Ohio Nature Photography</a>
-      <a href="alaska-photography-prints.html">Alaska Photography</a>
-    </div>
-
-  <div>
-  <h3>For Designers</h3>
-  <a href="/for-designers.html">Designer Resources</a>
-  <a href="/healthcare-artwork.html">Healthcare</a>
-  <a href="/hospitality-artwork.html">Hospitality</a>
-  <a href="/office-artwork.html">Office</a>
-  <a href="/residential-nature-wall-art.html">Residential</a>
-  <a href="/senior-living-artwork.html">Senior Living</a>
+<div class="artwork-guides-card">
+<div class="guides-card-copy">
+<p class="eyebrow">Artwork Guides</p>
+<h2>Learn how to choose artwork for your home or project.</h2>
+<p>Explore guides on sizing, framing, placement, and selecting nature artwork for living rooms, bedrooms, offices, hospitality spaces, and healthcare environments.</p>
 </div>
-
-
-    <div>
-      <h3>Connect</h3>
-      <a href="mailto:sproulphoto@gmail.com">Email</a>
-      <a href="https://www.linkedin.com/in/dan-sproul-bb55015a/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://www.pinterest.com/dansproul/" target="_blank" rel="noopener">Pinterest</a>
-    </div>
-
+<div class="guides-card-actions">
+<a class="btn btn-solid" href="artwork-guides.html">Explore Guides</a>
+</div>
+</div>
+</section>
+<!-- FOOTER -->
+<footer class="site-footer" id="footer">
+<div class="footer-grid">
+<div>
+<h3>Explore</h3>
+<a href="/">Home</a>
+<a href="best-sellers.html">Best Sellers</a>
+<a href="art-collections.html">Collections</a>
+<a href="in-your-space.html">In Your Space</a>
+<a href="for-designers.html">For Designers</a>
+<a href="https://dansproul.com" rel="noopener" target="_blank">Shop Prints</a>
+<a href="mailto:sproulphoto@gmail.com">Contact</a>
+</div>
+<div>
+<h3>Collections</h3>
+<a href="quiet-earth-collection.html">Quiet Earth</a>
+<a href="forest-light-collection.html">Forest Light</a>
+<a href="wellness-waters-collection.html">Wellness Waters</a>
+<a href="coastal-atmosphere.html">Coastal Atmosphere</a>
+<a href="mountain-light-collection.html">Mountain Light</a>
+<a href="monochrome-stillness.html">Monochrome Stillness</a>
+<a href="heritage-mixed-media.html">Heritage &amp; Mixed Media</a>
+</div>
+<div>
+<h3>Resources</h3>
+<a href="artwork-guides.html">Artwork Guides</a>
+<a href="blog.html">Journal</a>
+<a href="lima-ohio-fine-art-photographer.html">Lima Fine Art Photographer</a>
+<a href="about-dan-sproul.html">About Dan</a>
+<a href="ohio-nature-photography-prints.html">Ohio Nature Photography</a>
+<a href="alaska-photography-prints.html">Alaska Photography</a>
+</div>
+<div>
+<h3>For Designers</h3>
+<a href="/for-designers.html">Designer Resources</a>
+<a href="/healthcare-artwork.html">Healthcare</a>
+<a href="/hospitality-artwork.html">Hospitality</a>
+<a href="/office-artwork.html">Office</a>
+<a href="/residential-nature-wall-art.html">Residential</a>
+<a href="/senior-living-artwork.html">Senior Living</a>
+</div>
+<div>
+<h3>Connect</h3>
+<a href="mailto:sproulphoto@gmail.com">Email</a>
+<a href="https://www.linkedin.com/in/dan-sproul-bb55015a/" rel="noopener" target="_blank">LinkedIn</a>
+<a href="https://www.pinterest.com/dansproul/" rel="noopener" target="_blank">Pinterest</a>
+</div>
+</div>
+<div class="footer-bottom">
+    © 2026 Dan Sproul Fine Art Photography · Based in Lima, Ohio · Original Nature Photography &amp; Heritage-Inspired Artwork
   </div>
-
-  </div>
-
-  <div class="footer-bottom">
-    © 2026 Dan Sproul Fine Art Photography · Based in Lima, Ohio · Original Nature Photography & Heritage-Inspired Artwork
-  </div>
-
 </footer>
-
-
 <script>
 function openLb(src,cap,shopUrl){
   var lbImg=document.getElementById('lb-img'); if(!lbImg)return; lbImg.src=src;
@@ -1871,11 +2172,6 @@ window.addEventListener('scroll',function(){
   if(mf)mf.classList.toggle('vis',v);
 });
 </script>
-
-
-
-
-
 <script>
 const artworkOptions = [
   {title:"Yaquina Bay Coastal Scene",image:"yaquina-bay-coastal-scene-dan-sproul.jpg",collection:"Coastal Atmosphere",purchaseUrl:"https://dansproul.com/featured/yaquina-bay-coastal-scene-dan-sproul.html",suggestedSizes:"30×45, 36×54, or 40×60",frameRecommendations:"Warm oak, walnut, or matte black",bestRooms:"Living rooms, coastal bedrooms, hospitality suites"},
@@ -1969,8 +2265,6 @@ const artworkOptions = [
   renderArtworkList();
 })();
 </script>
-
-
 <script>
 document.addEventListener('DOMContentLoaded', function () {
   var nav = document.querySelector('.site-nav-standard');
