@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exploring Lima Ohio Through My Lens | Nature & Wildlife Photography</title>
+  <meta name="description" content="A personal guide to finding memorable nature and wildlife photographs close to home in Lima, Ohio, with deer, herons, birds, foggy mornings, and quiet local landscapes by Dan Sproul." />
+  <link rel="canonical" href="https://dsproul.com/lima-ohio-nature-wildlife-photography.html" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Exploring Lima, Ohio Through My Lens" />
+  <meta property="og:description" content="Nature and wildlife moments close to home in Lima, Ohio, from foggy morning fields to deer, herons, and quiet local parks." />
+  <meta property="og:url" content="https://dsproul.com/lima-ohio-nature-wildlife-photography.html" />
+  <meta property="og:image" content="https://dsproul.com/foggy-morning-trees-lima-ohio.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <style>
+    :root {
+      --ink: #15110b;
+      --charcoal: #0c0906;
+      --charcoal-2: #15110c;
+      --cream: #efe7da;
+      --cream-2: #f6f1e9;
+      --muted: #756b5d;
+      --gold: #c99b45;
+      --gold-2: #e0bc72;
+      --line: rgba(201, 155, 69, 0.24);
+      --line-dark: rgba(255, 255, 255, 0.12);
+      --max: 1120px;
+      --serif: Georgia, 'Times New Roman', serif;
+      --sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    html,
+    body {
+      overflow-x: hidden;
+    }
+
+    body {
+      margin: 0;
+      background: var(--charcoal);
+      color: var(--cream-2);
+      font-family: var(--sans);
+      line-height: 1.7;
+      text-rendering: optimizeLegibility;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    a { color: inherit; }
+
+    .site-nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(10, 8, 5, 0.92);
+      border-bottom: 1px solid var(--line-dark);
+      backdrop-filter: blur(14px);
+    }
+
+    .nav-inner {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 14px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      text-decoration: none;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      font-size: 0.78rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 18px;
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(246, 241, 233, 0.78);
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    .nav-links::-webkit-scrollbar {
+      display: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      transition: color 0.18s ease;
+      white-space: nowrap;
+    }
+
+    .nav-links a:hover { color: var(--gold-2); }
+
+    .shop-link {
+      color: var(--gold-2) !important;
+      border: 1px solid rgba(224, 188, 114, 0.5);
+      padding: 8px 12px;
+      border-radius: 999px;
+    }
+
+    .hero {
+      min-height: 72vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      background:
+        linear-gradient(90deg, rgba(8, 6, 4, 0.88) 0%, rgba(8, 6, 4, 0.68) 46%, rgba(8, 6, 4, 0.22) 100%),
+        url('foggy-morning-trees-lima-ohio.jpg') center center / cover no-repeat;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0;
+      height: 130px;
+      background: linear-gradient(0deg, var(--charcoal), transparent);
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      width: min(var(--max), calc(100% - 44px));
+      margin: 0 auto;
+      padding: 84px 0 110px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .eyebrow {
+      color: var(--gold-2);
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-size: 0.76rem;
+      font-weight: 800;
+      margin-bottom: 18px;
+    }
+
+    h1, h2, h3 {
+      font-family: var(--serif);
+      font-weight: 500;
+      line-height: 1.05;
+      margin: 0;
+    }
+
+    h1 {
+      max-width: 760px;
+      font-size: clamp(3rem, 7vw, 6.8rem);
+      letter-spacing: -0.06em;
+    }
+
+    .hero-subtitle {
+      max-width: 680px;
+      margin: 22px 0 0;
+      color: rgba(246, 241, 233, 0.84);
+      font-size: clamp(1rem, 2vw, 1.22rem);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 34px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 42px;
+      padding: 10px 16px;
+      border-radius: 999px;
+      border: 1px solid rgba(224, 188, 114, 0.55);
+      background: rgba(201, 155, 69, 0.14);
+      color: var(--gold-2);
+      text-decoration: none;
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      transition: transform 0.18s ease, background 0.18s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      background: rgba(201, 155, 69, 0.22);
+    }
+
+    .btn.secondary {
+      color: rgba(246, 241, 233, 0.9);
+      border-color: rgba(246, 241, 233, 0.28);
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .article-shell {
+      background: var(--cream);
+      color: var(--ink);
+    }
+
+    .container {
+      width: min(var(--max), calc(100% - 44px));
+      margin: 0 auto;
+    }
+
+    .intro-panel {
+      padding: 72px 0 42px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.55fr);
+      gap: 34px;
+      align-items: start;
+    }
+
+    .article-kicker {
+      color: var(--gold);
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      font-size: 0.72rem;
+      font-weight: 900;
+      margin: 0 0 14px;
+    }
+
+    .lead {
+      font-family: var(--serif);
+      font-size: clamp(1.45rem, 3vw, 2.35rem);
+      line-height: 1.16;
+      letter-spacing: -0.04em;
+      margin: 0 0 24px;
+    }
+
+    .copy p {
+      max-width: 760px;
+      margin: 0 0 18px;
+      color: #2b251d;
+      font-size: 1rem;
+    }
+
+    .aside-card {
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.36);
+      padding: 24px;
+      border-radius: 4px;
+      box-shadow: 0 16px 42px rgba(30, 22, 12, 0.08);
+    }
+
+    .aside-card h2 {
+      font-size: 1.35rem;
+      letter-spacing: -0.03em;
+      margin-bottom: 12px;
+    }
+
+    .aside-card p, .aside-card li {
+      color: #41382d;
+      font-size: 0.92rem;
+      margin: 0;
+    }
+
+    .aside-card ul {
+      padding-left: 18px;
+      margin: 14px 0 0;
+    }
+
+    .wide-figure {
+      margin: 18px 0 54px;
+      border: 1px solid rgba(87, 65, 34, 0.18);
+      background: #fff9ef;
+      padding: 10px;
+    }
+
+    .wide-figure img {
+      max-height: 720px;
+      object-fit: cover;
+    }
+
+    figcaption {
+      color: #675a4a;
+      font-size: 0.86rem;
+      line-height: 1.55;
+      margin-top: 10px;
+    }
+
+    .print-image-link {
+      display: block;
+      text-decoration: none;
+    }
+
+    .print-link {
+      display: inline-flex;
+      align-items: center;
+      margin-top: 10px;
+      color: #7a571d;
+      text-decoration: none;
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 900;
+      border-bottom: 1px solid rgba(122, 87, 29, 0.34);
+    }
+
+    .print-link:hover { color: #4f360f; }
+
+    .content-row {
+      padding: 14px 0 54px;
+      display: grid;
+      grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
+      gap: 42px;
+      align-items: center;
+    }
+
+    .content-row.reverse {
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+    }
+
+    .content-row h2,
+    .section-head h2 {
+      font-size: clamp(2.1rem, 4.4vw, 4rem);
+      letter-spacing: -0.06em;
+      margin-bottom: 16px;
+    }
+
+    .content-row p {
+      color: #342d24;
+      margin: 0 0 16px;
+    }
+
+    .image-card {
+      border: 1px solid rgba(87, 65, 34, 0.18);
+      background: #fff9ef;
+      padding: 10px;
+      box-shadow: 0 18px 46px rgba(30, 22, 12, 0.1);
+    }
+
+    .image-card img {
+      object-fit: cover;
+      max-height: 700px;
+    }
+
+    .quiet-note {
+      border-left: 3px solid var(--gold);
+      padding: 12px 0 12px 18px;
+      margin-top: 18px;
+      color: #41382d;
+      font-size: 0.95rem;
+      background: linear-gradient(90deg, rgba(201, 155, 69, 0.10), transparent);
+    }
+
+    .trip-points {
+      padding: 8px 0 68px;
+    }
+
+    .point-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .point {
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.3);
+      padding: 18px;
+      min-height: 132px;
+    }
+
+    .point strong {
+      display: block;
+      font-family: var(--serif);
+      font-size: 1.2rem;
+      line-height: 1.12;
+      margin-bottom: 8px;
+    }
+
+    .point span {
+      color: #4c4337;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
+    .dark-gallery {
+      background: #090704;
+      color: var(--cream-2);
+      padding: 76px 0;
+      border-top: 1px solid rgba(201, 155, 69, 0.2);
+      border-bottom: 1px solid rgba(201, 155, 69, 0.2);
+    }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+      gap: 30px;
+      align-items: end;
+      margin-bottom: 34px;
+    }
+
+    .section-head p {
+      color: rgba(246, 241, 233, 0.72);
+      margin: 0;
+      max-width: 650px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .gallery-card {
+      border: 1px solid rgba(224, 188, 114, 0.22);
+      background: rgba(255, 255, 255, 0.04);
+      padding: 10px;
+    }
+
+    .gallery-card img {
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+    }
+
+    .gallery-card h3 {
+      font-size: 1.35rem;
+      letter-spacing: -0.03em;
+      margin: 14px 4px 6px;
+    }
+
+    .gallery-card p {
+      color: rgba(246, 241, 233, 0.68);
+      font-size: 0.9rem;
+      line-height: 1.55;
+      margin: 0 4px 6px;
+    }
+
+    .gallery-card .print-link {
+      margin: 8px 4px 4px;
+      color: var(--gold-2);
+      border-bottom-color: rgba(224, 188, 114, 0.42);
+    }
+
+    .gallery-card .print-link:hover { color: var(--cream-2); }
+
+    .guide-section {
+      padding: 76px 0;
+    }
+
+    .guide-list {
+      display: grid;
+      grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+      gap: 42px;
+    }
+
+    .guide-list h2 {
+      font-size: clamp(2.2rem, 4.8vw, 4.25rem);
+      letter-spacing: -0.06em;
+      position: sticky;
+      top: 92px;
+    }
+
+    .tip {
+      border-top: 1px solid var(--line);
+      padding: 22px 0;
+    }
+
+    .tip h3 {
+      font-size: 1.55rem;
+      letter-spacing: -0.03em;
+      margin-bottom: 8px;
+    }
+
+    .tip p {
+      color: #41382d;
+      margin: 0;
+    }
+
+    .cta-section {
+      padding: 0 0 82px;
+    }
+
+    .cta-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .cta-card {
+      border: 1px solid var(--line);
+      background: #fff8ed;
+      padding: 30px;
+      min-height: 260px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .cta-card span {
+      color: var(--gold);
+      font-size: 0.72rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      font-weight: 900;
+    }
+
+    .cta-card h2 {
+      font-size: clamp(1.9rem, 3.4vw, 3rem);
+      letter-spacing: -0.055em;
+      margin: 16px 0 12px;
+    }
+
+    .cta-card p {
+      color: #41382d;
+      margin: 0 0 22px;
+      max-width: 540px;
+    }
+
+    .cta-card .btn {
+      align-self: flex-start;
+      color: #78561b;
+      border-color: rgba(120, 86, 27, 0.35);
+      background: rgba(201, 155, 69, 0.14);
+    }
+
+    .site-footer {
+      background: #050403;
+      color: rgba(246, 241, 233, 0.76);
+      border-top: 1px solid rgba(224, 188, 114, 0.16);
+      padding: 54px 22px 28px;
+    }
+
+    .footer-grid {
+      max-width: 1060px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 48px;
+    }
+
+    .footer-grid h3 {
+      color: #d9a82f;
+      font-family: var(--serif);
+      font-size: 1.05rem;
+      line-height: 1.2;
+      font-weight: 400;
+      letter-spacing: 0;
+      text-transform: none;
+      margin: 0 0 18px;
+    }
+
+    .footer-grid a {
+      display: block;
+      color: rgba(246, 241, 233, 0.84);
+      text-decoration: none;
+      font-size: 0.78rem;
+      line-height: 1.45;
+      margin: 0 0 13px;
+    }
+
+    .footer-grid a:hover { color: var(--gold-2); }
+
+    .copyright {
+      max-width: 1060px;
+      margin: 38px auto 0;
+      padding-top: 26px;
+      border-top: 1px solid rgba(224, 188, 114, 0.18);
+      color: rgba(246, 241, 233, 0.48);
+      font-size: 0.68rem;
+      letter-spacing: 0.24em;
+      line-height: 1.8;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 980px) {
+      .nav-inner { align-items: flex-start; flex-direction: column; }
+      .nav-links { width: 100%; overflow-x: auto; justify-content: flex-start; padding-bottom: 4px; }
+      .intro-panel,
+      .content-row,
+      .content-row.reverse,
+      .section-head,
+      .guide-list { grid-template-columns: 1fr; }
+      .point-grid { grid-template-columns: repeat(2, 1fr); }
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 760px; }
+      .guide-list h2 { position: static; }
+    }
+
+    @media (max-width: 680px) {
+      .nav-inner { padding: 11px 16px; gap: 10px; }
+      .nav-links { gap: 12px; font-size: 0.68rem; }
+      .shop-link { padding: 6px 10px; }
+      .hero { min-height: 58vh; background-position: center top; }
+      .hero-inner { width: min(100% - 28px, var(--max)); padding: 54px 0 72px; }
+      h1 { font-size: clamp(2.45rem, 14vw, 4.25rem); }
+      .hero-subtitle { margin-top: 14px; font-size: 0.98rem; line-height: 1.55; }
+      .hero-actions { margin-top: 22px; gap: 8px; }
+      .btn { min-height: 38px; padding: 8px 12px; font-size: 0.66rem; letter-spacing: 0.08em; }
+      .container { width: min(100% - 28px, var(--max)); }
+      .intro-panel { padding: 42px 0 26px; gap: 22px; }
+      .lead { font-size: 1.55rem; }
+      .copy p, .content-row p, .tip p, .cta-card p { font-size: 0.95rem; line-height: 1.62; }
+      .aside-card { padding: 18px; }
+      .wide-figure { margin: 12px 0 34px; padding: 7px; }
+      figcaption { font-size: 0.78rem; }
+      .content-row { padding: 8px 0 36px; gap: 20px; }
+      .content-row h2, .section-head h2, .guide-list h2 { font-size: 2.25rem; }
+      .point-grid, .gallery-grid, .cta-grid, .footer-grid { grid-template-columns: 1fr; }
+      .point { min-height: auto; padding: 15px; }
+      .dark-gallery { padding: 46px 0; }
+      .section-head { margin-bottom: 22px; gap: 12px; }
+      .gallery-grid { gap: 12px; }
+      .gallery-card { padding: 7px; }
+      .gallery-card h3 { font-size: 1.18rem; margin-top: 10px; }
+      .gallery-card p { font-size: 0.84rem; }
+      .guide-section { padding: 44px 0; }
+      .tip { padding: 17px 0; }
+      .tip h3 { font-size: 1.28rem; }
+      .cta-section { padding-bottom: 50px; }
+      .cta-card { padding: 22px; min-height: 220px; }
+      .site-footer { padding: 38px 16px 24px; }
+      .footer-grid { gap: 22px; }
+      .footer-grid h3 { margin-bottom: 10px; }
+      .footer-grid a { margin-bottom: 9px; }
+      .copyright { margin-top: 24px; padding-top: 20px; font-size: 0.62rem; letter-spacing: 0.16em; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Exploring Lima, Ohio Through My Lens — Nature & Wildlife Moments",
+    "description": "A personal field guide to finding memorable nature and wildlife photographs close to home in Lima, Ohio.",
+    "image": "https://dsproul.com/foggy-morning-trees-lima-ohio.jpg",
+    "author": {
+      "@type": "Person",
+      "name": "Dan Sproul",
+      "url": "https://dsproul.com/about-dan-sproul.html"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Dan Sproul",
+      "url": "https://dsproul.com"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://dsproul.com/lima-ohio-nature-wildlife-photography.html"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://dsproul.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Journal",
+        "item": "https://dsproul.com/blog.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Exploring Lima Ohio Through My Lens",
+        "item": "https://dsproul.com/lima-ohio-nature-wildlife-photography.html"
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <nav class="site-nav" aria-label="Primary navigation">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">Dan Sproul</a>
+      <div class="nav-links" aria-label="Main links">
+        <a href="index.html">Home</a>
+        <a href="best-sellers.html">Best Sellers</a>
+        <a href="art-collections.html">Collections</a>
+        <a href="in-your-space.html">In Your Space</a>
+        <a href="for-designers.html">For Designers</a>
+        <a href="blog.html">Journal</a>
+        <a href="contact.html">Contact</a>
+        <a class="shop-link" href="https://dansproul.com" target="_blank" rel="noopener">Shop Prints</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">Lima Ohio nature photography</div>
+      <h1>Exploring Lima, Ohio through my lens.</h1>
+      <p class="hero-subtitle">Not every memorable photograph starts with a long trip. Some of my favorite nature and wildlife images have come from the quiet places I return to again and again around Lima, Ohio — the kind of familiar scenes that can bring a calm, grounded feeling into a home.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#field-notes">Read the field notes</a>
+        <a class="btn secondary" href="lima-ohio-fine-art-photographer.html">View Lima artwork</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="article-shell" id="field-notes">
+      <div class="container">
+        <div class="intro-panel">
+          <article class="copy">
+            <p class="article-kicker">Close to home</p>
+            <p class="lead">I love photographing national parks, coastlines, mountains, and wild landscapes, but Lima has taught me something just as important: familiar places become stronger the more patiently you watch them.</p>
+            <p>Every photographer has a place that speaks to them. Maybe it is a wide view, a favorite trail, a shoreline, or a stretch of woods where the light always seems to change. For me, that pull is not limited to faraway places. It also comes from the parks, fields, river edges, and quiet corners around Lima, Ohio.</p>
+            <p>These are not always dramatic scenes at first glance. A blue heron standing still over green water. A deer half-hidden in brush. A foggy field before the day has fully started. A bird calling from thick spring leaves. The photographs happen when I slow down enough to notice what the place is already offering.</p>
+          </article>
+
+          <aside class="aside-card" aria-label="Local photography places around Lima Ohio">
+            <h2>Places I return to</h2>
+            <p>A few of my favorite local subjects come from repeat walks, early mornings, and nearby natural areas rather than one big planned trip.</p>
+            <ul>
+              <li>Ottawa Metro Park</li>
+              <li>Lippincott Bird Sanctuary</li>
+              <li>Kendrick Woods</li>
+              <li>Faurot Park</li>
+              <li>Farm roads, fog, and seasonal edges around Allen County</li>
+            </ul>
+          </aside>
+        </div>
+
+        <figure class="wide-figure">
+          <a class="print-image-link" href="https://dansproul.com/featured/blue-heron-reflection-dan-sproul.html" target="_blank" rel="noopener">
+            <img src="blue-heron-lima-ohio.jpg" width="855" height="900" alt="Great blue heron standing over green reflected water in Lima Ohio" loading="eager" decoding="async" />
+          </a>
+          <figcaption>A quiet heron scene near Lima. What made this image work for me was not action, but stillness: the green reflection, the balanced posture, and the patience to let the scene settle.</figcaption>
+          <a class="print-link" href="https://dansproul.com/featured/blue-heron-reflection-dan-sproul.html" target="_blank" rel="noopener">View this print</a>
+        </figure>
+
+        <div class="content-row">
+          <div>
+            <p class="article-kicker">Wildlife rewards repetition</p>
+            <h2>The more often I go back, the more I see.</h2>
+            <p>Wildlife photography around home is rarely about showing up once and getting lucky. Most of the time it is about learning the rhythm of a place. Where deer tend to cross. Which corners hold birds in spring. How the light hits the same trail differently in October than it does in January.</p>
+            <p>That repetition matters. When I return to a place often enough, the photograph begins before I even lift the camera. I already know the background I want, the direction of the light, and where I need to stand without disturbing the scene.</p>
+            <div class="quiet-note">The best local images often come from being ready for a small moment rather than chasing a spectacular one.</div>
+          </div>
+          <figure class="image-card">
+            <a class="print-image-link" href="https://dansproul.com/featured/autumn-deer-in-ohio-dan-sproul.html" target="_blank" rel="noopener">
+              <img src="autumn-buck-lima-ohio.jpg" width="900" height="836" alt="Whitetail buck hidden in autumn foliage near Lima Ohio" loading="lazy" decoding="async" />
+            </a>
+            <figcaption>A buck briefly paused in thick autumn color. The photograph works because the animal feels part of the landscape instead of separated from it.</figcaption>
+            <a class="print-link" href="https://dansproul.com/featured/autumn-deer-in-ohio-dan-sproul.html" target="_blank" rel="noopener">View this print</a>
+          </figure>
+        </div>
+
+        <div class="content-row reverse">
+          <figure class="image-card">
+            <a class="print-image-link" href="https://dansproul.com/featured/winter-deer-dan-sproul.html" target="_blank" rel="noopener">
+              <img src="winter-deer-lima-ohio.jpg" width="900" height="846" alt="Deer looking through snow-covered brush in Lima Ohio woods" loading="lazy" decoding="async" />
+            </a>
+            <figcaption>Winter simplifies a scene. Snow removes distraction, softens the woods, and turns a brief deer encounter into a quieter portrait.</figcaption>
+            <a class="print-link" href="https://dansproul.com/featured/winter-deer-dan-sproul.html" target="_blank" rel="noopener">View this print</a>
+          </figure>
+          <div>
+            <p class="article-kicker">Seasonal character</p>
+            <h2>Snow, fog, and autumn color change everything.</h2>
+            <p>One of the advantages of photographing close to home is being able to respond quickly when the weather turns interesting. A fresh snowfall, a foggy morning, or a sudden burst of fall color can transform familiar ground into something completely different.</p>
+            <p>I have learned to pay attention to those ordinary forecasts that most people overlook. Fog can separate trees from the background. Snow can quiet a busy woodland. Autumn light can turn a small opening in the brush into a warm, layered scene.</p>
+          </div>
+        </div>
+
+        <section class="trip-points" aria-labelledby="hometown-approach">
+          <p class="article-kicker">Hometown field notes</p>
+          <div class="section-head" style="color: var(--ink); margin-bottom: 0;">
+            <h2 id="hometown-approach">What helps when photographing nature close to home?</h2>
+            <p style="color:#41382d;">These are the habits I keep coming back to when I photograph Lima and the surrounding area. They are simple, but they make familiar places feel new again.</p>
+          </div>
+          <div class="point-grid">
+            <div class="point">
+              <strong>Return often</strong>
+              <span>The same place can look completely different with fog, snow, spring leaves, or late autumn light.</span>
+            </div>
+            <div class="point">
+              <strong>Watch the edges</strong>
+              <span>Wildlife often appears where woods meet fields, water meets brush, or trails open into quiet clearings.</span>
+            </div>
+            <div class="point">
+              <strong>Move slowly</strong>
+              <span>Most of these images happened because I slowed down and let the scene settle before moving on.</span>
+            </div>
+            <div class="point">
+              <strong>Let quiet be enough</strong>
+              <span>A memorable image does not always need drama. Sometimes atmosphere is the subject.</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="dark-gallery" aria-labelledby="local-gallery">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="article-kicker">Selected images</p>
+            <h2 id="local-gallery">Nature and wildlife moments from around Lima.</h2>
+          </div>
+          <p>These images are personal because they come from places I can return to without planning a trip. They remind me that a hometown landscape still has mystery if you give it enough time.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <article class="gallery-card">
+            <a class="print-image-link" href="https://dansproul.com/featured/forest-deer-dan-sproul.html" target="_blank" rel="noopener">
+              <img src="autumn-deer-lima-ohio.jpg" width="900" height="612" alt="Young whitetail deer surrounded by warm autumn brush near Lima Ohio" loading="lazy" decoding="async" />
+            </a>
+            <h3>Hidden in late color</h3>
+            <p>The soft foreground and layered brush make this feel more like a quiet encounter than a wildlife record.</p>
+            <a class="print-link" href="https://dansproul.com/featured/forest-deer-dan-sproul.html" target="_blank" rel="noopener">View this print</a>
+          </article>
+
+          <article class="gallery-card">
+            <a class="print-image-link" href="https://dansproul.com/featured/lauer-historical-farm-ohio-textured-dan-sproul.html" target="_blank" rel="noopener">
+              <img src="lauer-farms-autumn-textured.jpg" width="672" height="900" alt="Red barn, silo, and autumn trees near Lima Ohio" loading="lazy" decoding="async" />
+            </a>
+            <h3>A familiar rural scene</h3>
+            <p>Local landscapes do not need to be grand to hold meaning. A barn, a silo, and fall color can carry a strong sense of place.</p>
+            <a class="print-link" href="https://dansproul.com/featured/lauer-historical-farm-ohio-textured-dan-sproul.html" target="_blank" rel="noopener">View this print</a>
+          </article>
+
+          <article class="gallery-card">
+            <a class="print-image-link" href="https://dansproul.com/featured/single-wood-thrush-dan-sproul.html" target="_blank" rel="noopener">
+              <img src="wood-thrush-lima-ohio.jpg" width="820" height="900" alt="Wood thrush perched among spring green leaves near Lima Ohio" loading="lazy" decoding="async" />
+            </a>
+            <h3>Spring song in the woods</h3>
+            <p>Birds are often heard before they are seen. This image came from staying still long enough for the shape to appear through the leaves.</p>
+            <a class="print-link" href="https://dansproul.com/featured/single-wood-thrush-dan-sproul.html" target="_blank" rel="noopener">View this print</a>
+          </article>
+
+          <article class="gallery-card">
+            <a class="print-image-link" href="https://dansproul.com/featured/foggy-country-scene-lima-ohio-dan-sproul.html" target="_blank" rel="noopener">
+              <img src="foggy-morning-trees-lima-ohio.jpg" width="900" height="600" alt="Foggy morning trees and field near Lima Ohio" loading="lazy" decoding="async" />
+            </a>
+            <h3>Fog on a quiet morning</h3>
+            <p>Fog removes the extra detail and leaves only shape, tone, and atmosphere. That is often what I am drawn to most.</p>
+            <a class="print-link" href="https://dansproul.com/featured/foggy-country-scene-lima-ohio-dan-sproul.html" target="_blank" rel="noopener">View this print</a>
+          </article>
+
+          <article class="gallery-card">
+            <a class="print-image-link" href="https://dansproul.com/featured/winter-deer-dan-sproul.html" target="_blank" rel="noopener">
+              <img src="winter-deer-lima-ohio.jpg" width="900" height="846" alt="White-tailed deer standing in snowy woodland near Lima Ohio" loading="lazy" decoding="async" />
+            </a>
+            <h3>Winter stillness</h3>
+            <p>Snow gives this image a quiet, almost monochrome feeling while the deer adds one small point of warmth.</p>
+            <a class="print-link" href="https://dansproul.com/featured/winter-deer-dan-sproul.html" target="_blank" rel="noopener">View this print</a>
+          </article>
+
+          <article class="gallery-card">
+            <a class="print-image-link" href="https://dansproul.com/featured/blue-heron-reflection-dan-sproul.html" target="_blank" rel="noopener">
+              <img src="blue-heron-lima-ohio.jpg" width="855" height="900" alt="Great blue heron reflected in dark green water near Lima Ohio" loading="lazy" decoding="async" />
+            </a>
+            <h3>Green water and patience</h3>
+            <p>The reflection and negative space are what make the scene feel calm enough for a wall, not just a field note.</p>
+            <a class="print-link" href="https://dansproul.com/featured/blue-heron-reflection-dan-sproul.html" target="_blank" rel="noopener">View this print</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-shell">
+      <div class="container">
+        <div class="guide-section">
+          <div class="guide-list">
+            <h2>Why these local images still matter to me.</h2>
+            <div>
+              <div class="tip">
+                <h3>They are connected to routine.</h3>
+                <p>A photograph made close to home carries a different kind of memory. I remember the season, the walk, the weather, and the small reason I decided to bring the camera that day.</p>
+              </div>
+              <div class="tip">
+                <h3>They make Lima feel more layered.</h3>
+                <p>It is easy to think nature has to be somewhere else. The more I photograph around Lima, the more I notice how much is tucked into local parks, wooded edges, river corridors, and agricultural land.</p>
+              </div>
+              <div class="tip">
+                <h3>They pull me outside in a busy world.</h3>
+                <p>There is a real value in stepping away from screens, schedules, and the constant noise of the day. Even a short walk close to home can reset the way I see things. I might not come back with a portfolio image every time, but I almost always come back more aware of the season, the light, and the quiet details I would have missed from indoors.</p>
+              </div>
+              <div class="tip">
+                <h3>They translate well into quiet interiors.</h3>
+                <p>Many of these photographs have the same qualities I look for in artwork for homes and calming spaces: soft color, recognizable nature, a sense of stillness, and enough atmosphere to live with every day.</p>
+              </div>
+              <div class="tip">
+                <h3>They remind me to keep looking.</h3>
+                <p>The biggest lesson is simple: do not dismiss the places you know best. Familiar places can still surprise you, but they usually reveal themselves slowly.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="cta-section" aria-labelledby="local-artwork-links">
+          <p class="article-kicker">Related artwork resources</p>
+          <div class="cta-grid" id="local-artwork-links">
+            <article class="cta-card">
+              <div>
+                <span>Lima Ohio artwork</span>
+                <h2>Local nature photography from Lima and Northwest Ohio.</h2>
+                <p>View a focused page for Lima, Ohio fine art photography, local print options, and artwork inspired by nearby parks, wildlife, and quiet landscapes.</p>
+              </div>
+              <a class="btn" href="lima-ohio-fine-art-photographer.html">View Lima Ohio page</a>
+            </article>
+
+            <article class="cta-card">
+              <div>
+                <span>For homes</span>
+                <h2>Nature wall art for calm residential interiors.</h2>
+                <p>Explore how atmospheric landscape and wildlife imagery can work in living rooms, bedrooms, entryways, and quiet residential spaces.</p>
+              </div>
+              <a class="btn" href="residential-nature-wall-art.html">View residential artwork</a>
+            </article>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <h3>Explore</h3>
+        <a href="index.html">Home</a>
+        <a href="best-sellers.html">Best Sellers</a>
+        <a href="art-collections.html">Collections</a>
+        <a href="in-your-space.html">In Your Space</a>
+        <a href="for-designers.html">For Designers</a>
+        <a href="https://dansproul.com" target="_blank" rel="noopener">Shop Prints</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div>
+        <h3>Collections</h3>
+        <a href="quiet-earth-collection.html">Quiet Earth</a>
+        <a href="forest-light-collection.html">Forest Light</a>
+        <a href="wellness-waters-collection.html">Wellness Waters</a>
+        <a href="coastal-atmosphere-collection.html">Coastal Atmosphere</a>
+        <a href="mountain-light-collection.html">Mountain Light</a>
+        <a href="monochrome-stillness-collection.html">Monochrome Stillness</a>
+        <a href="heritage-mixed-media.html">Heritage &amp; Mixed Media</a>
+      </div>
+
+      <div>
+        <h3>Resources</h3>
+        <a href="artwork-guides.html">Artwork Guides</a>
+        <a href="blog.html">Journal</a>
+        <a href="lima-ohio-fine-art-photographer.html">Lima Fine Art Photographer</a>
+        <a href="about-dan-sproul.html">About Dan</a>
+        <a href="ohio-nature-photography-prints.html">Ohio Nature Photography</a>
+        <a href="alaska-photography-prints.html">Alaska Photography</a>
+      </div>
+
+      <div>
+        <h3>For Designers</h3>
+        <a href="for-designers.html">Designer Resources</a>
+        <a href="healthcare-artwork.html">Healthcare</a>
+        <a href="hospitality-artwork.html">Hospitality</a>
+        <a href="office-artwork.html">Office</a>
+        <a href="residential-nature-wall-art.html">Residential</a>
+        <a href="senior-living-artwork.html">Senior Living</a>
+      </div>
+
+      <div>
+        <h3>Connect</h3>
+        <a href="mailto:dan@dsproul.com">Email</a>
+        <a href="https://www.linkedin.com/in/dan-sproul-1a412254/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.pinterest.com/dansproul/" target="_blank" rel="noopener">Pinterest</a>
+      </div>
+    </div>
+    <div class="copyright">© 2026 Dan Sproul Fine Art Photography · Based in Lima, Ohio · Original Nature Photography &amp; Heritage-Inspired Artwork</div>
+  </footer>
+</body>
+</html>
