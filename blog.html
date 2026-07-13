@@ -361,7 +361,7 @@
       max-width: var(--max);
       margin: 42px auto 0;
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 10px;
     }
     .archive-card {
@@ -499,8 +499,8 @@
       }
       .section-head { grid-template-columns: 1fr; }
       .post-grid { grid-template-columns: 1fr; }
-      .intro-strip-inner,
-      .archive-grid { grid-template-columns: 1fr; }
+      .intro-strip-inner { grid-template-columns: 1fr; }
+      .archive-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .footer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     }
 
@@ -797,6 +797,15 @@
           "nature artwork for interiors",
           "landscape photography field notes",
           "Lima Ohio fine art photographer"
+        ],
+        "hasPart": [
+          {
+            "@type": "BlogPosting",
+            "headline": "Exploring Lima, Ohio Through My Lens — Nature & Wildlife Moments",
+            "url": "https://dsproul.com/lima-ohio-nature-wildlife-photography.html",
+            "image": "https://dsproul.com/blue-heron-lima-ohio.jpg",
+            "author": { "@id": "https://dsproul.com/#dan-sproul" }
+          }
         ]
       },
       {
@@ -948,6 +957,15 @@
       </div>
 
       <div class="archive-grid">
+        <a class="archive-card archive-card-image" href="lima-ohio-nature-wildlife-photography.html">
+          <img src="blue-heron-lima-ohio.jpg" alt="Great blue heron reflected in green water in Lima Ohio nature photography by Dan Sproul" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='denali national park autumn.jpg';" />
+          <div class="archive-card-content">
+            <span>Field Notes &middot; Lima, Ohio</span>
+            <h3>Exploring Lima, Ohio Through My Lens</h3>
+            <p>A personal field note on quiet wildlife encounters, hometown parks, foggy mornings, deer, birds, farms, and the importance of noticing nature close to home.</p>
+          </div>
+        </a>
+
         <a class="archive-card archive-card-image" href="ricketts-glen-watkins-glen-spring-waterfall-trip.html">
           <img src="oneida-falls-ricketts-glen-state-park-dan-sproul.jpg" alt="Oneida Falls at Ricketts Glen State Park photographed in spring by Dan Sproul" loading="lazy" decoding="async" />
           <div class="archive-card-content">
