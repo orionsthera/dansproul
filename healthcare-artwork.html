@@ -111,7 +111,7 @@ h3{font-size:30px;letter-spacing:-.03em}
 }
 .focused-pathways-head h2{font-size:clamp(36px,4.8vw,64px)}
 .focused-pathways-head p{margin:0;color:#d3c7b7;max-width:620px}
-.focused-pathway-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.focused-pathway-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
 .focused-pathway-card{
   display:flex;
   flex-direction:column;
@@ -129,7 +129,7 @@ h3{font-size:30px;letter-spacing:-.03em}
   border-color:rgba(199,155,85,.55);
   box-shadow:0 30px 78px rgba(0,0,0,.38);
 }
-.focused-pathway-card img{height:235px;width:100%;object-fit:cover}
+.focused-pathway-card img{height:220px;width:100%;object-fit:cover}
 .focused-pathway-copy{display:flex;flex-direction:column;flex:1;padding:24px}
 .focused-pathway-copy span{
   display:block;
@@ -160,10 +160,13 @@ h3{font-size:30px;letter-spacing:-.03em}
 @media(max-width:680px){
   .focused-pathways{padding:42px 22px!important}
   .focused-pathways-head{gap:18px;margin-bottom:22px}
-  .focused-pathway-grid{grid-template-columns:1fr!important;gap:13px!important}
-  .focused-pathway-card img{height:190px!important}
-  .focused-pathway-copy{padding:18px!important}
-  .focused-pathway-copy p{font-size:13.5px!important;line-height:1.55!important}
+  .focused-pathway-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:9px!important}
+  .focused-pathway-card img{height:92px!important}
+  .focused-pathway-copy{padding:14px!important}
+  .focused-pathway-copy span{font-size:8.5px!important;letter-spacing:.12em!important;margin-bottom:8px!important}
+  .focused-pathway-copy h3{font-size:1rem!important;line-height:1.08!important;margin-bottom:0!important}
+  .focused-pathway-copy p{display:none!important}
+  .focused-pathway-copy .pathway-cta{padding-top:10px!important;font-size:8.5px!important;letter-spacing:.11em!important}
 }
 
 /* detail and spec */
@@ -946,10 +949,13 @@ h1{font-size:54px}
     letter-spacing:.14em!important;
   }
 
-  .focused-pathway-card img{display:none!important;}
-  .focused-pathway-copy{padding:17px!important;}
+  .focused-pathway-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:9px!important;}
+  .focused-pathway-card img{display:block!important;height:86px!important;object-fit:cover!important;}
+  .focused-pathway-copy{padding:13px!important;}
+  .focused-pathway-copy span{font-size:8.5px!important;letter-spacing:.11em!important;margin-bottom:7px!important;}
+  .focused-pathway-copy h3{font-size:1rem!important;line-height:1.08!important;margin-bottom:0!important;}
   .focused-pathway-copy p{display:none!important;}
-  .focused-pathway-copy .pathway-cta{padding-top:12px!important;}
+  .focused-pathway-copy .pathway-cta{padding-top:10px!important;font-size:8.5px!important;letter-spacing:.1em!important;}
 
   .healthcare-compact-guide .intro-grid > div:last-child p:nth-of-type(n+2){display:none!important;}
   #healthcare-project-guidance .project-wrap > div:first-child p:nth-of-type(n+2){display:none!important;}
@@ -1125,6 +1131,7 @@ h1{font-size:54px}
       "hasPart":[
         {"@type":"WebPage","name":"Oncology Artwork for Infusion Centers and Healing Spaces","url":"https://dsproul.com/healthcare-oncology.html"},
         {"@type":"WebPage","name":"Senior Living Artwork for Assisted Living and Residential Care Communities","url":"https://dsproul.com/senior-living-artwork.html"},
+        {"@type":"WebPage","name":"Waiting Room Artwork for Medical Offices and Wellness Spaces","url":"https://dsproul.com/waiting-room-artwork.html"},
         {"@type":"WebPage","name":"10 Calming Water Images for Therapy Offices","url":"https://dsproul.com/calming-water-art-therapy-offices.html"},
         {"@type":"WebPageElement","name":"Healthcare artwork applications by room type"},
         {"@type":"WebPageElement","name":"Healthcare artwork project support"},
@@ -1360,6 +1367,16 @@ h1{font-size:54px}
           <h3>Senior Living Artwork</h3>
           <p>Warm, familiar nature photography for resident lounges, assisted living corridors, dining spaces, wellness areas, and shared community interiors.</p>
           <div class="pathway-cta">Explore Senior Living Page &rarr;</div>
+        </div>
+      </a>
+
+      <a class="focused-pathway-card" href="waiting-room-artwork.html">
+        <img src="waiting-room-smoky-mountains-fog.jpg" alt="Medical waiting room with calming foggy mountain landscape artwork by Dan Sproul" loading="lazy" decoding="async">
+        <div class="focused-pathway-copy">
+          <span>Waiting Rooms</span>
+          <h3>Waiting Room Artwork</h3>
+          <p>Calming nature photography for medical offices, dental offices, therapy practices, wellness clinics, and patient-facing reception areas.</p>
+          <div class="pathway-cta">Explore Waiting Room Page &rarr;</div>
         </div>
       </a>
 
@@ -1600,6 +1617,7 @@ h1{font-size:54px}
         <h3>For Designers</h3>
         <a href="/for-designers.html">Designer Resources</a>
         <a href="/healthcare-artwork.html">Healthcare</a>
+        <a href="/waiting-room-artwork.html">Waiting Rooms</a>
         <a href="/hospitality-artwork.html">Hospitality</a>
         <a href="/office-artwork.html">Office</a>
         <a href="/residential-nature-wall-art.html">Residential</a>
