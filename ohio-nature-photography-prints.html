@@ -992,6 +992,148 @@ h2{font-size:34px!important}
     grid-template-columns:1fr!important;
   }
 }
+
+
+/* ── INTERACTIVE OHIO REGION MAP ───────────────────────────── */
+.ohio-map-layout{
+  max-width:1180px;
+  margin:42px auto 0;
+  display:grid;
+  grid-template-columns:minmax(0,1.15fr) minmax(320px,.85fr);
+  gap:26px;
+  align-items:stretch;
+}
+.ohio-map-panel{
+  position:relative;
+  min-height:560px;
+  overflow:hidden;
+  border:1px solid rgba(32,27,21,.12);
+  background:
+    radial-gradient(circle at 72% 18%,rgba(199,155,85,.17),transparent 29%),
+    linear-gradient(145deg,#fffaf1 0%,#e8dfd1 100%);
+  box-shadow:0 24px 70px rgba(32,27,21,.09);
+}
+.ohio-map-panel::before{
+  content:'LAKE ERIE';
+  position:absolute;
+  top:24px;
+  right:28px;
+  z-index:2;
+  color:#9a6b28;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.28em;
+}
+.ohio-map-svg{width:100%;height:100%;min-height:560px;display:block}
+.ohio-outline{
+  fill:#17130f;
+  stroke:#c79b55;
+  stroke-width:2.25;
+  filter:drop-shadow(0 18px 20px rgba(32,27,21,.18));
+}
+.ohio-lake-line{fill:none;stroke:#c79b55;stroke-width:1.25;stroke-dasharray:5 7;opacity:.58}
+.map-pin{cursor:pointer;outline:none}
+.map-pin .pin-halo{fill:rgba(199,155,85,.20);transition:transform .25s ease,fill .25s ease;transform-origin:center}
+.map-pin .pin-dot{fill:#c79b55;stroke:#fffaf1;stroke-width:2.5;transition:transform .25s ease;transform-origin:center}
+.map-pin .pin-label{
+  fill:#f4efe6;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.08em;
+  paint-order:stroke;
+  stroke:#17130f;
+  stroke-width:4px;
+  stroke-linejoin:round;
+}
+.map-pin:hover .pin-halo,.map-pin:focus .pin-halo{fill:rgba(199,155,85,.38);transform:scale(1.25)}
+.map-pin:hover .pin-dot,.map-pin:focus .pin-dot{transform:scale(1.24)}
+.ohio-map-caption{
+  position:absolute;
+  left:24px;
+  bottom:20px;
+  margin:0;
+  color:#695b4b!important;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:10px!important;
+  line-height:1.5!important;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+.ohio-map-links{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+.ohio-map-link{
+  display:flex;
+  min-height:128px;
+  flex-direction:column;
+  justify-content:space-between;
+  padding:20px;
+  text-decoration:none;
+  background:#fffaf1;
+  border:1px solid rgba(32,27,21,.10);
+  transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;
+}
+.ohio-map-link:hover,.ohio-map-link:focus{
+  transform:translateY(-3px);
+  border-color:rgba(154,107,40,.48);
+  box-shadow:0 16px 34px rgba(32,27,21,.08);
+}
+.ohio-map-link span{
+  color:#9a6b28;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:9px;
+  font-weight:700;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
+.ohio-map-link strong{
+  display:block;
+  margin-top:9px;
+  color:#352c22;
+  font-family:Georgia,'Times New Roman',serif;
+  font-size:22px;
+  font-weight:400;
+  line-height:1.04;
+}
+.ohio-map-link em{
+  display:block;
+  margin-top:12px;
+  color:#786a59;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:10px;
+  font-style:normal;
+  letter-spacing:.10em;
+  text-transform:uppercase;
+}
+@media(max-width:1040px){
+  .ohio-map-layout{grid-template-columns:1fr}
+  .ohio-map-panel{min-height:500px}
+  .ohio-map-svg{min-height:500px}
+  .ohio-map-links{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:680px){
+  .ohio-map-layout{margin-top:24px!important;gap:14px!important}
+  .ohio-map-panel{min-height:390px}
+  .ohio-map-svg{min-height:390px}
+  .ohio-map-panel::before{top:16px;right:14px;font-size:8px;letter-spacing:.20em}
+  .ohio-map-caption{left:14px;bottom:12px;font-size:8px!important;max-width:72%}
+  .ohio-map-links{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+  .ohio-map-link{min-height:100px;padding:13px}
+  .ohio-map-link span{font-size:7.5px;letter-spacing:.10em}
+  .ohio-map-link strong{font-size:16px;margin-top:6px}
+  .ohio-map-link em{font-size:7.5px;margin-top:8px;letter-spacing:.08em}
+  .map-pin .pin-label{font-size:9px}
+}
+@media(max-width:380px){
+  .ohio-map-links{grid-template-columns:1fr}
+  .ohio-map-panel{min-height:350px}
+  .ohio-map-svg{min-height:350px}
+}
+
 </style>
 <script type="application/ld+json">{
 "@context":"https://schema.org",
@@ -1069,7 +1211,69 @@ h2{font-size:34px!important}
 
 
 
-<section class="ohio-regions" id="ohio-regions"><div class="section-heading"><p class="eyebrow">Explore Ohio Photography By Region</p><h2>Ohio landscape photography organized by region, landmark, and atmosphere.</h2><p>Browse Ohio artwork by the places and visual themes people actually search for: Lima and Northwest Ohio, Hocking Hills, Mohican, Lake Erie and lighthouses, rivers, waterfalls, forests, and seasonal Midwest landscapes.</p></div><div class="region-grid"><article class="region-card"><span>Northwest Ohio</span><h3>Lima, Grand Rapids & Celina</h3><p>Local parks, lake sunrises, bridges, river reflections, rural landscapes, and familiar Northwest Ohio atmosphere.</p></article><article class="region-card"><span>Southeast Ohio</span><h3>Hocking Hills</h3><p>Waterfalls, cliffs, caves, forest trails, long exposures, and some of Ohio’s most recognizable nature scenery.</p></article><article class="region-card"><span>North Central Ohio</span><h3>Mohican Region</h3><p>Woodland paths, suspension bridges, forest trails, river scenes, and natural textures for Ohio nature collectors.</p></article><article class="region-card"><span>Lake & Lighthouse</span><h3>Lake Erie and Ohio Lighthouses</h3><p>Lakefront scenes, lighthouse reflections, sunrise water views, and coastal Ohio imagery for lake houses and collectors.</p></article><article class="region-card"><span>Rivers & Bridges</span><h3>Ohio Waterways</h3><p>Little Miami River, Grand Rapids reflections, bridges, flowing water, and quiet riverbank landscapes.</p></article><article class="region-card"><span>Seasonal Midwest</span><h3>Ohio Through the Year</h3><p>Spring blossoms, summer greens, autumn color, winter stillness, fog, snow, and warm evening light.</p></article></div><div class="ohio-link-row"><a href="https://dansproul.com/collections/ohio+nature+and+landscape+prints" target="_blank" rel="noopener">Shop Full Ohio Collection</a><a href="#mockups">View Room Previews</a><a href="#featured-locations">Featured Locations</a></div></section>
+<section class="ohio-regions" id="ohio-regions">
+  <div class="section-heading">
+    <p class="eyebrow">Explore Ohio Photography By Region</p>
+    <h2>Choose a place on the map.</h2>
+    <p>Use the interactive Ohio map or the compact location links to browse regional landscapes, waterfalls, forests, lighthouses, rivers, and familiar Midwest scenery.</p>
+  </div>
+
+  <div class="ohio-map-layout">
+    <div class="ohio-map-panel" aria-label="Interactive map of featured Ohio photography locations">
+      <svg class="ohio-map-svg" viewBox="0 0 430 500" role="img" aria-labelledby="ohioMapTitle ohioMapDesc">
+        <title id="ohioMapTitle">Featured Ohio photography locations</title>
+        <desc id="ohioMapDesc">Interactive links for Lima, Grand Rapids, Celina, Marblehead Lighthouse, Mohican, Clifton Gorge, and Hocking Hills.</desc>
+        <path class="ohio-lake-line" d="M150 58 C225 31 313 34 382 72" />
+        <path class="ohio-outline" d="M92 54 L160 48 L205 52 L250 43 L302 52 L345 72 L360 106 L350 137 L356 176 L342 207 L344 249 L326 278 L319 325 L298 357 L270 365 L242 352 L215 366 L183 356 L157 370 L130 355 L102 360 L80 338 L58 330 L50 296 L34 279 L39 243 L27 216 L42 188 L37 154 L55 130 L57 94 Z" />
+
+        <a class="map-pin" href="https://dansproul.com/art/lima+ohio" target="_blank" rel="noopener" aria-label="Browse Lima Ohio photography prints">
+          <title>Lima and Northwest Ohio photography</title>
+          <circle class="pin-halo" cx="118" cy="191" r="14"/><circle class="pin-dot" cx="118" cy="191" r="6"/><text class="pin-label" x="132" y="195">Lima</text>
+        </a>
+        <a class="map-pin" href="https://dansproul.com/art/celina+ohio" target="_blank" rel="noopener" aria-label="Browse Celina Ohio photography prints">
+          <title>Celina lake and lighthouse photography</title>
+          <circle class="pin-halo" cx="104" cy="265" r="14"/><circle class="pin-dot" cx="104" cy="265" r="6"/><text class="pin-label" x="118" y="269">Celina</text>
+        </a>
+        <a class="map-pin" href="https://dansproul.com/art/grand+rapids+ohio" target="_blank" rel="noopener" aria-label="Browse Grand Rapids Ohio photography prints">
+          <title>Grand Rapids Ohio river and bridge photography</title>
+          <circle class="pin-halo" cx="104" cy="137" r="14"/><circle class="pin-dot" cx="104" cy="137" r="6"/><text class="pin-label" x="118" y="141">Grand Rapids</text>
+        </a>
+        <a class="map-pin" href="https://dansproul.com/art/marblehead+lighthouse" target="_blank" rel="noopener" aria-label="Browse Marblehead Lighthouse photography prints">
+          <title>Marblehead Lighthouse and Lake Erie photography</title>
+          <circle class="pin-halo" cx="276" cy="90" r="14"/><circle class="pin-dot" cx="276" cy="90" r="6"/><text class="pin-label" x="290" y="94">Marblehead</text>
+        </a>
+        <a class="map-pin" href="https://dansproul.com/art/mohican" target="_blank" rel="noopener" aria-label="Browse Mohican photography prints">
+          <title>Mohican forest and bridge photography</title>
+          <circle class="pin-halo" cx="270" cy="180" r="14"/><circle class="pin-dot" cx="270" cy="180" r="6"/><text class="pin-label" x="284" y="184">Mohican</text>
+        </a>
+        <a class="map-pin" href="https://dansproul.com/art/clifton+gorge" target="_blank" rel="noopener" aria-label="Browse Clifton Gorge photography prints">
+          <title>Clifton Gorge and Yellow Springs photography</title>
+          <circle class="pin-halo" cx="175" cy="304" r="14"/><circle class="pin-dot" cx="175" cy="304" r="6"/><text class="pin-label" x="189" y="308">Clifton Gorge</text>
+        </a>
+        <a class="map-pin" href="https://dansproul.com/art/hocking+hills" target="_blank" rel="noopener" aria-label="Browse Hocking Hills photography prints">
+          <title>Hocking Hills waterfall and trail photography</title>
+          <circle class="pin-halo" cx="280" cy="312" r="14"/><circle class="pin-dot" cx="280" cy="312" r="6"/><text class="pin-label" x="294" y="316">Hocking Hills</text>
+        </a>
+      </svg>
+      <p class="ohio-map-caption">Select a gold marker to open that location’s print collection.</p>
+    </div>
+
+    <div class="ohio-map-links" aria-label="Ohio photography location links">
+      <a class="ohio-map-link" href="https://dansproul.com/art/lima+ohio" target="_blank" rel="noopener"><span>Northwest Ohio</span><strong>Lima</strong><em>Local parks · seasons · lakes</em></a>
+      <a class="ohio-map-link" href="https://dansproul.com/art/hocking+hills" target="_blank" rel="noopener"><span>Southeast Ohio</span><strong>Hocking Hills</strong><em>Falls · caves · forest trails</em></a>
+      <a class="ohio-map-link" href="https://dansproul.com/art/mohican" target="_blank" rel="noopener"><span>North Central</span><strong>Mohican</strong><em>Woodlands · bridges · rivers</em></a>
+      <a class="ohio-map-link" href="https://dansproul.com/art/marblehead+lighthouse" target="_blank" rel="noopener"><span>Lake Erie</span><strong>Marblehead</strong><em>Lighthouse · shoreline · water</em></a>
+      <a class="ohio-map-link" href="https://dansproul.com/art/clifton+gorge" target="_blank" rel="noopener"><span>Southwest Ohio</span><strong>Clifton Gorge</strong><em>Gorge · waterfalls · woodland</em></a>
+      <a class="ohio-map-link" href="https://dansproul.com/art/celina+ohio" target="_blank" rel="noopener"><span>West Central</span><strong>Celina</strong><em>Lake views · lighthouse · sunrise</em></a>
+    </div>
+  </div>
+
+  <div class="ohio-link-row">
+    <a href="https://dansproul.com/collections/ohio+nature+and+landscape+prints" target="_blank" rel="noopener">Shop Full Ohio Collection</a>
+    <a href="#mockups">View Room Previews</a>
+    <a href="#featured-locations">Browse Subjects</a>
+  </div>
+</section>
 
 <section class="ohio-seasons" id="ohio-seasons"><div class="section-heading"><p class="eyebrow">Ohio Through the Seasons</p><h2>Seasonal Ohio photography for collectors, homes, lake houses, and regional interiors.</h2><p>Ohio landscape photography has strong seasonal variety, from spring blossoms and summer waterfalls to autumn parks and quiet winter scenes.</p></div><div class="season-grid"><article class="season-card"><span>Spring</span><h3>Blossoms & Fresh Green</h3><p>Lima spring trees, early forest color, waterfalls, wet trails, and soft new growth.</p></article><article class="season-card"><span>Summer</span><h3>Lakes, Rivers & Waterfalls</h3><p>Lake reflections, lighthouse scenes, river movement, green forests, and waterfall photography.</p></article><article class="season-card"><span>Autumn</span><h3>Ohio Fall Color</h3><p>Warm parks, gold leaves, wooded trails, foggy mornings, and Midwest autumn atmosphere.</p></article><article class="season-card"><span>Winter</span><h3>Snow & Stillness</h3><p>Snow-covered trees, quiet bridges, monochrome landscapes, frozen water, and soft winter light.</p></article></div></section>
 
