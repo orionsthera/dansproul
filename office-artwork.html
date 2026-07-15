@@ -515,7 +515,8 @@
       margin-top: 22px;
     }
 
-    .room-types span {
+    .room-types span,
+    .room-types a {
       font-family: Arial, sans-serif;
       font-size: 12px;
       letter-spacing: 0.08em;
@@ -525,6 +526,20 @@
       border-radius: 999px;
       color: #4d443a;
       background: rgba(255,255,255,0.45);
+    }
+
+    .room-types a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--warm-dark);
+      border-color: rgba(122,91,47,0.32);
+      background: #fffaf3;
+    }
+
+    .room-types a:hover {
+      border-color: var(--warm-dark);
+      color: var(--ink);
     }
 
     .cta {
@@ -1209,7 +1224,8 @@
         margin-top: 16px !important;
       }
 
-      .room-types span {
+      .room-types span,
+      .room-types a {
         padding: 8px 9px !important;
         font-size: 9px !important;
         letter-spacing: 0.06em !important;
@@ -1400,7 +1416,8 @@
         gap: 6px !important;
       }
 
-      .office-types-compact .room-types span {
+      .office-types-compact .room-types span,
+      .office-types-compact .room-types a {
         width: 100% !important;
         display: flex !important;
         align-items: center !important;
@@ -1470,7 +1487,16 @@
           "law firm artwork",
           "conference room artwork",
           "black and white landscape prints",
-          "nature artwork for offices"
+          "nature artwork for offices",
+          "medical office waiting room artwork",
+          "waiting room artwork for professional interiors"
+        ],
+        "hasPart": [
+          {
+            "@type": "WebPage",
+            "name": "Waiting Room Artwork for Medical Offices and Wellness Clinics",
+            "url": "https://dsproul.com/waiting-room-artwork.html"
+          }
         ],
         "mainEntity": {
           "@id": "https://dsproul.com/office-artwork.html#office-artwork"
@@ -1773,6 +1799,10 @@
             <h3>Quiet Earth</h3>
             <p>Best for calm workspaces, wellness-adjacent offices, consultation rooms, and neutral interiors.</p>
           </a>
+          <a class="collection-card" href="waiting-room-artwork.html">
+            <h3>Waiting Room Artwork</h3>
+            <p>Best for medical offices, therapy practices, dental offices, wellness clinics, and patient-facing reception spaces.</p>
+          </a>
           <a class="collection-card" href="alaska-photography-prints.html">
             <h3>Alaska Statement Pieces</h3>
             <p>Best for dramatic executive walls, boardrooms, lodge-modern offices, and regional identity.</p>
@@ -1816,7 +1846,7 @@
         <div class="room-types">
           <span>Law Firms</span>
           <span>Financial Advisors</span>
-          <span>Medical Offices</span>
+          <a href="waiting-room-artwork.html">Medical Offices</a>
           <span>Real Estate Offices</span>
           <span>Architecture Studios</span>
           <span>Consulting Firms</span>
@@ -1931,6 +1961,7 @@
         <a href="/healthcare-artwork.html">Healthcare</a>
         <a href="/hospitality-artwork.html">Hospitality</a>
         <a href="/office-artwork.html">Office</a>
+        <a href="/waiting-room-artwork.html">Waiting Rooms</a>
         <a href="/residential-nature-wall-art.html">Residential</a>
         <a href="/senior-living-artwork.html">Senior Living</a>
       </div>
