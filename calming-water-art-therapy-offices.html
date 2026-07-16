@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>10 Calming Water Images for Therapy Offices | Dan Sproul</title>
   <meta name="description" content="A curated artwork guide for therapy offices, counseling rooms, wellness practices, and waiting areas, featuring calming water imagery, room mockups, print recommendations, and fine art photography by Dan Sproul." />
+  <meta name="author" content="Dan Sproul" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://dsproul.com/calming-water-art-therapy-offices.html" />
   <meta property="og:title" content="10 Calming Water Images for Therapy Offices | Dan Sproul" />
@@ -12,6 +13,10 @@
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://dsproul.com/calming-water-art-therapy-offices.html" />
   <meta property="og:image" content="https://dsproul.com/therapy-office-winter-water-cascades-mockup.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="10 Calming Water Images for Therapy Offices | Dan Sproul" />
+  <meta name="twitter:description" content="A curated water artwork guide for therapy offices, counseling rooms, wellness practices, and calmer healthcare interiors." />
+  <meta name="twitter:image" content="https://dsproul.com/therapy-office-winter-water-cascades-mockup.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preload" as="image" href="therapy-office-winter-water-cascades-mockup.jpg" />
@@ -336,51 +341,134 @@
       .footer-grid { grid-template-columns: 1fr; gap: 30px; }
       .footer-bottom { text-align: left; }
     }
+
+    /* SITEWIDE MOBILE COLLAPSIBLE FOOTER */
+    .footer-section { display: block; }
+    .footer-section summary {
+      list-style: none;
+      cursor: default;
+    }
+    .footer-section summary::-webkit-details-marker { display: none; }
+    .footer-section summary h3 { margin: 0 0 13px; }
+    .footer-links { display: block; }
+
+    @media (min-width: 761px) {
+      .footer-section summary { pointer-events: none; }
+      .footer-section summary::after { display: none; }
+    }
+
+    @media (max-width: 760px) {
+      .footer-grid { gap: 0 !important; }
+      .footer-section {
+        border-bottom: 1px solid rgba(185, 138, 59, .18);
+      }
+      .footer-section summary {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        cursor: pointer;
+      }
+      .footer-section summary h3 {
+        margin: 0 !important;
+      }
+      .footer-section summary::after {
+        content: "+";
+        color: #d5b365;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        line-height: 1;
+      }
+      .footer-section[open] summary::after {
+        content: "–";
+      }
+      .footer-section .footer-links {
+        padding: 0 0 18px;
+      }
+      .footer-connect {
+        padding-top: 24px;
+      }
+    }
+
   </style>
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Person",
-        "@id": "https://dsproul.com/#dan-sproul",
-        "name": "Dan Sproul",
-        "url": "https://dsproul.com",
-        "jobTitle": "Fine Art Photographer and Mixed Media Artist",
-        "homeLocation": { "@type": "Place", "name": "Lima, Ohio" },
-        "sameAs": [
-          "https://dansproul.com",
-          "https://www.linkedin.com/in/dan-sproul-bb55015a/",
-          "https://www.pinterest.com/dansproul/",
-          "https://dansproulphotography.substack.com"
-        ]
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://dsproul.com/#dan-sproul",
+      "name": "Dan Sproul",
+      "url": "https://dsproul.com",
+      "jobTitle": "Fine Art Photographer and Mixed Media Artist",
+      "homeLocation": {
+        "@type": "Place",
+        "name": "Lima, Ohio"
       },
-      {
-        "@type": "Article",
-        "@id": "https://dsproul.com/calming-water-art-therapy-offices.html#article",
-        "headline": "10 Calming Water Images for Therapy Offices",
-        "description": "A curated artwork guide for therapy offices, counseling rooms, wellness practices, and waiting areas featuring calming water imagery by Dan Sproul.",
-        "image": [
-          "https://dsproul.com/therapy-office-winter-water-cascades-mockup.jpg",
-          "https://dsproul.com/therapy-office-tranquil-waterfall-japanese-garden-mockup.jpg",
-          "https://dsproul.com/therapist-office-cumberland-falls-waterfall-mockup.jpg",
-          "https://dsproul.com/wellness-office-ricketts-glen-stream-mockup.jpg"
-        ],
-        "author": { "@id": "https://dsproul.com/#dan-sproul" },
-        "publisher": { "@type": "Organization", "name": "Dan Sproul Fine Art Photography", "url": "https://dsproul.com" },
-        "mainEntityOfPage": "https://dsproul.com/calming-water-art-therapy-offices.html"
+      "sameAs": [
+        "https://dansproul.com",
+        "https://www.linkedin.com/in/dan-sproul-bb55015a/",
+        "https://www.pinterest.com/dansproul/",
+        "https://dansproulphotography.substack.com"
+      ],
+      "email": "dan@dsproul.com"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://dsproul.com/#organization",
+      "name": "Dan Sproul Fine Art Photography",
+      "url": "https://dsproul.com",
+      "founder": {
+        "@id": "https://dsproul.com/#dan-sproul"
       },
-      {
-        "@type": "BreadcrumbList",
-        "@id": "https://dsproul.com/calming-water-art-therapy-offices.html#breadcrumb",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dsproul.com/" },
-          { "@type": "ListItem", "position": 2, "name": "Journal", "item": "https://dsproul.com/blog.html" },
-          { "@type": "ListItem", "position": 3, "name": "10 Calming Water Images for Therapy Offices", "item": "https://dsproul.com/calming-water-art-therapy-offices.html" }
-        ]
-      }
-    ]
-  }
+      "email": "dan@dsproul.com"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dsproul.com/calming-water-art-therapy-offices.html#article",
+      "headline": "10 Calming Water Images for Therapy Offices",
+      "description": "A curated artwork guide for therapy offices, counseling rooms, wellness practices, and waiting areas featuring calming water imagery by Dan Sproul.",
+      "image": [
+        "https://dsproul.com/therapy-office-winter-water-cascades-mockup.jpg",
+        "https://dsproul.com/therapy-office-tranquil-waterfall-japanese-garden-mockup.jpg",
+        "https://dsproul.com/therapist-office-cumberland-falls-waterfall-mockup.jpg",
+        "https://dsproul.com/wellness-office-ricketts-glen-stream-mockup.jpg"
+      ],
+      "author": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "publisher": {
+        "@id": "https://dsproul.com/#organization"
+      },
+      "mainEntityOfPage": "https://dsproul.com/calming-water-art-therapy-offices.html"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://dsproul.com/calming-water-art-therapy-offices.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dsproul.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Journal",
+          "item": "https://dsproul.com/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "10 Calming Water Images for Therapy Offices",
+          "item": "https://dsproul.com/calming-water-art-therapy-offices.html"
+        }
+      ]
+    }
+  ]
+}
   </script>
 </head>
 <body>
@@ -403,7 +491,7 @@
       <a href="about-dan-sproul.html">About</a>
       <a href="in-your-space.html">In Your Space</a>
       <a href="for-designers.html">For Designers</a>
-      <a href="blog.html" class="active">Blog</a>
+      <a href="blog.html" class="active" aria-current="page">Blog</a>
       <a href="https://dansproul.com" target="_blank" rel="noopener" class="nav-shop-standard">Shop Prints</a>
     </div>
   </nav>
@@ -423,7 +511,7 @@
           <span>Print Guidance</span>
         </div>
         <div class="btns">
-          <a class="btn primary" href="mailto:sproulphoto@gmail.com?subject=Therapy%20Office%20Artwork%20Guidance">Request Guidance</a>
+          <a class="btn primary" href="mailto:dan@dsproul.com?subject=Therapy%20Office%20Artwork%20Guidance">Request Guidance</a>
           <a class="btn" href="#mockups">View Mockups</a>
         </div>
       </div>
@@ -530,7 +618,7 @@
           <h2>Choosing For A Real Office?</h2>
           <p>Send a room photo, wall dimensions, or project direction. Dan can suggest image direction, print size, format, and calming artwork options for therapy, counseling, and wellness spaces.</p>
           <div class="btns">
-            <a class="btn primary" href="mailto:sproulphoto@gmail.com?subject=Therapy%20Office%20Artwork%20Mockup">Request Guidance</a>
+            <a class="btn primary" href="mailto:dan@dsproul.com?subject=Therapy%20Office%20Artwork%20Mockup">Request Guidance</a>
           </div>
         </div>
       </aside>
@@ -865,7 +953,7 @@
           If you are selecting artwork for a therapy office, counseling room, wellness practice, or waiting area, send a room photo and basic wall dimensions. I can suggest image direction, size, format, and collection options that fit the atmosphere you want to create.
         </p>
         <div class="btns">
-          <a class="btn primary" href="mailto:sproulphoto@gmail.com?subject=Therapy%20Office%20Artwork%20Recommendations">Request Artwork Recommendations</a>
+          <a class="btn primary" href="mailto:dan@dsproul.com?subject=Therapy%20Office%20Artwork%20Recommendations">Request Artwork Recommendations</a>
           <a class="btn" href="wellness-waters-collection.html">Browse Wellness Waters</a>
           <a class="btn" href="healthcare-artwork.html">Healthcare Artwork</a>
         </div>
@@ -875,57 +963,65 @@
 
   <footer id="footer" class="site-footer">
     <div class="footer-grid">
-  <div>
-      <h3>Explore</h3>
-      <a href="/">Home</a>
-      <a href="best-sellers.html">Best Sellers</a>
-      <a href="art-collections.html">Collections</a>
-      <a href="in-your-space.html">In Your Space</a>
-      <a href="for-designers.html">For Designers</a>
-      <a href="https://dansproul.com" target="_blank" rel="noopener">Shop Prints</a>
-      <a href="mailto:sproulphoto@gmail.com">Contact</a>
+      <details class="footer-section" open>
+        <summary><h3>Explore</h3></summary>
+        <div class="footer-links">
+          <a href="/">Home</a>
+          <a href="best-sellers.html">Best Sellers</a>
+          <a href="art-collections.html">Collections</a>
+          <a href="in-your-space.html">In Your Space</a>
+          <a href="for-designers.html">For Designers</a>
+          <a href="https://dansproul.com" target="_blank" rel="noopener">Shop Prints</a>
+          <a href="mailto:dan@dsproul.com">Contact</a>
+        </div>
+      </details>
+
+      <details class="footer-section" open>
+        <summary><h3>Collections</h3></summary>
+        <div class="footer-links">
+          <a href="quiet-earth-collection.html">Quiet Earth</a>
+          <a href="forest-light-collection.html">Forest Light</a>
+          <a href="wellness-waters-collection.html">Wellness Waters</a>
+          <a href="coastal-atmosphere.html">Coastal Atmosphere</a>
+          <a href="mountain-light-collection.html">Mountain Light</a>
+          <a href="winter-stillness.html">Winter Stillness</a>
+          <a href="monochrome-stillness.html">Monochrome Stillness</a>
+          <a href="open-horizons-collection.html">Open Horizons</a>
+          <a href="heritage-mixed-media.html">Heritage &amp; Mixed Media</a>
+        </div>
+      </details>
+
+      <details class="footer-section" open>
+        <summary><h3>Resources</h3></summary>
+        <div class="footer-links">
+          <a href="artwork-guides.html">Artwork Guides</a>
+          <a href="blog.html">Journal</a>
+          <a href="lima-ohio-fine-art-photographer.html">Lima Fine Art Photographer</a>
+          <a href="about-dan-sproul.html">About Dan</a>
+          <a href="ohio-nature-photography-prints.html">Ohio Nature Photography</a>
+          <a href="alaska-photography-prints.html">Alaska Photography</a>
+        </div>
+      </details>
+
+      <details class="footer-section" open>
+        <summary><h3>For Designers</h3></summary>
+        <div class="footer-links">
+          <a href="/for-designers.html">Designer Resources</a>
+          <a href="/healthcare-artwork.html">Healthcare</a>
+          <a href="/hospitality-artwork.html">Hospitality</a>
+          <a href="/office-artwork.html">Office</a>
+          <a href="/residential-nature-wall-art.html">Residential</a>
+          <a href="/senior-living-artwork.html">Senior Living</a>
+        </div>
+      </details>
+
+      <div class="footer-connect">
+        <h3>Connect</h3>
+        <a href="mailto:dan@dsproul.com">Email</a>
+        <a href="https://www.linkedin.com/in/dan-sproul-bb55015a/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.pinterest.com/dansproul/" target="_blank" rel="noopener">Pinterest</a>
+      </div>
     </div>
-
-    <div>
-      <h3>Collections</h3>
-      <a href="quiet-earth-collection.html">Quiet Earth</a>
-      <a href="forest-light-collection.html">Forest Light</a>
-      <a href="wellness-waters-collection.html">Wellness Waters</a>
-      <a href="coastal-atmosphere.html">Coastal Atmosphere</a>
-      <a href="mountain-light-collection.html">Mountain Light</a>
-      <a href="monochrome-stillness.html">Monochrome Stillness</a>
-      <a href="heritage-mixed-media.html">Heritage & Mixed Media</a>
-    </div>
-
-    <div>
-      <h3>Resources</h3>
-      <a href="artwork-guides.html">Artwork Guides</a>
-      <a href="blog.html">Journal</a>
-      <a href="lima-ohio-fine-art-photographer.html">Lima Fine Art Photographer</a>
-      <a href="about-dan-sproul.html">About Dan</a>
-      <a href="ohio-nature-photography-prints.html">Ohio Nature Photography</a>
-      <a href="alaska-photography-prints.html">Alaska Photography</a>
-    </div>
-
-  <div>
-  <h3>For Designers</h3>
-  <a href="/for-designers.html">Designer Resources</a>
-  <a href="/healthcare-artwork.html">Healthcare</a>
-  <a href="/hospitality-artwork.html">Hospitality</a>
-  <a href="/office-artwork.html">Office</a>
-  <a href="/residential-nature-wall-art.html">Residential</a>
-  <a href="/senior-living-artwork.html">Senior Living</a>
-</div>
-
-
-    <div>
-      <h3>Connect</h3>
-      <a href="mailto:sproulphoto@gmail.com">Email</a>
-      <a href="https://www.linkedin.com/in/dan-sproul-bb55015a/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://www.pinterest.com/dansproul/" target="_blank" rel="noopener">Pinterest</a>
-    </div>
-
-  </div>
 
     <div class="footer-bottom">
       &copy; 2026 Dan Sproul Fine Art Photography &middot; Based in Lima, Ohio &middot; Original Nature Photography &amp; Heritage-Inspired Artwork
@@ -960,6 +1056,36 @@
           var isOpen = nav.classList.toggle("is-open");
           toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
         });
+
+        document.querySelectorAll(".nav-links-standard a").forEach(function (link) {
+          link.addEventListener("click", function () {
+            nav.classList.remove("is-open");
+            toggle.setAttribute("aria-expanded", "false");
+          });
+        });
+      }
+
+      var footerDetails = document.querySelectorAll(".site-footer details.footer-section");
+      var footerMql = window.matchMedia("(max-width: 760px)");
+
+      function applyFooterMode(eventOrList) {
+        var isMobile = eventOrList.matches;
+        footerDetails.forEach(function (section) {
+          if (isMobile) {
+            section.removeAttribute("open");
+          } else {
+            section.setAttribute("open", "");
+          }
+        });
+      }
+
+      if (footerDetails.length) {
+        applyFooterMode(footerMql);
+        if (footerMql.addEventListener) {
+          footerMql.addEventListener("change", applyFooterMode);
+        } else if (footerMql.addListener) {
+          footerMql.addListener(applyFooterMode);
+        }
       }
 
       var modal = document.getElementById("art-modal");
@@ -1017,7 +1143,13 @@
       });
 
       document.addEventListener("keydown", function (event) {
-        if (event.key === "Escape" && modal.classList.contains("is-open")) closeModal();
+        if (event.key === "Escape") {
+          if (modal && modal.classList.contains("is-open")) closeModal();
+          if (nav && toggle && nav.classList.contains("is-open")) {
+            nav.classList.remove("is-open");
+            toggle.setAttribute("aria-expanded", "false");
+          }
+        }
       });
     });
   </script>
