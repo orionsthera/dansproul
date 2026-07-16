@@ -1,15 +1,16 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Forest Light | Woodland Photography for Homes & Wellness Interiors | Dan Sproul</title>
-<meta name="description" content="Forest Light is a curated collection of woodland fine art photography by Dan Sproul — for living rooms, bedrooms, and organic modern homes, as well as wellness, healthcare, and hospitality interiors.">
-<meta name="robots" content="index, follow, max-image-preview:large">
-<link rel="canonical" href="https://dsproul.com/forest-light-collection.html">
-<meta property="og:title" content="Forest Light Collection | Dan Sproul Fine Art Photography">
-<meta property="og:description" content="Forest artwork curated for organic modern interiors, wellness spaces, healthcare waiting rooms, lodge interiors, hospitality corridors, and biophilic design.">
-<meta property="og:image" content="https://dsproul.com/forest-light-living-room.jpg">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Forest Light | Woodland Photography for Homes &amp; Wellness Interiors | Dan Sproul</title>
+<meta content="Forest Light is a curated collection of woodland fine art photography by Dan Sproul — for living rooms, bedrooms, and organic modern homes, as well as wellness, healthcare, and hospitality interiors." name="description"/><meta content="Dan Sproul" name="author"/>
+<meta content="index, follow, max-image-preview:large" name="robots"/>
+<link href="https://dsproul.com/forest-light-collection.html" rel="canonical"/>
+<meta content="Forest Light Collection | Dan Sproul Fine Art Photography" property="og:title"/>
+<meta content="Forest artwork curated for organic modern interiors, wellness spaces, healthcare waiting rooms, lodge interiors, hospitality corridors, and biophilic design." property="og:description"/>
+<meta content="https://dsproul.com/forest-light-living-room.jpg" property="og:image"/>
 <style>
 :root{--bg:#080807;--panel:#12110f;--panel2:#f3efe8;--cream:#f4efe7;--muted:#b5aa9b;--green:#8f9b68;--gold:#c7a25d;--line:rgba(255,255,255,.11);--max:1320px}
 *{margin:0;padding:0;box-sizing:border-box}
@@ -787,9 +788,211 @@ img{max-width:100%;height:auto}
   .field-note{-webkit-line-clamp:5!important;}
 }
 
+
+
+/* STANDARD NAV + MOBILE COLLAPSIBLE FOOTER FINAL PASS */
+.site-nav-standard{
+  position:fixed!important;
+  top:0!important;
+  left:0!important;
+  right:0!important;
+  height:66px!important;
+  z-index:9999!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:28px!important;
+  padding:0 clamp(16px,4vw,44px)!important;
+  background:rgba(14,12,9,.94)!important;
+  border-bottom:1px solid rgba(185,138,59,.18)!important;
+  backdrop-filter:blur(14px)!important;
+  -webkit-backdrop-filter:blur(14px)!important;
+}
+.nav-logo-standard{
+  display:flex!important;
+  flex-direction:column!important;
+  text-decoration:none!important;
+  color:#f4eee5!important;
+  line-height:1!important;
+  min-width:max-content!important;
+}
+.nav-logo-name-standard{
+  font-family:Arial,Helvetica,sans-serif!important;
+  font-size:18px!important;
+  font-weight:700!important;
+  letter-spacing:.24em!important;
+  text-transform:uppercase!important;
+}
+.nav-logo-sub-standard{
+  margin-top:7px!important;
+  color:#b9934b!important;
+  font-family:Arial,Helvetica,sans-serif!important;
+  font-size:9px!important;
+  letter-spacing:.26em!important;
+  text-transform:uppercase!important;
+}
+.nav-links-standard{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:flex-end!important;
+  gap:clamp(18px,2vw,34px)!important;
+}
+.nav-links-standard a{
+  color:rgba(244,238,229,.78)!important;
+  text-decoration:none!important;
+  font-family:Arial,Helvetica,sans-serif!important;
+  font-size:12px!important;
+  font-weight:700!important;
+  letter-spacing:.18em!important;
+  text-transform:uppercase!important;
+  white-space:nowrap!important;
+}
+.nav-links-standard a:hover,
+.nav-links-standard a[aria-current="page"]{color:#f4eee5!important}
+.nav-shop-standard{
+  color:#d5b365!important;
+  border:1px solid rgba(213,179,101,.62)!important;
+  padding:14px 22px!important;
+}
+.nav-toggle-standard{
+  display:none!important;
+  width:42px!important;
+  height:42px!important;
+  border:1px solid rgba(213,179,101,.36)!important;
+  background:transparent!important;
+  cursor:pointer!important;
+}
+.nav-toggle-standard span{
+  display:block!important;
+  width:20px!important;
+  height:2px!important;
+  margin:5px auto!important;
+  background:#f4eee5!important;
+}
+
+.site-footer .footer-grid > details,
+.site-footer .footer-grid > .footer-connect{
+  display:block!important;
+  min-width:0!important;
+}
+.site-footer .footer-group{
+  border:0!important;
+  margin:0!important;
+  padding:0!important;
+}
+.site-footer .footer-group summary,
+.site-footer .footer-connect h3{
+  display:block!important;
+  list-style:none!important;
+  margin:0 0 13px!important;
+  color:#d5b365!important;
+  font-family:Georgia,"Times New Roman",serif!important;
+  font-size:21px!important;
+  line-height:1.2!important;
+  font-weight:400!important;
+  text-transform:none!important;
+  letter-spacing:0!important;
+}
+.site-footer .footer-group summary::-webkit-details-marker{display:none!important}
+.site-footer .footer-group summary::marker{content:""!important}
+.site-footer .footer-group a,
+.site-footer .footer-connect a{
+  display:block!important;
+  width:auto!important;
+  text-decoration:none!important;
+  color:rgba(244,238,229,.66)!important;
+  font-family:Arial,Helvetica,sans-serif!important;
+  font-size:13px!important;
+  line-height:2!important;
+  text-transform:none!important;
+  letter-spacing:0!important;
+  margin:0 0 2px!important;
+  padding:0!important;
+  border:0!important;
+  background:transparent!important;
+  white-space:normal!important;
+}
+.site-footer .footer-group a:hover,
+.site-footer .footer-connect a:hover{color:#f4eee5!important}
+
+@media(max-width:1040px){
+  .site-nav-standard{height:64px!important}
+  .nav-toggle-standard{display:block!important}
+  .nav-links-standard{
+    position:fixed!important;
+    top:64px!important;
+    left:0!important;
+    right:0!important;
+    display:none!important;
+    flex-direction:column!important;
+    align-items:flex-start!important;
+    gap:0!important;
+    padding:18px 24px 24px!important;
+    background:rgba(14,12,9,.98)!important;
+    border-bottom:1px solid rgba(185,138,59,.22)!important;
+  }
+  .site-nav-standard.is-open .nav-links-standard{display:flex!important}
+  .nav-links-standard a{width:100%!important;padding:14px 0!important}
+  .nav-shop-standard{width:auto!important;margin-top:8px!important;padding:13px 18px!important}
+}
+@media(min-width:769px){
+  .site-footer .footer-group summary{
+    pointer-events:none!important;
+    cursor:default!important;
+  }
+}
+@media(max-width:768px){
+  .site-footer .footer-grid{
+    grid-template-columns:1fr!important;
+    gap:0!important;
+  }
+  .site-footer .footer-group{
+    border-bottom:1px solid rgba(185,138,59,.18)!important;
+  }
+  .site-footer .footer-group summary{
+    min-height:44px!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:space-between!important;
+    cursor:pointer!important;
+    margin:0!important;
+    padding:12px 0!important;
+  }
+  .site-footer .footer-group summary::after{
+    content:'+'!important;
+    color:#d5b365!important;
+    font-family:Arial,Helvetica,sans-serif!important;
+    font-size:18px!important;
+    line-height:1!important;
+    margin-left:16px!important;
+  }
+  .site-footer .footer-group[open] summary::after{
+    content:'–'!important;
+  }
+  .site-footer .footer-group a{
+    min-height:34px!important;
+    line-height:1.45!important;
+    padding:5px 0!important;
+    margin:0!important;
+  }
+  .site-footer .footer-group a:last-child{
+    margin-bottom:12px!important;
+  }
+  .site-footer .footer-connect{
+    padding-top:24px!important;
+  }
+  .site-footer .footer-connect h3{
+    margin-bottom:10px!important;
+  }
+  .site-footer .footer-connect a{
+    min-height:34px!important;
+    line-height:1.45!important;
+    padding:5px 0!important;
+    margin:0!important;
+  }
+}
 </style>
-<script type="application/ld+json">
-{
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -809,7 +1012,8 @@ img{max-width:100%;height:auto}
         "https://www.pinterest.com/dansproul/",
         "https://medium.com/@sprould99",
         "https://dansproulphotography.substack.com/"
-      ]
+      ],
+      "email": "dan@dsproul.com"
     },
     {
       "@type": "Organization",
@@ -819,7 +1023,7 @@ img{max-width:100%;height:auto}
       "founder": {
         "@id": "https://dsproul.com/#dan-sproul"
       },
-      "email": "sproulphoto@gmail.com",
+      "email": "dan@dsproul.com",
       "description": "Original fine art photography and mixed media artwork for designers, hospitality interiors, healthcare spaces, corporate offices, wellness environments, and residential design projects."
     },
     {
@@ -974,347 +1178,281 @@ img{max-width:100%;height:auto}
       "representativeOfPage": false
     }
   ]
-}
-</script>
-<link rel="preload" as="image" href="forest-light-living-room.jpg">
-</head>
+}</script>
+<link as="image" href="forest-light-living-room.jpg" rel="preload"/>
+<meta content="summary_large_image" name="twitter:card"/><meta content="Forest Light Collection | Dan Sproul Fine Art Photography" name="twitter:title"/><meta content="Forest artwork curated for organic modern interiors, wellness spaces, healthcare waiting rooms, lodge interiors, hospitality corridors, and biophilic design." name="twitter:description"/><meta content="https://dsproul.com/forest-light-living-room.jpg" name="twitter:image"/></head>
 <body>
 
-<header class="site-header">
-  <div class="nav-wrap">
-    <a class="logo" href="/">DAN SPROUL<span>FINE ART PHOTOGRAPHY</span></a>
-    <nav class="main-nav" aria-label="Primary navigation">
-      <a href="/">Home</a>
-      <a href="best-sellers.html">Best Sellers</a>
-      <a href="art-collections.html">Collections</a>
-      <a href="about-dan-sproul.html">About</a>
-      <a href="in-your-space.html">In Your Space</a>
-      <a href="for-designers.html">For Designers</a>
-      <a class="nav-shop" href="https://dansproul.com" target="_blank" rel="noopener">Shop Prints</a>
-    </nav>
-    <button class="mobile-toggle" aria-label="Open navigation" type="button" aria-expanded="false"><span></span><span></span></button>
-  </div>
-</header>
+<nav aria-label="Primary navigation" class="site-nav-standard">
+<a aria-label="Dan Sproul Fine Art Photography home" class="nav-logo-standard" href="/">
+<span class="nav-logo-name-standard">Dan Sproul</span>
+<span class="nav-logo-sub-standard">Fine Art Photography</span>
+</a>
+<button aria-expanded="false" aria-label="Open navigation menu" class="nav-toggle-standard" type="button">
+<span></span><span></span><span></span>
+</button>
+<div class="nav-links-standard">
+<a href="/">Home</a>
+<a href="best-sellers.html">Best Sellers</a>
+<a aria-current="page" href="art-collections.html">Collections</a>
+<a href="about-dan-sproul.html">About</a>
+<a href="in-your-space.html">In Your Space</a>
+<a href="for-designers.html">For Designers</a>
+<a class="nav-shop-standard" href="https://dansproul.com" rel="noopener" target="_blank">Shop Prints</a>
+</div>
+</nav>
 
 <section class="hero"><div class="container hero-content">
 <span class="eyebrow">Forest Light Collection</span>
 <h1>Woodland Photography for Restorative Interiors</h1>
 <p>Fine art forest photography built around filtered sunlight, glowing trees, quiet trails, woodland texture, and calming green atmosphere — curated for organic modern homes, wellness spaces, hospitality interiors, lodge environments, and biophilic design.</p>
-<a href="#mockups" class="btn primary">View In Rooms</a><a href="#collection" class="btn">Shop Forest Prints</a>
+<a class="btn primary" href="#mockups">View In Rooms</a><a class="btn" href="#collection">Shop Forest Prints</a>
 <div class="trust-strip"><span>Forest Photography</span><span>Biophilic Design</span><span>Wellness Interiors</span><span>Ships Worldwide</span><span>Mockup Help Available</span></div>
 </div></section>
-
-<section class="buyer-reassurance" aria-label="Forest Light print buying information">
-  <div class="container">
-    <div class="reassurance-strip">
-      <span>Prints from $45</span>
-      <span>Framed from $100</span>
-      <span>Canvas · Metal · Acrylic</span>
-      <span>Ships Worldwide</span>
-      <span>30-Day Print Guarantee</span>
-      <span>Free Mockup Help</span>
-    </div>
-    <p class="how-to-buy-note">Browse the room examples and selected Forest Light prints below. Click any purchase link to open my secure print storefront, where you can choose size, frame, canvas, metal, acrylic, or fine art paper options. Fulfillment, shipping, and return details are handled through the print storefront.</p>
-  </div>
+<section aria-label="Forest Light print buying information" class="buyer-reassurance">
+<div class="container">
+<div class="reassurance-strip">
+<span>Prints from $45</span>
+<span>Framed from $100</span>
+<span>Canvas · Metal · Acrylic</span>
+<span>Ships Worldwide</span>
+<span>30-Day Print Guarantee</span>
+<span>Free Mockup Help</span>
+</div>
+<p class="how-to-buy-note">Browse the room examples and selected Forest Light prints below. Click any purchase link to open my secure print storefront, where you can choose size, frame, canvas, metal, acrylic, or fine art paper options. Fulfillment, shipping, and return details are handled through the print storefront.</p>
+</div>
 </section>
-
 <section class="mockups" id="mockups"><div class="container">
 <div class="center">
 <span class="eyebrow">Shown In Context</span>
 <h2>Forest Light artwork in organic modern, wellness, lodge, and hospitality interiors.</h2>
 <p>Click each mockup to enlarge the room view, review suggested sizes, frame direction, mat guidance, format options, and purchase the corresponding print.</p>
 </div>
-
 <div class="mockup-grid">
-
-<div class="mockup-card"
-  data-purchase="https://dansproul.com/featured/pictured-rocks-hiking-trail-morning-light-forest-michigan-dan-sproul.html"
-  data-title="Pictured Rocks Hiking Trail shown as a large forest statement piece for an organic modern living room."
-  data-sizes="40x60 • 45x60 • 48x72"
-  data-frames="Natural Oak • White Oak • Walnut"
-  data-mat="No mat recommended for this large statement format"
-  data-formats="Framed Print • Canvas • Acrylic"
-  data-rooms="Organic Modern Living Rooms • Great Rooms • Wellness Spaces">
-  <img src="forest-light-living-room.jpg" alt="Large framed forest photography in organic modern living room by Dan Sproul" loading="lazy" decoding="async">
-  <div class="mockup-actions-inline"><button type="button">View Room Details</button><a href="https://dansproul.com/featured/pictured-rocks-hiking-trail-morning-light-forest-michigan-dan-sproul.html" target="_blank" rel="noopener">Purchase Print</a></div>
+<div class="mockup-card" data-formats="Framed Print • Canvas • Acrylic" data-frames="Natural Oak • White Oak • Walnut" data-mat="No mat recommended for this large statement format" data-purchase="https://dansproul.com/featured/pictured-rocks-hiking-trail-morning-light-forest-michigan-dan-sproul.html" data-rooms="Organic Modern Living Rooms • Great Rooms • Wellness Spaces" data-sizes="40x60 • 45x60 • 48x72" data-title="Pictured Rocks Hiking Trail shown as a large forest statement piece for an organic modern living room.">
+<img alt="Large framed forest photography in organic modern living room by Dan Sproul" decoding="async" loading="lazy" src="forest-light-living-room.jpg"/>
+<div class="mockup-actions-inline"><button type="button">View Room Details</button><a href="https://dansproul.com/featured/pictured-rocks-hiking-trail-morning-light-forest-michigan-dan-sproul.html" rel="noopener" target="_blank">Purchase Print</a></div>
 </div>
-
 <div class="mockup-pair">
-
-<div class="mockup-card"
-  data-purchase="https://dansproul.com/featured/forest-light-dan-sproul.html"
-  data-title="Forest Light shown as a calming woodland focal point for a warm bedroom or wellness suite."
-  data-sizes="30x40 • 36x48 • 40x60"
-  data-frames="White Oak • Natural Oak"
-  data-mat="3 inch white mat for framed paper"
-  data-formats="Framed Print • Canvas"
-  data-rooms="Bedrooms • Wellness Suites • Therapy Offices">
-  <img src="forest-light-bedroom.png" alt="Vertical blank forest artwork mockup above bed in warm wellness bedroom by Dan Sproul" loading="lazy" decoding="async">
-  <div class="mockup-actions-inline"><button type="button">View Room Details</button><a href="https://dansproul.com/featured/forest-light-dan-sproul.html" target="_blank" rel="noopener">Purchase Print</a></div>
+<div class="mockup-card" data-formats="Framed Print • Canvas" data-frames="White Oak • Natural Oak" data-mat="3 inch white mat for framed paper" data-purchase="https://dansproul.com/featured/forest-light-dan-sproul.html" data-rooms="Bedrooms • Wellness Suites • Therapy Offices" data-sizes="30x40 • 36x48 • 40x60" data-title="Forest Light shown as a calming woodland focal point for a warm bedroom or wellness suite.">
+<img alt="Vertical blank forest artwork mockup above bed in warm wellness bedroom by Dan Sproul" decoding="async" loading="lazy" src="forest-light-bedroom.png"/>
+<div class="mockup-actions-inline"><button type="button">View Room Details</button><a href="https://dansproul.com/featured/forest-light-dan-sproul.html" rel="noopener" target="_blank">Purchase Print</a></div>
 </div>
-
-<div class="mockup-card"
-  data-purchase="https://dansproul.com/featured/forest-stream-in-sunlit-woods-oregon-dan-sproul.html"
-  data-title="Forest Stream in Sunlit Woods shown as immersive woodland artwork for a lodge, spa, or wellness retreat."
-  data-sizes="40x60 • 48x72"
-  data-frames="Walnut • Natural Oak"
-  data-mat="No mat recommended"
-  data-formats="Acrylic • Framed Print • Canvas"
-  data-rooms="Spa Retreats • Wellness Centers • Boutique Hospitality">
-  <img src="forest-light-lodge-lobby.jpg" alt="Large horizontal forest photography in luxury hiking lodge lobby by Dan Sproul" loading="lazy" decoding="async">
-  <div class="mockup-actions-inline"><button type="button">View Room Details</button><a href="https://dansproul.com/featured/forest-stream-in-sunlit-woods-oregon-dan-sproul.html" target="_blank" rel="noopener">Purchase Print</a></div>
+<div class="mockup-card" data-formats="Acrylic • Framed Print • Canvas" data-frames="Walnut • Natural Oak" data-mat="No mat recommended" data-purchase="https://dansproul.com/featured/forest-stream-in-sunlit-woods-oregon-dan-sproul.html" data-rooms="Spa Retreats • Wellness Centers • Boutique Hospitality" data-sizes="40x60 • 48x72" data-title="Forest Stream in Sunlit Woods shown as immersive woodland artwork for a lodge, spa, or wellness retreat.">
+<img alt="Large horizontal forest photography in luxury hiking lodge lobby by Dan Sproul" decoding="async" loading="lazy" src="forest-light-lodge-lobby.jpg"/>
+<div class="mockup-actions-inline"><button type="button">View Room Details</button><a href="https://dansproul.com/featured/forest-stream-in-sunlit-woods-oregon-dan-sproul.html" rel="noopener" target="_blank">Purchase Print</a></div>
 </div>
-
 </div>
-
-<div class="mockup-card"
-  data-purchase="https://dansproul.com/featured/cades-cove-morning-tree-dan-sproul.html"
-  data-title="Cades Cove Morning Tree shown as vertical woodland artwork for hospitality, wellness, or transitional interiors."
-  data-sizes="24x36 • 30x45 • 36x54"
-  data-frames="Matte Black • Walnut"
-  data-mat="3 inch white mat for framed paper"
-  data-formats="Framed Print • Metal Print"
-  data-rooms="Corridors • Hospitality Spaces • Healthcare Interiors">
-  <img src="forest-light-hallway.jpg" alt="Vertical forest photography in moody modern hospitality corridor by Dan Sproul" loading="lazy" decoding="async">
-  <div class="mockup-actions-inline"><button type="button">View Room Details</button><a href="https://dansproul.com/featured/cades-cove-morning-tree-dan-sproul.html" target="_blank" rel="noopener">Purchase Print</a></div>
+<div class="mockup-card" data-formats="Framed Print • Metal Print" data-frames="Matte Black • Walnut" data-mat="3 inch white mat for framed paper" data-purchase="https://dansproul.com/featured/cades-cove-morning-tree-dan-sproul.html" data-rooms="Corridors • Hospitality Spaces • Healthcare Interiors" data-sizes="24x36 • 30x45 • 36x54" data-title="Cades Cove Morning Tree shown as vertical woodland artwork for hospitality, wellness, or transitional interiors.">
+<img alt="Vertical forest photography in moody modern hospitality corridor by Dan Sproul" decoding="async" loading="lazy" src="forest-light-hallway.jpg"/>
+<div class="mockup-actions-inline"><button type="button">View Room Details</button><a href="https://dansproul.com/featured/cades-cove-morning-tree-dan-sproul.html" rel="noopener" target="_blank">Purchase Print</a></div>
 </div>
-
 </div>
 </div></section>
-
-
 <section id="collection"><div class="container">
 <div class="section-centered">
-  <span class="eyebrow">Shop Forest Prints</span>
-  <h2>Woodland photography prints selected for light, texture, and atmosphere.</h2>
-  <p>Browse the selected forest prints below. Click any artwork to open the secure print page and choose size, frame, canvas, acrylic, metal, or fine art paper options.</p>
-  <p class="trade-cue">Each print includes a short field note, room guidance, available formats, worldwide shipping, and a direct purchase link.</p>
+<span class="eyebrow">Shop Forest Prints</span>
+<h2>Woodland photography prints selected for light, texture, and atmosphere.</h2>
+<p>Browse the selected forest prints below. Click any artwork to open the secure print page and choose size, frame, canvas, acrylic, metal, or fine art paper options.</p>
+<p class="trade-cue">Each print includes a short field note, room guidance, available formats, worldwide shipping, and a direct purchase link.</p>
 </div>
-
 <div class="cards3">
-
-<a class="card" href="https://dansproul.com/featured/forest-light-dan-sproul.html" target="_blank" rel="noopener">
-  <img src="forest-light-dan-sproul.jpg" alt="Forest Light woodland photography print by Dan Sproul" loading="lazy" decoding="async">
-  <div class="copy">
-    <span>Signature Forest Light</span>
-    <h3>Forest Light</h3>
-    <p class="field-note">I made this image for the kind of quiet forest light that only lasts a few minutes, when the sun filters through the trees and the whole scene feels softer than it did a moment before.</p>
-    <div class="print-card-meta">
-      <p><strong>Best for:</strong> bedrooms, wellness rooms, living rooms, therapy offices, and organic modern interiors.</p>
-      <p><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
-    </div>
-  </div>
+<a class="card" href="https://dansproul.com/featured/forest-light-dan-sproul.html" rel="noopener" target="_blank">
+<img alt="Forest Light woodland photography print by Dan Sproul" decoding="async" loading="lazy" src="forest-light-dan-sproul.jpg"/>
+<div class="copy">
+<span>Signature Forest Light</span>
+<h3>Forest Light</h3>
+<p class="field-note">I made this image for the kind of quiet forest light that only lasts a few minutes, when the sun filters through the trees and the whole scene feels softer than it did a moment before.</p>
+<div class="print-card-meta">
+<p><strong>Best for:</strong> bedrooms, wellness rooms, living rooms, therapy offices, and organic modern interiors.</p>
+<p><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
+</div>
+</div>
 </a>
-
-<a class="card" href="https://dansproul.com/featured/framed-forest-light-lima-ohio-dan-sproul.html" target="_blank" rel="noopener">
-  <img src="framed-forest-light-lima-ohio-dan-sproul.jpg" alt="Framed Forest Light Lima Ohio print by Dan Sproul" loading="lazy" decoding="async">
-  <div class="copy">
-    <span>Ohio Woodland Wall Art</span>
-    <h3>Framed Forest Light</h3>
-    <p class="field-note">This one was made close to home in Ohio, using the trees almost like a natural frame around the burst of sun coming through the woods.</p>
-    <div class="print-card-meta">
-      <p><strong>Best for:</strong> entryways, bedrooms, reading rooms, offices, and warm residential walls.</p>
-      <p><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
-    </div>
-  </div>
+<a class="card" href="https://dansproul.com/featured/framed-forest-light-lima-ohio-dan-sproul.html" rel="noopener" target="_blank">
+<img alt="Framed Forest Light Lima Ohio print by Dan Sproul" decoding="async" loading="lazy" src="framed-forest-light-lima-ohio-dan-sproul.jpg"/>
+<div class="copy">
+<span>Ohio Woodland Wall Art</span>
+<h3>Framed Forest Light</h3>
+<p class="field-note">This one was made close to home in Ohio, using the trees almost like a natural frame around the burst of sun coming through the woods.</p>
+<div class="print-card-meta">
+<p><strong>Best for:</strong> entryways, bedrooms, reading rooms, offices, and warm residential walls.</p>
+<p><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
+</div>
+</div>
 </a>
-
-<a class="card" href="https://dansproul.com/featured/among-the-giants-dan-sproul.html" target="_blank" rel="noopener">
-  <img src="among-the-giants-dan-sproul.jpg" alt="Among the Giants forest photography print by Dan Sproul" loading="lazy" decoding="async">
-  <div class="copy">
-    <span>Immersive Forest Print</span>
-    <h3>Among the Giants</h3>
-    <p class="field-note">I liked how small this scene made me feel. The trees did most of the work here, creating that upward pull and quiet cathedral feeling I look for in forest images.</p>
-    <div class="print-card-meta">
-      <p><strong>Best for:</strong> lodge interiors, great rooms, wellness spaces, corridors, and statement walls.</p>
-      <p><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
-    </div>
-  </div>
+<a class="card" href="https://dansproul.com/featured/among-the-giants-dan-sproul.html" rel="noopener" target="_blank">
+<img alt="Among the Giants forest photography print by Dan Sproul" decoding="async" loading="lazy" src="among-the-giants-dan-sproul.jpg"/>
+<div class="copy">
+<span>Immersive Forest Print</span>
+<h3>Among the Giants</h3>
+<p class="field-note">I liked how small this scene made me feel. The trees did most of the work here, creating that upward pull and quiet cathedral feeling I look for in forest images.</p>
+<div class="print-card-meta">
+<p><strong>Best for:</strong> lodge interiors, great rooms, wellness spaces, corridors, and statement walls.</p>
+<p><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
+</div>
+</div>
 </a>
-
-<a class="card" href="https://dansproul.com/featured/morning-forest-lima-ohio-dan-sproul.html" target="_blank" rel="noopener">
-  <img src="morning-forest-lima-ohio-dan-sproul.jpg" alt="Morning Forest Lima Ohio photography print by Dan Sproul" loading="lazy" decoding="async">
-  <div class="copy">
-    <span>Morning Forest Light</span>
-    <h3>Morning Forest</h3>
-    <p class="field-note">I photographed this in that early green light that makes an ordinary woodland feel completely different, before the day gets too bright and the softer tones disappear.</p>
-    <div class="print-card-meta">
-      <p><strong>Best for:</strong> bedrooms, quiet offices, wellness rooms, living rooms, and spa-inspired spaces.</p>
-      <p><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
-    </div>
-  </div>
+<a class="card" href="https://dansproul.com/featured/morning-forest-lima-ohio-dan-sproul.html" rel="noopener" target="_blank">
+<img alt="Morning Forest Lima Ohio photography print by Dan Sproul" decoding="async" loading="lazy" src="morning-forest-lima-ohio-dan-sproul.jpg"/>
+<div class="copy">
+<span>Morning Forest Light</span>
+<h3>Morning Forest</h3>
+<p class="field-note">I photographed this in that early green light that makes an ordinary woodland feel completely different, before the day gets too bright and the softer tones disappear.</p>
+<div class="print-card-meta">
+<p><strong>Best for:</strong> bedrooms, quiet offices, wellness rooms, living rooms, and spa-inspired spaces.</p>
+<p><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
+</div>
+</div>
 </a>
-
-<a class="card" href="https://dansproul.com/featured/abrams-falls-hiking-trail-in-morning-light-dan-sproul.html" target="_blank" rel="noopener">
-  <img src="abrams-falls-hiking-trail-in-morning-light-dan-sproul.jpg" alt="Abrams Falls hiking trail morning light print by Dan Sproul" loading="lazy" decoding="async">
-  <div class="copy">
-    <span>Trail Photography</span>
-    <h3>Abrams Falls Hiking Trail</h3>
-    <p class="field-note">The trail to Abrams Falls has a steady rhythm to it, and I liked this stretch because the morning light gave the path enough depth to feel like you could keep walking into the frame.</p>
-    <div class="print-card-meta">
-      <p><strong>Best for:</strong> corridors, lodge rooms, offices, hospitality spaces, and nature-focused interiors.</p>
-      <p><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
-    </div>
-  </div>
+<a class="card" href="https://dansproul.com/featured/abrams-falls-hiking-trail-in-morning-light-dan-sproul.html" rel="noopener" target="_blank">
+<img alt="Abrams Falls hiking trail morning light print by Dan Sproul" decoding="async" loading="lazy" src="abrams-falls-hiking-trail-in-morning-light-dan-sproul.jpg"/>
+<div class="copy">
+<span>Trail Photography</span>
+<h3>Abrams Falls Hiking Trail</h3>
+<p class="field-note">The trail to Abrams Falls has a steady rhythm to it, and I liked this stretch because the morning light gave the path enough depth to feel like you could keep walking into the frame.</p>
+<div class="print-card-meta">
+<p><strong>Best for:</strong> corridors, lodge rooms, offices, hospitality spaces, and nature-focused interiors.</p>
+<p><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
+</div>
+</div>
 </a>
-
-<a class="card" href="https://dansproul.com/featured/clifton-gorge-hiking-path-dan-sproul.html" target="_blank" rel="noopener">
-  <img src="clifton-gorge-hiking-path-dan-sproul.jpg" alt="Clifton Gorge hiking path photography print by Dan Sproul" loading="lazy" decoding="async">
-  <div class="copy">
-    <span>Woodland Path Print</span>
-    <h3>Clifton Gorge Hiking Path</h3>
-    <p class="field-note">Clifton Gorge is one of those Ohio places where stone, water, roots, and green growth all seem packed tightly together. This path felt like the right quiet way into that landscape.</p>
-    <div class="print-card-meta">
-      <p><strong>Best for:</strong> entryways, hallways, therapy offices, reading rooms, and regional Ohio projects.</p>
-      <p><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
-    </div>
-  </div>
+<a class="card" href="https://dansproul.com/featured/clifton-gorge-hiking-path-dan-sproul.html" rel="noopener" target="_blank">
+<img alt="Clifton Gorge hiking path photography print by Dan Sproul" decoding="async" loading="lazy" src="clifton-gorge-hiking-path-dan-sproul.jpg"/>
+<div class="copy">
+<span>Woodland Path Print</span>
+<h3>Clifton Gorge Hiking Path</h3>
+<p class="field-note">Clifton Gorge is one of those Ohio places where stone, water, roots, and green growth all seem packed tightly together. This path felt like the right quiet way into that landscape.</p>
+<div class="print-card-meta">
+<p><strong>Best for:</strong> entryways, hallways, therapy offices, reading rooms, and regional Ohio projects.</p>
+<p><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
+</div>
+</div>
 </a>
-
-<a class="card" href="https://dansproul.com/featured/sunlit-autumn-aspen-forest-dan-sproul.html" target="_blank" rel="noopener">
-  <img src="sunlit-autumn-aspen-forest-dan-sproul.jpg" alt="Sunlit Autumn Aspen Forest print by Dan Sproul" loading="lazy" decoding="async">
-  <div class="copy">
-    <span>Autumn Aspen Wall Art</span>
-    <h3>Sunlit Autumn Aspen Forest</h3>
-    <p class="field-note">Aspen forests are easy to overdo in fall, so I was drawn to the cleaner rhythm here: white trunks, gold leaves, and enough light to keep the scene feeling open.</p>
-    <div class="print-card-meta">
-      <p><strong>Best for:</strong> bedrooms, cabins, lodge suites, living rooms, and warm seasonal interiors.</p>
-      <p><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
-    </div>
-  </div>
+<a class="card" href="https://dansproul.com/featured/sunlit-autumn-aspen-forest-dan-sproul.html" rel="noopener" target="_blank">
+<img alt="Sunlit Autumn Aspen Forest print by Dan Sproul" decoding="async" loading="lazy" src="sunlit-autumn-aspen-forest-dan-sproul.jpg"/>
+<div class="copy">
+<span>Autumn Aspen Wall Art</span>
+<h3>Sunlit Autumn Aspen Forest</h3>
+<p class="field-note">Aspen forests are easy to overdo in fall, so I was drawn to the cleaner rhythm here: white trunks, gold leaves, and enough light to keep the scene feeling open.</p>
+<div class="print-card-meta">
+<p><strong>Best for:</strong> bedrooms, cabins, lodge suites, living rooms, and warm seasonal interiors.</p>
+<p><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
+</div>
+</div>
 </a>
-
-<a class="card" href="https://dansproul.com/featured/golden-aspen-forest-colorado-dan-sproul.html" target="_blank" rel="noopener">
-  <img src="golden-aspen-forest-colorado-dan-sproul.jpg" alt="Golden Aspen Forest Colorado photography print by Dan Sproul" loading="lazy" decoding="async">
-  <div class="copy">
-    <span>Colorado Forest Print</span>
-    <h3>Golden Aspen Forest Colorado</h3>
-    <p class="field-note">Colorado in autumn can feel almost unreal when the aspens are peaking. I wanted this image to hold that bright gold energy without losing the layered forest texture.</p>
-    <div class="print-card-meta">
-      <p><strong>Best for:</strong> lodge interiors, cabins, dining rooms, living rooms, and larger warm statement walls.</p>
-      <p><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
-    </div>
-  </div>
+<a class="card" href="https://dansproul.com/featured/golden-aspen-forest-colorado-dan-sproul.html" rel="noopener" target="_blank">
+<img alt="Golden Aspen Forest Colorado photography print by Dan Sproul" decoding="async" loading="lazy" src="golden-aspen-forest-colorado-dan-sproul.jpg"/>
+<div class="copy">
+<span>Colorado Forest Print</span>
+<h3>Golden Aspen Forest Colorado</h3>
+<p class="field-note">Colorado in autumn can feel almost unreal when the aspens are peaking. I wanted this image to hold that bright gold energy without losing the layered forest texture.</p>
+<div class="print-card-meta">
+<p><strong>Best for:</strong> lodge interiors, cabins, dining rooms, living rooms, and larger warm statement walls.</p>
+<p><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
+</div>
+</div>
 </a>
-
-<a class="card" href="https://dansproul.com/featured/looking-up-through-pines-dan-sproul.html" target="_blank" rel="noopener">
-  <img src="looking-up-through-pines-dan-sproul.jpg" alt="Looking Up Through Pines forest photography print by Dan Sproul" loading="lazy" decoding="async">
-  <div class="copy">
-    <span>Pine Canopy Print</span>
-    <h3>Looking Up Through Pines</h3>
-    <p class="field-note">I pointed the camera straight up for this one because the pines were doing something more interesting overhead than at eye level. The trunks became leading lines into the sky.</p>
-    <div class="print-card-meta">
-      <p><strong>Best for:</strong> tall walls, bedrooms, wellness spaces, stair landings, cabins, and nature-inspired offices.</p>
-      <p><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
-    </div>
-  </div>
+<a class="card" href="https://dansproul.com/featured/looking-up-through-pines-dan-sproul.html" rel="noopener" target="_blank">
+<img alt="Looking Up Through Pines forest photography print by Dan Sproul" decoding="async" loading="lazy" src="looking-up-through-pines-dan-sproul.jpg"/>
+<div class="copy">
+<span>Pine Canopy Print</span>
+<h3>Looking Up Through Pines</h3>
+<p class="field-note">I pointed the camera straight up for this one because the pines were doing something more interesting overhead than at eye level. The trunks became leading lines into the sky.</p>
+<div class="print-card-meta">
+<p><strong>Best for:</strong> tall walls, bedrooms, wellness spaces, stair landings, cabins, and nature-inspired offices.</p>
+<p><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
+</div>
+</div>
 </a>
-
-<a class="card" href="https://dansproul.com/featured/spring-morning-in-clifton-gorge-ohio-dan-sproul.html" target="_blank" rel="noopener">
-  <img src="spring-morning-in-clifton-gorge-ohio-dan-sproul.jpg" alt="Spring Morning in Clifton Gorge Ohio forest photography print by Dan Sproul" loading="lazy" decoding="async">
-  <div class="copy">
-    <span>Ohio Gorge Woodland</span>
-    <h3>Spring Morning in Clifton Gorge</h3>
-    <p class="field-note">Spring mornings in Clifton Gorge have a fresh, damp feel to them. I liked the mix of moss, rock, early green leaves, and the quiet pull of water just off to the side.</p>
-    <div class="print-card-meta">
-      <p><strong>Best for:</strong> wellness rooms, therapy offices, Ohio interiors, reading rooms, and calm residential spaces.</p>
-      <p><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
-    </div>
-  </div>
+<a class="card" href="https://dansproul.com/featured/spring-morning-in-clifton-gorge-ohio-dan-sproul.html" rel="noopener" target="_blank">
+<img alt="Spring Morning in Clifton Gorge Ohio forest photography print by Dan Sproul" decoding="async" loading="lazy" src="spring-morning-in-clifton-gorge-ohio-dan-sproul.jpg"/>
+<div class="copy">
+<span>Ohio Gorge Woodland</span>
+<h3>Spring Morning in Clifton Gorge</h3>
+<p class="field-note">Spring mornings in Clifton Gorge have a fresh, damp feel to them. I liked the mix of moss, rock, early green leaves, and the quiet pull of water just off to the side.</p>
+<div class="print-card-meta">
+<p><strong>Best for:</strong> wellness rooms, therapy offices, Ohio interiors, reading rooms, and calm residential spaces.</p>
+<p><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
+</div>
+</div>
 </a>
-
-<a class="card" href="https://dansproul.com/featured/tawawa-park-forest-morning-light-dan-sproul.html" target="_blank" rel="noopener">
-  <img src="tawawa-park-forest-morning-light-dan-sproul.jpg" alt="Tawawa Park Forest Morning Light print by Dan Sproul" loading="lazy" decoding="async">
-  <div class="copy">
-    <span>Ohio Morning Light</span>
-    <h3>Tawawa Park Forest Morning Light</h3>
-    <p class="field-note">Tawawa Park is close enough to home that I have seen it in every kind of light. This morning had that warm green glow that makes a local walk feel like a much larger landscape.</p>
-    <div class="print-card-meta">
-      <p><strong>Best for:</strong> Lima and Ohio interiors, bedrooms, offices, living rooms, and local healthcare or hospitality spaces.</p>
-      <p><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
-    </div>
-  </div>
+<a class="card" href="https://dansproul.com/featured/tawawa-park-forest-morning-light-dan-sproul.html" rel="noopener" target="_blank">
+<img alt="Tawawa Park Forest Morning Light print by Dan Sproul" decoding="async" loading="lazy" src="tawawa-park-forest-morning-light-dan-sproul.jpg"/>
+<div class="copy">
+<span>Ohio Morning Light</span>
+<h3>Tawawa Park Forest Morning Light</h3>
+<p class="field-note">Tawawa Park is close enough to home that I have seen it in every kind of light. This morning had that warm green glow that makes a local walk feel like a much larger landscape.</p>
+<div class="print-card-meta">
+<p><strong>Best for:</strong> Lima and Ohio interiors, bedrooms, offices, living rooms, and local healthcare or hospitality spaces.</p>
+<p><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
+</div>
+</div>
 </a>
-
-<a class="card" href="https://dansproul.com/featured/autumn-sun-in-the-forest-dan-sproul.html" target="_blank" rel="noopener">
-  <img src="autumn-sun-in-the-forest-dan-sproul.jpg" alt="Autumn Sun in the Forest print by Dan Sproul" loading="lazy" decoding="async">
-  <div class="copy">
-    <span>Autumn Forest Light</span>
-    <h3>Autumn Sun in the Forest</h3>
-    <p class="field-note">I stopped for this because the sun was cutting through the autumn color just enough to brighten the trail without washing out the leaves. It felt warm, but still quiet.</p>
-    <div class="print-card-meta">
-      <p><strong>Best for:</strong> entryways, bedrooms, living rooms, offices, and warm seasonal interiors.</p>
-      <p><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
-    </div>
-  </div>
+<a class="card" href="https://dansproul.com/featured/autumn-sun-in-the-forest-dan-sproul.html" rel="noopener" target="_blank">
+<img alt="Autumn Sun in the Forest print by Dan Sproul" decoding="async" loading="lazy" src="autumn-sun-in-the-forest-dan-sproul.jpg"/>
+<div class="copy">
+<span>Autumn Forest Light</span>
+<h3>Autumn Sun in the Forest</h3>
+<p class="field-note">I stopped for this because the sun was cutting through the autumn color just enough to brighten the trail without washing out the leaves. It felt warm, but still quiet.</p>
+<div class="print-card-meta">
+<p><strong>Best for:</strong> entryways, bedrooms, living rooms, offices, and warm seasonal interiors.</p>
+<p><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
+</div>
+</div>
 </a>
-
-<a class="card" href="https://dansproul.com/featured/castle-creek-trail-in-autumn-dan-sproul.html" target="_blank" rel="noopener">
-  <img src="castle-creek-trail-in-autumn-dan-sproul.jpg" alt="Castle Creek Trail in Autumn Colorado aspen forest photography print by Dan Sproul" loading="lazy" decoding="async">
-  <div class="copy">
-    <span>Colorado Aspen Trail</span>
-    <h3>Castle Creek Trail in Autumn</h3>
-    <p class="field-note">Castle Creek in autumn is almost endless for photography. I liked this frame because the white aspen trunks, red understory, and blue sky all stacked into one bright fall scene.</p>
-    <div class="print-card-meta">
-      <p><strong>Best for:</strong> cabins, lodge suites, living rooms, bedrooms, and colorful statement walls.</p>
-      <p><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
-    </div>
-  </div>
+<a class="card" href="https://dansproul.com/featured/castle-creek-trail-in-autumn-dan-sproul.html" rel="noopener" target="_blank">
+<img alt="Castle Creek Trail in Autumn Colorado aspen forest photography print by Dan Sproul" decoding="async" loading="lazy" src="castle-creek-trail-in-autumn-dan-sproul.jpg"/>
+<div class="copy">
+<span>Colorado Aspen Trail</span>
+<h3>Castle Creek Trail in Autumn</h3>
+<p class="field-note">Castle Creek in autumn is almost endless for photography. I liked this frame because the white aspen trunks, red understory, and blue sky all stacked into one bright fall scene.</p>
+<div class="print-card-meta">
+<p><strong>Best for:</strong> cabins, lodge suites, living rooms, bedrooms, and colorful statement walls.</p>
+<p><strong>Available as:</strong> framed fine art paper, canvas, acrylic, metal, and paper prints.</p>
+</div>
+</div>
 </a>
-
 </div>
 </div></section>
-
-
-
-
-
-
 <section class="intro collection-intro-compact"><div class="container grid2">
 <div>
-<span class="eyebrow">Filtered Light & Woodland Calm</span>
+<span class="eyebrow">Filtered Light &amp; Woodland Calm</span>
 <h2>Forest prints selected for rooms that need softness, texture, and natural calm.</h2>
 <p>Forest Light is a collection of woodland photography selected for organic modern homes, bedrooms, wellness rooms, lodges, and hospitality-inspired interiors. These prints bring filtered sunlight, green atmosphere, tree canopies, quiet paths, and natural texture into rooms that should feel calm and grounded.</p>
 <p>These images include green summer forests, Ohio woodland light, Great Smoky Mountains trail scenes, Clifton Gorge textures, Colorado aspen forests, and intimate forest compositions that work naturally in interiors where calm and organic warmth matter.</p>
 <p>Forest Light is especially suited for organic modern homes, wellness-focused interiors, spa environments, hospitality corridors, lodge-inspired spaces, bedrooms, living rooms, and any room that benefits from the calming presence of trees and natural light.</p>
-<a href="#interior-uses" class="btn">Interior Applications</a><a href="for-designers.html" class="btn">For Designers</a>
+<a class="btn" href="#interior-uses">Interior Applications</a><a class="btn" href="for-designers.html">For Designers</a>
 </div>
-<div class="imgbox"><img src="forest-light-dan-sproul.jpg" alt="Forest Light woodland photography print by Dan Sproul" loading="eager" decoding="async" fetchpriority="high"></div>
+<div class="imgbox"><img alt="Forest Light woodland photography print by Dan Sproul" decoding="async" fetchpriority="high" loading="eager" src="forest-light-dan-sproul.jpg"/></div>
 </div></section>
-
-
-
-
 <section class="section ai-resource-section compact-environment-section" id="artwork-by-environment">
-  <div class="container compact-environment-grid">
-    <div>
-      <span class="eyebrow">Artwork by Environment</span>
-      <h2>Woodland photography for wellness, residential, healthcare, and hospitality interiors.</h2>
-      <p>Forest Light is organized around restorative atmosphere: green woodland calm, filtered light, tree canopies, trails, and quiet natural texture for rooms that benefit from a stronger connection to nature.</p>
-    </div>
-    <div class="compact-env-list">
-      <a href="#interior-uses"><strong>Residential &amp; Organic Modern</strong><span>Living rooms, bedrooms, reading rooms, quiet luxury interiors.</span></a>
-      <a href="#forest-healthcare-wellness"><strong>Healthcare &amp; Wellness</strong><span>Waiting rooms, therapy offices, wellness centers, calming patient-facing spaces.</span></a>
-      <a href="#mockups"><strong>Hospitality &amp; Lodge</strong><span>Lodge lobbies, spa retreats, nature hospitality, corridors, and guest spaces.</span></a>
-    </div>
-  </div>
+<div class="container compact-environment-grid">
+<div>
+<span class="eyebrow">Artwork by Environment</span>
+<h2>Woodland photography for wellness, residential, healthcare, and hospitality interiors.</h2>
+<p>Forest Light is organized around restorative atmosphere: green woodland calm, filtered light, tree canopies, trails, and quiet natural texture for rooms that benefit from a stronger connection to nature.</p>
+</div>
+<div class="compact-env-list">
+<a href="#interior-uses"><strong>Residential &amp; Organic Modern</strong><span>Living rooms, bedrooms, reading rooms, quiet luxury interiors.</span></a>
+<a href="#forest-healthcare-wellness"><strong>Healthcare &amp; Wellness</strong><span>Waiting rooms, therapy offices, wellness centers, calming patient-facing spaces.</span></a>
+<a href="#mockups"><strong>Hospitality &amp; Lodge</strong><span>Lodge lobbies, spa retreats, nature hospitality, corridors, and guest spaces.</span></a>
+</div>
+</div>
 </section>
-
 <section class="buying-help-section" id="buying-help">
-  <div class="buying-help-box">
-    <div>
-      <span class="eyebrow">Buying Guidance</span>
-      <h2>Best for restorative interiors, wellness spaces, bedrooms, and organic modern rooms.</h2>
-    </div>
-    <div class="buying-help-grid">
-      <div class="buying-help-item"><strong>Best for</strong><p>Wellness rooms, spa spaces, bedrooms, organic modern living rooms, healthcare-adjacent interiors, lodge corridors, and nature-focused hospitality spaces.</p></div>
-      <div class="buying-help-item"><strong>Suggested sizes</strong><p>18×24 or 24×36 for smaller walls, 30×40 above beds or consoles, and 40×60 or larger for corridors, lounges, reception areas, and statement walls.</p></div>
-      <div class="buying-help-item"><strong>Strongest formats</strong><p>Framed fine art paper for refined spaces, canvas for warmth and softness, metal or acrylic for high-traffic commercial and hospitality interiors.</p></div>
-    </div>
-  </div>
+<div class="buying-help-box">
+<div>
+<span class="eyebrow">Buying Guidance</span>
+<h2>Best for restorative interiors, wellness spaces, bedrooms, and organic modern rooms.</h2>
+</div>
+<div class="buying-help-grid">
+<div class="buying-help-item"><strong>Best for</strong><p>Wellness rooms, spa spaces, bedrooms, organic modern living rooms, healthcare-adjacent interiors, lodge corridors, and nature-focused hospitality spaces.</p></div>
+<div class="buying-help-item"><strong>Suggested sizes</strong><p>18×24 or 24×36 for smaller walls, 30×40 above beds or consoles, and 40×60 or larger for corridors, lounges, reception areas, and statement walls.</p></div>
+<div class="buying-help-item"><strong>Strongest formats</strong><p>Framed fine art paper for refined spaces, canvas for warmth and softness, metal or acrylic for high-traffic commercial and hospitality interiors.</p></div>
+</div>
+</div>
 </section>
-
-
 <section class="seo compact-seo" id="large-forest-wall-art"><div class="container">
 <span class="eyebrow">Large Forest Wall Art</span>
 <h2>Forest artwork works best when it has room to breathe.</h2>
@@ -1322,42 +1460,22 @@ img{max-width:100%;height:auto}
 <p>Forest Light is strongest at sizes where the trees, canopy, filtered sun, and woodland texture feel immersive instead of decorative. These prints work especially well above sofas, beds, consoles, fireplaces, wellness-room walls, lodge corridors, and hospitality seating areas.</p>
 <p>For most rooms, start with 30×40 or 36×48. For main living-room, bedroom, lodge, or hospitality walls, 40×60 and larger usually feels more intentional.</p>
 </div></div></section>
-
-
-
-
-
 <section class="light" id="interior-uses"><div class="container">
 <div class="center"><span class="eyebrow">Designed for Interiors</span><h2>Where Forest Light works best.</h2><p>These artworks bring natural texture, green atmosphere, and restorative woodland energy into spaces that need calm, softness, and a deeper connection to nature.</p></div>
 <div class="cards3">
-<div class="card"><img src="forest-light-dan-sproul.jpg" alt="Forest Light photography for organic modern living rooms by Dan Sproul" loading="lazy" decoding="async"><div class="copy"><span>Residential</span><h3>Organic Modern Homes</h3><p>Woodland photography prints that pair with warm oak, stone, linen, plaster, and biophilic interior palettes.</p></div></div>
-<div class="card"><img src="morning-forest-lima-ohio-dan-sproul.jpg" alt="Morning forest photography for wellness interiors by Dan Sproul" loading="lazy" decoding="async"><div class="copy"><span>Wellness</span><h3>Spa & Restorative Spaces</h3><p>Soft forest light and calming green tones for wellness rooms, bedrooms, meditation spaces, and healthcare-adjacent interiors.</p></div></div>
-<div class="card"><img src="among-the-giants-dan-sproul.jpg" alt="Among the Giants forest photography for lodge interiors by Dan Sproul" loading="lazy" decoding="async"><div class="copy"><span>Hospitality</span><h3>Lodges & Corridors</h3><p>Immersive forest imagery for boutique lodges, hospitality corridors, nature retreats, and destination-inspired spaces.</p></div></div>
+<div class="card"><img alt="Forest Light photography for organic modern living rooms by Dan Sproul" decoding="async" loading="lazy" src="forest-light-dan-sproul.jpg"/><div class="copy"><span>Residential</span><h3>Organic Modern Homes</h3><p>Woodland photography prints that pair with warm oak, stone, linen, plaster, and biophilic interior palettes.</p></div></div>
+<div class="card"><img alt="Morning forest photography for wellness interiors by Dan Sproul" decoding="async" loading="lazy" src="morning-forest-lima-ohio-dan-sproul.jpg"/><div class="copy"><span>Wellness</span><h3>Spa &amp; Restorative Spaces</h3><p>Soft forest light and calming green tones for wellness rooms, bedrooms, meditation spaces, and healthcare-adjacent interiors.</p></div></div>
+<div class="card"><img alt="Among the Giants forest photography for lodge interiors by Dan Sproul" decoding="async" loading="lazy" src="among-the-giants-dan-sproul.jpg"/><div class="copy"><span>Hospitality</span><h3>Lodges &amp; Corridors</h3><p>Immersive forest imagery for boutique lodges, hospitality corridors, nature retreats, and destination-inspired spaces.</p></div></div>
 </div>
 </div></section>
-
-
-
-
-
-
-
-
-
-
-
-
-
 <section><div class="container">
 <span class="eyebrow">Explore More</span><h2>Explore related fine art photography collections.</h2>
 <div class="cards4">
-<a href="wellness-waters-collection.html" class="card"><img src="spa massage room waterfall mockup.jpg" alt="Wellness Waters related restorative water artwork by Dan Sproul" loading="lazy" decoding="async"><div class="copy"><h3>Wellness Waters</h3><p>Waterfalls, streams, and flowing water imagery for spa, healthcare, wellness, and restorative interiors.</p></div></a>
-<a href="quiet-earth-collection.html" class="card"><img src="quiet-earth-collection-preview.jpg" alt="Quiet Earth related calming landscape photography by Dan Sproul" loading="lazy" decoding="async"><div class="copy"><h3>Quiet Earth</h3><p>Calming mountain, forest, lake, and wilderness photography for wellness, hospitality, and refined homes.</p></div></a>
-<a href="mountain-light-collection.html" class="card"><img src="mountain-light-bedroom.jpg" alt="Mountain Light related forest and mountain photography by Dan Sproul" loading="lazy" decoding="async"><div class="copy"><h3>Mountain Light</h3><p>Luminous alpine landscapes, sunrise, last light, and mountain wall art for refined interiors.</p></div></a>
-<a href="monochrome-stillness.html" class="card"><img src="recovery hallway mockup.jpg" alt="Monochrome Stillness black and white artwork for healthcare corridors by Dan Sproul" loading="lazy" decoding="async"><div class="copy"><h3>Monochrome Stillness</h3><p>Black-and-white artwork for executive offices, healthcare corridors, hospitality, and quiet interiors.</p></div></a>
+<a class="card" href="wellness-waters-collection.html"><img alt="Wellness Waters related restorative water artwork by Dan Sproul" decoding="async" loading="lazy" src="spa massage room waterfall mockup.jpg"/><div class="copy"><h3>Wellness Waters</h3><p>Waterfalls, streams, and flowing water imagery for spa, healthcare, wellness, and restorative interiors.</p></div></a>
+<a class="card" href="quiet-earth-collection.html"><img alt="Quiet Earth related calming landscape photography by Dan Sproul" decoding="async" loading="lazy" src="quiet-earth-collection-preview.jpg"/><div class="copy"><h3>Quiet Earth</h3><p>Calming mountain, forest, lake, and wilderness photography for wellness, hospitality, and refined homes.</p></div></a>
+<a class="card" href="mountain-light-collection.html"><img alt="Mountain Light related forest and mountain photography by Dan Sproul" decoding="async" loading="lazy" src="mountain-light-bedroom.jpg"/><div class="copy"><h3>Mountain Light</h3><p>Luminous alpine landscapes, sunrise, last light, and mountain wall art for refined interiors.</p></div></a>
+<a class="card" href="monochrome-stillness.html"><img alt="Monochrome Stillness black and white artwork for healthcare corridors by Dan Sproul" decoding="async" loading="lazy" src="recovery hallway mockup.jpg"/><div class="copy"><h3>Monochrome Stillness</h3><p>Black-and-white artwork for executive offices, healthcare corridors, hospitality, and quiet interiors.</p></div></a>
 </div></div></section>
-
-
 <section class="seo compact-seo"><div class="container">
 <span class="eyebrow">Forest Photography Prints</span><h2>Woodland wall art for interiors that need calm, texture, and natural presence.</h2>
 <div class="cols">
@@ -1365,25 +1483,23 @@ img{max-width:100%;height:auto}
 <p>These forest photography prints are suited for organic modern homes, bedrooms, living rooms, spa spaces, wellness interiors, healthcare-adjacent spaces, lodge-inspired rooms, hospitality corridors, and nature-focused design projects.</p>
 <p>Explore related collections including <a href="quiet-earth-collection.html">Quiet Earth</a>, <a href="mountain-light-collection.html">Mountain Light</a>, <a href="coastal-atmosphere.html">Coastal Atmosphere</a>, and the <a href="for-designers.html">For Designers</a> page.</p>
 </div></div></section>
-
 <section class="healthcare-forest-section" id="forest-healthcare-wellness">
-  <div class="container healthcare-forest-grid compact-healthcare-grid">
-    <div>
-      <span class="eyebrow">Healthcare &amp; Wellness Artwork</span>
-      <h2>Forest artwork for restorative healthcare, wellness, therapy, and spa environments.</h2>
-      <p>Woodland photography can soften clinical or commercial interiors by bringing green atmosphere, filtered light, natural texture, and visual calm into patient-facing and wellness-focused rooms.</p>
-      <a href="healthcare-artwork.html" class="btn primary">Healthcare Artwork</a>
-      <a href="wellness-waters-collection.html" class="btn">Related Wellness Collection</a>
-    </div>
-    <div class="healthcare-uses">
-      <div class="healthcare-use"><span>Patient-Facing</span><h3>Waiting Rooms</h3><p>A calmer first impression for healthcare and wellness reception areas.</p></div>
-      <div class="healthcare-use"><span>Private Care</span><h3>Therapy Offices</h3><p>Woodland paths and filtered light for quieter consultation spaces.</p></div>
-      <div class="healthcare-use"><span>Biophilic Design</span><h3>Wellness Centers</h3><p>Green atmosphere and natural texture for restorative interiors.</p></div>
-      <div class="healthcare-use"><span>Hospitality Wellness</span><h3>Spa Spaces</h3><p>Forest artwork pairs naturally with stone, wood, linen, and soft lighting.</p></div>
-    </div>
-  </div>
+<div class="container healthcare-forest-grid compact-healthcare-grid">
+<div>
+<span class="eyebrow">Healthcare &amp; Wellness Artwork</span>
+<h2>Forest artwork for restorative healthcare, wellness, therapy, and spa environments.</h2>
+<p>Woodland photography can soften clinical or commercial interiors by bringing green atmosphere, filtered light, natural texture, and visual calm into patient-facing and wellness-focused rooms.</p>
+<a class="btn primary" href="healthcare-artwork.html">Healthcare Artwork</a>
+<a class="btn" href="wellness-waters-collection.html">Related Wellness Collection</a>
+</div>
+<div class="healthcare-uses">
+<div class="healthcare-use"><span>Patient-Facing</span><h3>Waiting Rooms</h3><p>A calmer first impression for healthcare and wellness reception areas.</p></div>
+<div class="healthcare-use"><span>Private Care</span><h3>Therapy Offices</h3><p>Woodland paths and filtered light for quieter consultation spaces.</p></div>
+<div class="healthcare-use"><span>Biophilic Design</span><h3>Wellness Centers</h3><p>Green atmosphere and natural texture for restorative interiors.</p></div>
+<div class="healthcare-use"><span>Hospitality Wellness</span><h3>Spa Spaces</h3><p>Forest artwork pairs naturally with stone, wood, linen, and soft lighting.</p></div>
+</div>
+</div>
 </section>
-
 <section class="seo"><div class="container">
 <span class="eyebrow">Forest Artwork FAQ</span><h2>Frequently asked questions about Forest Light artwork.</h2>
 <div class="faq-grid">
@@ -1392,103 +1508,88 @@ img{max-width:100%;height:auto}
 <div class="faq"><h3>Are these available as oversized framed prints?</h3><p>Yes. Many Forest Light images work well as oversized framed prints above sofas, beds, lobby seating, hallway feature walls, and wellness spaces.</p></div>
 <div class="faq"><h3>Can designers request recommendations?</h3><p>Yes. Interior designers can email directly for forest artwork suggestions, sizing guidance, and coordinated recommendations for residential or commercial projects.</p></div>
 </div></div></section>
-
-
 <section class="intro designer-workflow" id="designer-workflow"><div class="container">
 <div class="center" style="margin-bottom:72px">
 <span class="eyebrow">Designer Workflow</span>
 <h2>How the artwork specification process works.</h2>
 <p>A streamlined process for interior designers, hospitality projects, wellness environments, residential spaces, and commercial interiors that need forest artwork selected with scale, atmosphere, and placement in mind.</p>
 </div>
-
 <div class="cards4">
 <div class="mood-card"><span class="eyebrow">Step 01</span><h3>Share Your Space</h3><p>Send a room photo, wall dimensions, inspiration images, preferred atmosphere, or project details. Residential, hospitality, wellness, healthcare-adjacent, and lodge projects are all welcome.</p></div>
 <div class="mood-card"><span class="eyebrow">Step 02</span><h3>Receive Curated Recommendations</h3><p>Artwork options are selected around scale, lighting, orientation, color palette, architecture, and the emotional tone you want the room to carry.</p></div>
 <div class="mood-card"><span class="eyebrow">Step 03</span><h3>Review Visual Mockups</h3><p>Receive scaled previews showing artwork placement, framing direction, alternate options, and proportional recommendations for the interior.</p></div>
-<div class="mood-card"><span class="eyebrow">Step 04</span><h3>Specify & Order</h3><p>Artwork is available framed, canvas, acrylic, metal, and in custom sizing for residential, hospitality, wellness, lodge, and commercial environments.</p></div>
+<div class="mood-card"><span class="eyebrow">Step 04</span><h3>Specify &amp; Order</h3><p>Artwork is available framed, canvas, acrylic, metal, and in custom sizing for residential, hospitality, wellness, lodge, and commercial environments.</p></div>
 </div>
-
 <div class="grid2" style="margin-top:90px;align-items:center">
-<div class="imgbox"><img src="forest-light-living-room.jpg" alt="Forest Light artwork shown in an organic modern living room for designer specification by Dan Sproul" loading="lazy" decoding="async"></div>
+<div class="imgbox"><img alt="Forest Light artwork shown in an organic modern living room for designer specification by Dan Sproul" decoding="async" loading="lazy" src="forest-light-living-room.jpg"/></div>
 <div>
 <span class="eyebrow">Presentation Support</span>
 <h2>Built to help designers present forest artwork confidently.</h2>
 <p>The goal is to make forest artwork selection easier, more visual, and lower friction for both designers and clients. Collection pages, room mockups, and atmosphere-driven groupings are designed to simplify decision-making across residential and commercial projects.</p>
 <p>Recommendations can be curated for organic modern homes, wellness rooms, lodge-inspired interiors, hospitality corridors, healthcare-adjacent spaces, and restorative environments that benefit from woodland calm.</p>
-<a href="for-designers.html" class="btn primary">For Designers</a><a href="mailto:sproulphoto@gmail.com?subject=Forest%20Light%20Mockup%20Request" class="btn">Request Mockup</a>
+<a class="btn primary" href="for-designers.html">For Designers</a><a class="btn" href="mailto:dan@dsproul.com?subject=Forest%20Light%20Mockup%20Request">Request Mockup</a>
 </div>
 </div>
 </div></section>
-
-
 <section class="email"><div class="container">
 <span class="eyebrow">Designer Resources</span><h2>Need Help Choosing Forest Artwork?</h2>
 <p>Send me a note about your space, project, or room style and I can recommend pieces from the Forest Light Collection.</p>
-<a class="btn primary" href="mailto:sproulphoto@gmail.com?subject=Forest%20Light%20Artwork%20Inquiry">Email Dan</a>
+<a class="btn primary" href="mailto:dan@dsproul.com?subject=Forest%20Light%20Artwork%20Inquiry">Email Dan</a>
 </div></section>
 
-
-
-<footer id="footer" class="site-footer">
-
-  <div class="footer-grid">
-
- <div>
-      <h3>Explore</h3>
-      <a href="/">Home</a>
-      <a href="best-sellers.html">Best Sellers</a>
-      <a href="art-collections.html">Collections</a>
-      <a href="in-your-space.html">In Your Space</a>
-      <a href="for-designers.html">For Designers</a>
-      <a href="https://dansproul.com" target="_blank" rel="noopener">Shop Prints</a>
-      <a href="mailto:sproulphoto@gmail.com">Contact</a>
-    </div>
-
-    <div>
-      <h3>Collections</h3>
-      <a href="quiet-earth-collection.html">Quiet Earth</a>
-      <a href="forest-light-collection.html">Forest Light</a>
-      <a href="wellness-waters-collection.html">Wellness Waters</a>
-      <a href="coastal-atmosphere.html">Coastal Atmosphere</a>
-      <a href="mountain-light-collection.html">Mountain Light</a>
-      <a href="monochrome-stillness.html">Monochrome Stillness</a>
-      <a href="heritage-mixed-media.html">Heritage & Mixed Media</a>
-    </div>
-
-    <div>
-      <h3>Resources</h3>
-      <a href="artwork-guides.html">Artwork Guides</a>
-      <a href="blog.html">Journal</a>
-      <a href="lima-ohio-fine-art-photographer.html">Lima Fine Art Photographer</a>
-      <a href="about-dan-sproul.html">About Dan</a>
-      <a href="ohio-nature-photography-prints.html">Ohio Nature Photography</a>
-      <a href="alaska-photography-prints.html">Alaska Photography</a>
-    </div>
-
-  <div>
-  <h3>For Designers</h3>
-  <a href="/for-designers.html">Designer Resources</a>
-  <a href="/healthcare-artwork.html">Healthcare</a>
-  <a href="/hospitality-artwork.html">Hospitality</a>
-  <a href="/office-artwork.html">Office</a>
-  <a href="/residential-nature-wall-art.html">Residential</a>
-  <a href="/senior-living-artwork.html">Senior Living</a>
+<footer class="site-footer" id="footer">
+<div class="footer-grid">
+<details class="footer-group" open="">
+<summary>Explore</summary>
+<a href="/">Home</a>
+<a href="best-sellers.html">Best Sellers</a>
+<a href="art-collections.html">Collections</a>
+<a href="in-your-space.html">In Your Space</a>
+<a href="for-designers.html">For Designers</a>
+<a href="https://dansproul.com" rel="noopener" target="_blank">Shop Prints</a>
+<a href="mailto:dan@dsproul.com">Contact</a>
+</details>
+<details class="footer-group" open="">
+<summary>Collections</summary>
+<a href="quiet-earth-collection.html">Quiet Earth</a>
+<a href="forest-light-collection.html">Forest Light</a>
+<a href="wellness-waters-collection.html">Wellness Waters</a>
+<a href="coastal-atmosphere.html">Coastal Atmosphere</a>
+<a href="mountain-light-collection.html">Mountain Light</a>
+<a href="open-horizons-collection.html">Open Horizons</a>
+<a href="monochrome-stillness.html">Monochrome Stillness</a>
+<a href="winter-stillness.html">Winter Stillness</a>
+<a href="heritage-mixed-media.html">Heritage &amp; Mixed Media</a>
+</details>
+<details class="footer-group" open="">
+<summary>Resources</summary>
+<a href="artwork-guides.html">Artwork Guides</a>
+<a href="blog.html">Journal</a>
+<a href="lima-ohio-fine-art-photographer.html">Lima Fine Art Photographer</a>
+<a href="ohio-nature-photography-prints.html">Ohio Nature Photography</a>
+<a href="alaska-photography-prints.html">Alaska Photography</a>
+<a href="colorado-fall-colors-photography-prints.html">Colorado Fall Colors</a>
+<a href="about-dan-sproul.html">About Dan</a>
+</details>
+<details class="footer-group" open="">
+<summary>For Designers</summary>
+<a href="for-designers.html">Designer Resources</a>
+<a href="healthcare-artwork.html">Healthcare</a>
+<a href="hospitality-artwork.html">Hospitality</a>
+<a href="office-artwork.html">Office</a>
+<a href="residential-nature-wall-art.html">Residential</a>
+<a href="senior-living-artwork.html">Senior Living</a>
+</details>
+<div class="footer-connect">
+<h3>Connect</h3>
+<a href="mailto:dan@dsproul.com">Email</a>
+<a href="https://www.linkedin.com/in/dan-sproul-bb55015a/" rel="noopener" target="_blank">LinkedIn</a>
+<a href="https://www.pinterest.com/dansproul/" rel="noopener" target="_blank">Pinterest</a>
 </div>
-
-
-    <div>
-      <h3>Connect</h3>
-      <a href="mailto:sproulphoto@gmail.com">Email</a>
-      <a href="https://www.linkedin.com/in/dan-sproul-bb55015a/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://www.pinterest.com/dansproul/" target="_blank" rel="noopener">Pinterest</a>
-    </div>
-
+</div>
+<div class="footer-bottom">
+    © 2026 Dan Sproul Fine Art Photography · Based in Lima, Ohio · Original Nature Photography &amp; Heritage-Inspired Artwork
   </div>
-
-  <div class="footer-bottom">
-    © 2026 Dan Sproul Fine Art Photography · Based in Lima, Ohio · Original Nature Photography & Heritage-Inspired Artwork
-  </div>
-
 </footer>
 
 <script>
@@ -1570,25 +1671,71 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 </script>
-
-
-<div class="mockup-lightbox" id="mockupLightbox" aria-hidden="true" role="dialog" aria-label="Forest Light mockup preview">
-  <button class="mockup-lightbox-close" type="button" aria-label="Close image">×</button>
-  <div class="mockup-lightbox-card">
-    <img decoding="async" loading="lazy" id="mockupLightboxImg" src="" alt="">
-    <div class="mockup-lightbox-title" id="mockupLightboxTitle"></div>
-    <div class="mockup-spec-panel">
-      <div class="mockup-spec-item"><strong>Suggested Sizes</strong><span id="mockupSpecSizes"></span></div>
-      <div class="mockup-spec-item"><strong>Frame Suggestions</strong><span id="mockupSpecFrames"></span></div>
-      <div class="mockup-spec-item"><strong>Mat Recommendation</strong><span id="mockupSpecMat"></span></div>
-      <div class="mockup-spec-item"><strong>Available Formats</strong><span id="mockupSpecFormats"></span></div>
-      <div class="mockup-spec-item"><strong>Best Rooms</strong><span id="mockupSpecRooms"></span></div>
-    </div>
-    <div class="mockup-lightbox-actions">
-      <a id="mockupPurchaseLink" href="#" target="_blank" rel="noopener">Purchase Print</a>
-      <button id="mockupLightboxCloseBtn" type="button">Close</button>
-    </div>
-  </div>
+<div aria-hidden="true" aria-label="Forest Light mockup preview" class="mockup-lightbox" id="mockupLightbox" role="dialog">
+<button aria-label="Close image" class="mockup-lightbox-close" type="button">×</button>
+<div class="mockup-lightbox-card">
+<img alt="" decoding="async" id="mockupLightboxImg" loading="lazy" src=""/>
+<div class="mockup-lightbox-title" id="mockupLightboxTitle"></div>
+<div class="mockup-spec-panel">
+<div class="mockup-spec-item"><strong>Suggested Sizes</strong><span id="mockupSpecSizes"></span></div>
+<div class="mockup-spec-item"><strong>Frame Suggestions</strong><span id="mockupSpecFrames"></span></div>
+<div class="mockup-spec-item"><strong>Mat Recommendation</strong><span id="mockupSpecMat"></span></div>
+<div class="mockup-spec-item"><strong>Available Formats</strong><span id="mockupSpecFormats"></span></div>
+<div class="mockup-spec-item"><strong>Best Rooms</strong><span id="mockupSpecRooms"></span></div>
+</div>
+<div class="mockup-lightbox-actions">
+<a href="#" id="mockupPurchaseLink" rel="noopener" target="_blank">Purchase Print</a>
+<button id="mockupLightboxCloseBtn" type="button">Close</button>
+</div>
+</div>
 </div>
 
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var nav = document.querySelector('.site-nav-standard');
+  var toggle = document.querySelector('.nav-toggle-standard');
+
+  function closeNav() {
+    if (!nav || !toggle) return;
+    nav.classList.remove('is-open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }
+
+  if (nav && toggle) {
+    toggle.addEventListener('click', function () {
+      var isOpen = nav.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    nav.querySelectorAll('.nav-links-standard a').forEach(function (link) {
+      link.addEventListener('click', closeNav);
+    });
+  }
+
+  var footerGroups = document.querySelectorAll('.site-footer .footer-group');
+  var footerQuery = window.matchMedia('(max-width: 768px)');
+
+  function syncFooterGroups() {
+    footerGroups.forEach(function (group) {
+      if (footerQuery.matches) {
+        group.removeAttribute('open');
+      } else {
+        group.setAttribute('open', '');
+      }
+    });
+  }
+
+  syncFooterGroups();
+
+  if (footerQuery.addEventListener) {
+    footerQuery.addEventListener('change', syncFooterGroups);
+  } else if (footerQuery.addListener) {
+    footerQuery.addListener(syncFooterGroups);
+  }
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') closeNav();
+  });
+});
+</script>
 </body></html>
