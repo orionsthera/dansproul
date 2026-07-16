@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Journal & Artwork Guides | Dan Sproul Fine Art Photography</title>
   <meta name="description" content="Artwork guides, field notes, and interior design ideas from Dan Sproul, a Lima, Ohio fine art nature photographer creating landscape artwork for homes, healthcare, hospitality, offices, and residential interiors." />
+  <meta name="author" content="Dan Sproul" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://dsproul.com/blog.html" />
   <meta property="og:title" content="Journal & Artwork Guides | Dan Sproul Fine Art Photography" />
@@ -12,9 +13,13 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://dsproul.com/blog.html" />
   <meta property="og:image" content="https://dsproul.com/denali%20national%20park%20autumn.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Journal & Artwork Guides | Dan Sproul Fine Art Photography" />
+  <meta name="twitter:description" content="Artwork guides, field notes, and interior design ideas for choosing nature photography prints by room, mood, size, and place." />
+  <meta name="twitter:image" content="https://dsproul.com/denali%20national%20park%20autumn.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="image" href="denali national park autumn.jpg" />
+  <link rel="preload" as="image" href="denali%20national%20park%20autumn.jpg" />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
   <style>
     :root {
@@ -748,6 +753,96 @@
   }
 }
 
+
+/* SITEWIDE COLLAPSIBLE MOBILE FOOTER UPDATE */
+.site-footer .footer-group{display:block!important;min-width:0!important}
+.site-footer .footer-group summary{
+  display:block!important;
+  margin:0 0 13px!important;
+  color:#d5b365!important;
+  font-family:"Cormorant Garamond",Georgia,serif!important;
+  font-size:21px!important;
+  line-height:1.2!important;
+  font-weight:400!important;
+  text-transform:none!important;
+  letter-spacing:0!important;
+  list-style:none!important;
+  cursor:default!important;
+}
+.site-footer .footer-group summary::-webkit-details-marker{display:none!important}
+.site-footer .footer-link-list{display:block!important}
+.site-footer .footer-connect{display:block!important}
+.site-footer .footer-connect h3{
+  margin:0 0 13px!important;
+  color:#d5b365!important;
+  font-family:"Cormorant Garamond",Georgia,serif!important;
+  font-size:21px!important;
+  line-height:1.2!important;
+  font-weight:400!important;
+  text-transform:none!important;
+  letter-spacing:0!important;
+}
+@media(max-width:768px){
+  .site-footer{padding:42px 22px 30px!important}
+  .site-footer .footer-grid{
+    grid-template-columns:1fr!important;
+    gap:0!important;
+  }
+  .site-footer .footer-group{
+    border-bottom:1px solid rgba(185,138,59,.20)!important;
+  }
+  .site-footer .footer-group summary{
+    min-height:44px!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:space-between!important;
+    gap:18px!important;
+    margin:0!important;
+    padding:13px 0!important;
+    cursor:pointer!important;
+    font-family:Arial,Helvetica,sans-serif!important;
+    font-size:12px!important;
+    font-weight:700!important;
+    letter-spacing:.16em!important;
+    text-transform:uppercase!important;
+    color:#d5b365!important;
+  }
+  .site-footer .footer-group summary::after{
+    content:"+"!important;
+    color:rgba(244,238,229,.58)!important;
+    font-family:Arial,Helvetica,sans-serif!important;
+    font-size:18px!important;
+    line-height:1!important;
+  }
+  .site-footer .footer-group[open] summary::after{
+    content:"–"!important;
+  }
+  .site-footer .footer-link-list{
+    padding:0 0 16px!important;
+  }
+  .site-footer .footer-grid a{
+    min-height:32px!important;
+    display:flex!important;
+    align-items:center!important;
+    line-height:1.35!important;
+    margin:0!important;
+    padding:3px 0!important;
+    font-size:13px!important;
+  }
+  .site-footer .footer-connect{
+    padding-top:22px!important;
+  }
+  .site-footer .footer-connect h3{
+    margin-bottom:10px!important;
+    font-size:21px!important;
+  }
+  .site-footer .footer-bottom{
+    margin-top:28px!important;
+    padding-top:22px!important;
+    text-align:left!important;
+  }
+}
+
 </style>
   <script type="application/ld+json">
   {
@@ -758,6 +853,7 @@
         "@id": "https://dsproul.com/#dan-sproul",
         "name": "Dan Sproul",
         "url": "https://dsproul.com",
+        "email": "dan@dsproul.com",
         "jobTitle": "Fine Art Photographer and Mixed Media Artist",
         "homeLocation": {
           "@type": "Place",
@@ -774,6 +870,7 @@
         "@id": "https://dsproul.com/#organization",
         "name": "Dan Sproul Fine Art Photography",
         "url": "https://dsproul.com",
+        "email": "dan@dsproul.com",
         "founder": { "@id": "https://dsproul.com/#dan-sproul" }
       },
       {
@@ -842,7 +939,7 @@
       <a href="about-dan-sproul.html">About</a>
       <a href="in-your-space.html">In Your Space</a>
       <a href="for-designers.html">For Designers</a>
-      <a href="blog.html" class="active">Blog</a>
+      <a href="blog.html" class="active" aria-current="page">Blog</a>
       <a href="https://dansproul.com" target="_blank" rel="noopener" class="nav-shop-standard">Shop Prints</a>
     </div>
   </nav>
@@ -1005,7 +1102,7 @@
       </div>
 
       <div class="btns contact-actions">
-        <a class="btn primary" href="mailto:sproulphoto@gmail.com?subject=Artwork%20Guidance%20Request">Request Guidance</a>
+        <a class="btn primary" href="mailto:dan@dsproul.com?subject=Artwork%20Guidance%20Request">Request Guidance</a>
         <a class="btn" href="art-collections.html">Browse Collections</a>
         <a class="btn" href="artwork-guides.html">Artwork Guides</a>
       </div>
@@ -1014,53 +1111,61 @@
 
   <footer id="footer" class="site-footer">
     <div class="footer-grid">
-      <div>
-        <h3>Explore</h3>
-        <a href="/">Home</a>
-        <a href="best-sellers.html">Best Sellers</a>
-        <a href="art-collections.html">Collections</a>
-        <a href="in-your-space.html">In Your Space</a>
-        <a href="for-designers.html">For Designers</a>
-        <a href="https://dansproul.com" target="_blank" rel="noopener">Shop Prints</a>
-        <a href="mailto:sproulphoto@gmail.com">Contact</a>
-      </div>
+      <details class="footer-group footer-accordion" open>
+        <summary>Explore</summary>
+        <div class="footer-link-list">
+          <a href="/">Home</a>
+          <a href="best-sellers.html">Best Sellers</a>
+          <a href="art-collections.html">Collections</a>
+          <a href="in-your-space.html">In Your Space</a>
+          <a href="for-designers.html">For Designers</a>
+          <a href="https://dansproul.com" target="_blank" rel="noopener">Shop Prints</a>
+          <a href="mailto:dan@dsproul.com">Contact</a>
+        </div>
+      </details>
 
-      <div>
-        <h3>Collections</h3>
-        <a href="quiet-earth-collection.html">Quiet Earth</a>
-        <a href="forest-light-collection.html">Forest Light</a>
-        <a href="wellness-waters-collection.html">Wellness Waters</a>
-        <a href="coastal-atmosphere.html">Coastal Atmosphere</a>
-        <a href="mountain-light-collection.html">Mountain Light</a>
-        <a href="open-horizons-collection.html">Open Horizons</a>
-        <a href="monochrome-stillness.html">Monochrome Stillness</a>
-        <a href="heritage-mixed-media.html">Heritage &amp; Mixed Media</a>
-      </div>
+      <details class="footer-group footer-accordion" open>
+        <summary>Collections</summary>
+        <div class="footer-link-list">
+          <a href="quiet-earth-collection.html">Quiet Earth</a>
+          <a href="forest-light-collection.html">Forest Light</a>
+          <a href="wellness-waters-collection.html">Wellness Waters</a>
+          <a href="coastal-atmosphere.html">Coastal Atmosphere</a>
+          <a href="mountain-light-collection.html">Mountain Light</a>
+          <a href="monochrome-stillness.html">Monochrome Stillness</a>
+          <a href="winter-stillness.html">Winter Stillness</a>
+          <a href="open-horizons-collection.html">Open Horizons</a>
+          <a href="heritage-mixed-media.html">Heritage &amp; Mixed Media</a>
+        </div>
+      </details>
 
-      <div>
-        <h3>Resources</h3>
-        <a href="artwork-guides.html">Artwork Guides</a>
-        <a href="blog.html">Journal</a>
-        <a href="lima-ohio-fine-art-photographer.html">Lima Fine Art Photographer</a>
-        <a href="about-dan-sproul.html">About Dan</a>
-        <a href="ohio-nature-photography-prints.html">Ohio Nature Photography</a>
-        <a href="alaska-photography-prints.html">Alaska Photography</a>
-      </div>
+      <details class="footer-group footer-accordion" open>
+        <summary>Resources</summary>
+        <div class="footer-link-list">
+          <a href="artwork-guides.html">Artwork Guides</a>
+          <a href="blog.html">Journal</a>
+          <a href="lima-ohio-fine-art-photographer.html">Lima Fine Art Photographer</a>
+          <a href="about-dan-sproul.html">About Dan</a>
+          <a href="ohio-nature-photography-prints.html">Ohio Nature Photography</a>
+          <a href="alaska-photography-prints.html">Alaska Photography</a>
+        </div>
+      </details>
 
-      <div>
-  <h3>For Designers</h3>
-  <a href="/for-designers.html">Designer Resources</a>
-  <a href="/healthcare-artwork.html">Healthcare</a>
-  <a href="/waiting-room-artwork.html">Waiting Rooms</a>
-  <a href="/hospitality-artwork.html">Hospitality</a>
-  <a href="/office-artwork.html">Office</a>
-  <a href="/residential-nature-wall-art.html">Residential</a>
-  <a href="/senior-living-artwork.html">Senior Living</a>
-</div>
+      <details class="footer-group footer-accordion" open>
+        <summary>For Designers</summary>
+        <div class="footer-link-list">
+          <a href="/for-designers.html">Designer Resources</a>
+          <a href="/healthcare-artwork.html">Healthcare</a>
+          <a href="/hospitality-artwork.html">Hospitality</a>
+          <a href="/office-artwork.html">Office</a>
+          <a href="/residential-nature-wall-art.html">Residential</a>
+          <a href="/senior-living-artwork.html">Senior Living</a>
+        </div>
+      </details>
 
-      <div>
+      <div class="footer-connect">
         <h3>Connect</h3>
-        <a href="mailto:sproulphoto@gmail.com">Email</a>
+        <a href="mailto:dan@dsproul.com">Email</a>
         <a href="https://www.linkedin.com/in/dan-sproul-bb55015a/" target="_blank" rel="noopener">LinkedIn</a>
         <a href="https://www.pinterest.com/dansproul/" target="_blank" rel="noopener">Pinterest</a>
       </div>
@@ -1075,11 +1180,42 @@
     document.addEventListener("DOMContentLoaded", function () {
       var nav = document.querySelector(".site-nav-standard");
       var toggle = document.querySelector(".nav-toggle-standard");
-      if (!nav || !toggle) return;
 
-      toggle.addEventListener("click", function () {
-        var isOpen = nav.classList.toggle("is-open");
-        toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      function closeNav() {
+        if (!nav || !toggle) return;
+        nav.classList.remove("is-open");
+        toggle.setAttribute("aria-expanded", "false");
+      }
+
+      if (nav && toggle) {
+        toggle.addEventListener("click", function () {
+          var isOpen = nav.classList.toggle("is-open");
+          toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+        });
+
+        document.querySelectorAll(".nav-links-standard a").forEach(function (link) {
+          link.addEventListener("click", closeNav);
+        });
+      }
+
+      function updateFooterAccordions() {
+        var isMobile = window.matchMedia("(max-width: 768px)").matches;
+        document.querySelectorAll(".site-footer .footer-accordion").forEach(function (details) {
+          if (isMobile) {
+            details.removeAttribute("open");
+          } else {
+            details.setAttribute("open", "");
+          }
+        });
+      }
+
+      updateFooterAccordions();
+      window.addEventListener("resize", updateFooterAccordions);
+
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+          closeNav();
+        }
       });
     });
   </script>
