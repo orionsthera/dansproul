@@ -12,7 +12,12 @@
 <meta property="og:url" content="https://dsproul.com/best-sellers.html"/>
 <meta property="og:title" content="Best Selling Fine Art Prints for Homes & Designer Projects | Dan Sproul"/>
 <meta property="og:description" content="Start here for Dan Sproul's most versatile landscape, coastal, mountain, forest, waterfall, wildlife, and black and white wall art prints for real interiors."/>
-<meta property="og:image" content="https://dsproul.com/panning waves in bedroom mockup.png"/>
+<meta property="og:image" content="https://dsproul.com/panning%20waves%20in%20bedroom%20mockup.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Best Selling Fine Art Prints for Homes & Designer Projects | Dan Sproul"/>
+<meta name="twitter:description" content="A curated starting point for Dan Sproul's most versatile landscape, coastal, mountain, forest, waterfall, wildlife, and black and white wall art prints for real interiors."/>
+<meta name="twitter:image" content="https://dsproul.com/panning%20waves%20in%20bedroom%20mockup.png"/>
+<link rel="preload" as="image" href="panning%20waves%20in%20bedroom%20mockup.png"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet"/>
@@ -376,6 +381,83 @@ html{scroll-behavior:smooth}body{background:var(--charcoal);color:var(--text);fo
   }
 }
 
+
+/* SITEWIDE FOOTER UPDATE — mobile accordions, visible connect column */
+.site-footer .footer-column{min-width:0!important}
+.site-footer details.footer-accordion{display:block!important}
+.site-footer summary{list-style:none!important}
+.site-footer summary::-webkit-details-marker{display:none!important}
+.site-footer summary span,
+.site-footer .footer-connect h3{
+  display:block!important;
+  margin:0 0 13px!important;
+  color:#d5b365!important;
+  font-family:"Cormorant Garamond",Georgia,serif!important;
+  font-size:21px!important;
+  line-height:1.2!important;
+  font-weight:400!important;
+  text-transform:none!important;
+  letter-spacing:0!important;
+}
+.site-footer .footer-links a,
+.site-footer .footer-connect a{
+  display:block!important;
+  text-decoration:none!important;
+  color:rgba(244,238,229,.62)!important;
+  font-family:Arial,Helvetica,sans-serif!important;
+  font-size:13px!important;
+  line-height:2!important;
+  text-transform:none!important;
+  letter-spacing:0!important;
+}
+.site-footer .footer-links a:hover,
+.site-footer .footer-connect a:hover{color:#f4eee5!important}
+@media(min-width:769px){
+  .site-footer .footer-grid{grid-template-columns:repeat(5,minmax(0,1fr))!important}
+  .site-footer details.footer-accordion:not([open]) .footer-links{display:block!important}
+  .site-footer summary{cursor:default!important}
+  .site-footer summary::after{display:none!important}
+}
+@media(max-width:768px){
+  .site-footer{padding:48px 22px 30px!important}
+  .site-footer .footer-grid{grid-template-columns:1fr!important;gap:0!important}
+  .site-footer .footer-accordion-column{border-bottom:1px solid rgba(185,147,75,.18)!important}
+  .site-footer details.footer-accordion{padding:0!important}
+  .site-footer summary{
+    min-height:44px!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:space-between!important;
+    gap:18px!important;
+    cursor:pointer!important;
+    padding:13px 0!important;
+  }
+  .site-footer summary span{margin:0!important;font-size:20px!important}
+  .site-footer summary::after{
+    content:"+"!important;
+    color:#d5b365!important;
+    font-family:Arial,Helvetica,sans-serif!important;
+    font-size:18px!important;
+    line-height:1!important;
+  }
+  .site-footer details[open] summary::after{content:"–"!important}
+  .site-footer .footer-links{padding:0 0 16px!important}
+  .site-footer .footer-links a,
+  .site-footer .footer-connect a{
+    min-height:36px!important;
+    display:flex!important;
+    align-items:center!important;
+    line-height:1.45!important;
+    margin:0!important;
+  }
+  .site-footer .footer-connect{padding-top:24px!important}
+  .site-footer .footer-connect h3{margin-bottom:10px!important}
+  .site-footer .footer-bottom{
+    text-align:left!important;
+    margin-top:34px!important;
+  }
+}
+
 </style>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -395,7 +477,8 @@ html{scroll-behavior:smooth}body{background:var(--charcoal);color:var(--text);fo
         "https://dansproul.com",
         "https://fineartamerica.com/profiles/1-dan-sproul",
         "https://www.pinterest.com/dansproul/"
-      ]
+      ],
+      "email": "dan@dsproul.com"
     },
     {
       "@type": "Organization",
@@ -404,7 +487,8 @@ html{scroll-behavior:smooth}body{background:var(--charcoal);color:var(--text);fo
       "url": "https://dsproul.com",
       "founder": {
         "@id": "https://dsproul.com/#dan-sproul"
-      }
+      },
+      "email": "dan@dsproul.com"
     },
     {
       "@type": "WebSite",
@@ -428,7 +512,10 @@ html{scroll-behavior:smooth}body{background:var(--charcoal);color:var(--text);fo
         "@id": "https://dsproul.com/#dan-sproul"
       },
       "primaryImageOfPage": {
-        "@id": "https://dsproul.com/panning waves in bedroom mockup.png#image"
+        "@id": "https://dsproul.com/panning%20waves%20in%20bedroom%20mockup.png#image"
+      },
+      "breadcrumb": {
+        "@id": "https://dsproul.com/best-sellers.html#breadcrumb"
       }
     },
     {
@@ -489,8 +576,8 @@ html{scroll-behavior:smooth}body{background:var(--charcoal);color:var(--text);fo
     },
     {
       "@type": "ImageObject",
-      "@id": "https://dsproul.com/panning waves in bedroom mockup.png#image",
-      "contentUrl": "https://dsproul.com/panning waves in bedroom mockup.png",
+      "@id": "https://dsproul.com/panning%20waves%20in%20bedroom%20mockup.png#image",
+      "contentUrl": "https://dsproul.com/panning%20waves%20in%20bedroom%20mockup.png",
       "name": "Best selling wall art shown in a bedroom mockup by Dan Sproul",
       "description": "Bedroom mockup showing a large framed abstract water artwork by Dan Sproul.",
       "creator": {
@@ -499,7 +586,9 @@ html{scroll-behavior:smooth}body{background:var(--charcoal);color:var(--text);fo
       "copyrightHolder": {
         "@id": "https://dsproul.com/#dan-sproul"
       },
-      "representativeOfPage": true
+      "representativeOfPage": true,
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com/collections/best+sellers+and+designer+favorite+wall+art"
     }
   ]
 }</script>
@@ -507,9 +596,9 @@ html{scroll-behavior:smooth}body{background:var(--charcoal);color:var(--text);fo
 <body>
 <nav class="site-nav-standard" aria-label="Primary navigation">
   <a href="/" class="nav-logo-standard" aria-label="Dan Sproul Fine Art Photography home"><span class="nav-logo-name-standard">Dan Sproul</span><span class="nav-logo-sub-standard">Fine Art Photography</span></a>
-  <button class="nav-toggle-standard" aria-label="Open navigation menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <button class="nav-toggle-standard" type="button" aria-label="Open navigation menu" aria-expanded="false"><span></span><span></span><span></span></button>
   <div class="nav-links-standard">
-    <a href="/">Home</a><a href="best-sellers.html" class="active">Best Sellers</a><a href="art-collections.html">Collections</a><a href="about-dan-sproul.html">About</a><a href="in-your-space.html">In Your Space</a><a href="for-designers.html">For Designers</a><a href="https://dansproul.com" target="_blank" rel="noopener" class="nav-shop-standard">Shop Prints</a>
+    <a href="/">Home</a><a href="best-sellers.html" class="active" aria-current="page">Best Sellers</a><a href="art-collections.html">Collections</a><a href="about-dan-sproul.html">About</a><a href="in-your-space.html">In Your Space</a><a href="for-designers.html">For Designers</a><a href="https://dansproul.com" target="_blank" rel="noopener" class="nav-shop-standard">Shop Prints</a>
   </div>
 </nav>
 
@@ -518,7 +607,7 @@ html{scroll-behavior:smooth}body{background:var(--charcoal);color:var(--text);fo
     <p class="eyebrow">Curated Wall Art Starting Point</p>
     <h1>Best Selling Prints for <em>Real Interiors</em></h1>
     <p class="hero-copy">A focused selection of Dan Sproul's most versatile fine art prints for living rooms, bedrooms, offices, hospitality projects, healthcare interiors, wellness spaces, and buyers who want an easy place to begin.</p>
-    <div class="hero-ctas"><a class="btn btn-solid" href="#featured">View Featured Prints</a><a class="btn btn-out" href="https://dansproul.com/collections/best+sellers+and+designer+favorite+wall+art" target="_blank" rel="noopener">Shop Full Collection</a><a class="btn btn-out" href="mailto:sproulphoto@gmail.com?subject=Free%20Wall%20Mockup%20Request">Request Wall Mockup</a></div>
+    <div class="hero-ctas"><a class="btn btn-solid" href="#featured">View Featured Prints</a><a class="btn btn-out" href="https://dansproul.com/collections/best+sellers+and+designer+favorite+wall+art" target="_blank" rel="noopener">Shop Full Collection</a><a class="btn btn-out" href="mailto:dan@dsproul.com?subject=Free%20Wall%20Mockup%20Request">Request Wall Mockup</a></div>
     <div class="hero-price-points" aria-label="Starting price points">
       <div class="hero-price"><strong>From $45</strong><span>Fine Art Prints</span></div>
       <div class="hero-price"><strong>From $100</strong><span>Framed Prints</span></div>
@@ -584,82 +673,131 @@ html{scroll-behavior:smooth}body{background:var(--charcoal);color:var(--text);fo
 
 <section class="related-links" id="related-collections"><div class="section-head"><div><p class="section-label">Related Collection Paths</p><h2 class="section-title">Continue from best sellers into <em>stronger directions</em></h2></div></div><div class="related-grid"><a class="related-card" href="quiet-earth-collection.html"><span>Calm Atmosphere</span><h3>Quiet Earth</h3><p>Soft, atmospheric landscape photography for bedrooms, wellness interiors, and quiet living spaces.</p></a><a class="related-card" href="in-your-space.html"><span>Shop By Room</span><h3>In Your Space</h3><p>Room-based wall art guidance for bedrooms, offices, dining rooms, and living spaces.</p></a><a class="related-card" href="art-collections.html"><span>Collection Hub</span><h3>Curated Collections</h3><p>Explore the larger collection architecture by mood, subject, and interior use.</p></a><a class="related-card" href="heritage-mixed-media.html"><span>Place-Based Artwork</span><h3>Heritage &amp; Mixed Media</h3><p>Layered maps, typography, landmarks, wildlife, and regional artwork for distinctive interiors.</p></a></div></section>
 
-<section class="mockup-cta" id="mockup"><div class="mockup-wrap"><div><p class="section-label">Free Wall Mockup</p><h2>Not sure which print belongs on the wall?</h2><p>Email a room photo, wall dimensions, or project direction. I can help narrow the artwork, size, format, and placement before you order.</p></div><a class="btn btn-solid" href="mailto:sproulphoto@gmail.com?subject=Best%20Sellers%20Wall%20Mockup%20Request">Request Mockup</a></div></section>
+<section class="mockup-cta" id="mockup"><div class="mockup-wrap"><div><p class="section-label">Free Wall Mockup</p><h2>Not sure which print belongs on the wall?</h2><p>Email a room photo, wall dimensions, or project direction. I can help narrow the artwork, size, format, and placement before you order.</p></div><a class="btn btn-solid" href="mailto:dan@dsproul.com?subject=Best%20Sellers%20Wall%20Mockup%20Request">Request Mockup</a></div></section>
 
 <section class="sets"><div class="section-head"><div><p class="section-label">Designer-Friendly Sets</p><h2 class="section-title">Better buying paths than <em>one print at a time</em></h2></div></div><div class="set-grid"><div class="set-card"><h3>Calm Bedroom Set</h3><p>Quiet forest, water, and soft mountain pieces for private rooms and guest suites.</p><ul><li>Bedroom wall art</li><li>Forest and water</li><li>Framed or canvas</li></ul></div><div class="set-card"><h3>Coastal Living Set</h3><p>Oregon coast, beach, and soft water images for living rooms, dining spaces, and lake homes.</p><ul><li>Coastal wall art</li><li>Large statement prints</li><li>Canvas or metal</li></ul></div><div class="set-card"><h3>Wellness Office Set</h3><p>Waterfalls, lily ponds, fog, and subdued landscapes for offices, healthcare, spas, and waiting rooms.</p><ul><li>Healthcare art</li><li>Commercial interiors</li><li>Mockups available</li></ul></div></div></section>
 
 <section class="faq-section" id="faq"><div class="section-head"><div><p class="section-label">Buying Questions</p><h2 class="section-title">Quick answers for choosing <em>wall art prints</em></h2></div></div><div class="faq-grid"><div class="faq-item"><h3>What makes these best sellers?</h3><p>These are versatile pieces that work across common interiors: bedrooms, offices, hospitality spaces, wellness rooms, living rooms, and nature-inspired commercial projects.</p></div><div class="faq-item"><h3>Can I see one in my own room?</h3><p>Yes. Send a wall photo and Dan can suggest scale, format, and a simple mockup direction before you order.</p></div><div class="faq-item"><h3>What format should I choose?</h3><p>Framed paper feels refined, canvas adds warmth, metal is practical for higher-traffic spaces, and acrylic works well for polished modern interiors.</p></div><div class="faq-item"><h3>Where do I buy the full collection?</h3><p>The full Best Sellers &amp; Designer Favorites collection is available on Dan’s print shop, with multiple sizes and finish options.</p></div></div></section>
 
 <footer id="footer" class="site-footer">
-
   <div class="footer-grid">
-
-    <div>
-      <h3>Explore</h3>
-      <a href="/">Home</a>
-      <a href="best-sellers.html">Best Sellers</a>
-      <a href="art-collections.html">Collections</a>
-      <a href="in-your-space.html">In Your Space</a>
-      <a href="for-designers.html">For Designers</a>
-      <a href="https://dansproul.com" target="_blank" rel="noopener">Shop Prints</a>
-      <a href="mailto:sproulphoto@gmail.com">Contact</a>
+    <div class="footer-column footer-accordion-column">
+      <details class="footer-accordion" open>
+        <summary><span>Explore</span></summary>
+        <div class="footer-links">
+          <a href="/">Home</a>
+          <a href="best-sellers.html">Best Sellers</a>
+          <a href="art-collections.html">Collections</a>
+          <a href="in-your-space.html">In Your Space</a>
+          <a href="for-designers.html">For Designers</a>
+          <a href="https://dansproul.com" target="_blank" rel="noopener">Shop Prints</a>
+          <a href="mailto:dan@dsproul.com">Contact</a>
+        </div>
+      </details>
     </div>
 
-    <div>
-      <h3>Collections</h3>
-      <a href="quiet-earth-collection.html">Quiet Earth</a>
-      <a href="forest-light-collection.html">Forest Light</a>
-      <a href="wellness-waters-collection.html">Wellness Waters</a>
-      <a href="coastal-atmosphere.html">Coastal Atmosphere</a>
-      <a href="mountain-light-collection.html">Mountain Light</a>
-      <a href="monochrome-stillness.html">Monochrome Stillness</a>
-      <a href="heritage-mixed-media.html">Heritage & Mixed Media</a>
+    <div class="footer-column footer-accordion-column">
+      <details class="footer-accordion" open>
+        <summary><span>Collections</span></summary>
+        <div class="footer-links">
+          <a href="quiet-earth-collection.html">Quiet Earth</a>
+          <a href="forest-light-collection.html">Forest Light</a>
+          <a href="wellness-waters-collection.html">Wellness Waters</a>
+          <a href="coastal-atmosphere.html">Coastal Atmosphere</a>
+          <a href="mountain-light-collection.html">Mountain Light</a>
+          <a href="monochrome-stillness.html">Monochrome Stillness</a>
+          <a href="winter-stillness.html">Winter Stillness</a>
+          <a href="open-horizons-collection.html">Open Horizons</a>
+          <a href="heritage-mixed-media.html">Heritage &amp; Mixed Media</a>
+        </div>
+      </details>
     </div>
 
-    <div>
-      <h3>Resources</h3>
-      <a href="artwork-guides.html">Artwork Guides</a>
-      <a href="blog.html">Journal</a>
-      <a href="lima-ohio-fine-art-photographer.html">Lima Fine Art Photographer</a>
-      <a href="about-dan-sproul.html">About Dan</a>
-      <a href="ohio-nature-photography-prints.html">Ohio Nature Photography</a>
-      <a href="alaska-photography-prints.html">Alaska Photography</a>
+    <div class="footer-column footer-accordion-column">
+      <details class="footer-accordion" open>
+        <summary><span>Resources</span></summary>
+        <div class="footer-links">
+          <a href="artwork-guides.html">Artwork Guides</a>
+          <a href="blog.html">Journal</a>
+          <a href="lima-ohio-fine-art-photographer.html">Lima Fine Art Photographer</a>
+          <a href="about-dan-sproul.html">About Dan</a>
+          <a href="ohio-nature-photography-prints.html">Ohio Nature Photography</a>
+          <a href="alaska-photography-prints.html">Alaska Photography</a>
+        </div>
+      </details>
     </div>
 
-  <div>
-  <h3>For Designers</h3>
-  <a href="/for-designers.html">Designer Resources</a>
-  <a href="/healthcare-artwork.html">Healthcare</a>
-  <a href="/hospitality-artwork.html">Hospitality</a>
-  <a href="/office-artwork.html">Office</a>
-  <a href="/residential-nature-wall-art.html">Residential</a>
-  <a href="/senior-living-artwork.html">Senior Living</a>
-</div>
+    <div class="footer-column footer-accordion-column">
+      <details class="footer-accordion" open>
+        <summary><span>For Designers</span></summary>
+        <div class="footer-links">
+          <a href="/for-designers.html">Designer Resources</a>
+          <a href="/healthcare-artwork.html">Healthcare</a>
+          <a href="/hospitality-artwork.html">Hospitality</a>
+          <a href="/office-artwork.html">Office</a>
+          <a href="/residential-nature-wall-art.html">Residential</a>
+          <a href="/senior-living-artwork.html">Senior Living</a>
+        </div>
+      </details>
+    </div>
 
-
-    <div>
+    <div class="footer-column footer-connect">
       <h3>Connect</h3>
-      <a href="mailto:sproulphoto@gmail.com">Email</a>
+      <a href="mailto:dan@dsproul.com">Email</a>
       <a href="https://www.linkedin.com/in/dan-sproul-bb55015a/" target="_blank" rel="noopener">LinkedIn</a>
       <a href="https://www.pinterest.com/dansproul/" target="_blank" rel="noopener">Pinterest</a>
     </div>
-
   </div>
 
   <div class="footer-bottom">
-    © 2026 Dan Sproul Fine Art Photography · Based in Lima, Ohio · Original Nature Photography & Heritage-Inspired Artwork
+    © 2026 Dan Sproul Fine Art Photography · Based in Lima, Ohio · Original Nature Photography &amp; Heritage-Inspired Artwork
   </div>
-
 </footer>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
   var nav = document.querySelector('.site-nav-standard');
   var toggle = document.querySelector('.nav-toggle-standard');
+
+  function closeNav() {
+    if (!nav || !toggle) return;
+    nav.classList.remove('is-open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }
+
   if (nav && toggle) {
     toggle.addEventListener('click', function () {
       var isOpen = nav.classList.toggle('is-open');
       toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     });
+
+    document.querySelectorAll('.nav-links-standard a').forEach(function (link) {
+      link.addEventListener('click', closeNav);
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') closeNav();
+    });
+  }
+
+  var footerAccordions = document.querySelectorAll('.site-footer details.footer-accordion');
+  var footerQuery = window.matchMedia('(max-width: 768px)');
+
+  function setFooterAccordionState() {
+    footerAccordions.forEach(function (detail) {
+      if (footerQuery.matches) {
+        detail.removeAttribute('open');
+      } else {
+        detail.setAttribute('open', '');
+      }
+    });
+  }
+
+  setFooterAccordionState();
+
+  if (footerQuery.addEventListener) {
+    footerQuery.addEventListener('change', setFooterAccordionState);
+  } else if (footerQuery.addListener) {
+    footerQuery.addListener(setFooterAccordionState);
   }
 });
 </script>
