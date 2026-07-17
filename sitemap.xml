@@ -51,10 +51,24 @@
 </url>
 
 <url>
+<loc>https://dsproul.com/artwork-guides.html</loc>
+<lastmod>2026-07-17</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+
+<url>
 <loc>https://dsproul.com/healthcare-artwork.html</loc>
 <lastmod>2026-07-15</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
+</url>
+
+<url>
+<loc>https://dsproul.com/healthcare-oncology.html</loc>
+<lastmod>2026-07-15</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.82</priority>
 </url>
 
 <url>
@@ -66,6 +80,13 @@
 
 <url>
 <loc>https://dsproul.com/how-to-choose-calming-artwork-medical-waiting-room.html</loc>
+<lastmod>2026-07-15</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.72</priority>
+</url>
+
+<url>
+<loc>https://dsproul.com/calming-water-art-therapy-offices.html</loc>
 <lastmod>2026-07-15</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.72</priority>
@@ -107,6 +128,13 @@
 </url>
 
 <url>
+<loc>https://dsproul.com/lima-ohio-nature-wildlife-photography.html</loc>
+<lastmod>2026-07-15</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+
+<url>
 <loc>https://dsproul.com/ohio-nature-photography-prints.html</loc>
 <lastmod>2026-07-07</lastmod>
 <changefreq>monthly</changefreq>
@@ -121,8 +149,8 @@
 </url>
 
 <url>
-<loc>https://dsproul.com/artwork-guides.html</loc>
-<lastmod>2026-07-07</lastmod>
+<loc>https://dsproul.com/colorado-fall-colors-photography-prints.html</loc>
+<lastmod>2026-07-15</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
@@ -156,13 +184,6 @@
 </url>
 
 <url>
-<loc>https://dsproul.com/ricketts-glen-watkins-glen-spring-waterfall-trip.html</loc>
-<lastmod>2026-07-07</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.65</priority>
-</url>
-
-<url>
 <loc>https://dsproul.com/mountain-light-collection.html</loc>
 <lastmod>2026-07-07</lastmod>
 <changefreq>monthly</changefreq>
@@ -172,6 +193,13 @@
 <url>
 <loc>https://dsproul.com/monochrome-stillness.html</loc>
 <lastmod>2026-07-07</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+
+<url>
+<loc>https://dsproul.com/winter-stillness.html</loc>
+<lastmod>2026-07-15</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
@@ -188,6 +216,34 @@
 <lastmod>2026-07-07</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
+</url>
+
+<url>
+<loc>https://dsproul.com/how-to-choose-large-wall-art-living-room.html</loc>
+<lastmod>2026-07-15</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.72</priority>
+</url>
+
+<url>
+<loc>https://dsproul.com/water-imagery-restorative-interiors.html</loc>
+<lastmod>2026-07-15</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+
+<url>
+<loc>https://dsproul.com/how-nature-artwork-creates-calm-connected-homes.html</loc>
+<lastmod>2026-07-15</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+
+<url>
+<loc>https://dsproul.com/ricketts-glen-watkins-glen-spring-waterfall-trip.html</loc>
+<lastmod>2026-07-07</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.65</priority>
 </url>
 
 </urlset>
