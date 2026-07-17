@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Exploring Lima Ohio Through My Lens | Nature & Wildlife Photography</title>
   <meta name="description" content="A personal guide to finding memorable nature and wildlife photographs close to home in Lima, Ohio, with deer, herons, birds, foggy mornings, and quiet local landscapes by Dan Sproul." />
+  <meta name="author" content="Dan Sproul" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
   <link rel="canonical" href="https://dsproul.com/lima-ohio-nature-wildlife-photography.html" />
 
   <meta property="og:type" content="article" />
@@ -13,6 +15,10 @@
   <meta property="og:url" content="https://dsproul.com/lima-ohio-nature-wildlife-photography.html" />
   <meta property="og:image" content="https://dsproul.com/foggy-morning-trees-lima-ohio.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Exploring Lima, Ohio Through My Lens | Dan Sproul" />
+  <meta name="twitter:description" content="A personal field note on nature and wildlife photography close to home in Lima, Ohio, from foggy mornings to deer, herons, birds, and quiet local landscapes." />
+  <meta name="twitter:image" content="https://dsproul.com/foggy-morning-trees-lima-ohio.jpg" />
+  <link rel="preload" as="image" href="foggy-morning-trees-lima-ohio.jpg" />
 
   <style>
     :root {
@@ -652,78 +658,428 @@
       .footer-grid a { margin-bottom: 9px; }
       .copyright { margin-top: 24px; padding-top: 20px; font-size: 0.62rem; letter-spacing: 0.16em; }
     }
+  
+/* SITEWIDE NAV + MOBILE COLLAPSIBLE FOOTER — FINAL PASS */
+body::before{
+  content:"";
+  display:block;
+  height:66px;
+}
+.site-nav-standard{
+  position:fixed!important;
+  top:0!important;
+  left:0!important;
+  right:0!important;
+  height:66px!important;
+  z-index:9999!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:28px!important;
+  padding:0 clamp(16px,4vw,44px)!important;
+  background:rgba(14,12,9,.94)!important;
+  border-bottom:1px solid rgba(185,138,59,.18)!important;
+  backdrop-filter:blur(14px)!important;
+  -webkit-backdrop-filter:blur(14px)!important;
+}
+.nav-logo-standard{
+  display:flex!important;
+  flex-direction:column!important;
+  text-decoration:none!important;
+  color:#f4eee5!important;
+  line-height:1!important;
+  min-width:max-content!important;
+}
+.nav-logo-name-standard{
+  font-family:Arial,Helvetica,sans-serif!important;
+  font-size:18px!important;
+  font-weight:700!important;
+  letter-spacing:.24em!important;
+  text-transform:uppercase!important;
+}
+.nav-logo-sub-standard{
+  margin-top:7px!important;
+  color:#b9934b!important;
+  font-family:Arial,Helvetica,sans-serif!important;
+  font-size:9px!important;
+  letter-spacing:.26em!important;
+  text-transform:uppercase!important;
+}
+.nav-links-standard{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:flex-end!important;
+  gap:clamp(18px,2vw,34px)!important;
+}
+.nav-links-standard a{
+  color:rgba(244,238,229,.78)!important;
+  text-decoration:none!important;
+  font-family:Arial,Helvetica,sans-serif!important;
+  font-size:12px!important;
+  font-weight:700!important;
+  letter-spacing:.18em!important;
+  text-transform:uppercase!important;
+  white-space:nowrap!important;
+}
+.nav-links-standard a:hover,
+.nav-links-standard a.active,
+.nav-links-standard a[aria-current="page"]{color:#f4eee5!important}
+.nav-shop-standard{
+  color:#d5b365!important;
+  border:1px solid rgba(213,179,101,.62)!important;
+  padding:14px 22px!important;
+}
+.nav-toggle-standard{
+  display:none!important;
+  width:42px!important;
+  height:42px!important;
+  border:1px solid rgba(213,179,101,.36)!important;
+  background:transparent!important;
+  cursor:pointer!important;
+}
+.nav-toggle-standard span{
+  display:block!important;
+  width:20px!important;
+  height:2px!important;
+  margin:5px auto!important;
+  background:#f4eee5!important;
+}
+.site-footer{
+  background:#050403!important;
+  color:rgba(246,241,233,.76)!important;
+  border-top:1px solid rgba(224,188,114,.16)!important;
+  padding:54px 22px 28px!important;
+}
+.site-footer .footer-grid{
+  max-width:1380px!important;
+  margin:0 auto!important;
+  display:grid!important;
+  grid-template-columns:repeat(5,minmax(0,1fr))!important;
+  gap:32px!important;
+}
+.footer-section,
+.footer-connect{
+  min-width:0!important;
+  border:0!important;
+  padding:0!important;
+}
+.footer-section summary,
+.footer-connect h3{
+  display:block!important;
+  color:#d9a82f!important;
+  font-family:var(--serif)!important;
+  font-size:1.05rem!important;
+  line-height:1.2!important;
+  font-weight:400!important;
+  letter-spacing:0!important;
+  text-transform:none!important;
+  margin:0 0 18px!important;
+  list-style:none!important;
+  cursor:default!important;
+}
+.footer-section summary::-webkit-details-marker{display:none!important}
+.footer-section a,
+.footer-connect a{
+  display:block!important;
+  color:rgba(246,241,233,.84)!important;
+  text-decoration:none!important;
+  font-family:var(--sans)!important;
+  font-size:.78rem!important;
+  line-height:1.45!important;
+  margin:0 0 13px!important;
+  padding:0!important;
+  border:0!important;
+}
+.footer-section a:hover,
+.footer-connect a:hover{color:var(--gold-2)!important}
+.site-footer .copyright{
+  max-width:1380px!important;
+  margin:38px auto 0!important;
+  padding-top:26px!important;
+  border-top:1px solid rgba(224,188,114,.18)!important;
+  color:rgba(246,241,233,.48)!important;
+  font-size:.68rem!important;
+  letter-spacing:.24em!important;
+  line-height:1.8!important;
+  text-align:center!important;
+  text-transform:uppercase!important;
+}
+@media(max-width:1040px){
+  body::before{height:64px!important}
+  .site-nav-standard{height:64px!important}
+  .nav-toggle-standard{display:block!important}
+  .nav-links-standard{
+    position:fixed!important;
+    top:64px!important;
+    left:0!important;
+    right:0!important;
+    display:none!important;
+    flex-direction:column!important;
+    align-items:flex-start!important;
+    gap:0!important;
+    padding:18px 24px 24px!important;
+    background:rgba(14,12,9,.98)!important;
+    border-bottom:1px solid rgba(185,138,59,.22)!important;
+  }
+  .site-nav-standard.is-open .nav-links-standard{display:flex!important}
+  .nav-links-standard a{width:100%!important;padding:14px 0!important}
+  .nav-shop-standard{width:auto!important;margin-top:8px!important;padding:13px 18px!important}
+  .site-footer .footer-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+@media(max-width:760px){
+  .site-footer{
+    padding:34px 18px 26px!important;
+  }
+  .site-footer .footer-grid{
+    grid-template-columns:1fr!important;
+    gap:0!important;
+    max-width:680px!important;
+  }
+  .footer-section{
+    border-bottom:1px solid rgba(224,188,114,.16)!important;
+  }
+  .footer-section summary{
+    position:relative!important;
+    min-height:48px!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:space-between!important;
+    margin:0!important;
+    cursor:pointer!important;
+  }
+  .footer-section summary::after{
+    content:"+"!important;
+    color:var(--gold-2)!important;
+    font-family:Arial,Helvetica,sans-serif!important;
+    font-size:18px!important;
+    line-height:1!important;
+  }
+  .footer-section[open] summary::after{content:"–"!important}
+  .footer-section a{
+    font-size:.8rem!important;
+    line-height:1.45!important;
+    margin-bottom:10px!important;
+  }
+  .footer-section a:last-child{margin-bottom:16px!important}
+  .footer-connect{
+    padding-top:24px!important;
+  }
+  .footer-connect h3{
+    margin-bottom:10px!important;
+  }
+  .footer-connect a{
+    font-size:.8rem!important;
+    margin-bottom:10px!important;
+  }
+  .site-footer .copyright{
+    text-align:left!important;
+    margin-top:24px!important;
+    padding-top:20px!important;
+    font-size:.62rem!important;
+    letter-spacing:.16em!important;
+  }
+}
+
   </style>
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": "Exploring Lima, Ohio Through My Lens — Nature & Wildlife Moments",
-    "description": "A personal field guide to finding memorable nature and wildlife photographs close to home in Lima, Ohio.",
-    "image": "https://dsproul.com/foggy-morning-trees-lima-ohio.jpg",
-    "author": {
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
       "@type": "Person",
+      "@id": "https://dsproul.com/#dan-sproul",
       "name": "Dan Sproul",
-      "url": "https://dsproul.com/about-dan-sproul.html"
+      "url": "https://dsproul.com",
+      "email": "dan@dsproul.com",
+      "jobTitle": "Fine Art Photographer and Artist",
+      "description": "Dan Sproul is an Ohio-based fine art nature photographer creating landscape, wildlife, and interior-focused artwork for homes, designers, healthcare, hospitality, offices, and commercial spaces.",
+      "homeLocation": {
+        "@type": "Place",
+        "name": "Lima, Ohio"
+      },
+      "sameAs": [
+        "https://dansproul.com",
+        "https://fineartamerica.com/profiles/1-dan-sproul",
+        "https://www.pinterest.com/dansproul/",
+        "https://www.linkedin.com/in/dan-sproul-bb55015a/"
+      ]
     },
-    "publisher": {
+    {
       "@type": "Organization",
-      "name": "Dan Sproul",
-      "url": "https://dsproul.com"
+      "@id": "https://dsproul.com/#organization",
+      "name": "Dan Sproul Fine Art Photography",
+      "url": "https://dsproul.com",
+      "email": "dan@dsproul.com",
+      "founder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "description": "Original nature photography and heritage-inspired artwork for homes, designers, healthcare, hospitality, offices, wellness spaces, and commercial interiors."
     },
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://dsproul.com/lima-ohio-nature-wildlife-photography.html"
-    }
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://dsproul.com/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Journal",
-        "item": "https://dsproul.com/blog.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Exploring Lima Ohio Through My Lens",
-        "item": "https://dsproul.com/lima-ohio-nature-wildlife-photography.html"
+    {
+      "@type": "WebSite",
+      "@id": "https://dsproul.com/#website",
+      "url": "https://dsproul.com",
+      "name": "Dan Sproul Fine Art Photography",
+      "publisher": {
+        "@id": "https://dsproul.com/#organization"
       }
-    ]
-  }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://dsproul.com/lima-ohio-nature-wildlife-photography.html#webpage",
+      "url": "https://dsproul.com/lima-ohio-nature-wildlife-photography.html",
+      "name": "Exploring Lima Ohio Through My Lens | Nature & Wildlife Photography",
+      "description": "A personal guide to finding memorable nature and wildlife photographs close to home in Lima, Ohio, with deer, herons, birds, foggy mornings, and quiet local landscapes by Dan Sproul.",
+      "isPartOf": {
+        "@id": "https://dsproul.com/#website"
+      },
+      "author": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "publisher": {
+        "@id": "https://dsproul.com/#organization"
+      },
+      "breadcrumb": {
+        "@id": "https://dsproul.com/lima-ohio-nature-wildlife-photography.html#breadcrumb"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://dsproul.com/foggy-morning-trees-lima-ohio.jpg#image"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Lima Ohio nature photography"
+        },
+        {
+          "@type": "Thing",
+          "name": "Lima Ohio wildlife photography"
+        },
+        {
+          "@type": "Thing",
+          "name": "Ohio nature wall art"
+        },
+        {
+          "@type": "Thing",
+          "name": "Local landscape photography"
+        },
+        {
+          "@type": "Thing",
+          "name": "Field notes"
+        }
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://dsproul.com/lima-ohio-nature-wildlife-photography.html#article",
+      "url": "https://dsproul.com/lima-ohio-nature-wildlife-photography.html",
+      "headline": "Exploring Lima, Ohio Through My Lens",
+      "description": "A personal field note about finding memorable nature and wildlife photographs close to home in Lima, Ohio.",
+      "image": "https://dsproul.com/foggy-morning-trees-lima-ohio.jpg",
+      "author": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "publisher": {
+        "@id": "https://dsproul.com/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://dsproul.com/lima-ohio-nature-wildlife-photography.html#webpage"
+      },
+      "articleSection": "Field Notes",
+      "datePublished": "2026-07-17",
+      "dateModified": "2026-07-17",
+      "keywords": [
+        "Lima Ohio nature photography",
+        "Lima Ohio wildlife photography",
+        "Ohio nature wall art",
+        "local nature photography",
+        "Dan Sproul"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://dsproul.com/lima-ohio-nature-wildlife-photography.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dsproul.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Journal",
+          "item": "https://dsproul.com/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Exploring Lima Ohio Through My Lens",
+          "item": "https://dsproul.com/lima-ohio-nature-wildlife-photography.html"
+        }
+      ]
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/foggy-morning-trees-lima-ohio.jpg#image",
+      "contentUrl": "https://dsproul.com/foggy-morning-trees-lima-ohio.jpg",
+      "name": "Foggy morning trees near Lima Ohio by Dan Sproul",
+      "description": "Foggy morning trees and field near Lima, Ohio, photographed by Dan Sproul for a personal field note about local nature photography.",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com/featured/foggy-country-scene-lima-ohio-dan-sproul.html",
+      "representativeOfPage": true
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/blue-heron-lima-ohio.jpg#image",
+      "contentUrl": "https://dsproul.com/blue-heron-lima-ohio.jpg",
+      "name": "Blue heron reflection near Lima Ohio by Dan Sproul",
+      "description": "Great blue heron standing over green reflected water near Lima, Ohio.",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com/featured/blue-heron-reflection-dan-sproul.html"
+    }
+  ]
+}
   </script>
 </head>
 
 <body>
-  <nav class="site-nav" aria-label="Primary navigation">
-    <div class="nav-inner">
-      <a class="brand" href="index.html">Dan Sproul</a>
-      <div class="nav-links" aria-label="Main links">
-        <a href="index.html">Home</a>
-        <a href="best-sellers.html">Best Sellers</a>
-        <a href="art-collections.html">Collections</a>
-        <a href="in-your-space.html">In Your Space</a>
-        <a href="for-designers.html">For Designers</a>
-        <a href="blog.html">Journal</a>
-        <a href="contact.html">Contact</a>
-        <a class="shop-link" href="https://dansproul.com" target="_blank" rel="noopener">Shop Prints</a>
-      </div>
+  <nav class="site-nav-standard" aria-label="Primary navigation">
+    <a href="/" class="nav-logo-standard" aria-label="Dan Sproul Fine Art Photography home">
+      <span class="nav-logo-name-standard">Dan Sproul</span>
+      <span class="nav-logo-sub-standard">Fine Art Photography</span>
+    </a>
+
+    <button class="nav-toggle-standard" type="button" aria-label="Open navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="nav-links-standard">
+      <a href="/">Home</a>
+      <a href="best-sellers.html">Best Sellers</a>
+      <a href="art-collections.html">Collections</a>
+      <a href="about-dan-sproul.html">About</a>
+      <a href="in-your-space.html">In Your Space</a>
+      <a href="for-designers.html">For Designers</a>
+      <a href="blog.html" class="active" aria-current="page">Blog</a>
+      <a href="https://dansproul.com" target="_blank" rel="noopener" class="nav-shop-standard">Shop Prints</a>
     </div>
   </nav>
 
-  <header class="hero">
+<header class="hero">
     <div class="hero-inner">
       <div class="eyebrow">Lima Ohio nature photography</div>
       <h1>Exploring Lima, Ohio through my lens.</h1>
@@ -952,58 +1308,108 @@
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer id="footer" class="site-footer">
     <div class="footer-grid">
-      <div>
-        <h3>Explore</h3>
-        <a href="index.html">Home</a>
+      <details class="footer-section" open>
+        <summary>Explore</summary>
+        <a href="/">Home</a>
         <a href="best-sellers.html">Best Sellers</a>
         <a href="art-collections.html">Collections</a>
         <a href="in-your-space.html">In Your Space</a>
         <a href="for-designers.html">For Designers</a>
         <a href="https://dansproul.com" target="_blank" rel="noopener">Shop Prints</a>
-        <a href="contact.html">Contact</a>
-      </div>
+        <a href="mailto:dan@dsproul.com">Contact</a>
+      </details>
 
-      <div>
-        <h3>Collections</h3>
+      <details class="footer-section" open>
+        <summary>Collections</summary>
         <a href="quiet-earth-collection.html">Quiet Earth</a>
         <a href="forest-light-collection.html">Forest Light</a>
         <a href="wellness-waters-collection.html">Wellness Waters</a>
-        <a href="coastal-atmosphere-collection.html">Coastal Atmosphere</a>
+        <a href="coastal-atmosphere.html">Coastal Atmosphere</a>
         <a href="mountain-light-collection.html">Mountain Light</a>
-        <a href="monochrome-stillness-collection.html">Monochrome Stillness</a>
+        <a href="monochrome-stillness.html">Monochrome Stillness</a>
+        <a href="winter-stillness.html">Winter Stillness</a>
+        <a href="open-horizons-collection.html">Open Horizons</a>
         <a href="heritage-mixed-media.html">Heritage &amp; Mixed Media</a>
-      </div>
+      </details>
 
-      <div>
-        <h3>Resources</h3>
+      <details class="footer-section" open>
+        <summary>Resources</summary>
         <a href="artwork-guides.html">Artwork Guides</a>
         <a href="blog.html">Journal</a>
         <a href="lima-ohio-fine-art-photographer.html">Lima Fine Art Photographer</a>
-        <a href="about-dan-sproul.html">About Dan</a>
         <a href="ohio-nature-photography-prints.html">Ohio Nature Photography</a>
         <a href="alaska-photography-prints.html">Alaska Photography</a>
-      </div>
+        <a href="colorado-fall-colors-photography-prints.html">Colorado Fall Colors</a>
+        <a href="about-dan-sproul.html">About Dan</a>
+      </details>
 
-      <div>
-        <h3>For Designers</h3>
-        <a href="for-designers.html">Designer Resources</a>
-        <a href="healthcare-artwork.html">Healthcare</a>
-        <a href="hospitality-artwork.html">Hospitality</a>
-        <a href="office-artwork.html">Office</a>
-        <a href="residential-nature-wall-art.html">Residential</a>
-        <a href="senior-living-artwork.html">Senior Living</a>
-      </div>
+      <details class="footer-section" open>
+        <summary>For Designers</summary>
+        <a href="/for-designers.html">Designer Resources</a>
+        <a href="/healthcare-artwork.html">Healthcare</a>
+        <a href="/hospitality-artwork.html">Hospitality</a>
+        <a href="/office-artwork.html">Office</a>
+        <a href="/residential-nature-wall-art.html">Residential</a>
+        <a href="/senior-living-artwork.html">Senior Living</a>
+      </details>
 
-      <div>
+      <div class="footer-connect">
         <h3>Connect</h3>
         <a href="mailto:dan@dsproul.com">Email</a>
-        <a href="https://www.linkedin.com/in/dan-sproul-1a412254/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/dan-sproul-bb55015a/" target="_blank" rel="noopener">LinkedIn</a>
         <a href="https://www.pinterest.com/dansproul/" target="_blank" rel="noopener">Pinterest</a>
       </div>
     </div>
     <div class="copyright">© 2026 Dan Sproul Fine Art Photography · Based in Lima, Ohio · Original Nature Photography &amp; Heritage-Inspired Artwork</div>
   </footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var nav = document.querySelector('.site-nav-standard');
+  var toggle = document.querySelector('.nav-toggle-standard');
+
+  function closeNav(){
+    if(!nav || !toggle) return;
+    nav.classList.remove('is-open');
+    toggle.setAttribute('aria-expanded','false');
+  }
+
+  if(nav && toggle){
+    toggle.addEventListener('click', function(){
+      var isOpen = nav.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    nav.querySelectorAll('a').forEach(function(link){
+      link.addEventListener('click', closeNav);
+    });
+  }
+
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape') closeNav();
+  });
+
+  var footerDetails = Array.prototype.slice.call(document.querySelectorAll('.site-footer details.footer-section'));
+  var media = window.matchMedia('(max-width: 760px)');
+
+  function syncFooterDetails(){
+    footerDetails.forEach(function(detail){
+      if(media.matches) detail.removeAttribute('open');
+      else detail.setAttribute('open','');
+    });
+  }
+
+  syncFooterDetails();
+
+  if(media.addEventListener){
+    media.addEventListener('change', syncFooterDetails);
+  }else if(media.addListener){
+    media.addListener(syncFooterDetails);
+  }
+});
+</script>
+
 </body>
 </html>
