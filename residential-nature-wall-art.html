@@ -566,6 +566,104 @@
       max-width: 700px;
     }
 
+
+    .advisor-feature {
+      padding: 64px 0;
+      background: #ebe2d5;
+      border-bottom: 1px solid #d8ccbd;
+    }
+
+    .advisor-feature-inner {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(360px, 0.8fr);
+      gap: 48px;
+      align-items: center;
+      padding: 44px;
+      background:
+        radial-gradient(circle at 90% 10%, rgba(216,181,108,0.18), transparent 34%),
+        var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: 0 18px 50px rgba(58,45,31,0.08);
+    }
+
+    .advisor-feature h2 {
+      max-width: 720px;
+      margin-bottom: 16px;
+    }
+
+    .advisor-feature-copy {
+      max-width: 720px;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.82;
+      margin: 0 0 24px;
+    }
+
+    .advisor-feature-note {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 18px;
+      margin-top: 20px;
+      color: #6d5a3c;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .advisor-summary {
+      display: grid;
+      gap: 12px;
+      padding: 28px;
+      background: #17130f;
+      color: var(--white);
+      border: 1px solid rgba(216,181,108,0.36);
+      border-radius: 8px;
+    }
+
+    .advisor-summary-label {
+      color: var(--warm-strong);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+    }
+
+    .advisor-summary h3 {
+      color: #fff8ed;
+      font-size: 31px;
+      line-height: 1.05;
+      margin: 0 0 4px;
+    }
+
+    .advisor-summary p {
+      color: rgba(255,255,255,0.68);
+      margin: 0 0 8px;
+    }
+
+    .advisor-summary ul {
+      list-style: none;
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .advisor-summary li {
+      position: relative;
+      padding-left: 20px;
+      color: rgba(255,255,255,0.82);
+      font-size: 14px;
+    }
+
+    .advisor-summary li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--warm-strong);
+    }
+
     .site-footer {
       background: #080806;
       color: rgba(255,255,255,0.72);
@@ -847,6 +945,7 @@
 
       .split-feature,
       .buyer-path-inner,
+      .advisor-feature-inner,
       .room-grid,
       .spec-grid,
       .collection-grid,
@@ -896,6 +995,13 @@
       .faq-card,
       .feature-panel,
       .cta-band { padding: 22px; }
+
+      .advisor-feature { padding: 36px 0; }
+      .advisor-feature-inner {
+        gap: 24px;
+        padding: 24px;
+      }
+      .advisor-summary { padding: 22px; }
       .card-actions { display: grid; grid-template-columns: 1fr; }
       .card-actions button,
       .card-actions a { width: 100%; }
@@ -1363,6 +1469,38 @@ body {
 </div>
 </div>
 </section>
+<section aria-labelledby="art-advisor-title" class="advisor-feature">
+<div class="section-inner">
+<div class="advisor-feature-inner">
+<div>
+<div class="section-kicker">Personalized Art Guidance</div>
+<h2 id="art-advisor-title">Not sure which artwork, size, or finish belongs in your room?</h2>
+<p class="advisor-feature-copy">Use the Art Advisor for a guided recommendation based on your room, decorating style, existing colors, wall placement, and the atmosphere you want to create. It can help narrow the choices from a calming retreat to a bold statement piece, then suggest artwork, scale, framing, mats, canvas, acrylic, metal, and other presentation options.</p>
+<div class="button-row">
+<a class="btn btn-primary" href="art-advisor.html">Start the Art Advisor</a>
+<a class="btn btn-secondary" href="in-your-space.html" style="color:#3f3428;border-color:#b9aa98;background:transparent;">Preview Art in Your Room</a>
+</div>
+<div class="advisor-feature-note">
+<span>About 60 seconds</span>
+<span>No signup required</span>
+<span>Personalized recommendations</span>
+</div>
+</div>
+<aside class="advisor-summary" aria-label="What the Art Advisor recommends">
+<span class="advisor-summary-label">Your personalized result</span>
+<h3>A clearer path from empty wall to finished room.</h3>
+<p>Receive a curated direction instead of sorting through hundreds of choices alone.</p>
+<ul>
+<li>Three strongest artwork matches</li>
+<li>Suggested size and orientation</li>
+<li>Frame, mat, paper, canvas, or modern finish guidance</li>
+<li>A short explanation of why each choice works</li>
+<li>Links to preview and purchase the artwork</li>
+</ul>
+</aside>
+</div>
+</div>
+</section>
 <section class="dark-band" id="residential-mockups">
 <div class="section-inner">
 <div class="section-head">
@@ -1576,7 +1714,7 @@ body {
 </article>
 <article class="faq-card">
 <h3>Do you help choose prints?</h3>
-<p>Yes. Send a room photo, wall dimensions, or finish palette and Dan can recommend images, sizes, crops, and formats.</p>
+<p>Yes. Start with the <a href="art-advisor.html" style="text-decoration:underline;text-underline-offset:3px;">Art Advisor</a> for personalized artwork, sizing, framing, mat, and finish suggestions, or send a room photo for additional help.</p>
 </article>
 <article class="faq-card">
 <h3>What formats are available?</h3>
@@ -1643,6 +1781,7 @@ body {
 </details>
 <details class="footer-col footer-group" open="">
 <summary>Resources</summary>
+<a href="art-advisor.html">Art Advisor</a>
 <a href="artwork-guides.html">Artwork Guides</a>
 <a href="blog.html">Journal</a>
 <a href="lima-ohio-fine-art-photographer.html">Lima Fine Art Photographer</a>
