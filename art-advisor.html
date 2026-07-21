@@ -426,7 +426,7 @@ body::before{content:"";display:block;height:66px}
     document.getElementById('recommendations').innerHTML=top3.map((a,i)=>{const pct=i===0?96:resultPercent(a.score,93,i===1?86:82);const presentation=presentationFor(a);return `<article class="result-card"><div class="art-placeholder"><img src="${a.image}" alt="${a.title}" loading="lazy"><span class="match">${pct}% Match</span></div><div class="result-body"><p class="result-label">${labels[i]} · ${a.group}</p><h3 class="result-title">${a.title}</h3><p class="result-reason">${a.reason}</p><div class="result-specs"><span><strong>Recommended artwork size:</strong> ${sizeGuidance(a)}</span><span><strong>Placement:</strong> ${placementText(a)}</span></div><div class="presentation-box"><p class="presentation-kicker">Recommended Presentation</p><h4 class="presentation-title">${presentation.best}</h4><div class="presentation-lines"><span><strong>Configuration:</strong> ${presentation.details}</span><span><strong>Strong alternative:</strong> ${presentation.alternate}</span></div></div><div class="result-actions"><a class="btn ${i===0?'btn-solid':'btn-out'}" href="in-your-space.html#room-preview-tool">Preview in Your Room</a><a class="btn btn-out" href="${a.url}" target="_blank" rel="noopener">View Current Options & Price</a></div></div></article>`}).join('');
   }
   render();
-});
+})();
 </script>
 </body>
 </html>
