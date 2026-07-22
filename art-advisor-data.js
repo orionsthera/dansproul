@@ -1,24 +1,4 @@
-/**
- * DAN SPROUL ART ADVISOR — CURATED ARTWORK CATALOG
- *
- * Upload this file beside art-advisor.html.
- *
- * ADDING AN ARTWORK
- * 1. Duplicate one complete object inside ART_ADVISOR_ARTWORKS.
- * 2. Keep every required field shown below.
- * 3. Separate objects with a comma.
- * 4. Use the existing tag vocabulary whenever possible:
- *    directions: retreat, warmth, refined, statement, escape, wildlife
- *    moods: calm, warm, bright, dramatic, refined, personal
- *    palettes: neutral, cool, warm, dark, color
- *    rooms: living, bedroom, dining, entry, office, whole
- *    styles: modern, transitional, rustic, coastal, traditional, eclectic
- *    walls: sofa, bed, console, vertical, feature, unsure
- *
- * The page validates each record. A record with a missing required field is
- * skipped and reported in the browser console instead of breaking the quiz.
- */
-window.ART_ADVISOR_ARTWORKS = [
+[
   {
     "title": "Lake Louise Vertical Sunrise Reflection",
     "image": "lake-louise-vertical-sunrise-reflection-dan-sproul.jpg",
@@ -2711,5 +2691,447 @@ window.ART_ADVISOR_ARTWORKS = [
     ],
     "reason": "Soft light, still water, and mountain rhythm create a spacious landscape that feels quietly expansive and deeply calming.",
     "group": "Quiet Morning"
+  },
+  {
+    "title": "Moody Bow Lake Reflections",
+    "image": "moody-bow-lake-reflections-dan-sproul.jpg",
+    "url": "https://dansproul.com/featured/moody-bow-lake-reflections-dan-sproul.html",
+    "type": "photography",
+    "orientation": "landscape",
+    "directions": [
+      "retreat",
+      "escape",
+      "refined"
+    ],
+    "moods": [
+      "calm",
+      "refined"
+    ],
+    "palettes": [
+      "cool",
+      "neutral"
+    ],
+    "energy": 1,
+    "rooms": [
+      "bedroom",
+      "living",
+      "office",
+      "whole"
+    ],
+    "styles": [
+      "modern",
+      "transitional",
+      "traditional"
+    ],
+    "walls": [
+      "sofa",
+      "bed",
+      "console",
+      "feature"
+    ],
+    "frames": [
+      "Thin matte black",
+      "Weathered gray",
+      "White oak"
+    ],
+    "reason": "Muted mountain tones and mirror-still water create a deeply quiet focal point with a soft, contemplative presence.",
+    "group": "Quiet Reflection"
+  },
+  {
+    "title": "John Seigenthaler Pedestrian Bridge",
+    "image": "john-seigenthaler-pedestrian-bridge-dan-sproul.jpg",
+    "url": "https://dansproul.com/featured/john-seigenthaler-pedestrian-bridge-dan-sproul.html",
+    "type": "photography",
+    "orientation": "landscape",
+    "directions": [
+      "refined",
+      "statement"
+    ],
+    "moods": [
+      "dramatic",
+      "refined"
+    ],
+    "palettes": [
+      "neutral",
+      "dark"
+    ],
+    "energy": 4,
+    "rooms": [
+      "office",
+      "living",
+      "entry",
+      "dining"
+    ],
+    "styles": [
+      "modern",
+      "eclectic",
+      "traditional"
+    ],
+    "walls": [
+      "sofa",
+      "console",
+      "feature"
+    ],
+    "frames": [
+      "Thin matte black",
+      "Dark walnut"
+    ],
+    "reason": "Strong linear perspective and crisp black-and-white contrast make this a polished architectural piece with clear urban sophistication.",
+    "group": "Urban Monochrome"
+  },
+  {
+    "title": "Mother and Baby Pronghorn Yellowstone",
+    "image": "mother-and-baby-pronghorn-yellowstone-dan-sproul.jpg",
+    "url": "https://dansproul.com/featured/mother-and-baby-pronghorn-yellowstone-dan-sproul.html",
+    "type": "photography",
+    "orientation": "vertical",
+    "directions": [
+      "wildlife",
+      "warmth"
+    ],
+    "moods": [
+      "warm",
+      "personal",
+      "calm"
+    ],
+    "palettes": [
+      "warm",
+      "neutral",
+      "color"
+    ],
+    "energy": 2,
+    "rooms": [
+      "bedroom",
+      "living",
+      "entry",
+      "office"
+    ],
+    "styles": [
+      "rustic",
+      "traditional",
+      "transitional"
+    ],
+    "walls": [
+      "vertical",
+      "console",
+      "feature"
+    ],
+    "frames": [
+      "Natural walnut",
+      "White oak",
+      "Weathered gray"
+    ],
+    "reason": "The tender wildlife moment adds heart and connection, making it especially appealing for more personal and welcoming rooms.",
+    "group": "Wildlife Connection"
+  },
+  {
+    "title": "Magical Summer Sunrise Lima Ohio",
+    "image": "magical-summer-sunrise-lima-ohio-dan-sproul.jpg",
+    "url": "https://dansproul.com/featured/magical-summer-sunrise-lima-ohio-dan-sproul.html",
+    "type": "photography",
+    "orientation": "landscape",
+    "directions": [
+      "warmth",
+      "retreat"
+    ],
+    "moods": [
+      "warm",
+      "calm",
+      "personal"
+    ],
+    "palettes": [
+      "warm",
+      "dark",
+      "color"
+    ],
+    "energy": 2,
+    "rooms": [
+      "living",
+      "bedroom",
+      "entry",
+      "whole"
+    ],
+    "styles": [
+      "transitional",
+      "traditional",
+      "rustic"
+    ],
+    "walls": [
+      "sofa",
+      "bed",
+      "console",
+      "feature"
+    ],
+    "frames": [
+      "Dark walnut",
+      "White oak",
+      "Natural maple"
+    ],
+    "reason": "Golden light, low mist, and an intimate regional feel create a comforting scene that brings warmth without overpowering a room.",
+    "group": "Golden Morning"
+  },
+  {
+    "title": "Cedar Cliff Falls Morning Light",
+    "image": "cedar-cliff-falls-morning-light-dan-sproul.jpg",
+    "url": "https://dansproul.com/featured/cedar-cliff-falls-morning-light-dan-sproul.html",
+    "type": "photography",
+    "orientation": "vertical",
+    "directions": [
+      "retreat",
+      "escape"
+    ],
+    "moods": [
+      "calm",
+      "bright"
+    ],
+    "palettes": [
+      "color",
+      "cool",
+      "neutral"
+    ],
+    "energy": 2,
+    "rooms": [
+      "entry",
+      "bedroom",
+      "living",
+      "office"
+    ],
+    "styles": [
+      "transitional",
+      "rustic",
+      "coastal"
+    ],
+    "walls": [
+      "vertical",
+      "console",
+      "feature"
+    ],
+    "frames": [
+      "White oak",
+      "Weathered gray",
+      "Thin matte black"
+    ],
+    "reason": "Fresh greens and the gentle waterfall shape create a restorative vertical composition that feels naturally refreshing.",
+    "group": "Forest Water"
+  },
+  {
+    "title": "Yellow Springs Waterfall Ohio",
+    "image": "yellow-springs-waterfall-ohio-dan-sproul.jpg",
+    "url": "https://dansproul.com/featured/yellow-springs-waterfall-ohio-dan-sproul.html",
+    "type": "photography",
+    "orientation": "landscape",
+    "directions": [
+      "retreat",
+      "escape"
+    ],
+    "moods": [
+      "calm",
+      "bright"
+    ],
+    "palettes": [
+      "color",
+      "neutral",
+      "cool"
+    ],
+    "energy": 2,
+    "rooms": [
+      "living",
+      "entry",
+      "office",
+      "whole"
+    ],
+    "styles": [
+      "transitional",
+      "rustic",
+      "traditional"
+    ],
+    "walls": [
+      "sofa",
+      "console",
+      "feature"
+    ],
+    "frames": [
+      "White oak",
+      "Natural maple",
+      "Thin matte black"
+    ],
+    "reason": "A classic waterfall scene with natural greens and layered depth offers a versatile, easy-to-live-with landscape.",
+    "group": "Waterfall Escape"
+  },
+  {
+    "title": "Autumn Beginnings Wyoming Landscape",
+    "image": "autumn-beginnings-wyoming-landscape-dan-sproul.jpg",
+    "url": "https://dansproul.com/featured/autumn-beginnings-wyoming-landscape-dan-sproul.html",
+    "type": "photography",
+    "orientation": "landscape",
+    "directions": [
+      "warmth",
+      "escape"
+    ],
+    "moods": [
+      "warm",
+      "refined",
+      "calm"
+    ],
+    "palettes": [
+      "warm",
+      "neutral",
+      "color"
+    ],
+    "energy": 2,
+    "rooms": [
+      "living",
+      "office",
+      "bedroom",
+      "dining"
+    ],
+    "styles": [
+      "transitional",
+      "rustic",
+      "traditional"
+    ],
+    "walls": [
+      "sofa",
+      "console",
+      "feature"
+    ],
+    "frames": [
+      "Natural walnut",
+      "White oak",
+      "Natural maple"
+    ],
+    "reason": "Soft autumn grasses and wide-open Wyoming space create a grounded, elegant landscape with gentle seasonal warmth.",
+    "group": "Autumn Plains"
+  },
+  {
+    "title": "Autumn in the Smokies Landscape",
+    "image": "autumn-in-the-smokies-landscape-dan-sproul.jpg",
+    "url": "https://dansproul.com/featured/autumn-in-the-smokies-landscape-dan-sproul.html",
+    "type": "photography",
+    "orientation": "landscape",
+    "directions": [
+      "warmth",
+      "escape",
+      "statement"
+    ],
+    "moods": [
+      "warm",
+      "dramatic"
+    ],
+    "palettes": [
+      "warm",
+      "color"
+    ],
+    "energy": 4,
+    "rooms": [
+      "living",
+      "dining",
+      "entry",
+      "office"
+    ],
+    "styles": [
+      "rustic",
+      "traditional",
+      "eclectic"
+    ],
+    "walls": [
+      "sofa",
+      "feature",
+      "console"
+    ],
+    "frames": [
+      "Dark walnut",
+      "Natural walnut",
+      "Thin matte black"
+    ],
+    "reason": "Layered fog and vivid fall color give this mountain view a richer seasonal presence for rooms that want a stronger landscape statement.",
+    "group": "Autumn Atmosphere"
+  },
+  {
+    "title": "Okaloosa Pier Pastel Sunrise",
+    "image": "okaloosa-pier-pastel-sunrise-dan-sproul.jpg",
+    "url": "https://dansproul.com/featured/okaloosa-pier-pastel-sunrise-dan-sproul.html",
+    "type": "photography",
+    "orientation": "vertical",
+    "directions": [
+      "retreat",
+      "refined"
+    ],
+    "moods": [
+      "calm",
+      "bright",
+      "refined"
+    ],
+    "palettes": [
+      "cool",
+      "neutral",
+      "color"
+    ],
+    "energy": 1,
+    "rooms": [
+      "bedroom",
+      "living",
+      "entry",
+      "whole"
+    ],
+    "styles": [
+      "coastal",
+      "modern",
+      "transitional"
+    ],
+    "walls": [
+      "vertical",
+      "console",
+      "feature"
+    ],
+    "frames": [
+      "White oak",
+      "Natural maple",
+      "Thin matte black"
+    ],
+    "reason": "Soft pastel sky and a distant pier create an airy coastal mood with very little visual noise, ideal for calm spaces.",
+    "group": "Coastal Pastel"
+  },
+  {
+    "title": "Badlands View Starry Sky",
+    "image": "badlands-view-starry-sky-dan-sproul.jpg",
+    "url": "https://dansproul.com/featured/badlands-view-starry-sky-dan-sproul.html",
+    "type": "photography",
+    "orientation": "landscape",
+    "directions": [
+      "statement",
+      "escape"
+    ],
+    "moods": [
+      "dramatic",
+      "refined"
+    ],
+    "palettes": [
+      "dark",
+      "cool",
+      "neutral"
+    ],
+    "energy": 5,
+    "rooms": [
+      "office",
+      "living",
+      "entry"
+    ],
+    "styles": [
+      "modern",
+      "eclectic",
+      "rustic"
+    ],
+    "walls": [
+      "sofa",
+      "feature",
+      "console"
+    ],
+    "frames": [
+      "Thin matte black",
+      "Dark walnut"
+    ],
+    "reason": "The sweeping star trails and sculptural night landscape create a memorable focal point with cinematic drama and depth.",
+    "group": "Night Sky Wonder"
   }
-];
+]
