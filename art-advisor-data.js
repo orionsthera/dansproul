@@ -1692,5 +1692,1024 @@ window.ART_ADVISOR_ARTWORKS = [
     ],
     "reason": "A solitary tree and disappearing road create a luminous, minimal image that makes a room feel hushed and restorative.",
     "group": "Quiet Morning"
+  },
+  {
+    "title": "Ethereal Pyramid Island Canadian Rockies",
+    "image": "ethereal-pyramid-island-canadian-rockies-dan-sproul.jpg",
+    "url": "https://dansproul.com/featured/ethereal-pyramid-island-canadian-rockies-dan-sproul.html",
+    "type": "photography",
+    "orientation": "landscape",
+    "directions": [
+      "retreat",
+      "refined",
+      "escape"
+    ],
+    "moods": [
+      "calm",
+      "warm",
+      "refined"
+    ],
+    "palettes": [
+      "neutral",
+      "warm",
+      "cool"
+    ],
+    "energy": 1,
+    "rooms": [
+      "living",
+      "bedroom",
+      "office",
+      "whole"
+    ],
+    "styles": [
+      "transitional",
+      "traditional",
+      "rustic",
+      "modern"
+    ],
+    "walls": [
+      "sofa",
+      "bed",
+      "console",
+      "feature"
+    ],
+    "frames": [
+      "Warm walnut",
+      "Natural oak",
+      "Thin matte black"
+    ],
+    "reason": "Soft mountain haze, autumn color, still water, and the small island bridge create a peaceful scene with warmth, depth, and a strong sense of escape.",
+    "group": "Quiet Retreat"
+  },
+  {
+    "title": "Bull Moose Wrapped in Fall Leaves",
+    "image": "bull-moose-wrapped-in-fall-leaves-dan-sproul.jpg",
+    "url": "https://dansproul.com/featured/bull-moose-wrapped-in-fall-leaves-dan-sproul.html",
+    "type": "photography",
+    "orientation": "vertical",
+    "directions": [
+      "wildlife",
+      "statement",
+      "warmth"
+    ],
+    "moods": [
+      "dramatic",
+      "warm",
+      "personal"
+    ],
+    "palettes": [
+      "warm",
+      "color",
+      "dark"
+    ],
+    "energy": 5,
+    "rooms": [
+      "entry",
+      "living",
+      "office",
+      "dining"
+    ],
+    "styles": [
+      "rustic",
+      "traditional",
+      "eclectic",
+      "transitional"
+    ],
+    "walls": [
+      "vertical",
+      "console",
+      "feature"
+    ],
+    "frames": [
+      "Dark walnut",
+      "Thin matte black",
+      "Warm walnut"
+    ],
+    "reason": "The close wildlife presence, oversized antlers, and vivid autumn foliage create an unmistakable statement for rooms that need character and energy.",
+    "group": "Wildlife & Statement"
+  },
+  {
+    "title": "Autumn Aspen Leaves in Colorado",
+    "image": "autumn-aspen-leaves-in-colorado-dan-sproul.jpg",
+    "url": "https://dansproul.com/featured/autumn-aspen-leaves-in-colorado-dan-sproul.html",
+    "type": "photography",
+    "orientation": "vertical",
+    "directions": [
+      "warmth",
+      "refined"
+    ],
+    "moods": [
+      "warm",
+      "bright",
+      "personal"
+    ],
+    "palettes": [
+      "warm",
+      "color",
+      "neutral"
+    ],
+    "energy": 3,
+    "rooms": [
+      "living",
+      "bedroom",
+      "dining",
+      "entry",
+      "whole"
+    ],
+    "styles": [
+      "traditional",
+      "transitional",
+      "rustic",
+      "eclectic"
+    ],
+    "walls": [
+      "vertical",
+      "console",
+      "bed",
+      "feature"
+    ],
+    "frames": [
+      "Natural oak",
+      "White oak",
+      "Warm walnut"
+    ],
+    "reason": "White aspen trunks and layered gold-orange leaves add warmth, natural texture, and a bright seasonal rhythm without overwhelming the room.",
+    "group": "Autumn Warmth"
+  },
+  {
+    "title": "Moody Lake Superior Island",
+    "image": "moody-lake-superior-island-dan-sproul (1).jpg",
+    "url": "https://dansproul.com/featured/moody-lake-superior-island-dan-sproul.html",
+    "type": "photography",
+    "orientation": "landscape",
+    "directions": [
+      "retreat",
+      "refined",
+      "escape"
+    ],
+    "moods": [
+      "calm",
+      "dramatic",
+      "refined"
+    ],
+    "palettes": [
+      "cool",
+      "neutral",
+      "dark"
+    ],
+    "energy": 2,
+    "rooms": [
+      "living",
+      "bedroom",
+      "office",
+      "whole"
+    ],
+    "styles": [
+      "modern",
+      "transitional",
+      "coastal"
+    ],
+    "walls": [
+      "sofa",
+      "bed",
+      "console",
+      "feature"
+    ],
+    "frames": [
+      "Thin matte black",
+      "Weathered gray",
+      "Dark walnut"
+    ],
+    "reason": "A solitary island, low fog, and restrained blue-gray tones create a meditative focal point with quiet mystery and coastal atmosphere.",
+    "group": "Quiet Morning"
+  },
+  {
+    "title": "Black and White Black Bear Alaska",
+    "image": "black-and-white-black-bear-alaska-dan-sproul.jpg",
+    "url": "https://dansproul.com/featured/black-and-white-black-bear-alaska-dan-sproul.html",
+    "type": "photography",
+    "orientation": "square",
+    "directions": [
+      "wildlife",
+      "statement",
+      "refined"
+    ],
+    "moods": [
+      "dramatic",
+      "refined",
+      "personal"
+    ],
+    "palettes": [
+      "neutral",
+      "dark"
+    ],
+    "energy": 5,
+    "rooms": [
+      "living",
+      "office",
+      "entry",
+      "dining"
+    ],
+    "styles": [
+      "modern",
+      "rustic",
+      "traditional",
+      "eclectic"
+    ],
+    "walls": [
+      "feature",
+      "console",
+      "sofa"
+    ],
+    "frames": [
+      "Thin matte black",
+      "Dark walnut"
+    ],
+    "reason": "The graphic black-and-white treatment and powerful bear profile create a bold, sculptural presence suited to rooms that need a memorable focal point.",
+    "group": "Wildlife & Statement"
+  },
+  {
+    "title": "Bear Cub on Spring Tree Cades Cove",
+    "image": "bear-cub-on-spring-tree-cades-cove-dan-sproul.jpg",
+    "url": "https://dansproul.com/featured/bear-cub-on-spring-tree-cades-cove-dan-sproul.html",
+    "type": "photography",
+    "orientation": "square",
+    "directions": [
+      "wildlife",
+      "warmth"
+    ],
+    "moods": [
+      "bright",
+      "warm",
+      "personal"
+    ],
+    "palettes": [
+      "color",
+      "warm",
+      "cool"
+    ],
+    "energy": 3,
+    "rooms": [
+      "living",
+      "bedroom",
+      "entry",
+      "office"
+    ],
+    "styles": [
+      "rustic",
+      "traditional",
+      "transitional",
+      "eclectic"
+    ],
+    "walls": [
+      "feature",
+      "console",
+      "sofa",
+      "bed"
+    ],
+    "frames": [
+      "Natural oak",
+      "Warm walnut",
+      "Thin matte black"
+    ],
+    "reason": "Backlit spring foliage and the curious young bear create an uplifting wildlife image with personality, warmth, and a gentle sense of wonder.",
+    "group": "Wildlife"
+  },
+  {
+    "title": "Roaring Fork Motor Nature Trail Cascades",
+    "image": "roaring-fork-motor-nature-trail-cascades-dan-sproul (1).jpg",
+    "url": "https://dansproul.com/featured/roaring-fork-motor-nature-trail-cascades-dan-sproul.html",
+    "type": "photography",
+    "orientation": "vertical",
+    "directions": [
+      "retreat",
+      "escape"
+    ],
+    "moods": [
+      "calm",
+      "refined",
+      "bright"
+    ],
+    "palettes": [
+      "cool",
+      "color",
+      "dark"
+    ],
+    "energy": 2,
+    "rooms": [
+      "bedroom",
+      "living",
+      "office",
+      "whole"
+    ],
+    "styles": [
+      "modern",
+      "transitional",
+      "rustic",
+      "traditional"
+    ],
+    "walls": [
+      "vertical",
+      "console",
+      "feature"
+    ],
+    "frames": [
+      "Natural walnut",
+      "Thin matte black",
+      "White oak"
+    ],
+    "reason": "Layered cascades, moss-covered boulders, and immersive forest greens bring restorative movement and natural texture into the room.",
+    "group": "Quiet Waters"
+  },
+  {
+    "title": "Marblehead Lighthouse Lake Erie Waves Ohio",
+    "image": "marblehead-lighthouse-and-waves-vertical-dan-sproul (1).jpg",
+    "url": "https://dansproul.com/featured/marblehead-lighthouse-lake-erie-waves-ohio-dan-sproul.html",
+    "type": "photography",
+    "orientation": "vertical",
+    "directions": [
+      "escape",
+      "statement",
+      "refined"
+    ],
+    "moods": [
+      "bright",
+      "dramatic",
+      "refined"
+    ],
+    "palettes": [
+      "cool",
+      "neutral",
+      "color"
+    ],
+    "energy": 4,
+    "rooms": [
+      "entry",
+      "living",
+      "office",
+      "dining"
+    ],
+    "styles": [
+      "coastal",
+      "traditional",
+      "transitional",
+      "modern"
+    ],
+    "walls": [
+      "vertical",
+      "console",
+      "feature"
+    ],
+    "frames": [
+      "Thin matte black",
+      "White oak",
+      "Natural maple"
+    ],
+    "reason": "The tall lighthouse, moving Lake Erie water, and open sky create a bright regional statement with both coastal energy and architectural strength.",
+    "group": "Coastal Living"
+  },
+  {
+    "title": "Pineapple Fountain Charleston Map",
+    "image": "pineapple-fountain-charleston-map-dan-sproul.jpg",
+    "url": "https://dansproul.com/featured/pineapple-fountain-charleston-map-dan-sproul.html",
+    "type": "mixed-media",
+    "orientation": "landscape",
+    "directions": [
+      "statement",
+      "warmth",
+      "personal"
+    ],
+    "moods": [
+      "bright",
+      "warm",
+      "personal"
+    ],
+    "palettes": [
+      "color",
+      "warm",
+      "cool"
+    ],
+    "energy": 4,
+    "rooms": [
+      "living",
+      "dining",
+      "entry",
+      "office"
+    ],
+    "styles": [
+      "eclectic",
+      "traditional",
+      "transitional",
+      "coastal"
+    ],
+    "walls": [
+      "sofa",
+      "console",
+      "feature"
+    ],
+    "frames": [
+      "Thin matte black",
+      "Warm walnut",
+      "White oak"
+    ],
+    "reason": "Charleston's pineapple fountain layered with historic map detail creates a colorful, place-driven statement with personality and Southern character.",
+    "group": "Heritage & Statement"
+  },
+  {
+    "title": "Lime Kiln Light Black and White",
+    "image": "lime-kiln-light-black-and-white-dan-sproul (1).jpg",
+    "url": "https://dansproul.com/featured/lime-kiln-light-black-and-white-dan-sproul.html",
+    "type": "photography",
+    "orientation": "vertical",
+    "directions": [
+      "refined",
+      "statement",
+      "escape"
+    ],
+    "moods": [
+      "refined",
+      "dramatic",
+      "calm"
+    ],
+    "palettes": [
+      "neutral",
+      "dark"
+    ],
+    "energy": 3,
+    "rooms": [
+      "office",
+      "entry",
+      "living",
+      "dining"
+    ],
+    "styles": [
+      "modern",
+      "traditional",
+      "transitional",
+      "coastal"
+    ],
+    "walls": [
+      "vertical",
+      "console",
+      "feature"
+    ],
+    "frames": [
+      "Thin matte black",
+      "Weathered gray"
+    ],
+    "reason": "Weathered architecture, strong vertical geometry, and restrained monochrome tones create a sophisticated coastal image with historic character.",
+    "group": "Modern Monochrome"
+  },
+  {
+    "title": "Ethereal Mountain Reflection",
+    "image": "ethereal-mountain-reflection-dan-sproul.jpg",
+    "url": "https://dansproul.com/featured/ethereal-mountain-reflection-dan-sproul.html",
+    "type": "photography",
+    "orientation": "vertical",
+    "directions": [
+      "retreat",
+      "refined",
+      "escape"
+    ],
+    "moods": [
+      "calm",
+      "refined"
+    ],
+    "palettes": [
+      "neutral",
+      "cool"
+    ],
+    "energy": 1,
+    "rooms": [
+      "bedroom",
+      "living",
+      "office",
+      "whole"
+    ],
+    "styles": [
+      "modern",
+      "transitional",
+      "traditional"
+    ],
+    "walls": [
+      "vertical",
+      "bed",
+      "console",
+      "feature"
+    ],
+    "frames": [
+      "Thin matte black",
+      "White oak",
+      "Weathered gray"
+    ],
+    "reason": "Mist, mountain reflection, and soft monochrome texture create a highly tranquil vertical composition for quiet, refined interiors.",
+    "group": "Quiet Retreat"
+  },
+  {
+    "title": "Bald Eagle in Alaska",
+    "image": "bald-eagle-in-alaska-dan-sproul.jpg",
+    "url": "https://dansproul.com/featured/bald-eagle-in-alaska-dan-sproul.html",
+    "type": "photography",
+    "orientation": "landscape",
+    "directions": [
+      "wildlife",
+      "statement",
+      "refined"
+    ],
+    "moods": [
+      "dramatic",
+      "refined",
+      "bright"
+    ],
+    "palettes": [
+      "cool",
+      "neutral",
+      "color"
+    ],
+    "energy": 4,
+    "rooms": [
+      "office",
+      "living",
+      "entry",
+      "dining"
+    ],
+    "styles": [
+      "traditional",
+      "rustic",
+      "modern",
+      "eclectic"
+    ],
+    "walls": [
+      "sofa",
+      "console",
+      "feature"
+    ],
+    "frames": [
+      "Thin matte black",
+      "Dark walnut",
+      "Natural oak"
+    ],
+    "reason": "A clean eagle portrait against open sky creates a crisp wildlife statement with strength, clarity, and classic Americana character.",
+    "group": "Wildlife & Heritage"
+  },
+  {
+    "title": "Alaskan Caribou Arctic Majesty",
+    "image": "alaskan-caribou-arctic-majesty-dan-sproul.jpg",
+    "url": "https://dansproul.com/featured/alaskan-caribou-arctic-majesty-dan-sproul.html",
+    "type": "photography",
+    "orientation": "vertical",
+    "directions": [
+      "wildlife",
+      "escape",
+      "refined"
+    ],
+    "moods": [
+      "refined",
+      "personal",
+      "calm"
+    ],
+    "palettes": [
+      "neutral",
+      "cool",
+      "color"
+    ],
+    "energy": 3,
+    "rooms": [
+      "office",
+      "entry",
+      "living",
+      "dining"
+    ],
+    "styles": [
+      "rustic",
+      "traditional",
+      "eclectic",
+      "modern"
+    ],
+    "walls": [
+      "vertical",
+      "console",
+      "feature"
+    ],
+    "frames": [
+      "Dark walnut",
+      "Warm walnut",
+      "Thin matte black"
+    ],
+    "reason": "The antler structure and grounded portrait feel create a strong wildlife piece with rustic elegance and a sense of northern place.",
+    "group": "Wildlife Focus"
+  },
+  {
+    "title": "Garden of the Gods Hiking Path",
+    "image": "garden-of-the-gods-hiking-path-dan-sproul.jpg",
+    "url": "https://dansproul.com/featured/garden-of-the-gods-hiking-path-dan-sproul.html",
+    "type": "photography",
+    "orientation": "landscape",
+    "directions": [
+      "escape",
+      "statement"
+    ],
+    "moods": [
+      "bright",
+      "warm"
+    ],
+    "palettes": [
+      "warm",
+      "color",
+      "neutral"
+    ],
+    "energy": 4,
+    "rooms": [
+      "living",
+      "office",
+      "entry",
+      "dining"
+    ],
+    "styles": [
+      "modern",
+      "rustic",
+      "transitional",
+      "eclectic"
+    ],
+    "walls": [
+      "sofa",
+      "console",
+      "feature"
+    ],
+    "frames": [
+      "Natural walnut",
+      "Thin matte black",
+      "White oak"
+    ],
+    "reason": "Bold red rock forms and blue-sky contrast bring warmth, scale, and adventurous energy to a room that needs a confident focal point.",
+    "group": "Statement Nature"
+  },
+  {
+    "title": "Wildflowers in the Tetons",
+    "image": "wildflowers-in-the-tetons-dan-sproul.jpg",
+    "url": "https://dansproul.com/featured/wildflowers-in-the-tetons-dan-sproul.html",
+    "type": "photography",
+    "orientation": "square",
+    "directions": [
+      "retreat",
+      "warmth",
+      "escape"
+    ],
+    "moods": [
+      "bright",
+      "warm",
+      "refined"
+    ],
+    "palettes": [
+      "warm",
+      "cool",
+      "color"
+    ],
+    "energy": 4,
+    "rooms": [
+      "bedroom",
+      "living",
+      "dining",
+      "entry"
+    ],
+    "styles": [
+      "modern",
+      "transitional",
+      "rustic",
+      "coastal"
+    ],
+    "walls": [
+      "bed",
+      "console",
+      "feature"
+    ],
+    "frames": [
+      "White oak",
+      "Natural maple",
+      "Thin matte black"
+    ],
+    "reason": "Golden wildflowers set against the Tetons create an uplifting square composition that feels joyful, fresh, and distinctly scenic.",
+    "group": "Mountain Escape"
+  },
+  {
+    "title": "Forest Fox Double Exposure",
+    "image": "forest-fox-double-exposure-dan-sproul.jpg",
+    "url": "https://dansproul.com/featured/forest-fox-double-exposure-dan-sproul.html",
+    "type": "mixed-media",
+    "orientation": "vertical",
+    "directions": [
+      "wildlife",
+      "statement",
+      "warmth"
+    ],
+    "moods": [
+      "dramatic",
+      "personal",
+      "warm"
+    ],
+    "palettes": [
+      "warm",
+      "dark",
+      "color"
+    ],
+    "energy": 5,
+    "rooms": [
+      "living",
+      "office",
+      "entry",
+      "dining"
+    ],
+    "styles": [
+      "rustic",
+      "eclectic",
+      "traditional",
+      "modern"
+    ],
+    "walls": [
+      "vertical",
+      "console",
+      "feature"
+    ],
+    "frames": [
+      "Dark walnut",
+      "Matte black",
+      "Warm walnut"
+    ],
+    "reason": "Layered fox imagery and warm woodland texture create a symbolic conversation piece with personality, movement, and rich color.",
+    "group": "Wildlife & Heritage"
+  },
+  {
+    "title": "Vivid Landscape Badlands National Park",
+    "image": "vivid-landscape-badlands-national-park-dan-sproul.jpg",
+    "url": "https://dansproul.com/featured/vivid-landscape-badlands-national-park-dan-sproul.html",
+    "type": "photography",
+    "orientation": "vertical",
+    "directions": [
+      "statement",
+      "escape"
+    ],
+    "moods": [
+      "bright",
+      "dramatic"
+    ],
+    "palettes": [
+      "warm",
+      "color"
+    ],
+    "energy": 5,
+    "rooms": [
+      "entry",
+      "living",
+      "office",
+      "dining"
+    ],
+    "styles": [
+      "modern",
+      "eclectic",
+      "rustic"
+    ],
+    "walls": [
+      "vertical",
+      "feature",
+      "console"
+    ],
+    "frames": [
+      "Thin matte black",
+      "Natural walnut"
+    ],
+    "reason": "Sculpted badlands color and dramatic vertical depth make this a vivid statement piece for interiors that can handle bold landscape energy.",
+    "group": "Statement Nature"
+  },
+  {
+    "title": "Celina Ohio Lighthouse Sunrise Reflection",
+    "image": "celina-ohio-lighthouse-sunrise-reflection-dan-sproul.jpg",
+    "url": "https://dansproul.com/featured/celina-ohio-lighthouse-sunrise-reflection-dan-sproul.html",
+    "type": "photography",
+    "orientation": "vertical",
+    "directions": [
+      "retreat",
+      "refined",
+      "warmth"
+    ],
+    "moods": [
+      "calm",
+      "refined",
+      "personal"
+    ],
+    "palettes": [
+      "cool",
+      "warm",
+      "neutral",
+      "color"
+    ],
+    "energy": 2,
+    "rooms": [
+      "bedroom",
+      "entry",
+      "office",
+      "living"
+    ],
+    "styles": [
+      "coastal",
+      "traditional",
+      "transitional"
+    ],
+    "walls": [
+      "vertical",
+      "console",
+      "feature"
+    ],
+    "frames": [
+      "White oak",
+      "Weathered gray",
+      "Thin matte black"
+    ],
+    "reason": "Soft dawn color and a mirrored lighthouse silhouette create a peaceful vertical image with local character and understated elegance.",
+    "group": "Quiet Morning"
+  },
+  {
+    "title": "Dramatic Breakwater Light Black and White",
+    "image": "dramatic-breakwater-light-black-and-white-dan-sproul.jpg",
+    "url": "https://dansproul.com/featured/dramatic-breakwater-light-black-and-white-dan-sproul.html",
+    "type": "photography",
+    "orientation": "vertical",
+    "directions": [
+      "refined",
+      "statement",
+      "escape"
+    ],
+    "moods": [
+      "dramatic",
+      "refined"
+    ],
+    "palettes": [
+      "neutral",
+      "dark",
+      "cool"
+    ],
+    "energy": 4,
+    "rooms": [
+      "entry",
+      "office",
+      "living"
+    ],
+    "styles": [
+      "modern",
+      "traditional",
+      "coastal"
+    ],
+    "walls": [
+      "vertical",
+      "feature",
+      "console"
+    ],
+    "frames": [
+      "Thin matte black",
+      "Weathered gray",
+      "Dark walnut"
+    ],
+    "reason": "The strong perspective, stormy sky, and monochrome palette create a moody coastal statement with architectural clarity.",
+    "group": "Modern Monochrome"
+  },
+  {
+    "title": "Ohio Map and Cardinal",
+    "image": "ohio-map-and-cardinal-dan-sproul.jpg",
+    "url": "https://dansproul.com/featured/ohio-map-and-cardinal-dan-sproul.html",
+    "type": "mixed-media",
+    "orientation": "landscape",
+    "directions": [
+      "statement",
+      "wildlife",
+      "warmth"
+    ],
+    "moods": [
+      "personal",
+      "bright",
+      "warm"
+    ],
+    "palettes": [
+      "warm",
+      "color",
+      "neutral"
+    ],
+    "energy": 5,
+    "rooms": [
+      "entry",
+      "office",
+      "living",
+      "dining"
+    ],
+    "styles": [
+      "eclectic",
+      "traditional",
+      "rustic"
+    ],
+    "walls": [
+      "console",
+      "feature",
+      "sofa"
+    ],
+    "frames": [
+      "Natural oak",
+      "Warm walnut",
+      "Matte black"
+    ],
+    "reason": "The vibrant cardinal layered over a vintage Ohio map gives this piece strong local identity and a colorful heritage feel.",
+    "group": "Heritage & Statement"
+  },
+  {
+    "title": "Ricketts Glen Forest Stream",
+    "image": "ricketts-glen-forest-stream-dan-sproul.jpg",
+    "url": "https://dansproul.com/featured/ricketts-glen-forest-stream-dan-sproul.html",
+    "type": "photography",
+    "orientation": "vertical",
+    "directions": [
+      "retreat",
+      "escape"
+    ],
+    "moods": [
+      "calm",
+      "refined"
+    ],
+    "palettes": [
+      "cool",
+      "neutral",
+      "color"
+    ],
+    "energy": 2,
+    "rooms": [
+      "bedroom",
+      "living",
+      "office",
+      "whole"
+    ],
+    "styles": [
+      "transitional",
+      "rustic",
+      "traditional",
+      "modern"
+    ],
+    "walls": [
+      "vertical",
+      "bed",
+      "console",
+      "feature"
+    ],
+    "frames": [
+      "White oak",
+      "Weathered gray",
+      "Thin matte black"
+    ],
+    "reason": "Layered water, moss, and forest depth make this a restorative vertical image that brings freshness and quiet motion into a room.",
+    "group": "Quiet Retreat"
+  },
+  {
+    "title": "Denali Highway Lake Sunrise Reflection Landscape",
+    "image": "denali-highway-lake-sunrise-reflection-landscape-dan-sproul.jpg",
+    "url": "https://dansproul.com/featured/denali-highway-lake-sunrise-reflection-landscape-dan-sproul.html",
+    "type": "photography",
+    "orientation": "landscape",
+    "directions": [
+      "retreat",
+      "escape",
+      "refined"
+    ],
+    "moods": [
+      "calm",
+      "refined",
+      "warm"
+    ],
+    "palettes": [
+      "cool",
+      "warm",
+      "neutral",
+      "color"
+    ],
+    "energy": 2,
+    "rooms": [
+      "living",
+      "bedroom",
+      "office",
+      "whole"
+    ],
+    "styles": [
+      "modern",
+      "transitional",
+      "rustic",
+      "traditional"
+    ],
+    "walls": [
+      "sofa",
+      "bed",
+      "console",
+      "feature"
+    ],
+    "frames": [
+      "White oak",
+      "Thin matte black",
+      "Natural walnut"
+    ],
+    "reason": "Soft light, still water, and mountain rhythm create a spacious landscape that feels quietly expansive and deeply calming.",
+    "group": "Quiet Morning"
   }
 ];
