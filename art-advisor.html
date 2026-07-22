@@ -94,6 +94,51 @@ body::before{content:"";display:block;height:66px}
 .option{position:relative;display:flex;align-items:flex-start;gap:14px;min-height:92px;padding:19px;border:1px solid var(--border);background:rgba(242,239,232,.025);cursor:pointer;text-align:left;transition:.2s ease}
 .option:hover{border-color:var(--border-strong);background:rgba(181,146,74,.07);transform:translateY(-2px)}
 .option.selected{border-color:var(--accent);background:rgba(181,146,74,.12)}
+.measurement-panel{margin-top:18px;padding:20px;border:1px solid var(--border);background:var(--surface-2)}
+.measurement-panel h4{font-family:'Cormorant Garamond',serif;font-size:1.45rem;font-weight:300;margin-bottom:7px}
+.measurement-panel>p{color:var(--muted-2);font-size:.58rem;line-height:1.65;margin-bottom:16px}
+.measurement-fields{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.measurement-field{display:grid;gap:7px}
+.measurement-field label{color:var(--accent);font-size:.45rem;letter-spacing:.14em;text-transform:uppercase}
+.measurement-input-wrap{display:flex;align-items:center;border:1px solid var(--border-strong);background:rgba(255,255,255,.025)}
+.measurement-input-wrap input{min-width:0;width:100%;padding:12px;border:0;outline:0;background:transparent;color:var(--off-white);font:inherit;font-size:.7rem}
+.measurement-input-wrap span{padding-right:12px;color:var(--muted);font-size:.55rem}
+.measurement-help{color:var(--muted);font-size:.48rem;line-height:1.5}
+.measurement-apply{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:16px}
+.measurement-status{color:var(--muted-2);font-size:.54rem;line-height:1.5}
+.measurement-summary{margin:0 0 18px;padding:14px 15px;border:1px solid rgba(181,146,74,.22);background:rgba(181,146,74,.065)}
+.measurement-summary strong{display:block;color:var(--off-white);font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:400;margin-bottom:5px}
+.measurement-summary span{display:block;color:var(--muted-2);font-size:.54rem;line-height:1.55}
+.wall-fill-meter{height:5px;margin-top:10px;background:rgba(255,255,255,.08);overflow:hidden}
+.wall-fill-meter i{display:block;height:100%;background:var(--accent)}
+
+.designer-tip{margin:0 0 18px;padding:15px 16px;border-left:3px solid var(--accent);background:rgba(255,255,255,.025)}
+.designer-tip-kicker{display:block;margin-bottom:7px;color:var(--accent);font-size:.44rem;letter-spacing:.18em;text-transform:uppercase}
+.designer-tip strong{display:block;margin-bottom:5px;color:var(--off-white);font-family:'Cormorant Garamond',serif;font-size:1.18rem;font-weight:400;line-height:1.15}
+.designer-tip p{margin:0;color:var(--muted-2);font-size:.55rem;line-height:1.65}
+.report-tip{margin-top:9px;padding:9px 11px;border-left:3px solid #b7925a;background:#faf7f2;color:#51483f;font-size:9px;line-height:1.5}
+.report-tip strong{color:#2d2822}
+.share-panel{margin-top:16px;padding:16px;border:1px solid var(--border);background:rgba(255,255,255,.025)}
+.share-panel h4{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:300;margin-bottom:6px}
+.share-panel p{color:var(--muted-2);font-size:.54rem;line-height:1.65;margin-bottom:12px}
+.share-actions{display:flex;gap:8px;flex-wrap:wrap}
+.share-status{display:block;min-height:1.2em;margin-top:10px;color:var(--accent);font-size:.49rem;line-height:1.5}
+.consultation-section{margin-top:28px;padding:28px;border:1px solid var(--border-strong);background:linear-gradient(135deg,rgba(181,146,74,.085),rgba(255,255,255,.018))}
+.consultation-heading{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px;align-items:start;margin-bottom:20px}
+.consultation-heading h3{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;line-height:1.08;margin-bottom:8px}
+.consultation-heading p{max-width:700px;color:var(--muted-2);font-size:.62rem;line-height:1.75}
+.consultation-badge{padding:8px 10px;border:1px solid rgba(181,146,74,.32);color:var(--accent);font-size:.44rem;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap}
+.consultation-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.consultation-field{display:grid;gap:7px}.consultation-field.full{grid-column:1/-1}
+.consultation-field label{color:var(--accent);font-size:.45rem;letter-spacing:.14em;text-transform:uppercase}
+.consultation-field input,.consultation-field textarea,.consultation-field select{width:100%;padding:12px 13px;border:1px solid var(--border-strong);outline:none;background:rgba(255,255,255,.025);color:var(--off-white);font:inherit;font-size:.62rem}
+.consultation-field textarea{min-height:120px;resize:vertical;line-height:1.6}.consultation-field select option{color:#1f1d1a}
+.consultation-note{margin-top:12px;color:var(--muted);font-size:.49rem;line-height:1.6}
+.consultation-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:18px}
+.consultation-status{color:var(--accent);font-size:.5rem;line-height:1.5}
+@media(max-width:700px){.consultation-heading,.consultation-grid{grid-template-columns:1fr}.consultation-badge{justify-self:start}}
+
+@media(max-width:700px){.measurement-fields{grid-template-columns:1fr}}
 .option-icon{width:34px;height:34px;border:1px solid var(--border-strong);display:grid;place-items:center;color:var(--accent);font-family:'Cormorant Garamond',serif;font-size:1.1rem;flex:0 0 auto}
 .option strong{display:block;font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:300;margin-bottom:5px}
 .option small{display:block;color:var(--muted);font-size:.58rem;line-height:1.55;letter-spacing:.05em}
@@ -105,7 +150,7 @@ body::before{content:"";display:block;height:66px}
 .results-inner{max-width:1180px;margin:0 auto}
 .results-head{text-align:center;max-width:800px;margin:0 auto 34px}
 .results-head p{margin-top:16px;color:var(--muted-2);font-size:.8rem;line-height:1.9}
-.profile-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:30px}
+.profile-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:30px}
 .profile-card{padding:22px;border:1px solid var(--border);background:var(--surface-2);min-height:125px}
 .profile-card span{display:block;font-size:.45rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
 .profile-card strong{display:block;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:1.45rem;line-height:1.1}
@@ -132,6 +177,53 @@ body::before{content:"";display:block;height:66px}
 .presentation-lines strong{color:var(--off-white);font-weight:400}
 .price-guide{max-width:850px;margin:28px auto 0;padding:15px 18px;border-left:2px solid var(--accent);background:rgba(181,146,74,.055);color:var(--muted-2);font-size:.58rem;line-height:1.8}
 .price-guide strong{color:var(--off-white);font-weight:400}
+
+.match-explanation{margin:0 0 18px;padding:14px 15px;border:1px solid rgba(181,146,74,.2);background:rgba(181,146,74,.055)}
+.match-explanation-title{margin-bottom:9px;color:var(--accent);font-size:.46rem;letter-spacing:.2em;text-transform:uppercase}
+.match-explanation ul{list-style:none;display:grid;gap:7px;margin:0;padding:0}
+.match-explanation li{position:relative;padding-left:17px;color:var(--muted-2);font-size:.57rem;line-height:1.55}
+.match-explanation li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:700}
+.report-panel{margin-top:22px;padding:26px;border:1px solid var(--border-strong);background:linear-gradient(135deg,rgba(181,146,74,.10),rgba(255,255,255,.018));display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:center}
+.report-panel h3{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;line-height:1.08;margin-bottom:8px}
+.report-panel p{max-width:720px;color:var(--muted-2);font-size:.64rem;line-height:1.75}
+.report-panel-note{display:block;margin-top:7px;color:var(--muted);font-size:.5rem;letter-spacing:.08em;text-transform:uppercase}
+.report-panel .btn{white-space:nowrap}
+.recommendation-report{display:none}
+.report-sheet{color:#211d18;background:#fff;font-family:Arial,Helvetica,sans-serif}
+.report-header{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:end;padding-bottom:22px;border-bottom:2px solid #b7925a}
+.report-brand{font-size:22px;font-weight:700;letter-spacing:.17em;text-transform:uppercase}
+.report-brand span{display:block;margin-top:6px;color:#8a6c3e;font-size:9px;font-weight:400;letter-spacing:.24em}
+.report-meta{text-align:right;color:#665e54;font-size:10px;line-height:1.65}
+.report-title{margin:26px 0 8px;font-family:Georgia,'Times New Roman',serif;font-size:34px;font-weight:400;line-height:1.08}
+.report-intro{max-width:720px;margin:0 0 22px;color:#62594f;font-size:12px;line-height:1.65}
+.report-profile{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-bottom:24px}
+.report-profile div{padding:11px;border:1px solid #ddd4c8;background:#faf7f2}
+.report-profile span{display:block;margin-bottom:5px;color:#8a6c3e;font-size:8px;letter-spacing:.12em;text-transform:uppercase}
+.report-profile strong{font-family:Georgia,'Times New Roman',serif;font-size:14px;font-weight:400;line-height:1.2}
+.report-recommendations{display:grid;gap:16px}
+.report-art{display:grid;grid-template-columns:190px minmax(0,1fr);gap:18px;padding:14px;border:1px solid #ded6cc;break-inside:avoid;page-break-inside:avoid}
+.report-art-image{height:145px;background:#eee9e1;overflow:hidden}
+.report-art-image img{width:100%;height:100%;object-fit:cover}
+.report-art-label{color:#8a6c3e;font-size:8px;font-weight:700;letter-spacing:.13em;text-transform:uppercase}
+.report-art h3{margin:4px 0 7px;font-family:Georgia,'Times New Roman',serif;font-size:22px;font-weight:400;line-height:1.1}
+.report-art p{margin:0 0 8px;color:#62594f;font-size:10px;line-height:1.55}
+.report-art ul{display:grid;gap:3px;margin:0 0 8px;padding-left:16px;color:#4d463e;font-size:9px;line-height:1.45}
+.report-spec{display:grid;grid-template-columns:1fr 1fr;gap:5px 14px;margin-top:7px;color:#4e473f;font-size:9px;line-height:1.45}
+.report-spec strong{color:#2d2822}
+.report-link{margin-top:8px;color:#785c31;font-size:8px;word-break:break-all}
+.report-footer{display:grid;grid-template-columns:1fr auto;gap:20px;margin-top:22px;padding-top:14px;border-top:1px solid #cfc5b8;color:#665e54;font-size:9px;line-height:1.5}
+.report-footer strong{color:#2d2822}
+@media(max-width:700px){.report-panel{grid-template-columns:1fr}.report-panel .btn{width:100%}}
+@media print{
+  @page{size:letter;margin:.45in}
+  body{padding:0!important;background:#fff!important}
+  body>*{display:none!important}
+  #recommendationReport{display:block!important;position:static!important;width:auto!important;margin:0!important;padding:0!important;background:#fff!important}
+  #recommendationReport *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+  .report-sheet{display:block!important}
+  .report-art{break-inside:avoid!important;page-break-inside:avoid!important}
+}
+
 .result-actions{display:flex;gap:8px;flex-wrap:wrap}
 .result-actions .btn{min-height:42px;padding:10px 14px;font-size:.48rem}
 .alt-strip{margin-top:12px;padding:24px;border:1px solid var(--border);background:rgba(181,146,74,.045);display:flex;align-items:center;justify-content:space-between;gap:20px}
@@ -268,6 +360,8 @@ body::before{content:"";display:block;height:66px}
 .preview-check{display:flex;align-items:center;gap:9px;margin-top:12px;color:var(--muted-2);font-size:.64rem}
 .preview-check input{accent-color:var(--accent)}
 .preview-status{min-height:38px;color:var(--muted-2);font-size:.57rem;line-height:1.6}
+.preview-final-actions{display:grid;gap:9px}
+.preview-final-actions .btn{width:100%}
 .preview-purchase{width:100%}
 .preview-privacy{margin-top:11px;color:var(--muted);font-size:.52rem;line-height:1.6}
 body.preview-open{overflow:hidden}
@@ -351,7 +445,7 @@ body.preview-open{overflow:hidden}
       <p>Choose the answers that feel closest. Your selections are scored against a curated library of photography, mixed media, monochrome, and statement pieces rather than being limited by rigid filters.</p>
     </div>
     <div class="progress-wrap">
-      <div class="progress-top"><span id="progressLabel">Question 1 of 7</span><span id="progressPercent">14%</span></div>
+      <div class="progress-top"><span id="progressLabel">Question 1 of 8</span><span id="progressPercent">13%</span></div>
       <div class="progress-track"><div class="progress-bar" id="progressBar"></div></div>
     </div>
     <div class="quiz-card">
@@ -430,7 +524,31 @@ body.preview-open{overflow:hidden}
           <button class="option" data-value="unknown"><span class="option-icon">?</span><span><strong>Help Me Decide</strong><small>Use the room and placement answers to recommend scale.</small></span></button>
         </div>
       </div>
-      <div class="quiz-actions">
+      
+      <div class="question" data-question="dimensions">
+        <p class="question-kicker">The Measurements</p>
+        <h3>How wide is the wall?</h3>
+        <p class="question-sub">An estimate is enough. The advisor will recommend a realistic artwork width and show how much of the wall or furniture it will fill.</p>
+        <div class="option-grid measurement-presets">
+          <button class="option dimension-option" data-value="48" type="button"><span class="option-icon">48</span><span><strong>48-inch Wall</strong><small>Small wall, nook, entry, or compact furniture arrangement.</small></span></button>
+          <button class="option dimension-option" data-value="60" type="button"><span class="option-icon">60</span><span><strong>60-inch Wall</strong><small>Common above a console, twin bed, or compact sofa.</small></span></button>
+          <button class="option dimension-option" data-value="72" type="button"><span class="option-icon">72</span><span><strong>72-inch Wall</strong><small>A versatile residential wall with room for medium-to-large art.</small></span></button>
+          <button class="option dimension-option" data-value="96" type="button"><span class="option-icon">96</span><span><strong>96-inch Wall</strong><small>Works well for larger sofas, beds, dining rooms, and focal walls.</small></span></button>
+          <button class="option dimension-option" data-value="120" type="button"><span class="option-icon">120</span><span><strong>120-inch Wall</strong><small>A broad feature wall suited to statement-scale artwork.</small></span></button>
+          <button class="option dimension-option" data-value="unknown" type="button"><span class="option-icon">?</span><span><strong>I Don’t Know</strong><small>Use professional sizing rules based on the room and placement.</small></span></button>
+        </div>
+        <div class="measurement-panel">
+          <h4>Or enter your own measurements.</h4>
+          <p>Wall width is the most useful number. Furniture width and ceiling height are optional but allow a more tailored recommendation.</p>
+          <div class="measurement-fields">
+            <div class="measurement-field"><label for="wallWidthInput">Wall width</label><div class="measurement-input-wrap"><input id="wallWidthInput" type="number" inputmode="decimal" min="24" max="300" step="1" placeholder="Example: 96"><span>in</span></div><small class="measurement-help">Measure the usable wall area.</small></div>
+            <div class="measurement-field"><label for="furnitureWidthInput">Furniture width</label><div class="measurement-input-wrap"><input id="furnitureWidthInput" type="number" inputmode="decimal" min="24" max="240" step="1" placeholder="Example: 84"><span>in</span></div><small class="measurement-help">Sofa, headboard, console, or mantel below the art.</small></div>
+            <div class="measurement-field"><label for="ceilingHeightInput">Ceiling height</label><div class="measurement-input-wrap"><input id="ceilingHeightInput" type="number" inputmode="decimal" min="72" max="240" step="1" placeholder="Example: 96"><span>in</span></div><small class="measurement-help">Optional. Eight-foot ceilings are 96 inches.</small></div>
+          </div>
+          <div class="measurement-apply"><button class="btn btn-out" id="applyMeasurements" type="button">Use These Measurements</button><span class="measurement-status" id="measurementStatus">Choose a common wall width above or enter a custom measurement.</span></div>
+        </div>
+      </div>
+<div class="quiz-actions">
         <button class="btn btn-out" id="backBtn" type="button" disabled>Back</button>
         <button class="btn btn-solid" id="nextBtn" type="button" disabled>Continue</button>
       </div>
@@ -446,8 +564,34 @@ body.preview-open{overflow:hidden}
       <div class="profile-card"><span>Recommended Scale</span><strong id="profileSize">36 × 48 Landscape</strong></div>
       <div class="profile-card"><span>Best Frame</span><strong id="profileFrame">Thin Matte Black</strong></div>
       <div class="profile-card"><span>Placement</span><strong id="profilePlacement">Centered Focal Point</strong></div>
+      <div class="profile-card"><span>Measured Fit</span><strong id="profileMeasurement">Professional sizing rule</strong></div>
     </div>
+    <div class="designer-tip" id="profileDesignerTip"><span class="designer-tip-kicker">Primary Designer Guidance</span><strong id="profileDesignerTipTitle"></strong><p id="profileDesignerTipText"></p></div>
     <div class="recommendations" id="recommendations"></div>
+    <div class="report-panel">
+      <div>
+        <p class="eyebrow" style="margin-bottom:8px">Keep Your Recommendations</p>
+        <h3>Save your personalized Art Advisor report.</h3>
+        <p>Create a polished summary of your room profile, three recommended artworks, size and presentation guidance, match explanations, and direct purchase links.</p>
+        <span class="report-panel-note">Your browser will open a print window - choose “Save as PDF.”</span>
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end"><button class="btn btn-solid" id="saveReportBtn" type="button">Save Recommendation Report</button><a class="btn btn-out" href="#askDan">Ask Dan About My Room</a></div>
+    </div>
+    <section class="consultation-section" id="askDan">
+      <div class="consultation-heading">
+        <div><p class="eyebrow" style="margin-bottom:8px">Personal Artwork Guidance</p><h3>Ask Dan about your room.</h3><p>Send your preferred recommendation, measurements, and questions for a personal second opinion. Your room photo stays on your device unless you attach the saved preview to the email.</p></div>
+        <span class="consultation-badge">No obligation</span>
+      </div>
+      <div class="consultation-grid">
+        <div class="consultation-field"><label for="consultName">Name</label><input id="consultName" type="text" autocomplete="name" placeholder="Your name"></div>
+        <div class="consultation-field"><label for="consultEmail">Email</label><input id="consultEmail" type="email" autocomplete="email" placeholder="you@example.com"></div>
+        <div class="consultation-field"><label for="consultArtwork">Artwork to discuss</label><select id="consultArtwork"></select></div>
+        <div class="consultation-field"><label for="consultTiming">Project timing</label><select id="consultTiming"><option>Just exploring</option><option>Within 1 month</option><option>Within 1–3 months</option><option>More than 3 months</option></select></div>
+        <div class="consultation-field full"><label for="consultNotes">Questions or room details</label><textarea id="consultNotes" placeholder="Tell Dan what you are deciding between, where the artwork will hang, colors or finishes in the room, or anything else that would help."></textarea></div>
+      </div>
+      <p class="consultation-note">This opens your email app with the recommendation details filled in. Save the room preview first, then attach the JPG before sending.</p>
+      <div class="consultation-actions"><button class="btn btn-solid" id="askDanBtn" type="button">Prepare Email to Dan</button><button class="btn btn-out" id="saveBeforeEmailBtn" type="button">Open Room Visualizer</button><span class="consultation-status" id="consultationStatus" aria-live="polite"></span></div>
+    </section>
     <div class="price-guide"><strong>FAA price guide:</strong> Final pricing changes with artwork size, product type, frame, mat, paper, and current Fine Art America pricing. Based on the configurations reviewed, smaller framed pieces may begin around $110, medium canvas or acrylic presentations may fall around $170–$215, and larger canvas presentations can reach roughly $360 or more. Use these figures only as planning guidance; the linked product page shows the current exact total.</div>
     <div class="alt-strip"><p><strong style="color:var(--off-white);font-weight:400">Your results are scored, not filtered.</strong> Each recommendation is compared across mood, design direction, palette, room, interior style, placement, orientation, and desired visual presence. This working edition uses 38 curated artworks across quiet, warm, refined, statement, escape, wildlife, coastal, monochrome, and heritage-led directions.</p><button class="btn btn-out" id="restartBtn" type="button">Retake Consultation</button></div>
   </div>
@@ -457,6 +601,30 @@ body.preview-open{overflow:hidden}
   <p class="eyebrow">One Guided Experience</p><h2>Choose it, then see it in <em>your own room.</em></h2><p>Complete the consultation, then select “See This in My Room” beneath any recommendation. That exact artwork opens automatically in the private preview tool on this page.</p><a class="btn btn-solid" href="#advisor">Start or Retake the Art Advisor</a>
 </section>
 
+
+<section class="recommendation-report" id="recommendationReport" aria-label="Printable Art Advisor recommendation report">
+  <div class="report-sheet">
+    <header class="report-header">
+      <div class="report-brand">Dan Sproul<span>Fine Art Photography</span></div>
+      <div class="report-meta"><span id="reportDate"></span><br/>dsproul.com/art-advisor.html<br/>dan@dsproul.com</div>
+    </header>
+    <h1 class="report-title" id="reportTitle">Personalized Art Recommendation</h1>
+    <p class="report-intro" id="reportIntro"></p>
+    <div class="report-profile">
+      <div><span>Best Mood</span><strong id="reportMood"></strong></div>
+      <div><span>Recommended Scale</span><strong id="reportSize"></strong></div>
+      <div><span>Best Frame</span><strong id="reportFrame"></strong></div>
+      <div><span>Placement</span><strong id="reportPlacement"></strong></div>
+      <div><span>Measured Fit</span><strong id="reportMeasurement"></strong></div>
+    </div>
+    <div class="report-tip" id="reportGeneralTip"></div>
+    <div class="report-recommendations" id="reportRecommendations"></div>
+    <footer class="report-footer">
+      <div><strong>Need a second opinion?</strong><br/>Send a room photo and wall dimensions to dan@dsproul.com for additional guidance.</div>
+      <div style="text-align:right">Original artwork by Dan Sproul<br/>Current product options and pricing are available through each linked artwork page.</div>
+    </footer>
+  </div>
+</section>
 
 <div class="room-preview-modal" id="roomPreviewModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="roomPreviewHeading">
   <div class="room-preview-dialog">
@@ -514,7 +682,15 @@ body.preview-open{overflow:hidden}
         <div class="preview-group">
           <div class="preview-status" id="previewStatus">Choose a recommended artwork to begin.</div>
         </div>
-        <a class="btn btn-solid preview-purchase" id="previewPurchase" href="https://dansproul.com" target="_blank" rel="noopener">View Current Options & Price</a>
+        <div class="preview-final-actions">
+          <button class="btn btn-solid" id="previewSave" type="button">Save My Room Preview</button>
+          <a class="btn btn-out preview-purchase" id="previewPurchase" href="https://dansproul.com" target="_blank" rel="noopener">View Current Options & Price</a>
+        </div>
+        <div class="share-panel">
+          <h4>Share this room preview</h4><p>Save the preview JPG first. On supported phones and tablets, Share Preview opens the device’s native sharing menu.</p>
+          <div class="share-actions"><button class="btn btn-out" id="sharePreviewBtn" type="button">Share Preview</button><button class="btn btn-out" id="copyArtworkLinkBtn" type="button">Copy Artwork Link</button><button class="btn btn-out" id="emailPreviewBtn" type="button">Email This Idea</button></div>
+          <span class="share-status" id="shareStatus" aria-live="polite"></span>
+        </div>
       </aside>
     </div>
   </div>
@@ -541,6 +717,8 @@ body.preview-open{overflow:hidden}
 
 (function(){
   const questions=[...document.querySelectorAll('.question')],answers={},next=document.getElementById('nextBtn'),back=document.getElementById('backBtn'),bar=document.getElementById('progressBar'),label=document.getElementById('progressLabel'),pct=document.getElementById('progressPercent');
+  const consultName=document.getElementById('consultName'),consultEmail=document.getElementById('consultEmail'),consultArtwork=document.getElementById('consultArtwork'),consultTiming=document.getElementById('consultTiming'),consultNotes=document.getElementById('consultNotes'),askDanBtn=document.getElementById('askDanBtn'),saveBeforeEmailBtn=document.getElementById('saveBeforeEmailBtn'),consultationStatus=document.getElementById('consultationStatus');
+  let latestRecommendations=[];
   const artworks=[{"title":"Lake Louise Vertical Sunrise Reflection","image":"lake-louise-vertical-sunrise-reflection-dan-sproul.jpg","url":"https://dansproul.com/featured/lake-louise-vertical-sunrise-reflection-dan-sproul.html","type":"photography","orientation":"vertical","directions":["retreat","escape"],"moods":["calm","refined","bright"],"palettes":["cool","neutral"],"energy":2,"rooms":["living","bedroom","entry","office"],"styles":["modern","transitional","coastal","traditional"],"walls":["vertical","console","feature"],"frames":["Thin matte black","White oak","Natural maple"],"reason":"Turquoise water, mirrored light, and a strong vertical composition create a serene focal point that adds depth without visual clutter.","group":"Quiet Retreat"},{"title":"Canadian Pacific Train at Morant's Curve in Black and White","image":"canadian-pacific-train-at-morants-curve-in-black-and-white-dan-sproul.jpg","url":"https://dansproul.com/featured/canadian-pacific-train-at-morants-curve-in-black-and-white-dan-sproul.html","type":"photography","orientation":"panoramic","directions":["refined","statement","escape"],"moods":["dramatic","refined"],"palettes":["neutral","dark"],"energy":4,"rooms":["living","office","dining","entry"],"styles":["modern","traditional","rustic","eclectic"],"walls":["sofa","feature","console"],"frames":["Thin matte black","Dark walnut"],"reason":"A sweeping monochrome composition combines architecture, movement, and mountain scale for a sophisticated room with a stronger point of view.","group":"Modern Monochrome"},{"title":"Foggy Canadian Rockies Lake Black and White","image":"foggy-canadian-rockies-lake-black-and-white-dan-sproul.jpg","url":"https://dansproul.com/featured/foggy-canadian-rockies-lake-black-and-white-dan-sproul.html","type":"photography","orientation":"landscape","directions":["retreat","refined"],"moods":["calm","refined"],"palettes":["neutral","cool"],"energy":1,"rooms":["bedroom","living","office","whole"],"styles":["modern","transitional","traditional"],"walls":["sofa","bed","console","feature"],"frames":["Thin matte black","Weathered gray","White oak"],"reason":"Mist, still water, and restrained monochrome tones create a quiet, meditative presence ideal for restful interiors.","group":"Quiet Morning"},{"title":"Canadian Rockies Snow Capped Mountain Landscape","image":"canadian-rockies-snow-capped-mountain-landscape-dan-sproul.jpg","url":"https://dansproul.com/featured/canadian-rockies-snow-capped-mountain-landscape-dan-sproul.html","type":"photography","orientation":"landscape","directions":["escape","statement"],"moods":["bright","dramatic"],"palettes":["cool","neutral","color"],"energy":4,"rooms":["living","dining","office","entry"],"styles":["modern","transitional","rustic"],"walls":["sofa","console","feature"],"frames":["Thin matte black","Natural walnut"],"reason":"Crisp alpine scale and open sky create an uplifting focal point with enough energy for a large living room or office.","group":"Mountain Escape"},{"title":"Autumn Transitions Denali Alaska","image":"autumn-transitions-denali-alaska-dan-sproul.jpg","url":"https://dansproul.com/featured/autumn-transitions-denali-alaska-dan-sproul.html","type":"photography","orientation":"panoramic","directions":["warmth","escape"],"moods":["warm","bright"],"palettes":["warm","neutral","color"],"energy":3,"rooms":["living","dining","bedroom","whole"],"styles":["rustic","traditional","transitional"],"walls":["sofa","bed","feature"],"frames":["Warm walnut","Natural oak"],"reason":"Snow-dusted evergreens and vivid autumn color bring seasonal warmth while preserving a spacious, natural feeling.","group":"Autumn Warmth"},{"title":"Beautiful Florida Beach Waves Vertical","image":"beautiful-florida-beach-waves-vertical-dan-sproul.jpg","url":"https://dansproul.com/featured/beautiful-florida-beach-waves-vertical-dan-sproul.html","type":"photography","orientation":"vertical","directions":["retreat","refined"],"moods":["calm","bright"],"palettes":["cool","neutral"],"energy":1,"rooms":["bedroom","entry","living","whole"],"styles":["coastal","modern","transitional"],"walls":["vertical","console","feature"],"frames":["White oak","Natural maple","Thin white"],"reason":"Minimal shoreline geometry and clear aquamarine water add softness, light, and a relaxed coastal rhythm.","group":"Coastal Living"},{"title":"Foggy River Through the Smokies","image":"foggy-river-through-the-smokies-dan-sproul.jpg","url":"https://dansproul.com/featured/foggy-river-through-the-smokies-dan-sproul.html","type":"photography","orientation":"landscape","directions":["retreat","refined"],"moods":["calm","refined"],"palettes":["cool","neutral"],"energy":1,"rooms":["bedroom","living","office","whole"],"styles":["modern","transitional","traditional"],"walls":["sofa","bed","console","feature"],"frames":["Thin matte black","White oak","Weathered gray"],"reason":"Soft fog and a gently moving river create a restorative atmosphere that settles the room and rewards quiet viewing.","group":"Quiet Morning"},{"title":"Spring Flowers Indian Mound Reserve Ohio","image":"spring-flowers-indian-mound-reserve-ohio-dan-sproul.jpg","url":"https://dansproul.com/featured/spring-flowers-indian-mound-reserve-ohio-dan-sproul.html","type":"photography","orientation":"landscape","directions":["warmth"],"moods":["bright","warm","personal"],"palettes":["color","cool","warm"],"energy":3,"rooms":["living","dining","bedroom","entry","whole"],"styles":["traditional","transitional","rustic","eclectic"],"walls":["sofa","bed","console","feature"],"frames":["Natural oak","Warm walnut","Thin matte black"],"reason":"Fresh greens and violet spring flowers add life, welcome, and a garden-like sense of personality.","group":"Warm & Welcoming"},{"title":"Bridal Veil Falls Oregon","image":"bridal-veil-falls-oregon-dan-sproul.jpg","url":"https://dansproul.com/featured/bridal-veil-falls-oregon-dan-sproul.html","type":"photography","orientation":"vertical","directions":["escape","statement"],"moods":["bright","dramatic"],"palettes":["cool","color"],"energy":4,"rooms":["entry","living","dining","office"],"styles":["modern","transitional","rustic","eclectic"],"walls":["vertical","feature","console"],"frames":["Thin matte black","Natural walnut"],"reason":"The tall waterfall and illuminated foliage create a vivid vertical anchor with energy, depth, and immediate impact.","group":"Statement Nature"},{"title":"Majestic Bald Eagle Double Exposure Portrait","image":"majestic-bald-eagle-double-exposure-portrait-dan-sproul.jpg","url":"https://dansproul.com/featured/majestic-bald-eagle-double-exposure-portrait-dan-sproul.html","type":"mixed-media","orientation":"square","directions":["wildlife","statement"],"moods":["dramatic","personal","refined"],"palettes":["neutral","warm","dark"],"energy":5,"rooms":["living","dining","entry","office"],"styles":["rustic","traditional","eclectic","modern"],"walls":["console","vertical","feature"],"frames":["Matte black","Dark walnut","Warm walnut"],"reason":"The close eagle portrait and layered mountain imagery create a symbolic conversation piece with strength and heritage character.","group":"Wildlife & Heritage"},{"title":"Smoky Mountain Forest Stream","image":"smoky-mountain-forest-stream-dan-sproul.jpg","url":"https://dansproul.com/featured/smoky-mountain-forest-stream-dan-sproul.html","type":"photography","orientation":"landscape","directions":["retreat","warmth"],"moods":["calm","warm"],"palettes":["cool","neutral","dark"],"energy":2,"rooms":["living","bedroom","office","whole"],"styles":["rustic","traditional","transitional"],"walls":["sofa","bed","console","feature"],"frames":["Warm walnut","Natural oak","Thin matte black"],"reason":"Flowing water, mossy stone, and deep woodland greens bring a grounded, immersive calm to natural interiors.","group":"Quiet Retreat"},{"title":"Ethereal Mountain Light in Alaska","image":"ethereal-mountain-light-in-alaska-dan-sproul.jpg","url":"https://dansproul.com/featured/ethereal-mountain-light-in-alaska-dan-sproul.html","type":"photography","orientation":"panoramic","directions":["retreat","escape","refined"],"moods":["calm","dramatic","refined"],"palettes":["cool","neutral","dark"],"energy":3,"rooms":["living","bedroom","office","whole"],"styles":["modern","transitional","rustic"],"walls":["sofa","bed","feature"],"frames":["Thin matte black","Dark walnut"],"reason":"Low mist and diffused mountain light create a panoramic focal point that feels peaceful, cinematic, and expansive.","group":"Quiet Morning"},{"title":"Tinkers Creek Ohio","image":"tinkers-creek-ohio-dan-sproul.jpg","url":"https://dansproul.com/featured/tinkers-creek-ohio-dan-sproul.html","type":"photography","orientation":"landscape","directions":["retreat","warmth"],"moods":["calm","refined"],"palettes":["cool","neutral","dark"],"energy":2,"rooms":["living","bedroom","office"],"styles":["transitional","rustic","traditional"],"walls":["sofa","bed","console","feature"],"frames":["Warm walnut","Natural oak","Thin matte black"],"reason":"Layered waterfalls and stone ledges add movement and depth while keeping the room grounded and natural.","group":"Quiet Waters"},{"title":"Black and White Bear Cub in Tree","image":"black-and-white-bear-cub-in-tree-dan-sproul.jpg","url":"https://dansproul.com/featured/black-and-white-bear-cub-in-tree-dan-sproul.html","type":"photography","orientation":"landscape","directions":["wildlife","refined"],"moods":["personal","refined"],"palettes":["neutral"],"energy":3,"rooms":["living","office","bedroom","entry"],"styles":["modern","traditional","rustic","eclectic"],"walls":["sofa","console","feature"],"frames":["Thin matte black","Dark walnut"],"reason":"The intimate wildlife moment feels personal and memorable, while monochrome treatment keeps it composed and versatile.","group":"Wildlife"},{"title":"Mount Massive Wilderness in Fall","image":"mount-massive-wilderness-in-fall-dan-sproul.jpg","url":"https://dansproul.com/featured/mount-massive-wilderness-in-fall-dan-sproul.html","type":"photography","orientation":"landscape","directions":["warmth","escape"],"moods":["warm","bright"],"palettes":["warm","color"],"energy":3,"rooms":["living","dining","office","whole"],"styles":["rustic","traditional","transitional"],"walls":["sofa","console","feature"],"frames":["Warm walnut","Natural oak"],"reason":"Golden grasses and distant peaks create warmth, openness, and a relaxed western sense of place.","group":"Autumn Warmth"},{"title":"Autumn Colors Along Kebler Pass Colorado","image":"autumn-colors-along-kebler-pass-colorado-dan-sproul.jpg","url":"https://dansproul.com/featured/autumn-colors-along-kebler-pass-colorado-dan-sproul.html","type":"photography","orientation":"landscape","directions":["warmth","statement"],"moods":["warm","bright","dramatic"],"palettes":["warm","color"],"energy":4,"rooms":["living","dining","entry"],"styles":["rustic","traditional","eclectic","transitional"],"walls":["sofa","console","feature"],"frames":["Warm walnut","Natural oak","Thin matte black"],"reason":"Dense gold and rust foliage provides a generous, welcoming statement for rooms built around wood and earth tones.","group":"Autumn Warmth"},{"title":"Oregon Coast Sunset with Sea Stacks","image":"oregon-coast-sunset-with-sea-stacks-dan-sproul.jpg","url":"https://dansproul.com/featured/oregon-coast-sunset-with-sea-stacks-dan-sproul.html","type":"photography","orientation":"landscape","directions":["warmth","statement","escape"],"moods":["warm","dramatic"],"palettes":["warm","dark"],"energy":4,"rooms":["living","dining","bedroom","entry"],"styles":["coastal","modern","transitional","eclectic"],"walls":["sofa","bed","console","feature"],"frames":["Thin matte black","Dark walnut"],"reason":"Glowing sunset color and silhouetted sea stacks create a warm coastal statement with strong evening atmosphere.","group":"Coastal Living"},{"title":"Autumn Sunrise Maroon Bells","image":"autumn-sunrise-maroon-bells-dan-sproul.jpg","url":"https://dansproul.com/featured/autumn-sunrise-maroon-bells-dan-sproul.html","type":"photography","orientation":"landscape","directions":["escape","statement","warmth"],"moods":["dramatic","warm","refined"],"palettes":["warm","color","dark"],"energy":5,"rooms":["living","dining","entry","office"],"styles":["rustic","traditional","transitional","modern"],"walls":["sofa","console","feature"],"frames":["Thin matte black","Dark walnut","Warm walnut"],"reason":"Iconic peaks, golden aspens, and reflective water form a commanding focal point for a prominent wall.","group":"Mountain Escape"},{"title":"Moose and Calf Grazing in Fall Canada","image":"moose-and-calf-grazing-in-fall-canada-dan-sproul.jpg","url":"https://dansproul.com/featured/moose-and-calf-grazing-in-fall-canada-dan-sproul.html","type":"photography","orientation":"landscape","directions":["wildlife","warmth"],"moods":["warm","personal"],"palettes":["warm","neutral","color"],"energy":4,"rooms":["living","office","dining"],"styles":["rustic","traditional","transitional"],"walls":["sofa","console","feature"],"frames":["Warm walnut","Natural oak"],"reason":"The quiet bond between moose and calf introduces warmth, story, and unmistakable wildlife character.","group":"Wildlife"},{"title":"Canadian Mountain Magic","image":"canadian-mountain-magic-dan-sproul.jpg","url":"https://dansproul.com/featured/canadian-mountain-magic-dan-sproul.html","type":"photography","orientation":"landscape","directions":["escape","refined"],"moods":["calm","refined","bright"],"palettes":["cool","neutral"],"energy":2,"rooms":["living","bedroom","office","whole"],"styles":["modern","transitional","rustic"],"walls":["sofa","bed","console","feature"],"frames":["Thin matte black","Natural oak"],"reason":"A tranquil alpine lake and luminous mountain range create spaciousness and polished natural calm.","group":"Mountain Escape"},{"title":"Bull Elk Drinking","image":"bull-elk-drinking-dan-sproul.jpg","url":"https://dansproul.com/featured/bull-elk-drinking-dan-sproul.html","type":"photography","orientation":"landscape","directions":["wildlife","statement"],"moods":["dramatic","personal"],"palettes":["neutral","dark"],"energy":4,"rooms":["living","office","entry"],"styles":["rustic","traditional","eclectic"],"walls":["sofa","console","feature"],"frames":["Dark walnut","Matte black"],"reason":"The close elk portrait brings strength and presence to an office, lodge-inspired room, or memorable feature wall.","group":"Wildlife"},{"title":"Cow Moose in Field","image":"cow-moose-in-field-dan-sproul.jpg","url":"https://dansproul.com/featured/cow-moose-in-field-dan-sproul.html","type":"photography","orientation":"landscape","directions":["wildlife","retreat"],"moods":["calm","personal"],"palettes":["cool","neutral","color"],"energy":2,"rooms":["living","bedroom","office"],"styles":["rustic","traditional","transitional"],"walls":["sofa","console","feature"],"frames":["Natural oak","Warm walnut"],"reason":"A relaxed wildlife portrait offers personality without overpowering the room, especially in natural and lodge-inspired interiors.","group":"Wildlife"},{"title":"Pemaquid Point Lighthouse Maine Sunrise","image":"pemaquid-point-lighthouse-maine-sunrise-dan-sproul.jpg","url":"https://dansproul.com/featured/pemaquid-point-lighthouse-maine-sunrise-dan-sproul.html","type":"photography","orientation":"landscape","directions":["warmth","escape","statement"],"moods":["warm","bright","personal"],"palettes":["warm","color"],"energy":4,"rooms":["living","dining","entry","bedroom"],"styles":["coastal","traditional","transitional","eclectic"],"walls":["sofa","bed","console","feature"],"frames":["Warm walnut","Natural oak","Thin matte black"],"reason":"Warm sunrise and rugged stone give this coastal landmark a welcoming, painterly presence with strong residential appeal.","group":"Coastal Living"},{"title":"Split Rock Lighthouse in Morning Fog","image":"split-rock-lighthouse-in-morning-fog-dan-sproul.jpg","url":"https://dansproul.com/featured/split-rock-lighthouse-photography-print-minnesota-lake-superior-foggy-morning-dan-sproul.html","type":"photography","orientation":"landscape","directions":["retreat","refined","statement"],"moods":["calm","dramatic","refined"],"palettes":["cool","dark","neutral"],"energy":3,"rooms":["living","bedroom","office","entry"],"styles":["modern","traditional","transitional"],"walls":["sofa","bed","console","feature"],"frames":["Thin matte black","Dark walnut"],"reason":"A distant lighthouse emerging through mist creates mystery, calm, and a sophisticated coastal focal point.","group":"Quiet Morning"},{"title":"Yellow Warhol Bridge Downtown Pittsburgh","image":"yellow-warhol-bridge-downtown-pittsburgh-dan-sproul.jpg","url":"https://dansproul.com/featured/yellow-warhol-bridge-downtown-pittsburgh-dan-sproul.html","type":"photography","orientation":"landscape","directions":["statement","refined"],"moods":["dramatic","personal"],"palettes":["neutral","color","dark"],"energy":5,"rooms":["living","office","dining","entry"],"styles":["modern","eclectic","traditional"],"walls":["sofa","console","feature"],"frames":["Thin matte black"],"reason":"Selective yellow against a monochrome skyline creates a graphic, architectural statement for urban and modern interiors.","group":"Statement"},{"title":"Fall Reflections Beaver Pond","image":"fall-reflections-beaver-pond-dan-sproul.jpg","url":"https://dansproul.com/featured/fall-reflections-beaver-pond-dan-sproul.html","type":"photography","orientation":"landscape","directions":["warmth","retreat"],"moods":["warm","calm","bright"],"palettes":["warm","color"],"energy":3,"rooms":["living","dining","bedroom","whole"],"styles":["traditional","transitional","rustic"],"walls":["sofa","bed","console","feature"],"frames":["Warm walnut","Natural oak"],"reason":"Autumn color, mist, and a small island reflection create an inviting focal point with both warmth and quiet.","group":"Autumn Warmth"},{"title":"Autumn on Umbagog Lake","image":"autumn-on-umbagog-lake-dan-sproul.jpg","url":"https://dansproul.com/featured/autumn-on-umbagog-lake-dan-sproul.html","type":"photography","orientation":"landscape","directions":["warmth","retreat"],"moods":["warm","calm","bright"],"palettes":["warm","color"],"energy":3,"rooms":["living","dining","bedroom","whole"],"styles":["traditional","transitional","rustic"],"walls":["sofa","bed","console","feature"],"frames":["Warm walnut","Natural oak"],"reason":"A glowing autumn shoreline and dark reflection bring richness and visual comfort to gathering spaces.","group":"Autumn Warmth"},{"title":"Screw Auger Falls Autumn Colors","image":"screw-auger-falls-autumn-colors-dan-sproul.jpg","url":"https://dansproul.com/featured/screw-auger-falls-autumn-colors-dan-sproul.html","type":"photography","orientation":"vertical","directions":["warmth","statement"],"moods":["warm","dramatic"],"palettes":["warm","color","dark"],"energy":4,"rooms":["entry","living","dining"],"styles":["rustic","traditional","transitional"],"walls":["vertical","console","feature"],"frames":["Warm walnut","Thin matte black"],"reason":"The vertical cascade and surrounding fall color create a vivid natural anchor for a narrow wall or entry.","group":"Autumn Warmth"},{"title":"Beautiful Autumn Reflection Oxbow Bend","image":"beautiful-autumn-reflection-oxbow-bend-dan-sproul.jpg","url":"https://dansproul.com/featured/beautiful-autumn-reflection-oxbow-bend-dan-sproul.html","type":"photography","orientation":"panoramic","directions":["retreat","warmth","escape"],"moods":["calm","warm","refined"],"palettes":["warm","neutral"],"energy":2,"rooms":["living","bedroom","dining","whole"],"styles":["traditional","transitional","rustic","modern"],"walls":["sofa","bed","feature"],"frames":["Warm walnut","Natural oak","Thin matte black"],"reason":"Still water and restrained autumn color create a panoramic focal point that feels spacious, balanced, and serene.","group":"Quiet Waters"},{"title":"Beautiful Mountain Reflection Grand Teton National Park","image":"beautiful-mountain-reflection-grand-teton-national-park-dan-sproul.jpg","url":"https://dansproul.com/featured/beautiful-mountain-reflection-grand-teton-national-park-dan-sproul.html","type":"photography","orientation":"panoramic","directions":["escape","retreat","refined"],"moods":["calm","bright","refined"],"palettes":["cool","color"],"energy":3,"rooms":["living","bedroom","office","whole"],"styles":["modern","transitional","rustic","coastal"],"walls":["sofa","bed","feature"],"frames":["Thin matte black","Natural oak"],"reason":"Blue water and broad mountain reflections visually widen a room while offering a clear, uplifting sense of escape.","group":"Mountain Escape"},{"title":"Milky Way over Mountain Lake","image":"milky-way-over-mountain-lake-dan-sproul.jpg","url":"https://dansproul.com/featured/milky-way-over-mountain-lake-dan-sproul.html","type":"photography","orientation":"vertical","directions":["statement","escape"],"moods":["dramatic","personal"],"palettes":["dark","cool"],"energy":5,"rooms":["living","bedroom","entry","office"],"styles":["modern","eclectic","rustic"],"walls":["vertical","feature","console"],"frames":["Thin matte black","Dark walnut"],"reason":"A towering Milky Way and mirrored mountain silhouette create wonder, depth, and an unforgettable vertical statement.","group":"Night & Wonder"},{"title":"Bluebird Collage","image":"bluebird-collage-dan-sproul.jpg","url":"https://dansproul.com/featured/bluebird-collage-dan-sproul.html","type":"mixed-media","orientation":"landscape","directions":["statement","wildlife","warmth"],"moods":["bright","personal","warm"],"palettes":["color","cool"],"energy":5,"rooms":["living","dining","bedroom","entry"],"styles":["eclectic","traditional","coastal"],"walls":["sofa","console","feature"],"frames":["Natural oak","White oak","Thin matte black"],"reason":"Playful color and layered collage texture bring personality, optimism, and handcrafted character to a collected room.","group":"Heritage & Statement"},{"title":"Lighthouse Collage Dictionary Page","image":"lighthouse-collage-dictionary-page-dan-sproul.jpg","url":"https://dansproul.com/featured/lighthouse-collage-dictionary-page-dan-sproul.html","type":"mixed-media","orientation":"vertical","directions":["statement","refined"],"moods":["personal","dramatic"],"palettes":["warm","neutral","color"],"energy":5,"rooms":["entry","office","living","dining"],"styles":["eclectic","traditional","coastal","modern"],"walls":["vertical","console","feature"],"frames":["Thin matte black","Dark walnut"],"reason":"Vintage dictionary typography and layered lighthouse collage create a distinctive vertical piece with history and graphic impact.","group":"Heritage & Statement"},{"title":"Sunset at Haystack Rock","image":"sunset-at-haystack-rock-dan-sproul.jpg","url":"https://dansproul.com/featured/sunset-at-haystack-rock-dan-sproul.html","type":"photography","orientation":"landscape","directions":["statement","warmth","escape"],"moods":["dramatic","warm","refined"],"palettes":["warm","dark"],"energy":5,"rooms":["living","dining","bedroom","entry"],"styles":["coastal","modern","transitional"],"walls":["sofa","bed","console","feature"],"frames":["Thin matte black","Dark walnut"],"reason":"The monumental sea stack and glowing horizon create a dramatic yet polished coastal centerpiece.","group":"Coastal Living"},{"title":"Jennette's Pier Outer Banks","image":"jennettes-pier-outer-banks-dan-sproul.jpg","url":"https://dansproul.com/featured/jennettes-pier-outer-banks-dan-sproul.html","type":"photography","orientation":"vertical","directions":["refined","retreat"],"moods":["calm","refined"],"palettes":["neutral","cool"],"energy":2,"rooms":["bedroom","entry","office","living"],"styles":["modern","coastal","transitional"],"walls":["vertical","console","feature"],"frames":["Thin matte black","White oak"],"reason":"Monochrome symmetry and flowing water create an architectural coastal image with quiet sophistication.","group":"Modern Monochrome"},{"title":"Outer Banks Pier at Dawn","image":"outer-banks-pier-at-dawn-dan-sproul.jpg","url":"https://dansproul.com/featured/outer-banks-pier-at-dawn-wall-art-coastal-sunrise-beach-dan-sproul.html","type":"photography","orientation":"vertical","directions":["retreat","escape"],"moods":["calm","bright","refined"],"palettes":["cool","neutral"],"energy":3,"rooms":["bedroom","entry","living"],"styles":["coastal","modern","transitional"],"walls":["vertical","console","feature"],"frames":["White oak","Thin matte black"],"reason":"Soft dawn light and long-exposure surf create an airy vertical focal point with gentle coastal movement.","group":"Coastal Living"},{"title":"Moosehead Lake Dock Morning Light Maine","image":"moosehead-lake-dock-morning-light-maine-dan-sproul.jpg","url":"https://dansproul.com/featured/moosehead-lake-dock-morning-light-maine-dan-sproul.html","type":"photography","orientation":"landscape","directions":["retreat","warmth"],"moods":["calm","warm","bright"],"palettes":["cool","warm","neutral"],"energy":2,"rooms":["living","bedroom","dining","whole"],"styles":["coastal","traditional","rustic","transitional"],"walls":["sofa","bed","console","feature"],"frames":["Natural oak","Warm walnut"],"reason":"The empty dock and gentle morning light invite pause, creating a welcoming sense of stillness and escape.","group":"Quiet Waters"},{"title":"Foggy Hyatt Lane Cades Cove","image":"foggy-hyatt-lane-cades-cove-dan-sproul.jpg","url":"https://dansproul.com/featured/foggy-hyatt-lane-cades-cove-dan-sproul.html","type":"photography","orientation":"landscape","directions":["retreat","refined"],"moods":["calm","refined","bright"],"palettes":["neutral","cool"],"energy":1,"rooms":["bedroom","living","office","entry","whole"],"styles":["modern","traditional","transitional","rustic"],"walls":["sofa","bed","console","feature"],"frames":["White oak","Natural maple","Thin matte black"],"reason":"A solitary tree and disappearing road create a luminous, minimal image that makes a room feel hushed and restorative.","group":"Quiet Morning"}];
   function artworkImageCandidates(path){
     const raw=(path||"").split("/").pop();
@@ -562,16 +740,30 @@ body.preview-open{overflow:hidden}
     return [...new Set(candidates)];
   }
 
+  const wallWidthInput=document.getElementById('wallWidthInput');
+  const furnitureWidthInput=document.getElementById('furnitureWidthInput');
+  const ceilingHeightInput=document.getElementById('ceilingHeightInput');
+  const applyMeasurements=document.getElementById('applyMeasurements');
+  const measurementStatus=document.getElementById('measurementStatus');
+  function validMeasurement(value,min,max){const n=Number(value);return Number.isFinite(n)&&n>=min&&n<=max?n:null}
+  function setMeasurementAnswer(wallWidth,source='preset'){
+    answers.dimensions=wallWidth==='unknown'?'unknown':'measured';
+    answers.wallWidth=wallWidth==='unknown'?null:Number(wallWidth);
+    answers.measurementSource=source;
+    const current=questions[index];
+    if(current&&current.dataset.question==='dimensions')next.disabled=false;
+  }
+
   function wireArtworkImage(img,path){
     const candidates=artworkImageCandidates(path);
-    let index=0;
+    let candidateIndex=0;
     function tryNext(){
-      if(index>=candidates.length){
+      if(candidateIndex>=candidates.length){
         img.classList.add("image-missing");
         img.removeAttribute("src");
         return;
       }
-      img.src=candidates[index++];
+      img.src=candidates[candidateIndex++];
     }
     img.addEventListener("error",tryNext);
     tryNext();
@@ -586,11 +778,50 @@ body.preview-open{overflow:hidden}
   }
 
   let index=0;
-  questions.forEach(q=>q.querySelectorAll('.option').forEach(btn=>btn.addEventListener('click',()=>{q.querySelectorAll('.option').forEach(x=>x.classList.remove('selected'));btn.classList.add('selected');answers[q.dataset.question]=btn.dataset.value;next.disabled=false;})));
+  questions.forEach(q=>q.querySelectorAll('.option').forEach(btn=>btn.addEventListener('click',()=>{
+    q.querySelectorAll('.option').forEach(x=>x.classList.remove('selected'));btn.classList.add('selected');
+    if(q.dataset.question==='dimensions'){
+      const value=btn.dataset.value;setMeasurementAnswer(value,'preset');wallWidthInput.value=value==='unknown'?'':value;
+      if(value==='unknown'){answers.furnitureWidth=null;answers.ceilingHeight=null;furnitureWidthInput.value='';ceilingHeightInput.value='';measurementStatus.textContent='No problem. Professional sizing rules will be used instead.'}
+      else measurementStatus.textContent=`Using an estimated ${value}-inch wall. Add furniture width for an even more precise recommendation.`;
+    }else{answers[q.dataset.question]=btn.dataset.value;next.disabled=false}
+  })));
+
+  applyMeasurements.addEventListener('click',()=>{
+    const wall=validMeasurement(wallWidthInput.value,24,300),furniture=validMeasurement(furnitureWidthInput.value,24,240),ceiling=validMeasurement(ceilingHeightInput.value,72,240);
+    if(!wall){measurementStatus.textContent='Please enter a wall width between 24 and 300 inches.';wallWidthInput.focus();return}
+    document.querySelectorAll('.dimension-option').forEach(o=>o.classList.remove('selected'));
+    setMeasurementAnswer(wall,'custom');answers.furnitureWidth=furniture;answers.ceilingHeight=ceiling;
+    const parts=[`${wall}-inch wall`];if(furniture)parts.push(`${furniture}-inch furniture`);if(ceiling)parts.push(`${ceiling}-inch ceiling`);
+    measurementStatus.textContent=`Measurements saved: ${parts.join(', ')}.`;applyMeasurements.textContent='Measurements Saved';setTimeout(()=>applyMeasurements.textContent='Use These Measurements',1400);
+  });
   function render(){questions.forEach((q,i)=>q.classList.toggle('active',i===index));const p=Math.round(((index+1)/questions.length)*100);bar.style.width=p+'%';label.textContent=`Question ${index+1} of ${questions.length}`;pct.textContent=p+'%';back.disabled=index===0;next.textContent=index===questions.length-1?'See My Recommendations':'Continue';next.disabled=!answers[questions[index].dataset.question];}
   next.addEventListener('click',()=>{if(index<questions.length-1){index++;render();}else{buildResults();document.getElementById('results').classList.add('visible');document.getElementById('results').scrollIntoView({behavior:'smooth'});}});
   back.addEventListener('click',()=>{if(index>0){index--;render();}});
-  document.getElementById('restartBtn').addEventListener('click',()=>{index=0;Object.keys(answers).forEach(k=>delete answers[k]);document.querySelectorAll('.option').forEach(x=>x.classList.remove('selected'));document.getElementById('results').classList.remove('visible');render();document.getElementById('advisor').scrollIntoView({behavior:'smooth'});});
+
+  function selectedArtworkForContact(){return latestRecommendations.find(a=>a.title===consultArtwork.value)||latestRecommendations[0]||{}}
+  function roomProfileForEmail(){const m=[];if(answers.wallWidth)m.push(`wall ${answers.wallWidth} in`);if(answers.furnitureWidth)m.push(`furniture ${answers.furnitureWidth} in`);if(answers.ceilingHeight)m.push(`ceiling ${answers.ceilingHeight} in`);return {room:roomNames[answers.room]||answers.room||'Not specified',style:styleNames[answers.style]||answers.style||'Not specified',palette:paletteNames[answers.palette]||answers.palette||'Not specified',placement:wallNames[answers.wall]||answers.wall||'Not specified',measurements:m.length?m.join(', '):'No measurements supplied'}}
+  askDanBtn.addEventListener('click',()=>{
+    if(consultEmail.value&&!consultEmail.checkValidity()){consultationStatus.textContent='Please enter a valid email address.';consultEmail.focus();return}
+    const art=selectedArtworkForContact(),profile=roomProfileForEmail(),fit=art.title?measurementSummary(art):null,tip=art.title?designerTip(art):null;
+    const subject=`Art Advisor room question${art.title?` — ${art.title}`:''}`;
+    const body=[`Hi Dan,`,'',`I used the Art Advisor and would appreciate your opinion on my room.`,'',`Name: ${consultName.value.trim()||'Not provided'}`,`Reply email: ${consultEmail.value.trim()||'Not provided'}`,`Room: ${profile.room}`,`Style: ${profile.style}`,`Palette: ${profile.palette}`,`Placement: ${profile.placement}`,`Measurements: ${profile.measurements}`,`Project timing: ${consultTiming.value}`,'',`Artwork: ${art.title||'Not selected'}`,art.url?`Artwork link: ${art.url}`:'',fit?`Recommended size: ${sizeGuidance(art)} (${fit.title})`:'',tip?`Advisor guidance: ${tip.title}`:'','',`My questions or notes:`,consultNotes.value.trim()||'No additional notes.','',`I will attach my saved room preview if available.`,'',`Thank you.`].filter(Boolean).join('\n');
+    consultationStatus.textContent='Opening your email app. Attach the saved room preview before sending.';
+    window.location.href=`mailto:dan@dsproul.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  });
+  saveBeforeEmailBtn.addEventListener('click',()=>{consultationStatus.textContent='Room visualizer opened. Save the JPG there, then return to prepare the email.';document.querySelector('.room-preview-trigger')?.click()});
+
+  document.getElementById('restartBtn').addEventListener('click',()=>{index=0;Object.keys(answers).forEach(k=>delete answers[k]);document.querySelectorAll('.option').forEach(x=>x.classList.remove('selected'));wallWidthInput.value='';furnitureWidthInput.value='';ceilingHeightInput.value='';measurementStatus.textContent='Choose a common wall width above or enter a custom measurement.';document.getElementById('results').classList.remove('visible');render();document.getElementById('advisor').scrollIntoView({behavior:'smooth'});});
+
+  document.getElementById('saveReportBtn').addEventListener('click',()=>{
+    const reportImages=[...document.querySelectorAll('#recommendationReport img')];
+    const pending=reportImages.filter(img=>!img.complete);
+    if(!pending.length){window.print();return;}
+    let resolved=0;
+    const finish=()=>{resolved++;if(resolved>=pending.length)window.print()};
+    pending.forEach(img=>{img.addEventListener('load',finish,{once:true});img.addEventListener('error',finish,{once:true})});
+    setTimeout(()=>window.print(),1800);
+  });
   const includes=(arr,val)=>arr&&arr.includes(val);
   function desiredEnergy(){return answers.scale==='quiet'?1:answers.scale==='statement'?5:answers.scale==='balanced'?3:(answers.wall==='feature'?5:3)}
   function scoreArt(a){let s=42;
@@ -607,12 +838,20 @@ body.preview-open{overflow:hidden}
     return s;
   }
   function resultPercent(score,max,min){return Math.max(min,Math.min(max,Math.round(78+(score-55)*.31)))}
-  function sizeGuidance(a){const scale=answers.scale==='unknown'?(answers.wall==='feature'?'statement':answers.wall==='vertical'?'balanced':'balanced'):answers.scale;
-    if(a.orientation==='vertical')return scale==='quiet'?'20 × 30 or 24 × 36':scale==='statement'?'30 × 45 or 40 × 60':'24 × 36 or 30 × 45';
-    if(a.orientation==='square')return scale==='quiet'?'20 × 20 or 24 × 24':scale==='statement'?'40 × 40 or larger':'30 × 30 or 36 × 36';
-    if(a.orientation==='panoramic')return scale==='quiet'?'24 × 12 or 36 × 18':scale==='statement'?'60 × 30 or larger':'48 × 24 or 60 × 30';
-    return scale==='quiet'?'24 × 16 or 30 × 20':scale==='statement'?'48 × 32 or 60 × 40':'36 × 24 or 45 × 30';
+  function scalePreference(){return answers.scale==='unknown'?(answers.wall==='feature'?'statement':'balanced'):answers.scale}
+  function sizeCandidates(a){
+    if(a.orientation==='vertical')return [{w:16,h:24},{w:20,h:30},{w:24,h:36},{w:30,h:45},{w:40,h:60}];
+    if(a.orientation==='square')return [{w:20,h:20},{w:24,h:24},{w:30,h:30},{w:36,h:36},{w:40,h:40},{w:48,h:48}];
+    if(a.orientation==='panoramic')return [{w:24,h:12},{w:36,h:18},{w:48,h:24},{w:60,h:30},{w:72,h:36}];
+    return [{w:24,h:16},{w:30,h:20},{w:36,h:24},{w:45,h:30},{w:48,h:32},{w:60,h:40},{w:72,h:48}];
   }
+  function measurementBaseWidth(){const furniturePlacement=['sofa','bed','console'].includes(answers.wall);if(furniturePlacement&&answers.furnitureWidth)return {width:Number(answers.furnitureWidth),basis:'furniture'};if(answers.wallWidth)return {width:Number(answers.wallWidth),basis:'wall'};return null}
+  function targetCoverage(){const scale=scalePreference();if(['sofa','bed','console'].includes(answers.wall))return scale==='quiet'?.58:scale==='statement'?.75:.67;if(answers.wall==='feature')return scale==='quiet'?.48:scale==='statement'?.72:.61;if(answers.wall==='vertical')return scale==='quiet'?.42:scale==='statement'?.62:.52;return scale==='quiet'?.48:scale==='statement'?.68:.58}
+  function measuredSize(a){const base=measurementBaseWidth();if(!base)return null;const target=base.width*targetCoverage(),filtered=sizeCandidates(a).filter(s=>s.w<=base.width*.86),usable=filtered.length?filtered:sizeCandidates(a);let selected=usable[0];usable.forEach(s=>{if(Math.abs(s.w-target)<Math.abs(selected.w-target))selected=s});const fill=Math.round(selected.w/base.width*100);return {...selected,fill,basis:base.basis,baseWidth:base.width}}
+  function defaultSizeGuidance(a){const scale=scalePreference();if(a.orientation==='vertical')return scale==='quiet'?'20 × 30 or 24 × 36':scale==='statement'?'30 × 45 or 40 × 60':'24 × 36 or 30 × 45';if(a.orientation==='square')return scale==='quiet'?'20 × 20 or 24 × 24':scale==='statement'?'40 × 40 or larger':'30 × 30 or 36 × 36';if(a.orientation==='panoramic')return scale==='quiet'?'24 × 12 or 36 × 18':scale==='statement'?'60 × 30 or larger':'48 × 24 or 60 × 30';return scale==='quiet'?'24 × 16 or 30 × 20':scale==='statement'?'48 × 32 or 60 × 40':'36 × 24 or 45 × 30'}
+  function sizeGuidance(a){const m=measuredSize(a);return m?`${m.w} × ${m.h}`:defaultSizeGuidance(a)}
+  function measurementSummary(a){const m=measuredSize(a);if(!m)return {title:'Professional sizing rule',detail:'No wall measurement was supplied, so the recommendation uses room, placement, orientation, and scale best practices.',fill:null};const basisLabel=m.basis==='furniture'?'furniture width':'wall width',extra=answers.ceilingHeight?` Ceiling height: ${answers.ceilingHeight} inches.`:'';return {title:`Fills about ${m.fill}% of the ${m.basis}`,detail:`A ${m.w} × ${m.h} artwork uses approximately ${m.fill}% of the supplied ${m.baseWidth}-inch ${basisLabel}.${extra}`,fill:m.fill}}
+
   function chosenFrame(a){if(answers.style==='rustic'||answers.palette==='warm')return a.frames.find(f=>/walnut|oak/i.test(f))||a.frames[0];if(answers.style==='coastal'||answers.palette==='cool')return a.frames.find(f=>/white|maple|oak/i.test(f))||a.frames[0];return a.frames[0]}
   function presentationFor(a){
     const isMixed=a.type==='mixed-media';
@@ -647,14 +886,177 @@ body.preview-open{overflow:hidden}
     return {best,details,alternate};
   }
   function placementText(a){const map={sofa:'Centered above the sofa at roughly two-thirds its width',bed:'Centered above the headboard with generous breathing room',console:'Centered above the furniture, visually connected but not crowded',vertical:'Use as a vertical anchor on the narrow wall',feature:'Allow the artwork to command the feature wall',unsure:a.orientation==='vertical'?'A narrow wall, entry, or beside a doorway':'A primary wall above furniture'};return map[answers.wall]}
+  const roomNames={living:'Living Room',bedroom:'Bedroom',dining:'Dining Room',entry:'Entryway',office:'Home Office',whole:'Whole Home',cabin:'Cabin or Lodge',lakehouse:'Lake House',other:'Residential Space'};
+  const styleNames={modern:'Modern',transitional:'Transitional',traditional:'Traditional',rustic:'Rustic or Lodge',coastal:'Coastal',minimal:'Minimal',eclectic:'Eclectic or Collected'};
+  const paletteNames={neutral:'Neutral',warm:'Warm Earth Tones',cool:'Cool Blues and Greens',colorful:'Colorful',monochrome:'Monochrome',flexible:'Flexible Palette'};
+  const wallNames={sofa:'Above a Sofa',bed:'Above a Bed',console:'Above a Console',vertical:'Narrow Vertical Wall',feature:'Feature Wall',unsure:'Flexible Placement'};
+
+  function matchReasons(a){
+    const reasons=[];
+    if(includes(a.rooms,answers.room))reasons.push(`Well suited to a ${roomNames[answers.room]||'residential room'}.`);
+    if(includes(a.moods,answers.mood))reasons.push(`Supports the ${document.getElementById('profileMood').textContent.toLowerCase()} feeling you selected.`);
+    if(includes(a.styles,answers.style))reasons.push(`Pairs naturally with ${styleNames[answers.style]||answers.style} interiors.`);
+    if(answers.palette==='flexible')reasons.push('Its palette is versatile enough to work with changing furnishings and finishes.');
+    else if(includes(a.palettes,answers.palette))reasons.push(`Complements a ${paletteNames[answers.palette].toLowerCase()} room palette.`);
+    if(includes(a.walls,answers.wall))reasons.push(`Its composition works especially well for ${wallNames[answers.wall].toLowerCase()}.`);
+    const measuredFit=measuredSize(a);if(measuredFit)reasons.push(`At ${measuredFit.w} inches wide, it fills about ${measuredFit.fill}% of the supplied ${measuredFit.basis} width.`);
+    if((answers.wall==='sofa'||answers.wall==='bed')&&(a.orientation==='landscape'||a.orientation==='panoramic'))reasons.push('The horizontal format relates naturally to the furniture width below it.');
+    if(answers.wall==='vertical'&&(a.orientation==='vertical'||a.orientation==='square'))reasons.push('Its upright composition gives the narrow wall height and visual structure.');
+    const energyDifference=Math.abs(a.energy-desiredEnergy());
+    if(energyDifference<=1)reasons.push(answers.scale==='statement'?'It has enough visual energy to act as the room’s primary focal point.':'Its visual presence feels noticeable without overwhelming the room.');
+    if(a.type==='mixed-media')reasons.push('The layered mixed-media treatment adds collected character and a more personal story.');
+    if(a.group==='Modern Monochrome')reasons.push('The restrained monochrome treatment creates a refined, architectural finish.');
+    return [...new Set(reasons)].slice(0,5);
+  }
+
+
+  function designerTip(a){
+    const measured=measuredSize(a);
+    const ceiling=Number(answers.ceilingHeight)||null;
+    const room=answers.room;
+    const wall=answers.wall;
+    const frame=chosenFrame(a).toLowerCase();
+
+    if(wall==='sofa'){
+      return {
+        title:'Anchor the art to the sofa, not the entire wall.',
+        text:`Center the artwork over the sofa and leave roughly 6–8 inches between the sofa back and the bottom of the frame.${measured?` The recommended ${measured.w}-inch width should create a balanced relationship with the furniture below.`:''}`
+      };
+    }
+
+    if(wall==='bed'){
+      return {
+        title:'Keep the artwork visually connected to the headboard.',
+        text:`Position the bottom of the frame about 6–10 inches above the headboard. A slightly lower placement usually feels more intentional than centering the piece between the bed and ceiling.${a.orientation==='vertical'?' Because this composition is vertical, avoid hanging it too high.':''}`
+      };
+    }
+
+    if(wall==='console'){
+      return {
+        title:'Create one composed vignette.',
+        text:`Center the artwork over the console and keep the lower edge approximately 6–8 inches above it. Let lamps or accessories frame the artwork rather than compete with its edges.`
+      };
+    }
+
+    if(wall==='vertical'){
+      return {
+        title:'Use the height of the wall deliberately.',
+        text:`Center the artwork at approximately 57–60 inches from the floor to its visual midpoint. On a narrow wall, generous empty space above and below often looks more refined than filling every available inch.`
+      };
+    }
+
+    if(wall==='feature'){
+      return {
+        title:'Treat this as the room’s primary focal point.',
+        text:`Give the artwork visual breathing room and avoid placing competing décor immediately beside it.${measured?` At about ${measured.fill}% of the supplied ${measured.basis} width, the recommended size should read as intentional without feeling crowded.`:''}`
+      };
+    }
+
+    if(ceiling && ceiling >= 108){
+      return {
+        title:'Use the higher ceiling without raising the art too far.',
+        text:`Even with a ${ceiling}-inch ceiling, keep the artwork’s center near normal eye level. Use a larger artwork size to address the wall height rather than simply hanging a smaller piece higher.`
+      };
+    }
+
+    if(room==='dining'){
+      return {
+        title:'Account for seated eye level.',
+        text:`Dining-room artwork can sit slightly lower than art in a hallway or entry. Check the view from the table and keep reflections from nearby windows or fixtures from becoming distracting.`
+      };
+    }
+
+    if(room==='entry'){
+      return {
+        title:'Design for the first view into the home.',
+        text:`Align the artwork with the primary approach into the entry rather than only with the nearest wall edge. A clear sightline will make the piece feel intentional as soon as someone enters.`
+      };
+    }
+
+    if(room==='office'){
+      return {
+        title:'Place it where it supports focus.',
+        text:`Choose a wall visible from the desk without placing the artwork directly behind a bright monitor or strong window reflection. The goal is a calm visual pause rather than a competing focal point.`
+      };
+    }
+
+    if(room==='bedroom'){
+      return {
+        title:'Favor calm spacing over visual density.',
+        text:`Leave more open wall around the artwork than you might in a living room. A restrained arrangement supports the quieter mood most bedrooms need.`
+      };
+    }
+
+    if(a.orientation==='panoramic'){
+      return {
+        title:'Let the panoramic format breathe.',
+        text:`Keep nearby accessories below the outer edges of the artwork so the long horizontal composition remains uninterrupted. Panoramic pieces are most effective when the surrounding wall stays relatively simple.`
+      };
+    }
+
+    if(a.orientation==='vertical'){
+      return {
+        title:'Use vertical alignment to strengthen the room.',
+        text:`Align the artwork with a doorway, window edge, or furniture centerline. Vertical pieces look most intentional when they reinforce another architectural line in the space.`
+      };
+    }
+
+    if(frame.includes('oak') || frame.includes('walnut')){
+      return {
+        title:'Repeat the wood tone once elsewhere.',
+        text:`A small echo of the frame finish—such as a side table, lamp base, or shelf—will help the artwork feel integrated without making the room overly coordinated.`
+      };
+    }
+
+    return {
+      title:'Hang for eye level, then adjust for the furniture.',
+      text:`Begin with the artwork’s center roughly 57–60 inches from the floor. When furniture sits below it, lower the piece until the artwork and furniture read as one composition rather than two separate elements.`
+    };
+  }
+
+  function reportProfileSummary(){
+    const room=roomNames[answers.room]||'residential space';
+    const style=styleNames[answers.style]||answers.style;
+    const palette=paletteNames[answers.palette]||answers.palette;
+    return `Prepared for a ${room.toLowerCase()} with a ${style.toLowerCase()} direction and ${palette.toLowerCase()} palette. These recommendations were selected by comparing room, mood, style, palette, wall placement, orientation, and desired visual presence.`;
+  }
+
+  function buildPrintableReport(top3,labels,percentages){
+    document.getElementById('reportDate').textContent=new Intl.DateTimeFormat('en-US',{month:'long',day:'numeric',year:'numeric'}).format(new Date());
+    document.getElementById('reportTitle').textContent=document.getElementById('profileName').textContent.replace(/\.$/,'')+' Art Recommendation';
+    document.getElementById('reportIntro').textContent=reportProfileSummary();
+    document.getElementById('reportMood').textContent=document.getElementById('profileMood').textContent;
+    document.getElementById('reportSize').textContent=document.getElementById('profileSize').textContent;
+    document.getElementById('reportFrame').textContent=document.getElementById('profileFrame').textContent;
+    document.getElementById('reportPlacement').textContent=document.getElementById('profilePlacement').textContent;
+    document.getElementById('reportMeasurement').textContent=document.getElementById('profileMeasurement').textContent;
+    const generalTip=designerTip(top3[0]);
+    document.getElementById('reportGeneralTip').innerHTML=`<strong>Primary designer guidance:</strong> ${generalTip.title} ${generalTip.text}`;
+    const container=document.getElementById('reportRecommendations');
+    container.innerHTML=top3.map((a,i)=>{
+      const presentation=presentationFor(a);
+      const reasons=matchReasons(a);
+      return `<article class="report-art"><div class="report-art-image"><img data-art-image="${a.image}" alt="${a.title}"></div><div><div class="report-art-label">${labels[i]} · ${percentages[i]}% Match</div><h3>${a.title}</h3><p>${a.reason}</p><ul>${reasons.map(reason=>`<li>${reason}</li>`).join('')}</ul><div class="report-spec"><span><strong>Size:</strong> ${sizeGuidance(a)}</span><span><strong>Placement:</strong> ${placementText(a)}</span><span><strong>Measured fit:</strong> ${measurementSummary(a).title}</span><span><strong>Presentation:</strong> ${presentation.best}</span><span><strong>Configuration:</strong> ${presentation.details}</span></div><div class="report-tip"><strong>Designer tip:</strong> ${designerTip(a).title} ${designerTip(a).text}</div><div class="report-link">${a.url}</div></div></article>`;
+    }).join('');
+    wireArtworkImages(container);
+  }
+
   function buildResults(){
     const ranked=artworks.map(a=>({...a,score:scoreArt(a)})).sort((a,b)=>b.score-a.score);
-    const top3=ranked.slice(0,3), moodMap={calm:'Calm & Restorative',warm:'Warm & Welcoming',bright:'Bright & Expansive',dramatic:'Bold & Dramatic',refined:'Refined & Sophisticated',personal:'Personal & Expressive'};
+    const top3=ranked.slice(0,3);latestRecommendations=top3;consultArtwork.innerHTML=top3.map((a,i)=>`<option value="${a.title}">${i===0?'Top recommendation: ':''}${a.title}</option>`).join('');const moodMap={calm:'Calm & Restorative',warm:'Warm & Welcoming',bright:'Bright & Expansive',dramatic:'Bold & Dramatic',refined:'Refined & Sophisticated',personal:'Personal & Expressive'};
     let profile='Quietly Refined';if(answers.mood==='dramatic'||answers.scale==='statement')profile='Boldly Expressive';else if(answers.mood==='warm'||answers.style==='rustic')profile='Warm Naturalist';else if(answers.mood==='bright'||answers.style==='coastal')profile='Open & Airy';else if(answers.direction==='wildlife')profile='Nature with Character';else if(answers.direction==='statement'||answers.mood==='personal')profile='Collected Storyteller';
-    document.getElementById('profileName').textContent=profile+'.';document.getElementById('profileMood').textContent=moodMap[answers.mood]||'Balanced & Natural';document.getElementById('profileSize').textContent=sizeGuidance(top3[0]);document.getElementById('profileFrame').textContent=chosenFrame(top3[0]);document.getElementById('profilePlacement').textContent=placementText(top3[0]);
+    document.getElementById('profileName').textContent=profile+'.';document.getElementById('profileMood').textContent=moodMap[answers.mood]||'Balanced & Natural';document.getElementById('profileSize').textContent=sizeGuidance(top3[0]);document.getElementById('profileFrame').textContent=chosenFrame(top3[0]);document.getElementById('profilePlacement').textContent=placementText(top3[0]);const topMeasurement=measurementSummary(top3[0]);document.getElementById('profileMeasurement').textContent=topMeasurement.title;const primaryTip=designerTip(top3[0]);document.getElementById('profileDesignerTipTitle').textContent=primaryTip.title;document.getElementById('profileDesignerTipText').textContent=primaryTip.text;
     document.getElementById('profileIntro').textContent=`Your answers point toward ${moodMap[answers.mood].toLowerCase()} artwork with ${answers.scale==='statement'?'strong visual presence':'a considered residential presence'}. These three pieces scored highest across the details you selected.`;
-    const labels=['Top Recommendation','Strong Alternative','Bolder Direction'];const maxScore=top3[0].score;
-    document.getElementById('recommendations').innerHTML=top3.map((a,i)=>{const pct=i===0?96:resultPercent(a.score,93,i===1?86:82);const presentation=presentationFor(a);return `<article class="result-card"><div class="art-placeholder"><img data-art-image="${a.image}" alt="${a.title}" loading="lazy" decoding="async"><span class="match">${pct}% Match</span></div><div class="result-body"><p class="result-label">${labels[i]} · ${a.group}</p><h3 class="result-title">${a.title}</h3><p class="result-reason">${a.reason}</p><div class="result-specs"><span><strong>Recommended artwork size:</strong> ${sizeGuidance(a)}</span><span><strong>Placement:</strong> ${placementText(a)}</span></div><div class="presentation-box"><p class="presentation-kicker">Recommended Presentation</p><h4 class="presentation-title">${presentation.best}</h4><div class="presentation-lines"><span><strong>Configuration:</strong> ${presentation.details}</span><span><strong>Strong alternative:</strong> ${presentation.alternate}</span></div></div><div class="result-actions"><button class="btn ${i===0?'btn-solid':'btn-out'} room-preview-trigger" type="button" data-art-title="${a.title}" data-art-image="${a.image}" data-art-url="${a.url}">See This in My Room</button><a class="btn btn-out" href="${a.url}" target="_blank" rel="noopener">View Current Options & Price</a></div></div></article>`}).join('');wireArtworkImages(document.getElementById('recommendations'));
+    const labels=['Top Recommendation','Strong Alternative','Bolder Direction'];
+    const percentages=top3.map((a,i)=>i===0?96:resultPercent(a.score,93,i===1?86:82));
+    document.getElementById('recommendations').innerHTML=top3.map((a,i)=>{
+      const pct=percentages[i];
+      const presentation=presentationFor(a);
+      const reasons=matchReasons(a);
+      return `<article class="result-card"><div class="art-placeholder"><img data-art-image="${a.image}" alt="${a.title}" loading="lazy" decoding="async"><span class="match">${pct}% Match</span></div><div class="result-body"><p class="result-label">${labels[i]} · ${a.group}</p><h3 class="result-title">${a.title}</h3><p class="result-reason">${a.reason}</p><div class="match-explanation"><p class="match-explanation-title">Why this works in your room</p><ul>${reasons.map(reason=>`<li>${reason}</li>`).join('')}</ul></div><div class="result-specs"><span><strong>Recommended artwork size:</strong> ${sizeGuidance(a)}</span><span><strong>Placement:</strong> ${placementText(a)}</span></div><div class="measurement-summary"><strong>${measurementSummary(a).title}</strong><span>${measurementSummary(a).detail}</span>${measurementSummary(a).fill?`<div class="wall-fill-meter" aria-label="${measurementSummary(a).fill}% width"><i style="width:${Math.min(measurementSummary(a).fill,100)}%"></i></div>`:''}</div><div class="designer-tip"><span class="designer-tip-kicker">Designer Tip</span><strong>${designerTip(a).title}</strong><p>${designerTip(a).text}</p></div><div class="presentation-box"><p class="presentation-kicker">Recommended Presentation</p><h4 class="presentation-title">${presentation.best}</h4><div class="presentation-lines"><span><strong>Configuration:</strong> ${presentation.details}</span><span><strong>Strong alternative:</strong> ${presentation.alternate}</span></div></div><div class="result-actions"><button class="btn ${i===0?'btn-solid':'btn-out'} room-preview-trigger" type="button" data-art-title="${a.title}" data-art-image="${a.image}" data-art-url="${a.url}">See This in My Room</button><a class="btn btn-out" href="${a.url}" target="_blank" rel="noopener">View Current Options & Price</a></div></div></article>`;
+    }).join('');
+    wireArtworkImages(document.getElementById('recommendations'));
+    buildPrintableReport(top3,labels,percentages);
   }
   render();
 })();
@@ -680,8 +1082,11 @@ body.preview-open{overflow:hidden}
   const demo=document.getElementById('previewDemoBtn');
   const clear=document.getElementById('previewClearBtn');
   const status=document.getElementById('previewStatus');
+  const save=document.getElementById('previewSave');
   const purchase=document.getElementById('previewPurchase');
-  let x=50,y=36,dragging=false,offsetX=0,offsetY=0,roomUrl='';
+  const sharePreviewBtn=document.getElementById('sharePreviewBtn'),copyArtworkLinkBtn=document.getElementById('copyArtworkLinkBtn'),emailPreviewBtn=document.getElementById('emailPreviewBtn'),shareStatus=document.getElementById('shareStatus');
+  let currentPreviewArtwork={title:'',url:''};
+  let x=50,y=36,dragging=false,offsetX=0,offsetY=0,roomUrl='',roomImage=null;
 
   function candidates(path){
     const raw=(path||'').split('/').pop();
@@ -719,6 +1124,8 @@ body.preview-open{overflow:hidden}
   function openPreview(button){
     title.textContent=button.dataset.artTitle||'Artwork recommendation';
     purchase.href=button.dataset.artUrl||'https://dansproul.com';
+    currentPreviewArtwork={title:title.textContent,url:purchase.href};
+    shareStatus.textContent='';
     resetPosition();
     frameStyle.value='black';
     mat.checked=true;
@@ -761,18 +1168,26 @@ body.preview-open{overflow:hidden}
     if(!file.type.startsWith('image/')){status.textContent='Please choose a JPG, PNG, or WebP room photo.';return}
     if(roomUrl)URL.revokeObjectURL(roomUrl);
     roomUrl=URL.createObjectURL(file);
-    stage.style.backgroundImage=`url("${roomUrl}")`;
-    stage.classList.add('has-photo');
-    status.textContent='Room photo added. Drag the artwork and adjust its size.';
+    const uploaded=new Image();
+    uploaded.onload=()=>{
+      roomImage=uploaded;
+      stage.style.backgroundImage=`url("${roomUrl}")`;
+      stage.classList.add('has-photo');
+      status.textContent='Room photo added. Drag the artwork, adjust its size, then save your preview.';
+    };
+    uploaded.onerror=()=>{status.textContent='That room photo could not be opened. Please try another image.';};
+    uploaded.src=roomUrl;
   });
 
   demo.addEventListener('click',()=>{
+    roomImage=null;
     stage.style.backgroundImage='';
     stage.classList.remove('has-photo');
-    status.textContent='Demo room active.';
+    status.textContent='Demo room active. You can save this sample or upload your own room.';
   });
 
   clear.addEventListener('click',()=>{
+    roomImage=null;
     input.value='';
     stage.style.backgroundImage='';
     stage.classList.remove('has-photo');
@@ -812,6 +1227,191 @@ body.preview-open{overflow:hidden}
   }
   overlay.addEventListener('pointerup',stop);
   overlay.addEventListener('pointercancel',stop);
+
+  function drawCoverToCanvas(context,image,width,height){
+    const imageRatio=image.naturalWidth/image.naturalHeight;
+    const canvasRatio=width/height;
+    let sx=0,sy=0,sw=image.naturalWidth,sh=image.naturalHeight;
+    if(imageRatio>canvasRatio){
+      sw=image.naturalHeight*canvasRatio;
+      sx=(image.naturalWidth-sw)/2;
+    }else{
+      sh=image.naturalWidth/canvasRatio;
+      sy=(image.naturalHeight-sh)/2;
+    }
+    context.drawImage(image,sx,sy,sw,sh,0,0,width,height);
+  }
+
+  function roundedPath(context,xPos,yPos,width,height,radius){
+    const r=Math.min(radius,width/2,height/2);
+    context.beginPath();
+    context.moveTo(xPos+r,yPos);
+    context.lineTo(xPos+width-r,yPos);
+    context.quadraticCurveTo(xPos+width,yPos,xPos+width,yPos+r);
+    context.lineTo(xPos+width,yPos+height-r);
+    context.quadraticCurveTo(xPos+width,yPos+height,xPos+width-r,yPos+height);
+    context.lineTo(xPos+r,yPos+height);
+    context.quadraticCurveTo(xPos,yPos+height,xPos,yPos+height-r);
+    context.lineTo(xPos,yPos+r);
+    context.quadraticCurveTo(xPos,yPos,xPos+r,yPos);
+    context.closePath();
+  }
+
+  function drawDemoToCanvas(context,width,height){
+    const wall=context.createLinearGradient(0,0,0,height*.72);
+    wall.addColorStop(0,'#ddd6cc');
+    wall.addColorStop(1,'#c9beb0');
+    context.fillStyle=wall;
+    context.fillRect(0,0,width,height*.72);
+
+    context.fillStyle='#9c7e64';
+    context.fillRect(0,height*.72,width,height*.28);
+
+    context.fillStyle='rgba(255,255,255,.24)';
+    context.fillRect(width*.08,height*.12,width*.2,height*.42);
+    context.strokeStyle='rgba(98,81,65,.23)';
+    context.lineWidth=Math.max(5,width*.006);
+    context.strokeRect(width*.08,height*.12,width*.2,height*.42);
+    context.beginPath();
+    context.moveTo(width*.18,height*.12);
+    context.lineTo(width*.18,height*.54);
+    context.moveTo(width*.08,height*.33);
+    context.lineTo(width*.28,height*.33);
+    context.stroke();
+
+    context.fillStyle='#82766b';
+    roundedPath(context,width*.22,height*.67,width*.58,height*.18,width*.022);
+    context.fill();
+    context.fillStyle='#998d81';
+    roundedPath(context,width*.25,height*.62,width*.52,height*.13,width*.02);
+    context.fill();
+
+    context.fillStyle='rgba(35,25,18,.15)';
+    context.beginPath();
+    context.ellipse(width*.51,height*.88,width*.3,height*.05,0,0,Math.PI*2);
+    context.fill();
+  }
+
+  function frameGradient(context,style,xPos,yPos,width,height){
+    const gradient=context.createLinearGradient(xPos,yPos,xPos+width,yPos+height);
+    if(style==='oak'){
+      gradient.addColorStop(0,'#e1cba5');
+      gradient.addColorStop(.45,'#c49e70');
+      gradient.addColorStop(1,'#ead4ad');
+    }else if(style==='walnut'){
+      gradient.addColorStop(0,'#70472d');
+      gradient.addColorStop(.45,'#482717');
+      gradient.addColorStop(1,'#7a5134');
+    }else{
+      gradient.addColorStop(0,'#272727');
+      gradient.addColorStop(.45,'#0d0d0d');
+      gradient.addColorStop(1,'#242424');
+    }
+    return gradient;
+  }
+
+  function createSavedPreview(){
+    if(!art.complete||!art.naturalWidth){
+      status.textContent='The artwork is still loading. Please wait a moment and try again.';
+      return;
+    }
+
+    const exportCanvas=document.createElement('canvas');
+    exportCanvas.width=1600;
+    exportCanvas.height=1029;
+    const context=exportCanvas.getContext('2d');
+
+    if(roomImage)drawCoverToCanvas(context,roomImage,exportCanvas.width,exportCanvas.height);
+    else drawDemoToCanvas(context,exportCanvas.width,exportCanvas.height);
+
+    const artRatio=art.naturalWidth/art.naturalHeight;
+    let artWidth=exportCanvas.width*(Number(scale.value)/100);
+    let artHeight=artWidth/artRatio;
+    const maxHeight=exportCanvas.height*.62;
+    if(artHeight>maxHeight){
+      artHeight=maxHeight;
+      artWidth=artHeight*artRatio;
+    }
+
+    const centerX=exportCanvas.width*(x/100);
+    const centerY=exportCanvas.height*(y/100);
+    const selectedFrame=frameStyle.value;
+    const frameless=selectedFrame==='frameless';
+    const frameThickness=frameless?0:Math.max(14,artWidth*.035);
+    const matThickness=(!frameless&&mat.checked)?Math.max(32,artWidth*.085):0;
+    const total=frameThickness+matThickness;
+    const outerX=centerX-artWidth/2-total;
+    const outerY=centerY-artHeight/2-total;
+    const outerWidth=artWidth+total*2;
+    const outerHeight=artHeight+total*2;
+
+    context.save();
+    context.shadowColor='rgba(0,0,0,.42)';
+    context.shadowBlur=34;
+    context.shadowOffsetY=18;
+
+    if(!frameless){
+      context.fillStyle=frameGradient(context,selectedFrame,outerX,outerY,outerWidth,outerHeight);
+      context.fillRect(outerX,outerY,outerWidth,outerHeight);
+    }else{
+      context.fillStyle='rgba(255,255,255,.18)';
+      context.fillRect(centerX-artWidth/2-3,centerY-artHeight/2-3,artWidth+6,artHeight+6);
+    }
+    context.restore();
+
+    if(!frameless&&mat.checked){
+      const matX=centerX-artWidth/2-matThickness;
+      const matY=centerY-artHeight/2-matThickness;
+      const matWidth=artWidth+matThickness*2;
+      const matHeight=artHeight+matThickness*2;
+      const matGradient=context.createLinearGradient(matX,matY,matX+matWidth,matY+matHeight);
+      matGradient.addColorStop(0,'#fffefa');
+      matGradient.addColorStop(.5,'#f1ede5');
+      matGradient.addColorStop(1,'#fbfaf6');
+      context.fillStyle=matGradient;
+      context.fillRect(matX,matY,matWidth,matHeight);
+      context.strokeStyle='rgba(70,60,48,.2)';
+      context.lineWidth=2;
+      context.strokeRect(centerX-artWidth/2-1,centerY-artHeight/2-1,artWidth+2,artHeight+2);
+    }
+
+    context.drawImage(art,centerX-artWidth/2,centerY-artHeight/2,artWidth,artHeight);
+
+    context.fillStyle='rgba(16,13,10,.68)';
+    context.fillRect(0,exportCanvas.height-58,exportCanvas.width,58);
+    context.fillStyle='rgba(255,255,255,.88)';
+    context.font='22px Arial, sans-serif';
+    context.textAlign='left';
+    context.fillText('Dan Sproul Fine Art Photography',28,exportCanvas.height-22);
+    context.fillStyle='rgba(255,255,255,.66)';
+    context.font='16px Arial, sans-serif';
+    context.textAlign='right';
+    context.fillText('Room preview for visualization only',exportCanvas.width-28,exportCanvas.height-23);
+
+    exportCanvas.toBlob(blob=>{
+      if(!blob){
+        status.textContent='The preview could not be saved in this browser.';
+        return;
+      }
+      const url=URL.createObjectURL(blob);
+      const link=document.createElement('a');
+      const safeTitle=(title.textContent||'art-preview').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+      link.href=url;
+      link.download=(safeTitle||'dan-sproul-art-preview')+'-room-preview.jpg';
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      setTimeout(()=>URL.revokeObjectURL(url),1200);
+      status.textContent='Your room preview has been saved to your device.';
+    },'image/jpeg',.93);
+  }
+
+  async function copyPreviewLink(){const value=currentPreviewArtwork.url||window.location.href;try{await navigator.clipboard.writeText(value)}catch(error){const area=document.createElement('textarea');area.value=value;document.body.appendChild(area);area.select();document.execCommand('copy');area.remove()}shareStatus.textContent='Artwork link copied.'}
+  sharePreviewBtn.addEventListener('click',async()=>{const data={title:`${currentPreviewArtwork.title||'Dan Sproul artwork'} room preview`,text:`See how ${currentPreviewArtwork.title||'this Dan Sproul artwork'} could look in a room. Save the room preview JPG to share the visual.`,url:currentPreviewArtwork.url||window.location.href};if(navigator.share){try{await navigator.share(data);shareStatus.textContent='Share menu opened.'}catch(error){if(error.name!=='AbortError')shareStatus.textContent='Sharing was unavailable. Save the JPG or copy the artwork link.'}}else copyPreviewLink()});
+  copyArtworkLinkBtn.addEventListener('click',copyPreviewLink);
+  emailPreviewBtn.addEventListener('click',()=>{const subject=encodeURIComponent(`Room preview idea — ${currentPreviewArtwork.title||'Dan Sproul artwork'}`),body=encodeURIComponent(`I wanted to share this artwork idea for the room.\n\n${currentPreviewArtwork.title||''}\n${currentPreviewArtwork.url||window.location.href}\n\nThe saved room preview JPG can be attached to this message.`);window.location.href=`mailto:?subject=${subject}&body=${body}`});
+  save.addEventListener('click',createSavedPreview);
+
   position();
 })();
 </script>
