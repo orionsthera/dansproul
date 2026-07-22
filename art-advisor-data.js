@@ -1,4 +1,11 @@
-[
+/**
+ * DAN SPROUL ART ADVISOR — CURATED ARTWORK CATALOG
+ *
+ * Metadata audited and expanded July 2026.
+ * IMPORTANT: This file must retain the line beginning
+ * window.ART_ADVISOR_ARTWORKS =
+ */
+window.ART_ADVISOR_ARTWORKS = [
   {
     "title": "Lake Louise Vertical Sunrise Reflection",
     "image": "lake-louise-vertical-sunrise-reflection-dan-sproul.jpg",
@@ -28,13 +35,13 @@
     "styles": [
       "modern",
       "transitional",
-      "coastal",
       "traditional"
     ],
     "walls": [
       "vertical",
       "console",
-      "feature"
+      "feature",
+      "unsure"
     ],
     "frames": [
       "Thin matte black",
@@ -65,7 +72,6 @@
     ],
     "energy": 4,
     "rooms": [
-      "living",
       "office",
       "dining",
       "entry"
@@ -73,13 +79,11 @@
     "styles": [
       "modern",
       "traditional",
-      "rustic",
       "eclectic"
     ],
     "walls": [
       "sofa",
-      "feature",
-      "console"
+      "feature"
     ],
     "frames": [
       "Thin matte black",
@@ -122,7 +126,8 @@
       "sofa",
       "bed",
       "console",
-      "feature"
+      "feature",
+      "unsure"
     ],
     "frames": [
       "Thin matte black",
@@ -198,8 +203,7 @@
     "rooms": [
       "living",
       "dining",
-      "bedroom",
-      "whole"
+      "bedroom"
     ],
     "styles": [
       "rustic",
@@ -245,13 +249,13 @@
     ],
     "styles": [
       "coastal",
-      "modern",
-      "transitional"
+      "transitional",
+      "modern"
     ],
     "walls": [
       "vertical",
       "console",
-      "feature"
+      "unsure"
     ],
     "frames": [
       "White oak",
@@ -287,15 +291,15 @@
       "whole"
     ],
     "styles": [
-      "modern",
+      "traditional",
       "transitional",
-      "traditional"
+      "rustic"
     ],
     "walls": [
       "sofa",
       "bed",
       "console",
-      "feature"
+      "unsure"
     ],
     "frames": [
       "Thin matte black",
@@ -329,20 +333,19 @@
       "living",
       "dining",
       "bedroom",
-      "entry",
-      "whole"
+      "entry"
     ],
     "styles": [
-      "traditional",
       "transitional",
-      "rustic",
-      "eclectic"
+      "traditional",
+      "rustic"
     ],
     "walls": [
       "sofa",
       "bed",
       "console",
-      "feature"
+      "feature",
+      "unsure"
     ],
     "frames": [
       "Natural oak",
@@ -378,15 +381,14 @@
       "office"
     ],
     "styles": [
-      "modern",
-      "transitional",
       "rustic",
+      "transitional",
       "eclectic"
     ],
     "walls": [
       "vertical",
-      "feature",
-      "console"
+      "console",
+      "feature"
     ],
     "frames": [
       "Thin matte black",
@@ -429,12 +431,13 @@
       "modern"
     ],
     "walls": [
-      "console",
       "vertical",
-      "feature"
+      "console",
+      "feature",
+      "sofa"
     ],
     "frames": [
-      "Matte black",
+      "Thin matte black",
       "Dark walnut",
       "Warm walnut"
     ],
@@ -468,15 +471,15 @@
       "whole"
     ],
     "styles": [
+      "transitional",
       "rustic",
-      "traditional",
-      "transitional"
+      "traditional"
     ],
     "walls": [
       "sofa",
       "bed",
       "console",
-      "feature"
+      "unsure"
     ],
     "frames": [
       "Warm walnut",
@@ -510,9 +513,8 @@
     "energy": 3,
     "rooms": [
       "living",
-      "bedroom",
       "office",
-      "whole"
+      "entry"
     ],
     "styles": [
       "modern",
@@ -554,7 +556,8 @@
     "rooms": [
       "living",
       "bedroom",
-      "office"
+      "office",
+      "whole"
     ],
     "styles": [
       "transitional",
@@ -565,7 +568,7 @@
       "sofa",
       "bed",
       "console",
-      "feature"
+      "unsure"
     ],
     "frames": [
       "Warm walnut",
@@ -602,7 +605,6 @@
     "styles": [
       "modern",
       "traditional",
-      "rustic",
       "eclectic"
     ],
     "walls": [
@@ -615,7 +617,7 @@
       "Dark walnut"
     ],
     "reason": "The intimate wildlife moment feels personal and memorable, while monochrome treatment keeps it composed and versatile.",
-    "group": "Wildlife"
+    "group": "Wildlife Focus"
   },
   {
     "title": "Mount Massive Wilderness in Fall",
@@ -639,8 +641,7 @@
     "rooms": [
       "living",
       "dining",
-      "office",
-      "whole"
+      "office"
     ],
     "styles": [
       "rustic",
@@ -649,6 +650,7 @@
     ],
     "walls": [
       "sofa",
+      "bed",
       "console",
       "feature"
     ],
@@ -687,7 +689,6 @@
     "styles": [
       "rustic",
       "traditional",
-      "eclectic",
       "transitional"
     ],
     "walls": [
@@ -726,18 +727,15 @@
     "rooms": [
       "living",
       "dining",
-      "bedroom",
       "entry"
     ],
     "styles": [
       "coastal",
-      "modern",
       "transitional",
-      "eclectic"
+      "modern"
     ],
     "walls": [
       "sofa",
-      "bed",
       "console",
       "feature"
     ],
@@ -779,12 +777,10 @@
     "styles": [
       "rustic",
       "traditional",
-      "transitional",
-      "modern"
+      "transitional"
     ],
     "walls": [
       "sofa",
-      "console",
       "feature"
     ],
     "frames": [
@@ -835,7 +831,7 @@
       "Natural oak"
     ],
     "reason": "The quiet bond between moose and calf introduces warmth, story, and unmistakable wildlife character.",
-    "group": "Wildlife"
+    "group": "Wildlife Focus"
   },
   {
     "title": "Canadian Mountain Magic",
@@ -872,7 +868,7 @@
       "sofa",
       "bed",
       "console",
-      "feature"
+      "unsure"
     ],
     "frames": [
       "Thin matte black",
@@ -917,10 +913,10 @@
     ],
     "frames": [
       "Dark walnut",
-      "Matte black"
+      "Thin matte black"
     ],
     "reason": "The close elk portrait brings strength and presence to an office, lodge-inspired room, or memorable feature wall.",
-    "group": "Wildlife"
+    "group": "Wildlife Focus"
   },
   {
     "title": "Cow Moose in Field",
@@ -954,15 +950,15 @@
     ],
     "walls": [
       "sofa",
-      "console",
-      "feature"
+      "bed",
+      "console"
     ],
     "frames": [
       "Natural oak",
       "Warm walnut"
     ],
     "reason": "A relaxed wildlife portrait offers personality without overpowering the room, especially in natural and lodge-inspired interiors.",
-    "group": "Wildlife"
+    "group": "Wildlife Focus"
   },
   {
     "title": "Pemaquid Point Lighthouse Maine Sunrise",
@@ -988,18 +984,15 @@
     "rooms": [
       "living",
       "dining",
-      "entry",
-      "bedroom"
+      "entry"
     ],
     "styles": [
       "coastal",
-      "traditional",
       "transitional",
-      "eclectic"
+      "traditional"
     ],
     "walls": [
       "sofa",
-      "bed",
       "console",
       "feature"
     ],
@@ -1019,8 +1012,7 @@
     "orientation": "landscape",
     "directions": [
       "retreat",
-      "refined",
-      "statement"
+      "refined"
     ],
     "moods": [
       "calm",
@@ -1040,9 +1032,9 @@
       "entry"
     ],
     "styles": [
-      "modern",
-      "traditional",
-      "transitional"
+      "coastal",
+      "transitional",
+      "traditional"
     ],
     "walls": [
       "sofa",
@@ -1065,7 +1057,8 @@
     "orientation": "landscape",
     "directions": [
       "statement",
-      "refined"
+      "refined",
+      "wildlife"
     ],
     "moods": [
       "dramatic",
@@ -1078,7 +1071,6 @@
     ],
     "energy": 5,
     "rooms": [
-      "living",
       "office",
       "dining",
       "entry"
@@ -1090,14 +1082,13 @@
     ],
     "walls": [
       "sofa",
-      "console",
       "feature"
     ],
     "frames": [
       "Thin matte black"
     ],
     "reason": "Selective yellow against a monochrome skyline creates a graphic, architectural statement for urban and modern interiors.",
-    "group": "Statement"
+    "group": "Urban & Architectural"
   },
   {
     "title": "Fall Reflections Beaver Pond",
@@ -1122,19 +1113,19 @@
     "rooms": [
       "living",
       "dining",
-      "bedroom",
-      "whole"
+      "bedroom"
     ],
     "styles": [
+      "rustic",
       "traditional",
-      "transitional",
-      "rustic"
+      "transitional"
     ],
     "walls": [
       "sofa",
       "bed",
       "console",
-      "feature"
+      "feature",
+      "unsure"
     ],
     "frames": [
       "Warm walnut",
@@ -1166,19 +1157,19 @@
     "rooms": [
       "living",
       "dining",
-      "bedroom",
-      "whole"
+      "bedroom"
     ],
     "styles": [
+      "rustic",
       "traditional",
-      "transitional",
-      "rustic"
+      "transitional"
     ],
     "walls": [
       "sofa",
       "bed",
       "console",
-      "feature"
+      "feature",
+      "unsure"
     ],
     "frames": [
       "Warm walnut",
@@ -1257,10 +1248,9 @@
       "whole"
     ],
     "styles": [
-      "traditional",
-      "transitional",
       "rustic",
-      "modern"
+      "traditional",
+      "transitional"
     ],
     "walls": [
       "sofa",
@@ -1299,19 +1289,18 @@
     "rooms": [
       "living",
       "bedroom",
-      "office",
-      "whole"
+      "office"
     ],
     "styles": [
       "modern",
       "transitional",
-      "rustic",
-      "coastal"
+      "rustic"
     ],
     "walls": [
       "sofa",
       "bed",
-      "feature"
+      "feature",
+      "unsure"
     ],
     "frames": [
       "Thin matte black",
@@ -1328,7 +1317,8 @@
     "orientation": "vertical",
     "directions": [
       "statement",
-      "escape"
+      "escape",
+      "wildlife"
     ],
     "moods": [
       "dramatic",
@@ -1341,7 +1331,6 @@
     "energy": 5,
     "rooms": [
       "living",
-      "bedroom",
       "entry",
       "office"
     ],
@@ -1352,8 +1341,8 @@
     ],
     "walls": [
       "vertical",
-      "feature",
-      "console"
+      "console",
+      "feature"
     ],
     "frames": [
       "Thin matte black",
@@ -1386,17 +1375,15 @@
     "rooms": [
       "living",
       "dining",
-      "bedroom",
       "entry"
     ],
     "styles": [
       "eclectic",
       "traditional",
-      "coastal"
+      "modern"
     ],
     "walls": [
       "sofa",
-      "console",
       "feature"
     ],
     "frames": [
@@ -1415,7 +1402,8 @@
     "orientation": "vertical",
     "directions": [
       "statement",
-      "refined"
+      "refined",
+      "wildlife"
     ],
     "moods": [
       "personal",
@@ -1430,13 +1418,12 @@
     "rooms": [
       "entry",
       "office",
-      "living",
       "dining"
     ],
     "styles": [
       "eclectic",
-      "traditional",
       "coastal",
+      "traditional",
       "modern"
     ],
     "walls": [
@@ -1475,18 +1462,15 @@
     "rooms": [
       "living",
       "dining",
-      "bedroom",
       "entry"
     ],
     "styles": [
       "coastal",
-      "modern",
-      "transitional"
+      "transitional",
+      "modern"
     ],
     "walls": [
       "sofa",
-      "bed",
-      "console",
       "feature"
     ],
     "frames": [
@@ -1529,7 +1513,7 @@
     "walls": [
       "vertical",
       "console",
-      "feature"
+      "unsure"
     ],
     "frames": [
       "Thin matte black",
@@ -1565,13 +1549,14 @@
     ],
     "styles": [
       "coastal",
-      "modern",
-      "transitional"
+      "transitional",
+      "modern"
     ],
     "walls": [
       "vertical",
       "console",
-      "feature"
+      "feature",
+      "unsure"
     ],
     "frames": [
       "White oak",
@@ -1608,16 +1593,15 @@
       "whole"
     ],
     "styles": [
-      "coastal",
-      "traditional",
       "rustic",
+      "traditional",
       "transitional"
     ],
     "walls": [
       "sofa",
       "bed",
       "console",
-      "feature"
+      "unsure"
     ],
     "frames": [
       "Natural oak",
@@ -1650,20 +1634,18 @@
       "bedroom",
       "living",
       "office",
-      "entry",
       "whole"
     ],
     "styles": [
-      "modern",
-      "traditional",
       "transitional",
-      "rustic"
+      "traditional",
+      "modern"
     ],
     "walls": [
       "sofa",
       "bed",
       "console",
-      "feature"
+      "unsure"
     ],
     "frames": [
       "White oak",
@@ -1702,16 +1684,15 @@
       "whole"
     ],
     "styles": [
+      "modern",
       "transitional",
-      "traditional",
-      "rustic",
-      "modern"
+      "rustic"
     ],
     "walls": [
       "sofa",
       "bed",
       "console",
-      "feature"
+      "unsure"
     ],
     "frames": [
       "Warm walnut",
@@ -1752,7 +1733,6 @@
     "styles": [
       "rustic",
       "traditional",
-      "eclectic",
       "transitional"
     ],
     "walls": [
@@ -1766,7 +1746,7 @@
       "Warm walnut"
     ],
     "reason": "The close wildlife presence, oversized antlers, and vivid autumn foliage create an unmistakable statement for rooms that need character and energy.",
-    "group": "Wildlife & Statement"
+    "group": "Wildlife Focus"
   },
   {
     "title": "Autumn Aspen Leaves in Colorado",
@@ -1793,19 +1773,16 @@
       "living",
       "bedroom",
       "dining",
-      "entry",
-      "whole"
+      "entry"
     ],
     "styles": [
-      "traditional",
-      "transitional",
       "rustic",
-      "eclectic"
+      "traditional",
+      "transitional"
     ],
     "walls": [
       "vertical",
       "console",
-      "bed",
       "feature"
     ],
     "frames": [
@@ -1845,15 +1822,16 @@
       "whole"
     ],
     "styles": [
-      "modern",
+      "coastal",
       "transitional",
-      "coastal"
+      "modern"
     ],
     "walls": [
       "sofa",
       "bed",
       "console",
-      "feature"
+      "feature",
+      "unsure"
     ],
     "frames": [
       "Thin matte black",
@@ -1892,13 +1870,13 @@
     ],
     "styles": [
       "modern",
-      "rustic",
       "traditional",
       "eclectic"
     ],
     "walls": [
-      "feature",
+      "vertical",
       "console",
+      "feature",
       "sofa"
     ],
     "frames": [
@@ -1906,7 +1884,7 @@
       "Dark walnut"
     ],
     "reason": "The graphic black-and-white treatment and powerful bear profile create a bold, sculptural presence suited to rooms that need a memorable focal point.",
-    "group": "Wildlife & Statement"
+    "group": "Wildlife Focus"
   },
   {
     "title": "Bear Cub on Spring Tree Cades Cove",
@@ -1932,20 +1910,17 @@
     "rooms": [
       "living",
       "bedroom",
-      "entry",
-      "office"
+      "entry"
     ],
     "styles": [
       "rustic",
       "traditional",
-      "transitional",
-      "eclectic"
+      "transitional"
     ],
     "walls": [
-      "feature",
+      "vertical",
       "console",
-      "sofa",
-      "bed"
+      "feature"
     ],
     "frames": [
       "Natural oak",
@@ -1953,7 +1928,7 @@
       "Thin matte black"
     ],
     "reason": "Backlit spring foliage and the curious young bear create an uplifting wildlife image with personality, warmth, and a gentle sense of wonder.",
-    "group": "Wildlife"
+    "group": "Wildlife Focus"
   },
   {
     "title": "Roaring Fork Motor Nature Trail Cascades",
@@ -1983,15 +1958,13 @@
       "whole"
     ],
     "styles": [
-      "modern",
       "transitional",
       "rustic",
       "traditional"
     ],
     "walls": [
       "vertical",
-      "console",
-      "feature"
+      "console"
     ],
     "frames": [
       "Natural walnut",
@@ -2026,14 +1999,12 @@
     "rooms": [
       "entry",
       "living",
-      "office",
-      "dining"
+      "office"
     ],
     "styles": [
       "coastal",
       "traditional",
-      "transitional",
-      "modern"
+      "transitional"
     ],
     "walls": [
       "vertical",
@@ -2057,7 +2028,7 @@
     "directions": [
       "statement",
       "warmth",
-      "personal"
+      "wildlife"
     ],
     "moods": [
       "bright",
@@ -2071,7 +2042,6 @@
     ],
     "energy": 4,
     "rooms": [
-      "living",
       "dining",
       "entry",
       "office"
@@ -2079,7 +2049,6 @@
     "styles": [
       "eclectic",
       "traditional",
-      "transitional",
       "coastal"
     ],
     "walls": [
@@ -2124,9 +2093,8 @@
     ],
     "styles": [
       "modern",
-      "traditional",
       "transitional",
-      "coastal"
+      "traditional"
     ],
     "walls": [
       "vertical",
@@ -2173,9 +2141,8 @@
     ],
     "walls": [
       "vertical",
-      "bed",
       "console",
-      "feature"
+      "unsure"
     ],
     "frames": [
       "Thin matte black",
@@ -2214,9 +2181,8 @@
       "dining"
     ],
     "styles": [
-      "traditional",
       "rustic",
-      "modern",
+      "traditional",
       "eclectic"
     ],
     "walls": [
@@ -2257,14 +2223,12 @@
     "rooms": [
       "office",
       "entry",
-      "living",
-      "dining"
+      "living"
     ],
     "styles": [
       "rustic",
       "traditional",
-      "eclectic",
-      "modern"
+      "transitional"
     ],
     "walls": [
       "vertical",
@@ -2306,10 +2270,9 @@
       "dining"
     ],
     "styles": [
-      "modern",
-      "rustic",
       "transitional",
-      "eclectic"
+      "modern",
+      "rustic"
     ],
     "walls": [
       "sofa",
@@ -2347,7 +2310,6 @@
     ],
     "energy": 4,
     "rooms": [
-      "bedroom",
       "living",
       "dining",
       "entry"
@@ -2355,13 +2317,13 @@
     "styles": [
       "modern",
       "transitional",
-      "rustic",
-      "coastal"
+      "rustic"
     ],
     "walls": [
-      "bed",
+      "vertical",
       "console",
-      "feature"
+      "feature",
+      "sofa"
     ],
     "frames": [
       "White oak",
@@ -2401,8 +2363,8 @@
     ],
     "styles": [
       "rustic",
-      "eclectic",
       "traditional",
+      "eclectic",
       "modern"
     ],
     "walls": [
@@ -2412,7 +2374,7 @@
     ],
     "frames": [
       "Dark walnut",
-      "Matte black",
+      "Thin matte black",
       "Warm walnut"
     ],
     "reason": "Layered fox imagery and warm woodland texture create a symbolic conversation piece with personality, movement, and rich color.",
@@ -2445,13 +2407,13 @@
     ],
     "styles": [
       "modern",
-      "eclectic",
-      "rustic"
+      "rustic",
+      "transitional"
     ],
     "walls": [
       "vertical",
-      "feature",
-      "console"
+      "console",
+      "feature"
     ],
     "frames": [
       "Thin matte black",
@@ -2479,8 +2441,7 @@
     "palettes": [
       "cool",
       "warm",
-      "neutral",
-      "color"
+      "neutral"
     ],
     "energy": 2,
     "rooms": [
@@ -2491,13 +2452,12 @@
     ],
     "styles": [
       "coastal",
-      "traditional",
-      "transitional"
+      "transitional",
+      "traditional"
     ],
     "walls": [
       "vertical",
-      "console",
-      "feature"
+      "console"
     ],
     "frames": [
       "White oak",
@@ -2535,13 +2495,13 @@
     ],
     "styles": [
       "modern",
-      "traditional",
-      "coastal"
+      "coastal",
+      "traditional"
     ],
     "walls": [
       "vertical",
-      "feature",
-      "console"
+      "console",
+      "feature"
     ],
     "frames": [
       "Thin matte black",
@@ -2576,23 +2536,21 @@
     "rooms": [
       "entry",
       "office",
-      "living",
       "dining"
     ],
     "styles": [
-      "eclectic",
+      "rustic",
       "traditional",
-      "rustic"
+      "eclectic"
     ],
     "walls": [
-      "console",
-      "feature",
-      "sofa"
+      "sofa",
+      "feature"
     ],
     "frames": [
       "Natural oak",
       "Warm walnut",
-      "Matte black"
+      "Thin matte black"
     ],
     "reason": "The vibrant cardinal layered over a vintage Ohio map gives this piece strong local identity and a colorful heritage feel.",
     "group": "Heritage & Statement"
@@ -2626,14 +2584,12 @@
     "styles": [
       "transitional",
       "rustic",
-      "traditional",
-      "modern"
+      "traditional"
     ],
     "walls": [
       "vertical",
-      "bed",
       "console",
-      "feature"
+      "unsure"
     ],
     "frames": [
       "White oak",
@@ -2662,8 +2618,7 @@
     "palettes": [
       "cool",
       "warm",
-      "neutral",
-      "color"
+      "neutral"
     ],
     "energy": 2,
     "rooms": [
@@ -2675,14 +2630,14 @@
     "styles": [
       "modern",
       "transitional",
-      "rustic",
-      "traditional"
+      "rustic"
     ],
     "walls": [
       "sofa",
       "bed",
       "console",
-      "feature"
+      "feature",
+      "unsure"
     ],
     "frames": [
       "White oak",
@@ -2727,7 +2682,8 @@
       "sofa",
       "bed",
       "console",
-      "feature"
+      "feature",
+      "unsure"
     ],
     "frames": [
       "Thin matte black",
@@ -2735,7 +2691,7 @@
       "White oak"
     ],
     "reason": "Muted mountain tones and mirror-still water create a deeply quiet focal point with a soft, contemplative presence.",
-    "group": "Quiet Reflection"
+    "group": "Quiet Retreat"
   },
   {
     "title": "John Seigenthaler Pedestrian Bridge",
@@ -2745,7 +2701,8 @@
     "orientation": "landscape",
     "directions": [
       "refined",
-      "statement"
+      "statement",
+      "wildlife"
     ],
     "moods": [
       "dramatic",
@@ -2758,7 +2715,6 @@
     "energy": 4,
     "rooms": [
       "office",
-      "living",
       "entry",
       "dining"
     ],
@@ -2777,7 +2733,7 @@
       "Dark walnut"
     ],
     "reason": "Strong linear perspective and crisp black-and-white contrast make this a polished architectural piece with clear urban sophistication.",
-    "group": "Urban Monochrome"
+    "group": "Urban & Architectural"
   },
   {
     "title": "Mother and Baby Pronghorn Yellowstone",
@@ -2813,8 +2769,7 @@
     ],
     "walls": [
       "vertical",
-      "console",
-      "feature"
+      "console"
     ],
     "frames": [
       "Natural walnut",
@@ -2822,7 +2777,7 @@
       "Weathered gray"
     ],
     "reason": "The tender wildlife moment adds heart and connection, making it especially appealing for more personal and welcoming rooms.",
-    "group": "Wildlife Connection"
+    "group": "Wildlife Focus"
   },
   {
     "title": "Magical Summer Sunrise Lima Ohio",
@@ -2848,7 +2803,6 @@
     "rooms": [
       "living",
       "bedroom",
-      "entry",
       "whole"
     ],
     "styles": [
@@ -2860,7 +2814,7 @@
       "sofa",
       "bed",
       "console",
-      "feature"
+      "unsure"
     ],
     "frames": [
       "Dark walnut",
@@ -2868,7 +2822,7 @@
       "Natural maple"
     ],
     "reason": "Golden light, low mist, and an intimate regional feel create a comforting scene that brings warmth without overpowering a room.",
-    "group": "Golden Morning"
+    "group": "Quiet Morning"
   },
   {
     "title": "Cedar Cliff Falls Morning Light",
@@ -2897,14 +2851,13 @@
       "office"
     ],
     "styles": [
-      "transitional",
       "rustic",
-      "coastal"
+      "transitional",
+      "traditional"
     ],
     "walls": [
       "vertical",
-      "console",
-      "feature"
+      "console"
     ],
     "frames": [
       "White oak",
@@ -2912,7 +2865,7 @@
       "Thin matte black"
     ],
     "reason": "Fresh greens and the gentle waterfall shape create a restorative vertical composition that feels naturally refreshing.",
-    "group": "Forest Water"
+    "group": "Quiet Waters"
   },
   {
     "title": "Yellow Springs Waterfall Ohio",
@@ -2936,19 +2889,19 @@
     "energy": 2,
     "rooms": [
       "living",
-      "entry",
       "office",
       "whole"
     ],
     "styles": [
-      "transitional",
       "rustic",
-      "traditional"
+      "traditional",
+      "transitional"
     ],
     "walls": [
       "sofa",
+      "bed",
       "console",
-      "feature"
+      "unsure"
     ],
     "frames": [
       "White oak",
@@ -2956,7 +2909,7 @@
       "Thin matte black"
     ],
     "reason": "A classic waterfall scene with natural greens and layered depth offers a versatile, easy-to-live-with landscape.",
-    "group": "Waterfall Escape"
+    "group": "Quiet Waters"
   },
   {
     "title": "Autumn Beginnings Wyoming Landscape",
@@ -2978,22 +2931,24 @@
       "neutral",
       "color"
     ],
-    "energy": 2,
+    "energy": 3,
     "rooms": [
       "living",
-      "office",
       "bedroom",
+      "office",
       "dining"
     ],
     "styles": [
-      "transitional",
       "rustic",
-      "traditional"
+      "traditional",
+      "transitional"
     ],
     "walls": [
       "sofa",
+      "bed",
       "console",
-      "feature"
+      "feature",
+      "unsure"
     ],
     "frames": [
       "Natural walnut",
@@ -3001,7 +2956,7 @@
       "Natural maple"
     ],
     "reason": "Soft autumn grasses and wide-open Wyoming space create a grounded, elegant landscape with gentle seasonal warmth.",
-    "group": "Autumn Plains"
+    "group": "Autumn Warmth"
   },
   {
     "title": "Autumn in the Smokies Landscape",
@@ -3036,8 +2991,8 @@
     ],
     "walls": [
       "sofa",
-      "feature",
-      "console"
+      "console",
+      "feature"
     ],
     "frames": [
       "Dark walnut",
@@ -3045,7 +3000,7 @@
       "Thin matte black"
     ],
     "reason": "Layered fog and vivid fall color give this mountain view a richer seasonal presence for rooms that want a stronger landscape statement.",
-    "group": "Autumn Atmosphere"
+    "group": "Autumn Warmth"
   },
   {
     "title": "Okaloosa Pier Pastel Sunrise",
@@ -3076,13 +3031,14 @@
     ],
     "styles": [
       "coastal",
-      "modern",
-      "transitional"
+      "transitional",
+      "modern"
     ],
     "walls": [
       "vertical",
       "console",
-      "feature"
+      "feature",
+      "unsure"
     ],
     "frames": [
       "White oak",
@@ -3090,7 +3046,7 @@
       "Thin matte black"
     ],
     "reason": "Soft pastel sky and a distant pier create an airy coastal mood with very little visual noise, ideal for calm spaces.",
-    "group": "Coastal Pastel"
+    "group": "Coastal Living"
   },
   {
     "title": "Badlands View Starry Sky",
@@ -3100,7 +3056,8 @@
     "orientation": "landscape",
     "directions": [
       "statement",
-      "escape"
+      "escape",
+      "wildlife"
     ],
     "moods": [
       "dramatic",
@@ -3113,8 +3070,8 @@
     ],
     "energy": 5,
     "rooms": [
-      "office",
       "living",
+      "office",
       "entry"
     ],
     "styles": [
@@ -3124,14 +3081,604 @@
     ],
     "walls": [
       "sofa",
-      "feature",
-      "console"
+      "console",
+      "feature"
     ],
     "frames": [
       "Thin matte black",
       "Dark walnut"
     ],
     "reason": "The sweeping star trails and sculptural night landscape create a memorable focal point with cinematic drama and depth.",
-    "group": "Night Sky Wonder"
+    "group": "Night & Wonder"
+  },
+  {
+    "title": "Grand Teton Colter Bay Sunset",
+    "image": "grand-teton-colter-bay-sunset-dan-sproul.jpg",
+    "url": "https://dansproul.com/featured/grand-teton-colter-bay-sunset-dan-sproul.html",
+    "type": "photography",
+    "orientation": "landscape",
+    "directions": [
+      "warmth",
+      "escape",
+      "statement"
+    ],
+    "moods": [
+      "warm",
+      "dramatic",
+      "refined"
+    ],
+    "palettes": [
+      "warm",
+      "dark",
+      "color"
+    ],
+    "energy": 4,
+    "rooms": [
+      "living",
+      "dining",
+      "office",
+      "entry"
+    ],
+    "styles": [
+      "modern",
+      "transitional",
+      "rustic"
+    ],
+    "walls": [
+      "sofa",
+      "console",
+      "feature"
+    ],
+    "frames": [
+      "Dark walnut",
+      "Thin matte black",
+      "Natural walnut"
+    ],
+    "reason": "Golden light across the water and mountain silhouettes create a strong, atmospheric focal point with both warmth and scale.",
+    "group": "Golden Mountain Light"
+  },
+  {
+    "title": "Morning Minimalism",
+    "image": "morning-minimalism-dan-sproul.jpg",
+    "url": "https://dansproul.com/featured/morning-minimalism-dan-sproul.html",
+    "type": "photography",
+    "orientation": "vertical",
+    "directions": [
+      "retreat",
+      "refined"
+    ],
+    "moods": [
+      "calm",
+      "refined",
+      "warm"
+    ],
+    "palettes": [
+      "warm",
+      "neutral",
+      "dark"
+    ],
+    "energy": 1,
+    "rooms": [
+      "bedroom",
+      "entry",
+      "office",
+      "whole"
+    ],
+    "styles": [
+      "modern",
+      "transitional",
+      "traditional"
+    ],
+    "walls": [
+      "vertical",
+      "console",
+      "feature",
+      "unsure"
+    ],
+    "frames": [
+      "Thin matte black",
+      "White oak",
+      "Natural maple"
+    ],
+    "reason": "A single silhouetted tree and generous negative space create a quiet, meditative image for rooms that benefit from simplicity.",
+    "group": "Minimal Stillness"
+  },
+  {
+    "title": "Dreamy Cannon Beach Seastacks from Ecola State Park",
+    "image": "dreamy-cannon-beach-seastacks-from-ecola-state-park-dan-sproul.jpg",
+    "url": "https://dansproul.com/featured/dreamy-cannon-beach-seastacks-from-ecola-state-park-dan-sproul.html",
+    "type": "photography",
+    "orientation": "landscape",
+    "directions": [
+      "retreat",
+      "escape",
+      "warmth"
+    ],
+    "moods": [
+      "calm",
+      "warm",
+      "refined"
+    ],
+    "palettes": [
+      "warm",
+      "cool",
+      "neutral"
+    ],
+    "energy": 2,
+    "rooms": [
+      "living",
+      "bedroom",
+      "office",
+      "whole"
+    ],
+    "styles": [
+      "coastal",
+      "transitional",
+      "modern",
+      "rustic"
+    ],
+    "walls": [
+      "sofa",
+      "bed",
+      "console",
+      "feature"
+    ],
+    "frames": [
+      "White oak",
+      "Natural walnut",
+      "Thin matte black"
+    ],
+    "reason": "Soft coastal light, open grass, and distant sea stacks create an easy sense of escape with understated warmth.",
+    "group": "Coastal Calm"
+  },
+  {
+    "title": "Independence Mine Alaska Panorama",
+    "image": "independence-mine-alaska-panorama-dan-sproul.jpg",
+    "url": "https://dansproul.com/featured/independence-mine-alaska-panorama-dan-sproul.html",
+    "type": "photography",
+    "orientation": "panoramic",
+    "directions": [
+      "escape",
+      "refined",
+      "statement"
+    ],
+    "moods": [
+      "refined",
+      "dramatic",
+      "bright"
+    ],
+    "palettes": [
+      "cool",
+      "neutral",
+      "color"
+    ],
+    "energy": 3,
+    "rooms": [
+      "living",
+      "office",
+      "dining",
+      "entry"
+    ],
+    "styles": [
+      "modern",
+      "rustic",
+      "transitional"
+    ],
+    "walls": [
+      "sofa",
+      "feature"
+    ],
+    "frames": [
+      "Thin matte black",
+      "Natural walnut",
+      "White oak"
+    ],
+    "reason": "The wide alpine landscape and historic mine setting create a distinctive panoramic view with regional character and architectural interest.",
+    "group": "Panoramic Escape"
+  },
+  {
+    "title": "Beautiful Mountain Forest Panorama",
+    "image": "beautiful-mountain-forest-panorama-dan-sproul.jpg",
+    "url": "https://dansproul.com/featured/beautiful-mountain-forest-panorama-dan-sproul.html",
+    "type": "photography",
+    "orientation": "panoramic",
+    "directions": [
+      "escape",
+      "retreat",
+      "refined"
+    ],
+    "moods": [
+      "calm",
+      "bright",
+      "refined"
+    ],
+    "palettes": [
+      "cool",
+      "neutral",
+      "color"
+    ],
+    "energy": 2,
+    "rooms": [
+      "living",
+      "bedroom",
+      "office",
+      "whole"
+    ],
+    "styles": [
+      "modern",
+      "transitional",
+      "rustic"
+    ],
+    "walls": [
+      "sofa",
+      "bed",
+      "feature"
+    ],
+    "frames": [
+      "White oak",
+      "Thin matte black",
+      "Natural walnut"
+    ],
+    "reason": "A broad forest and mountain view brings spaciousness, balance, and a quiet sense of distance to long walls.",
+    "group": "Panoramic Escape"
+  },
+  {
+    "title": "Peyto Lake Canada Rainbow Sky Banff National Park",
+    "image": "peyto-lake-rainbow-dan-sproul.jpg",
+    "url": "https://dansproul.com/featured/peyto-lake-canada-rainbow-sky-banff-national-park-dan-sproul.html",
+    "type": "photography",
+    "orientation": "landscape",
+    "directions": [
+      "statement",
+      "escape"
+    ],
+    "moods": [
+      "bright",
+      "dramatic",
+      "personal"
+    ],
+    "palettes": [
+      "cool",
+      "color"
+    ],
+    "energy": 5,
+    "rooms": [
+      "living",
+      "entry",
+      "office",
+      "dining"
+    ],
+    "styles": [
+      "modern",
+      "eclectic",
+      "rustic"
+    ],
+    "walls": [
+      "sofa",
+      "console",
+      "feature"
+    ],
+    "frames": [
+      "Thin matte black",
+      "Natural walnut"
+    ],
+    "reason": "A vivid rainbow over turquoise Peyto Lake creates an uplifting statement piece with unmistakable color and mountain drama.",
+    "group": "Color Statement"
+  },
+  {
+    "title": "Country Windmill Textured",
+    "image": "country-windmill-textured-dan-sproul.jpg",
+    "url": "https://dansproul.com/featured/country-windmill-textured-dan-sproul.html",
+    "type": "mixed-media",
+    "orientation": "landscape",
+    "directions": [
+      "warmth",
+      "refined",
+      "personal"
+    ],
+    "moods": [
+      "warm",
+      "calm",
+      "personal"
+    ],
+    "palettes": [
+      "neutral",
+      "warm"
+    ],
+    "energy": 2,
+    "rooms": [
+      "living",
+      "dining",
+      "office",
+      "entry"
+    ],
+    "styles": [
+      "rustic",
+      "traditional",
+      "transitional"
+    ],
+    "walls": [
+      "sofa",
+      "console",
+      "feature",
+      "unsure"
+    ],
+    "frames": [
+      "Weathered gray",
+      "Natural walnut",
+      "White oak"
+    ],
+    "reason": "The isolated windmill and soft vintage texture create a nostalgic rural piece with open space and quiet character.",
+    "group": "Rural Heritage"
+  },
+  {
+    "title": "Rolling Hills Empty Landscape",
+    "image": "rolling-hills-empty-landscape-dan-sproul.jpg",
+    "url": "https://dansproul.com/featured/rolling-hills-empty-landscape-dan-sproul.html",
+    "type": "photography",
+    "orientation": "landscape",
+    "directions": [
+      "retreat",
+      "warmth",
+      "refined"
+    ],
+    "moods": [
+      "calm",
+      "warm",
+      "refined"
+    ],
+    "palettes": [
+      "warm",
+      "neutral",
+      "color"
+    ],
+    "energy": 1,
+    "rooms": [
+      "living",
+      "bedroom",
+      "office",
+      "whole"
+    ],
+    "styles": [
+      "modern",
+      "rustic",
+      "transitional",
+      "traditional"
+    ],
+    "walls": [
+      "sofa",
+      "bed",
+      "console",
+      "feature",
+      "unsure"
+    ],
+    "frames": [
+      "Natural walnut",
+      "White oak",
+      "Thin matte black"
+    ],
+    "reason": "Open prairie, gentle hills, and a simple fence line create a grounded minimalist landscape that gives the eye room to rest.",
+    "group": "Open Horizons"
+  },
+  {
+    "title": "Colorful Moose Pop Art",
+    "image": "colorful-moose-pop-art-dan-sproul.jpg",
+    "url": "https://dansproul.com/featured/colorful-moose-pop-art-dan-sproul.html",
+    "type": "mixed-media",
+    "orientation": "vertical",
+    "directions": [
+      "statement",
+      "wildlife"
+    ],
+    "moods": [
+      "bright",
+      "dramatic",
+      "personal"
+    ],
+    "palettes": [
+      "color",
+      "warm",
+      "cool"
+    ],
+    "energy": 5,
+    "rooms": [
+      "living",
+      "entry",
+      "office",
+      "dining"
+    ],
+    "styles": [
+      "modern",
+      "eclectic"
+    ],
+    "walls": [
+      "vertical",
+      "console",
+      "feature"
+    ],
+    "frames": [
+      "Thin matte black",
+      "White frame"
+    ],
+    "reason": "Bold color, graphic pattern, and a familiar wildlife subject create a playful statement for energetic modern or eclectic interiors.",
+    "group": "Pop Wildlife"
+  },
+  {
+    "title": "Femme Fatale Collage",
+    "image": "femme-fatale-collage-dan-sproul.jpg",
+    "url": "https://dansproul.com/featured/femme-fatale-collage-dan-sproul.html",
+    "type": "mixed-media",
+    "orientation": "vertical",
+    "directions": [
+      "statement",
+      "refined"
+    ],
+    "moods": [
+      "dramatic",
+      "personal",
+      "warm"
+    ],
+    "palettes": [
+      "warm",
+      "color",
+      "neutral"
+    ],
+    "energy": 5,
+    "rooms": [
+      "bedroom",
+      "living",
+      "entry"
+    ],
+    "styles": [
+      "eclectic",
+      "modern",
+      "traditional"
+    ],
+    "walls": [
+      "vertical",
+      "console",
+      "feature"
+    ],
+    "frames": [
+      "Thin matte black",
+      "Warm walnut"
+    ],
+    "reason": "Vintage fashion imagery and layered collage elements create a highly personal, expressive piece with strong retro character.",
+    "group": "Vintage Collage"
+  },
+  {
+    "title": "Lima Ohio Map and City Mixed Media",
+    "image": "lima-ohio-map-and-city-mixed-media-dan-sproul.jpg",
+    "url": "https://dansproul.com/featured/lima-ohio-map-and-city-mixed-media-dan-sproul.html",
+    "type": "mixed-media",
+    "orientation": "landscape",
+    "directions": [
+      "refined",
+      "personal",
+      "statement"
+    ],
+    "moods": [
+      "personal",
+      "refined"
+    ],
+    "palettes": [
+      "neutral",
+      "dark"
+    ],
+    "energy": 3,
+    "rooms": [
+      "office",
+      "entry",
+      "living",
+      "dining"
+    ],
+    "styles": [
+      "traditional",
+      "eclectic",
+      "modern"
+    ],
+    "walls": [
+      "sofa",
+      "console",
+      "feature"
+    ],
+    "frames": [
+      "Thin matte black",
+      "Dark walnut"
+    ],
+    "reason": "Historic map layers and Lima architecture create a locally meaningful work with graphic structure and civic character.",
+    "group": "Ohio Heritage"
+  },
+  {
+    "title": "Cincinnati Ohio Bridge and Map",
+    "image": "cincinnati-ohio-bridge-and-map-dan-sproul.jpg",
+    "url": "https://dansproul.com/featured/cincinnati-ohio-bridge-and-map-dan-sproul.html",
+    "type": "mixed-media",
+    "orientation": "landscape",
+    "directions": [
+      "refined",
+      "statement",
+      "personal"
+    ],
+    "moods": [
+      "refined",
+      "personal",
+      "warm"
+    ],
+    "palettes": [
+      "warm",
+      "neutral",
+      "color"
+    ],
+    "energy": 4,
+    "rooms": [
+      "office",
+      "living",
+      "entry",
+      "dining"
+    ],
+    "styles": [
+      "traditional",
+      "eclectic",
+      "modern"
+    ],
+    "walls": [
+      "sofa",
+      "console",
+      "feature"
+    ],
+    "frames": [
+      "Thin matte black",
+      "Warm walnut",
+      "Natural oak"
+    ],
+    "reason": "Cincinnati architecture, historic typography, and map texture create a polished regional statement with layered urban detail.",
+    "group": "Ohio Heritage"
+  },
+  {
+    "title": "Bison Portrait Vintage Paper",
+    "image": "bison-portrait-vintage-paper-dan-sproul.jpg",
+    "url": "https://dansproul.com/featured/bison-portrait-vintage-paper-dan-sproul.html",
+    "type": "mixed-media",
+    "orientation": "vertical",
+    "directions": [
+      "wildlife",
+      "statement",
+      "refined"
+    ],
+    "moods": [
+      "dramatic",
+      "personal",
+      "refined"
+    ],
+    "palettes": [
+      "neutral",
+      "dark",
+      "warm"
+    ],
+    "energy": 4,
+    "rooms": [
+      "living",
+      "office",
+      "entry",
+      "dining"
+    ],
+    "styles": [
+      "rustic",
+      "traditional",
+      "eclectic"
+    ],
+    "walls": [
+      "vertical",
+      "console",
+      "feature"
+    ],
+    "frames": [
+      "Dark walnut",
+      "Thin matte black",
+      "Weathered gray"
+    ],
+    "reason": "The bison portrait and aged newspaper texture create a substantial heritage piece with strength, history, and restrained color.",
+    "group": "Wildlife Heritage"
   }
-]
+];
