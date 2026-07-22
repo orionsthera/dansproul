@@ -9,7 +9,7 @@
 <meta name="description" content="Use the Art Advisor to discover artwork for your living room, bedroom, dining room, entryway, or home office. Receive personalized size, frame, placement, and mood recommendations."/>
 <link rel="canonical" href="https://dsproul.com/art-advisor.html"/>
 <meta property="og:title" content="Art Advisor — Find Artwork for Your Home"/>
-<meta property="og:description" content="A guided residential artwork consultation with personalized recommendations for mood, size, frame, orientation, and placement."/>
+<meta property="og:description" content="A guided residential artwork consultation with personalized recommendations for feeling, size, frame, orientation, and placement."/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://dsproul.com/art-advisor.html"/>
 <meta name="twitter:card" content="summary_large_image"/>
@@ -136,6 +136,16 @@ body::before{content:"";display:block;height:66px}
 .consultation-note{margin-top:12px;color:var(--muted);font-size:.49rem;line-height:1.6}
 .consultation-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:18px}
 .consultation-status{color:var(--accent);font-size:.5rem;line-height:1.5}
+.consultation-status.success{color:#b8d5a8}
+.consultation-form{position:relative}
+.consultation-honey{position:absolute!important;left:-10000px!important;width:1px!important;height:1px!important;overflow:hidden!important}
+.consultation-field input[type="file"]{padding:9px;background:rgba(255,255,255,.018)}
+.consultation-field input[type="file"]::file-selector-button{margin-right:10px;padding:9px 12px;border:1px solid var(--border-strong);background:rgba(181,146,74,.10);color:var(--off-white);font:inherit;font-size:.5rem;letter-spacing:.12em;text-transform:uppercase;cursor:pointer}
+.consultation-file-help{display:block;color:var(--muted);font-size:.48rem;line-height:1.55}
+.consultation-actions .btn[disabled]{opacity:.55;cursor:wait;transform:none}
+.catalog-error{padding:18px}
+.catalog-error h3{font-family:'Cormorant Garamond',serif;font-size:clamp(1.9rem,4vw,3rem);font-weight:300;line-height:1.08;margin-bottom:14px}
+.catalog-error p:last-child{color:var(--muted-2);font-size:.68rem;line-height:1.8}
 @media(max-width:700px){.consultation-heading,.consultation-grid{grid-template-columns:1fr}.consultation-badge{justify-self:start}}
 
 @media(max-width:700px){.measurement-fields{grid-template-columns:1fr}}
@@ -386,7 +396,7 @@ body.preview-open{overflow:hidden}
   "@type":"WebPage",
   "name":"Art Advisor — Find Artwork for Your Home",
   "url":"https://dsproul.com/art-advisor.html",
-  "description":"A guided residential artwork consultation offering personalized recommendations for mood, design direction, size, orientation, frame, and placement.",
+  "description":"A guided residential artwork consultation offering personalized recommendations for feeling, size, orientation, frame, and placement.",
   "isPartOf":{"@type":"WebSite","name":"Dan Sproul Fine Art Photography","url":"https://dsproul.com"},
   "about":{"@type":"Thing","name":"Residential artwork selection"}
 }
@@ -445,7 +455,7 @@ body.preview-open{overflow:hidden}
       <p>Choose the answers that feel closest. Your selections are scored against a curated library of photography, mixed media, monochrome, and statement pieces rather than being limited by rigid filters.</p>
     </div>
     <div class="progress-wrap">
-      <div class="progress-top"><span id="progressLabel">Question 1 of 8</span><span id="progressPercent">13%</span></div>
+      <div class="progress-top"><span id="progressLabel">Question 1 of 7</span><span id="progressPercent">14%</span></div>
       <div class="progress-track"><div class="progress-bar" id="progressBar"></div></div>
     </div>
     <div class="quiz-card">
@@ -461,14 +471,14 @@ body.preview-open{overflow:hidden}
         </div>
       </div>
       <div class="question" data-question="mood">
-        <p class="question-kicker">The Feeling</p><h3>How should the room feel?</h3><p class="question-sub">Select the emotional effect you want the artwork to create.</p>
+        <p class="question-kicker">The Feeling &amp; Presence</p><h3>How should the artwork change the feeling of your room?</h3><p class="question-sub">Choose the emotional effect and level of character you want. This combines mood and design direction into one decision.</p>
         <div class="option-grid">
-          <button class="option" data-value="calm"><span class="option-icon">01</span><span><strong>Calm & Restorative</strong><small>Soft, open, and visually quiet.</small></span></button>
-          <button class="option" data-value="warm"><span class="option-icon">02</span><span><strong>Warm & Welcoming</strong><small>Comforting color, natural texture, and an inviting presence.</small></span></button>
-          <button class="option" data-value="bright"><span class="option-icon">03</span><span><strong>Bright & Expansive</strong><small>Airy scenes that visually open the room.</small></span></button>
-          <button class="option" data-value="dramatic"><span class="option-icon">04</span><span><strong>Bold & Dramatic</strong><small>High contrast, deeper tones, and unmistakable impact.</small></span></button>
-          <button class="option" data-value="refined"><span class="option-icon">05</span><span><strong>Refined & Sophisticated</strong><small>Controlled color, elegant composition, and quiet confidence.</small></span></button>
-          <button class="option" data-value="personal"><span class="option-icon">06</span><span><strong>Personal & Expressive</strong><small>Character-rich artwork with a distinct point of view.</small></span></button>
+          <button class="option" data-value="calm" data-direction="retreat"><span class="option-icon">01</span><span><strong>A Quiet Retreat</strong><small>Soft, open, restorative artwork that helps the room exhale.</small></span></button>
+          <button class="option" data-value="warm" data-direction="warmth"><span class="option-icon">02</span><span><strong>Warm &amp; Welcoming</strong><small>Inviting natural color, texture, and a comfortable focal point.</small></span></button>
+          <button class="option" data-value="bright" data-direction="escape"><span class="option-icon">03</span><span><strong>Bright &amp; Expansive</strong><small>Airy scenery, distance, and light that visually open the room.</small></span></button>
+          <button class="option" data-value="refined" data-direction="refined"><span class="option-icon">04</span><span><strong>Refined &amp; Sophisticated</strong><small>Controlled color, elegant composition, and quiet confidence.</small></span></button>
+          <button class="option" data-value="dramatic" data-direction="statement"><span class="option-icon">05</span><span><strong>Bold &amp; Memorable</strong><small>Stronger contrast, scale, or color that immediately draws attention.</small></span></button>
+          <button class="option" data-value="personal" data-direction="wildlife"><span class="option-icon">06</span><span><strong>Expressive &amp; Character-Rich</strong><small>Wildlife, heritage, or distinctive imagery with a personal point of view.</small></span></button>
         </div>
       </div>
       <div class="question" data-question="style">
@@ -480,17 +490,6 @@ body.preview-open{overflow:hidden}
           <button class="option" data-value="coastal"><span class="option-icon">C</span><span><strong>Coastal</strong><small>Light palettes, relaxed comfort, and open atmosphere.</small></span></button>
           <button class="option" data-value="traditional"><span class="option-icon">TR</span><span><strong>Traditional</strong><small>Classic forms, layered detail, and enduring character.</small></span></button>
           <button class="option" data-value="eclectic"><span class="option-icon">E</span><span><strong>Collected & Eclectic</strong><small>A more personal room with expressive objects and contrast.</small></span></button>
-        </div>
-      </div>
-      <div class="question" data-question="direction">
-        <p class="question-kicker">The Design Direction</p><h3>What kind of presence feels right for this room?</h3><p class="question-sub">Choose the overall effect you want—not a particular landscape or subject.</p>
-        <div class="option-grid">
-          <button class="option" data-value="retreat"><span class="option-icon">01</span><span><strong>A Quiet Retreat</strong><small>Soft movement, openness, and visual calm that helps the room exhale.</small></span></button>
-          <button class="option" data-value="warmth"><span class="option-icon">02</span><span><strong>Warmth & Welcome</strong><small>Rich natural color and an inviting focal point that makes the room feel lived in.</small></span></button>
-          <button class="option" data-value="refined"><span class="option-icon">03</span><span><strong>Refined Simplicity</strong><small>Controlled contrast, elegant composition, and quiet sophistication.</small></span></button>
-          <button class="option" data-value="statement"><span class="option-icon">04</span><span><strong>A Memorable Statement</strong><small>Stronger contrast, scale, color, or symbolism that immediately draws attention.</small></span></button>
-          <button class="option" data-value="escape"><span class="option-icon">05</span><span><strong>A Sense of Escape</strong><small>Expansive scenery, distance, and wonder that visually opens the room.</small></span></button>
-          <button class="option" data-value="wildlife"><span class="option-icon">06</span><span><strong>Wildlife Character</strong><small>An expressive animal presence suited to a personal, rustic, collected, or conversation-led room.</small></span></button>
         </div>
       </div>
       <div class="question" data-question="wall">
@@ -579,21 +578,40 @@ body.preview-open{overflow:hidden}
     </div>
     <section class="consultation-section" id="askDan">
       <div class="consultation-heading">
-        <div><p class="eyebrow" style="margin-bottom:8px">Personal Artwork Guidance</p><h3>Ask Dan about your room.</h3><p>Send your preferred recommendation, measurements, and questions for a personal second opinion. Your room photo stays on your device unless you attach the saved preview to the email.</p></div>
+        <div><p class="eyebrow" style="margin-bottom:8px">Personal Artwork Guidance</p><h3>Ask Dan about your room.</h3><p>Send your preferred recommendation, measurements, and questions directly from this page for a personal second opinion. No email app is required. Your room photo stays on your device unless you choose to attach a saved preview.</p></div>
         <span class="consultation-badge">No obligation</span>
       </div>
-      <div class="consultation-grid">
-        <div class="consultation-field"><label for="consultName">Name</label><input id="consultName" type="text" autocomplete="name" placeholder="Your name"></div>
-        <div class="consultation-field"><label for="consultEmail">Email</label><input id="consultEmail" type="email" autocomplete="email" placeholder="you@example.com"></div>
-        <div class="consultation-field"><label for="consultArtwork">Artwork to discuss</label><select id="consultArtwork"></select></div>
-        <div class="consultation-field"><label for="consultTiming">Project timing</label><select id="consultTiming"><option>Just exploring</option><option>Within 1 month</option><option>Within 1–3 months</option><option>More than 3 months</option></select></div>
-        <div class="consultation-field full"><label for="consultNotes">Questions or room details</label><textarea id="consultNotes" placeholder="Tell Dan what you are deciding between, where the artwork will hang, colors or finishes in the room, or anything else that would help."></textarea></div>
-      </div>
-      <p class="consultation-note">This opens your email app with the recommendation details filled in. Save the room preview first, then attach the JPG before sending.</p>
-      <div class="consultation-actions"><button class="btn btn-solid" id="askDanBtn" type="button">Prepare Email to Dan</button><button class="btn btn-out" id="saveBeforeEmailBtn" type="button">Open Room Visualizer</button><span class="consultation-status" id="consultationStatus" aria-live="polite"></span></div>
+      <form class="consultation-form" id="consultationForm" action="https://formsubmit.co/dan@dsproul.com" method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="_subject" value="New Art Advisor consultation"/>
+        <input type="hidden" name="_next" value="https://dsproul.com/art-advisor.html?consultation=sent#askDan"/>
+        <input type="hidden" name="_template" value="table"/>
+        <input type="hidden" name="_autoresponse" value="Thank you for using the Dan Sproul Art Advisor. I received your room consultation and will review your recommendations personally. — Dan"/>
+        <input class="consultation-honey" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true"/>
+        <input type="hidden" name="Lead source" value="Art Advisor"/>
+        <input type="hidden" name="Room" id="consultRoomProfile"/>
+        <input type="hidden" name="Artwork feeling" id="consultFeelingProfile"/>
+        <input type="hidden" name="Interior style" id="consultStyleProfile"/>
+        <input type="hidden" name="Color palette" id="consultPaletteProfile"/>
+        <input type="hidden" name="Placement" id="consultPlacementProfile"/>
+        <input type="hidden" name="Measurements" id="consultMeasurementProfile"/>
+        <input type="hidden" name="Recommended size" id="consultSizeProfile"/>
+        <input type="hidden" name="Designer guidance" id="consultTipProfile"/>
+        <input type="hidden" name="Artwork link" id="consultArtworkUrl"/>
+        <input type="hidden" name="Recommendation profile" id="consultRecommendationProfile"/>
+        <div class="consultation-grid">
+          <div class="consultation-field"><label for="consultName">Name</label><input id="consultName" name="Name" type="text" autocomplete="name" placeholder="Your name" required></div>
+          <div class="consultation-field"><label for="consultEmail">Email</label><input id="consultEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com" required></div>
+          <div class="consultation-field"><label for="consultArtwork">Artwork to discuss</label><select id="consultArtwork" name="Artwork to discuss" required></select></div>
+          <div class="consultation-field"><label for="consultTiming">Project timing</label><select id="consultTiming" name="Project timing"><option>Just exploring</option><option>Within 1 month</option><option>Within 1–3 months</option><option>More than 3 months</option></select></div>
+          <div class="consultation-field full"><label for="consultNotes">Questions or room details</label><textarea id="consultNotes" name="Questions and room details" placeholder="Tell Dan what you are deciding between, where the artwork will hang, colors or finishes in the room, or anything else that would help." required></textarea></div>
+          <div class="consultation-field full"><label for="consultAttachment">Optional saved room preview</label><input id="consultAttachment" name="attachment" type="file" accept="image/jpeg,image/png,image/webp"><small class="consultation-file-help">Attach the JPG or PNG saved from the room visualizer. Maximum total attachment size: 10 MB.</small></div>
+        </div>
+        <p class="consultation-note">Your consultation and optional attachment are submitted directly to Dan through a secure form service. You will remain on the Art Advisor after submission.</p>
+        <div class="consultation-actions"><button class="btn btn-solid" id="askDanBtn" type="submit">Send Consultation to Dan</button><button class="btn btn-out" id="saveBeforeEmailBtn" type="button">Open Room Visualizer</button><span class="consultation-status" id="consultationStatus" aria-live="polite"></span></div>
+      </form>
     </section>
     <div class="price-guide"><strong>FAA price guide:</strong> Final pricing changes with artwork size, product type, frame, mat, paper, and current Fine Art America pricing. Based on the configurations reviewed, smaller framed pieces may begin around $110, medium canvas or acrylic presentations may fall around $170–$215, and larger canvas presentations can reach roughly $360 or more. Use these figures only as planning guidance; the linked product page shows the current exact total.</div>
-    <div class="alt-strip"><p><strong style="color:var(--off-white);font-weight:400">Your results are scored, not filtered.</strong> Each recommendation is compared across mood, design direction, palette, room, interior style, placement, orientation, and desired visual presence. This working edition uses 38 curated artworks across quiet, warm, refined, statement, escape, wildlife, coastal, monochrome, and heritage-led directions.</p><button class="btn btn-out" id="restartBtn" type="button">Retake Consultation</button></div>
+    <div class="alt-strip"><p><strong style="color:var(--off-white);font-weight:400">Your results are scored, not filtered.</strong> Each recommendation is compared across the combined feeling you selected, palette, room, interior style, placement, orientation, and desired visual presence. This working edition uses 38 curated artworks across quiet, warm, refined, statement, escape, wildlife, coastal, monochrome, and heritage-led directions.</p><button class="btn btn-out" id="restartBtn" type="button">Retake Consultation</button></div>
   </div>
 </section>
 
@@ -688,7 +706,7 @@ body.preview-open{overflow:hidden}
         </div>
         <div class="share-panel">
           <h4>Share this room preview</h4><p>Save the preview JPG first. On supported phones and tablets, Share Preview opens the device’s native sharing menu.</p>
-          <div class="share-actions"><button class="btn btn-out" id="sharePreviewBtn" type="button">Share Preview</button><button class="btn btn-out" id="copyArtworkLinkBtn" type="button">Copy Artwork Link</button><button class="btn btn-out" id="emailPreviewBtn" type="button">Email This Idea</button></div>
+          <div class="share-actions"><button class="btn btn-out" id="sharePreviewBtn" type="button">Share Preview</button><button class="btn btn-out" id="copyArtworkLinkBtn" type="button">Copy Artwork Link</button><button class="btn btn-out" id="emailPreviewBtn" type="button">Ask Dan About This</button></div>
           <span class="share-status" id="shareStatus" aria-live="polite"></span>
         </div>
       </aside>
@@ -707,6 +725,7 @@ body.preview-open{overflow:hidden}
   <div class="footer-bottom">© 2026 Dan Sproul Fine Art Photography · Based in Lima, Ohio · Original Nature Photography & Heritage-Inspired Artwork</div>
 </footer>
 
+<script src="art-advisor-data.js"></script>
 <script>
 (function(){
   const nav=document.querySelector('.site-nav-standard'),toggle=document.querySelector('.nav-toggle-standard');
@@ -719,7 +738,29 @@ body.preview-open{overflow:hidden}
   const questions=[...document.querySelectorAll('.question')],answers={},next=document.getElementById('nextBtn'),back=document.getElementById('backBtn'),bar=document.getElementById('progressBar'),label=document.getElementById('progressLabel'),pct=document.getElementById('progressPercent');
   const consultName=document.getElementById('consultName'),consultEmail=document.getElementById('consultEmail'),consultArtwork=document.getElementById('consultArtwork'),consultTiming=document.getElementById('consultTiming'),consultNotes=document.getElementById('consultNotes'),askDanBtn=document.getElementById('askDanBtn'),saveBeforeEmailBtn=document.getElementById('saveBeforeEmailBtn'),consultationStatus=document.getElementById('consultationStatus');
   let latestRecommendations=[];
-  const artworks=[{"title":"Lake Louise Vertical Sunrise Reflection","image":"lake-louise-vertical-sunrise-reflection-dan-sproul.jpg","url":"https://dansproul.com/featured/lake-louise-vertical-sunrise-reflection-dan-sproul.html","type":"photography","orientation":"vertical","directions":["retreat","escape"],"moods":["calm","refined","bright"],"palettes":["cool","neutral"],"energy":2,"rooms":["living","bedroom","entry","office"],"styles":["modern","transitional","coastal","traditional"],"walls":["vertical","console","feature"],"frames":["Thin matte black","White oak","Natural maple"],"reason":"Turquoise water, mirrored light, and a strong vertical composition create a serene focal point that adds depth without visual clutter.","group":"Quiet Retreat"},{"title":"Canadian Pacific Train at Morant's Curve in Black and White","image":"canadian-pacific-train-at-morants-curve-in-black-and-white-dan-sproul.jpg","url":"https://dansproul.com/featured/canadian-pacific-train-at-morants-curve-in-black-and-white-dan-sproul.html","type":"photography","orientation":"panoramic","directions":["refined","statement","escape"],"moods":["dramatic","refined"],"palettes":["neutral","dark"],"energy":4,"rooms":["living","office","dining","entry"],"styles":["modern","traditional","rustic","eclectic"],"walls":["sofa","feature","console"],"frames":["Thin matte black","Dark walnut"],"reason":"A sweeping monochrome composition combines architecture, movement, and mountain scale for a sophisticated room with a stronger point of view.","group":"Modern Monochrome"},{"title":"Foggy Canadian Rockies Lake Black and White","image":"foggy-canadian-rockies-lake-black-and-white-dan-sproul.jpg","url":"https://dansproul.com/featured/foggy-canadian-rockies-lake-black-and-white-dan-sproul.html","type":"photography","orientation":"landscape","directions":["retreat","refined"],"moods":["calm","refined"],"palettes":["neutral","cool"],"energy":1,"rooms":["bedroom","living","office","whole"],"styles":["modern","transitional","traditional"],"walls":["sofa","bed","console","feature"],"frames":["Thin matte black","Weathered gray","White oak"],"reason":"Mist, still water, and restrained monochrome tones create a quiet, meditative presence ideal for restful interiors.","group":"Quiet Morning"},{"title":"Canadian Rockies Snow Capped Mountain Landscape","image":"canadian-rockies-snow-capped-mountain-landscape-dan-sproul.jpg","url":"https://dansproul.com/featured/canadian-rockies-snow-capped-mountain-landscape-dan-sproul.html","type":"photography","orientation":"landscape","directions":["escape","statement"],"moods":["bright","dramatic"],"palettes":["cool","neutral","color"],"energy":4,"rooms":["living","dining","office","entry"],"styles":["modern","transitional","rustic"],"walls":["sofa","console","feature"],"frames":["Thin matte black","Natural walnut"],"reason":"Crisp alpine scale and open sky create an uplifting focal point with enough energy for a large living room or office.","group":"Mountain Escape"},{"title":"Autumn Transitions Denali Alaska","image":"autumn-transitions-denali-alaska-dan-sproul.jpg","url":"https://dansproul.com/featured/autumn-transitions-denali-alaska-dan-sproul.html","type":"photography","orientation":"panoramic","directions":["warmth","escape"],"moods":["warm","bright"],"palettes":["warm","neutral","color"],"energy":3,"rooms":["living","dining","bedroom","whole"],"styles":["rustic","traditional","transitional"],"walls":["sofa","bed","feature"],"frames":["Warm walnut","Natural oak"],"reason":"Snow-dusted evergreens and vivid autumn color bring seasonal warmth while preserving a spacious, natural feeling.","group":"Autumn Warmth"},{"title":"Beautiful Florida Beach Waves Vertical","image":"beautiful-florida-beach-waves-vertical-dan-sproul.jpg","url":"https://dansproul.com/featured/beautiful-florida-beach-waves-vertical-dan-sproul.html","type":"photography","orientation":"vertical","directions":["retreat","refined"],"moods":["calm","bright"],"palettes":["cool","neutral"],"energy":1,"rooms":["bedroom","entry","living","whole"],"styles":["coastal","modern","transitional"],"walls":["vertical","console","feature"],"frames":["White oak","Natural maple","Thin white"],"reason":"Minimal shoreline geometry and clear aquamarine water add softness, light, and a relaxed coastal rhythm.","group":"Coastal Living"},{"title":"Foggy River Through the Smokies","image":"foggy-river-through-the-smokies-dan-sproul.jpg","url":"https://dansproul.com/featured/foggy-river-through-the-smokies-dan-sproul.html","type":"photography","orientation":"landscape","directions":["retreat","refined"],"moods":["calm","refined"],"palettes":["cool","neutral"],"energy":1,"rooms":["bedroom","living","office","whole"],"styles":["modern","transitional","traditional"],"walls":["sofa","bed","console","feature"],"frames":["Thin matte black","White oak","Weathered gray"],"reason":"Soft fog and a gently moving river create a restorative atmosphere that settles the room and rewards quiet viewing.","group":"Quiet Morning"},{"title":"Spring Flowers Indian Mound Reserve Ohio","image":"spring-flowers-indian-mound-reserve-ohio-dan-sproul.jpg","url":"https://dansproul.com/featured/spring-flowers-indian-mound-reserve-ohio-dan-sproul.html","type":"photography","orientation":"landscape","directions":["warmth"],"moods":["bright","warm","personal"],"palettes":["color","cool","warm"],"energy":3,"rooms":["living","dining","bedroom","entry","whole"],"styles":["traditional","transitional","rustic","eclectic"],"walls":["sofa","bed","console","feature"],"frames":["Natural oak","Warm walnut","Thin matte black"],"reason":"Fresh greens and violet spring flowers add life, welcome, and a garden-like sense of personality.","group":"Warm & Welcoming"},{"title":"Bridal Veil Falls Oregon","image":"bridal-veil-falls-oregon-dan-sproul.jpg","url":"https://dansproul.com/featured/bridal-veil-falls-oregon-dan-sproul.html","type":"photography","orientation":"vertical","directions":["escape","statement"],"moods":["bright","dramatic"],"palettes":["cool","color"],"energy":4,"rooms":["entry","living","dining","office"],"styles":["modern","transitional","rustic","eclectic"],"walls":["vertical","feature","console"],"frames":["Thin matte black","Natural walnut"],"reason":"The tall waterfall and illuminated foliage create a vivid vertical anchor with energy, depth, and immediate impact.","group":"Statement Nature"},{"title":"Majestic Bald Eagle Double Exposure Portrait","image":"majestic-bald-eagle-double-exposure-portrait-dan-sproul.jpg","url":"https://dansproul.com/featured/majestic-bald-eagle-double-exposure-portrait-dan-sproul.html","type":"mixed-media","orientation":"square","directions":["wildlife","statement"],"moods":["dramatic","personal","refined"],"palettes":["neutral","warm","dark"],"energy":5,"rooms":["living","dining","entry","office"],"styles":["rustic","traditional","eclectic","modern"],"walls":["console","vertical","feature"],"frames":["Matte black","Dark walnut","Warm walnut"],"reason":"The close eagle portrait and layered mountain imagery create a symbolic conversation piece with strength and heritage character.","group":"Wildlife & Heritage"},{"title":"Smoky Mountain Forest Stream","image":"smoky-mountain-forest-stream-dan-sproul.jpg","url":"https://dansproul.com/featured/smoky-mountain-forest-stream-dan-sproul.html","type":"photography","orientation":"landscape","directions":["retreat","warmth"],"moods":["calm","warm"],"palettes":["cool","neutral","dark"],"energy":2,"rooms":["living","bedroom","office","whole"],"styles":["rustic","traditional","transitional"],"walls":["sofa","bed","console","feature"],"frames":["Warm walnut","Natural oak","Thin matte black"],"reason":"Flowing water, mossy stone, and deep woodland greens bring a grounded, immersive calm to natural interiors.","group":"Quiet Retreat"},{"title":"Ethereal Mountain Light in Alaska","image":"ethereal-mountain-light-in-alaska-dan-sproul.jpg","url":"https://dansproul.com/featured/ethereal-mountain-light-in-alaska-dan-sproul.html","type":"photography","orientation":"panoramic","directions":["retreat","escape","refined"],"moods":["calm","dramatic","refined"],"palettes":["cool","neutral","dark"],"energy":3,"rooms":["living","bedroom","office","whole"],"styles":["modern","transitional","rustic"],"walls":["sofa","bed","feature"],"frames":["Thin matte black","Dark walnut"],"reason":"Low mist and diffused mountain light create a panoramic focal point that feels peaceful, cinematic, and expansive.","group":"Quiet Morning"},{"title":"Tinkers Creek Ohio","image":"tinkers-creek-ohio-dan-sproul.jpg","url":"https://dansproul.com/featured/tinkers-creek-ohio-dan-sproul.html","type":"photography","orientation":"landscape","directions":["retreat","warmth"],"moods":["calm","refined"],"palettes":["cool","neutral","dark"],"energy":2,"rooms":["living","bedroom","office"],"styles":["transitional","rustic","traditional"],"walls":["sofa","bed","console","feature"],"frames":["Warm walnut","Natural oak","Thin matte black"],"reason":"Layered waterfalls and stone ledges add movement and depth while keeping the room grounded and natural.","group":"Quiet Waters"},{"title":"Black and White Bear Cub in Tree","image":"black-and-white-bear-cub-in-tree-dan-sproul.jpg","url":"https://dansproul.com/featured/black-and-white-bear-cub-in-tree-dan-sproul.html","type":"photography","orientation":"landscape","directions":["wildlife","refined"],"moods":["personal","refined"],"palettes":["neutral"],"energy":3,"rooms":["living","office","bedroom","entry"],"styles":["modern","traditional","rustic","eclectic"],"walls":["sofa","console","feature"],"frames":["Thin matte black","Dark walnut"],"reason":"The intimate wildlife moment feels personal and memorable, while monochrome treatment keeps it composed and versatile.","group":"Wildlife"},{"title":"Mount Massive Wilderness in Fall","image":"mount-massive-wilderness-in-fall-dan-sproul.jpg","url":"https://dansproul.com/featured/mount-massive-wilderness-in-fall-dan-sproul.html","type":"photography","orientation":"landscape","directions":["warmth","escape"],"moods":["warm","bright"],"palettes":["warm","color"],"energy":3,"rooms":["living","dining","office","whole"],"styles":["rustic","traditional","transitional"],"walls":["sofa","console","feature"],"frames":["Warm walnut","Natural oak"],"reason":"Golden grasses and distant peaks create warmth, openness, and a relaxed western sense of place.","group":"Autumn Warmth"},{"title":"Autumn Colors Along Kebler Pass Colorado","image":"autumn-colors-along-kebler-pass-colorado-dan-sproul.jpg","url":"https://dansproul.com/featured/autumn-colors-along-kebler-pass-colorado-dan-sproul.html","type":"photography","orientation":"landscape","directions":["warmth","statement"],"moods":["warm","bright","dramatic"],"palettes":["warm","color"],"energy":4,"rooms":["living","dining","entry"],"styles":["rustic","traditional","eclectic","transitional"],"walls":["sofa","console","feature"],"frames":["Warm walnut","Natural oak","Thin matte black"],"reason":"Dense gold and rust foliage provides a generous, welcoming statement for rooms built around wood and earth tones.","group":"Autumn Warmth"},{"title":"Oregon Coast Sunset with Sea Stacks","image":"oregon-coast-sunset-with-sea-stacks-dan-sproul.jpg","url":"https://dansproul.com/featured/oregon-coast-sunset-with-sea-stacks-dan-sproul.html","type":"photography","orientation":"landscape","directions":["warmth","statement","escape"],"moods":["warm","dramatic"],"palettes":["warm","dark"],"energy":4,"rooms":["living","dining","bedroom","entry"],"styles":["coastal","modern","transitional","eclectic"],"walls":["sofa","bed","console","feature"],"frames":["Thin matte black","Dark walnut"],"reason":"Glowing sunset color and silhouetted sea stacks create a warm coastal statement with strong evening atmosphere.","group":"Coastal Living"},{"title":"Autumn Sunrise Maroon Bells","image":"autumn-sunrise-maroon-bells-dan-sproul.jpg","url":"https://dansproul.com/featured/autumn-sunrise-maroon-bells-dan-sproul.html","type":"photography","orientation":"landscape","directions":["escape","statement","warmth"],"moods":["dramatic","warm","refined"],"palettes":["warm","color","dark"],"energy":5,"rooms":["living","dining","entry","office"],"styles":["rustic","traditional","transitional","modern"],"walls":["sofa","console","feature"],"frames":["Thin matte black","Dark walnut","Warm walnut"],"reason":"Iconic peaks, golden aspens, and reflective water form a commanding focal point for a prominent wall.","group":"Mountain Escape"},{"title":"Moose and Calf Grazing in Fall Canada","image":"moose-and-calf-grazing-in-fall-canada-dan-sproul.jpg","url":"https://dansproul.com/featured/moose-and-calf-grazing-in-fall-canada-dan-sproul.html","type":"photography","orientation":"landscape","directions":["wildlife","warmth"],"moods":["warm","personal"],"palettes":["warm","neutral","color"],"energy":4,"rooms":["living","office","dining"],"styles":["rustic","traditional","transitional"],"walls":["sofa","console","feature"],"frames":["Warm walnut","Natural oak"],"reason":"The quiet bond between moose and calf introduces warmth, story, and unmistakable wildlife character.","group":"Wildlife"},{"title":"Canadian Mountain Magic","image":"canadian-mountain-magic-dan-sproul.jpg","url":"https://dansproul.com/featured/canadian-mountain-magic-dan-sproul.html","type":"photography","orientation":"landscape","directions":["escape","refined"],"moods":["calm","refined","bright"],"palettes":["cool","neutral"],"energy":2,"rooms":["living","bedroom","office","whole"],"styles":["modern","transitional","rustic"],"walls":["sofa","bed","console","feature"],"frames":["Thin matte black","Natural oak"],"reason":"A tranquil alpine lake and luminous mountain range create spaciousness and polished natural calm.","group":"Mountain Escape"},{"title":"Bull Elk Drinking","image":"bull-elk-drinking-dan-sproul.jpg","url":"https://dansproul.com/featured/bull-elk-drinking-dan-sproul.html","type":"photography","orientation":"landscape","directions":["wildlife","statement"],"moods":["dramatic","personal"],"palettes":["neutral","dark"],"energy":4,"rooms":["living","office","entry"],"styles":["rustic","traditional","eclectic"],"walls":["sofa","console","feature"],"frames":["Dark walnut","Matte black"],"reason":"The close elk portrait brings strength and presence to an office, lodge-inspired room, or memorable feature wall.","group":"Wildlife"},{"title":"Cow Moose in Field","image":"cow-moose-in-field-dan-sproul.jpg","url":"https://dansproul.com/featured/cow-moose-in-field-dan-sproul.html","type":"photography","orientation":"landscape","directions":["wildlife","retreat"],"moods":["calm","personal"],"palettes":["cool","neutral","color"],"energy":2,"rooms":["living","bedroom","office"],"styles":["rustic","traditional","transitional"],"walls":["sofa","console","feature"],"frames":["Natural oak","Warm walnut"],"reason":"A relaxed wildlife portrait offers personality without overpowering the room, especially in natural and lodge-inspired interiors.","group":"Wildlife"},{"title":"Pemaquid Point Lighthouse Maine Sunrise","image":"pemaquid-point-lighthouse-maine-sunrise-dan-sproul.jpg","url":"https://dansproul.com/featured/pemaquid-point-lighthouse-maine-sunrise-dan-sproul.html","type":"photography","orientation":"landscape","directions":["warmth","escape","statement"],"moods":["warm","bright","personal"],"palettes":["warm","color"],"energy":4,"rooms":["living","dining","entry","bedroom"],"styles":["coastal","traditional","transitional","eclectic"],"walls":["sofa","bed","console","feature"],"frames":["Warm walnut","Natural oak","Thin matte black"],"reason":"Warm sunrise and rugged stone give this coastal landmark a welcoming, painterly presence with strong residential appeal.","group":"Coastal Living"},{"title":"Split Rock Lighthouse in Morning Fog","image":"split-rock-lighthouse-in-morning-fog-dan-sproul.jpg","url":"https://dansproul.com/featured/split-rock-lighthouse-photography-print-minnesota-lake-superior-foggy-morning-dan-sproul.html","type":"photography","orientation":"landscape","directions":["retreat","refined","statement"],"moods":["calm","dramatic","refined"],"palettes":["cool","dark","neutral"],"energy":3,"rooms":["living","bedroom","office","entry"],"styles":["modern","traditional","transitional"],"walls":["sofa","bed","console","feature"],"frames":["Thin matte black","Dark walnut"],"reason":"A distant lighthouse emerging through mist creates mystery, calm, and a sophisticated coastal focal point.","group":"Quiet Morning"},{"title":"Yellow Warhol Bridge Downtown Pittsburgh","image":"yellow-warhol-bridge-downtown-pittsburgh-dan-sproul.jpg","url":"https://dansproul.com/featured/yellow-warhol-bridge-downtown-pittsburgh-dan-sproul.html","type":"photography","orientation":"landscape","directions":["statement","refined"],"moods":["dramatic","personal"],"palettes":["neutral","color","dark"],"energy":5,"rooms":["living","office","dining","entry"],"styles":["modern","eclectic","traditional"],"walls":["sofa","console","feature"],"frames":["Thin matte black"],"reason":"Selective yellow against a monochrome skyline creates a graphic, architectural statement for urban and modern interiors.","group":"Statement"},{"title":"Fall Reflections Beaver Pond","image":"fall-reflections-beaver-pond-dan-sproul.jpg","url":"https://dansproul.com/featured/fall-reflections-beaver-pond-dan-sproul.html","type":"photography","orientation":"landscape","directions":["warmth","retreat"],"moods":["warm","calm","bright"],"palettes":["warm","color"],"energy":3,"rooms":["living","dining","bedroom","whole"],"styles":["traditional","transitional","rustic"],"walls":["sofa","bed","console","feature"],"frames":["Warm walnut","Natural oak"],"reason":"Autumn color, mist, and a small island reflection create an inviting focal point with both warmth and quiet.","group":"Autumn Warmth"},{"title":"Autumn on Umbagog Lake","image":"autumn-on-umbagog-lake-dan-sproul.jpg","url":"https://dansproul.com/featured/autumn-on-umbagog-lake-dan-sproul.html","type":"photography","orientation":"landscape","directions":["warmth","retreat"],"moods":["warm","calm","bright"],"palettes":["warm","color"],"energy":3,"rooms":["living","dining","bedroom","whole"],"styles":["traditional","transitional","rustic"],"walls":["sofa","bed","console","feature"],"frames":["Warm walnut","Natural oak"],"reason":"A glowing autumn shoreline and dark reflection bring richness and visual comfort to gathering spaces.","group":"Autumn Warmth"},{"title":"Screw Auger Falls Autumn Colors","image":"screw-auger-falls-autumn-colors-dan-sproul.jpg","url":"https://dansproul.com/featured/screw-auger-falls-autumn-colors-dan-sproul.html","type":"photography","orientation":"vertical","directions":["warmth","statement"],"moods":["warm","dramatic"],"palettes":["warm","color","dark"],"energy":4,"rooms":["entry","living","dining"],"styles":["rustic","traditional","transitional"],"walls":["vertical","console","feature"],"frames":["Warm walnut","Thin matte black"],"reason":"The vertical cascade and surrounding fall color create a vivid natural anchor for a narrow wall or entry.","group":"Autumn Warmth"},{"title":"Beautiful Autumn Reflection Oxbow Bend","image":"beautiful-autumn-reflection-oxbow-bend-dan-sproul.jpg","url":"https://dansproul.com/featured/beautiful-autumn-reflection-oxbow-bend-dan-sproul.html","type":"photography","orientation":"panoramic","directions":["retreat","warmth","escape"],"moods":["calm","warm","refined"],"palettes":["warm","neutral"],"energy":2,"rooms":["living","bedroom","dining","whole"],"styles":["traditional","transitional","rustic","modern"],"walls":["sofa","bed","feature"],"frames":["Warm walnut","Natural oak","Thin matte black"],"reason":"Still water and restrained autumn color create a panoramic focal point that feels spacious, balanced, and serene.","group":"Quiet Waters"},{"title":"Beautiful Mountain Reflection Grand Teton National Park","image":"beautiful-mountain-reflection-grand-teton-national-park-dan-sproul.jpg","url":"https://dansproul.com/featured/beautiful-mountain-reflection-grand-teton-national-park-dan-sproul.html","type":"photography","orientation":"panoramic","directions":["escape","retreat","refined"],"moods":["calm","bright","refined"],"palettes":["cool","color"],"energy":3,"rooms":["living","bedroom","office","whole"],"styles":["modern","transitional","rustic","coastal"],"walls":["sofa","bed","feature"],"frames":["Thin matte black","Natural oak"],"reason":"Blue water and broad mountain reflections visually widen a room while offering a clear, uplifting sense of escape.","group":"Mountain Escape"},{"title":"Milky Way over Mountain Lake","image":"milky-way-over-mountain-lake-dan-sproul.jpg","url":"https://dansproul.com/featured/milky-way-over-mountain-lake-dan-sproul.html","type":"photography","orientation":"vertical","directions":["statement","escape"],"moods":["dramatic","personal"],"palettes":["dark","cool"],"energy":5,"rooms":["living","bedroom","entry","office"],"styles":["modern","eclectic","rustic"],"walls":["vertical","feature","console"],"frames":["Thin matte black","Dark walnut"],"reason":"A towering Milky Way and mirrored mountain silhouette create wonder, depth, and an unforgettable vertical statement.","group":"Night & Wonder"},{"title":"Bluebird Collage","image":"bluebird-collage-dan-sproul.jpg","url":"https://dansproul.com/featured/bluebird-collage-dan-sproul.html","type":"mixed-media","orientation":"landscape","directions":["statement","wildlife","warmth"],"moods":["bright","personal","warm"],"palettes":["color","cool"],"energy":5,"rooms":["living","dining","bedroom","entry"],"styles":["eclectic","traditional","coastal"],"walls":["sofa","console","feature"],"frames":["Natural oak","White oak","Thin matte black"],"reason":"Playful color and layered collage texture bring personality, optimism, and handcrafted character to a collected room.","group":"Heritage & Statement"},{"title":"Lighthouse Collage Dictionary Page","image":"lighthouse-collage-dictionary-page-dan-sproul.jpg","url":"https://dansproul.com/featured/lighthouse-collage-dictionary-page-dan-sproul.html","type":"mixed-media","orientation":"vertical","directions":["statement","refined"],"moods":["personal","dramatic"],"palettes":["warm","neutral","color"],"energy":5,"rooms":["entry","office","living","dining"],"styles":["eclectic","traditional","coastal","modern"],"walls":["vertical","console","feature"],"frames":["Thin matte black","Dark walnut"],"reason":"Vintage dictionary typography and layered lighthouse collage create a distinctive vertical piece with history and graphic impact.","group":"Heritage & Statement"},{"title":"Sunset at Haystack Rock","image":"sunset-at-haystack-rock-dan-sproul.jpg","url":"https://dansproul.com/featured/sunset-at-haystack-rock-dan-sproul.html","type":"photography","orientation":"landscape","directions":["statement","warmth","escape"],"moods":["dramatic","warm","refined"],"palettes":["warm","dark"],"energy":5,"rooms":["living","dining","bedroom","entry"],"styles":["coastal","modern","transitional"],"walls":["sofa","bed","console","feature"],"frames":["Thin matte black","Dark walnut"],"reason":"The monumental sea stack and glowing horizon create a dramatic yet polished coastal centerpiece.","group":"Coastal Living"},{"title":"Jennette's Pier Outer Banks","image":"jennettes-pier-outer-banks-dan-sproul.jpg","url":"https://dansproul.com/featured/jennettes-pier-outer-banks-dan-sproul.html","type":"photography","orientation":"vertical","directions":["refined","retreat"],"moods":["calm","refined"],"palettes":["neutral","cool"],"energy":2,"rooms":["bedroom","entry","office","living"],"styles":["modern","coastal","transitional"],"walls":["vertical","console","feature"],"frames":["Thin matte black","White oak"],"reason":"Monochrome symmetry and flowing water create an architectural coastal image with quiet sophistication.","group":"Modern Monochrome"},{"title":"Outer Banks Pier at Dawn","image":"outer-banks-pier-at-dawn-dan-sproul.jpg","url":"https://dansproul.com/featured/outer-banks-pier-at-dawn-wall-art-coastal-sunrise-beach-dan-sproul.html","type":"photography","orientation":"vertical","directions":["retreat","escape"],"moods":["calm","bright","refined"],"palettes":["cool","neutral"],"energy":3,"rooms":["bedroom","entry","living"],"styles":["coastal","modern","transitional"],"walls":["vertical","console","feature"],"frames":["White oak","Thin matte black"],"reason":"Soft dawn light and long-exposure surf create an airy vertical focal point with gentle coastal movement.","group":"Coastal Living"},{"title":"Moosehead Lake Dock Morning Light Maine","image":"moosehead-lake-dock-morning-light-maine-dan-sproul.jpg","url":"https://dansproul.com/featured/moosehead-lake-dock-morning-light-maine-dan-sproul.html","type":"photography","orientation":"landscape","directions":["retreat","warmth"],"moods":["calm","warm","bright"],"palettes":["cool","warm","neutral"],"energy":2,"rooms":["living","bedroom","dining","whole"],"styles":["coastal","traditional","rustic","transitional"],"walls":["sofa","bed","console","feature"],"frames":["Natural oak","Warm walnut"],"reason":"The empty dock and gentle morning light invite pause, creating a welcoming sense of stillness and escape.","group":"Quiet Waters"},{"title":"Foggy Hyatt Lane Cades Cove","image":"foggy-hyatt-lane-cades-cove-dan-sproul.jpg","url":"https://dansproul.com/featured/foggy-hyatt-lane-cades-cove-dan-sproul.html","type":"photography","orientation":"landscape","directions":["retreat","refined"],"moods":["calm","refined","bright"],"palettes":["neutral","cool"],"energy":1,"rooms":["bedroom","living","office","entry","whole"],"styles":["modern","traditional","transitional","rustic"],"walls":["sofa","bed","console","feature"],"frames":["White oak","Natural maple","Thin matte black"],"reason":"A solitary tree and disappearing road create a luminous, minimal image that makes a room feel hushed and restorative.","group":"Quiet Morning"}];
+  const REQUIRED_ARTWORK_FIELDS=['title','image','url','type','orientation','directions','moods','palettes','energy','rooms','styles','walls','frames','reason','group'];
+  const ARRAY_ARTWORK_FIELDS=['directions','moods','palettes','rooms','styles','walls','frames'];
+  function validateArtworkCatalog(items){
+    if(!Array.isArray(items)){
+      console.error('Art Advisor catalog did not load. Confirm art-advisor-data.js is uploaded beside art-advisor.html.');
+      return [];
+    }
+    return items.filter((art,index)=>{
+      const missing=REQUIRED_ARTWORK_FIELDS.filter(field=>art[field]===undefined||art[field]===null||art[field]==='');
+      const invalidArrays=ARRAY_ARTWORK_FIELDS.filter(field=>!Array.isArray(art[field])||!art[field].length);
+      if(missing.length||invalidArrays.length){
+        console.warn(`Art Advisor skipped catalog entry ${index+1}.`,{title:art&&art.title,missing,invalidArrays});
+        return false;
+      }
+      return true;
+    });
+  }
+  const artworks=validateArtworkCatalog(window.ART_ADVISOR_ARTWORKS);
+  if(!artworks.length){
+    const quizCard=document.querySelector('.quiz-card');
+    if(quizCard)quizCard.innerHTML='<div class="catalog-error"><p class="question-kicker">Artwork Catalog</p><h3>The recommendation library is temporarily unavailable.</h3><p>Please refresh the page. If the problem continues, confirm that <strong>art-advisor-data.js</strong> was uploaded beside this HTML file.</p></div>';
+    return;
+  }
   function artworkImageCandidates(path){
     const raw=(path||"").split("/").pop();
     const clean=raw.replace(/ \(\d+\)(?=\.[^.]+$)/,"");
@@ -784,7 +825,11 @@ body.preview-open{overflow:hidden}
       const value=btn.dataset.value;setMeasurementAnswer(value,'preset');wallWidthInput.value=value==='unknown'?'':value;
       if(value==='unknown'){answers.furnitureWidth=null;answers.ceilingHeight=null;furnitureWidthInput.value='';ceilingHeightInput.value='';measurementStatus.textContent='No problem. Professional sizing rules will be used instead.'}
       else measurementStatus.textContent=`Using an estimated ${value}-inch wall. Add furniture width for an even more precise recommendation.`;
-    }else{answers[q.dataset.question]=btn.dataset.value;next.disabled=false}
+    }else{
+      answers[q.dataset.question]=btn.dataset.value;
+      if(q.dataset.question==='mood'&&btn.dataset.direction)answers.direction=btn.dataset.direction;
+      next.disabled=false;
+    }
   })));
 
   applyMeasurements.addEventListener('click',()=>{
@@ -800,16 +845,81 @@ body.preview-open{overflow:hidden}
   back.addEventListener('click',()=>{if(index>0){index--;render();}});
 
   function selectedArtworkForContact(){return latestRecommendations.find(a=>a.title===consultArtwork.value)||latestRecommendations[0]||{}}
-  function roomProfileForEmail(){const m=[];if(answers.wallWidth)m.push(`wall ${answers.wallWidth} in`);if(answers.furnitureWidth)m.push(`furniture ${answers.furnitureWidth} in`);if(answers.ceilingHeight)m.push(`ceiling ${answers.ceilingHeight} in`);return {room:roomNames[answers.room]||answers.room||'Not specified',style:styleNames[answers.style]||answers.style||'Not specified',palette:paletteNames[answers.palette]||answers.palette||'Not specified',placement:wallNames[answers.wall]||answers.wall||'Not specified',measurements:m.length?m.join(', '):'No measurements supplied'}}
-  askDanBtn.addEventListener('click',()=>{
-    if(consultEmail.value&&!consultEmail.checkValidity()){consultationStatus.textContent='Please enter a valid email address.';consultEmail.focus();return}
-    const art=selectedArtworkForContact(),profile=roomProfileForEmail(),fit=art.title?measurementSummary(art):null,tip=art.title?designerTip(art):null;
-    const subject=`Art Advisor room question${art.title?` — ${art.title}`:''}`;
-    const body=[`Hi Dan,`,'',`I used the Art Advisor and would appreciate your opinion on my room.`,'',`Name: ${consultName.value.trim()||'Not provided'}`,`Reply email: ${consultEmail.value.trim()||'Not provided'}`,`Room: ${profile.room}`,`Style: ${profile.style}`,`Palette: ${profile.palette}`,`Placement: ${profile.placement}`,`Measurements: ${profile.measurements}`,`Project timing: ${consultTiming.value}`,'',`Artwork: ${art.title||'Not selected'}`,art.url?`Artwork link: ${art.url}`:'',fit?`Recommended size: ${sizeGuidance(art)} (${fit.title})`:'',tip?`Advisor guidance: ${tip.title}`:'','',`My questions or notes:`,consultNotes.value.trim()||'No additional notes.','',`I will attach my saved room preview if available.`,'',`Thank you.`].filter(Boolean).join('\n');
-    consultationStatus.textContent='Opening your email app. Attach the saved room preview before sending.';
-    window.location.href=`mailto:dan@dsproul.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  function roomProfileForEmail(){
+    const measurements=[];
+    if(answers.wallWidth)measurements.push(`wall ${answers.wallWidth} in`);
+    if(answers.furnitureWidth)measurements.push(`furniture ${answers.furnitureWidth} in`);
+    if(answers.ceilingHeight)measurements.push(`ceiling ${answers.ceilingHeight} in`);
+    return {
+      room:roomNames[answers.room]||answers.room||'Not specified',
+      style:styleNames[answers.style]||answers.style||'Not specified',
+      palette:paletteNames[answers.palette]||answers.palette||'Not specified',
+      placement:wallNames[answers.wall]||answers.wall||'Not specified',
+      measurements:measurements.length?measurements.join(', '):'No measurements supplied'
+    };
+  }
+  const consultationForm=document.getElementById('consultationForm');
+  const consultAttachment=document.getElementById('consultAttachment');
+  const consultHidden={
+    room:document.getElementById('consultRoomProfile'),
+    feeling:document.getElementById('consultFeelingProfile'),
+    style:document.getElementById('consultStyleProfile'),
+    palette:document.getElementById('consultPaletteProfile'),
+    placement:document.getElementById('consultPlacementProfile'),
+    measurements:document.getElementById('consultMeasurementProfile'),
+    size:document.getElementById('consultSizeProfile'),
+    tip:document.getElementById('consultTipProfile'),
+    url:document.getElementById('consultArtworkUrl'),
+    profile:document.getElementById('consultRecommendationProfile')
+  };
+  function syncConsultationFields(){
+    const art=selectedArtworkForContact(),profile=roomProfileForEmail();
+    const fit=art.title?measurementSummary(art):null;
+    const tip=art.title?designerTip(art):null;
+    const moodLabel={calm:'A Quiet Retreat',warm:'Warm & Welcoming',bright:'Bright & Expansive',refined:'Refined & Sophisticated',dramatic:'Bold & Memorable',personal:'Expressive & Character-Rich'}[answers.mood]||'Not specified';
+    consultHidden.room.value=profile.room;
+    consultHidden.feeling.value=moodLabel;
+    consultHidden.style.value=profile.style;
+    consultHidden.palette.value=profile.palette;
+    consultHidden.placement.value=profile.placement;
+    consultHidden.measurements.value=profile.measurements;
+    consultHidden.size.value=art.title?`${sizeGuidance(art)}${fit?` — ${fit.title}`:''}`:'Not available';
+    consultHidden.tip.value=tip?`${tip.title} ${tip.text}`:'Not available';
+    consultHidden.url.value=art.url||'Not available';
+    consultHidden.profile.value=document.getElementById('profileName').textContent||'Not available';
+  }
+  consultArtwork.addEventListener('change',syncConsultationFields);
+  consultationForm.addEventListener('submit',event=>{
+    consultationStatus.classList.remove('success');
+    if(!consultationForm.checkValidity()){
+      event.preventDefault();
+      consultationStatus.textContent='Please complete the required name, email, and question fields.';
+      consultationForm.reportValidity();
+      return;
+    }
+    const file=consultAttachment.files&&consultAttachment.files[0];
+    if(file&&file.size>10*1024*1024){
+      event.preventDefault();
+      consultationStatus.textContent='The attachment is larger than 10 MB. Please choose a smaller JPG or PNG.';
+      consultAttachment.focus();
+      return;
+    }
+    syncConsultationFields();
+    askDanBtn.disabled=true;
+    askDanBtn.textContent='Sending…';
+    consultationStatus.textContent='Submitting your consultation securely…';
   });
-  saveBeforeEmailBtn.addEventListener('click',()=>{consultationStatus.textContent='Room visualizer opened. Save the JPG there, then return to prepare the email.';document.querySelector('.room-preview-trigger')?.click()});
+  saveBeforeEmailBtn.addEventListener('click',()=>{
+    consultationStatus.textContent='Room visualizer opened. Save the JPG there, then return and attach it here if you would like Dan to review it.';
+    document.querySelector('.room-preview-trigger')?.click();
+  });
+  const consultationQuery=new URLSearchParams(window.location.search);
+  if(consultationQuery.get('consultation')==='sent'){
+    consultationStatus.textContent='Thank you. Your consultation was sent to Dan for personal review.';
+    consultationStatus.classList.add('success');
+    document.getElementById('askDan')?.scrollIntoView({block:'center'});
+    if(window.history&&window.history.replaceState)window.history.replaceState({},document.title,window.location.pathname+'#askDan');
+  }
 
   document.getElementById('restartBtn').addEventListener('click',()=>{index=0;Object.keys(answers).forEach(k=>delete answers[k]);document.querySelectorAll('.option').forEach(x=>x.classList.remove('selected'));wallWidthInput.value='';furnitureWidthInput.value='';ceilingHeightInput.value='';measurementStatus.textContent='Choose a common wall width above or enter a custom measurement.';document.getElementById('results').classList.remove('visible');render();document.getElementById('advisor').scrollIntoView({behavior:'smooth'});});
 
@@ -1018,7 +1128,7 @@ body.preview-open{overflow:hidden}
     const room=roomNames[answers.room]||'residential space';
     const style=styleNames[answers.style]||answers.style;
     const palette=paletteNames[answers.palette]||answers.palette;
-    return `Prepared for a ${room.toLowerCase()} with a ${style.toLowerCase()} direction and ${palette.toLowerCase()} palette. These recommendations were selected by comparing room, mood, style, palette, wall placement, orientation, and desired visual presence.`;
+    return `Prepared for a ${room.toLowerCase()} with a ${style.toLowerCase()} direction and ${palette.toLowerCase()} palette. These recommendations were selected by comparing room, the combined feeling and presence selected, style, palette, wall placement, orientation, and desired visual presence.`;
   }
 
   function buildPrintableReport(top3,labels,percentages){
@@ -1046,7 +1156,7 @@ body.preview-open{overflow:hidden}
     const top3=ranked.slice(0,3);latestRecommendations=top3;consultArtwork.innerHTML=top3.map((a,i)=>`<option value="${a.title}">${i===0?'Top recommendation: ':''}${a.title}</option>`).join('');const moodMap={calm:'Calm & Restorative',warm:'Warm & Welcoming',bright:'Bright & Expansive',dramatic:'Bold & Dramatic',refined:'Refined & Sophisticated',personal:'Personal & Expressive'};
     let profile='Quietly Refined';if(answers.mood==='dramatic'||answers.scale==='statement')profile='Boldly Expressive';else if(answers.mood==='warm'||answers.style==='rustic')profile='Warm Naturalist';else if(answers.mood==='bright'||answers.style==='coastal')profile='Open & Airy';else if(answers.direction==='wildlife')profile='Nature with Character';else if(answers.direction==='statement'||answers.mood==='personal')profile='Collected Storyteller';
     document.getElementById('profileName').textContent=profile+'.';document.getElementById('profileMood').textContent=moodMap[answers.mood]||'Balanced & Natural';document.getElementById('profileSize').textContent=sizeGuidance(top3[0]);document.getElementById('profileFrame').textContent=chosenFrame(top3[0]);document.getElementById('profilePlacement').textContent=placementText(top3[0]);const topMeasurement=measurementSummary(top3[0]);document.getElementById('profileMeasurement').textContent=topMeasurement.title;const primaryTip=designerTip(top3[0]);document.getElementById('profileDesignerTipTitle').textContent=primaryTip.title;document.getElementById('profileDesignerTipText').textContent=primaryTip.text;
-    document.getElementById('profileIntro').textContent=`Your answers point toward ${moodMap[answers.mood].toLowerCase()} artwork with ${answers.scale==='statement'?'strong visual presence':'a considered residential presence'}. These three pieces scored highest across the details you selected.`;
+    document.getElementById('profileIntro').textContent=`Your answers point toward ${moodMap[answers.mood].toLowerCase()} artwork with ${answers.scale==='statement'?'strong visual presence':'a considered residential presence'}. These three pieces scored highest across the details you selected.`;syncConsultationFields();
     const labels=['Top Recommendation','Strong Alternative','Bolder Direction'];
     const percentages=top3.map((a,i)=>i===0?96:resultPercent(a.score,93,i===1?86:82));
     document.getElementById('recommendations').innerHTML=top3.map((a,i)=>{
@@ -1409,7 +1519,27 @@ body.preview-open{overflow:hidden}
   async function copyPreviewLink(){const value=currentPreviewArtwork.url||window.location.href;try{await navigator.clipboard.writeText(value)}catch(error){const area=document.createElement('textarea');area.value=value;document.body.appendChild(area);area.select();document.execCommand('copy');area.remove()}shareStatus.textContent='Artwork link copied.'}
   sharePreviewBtn.addEventListener('click',async()=>{const data={title:`${currentPreviewArtwork.title||'Dan Sproul artwork'} room preview`,text:`See how ${currentPreviewArtwork.title||'this Dan Sproul artwork'} could look in a room. Save the room preview JPG to share the visual.`,url:currentPreviewArtwork.url||window.location.href};if(navigator.share){try{await navigator.share(data);shareStatus.textContent='Share menu opened.'}catch(error){if(error.name!=='AbortError')shareStatus.textContent='Sharing was unavailable. Save the JPG or copy the artwork link.'}}else copyPreviewLink()});
   copyArtworkLinkBtn.addEventListener('click',copyPreviewLink);
-  emailPreviewBtn.addEventListener('click',()=>{const subject=encodeURIComponent(`Room preview idea — ${currentPreviewArtwork.title||'Dan Sproul artwork'}`),body=encodeURIComponent(`I wanted to share this artwork idea for the room.\n\n${currentPreviewArtwork.title||''}\n${currentPreviewArtwork.url||window.location.href}\n\nThe saved room preview JPG can be attached to this message.`);window.location.href=`mailto:?subject=${subject}&body=${body}`});
+  emailPreviewBtn.addEventListener('click',()=>{
+    const formSection=document.getElementById('askDan');
+    const artworkSelect=document.getElementById('consultArtwork');
+    const notes=document.getElementById('consultNotes');
+    const status=document.getElementById('consultationStatus');
+    if(artworkSelect&&currentPreviewArtwork.title){
+      let option=[...artworkSelect.options].find(item=>item.value===currentPreviewArtwork.title);
+      if(!option){
+        option=document.createElement('option');
+        option.value=currentPreviewArtwork.title;
+        option.textContent=currentPreviewArtwork.title;
+        artworkSelect.appendChild(option);
+      }
+      artworkSelect.value=currentPreviewArtwork.title;
+      artworkSelect.dispatchEvent(new Event('change',{bubbles:true}));
+    }
+    if(notes&&!notes.value.trim()&&currentPreviewArtwork.title)notes.value=`I would like your opinion on ${currentPreviewArtwork.title} for my room.`;
+    closePreview();
+    formSection?.scrollIntoView({behavior:'smooth',block:'start'});
+    if(status)status.textContent='This artwork has been added to your consultation. Attach the saved preview below if you would like Dan to review the room placement.';
+  });
   save.addEventListener('click',createSavedPreview);
 
   position();
