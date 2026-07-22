@@ -841,7 +841,7 @@ body.preview-open{overflow:hidden}
     measurementStatus.textContent=`Measurements saved: ${parts.join(', ')}.`;applyMeasurements.textContent='Measurements Saved';setTimeout(()=>applyMeasurements.textContent='Use These Measurements',1400);
   });
   function render(){questions.forEach((q,i)=>q.classList.toggle('active',i===index));const p=Math.round(((index+1)/questions.length)*100);bar.style.width=p+'%';label.textContent=`Question ${index+1} of ${questions.length}`;pct.textContent=p+'%';back.disabled=index===0;next.textContent=index===questions.length-1?'See My Recommendations':'Continue';next.disabled=!answers[questions[index].dataset.question];}
-  next.addEventListener('click',()=>{if(index<questions.length-1){index++;render();}else{buildResults();document.getElementById('results').classList.add('visible');document.getElementById('results').scrollIntoView({behavior:'smooth'});}});
+  next.addEventListener('click',()=>{if(index<questions.length-1){index++;render();}else{try{buildResults();document.getElementById('results').classList.add('visible');document.getElementById('results').scrollIntoView({behavior:'smooth'});}catch(error){console.error('Art Advisor recommendation error:',error);next.disabled=false;next.textContent='Try Recommendations Again';const status=document.getElementById('measurementStatus');if(status)status.textContent='The recommendations encountered a temporary display error. Please refresh and try again.';}}});
   back.addEventListener('click',()=>{if(index>0){index--;render();}});
 
   function selectedArtworkForContact(){return latestRecommendations.find(a=>a.title===consultArtwork.value)||latestRecommendations[0]||{}}
@@ -998,7 +998,7 @@ body.preview-open{overflow:hidden}
   function placementText(a){const map={sofa:'Centered above the sofa at roughly two-thirds its width',bed:'Centered above the headboard with generous breathing room',console:'Centered above the furniture, visually connected but not crowded',vertical:'Use as a vertical anchor on the narrow wall',feature:'Allow the artwork to command the feature wall',unsure:a.orientation==='vertical'?'A narrow wall, entry, or beside a doorway':'A primary wall above furniture'};return map[answers.wall]}
   const roomNames={living:'Living Room',bedroom:'Bedroom',dining:'Dining Room',entry:'Entryway',office:'Home Office',whole:'Whole Home',cabin:'Cabin or Lodge',lakehouse:'Lake House',other:'Residential Space'};
   const styleNames={modern:'Modern',transitional:'Transitional',traditional:'Traditional',rustic:'Rustic or Lodge',coastal:'Coastal',minimal:'Minimal',eclectic:'Eclectic or Collected'};
-  const paletteNames={neutral:'Neutral',warm:'Warm Earth Tones',cool:'Cool Blues and Greens',colorful:'Colorful',monochrome:'Monochrome',flexible:'Flexible Palette'};
+  const paletteNames={neutral:'Neutral',warm:'Warm Earth Tones',cool:'Cool Blues and Greens',dark:'Dark & Moody',color:'Colorful & Expressive',flexible:'Flexible Palette'};
   const wallNames={sofa:'Above a Sofa',bed:'Above a Bed',console:'Above a Console',vertical:'Narrow Vertical Wall',feature:'Feature Wall',unsure:'Flexible Placement'};
 
   function matchReasons(a){
@@ -1007,8 +1007,8 @@ body.preview-open{overflow:hidden}
     if(includes(a.moods,answers.mood))reasons.push(`Supports the ${document.getElementById('profileMood').textContent.toLowerCase()} feeling you selected.`);
     if(includes(a.styles,answers.style))reasons.push(`Pairs naturally with ${styleNames[answers.style]||answers.style} interiors.`);
     if(answers.palette==='flexible')reasons.push('Its palette is versatile enough to work with changing furnishings and finishes.');
-    else if(includes(a.palettes,answers.palette))reasons.push(`Complements a ${paletteNames[answers.palette].toLowerCase()} room palette.`);
-    if(includes(a.walls,answers.wall))reasons.push(`Its composition works especially well for ${wallNames[answers.wall].toLowerCase()}.`);
+    else if(includes(a.palettes,answers.palette))reasons.push(`Complements a ${(paletteNames[answers.palette]||answers.palette||'selected').toLowerCase()} room palette.`);
+    if(includes(a.walls,answers.wall))reasons.push(`Its composition works especially well for ${(wallNames[answers.wall]||answers.wall||'the selected placement').toLowerCase()}.`);
     const measuredFit=measuredSize(a);if(measuredFit)reasons.push(`At ${measuredFit.w} inches wide, it fills about ${measuredFit.fill}% of the supplied ${measuredFit.basis} width.`);
     if((answers.wall==='sofa'||answers.wall==='bed')&&(a.orientation==='landscape'||a.orientation==='panoramic'))reasons.push('The horizontal format relates naturally to the furniture width below it.');
     if(answers.wall==='vertical'&&(a.orientation==='vertical'||a.orientation==='square'))reasons.push('Its upright composition gives the narrow wall height and visual structure.');
@@ -1156,7 +1156,7 @@ body.preview-open{overflow:hidden}
     const top3=ranked.slice(0,3);latestRecommendations=top3;consultArtwork.innerHTML=top3.map((a,i)=>`<option value="${a.title}">${i===0?'Top recommendation: ':''}${a.title}</option>`).join('');const moodMap={calm:'Calm & Restorative',warm:'Warm & Welcoming',bright:'Bright & Expansive',dramatic:'Bold & Dramatic',refined:'Refined & Sophisticated',personal:'Personal & Expressive'};
     let profile='Quietly Refined';if(answers.mood==='dramatic'||answers.scale==='statement')profile='Boldly Expressive';else if(answers.mood==='warm'||answers.style==='rustic')profile='Warm Naturalist';else if(answers.mood==='bright'||answers.style==='coastal')profile='Open & Airy';else if(answers.direction==='wildlife')profile='Nature with Character';else if(answers.direction==='statement'||answers.mood==='personal')profile='Collected Storyteller';
     document.getElementById('profileName').textContent=profile+'.';document.getElementById('profileMood').textContent=moodMap[answers.mood]||'Balanced & Natural';document.getElementById('profileSize').textContent=sizeGuidance(top3[0]);document.getElementById('profileFrame').textContent=chosenFrame(top3[0]);document.getElementById('profilePlacement').textContent=placementText(top3[0]);const topMeasurement=measurementSummary(top3[0]);document.getElementById('profileMeasurement').textContent=topMeasurement.title;const primaryTip=designerTip(top3[0]);document.getElementById('profileDesignerTipTitle').textContent=primaryTip.title;document.getElementById('profileDesignerTipText').textContent=primaryTip.text;
-    document.getElementById('profileIntro').textContent=`Your answers point toward ${moodMap[answers.mood].toLowerCase()} artwork with ${answers.scale==='statement'?'strong visual presence':'a considered residential presence'}. These three pieces scored highest across the details you selected.`;syncConsultationFields();
+    document.getElementById('profileIntro').textContent=`Your answers point toward ${(moodMap[answers.mood]||'balanced and natural').toLowerCase()} artwork with ${answers.scale==='statement'?'strong visual presence':'a considered residential presence'}. These three pieces scored highest across the details you selected.`;syncConsultationFields();
     const labels=['Top Recommendation','Strong Alternative','Bolder Direction'];
     const percentages=top3.map((a,i)=>i===0?96:resultPercent(a.score,93,i===1?86:82));
     document.getElementById('recommendations').innerHTML=top3.map((a,i)=>{
