@@ -2019,6 +2019,44 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
     line-height:1.6!important;
   }
 }
+
+/* FINAL FIVE-PATH DESIGNER RESOURCE GRID */
+.designer-resource-grid{
+  grid-template-columns:repeat(6,minmax(0,1fr))!important;
+  gap:16px!important;
+}
+.designer-resource-grid .designer-resource-card{
+  grid-column:span 2;
+}
+.designer-resource-grid .designer-resource-card:nth-child(4),
+.designer-resource-grid .designer-resource-card:nth-child(5){
+  grid-column:span 3;
+}
+@media(max-width:1040px){
+  .designer-resource-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:14px!important;
+  }
+  .designer-resource-grid .designer-resource-card,
+  .designer-resource-grid .designer-resource-card:nth-child(4){
+    grid-column:span 1!important;
+  }
+  .designer-resource-grid .designer-resource-card:nth-child(5){
+    grid-column:1/-1!important;
+  }
+}
+@media(max-width:680px){
+  .designer-resource-grid{
+    grid-template-columns:1fr!important;
+    gap:12px!important;
+  }
+  .designer-resource-grid .designer-resource-card,
+  .designer-resource-grid .designer-resource-card:nth-child(4),
+  .designer-resource-grid .designer-resource-card:nth-child(5){
+    grid-column:1/-1!important;
+  }
+}
+
 </style>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -2324,7 +2362,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
 <div class="resource-head">
 <p class="section-label">Designer Resources</p>
 <h2 class="section-title">Artwork resources for <em>commercial and residential-feeling interiors.</em></h2>
-<p>Start with the environment closest to your project. Each resource is organized by use case, atmosphere, artwork scale, and design application so artwork can be evaluated quickly for real healthcare, hospitality, senior living, office, and professional interiors.</p>
+<p>Start with the environment closest to your project. Each resource is organized by use case, atmosphere, artwork scale, and design application so artwork can be evaluated quickly for healthcare, hospitality, senior living, office, residential, and professional interiors.</p>
 </div>
 <div class="designer-resource-grid">
 <a class="designer-resource-card" href="healthcare-artwork.html">
@@ -2369,6 +2407,17 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
 <h3>Office Artwork</h3>
 <p>Atmospheric nature artwork for executive offices, law firms, financial advisor spaces, conference rooms, reception areas, and professional interiors.</p>
 <span class="designer-resource-link">Explore Office Artwork →</span>
+</div>
+</a>
+<a class="designer-resource-card" href="residential-nature-wall-art.html">
+<div class="designer-resource-image">
+<img alt="Refined residential living room with large atmospheric nature wall art by Dan Sproul" decoding="async" loading="lazy" src="open-horizons-residential-living-room.jpg"/>
+</div>
+<div class="designer-resource-copy">
+<span>Residential Design</span>
+<h3>Residential Artwork</h3>
+<p>Nature-inspired wall art for living rooms, bedrooms, entryways, home offices, lake homes, cabins, and designer-led residential interiors.</p>
+<span class="designer-resource-link">Explore Residential →</span>
 </div>
 </a>
 </div>
@@ -2590,7 +2639,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
 <article><span>04</span><h3>Trade-Friendly Support</h3><p>Designers can request trade pricing, custom sizing guidance, curated recommendations, and direct project support.</p></article>
 </div>
 <div class="designer-proof-row">
-<div><strong>8,000+</strong><span>available images</span></div>
+<div><strong>8,500+</strong><span>available images</span></div>
 <div><strong>50+</strong><span>curated FAA collections</span></div>
 <div><strong>6</strong><span>primary print formats</span></div>
 <div><strong>U.S.</strong><span>print fulfillment</span></div>
@@ -2611,7 +2660,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
 </div>
 <div class="pa-item">
 <p class="pa-label">Framed Prints</p>
-<p class="pa-price">from $140</p>
+<p class="pa-price">from $100</p>
 <p class="pa-desc">Archival paper, white mat, wood frame. Any size.</p>
 </div>
 <div class="pa-item">
