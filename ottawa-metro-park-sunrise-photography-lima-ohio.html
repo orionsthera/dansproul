@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Ottawa Metro Park Sunrise Photography Tips | Lima Ohio</title>
+  <meta name="description" content="Follow a misty sunrise photography session at Ottawa Metro Park in Lima, Ohio, with practical camera, composition, timing, and local landscape tips." />
+  <meta name="author" content="Dan Sproul" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://dsproul.com/ottawa-metro-park-sunrise-photography-lima-ohio.html" />
+
+  <meta property="og:title" content="Photographing a Misty Sunrise at Ottawa Metro Park in Lima, Ohio" />
+  <meta property="og:description" content="A behind-the-lens field note with sunrise photography tips, composition decisions, and six images made close to home in Northwest Ohio." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://dsproul.com/ottawa-metro-park-sunrise-photography-lima-ohio.html" />
+  <meta property="og:image" content="https://dsproul.com/golden-sunrise-kayaker-misty-lake-lima-ohio-dan-sproul.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Photographing a Misty Sunrise at Ottawa Metro Park" />
+  <meta name="twitter:description" content="Sunrise photography lessons from an early morning at Ottawa Metro Park in Lima, Ohio." />
+  <meta name="twitter:image" content="https://dsproul.com/golden-sunrise-kayaker-misty-lake-lima-ohio-dan-sproul.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="image" href="golden-sunrise-kayaker-misty-lake-lima-ohio-dan-sproul.jpg" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    :root{
+      --black:#14110d;
+      --deep:#1f1a14;
+      --panel:#17130f;
+      --cream:#f4eee5;
+      --cream-soft:rgba(244,238,229,.74);
+      --gold:#c7a45a;
+      --gold-light:#e4c77d;
+      --line:rgba(195,158,83,.20);
+      --line-strong:rgba(195,158,83,.42);
+      --paper:#eee7dc;
+      --paper-soft:#fbf6ed;
+      --ink:#211b14;
+      --muted:rgba(33,27,20,.68);
+      --max:1240px;
+      --reading:800px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      background:var(--black);
+      color:var(--cream);
+      font-family:"Jost",Arial,sans-serif;
+      font-weight:300;
+      letter-spacing:.025em;
+      overflow-x:hidden;
+    }
+    body::before{content:"";display:block;height:66px}
+    img{display:block;width:100%;height:auto}
+    a{color:inherit}
+    h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:300;line-height:1.05;margin:0}
+    p{margin:0}
+    .inner{width:min(calc(100% - 44px),var(--max));margin:0 auto}
+    .section{padding:clamp(62px,8vw,112px) 0}
+    .eyebrow{color:var(--gold);font-size:10px;letter-spacing:.34em;text-transform:uppercase;margin-bottom:16px}
+    .paper{background:var(--paper);color:var(--ink)}
+    .deep{background:var(--deep);color:var(--cream)}
+
+    .site-nav{
+      position:fixed;top:0;left:0;right:0;height:66px;z-index:9999;
+      display:flex;align-items:center;justify-content:space-between;gap:28px;
+      padding:0 clamp(16px,4vw,44px);
+      background:rgba(14,12,9,.95);
+      border-bottom:1px solid rgba(185,138,59,.18);
+      backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+    }
+    .logo{display:flex;flex-direction:column;text-decoration:none;line-height:1;min-width:max-content}
+    .logo strong{font-family:Arial,sans-serif;font-size:18px;letter-spacing:.24em;text-transform:uppercase}
+    .logo span{margin-top:7px;color:var(--gold);font:9px Arial,sans-serif;letter-spacing:.26em;text-transform:uppercase}
+    .nav-links{display:flex;align-items:center;gap:clamp(16px,1.8vw,30px)}
+    .nav-links a{color:rgba(244,238,229,.78);text-decoration:none;font:700 11px Arial,sans-serif;letter-spacing:.17em;text-transform:uppercase;white-space:nowrap}
+    .nav-links a:hover{color:var(--cream)}
+    .shop{color:#d5b365!important;border:1px solid rgba(213,179,101,.62);padding:13px 20px}
+    .nav-toggle{display:none;width:42px;height:42px;border:1px solid rgba(213,179,101,.36);background:transparent;cursor:pointer}
+    .nav-toggle span{display:block;width:20px;height:2px;margin:5px auto;background:var(--cream)}
+
+    .hero{
+      min-height:86vh;position:relative;display:grid;align-items:end;overflow:hidden;
+      padding:clamp(100px,12vw,165px) clamp(22px,6vw,76px) clamp(66px,8vw,105px);
+    }
+    .hero::before{
+      content:"";position:absolute;inset:0;
+      background:
+        linear-gradient(to top,rgba(20,17,13,.98) 0%,rgba(20,17,13,.64) 44%,rgba(20,17,13,.12) 100%),
+        url("golden-sunrise-kayaker-misty-lake-lima-ohio-dan-sproul.jpg") center 52%/cover no-repeat;
+      filter:brightness(.82) saturate(.92);
+      transform:scale(1.01);
+    }
+    .hero-content{position:relative;max-width:1030px}
+    .hero h1{font-size:clamp(48px,7.2vw,98px);letter-spacing:-.035em;max-width:1000px}
+    .hero h1 em{color:var(--gold-light);font-style:italic}
+    .hero-copy{max-width:760px;margin-top:22px;color:var(--cream-soft);font-size:clamp(15px,1.35vw,18px);line-height:1.85}
+    .btns{display:flex;flex-wrap:wrap;gap:13px;margin-top:30px}
+    .btn{min-height:45px;display:inline-flex;align-items:center;justify-content:center;padding:0 23px;border:1px solid var(--line-strong);text-decoration:none;font-size:10px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;transition:.25s}
+    .btn:hover{border-color:var(--gold-light);color:var(--gold-light)}
+    .btn.primary{background:var(--gold);border-color:var(--gold);color:var(--black)}
+    .btn.primary:hover{background:var(--gold-light);color:var(--black)}
+
+    .intro-strip{background:#15120e;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .intro-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line)}
+    .intro-card{background:#15120e;padding:27px;min-height:145px}
+    .intro-card strong{display:block;font-family:"Cormorant Garamond",Georgia,serif;font-size:28px;font-weight:300;margin-bottom:9px}
+    .intro-card p{font-size:12px;line-height:1.68;color:var(--cream-soft)}
+
+    .article-layout{display:grid;grid-template-columns:minmax(0,1fr) 290px;gap:72px;align-items:start}
+    .article{max-width:var(--reading)}
+    .article h2{font-size:clamp(38px,5vw,64px);letter-spacing:-.025em;margin:58px 0 19px}
+    .article h3{font-size:clamp(28px,3.5vw,40px);margin:38px 0 14px}
+    .article p{font-family:Georgia,serif;font-size:18px;line-height:1.92;color:rgba(33,27,20,.82);margin:0 0 22px;letter-spacing:0}
+    .article p.lead{font-size:22px;line-height:1.8;color:rgba(33,27,20,.9)}
+    .article a{color:#76501e;text-decoration-thickness:1px;text-underline-offset:3px}
+    .article ul{font-family:Georgia,serif;color:rgba(33,27,20,.82);font-size:17px;line-height:1.85;padding-left:24px}
+    .article li{margin-bottom:8px}
+
+    .toc{position:sticky;top:92px;background:#f8f1e7;border:1px solid rgba(33,27,20,.13);padding:25px}
+    .toc h3{font-size:25px;margin-bottom:14px}
+    .toc a{display:block;color:#76501e;text-decoration:none;font-size:12px;line-height:1.8}
+    .gear-box{margin-top:22px;padding-top:20px;border-top:1px solid rgba(33,27,20,.13)}
+    .gear-box strong{display:block;font-family:"Cormorant Garamond",Georgia,serif;font-size:24px;margin-bottom:10px}
+    .gear-box span{display:block;color:var(--muted);font-size:12px;line-height:1.75}
+
+    .pullquote{margin:42px 0;padding:30px 0;border-top:1px solid rgba(33,27,20,.16);border-bottom:1px solid rgba(33,27,20,.16);font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(31px,4vw,45px);line-height:1.2;color:#61441f}
+    .feature{margin:52px 0}
+    .feature img{max-height:790px;object-fit:cover}
+    .feature figcaption{font-size:11px;line-height:1.6;color:var(--muted);margin-top:11px}
+    .feature figcaption strong{color:#805a25}
+    .print-link{display:inline-block;margin-top:9px;color:#805a25!important;font:700 9px Arial,sans-serif!important;letter-spacing:.16em!important;text-transform:uppercase;text-decoration:none!important}
+    .print-link:hover{text-decoration:underline!important}
+    .note-box{margin:32px 0;padding:25px;background:#f8f1e7;border-left:3px solid #9a6d2f}
+    .note-box h3{font-size:29px;margin:0 0 10px}
+    .note-box p{font-size:16px;margin:0;line-height:1.75}
+
+    .tips-section{padding:clamp(65px,8vw,112px) 0}
+    .tips-head{display:grid;grid-template-columns:1fr minmax(300px,520px);gap:40px;align-items:end;margin-bottom:42px}
+    .tips-head h2{font-size:clamp(42px,6vw,76px);letter-spacing:-.03em}
+    .tips-head p{font-size:14px;line-height:1.8;color:var(--cream-soft)}
+    .tips-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+    .tip{background:#17130f;border:1px solid var(--line);padding:26px;min-height:245px}
+    .tip span{display:block;color:var(--gold);font-size:9px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:13px}
+    .tip h3{font-size:31px;margin-bottom:11px}
+    .tip p{font-size:13px;line-height:1.75;color:var(--cream-soft)}
+
+    .image-pair{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:52px 0}
+    .image-pair figure{margin:0}
+    .image-pair img{height:100%;max-height:660px;object-fit:cover}
+    .image-pair figcaption{font-size:11px;line-height:1.6;color:var(--muted);margin-top:11px}
+
+    .faq{max-width:980px;margin:40px auto 0}
+    .faq details{border-top:1px solid rgba(33,27,20,.16);padding:19px 0}
+    .faq details:last-child{border-bottom:1px solid rgba(33,27,20,.16)}
+    .faq summary{cursor:pointer;list-style:none;font-family:"Cormorant Garamond",Georgia,serif;font-size:28px}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq summary::after{content:"+";float:right;color:#91692d}
+    .faq details[open] summary::after{content:"–"}
+    .faq p{font-family:Georgia,serif;font-size:16px;line-height:1.8;color:var(--muted);padding-top:12px;max-width:820px}
+
+    .cta-block{padding:clamp(66px,9vw,122px) 0;background:
+      linear-gradient(90deg,rgba(14,12,9,.97),rgba(14,12,9,.62)),
+      url("golden-sunrise-wildflower-meadow-lima-ohio-dan-sproul.jpg") center/cover no-repeat}
+    .cta-content{max-width:790px}
+    .cta-content h2{font-size:clamp(43px,6vw,78px);letter-spacing:-.03em}
+    .cta-content p{max-width:680px;margin-top:20px;color:var(--cream-soft);font-size:16px;line-height:1.85}
+
+    .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:38px}
+    .related{display:block;padding:27px;background:#15120e;border:1px solid var(--line);text-decoration:none;min-height:210px}
+    .related span{display:block;color:var(--gold);font-size:9px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:14px}
+    .related h3{font-size:31px;margin-bottom:10px}
+    .related p{color:var(--cream-soft);font-size:13px;line-height:1.72}
+
+    footer{background:#100e0b;padding:62px clamp(22px,6vw,76px) 36px;border-top:1px solid rgba(185,138,59,.22)}
+    .footer-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:32px;max-width:1380px;margin:0 auto}
+    footer h3,footer summary{margin:0 0 13px;color:#d5b365;font-family:"Cormorant Garamond",Georgia,serif;font-size:21px;font-weight:400;list-style:none}
+    footer summary::-webkit-details-marker{display:none}
+    footer a{display:block;text-decoration:none;color:rgba(244,238,229,.66);font:13px/2 Arial,sans-serif}
+    footer a:hover{color:var(--cream)}
+    .footer-bottom{max-width:1380px;margin:40px auto 0;padding-top:28px;border-top:1px solid rgba(185,138,59,.22);color:rgba(244,238,229,.34);font:10px/1.8 Arial,sans-serif;letter-spacing:.18em;text-align:center;text-transform:uppercase}
+
+    @media(max-width:1120px){
+      .nav-toggle{display:block}
+      .nav-links{position:fixed;top:66px;left:0;right:0;display:none;flex-direction:column;align-items:flex-start;gap:0;padding:18px 24px 24px;background:rgba(14,12,9,.99);border-bottom:1px solid var(--line)}
+      .site-nav.is-open .nav-links{display:flex}
+      .nav-links a{width:100%;padding:14px 0}
+      .shop{width:auto!important;margin-top:8px;padding:13px 18px}
+      .article-layout{grid-template-columns:1fr}
+      .toc{position:static;order:-1}
+      .tips-grid{grid-template-columns:repeat(2,1fr)}
+      .intro-grid{grid-template-columns:repeat(2,1fr)}
+      .related-grid{grid-template-columns:1fr}
+      .footer-grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media(max-width:760px){
+      body::before{height:64px}
+      .site-nav{height:64px}
+      .nav-links{top:64px}
+      .logo strong{font-size:15px}
+      .hero{min-height:72vh;padding:82px 20px 48px}
+      .hero h1{font-size:clamp(2.45rem,10vw,3.55rem)}
+      .hero-copy{font-size:14px;line-height:1.65}
+      .hero .btns{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+      .hero .btn{padding:9px 10px;font-size:8.5px;letter-spacing:.12em}
+      .intro-grid{grid-template-columns:1fr}
+      .intro-card{min-height:auto;padding:19px}
+      .inner{width:min(calc(100% - 36px),var(--max))}
+      .section{padding:52px 0}
+      .article p,.article p.lead{font-size:17px;line-height:1.78}
+      .article h2{margin-top:48px}
+      .image-pair{grid-template-columns:1fr}
+      .tips-head{grid-template-columns:1fr}
+      .tips-grid{grid-template-columns:1fr}
+      .related-grid{grid-template-columns:1fr}
+      .footer-grid{grid-template-columns:1fr;gap:0}
+      footer{padding:42px 22px 30px}
+      footer details{border-bottom:1px solid rgba(185,138,59,.20)}
+      footer summary{min-height:44px;display:flex;align-items:center;justify-content:space-between;margin:0;padding:13px 0;cursor:pointer;font-family:Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+      footer summary::after{content:"+";color:rgba(244,238,229,.58);font-size:18px}
+      footer details[open] summary::after{content:"–"}
+      .footer-link-list{padding-bottom:16px}
+      .footer-bottom{text-align:left}
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"Person",
+        "@id":"https://dsproul.com/#dan-sproul",
+        "name":"Dan Sproul",
+        "url":"https://dsproul.com",
+        "jobTitle":"Fine Art Photographer and Mixed Media Artist",
+        "homeLocation":{"@type":"Place","name":"Lima, Ohio"}
+      },
+      {
+        "@type":"BlogPosting",
+        "@id":"https://dsproul.com/ottawa-metro-park-sunrise-photography-lima-ohio.html#article",
+        "headline":"Photographing a Misty Sunrise at Ottawa Metro Park in Lima Ohio",
+        "description":"A behind-the-lens field note from Ottawa Metro Park with practical sunrise photography, timing, composition, and camera tips for photographers in Lima and Northwest Ohio.",
+        "image":[
+          "https://dsproul.com/golden-sunrise-kayaker-misty-lake-lima-ohio-dan-sproul.jpg",
+          "https://dsproul.com/misty-sunrise-lake-dock-ottawa-metro-park-lima-ohio-dan-sproul.jpg",
+          "https://dsproul.com/golden-misty-lake-sunrise-reflection-lima-ohio-dan-sproul.jpg",
+          "https://dsproul.com/foggy-lake-reflections-lima-ohio-black-and-white-dan-sproul.jpg",
+          "https://dsproul.com/golden-sunrise-misty-lakeside-path-lima-ohio-dan-sproul.jpg",
+          "https://dsproul.com/golden-sunrise-wildflower-meadow-lima-ohio-dan-sproul.jpg"
+        ],
+        "author":{"@id":"https://dsproul.com/#dan-sproul"},
+        "publisher":{"@type":"Organization","name":"Dan Sproul Fine Art Photography","url":"https://dsproul.com"},
+        "mainEntityOfPage":"https://dsproul.com/ottawa-metro-park-sunrise-photography-lima-ohio.html",
+        "datePublished":"2026-07-27",
+        "dateModified":"2026-07-27",
+        "about":[
+          "Ottawa Metro Park photography",
+          "Lima Ohio sunrise photography",
+          "Northwest Ohio photography locations",
+          "sunrise photography tips",
+          "misty lake photography",
+          "Ohio landscape photography"
+        ],
+        "keywords":"Ottawa Metro Park photography, Lima Ohio photography locations, Northwest Ohio sunrise photography, sunrise photography tips, misty lake photography, Ohio nature photography, Canon 5D Mark IV landscape photography"
+      },
+      {
+        "@type":"BreadcrumbList",
+        "itemListElement":[
+          {"@type":"ListItem","position":1,"name":"Home","item":"https://dsproul.com/"},
+          {"@type":"ListItem","position":2,"name":"Journal","item":"https://dsproul.com/blog.html"},
+          {"@type":"ListItem","position":3,"name":"Ottawa Metro Park Sunrise Photography","item":"https://dsproul.com/ottawa-metro-park-sunrise-photography-lima-ohio.html"}
+        ]
+      },
+      {
+        "@type":"FAQPage",
+        "mainEntity":[
+          {
+            "@type":"Question",
+            "name":"What time should I arrive for sunrise photography?",
+            "acceptedAnswer":{"@type":"Answer","text":"Arrive at least 30 to 45 minutes before sunrise so you can set up in the dark, photograph blue-hour color, and adjust your composition before the brightest light appears."}
+          },
+          {
+            "@type":"Question",
+            "name":"What camera gear works well for sunrise photography at Ottawa Metro Park?",
+            "acceptedAnswer":{"@type":"Answer","text":"A camera with a versatile zoom lens, sturdy tripod, polarizer, spare battery, lens cloth, and remote release or self-timer is enough for most sunrise scenes. Dan used a Canon 5D Mark IV with a 24–105mm zoom."}
+          },
+          {
+            "@type":"Question",
+            "name":"Where can I photograph sunrise near Lima Ohio?",
+            "acceptedAnswer":{"@type":"Answer","text":"Ottawa Metro Park offers lake views, docks, walking paths, mist, reflections, open sky, and nearby meadow scenes that can work well at sunrise when weather and light align."}
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <nav class="site-nav" aria-label="Primary navigation">
+    <a href="/" class="logo" aria-label="Dan Sproul Fine Art Photography home">
+      <strong>Dan Sproul</strong>
+      <span>Fine Art Photography</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="best-sellers.html">Best Sellers</a>
+      <a href="art-collections.html">Collections</a>
+      <a href="about-dan-sproul.html">About</a>
+      <a href="in-your-space.html">In Your Space</a>
+      <a href="for-designers.html">For Designers</a>
+      <a href="blog.html">Blog</a>
+      <a href="https://dansproul.com" target="_blank" rel="noopener" class="shop">Shop Prints</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">Lima Ohio Field Notes</p>
+      <h1>Waiting for the right moment at <em>Ottawa Metro Park.</em></h1>
+      <p class="hero-copy">A misty morning close to home became a lesson in arriving early, watching the light, composing deliberately, and staying flexible when an unexpected kayaker entered the scene.</p>
+      <div class="btns">
+        <a class="btn primary" href="#field-note">Read the Field Note</a>
+        <a class="btn" href="lima-ohio-fine-art-photographer.html">Explore Lima Photography</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="intro-strip" aria-label="Field note overview">
+    <div class="inner intro-grid">
+      <div class="intro-card"><strong>Location</strong><p>Ottawa Metro Park in Lima, Ohio, with a lake, docks, walking paths, trees, and nearby meadow light.</p></div>
+      <div class="intro-card"><strong>Timing</strong><p>Arrival before sunrise, followed by blue hour, silhouettes, golden light, and the walk back to the parking area.</p></div>
+      <div class="intro-card"><strong>Gear</strong><p>Canon 5D Mark IV, 24–105mm zoom, tripod, and circular polarizer.</p></div>
+      <div class="intro-card"><strong>Main lesson</strong><p>Prepare carefully, then stay ready to respond when weather, light, or an unexpected subject changes the composition.</p></div>
+    </div>
+  </section>
+
+  <main>
+    <section class="section paper" id="field-note">
+      <div class="inner article-layout">
+        <article class="article">
+          <p class="eyebrow">Sunrise Photography Near Lima, Ohio</p>
+          <p class="lead">Some of the most rewarding photography mornings do not require a national park, a long flight, or weeks of planning. This series was made at Ottawa Metro Park in Lima, Ohio, only a short drive from home.</p>
+
+          <p>I arrived before sunrise because the most useful part of a sunrise session often begins while the landscape is still dim. The early arrival gave me time to walk to the lake, choose a position, set up the tripod, and study how the dock, shoreline, trees, mist, and open sky might work together.</p>
+
+          <p>My gear was simple: a Canon 5D Mark IV, a 24–105mm zoom lens, a tripod, and a polarizer. The camera and lens were familiar enough that I could make adjustments quickly without losing attention on the light.</p>
+
+          <div class="pullquote">The goal was not to chase one perfect photograph. It was to stay present as the same landscape changed minute by minute.</div>
+
+          <h2 id="arrive-early">Begin before the sun appears</h2>
+          <p>I started at the dock just before sunrise. At that point, the strongest elements were not bright color but structure: the railings, the centered walkway, the still water, and the low mist across the far shoreline.</p>
+
+          <p>A tripod was important here. Before sunrise, the available light was limited, and the tripod allowed me to keep the image sharp without forcing the ISO unnecessarily high. It also slowed the process down. Once the camera was fixed in position, I could refine the symmetry and make sure the dock led directly into the calm lake.</p>
+
+          <figure class="feature">
+            <img src="misty-sunrise-lake-dock-ottawa-metro-park-lima-ohio-dan-sproul.jpg" alt="Dock extending into a misty lake before sunrise at Ottawa Metro Park in Lima Ohio" loading="lazy" decoding="async" />
+            <figcaption><strong>Before sunrise:</strong> The dock created a strong centered composition while the warm sky and thin mist added depth behind it.<br><a class="print-link" href="https://dansproul.com/featured/misty-sunrise-over-the-lake-dock-at-ottawa-metro-park-lima-ohio-dan-sproul.html" target="_blank" rel="noopener">View this Ottawa Metro Park print →</a></figcaption>
+          </figure>
+
+          <div class="note-box">
+            <h3>Sunrise tip: arrive 30–45 minutes early</h3>
+            <p>Early arrival gives you time to work in blue hour, find foregrounds, level the tripod, clean the lens, and test exposures before the brightest color begins. It also prevents hurried decisions when the best light may last only a few minutes.</p>
+          </div>
+
+          <h2 id="silhouettes">Use silhouettes to simplify a busy landscape</h2>
+          <p>As the sun rose, the lake shifted from cool gray to warm gold. Rather than trying to preserve detail everywhere, I allowed grasses and shoreline plants to become silhouettes.</p>
+
+          <p>This simplified the lower part of the frame and kept attention on the mist, reflection, and sunrise. Exposing for the brightest area of sky prevented the sun and its reflection from losing all detail. A silhouette is not necessarily an exposure mistake; it can be an intentional way to organize the image.</p>
+
+          <figure class="feature">
+            <img src="golden-misty-lake-sunrise-reflection-lima-ohio-dan-sproul.jpg" alt="Golden sunrise reflection and silhouetted grasses on a misty lake in Lima Ohio" loading="lazy" decoding="async" />
+            <figcaption><strong>Expose for the highlights:</strong> The dark foreground plants frame the glowing reflection while the mist separates the water from the distant tree line.<br><a class="print-link" href="https://dansproul.com/featured/golden-misty-lake-sunrise-and-reflection-in-lima-ohio-dan-sproul.html" target="_blank" rel="noopener">View this golden lake print →</a></figcaption>
+          </figure>
+
+          <h2 id="unexpected">Stay ready for the moment you cannot plan</h2>
+          <p>The kayaker was the unexpected gift of the morning. I had already composed the lake, sunrise, and mist when the small figure entered the scene. There was no time to overthink it. I needed to adjust immediately.</p>
+
+          <p>I changed the framing to give the kayaker room to move through the photograph while keeping the sun away from the center. The rule of thirds helped organize the scene: the kayaker sat low in the frame, the horizon remained above the middle, and the brightest area balanced the moving subject.</p>
+
+          <p>The wake became an important compositional element. It provided a subtle line through the water and made the image feel active without destroying the quiet mood.</p>
+
+          <figure class="feature">
+            <img src="golden-sunrise-kayaker-misty-lake-lima-ohio-dan-sproul.jpg" alt="Kayaker crossing a glowing misty lake at sunrise in Lima Ohio" loading="lazy" decoding="async" />
+            <figcaption><strong>Adapt in the moment:</strong> The kayaker transformed a quiet sunrise into a story of movement, scale, and solitude.<br><a class="print-link" href="https://dansproul.com/featured/golden-sunrise-kayaker-on-a-misty-lake-in-lima-ohio-dan-sproul.html" target="_blank" rel="noopener">View the sunrise kayaker print →</a></figcaption>
+          </figure>
+
+          <div class="note-box">
+            <h3>Composition tip: leave room in front of movement</h3>
+            <p>When a person, animal, boat, or vehicle enters the frame, avoid placing it against the edge it is moving toward. Give the subject visual space to travel into, then use the wake, reflection, or surrounding light to connect it with the larger landscape.</p>
+          </div>
+
+          <h2 id="black-white">Know when color is not the point</h2>
+          <p>Not every sunrise photograph needs to depend on orange or gold. The black-and-white lake reflection was processed intentionally because the image was really about shape, fog, symmetry, and quiet separation between the trees and water.</p>
+
+          <p>Removing color made the mist more noticeable and helped the reflected tree line merge with the actual shoreline. The result felt more timeless and restrained than the color version.</p>
+
+          <figure class="feature">
+            <img src="foggy-lake-reflections-lima-ohio-black-and-white-dan-sproul.jpg" alt="Black and white foggy lake reflections at Ottawa Metro Park in Lima Ohio" loading="lazy" decoding="async" />
+            <figcaption><strong>Intentional monochrome:</strong> Black and white emphasizes reflection, atmosphere, and tonal balance rather than sunrise color.<br><a class="print-link" href="https://dansproul.com/featured/foggy-lake-reflections-in-lima-ohio-black-and-white-dan-sproul.html" target="_blank" rel="noopener">View the black-and-white lake print →</a></figcaption>
+          </figure>
+
+          <h2 id="keep-looking">Keep photographing after the obvious moment</h2>
+          <p>Once the sun had risen, it would have been easy to pack up. Instead, I walked slowly back toward the parking lot and continued watching how the light changed familiar parts of the park.</p>
+
+          <p>Along the lakeside path, the low sun passed through mature tree branches and illuminated the mist beyond the grass. The path created a natural leading line, while the large tree formed a frame around the sunrise.</p>
+
+          <figure class="feature">
+            <img src="golden-sunrise-misty-lakeside-path-lima-ohio-dan-sproul.jpg" alt="Golden sunlight passing through a large tree along a misty lakeside path in Lima Ohio" loading="lazy" decoding="async" />
+            <figcaption><strong>On the walk back:</strong> The curving path, overhanging branches, and low sunlight turned an ordinary route to the parking lot into one of the strongest scenes of the morning.<br><a class="print-link" href="https://dansproul.com/featured/golden-sunrise-along-a-misty-lakeside-path-in-lima-ohio-dan-sproul.html" target="_blank" rel="noopener">View the misty path print →</a></figcaption>
+          </figure>
+
+          <h2 id="close-to-home">The final photograph was beside the car</h2>
+          <p>The last photograph came from a field near the parking area. The session could have been considered finished, but the sunlight caught the mist above the wildflowers and pulled my attention away from packing the gear.</p>
+
+          <p>The backlight made the moisture glow and separated the flowers from the darker vegetation. I composed through the field toward the trees, allowing the sun to sit high in the frame while the flowers carried the foreground.</p>
+
+          <p>This image became a useful reminder: photographers often assume the strongest subject must be far away. Sometimes the best light is beside the car, along the path home, or in a place we have driven past many times.</p>
+
+          <figure class="feature">
+            <img src="golden-sunrise-wildflower-meadow-lima-ohio-dan-sproul.jpg" alt="Golden sunrise illuminating mist and wildflowers beside Ottawa Metro Park in Lima Ohio" loading="lazy" decoding="async" />
+            <figcaption><strong>Beauty close to home:</strong> Backlit mist and wildflowers created the final image only a few steps from the parking area.<br><a class="print-link" href="https://dansproul.com/featured/golden-sunrise-over-a-wildflower-meadow-in-lima-ohio-dan-sproul.html" target="_blank" rel="noopener">View the wildflower sunrise print →</a></figcaption>
+          </figure>
+
+          <h2 id="polarizer">How I used the polarizer</h2>
+          <p>A circular polarizer can help manage glare on foliage and water, but it needs to be used carefully around sunrise. Maximum polarization is not always desirable. Too much can remove the reflections and surface glow that make a misty lake feel luminous.</p>
+
+          <p>I rotated the polarizer while looking through the viewfinder and stopped when the balance felt right. The goal was not to eliminate every reflection. It was to control glare while preserving the warmth, mist, and visual depth of the water.</p>
+
+          <h2 id="settings">A practical starting point for sunrise camera settings</h2>
+          <p>Exact settings depend on wind, focal length, available light, and whether anything in the frame is moving. These are useful starting points rather than rigid rules:</p>
+
+          <ul>
+            <li><strong>Before sunrise on a tripod:</strong> ISO 100–400, aperture around f/8 to f/11, and whatever shutter speed creates a correct exposure.</li>
+            <li><strong>When mist or foliage is moving:</strong> raise ISO enough to keep the shutter speed from becoming excessively long.</li>
+            <li><strong>When a kayaker or wildlife appears:</strong> prioritize a faster shutter speed and increase ISO if necessary.</li>
+            <li><strong>For the sun and reflection:</strong> check the histogram and protect important highlights from clipping.</li>
+            <li><strong>For reliable color:</strong> photograph in RAW so white balance can be refined later without damaging the file.</li>
+            <li><strong>To reduce vibration:</strong> use a cable release, remote, or two-second self-timer when the camera is on the tripod.</li>
+          </ul>
+
+          <h2 id="local-photography">Finding photography locations around Lima and Northwest Ohio</h2>
+          <p>Northwest Ohio does not have ocean cliffs or towering mountain ranges, but it offers its own strengths: fog, wetlands, reservoirs, open fields, tree lines, wildlife, farmland, and broad eastern skies.</p>
+
+          <p>For photographers searching for <strong>Lima, Ohio photography locations</strong>, the most important factor is often not the size of the landscape but the timing. A familiar park can look completely different when cool overnight air produces mist and the first sunlight arrives at a low angle.</p>
+
+          <p>Return to the same nearby places in different seasons. Watch for frost, spring fog, summer wildflowers, autumn color, winter ice, and changing water levels. Familiarity helps you anticipate where the light will fall and where a subject may enter the frame.</p>
+
+          <p>More regional work can be found on my <a href="lima-ohio-fine-art-photographer.html"><strong>Lima, Ohio fine-art photography page</strong></a> and in my broader collection of <a href="ohio-nature-photography-prints.html"><strong>Ohio nature photography prints</strong></a>.</p>
+
+          <div class="pullquote">You do not need to wait for a distant trip to practice seeing. The discipline of landscape photography can begin a few miles from home.</div>
+
+          <h2>Final thoughts</h2>
+          <p>This Ottawa Metro Park sunrise produced six very different photographs from one short morning: a symmetrical dock, a golden silhouette, an unexpected kayaker, an intentionally monochrome reflection, a sunlit lakeside path, and a field glowing beside the parking lot.</p>
+
+          <p>None of them came from rushing directly to the brightest color and leaving as soon as the sun appeared. They came from arriving early, staying observant, adapting when the scene changed, and continuing to look during the walk back.</p>
+
+          <p>That is the larger lesson for sunrise photography in Lima, Northwest Ohio, or anywhere else: preparation creates opportunity, but attention is what recognizes the moment.</p>
+        </article>
+
+        <aside class="toc">
+          <h3>In this field note</h3>
+          <a href="#arrive-early">Arriving before sunrise</a>
+          <a href="#silhouettes">Using silhouettes</a>
+          <a href="#unexpected">Adapting to a kayaker</a>
+          <a href="#black-white">Choosing black and white</a>
+          <a href="#keep-looking">Photographing the walk back</a>
+          <a href="#close-to-home">Finding the final image</a>
+          <a href="#polarizer">Using a polarizer</a>
+          <a href="#settings">Sunrise camera settings</a>
+          <a href="#local-photography">Lima photography locations</a>
+          <div class="gear-box">
+            <strong>Gear used</strong>
+            <span>Canon 5D Mark IV</span>
+            <span>24–105mm zoom lens</span>
+            <span>Sturdy tripod</span>
+            <span>Circular polarizer</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="tips-section deep">
+      <div class="inner">
+        <div class="tips-head">
+          <div>
+            <p class="eyebrow">Sunrise Photography Checklist</p>
+            <h2>Six lessons from one morning close to home.</h2>
+          </div>
+          <p>The best sunrise images often come from a combination of planning and quick response. Use this checklist before your next early-morning landscape session.</p>
+        </div>
+
+        <div class="tips-grid">
+          <div class="tip"><span>01 · Timing</span><h3>Arrive in darkness</h3><p>Use the quiet time before sunrise to find your position, level the tripod, test the exposure, and watch where mist is forming.</p></div>
+          <div class="tip"><span>02 · Highlights</span><h3>Protect the sky</h3><p>Bright sunrise color clips easily. Check the histogram and preserve the important highlight detail around the sun and reflection.</p></div>
+          <div class="tip"><span>03 · Composition</span><h3>Build a structure</h3><p>Use docks, paths, reflections, branches, shorelines, and the rule of thirds to give the eye a clear route through the image.</p></div>
+          <div class="tip"><span>04 · Flexibility</span><h3>Expect interruption</h3><p>A kayaker, bird, deer, or changing cloud can improve the scene. Know the camera well enough to adjust quickly without losing the moment.</p></div>
+          <div class="tip"><span>05 · Processing</span><h3>Choose color intentionally</h3><p>Warm light is powerful, but some scenes are stronger in black and white when fog, reflection, and shape matter more than hue.</p></div>
+          <div class="tip"><span>06 · Awareness</span><h3>Keep looking afterward</h3><p>The walk back can be as productive as the planned viewpoint. Turn around, watch side light, and notice what the low sun touches.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-block">
+      <div class="inner cta-content">
+        <p class="eyebrow">Lima &amp; Northwest Ohio Photography</p>
+        <h2>Original Ohio landscapes can begin with an ordinary morning nearby.</h2>
+        <p>Explore fine-art photography from Lima and across Ohio, including misty lakes, wildflowers, wildlife, forests, rivers, and quiet regional scenes for homes and professional interiors.</p>
+        <div class="btns">
+          <a class="btn primary" href="lima-ohio-fine-art-photographer.html">Explore Lima Photography</a>
+          <a class="btn" href="ohio-nature-photography-prints.html">View Ohio Nature Artwork</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section paper" id="faq">
+      <div class="inner">
+        <p class="eyebrow">Common Questions</p>
+        <h2 style="font-size:clamp(42px,6vw,74px);max-width:850px">Sunrise photography around Lima, Ohio.</h2>
+        <div class="faq">
+          <details><summary>What time should I arrive for sunrise photography?</summary><p>Arrive at least 30 to 45 minutes before sunrise. This provides time to work during blue hour, find the composition, set the tripod, and begin photographing before the brightest color appears.</p></details>
+          <details><summary>What camera gear works well at Ottawa Metro Park?</summary><p>A camera, versatile zoom lens, sturdy tripod, lens cloth, spare battery, and remote release or self-timer are enough for most sunrise scenes. A circular polarizer can help with glare, but it should be adjusted carefully so useful reflections are not removed.</p></details>
+          <details><summary>How do I photograph mist over water?</summary><p>Use side light or backlight when possible, expose carefully for the bright sky, and look for a darker background that allows the mist to separate visually. A tripod helps in lower light, but avoid shutter speeds so long that moving mist loses all structure.</p></details>
+          <details><summary>Should I photograph sunrise in RAW?</summary><p>RAW files preserve more highlight and shadow information and allow greater flexibility when refining white balance. This is especially useful when sunrise light changes rapidly from cool blue to warm orange.</p></details>
+          <details><summary>Where can I photograph sunrise near Lima, Ohio?</summary><p>Ottawa Metro Park offers lake views, docks, walking paths, reflections, trees, mist, and open sky. More broadly, Northwest Ohio photographers can look for reservoirs, wetlands, fields, river corridors, county parks, and east-facing shorelines.</p></details>
+          <details><summary>Why use black and white for a sunrise photograph?</summary><p>Black and white can strengthen a scene when the main subjects are fog, reflection, shape, contrast, or symmetry. It removes competing color and can create a quieter, more timeless presentation.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background:var(--black)">
+      <div class="inner">
+        <p class="eyebrow">Continue Exploring</p>
+        <h2 style="font-size:clamp(40px,6vw,70px);max-width:820px">More Ohio photography and artwork resources.</h2>
+        <div class="related-grid">
+          <a class="related" href="lima-ohio-fine-art-photographer.html"><span>Local Photography</span><h3>Lima Ohio Fine-Art Photographer</h3><p>Learn more about Dan Sproul’s Lima-based work, local nature photography, and artwork for Northwest Ohio homes and businesses.</p></a>
+          <a class="related" href="ohio-nature-photography-prints.html"><span>Ohio Collection</span><h3>Ohio Nature Photography Prints</h3><p>Explore Ohio landscapes, wildlife, water, forests, rural scenes, and regional fine-art photography.</p></a>
+          <a class="related" href="blog.html"><span>Field Notes</span><h3>Journal and Photography Guides</h3><p>Read additional location stories, road-trip guides, interior artwork advice, and behind-the-lens field notes.</p></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <details open><summary>Explore</summary><div class="footer-link-list"><a href="/">Home</a><a href="best-sellers.html">Best Sellers</a><a href="art-collections.html">Collections</a><a href="in-your-space.html">In Your Space</a><a href="for-designers.html">For Designers</a><a href="https://dansproul.com" target="_blank" rel="noopener">Shop Prints</a><a href="mailto:dan@dsproul.com">Contact</a></div></details>
+      <details open><summary>Collections</summary><div class="footer-link-list"><a href="quiet-earth-collection.html">Quiet Earth</a><a href="forest-light-collection.html">Forest Light</a><a href="wellness-waters-collection.html">Wellness Waters</a><a href="coastal-atmosphere.html">Coastal Atmosphere</a><a href="mountain-light-collection.html">Mountain Light</a><a href="monochrome-stillness.html">Monochrome Stillness</a><a href="winter-stillness.html">Winter Stillness</a></div></details>
+      <details open><summary>Resources</summary><div class="footer-link-list"><a href="artwork-guides.html">Artwork Guides</a><a href="blog.html">Journal</a><a href="lima-ohio-fine-art-photographer.html">Lima Fine Art Photographer</a><a href="ohio-nature-photography-prints.html">Ohio Nature Photography</a><a href="about-dan-sproul.html">About Dan</a></div></details>
+      <details open><summary>For Designers</summary><div class="footer-link-list"><a href="for-designers.html">Designer Resources</a><a href="healthcare-artwork.html">Healthcare</a><a href="hospitality-artwork.html">Hospitality</a><a href="office-artwork.html">Office</a><a href="residential-nature-wall-art.html">Residential</a><a href="senior-living-artwork.html">Senior Living</a></div></details>
+      <div><h3>Connect</h3><a href="mailto:dan@dsproul.com">Email</a><a href="https://www.linkedin.com/in/dan-sproul-bb55015a/" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.pinterest.com/dansproul/" target="_blank" rel="noopener">Pinterest</a></div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 Dan Sproul Fine Art Photography &middot; Based in Lima, Ohio &middot; Original Nature Photography &amp; Heritage-Inspired Artwork</div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded",function(){
+      const nav=document.querySelector(".site-nav");
+      const toggle=document.querySelector(".nav-toggle");
+      if(nav&&toggle){
+        toggle.addEventListener("click",function(){
+          const open=nav.classList.toggle("is-open");
+          toggle.setAttribute("aria-expanded",open?"true":"false");
+        });
+        document.querySelectorAll(".nav-links a").forEach(a=>a.addEventListener("click",()=>{nav.classList.remove("is-open");toggle.setAttribute("aria-expanded","false")}));
+      }
+      function updateFooter(){
+        const mobile=window.matchMedia("(max-width:760px)").matches;
+        document.querySelectorAll("footer details").forEach(d=>mobile?d.removeAttribute("open"):d.setAttribute("open",""));
+      }
+      updateFooter();
+      window.addEventListener("resize",updateFooter);
+    });
+  </script>
+</body>
+</html>
