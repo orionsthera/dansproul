@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How Hospitality Artwork Creates a Memorable Sense of Place | Dan Sproul</title>
+  <meta name="description" content="Learn how hospitality artwork helps hotels, resorts, lodges, restaurants, and guest spaces create a memorable sense of place through regional imagery, scale, color, and coordinated collections." />
+  <meta name="author" content="Dan Sproul" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://dsproul.com/how-hospitality-artwork-creates-a-memorable-sense-of-place.html" />
+
+  <meta property="og:title" content="How Hospitality Artwork Creates a Memorable Sense of Place" />
+  <meta property="og:description" content="A practical guide to using artwork in hotels, resorts, lodges, restaurants, guest rooms, corridors, and public spaces." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://dsproul.com/how-hospitality-artwork-creates-a-memorable-sense-of-place.html" />
+  <meta property="og:image" content="https://dsproul.com/hospitality%20modern%20hotel%20lobby%20mockup%20bnw%20mountain%20landscape.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="How Hospitality Artwork Creates a Memorable Sense of Place" />
+  <meta name="twitter:description" content="How hotels and resorts can use artwork to build identity, guide the guest experience, and strengthen a connection to place." />
+  <meta name="twitter:image" content="https://dsproul.com/hospitality%20modern%20hotel%20lobby%20mockup%20bnw%20mountain%20landscape.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="image" href="hospitality modern hotel lobby mockup bnw mountain landscape.jpg" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    :root{
+      --black:#14110d;
+      --deep:#1f1a14;
+      --panel:#17130f;
+      --cream:#f4eee5;
+      --cream-soft:rgba(244,238,229,.72);
+      --cream-faint:rgba(244,238,229,.48);
+      --gold:#c7a45a;
+      --gold-light:#e4c77d;
+      --line:rgba(195,158,83,.20);
+      --line-strong:rgba(195,158,83,.42);
+      --paper:#eee7dc;
+      --paper-soft:#fbf6ed;
+      --ink:#211b14;
+      --muted:rgba(33,27,20,.68);
+      --max:1240px;
+      --reading:790px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      background:var(--black);
+      color:var(--cream);
+      font-family:"Jost",Arial,sans-serif;
+      font-weight:300;
+      letter-spacing:.025em;
+      overflow-x:hidden;
+    }
+    body::before{content:"";display:block;height:66px}
+    img{display:block;width:100%;height:auto}
+    a{color:inherit}
+    h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:300;line-height:1.05;margin:0}
+    p{margin:0}
+    .eyebrow{color:var(--gold);font-size:10px;letter-spacing:.34em;text-transform:uppercase;margin-bottom:16px}
+    .inner{width:min(calc(100% - 44px),var(--max));margin:0 auto}
+    .section{padding:clamp(62px,8vw,112px) 0}
+    .paper{background:var(--paper);color:var(--ink)}
+    .dark{background:var(--black);color:var(--cream)}
+    .deep{background:var(--deep);color:var(--cream)}
+    .paper .eyebrow{color:#91692d}
+
+    .site-nav{
+      position:fixed;top:0;left:0;right:0;height:66px;z-index:9999;
+      display:flex;align-items:center;justify-content:space-between;gap:28px;
+      padding:0 clamp(16px,4vw,44px);
+      background:rgba(14,12,9,.95);
+      border-bottom:1px solid rgba(185,138,59,.18);
+      backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+    }
+    .logo{display:flex;flex-direction:column;text-decoration:none;line-height:1;min-width:max-content}
+    .logo strong{font-family:Arial,sans-serif;font-size:18px;letter-spacing:.24em;text-transform:uppercase}
+    .logo span{margin-top:7px;color:var(--gold);font:9px Arial,sans-serif;letter-spacing:.26em;text-transform:uppercase}
+    .nav-links{display:flex;align-items:center;gap:clamp(16px,1.8vw,30px)}
+    .nav-links a{color:rgba(244,238,229,.78);text-decoration:none;font:700 11px Arial,sans-serif;letter-spacing:.17em;text-transform:uppercase;white-space:nowrap}
+    .nav-links a:hover{color:var(--cream)}
+    .shop{color:#d5b365!important;border:1px solid rgba(213,179,101,.62);padding:13px 20px}
+    .nav-toggle{display:none;width:42px;height:42px;border:1px solid rgba(213,179,101,.36);background:transparent;cursor:pointer}
+    .nav-toggle span{display:block;width:20px;height:2px;margin:5px auto;background:var(--cream)}
+
+    .hero{
+      min-height:84vh;position:relative;display:grid;align-items:end;overflow:hidden;
+      padding:clamp(100px,12vw,165px) clamp(22px,6vw,76px) clamp(66px,8vw,105px);
+    }
+    .hero::before{
+      content:"";position:absolute;inset:0;
+      background:
+        linear-gradient(to top,rgba(20,17,13,.98) 0%,rgba(20,17,13,.72) 42%,rgba(20,17,13,.18) 100%),
+        url("hospitality modern hotel lobby mockup bnw mountain landscape.jpg") center/cover no-repeat;
+      filter:brightness(.82) saturate(.88);
+      transform:scale(1.01);
+    }
+    .hero-content{position:relative;max-width:1030px}
+    .hero h1{font-size:clamp(48px,7.2vw,98px);letter-spacing:-.035em;max-width:1000px}
+    .hero h1 em{color:var(--gold-light);font-style:italic}
+    .hero-copy{max-width:760px;margin-top:22px;color:var(--cream-soft);font-size:clamp(15px,1.35vw,18px);line-height:1.85}
+    .btns{display:flex;flex-wrap:wrap;gap:13px;margin-top:30px}
+    .btn{min-height:45px;display:inline-flex;align-items:center;justify-content:center;padding:0 23px;border:1px solid var(--line-strong);text-decoration:none;font-size:10px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;transition:.25s}
+    .btn:hover{border-color:var(--gold-light);color:var(--gold-light)}
+    .btn.primary{background:var(--gold);border-color:var(--gold);color:var(--black)}
+    .btn.primary:hover{background:var(--gold-light);color:var(--black)}
+
+    .intro-strip{background:#15120e;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .intro-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line)}
+    .intro-card{background:#15120e;padding:30px;min-height:155px}
+    .intro-card strong{display:block;font-family:"Cormorant Garamond",Georgia,serif;font-size:31px;font-weight:300;margin-bottom:10px}
+    .intro-card p{font-size:13px;line-height:1.72;color:var(--cream-soft)}
+
+    .article-layout{display:grid;grid-template-columns:minmax(0,1fr) 290px;gap:72px;align-items:start}
+    .article{max-width:var(--reading)}
+    .article h2{font-size:clamp(38px,5vw,64px);letter-spacing:-.025em;margin:58px 0 19px}
+    .article h3{font-size:clamp(28px,3.5vw,40px);margin:38px 0 14px}
+    .article p{font-family:Georgia,serif;font-size:18px;line-height:1.92;color:rgba(33,27,20,.82);margin:0 0 22px;letter-spacing:0}
+    .article p.lead{font-size:22px;line-height:1.8;color:rgba(33,27,20,.9)}
+    .article a{color:#76501e;text-decoration-thickness:1px;text-underline-offset:3px}
+    .article ul{font-family:Georgia,serif;color:rgba(33,27,20,.82);font-size:17px;line-height:1.85;padding-left:24px}
+    .article li{margin-bottom:8px}
+    .toc{position:sticky;top:92px;background:#f8f1e7;border:1px solid rgba(33,27,20,.13);padding:25px}
+    .toc h3{font-size:25px;margin-bottom:14px}
+    .toc a{display:block;color:#76501e;text-decoration:none;font-size:12px;line-height:1.8}
+    .toc .mini-cta{margin-top:22px;padding-top:20px;border-top:1px solid rgba(33,27,20,.13)}
+    .toc .mini-cta p{font-size:12px;line-height:1.6;color:var(--muted);margin-bottom:13px}
+    .toc .mini-cta a{display:inline-flex;font-size:9px;letter-spacing:.16em;text-transform:uppercase;border:1px solid rgba(118,80,30,.35);padding:11px 13px}
+
+    .pullquote{margin:42px 0;padding:30px 0;border-top:1px solid rgba(33,27,20,.16);border-bottom:1px solid rgba(33,27,20,.16);font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(31px,4vw,45px);line-height:1.2;color:#61441f}
+    .feature{margin:52px 0}
+    .feature img{aspect-ratio:16/10;object-fit:cover}
+    .feature figcaption{font-size:11px;line-height:1.6;color:var(--muted);margin-top:11px}
+    .feature figcaption strong{color:#805a25}
+    .note-box{margin:32px 0;padding:25px;background:#f8f1e7;border-left:3px solid #9a6d2f}
+    .note-box h3{font-size:29px;margin:0 0 10px}
+    .note-box p{font-size:16px;margin:0;line-height:1.75}
+
+    .visual-section{padding:clamp(64px,8vw,112px) 0}
+    .visual-head{display:grid;grid-template-columns:1fr minmax(300px,520px);gap:40px;align-items:end;margin-bottom:42px}
+    .visual-head h2{font-size:clamp(42px,6vw,76px);letter-spacing:-.03em}
+    .visual-head p{font-size:14px;line-height:1.8;color:var(--cream-soft)}
+    .split{display:grid;grid-template-columns:1.1fr .9fr;gap:52px;align-items:center;margin-top:65px}
+    .split.reverse{grid-template-columns:.9fr 1.1fr}
+    .split.reverse .visual{order:2}
+    .split h3{font-size:clamp(36px,5vw,58px);margin-bottom:16px}
+    .split p{font-size:14px;line-height:1.9;color:var(--cream-soft);margin-bottom:16px}
+    .visual img{aspect-ratio:4/3;object-fit:cover;border:1px solid var(--line)}
+    .visual-label{margin-top:12px;color:var(--gold);font-size:9px;letter-spacing:.18em;text-transform:uppercase}
+
+    .principles{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:38px}
+    .principle{background:#f8f1e7;border:1px solid rgba(33,27,20,.13);padding:25px}
+    .principle span{display:block;color:#91692d;font-size:9px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:12px}
+    .principle h3{font-size:30px;margin-bottom:10px}
+    .principle p{font-family:Georgia,serif;font-size:15px;line-height:1.75;color:var(--muted)}
+
+    .cta-block{padding:clamp(66px,9vw,122px) 0;background:
+      linear-gradient(90deg,rgba(14,12,9,.97),rgba(14,12,9,.66)),
+      url("hospitality-mockup-rustic-lodge-lobby-mountains.jpg") center/cover no-repeat}
+    .cta-content{max-width:790px}
+    .cta-content h2{font-size:clamp(43px,6vw,78px);letter-spacing:-.03em}
+    .cta-content p{max-width:680px;margin-top:20px;color:var(--cream-soft);font-size:16px;line-height:1.85}
+
+    .faq{max-width:980px;margin:40px auto 0}
+    .faq details{border-top:1px solid rgba(33,27,20,.16);padding:19px 0}
+    .faq details:last-child{border-bottom:1px solid rgba(33,27,20,.16)}
+    .faq summary{cursor:pointer;list-style:none;font-family:"Cormorant Garamond",Georgia,serif;font-size:28px}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq summary::after{content:"+";float:right;color:#91692d}
+    .faq details[open] summary::after{content:"–"}
+    .faq p{font-family:Georgia,serif;font-size:16px;line-height:1.8;color:var(--muted);padding-top:12px;max-width:820px}
+
+    .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:38px}
+    .related{display:block;padding:27px;background:#15120e;border:1px solid var(--line);text-decoration:none;min-height:210px}
+    .related span{display:block;color:var(--gold);font-size:9px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:14px}
+    .related h3{font-size:31px;margin-bottom:10px}
+    .related p{color:var(--cream-soft);font-size:13px;line-height:1.72}
+
+    footer{background:#100e0b;padding:62px clamp(22px,6vw,76px) 36px;border-top:1px solid rgba(185,138,59,.22)}
+    .footer-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:32px;max-width:1380px;margin:0 auto}
+    footer h3,footer summary{margin:0 0 13px;color:#d5b365;font-family:"Cormorant Garamond",Georgia,serif;font-size:21px;font-weight:400;list-style:none}
+    footer summary::-webkit-details-marker{display:none}
+    footer a{display:block;text-decoration:none;color:rgba(244,238,229,.66);font:13px/2 Arial,sans-serif}
+    footer a:hover{color:var(--cream)}
+    .footer-bottom{max-width:1380px;margin:40px auto 0;padding-top:28px;border-top:1px solid rgba(185,138,59,.22);color:rgba(244,238,229,.34);font:10px/1.8 Arial,sans-serif;letter-spacing:.18em;text-align:center;text-transform:uppercase}
+
+    @media(max-width:1120px){
+      .nav-toggle{display:block}
+      .nav-links{position:fixed;top:66px;left:0;right:0;display:none;flex-direction:column;align-items:flex-start;gap:0;padding:18px 24px 24px;background:rgba(14,12,9,.99);border-bottom:1px solid var(--line)}
+      .site-nav.is-open .nav-links{display:flex}
+      .nav-links a{width:100%;padding:14px 0}
+      .shop{width:auto!important;margin-top:8px;padding:13px 18px}
+      .article-layout{grid-template-columns:1fr}
+      .toc{position:static;order:-1}
+      .visual-head{grid-template-columns:1fr}
+      .principles{grid-template-columns:repeat(2,1fr)}
+      .related-grid{grid-template-columns:1fr}
+      .footer-grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media(max-width:760px){
+      body::before{height:64px}
+      .site-nav{height:64px}
+      .nav-links{top:64px}
+      .logo strong{font-size:15px}
+      .hero{min-height:72vh;padding:85px 20px 48px}
+      .hero h1{font-size:clamp(2.55rem,10.5vw,3.6rem)}
+      .hero-copy{font-size:14px;line-height:1.65}
+      .hero .btns{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+      .hero .btn{padding:9px 10px;font-size:8.5px;letter-spacing:.12em}
+      .intro-grid{grid-template-columns:1fr}
+      .intro-card{min-height:auto;padding:20px}
+      .inner{width:min(calc(100% - 36px),var(--max))}
+      .section{padding:52px 0}
+      .article p,.article p.lead{font-size:17px;line-height:1.78}
+      .article h2{margin-top:48px}
+      .split,.split.reverse{grid-template-columns:1fr;gap:26px}
+      .split.reverse .visual{order:0}
+      .principles{grid-template-columns:1fr}
+      .related-grid{grid-template-columns:1fr}
+      .footer-grid{grid-template-columns:1fr;gap:0}
+      footer{padding:42px 22px 30px}
+      footer details{border-bottom:1px solid rgba(185,138,59,.20)}
+      footer summary{min-height:44px;display:flex;align-items:center;justify-content:space-between;margin:0;padding:13px 0;cursor:pointer;font-family:Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+      footer summary::after{content:"+";color:rgba(244,238,229,.58);font-size:18px}
+      footer details[open] summary::after{content:"–"}
+      .footer-link-list{padding-bottom:16px}
+      .footer-bottom{text-align:left}
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"Person",
+        "@id":"https://dsproul.com/#dan-sproul",
+        "name":"Dan Sproul",
+        "url":"https://dsproul.com",
+        "jobTitle":"Fine Art Photographer and Mixed Media Artist",
+        "homeLocation":{"@type":"Place","name":"Lima, Ohio"},
+        "sameAs":["https://dansproul.com","https://www.linkedin.com/in/dan-sproul-bb55015a/","https://www.pinterest.com/dansproul/"]
+      },
+      {
+        "@type":"BlogPosting",
+        "@id":"https://dsproul.com/how-hospitality-artwork-creates-a-memorable-sense-of-place.html#article",
+        "headline":"How Hospitality Artwork Creates a Memorable Sense of Place in Hotels and Resorts",
+        "description":"A practical guide to using hospitality artwork to connect hotels, resorts, lodges, restaurants, and guest spaces to their location and brand story.",
+        "image":"https://dsproul.com/hospitality%20modern%20hotel%20lobby%20mockup%20bnw%20mountain%20landscape.jpg",
+        "author":{"@id":"https://dsproul.com/#dan-sproul"},
+        "publisher":{"@type":"Organization","name":"Dan Sproul Fine Art Photography","url":"https://dsproul.com"},
+        "mainEntityOfPage":"https://dsproul.com/how-hospitality-artwork-creates-a-memorable-sense-of-place.html",
+        "datePublished":"2026-07-27",
+        "dateModified":"2026-07-27",
+        "about":["hospitality artwork","hotel artwork","resort artwork","artwork for hotels and resorts","sense of place in hospitality design"]
+      },
+      {
+        "@type":"BreadcrumbList",
+        "itemListElement":[
+          {"@type":"ListItem","position":1,"name":"Home","item":"https://dsproul.com/"},
+          {"@type":"ListItem","position":2,"name":"Journal","item":"https://dsproul.com/blog.html"},
+          {"@type":"ListItem","position":3,"name":"Hospitality Artwork and Sense of Place","item":"https://dsproul.com/how-hospitality-artwork-creates-a-memorable-sense-of-place.html"}
+        ]
+      },
+      {
+        "@type":"FAQPage",
+        "mainEntity":[
+          {"@type":"Question","name":"What type of artwork works best in hotels?","acceptedAnswer":{"@type":"Answer","text":"The strongest hotel artwork supports the property's design direction, location, guest profile, and desired mood. Regional nature photography, local architecture, abstract work, heritage imagery, and coordinated collections can all work when selected intentionally."}},
+          {"@type":"Question","name":"How does hotel artwork create a sense of place?","acceptedAnswer":{"@type":"Answer","text":"Artwork can reference the surrounding landscape, local culture, history, materials, colors, and atmosphere, helping guests feel that the experience belongs specifically to that destination."}},
+          {"@type":"Question","name":"Should hotel artwork match in every space?","acceptedAnswer":{"@type":"Answer","text":"Artwork should feel coordinated rather than identical. A consistent palette, subject family, framing system, or visual rhythm can connect the lobby, corridors, guest rooms, dining areas, and meeting spaces while allowing each area to have its own energy."}}
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <nav class="site-nav" aria-label="Primary navigation">
+    <a href="/" class="logo" aria-label="Dan Sproul Fine Art Photography home">
+      <strong>Dan Sproul</strong>
+      <span>Fine Art Photography</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="best-sellers.html">Best Sellers</a>
+      <a href="art-collections.html">Collections</a>
+      <a href="about-dan-sproul.html">About</a>
+      <a href="in-your-space.html">In Your Space</a>
+      <a href="for-designers.html">For Designers</a>
+      <a href="blog.html">Blog</a>
+      <a href="https://dansproul.com" target="_blank" rel="noopener" class="shop">Shop Prints</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">Hospitality Artwork Guide</p>
+      <h1>How hospitality artwork creates a memorable <em>sense of place.</em></h1>
+      <p class="hero-copy">The strongest hotels and resorts do more than decorate their walls. They use artwork to connect guests with the location, architecture, atmosphere, and story of the property.</p>
+      <div class="btns">
+        <a class="btn primary" href="#article">Read the Guide</a>
+        <a class="btn" href="hospitality-artwork.html">Explore Hospitality Artwork</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="intro-strip" aria-label="Article overview">
+    <div class="inner intro-grid">
+      <div class="intro-card"><strong>Build identity</strong><p>Use artwork to reinforce what makes a hotel, resort, lodge, restaurant, or destination distinct.</p></div>
+      <div class="intro-card"><strong>Guide emotion</strong><p>Shape the guest experience through scale, color, subject, rhythm, and atmosphere.</p></div>
+      <div class="intro-card"><strong>Create continuity</strong><p>Connect lobbies, corridors, guestrooms, dining spaces, and gathering areas without making them identical.</p></div>
+    </div>
+  </section>
+
+  <main>
+    <section class="section paper" id="article">
+      <div class="inner article-layout">
+        <article class="article">
+          <p class="eyebrow">Hotels, Resorts &amp; Guest-Focused Interiors</p>
+          <p class="lead">The most memorable hotels do more than provide a comfortable place to stay. They create a feeling that belongs specifically to that location. From the first view of the lobby to the artwork inside a guest room, every visual decision contributes to the story a property tells.</p>
+
+          <p>Thoughtfully selected <a href="hospitality-artwork.html"><strong>hospitality artwork for hotels and resorts</strong></a> can help a property feel connected to its surroundings, architecture, and brand identity. A dramatic mountain photograph may reinforce the character of an alpine lodge, while atmospheric coastal imagery can give a waterfront hotel a quieter and more authentic sense of place.</p>
+
+          <p>The goal is not simply to fill empty walls. The strongest hospitality artwork helps guests understand where they are, how the property wants them to feel, and what makes the experience different from a hotel anywhere else.</p>
+
+          <div class="pullquote">A memorable property feels rooted in its destination—not assembled from objects that could belong anywhere.</div>
+
+          <h2 id="meaning">What “sense of place” means in hospitality design</h2>
+          <p>A sense of place is the feeling that a hotel could only exist where it does. It can come from architecture, materials, landscaping, lighting, local history, food, views, and the way guests move through the property. Artwork becomes one of the most visible ways to connect those elements.</p>
+
+          <p>This does not mean every hotel needs literal photographs of its nearest landmark. A coastal property can suggest the ocean through mist, weathered textures, tidal movement, or muted blues and grays. A mountain lodge can reference altitude and wilderness through black-and-white peaks, changing seasons, old structures, forests, or expansive skies.</p>
+
+          <p>The best selections feel specific without becoming predictable. Guests recognize the atmosphere of the region, but the artwork still feels considered, elevated, and integrated with the interior.</p>
+
+          <figure class="feature">
+            <img src="hospitality-boutique-hotel-mockup-bnw-glacier-river.jpg" alt="Boutique hotel lobby with large black and white glacier river artwork by Dan Sproul" loading="lazy" decoding="async" />
+            <figcaption><strong>Arrival experience:</strong> A large black-and-white landscape creates immediate visual authority while supporting the warm wood, stone, and quiet luxury of the reception area.</figcaption>
+          </figure>
+
+          <h2 id="arrival">The arrival experience begins before check-in</h2>
+          <p>The lobby is often the most photographed and remembered interior in a hotel. It introduces the property’s visual language before a guest reaches the front desk. Artwork in this setting needs enough scale and presence to compete with architecture, lighting, furniture, and movement.</p>
+
+          <p>A small piece centered on a large wall can feel apologetic. One oversized focal image, a well-spaced diptych, or a coordinated grouping usually communicates more confidence. The work should be visible from the natural path of entry, not hidden behind furniture or placed where guests only notice it while leaving.</p>
+
+          <p>Arrival spaces also benefit from clarity. The artwork does not need to explain every part of the brand. It needs to establish the emotional direction: dramatic, calm, adventurous, refined, historical, coastal, urban, or restorative.</p>
+
+          <div class="note-box">
+            <h3>Design question to ask</h3>
+            <p>What should a guest feel during the first thirty seconds: energized, reassured, curious, grounded, transported, or impressed? That answer should guide the scale and subject of the first major artwork.</p>
+          </div>
+
+          <h2 id="regional">Use regional artwork without making the hotel feel themed</h2>
+          <p>Regional artwork can become overly literal when every image depends on recognizable landmarks, maps, slogans, or tourist imagery. A stronger approach is to build a collection from the broader character of the destination.</p>
+
+          <p>For a mountain property, that might include mist, rock, water, timber, wildlife, snow, working landscapes, and quiet black-and-white scenes. For a waterfront hotel, it might include harbor reflections, marine weather, coastal forms, historic structures, and the rhythm of docks or boats.</p>
+
+          <p>These subjects create geographic identity while giving the designer enough flexibility to coordinate the art with the interior palette. They also help repeat guests discover details over time rather than absorbing the entire concept at once.</p>
+
+          <figure class="feature">
+            <img src="hospitality-boutique-hotel-mockup-bnw-harbor.jpg" alt="Hotel guest suite entry with black and white mountain harbor artwork by Dan Sproul" loading="lazy" decoding="async" />
+            <figcaption><strong>Destination connection:</strong> Harbor and mountain imagery supports a waterfront or alpine destination while remaining refined enough for an upscale guest suite.</figcaption>
+          </figure>
+
+          <h2 id="journey">Create a guest journey, not a collection of unrelated walls</h2>
+          <p>The lobby may introduce the story, but the artwork throughout the property determines whether that story continues. Corridors, elevator landings, guestrooms, restaurants, meeting rooms, and quiet seating areas should feel related without repeating the same visual solution.</p>
+
+          <p>A practical way to create continuity is to establish a small group of shared rules. The collection might use one frame finish, a controlled palette, a consistent photographic style, related subject matter, or a gradual change in mood from public to private spaces.</p>
+
+          <p>Public spaces often support larger scale and stronger contrast. Corridors need artwork that reads quickly from a distance and creates visual rhythm. Guestrooms generally benefit from calmer imagery that rewards longer viewing without competing with rest.</p>
+
+          <ul>
+            <li><strong>Lobby and reception:</strong> larger focal pieces with immediate presence.</li>
+            <li><strong>Corridors:</strong> repeated scale, spacing, or framing that guides movement.</li>
+            <li><strong>Guestrooms:</strong> quieter imagery with warmth, depth, or local connection.</li>
+            <li><strong>Restaurants and bars:</strong> stronger color, energy, history, or conversation value.</li>
+            <li><strong>Spas and wellness areas:</strong> water, mist, forest, open space, and restrained contrast.</li>
+          </ul>
+
+          <figure class="feature">
+            <img src="hospitality-mockup-hotel-corridor-autumn-landscape.jpg" alt="Luxury hotel corridor with large autumn lake landscape artwork by Dan Sproul" loading="lazy" decoding="async" />
+            <figcaption><strong>Continuity beyond the lobby:</strong> A substantial landscape gives a long corridor a destination and creates a memorable pause between rooms and public areas.</figcaption>
+          </figure>
+
+          <h2 id="guestrooms">Guestroom artwork should feel distinctive without preventing rest</h2>
+          <p>Guestrooms are where hospitality artwork is experienced for the longest period of time. The work needs enough personality to keep the room from feeling generic, but it should not dominate every quiet moment.</p>
+
+          <p>Atmospheric landscapes, subtle seasonal color, minimal compositions, soft water, distant mountains, and restrained black-and-white imagery tend to work well because they offer depth without visual noise. The selection can still feel regional, but it should support the room’s primary purpose: comfort and restoration.</p>
+
+          <p>Scale matters here too. A single larger piece often feels more intentional than several undersized images. The artwork should relate to the headboard, console, seating area, or architectural opening rather than simply occupying whatever wall remains.</p>
+
+          <figure class="feature">
+            <img src="hospitality-boutique-hotel-mockup-autumn-minimalism.jpg" alt="Boutique lodge lobby with minimal autumn landscape artwork by Dan Sproul" loading="lazy" decoding="async" />
+            <figcaption><strong>Quiet regional character:</strong> Restrained seasonal imagery adds warmth and identity without overwhelming the calm, low-light interior.</figcaption>
+          </figure>
+
+          <h2 id="personality">Match the artwork to the property’s personality</h2>
+          <p>Hospitality is not one visual category. A downtown boutique hotel, a mountain lodge, a wellness retreat, a conference hotel, and a family resort may all need completely different artwork even when they share a similar budget or level of finish.</p>
+
+          <p>A rustic lodge can support weathered buildings, broad landscapes, wildlife, forests, and mountain history. An urban restaurant may need color, graphic energy, local architecture, or a recognizable social landmark. A luxury resort may lean toward quieter, more abstracted landscapes with elegant scale and consistent presentation.</p>
+
+          <p>The artwork should extend the brand rather than force the property into the artist’s preferred style. That is why project-specific curation is valuable: the collection begins with the property’s architecture, palette, location, and guest experience.</p>
+        </article>
+
+        <aside class="toc">
+          <h3>In this guide</h3>
+          <a href="#meaning">What sense of place means</a>
+          <a href="#arrival">The arrival experience</a>
+          <a href="#regional">Using regional artwork</a>
+          <a href="#journey">Creating a guest journey</a>
+          <a href="#guestrooms">Artwork in guestrooms</a>
+          <a href="#personality">Matching the property</a>
+          <a href="#scale">Scale and presentation</a>
+          <a href="#social">Restaurants and social spaces</a>
+          <a href="#curation">Project-specific curation</a>
+          <a href="#faq">Common questions</a>
+          <div class="mini-cta">
+            <p>Planning artwork for a hotel, resort, restaurant, lodge, or guest-focused interior?</p>
+            <a href="hospitality-artwork.html">View Hospitality Portfolio</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="visual-section deep">
+      <div class="inner">
+        <div class="visual-head">
+          <div>
+            <p class="eyebrow">Different Properties, Different Stories</p>
+            <h2>Artwork should respond to the experience around it.</h2>
+          </div>
+          <p>The right artwork is not determined by a generic hospitality formula. It comes from the relationship between the property, destination, architecture, guest profile, and emotional tone of each space.</p>
+        </div>
+
+        <div class="split">
+          <div class="visual">
+            <img src="hospitality-mockup-rustic-lodge-lobby-mountains.jpg" alt="Rustic mountain lodge lobby with large regional cabin and mountain artwork by Dan Sproul" loading="lazy" decoding="async" />
+            <div class="visual-label">Mountain lodge · Regional history · Architectural scale</div>
+          </div>
+          <div>
+            <h3>Destination lodges can tell a deeper regional story.</h3>
+            <p>A historic cabin, working landscape, or weathered structure can feel more specific than another dramatic mountain summit. These quieter subjects connect the property to the people, materials, and history of the region.</p>
+            <p>In a lodge setting, natural wood, stone, leather, and warm lighting can support artwork with texture, earth tones, or a strong documentary quality.</p>
+          </div>
+        </div>
+
+        <div class="split reverse">
+          <div>
+            <h3>Restaurants and rooftop lounges can carry more energy.</h3>
+            <p>Social spaces are designed for conversation, movement, and memory. They can support bolder color, graphic compositions, local attractions, or artwork that becomes a recognizable backdrop for the guest experience.</p>
+            <p>The key is to match that energy to the brand. A colorful statement piece can feel sophisticated when the palette connects with furniture, lighting, and the surrounding city rather than functioning as an isolated novelty.</p>
+          </div>
+          <div class="visual">
+            <img src="hospitality-mockup-upscale-restaurant-ferriswheel.jpg" alt="Upscale rooftop restaurant with colorful ferris wheel artwork by Dan Sproul" loading="lazy" decoding="async" />
+            <div class="visual-label">Restaurant lounge · Social energy · Color and identity</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section paper" id="scale">
+      <div class="inner">
+        <p class="eyebrow">Scale, Format &amp; Presentation</p>
+        <div class="visual-head" style="margin-bottom:0">
+          <h2 style="color:var(--ink)">The presentation should feel as intentional as the image.</h2>
+          <p style="color:var(--muted)">Size, framing, material, spacing, and sightlines influence whether artwork feels integrated with the architecture or added after the design was finished.</p>
+        </div>
+
+        <div class="principles">
+          <div class="principle"><span>01 · Scale</span><h3>Let focal walls carry focal artwork</h3><p>Large lobby and lounge walls usually need substantial pieces. Correct scale creates authority and can reduce the need for unnecessary decorative objects.</p></div>
+          <div class="principle"><span>02 · Format</span><h3>Choose materials for the environment</h3><p>Framed prints, canvas, metal, and acrylic each change the visual weight and reflectivity of the artwork. The finish should support both the design and maintenance needs.</p></div>
+          <div class="principle"><span>03 · Framing</span><h3>Build continuity through presentation</h3><p>A consistent frame finish can connect different subjects throughout a property and simplify large installations without making every image identical.</p></div>
+          <div class="principle"><span>04 · Sightlines</span><h3>Design for how guests actually move</h3><p>Artwork should be visible from entrances, corridor approaches, seating areas, and natural pauses—not only when someone stands directly in front of the wall.</p></div>
+          <div class="principle"><span>05 · Collections</span><h3>Coordinate without repeating</h3><p>Related subjects, colors, weather, or geography can build a collection that feels unified while giving each floor or room its own identity.</p></div>
+          <div class="principle"><span>06 · Longevity</span><h3>Avoid artwork chosen only for a trend</h3><p>Work connected to landscape, history, atmosphere, or place can remain relevant even as furniture, finishes, and brand details evolve.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section paper" id="social">
+      <div class="inner article-layout">
+        <article class="article">
+          <h2 style="margin-top:0">Artwork can make restaurants, bars, and gathering spaces more memorable</h2>
+          <p>Hospitality artwork is not limited to guestrooms and lobbies. Restaurants, bars, rooftop lounges, private dining rooms, and meeting spaces often offer the best opportunity for stronger personality.</p>
+
+          <p>These areas benefit from artwork with conversation value. The image might reference a local landmark, regional history, changing seasons, entertainment, transportation, or the property’s relationship with the city. In the right setting, bold color can become part of the social identity of the venue.</p>
+
+          <p>The artwork should still be visible under actual operating conditions. Dark walls, evening lighting, reflective surfaces, and crowded furniture arrangements all affect how a piece reads. A mockup or elevation study can help determine whether the planned size, brightness, and placement are strong enough.</p>
+
+          <h2 id="curation">Why project-specific curation matters</h2>
+          <p>A large artwork archive provides variety, but searching thousands of images can be inefficient for a busy designer, owner, or procurement team. Project-specific curation narrows the selection to the property’s location, palette, scale, mood, and intended guest experience.</p>
+
+          <p>A useful curation process can include:</p>
+          <ul>
+            <li>reviewing room photos, elevations, renderings, and finish palettes;</li>
+            <li>identifying the strongest artwork opportunities and sightlines;</li>
+            <li>building a small collection of coordinated image directions;</li>
+            <li>recommending scale, orientation, format, and frame treatment;</li>
+            <li>creating mockups for important focal walls;</li>
+            <li>adapting the collection across guestrooms and public spaces.</li>
+          </ul>
+
+          <p>This approach protects the designer’s time while helping the property avoid generic art packages that could appear in any market. The final result feels more connected, memorable, and intentional.</p>
+
+          <div class="pullquote">The best hospitality artwork does not merely match the room. It helps explain why the room—and the property—belongs in that place.</div>
+
+          <h2>Final thoughts</h2>
+          <p>A memorable hotel experience is built from many small decisions, but artwork is one of the few elements that can communicate location, emotion, history, and brand identity at the same time.</p>
+
+          <p>When selected with intention, hospitality artwork can make a lobby feel established, give a corridor purpose, make a guestroom less generic, and turn a restaurant or lounge into a recognizable destination. The strongest collections feel coordinated but not repetitive, regional but not themed, and visually impressive without losing their connection to the guest experience.</p>
+
+          <p>For hotels, resorts, lodges, restaurants, and hospitality designers seeking original nature photography and project-specific guidance, explore my <a href="hospitality-artwork.html"><strong>hospitality artwork portfolio</strong></a> or contact me for a curated selection based on your property, palette, scale, and design direction.</p>
+        </article>
+        <div></div>
+      </div>
+    </section>
+
+    <section class="cta-block">
+      <div class="inner cta-content">
+        <p class="eyebrow">Artwork for Hospitality Projects</p>
+        <h2>Create a collection that feels connected to your property.</h2>
+        <p>Share a room image, rendering, finish palette, wall dimensions, or general design direction. I can help identify suitable artwork, recommend scale and presentation, and build a concise project-specific selection from more than 8,500 images.</p>
+        <div class="btns">
+          <a class="btn primary" href="hospitality-artwork.html">Explore Hospitality Artwork</a>
+          <a class="btn" href="mailto:dan@dsproul.com?subject=Hospitality%20Artwork%20Project">Discuss a Project</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section paper" id="faq">
+      <div class="inner">
+        <p class="eyebrow">Common Questions</p>
+        <h2 style="font-size:clamp(42px,6vw,74px);max-width:850px">Hospitality artwork and hotel design.</h2>
+        <div class="faq">
+          <details><summary>What type of artwork works best in hotels?</summary><p>The strongest hotel artwork supports the property’s design direction, location, guest profile, and desired mood. Regional nature photography, local architecture, abstract work, heritage imagery, and coordinated collections can all work when selected intentionally.</p></details>
+          <details><summary>How does hotel artwork create a sense of place?</summary><p>Artwork can reference the surrounding landscape, local culture, history, materials, colors, and atmosphere. These connections help guests feel that the experience belongs specifically to that destination rather than to a generic property.</p></details>
+          <details><summary>Should hotel artwork match in every space?</summary><p>Artwork should feel coordinated rather than identical. A consistent palette, subject family, framing system, or visual rhythm can connect the lobby, corridors, guestrooms, dining areas, and meeting spaces while allowing each area to have its own energy.</p></details>
+          <details><summary>How large should lobby artwork be?</summary><p>Lobby artwork should relate to the architecture and viewing distance. Large focal walls usually need substantial artwork, while smaller groupings work best where guests can approach them closely. Mockups and wall dimensions help confirm scale before ordering.</p></details>
+          <details><summary>Can one artist provide enough variety for an entire property?</summary><p>Yes, when the artist has a broad archive and can curate by location, palette, mood, subject, and orientation. A coordinated collection can include color, black-and-white, water, mountains, forests, regional history, and quieter minimal scenes without feeling repetitive.</p></details>
+          <details><summary>Can artwork be customized for a hospitality project?</summary><p>Many projects can be supported with custom sizing, coordinated image selections, consistent framing, and mockups for major walls. Availability and format depend on the selected image and production requirements.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark">
+      <div class="inner">
+        <p class="eyebrow">Related Resources</p>
+        <h2 style="font-size:clamp(40px,6vw,70px);max-width:820px">Continue planning artwork for guest-focused interiors.</h2>
+        <div class="related-grid">
+          <a class="related" href="hospitality-artwork.html"><span>Hospitality Portfolio</span><h3>Artwork for Hotels and Resorts</h3><p>Explore hospitality-focused artwork, room examples, project support, custom sizing, and coordinated collections.</p></a>
+          <a class="related" href="for-designers.html"><span>Designer Resources</span><h3>Fine Art Photography for Interior Designers</h3><p>Artwork support for residential, hospitality, healthcare, office, and senior living projects.</p></a>
+          <a class="related" href="in-your-space.html"><span>Room Inspiration</span><h3>See Artwork in Finished Interiors</h3><p>View nature photography and mixed media artwork presented across a range of interior settings.</p></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <details open><summary>Explore</summary><div class="footer-link-list"><a href="/">Home</a><a href="best-sellers.html">Best Sellers</a><a href="art-collections.html">Collections</a><a href="in-your-space.html">In Your Space</a><a href="for-designers.html">For Designers</a><a href="https://dansproul.com" target="_blank" rel="noopener">Shop Prints</a><a href="mailto:dan@dsproul.com">Contact</a></div></details>
+      <details open><summary>Collections</summary><div class="footer-link-list"><a href="quiet-earth-collection.html">Quiet Earth</a><a href="forest-light-collection.html">Forest Light</a><a href="wellness-waters-collection.html">Wellness Waters</a><a href="coastal-atmosphere.html">Coastal Atmosphere</a><a href="mountain-light-collection.html">Mountain Light</a><a href="monochrome-stillness.html">Monochrome Stillness</a><a href="winter-stillness.html">Winter Stillness</a></div></details>
+      <details open><summary>Resources</summary><div class="footer-link-list"><a href="artwork-guides.html">Artwork Guides</a><a href="blog.html">Journal</a><a href="lima-ohio-fine-art-photographer.html">Lima Fine Art Photographer</a><a href="about-dan-sproul.html">About Dan</a><a href="ohio-nature-photography-prints.html">Ohio Nature Photography</a></div></details>
+      <details open><summary>For Designers</summary><div class="footer-link-list"><a href="for-designers.html">Designer Resources</a><a href="healthcare-artwork.html">Healthcare</a><a href="hospitality-artwork.html">Hospitality</a><a href="office-artwork.html">Office</a><a href="residential-nature-wall-art.html">Residential</a><a href="senior-living-artwork.html">Senior Living</a></div></details>
+      <div><h3>Connect</h3><a href="mailto:dan@dsproul.com">Email</a><a href="https://www.linkedin.com/in/dan-sproul-bb55015a/" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.pinterest.com/dansproul/" target="_blank" rel="noopener">Pinterest</a></div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 Dan Sproul Fine Art Photography &middot; Based in Lima, Ohio &middot; Original Nature Photography &amp; Heritage-Inspired Artwork</div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded",function(){
+      const nav=document.querySelector(".site-nav");
+      const toggle=document.querySelector(".nav-toggle");
+      if(nav&&toggle){
+        toggle.addEventListener("click",function(){
+          const open=nav.classList.toggle("is-open");
+          toggle.setAttribute("aria-expanded",open?"true":"false");
+        });
+        document.querySelectorAll(".nav-links a").forEach(a=>a.addEventListener("click",()=>{nav.classList.remove("is-open");toggle.setAttribute("aria-expanded","false")}));
+      }
+      function updateFooter(){
+        const mobile=window.matchMedia("(max-width:760px)").matches;
+        document.querySelectorAll("footer details").forEach(d=>mobile?d.removeAttribute("open"):d.setAttribute("open",""));
+      }
+      updateFooter();
+      window.addEventListener("resize",updateFooter);
+    });
+  </script>
+</body>
+</html>
