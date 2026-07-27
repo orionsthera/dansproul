@@ -843,6 +843,58 @@
   }
 }
 
+
+    /* FIELD NOTES FIRST EDITORIAL LAYOUT — July 2026 */
+    .field-notes-featured{background:var(--paper);color:var(--light-ink)}
+    .field-notes-featured .eyebrow{color:#91692d}
+    .field-notes-featured .section-head p{color:rgba(33,27,20,.68)}
+    .field-notes-layout{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(360px,.65fr);gap:18px;align-items:stretch}
+    .field-note-lead{display:grid;grid-template-rows:minmax(390px,520px) 1fr;background:var(--paper-soft);border:1px solid rgba(33,27,20,.13);color:var(--light-ink);text-decoration:none;overflow:hidden;transition:.25s}
+    .field-note-lead:hover,.field-note-small:hover{transform:translateY(-3px);border-color:rgba(154,107,40,.36)}
+    .field-note-lead-image,.field-note-small-image{overflow:hidden;background:#211b14}
+    .field-note-lead-image img,.field-note-small-image img{height:100%;object-fit:cover;filter:brightness(.9) saturate(.92);transition:transform .65s ease,filter .65s ease}
+    .field-note-lead:hover img,.field-note-small:hover img{transform:scale(1.03);filter:brightness(1) saturate(1)}
+    .field-note-lead-body{padding:clamp(26px,3.5vw,42px)}
+    .field-note-lead-body h2{color:var(--light-ink);font-size:clamp(38px,4.5vw,62px);letter-spacing:-.03em}
+    .field-note-lead-body p{margin-top:15px;color:rgba(33,27,20,.70);font-size:15px;line-height:1.8}
+    .field-note-side-grid{display:grid;grid-template-columns:1fr;gap:18px}
+    .field-note-small{display:grid;grid-template-columns:150px 1fr;min-height:145px;background:var(--paper-soft);border:1px solid rgba(33,27,20,.13);color:var(--light-ink);text-decoration:none;overflow:hidden;transition:.25s}
+    .field-note-small-body{padding:20px;display:flex;flex-direction:column;justify-content:center}
+    .field-note-small-body .post-kicker{margin-bottom:9px}
+    .field-note-small-body h3{color:var(--light-ink);font-size:clamp(25px,2.3vw,34px);line-height:1.02;letter-spacing:-.025em}
+    .field-note-small-body p{margin-top:10px;color:rgba(33,27,20,.68);font-size:13px;line-height:1.65}
+    .field-notes-actions{max-width:var(--max);margin:28px auto 0}
+    .field-notes-featured .btn{color:var(--light-ink);border-color:rgba(33,27,20,.22)}
+    .field-notes-featured .btn:hover{color:#91692d;border-color:#91692d}
+    .guide-grid-compact{grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;max-width:var(--max);margin:0 auto}
+    .guide-grid-compact .post-card{grid-template-rows:210px 1fr}
+    .guide-grid-compact .post-image{min-height:210px}
+    @media(max-width:1120px){
+      .field-notes-layout{grid-template-columns:1fr}
+      .field-note-side-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .field-note-small{grid-template-columns:1fr;grid-template-rows:190px 1fr}
+      .guide-grid-compact{grid-template-columns:1fr}
+    }
+    @media(max-width:760px){
+      .field-notes-layout{gap:12px}
+      .field-note-lead{grid-template-rows:220px 1fr}
+      .field-note-lead-body{padding:17px}
+      .field-note-lead-body h2{font-size:28px}
+      .field-note-lead-body p{display:none}
+      .field-note-side-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+      .field-note-small{grid-template-columns:1fr;grid-template-rows:120px 1fr;min-height:0}
+      .field-note-small-body{padding:13px;justify-content:flex-start}
+      .field-note-small-body h3{font-size:20px}
+      .field-note-small-body p{display:none}
+      .field-notes-actions .btn{width:100%}
+      .guide-grid-compact{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important}
+      .guide-grid-compact .post-card{grid-template-rows:145px 1fr!important}
+      .guide-grid-compact .post-image{min-height:145px!important}
+    }
+    @media(max-width:380px){
+      .field-note-side-grid,.guide-grid-compact{grid-template-columns:1fr!important}
+    }
+
 </style>
   <script type="application/ld+json">
   {
@@ -896,6 +948,7 @@
           "landscape photography field notes",
           "Maine fall road trip photography",
           "Oregon Coast road trip photography",
+          "hospitality artwork sense of place",
           "Lima Ohio fine art photographer"
         ]
       },
@@ -954,7 +1007,7 @@
         Practical artwork guides, field notes, and interior inspiration from Dan Sproul, a Lima, Ohio fine art nature photographer creating landscape artwork for homes, healthcare, hospitality, offices, and residential interiors.
       </p>
       <div class="btns">
-        <a class="btn primary" href="#latest-guides">Read Latest Guides</a>
+        <a class="btn primary" href="#latest-field-notes">Read Latest Field Notes</a>
         <a class="btn" href="artwork-guides.html">Artwork Guides</a>
         <a class="btn" href="how-to-choose-large-wall-art-living-room.html">Living Room Artwork Guide</a>
         <a class="btn" href="nature-artwork-for-peaceful-homes.html">Peaceful Home Guide</a>
@@ -980,147 +1033,81 @@
   </section>
 
   <main>
-    <section class="section-pad blog-posts" id="latest-guides">
+    <section class="section-pad field-notes-featured" id="latest-field-notes">
       <div class="section-head">
         <div>
-          <p class="eyebrow">Featured Guides</p>
-          <h2>Featured artwork and interior guides.</h2>
+          <p class="eyebrow">Latest Field Notes</p>
+          <h2>Stories from the road and the landscapes behind the artwork.</h2>
         </div>
-        <p>
-          Start here for practical guidance on choosing artwork by scale, mood, subject, and the feeling you want a room to hold.
-        </p>
+        <p>Travel routes, changing weather, wildlife encounters, and behind-the-lens notes from the places that shape my finished photography.</p>
       </div>
 
-      <div class="post-grid">
-        <a class="post-card" href="how-to-choose-calming-artwork-medical-waiting-room.html">
-          <div class="post-image">
-            <img src="waiting-room-smoky-mountains-fog.jpg" alt="Medical waiting room with calming mountain fog nature artwork by Dan Sproul" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='denali national park autumn.jpg';" />
-          </div>
-          <div class="post-body">
-            <p class="post-kicker">Healthcare &amp; Waiting Rooms</p>
-            <h2>How to Choose Calming Artwork for a Medical Waiting Room</h2>
-            <p>
-              A practical guide to choosing calm nature artwork for medical offices, therapy practices, dental offices, wellness clinics, and patient-facing spaces.
-            </p>
-            <span class="post-meta">Waiting Room Guide &rarr;</span>
+      <div class="field-notes-layout">
+        <a class="field-note-lead" href="oregon-coast-road-trip-itinerary-photography-guide.html">
+          <div class="field-note-lead-image"><img src="cannon-beach-sea-stack-sunset-dan-sproul.jpg" alt="Cannon Beach sea stacks and reflections at sunset on the Oregon Coast photographed by Dan Sproul" loading="eager" decoding="async" /></div>
+          <div class="field-note-lead-body">
+            <p class="post-kicker">Featured Field Note · Oregon Coast</p>
+            <h2>Oregon Coast Road Trip Itinerary &amp; Photography Guide</h2>
+            <p>A personal eight-day route through Astoria, Cannon Beach, Depoe Bay, Newport, Yachats, Bandon, Bend, Sisters, Mount Hood, and the Columbia River Gorge.</p>
+            <span class="post-meta">Read the Oregon guide &rarr;</span>
           </div>
         </a>
 
-        <a class="post-card" href="how-to-choose-large-wall-art-living-room.html">
-          <div class="post-image">
-            <img src="residential coastal living room framed coast dan sproul.jpg" alt="Large wall art in a refined living room interior by Dan Sproul" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='denali national park autumn.jpg';" />
-          </div>
-          <div class="post-body">
-            <p class="post-kicker">Living Room Artwork</p>
-            <h2>How to Choose Large Wall Art for Living Rooms</h2>
-            <p>
-              A practical designer-style guide to scale, mood, interior style, and print materials for choosing oversized wall art with confidence.
-            </p>
-            <span class="post-meta">Large Wall Art Guide &rarr;</span>
-          </div>
-        </a>
-
-        <a class="post-card" href="water-imagery-restorative-interiors.html">
-          <div class="post-image">
-            <img src="grotto-falls-smoky-mountains-waterfall-forest-sunlight-dan-sproul.jpg" alt="Water imagery and waterfall artwork for restorative interiors by Dan Sproul" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='denali national park autumn.jpg';" />
-          </div>
-          <div class="post-body">
-            <p class="post-kicker">Wellness &amp; Water Imagery</p>
-            <h2>Why Water Imagery Creates Restorative Interior Spaces</h2>
-            <p>
-              How waterfalls, lakes, rivers, and coastal imagery can shape calm interiors for homes, healthcare spaces, spas, hotels, and wellness rooms.
-            </p>
-            <span class="post-meta">Water Artwork Guide &rarr;</span>
-          </div>
-        </a>
-
-        <a class="post-card" href="nature-artwork-for-peaceful-homes.html">
-          <div class="post-image">
-            <img src="therapist lounge foggy island dan sproul.jpg" alt="Calming foggy lake nature artwork above a sofa in a warm residential living room by Dan Sproul" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='denali national park autumn.jpg';" />
-          </div>
-          <div class="post-body">
-            <p class="post-kicker">Peaceful Homes &amp; Nature Artwork</p>
-            <h2>How Nature Artwork Can Make a Home Feel More Peaceful and Connected</h2>
-            <p>
-              Discover why mountain, forest, and water imagery creates calmer, more restorative interiors and how to choose nature artwork for living rooms, bedrooms, and quiet spaces throughout the home.
-            </p>
-            <span class="post-meta">Nature Artwork Guide &rarr;</span>
-          </div>
-        </a>
+        <div class="field-note-side-grid">
+          <a class="field-note-small" href="maine-fall-road-trip-lily-bay-baxter-grafton-notch.html">
+            <div class="field-note-small-image"><img src="fall-reflections-lily-bay-state-park-maine-dan-sproul.jpg" alt="Autumn reflections at Lily Bay State Park in Maine photographed by Dan Sproul" loading="lazy" decoding="async" /></div>
+            <div class="field-note-small-body"><p class="post-kicker">Maine Fall Road Trip</p><h3>Camping at Lily Bay</h3><p>Moosehead Lake, Baxter State Park, waterfalls, and northern Maine autumn.</p></div>
+          </a>
+          <a class="field-note-small" href="colorado-fall-colors-photography-prints.html">
+            <div class="field-note-small-image"><img src="autumn-sunrise-maroon-bells-dan-sproul.jpg" alt="Maroon Bells sunrise with autumn aspens photographed by Dan Sproul" loading="lazy" decoding="async" /></div>
+            <div class="field-note-small-body"><p class="post-kicker">Colorado Fall</p><h3>Colorado Fall Colors</h3><p>Golden aspens, mountain light, Maroon Bells, Kebler Pass, and Last Dollar Road.</p></div>
+          </a>
+          <a class="field-note-small" href="48-hours-in-the-smokies-photography-prints.html">
+            <div class="field-note-small-image"><img src="cades-cove-black-bear-cub-dan-sproul.jpg" alt="Black bear cub in Cades Cove photographed by Dan Sproul" loading="lazy" decoding="async" /></div>
+            <div class="field-note-small-body"><p class="post-kicker">Smoky Mountains</p><h3>48 Hours in the Smokies</h3><p>Misty ridges, spring forests, waterfalls, wildlife, and quiet mountain light.</p></div>
+          </a>
+          <a class="field-note-small" href="ricketts-glen-watkins-glen-spring-waterfall-trip.html">
+            <div class="field-note-small-image"><img src="oneida-falls-ricketts-glen-state-park-dan-sproul.jpg" alt="Oneida Falls at Ricketts Glen State Park photographed by Dan Sproul" loading="lazy" decoding="async" /></div>
+            <div class="field-note-small-body"><p class="post-kicker">Spring Waterfalls</p><h3>Ricketts Glen &amp; Watkins Glen</h3><p>Gorge trails, stone steps, mist, spring foliage, and finished waterfall prints.</p></div>
+          </a>
+        </div>
       </div>
+
+      <div class="btns field-notes-actions"><a class="btn" href="#artwork-guides">Browse Artwork Guides</a></div>
     </section>
 
-    <section class="section-pad">
+    <section class="section-pad blog-posts" id="artwork-guides">
       <div class="section-head">
         <div>
-          <p class="eyebrow">Field Notes</p>
-          <h2>Field notes and location stories.</h2>
+          <p class="eyebrow">Artwork Guides</p>
+          <h2>Practical guidance for homes and professional interiors.</h2>
         </div>
-        <p>
-          Travel stories, park notes, and behind-the-lens posts help connect the finished artwork back to the places, weather, light, and experiences behind each image.
-        </p>
+        <p>A focused selection of guides covering scale, atmosphere, wellness, and artwork planning for residential, healthcare, and hospitality spaces.</p>
       </div>
 
-      <div class="archive-grid">
-        <a class="archive-card archive-card-image" href="oregon-coast-road-trip-itinerary-photography-guide.html">
-          <img src="cannon-beach-sea-stack-sunset-dan-sproul.jpg" alt="Cannon Beach sea stacks and reflections at sunset on the Oregon Coast photographed by Dan Sproul" loading="lazy" decoding="async" />
-          <div class="archive-card-content">
-            <span>Field Notes &middot; Oregon Coast Road Trip</span>
-            <h3>Oregon Coast Road Trip Itinerary &amp; Photography Guide</h3>
-            <p>A personal eight-day route from Astoria and Cannon Beach through Depoe Bay, Newport, Yachats, Bandon, Bend, Sisters, Mount Hood, and the Columbia River Gorge.</p>
-          </div>
+      <div class="post-grid guide-grid-compact">
+        <a class="post-card" href="how-to-choose-large-wall-art-living-room.html">
+          <div class="post-image"><img src="residential coastal living room framed coast dan sproul.jpg" alt="Large wall art in a refined living room interior by Dan Sproul" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='denali national park autumn.jpg';" /></div>
+          <div class="post-body"><p class="post-kicker">Living Room Artwork</p><h2>How to Choose Large Wall Art for Living Rooms</h2><p>A practical guide to scale, mood, interior style, and print materials for choosing oversized wall art with confidence.</p><span class="post-meta">Read the guide &rarr;</span></div>
         </a>
-
-        <a class="archive-card archive-card-image" href="maine-fall-road-trip-lily-bay-baxter-grafton-notch.html">
-          <img src="fall-reflections-lily-bay-state-park-maine-dan-sproul.jpg" alt="Autumn reflections and morning mist at Lily Bay State Park on Moosehead Lake in Maine by Dan Sproul" loading="lazy" decoding="async" />
-          <div class="archive-card-content">
-            <span>Field Notes &middot; Maine Fall Road Trip</span>
-            <h3>Camping at Lily Bay: A Maine Fall Road Trip</h3>
-            <p>Camping at Lily Bay State Park while exploring Moosehead Lake, Baxter State Park, Mount Katahdin, Grafton Notch, waterfalls, and the changing colors of northern Maine.</p>
-          </div>
+        <a class="post-card" href="how-to-choose-calming-artwork-medical-waiting-room.html">
+          <div class="post-image"><img src="waiting-room-smoky-mountains-fog.jpg" alt="Medical waiting room with calming mountain fog nature artwork by Dan Sproul" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='denali national park autumn.jpg';" /></div>
+          <div class="post-body"><p class="post-kicker">Healthcare &amp; Waiting Rooms</p><h2>How to Choose Calming Artwork for a Medical Waiting Room</h2><p>A practical guide to choosing nature artwork for medical offices, therapy practices, clinics, and patient-facing spaces.</p><span class="post-meta">Read the guide &rarr;</span></div>
         </a>
-
-        <a class="archive-card archive-card-image" href="ricketts-glen-watkins-glen-spring-waterfall-trip.html">
-          <img src="oneida-falls-ricketts-glen-state-park-dan-sproul.jpg" alt="Oneida Falls at Ricketts Glen State Park photographed in spring by Dan Sproul" loading="lazy" decoding="async" />
-          <div class="archive-card-content">
-            <span>Waterfalls &middot; Spring Travel Story</span>
-            <h3>Ricketts Glen &amp; Watkins Glen</h3>
-            <p>A spring waterfall trip connecting Pennsylvania and New York gorge trails, mist, stone steps, green forest, and finished waterfall prints.</p>
-          </div>
+        <a class="post-card" href="how-hospitality-artwork-creates-a-memorable-sense-of-place.html">
+          <div class="post-image"><img src="hospitality modern hotel lobby mockup bnw mountain landscape.jpg" alt="Luxury hotel lobby with large black and white mountain artwork by Dan Sproul" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='denali national park autumn.jpg';" /></div>
+          <div class="post-body"><p class="post-kicker">Hospitality Design</p><h2>How Hospitality Artwork Creates a Memorable Sense of Place</h2><p>How hotels, resorts, lodges, restaurants, and guest spaces can use regional artwork, scale, and coordinated collections to build identity.</p><span class="post-meta">Read the guide &rarr;</span></div>
         </a>
-
-        <a class="archive-card archive-card-image" href="48-hours-in-the-smokies-photography-prints.html">
-          <img src="cades-cove-black-bear-cub-dan-sproul.jpg" alt="Black bear cub peeking from behind a tree in Cades Cove in the Great Smoky Mountains by Dan Sproul" loading="lazy" decoding="async" />
-          <div class="archive-card-content">
-            <span>Field Notes &middot; Smoky Mountains</span>
-            <h3>48 Hours in the Smokies</h3>
-            <p>A personal field note on spring-green forests, misty ridges, waterfalls, quiet streams, black bear wildlife, and Smoky Mountain prints for calming interiors.</p>
-          </div>
-        </a>
-
-        <a class="archive-card archive-card-image" href="colorado-fall-colors-photography-prints.html">
-          <img src="autumn-sunrise-maroon-bells-dan-sproul.jpg" alt="Maroon Bells sunrise with autumn aspens and Colorado mountain reflection by Dan Sproul" loading="lazy" decoding="async" />
-          <div class="archive-card-content">
-            <span>Landscape &middot; Colorado Fall</span>
-            <h3>Colorado Fall Colors Photography Prints</h3>
-            <p>A personal field note on golden aspens, mountain light, Maroon Bells, Kebler Pass, Last Dollar Road, wildlife, and Colorado autumn prints.</p>
-          </div>
-        </a>
-
       </div>
+
+      <div class="btns" style="max-width:var(--max);margin:28px auto 0;"><a class="btn primary" href="artwork-guides.html">View All Artwork Guides</a></div>
     </section>
 
     <section class="section-pad contact-slim" id="journal-contact">
       <div class="section-head">
-        <div>
-          <p class="eyebrow">Need Help Choosing Artwork?</p>
-          <h2>Use the journal as a starting point, then find the right print for your space.</h2>
-        </div>
-        <p>
-          Send a room photo, wall dimensions, or project direction and I can help recommend artwork, sizing, format, and collection paths.
-        </p>
+        <div><p class="eyebrow">Need Help Choosing Artwork?</p><h2>Use the journal as a starting point, then find the right print for your space.</h2></div>
+        <p>Send a room photo, wall dimensions, or project direction and I can help recommend artwork, sizing, format, and collection paths.</p>
       </div>
-
       <div class="btns contact-actions">
         <a class="btn primary" href="mailto:dan@dsproul.com?subject=Artwork%20Guidance%20Request">Request Guidance</a>
         <a class="btn" href="art-collections.html">Browse Collections</a>
