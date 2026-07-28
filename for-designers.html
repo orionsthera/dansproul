@@ -62,14 +62,6 @@ body{background:var(--black);color:var(--off-white);font-family:'Jost',sans-seri
 .section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,4vw,3.8rem);font-weight:300;line-height:1.1;margin-bottom:20px}
 .section-title em{font-style:italic;color:var(--accent)}
 
-/* INTRO SPLIT */
-.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
-.intro-img{position:relative}
-.intro-img img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block}
-.intro-img::before{content:'';position:absolute;inset:-14px -14px 14px 14px;border:1px solid rgba(181,146,74,.15);z-index:-1}
-.intro-text p{font-size:.82rem;line-height:2.1;color:rgba(242,239,232,.65);margin-bottom:18px}
-.intro-text p strong{color:var(--off-white);font-weight:400}
-
 /* PLACEMENT GRID */
 .placement-section{background:#0a0906}
 .placement-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:3px}
@@ -81,88 +73,6 @@ body{background:var(--black);color:var(--off-white);font-family:'Jost',sans-seri
 .pl-venue{font-size:.48rem;letter-spacing:.34em;text-transform:uppercase;color:var(--accent);margin-bottom:5px}
 .pl-title{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:300;color:var(--off-white);line-height:1.2}
 .pl-desc{font-size:.58rem;letter-spacing:.1em;color:rgba(242,239,232,.45);margin-top:5px}
-
-/* FORMATS */
-.formats-section{background:#0d0b09}
-.formats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:56px}
-.format-card{padding:44px 32px;background:#111009;border:1px solid transparent;transition:border-color .3s,background .3s}
-.format-card:hover{border-color:var(--border);background:#161209}
-.format-num{font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:300;color:rgba(181,146,74,.2);line-height:1;margin-bottom:18px}
-.format-title{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:300;color:var(--off-white);margin-bottom:12px}
-.format-desc{font-size:.72rem;line-height:1.95;color:rgba(242,239,232,.55)}
-.format-specs{margin-top:18px;padding-top:18px;border-top:1px solid rgba(181,146,74,.1)}
-.format-spec{font-size:.56rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(181,146,74,.55);margin-bottom:6px}
-
-/* DIGITAL LICENSING */
-.licensing-section{background:var(--dark-brown)}
-.licensing-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;margin-top:56px}
-.licensing-img img{width:100%;aspect-ratio:16/10;object-fit:cover;display:block}
-.license-options{display:flex;flex-direction:column;gap:20px}
-.license-card{padding:28px 24px;border:1px solid var(--border);transition:background .3s}
-.license-card:hover{background:rgba(181,146,74,.05)}
-.lc-title{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:300;color:var(--off-white);margin-bottom:8px}
-.lc-desc{font-size:.7rem;line-height:1.9;color:rgba(242,239,232,.55)}
-.lc-tag{display:inline-block;margin-top:10px;font-size:.5rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);border:1px solid rgba(181,146,74,.3);padding:4px 12px}
-
-/* VENUES */
-.venues-section{background:#080706}
-.venues-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-top:56px}
-.venue-card{padding:40px 28px;background:#0e0c09;text-align:center;transition:background .3s}
-.venue-card:hover{background:#141109}
-.venue-icon{width:48px;height:48px;margin:0 auto 20px;border:1px solid rgba(181,146,74,.22);border-radius:50%;display:flex;align-items:center;justify-content:center}
-.venue-icon svg{width:20px;height:20px;stroke:var(--accent);fill:none;stroke-width:1.2}
-.venue-title{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:300;margin-bottom:10px;color:var(--off-white)}
-.venue-desc{font-size:.65rem;line-height:1.9;color:var(--muted)}
-
-/* PROCESS */
-.process-section{background:#0b0a08}
-.process-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:64px;position:relative}
-.process-steps::before{content:'';position:absolute;top:22px;left:10%;right:10%;height:1px;background:linear-gradient(to right,transparent,rgba(181,146,74,.25),transparent)}
-.step{padding:0 24px;text-align:center}
-.step-num{font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:300;color:rgba(181,146,74,.25);line-height:1;margin-bottom:20px;display:block}
-.step-title{font-size:.6rem;letter-spacing:.28em;text-transform:uppercase;color:var(--off-white);margin-bottom:10px}
-.step-desc{font-size:.68rem;line-height:1.85;color:var(--muted)}
-
-/* GALLERY STRIP */
-.gallery-strip{display:grid;grid-template-columns:repeat(6,1fr);gap:3px}
-.gs-item{overflow:hidden;aspect-ratio:1/1}
-.gs-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s cubic-bezier(.25,.46,.45,.94),filter .5s;filter:brightness(.8) saturate(.85)}
-.gs-item:hover img{transform:scale(1.08);filter:brightness(1) saturate(1)}
-
-/* TESTIMONIALS */
-.test-grid{display:grid;grid-template-columns:1fr 1fr;gap:3px;margin-top:56px}
-.test-card{background:#0e0c09;padding:44px 36px;position:relative}
-.test-card::before{content:'\201C';font-family:'Cormorant Garamond',serif;font-size:5rem;font-weight:300;color:rgba(181,146,74,.15);position:absolute;top:16px;left:28px;line-height:1}
-.test-quote{font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:300;line-height:1.8;color:rgba(242,239,232,.8);margin-bottom:24px;padding-top:32px;font-style:italic}
-.test-divider{width:36px;height:1px;background:var(--accent);opacity:.5;margin-bottom:14px}
-.test-name{font-size:.6rem;letter-spacing:.26em;text-transform:uppercase;color:var(--off-white);margin-bottom:4px}
-.test-role{font-size:.55rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent)}
-
-/* SPEC SHEET DOWNLOADS */
-.spec-section{background:#0b0a08;padding:100px 56px;border-top:1px solid var(--border)}
-.spec-cards{display:grid;grid-template-columns:1fr 1fr;gap:3px;margin-top:56px}
-.spec-card{background:#111009;display:flex;overflow:hidden;position:relative}
-.spec-card-preview{width:200px;flex-shrink:0;overflow:hidden;position:relative}
-.spec-card-preview .preview-hint{position:absolute;bottom:10px;left:0;right:0;text-align:center;font-size:.48rem;letter-spacing:.2em;color:rgba(255,255,255,.7);text-transform:uppercase;pointer-events:none;opacity:0;transition:opacity .3s}
-.spec-card:hover .spec-card-preview .preview-hint{opacity:1}
-.spec-card-preview img{width:100%;height:100%;object-fit:cover;display:block;filter:brightness(.82);transition:filter .4s,transform .5s cubic-bezier(.25,.46,.45,.94)}
-.spec-card:hover .spec-card-preview img{filter:brightness(1);transform:scale(1.04)}
-.spec-card-body{flex:1;padding:36px 32px;display:flex;flex-direction:column;justify-content:space-between;min-height:220px}
-.spec-card-tag{font-size:.52rem;letter-spacing:.35em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
-.spec-card-title{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;line-height:1.2;margin-bottom:10px}
-.spec-card-title em{font-style:italic;color:var(--accent)}
-.spec-card-desc{font-size:.68rem;line-height:1.9;color:var(--muted);margin-bottom:28px;flex:1}
-.spec-card-footer{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
-.btn-download{display:inline-flex;align-items:center;gap:8px;padding:11px 28px;font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;text-decoration:none;background:var(--accent);color:var(--black);border:1px solid var(--accent);transition:all .3s;font-family:'Jost',sans-serif;font-weight:400}
-.btn-download:hover{background:#c9a45a;border-color:#c9a45a}
-.btn-download svg{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:2;flex-shrink:0}
-.spec-file-info{font-size:.52rem;letter-spacing:.18em;color:var(--muted);opacity:.6}
-@media(max-width:900px){
-  .spec-cards{grid-template-columns:1fr}
-  .spec-card{flex-direction:column}
-  .spec-card-preview{width:100%;height:180px}
-}
-@media(max-width:580px){.spec-card-body{padding:24px 20px}}
 
 /* STICKY BOTTOM CTA */
 .sticky-cta{position:fixed;bottom:0;left:0;right:0;z-index:150;background:rgba(26,22,18,.97);border-top:1px solid rgba(181,146,74,.28);padding:14px 56px;display:flex;align-items:center;justify-content:space-between;gap:20px;backdrop-filter:blur(8px);transform:translateY(100%);transition:transform .4s cubic-bezier(.25,.46,.45,.94)}
@@ -316,41 +226,6 @@ body{background:var(--black);color:var(--off-white);font-family:'Jost',sans-seri
 .tf-success h3{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;color:var(--off-white);margin-bottom:10px}
 .tf-success p{font-size:.72rem;color:var(--muted);line-height:2}
 @media(max-width:900px){.trade-grid{grid-template-columns:1fr;gap:40px}.tf-row{grid-template-columns:1fr}.trade-section{padding:64px 24px}}
-
-
-/* FEATURED HERITAGE SPORTING COLLECTION */
-.heritage-feature{
-  background:linear-gradient(to bottom,#0b0907 0%,#15110d 55%,#0b0907 100%);
-  padding:110px 56px;
-  border-top:1px solid var(--border);
-  border-bottom:1px solid var(--border);
-}
-.heritage-feature-wrap{max-width:1180px;margin:0 auto;}
-.heritage-feature-grid{display:grid;grid-template-columns:1.18fr .92fr;gap:58px;align-items:center;}
-.heritage-feature-image{position:relative;overflow:hidden;border:1px solid rgba(181,146,74,.22);box-shadow:0 24px 80px rgba(0,0,0,.45);}
-.heritage-feature-image img{width:100%;display:block;aspect-ratio:16/10;object-fit:cover;filter:brightness(.86) saturate(.94);transition:transform .9s cubic-bezier(.25,.46,.45,.94),filter .5s;}
-.heritage-feature-image:hover img{transform:scale(1.025);filter:brightness(.98) saturate(1);}
-.heritage-feature-badge{position:absolute;left:24px;bottom:22px;padding:9px 14px;background:rgba(8,8,7,.68);border:1px solid rgba(181,146,74,.35);font-size:.52rem;letter-spacing:.26em;text-transform:uppercase;color:var(--accent);backdrop-filter:blur(6px);}
-.heritage-feature-copy h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2.3rem,4.2vw,4.2rem);font-weight:300;line-height:1.05;margin-bottom:22px;}
-.heritage-feature-copy h2 em{color:var(--accent);font-style:italic;}
-.heritage-feature-copy p{font-size:.78rem;line-height:2.05;color:rgba(242,239,232,.62);margin-bottom:18px;}
-.heritage-tags{display:flex;flex-wrap:wrap;gap:9px;margin:28px 0 32px;}
-.heritage-tags span{border:1px solid rgba(181,146,74,.27);color:rgba(242,239,232,.72);padding:7px 12px;font-size:.52rem;letter-spacing:.2em;text-transform:uppercase;background:rgba(181,146,74,.04);}
-.heritage-support-grid{max-width:1180px;margin:34px auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:3px;}
-.heritage-support-card{position:relative;overflow:hidden;aspect-ratio:4/3;border:1px solid rgba(181,146,74,.1);}
-.heritage-support-card img{width:100%;height:100%;object-fit:cover;filter:brightness(.78) saturate(.9);transition:transform .8s cubic-bezier(.25,.46,.45,.94),filter .45s;}
-.heritage-support-card:hover img{transform:scale(1.045);filter:brightness(.96) saturate(1);}
-.heritage-support-label{position:absolute;left:18px;bottom:16px;right:18px;font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--off-white);text-shadow:0 2px 18px rgba(0,0,0,.8);}
-.heritage-quote{max-width:980px;margin:56px auto 0;text-align:center;padding:42px 38px;border-top:1px solid rgba(181,146,74,.22);border-bottom:1px solid rgba(181,146,74,.22);}
-.heritage-quote p{font-family:'Cormorant Garamond',serif;font-size:clamp(1.45rem,3vw,2.6rem);line-height:1.3;color:rgba(242,239,232,.9);font-style:italic;margin:0 auto 16px;}
-.heritage-quote span{font-size:.54rem;letter-spacing:.28em;text-transform:uppercase;color:var(--accent);}
-.heritage-apps{max-width:1180px;margin:42px auto 0;display:grid;grid-template-columns:repeat(5,1fr);gap:2px;}
-.heritage-app{background:#0e0c09;border:1px solid rgba(181,146,74,.09);padding:24px 18px;text-align:center;}
-.heritage-app strong{display:block;font-family:'Cormorant Garamond',serif;font-size:1.02rem;font-weight:300;color:var(--off-white);margin-bottom:7px;}
-.heritage-app span{display:block;font-size:.55rem;letter-spacing:.14em;line-height:1.7;color:rgba(242,239,232,.45);text-transform:uppercase;}
-@media(max-width:900px){.heritage-feature{padding:70px 24px}.heritage-feature-grid{grid-template-columns:1fr;gap:34px}.heritage-support-grid{grid-template-columns:1fr}.heritage-apps{grid-template-columns:1fr 1fr}}
-@media(max-width:580px){.heritage-apps{grid-template-columns:1fr}}
-
 
 
 /* CURATED DESIGNER COLLECTIONS - fixed unique layout */
@@ -752,24 +627,6 @@ body{background:var(--black);color:var(--off-white);font-family:'Jost',sans-seri
 
 
 
-/* AI / GEO COLLECTION PAGE ADDITIONS */
-.ai-about-artist,.ai-resource-section,.ai-linking-hub{border-top:1px solid rgba(181,146,74,.14);border-bottom:1px solid rgba(181,146,74,.08)}
-.ai-two-col{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2rem,5vw,5rem);align-items:start}
-.ai-two-col p{color:rgba(244,238,229,.68);font-size:.88rem;line-height:1.95}
-.ai-section-head{max-width:980px;margin:0 auto 42px;text-align:center}
-.ai-section-head p{max-width:760px;margin:18px auto 0;color:rgba(244,238,229,.62);line-height:1.9}
-.ai-env-grid{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:2px}
-.ai-env-card{display:block;text-decoration:none;background:#12100d;border:1px solid rgba(181,146,74,.14);padding:30px;min-height:230px}
-.ai-env-card span{display:block;color:#b9934b;font-family:Arial,Helvetica,sans-serif;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;margin-bottom:18px}
-.ai-env-card h3{color:#f4eee5;font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(1.25rem,2vw,1.7rem);font-weight:400;line-height:1.05;margin-bottom:14px}
-.ai-env-card p{color:rgba(244,238,229,.58);font-size:.76rem;line-height:1.85}
-.ai-link-grid{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
-.ai-link-grid a{display:block;text-decoration:none;background:#f3efe7;color:#1b1713;padding:28px;border:1px solid rgba(40,35,30,.08)}
-.ai-link-grid strong{display:block;font-family:"Cormorant Garamond",Georgia,serif;font-size:1.65rem;font-weight:400;color:#1b1713;margin-bottom:10px}
-.ai-link-grid span{display:block;color:#5b5044;font-size:.76rem;line-height:1.75}
-@media(max-width:1040px){.ai-two-col,.ai-env-grid,.ai-link-grid{grid-template-columns:1fr}.ai-section-head{text-align:left}.ai-section-head p{margin-left:0}}
-
-
 /* IMAGE PERFORMANCE PASS */
 img{max-width:100%;height:auto}
 section{content-visibility:auto;contain-intrinsic-size:1px 900px}
@@ -812,24 +669,6 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
   
 }
 
-
-
-/* COMMERCIAL ARTWORK SOLUTIONS INSERT */
-.commercial-solutions{background:#0b0a08;padding:96px 56px;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
-.commercial-solutions .solutions-head{max-width:760px;margin:0 auto 52px;text-align:center}
-.commercial-solutions .solutions-head p:not(.section-label){font-size:.78rem;line-height:2;color:rgba(242,239,232,.56);max-width:680px;margin:0 auto}
-.solution-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:3px;max-width:1060px;margin:0 auto}
-.solution-card{display:block;text-decoration:none;color:var(--off-white);background:#0e0c09;border:1px solid rgba(181,146,74,.14);overflow:hidden;transition:transform .35s ease,border-color .35s ease,background .35s ease}
-.solution-card:hover{transform:translateY(-5px);border-color:rgba(181,146,74,.48);background:#15110d}
-.solution-image{aspect-ratio:16/9;overflow:hidden;background:#14100c}
-.solution-image img{width:100%;height:100%;object-fit:cover;display:block;filter:brightness(.86) saturate(.92);transition:transform .7s cubic-bezier(.25,.46,.45,.94),filter .4s ease}
-.solution-card:hover .solution-image img{transform:scale(1.035);filter:brightness(.98) saturate(1)}
-.solution-copy{padding:32px 30px 34px}
-.solution-type{display:block;color:var(--accent);font-size:.52rem;letter-spacing:.3em;text-transform:uppercase;margin-bottom:16px}
-.solution-copy h3{font-family:'Cormorant Garamond',serif;font-size:clamp(1.75rem,3vw,2.45rem);font-weight:300;line-height:1.05;margin-bottom:14px;color:var(--off-white)}
-.solution-copy p{font-size:.72rem;line-height:1.95;color:rgba(242,239,232,.58);margin-bottom:24px}
-.solution-link{color:var(--accent);font-size:.56rem;letter-spacing:.24em;text-transform:uppercase}
-@media(max-width:900px){.commercial-solutions{padding:76px 24px}.commercial-solutions .solutions-head{text-align:left;margin-bottom:36px}.commercial-solutions .solutions-head p:not(.section-label){margin-left:0}.solution-grid{grid-template-columns:1fr;gap:18px}.solution-copy{padding:26px 24px 28px}}
 
 
 /* DESIGNER PAGE FINAL REFINEMENTS */
@@ -1718,103 +1557,6 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
 
 
 /* ==========================================================
-   FIX: Art for Every Environment layout
-   Replaces broken mosaic/span behavior with a clean 5-card designer grid.
-   ========================================================== */
-.compact-environments{
-  padding-top:82px!important;
-  padding-bottom:86px!important;
-}
-.compact-environments .section-label,
-.compact-environments .section-title,
-.compact-environments .section-intro{
-  max-width:1180px!important;
-  margin-left:auto!important;
-  margin-right:auto!important;
-}
-.compact-environments .section-intro{
-  margin-bottom:42px!important;
-}
-.compact-env-grid{
-  max-width:1180px!important;
-  margin:0 auto!important;
-  display:grid!important;
-  grid-template-columns:repeat(6,minmax(0,1fr))!important;
-  gap:16px!important;
-}
-.compact-env-card,
-.compact-feature{
-  grid-column:span 2!important;
-  grid-row:auto!important;
-  aspect-ratio:16/10!important;
-  min-height:0!important;
-  width:100%!important;
-}
-.compact-env-card:nth-child(4),
-.compact-env-card:nth-child(5){
-  grid-column:span 3!important;
-}
-.compact-env-card img{
-  width:100%!important;
-  height:100%!important;
-  object-fit:cover!important;
-}
-.compact-env-card .placement-overlay{
-  padding:24px 22px!important;
-  background:linear-gradient(to top,rgba(8,8,7,.9) 0%,rgba(8,8,7,.46) 42%,transparent 76%)!important;
-}
-.compact-env-card .pl-venue{
-  font-size:.48rem!important;
-  letter-spacing:.28em!important;
-}
-.compact-env-card .pl-title{
-  font-size:1.05rem!important;
-  line-height:1.18!important;
-}
-.compact-env-card .pl-desc{
-  font-size:.56rem!important;
-  line-height:1.55!important;
-  letter-spacing:.08em!important;
-  max-width:92%!important;
-}
-@media(max-width:1040px){
-  .compact-env-grid{
-    grid-template-columns:repeat(2,minmax(0,1fr))!important;
-    gap:14px!important;
-  }
-  .compact-env-card,
-  .compact-feature,
-  .compact-env-card:nth-child(4),
-  .compact-env-card:nth-child(5){
-    grid-column:span 1!important;
-    aspect-ratio:16/10!important;
-  }
-}
-@media(max-width:680px){
-  .compact-environments{
-    padding:50px 22px!important;
-  }
-  .compact-env-grid{
-    grid-template-columns:1fr!important;
-    gap:12px!important;
-  }
-  .compact-env-card,
-  .compact-feature,
-  .compact-env-card:nth-child(4),
-  .compact-env-card:nth-child(5){
-    grid-column:1/-1!important;
-    aspect-ratio:16/9!important;
-  }
-  .compact-env-card .placement-overlay{
-    padding:18px!important;
-  }
-  .compact-env-card .pl-desc{
-    display:none!important;
-  }
-}
-
-
-/* ==========================================================
    FINAL FIX — Art for Every Environment card layout
    This overrides earlier placement-section mosaic rules that were
    forcing the first row into shallow, uneven cards.
@@ -2078,6 +1820,29 @@ line-height:1.7;
   }
 }
 @media(max-width:680px){
+  .designer-resource-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:12px!important;
+  }
+  .designer-resource-grid .designer-resource-card,
+  .designer-resource-grid .designer-resource-card:nth-child(4){
+    grid-column:span 1!important;
+  }
+  .designer-resource-grid .designer-resource-card:nth-child(5){
+    grid-column:1/-1!important;
+  }
+  .designer-resource-image{
+    height:130px!important;
+  }
+  .designer-resource-copy{
+    padding:20px 17px 22px!important;
+  }
+  .designer-resource-copy h3{
+    font-size:1.45rem!important;
+  }
+  .designer-resource-copy p{
+    display:none!important;
+  }
   .sticky-cta{display:none!important}
   .sticky-cta-mobile{
     display:flex!important;
@@ -2136,6 +1901,22 @@ line-height:1.7;
   }
   .btn,.btn-solid,.btn-out,.btn-download,.tf-submit{
     min-height:48px!important;
+  }
+  .site-footer{
+    padding-bottom:calc(104px + env(safe-area-inset-bottom))!important;
+  }
+}
+@media(max-width:420px){
+  .designer-resource-grid{
+    grid-template-columns:1fr!important;
+  }
+  .designer-resource-grid .designer-resource-card,
+  .designer-resource-grid .designer-resource-card:nth-child(4),
+  .designer-resource-grid .designer-resource-card:nth-child(5){
+    grid-column:1/-1!important;
+  }
+  .designer-resource-image{
+    height:160px!important;
   }
 }
 @media(min-width:681px){
@@ -2671,6 +2452,36 @@ line-height:1.7;
 </div>
 </div>
 </section>
+<!-- PRICING ANCHOR — removes friction for designers evaluating cost -->
+<div class="section" style="padding-top:0;padding-bottom:0;background:var(--black)">
+<div class="pricing-anchor">
+<div class="pricing-anchor-grid">
+<div class="pa-item">
+<p class="pa-label">Canvas Prints</p>
+<p class="pa-price">from $85</p>
+<p class="pa-desc">Gallery-wrapped, ready to hang. 12×18 to 60×90+</p>
+</div>
+<div class="pa-item">
+<p class="pa-label">Framed Prints</p>
+<p class="pa-price">from $100</p>
+<p class="pa-desc">Archival paper, white mat, wood frame. Any size.</p>
+</div>
+<div class="pa-item">
+<p class="pa-label">Metal &amp; Acrylic</p>
+<p class="pa-price">from $120</p>
+<p class="pa-desc">Vivid, durable. Ideal for lobbies &amp; high-traffic spaces.</p>
+</div>
+<div class="pa-item">
+<p class="pa-label">Trade &amp; Wholesale</p>
+<p class="pa-price">Custom</p>
+<p class="pa-desc">Volume discounts for designers. Apply below for trade pricing.</p>
+</div>
+<div class="pa-note">
+        All prices are retail starting points. <strong style="color:rgba(242,239,232,.75)">Designers and design firms receive trade pricing</strong> — apply using the form below. Custom sizing available on every image at no additional design fee. Commercial licensing and multi-site programs priced by scope.
+      </div>
+</div>
+</div>
+</div>
 <section class="designer-use-section" id="how-designers-use-this-resource">
 <p class="section-label">How Designers Use This Resource</p>
 <h2 class="section-title">Built for presentations, sourcing, and specification.</h2>
@@ -2736,36 +2547,6 @@ line-height:1.7;
 <!-- SELECTED INSTALLATIONS -->
 <!-- INTRO -->
 <!-- COMMERCIAL ARTWORK SOLUTIONS -->
-<!-- PRICING ANCHOR — removes friction for designers evaluating cost -->
-<div class="section" style="padding-top:0;padding-bottom:0;background:var(--black)">
-<div class="pricing-anchor">
-<div class="pricing-anchor-grid">
-<div class="pa-item">
-<p class="pa-label">Canvas Prints</p>
-<p class="pa-price">from $85</p>
-<p class="pa-desc">Gallery-wrapped, ready to hang. 12×18 to 60×90+</p>
-</div>
-<div class="pa-item">
-<p class="pa-label">Framed Prints</p>
-<p class="pa-price">from $100</p>
-<p class="pa-desc">Archival paper, white mat, wood frame. Any size.</p>
-</div>
-<div class="pa-item">
-<p class="pa-label">Metal &amp; Acrylic</p>
-<p class="pa-price">from $120</p>
-<p class="pa-desc">Vivid, durable. Ideal for lobbies &amp; high-traffic spaces.</p>
-</div>
-<div class="pa-item">
-<p class="pa-label">Trade &amp; Wholesale</p>
-<p class="pa-price">Custom</p>
-<p class="pa-desc">Volume discounts for designers. Apply below for trade pricing.</p>
-</div>
-<div class="pa-note">
-        All prices are retail starting points. <strong style="color:rgba(242,239,232,.75)">Designers and design firms receive trade pricing</strong> — apply using the form below. Custom sizing available on every image at no additional design fee. Commercial licensing and multi-site programs priced by scope.
-      </div>
-</div>
-</div>
-</div>
 <!-- PLACEMENT GALLERY -->
 <section class="placement-section section compact-environments" id="placements">
 <p class="section-label">Seen In</p>
@@ -3177,18 +2958,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       }
     });
-  }
-});
-</script>
-<script>
-document.addEventListener('DOMContentLoaded',function(){
-  var lic = document.querySelector('.licensing-section');
-  if(lic){
-    lic.addEventListener('click',function(){
-      if(window.innerWidth <= 680){
-        lic.classList.toggle('expanded');
-      }
-    },{passive:true});
   }
 });
 </script>
