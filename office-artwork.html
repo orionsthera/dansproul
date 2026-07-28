@@ -1,27 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Office Artwork for Executive Interiors & Law Firms | Dan Sproul</title>
-  <meta name="description" content="Atmospheric nature artwork for executive offices, law firms, wealth management spaces, conference rooms, reception areas, and modern professional interiors by Ohio-based artist Dan Sproul." />
-  <meta name="author" content="Dan Sproul" />
-  <meta name="robots" content="index, follow, max-image-preview:large" />
-  <link rel="canonical" href="https://dsproul.com/office-artwork.html" />
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Office Artwork for Executive Interiors &amp; Law Firms | Dan Sproul</title>
+  <meta name="description" content="Atmospheric nature artwork for executive offices, law firms, wealth management spaces, conference rooms, reception areas, and modern professional interiors by Ohio-based artist Dan Sproul.">
+  <meta name="author" content="Dan Sproul">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://dsproul.com/office-artwork.html">
 
-  <meta property="og:title" content="Office Artwork for Executive Interiors | Dan Sproul" />
-  <meta property="og:description" content="Nature artwork and large-format landscape prints for executive offices, law firms, reception areas, conference rooms, and professional interiors." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://dsproul.com/office-artwork.html" />
-  <meta property="og:image" content="https://dsproul.com/executive%20office%20canadian%20mountain%20train.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Office Artwork for Executive Interiors & Law Firms | Dan Sproul" />
-  <meta name="twitter:description" content="Atmospheric nature artwork for executive offices, law firms, wealth management spaces, conference rooms, reception areas, and modern professional interiors." />
-  <meta name="twitter:image" content="https://dsproul.com/executive%20office%20canadian%20mountain%20train.jpg" />
-  <link rel="preload" as="image" href="executive office canadian mountain train.jpg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <meta property="og:title" content="Office Artwork for Executive Interiors | Dan Sproul">
+  <meta property="og:description" content="Nature artwork and large-format landscape prints for executive offices, law firms, reception areas, conference rooms, and professional interiors.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dsproul.com/office-artwork.html">
+  <meta property="og:image" content="https://dsproul.com/executive%20office%20canadian%20mountain%20train.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Office Artwork for Executive Interiors &amp; Law Firms | Dan Sproul">
+  <meta name="twitter:description" content="Atmospheric nature artwork for executive offices, law firms, wealth management spaces, conference rooms, reception areas, and modern professional interiors.">
+  <meta name="twitter:image" content="https://dsproul.com/executive%20office%20canadian%20mountain%20train.jpg">
+  <link rel="preload" as="image" href="executive office canadian mountain train.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&amp;family=Jost:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
 
   <style>
     :root {
@@ -1794,6 +1793,38 @@ body::before{
   }
 }
 
+/* OFFICE MOBILE UX — shorter initial path, full content on demand */
+.office-mockup-more,.office-mobile-cta{display:none}
+@media(max-width:760px){
+  section{padding-top:46px!important;padding-bottom:46px!important}
+  .section-head{margin-bottom:28px!important}
+  .mockup-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important}
+  .mockup-grid:not(.is-expanded) .mockup-card:nth-child(n+5){display:none!important}
+  .mockup-card .card-media{aspect-ratio:4/3!important}
+  .mockup-card .card-body{padding:17px!important}
+  .mockup-card .card-body h3{font-size:20px!important;margin-bottom:0!important}
+  .mockup-card .card-body p{display:none!important}
+  .office-mockup-more{display:flex;align-items:center;justify-content:center;width:100%;min-height:48px;margin-top:18px;border:1px solid rgba(224,197,142,.55);background:transparent;color:#f6f1e7;font:700 12px Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;cursor:pointer}
+  .collection-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important}
+  .collection-card{padding:19px!important}
+  .collection-card h3{font-size:22px!important;margin-bottom:0!important}
+  .collection-card p{display:none!important}
+  .faq-grid{gap:10px!important}
+  .faq-card{padding:19px 20px!important;cursor:pointer}
+  .faq-card h3{position:relative;padding-right:28px;margin:0!important;font-size:21px!important}
+  .faq-card h3::after{content:'+';position:absolute;right:0;top:-2px;color:var(--accent);font-family:Arial,sans-serif}
+  .faq-card p{display:none;margin-top:14px!important}
+  .faq-card.is-open p{display:block!important}
+  .faq-card.is-open h3::after{content:'–'}
+  .office-mobile-cta{display:flex;position:fixed;left:14px;right:14px;bottom:calc(14px + env(safe-area-inset-bottom));z-index:999;opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .25s ease,transform .25s ease}
+  .office-mobile-cta.is-visible{opacity:1;transform:none;pointer-events:auto}
+  .office-mobile-cta a{display:flex;align-items:center;justify-content:center;width:100%;min-height:50px;padding:13px 18px;background:var(--accent);color:#17130e;text-decoration:none;font:700 12px Arial,sans-serif;letter-spacing:.15em;text-transform:uppercase;box-shadow:0 14px 32px rgba(0,0,0,.35)}
+  .site-footer{padding-bottom:calc(104px + env(safe-area-inset-bottom))!important}
+}
+@media(max-width:420px){
+  .mockup-grid,.collection-grid{grid-template-columns:1fr!important}
+  .mockup-grid:not(.is-expanded) .mockup-card:nth-child(n+4){display:none!important}
+}
   </style>
   <script type="application/ld+json">
 {
@@ -2172,6 +2203,7 @@ body::before{
             </div>
           </button>
         </div>
+        <button aria-controls="featured-office-mockups" aria-expanded="false" class="office-mockup-more" type="button">View All Office Examples</button>
       </div>
     </section>
 
@@ -2185,7 +2217,7 @@ body::before{
 
         <div class="collection-grid">
           <a class="collection-card" href="monochrome-stillness.html">
-            <h3>Black & White Landscapes</h3>
+            <h3>Black &amp; White Landscapes</h3>
             <p>Best for law firms, executive offices, conference rooms, and architectural interiors that need restraint.</p>
           </a>
           <a class="collection-card" href="mountain-light-collection.html">
@@ -2304,9 +2336,12 @@ body::before{
   </div>
 </section>
 
+<div class="office-mobile-cta" id="officeMobileCta">
+<a href="mailto:dan@dsproul.com?subject=Office%20Artwork%20Recommendation">Request Office Artwork Help</a>
+</div>
 <footer id="footer" class="site-footer">
   <div class="footer-grid">
-    <details class="footer-group" open>
+    <details class="footer-group" open="">
       <summary>Explore</summary>
       <a href="/">Home</a>
       <a href="best-sellers.html">Best Sellers</a>
@@ -2317,7 +2352,7 @@ body::before{
       <a href="mailto:dan@dsproul.com">Contact</a>
     </details>
 
-    <details class="footer-group" open>
+    <details class="footer-group" open="">
       <summary>Collections</summary>
       <a href="quiet-earth-collection.html">Quiet Earth</a>
       <a href="forest-light-collection.html">Forest Light</a>
@@ -2330,7 +2365,7 @@ body::before{
       <a href="heritage-mixed-media.html">Heritage &amp; Mixed Media</a>
     </details>
 
-    <details class="footer-group" open>
+    <details class="footer-group" open="">
       <summary>Resources</summary>
       <a href="artwork-guides.html">Artwork Guides</a>
       <a href="blog.html">Journal</a>
@@ -2341,7 +2376,7 @@ body::before{
       <a href="about-dan-sproul.html">About Dan</a>
     </details>
 
-    <details class="footer-group" open>
+    <details class="footer-group" open="">
       <summary>For Designers</summary>
       <a href="/for-designers.html">Designer Resources</a>
       <a href="/healthcare-artwork.html">Healthcare</a>
@@ -2509,5 +2544,38 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 
-</body>
-</html>
+
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  var grid=document.querySelector('#featured-office-mockups .mockup-grid');
+  var more=document.querySelector('.office-mockup-more');
+  var mobileCta=document.getElementById('officeMobileCta');
+  if(grid&&more){
+    more.addEventListener('click',function(){
+      var expanded=grid.classList.toggle('is-expanded');
+      more.setAttribute('aria-expanded',expanded?'true':'false');
+      more.textContent=expanded?'Show Fewer Office Examples':'View All Office Examples';
+    });
+  }
+  document.querySelectorAll('.faq-card').forEach(function(card){
+    var heading=card.querySelector('h3');
+    if(!heading)return;
+    card.setAttribute('tabindex','0');
+    card.setAttribute('aria-expanded','false');
+    function toggleFaq(){
+      if(window.innerWidth>760)return;
+      var open=card.classList.toggle('is-open');
+      card.setAttribute('aria-expanded',open?'true':'false');
+    }
+    card.addEventListener('click',toggleFaq);
+    card.addEventListener('keydown',function(event){
+      if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleFaq();}
+    });
+  });
+  function updateCta(){if(mobileCta)mobileCta.classList.toggle('is-visible',window.scrollY>400);}
+  window.addEventListener('scroll',updateCta,{passive:true});
+  updateCta();
+});
+</script>
+</body></html>
