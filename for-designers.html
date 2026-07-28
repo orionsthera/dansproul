@@ -588,10 +588,10 @@ body{background:var(--black);color:var(--off-white);font-family:'Jost',sans-seri
 /* ==========================================================
    UX TIGHTENING UPDATE — May 2026
    Goal: keep the current page/design, but reduce vertical fatigue.
-   - Shorter hero
-   - Smaller in-page mockup examples
-   - Lightbox still opens full-size previews
-   - Collections remain below mockup examples
+- Shorter hero
+- Smaller in-page mockup examples
+- Lightbox still opens full-size previews
+- Collections remain below mockup examples
    ========================================================== */
 
 /* Shorten the opening hero so visitors reach artwork faster */
@@ -1395,9 +1395,9 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
 /* ==========================================================
    JULY 2026 MOBILE CONDENSE PASS — Designer page
    Goal: Cut vertical scroll on phones for:
-   1. "Art for Every Environment" grid
-   2. Print Formats cards
-   3. Digital Licensing cards
+1. "Art for Every Environment" grid
+2. Print Formats cards
+3. Digital Licensing cards
    ========================================================== */
 
 /* ---------- 1. ART FOR EVERY ENVIRONMENT ---------- */
@@ -2065,6 +2065,81 @@ text-align:center;
 font-size:.95rem;
 color:#b8b2a8;
 line-height:1.7;
+}
+
+/* MOBILE UX CORRECTIONS — final authoritative overrides */
+.sticky-cta-mobile{display:none}
+@media(max-width:1040px){
+  .nav-toggle-standard{
+    width:46px!important;
+    height:46px!important;
+    min-width:46px!important;
+    min-height:46px!important;
+  }
+}
+@media(max-width:680px){
+  .sticky-cta{display:none!important}
+  .sticky-cta-mobile{
+    display:flex!important;
+    position:fixed;
+    left:16px;
+    right:16px;
+    bottom:calc(16px + env(safe-area-inset-bottom));
+    z-index:150;
+    justify-content:center;
+    opacity:0;
+    transform:translateY(12px);
+    pointer-events:none;
+    transition:opacity .3s ease,transform .3s ease;
+  }
+  .sticky-cta-mobile.visible{
+    opacity:1;
+    transform:translateY(0);
+    pointer-events:auto;
+  }
+  .sticky-cta-mobile a{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    min-height:48px;
+    padding:14px 20px;
+    text-align:center;
+    font-size:.62rem;
+    letter-spacing:.2em;
+    text-transform:uppercase;
+    text-decoration:none;
+    background:var(--accent);
+    color:#14100b;
+    border:1px solid var(--accent);
+    box-shadow:0 12px 30px rgba(0,0,0,.45);
+  }
+  .trust-bar{
+    flex-wrap:nowrap!important;
+    justify-content:flex-start!important;
+    overflow-x:auto;
+    overscroll-behavior-inline:contain;
+    -webkit-overflow-scrolling:touch;
+    scroll-snap-type:x proximity;
+    gap:22px!important;
+    padding:16px 20px!important;
+    -ms-overflow-style:none;
+    scrollbar-width:none;
+  }
+  .trust-bar::-webkit-scrollbar{display:none}
+  .trust-item{
+    flex:0 0 auto;
+    scroll-snap-align:start;
+    white-space:nowrap;
+    font-size:.54rem!important;
+    letter-spacing:.14em!important;
+  }
+  .btn,.btn-solid,.btn-out,.btn-download,.tf-submit{
+    min-height:48px!important;
+  }
+}
+@media(min-width:681px){
+  .sticky-cta-mobile{display:none!important}
 }
 </style>
 <script type="application/ld+json">{
@@ -2949,14 +3024,22 @@ function closeFDLightbox(){
 <a class="btn-download" href="#further-resources" style="background:transparent;color:var(--accent);border-color:rgba(181,146,74,.4)">Download Specs</a>
 </div>
 </div>
+<div class="sticky-cta-mobile" id="stickyCtaMobile">
+<a href="mailto:dan@dsproul.com?subject=Mockup%20Request">Request a Mockup</a>
+</div>
 <script>
 // Sticky CTA visibility
 (function(){
   var bar = document.getElementById('stickyCta');
-  if(!bar) return;
-  window.addEventListener('scroll', function(){
-    bar.classList.toggle('visible', window.scrollY > 400);
-  });
+  var barMobile = document.getElementById('stickyCtaMobile');
+  if(!bar && !barMobile) return;
+  function updateStickyCtas(){
+    var show = window.scrollY > 400;
+    if(bar) bar.classList.toggle('visible', show);
+    if(barMobile) barMobile.classList.toggle('visible', show);
+  }
+  window.addEventListener('scroll', updateStickyCtas, {passive:true});
+  updateStickyCtas();
 })();
 </script>
 <footer class="site-footer" id="footer">
