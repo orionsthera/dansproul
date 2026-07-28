@@ -1249,10 +1249,8 @@ body {
   .faq-card p{display:none;margin-top:14px!important}
   .faq-card.is-open p{display:block}
   .faq-card.is-open h3::after{content:'–'}
-  .residential-mobile-cta{display:flex;position:fixed;left:14px;right:14px;bottom:calc(14px + env(safe-area-inset-bottom));z-index:999;opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .25s ease,transform .25s ease}
-  .residential-mobile-cta.is-visible{opacity:1;transform:none;pointer-events:auto}
-  .residential-mobile-cta a{display:flex;align-items:center;justify-content:center;width:100%;min-height:50px;padding:13px 18px;background:var(--gold);color:#17130e;text-decoration:none;font:700 12px Arial,sans-serif;letter-spacing:.15em;text-transform:uppercase;box-shadow:0 14px 32px rgba(0,0,0,.35)}
-  .site-footer{padding-bottom:calc(104px + env(safe-area-inset-bottom))!important}
+  .residential-mobile-cta{display:flex;position:static;margin-top:12px}
+  .residential-mobile-cta a{display:flex;align-items:center;justify-content:center;width:100%;min-height:50px;padding:13px 18px;background:var(--gold);color:#17130e;text-decoration:none;font:700 12px Arial,sans-serif;letter-spacing:.15em;text-transform:uppercase}
 }
 @media (max-width:420px){
   .room-grid,.collection-grid{grid-template-columns:1fr!important}
@@ -1606,6 +1604,9 @@ body {
 </article>
 </div>
 <button aria-controls="residential-mockups" aria-expanded="false" class="mockup-more-control" type="button">View All Room Examples</button>
+<div class="residential-mobile-cta" id="residentialMobileCta">
+<a href="mailto:dan@dsproul.com?subject=Residential%20Artwork%20Recommendation">Request Artwork Help</a>
+</div>
 </div>
 </section>
 <section>
@@ -1765,9 +1766,6 @@ body {
 </div>
 </section>
 </main>
-<div class="residential-mobile-cta" id="residentialMobileCta">
-<a href="mailto:dan@dsproul.com?subject=Residential%20Artwork%20Recommendation">Request Artwork Help</a>
-</div>
 <footer class="site-footer">
 <div class="footer-contact">
 <div class="footer-contact-inner">
@@ -2008,7 +2006,6 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener('DOMContentLoaded', function(){
   var grid = document.querySelector('#residential-mockups .mockup-grid');
   var moreButton = document.querySelector('.mockup-more-control');
-  var mobileCta = document.getElementById('residentialMobileCta');
 
   if(grid && moreButton){
     moreButton.addEventListener('click', function(){
@@ -2037,11 +2034,6 @@ document.addEventListener('DOMContentLoaded', function(){
     });
   });
 
-  function updateMobileCta(){
-    if(mobileCta) mobileCta.classList.toggle('is-visible', window.scrollY > 400);
-  }
-  window.addEventListener('scroll', updateMobileCta, {passive:true});
-  updateMobileCta();
 });
 </script>
 </body></html>
