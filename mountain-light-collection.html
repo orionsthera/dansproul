@@ -1,26 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mountain Light Nature Prints &amp; Alpine Wall Art | Dan Sproul</title>
 <meta name="description" content="Luminous alpine landscape prints for living rooms, bedrooms, lodges, offices, and statement walls. Prints from $45, framed options from $100, with canvas, metal, acrylic, and paper formats available.">
 <meta name="author" content="Dan Sproul">
-<meta name="robots" content="index, follow, max-image-preview:large" />
-<link rel="canonical" href="https://dsproul.com/mountain-light-collection.html" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://dsproul.com/mountain-light-collection.html" />
-<meta property="og:title" content="Mountain Landscape Photography Prints | Dan Sproul Fine Art" />
-<meta property="og:description" content="Fine art mountain photography prints and wall art for homes, lodges, and offices — atmospheric landscapes by Dan Sproul, installed at Drury Inn and Wexner Medical Center." />
-<meta property="og:image" content="https://dsproul.com/mountain-light-living-room.jpg" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Mountain Light Nature Prints &amp; Alpine Wall Art | Dan Sproul" />
-<meta name="twitter:description" content="Luminous alpine landscape prints for living rooms, bedrooms, lodges, offices, and statement walls. Prints from $45 with framed, canvas, metal, acrylic, and paper options." />
-<meta name="twitter:image" content="https://dsproul.com/mountain-light-living-room.jpg" />
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://dsproul.com/mountain-light-collection.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dsproul.com/mountain-light-collection.html">
+<meta property="og:title" content="Mountain Landscape Photography Prints | Dan Sproul Fine Art">
+<meta property="og:description" content="Fine art mountain photography prints and wall art for homes, lodges, and offices — atmospheric landscapes by Dan Sproul, installed at Drury Inn and Wexner Medical Center.">
+<meta property="og:image" content="https://dsproul.com/mountain-light-living-room.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mountain Light Nature Prints &amp; Alpine Wall Art | Dan Sproul">
+<meta name="twitter:description" content="Luminous alpine landscape prints for living rooms, bedrooms, lodges, offices, and statement walls. Prints from $45 with framed, canvas, metal, acrylic, and paper options.">
+<meta name="twitter:image" content="https://dsproul.com/mountain-light-living-room.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="preload" as="image" href="mountain-light-living-room.jpg">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&amp;family=Jost:wght@300;400;500&amp;display=swap" rel="stylesheet">
 <style>
 :root{
   --black:#14110d;
@@ -1633,6 +1632,36 @@ h1{max-width:980px;font-size:clamp(44px,6.7vw,92px);letter-spacing:-.018em}
   }
 }
 
+/* MOUNTAIN LIGHT MOBILE UX — progressive disclosure without overlays */
+.mountain-mock-more,.mountain-print-more{display:none}
+@media(max-width:680px){
+  .section-pad{padding:48px 20px!important}
+  .mock-strip{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}
+  .mock-strip:not(.is-expanded) .mock-tile:nth-child(n+5){display:none!important}
+  .mock-tile{min-height:0!important;aspect-ratio:4/3!important}
+  .mock-label{padding:14px!important;font-size:10px!important}
+  .mountain-print-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important}
+  .mountain-print-grid:not(.is-expanded) .mountain-print-card:nth-child(n+5){display:none!important}
+  .mountain-print-card img{aspect-ratio:4/3!important;height:auto!important}
+  .mountain-card-copy{padding:17px!important}
+  .mountain-card-copy h3{font-size:21px!important}
+  .mountain-field-note,.mountain-print-meta{display:none!important}
+  .mountain-mock-more,.mountain-print-more{display:flex;align-items:center;justify-content:center;width:100%;min-height:48px;margin-top:16px;border:1px solid rgba(185,147,75,.55);background:transparent;color:inherit;font:700 11px Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;cursor:pointer}
+  .mockups .mountain-mock-more{color:#211b14;border-color:rgba(33,27,20,.36)}
+  .rooms-grid,.dark-grid,.related-grid,.recommended-collections-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}
+  .rooms-grid p,.dark-grid p,.related-grid p,.recommended-collections-grid p{display:none!important}
+  .faq-grid{gap:10px!important;background:transparent!important;border:0!important}
+  .faq-card{padding:19px 20px!important;cursor:pointer;border:1px solid var(--line)!important}
+  .faq-card h3{position:relative;padding-right:28px;margin:0!important;font-size:21px!important}
+  .faq-card h3::after{content:'+';position:absolute;right:0;top:-2px;color:var(--gold);font-family:Arial,sans-serif}
+  .faq-card p{display:none;margin-top:14px!important}
+  .faq-card.is-open p{display:block!important}
+  .faq-card.is-open h3::after{content:'–'}
+}
+@media(max-width:360px){
+  .mountain-card-copy h3{font-size:18px!important}
+  .mountain-print-label{font-size:8px!important}
+}
 </style>
 <script type="application/ld+json">
 {
@@ -1835,7 +1864,7 @@ h1{max-width:980px;font-size:clamp(44px,6.7vw,92px);letter-spacing:-.018em}
       <a class="btn" href="#collection">Shop Mountain Prints</a>
     </div>
     <div class="hero-badges">
-      <span>Lodge & Home Artwork</span>
+      <span>Lodge &amp; Home Artwork</span>
       <span>Large Statement Pieces</span>
       <span>Ships Worldwide</span>
       <span>30-Day Print Guarantee</span>
@@ -1893,6 +1922,7 @@ h1{max-width:980px;font-size:clamp(44px,6.7vw,92px);letter-spacing:-.018em}
     <div class="mock-tile mockup-trigger" data-purchase="https://dansproul.com/featured/valdez-alaska-glacial-lake-black-and-white-dan-sproul.html" data-title="Valdez Alaska Glacial Lake Black and White shown as a calming framed print for a refined mountain bedroom." data-sizes="30x30 • 36x36 • 40x40" data-frames="Matte Black • Warm Oak • Walnut" data-formats="Framed Print • Canvas" data-rooms="Bedrooms • Guest Suites • Mountain Homes • Quiet Retreats"><img src="mountain reflections in modern bedroom.jpg" alt="Valdez Alaska Glacial Lake Black and White artwork in a warm mountain bedroom" loading="lazy" decoding="async"><div class="mock-label"><strong>Bedroom retreat</strong> monochrome alpine calm and reflection</div><a class="mock-purchase" href="https://dansproul.com/featured/valdez-alaska-glacial-lake-black-and-white-dan-sproul.html" target="_blank" rel="noopener" aria-label="Purchase this Mountain Light print">Purchase Print</a></div>
 
   </div>
+  <button aria-controls="mockups" aria-expanded="false" class="mountain-mock-more" type="button">View All Interior Examples</button>
 </section>
 
 <section class="section-pad collection-section mountain-shop-section" id="collection">
@@ -2059,6 +2089,7 @@ h1{max-width:980px;font-size:clamp(44px,6.7vw,92px);letter-spacing:-.018em}
       </div>
     </a>
   </div>
+  <button aria-controls="collection" aria-expanded="false" class="mountain-print-more" type="button">View All Mountain Prints</button>
 </section>
 
 
@@ -2115,9 +2146,9 @@ h1{max-width:980px;font-size:clamp(44px,6.7vw,92px);letter-spacing:-.018em}
     <p>From Alaska to the Canadian Rockies and Grand Tetons, these landscapes bring a sense of place and geographic authenticity to the collection.</p>
   </div>
   <div class="info-grid">
-    <div class="info-card"><span>Alaska</span><h3>Chugach & Kenai</h3><p>Glacial valleys, reflective lakes, and dramatic mountain weather create some of the collection's most atmospheric statement pieces.</p></div>
+    <div class="info-card"><span>Alaska</span><h3>Chugach &amp; Kenai</h3><p>Glacial valleys, reflective lakes, and dramatic mountain weather create some of the collection's most atmospheric statement pieces.</p></div>
     <div class="info-card"><span>Wyoming</span><h3>Grand Tetons</h3><p>Iconic peaks and soft morning reflections offer timeless mountain imagery for refined residential and hospitality interiors.</p></div>
-    <div class="info-card"><span>Canadian Rockies</span><h3>Bow & Moraine</h3><p>Turquoise lakes, rugged peaks, and cinematic light create destination-inspired artwork with strong architectural presence.</p></div>
+    <div class="info-card"><span>Canadian Rockies</span><h3>Bow &amp; Moraine</h3><p>Turquoise lakes, rugged peaks, and cinematic light create destination-inspired artwork with strong architectural presence.</p></div>
   </div>
 </section>
 
@@ -2141,9 +2172,9 @@ h1{max-width:980px;font-size:clamp(44px,6.7vw,92px);letter-spacing:-.018em}
     <p>Mountain Light is most effective in spaces where scale, warmth, and natural drama can define the room without making it feel visually heavy.</p>
   </div>
   <div class="rooms-grid">
-    <div class="room-card"><span>Living Rooms</span><h3>Fireplace & Sofa Walls</h3><p>Large alpine landscapes bring warmth and architectural weight above fireplaces, sofas, consoles, and main gathering spaces.</p></div>
+    <div class="room-card"><span>Living Rooms</span><h3>Fireplace &amp; Sofa Walls</h3><p>Large alpine landscapes bring warmth and architectural weight above fireplaces, sofas, consoles, and main gathering spaces.</p></div>
     <div class="room-card"><span>Hospitality Lounges</span><h3>Destination Character</h3><p>Mountain imagery helps boutique hotels, lodges, resorts, and guest suites feel rooted in place and memorable to guests.</p></div>
-    <div class="room-card"><span>Executive Offices</span><h3>Scale & Permanence</h3><p>Mountain artwork conveys depth, vision, calm authority, and permanence in offices, boardrooms, and reception areas.</p></div>
+    <div class="room-card"><span>Executive Offices</span><h3>Scale &amp; Permanence</h3><p>Mountain artwork conveys depth, vision, calm authority, and permanence in offices, boardrooms, and reception areas.</p></div>
     <div class="room-card"><span>Bedrooms</span><h3>Quiet Alpine Calm</h3><p>Reflective lakes, sunrise scenes, and softened mountain atmosphere work well above beds and in restful private spaces.</p></div>
     <div class="room-card"><span>Entryways</span><h3>Immediate Atmosphere</h3><p>One large mountain statement piece can establish the tone of a home, lodge, office, or hospitality property immediately.</p></div>
   </div>
@@ -2155,9 +2186,9 @@ h1{max-width:980px;font-size:clamp(44px,6.7vw,92px);letter-spacing:-.018em}
     <p>Use these starting points when choosing scale, format, and placement for Mountain Light artwork.</p>
   </div>
   <div class="info-grid">
-    <div class="info-card"><span>Best For</span><h3>Lodges & Homes</h3><p>Mountain homes, hospitality suites, lodge lounges, executive offices, living rooms, bedrooms, entryways, and nature-focused interiors.</p></div>
+    <div class="info-card"><span>Best For</span><h3>Lodges &amp; Homes</h3><p>Mountain homes, hospitality suites, lodge lounges, executive offices, living rooms, bedrooms, entryways, and nature-focused interiors.</p></div>
     <div class="info-card"><span>Suggested Sizes</span><h3>Go Large</h3><p>24×36 for smaller walls, 30×40 above consoles or beds, and 40×60 or larger for fireplaces, lobbies, lounges, and statement walls.</p></div>
-    <div class="info-card"><span>Strongest Formats</span><h3>Warm & Refined</h3><p>Framed paper for refined interiors, canvas for warmth, metal or acrylic for high-traffic hospitality and commercial settings.</p></div>
+    <div class="info-card"><span>Strongest Formats</span><h3>Warm &amp; Refined</h3><p>Framed paper for refined interiors, canvas for warmth, metal or acrylic for high-traffic hospitality and commercial settings.</p></div>
   </div>
 </section>
 
@@ -2170,7 +2201,7 @@ h1{max-width:980px;font-size:clamp(44px,6.7vw,92px);letter-spacing:-.018em}
     <div class="dark-card"><span>Step 01</span><h3>Share Your Space</h3><p>Send a room photo, dimensions, inspiration images, preferred atmosphere, or project details.</p></div>
     <div class="dark-card"><span>Step 02</span><h3>Receive Recommendations</h3><p>Selections are curated around architecture, lighting, scale, color palette, orientation, and emotional tone.</p></div>
     <div class="dark-card"><span>Step 03</span><h3>Review Mockups</h3><p>Receive scaled previews, framing direction, placement examples, alternate image suggestions, and proportion guidance.</p></div>
-    <div class="dark-card"><span>Step 04</span><h3>Specify & Order</h3><p>Artwork is available framed, acrylic, metal, canvas, oversized statement sizing, and designer-friendly formats.</p></div>
+    <div class="dark-card"><span>Step 04</span><h3>Specify &amp; Order</h3><p>Artwork is available framed, acrylic, metal, canvas, oversized statement sizing, and designer-friendly formats.</p></div>
   </div>
 </section>
 
@@ -2185,7 +2216,7 @@ h1{max-width:980px;font-size:clamp(44px,6.7vw,92px);letter-spacing:-.018em}
   </div>
   <div class="recommended-collections-grid">
     <a class="recommended-collection-card" href="quiet-earth-collection.html">
-      <span>Calmer & Grounded</span>
+      <span>Calmer &amp; Grounded</span>
       <h3>Quiet Earth</h3>
       <p>For interiors that need quieter landscape atmosphere.</p>
       <ul>
@@ -2246,9 +2277,9 @@ h1{max-width:980px;font-size:clamp(44px,6.7vw,92px);letter-spacing:-.018em}
     <p>Mountain Light connects naturally with calmer wellness collections, monochrome executive artwork, Alaska imagery, and designer resources.</p>
   </div>
   <div class="related-grid">
-    <a href="/quiet-earth-collection.html" class="related-card"><img src="quiet-earth-appalachian-fog.jpg" alt="Quiet Earth calming landscape artwork collection by Dan Sproul" loading="lazy" decoding="async"><div class="card-text"><span class="tag">Calmer & Grounded</span><h3>Quiet Earth</h3><p>Calmer mountain, forest, lake, and wilderness artwork for wellness, hospitality, and refined homes.</p></div></a>
+    <a href="/quiet-earth-collection.html" class="related-card"><img src="quiet-earth-appalachian-fog.jpg" alt="Quiet Earth calming landscape artwork collection by Dan Sproul" loading="lazy" decoding="async"><div class="card-text"><span class="tag">Calmer &amp; Grounded</span><h3>Quiet Earth</h3><p>Calmer mountain, forest, lake, and wilderness artwork for wellness, hospitality, and refined homes.</p></div></a>
     <a href="/wellness-waters-collection.html" class="related-card"><img src="grotto-falls-smoky-mountains-waterfall-forest-sunlight-dan-sproul.jpg" alt="Wellness Waters waterfall artwork collection by Dan Sproul" loading="lazy" decoding="async"><div class="card-text"><span class="tag">Restorative Water</span><h3>Wellness Waters</h3><p>Waterfall and flowing water artwork for wellness, healthcare, spas, and calm interiors.</p></div></a>
-    <a href="/monochrome-stillness.html" class="related-card"><img src="dramatic-bow-lake-reflection-dan-sproul.jpg" alt="Monochrome Stillness black and white mountain artwork by Dan Sproul" loading="lazy" decoding="async"><div class="card-text"><span class="tag">Office & Architectural</span><h3>Monochrome Stillness</h3><p>Restrained black-and-white landscapes for offices, healthcare corridors, and architectural spaces.</p></div></a>
+    <a href="/monochrome-stillness.html" class="related-card"><img src="dramatic-bow-lake-reflection-dan-sproul.jpg" alt="Monochrome Stillness black and white mountain artwork by Dan Sproul" loading="lazy" decoding="async"><div class="card-text"><span class="tag">Office &amp; Architectural</span><h3>Monochrome Stillness</h3><p>Restrained black-and-white landscapes for offices, healthcare corridors, and architectural spaces.</p></div></a>
     <a href="/alaska-photography-prints.html" class="related-card"><img src="reflections-lake-alaska-in-autumn-dan-sproul.jpg" alt="Alaska photography prints and atmospheric mountain artwork by Dan Sproul" loading="lazy" decoding="async"><div class="card-text"><span class="tag">Wilderness Scale</span><h3>Alaska Prints</h3><p>Glacier lakes, mountain reflections, autumn tundra, and wilderness imagery for statement interiors.</p></div></a>
     <a href="/ohio-nature-photography-prints.html" class="related-card"><img src="hocking-hills-hidden-falls-long-exposure-dan-sproul.jpg" alt="Ohio nature photography prints for interiors by Dan Sproul" loading="lazy" decoding="async"><div class="card-text"><span class="tag">Regional Authority</span><h3>Ohio Nature Photography</h3><p>Regional nature artwork for Ohio healthcare, hospitality, office, wellness, and residential interiors.</p></div></a>
     <a href="/for-designers.html" class="related-card"><img src="room-living-room-harbor.jpg" alt="For designers artwork resources by Dan Sproul" loading="lazy" decoding="async"><div class="card-text"><span class="tag">Trade Support</span><h3>For Designers</h3><p>Trade resources, custom sizing, artwork recommendations, and designer-focused support.</p></div></a>
@@ -2279,7 +2310,7 @@ h1{max-width:980px;font-size:clamp(44px,6.7vw,92px);letter-spacing:-.018em}
 
 <footer id="footer" class="site-footer">
   <div class="footer-grid">
-    <details class="footer-group" open>
+    <details class="footer-group" open="">
       <summary>Explore</summary>
       <a href="/">Home</a>
       <a href="best-sellers.html">Best Sellers</a>
@@ -2290,7 +2321,7 @@ h1{max-width:980px;font-size:clamp(44px,6.7vw,92px);letter-spacing:-.018em}
       <a href="mailto:dan@dsproul.com">Contact</a>
     </details>
 
-    <details class="footer-group" open>
+    <details class="footer-group" open="">
       <summary>Collections</summary>
       <a href="quiet-earth-collection.html">Quiet Earth</a>
       <a href="forest-light-collection.html">Forest Light</a>
@@ -2303,7 +2334,7 @@ h1{max-width:980px;font-size:clamp(44px,6.7vw,92px);letter-spacing:-.018em}
       <a href="heritage-mixed-media.html">Heritage &amp; Mixed Media</a>
     </details>
 
-    <details class="footer-group" open>
+    <details class="footer-group" open="">
       <summary>Resources</summary>
       <a href="artwork-guides.html">Artwork Guides</a>
       <a href="blog.html">Journal</a>
@@ -2314,7 +2345,7 @@ h1{max-width:980px;font-size:clamp(44px,6.7vw,92px);letter-spacing:-.018em}
       <a href="about-dan-sproul.html">About Dan</a>
     </details>
 
-    <details class="footer-group" open>
+    <details class="footer-group" open="">
       <summary>For Designers</summary>
       <a href="for-designers.html">Designer Resources</a>
       <a href="healthcare-artwork.html">Healthcare</a>
@@ -2470,5 +2501,37 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 
-</body>
-</html>
+
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  function setupDisclosure(gridSelector,buttonSelector,openText,closedText){
+    var grid=document.querySelector(gridSelector);
+    var button=document.querySelector(buttonSelector);
+    if(!grid||!button)return;
+    button.addEventListener('click',function(){
+      var expanded=grid.classList.toggle('is-expanded');
+      button.setAttribute('aria-expanded',expanded?'true':'false');
+      button.textContent=expanded?closedText:openText;
+    });
+  }
+  setupDisclosure('#mockups .mock-strip','.mountain-mock-more','View All Interior Examples','Show Fewer Interior Examples');
+  setupDisclosure('#collection .mountain-print-grid','.mountain-print-more','View All Mountain Prints','Show Fewer Mountain Prints');
+  document.querySelectorAll('.faq-card').forEach(function(card){
+    var heading=card.querySelector('h3');
+    if(!heading)return;
+    card.setAttribute('tabindex','0');
+    card.setAttribute('aria-expanded','false');
+    function toggleFaq(){
+      if(window.innerWidth>680)return;
+      var open=card.classList.toggle('is-open');
+      card.setAttribute('aria-expanded',open?'true':'false');
+    }
+    card.addEventListener('click',toggleFaq);
+    card.addEventListener('keydown',function(event){
+      if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleFaq();}
+    });
+  });
+});
+</script>
+</body></html>
