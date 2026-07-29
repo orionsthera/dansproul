@@ -828,44 +828,6 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
   min-width:240px;
   text-align:center;
 }
-.designer-use-section{
-  background:#0b0a08;
-  padding:84px 56px;
-  border-top:1px solid var(--border);
-  border-bottom:1px solid var(--border);
-}
-.designer-use-grid{
-  max-width:1120px;
-  margin:46px auto 0;
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:2px;
-}
-.designer-use-card{
-  background:#0f0d0a;
-  border:1px solid rgba(181,146,74,.12);
-  padding:32px 28px;
-  min-height:168px;
-}
-.designer-use-card span{
-  display:block;
-  font-family:'Cormorant Garamond',serif;
-  color:rgba(181,146,74,.28);
-  font-size:2.4rem;
-  line-height:1;
-  margin-bottom:16px;
-}
-.designer-use-card h3{
-  font-family:'Cormorant Garamond',serif;
-  font-size:1.35rem;
-  font-weight:300;
-  margin-bottom:10px;
-}
-.designer-use-card p{
-  color:rgba(242,239,232,.56);
-  font-size:.68rem;
-  line-height:1.85;
-}
 .spec-section{
   padding-top:82px!important;
   padding-bottom:86px!important;
@@ -916,339 +878,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
   .mockup-callout .btn-solid{width:max-content}
 }
 @media(max-width:680px){
-  .designer-resource-intro,.mockup-callout,.designer-use-section{padding:64px 24px}
-  .designer-resource-intro .resource-head{text-align:left}
-  .designer-resource-intro .resource-head .section-label{justify-content:flex-start}
-  .designer-resource-intro .resource-head p:not(.section-label){margin-left:0}
-  .designer-resource-image{height:170px}
-  .mockup-callout .btn-solid{width:100%}
-}
-
-
-/* FINAL FOR DESIGNERS UPDATE: TRUST, PORTRAIT SPEC SHEETS, FOOTER, MOBILE */
-.designer-trust-band{
-  background:#0b0a08;
-  padding:82px 56px;
-  border-top:1px solid var(--border);
-  border-bottom:1px solid var(--border);
-}
-.designer-trust-inner{max-width:1180px;margin:0 auto}
-.designer-trust-head{max-width:820px;margin:0 auto 42px;text-align:center}
-.designer-trust-head .section-label{justify-content:center;margin-bottom:26px}
-.designer-trust-head p:not(.section-label){
-  color:rgba(242,239,232,.58);
-  font-size:.78rem;
-  line-height:2;
-  max-width:700px;
-  margin:0 auto;
-}
-.designer-trust-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:2px;
-  margin-top:44px;
-}
-.designer-trust-grid article{
-  background:#0f0d0a;
-  border:1px solid rgba(181,146,74,.14);
-  padding:32px 28px;
-  min-height:220px;
-}
-.designer-trust-grid span{
-  display:block;
-  color:rgba(181,146,74,.36);
-  font-family:'Cormorant Garamond',Georgia,serif;
-  font-size:2.4rem;
-  line-height:1;
-  margin-bottom:18px;
-}
-.designer-trust-grid h3{
-  font-family:'Cormorant Garamond',Georgia,serif;
-  font-size:1.35rem;
-  font-weight:300;
-  line-height:1.15;
-  color:var(--off-white);
-  margin-bottom:12px;
-}
-.designer-trust-grid p{
-  color:rgba(242,239,232,.56);
-  font-size:.68rem;
-  line-height:1.9;
-}
-.designer-proof-row{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:2px;
-  margin-top:3px;
-  background:rgba(181,146,74,.1);
-  border:1px solid rgba(181,146,74,.14);
-}
-.designer-proof-row div{
-  background:#100e0b;
-  padding:24px;
-  text-align:center;
-}
-.designer-proof-row strong{
-  display:block;
-  color:var(--off-white);
-  font-family:'Cormorant Garamond',Georgia,serif;
-  font-size:2.2rem;
-  font-weight:300;
-  line-height:1;
-  margin-bottom:8px;
-}
-.designer-proof-row span{
-  color:rgba(242,239,232,.48);
-  font-size:.56rem;
-  letter-spacing:.22em;
-  text-transform:uppercase;
-}
-
-/* Portrait spec sheet cards */
-.spec-cards.spec-cards-three{
-  grid-template-columns:repeat(3,minmax(0,1fr))!important;
-  gap:18px!important;
-  max-width:1120px!important;
-}
-.spec-cards.spec-cards-three .spec-card{
-  display:flex!important;
-  flex-direction:column!important;
-  background:#111009!important;
-  border:1px solid rgba(181,146,74,.16)!important;
-  min-height:100%!important;
-}
-.spec-cards.spec-cards-three .spec-card-preview{
-  width:100%!important;
-  height:auto!important;
-  aspect-ratio:8.5/11!important;
-  max-height:420px!important;
-  background:#e8e1d4!important;
-  border-bottom:1px solid rgba(181,146,74,.16)!important;
-}
-.spec-cards.spec-cards-three .spec-card-preview img{
-  width:100%!important;
-  height:100%!important;
-  object-fit:cover!important;
-  object-position:top center!important;
-}
-.spec-cards.spec-cards-three .spec-card-body{
-  min-height:285px!important;
-  padding:30px 28px 32px!important;
-}
-.spec-card-title{font-size:1.42rem!important}
-
-/* Clean site footer */
-.site-footer{
-  display:block!important;
-  width:100%!important;
-  background:#100e0b!important;
-  padding:62px clamp(22px,6vw,76px) 36px!important;
-  border-top:1px solid rgba(185,138,59,.22)!important;
-  color:#f4eee5!important;
-  text-transform:none!important;
-  letter-spacing:0!important;
-  font-family:Arial,Helvetica,sans-serif!important;
-}
-.site-footer .footer-grid{
-  display:grid!important;
-  grid-template-columns:repeat(5,minmax(0,1fr))!important;
-  gap:32px!important;
-  max-width:1380px!important;
-  margin:0 auto!important;
-  background:transparent!important;
-  border:0!important;
-}
-.site-footer .footer-grid > div{display:block!important;min-width:0!important}
-.site-footer .footer-grid h3{
-  display:block!important;
-  margin:0 0 13px!important;
-  color:#d5b365!important;
-  font-family:"Cormorant Garamond",Georgia,serif!important;
-  font-size:21px!important;
-  line-height:1.2!important;
-  font-weight:400!important;
-  text-transform:none!important;
-  letter-spacing:0!important;
-}
-.site-footer .footer-grid a{
-  display:block!important;
-  width:auto!important;
-  text-decoration:none!important;
-  color:rgba(244,238,229,.66)!important;
-  font-family:Arial,Helvetica,sans-serif!important;
-  font-size:13px!important;
-  line-height:2!important;
-  text-transform:none!important;
-  letter-spacing:0!important;
-  margin:0 0 2px!important;
-  padding:0!important;
-  border:0!important;
-  background:transparent!important;
-  float:none!important;
-  white-space:normal!important;
-}
-.site-footer .footer-grid a:hover{color:#f4eee5!important}
-.site-footer .footer-bottom{
-  display:block!important;
-  max-width:1380px!important;
-  margin:40px auto 0!important;
-  padding-top:28px!important;
-  border-top:1px solid rgba(185,138,59,.22)!important;
-  color:rgba(244,238,229,.34)!important;
-  font-family:Arial,Helvetica,sans-serif!important;
-  font-size:10px!important;
-  letter-spacing:.18em!important;
-  line-height:1.8!important;
-  text-align:center!important;
-  text-transform:uppercase!important;
-}
-
-/* Preserve/repair standard nav if needed */
-.site-nav-standard{
-  position:fixed!important;top:0!important;left:0!important;right:0!important;height:66px!important;z-index:9999!important;
-  display:flex!important;align-items:center!important;justify-content:space-between!important;gap:28px!important;
-  padding:0 clamp(16px,4vw,44px)!important;background:rgba(14,12,9,.94)!important;
-  border-bottom:1px solid rgba(185,138,59,.18)!important;backdrop-filter:blur(14px)!important;-webkit-backdrop-filter:blur(14px)!important;
-}
-.nav-logo-standard{display:flex!important;flex-direction:column!important;text-decoration:none!important;color:#f4eee5!important;line-height:1!important;min-width:max-content!important}
-.nav-logo-name-standard{font-family:Arial,Helvetica,sans-serif!important;font-size:18px!important;font-weight:700!important;letter-spacing:.24em!important;text-transform:uppercase!important}
-.nav-logo-sub-standard{margin-top:7px!important;color:#b9934b!important;font-family:Arial,Helvetica,sans-serif!important;font-size:9px!important;letter-spacing:.26em!important;text-transform:uppercase!important}
-.nav-links-standard{display:flex!important;align-items:center!important;justify-content:flex-end!important;gap:clamp(18px,2vw,34px)!important}
-.nav-links-standard a{color:rgba(244,238,229,.78)!important;text-decoration:none!important;font-family:Arial,Helvetica,sans-serif!important;font-size:12px!important;font-weight:700!important;letter-spacing:.18em!important;text-transform:uppercase!important;white-space:nowrap!important}
-.nav-links-standard a:hover{color:#f4eee5!important}
-.nav-shop-standard{color:#d5b365!important;border:1px solid rgba(213,179,101,.62)!important;padding:14px 22px!important}
-.nav-toggle-standard{display:none!important;width:42px!important;height:42px!important;border:1px solid rgba(213,179,101,.36)!important;background:transparent!important;cursor:pointer!important}
-.nav-toggle-standard span{display:block!important;width:20px!important;height:2px!important;margin:5px auto!important;background:#f4eee5!important}
-
-/* Mobile pass */
-@media(max-width:1040px){
-  .site-nav-standard{height:64px!important}
-  .nav-toggle-standard{display:block!important}
-  .nav-links-standard{
-    position:fixed!important;top:64px!important;left:0!important;right:0!important;display:none!important;
-    flex-direction:column!important;align-items:flex-start!important;gap:0!important;padding:18px 24px 24px!important;
-    background:rgba(14,12,9,.98)!important;border-bottom:1px solid rgba(185,138,59,.22)!important;
-  }
-  .site-nav-standard.is-open .nav-links-standard{display:flex!important}
-  .nav-links-standard a{width:100%!important;padding:14px 0!important}
-  .nav-shop-standard{width:auto!important;margin-top:8px!important;padding:13px 18px!important}
-  .designer-trust-grid,.designer-proof-row{grid-template-columns:repeat(2,1fr)!important}
-  .site-footer .footer-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
-  .spec-cards.spec-cards-three{grid-template-columns:1fr!important;max-width:620px!important}
-  .spec-cards.spec-cards-three .spec-card-preview{max-height:none!important}
-}
-@media(max-width:768px){
-  h1,.hero-title{font-size:clamp(2.35rem,9vw,3.2rem)!important;line-height:1.02!important}
-  h2,.section-title{font-size:clamp(1.9rem,7vw,2.65rem)!important;line-height:1.08!important}
-}
-@media(max-width:680px){
-  .section,.designer-resource-intro,.mockup-callout,.designer-use-section,.selected-installations,.designer-trust-band,.spec-section,.commercial-solutions,.venues-section,.formats-section,.licensing-section,.process-section,.trade-section,.faq-designer,.ai-linking-hub,.ai-about-artist,.contact-section{
-    padding:56px 24px!important;
-  }
-  .hero{height:72vh!important;min-height:520px!important}
-  .hero-content{padding:0 24px!important}
-  p{font-size:14px!important;line-height:1.65!important}
-  .designer-trust-head,.selected-installations .install-head,.designer-resource-intro .resource-head{text-align:left!important}
-  .designer-trust-head .section-label,.selected-installations .install-head .section-label,.designer-resource-intro .resource-head .section-label{justify-content:flex-start!important}
-  .designer-trust-head p:not(.section-label){margin-left:0!important}
-  .designer-trust-grid,.designer-proof-row{grid-template-columns:1fr!important}
-  .install-grid{grid-template-columns:1fr!important}
-  .spec-cards.spec-cards-three .spec-card-body{min-height:auto!important;padding:24px 22px 26px!important}
-  .spec-cards.spec-cards-three .spec-card-preview{aspect-ratio:8.5/11!important}
-  .btn,.btn-solid,.btn-out,.btn-download{width:100%!important;text-align:center!important;justify-content:center!important}
-  .sticky-cta{display:none!important}
-  .site-footer{padding:48px 22px 30px!important}
-  .site-footer .footer-grid{grid-template-columns:1fr!important;gap:30px!important}
-  .site-footer .footer-grid a{display:block!important;margin-bottom:7px!important;line-height:1.75!important}
-  .site-footer .footer-bottom{text-align:left!important;margin-top:34px!important}
-}
-
-
-
-/* ==========================================================
-   JULY 2026 MOBILE TIGHTENING PASS
-   Goal: reduce scroll fatigue on phones without changing desktop.
-   ========================================================== */
-
-.hero{
-  height:78vh;
-  min-height:520px;
-  max-height:740px;
-}
-
-@media(max-width:900px){
-  /* limit very long resource / use lists */
-  .designer-resource-card:nth-of-type(n+7),
-  .designer-use-card:nth-of-type(n+4){
-    display:none !important;
-  }
-}
-
-@media(max-width:680px){
-  /* shorter overall section padding */
-  .section,
-  .designer-resource-intro,
-  .mockup-callout,
-  .designer-use-section,
-  .selected-installations,
-  .designer-trust-band,
-  .spec-section,
-  .commercial-solutions,
-  .venues-section,
-  .formats-section,
-  .licensing-section,
-  .process-section,
-  .trade-section,
-  .faq-designer,
-  .ai-linking-hub,
-  .ai-about-artist,
-  .contact-section{
-    padding-top:48px!important;
-    padding-bottom:50px!important;
-  }
-
-  /* shorter hero on small phones */
-  .hero{
-    height:68vh!important;
-    min-height:480px!important;
-  }
-
-  /* tighten placement / collection sections */
-  .placement-section,
-  .fd-designer-collections{
-    padding-top:60px!important;
-    padding-bottom:64px!important;
-  }
-
-  /* smaller cards */
-  .placement-card{
-    aspect-ratio:4/3.2!important;
-  }
-
-  .fd-collection-image{
-    aspect-ratio:16/9!important;
-  }
-}
-
-
-/* ==========================================================
-   JULY 2026 MOBILE CONDENSE PASS — Designer page
-   Goal: Cut vertical scroll on phones for:
-1. "Art for Every Environment" grid
-2. Print Formats cards
-3. Digital Licensing cards
-   ========================================================== */
-
-/* ---------- 1. ART FOR EVERY ENVIRONMENT ---------- */
-@media(max-width:900px){
-  /* hide cards after the 3rd to keep section short */
-  .designer-use-card:nth-of-type(n+4){display:none!important;}
-}
-@media(max-width:680px){
-  .designer-use-card{padding:22px 20px!important;}
-  .designer-use-card span{font-size:1.8rem!important;}
-  .designer-use-card p{font-size:.64rem!important;line-height:1.8!important;}
-}
+  .designer-resource-intro,.mockup-callout,}
 
 /* ---------- 2. PRINT FORMATS ---------- */
 @media(max-width:680px){
@@ -1810,7 +1440,6 @@ line-height:1.7;
 }
 
 /* MOBILE UX CORRECTIONS — final authoritative overrides */
-.sticky-cta-mobile{display:none}
 @media(max-width:1040px){
   .nav-toggle-standard{
     width:46px!important;
@@ -1844,41 +1473,6 @@ line-height:1.7;
     display:none!important;
   }
   .sticky-cta{display:none!important}
-  .sticky-cta-mobile{
-    display:flex!important;
-    position:fixed;
-    left:16px;
-    right:16px;
-    bottom:calc(16px + env(safe-area-inset-bottom));
-    z-index:150;
-    justify-content:center;
-    opacity:0;
-    transform:translateY(12px);
-    pointer-events:none;
-    transition:opacity .3s ease,transform .3s ease;
-  }
-  .sticky-cta-mobile.visible{
-    opacity:1;
-    transform:translateY(0);
-    pointer-events:auto;
-  }
-  .sticky-cta-mobile a{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    width:100%;
-    min-height:48px;
-    padding:14px 20px;
-    text-align:center;
-    font-size:.62rem;
-    letter-spacing:.2em;
-    text-transform:uppercase;
-    text-decoration:none;
-    background:var(--accent);
-    color:#14100b;
-    border:1px solid var(--accent);
-    box-shadow:0 12px 30px rgba(0,0,0,.45);
-  }
   .trust-bar{
     flex-wrap:nowrap!important;
     justify-content:flex-start!important;
@@ -1890,6 +1484,8 @@ line-height:1.7;
     padding:16px 20px!important;
     -ms-overflow-style:none;
     scrollbar-width:none;
+    -webkit-mask-image:linear-gradient(to right,#000 0,#000 calc(100% - 32px),transparent 100%);
+    mask-image:linear-gradient(to right,#000 0,#000 calc(100% - 32px),transparent 100%);
   }
   .trust-bar::-webkit-scrollbar{display:none}
   .trust-item{
@@ -1907,20 +1503,103 @@ line-height:1.7;
   }
 }
 @media(max-width:420px){
-  .designer-resource-grid{
-    grid-template-columns:1fr!important;
-  }
   .designer-resource-grid .designer-resource-card,
   .designer-resource-grid .designer-resource-card:nth-child(4),
   .designer-resource-grid .designer-resource-card:nth-child(5){
-    grid-column:1/-1!important;
+    grid-column:span 1!important;
   }
+  .designer-resource-grid .designer-resource-card:nth-child(5){grid-column:1/-1!important}
   .designer-resource-image{
-    height:160px!important;
+    height:118px!important;
   }
 }
-@media(min-width:681px){
-  .sticky-cta-mobile{display:none!important}
+
+/* FINAL CONTENT HIERARCHY — proof in hero, installations near top */
+.hero-proof-strip{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  max-width:760px;
+  margin:30px auto 0;
+  border:1px solid rgba(181,146,74,.25);
+  background:rgba(8,8,7,.46);
+  backdrop-filter:blur(6px);
+}
+.hero-proof-strip div{
+  padding:15px 12px;
+  text-align:center;
+  border-right:1px solid rgba(181,146,74,.18);
+}
+.hero-proof-strip div:last-child{border-right:0}
+.hero-proof-strip strong{
+  display:block;
+  color:var(--off-white);
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.25rem;
+  font-weight:300;
+  line-height:1;
+  margin-bottom:7px;
+}
+.hero-proof-strip span{
+  display:block;
+  color:rgba(242,239,232,.58);
+  font-size:.46rem;
+  letter-spacing:.18em;
+  line-height:1.45;
+  text-transform:uppercase;
+}
+.selected-installations{
+  padding-top:58px!important;
+  padding-bottom:60px!important;
+}
+.selected-installations .install-head{
+  margin-bottom:32px!important;
+}
+.install-card{
+  min-height:0!important;
+  padding:26px 24px!important;
+}
+@media(max-width:680px){
+  .hero{
+    height:auto!important;
+    min-height:580px!important;
+    padding:84px 0 38px;
+  }
+  .hero-title{
+    font-size:clamp(2.1rem,9.5vw,2.8rem)!important;
+  }
+  .hero-sub{
+    margin-bottom:22px!important;
+    line-height:1.7!important;
+  }
+  .hero-proof-strip{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    margin-top:18px;
+  }
+  .hero-proof-strip div{
+    padding:11px 8px;
+    border-bottom:1px solid rgba(181,146,74,.18);
+  }
+  .hero-proof-strip div:nth-child(2){border-right:0}
+  .hero-proof-strip div:nth-child(n+3){border-bottom:0}
+  .selected-installations{
+    padding:44px 22px!important;
+  }
+  .selected-installations .install-head{
+    margin-bottom:24px!important;
+  }
+  .install-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:10px!important;
+  }
+  .install-card{
+    padding:20px 17px!important;
+  }
+  .install-card h3{
+    font-size:1.08rem!important;
+  }
+  .install-card p{
+    display:none!important;
+  }
 }
 </style>
 <script type="application/ld+json">{
@@ -2212,6 +1891,12 @@ line-height:1.7;
 <a class="btn btn-solid" href="mailto:dan@dsproul.com?subject=Mockup%20Request">Request a Mockup</a>
 <a class="btn btn-out" href="#designer-resources">Browse Resources</a>
 </div>
+<div class="hero-proof-strip" aria-label="Designer project benefits">
+<div><strong>8,500+</strong><span>Available Images</span></div>
+<div><strong>Custom</strong><span>Sizing Available</span></div>
+<div><strong>Free</strong><span>Project Mockups</span></div>
+<div><strong>Trade</strong><span>Pricing Available</span></div>
+</div>
 </div>
 </div>
 <!-- TRUST BAR -->
@@ -2223,6 +1908,35 @@ line-height:1.7;
 <span class="trust-item">Residential Design</span>
 <span class="trust-item">Ships Worldwide</span>
 </div>
+<section class="selected-installations" id="selected-installations">
+<div class="install-head">
+<p class="section-label">Selected Installations</p>
+<h2 class="section-title">Selected for <em>healthcare, hospitality, residential, and professional interiors.</em></h2>
+<p>Real-world placements that help designers evaluate the work with confidence.</p>
+</div>
+<div class="install-grid">
+<article class="install-card">
+<span>Healthcare</span>
+<h3>Wexner Medical Center</h3>
+<p>Calming nature photography selected for patient-facing healthcare interiors.</p>
+</article>
+<article class="install-card">
+<span>Hospitality</span>
+<h3>Drury Inn Projects</h3>
+<p>Large-format nature artwork for guest rooms and public hospitality spaces.</p>
+</article>
+<article class="install-card">
+<span>Residential</span>
+<h3>Private Homes</h3>
+<p>Nature-inspired artwork selected for refined private homes and living spaces.</p>
+</article>
+<article class="install-card">
+<span>Commercial</span>
+<h3>Businesses &amp; Offices</h3>
+<p>Artwork selected for executive offices, reception areas, and professional workplaces.</p>
+</article>
+</div>
+</section>
 <section class="designer-resource-intro" id="designer-resources">
 <div class="resource-head">
 <p class="section-label">Designer Resources</p>
@@ -2482,68 +2196,9 @@ line-height:1.7;
 </div>
 </div>
 </div>
-<section class="designer-use-section" id="how-designers-use-this-resource">
-<p class="section-label">How Designers Use This Resource</p>
-<h2 class="section-title">Built for presentations, sourcing, and specification.</h2>
-<div class="designer-use-grid">
-<article class="designer-use-card"><span>01</span><h3>Concept Development</h3><p>Use the collections to establish mood, atmosphere, subject direction, and artwork language early in the design process.</p></article>
-<article class="designer-use-card"><span>02</span><h3>Client Presentations</h3><p>Spec sheets, mockups, and curated collections help clients understand scale, placement, and emotional fit before ordering.</p></article>
-<article class="designer-use-card"><span>03</span><h3>FF&amp;E Specification</h3><p>Artwork can be reviewed by room type, format, size, and installation setting for healthcare, hospitality, and senior living interiors.</p></article>
-<article class="designer-use-card"><span>04</span><h3>Procurement Packages</h3><p>Downloadable PDFs and direct links make it easier to organize project files, purchasing options, and presentation resources.</p></article>
-<article class="designer-use-card"><span>05</span><h3>Multi-Room Programs</h3><p>Curated image families can be used across guest rooms, corridors, patient spaces, dining areas, lounges, and public environments.</p></article>
-<article class="designer-use-card"><span>06</span><h3>Trade Support</h3><p>Designers can request trade pricing, custom sizing, licensing, and project guidance for designer-managed or direct print production.</p></article>
-</div>
-</section>
-<section class="selected-installations" id="selected-installations">
-<div class="install-head">
-<p class="section-label">Selected Installations</p>
-<h2 class="section-title">Artwork used in <em>healthcare, hospitality, residential, and professional interiors.</em></h2>
-<p>Explore examples of how Dan Sproul's artwork has been incorporated into healthcare, hospitality, residential, and professional environments, providing designers with inspiration for future projects.</p>
-</div>
-<div class="install-grid">
-<article class="install-card">
-<span>Healthcare</span>
-<h3>Ohio State Wexner Medical Center</h3>
-<p>Calming nature photography selected for patient-facing healthcare interiors that prioritize comfort, wellness, and a sense of place.</p>
-</article>
-<article class="install-card">
-<span>Hospitality</span>
-<h3>Drury Inn Projects</h3>
-<p>Large-format nature artwork supporting guest rooms, public spaces, and hospitality interiors.</p>
-</article>
-<article class="install-card">
-<span>Residential</span>
-<h3>Private Homes</h3>
-<p>Nature-inspired artwork selected for living rooms, bedrooms, entryways, home offices, lake homes, and refined residential interiors.</p>
-</article>
-<article class="install-card">
-<span>Commercial</span>
-<h3>Businesses &amp; Offices</h3>
-<p>Artwork selected for executive offices, reception areas, conference rooms, and professional workplaces seeking a calm, welcoming atmosphere.</p>
-</article>
-</div>
-</section>
-<section class="designer-trust-band" id="designer-trust-signals">
-<div class="designer-trust-inner">
-<div class="designer-trust-head">
-<p class="section-label">Designer Confidence</p>
-<h2 class="section-title">Artwork support for real projects, presentations, and procurement.</h2>
-<p>These practical details help designers, art consultants, and commercial buyers evaluate artwork quickly before requesting mockups, pricing, or finished prints.</p>
-</div>
-<div class="designer-trust-grid">
-<article><span>01</span><h3>Multiple Print Formats</h3><p>Framed prints, canvas, acrylic, metal, and fine art paper options are available for residential and commercial interiors.</p></article>
-<article><span>02</span><h3>Large Format Ready</h3><p>Artwork can be selected for statement walls, corridors, lobbies, lounges, patient-facing rooms, and multi-piece installations.</p></article>
-<article><span>03</span><h3>Designer Mockups</h3><p>Send a room photo, rendering, or wall dimensions to review artwork scale, placement, and visual fit before ordering.</p></article>
-<article><span>04</span><h3>Trade-Friendly Support</h3><p>Designers can request trade pricing, custom sizing guidance, curated recommendations, and direct project support.</p></article>
-</div>
-<div class="designer-proof-row">
-<div><strong>8,500+</strong><span>available images</span></div>
-<div><strong>50+</strong><span>curated FAA collections</span></div>
-<div><strong>6</strong><span>primary print formats</span></div>
-<div><strong>U.S.</strong><span>print fulfillment</span></div>
-</div>
-</div>
-</section>
+
+
+
 <!-- SELECTED INSTALLATIONS -->
 <!-- INTRO -->
 <!-- COMMERCIAL ARTWORK SOLUTIONS -->
@@ -2805,19 +2460,14 @@ function closeFDLightbox(){
 <a class="btn-download" href="#further-resources" style="background:transparent;color:var(--accent);border-color:rgba(181,146,74,.4)">Download Specs</a>
 </div>
 </div>
-<div class="sticky-cta-mobile" id="stickyCtaMobile">
-<a href="mailto:dan@dsproul.com?subject=Mockup%20Request">Request a Mockup</a>
-</div>
 <script>
 // Sticky CTA visibility
 (function(){
   var bar = document.getElementById('stickyCta');
-  var barMobile = document.getElementById('stickyCtaMobile');
-  if(!bar && !barMobile) return;
+  if(!bar) return;
   function updateStickyCtas(){
     var show = window.scrollY > 400;
     if(bar) bar.classList.toggle('visible', show);
-    if(barMobile) barMobile.classList.toggle('visible', show);
   }
   window.addEventListener('scroll', updateStickyCtas, {passive:true});
   updateStickyCtas();
