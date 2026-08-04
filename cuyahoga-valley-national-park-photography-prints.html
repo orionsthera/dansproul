@@ -1,27 +1,26 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Cuyahoga Valley National Park Photography Prints &amp; Wall Art | Dan Sproul</title>
-<meta name="description" content="Shop original Cuyahoga Valley National Park photography prints and wall art by Ohio photographer Dan Sproul, with forest scenes, field notes, and room mockups.">
-<meta name="author" content="Dan Sproul">
-<meta name="robots" content="index,follow,max-image-preview:large">
-<link rel="canonical" href="https://dsproul.com/cuyahoga-valley-national-park-photography-prints.html">
-
-<meta property="og:title" content="Cuyahoga Valley National Park Photography Prints &amp; Wall Art | Dan Sproul">
-<meta property="og:description" content="Original Cuyahoga Valley National Park photography prints and wall art by Ohio photographer Dan Sproul, with field notes, interior mockups, and artwork guidance.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://dsproul.com/cuyahoga-valley-national-park-photography-prints.html">
-<meta property="og:image" content="https://dsproul.com/cuyahoga-valley-national-park-sunlit-forest-trail-photography.jpg">
-<meta property="og:image:alt" content="Sunlit forest trail photographed in Cuyahoga Valley National Park, Ohio, by Dan Sproul">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Cuyahoga Valley National Park Photography Prints &amp; Wall Art | Dan Sproul">
-<meta name="twitter:description" content="Original Cuyahoga Valley National Park photography prints and wall art for homes and professional interiors.">
-<meta name="twitter:image" content="https://dsproul.com/cuyahoga-valley-national-park-sunlit-forest-trail-photography.jpg">
-<meta name="twitter:image:alt" content="Sunlit forest trail photographed in Cuyahoga Valley National Park, Ohio, by Dan Sproul">
-<link rel="preload" as="image" href="cuyahoga-valley-national-park-sunlit-forest-trail-photography.jpg">
-
+<meta content="Shop original Cuyahoga Valley National Park photography prints and wall art by Ohio photographer Dan Sproul, with forest scenes, field notes, and room mockups." name="description"/>
+<meta content="Dan Sproul" name="author"/>
+<meta content="index,follow,max-image-preview:large" name="robots"/>
+<link href="https://dsproul.com/cuyahoga-valley-national-park-photography-prints.html" rel="canonical"/>
+<meta content="Cuyahoga Valley National Park Photography Prints &amp; Wall Art | Dan Sproul" property="og:title"/>
+<meta content="Original Cuyahoga Valley National Park photography prints and wall art by Ohio photographer Dan Sproul, with field notes, interior mockups, and artwork guidance." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://dsproul.com/cuyahoga-valley-national-park-photography-prints.html" property="og:url"/>
+<meta content="https://dsproul.com/cuyahoga-valley-national-park-sunlit-forest-trail-photography.jpg" property="og:image"/>
+<meta content="Sunlit forest trail photographed in Cuyahoga Valley National Park, Ohio, by Dan Sproul" property="og:image:alt"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Cuyahoga Valley National Park Photography Prints &amp; Wall Art | Dan Sproul" name="twitter:title"/>
+<meta content="Original Cuyahoga Valley National Park photography prints and wall art for homes and professional interiors." name="twitter:description"/>
+<meta content="https://dsproul.com/cuyahoga-valley-national-park-sunlit-forest-trail-photography.jpg" name="twitter:image"/>
+<meta content="Sunlit forest trail photographed in Cuyahoga Valley National Park, Ohio, by Dan Sproul" name="twitter:image:alt"/>
+<link as="image" href="cuyahoga-valley-national-park-sunlit-forest-trail-photography.jpg" rel="preload"/>
 <style>
 :root{
   --bg:#090807;
@@ -453,41 +452,91 @@ h3{font-size:clamp(24px,2.6vw,35px);letter-spacing:-.025em}
   max-width:var(--max);
   margin:0 auto;
   display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:14px;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:16px;
 }
 .field-card{
-  min-height:250px;
-  padding:26px;
+  min-width:0;
+  overflow:hidden;
   border:1px solid var(--line);
   background:#15120e;
   display:flex;
   flex-direction:column;
+  transition:transform .25s ease,border-color .25s ease;
+}
+.field-card:hover{
+  transform:translateY(-3px);
+  border-color:rgba(216,184,112,.5);
+}
+.field-image-link{
+  display:block;
+  aspect-ratio:4/3;
+  overflow:hidden;
+  background:#0a0907;
+}
+.field-card-vertical .field-image-link{aspect-ratio:4/5}
+.field-image-link img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:transform .45s ease;
+}
+.field-card:hover .field-image-link img{transform:scale(1.018)}
+.field-card-body{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  padding:24px;
 }
 .field-card .field-number{
   color:var(--gold);
   font-family:Arial,Helvetica,sans-serif;
-  font-size:10px;
+  font-size:9px;
   font-weight:700;
-  letter-spacing:.18em;
+  line-height:1.45;
+  letter-spacing:.16em;
   text-transform:uppercase;
 }
-.field-card h3{margin-top:18px;font-size:29px}
-.field-card p{margin-top:12px;font-size:14px;line-height:1.7}
-.field-card .future-image{
+.field-card h3{
+  margin-top:16px;
+  font-size:28px;
+  line-height:1.08;
+}
+.field-card p{
+  margin-top:12px;
+  color:#b8ad9b;
+  font-size:13px;
+  line-height:1.64;
+}
+.field-card-meta{
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+  margin-top:18px;
+}
+.field-card-meta span{
+  padding:7px 8px;
+  border:1px solid rgba(199,155,85,.2);
+  color:#9f927f;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:8px;
+  line-height:1;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+.field-card-link{
+  display:inline-block;
   margin-top:auto;
-  padding-top:24px;
-  color:#8f806b;
+  padding-top:20px;
+  color:var(--gold2);
   font-family:Arial,Helvetica,sans-serif;
   font-size:9px;
-  letter-spacing:.14em;
+  font-weight:700;
+  letter-spacing:.15em;
   text-transform:uppercase;
+  text-decoration:none;
 }
-.field-card.template-card{
-  border-style:dashed;
-  background:linear-gradient(145deg,rgba(199,155,85,.07),rgba(255,255,255,.015));
-}
-.field-card.template-card h3{color:#d8cdbd}
+.field-card-link:hover{color:#f0d79f}
 
 /* Interior applications */
 .applications{background:var(--paper);color:var(--dark)}
@@ -881,428 +930,429 @@ a:focus-visible,button:focus-visible{
   .project-cta p{font-size:13px;line-height:1.6}
 }
 </style>
-
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://dsproul.com/#dan-sproul","name":"Dan Sproul","url":"https://dsproul.com","jobTitle":"Fine Art Photographer and Mixed Media Artist","homeLocation":{"@type":"Place","name":"Lima, Ohio"},"email":"dan@dsproul.com"},{"@type":"Organization","@id":"https://dsproul.com/#organization","name":"Dan Sproul Fine Art Photography","url":"https://dsproul.com","founder":{"@id":"https://dsproul.com/#dan-sproul"},"email":"dan@dsproul.com"},{"@type":"WebSite","@id":"https://dsproul.com/#website","url":"https://dsproul.com","name":"Dan Sproul Fine Art Photography","publisher":{"@id":"https://dsproul.com/#organization"}},{"@type":["WebPage","CollectionPage"],"@id":"https://dsproul.com/cuyahoga-valley-national-park-photography-prints.html#webpage","url":"https://dsproul.com/cuyahoga-valley-national-park-photography-prints.html","name":"Cuyahoga Valley National Park Photography Prints & Wall Art | Dan Sproul","description":"Original Cuyahoga Valley National Park photography prints and wall art by Ohio photographer Dan Sproul, with forest trails, interior mockups, field notes, and custom artwork guidance.","dateModified":"2026-08-04","isPartOf":{"@id":"https://dsproul.com/#website"},"author":{"@id":"https://dsproul.com/#dan-sproul"},"publisher":{"@id":"https://dsproul.com/#organization"},"breadcrumb":{"@id":"https://dsproul.com/cuyahoga-valley-national-park-photography-prints.html#breadcrumb"},"primaryImageOfPage":{"@id":"https://dsproul.com/cuyahoga-valley-national-park-photography-prints.html#primary-image"},"about":[{"@type":"Place","name":"Cuyahoga Valley National Park"},"Cuyahoga Valley National Park photography prints","Cuyahoga Valley National Park wall art","Cuyahoga Valley landscape photography","Ohio nature artwork","forest photography for interiors"],"mainEntity":[{"@id":"https://dsproul.com/cuyahoga-valley-national-park-photography-prints.html#featured-artwork"},{"@id":"https://dsproul.com/cuyahoga-valley-national-park-photography-prints.html#faq"}]},{"@type":"ImageObject","@id":"https://dsproul.com/cuyahoga-valley-national-park-photography-prints.html#primary-image","contentUrl":"https://dsproul.com/cuyahoga-valley-national-park-sunlit-forest-trail-photography.jpg","url":"https://dsproul.com/cuyahoga-valley-national-park-sunlit-forest-trail-photography.jpg","width":643,"height":900,"caption":"Sunlit forest trail photographed in Cuyahoga Valley National Park, Ohio, by Dan Sproul","creator":{"@id":"https://dsproul.com/#dan-sproul"},"copyrightHolder":{"@id":"https://dsproul.com/#dan-sproul"},"representativeOfPage":true},{"@type":"VisualArtwork","@id":"https://dsproul.com/cuyahoga-valley-national-park-photography-prints.html#featured-artwork","name":"Sunlit Forest Trail in Cuyahoga Valley National Park Ohio","artform":"Photography","artMedium":"Fine art photography","creator":{"@id":"https://dsproul.com/#dan-sproul"},"image":{"@id":"https://dsproul.com/cuyahoga-valley-national-park-photography-prints.html#primary-image"},"url":"https://dansproul.com/featured/sunlit-forest-trail-in-cuyahoga-valley-national-park-ohio-dan-sproul.html","contentLocation":{"@type":"Place","name":"Cuyahoga Valley National Park, Ohio"}},{"@type":"BreadcrumbList","@id":"https://dsproul.com/cuyahoga-valley-national-park-photography-prints.html#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://dsproul.com/"},{"@type":"ListItem","position":2,"name":"Ohio Nature Photography","item":"https://dsproul.com/ohio-nature-photography-prints.html"},{"@type":"ListItem","position":3,"name":"Cuyahoga Valley National Park Photography","item":"https://dsproul.com/cuyahoga-valley-national-park-photography-prints.html"}]},{"@type":"FAQPage","@id":"https://dsproul.com/cuyahoga-valley-national-park-photography-prints.html#faq","mainEntity":[{"@type":"Question","name":"Where can I buy Cuyahoga Valley National Park photography prints?","acceptedAnswer":{"@type":"Answer","text":"The featured sunlit forest trail links directly to Dan Sproul's print listing, where current sizes, formats, and purchasing options are displayed."}},{"@type":"Question","name":"Are Bridal Veil Falls and the Great Falls of Tinker's Creek inside Cuyahoga Valley National Park?","acceptedAnswer":{"@type":"Answer","text":"No. Both are in Bedford Reservation, part of Cleveland Metroparks. They are included as clearly labeled nearby Northeast Ohio artwork."}},{"@type":"Question","name":"Can I preview Cuyahoga Valley wall art in my own room?","acceptedAnswer":{"@type":"Answer","text":"Yes. Send a room photo, wall dimensions, and preferred artwork. Dan can provide sizing and framing direction and create a complimentary visual mockup when appropriate."}}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://dsproul.com/#dan-sproul","name":"Dan Sproul","url":"https://dsproul.com","jobTitle":"Fine Art Photographer and Mixed Media Artist","homeLocation":{"@type":"Place","name":"Lima, Ohio"},"email":"dan@dsproul.com"},{"@type":"Organization","@id":"https://dsproul.com/#organization","name":"Dan Sproul Fine Art Photography","url":"https://dsproul.com","founder":{"@id":"https://dsproul.com/#dan-sproul"},"email":"dan@dsproul.com"},{"@type":"WebSite","@id":"https://dsproul.com/#website","url":"https://dsproul.com","name":"Dan Sproul Fine Art Photography","publisher":{"@id":"https://dsproul.com/#organization"}},{"@type":["WebPage","CollectionPage"],"@id":"https://dsproul.com/cuyahoga-valley-national-park-photography-prints.html#webpage","url":"https://dsproul.com/cuyahoga-valley-national-park-photography-prints.html","name":"Cuyahoga Valley National Park Photography Prints & Wall Art | Dan Sproul","description":"Original Cuyahoga Valley National Park photography prints and wall art by Ohio photographer Dan Sproul, with forest trails, interior mockups, field notes, and custom artwork guidance.","dateModified":"2026-08-04","isPartOf":{"@id":"https://dsproul.com/#website"},"author":{"@id":"https://dsproul.com/#dan-sproul"},"publisher":{"@id":"https://dsproul.com/#organization"},"breadcrumb":{"@id":"https://dsproul.com/cuyahoga-valley-national-park-photography-prints.html#breadcrumb"},"primaryImageOfPage":{"@id":"https://dsproul.com/cuyahoga-valley-national-park-photography-prints.html#primary-image"},"about":[{"@type":"Place","name":"Cuyahoga Valley National Park"},"Cuyahoga Valley National Park photography prints","Cuyahoga Valley National Park wall art","Cuyahoga Valley landscape photography","Ohio nature artwork","forest photography for interiors"],"mainEntity":[{"@id":"https://dsproul.com/cuyahoga-valley-national-park-photography-prints.html#featured-artwork"},{"@id":"https://dsproul.com/cuyahoga-valley-national-park-photography-prints.html#faq"},{"@id":"https://dsproul.com/cuyahoga-valley-national-park-photography-prints.html#field-note-artworks"}]},{"@type":"ImageObject","@id":"https://dsproul.com/cuyahoga-valley-national-park-photography-prints.html#primary-image","contentUrl":"https://dsproul.com/cuyahoga-valley-national-park-sunlit-forest-trail-photography.jpg","url":"https://dsproul.com/cuyahoga-valley-national-park-sunlit-forest-trail-photography.jpg","width":643,"height":900,"caption":"Sunlit forest trail photographed in Cuyahoga Valley National Park, Ohio, by Dan Sproul","creator":{"@id":"https://dsproul.com/#dan-sproul"},"copyrightHolder":{"@id":"https://dsproul.com/#dan-sproul"},"representativeOfPage":true},{"@type":"VisualArtwork","@id":"https://dsproul.com/cuyahoga-valley-national-park-photography-prints.html#featured-artwork","name":"Sunlit Forest Trail in Cuyahoga Valley National Park Ohio","artform":"Photography","artMedium":"Fine art photography","creator":{"@id":"https://dsproul.com/#dan-sproul"},"image":{"@id":"https://dsproul.com/cuyahoga-valley-national-park-photography-prints.html#primary-image"},"url":"https://dansproul.com/featured/sunlit-forest-trail-in-cuyahoga-valley-national-park-ohio-dan-sproul.html","contentLocation":{"@type":"Place","name":"Cuyahoga Valley National Park, Ohio"}},{"@type":"BreadcrumbList","@id":"https://dsproul.com/cuyahoga-valley-national-park-photography-prints.html#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://dsproul.com/"},{"@type":"ListItem","position":2,"name":"Ohio Nature Photography","item":"https://dsproul.com/ohio-nature-photography-prints.html"},{"@type":"ListItem","position":3,"name":"Cuyahoga Valley National Park Photography","item":"https://dsproul.com/cuyahoga-valley-national-park-photography-prints.html"}]},{"@type":"FAQPage","@id":"https://dsproul.com/cuyahoga-valley-national-park-photography-prints.html#faq","mainEntity":[{"@type":"Question","name":"Where can I buy Cuyahoga Valley National Park photography prints?","acceptedAnswer":{"@type":"Answer","text":"The featured sunlit forest trail links directly to Dan Sproul's print listing, where current sizes, formats, and purchasing options are displayed."}},{"@type":"Question","name":"Are Bridal Veil Falls and the Great Falls of Tinker's Creek inside Cuyahoga Valley National Park?","acceptedAnswer":{"@type":"Answer","text":"No. Both are in Bedford Reservation, part of Cleveland Metroparks. They are included as clearly labeled nearby Northeast Ohio artwork."}},{"@type":"Question","name":"Can I preview Cuyahoga Valley wall art in my own room?","acceptedAnswer":{"@type":"Answer","text":"Yes. Send a room photo, wall dimensions, and preferred artwork. Dan can provide sizing and framing direction and create a complimentary visual mockup when appropriate."}}]},{"@type":"ItemList","@id":"https://dsproul.com/cuyahoga-valley-national-park-photography-prints.html#field-note-artworks","name":"Cuyahoga Valley and Northeast Ohio photography field notes and prints","numberOfItems":6,"itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"VisualArtwork","name":"Brandywine Falls Framed by Summer Leaves","artform":"Photography","artMedium":"Fine art photography","creator":{"@id":"https://dsproul.com/#dan-sproul"},"url":"https://dansproul.com/featured/brandywine-falls-ohio-framed-by-summer-leaves-long-exposure-dan-sproul.html","image":{"@type":"ImageObject","contentUrl":"https://dsproul.com/brandywine-falls-ohio-framed-by-summer-leaves-long-exposure-dan-sproul.jpg","width":544,"height":900,"caption":"Brandywine Falls in Cuyahoga Valley National Park framed by green summer leaves in a long-exposure photograph by Dan Sproul"},"contentLocation":{"@type":"Place","name":"Brandywine Falls, Cuyahoga Valley National Park, Ohio"}}},{"@type":"ListItem","position":2,"item":{"@type":"VisualArtwork","name":"Brecksville-Northfield Bridge Reflection","artform":"Photography","artMedium":"Fine art photography","creator":{"@id":"https://dsproul.com/#dan-sproul"},"url":"https://dansproul.com/featured/brecksville-northfield-bridge-reflection-cuyahoga-valley-ohio-dan-sproul.html","image":{"@type":"ImageObject","contentUrl":"https://dsproul.com/brecksville-northfield-bridge-reflection-cuyahoga-valley-ohio-dan-sproul.jpg","width":629,"height":900,"caption":"Brecksville-Northfield Bridge reflected in the river within the green Cuyahoga Valley landscape of Ohio, photographed by Dan Sproul"},"contentLocation":{"@type":"Place","name":"Brecksville-Northfield Bridge, Cuyahoga Valley, Ohio"}}},{"@type":"ListItem","position":3,"item":{"@type":"VisualArtwork","name":"Flowing Water and Moss at Chippewa Creek","artform":"Photography","artMedium":"Fine art photography","creator":{"@id":"https://dsproul.com/#dan-sproul"},"url":"https://dansproul.com/featured/flowing-water-and-moss-at-chippewa-creek-ohio-dan-sproul.html","image":{"@type":"ImageObject","contentUrl":"https://dsproul.com/flowing-water-and-moss-at-chippewa-creek-ohio-dan-sproul.jpg","width":900,"height":720,"caption":"Close view of flowing water and green moss at Chippewa Creek in Ohio photographed with a softened long exposure by Dan Sproul"},"contentLocation":{"@type":"Place","name":"Chippewa Creek, Ohio"}}},{"@type":"ListItem","position":4,"item":{"@type":"VisualArtwork","name":"Resilient Sapling Among Chippewa Creek Boulders","artform":"Photography","artMedium":"Fine art photography","creator":{"@id":"https://dsproul.com/#dan-sproul"},"url":"https://dansproul.com/featured/resilient-sapling-among-chippewa-creek-boulders-in-ohio-dan-sproul.html","image":{"@type":"ImageObject","contentUrl":"https://dsproul.com/resilient-sapling-among-chippewa-creek-boulders-in-ohio-dan-sproul.jpg","width":900,"height":754,"caption":"Small green sapling growing above large weathered boulders beside Chippewa Creek in Ohio, photographed by Dan Sproul"},"contentLocation":{"@type":"Place","name":"Chippewa Creek, Ohio"}}},{"@type":"ListItem","position":5,"item":{"@type":"VisualArtwork","name":"Morning Light in the Chippewa Creek Forest","artform":"Photography","artMedium":"Fine art photography","creator":{"@id":"https://dsproul.com/#dan-sproul"},"url":"https://dansproul.com/featured/morning-light-in-the-chippewa-creek-forest-brecksville-ohio-dan-sproul.html","image":{"@type":"ImageObject","contentUrl":"https://dsproul.com/morning-light-in-the-chippewa-creek-forest-brecksville-ohio-dan-sproul.jpg","width":714,"height":900,"caption":"Warm morning light illuminating evergreen trunks and rocks in the Chippewa Creek forest near Brecksville, Ohio, photographed by Dan Sproul"},"contentLocation":{"@type":"Place","name":"Chippewa Creek Forest, Brecksville, Ohio"}}},{"@type":"ListItem","position":6,"item":{"@type":"VisualArtwork","name":"Majestic Waterfall in a Forest","artform":"Photography","artMedium":"Fine art photography","creator":{"@id":"https://dsproul.com/#dan-sproul"},"url":"https://dansproul.com/featured/majestic-waterfall-in-a-forest-dan-sproul.html","image":{"@type":"ImageObject","contentUrl":"https://dsproul.com/majestic-waterfall-in-a-forest-dan-sproul.jpg","width":900,"height":710,"caption":"Wide view of a layered waterfall descending through a green forest and rocky ravine, photographed by Dan Sproul"}}}]}]}</script>
 </head>
-
 <body>
 <a class="skip-link" href="#main-content">Skip to content</a>
-
-<nav class="site-nav-standard" aria-label="Primary navigation">
-  <a href="/" class="nav-logo-standard" aria-label="Dan Sproul Fine Art Photography home">
-    <span class="nav-logo-name-standard">Dan Sproul</span>
-    <span class="nav-logo-sub-standard">Fine Art Photography</span>
-  </a>
-  <button class="nav-toggle-standard" type="button" aria-label="Open navigation menu" aria-expanded="false">
-    <span></span><span></span><span></span>
-  </button>
-  <div class="nav-links-standard">
-    <a href="/">Home</a>
-    <a href="best-sellers.html">Best Sellers</a>
-    <a href="art-collections.html">Collections</a>
-    <a href="about-dan-sproul.html">About</a>
-    <a href="in-your-space.html">In Your Space</a>
-    <a href="for-designers.html">For Designers</a>
-    <a href="blog.html">Blog</a>
-    <a href="https://dansproul.com" target="_blank" rel="noopener" class="nav-shop-standard">Shop Prints</a>
-  </div>
+<nav aria-label="Primary navigation" class="site-nav-standard">
+<a aria-label="Dan Sproul Fine Art Photography home" class="nav-logo-standard" href="/">
+<span class="nav-logo-name-standard">Dan Sproul</span>
+<span class="nav-logo-sub-standard">Fine Art Photography</span>
+</a>
+<button aria-expanded="false" aria-label="Open navigation menu" class="nav-toggle-standard" type="button">
+<span></span><span></span><span></span>
+</button>
+<div class="nav-links-standard">
+<a href="/">Home</a>
+<a href="best-sellers.html">Best Sellers</a>
+<a href="art-collections.html">Collections</a>
+<a href="about-dan-sproul.html">About</a>
+<a href="in-your-space.html">In Your Space</a>
+<a href="for-designers.html">For Designers</a>
+<a href="blog.html">Blog</a>
+<a class="nav-shop-standard" href="https://dansproul.com" rel="noopener" target="_blank">Shop Prints</a>
+</div>
 </nav>
-
 <header class="hero">
-  <div class="hero-content">
-    <nav class="breadcrumbs" aria-label="Breadcrumb">
-      <a href="/">Home</a><span>›</span>
-      <a href="ohio-nature-photography-prints.html">Ohio Nature Photography</a><span>›</span>
-      <span aria-current="page">Cuyahoga Valley National Park</span>
-    </nav>
-    <p class="eyebrow">Original Ohio Landscape Photography</p>
-    <h1>Cuyahoga Valley National Park Photography Prints and Wall Art</h1>
-    <p class="hero-copy">Shop original Cuyahoga Valley National Park photography by Ohio fine-art photographer Dan Sproul, including forest trails, woodland light, and nature artwork designed for homes and professional interiors.</p>
-    <div class="btns">
-      <a class="btn primary" href="https://dansproul.com/featured/sunlit-forest-trail-in-cuyahoga-valley-national-park-ohio-dan-sproul.html" target="_blank" rel="noopener">Shop Featured Cuyahoga Print</a>
-      <a class="btn" href="#interiors">See the Artwork in Interiors</a>
-      <a class="btn" href="mailto:dan@dsproul.com?subject=Cuyahoga%20Valley%20Artwork%20Mockup%20Request">Request a Mockup</a>
-    </div>
-    <div class="hero-meta" aria-label="Page topics">
-      <span>Photography Prints</span>
-      <span>Wall Art</span>
-      <span>Forest Trails</span>
-      <span>Ohio Nature Art</span>
-      <span>Interior Mockups</span>
-    </div>
-  </div>
-  <figure class="hero-visual">
-    <img src="cuyahoga-valley-national-park-sunlit-forest-trail-photography.jpg" width="643" height="900" alt="Sunlit forest trail photographed in Cuyahoga Valley National Park, Ohio, by Dan Sproul" decoding="async" fetchpriority="high">
-    <figcaption class="hero-image-caption">Sunlit Forest Trail · Cuyahoga Valley National Park, Ohio · Photograph by Dan Sproul</figcaption>
-  </figure>
+<div class="hero-content">
+<nav aria-label="Breadcrumb" class="breadcrumbs">
+<a href="/">Home</a><span>›</span>
+<a href="ohio-nature-photography-prints.html">Ohio Nature Photography</a><span>›</span>
+<span aria-current="page">Cuyahoga Valley National Park</span>
+</nav>
+<p class="eyebrow">Original Ohio Landscape Photography</p>
+<h1>Cuyahoga Valley National Park Photography Prints and Wall Art</h1>
+<p class="hero-copy">Shop original Cuyahoga Valley National Park photography by Ohio fine-art photographer Dan Sproul, including forest trails, woodland light, and nature artwork designed for homes and professional interiors.</p>
+<div class="btns">
+<a class="btn primary" href="https://dansproul.com/featured/sunlit-forest-trail-in-cuyahoga-valley-national-park-ohio-dan-sproul.html" rel="noopener" target="_blank">Shop Featured Cuyahoga Print</a>
+<a class="btn" href="#interiors">See the Artwork in Interiors</a>
+<a class="btn" href="mailto:dan@dsproul.com?subject=Cuyahoga%20Valley%20Artwork%20Mockup%20Request">Request a Mockup</a>
+</div>
+<div aria-label="Page topics" class="hero-meta">
+<span>Photography Prints</span>
+<span>Wall Art</span>
+<span>Forest Trails</span>
+<span>Ohio Nature Art</span>
+<span>Interior Mockups</span>
+</div>
+</div>
+<figure class="hero-visual">
+<img alt="Sunlit forest trail photographed in Cuyahoga Valley National Park, Ohio, by Dan Sproul" decoding="async" fetchpriority="high" height="900" src="cuyahoga-valley-national-park-sunlit-forest-trail-photography.jpg" width="643"/>
+<figcaption class="hero-image-caption">Sunlit Forest Trail · Cuyahoga Valley National Park, Ohio · Photograph by Dan Sproul</figcaption>
+</figure>
 </header>
-
 <main id="main-content">
 <section class="section-pad intro">
-  <div class="intro-grid">
-    <div>
-      <p class="eyebrow">Cuyahoga Valley National Park Art</p>
-      <h2>Original photography prints shaped by forest light and Ohio woodland atmosphere.</h2>
-    </div>
-    <div class="intro-copy">
-      <p>Cuyahoga Valley National Park photography prints and wall art offer a distinctly Ohio sense of place: shaded trails, layered woodland, moving streams, rock formations, and brief moments of sunlight that transform the forest.</p>
-      <p>This page is centered on photographs made inside Cuyahoga Valley National Park. A separate supporting group presents selected images from Bedford Reservation and other nearby Northeast Ohio parklands, clearly identified by location.</p>
-      <div class="location-note"><strong>Geographic clarity:</strong> The featured sunlit forest trail was photographed inside Cuyahoga Valley National Park. Bridal Veil Falls and the Great Falls of Tinker's Creek are in Bedford Reservation, part of Cleveland Metroparks, and appear below as nearby Northeast Ohio artwork.</div>
-    </div>
-  </div>
+<div class="intro-grid">
+<div>
+<p class="eyebrow">Cuyahoga Valley National Park Art</p>
+<h2>Original photography prints shaped by forest light and Ohio woodland atmosphere.</h2>
+</div>
+<div class="intro-copy">
+<p>Cuyahoga Valley National Park photography prints and wall art offer a distinctly Ohio sense of place: shaded trails, layered woodland, moving streams, rock formations, and brief moments of sunlight that transform the forest.</p>
+<p>This page is centered on photographs made inside Cuyahoga Valley National Park. A separate supporting group presents selected images from Bedford Reservation and other nearby Northeast Ohio parklands, clearly identified by location.</p>
+<div class="location-note"><strong>Geographic clarity:</strong> The featured sunlit forest trail was photographed inside Cuyahoga Valley National Park. Bridal Veil Falls and the Great Falls of Tinker's Creek are in Bedford Reservation, part of Cleveland Metroparks, and appear below as nearby Northeast Ohio artwork.</div>
+</div>
+</div>
 </section>
-
-
-<section class="section-pad featured-park-print" id="featured-cvnp-print" aria-labelledby="featured-cvnp-title">
-  <div class="featured-print-grid">
-    <figure class="featured-print-image">
-      <a href="https://dansproul.com/featured/sunlit-forest-trail-in-cuyahoga-valley-national-park-ohio-dan-sproul.html" target="_blank" rel="noopener">
-        <img src="cuyahoga-valley-national-park-sunlit-forest-trail-photography.jpg" width="643" height="900" alt="Sunlight shining through green trees along a forest trail in Cuyahoga Valley National Park, Ohio" loading="lazy" decoding="async">
-      </a>
-      <figcaption>Sunlit Forest Trail in Cuyahoga Valley National Park, Ohio · Original photography by Dan Sproul</figcaption>
-    </figure>
-    <div class="featured-print-copy">
-      <p class="eyebrow">Featured Cuyahoga Valley Print</p>
-      <h2 id="featured-cvnp-title">Sunlit Forest Trail in Cuyahoga Valley National Park</h2>
-      <p>I photographed this vertical woodland scene as sunlight broke through the canopy and illuminated the path. The receding trail creates a natural leading line, while the bright opening gives the dense green forest depth and a clear visual destination.</p>
-      <p>As Cuyahoga Valley National Park wall art, the image works especially well in entryways, stair landings, home offices, wellness spaces, and narrow walls that benefit from a strong vertical composition.</p>
-      <div class="featured-print-details" aria-label="Featured artwork details">
-        <div class="featured-print-detail"><strong>Location</strong><span>Cuyahoga Valley National Park, Ohio</span></div>
-        <div class="featured-print-detail"><strong>Best Orientation</strong><span>Vertical statement artwork</span></div>
-        <div class="featured-print-detail"><strong>Interior Mood</strong><span>Uplifting, immersive, and grounded</span></div>
-      </div>
-      <div class="btns">
-        <a class="btn primary" href="https://dansproul.com/featured/sunlit-forest-trail-in-cuyahoga-valley-national-park-ohio-dan-sproul.html" target="_blank" rel="noopener">View Print Sizes and Formats</a>
-        <a class="btn" href="mailto:dan@dsproul.com?subject=Sunlit%20Cuyahoga%20Forest%20Trail%20Mockup">Request This in Your Room</a>
-      </div>
-    </div>
-  </div>
+<section aria-labelledby="featured-cvnp-title" class="section-pad featured-park-print" id="featured-cvnp-print">
+<div class="featured-print-grid">
+<figure class="featured-print-image">
+<a href="https://dansproul.com/featured/sunlit-forest-trail-in-cuyahoga-valley-national-park-ohio-dan-sproul.html" rel="noopener" target="_blank">
+<img alt="Sunlight shining through green trees along a forest trail in Cuyahoga Valley National Park, Ohio" decoding="async" height="900" loading="lazy" src="cuyahoga-valley-national-park-sunlit-forest-trail-photography.jpg" width="643"/>
+</a>
+<figcaption>Sunlit Forest Trail in Cuyahoga Valley National Park, Ohio · Original photography by Dan Sproul</figcaption>
+</figure>
+<div class="featured-print-copy">
+<p class="eyebrow">Featured Cuyahoga Valley Print</p>
+<h2 id="featured-cvnp-title">Sunlit Forest Trail in Cuyahoga Valley National Park</h2>
+<p>I photographed this vertical woodland scene as sunlight broke through the canopy and illuminated the path. The receding trail creates a natural leading line, while the bright opening gives the dense green forest depth and a clear visual destination.</p>
+<p>As Cuyahoga Valley National Park wall art, the image works especially well in entryways, stair landings, home offices, wellness spaces, and narrow walls that benefit from a strong vertical composition.</p>
+<div aria-label="Featured artwork details" class="featured-print-details">
+<div class="featured-print-detail"><strong>Location</strong><span>Cuyahoga Valley National Park, Ohio</span></div>
+<div class="featured-print-detail"><strong>Best Orientation</strong><span>Vertical statement artwork</span></div>
+<div class="featured-print-detail"><strong>Interior Mood</strong><span>Uplifting, immersive, and grounded</span></div>
+</div>
+<div class="btns">
+<a class="btn primary" href="https://dansproul.com/featured/sunlit-forest-trail-in-cuyahoga-valley-national-park-ohio-dan-sproul.html" rel="noopener" target="_blank">View Print Sizes and Formats</a>
+<a class="btn" href="mailto:dan@dsproul.com?subject=Sunlit%20Cuyahoga%20Forest%20Trail%20Mockup">Request This in Your Room</a>
+</div>
+</div>
+</div>
 </section>
-
-<section class="section-pad interior-showcase" id="interiors" aria-labelledby="interiors-title">
-  <div class="section-head">
-    <div>
-      <p class="eyebrow">Cuyahoga Valley Wall Art in Interiors</p>
-      <h2 id="interiors-title">Regional nature photography shown at realistic scale.</h2>
-    </div>
-    <p>The first room features artwork photographed inside Cuyahoga Valley National Park. The two supporting concepts use accurately labeled images from nearby Bedford Reservation, expanding the page into a broader Northeast Ohio interior-art resource.</p>
-  </div>
-
-  <div class="mockup-grid">
-    <a class="mockup-card primary" href="https://dansproul.com/featured/sunlit-forest-trail-in-cuyahoga-valley-national-park-ohio-dan-sproul.html" target="_blank" rel="noopener">
-      <img src="forest sunlit path in cuyahoga entryway .jpg" width="1041" height="1511" alt="Large framed Cuyahoga Valley National Park forest trail photograph in a bright modern entryway" decoding="async">
-      <div class="mockup-caption">
-        <span>Featured Interior · Cuyahoga Valley National Park</span>
-        <h3>Sunlit Forest Trail Wall Art</h3>
-        <p>The vertical path creates depth, movement, and a welcoming visual destination in a residential entryway.</p>
-        <span class="mockup-link">View this Cuyahoga Valley photography print →</span>
-      </div>
-    </a>
-
-
-    <a class="mockup-card vertical" href="https://dansproul.com/featured/bridal-veil-falls-morning-light-in-bedford-reservation-ohio-dan-sproul.html" target="_blank" rel="noopener">
-      <img src="bridal veil falls ohio in living room.jpg" width="1536" height="1024" alt="Large framed Bridal Veil Falls Bedford Reservation artwork above a limestone fireplace in a quiet luxury living room" loading="lazy" decoding="async">
-      <div class="mockup-caption">
-        <span>Quiet Luxury Living Room · Bedford Reservation</span>
-        <h3>Bridal Veil Falls Morning Light</h3>
-        <p>A vertical waterfall composition gives a tall fireplace wall movement and a strong connection to Northeast Ohio's wooded ravines.</p>
-        <span class="mockup-link">View this Bedford Reservation artwork →</span>
-      </div>
-    </a>
-
-    <a class="mockup-card bedroom" href="https://dansproul.com/featured/great-falls-of-tinkers-creek-ohio-long-exposure-waterfall-dan-sproul.html" target="_blank" rel="noopener">
-      <img src="tinkers creek waterfall in bedroom.jpg" width="1402" height="1122" alt="Framed Great Falls of Tinker's Creek Bedford Reservation waterfall photograph in a calm modern bedroom" loading="lazy" decoding="async">
-      <div class="mockup-caption">
-        <span>Restful Bedroom · Bedford Reservation</span>
-        <h3>Great Falls of Tinker's Creek</h3>
-        <p>Soft water movement balances the brighter foliage and creates a calm focal point above the bed.</p>
-        <span class="mockup-link">View this Bedford Reservation artwork →</span>
-      </div>
-    </a>
-  </div>
+<section aria-labelledby="interiors-title" class="section-pad interior-showcase" id="interiors">
+<div class="section-head">
+<div>
+<p class="eyebrow">Cuyahoga Valley Wall Art in Interiors</p>
+<h2 id="interiors-title">Regional nature photography shown at realistic scale.</h2>
+</div>
+<p>The first room features artwork photographed inside Cuyahoga Valley National Park. The two supporting concepts use accurately labeled images from nearby Bedford Reservation, expanding the page into a broader Northeast Ohio interior-art resource.</p>
+</div>
+<div class="mockup-grid">
+<a class="mockup-card primary" href="https://dansproul.com/featured/sunlit-forest-trail-in-cuyahoga-valley-national-park-ohio-dan-sproul.html" rel="noopener" target="_blank">
+<img alt="Large framed Cuyahoga Valley National Park forest trail photograph in a bright modern entryway" decoding="async" height="1511" src="forest sunlit path in cuyahoga entryway .jpg" width="1041"/>
+<div class="mockup-caption">
+<span>Featured Interior · Cuyahoga Valley National Park</span>
+<h3>Sunlit Forest Trail Wall Art</h3>
+<p>The vertical path creates depth, movement, and a welcoming visual destination in a residential entryway.</p>
+<span class="mockup-link">View this Cuyahoga Valley photography print →</span>
+</div>
+</a>
+<a class="mockup-card vertical" href="https://dansproul.com/featured/bridal-veil-falls-morning-light-in-bedford-reservation-ohio-dan-sproul.html" rel="noopener" target="_blank">
+<img alt="Large framed Bridal Veil Falls Bedford Reservation artwork above a limestone fireplace in a quiet luxury living room" decoding="async" height="1024" loading="lazy" src="bridal veil falls ohio in living room.jpg" width="1536"/>
+<div class="mockup-caption">
+<span>Quiet Luxury Living Room · Bedford Reservation</span>
+<h3>Bridal Veil Falls Morning Light</h3>
+<p>A vertical waterfall composition gives a tall fireplace wall movement and a strong connection to Northeast Ohio's wooded ravines.</p>
+<span class="mockup-link">View this Bedford Reservation artwork →</span>
+</div>
+</a>
+<a class="mockup-card bedroom" href="https://dansproul.com/featured/great-falls-of-tinkers-creek-ohio-long-exposure-waterfall-dan-sproul.html" rel="noopener" target="_blank">
+<img alt="Framed Great Falls of Tinker's Creek Bedford Reservation waterfall photograph in a calm modern bedroom" decoding="async" height="1122" loading="lazy" src="tinkers creek waterfall in bedroom.jpg" width="1402"/>
+<div class="mockup-caption">
+<span>Restful Bedroom · Bedford Reservation</span>
+<h3>Great Falls of Tinker's Creek</h3>
+<p>Soft water movement balances the brighter foliage and creates a calm focal point above the bed.</p>
+<span class="mockup-link">View this Bedford Reservation artwork →</span>
+</div>
+</a>
+</div>
 </section>
-
-<section class="section-pad field-notes" id="field-notes" aria-labelledby="field-notes-title">
-  <div class="section-head">
-    <div>
-      <p class="eyebrow">Field Notes</p>
-      <h2 id="field-notes-title">Cuyahoga Valley National Park photography field notes.</h2>
-    </div>
-    <p>Firsthand notes add context beyond the finished print. Future image cards can document location, season, light, composition, interior mood, and a direct link to the corresponding artwork.</p>
-  </div>
-
-  <div class="field-grid" id="field-notes-grid">
-    <!-- Add a field-note image above each card heading when the final photograph and product link are supplied. -->
-    <article class="field-card">
-      <span class="field-number">Field Note 01</span>
-      <h3>Sunlight along a Cuyahoga Valley forest trail.</h3>
-      <p>I photographed the featured trail as a break in the canopy briefly illuminated the path. The trail became a leading line through the vertical composition, while the sunlit opening separated the dense layers of green foliage.</p>
-      <span class="future-image">Image-card position reserved</span>
-    </article>
-
-    <article class="field-card">
-      <span class="field-number">Field Note 02</span>
-      <h3>Future Cuyahoga Valley waterfall field note.</h3>
-      <p>Reserved for an image photographed inside the national park, with accurate location details, water conditions, exposure choices, and a note about how the scene translates into interior artwork.</p>
-      <span class="future-image">Image-card position reserved</span>
-    </article>
-
-    <article class="field-card">
-      <span class="field-number">Field Note 03</span>
-      <h3>Future trail, stream, or woodland detail.</h3>
-      <p>Reserved for another verified Cuyahoga Valley National Park photograph that broadens the page beyond one trail and builds topical depth around the park&#39;s forests, water, rock, and changing seasons.</p>
-      <span class="future-image">Image-card position reserved</span>
-    </article>
-
-    <article class="field-card template-card">
-      <span class="field-number">Future Image Card 04</span>
-      <h3>Seasonal color and changing atmosphere.</h3>
-      <p>Reserved for a future photograph and field note about spring greens, autumn color, winter structure, or weather moving through the valley.</p>
-      <span class="future-image">Add image, field note, alt text, and shop link</span>
-    </article>
-
-    <article class="field-card template-card">
-      <span class="field-number">Future Image Card 05</span>
-      <h3>Water, rock, and regional geology.</h3>
-      <p>Reserved for a future horizontal image card that highlights layered stone, creek patterns, ravines, or a recognizable Northeast Ohio waterfall.</p>
-      <span class="future-image">Add image, field note, alt text, and shop link</span>
-    </article>
-
-    <article class="field-card template-card">
-      <span class="field-number">Future Image Card 06</span>
-      <h3>A quieter trail or woodland detail.</h3>
-      <p>Reserved for an intimate scene that broadens the page beyond landmark views and strengthens the Forest Light or Quiet Earth connection.</p>
-      <span class="future-image">Add image, field note, alt text, and shop link</span>
-    </article>
-  </div>
+<section aria-labelledby="field-notes-title" class="section-pad field-notes" id="field-notes">
+<div class="section-head">
+<div>
+<p class="eyebrow">Field Notes &amp; Featured Prints</p>
+<h2 id="field-notes-title">Cuyahoga Valley and nearby Northeast Ohio photography.</h2>
+</div>
+<p>These image cards combine firsthand composition notes with direct links to each finished photograph. Locations are identified from the artwork titles, while the wider waterfall study is presented without adding an unsupported location.</p>
+</div>
+<div class="field-grid" id="field-notes-grid">
+<article class="field-card field-card-vertical">
+<a aria-label="View Brandywine Falls Framed by Summer Leaves print options" class="field-image-link" href="https://dansproul.com/featured/brandywine-falls-ohio-framed-by-summer-leaves-long-exposure-dan-sproul.html" rel="noopener" target="_blank">
+<img alt="Brandywine Falls in Cuyahoga Valley National Park framed by green summer leaves in a long-exposure photograph by Dan Sproul" decoding="async" height="900" loading="lazy" src="brandywine-falls-ohio-framed-by-summer-leaves-long-exposure-dan-sproul.jpg" width="544"/>
+</a>
+<div class="field-card-body">
+<span class="field-number">Field Note 01 · Cuyahoga Valley National Park</span>
+<h3>Brandywine Falls Framed by Summer Leaves</h3>
+<p>I composed this vertical view so the summer leaves frame the cascade instead of competing with it. The longer exposure softens the stepped water while preserving the rock layers and bright green edge, creating an image with movement that still feels calm.</p>
+<div aria-label="Artwork characteristics" class="field-card-meta"><span>Vertical</span><span>Waterfall</span><span>Restorative</span></div>
+<a class="field-card-link" href="https://dansproul.com/featured/brandywine-falls-ohio-framed-by-summer-leaves-long-exposure-dan-sproul.html" rel="noopener" target="_blank">View print sizes and formats →</a>
+</div>
+</article>
+<article class="field-card field-card-vertical">
+<a aria-label="View Brecksville-Northfield Bridge Reflection print options" class="field-image-link" href="https://dansproul.com/featured/brecksville-northfield-bridge-reflection-cuyahoga-valley-ohio-dan-sproul.html" rel="noopener" target="_blank">
+<img alt="Brecksville-Northfield Bridge reflected in the river within the green Cuyahoga Valley landscape of Ohio, photographed by Dan Sproul" decoding="async" height="900" loading="lazy" src="brecksville-northfield-bridge-reflection-cuyahoga-valley-ohio-dan-sproul.jpg" width="629"/>
+</a>
+<div class="field-card-body">
+<span class="field-number">Field Note 02 · Cuyahoga Valley</span>
+<h3>Brecksville-Northfield Bridge Reflection</h3>
+<p>I used the river and reflected center pier to extend the bridge's symmetry through the vertical frame. The composition balances historic architecture with the surrounding green valley, making the scene especially effective for regional offices, entryways, and hospitality interiors.</p>
+<div aria-label="Artwork characteristics" class="field-card-meta"><span>Vertical</span><span>Architecture</span><span>Sense of Place</span></div>
+<a class="field-card-link" href="https://dansproul.com/featured/brecksville-northfield-bridge-reflection-cuyahoga-valley-ohio-dan-sproul.html" rel="noopener" target="_blank">View print sizes and formats →</a>
+</div>
+</article>
+<article class="field-card">
+<a aria-label="View Flowing Water and Moss at Chippewa Creek print options" class="field-image-link" href="https://dansproul.com/featured/flowing-water-and-moss-at-chippewa-creek-ohio-dan-sproul.html" rel="noopener" target="_blank">
+<img alt="Close view of flowing water and green moss at Chippewa Creek in Ohio photographed with a softened long exposure by Dan Sproul" decoding="async" height="720" loading="lazy" src="flowing-water-and-moss-at-chippewa-creek-ohio-dan-sproul.jpg" width="900"/>
+</a>
+<div class="field-card-body">
+<span class="field-number">Field Note 03 · Chippewa Creek</span>
+<h3>Flowing Water and Moss at Chippewa Creek</h3>
+<p>Rather than photograph the entire creek, I focused on the repeated edge of the small falls, green reflected light, and silky water. The close composition reads almost abstractly from across a room while retaining the atmosphere of an Ohio stream.</p>
+<div aria-label="Artwork characteristics" class="field-card-meta"><span>Horizontal</span><span>Water Detail</span><span>Calming</span></div>
+<a class="field-card-link" href="https://dansproul.com/featured/flowing-water-and-moss-at-chippewa-creek-ohio-dan-sproul.html" rel="noopener" target="_blank">View print sizes and formats →</a>
+</div>
+</article>
+<article class="field-card">
+<a aria-label="View Resilient Sapling Among Chippewa Creek Boulders print options" class="field-image-link" href="https://dansproul.com/featured/resilient-sapling-among-chippewa-creek-boulders-in-ohio-dan-sproul.html" rel="noopener" target="_blank">
+<img alt="Small green sapling growing above large weathered boulders beside Chippewa Creek in Ohio, photographed by Dan Sproul" decoding="async" height="754" loading="lazy" src="resilient-sapling-among-chippewa-creek-boulders-in-ohio-dan-sproul.jpg" width="900"/>
+</a>
+<div class="field-card-body">
+<span class="field-number">Field Note 04 · Chippewa Creek</span>
+<h3>Resilient Sapling Among Chippewa Creek Boulders</h3>
+<p>The small sapling above the pale boulders became the visual anchor. Its fresh leaves and delicate scale create a quiet story of resilience against the heavier stone, giving the photograph meaning without making the composition visually busy.</p>
+<div aria-label="Artwork characteristics" class="field-card-meta"><span>Horizontal</span><span>Quiet Detail</span><span>Resilience</span></div>
+<a class="field-card-link" href="https://dansproul.com/featured/resilient-sapling-among-chippewa-creek-boulders-in-ohio-dan-sproul.html" rel="noopener" target="_blank">View print sizes and formats →</a>
+</div>
+</article>
+<article class="field-card field-card-vertical">
+<a aria-label="View Morning Light in the Chippewa Creek Forest print options" class="field-image-link" href="https://dansproul.com/featured/morning-light-in-the-chippewa-creek-forest-brecksville-ohio-dan-sproul.html" rel="noopener" target="_blank">
+<img alt="Warm morning light illuminating evergreen trunks and rocks in the Chippewa Creek forest near Brecksville, Ohio, photographed by Dan Sproul" decoding="async" height="900" loading="lazy" src="morning-light-in-the-chippewa-creek-forest-brecksville-ohio-dan-sproul.jpg" width="714"/>
+</a>
+<div class="field-card-body">
+<span class="field-number">Field Note 05 · Brecksville, Ohio</span>
+<h3>Morning Light in the Chippewa Creek Forest</h3>
+<p>Early light warmed selected trunks while the surrounding evergreens remained in shadow. I composed around that contrast to create depth without losing the intimate, enclosed feeling of the Chippewa Creek forest.</p>
+<div aria-label="Artwork characteristics" class="field-card-meta"><span>Vertical</span><span>Forest Light</span><span>Atmospheric</span></div>
+<a class="field-card-link" href="https://dansproul.com/featured/morning-light-in-the-chippewa-creek-forest-brecksville-ohio-dan-sproul.html" rel="noopener" target="_blank">View print sizes and formats →</a>
+</div>
+</article>
+<article class="field-card">
+<a aria-label="View Majestic Waterfall in a Forest print options" class="field-image-link" href="https://dansproul.com/featured/majestic-waterfall-in-a-forest-dan-sproul.html" rel="noopener" target="_blank">
+<img alt="Wide view of a layered waterfall descending through a green forest and rocky ravine, photographed by Dan Sproul" decoding="async" height="710" loading="lazy" src="majestic-waterfall-in-a-forest-dan-sproul.jpg" width="900"/>
+</a>
+<div class="field-card-body">
+<span class="field-number">Field Note 06 · Forest Waterfall Study</span>
+<h3>Majestic Waterfall in a Forest</h3>
+<p>I chose a wider environmental view to show the full staircase of falling water, rock ledges, fallen timber, and surrounding forest. The result feels more immersive than an isolated waterfall detail and works as a strong horizontal statement piece.</p>
+<div aria-label="Artwork characteristics" class="field-card-meta"><span>Horizontal</span><span>Waterfall</span><span>Immersive</span></div>
+<a class="field-card-link" href="https://dansproul.com/featured/majestic-waterfall-in-a-forest-dan-sproul.html" rel="noopener" target="_blank">View print sizes and formats →</a>
+</div>
+</article>
+</div>
 </section>
-
-<section class="section-pad applications" aria-labelledby="applications-title">
-  <div class="section-head">
-    <div>
-      <p class="eyebrow">Designed for Real Interiors</p>
-      <h2 id="applications-title">Where Cuyahoga Valley National Park wall art works best.</h2>
-    </div>
-    <p>Cuyahoga Valley landscape photography can do more than fill a wall. It can establish calm, reinforce an Ohio sense of place, and help an interior feel connected to the surrounding region.</p>
-  </div>
-
-  <div class="application-grid">
-    <article class="application-card">
-      <span>Residential</span>
-      <h3>Homes, bedrooms, and entryways</h3>
-      <p>Forest paths, waterfalls, and woodland details bring natural color and visual depth into living rooms, bedrooms, stair landings, home offices, and quiet entry spaces.</p>
-      <a href="residential-nature-wall-art.html">Explore residential artwork →</a>
-    </article>
-    <article class="application-card">
-      <span>Healthcare &amp; Wellness</span>
-      <h3>Waiting rooms and restorative spaces</h3>
-      <p>Soft water movement and familiar regional landscapes can support a calmer atmosphere in waiting rooms, therapy offices, consultation areas, and wellness-focused interiors.</p>
-      <a href="healthcare-artwork.html">Explore healthcare artwork →</a>
-    </article>
-    <article class="application-card">
-      <span>Hospitality &amp; Workplace</span>
-      <h3>Ohio projects with a sense of place</h3>
-      <p>Northeast Ohio imagery can help hotels, senior living communities, offices, multifamily spaces, and regional businesses feel more specific, memorable, and locally connected.</p>
-      <a href="for-designers.html">Explore designer resources →</a>
-    </article>
-  </div>
+<section aria-labelledby="applications-title" class="section-pad applications">
+<div class="section-head">
+<div>
+<p class="eyebrow">Designed for Real Interiors</p>
+<h2 id="applications-title">Where Cuyahoga Valley National Park wall art works best.</h2>
+</div>
+<p>Cuyahoga Valley landscape photography can do more than fill a wall. It can establish calm, reinforce an Ohio sense of place, and help an interior feel connected to the surrounding region.</p>
+</div>
+<div class="application-grid">
+<article class="application-card">
+<span>Residential</span>
+<h3>Homes, bedrooms, and entryways</h3>
+<p>Forest paths, waterfalls, and woodland details bring natural color and visual depth into living rooms, bedrooms, stair landings, home offices, and quiet entry spaces.</p>
+<a href="residential-nature-wall-art.html">Explore residential artwork →</a>
+</article>
+<article class="application-card">
+<span>Healthcare &amp; Wellness</span>
+<h3>Waiting rooms and restorative spaces</h3>
+<p>Soft water movement and familiar regional landscapes can support a calmer atmosphere in waiting rooms, therapy offices, consultation areas, and wellness-focused interiors.</p>
+<a href="healthcare-artwork.html">Explore healthcare artwork →</a>
+</article>
+<article class="application-card">
+<span>Hospitality &amp; Workplace</span>
+<h3>Ohio projects with a sense of place</h3>
+<p>Northeast Ohio imagery can help hotels, senior living communities, offices, multifamily spaces, and regional businesses feel more specific, memorable, and locally connected.</p>
+<a href="for-designers.html">Explore designer resources →</a>
+</article>
+</div>
 </section>
-
-<section class="section-pad place-resources" aria-labelledby="resources-title">
-  <div class="resource-box">
-    <div>
-      <p class="eyebrow">Explore the Landscape</p>
-      <h2 id="resources-title">Helpful park and regional resources.</h2>
-      <p style="margin-top:18px">For visitors researching the places behind the artwork, use official park sources for current conditions, trail information, closures, and trip planning.</p>
-    </div>
-    <div class="resource-links">
-      <a class="resource-link" href="https://www.nps.gov/cuva/index.htm" target="_blank" rel="noopener">
-        <span>Official National Park Service</span>
-        <strong>Cuyahoga Valley National Park</strong>
-        <small>Park overview, current information, and planning resources.</small>
-      </a>
-      <a class="resource-link" href="https://www.nps.gov/cuva/planyourvisit/index.htm" target="_blank" rel="noopener">
-        <span>Plan Your Visit</span>
-        <strong>Trails, places, and visitor guidance</strong>
-        <small>Use the official NPS site before visiting or photographing the park.</small>
-      </a>
-      <a class="resource-link" href="https://www.clevelandmetroparks.com/parks/visit/parks/bedford-reservation" target="_blank" rel="noopener">
-        <span>Official Cleveland Metroparks</span>
-        <strong>Bedford Reservation</strong>
-        <small>Regional information for Bridal Veil Falls, Tinker's Creek, and nearby trails.</small>
-      </a>
-      <a class="resource-link" href="ohio-nature-photography-prints.html">
-        <span>Dan Sproul Ohio Collection</span>
-        <strong>Explore more Ohio nature artwork</strong>
-        <small>Continue to waterfalls, forests, lakes, and regional landscapes from across Ohio.</small>
-      </a>
-    </div>
-  </div>
+<section aria-labelledby="resources-title" class="section-pad place-resources">
+<div class="resource-box">
+<div>
+<p class="eyebrow">Explore the Landscape</p>
+<h2 id="resources-title">Helpful park and regional resources.</h2>
+<p style="margin-top:18px">For visitors researching the places behind the artwork, use official park sources for current conditions, trail information, closures, and trip planning.</p>
+</div>
+<div class="resource-links">
+<a class="resource-link" href="https://www.nps.gov/cuva/index.htm" rel="noopener" target="_blank">
+<span>Official National Park Service</span>
+<strong>Cuyahoga Valley National Park</strong>
+<small>Park overview, current information, and planning resources.</small>
+</a>
+<a class="resource-link" href="https://www.nps.gov/cuva/planyourvisit/index.htm" rel="noopener" target="_blank">
+<span>Plan Your Visit</span>
+<strong>Trails, places, and visitor guidance</strong>
+<small>Use the official NPS site before visiting or photographing the park.</small>
+</a>
+<a class="resource-link" href="https://www.clevelandmetroparks.com/parks/visit/parks/bedford-reservation" rel="noopener" target="_blank">
+<span>Official Cleveland Metroparks</span>
+<strong>Bedford Reservation</strong>
+<small>Regional information for Bridal Veil Falls, Tinker's Creek, and nearby trails.</small>
+</a>
+<a class="resource-link" href="ohio-nature-photography-prints.html">
+<span>Dan Sproul Ohio Collection</span>
+<strong>Explore more Ohio nature artwork</strong>
+<small>Continue to waterfalls, forests, lakes, and regional landscapes from across Ohio.</small>
+</a>
+</div>
+</div>
 </section>
-
-<section class="section-pad page-faq" id="faq" aria-labelledby="faq-title">
-  <div class="section-head">
-    <div>
-      <p class="eyebrow">Cuyahoga Valley Art FAQ</p>
-      <h2 id="faq-title">Questions about the photographs and locations.</h2>
-    </div>
-    <p>These answers clarify where the images were made, how to purchase the featured print, and how custom interior guidance works.</p>
-  </div>
-  <div class="page-faq-grid">
-    <article class="page-faq-item">
-      <h3>Where can I buy Cuyahoga Valley National Park photography prints?</h3>
-      <p>The featured sunlit forest trail links directly to Dan Sproul's print listing, where current sizes, formats, and purchasing options are displayed.</p>
-    </article>
-    <article class="page-faq-item">
-      <h3>Are Bridal Veil Falls and the Great Falls of Tinker's Creek inside the national park?</h3>
-      <p>No. Both are in Bedford Reservation, part of Cleveland Metroparks. They are included as clearly labeled nearby Northeast Ohio artwork rather than represented as Cuyahoga Valley National Park locations.</p>
-    </article>
-    <article class="page-faq-item">
-      <h3>Can I preview Cuyahoga Valley wall art in my own room?</h3>
-      <p>Yes. Send a room photo, wall dimensions, and preferred artwork. Dan can provide sizing and framing direction and create a complimentary visual mockup when appropriate.</p>
-    </article>
-  </div>
+<section aria-labelledby="faq-title" class="section-pad page-faq" id="faq">
+<div class="section-head">
+<div>
+<p class="eyebrow">Cuyahoga Valley Art FAQ</p>
+<h2 id="faq-title">Questions about the photographs and locations.</h2>
+</div>
+<p>These answers clarify where the images were made, how to purchase the featured print, and how custom interior guidance works.</p>
+</div>
+<div class="page-faq-grid">
+<article class="page-faq-item">
+<h3>Where can I buy Cuyahoga Valley National Park photography prints?</h3>
+<p>The featured sunlit forest trail links directly to Dan Sproul's print listing, where current sizes, formats, and purchasing options are displayed.</p>
+</article>
+<article class="page-faq-item">
+<h3>Are Bridal Veil Falls and the Great Falls of Tinker's Creek inside the national park?</h3>
+<p>No. Both are in Bedford Reservation, part of Cleveland Metroparks. They are included as clearly labeled nearby Northeast Ohio artwork rather than represented as Cuyahoga Valley National Park locations.</p>
+</article>
+<article class="page-faq-item">
+<h3>Can I preview Cuyahoga Valley wall art in my own room?</h3>
+<p>Yes. Send a room photo, wall dimensions, and preferred artwork. Dan can provide sizing and framing direction and create a complimentary visual mockup when appropriate.</p>
+</article>
+</div>
 </section>
-
-
-<section class="section-pad related" aria-labelledby="related-title">
-  <div class="section-head">
-    <div>
-      <p class="eyebrow">Continue Exploring</p>
-      <h2 id="related-title">Related artwork, collections, and project resources.</h2>
-    </div>
-    <p>Move from regional photography into curated collections, room applications, and professional artwork planning.</p>
-  </div>
-
-  <div class="related-grid">
-    <a class="related-card" href="ohio-nature-photography-prints.html">
-      <span>Regional Artwork</span>
-      <h3>Ohio Nature Photography</h3>
-      <p>Explore a broader collection of Ohio landscapes, waterfalls, woodlands, and local nature artwork.</p>
-      <small>View the Ohio page →</small>
-    </a>
-    <a class="related-card" href="forest-light-collection.html">
-      <span>Collection</span>
-      <h3>Forest Light</h3>
-      <p>Woodland paths, filtered light, green foliage, and immersive forest scenes for calm interiors.</p>
-      <small>Explore Forest Light →</small>
-    </a>
-    <a class="related-card" href="wellness-waters-collection.html">
-      <span>Collection</span>
-      <h3>Wellness Waters</h3>
-      <p>Streams, waterfalls, reflected light, and water imagery selected for restorative rooms.</p>
-      <small>Explore Wellness Waters →</small>
-    </a>
-    <a class="related-card" href="art-advisor.html">
-      <span>Personalized Guidance</span>
-      <h3>Free Art Advisor</h3>
-      <p>Receive artwork, sizing, framing, placement, and optional room-preview guidance.</p>
-      <small>Start the Art Advisor →</small>
-    </a>
-    <a class="related-card" href="residential-nature-wall-art.html">
-      <span>Residential</span>
-      <h3>Nature Wall Art for Homes</h3>
-      <p>See artwork organized around living rooms, bedrooms, dining rooms, entryways, and home offices.</p>
-      <small>Explore residential ideas →</small>
-    </a>
-    <a class="related-card" href="healthcare-artwork.html">
-      <span>Healthcare</span>
-      <h3>Artwork for Healthcare Interiors</h3>
-      <p>Nature artwork concepts for waiting rooms, consultation areas, corridors, and patient-facing spaces.</p>
-      <small>Explore healthcare artwork →</small>
-    </a>
-    <a class="related-card" href="hospitality-artwork.html">
-      <span>Hospitality</span>
-      <h3>Artwork With a Sense of Place</h3>
-      <p>Regional and atmospheric imagery for hotels, guestrooms, lounges, corridors, and destination properties.</p>
-      <small>Explore hospitality artwork →</small>
-    </a>
-    <a class="related-card" href="for-designers.html">
-      <span>Professional</span>
-      <h3>Resources for Designers</h3>
-      <p>Mockups, coordinated collections, project support, sizing direction, and artwork planning.</p>
-      <small>View designer resources →</small>
-    </a>
-  </div>
+<section aria-labelledby="related-title" class="section-pad related">
+<div class="section-head">
+<div>
+<p class="eyebrow">Continue Exploring</p>
+<h2 id="related-title">Related artwork, collections, and project resources.</h2>
+</div>
+<p>Move from regional photography into curated collections, room applications, and professional artwork planning.</p>
+</div>
+<div class="related-grid">
+<a class="related-card" href="ohio-nature-photography-prints.html">
+<span>Regional Artwork</span>
+<h3>Ohio Nature Photography</h3>
+<p>Explore a broader collection of Ohio landscapes, waterfalls, woodlands, and local nature artwork.</p>
+<small>View the Ohio page →</small>
+</a>
+<a class="related-card" href="forest-light-collection.html">
+<span>Collection</span>
+<h3>Forest Light</h3>
+<p>Woodland paths, filtered light, green foliage, and immersive forest scenes for calm interiors.</p>
+<small>Explore Forest Light →</small>
+</a>
+<a class="related-card" href="wellness-waters-collection.html">
+<span>Collection</span>
+<h3>Wellness Waters</h3>
+<p>Streams, waterfalls, reflected light, and water imagery selected for restorative rooms.</p>
+<small>Explore Wellness Waters →</small>
+</a>
+<a class="related-card" href="art-advisor.html">
+<span>Personalized Guidance</span>
+<h3>Free Art Advisor</h3>
+<p>Receive artwork, sizing, framing, placement, and optional room-preview guidance.</p>
+<small>Start the Art Advisor →</small>
+</a>
+<a class="related-card" href="residential-nature-wall-art.html">
+<span>Residential</span>
+<h3>Nature Wall Art for Homes</h3>
+<p>See artwork organized around living rooms, bedrooms, dining rooms, entryways, and home offices.</p>
+<small>Explore residential ideas →</small>
+</a>
+<a class="related-card" href="healthcare-artwork.html">
+<span>Healthcare</span>
+<h3>Artwork for Healthcare Interiors</h3>
+<p>Nature artwork concepts for waiting rooms, consultation areas, corridors, and patient-facing spaces.</p>
+<small>Explore healthcare artwork →</small>
+</a>
+<a class="related-card" href="hospitality-artwork.html">
+<span>Hospitality</span>
+<h3>Artwork With a Sense of Place</h3>
+<p>Regional and atmospheric imagery for hotels, guestrooms, lounges, corridors, and destination properties.</p>
+<small>Explore hospitality artwork →</small>
+</a>
+<a class="related-card" href="for-designers.html">
+<span>Professional</span>
+<h3>Resources for Designers</h3>
+<p>Mockups, coordinated collections, project support, sizing direction, and artwork planning.</p>
+<small>View designer resources →</small>
+</a>
+</div>
 </section>
-
 <section class="section-pad project-cta">
-  <div class="project-cta-inner">
-    <p class="eyebrow">Ohio Artwork for Your Space</p>
-    <h2>Planning an interior or looking for Cuyahoga Valley National Park wall art?</h2>
-    <p>Send a room photo, wall dimensions, project type, or preferred atmosphere. Dan can suggest relevant images, scale, framing direction, and a complimentary visual mockup.</p>
-    <div class="btns" style="justify-content:center">
-      <a class="btn primary" href="mailto:dan@dsproul.com?subject=Cuyahoga%20Valley%20Artwork%20Project">Request a Complimentary Mockup</a>
-      <a class="btn" href="art-advisor.html">Use the Free Art Advisor</a>
-      <a class="btn" href="https://dansproul.com" target="_blank" rel="noopener">Shop Prints</a>
-    </div>
-  </div>
+<div class="project-cta-inner">
+<p class="eyebrow">Ohio Artwork for Your Space</p>
+<h2>Planning an interior or looking for Cuyahoga Valley National Park wall art?</h2>
+<p>Send a room photo, wall dimensions, project type, or preferred atmosphere. Dan can suggest relevant images, scale, framing direction, and a complimentary visual mockup.</p>
+<div class="btns" style="justify-content:center">
+<a class="btn primary" href="mailto:dan@dsproul.com?subject=Cuyahoga%20Valley%20Artwork%20Project">Request a Complimentary Mockup</a>
+<a class="btn" href="art-advisor.html">Use the Free Art Advisor</a>
+<a class="btn" href="https://dansproul.com" rel="noopener" target="_blank">Shop Prints</a>
+</div>
+</div>
 </section>
 </main>
-
-<footer id="footer" class="site-footer">
-  <div class="footer-grid">
-    <details class="footer-disclosure" open>
-      <summary><h3>Explore</h3></summary>
-      <a href="/">Home</a>
-      <a href="best-sellers.html">Best Sellers</a>
-      <a href="art-collections.html">Collections</a>
-      <a href="art-advisor.html">Art Advisor</a>
-      <a href="in-your-space.html">In Your Space</a>
-      <a href="for-designers.html">For Designers</a>
-      <a href="https://dansproul.com" target="_blank" rel="noopener">Shop Prints</a>
-      <a href="mailto:dan@dsproul.com">Contact</a>
-    </details>
-
-    <details class="footer-disclosure" open>
-      <summary><h3>Collections</h3></summary>
-      <a href="quiet-earth-collection.html">Quiet Earth</a>
-      <a href="forest-light-collection.html">Forest Light</a>
-      <a href="wellness-waters-collection.html">Wellness Waters</a>
-      <a href="coastal-atmosphere.html">Coastal Atmosphere</a>
-      <a href="mountain-light-collection.html">Mountain Light</a>
-      <a href="monochrome-stillness.html">Monochrome Stillness</a>
-      <a href="winter-stillness.html">Winter Stillness</a>
-      <a href="open-horizons-collection.html">Open Horizons</a>
-      <a href="heritage-mixed-media.html">Heritage &amp; Mixed Media</a>
-    </details>
-
-    <details class="footer-disclosure" open>
-      <summary><h3>Resources</h3></summary>
-      <a href="art-advisor.html">Art Advisor</a>
-      <a href="artwork-guides.html">Artwork Guides</a>
-      <a href="blog.html">Journal</a>
-      <a href="lima-ohio-fine-art-photographer.html">Lima Fine Art Photographer</a>
-      <a href="ohio-nature-photography-prints.html">Ohio Nature Photography</a>
-      <a href="cuyahoga-valley-national-park-photography-prints.html">Cuyahoga Valley</a>
-      <a href="alaska-photography-prints.html">Alaska Photography</a>
-      <a href="colorado-fall-colors-photography-prints.html">Colorado Fall Colors</a>
-      <a href="about-dan-sproul.html">About Dan</a>
-    </details>
-
-    <details class="footer-disclosure" open>
-      <summary><h3>For Designers</h3></summary>
-      <a href="/for-designers.html">Designer Resources</a>
-      <a href="/healthcare-artwork.html">Healthcare</a>
-      <a href="/hospitality-artwork.html">Hospitality</a>
-      <a href="/office-artwork.html">Office</a>
-      <a href="/residential-nature-wall-art.html">Residential</a>
-      <a href="/senior-living-artwork.html">Senior Living</a>
-    </details>
-
-    <div class="footer-connect">
-      <h3>Connect</h3>
-      <a href="mailto:dan@dsproul.com">Email</a>
-      <a href="https://www.linkedin.com/in/dan-sproul-bb55015a/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://www.pinterest.com/dansproul/" target="_blank" rel="noopener">Pinterest</a>
-    </div>
-  </div>
-
-  <div class="footer-bottom">
+<footer class="site-footer" id="footer">
+<div class="footer-grid">
+<details class="footer-disclosure" open="">
+<summary><h3>Explore</h3></summary>
+<a href="/">Home</a>
+<a href="best-sellers.html">Best Sellers</a>
+<a href="art-collections.html">Collections</a>
+<a href="art-advisor.html">Art Advisor</a>
+<a href="in-your-space.html">In Your Space</a>
+<a href="for-designers.html">For Designers</a>
+<a href="https://dansproul.com" rel="noopener" target="_blank">Shop Prints</a>
+<a href="mailto:dan@dsproul.com">Contact</a>
+</details>
+<details class="footer-disclosure" open="">
+<summary><h3>Collections</h3></summary>
+<a href="quiet-earth-collection.html">Quiet Earth</a>
+<a href="forest-light-collection.html">Forest Light</a>
+<a href="wellness-waters-collection.html">Wellness Waters</a>
+<a href="coastal-atmosphere.html">Coastal Atmosphere</a>
+<a href="mountain-light-collection.html">Mountain Light</a>
+<a href="monochrome-stillness.html">Monochrome Stillness</a>
+<a href="winter-stillness.html">Winter Stillness</a>
+<a href="open-horizons-collection.html">Open Horizons</a>
+<a href="heritage-mixed-media.html">Heritage &amp; Mixed Media</a>
+</details>
+<details class="footer-disclosure" open="">
+<summary><h3>Resources</h3></summary>
+<a href="art-advisor.html">Art Advisor</a>
+<a href="artwork-guides.html">Artwork Guides</a>
+<a href="blog.html">Journal</a>
+<a href="lima-ohio-fine-art-photographer.html">Lima Fine Art Photographer</a>
+<a href="ohio-nature-photography-prints.html">Ohio Nature Photography</a>
+<a href="cuyahoga-valley-national-park-photography-prints.html">Cuyahoga Valley</a>
+<a href="alaska-photography-prints.html">Alaska Photography</a>
+<a href="colorado-fall-colors-photography-prints.html">Colorado Fall Colors</a>
+<a href="about-dan-sproul.html">About Dan</a>
+</details>
+<details class="footer-disclosure" open="">
+<summary><h3>For Designers</h3></summary>
+<a href="/for-designers.html">Designer Resources</a>
+<a href="/healthcare-artwork.html">Healthcare</a>
+<a href="/hospitality-artwork.html">Hospitality</a>
+<a href="/office-artwork.html">Office</a>
+<a href="/residential-nature-wall-art.html">Residential</a>
+<a href="/senior-living-artwork.html">Senior Living</a>
+</details>
+<div class="footer-connect">
+<h3>Connect</h3>
+<a href="mailto:dan@dsproul.com">Email</a>
+<a href="https://www.linkedin.com/in/dan-sproul-bb55015a/" rel="noopener" target="_blank">LinkedIn</a>
+<a href="https://www.pinterest.com/dansproul/" rel="noopener" target="_blank">Pinterest</a>
+</div>
+</div>
+<div class="footer-bottom">
     © 2026 Dan Sproul Fine Art Photography · Based in Lima, Ohio · Original Nature Photography &amp; Heritage-Inspired Artwork
   </div>
 </footer>
-
 <script>
 document.addEventListener('DOMContentLoaded',function(){
   var nav=document.querySelector('.site-nav-standard');
