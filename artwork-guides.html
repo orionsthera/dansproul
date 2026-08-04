@@ -479,6 +479,161 @@
   .sitewide-footer-cta{padding:44px 20px!important}
   .site-footer{padding-top:38px!important}
 }
+
+
+/* FINAL MOBILE SCREENSHOT CORRECTIONS — August 2026 */
+@media(max-width:680px){
+  /* Prevent grid and flex children from forcing horizontal overflow */
+  .hero-content,
+  .hero .btns,
+  .hero .btn,
+  .section-head,
+  .featured-guide-copy,
+  .recent-guide-card,
+  .popular-guide{
+    min-width:0!important;
+    max-width:100%!important;
+  }
+
+  /* Shorter, cleaner opening screen */
+  .hero{
+    min-height:48svh!important;
+    padding:34px 20px 24px!important;
+    align-items:end!important;
+  }
+  .hero::before{
+    background-position:center 44%!important;
+  }
+  .hero h1{
+    width:100%!important;
+    max-width:100%!important;
+    font-size:clamp(36px,10.4vw,47px)!important;
+    line-height:.96!important;
+    letter-spacing:-.025em!important;
+    overflow-wrap:normal!important;
+    word-break:normal!important;
+  }
+  .hero-copy{
+    max-width:100%!important;
+    margin-top:14px!important;
+    font-size:13.5px!important;
+    line-height:1.5!important;
+  }
+
+  /* Stack the two useful actions so neither is clipped */
+  .hero .btns{
+    display:flex!important;
+    flex-direction:column!important;
+    gap:9px!important;
+    margin-top:18px!important;
+    width:100%!important;
+  }
+  .hero .btn{
+    width:100%!important;
+    min-height:43px!important;
+    padding:10px 13px!important;
+    white-space:normal!important;
+    line-height:1.3!important;
+    text-align:center!important;
+  }
+  .hero .btns .btn:nth-child(n+3){
+    display:none!important;
+  }
+
+  /* Keep the jump links compact without making the hero wider */
+  .hero-links{
+    width:100%!important;
+    max-width:100%!important;
+    margin-top:13px!important;
+    padding-bottom:2px!important;
+    overflow-x:auto!important;
+    overscroll-behavior-x:contain!important;
+  }
+  .hero-links a{
+    padding:7px 9px!important;
+    font-size:8.5px!important;
+  }
+  .hero-links a:nth-child(n+6){
+    display:none!important;
+  }
+
+  /* Smaller 3 x 2 Popular Guides launcher */
+  .popular-guides{
+    padding:24px 14px!important;
+  }
+  .popular-guides h2{
+    margin-bottom:14px!important;
+    font-size:27px!important;
+    line-height:1!important;
+  }
+  .popular-guide{
+    min-height:72px!important;
+    padding:10px 5px!important;
+  }
+  .popular-icon{
+    margin-bottom:5px!important;
+    font-size:18px!important;
+  }
+  .popular-guide span:last-child{
+    font-size:7.8px!important;
+    line-height:1.2!important;
+    letter-spacing:.055em!important;
+  }
+
+  /* Tighten the intro transition */
+  .intro{
+    padding:25px 20px!important;
+  }
+  .mobile-intro-summary{
+    font-size:13.5px!important;
+    line-height:1.55!important;
+  }
+
+  /* Featured section typography shown in the screenshots */
+  .guide-highlights{
+    padding-top:34px!important;
+    padding-bottom:34px!important;
+  }
+  .guide-highlights .section-head{
+    margin-bottom:19px!important;
+  }
+  .guide-highlights .section-head h2{
+    max-width:100%!important;
+    font-size:clamp(31px,8.6vw,38px)!important;
+    line-height:.99!important;
+    letter-spacing:-.025em!important;
+  }
+  .guide-highlights .section-head>p{
+    margin-top:10px!important;
+  }
+  .featured-guide-image{
+    min-height:178px!important;
+  }
+  .featured-guide-copy{
+    padding:20px!important;
+  }
+  .featured-guide-copy h2{
+    font-size:29px!important;
+    line-height:1!important;
+  }
+  .recent-guide-card{
+    padding:20px!important;
+  }
+  .recent-guide-card h3{
+    font-size:25px!important;
+    line-height:1.02!important;
+  }
+
+  /* Slight readability increase for compact cards */
+  .room-card p,
+  .related-card p{
+    font-size:12px!important;
+  }
+  .advisor-benefit span{
+    font-size:10.5px!important;
+  }
+}
+
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://dsproul.com/#dan-sproul","name":"Dan Sproul","url":"https://dsproul.com","jobTitle":"Fine Art Photographer and Mixed Media Artist","homeLocation":{"@type":"Place","name":"Lima, Ohio"},"email":"dan@dsproul.com"},{"@type":"Organization","@id":"https://dsproul.com/#organization","name":"Dan Sproul Fine Art Photography","url":"https://dsproul.com","founder":{"@id":"https://dsproul.com/#dan-sproul"},"email":"dan@dsproul.com"},{"@type":"WebSite","@id":"https://dsproul.com/#website","url":"https://dsproul.com","name":"Dan Sproul Fine Art Photography","publisher":{"@id":"https://dsproul.com/#organization"}},{"@type":["WebPage","CollectionPage"],"@id":"https://dsproul.com/artwork-guides.html#webpage","url":"https://dsproul.com/artwork-guides.html","name":"Artwork Guides | How to Choose Wall Art for Homes & Interiors | Dan Sproul","description":"Artwork guides for choosing nature photography by size, room, format, atmosphere, and interior use, including a free downloadable commercial interiors planning guide.","isPartOf":{"@id":"https://dsproul.com/#website"},"author":{"@id":"https://dsproul.com/#dan-sproul"},"breadcrumb":{"@id":"https://dsproul.com/artwork-guides.html#breadcrumb"},"about":["how to choose wall art","fine art print sizes","framed print vs canvas","nature artwork for interiors","artwork for living rooms","artwork for healthcare spaces","therapy office artwork","calming water artwork","commercial interior artwork planning","healthcare artwork planning","hospitality artwork collections","hotel artwork sense of place","hospitality artwork guide","senior living artwork","office artwork","downloadable designer artwork guide","personalized online art advisor","wall art recommendation tool"],"hasPart":[{"@type":"WebPageElement","name":"Wall art size guides"},{"@type":"WebPageElement","name":"Room artwork guides"},{"@type":"WebPageElement","name":"Print format guidance"},{"@type":"WebPageElement","name":"Therapy office water artwork guide"},{"@type":"WebPageElement","name":"Local Lima Ohio print guidance"},{"@type":"WebPageElement","name":"Featured large living room wall art guide","url":"https://dsproul.com/how-to-choose-large-wall-art-living-room.html"},{"@type":"WebPageElement","name":"Professional resources for commercial interiors"},{"@type":"WebPageElement","name":"Hospitality artwork sense of place guide","url":"https://dsproul.com/how-hospitality-artwork-creates-a-memorable-sense-of-place.html"},{"@type":"WebPageElement","name":"Complimentary personalized Art Advisor","url":"https://dsproul.com/art-advisor.html"},{"@id":"https://dsproul.com/artwork-guides.html#designer-pdf"}],"publisher":{"@id":"https://dsproul.com/#organization"},"associatedMedia":{"@id":"https://dsproul.com/artwork-guides.html#designer-pdf"}},{"@type":"BreadcrumbList","@id":"https://dsproul.com/artwork-guides.html#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://dsproul.com/"},{"@type":"ListItem","position":2,"name":"Artwork Guides","item":"https://dsproul.com/artwork-guides.html"}]},{"@type":"FAQPage","@id":"https://dsproul.com/artwork-guides.html#faq","mainEntity":[{"@type":"Question","name":"How do I choose the right size wall art?","acceptedAnswer":{"@type":"Answer","text":"Start with the wall and furniture below it. Smaller rooms often work well with 24x36 or 30x40 prints, while sofas, beds, fireplaces, lobbies, and statement walls often need 40x60 or larger artwork."}},{"@type":"Question","name":"Should I choose framed prints, canvas, acrylic, or metal?","acceptedAnswer":{"@type":"Answer","text":"Framed paper prints feel refined and residential, canvas adds warmth, acrylic gives a polished contemporary look, and metal can work well in high-traffic or commercial spaces."}},{"@type":"Question","name":"Can local buyers order directly from Dan Sproul?","acceptedAnswer":{"@type":"Answer","text":"Lima and Northwest Ohio buyers can contact Dan directly for personalized recommendations, sizing guidance, and eligible local pickup or direct ordering options."}}]},{"@type":"MediaObject","@id":"https://dsproul.com/artwork-guides.html#designer-pdf","name":"Choosing Nature Artwork for Commercial Interiors","description":"A free seven-page artwork planning guide for designers, architects, procurement teams, healthcare, senior living, hospitality, and workplace interiors.","contentUrl":"https://dsproul.com/Dan_Sproul_Commercial_Interiors_Artwork_Guide.pdf","encodingFormat":"application/pdf","isAccessibleForFree":true,"author":{"@id":"https://dsproul.com/#dan-sproul"},"publisher":{"@id":"https://dsproul.com/#organization"}}]}</script>
 </head>
@@ -488,7 +643,7 @@
 <section aria-label="Popular artwork guides" class="popular-guides"><h2>Popular Guides</h2><div class="popular-guide-grid"><a class="popular-guide" href="#size-guides"><span class="popular-icon">↔</span><span>Artwork Size Guide</span></a><a class="popular-guide" href="#formats"><span class="popular-icon">□</span><span>Framing &amp; Format Guide</span></a><a class="popular-guide" href="in-your-space.html"><span class="popular-icon">⌂</span><span>Living Room Artwork</span></a><a class="popular-guide" href="healthcare-artwork.html"><span class="popular-icon">+</span><span>Healthcare Artwork</span></a><a class="popular-guide" href="hospitality-artwork.html"><span class="popular-icon">◇</span><span>Hospitality Artwork</span></a><a class="popular-guide" href="#designer-guide"><span class="popular-icon">↓</span><span>Free Designer PDF</span></a></div></section>
 <section class="section-pad intro"><div class="intro-grid"><div><p class="eyebrow">Why this page exists</p><h2>Choosing artwork is easier when you start with the room.</h2></div><div><p>Most people do not begin with a perfect image in mind. They start with an empty wall, a room that feels unfinished, a color palette, a memory of a place, or a feeling they want the space to hold.</p><p>These guides are built to help homeowners, designers, and project buyers choose artwork with more confidence — by thinking through scale, mood, subject, format, frame direction, and where the artwork will actually live.</p></div><p class="mobile-intro-summary">Start with the room, then choose artwork by scale, atmosphere, framing, and placement. These guides help homeowners and design professionals make those decisions with confidence.</p></div></section>
 
-&lt;!-- Mobile-first content order: featured guides precede the Art Advisor. --&gt;
+<!-- Mobile-first content order: featured guides precede the Art Advisor. -->
 <section aria-labelledby="guide-highlights-title" class="section-pad guide-highlights"><div class="section-head"><div><p class="eyebrow">A Clear Starting Point</p><h2 id="guide-highlights-title">Featured and recently added guides.</h2></div><p>Begin with the featured living-room guide, then explore newer professional resources for medical waiting rooms and hospitality interiors.</p></div><div class="highlight-grid"><a class="featured-guide-large" href="how-to-choose-large-wall-art-living-room.html"><div class="featured-guide-image"><img alt="Large Smoky Mountains waterfall artwork displayed in a living room by Dan Sproul" decoding="async" loading="lazy" src="smoky mountains cascades in living room.png"/></div><div class="featured-guide-copy"><p class="eyebrow">Featured Guide</p><h2>How to Choose Large Wall Art for a Living Room</h2><p>A practical guide to scale, placement, orientation, framing, and choosing artwork that feels properly connected to the room.</p><span>Read the featured guide →</span></div></a><a class="recent-guide-card" href="how-to-choose-calming-artwork-medical-waiting-room.html"><span class="recent-guide-meta">Recently Added · July 2026</span><p class="eyebrow">Healthcare Guide</p><h3>How to Choose Calming Artwork for a Medical Waiting Room</h3><p>Use subject, scale, visual complexity, regional relevance, and room context to select patient-facing artwork with more confidence.</p><span class="recent-guide-link">Read the newest guide →</span></a><a class="recent-guide-card" href="how-hospitality-artwork-creates-a-memorable-sense-of-place.html"><span class="recent-guide-meta">Recently Added · July 2026</span><p class="eyebrow">Hospitality Guide</p><h3>How Hospitality Artwork Creates a Memorable Sense of Place</h3><p>Learn how hotels, resorts, lodges, restaurants, and guest spaces can use regional artwork, scale, and coordinated collections to build a stronger identity.</p><span class="recent-guide-link">Read the hospitality guide →</span></a></div></section><section aria-labelledby="art-advisor-title" class="section-pad advisor-callout" id="art-advisor">
 <div class="advisor-callout-inner">
 <div class="advisor-copy">
