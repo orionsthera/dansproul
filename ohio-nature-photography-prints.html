@@ -1220,6 +1220,84 @@ h2{font-size:34px!important}
   }
 }
 
+/* ── CUYAHOGA FEATURE PREVIEW USING ORIGINAL SITE FILENAMES ─── */
+.featured-region-preview-grid{
+  grid-column:1/-1;
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;
+  padding:0 18px 18px;
+  background:#fffaf1;
+}
+.featured-region-preview-card{
+  position:relative;
+  display:block;
+  overflow:hidden;
+  min-width:0;
+  aspect-ratio:16/10;
+  background:#17130f;
+  text-decoration:none;
+}
+.featured-region-preview-card img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:transform .4s ease,filter .3s ease;
+}
+.featured-region-preview-card::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:linear-gradient(to top,rgba(8,7,6,.78),rgba(8,7,6,0) 58%);
+  pointer-events:none;
+}
+.featured-region-preview-card span{
+  position:absolute;
+  left:14px;
+  right:14px;
+  bottom:12px;
+  z-index:2;
+  color:#fffaf1;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:9px;
+  font-weight:700;
+  line-height:1.35;
+  letter-spacing:.11em;
+  text-transform:uppercase;
+}
+.featured-region-preview-card:hover img,
+.featured-region-preview-card:focus img{
+  transform:scale(1.025);
+  filter:brightness(1.03);
+}
+@media(max-width:680px){
+  .featured-region-preview-grid{
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:7px;
+    padding:0 10px 10px;
+  }
+  .featured-region-preview-card{
+    aspect-ratio:4/5;
+  }
+  .featured-region-preview-card span{
+    left:8px;
+    right:8px;
+    bottom:8px;
+    font-size:7px;
+    letter-spacing:.07em;
+  }
+}
+@media(max-width:380px){
+  .featured-region-preview-grid{
+    grid-template-columns:1fr;
+  }
+  .featured-region-preview-card{
+    aspect-ratio:16/10;
+  }
+  .featured-region-preview-card span{
+    font-size:8px;
+  }
+}
 </style>
 <script type="application/ld+json">{
 "@context":"https://schema.org",
@@ -1296,7 +1374,7 @@ h2{font-size:34px!important}
 </div>
 <article aria-labelledby="cuyahoga-feature-title" class="featured-region-spotlight">
 <a aria-label="Explore Cuyahoga Valley National Park photography prints and wall art" class="featured-region-image" href="cuyahoga-valley-national-park-photography-prints.html">
-<img alt="Sunlit forest trail in Cuyahoga Valley National Park, Ohio, photographed by Dan Sproul" decoding="async" loading="lazy" src="137AA312-7296-433A-9A25-2F7E573FDFC2.jpeg"/>
+<img alt="Brandywine Falls in Cuyahoga Valley National Park framed by green summer leaves, photographed by Dan Sproul" decoding="async" height="900" loading="lazy" src="brandywine-falls-ohio-framed-by-summer-leaves-long-exposure-dan-sproul.jpg" width="544"/>
 </a>
 <div class="featured-region-copy">
 <p class="eyebrow">Featured Ohio Destination</p>
@@ -1307,7 +1385,7 @@ h2{font-size:34px!important}
 <a class="btn" href="mailto:dan@dsproul.com?subject=Cuyahoga%20Valley%20Artwork%20Mockup%20Request">Request a Mockup</a>
 </div>
 </div>
-</article>
+<div aria-label="Cuyahoga Valley and Northeast Ohio artwork shown in interiors" class="featured-region-preview-grid"><a aria-label="Bridal Veil Falls in a quiet luxury living room. Explore the Cuyahoga Valley photography page." class="featured-region-preview-card" href="cuyahoga-valley-national-park-photography-prints.html"><img alt="Bridal Veil Falls Ohio artwork displayed above a limestone fireplace in a quiet luxury living room" decoding="async" height="1024" loading="lazy" src="bridal veil falls ohio in living room.jpg" width="1536"/><span>Bridal Veil Falls in a quiet luxury living room</span></a><a aria-label="Sunlit forest trail in a residential entryway. Explore the Cuyahoga Valley photography page." class="featured-region-preview-card" href="cuyahoga-valley-national-park-photography-prints.html"><img alt="Sunlit Cuyahoga Valley forest trail photograph displayed in a bright modern residential entryway" decoding="async" height="1511" loading="lazy" src="forest sunlit path in cuyahoga entryway .jpg" width="1041"/><span>Sunlit forest trail in a residential entryway</span></a><a aria-label="Tinker's Creek waterfall in a calm bedroom. Explore the Cuyahoga Valley photography page." class="featured-region-preview-card" href="cuyahoga-valley-national-park-photography-prints.html"><img alt="Great Falls of Tinker's Creek Ohio waterfall photograph displayed in a calm modern bedroom" decoding="async" height="1122" loading="lazy" src="tinkers creek waterfall in bedroom.jpg" width="1402"/><span>Tinker's Creek waterfall in a calm bedroom</span></a></div></article>
 <div class="ohio-map-layout">
 <div aria-label="Interactive map of featured Ohio photography locations" class="ohio-map-panel">
 <svg aria-labelledby="ohioMapTitle ohioMapDesc" class="ohio-map-svg" role="img" viewbox="0 0 430 500">
