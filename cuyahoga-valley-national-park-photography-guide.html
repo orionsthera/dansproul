@@ -13,20 +13,582 @@
 :root{--black:#110e0a;--cream:#f5efe5;--paper:#eee5d7;--ink:#211a13;--muted:rgba(33,26,19,.68);--gold:#c7a151;--line:rgba(170,124,47,.24);--max:1180px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--black);color:var(--cream);font-family:Jost,Arial,sans-serif;font-weight:300;letter-spacing:.025em;overflow-x:hidden}body::before{content:"";display:block;height:66px}img{display:block;width:100%;height:auto}a{color:inherit}h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:300;line-height:1.02;margin:0}p{margin:0;line-height:1.82}.nav{position:fixed;inset:0 0 auto;height:66px;z-index:50;background:rgba(12,10,8,.94);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 clamp(18px,4vw,46px);backdrop-filter:blur(12px)}.brand{text-decoration:none;text-transform:uppercase;font-weight:500;letter-spacing:.22em;font-size:15px}.brand small{display:block;color:var(--gold);font-size:8px;margin-top:5px}.navlinks{display:flex;align-items:center;gap:24px}.navlinks a{text-decoration:none;text-transform:uppercase;font-size:10px;font-weight:500;letter-spacing:.16em;color:rgba(245,239,229,.75)}.navlinks .shop{border:1px solid rgba(199,161,81,.6);color:var(--gold);padding:11px 16px}.toggle{display:none;background:none;border:1px solid var(--line);width:42px;height:42px}.toggle span{display:block;width:19px;height:2px;background:var(--cream);margin:4px auto}.hero{min-height:82vh;padding:150px clamp(22px,7vw,94px) 78px;display:flex;align-items:flex-end;background:linear-gradient(to top,rgba(12,10,8,.98),rgba(12,10,8,.58) 48%,rgba(12,10,8,.18)),url("sunlit-forest-trail-in-cuyahoga-valley-national-park-ohio-dan-sproul.jpg") center 48%/cover no-repeat}.hero-inner{max-width:960px}.eyebrow{font-size:9px;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);margin-bottom:17px}.hero h1{font-size:clamp(48px,7vw,92px);letter-spacing:-.035em}.hero h1 em{color:#e3c379}.lead{max-width:790px;margin-top:22px;font-size:clamp(15px,1.4vw,18px);color:rgba(245,239,229,.76)}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:27px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:43px;padding:0 18px;border:1px solid rgba(199,161,81,.48);text-decoration:none;text-transform:uppercase;font-size:9px;font-weight:500;letter-spacing:.17em}.btn.primary{background:var(--gold);color:var(--black)}.paper{background:var(--paper);color:var(--ink)}.section{padding:clamp(58px,7vw,98px) clamp(22px,7vw,94px)}.inner{max-width:var(--max);margin:auto}.intro{display:grid;grid-template-columns:1.5fr .8fr;gap:58px;align-items:start}.intro h2,.split h2,.closing h2{font-size:clamp(39px,5vw,66px);letter-spacing:-.03em}.intro p+p,.copy p+p{margin-top:17px}.route{background:#f8f1e7;border:1px solid rgba(35,25,15,.13);padding:28px}.route h3{font-size:27px;margin-bottom:18px}.route ol{padding-left:19px;margin:0}.route li{margin:9px 0;font-size:13px;line-height:1.5}.route a{color:#7d541f}.overview{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:34px}.overview-card{background:#f8f1e7;border:1px solid rgba(35,25,15,.12);padding:20px}.overview-card strong{display:block;font-family:"Cormorant Garamond",Georgia,serif;font-size:27px;font-weight:300}.overview-card span{display:block;color:var(--muted);font-size:11px;margin-top:6px;line-height:1.5}.timeline{margin-top:42px;display:grid;gap:12px}.day{display:grid;grid-template-columns:120px 1fr;gap:26px;padding:28px;background:#f8f1e7;border:1px solid rgba(35,25,15,.12)}.day-number{font-family:"Cormorant Garamond",Georgia,serif;font-size:35px;color:#8c5f23}.day h3{font-size:32px;margin-bottom:10px}.day p{font-size:13px;color:var(--muted)}.day-meta{margin-top:13px;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#8c5f23}.toc{position:sticky;top:86px;background:#fbf6ee;border:1px solid rgba(35,25,15,.13);padding:24px}.toc h3{font-size:25px;margin-bottom:12px}.toc a{display:block;color:#6f4b1d;text-decoration:none;font-size:12px;line-height:1.75}.feature{margin-top:64px}.feature a{display:block;text-decoration:none}.feature img{max-height:720px;object-fit:cover}.caption{background:#fbf6ee;padding:16px 18px;border:1px solid rgba(35,25,15,.12);font-size:12px;color:var(--muted)}.caption strong{display:block;color:#8c5f23;text-transform:uppercase;font-size:9px;letter-spacing:.17em;margin-top:7px}.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(34px,6vw,82px);align-items:center}.split.reverse .visual{order:2}.copy .eyebrow{color:#8d6227}.copy p{color:var(--muted);font-size:14px}.visual{background:#f8f1e7;padding:8px;box-shadow:0 12px 30px rgba(48,33,17,.1)}.visual img{max-height:680px;object-fit:cover}.dark{background:#100d0a}.dark .section-head{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:end;margin-bottom:34px}.dark h2{font-size:clamp(39px,5vw,67px)}.dark .section-head p{color:rgba(245,239,229,.66)}.rank-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.rank{padding:25px;background:#15110d;border:1px solid var(--line)}.rank span{color:var(--gold);font-size:9px;letter-spacing:.18em;text-transform:uppercase}.rank h3{font-size:30px;margin-top:10px}.rank p{font-size:12px;color:rgba(245,239,229,.64);margin-top:10px}.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.card{border:1px solid var(--line);background:#15110d;text-decoration:none;display:grid;grid-template-rows:220px 1fr;overflow:hidden}.card img{height:220px;object-fit:cover;transition:transform .4s ease}.card:hover img{transform:scale(1.025)}.card-body{padding:21px}.card h3{font-size:27px;margin-bottom:10px}.card p{font-size:12px;color:rgba(245,239,229,.64);line-height:1.65}.card span{display:block;margin-top:15px;color:var(--gold);font-size:8px;letter-spacing:.17em;text-transform:uppercase}.tips{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:36px}.tip{background:#f8f1e7;border:1px solid rgba(35,25,15,.12);padding:22px}.tip h3{font-size:24px}.tip p{font-size:12px;color:var(--muted);margin-top:9px}.resources{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:36px}.resource{padding:24px;background:#15110d;border:1px solid var(--line);text-decoration:none}.resource strong{font-family:"Cormorant Garamond",Georgia,serif;font-size:27px;font-weight:300}.resource span{display:block;color:rgba(245,239,229,.6);font-size:12px;margin-top:8px;line-height:1.6}.faq{margin-top:36px}.faq details{border-top:1px solid rgba(35,25,15,.14);padding:18px 0}.faq details:last-child{border-bottom:1px solid rgba(35,25,15,.14)}.faq summary{cursor:pointer;list-style:none;font-family:"Cormorant Garamond",Georgia,serif;font-size:27px}.faq summary::-webkit-details-marker{display:none}.faq summary::after{content:"+";float:right;color:#8c5f23}.faq details[open] summary::after{content:"–"}.faq p{color:var(--muted);font-size:14px;padding-top:11px;max-width:850px}.closing{display:grid;grid-template-columns:.85fr 1.15fr;gap:60px}.closing .copy{padding-top:8px}.cta-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:45px}.cta{background:#fbf6ee;border:1px solid rgba(35,25,15,.13);padding:27px;text-decoration:none}.cta h3{font-size:31px}.cta p{font-size:12px;color:var(--muted);margin-top:10px}.cta span{display:block;color:#8c5f23;margin-top:17px;text-transform:uppercase;font-size:8px;letter-spacing:.17em}.footer{padding:56px clamp(22px,7vw,94px) 30px;background:#0c0a08;border-top:1px solid var(--line)}.footer-grid{max-width:1380px;margin:auto;display:grid;grid-template-columns:repeat(5,1fr);gap:30px}.footer h3{font-size:20px;color:var(--gold);margin-bottom:12px}.footer a{display:block;text-decoration:none;color:rgba(245,239,229,.65);font:12px/2 Arial,sans-serif}.bottom{max-width:1380px;margin:36px auto 0;padding-top:22px;border-top:1px solid var(--line);text-align:center;text-transform:uppercase;font-size:8px;letter-spacing:.18em;color:rgba(245,239,229,.36)}
 @media(max-width:1000px){.toggle{display:block}.navlinks{position:fixed;top:66px;left:0;right:0;display:none;flex-direction:column;align-items:flex-start;background:#0c0a08;padding:18px 24px}.nav.open .navlinks{display:flex}.intro,.split,.closing,.dark .section-head{grid-template-columns:1fr}.split.reverse .visual{order:0}.gallery{grid-template-columns:repeat(2,1fr)}.tips{grid-template-columns:repeat(2,1fr)}.overview{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:680px){body::before{height:64px}.hero{min-height:63vh;padding:105px 20px 44px}.hero h1{font-size:clamp(2.55rem,11vw,3.45rem)}.lead{font-size:14px;line-height:1.6}.section{padding:45px 20px}.intro{gap:28px}.feature{margin-top:34px}.day{grid-template-columns:1fr;gap:8px;padding:20px}.gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.card{grid-template-rows:125px 1fr}.card img{height:125px}.card-body{padding:13px}.card h3{font-size:20px}.card p{display:none}.card span{font-size:7px;margin-top:10px}.tips,.resources,.cta-grid,.rank-grid{grid-template-columns:1fr 1fr}.tip,.resource,.cta,.rank{padding:15px}.resource strong,.cta h3{font-size:22px}.footer-grid{grid-template-columns:1fr 1fr}.footer{padding:38px 20px 25px}.actions .btn{flex:1;padding:0 10px;font-size:8px}.visual img,.feature img{max-height:none;object-fit:contain}.toc{position:static}.overview{grid-template-columns:1fr 1fr}}@media(max-width:390px){.gallery,.tips,.resources,.cta-grid,.footer-grid,.rank-grid,.overview{grid-template-columns:1fr}}
+
+/* ── CUYAHOGA GUIDE POLISH PASS ───────────────────────────── */
+.intro h2{margin-bottom:20px}
+.copy h2{margin-bottom:20px}
+.copy .eyebrow + h2{margin-bottom:20px}
+.split{row-gap:40px}
+.visual{align-self:start}
+.visual img{width:100%;height:auto;object-fit:contain}
+.caption{line-height:1.55}
+.caption strong{margin-top:9px}
+.dark .section-head{margin-bottom:42px}
+.dark .section-head h2{max-width:760px}
+.rank h3{line-height:1.08}
+.resources{row-gap:12px}
+.resource{min-height:150px}
+.gallery{row-gap:12px}
+.card{min-height:100%}
+.card h3{line-height:1.08}
+.card-body{display:flex;flex-direction:column}
+.card-body span{margin-top:auto;padding-top:14px}
+.bedford-grid{
+  display:grid;
+  grid-template-columns:1.15fr .925fr .925fr;
+  gap:12px;
+  align-items:stretch;
+}
+.bedford-photo{
+  display:block;
+  min-height:360px;
+  overflow:hidden;
+  border:1px solid var(--line);
+  background:#15110d;
+  text-decoration:none;
+}
+.bedford-photo img{
+  width:100%;
+  height:270px;
+  object-fit:cover;
+}
+.bedford-photo-copy{padding:22px}
+.bedford-photo-copy h3{font-size:28px;line-height:1.08}
+.bedford-photo-copy p{font-size:12px;color:rgba(245,239,229,.64);margin-top:10px}
+.bedford-photo-copy span{
+  display:block;
+  margin-top:15px;
+  color:var(--gold);
+  font-size:8px;
+  letter-spacing:.17em;
+  text-transform:uppercase;
+}
+.bedford-resource{
+  display:flex;
+  flex-direction:column;
+  min-height:360px;
+  padding:25px;
+  border:1px solid var(--line);
+  background:#15110d;
+  text-decoration:none;
+}
+.bedford-resource .eyebrow{margin-bottom:12px}
+.bedford-resource h3{font-size:30px;line-height:1.08}
+.bedford-resource p{font-size:12px;color:rgba(245,239,229,.64);margin-top:12px}
+.bedford-resource span{
+  display:block;
+  margin-top:auto;
+  padding-top:18px;
+  color:var(--gold);
+  font-size:8px;
+  letter-spacing:.17em;
+  text-transform:uppercase;
+}
+@media(max-width:1000px){
+  .bedford-grid{grid-template-columns:1fr 1fr}
+  .bedford-photo{grid-column:1/-1}
+  .visual{max-width:720px;width:100%;margin-inline:auto}
+}
+@media(max-width:680px){
+  .copy h2,.intro h2{margin-bottom:15px}
+  .split{gap:28px}
+  .section{padding-top:52px;padding-bottom:52px}
+  .dark .section-head{margin-bottom:28px}
+  .bedford-grid{grid-template-columns:1fr}
+  .bedford-photo{grid-column:auto;min-height:0}
+  .bedford-photo img{height:auto;max-height:none;object-fit:contain}
+  .bedford-resource{min-height:0}
+  .caption{padding:13px 14px}
+}
+
+
+/* ── TIMELINE LABEL SPACING FIX ─────────────────────────────── */
+.day{
+  grid-template-columns:160px minmax(0,1fr);
+  column-gap:34px;
+}
+.day-number{
+  line-height:1.05;
+  overflow-wrap:normal;
+  word-break:normal;
+}
+.day > div:last-child{
+  min-width:0;
+}
+@media(max-width:760px){
+  .day{
+    grid-template-columns:1fr;
+    row-gap:12px;
+  }
+  .day-number{
+    font-size:31px;
+  }
+}
+
 </style>
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@graph":[
-    {"@type":"Person","@id":"https://dsproul.com/#dan-sproul","name":"Dan Sproul","url":"https://dsproul.com","jobTitle":"Fine Art Photographer and Mixed Media Artist","homeLocation":{"@type":"Place","name":"Lima, Ohio"}},
-    {"@type":"BlogPosting","@id":"https://dsproul.com/cuyahoga-valley-national-park-photography-guide.html#article","headline":"Cuyahoga Valley National Park Photography Guide: Forest Light, Waterfalls, and Historic Bridges","description":"A personal Cuyahoga Valley National Park photography guide with a one-day route, seasonal guidance, camera tips, nearby Bedford Reservation stops, and original Ohio photographs.","image":["https://dsproul.com/sunlit-forest-trail-in-cuyahoga-valley-national-park-ohio-dan-sproul.jpg","https://dsproul.com/brandywine-falls-ohio-framed-by-summer-leaves-long-exposure-dan-sproul.jpg","https://dsproul.com/ohio-turnpike-bridge-cuyahoga-valley-national-park-dan-sproul.jpg"],"author":{"@id":"https://dsproul.com/#dan-sproul"},"publisher":{"@type":"Organization","name":"Dan Sproul Fine Art Photography","url":"https://dsproul.com"},"mainEntityOfPage":"https://dsproul.com/cuyahoga-valley-national-park-photography-guide.html","datePublished":"2026-08-06","dateModified":"2026-08-06","about":["Cuyahoga Valley National Park photography","Brandywine Falls photography","Northeast Ohio photography locations","Ohio waterfall photography","forest photography tips"]},
-    {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://dsproul.com/"},{"@type":"ListItem","position":2,"name":"Journal","item":"https://dsproul.com/blog.html"},{"@type":"ListItem","position":3,"name":"Cuyahoga Valley Photography Guide","item":"https://dsproul.com/cuyahoga-valley-national-park-photography-guide.html"}]},
-    {"@type":"FAQPage","mainEntity":[
-      {"@type":"Question","name":"What are the best photography locations in Cuyahoga Valley National Park?","acceptedAnswer":{"@type":"Answer","text":"Brandywine Falls, woodland trails, the Ledges area, river and bridge viewpoints, and smaller creek scenes all offer different photographic possibilities. The best choice depends on light, water flow, season, and the amount of time available."}},
-      {"@type":"Question","name":"When is the best time to photograph Brandywine Falls?","acceptedAnswer":{"@type":"Answer","text":"Early morning or later in the day can help with parking and softer light. Overcast weather is often useful for controlling contrast, while recent rainfall can increase water flow. Always check current NPS conditions and stay within designated viewing areas."}},
-      {"@type":"Question","name":"Are Bridal Veil Falls and Great Falls of Tinker's Creek inside Cuyahoga Valley National Park?","acceptedAnswer":{"@type":"Answer","text":"No. Both are in Bedford Reservation, part of Cleveland Metroparks, and should be treated as a separate nearby Northeast Ohio extension."}},
-      {"@type":"Question","name":"Do photographers need a tripod in Cuyahoga Valley?","acceptedAnswer":{"@type":"Answer","text":"A tripod is useful for waterfalls, shaded forest scenes, and carefully composed architecture, but handheld photography can work well when light is stronger or when mobility matters more."}}
-    ]}
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://dsproul.com/#dan-sproul",
+      "name": "Dan Sproul",
+      "url": "https://dsproul.com",
+      "jobTitle": "Fine Art Photographer and Mixed Media Artist",
+      "homeLocation": {
+        "@type": "Place",
+        "name": "Lima, Ohio"
+      },
+      "sameAs": [
+        "https://dansproul.com",
+        "https://fineartamerica.com/profiles/1-dan-sproul",
+        "https://www.pinterest.com/dansproul/",
+        "https://www.linkedin.com/in/dan-sproul-bb55015a/",
+        "https://medium.com/@sprould99"
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://dsproul.com/cuyahoga-valley-national-park-photography-guide.html#article",
+      "headline": "Cuyahoga Valley National Park Photography Guide: Forest Light, Waterfalls, and Historic Bridges",
+      "description": "A personal Cuyahoga Valley National Park photography guide with a one-day route, seasonal guidance, camera tips, nearby Bedford Reservation stops, and original Ohio photographs.",
+      "image": [
+        "https://dsproul.com/sunlit-forest-trail-in-cuyahoga-valley-national-park-ohio-dan-sproul.jpg",
+        "https://dsproul.com/brandywine-falls-ohio-framed-by-summer-leaves-long-exposure-dan-sproul.jpg",
+        "https://dsproul.com/brecksville-northfield-bridge-reflection-cuyahoga-valley-ohio-dan-sproul.jpg",
+        "https://dsproul.com/flowing-water-and-moss-at-chippewa-creek-ohio-dan-sproul.jpg",
+        "https://dsproul.com/resilient-sapling-among-chippewa-creek-boulders-in-ohio-dan-sproul.jpg",
+        "https://dsproul.com/morning-light-in-the-chippewa-creek-forest-brecksville-ohio-dan-sproul.jpg",
+        "https://dsproul.com/cuyahoga-valley-national-park-bridge-dan-sproul.jpg",
+        "https://dsproul.com/majestic-waterfall-in-a-forest-dan-sproul.jpg"
+      ],
+      "author": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Dan Sproul Fine Art Photography",
+        "url": "https://dsproul.com"
+      },
+      "mainEntityOfPage": "https://dsproul.com/cuyahoga-valley-national-park-photography-guide.html",
+      "datePublished": "2026-08-06",
+      "dateModified": "2026-08-07",
+      "about": [
+        "Cuyahoga Valley National Park photography",
+        "Brandywine Falls photography",
+        "Northeast Ohio photography locations",
+        "Ohio waterfall photography",
+        "forest photography tips"
+      ],
+      "hasPart": {
+        "@id": "https://dsproul.com/cuyahoga-valley-national-park-photography-guide.html#photographs"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dsproul.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Journal",
+          "item": "https://dsproul.com/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Cuyahoga Valley Photography Guide",
+          "item": "https://dsproul.com/cuyahoga-valley-national-park-photography-guide.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the best photography locations in Cuyahoga Valley National Park?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Brandywine Falls, woodland trails, the Ledges area, river and bridge viewpoints, and smaller creek scenes all offer different photographic possibilities. The best choice depends on light, water flow, season, and the amount of time available."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When is the best time to photograph Brandywine Falls?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Early morning or later in the day can help with parking and softer light. Overcast weather is often useful for controlling contrast, while recent rainfall can increase water flow. Always check current NPS conditions and stay within designated viewing areas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are Bridal Veil Falls and Great Falls of Tinker's Creek inside Cuyahoga Valley National Park?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Both are in Bedford Reservation, part of Cleveland Metroparks, and should be treated as a separate nearby Northeast Ohio extension."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do photographers need a tripod in Cuyahoga Valley?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A tripod is useful for waterfalls, shaded forest scenes, and carefully composed architecture, but handheld photography can work well when light is stronger or when mobility matters more."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://dsproul.com/cuyahoga-valley-national-park-photography-guide.html#artwork-sunlit-forest-trail",
+      "name": "Sunlit Forest Trail in Cuyahoga Valley National Park Ohio",
+      "artform": "Photography",
+      "artMedium": "Fine art photography",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "url": "https://dansproul.com/featured/sunlit-forest-trail-in-cuyahoga-valley-national-park-ohio-dan-sproul.html",
+      "contentLocation": {
+        "@type": "Place",
+        "name": "Cuyahoga Valley National Park, Ohio"
+      },
+      "image": {
+        "@id": "https://dsproul.com/cuyahoga-valley-national-park-photography-guide.html#image-sunlit-forest-trail"
+      }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/cuyahoga-valley-national-park-photography-guide.html#image-sunlit-forest-trail",
+      "contentUrl": "https://dsproul.com/sunlit-forest-trail-in-cuyahoga-valley-national-park-ohio-dan-sproul.jpg",
+      "name": "Sunlit Forest Trail in Cuyahoga Valley National Park Ohio by Dan Sproul",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "contentLocation": {
+        "@type": "Place",
+        "name": "Cuyahoga Valley National Park, Ohio"
+      }
+    },
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://dsproul.com/cuyahoga-valley-national-park-photography-guide.html#artwork-brandywine-falls",
+      "name": "Brandywine Falls Framed by Summer Leaves",
+      "artform": "Photography",
+      "artMedium": "Fine art photography",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "url": "https://dansproul.com/featured/brandywine-falls-ohio-framed-by-summer-leaves-long-exposure-dan-sproul.html",
+      "contentLocation": {
+        "@type": "Place",
+        "name": "Brandywine Falls, Cuyahoga Valley National Park, Ohio"
+      },
+      "image": {
+        "@id": "https://dsproul.com/cuyahoga-valley-national-park-photography-guide.html#image-brandywine-falls"
+      }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/cuyahoga-valley-national-park-photography-guide.html#image-brandywine-falls",
+      "contentUrl": "https://dsproul.com/brandywine-falls-ohio-framed-by-summer-leaves-long-exposure-dan-sproul.jpg",
+      "name": "Brandywine Falls Framed by Summer Leaves by Dan Sproul",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "contentLocation": {
+        "@type": "Place",
+        "name": "Brandywine Falls, Cuyahoga Valley National Park, Ohio"
+      }
+    },
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://dsproul.com/cuyahoga-valley-national-park-photography-guide.html#artwork-bridge-reflection",
+      "name": "Brecksville-Northfield Bridge Reflection",
+      "artform": "Photography",
+      "artMedium": "Fine art photography",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "url": "https://dansproul.com/featured/brecksville-northfield-bridge-reflection-cuyahoga-valley-ohio-dan-sproul.html",
+      "contentLocation": {
+        "@type": "Place",
+        "name": "Cuyahoga Valley, Ohio"
+      },
+      "image": {
+        "@id": "https://dsproul.com/cuyahoga-valley-national-park-photography-guide.html#image-bridge-reflection"
+      }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/cuyahoga-valley-national-park-photography-guide.html#image-bridge-reflection",
+      "contentUrl": "https://dsproul.com/brecksville-northfield-bridge-reflection-cuyahoga-valley-ohio-dan-sproul.jpg",
+      "name": "Brecksville-Northfield Bridge Reflection by Dan Sproul",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "contentLocation": {
+        "@type": "Place",
+        "name": "Cuyahoga Valley, Ohio"
+      }
+    },
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://dsproul.com/cuyahoga-valley-national-park-photography-guide.html#artwork-flowing-water",
+      "name": "Flowing Water and Moss at Chippewa Creek",
+      "artform": "Photography",
+      "artMedium": "Fine art photography",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "url": "https://dansproul.com/featured/flowing-water-and-moss-at-chippewa-creek-ohio-dan-sproul.html",
+      "contentLocation": {
+        "@type": "Place",
+        "name": "Chippewa Creek, Ohio"
+      },
+      "image": {
+        "@id": "https://dsproul.com/cuyahoga-valley-national-park-photography-guide.html#image-flowing-water"
+      }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/cuyahoga-valley-national-park-photography-guide.html#image-flowing-water",
+      "contentUrl": "https://dsproul.com/flowing-water-and-moss-at-chippewa-creek-ohio-dan-sproul.jpg",
+      "name": "Flowing Water and Moss at Chippewa Creek by Dan Sproul",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "contentLocation": {
+        "@type": "Place",
+        "name": "Chippewa Creek, Ohio"
+      }
+    },
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://dsproul.com/cuyahoga-valley-national-park-photography-guide.html#artwork-sapling",
+      "name": "Resilient Sapling Among Chippewa Creek Boulders",
+      "artform": "Photography",
+      "artMedium": "Fine art photography",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "url": "https://dansproul.com/featured/resilient-sapling-among-chippewa-creek-boulders-in-ohio-dan-sproul.html",
+      "contentLocation": {
+        "@type": "Place",
+        "name": "Chippewa Creek, Ohio"
+      },
+      "image": {
+        "@id": "https://dsproul.com/cuyahoga-valley-national-park-photography-guide.html#image-sapling"
+      }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/cuyahoga-valley-national-park-photography-guide.html#image-sapling",
+      "contentUrl": "https://dsproul.com/resilient-sapling-among-chippewa-creek-boulders-in-ohio-dan-sproul.jpg",
+      "name": "Resilient Sapling Among Chippewa Creek Boulders by Dan Sproul",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "contentLocation": {
+        "@type": "Place",
+        "name": "Chippewa Creek, Ohio"
+      }
+    },
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://dsproul.com/cuyahoga-valley-national-park-photography-guide.html#artwork-morning-forest",
+      "name": "Morning Light in the Chippewa Creek Forest",
+      "artform": "Photography",
+      "artMedium": "Fine art photography",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "url": "https://dansproul.com/featured/morning-light-in-the-chippewa-creek-forest-brecksville-ohio-dan-sproul.html",
+      "contentLocation": {
+        "@type": "Place",
+        "name": "Brecksville, Ohio"
+      },
+      "image": {
+        "@id": "https://dsproul.com/cuyahoga-valley-national-park-photography-guide.html#image-morning-forest"
+      }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/cuyahoga-valley-national-park-photography-guide.html#image-morning-forest",
+      "contentUrl": "https://dsproul.com/morning-light-in-the-chippewa-creek-forest-brecksville-ohio-dan-sproul.jpg",
+      "name": "Morning Light in the Chippewa Creek Forest by Dan Sproul",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "contentLocation": {
+        "@type": "Place",
+        "name": "Brecksville, Ohio"
+      }
+    },
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://dsproul.com/cuyahoga-valley-national-park-photography-guide.html#artwork-turnpike-bridge",
+      "name": "Cuyahoga Valley National Park Bridge",
+      "artform": "Photography",
+      "artMedium": "Fine art photography",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "url": "https://dansproul.com/featured/cuyahoga-valley-national-park-bridge-dan-sproul.html",
+      "contentLocation": {
+        "@type": "Place",
+        "name": "Cuyahoga Valley region, Ohio"
+      },
+      "image": {
+        "@id": "https://dsproul.com/cuyahoga-valley-national-park-photography-guide.html#image-turnpike-bridge"
+      }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/cuyahoga-valley-national-park-photography-guide.html#image-turnpike-bridge",
+      "contentUrl": "https://dsproul.com/cuyahoga-valley-national-park-bridge-dan-sproul.jpg",
+      "name": "Cuyahoga Valley National Park Bridge by Dan Sproul",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "contentLocation": {
+        "@type": "Place",
+        "name": "Cuyahoga Valley region, Ohio"
+      }
+    },
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://dsproul.com/cuyahoga-valley-national-park-photography-guide.html#artwork-forest-waterfall",
+      "name": "Majestic Waterfall in a Forest",
+      "artform": "Photography",
+      "artMedium": "Fine art photography",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "url": "https://dansproul.com/featured/majestic-waterfall-in-a-forest-dan-sproul.html",
+      "contentLocation": {
+        "@type": "Place",
+        "name": "Northeast Ohio"
+      },
+      "image": {
+        "@id": "https://dsproul.com/cuyahoga-valley-national-park-photography-guide.html#image-forest-waterfall"
+      }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/cuyahoga-valley-national-park-photography-guide.html#image-forest-waterfall",
+      "contentUrl": "https://dsproul.com/majestic-waterfall-in-a-forest-dan-sproul.jpg",
+      "name": "Majestic Waterfall in a Forest by Dan Sproul",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "contentLocation": {
+        "@type": "Place",
+        "name": "Northeast Ohio"
+      }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://dsproul.com/cuyahoga-valley-national-park-photography-guide.html#photographs",
+      "name": "Photographs featured in the Cuyahoga Valley National Park photography guide",
+      "numberOfItems": 8,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://dsproul.com/cuyahoga-valley-national-park-photography-guide.html#artwork-sunlit-forest-trail"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://dsproul.com/cuyahoga-valley-national-park-photography-guide.html#artwork-brandywine-falls"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://dsproul.com/cuyahoga-valley-national-park-photography-guide.html#artwork-bridge-reflection"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://dsproul.com/cuyahoga-valley-national-park-photography-guide.html#artwork-flowing-water"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@id": "https://dsproul.com/cuyahoga-valley-national-park-photography-guide.html#artwork-sapling"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@id": "https://dsproul.com/cuyahoga-valley-national-park-photography-guide.html#artwork-morning-forest"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@id": "https://dsproul.com/cuyahoga-valley-national-park-photography-guide.html#artwork-turnpike-bridge"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "item": {
+            "@id": "https://dsproul.com/cuyahoga-valley-national-park-photography-guide.html#artwork-forest-waterfall"
+          }
+        }
+      ]
+    }
   ]
 }
 </script>
@@ -56,7 +618,7 @@
 
 <section class="section paper"><div class="inner split reverse"><div class="visual"><a href="https://dansproul.com/featured/brecksville-northfield-bridge-reflection-cuyahoga-valley-ohio-dan-sproul.html" target="_blank" rel="noopener"><img src="brecksville-northfield-bridge-reflection-cuyahoga-valley-ohio-dan-sproul.jpg" alt="Brecksville Northfield Bridge reflected in the Cuyahoga River" loading="lazy"></a><div class="caption">Brecksville-Northfield Bridge Reflection<strong>View this print →</strong></div></div><div class="copy"><p class="eyebrow">Architecture and reflection</p><h2>Let the river complete the bridge.</h2><p>The Brecksville-Northfield Bridge is a strong architectural subject on its own, but the reflection extends the center pier and gives the vertical frame a second layer of symmetry.</p><p>I balanced the bridge with the surrounding green valley rather than isolating it as pure engineering. That relationship between human structure and the Cuyahoga landscape is central to the region's visual character.</p><p>For reflective scenes, small changes in position matter. Move until the reflected pier, arches, and river edges align. A polarizer can reduce glare, but be careful not to remove the reflection that makes the composition work.</p></div></div></section>
 
-<section class="section paper"><div class="inner split"><div class="copy"><p class="eyebrow">Repetition beneath the Turnpike</p><h2>Compression turns concrete arches into a long visual corridor.</h2><p>The underside of the Ohio Turnpike bridge offered a very different interpretation of the valley. From the right position, the repeated concrete arches receded toward a distant opening, creating a tunnel-like rhythm through the landscape.</p><p>The strength of the photograph comes from alignment. The center seam, arch openings, overhead beams, and narrow path all lead toward the same vanishing area. A longer focal length or a carefully chosen distant position can compress repeated structures and make the pattern feel denser.</p><p>This is a reminder that a Cuyahoga Valley photography guide should not be limited to waterfalls and trees. Infrastructure is part of the story. Bridges reveal how transportation, industry, water, and forest occupy the same narrow corridor.</p></div><div class="visual"><a href="https://dansproul.com/featured/cuyahoga-valley-national-park-bridge-dan-sproul.html" target="_blank" rel="noopener"><img src="ohio-turnpike-bridge-cuyahoga-valley-national-park-dan-sproul.jpg" alt="Repeated concrete arches beneath the Ohio Turnpike bridge in the Cuyahoga Valley region" loading="lazy"></a><div class="caption">Ohio Turnpike Bridge · Cuyahoga Valley Region<strong>View this print →</strong></div></div></div></section>
+<section class="section paper"><div class="inner split"><div class="copy"><p class="eyebrow">Repetition beneath the Turnpike</p><h2>Compression turns concrete arches into a long visual corridor.</h2><p>The underside of the Ohio Turnpike bridge offered a very different interpretation of the valley. From the right position, the repeated concrete arches receded toward a distant opening, creating a tunnel-like rhythm through the landscape.</p><p>The strength of the photograph comes from alignment. The center seam, arch openings, overhead beams, and narrow path all lead toward the same vanishing area. A longer focal length or a carefully chosen distant position can compress repeated structures and make the pattern feel denser.</p><p>This is a reminder that a Cuyahoga Valley photography guide should not be limited to waterfalls and trees. Infrastructure is part of the story. Bridges reveal how transportation, industry, water, and forest occupy the same narrow corridor.</p></div><div class="visual"><a href="https://dansproul.com/featured/cuyahoga-valley-national-park-bridge-dan-sproul.html" target="_blank" rel="noopener"><img src="cuyahoga-valley-national-park-bridge-dan-sproul.jpg" alt="Repeated concrete arches beneath the Ohio Turnpike bridge in the Cuyahoga Valley region" loading="lazy"></a><div class="caption">Ohio Turnpike Bridge · Cuyahoga Valley Region<strong>View this print →</strong></div></div></div></section>
 
 <section class="section dark" id="favorites"><div class="inner"><div class="section-head"><div><p class="eyebrow">Favorite photography subjects</p><h2>The places and visual ideas I would prioritize again.</h2></div><p>These are not ranked only by fame. They represent the variety that makes the region worth photographing: light, water, intimate detail, architecture, and a nearby extension into Bedford Reservation.</p></div><div class="rank-grid"><div class="rank"><span>01 · Forest trails</span><h3>Best early light</h3><p>Directional sunlight, mist, and a receding path can turn dense woodland into a clear, inviting composition.</p></div><div class="rank"><span>02 · Brandywine Falls</span><h3>Signature waterfall</h3><p>The stepped rock and vertical flow offer a recognizable scene that changes dramatically with water volume and season.</p></div><div class="rank"><span>03 · Chippewa Creek</span><h3>Best intimate landscapes</h3><p>Small falls, moss, boulders, roots, and reflected foliage reward careful observation more than hurried coverage.</p></div><div class="rank"><span>04 · Bridge reflections</span><h3>Best sense of place</h3><p>Architecture becomes more specific to the valley when it is shown with the river, forest, and reflected structure.</p></div><div class="rank"><span>05 · Turnpike arches</span><h3>Best repeating pattern</h3><p>Concrete, compression, and symmetry produce a graphic image unlike the park's more familiar nature scenes.</p></div><div class="rank"><span>06 · Bedford Reservation</span><h3>Best nearby extension</h3><p>Bridal Veil Falls, Great Falls, gorge views, and historic infrastructure can add a second chapter to the day.</p></div></div></div></section>
 
@@ -64,9 +626,77 @@
 
 <section class="section paper" id="seasons"><div class="inner closing"><div><p class="eyebrow">Best seasons and weather</p><h2>The park changes more than the map suggests.</h2></div><div class="copy"><p><strong>Spring</strong> brings stronger water flow, fresh leaves, wildflowers, mud, and quickly changing conditions. It can be ideal for waterfalls when the light is soft and the trails are safely passable.</p><p><strong>Summer</strong> creates deep greens and a dense canopy. Early morning becomes especially important because midday forest light can be contrasty and parking at popular locations can fill quickly.</p><p><strong>Autumn</strong> adds color but also crowds. Look beyond the most obvious overlook and use leaves as framing, reflected color, or small foreground subjects.</p><p><strong>Winter</strong> exposes structure. Bare trees, ice, snow, rock layers, and simplified architecture can produce quieter images, but boardwalks and trails may close or become hazardous.</p><p><strong>Overcast weather</strong> is often excellent for moving water and woodland detail. <strong>Broken clouds</strong> can produce the most dramatic forest light, but require patience and quick exposure changes.</p></div></div></section>
 
-<section class="section dark" id="bedford"><div class="inner"><div class="section-head"><div><p class="eyebrow">Nearby Northeast Ohio extension</p><h2>Bedford Reservation is a separate but natural second chapter.</h2></div><p>Bridal Veil Falls and Great Falls of Tinker's Creek belong to Bedford Reservation, not Cuyahoga Valley National Park. Keeping that distinction clear makes the guide more trustworthy while still showing how closely connected Northeast Ohio's park landscapes can feel.</p></div><div class="gallery"><a class="card" href="https://dansproul.com/featured/bridal-veil-falls-morning-light-in-bedford-reservation-ohio-dan-sproul.html" target="_blank" rel="noopener"><img src="bridal-veil-falls-morning-light-in-bedford-reservation-ohio-dan-sproul.jpg" alt="Bridal Veil Falls morning light in Bedford Reservation Ohio" loading="lazy"><div class="card-body"><h3>Bridal Veil Falls</h3><p>A long, layered cascade surrounded by hardwoods and hemlocks.</p><span>View this print →</span></div></a><a class="card" href="https://dansproul.com/featured/great-falls-of-tinkers-creek-ohio-long-exposure-waterfall-dan-sproul.html" target="_blank" rel="noopener"><img src="great-falls-of-tinkers-creek-ohio-long-exposure-waterfall-dan-sproul.jpg" alt="Great Falls of Tinker's Creek long exposure in Bedford Reservation Ohio" loading="lazy"><div class="card-body"><h3>Great Falls of Tinker's Creek</h3><p>Powerful water, rock, vegetation, and the remains of a historic industrial landscape.</p><span>View this print →</span></div></a><a class="card" href="https://dansproul.com/featured/majestic-waterfall-in-a-forest-dan-sproul.html" target="_blank" rel="noopener"><img src="majestic-waterfall-in-a-forest-dan-sproul.jpg" alt="Wide forest waterfall study by Dan Sproul" loading="lazy"><div class="card-body"><h3>Forest Waterfall Study</h3><p>A wider environmental composition showing water, ledges, timber, and surrounding forest.</p><span>View this print →</span></div></a></div></div></section>
+<section class="section dark" id="bedford">
+  <div class="inner">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Nearby Northeast Ohio extension</p>
+        <h2>Bedford Reservation is a separate but natural second chapter.</h2>
+      </div>
+      <p>Bridal Veil Falls and Great Falls of Tinker's Creek belong to Bedford Reservation, not Cuyahoga Valley National Park. I keep that distinction clear while including Bedford as an optional nearby extension for photographers who want another gorge-and-waterfall landscape in the same Northeast Ohio trip.</p>
+    </div>
 
-<section class="section dark" id="photographs"><div class="inner"><div class="section-head"><div><p class="eyebrow">Photographs from the valley</p><h2>Forest, water, stone, bridges, and Northeast Ohio light.</h2></div><p>Each photograph links to the finished print. Together they show why Cuyahoga Valley is more than one waterfall or one trail—it is a layered regional landscape shaped by nature and human history.</p></div><div class="gallery"><a class="card" href="https://dansproul.com/featured/sunlit-forest-trail-in-cuyahoga-valley-national-park-ohio-dan-sproul.html" target="_blank" rel="noopener"><img src="sunlit-forest-trail-in-cuyahoga-valley-national-park-ohio-dan-sproul.jpg" alt="Sunlit forest trail"><div class="card-body"><h3>Sunlit Forest Trail</h3><p>A bright opening and receding path through dense Ohio woodland.</p><span>View this print →</span></div></a><a class="card" href="https://dansproul.com/featured/brandywine-falls-ohio-framed-by-summer-leaves-long-exposure-dan-sproul.html" target="_blank" rel="noopener"><img src="brandywine-falls-ohio-framed-by-summer-leaves-long-exposure-dan-sproul.jpg" alt="Brandywine Falls framed by leaves"><div class="card-body"><h3>Brandywine Falls</h3><p>Stepped water framed by summer green.</p><span>View this print →</span></div></a><a class="card" href="https://dansproul.com/featured/brecksville-northfield-bridge-reflection-cuyahoga-valley-ohio-dan-sproul.html" target="_blank" rel="noopener"><img src="brecksville-northfield-bridge-reflection-cuyahoga-valley-ohio-dan-sproul.jpg" alt="Brecksville Northfield Bridge reflection"><div class="card-body"><h3>Bridge Reflection</h3><p>Historic architecture extended through the river.</p><span>View this print →</span></div></a><a class="card" href="https://dansproul.com/featured/flowing-water-and-moss-at-chippewa-creek-ohio-dan-sproul.html" target="_blank" rel="noopener"><img src="flowing-water-and-moss-at-chippewa-creek-ohio-dan-sproul.jpg" alt="Flowing water at Chippewa Creek"><div class="card-body"><h3>Flowing Water and Moss</h3><p>An intimate creek detail built from repetition and reflected green.</p><span>View this print →</span></div></a><a class="card" href="https://dansproul.com/featured/resilient-sapling-among-chippewa-creek-boulders-in-ohio-dan-sproul.html" target="_blank" rel="noopener"><img src="resilient-sapling-among-chippewa-creek-boulders-in-ohio-dan-sproul.jpg" alt="Sapling among Chippewa Creek boulders"><div class="card-body"><h3>Resilient Sapling</h3><p>A small living subject above heavy stone and moving water.</p><span>View this print →</span></div></a><a class="card" href="https://dansproul.com/featured/morning-light-in-the-chippewa-creek-forest-brecksville-ohio-dan-sproul.html" target="_blank" rel="noopener"><img src="morning-light-in-the-chippewa-creek-forest-brecksville-ohio-dan-sproul.jpg" alt="Morning light in Chippewa Creek forest"><div class="card-body"><h3>Morning Forest Light</h3><p>Selected trunks warmed by early light inside deep evergreen shade.</p><span>View this print →</span></div></a><a class="card" href="https://dansproul.com/featured/cuyahoga-valley-national-park-bridge-dan-sproul.html" target="_blank" rel="noopener"><img src="ohio-turnpike-bridge-cuyahoga-valley-national-park-dan-sproul.jpg" alt="Ohio Turnpike bridge arches"><div class="card-body"><h3>Turnpike Arches</h3><p>Concrete repetition and a long compressed corridor through the valley.</p><span>View this print →</span></div></a><a class="card" href="https://dansproul.com/featured/bridal-veil-falls-morning-light-in-bedford-reservation-ohio-dan-sproul.html" target="_blank" rel="noopener"><img src="bridal-veil-falls-morning-light-in-bedford-reservation-ohio-dan-sproul.jpg" alt="Bridal Veil Falls Bedford Reservation"><div class="card-body"><h3>Bridal Veil Falls</h3><p>A clearly labeled Bedford Reservation extension.</p><span>View this print →</span></div></a><a class="card" href="https://dansproul.com/featured/great-falls-of-tinkers-creek-ohio-long-exposure-waterfall-dan-sproul.html" target="_blank" rel="noopener"><img src="great-falls-of-tinkers-creek-ohio-long-exposure-waterfall-dan-sproul.jpg" alt="Great Falls of Tinker's Creek"><div class="card-body"><h3>Great Falls of Tinker's Creek</h3><p>Water, history, and stone in Bedford Reservation.</p><span>View this print →</span></div></a></div></div></section>
+    <div class="bedford-grid">
+      <a class="bedford-photo" href="https://dansproul.com/featured/majestic-waterfall-in-a-forest-dan-sproul.html" target="_blank" rel="noopener">
+        <img src="majestic-waterfall-in-a-forest-dan-sproul.jpg" alt="Wide forest waterfall study by Dan Sproul" loading="lazy" decoding="async">
+        <div class="bedford-photo-copy">
+          <h3>Forest Waterfall Study</h3>
+          <p>A wider environmental composition that keeps the waterfall connected to rock, timber, and surrounding forest rather than isolating only the cascade.</p>
+          <span>View this photograph →</span>
+        </div>
+      </a>
+
+      <a class="bedford-resource" href="https://www.clevelandmetroparks.com/parks/visit/parks/bedford-reservation/bridal-veil-falls-scenic-overlook" target="_blank" rel="noopener">
+        <p class="eyebrow">Official Cleveland Metroparks</p>
+        <h3>Bridal Veil Falls</h3>
+        <p>Use the official scenic-overlook page for current visitor information before adding Bridal Veil Falls to the photography route.</p>
+        <span>Open official information →</span>
+      </a>
+
+      <a class="bedford-resource" href="https://www.clevelandmetroparks.com/parks/visit/parks/bedford-reservation/great-falls-of-tinker-s-creek" target="_blank" rel="noopener">
+        <p class="eyebrow">Official Cleveland Metroparks</p>
+        <h3>Great Falls of Tinker's Creek</h3>
+        <p>Check the official destination page for access and visitor details before photographing this powerful Bedford Reservation waterfall.</p>
+        <span>Open official information →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section dark" id="photographs"><div class="inner"><div class="section-head"><div><p class="eyebrow">Photographs from the valley</p><h2>Forest, water, stone, bridges, and Northeast Ohio light.</h2></div><p>Each photograph links to the finished print. Together they show why Cuyahoga Valley is more than one waterfall or one trail—it is a layered regional landscape shaped by nature and human history.</p></div><div class="gallery">
+<a class="card" href="https://dansproul.com/featured/sunlit-forest-trail-in-cuyahoga-valley-national-park-ohio-dan-sproul.html" target="_blank" rel="noopener">
+  <img src="sunlit-forest-trail-in-cuyahoga-valley-national-park-ohio-dan-sproul.jpg" alt="Sunlit forest trail in Cuyahoga Valley National Park Ohio" loading="lazy" decoding="async">
+  <div class="card-body"><h3>Sunlit Forest Trail</h3><p>A bright opening and receding path through dense Ohio woodland.</p><span>View this print →</span></div>
+</a>
+<a class="card" href="https://dansproul.com/featured/brandywine-falls-ohio-framed-by-summer-leaves-long-exposure-dan-sproul.html" target="_blank" rel="noopener">
+  <img src="brandywine-falls-ohio-framed-by-summer-leaves-long-exposure-dan-sproul.jpg" alt="Brandywine Falls framed by summer leaves in Cuyahoga Valley National Park" loading="lazy" decoding="async">
+  <div class="card-body"><h3>Brandywine Falls</h3><p>Stepped water framed by summer green.</p><span>View this print →</span></div>
+</a>
+<a class="card" href="https://dansproul.com/featured/brecksville-northfield-bridge-reflection-cuyahoga-valley-ohio-dan-sproul.html" target="_blank" rel="noopener">
+  <img src="brecksville-northfield-bridge-reflection-cuyahoga-valley-ohio-dan-sproul.jpg" alt="Brecksville Northfield Bridge reflected in the Cuyahoga Valley landscape" loading="lazy" decoding="async">
+  <div class="card-body"><h3>Bridge Reflection</h3><p>Architecture extended through the river and surrounding green valley.</p><span>View this print →</span></div>
+</a>
+<a class="card" href="https://dansproul.com/featured/flowing-water-and-moss-at-chippewa-creek-ohio-dan-sproul.html" target="_blank" rel="noopener">
+  <img src="flowing-water-and-moss-at-chippewa-creek-ohio-dan-sproul.jpg" alt="Flowing water and moss at Chippewa Creek Ohio" loading="lazy" decoding="async">
+  <div class="card-body"><h3>Flowing Water and Moss</h3><p>An intimate creek composition built from repetition, motion, and reflected green.</p><span>View this print →</span></div>
+</a>
+<a class="card" href="https://dansproul.com/featured/resilient-sapling-among-chippewa-creek-boulders-in-ohio-dan-sproul.html" target="_blank" rel="noopener">
+  <img src="resilient-sapling-among-chippewa-creek-boulders-in-ohio-dan-sproul.jpg" alt="Resilient sapling among Chippewa Creek boulders in Ohio" loading="lazy" decoding="async">
+  <div class="card-body"><h3>Resilient Sapling</h3><p>A small living subject above heavy stone and moving water.</p><span>View this print →</span></div>
+</a>
+<a class="card" href="https://dansproul.com/featured/morning-light-in-the-chippewa-creek-forest-brecksville-ohio-dan-sproul.html" target="_blank" rel="noopener">
+  <img src="morning-light-in-the-chippewa-creek-forest-brecksville-ohio-dan-sproul.jpg" alt="Morning light in the Chippewa Creek forest near Brecksville Ohio" loading="lazy" decoding="async">
+  <div class="card-body"><h3>Morning Forest Light</h3><p>Selected trunks warmed by early light inside deep evergreen shade.</p><span>View this print →</span></div>
+</a>
+<a class="card" href="https://dansproul.com/featured/cuyahoga-valley-national-park-bridge-dan-sproul.html" target="_blank" rel="noopener">
+  <img src="cuyahoga-valley-national-park-bridge-dan-sproul.jpg" alt="Concrete arches beneath the Ohio Turnpike bridge in the Cuyahoga Valley region" loading="lazy" decoding="async">
+  <div class="card-body"><h3>Turnpike Arches</h3><p>Concrete repetition and a compressed architectural corridor through the valley.</p><span>View this print →</span></div>
+</a>
+<a class="card" href="https://dansproul.com/featured/majestic-waterfall-in-a-forest-dan-sproul.html" target="_blank" rel="noopener">
+  <img src="majestic-waterfall-in-a-forest-dan-sproul.jpg" alt="Wide forest waterfall study by Dan Sproul" loading="lazy" decoding="async">
+  <div class="card-body"><h3>Forest Waterfall Study</h3><p>A wider composition showing water, ledges, timber, and the surrounding forest together.</p><span>View this print →</span></div>
+</a>
+</div></div></section>
 
 <section class="section dark"><div class="inner"><p class="eyebrow">Helpful planning links</p><h2 style="font-size:clamp(36px,5vw,64px);max-width:850px">Official resources to check before visiting or photographing the park.</h2><div class="resources"><a class="resource" href="https://www.nps.gov/cuva/" target="_blank" rel="noopener"><strong>Cuyahoga Valley National Park</strong><span>Official park overview, visitor information, destinations, operating details, and current guidance.</span></a><a class="resource" href="https://www.nps.gov/cuva/planyourvisit/conditions.htm" target="_blank" rel="noopener"><strong>Current Conditions</strong><span>Official alerts, closures, safety notices, and changing access information.</span></a><a class="resource" href="https://www.nps.gov/cuva/planyourvisit/trail-maps.htm" target="_blank" rel="noopener"><strong>Trail Maps</strong><span>Maps for Brandywine, the Ledges, Boston, Everett, Kendall Lake, and other areas.</span></a><a class="resource" href="https://www.nps.gov/cuva/learn/historyculture/brandywine-falls.htm" target="_blank" rel="noopener"><strong>Brandywine Falls</strong><span>Official visiting guidance, parking notes, trail information, and seasonal context.</span></a><a class="resource" href="https://www.nps.gov/cuva/the-ledges.htm" target="_blank" rel="noopener"><strong>The Ledges</strong><span>Official information for the sandstone cliffs, trail network, and Virginia Kendall area.</span></a><a class="resource" href="https://www.nps.gov/cuva/planyourvisit/parking.htm" target="_blank" rel="noopener"><strong>Parking Information</strong><span>Check live or current parking guidance for popular destinations including Brandywine Falls.</span></a><a class="resource" href="https://www.clevelandmetroparks.com/parks/visit/parks/bedford-reservation" target="_blank" rel="noopener"><strong>Bedford Reservation</strong><span>Official Cleveland Metroparks information for the gorge, waterfalls, trails, and nearby destinations.</span></a><a class="resource" href="https://www.clevelandmetroparks.com/parks/visit/parks/bedford-reservation/bridal-veil-falls-scenic-overlook" target="_blank" rel="noopener"><strong>Bridal Veil Falls</strong><span>Official overlook and visitor information for this Bedford Reservation waterfall.</span></a><a class="resource" href="https://www.clevelandmetroparks.com/parks/visit/parks/bedford-reservation/great-falls-of-tinker-s-creek" target="_blank" rel="noopener"><strong>Great Falls of Tinker's Creek</strong><span>Official details about the waterfall, industrial history, paths, and surrounding landscape.</span></a></div></div></section>
 
@@ -75,5 +705,18 @@
 <section class="section paper"><div class="inner closing"><div><p class="eyebrow">What stays with me</p><h2>Ohio rewards photographers who are willing to look closely.</h2></div><div class="copy"><p>Cuyahoga Valley may not announce itself with one vast horizon, but that is part of its value. The strongest images often come from a narrow path, a reflected bridge pier, a small sapling above stone, a few trunks touched by light, or the repeating arches beneath a roadway.</p><p>The park and surrounding reservations encourage a slower kind of landscape photography. Weather matters. Water level matters. The angle of the canopy matters. So does the decision to stop walking and examine a scene that would be easy to pass.</p><p>That is the larger lesson of photographing Northeast Ohio: beauty is not absent because the landscape is familiar. Familiarity can become an advantage. It teaches you where light may return, how water changes after rain, and which ordinary places become extraordinary for only a few minutes.</p></div></div><div class="inner cta-grid"><a class="cta" href="cuyahoga-valley-national-park-photography-prints.html"><p class="eyebrow">Cuyahoga collection</p><h3>Explore Cuyahoga Valley Photography Prints</h3><p>View forest trails, waterfalls, bridges, field notes, interior examples, and direct print links.</p><span>Explore the collection →</span></a><a class="cta" href="ohio-nature-photography-prints.html"><p class="eyebrow">Ohio photography</p><h3>Explore More Ohio Nature Artwork</h3><p>Continue to landscapes, wildlife, waterfalls, forests, lakes, and regional scenes from across Ohio.</p><span>View Ohio photography →</span></a></div></section>
 </main>
 <footer class="footer"><div class="footer-grid"><div><h3>Explore</h3><a href="/">Home</a><a href="best-sellers.html">Best Sellers</a><a href="art-collections.html">Collections</a><a href="in-your-space.html">In Your Space</a><a href="for-designers.html">For Designers</a><a href="https://dansproul.com">Shop Prints</a><a href="mailto:dan@dsproul.com">Contact</a></div><div><h3>Collections</h3><a href="quiet-earth-collection.html">Quiet Earth</a><a href="forest-light-collection.html">Forest Light</a><a href="wellness-waters-collection.html">Wellness Waters</a><a href="coastal-atmosphere.html">Coastal Atmosphere</a><a href="mountain-light-collection.html">Mountain Light</a><a href="monochrome-stillness.html">Monochrome Stillness</a><a href="heritage-mixed-media.html">Heritage &amp; Mixed Media</a></div><div><h3>Resources</h3><a href="artwork-guides.html">Artwork Guides</a><a href="blog.html">Journal</a><a href="about-dan-sproul.html">About Dan</a><a href="ohio-nature-photography-prints.html">Ohio Nature Photography</a><a href="cuyahoga-valley-national-park-photography-prints.html">Cuyahoga Valley</a><a href="alaska-photography-prints.html">Alaska Photography</a></div><div><h3>For Designers</h3><a href="for-designers.html">Designer Resources</a><a href="healthcare-artwork.html">Healthcare</a><a href="hospitality-artwork.html">Hospitality</a><a href="office-artwork.html">Office</a><a href="residential-nature-wall-art.html">Residential</a><a href="senior-living-artwork.html">Senior Living</a></div><div><h3>Connect</h3><a href="mailto:dan@dsproul.com">Email</a><a href="https://www.linkedin.com/in/dan-sproul-bb55015a/" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.pinterest.com/dansproul/" target="_blank" rel="noopener">Pinterest</a></div></div><div class="bottom">&copy; 2026 Dan Sproul Fine Art Photography · Based in Lima, Ohio · Original Nature Photography &amp; Heritage-Inspired Artwork</div></footer>
-<script>document.addEventListener("DOMContentLoaded",()=>{const n=document.querySelector(".nav"),t=document.querySelector(".toggle");if(t)t.addEventListener("click",()=>{const o=n.classList.toggle("open");t.setAttribute("aria-expanded",o?"true":"false")})})</script>
+<script>
+document.addEventListener("DOMContentLoaded",()=>{
+  const n=document.querySelector(".nav"),t=document.querySelector(".toggle");
+  const closeNav=()=>{if(!n||!t)return;n.classList.remove("open");t.setAttribute("aria-expanded","false")};
+  if(t){
+    t.addEventListener("click",()=>{
+      const o=n.classList.toggle("open");
+      t.setAttribute("aria-expanded",o?"true":"false");
+    });
+  }
+  document.querySelectorAll(".navlinks a").forEach(a=>a.addEventListener("click",closeNav));
+  document.addEventListener("keydown",e=>{if(e.key==="Escape")closeNav()});
+});
+</script>
 </body></html>
