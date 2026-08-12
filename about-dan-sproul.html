@@ -15,7 +15,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="image" href="https://dsproul.com/holmes%20county%20ohio%20winter%20road.jpg">
+  <link rel="preload" as="image" href="https://dsproul.com/holmes%20county%20ohio%20winter%20road.jpg" fetchpriority="high">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 
   <style>
@@ -28,7 +28,7 @@
 
     .section-pad{padding:clamp(58px,7vw,104px) clamp(22px,6vw,76px)}.eyebrow{margin-bottom:15px;color:var(--gold);font-size:10px;letter-spacing:.38em;text-transform:uppercase}.btns{display:flex;flex-wrap:wrap;gap:13px;margin-top:30px}.btn{min-height:45px;display:inline-flex;align-items:center;justify-content:center;padding:0 23px;border:1px solid var(--line-strong);text-decoration:none;color:var(--cream);font-size:10px;letter-spacing:.22em;text-transform:uppercase;transition:.25s ease}.btn:hover{border-color:var(--gold-light);color:var(--gold-light)}.btn.primary{background:var(--gold);border-color:var(--gold);color:var(--black);font-weight:500}.btn.primary:hover{background:var(--gold-light);color:var(--black)}
 
-    .hero{min-height:76vh;position:relative;display:grid;align-items:end;padding:clamp(96px,10vw,144px) clamp(22px,6vw,76px) clamp(68px,8vw,104px);overflow:hidden}.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(20,17,13,.98) 0%,rgba(20,17,13,.74) 38%,rgba(20,17,13,.24) 100%),url("holmes%20county%20ohio%20winter%20road.jpg") center/cover no-repeat;filter:brightness(.76) saturate(.9);transform:scale(1.01)}.hero-content{position:relative;max-width:980px}h1{max-width:910px;font-size:clamp(44px,7vw,94px);letter-spacing:-.012em}.hero-copy{max-width:720px;margin-top:22px;color:var(--cream-soft);font-size:clamp(15px,1.35vw,18px);line-height:1.85}
+    .hero{min-height:76vh;position:relative;display:grid;align-items:end;padding:clamp(96px,10vw,144px) clamp(22px,6vw,76px) clamp(68px,8vw,104px);overflow:hidden;background:#14110d}.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;filter:brightness(.76) saturate(.9);transform:scale(1.01)}.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(to top,rgba(20,17,13,.98) 0%,rgba(20,17,13,.74) 38%,rgba(20,17,13,.24) 100%);pointer-events:none}.hero-content{position:relative;z-index:2;max-width:980px}h1{max-width:910px;font-size:clamp(44px,7vw,94px);letter-spacing:-.012em}.hero-copy{max-width:720px;margin-top:22px;color:var(--cream-soft);font-size:clamp(15px,1.35vw,18px);line-height:1.85}
 
     .intro{background:var(--deep)}.intro-grid{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:330px minmax(0,1fr);gap:clamp(34px,6vw,84px);align-items:center}.portrait-wrap{display:grid;gap:18px;justify-items:start}.portrait{width:210px;aspect-ratio:1/1;border-radius:50%;overflow:hidden;border:1px solid var(--line-strong);box-shadow:0 18px 70px rgba(0,0,0,.38);background:var(--panel)}.portrait img{height:100%}.portrait-note{max-width:280px;color:var(--cream-faint);font-size:11px;line-height:1.8;text-transform:uppercase;letter-spacing:.18em}.intro-copy h2{font-size:clamp(36px,5vw,66px)}.intro-copy p{max-width:800px;margin-top:18px;color:var(--cream-soft);line-height:1.9;font-size:15px}
 
@@ -62,6 +62,8 @@
 
     @media (max-width:1180px){.collection-grid{grid-template-columns:repeat(2,1fr)}}
     @media (max-width:1040px){body::before{height:64px}.site-nav-standard{height:64px!important}.nav-toggle-standard{display:block!important}.nav-links-standard{position:fixed!important;top:64px!important;left:0!important;right:0!important;display:none!important;flex-direction:column!important;align-items:flex-start!important;gap:0!important;padding:18px 24px 24px!important;background:rgba(14,12,9,.98)!important;border-bottom:1px solid rgba(185,138,59,.22)!important}.site-nav-standard.is-open .nav-links-standard{display:flex!important}.nav-links-standard a{width:100%!important;padding:14px 0!important}.nav-shop-standard{width:auto!important;margin-top:8px!important;padding:13px 18px!important}.hero{min-height:68vh}.intro-grid,.section-head,.two-col-grid{grid-template-columns:1fr}.proof-strip,.place-grid,.card-grid,.collection-grid,.footer-grid,.local-feature-box,.local-feature-list{grid-template-columns:1fr!important}.local-feature-box{padding:28px}.portrait{width:170px}.place-card,.dark-card{min-height:auto}.collection-card{min-height:330px}}
+    /* Image performance */
+    .image-panel,.collection-card,.portrait{background:#1f1a14}
   </style>
 
   <script type="application/ld+json">
@@ -133,6 +135,7 @@
   </nav>
 
   <header class="hero">
+    <img class="hero-bg" src="holmes%20county%20ohio%20winter%20road.jpg" alt="" aria-hidden="true" loading="eager" fetchpriority="high" decoding="async">
     <div class="hero-content">
       <p class="eyebrow">About Dan Sproul</p>
       <h1>Ohio-based nature photography with a quiet sense of <em>place.</em></h1>
@@ -148,7 +151,7 @@
     <div class="intro-grid">
       <div class="portrait-wrap">
         <div class="portrait">
-          <img src="me1.jpg" alt="Dan Sproul, Lima Ohio nature and landscape photographer" loading="eager" decoding="async">
+          <img src="me1.jpg" alt="Dan Sproul, Lima Ohio nature and landscape photographer" loading="lazy" fetchpriority="low" decoding="async">
         </div>
         <p class="portrait-note">Based in Lima, Ohio · photographing natural places across Ohio and the United States</p>
       </div>
@@ -228,7 +231,7 @@
         <div class="btns"><a class="btn primary" href="ohio-nature-photography-prints.html">Explore Ohio Artwork</a></div>
       </div>
       <div class="image-panel">
-        <img src="lima%20lake%20sunrise%20ohio.jpg" alt="Vivid sunrise over a Lima Ohio lake by Dan Sproul" loading="lazy" decoding="async">
+        <img src="lima%20lake%20sunrise%20ohio.jpg" alt="Vivid sunrise over a Lima Ohio lake by Dan Sproul" loading="lazy" fetchpriority="low" decoding="async">
       </div>
     </div>
   </section>
@@ -258,19 +261,19 @@
     </div>
     <div class="collection-grid">
       <a class="collection-card" href="quiet-earth-collection.html">
-        <img src="https://dsproul.com/quiet-earth-appalachian-fog.jpg" alt="Quiet Earth atmospheric landscape photography collection by Dan Sproul" loading="lazy" decoding="async">
+        <img src="quiet-earth-appalachian-fog.jpg" alt="Quiet Earth atmospheric landscape photography collection by Dan Sproul" loading="lazy" fetchpriority="low" decoding="async">
         <div class="card-text"><span class="tag">Calm / grounded</span><h3>Quiet Earth</h3><p>Muted landscapes, still water, fog, and grounded natural tones.</p></div>
       </a>
       <a class="collection-card" href="forest-light-collection.html">
-        <img src="https://dsproul.com/forest-light-living-room.jpg" alt="Forest Light woodland photography collection by Dan Sproul" loading="lazy" decoding="async">
+        <img src="forest-light-living-room.jpg" alt="Forest Light woodland photography collection by Dan Sproul" loading="lazy" fetchpriority="low" decoding="async">
         <div class="card-text"><span class="tag">Woodland / restorative</span><h3>Forest Light</h3><p>Woodland trails, immersive greens, filtered light, and natural texture.</p></div>
       </a>
       <a class="collection-card" href="coastal-atmosphere.html">
-        <img src="https://dsproul.com/proposal-rock-moody-oregon-coast-dan-sproul.jpg" alt="Coastal Atmosphere fine art coastal photography by Dan Sproul" loading="lazy" decoding="async">
+        <img src="proposal-rock-moody-oregon-coast-dan-sproul.jpg" alt="Coastal Atmosphere fine art coastal photography by Dan Sproul" loading="lazy" fetchpriority="low" decoding="async">
         <div class="card-text"><span class="tag">Coastal / refined</span><h3>Coastal Atmosphere</h3><p>Moody shoreline imagery for calm coastal rooms and relaxed interiors.</p></div>
       </a>
       <a class="collection-card" href="ohio-nature-photography-prints.html">
-        <img src="https://dsproul.com/hocking-hills-hidden-falls-long-exposure-dan-sproul.jpg" alt="Ohio nature photography collection by Lima Ohio photographer Dan Sproul" loading="lazy" decoding="async">
+        <img src="hocking-hills-hidden-falls-long-exposure-dan-sproul.jpg" alt="Ohio nature photography collection by Lima Ohio photographer Dan Sproul" loading="lazy" fetchpriority="low" decoding="async">
         <div class="card-text"><span class="tag">Ohio / regional</span><h3>Ohio Nature</h3><p>Waterfalls, forests, rivers, wildlife, and familiar Ohio landscapes.</p></div>
       </a>
     </div>
