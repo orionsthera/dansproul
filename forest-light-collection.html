@@ -991,6 +991,139 @@ img{max-width:100%;height:auto}
     margin:0!important;
   }
 }
+
+/* ── FOREST LIGHT → MOHICAN FIELD NOTE ─────────────────────── */
+.forest-field-note{
+  background:#f3efe8;
+  color:#24211d;
+  border-top:1px solid rgba(40,35,30,.14);
+  border-bottom:1px solid rgba(40,35,30,.14);
+}
+.forest-field-note-wrap{
+  display:grid;
+  grid-template-columns:minmax(320px,.9fr) minmax(0,1.1fr);
+  max-width:1180px;
+  margin:auto;
+  background:#fffaf3;
+  border:1px solid rgba(40,35,30,.12);
+  overflow:hidden;
+  box-shadow:0 20px 60px rgba(0,0,0,.09);
+}
+.forest-field-note-image{
+  display:block;
+  min-height:330px;
+  overflow:hidden;
+}
+.forest-field-note-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center 52%;
+  transition:transform .4s ease;
+}
+.forest-field-note-wrap:hover .forest-field-note-image img{
+  transform:scale(1.018);
+}
+.forest-field-note-copy{
+  padding:clamp(30px,5vw,54px);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.forest-field-note-copy .eyebrow{
+  color:#73804f;
+}
+.forest-field-note-copy h2{
+  color:#24211d;
+  font-size:clamp(2rem,4vw,3.6rem);
+  line-height:1.02;
+  margin-bottom:18px;
+}
+.forest-field-note-copy p{
+  color:#5e574f;
+  max-width:760px;
+}
+.forest-field-note-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:20px;
+}
+.forest-field-note-actions .btn{
+  color:#24211d;
+  border-color:rgba(40,35,30,.28);
+  margin:0;
+}
+.forest-field-note-actions .btn.primary{
+  background:#8f9b68;
+  border-color:#8f9b68;
+  color:#111;
+}
+@media(max-width:900px){
+  .forest-field-note-wrap{
+    grid-template-columns:1fr;
+  }
+  .forest-field-note-image{
+    min-height:0;
+    aspect-ratio:16/9;
+  }
+}
+@media(max-width:680px){
+  .forest-field-note{
+    padding:1.6rem 0!important;
+  }
+  .forest-field-note-wrap{
+    grid-template-columns:42% 58%;
+    align-items:stretch;
+  }
+  .forest-field-note-image{
+    aspect-ratio:auto;
+    min-height:220px;
+  }
+  .forest-field-note-copy{
+    padding:1rem .9rem;
+  }
+  .forest-field-note-copy .eyebrow{
+    font-size:.5rem!important;
+    letter-spacing:.12em!important;
+    margin-bottom:.45rem!important;
+  }
+  .forest-field-note-copy h2{
+    font-size:1.22rem!important;
+    line-height:1.05!important;
+    margin-bottom:.55rem!important;
+  }
+  .forest-field-note-copy p{
+    font-size:.72rem!important;
+    line-height:1.42!important;
+    display:-webkit-box!important;
+    -webkit-line-clamp:5!important;
+    -webkit-box-orient:vertical!important;
+    overflow:hidden!important;
+  }
+  .forest-field-note-actions{
+    display:grid!important;
+    grid-template-columns:1fr!important;
+    gap:.4rem!important;
+    margin-top:.7rem!important;
+  }
+  .forest-field-note-actions .btn{
+    width:100%!important;
+    padding:.55rem .45rem!important;
+    font-size:.5rem!important;
+    letter-spacing:.07em!important;
+  }
+}
+@media(max-width:430px){
+  .forest-field-note-wrap{
+    grid-template-columns:1fr;
+  }
+  .forest-field-note-image{
+    aspect-ratio:16/9;
+    min-height:0;
+  }
+}
+
 </style>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -1051,7 +1184,10 @@ img{max-width:100%;height:auto}
         "quiet luxury artwork",
         "restorative landscape photography",
         "atmospheric photography for hospitality",
-        "black-and-white office photography"
+        "black-and-white office photography",
+        "Mohican State Park forest photography",
+        "Ohio woodland photography",
+        "Lyons Falls Trail photography"
       ],
       "primaryImageOfPage": {
         "@id": "https://dsproul.com/forest-light-living-room.jpg#image"
@@ -1476,6 +1612,26 @@ img{max-width:100%;height:auto}
 <a class="card" href="mountain-light-collection.html"><img alt="Mountain Light related forest and mountain photography by Dan Sproul" decoding="async" loading="lazy" src="mountain-light-bedroom.jpg"/><div class="copy"><h3>Mountain Light</h3><p>Luminous alpine landscapes, sunrise, last light, and mountain wall art for refined interiors.</p></div></a>
 <a class="card" href="monochrome-stillness.html"><img alt="Monochrome Stillness black and white artwork for healthcare corridors by Dan Sproul" decoding="async" loading="lazy" src="recovery hallway mockup.jpg"/><div class="copy"><h3>Monochrome Stillness</h3><p>Black-and-white artwork for executive offices, healthcare corridors, hospitality, and quiet interiors.</p></div></a>
 </div></div></section>
+
+<section class="forest-field-note" aria-labelledby="mohican-field-note-title">
+<div class="container">
+<div class="forest-field-note-wrap">
+<a class="forest-field-note-image" href="mohican-state-park-ohio-photography-guide.html" aria-label="Read the Mohican State Park Ohio photography guide">
+<img alt="Morning light filtering through mature forest and ferns at Mohican State Park in Ohio photographed by Dan Sproul" decoding="async" loading="lazy" src="morning-light-through-the-forest-at-mohican-state-park-ohio-dan-sproul.jpg"/>
+</a>
+<div class="forest-field-note-copy">
+<span class="eyebrow">From the Field · Mohican State Park</span>
+<h2 id="mohican-field-note-title">A one-day study in forest light at Mohican.</h2>
+<p>Beginning around the Lyons Falls trail system, I spent a day photographing mature woodland, ferns, moss, sandstone, old roots, wildlife, and the brief shafts of light that transform a dark Ohio forest. The field guide includes my route, camera gear, limited-cell-service notes, photography tips, and finished images from the day.</p>
+<div class="forest-field-note-actions">
+<a class="btn primary" href="mohican-state-park-ohio-photography-guide.html">Read the Mohican Guide</a>
+<a class="btn" href="https://dansproul.com/art/mohican" rel="noopener" target="_blank">Browse Mohican Prints</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
 <section class="seo compact-seo"><div class="container">
 <span class="eyebrow">Forest Photography Prints</span><h2>Woodland wall art for interiors that need calm, texture, and natural presence.</h2>
 <div class="cols">
