@@ -2,6 +2,16 @@
 
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1Q52T85XS5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1Q52T85XS5');
+</script>
+
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Alaska Landscape Art Prints | Mountains, Glaciers &amp; Coastal Scenery</title>
@@ -535,5 +545,65 @@ document.addEventListener('DOMContentLoaded',function(){
   });
 });
 </script>
+
+<!-- Dan Sproul GA4 business-event tracking -->
+<script>
+document.addEventListener('click', function (event) {
+  const link = event.target.closest('a');
+  if (!link || typeof gtag !== 'function') return;
+
+  const href = link.href || '';
+  const text = (link.textContent || '').trim();
+  const lowerHref = href.toLowerCase();
+  const lowerText = text.toLowerCase();
+
+  // Individual artwork / print clicks
+  if (lowerHref.includes('dansproul.com/featured/')) {
+    gtag('event', 'view_print', {
+      link_url: href,
+      link_text: text,
+      source_page: window.location.pathname
+    });
+    return;
+  }
+
+  // Email / inquiry actions
+  if (lowerHref.startsWith('mailto:')) {
+
+    // Mockup requests
+    if (
+      lowerHref.includes('mockup') ||
+      lowerText.includes('mockup')
+    ) {
+      gtag('event', 'mockup_request', {
+        link_text: text,
+        source_page: window.location.pathname
+      });
+      return;
+    }
+
+    // Project / designer inquiry
+    if (
+      lowerHref.includes('project') ||
+      lowerText.includes('start a project') ||
+      lowerText.includes('discuss a project') ||
+      lowerText.includes('project guidance')
+    ) {
+      gtag('event', 'project_inquiry', {
+        link_text: text,
+        source_page: window.location.pathname
+      });
+      return;
+    }
+
+    // General contact / artwork help
+    gtag('event', 'contact_click', {
+      link_text: text,
+      source_page: window.location.pathname
+    });
+  }
+});
+</script>
+
 </body>
 </html>
