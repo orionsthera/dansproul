@@ -4,10 +4,10 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Art In Your Space — See Prints In Real Rooms | Dan Sproul Fine Art</title>
+<title>Art In Your Space — Preview Fine Art In Rooms | Dan Sproul</title>
 <meta content="Dan Sproul" name="author"/>
 <meta name="robots" content="index, follow, max-image-preview:large"/>
-<meta content="See how Dan Sproul fine art photography looks in real bedrooms, living rooms, entryways, offices, and hotels. Compare scale and placement, then use the complimentary Art Advisor for personalized recommendations." name="description"/>
+<meta content="Preview Dan Sproul fine art photography in bedrooms, living rooms, entryways, offices, and hospitality spaces. Compare scale and placement, then use the complimentary Art Advisor for personalized recommendations." name="description"/>
 <link href="https://dsproul.com/in-your-space.html" rel="canonical"/>
 <meta property="og:title" content="Art In Your Space — See Prints In Real Rooms | Dan Sproul Fine Art"/>
 <meta property="og:description" content="See how Dan Sproul fine art photography looks in real bedrooms, living rooms, entryways, offices, and hospitality spaces. Compare real-room examples and use the complimentary Art Advisor."/>
@@ -1537,6 +1537,85 @@ body::before{
   }
 }
 
+
+/* ── RELATED BUYING GUIDES + COLLECTIONS — INTERNAL CRAWL PATHS ───── */
+.indexing-support{
+  background:#14110d;
+  padding:42px 56px;
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+}
+.indexing-support-inner{max-width:1180px;margin:0 auto}
+.indexing-support-head{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(280px,460px);
+  gap:28px;
+  align-items:end;
+  margin-bottom:22px;
+}
+.indexing-support-head h2{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(1.8rem,3vw,2.7rem);
+  font-weight:300;
+  line-height:1.08;
+}
+.indexing-support-head p:not(.sec-label){
+  color:var(--muted-2);
+  font-size:.72rem;
+  line-height:1.8;
+}
+.indexing-support-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:8px;
+}
+.indexing-support-grid a{
+  display:block;
+  min-height:122px;
+  padding:20px;
+  text-decoration:none;
+  background:rgba(181,146,74,.055);
+  border:1px solid rgba(181,146,74,.18);
+  transition:border-color .22s ease,background .22s ease,transform .22s ease;
+}
+.indexing-support-grid a:hover{
+  border-color:rgba(181,146,74,.42);
+  background:rgba(181,146,74,.095);
+  transform:translateY(-2px);
+}
+.indexing-support-grid span{
+  display:block;
+  margin-bottom:8px;
+  color:var(--accent);
+  font-size:.47rem;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+}
+.indexing-support-grid strong{
+  display:block;
+  margin-bottom:7px;
+  color:var(--off-white);
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.18rem;
+  font-weight:300;
+  line-height:1.08;
+}
+.indexing-support-grid small{
+  display:block;
+  color:var(--muted-2);
+  font-size:.63rem;
+  line-height:1.55;
+}
+@media(max-width:900px){
+  .indexing-support-head{grid-template-columns:1fr}
+  .indexing-support-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:580px){
+  .indexing-support{padding:34px 16px!important}
+  .indexing-support-grid{grid-template-columns:1fr!important}
+  .indexing-support-grid a{min-height:auto!important;padding:16px!important}
+}
+
 </style>
 <script type="application/ld+json">
 
@@ -1586,8 +1665,9 @@ body::before{
       "@type": "WebPage",
       "@id": "https://dsproul.com/in-your-space.html#webpage",
       "url": "https://dsproul.com/in-your-space.html",
-      "name": "Art In Your Space — See Prints In Real Rooms | Dan Sproul Fine Art",
-      "description": "See Dan Sproul fine art photography in real bedrooms, living rooms, entryways, offices, and hotels, then use the complimentary Art Advisor for personalized artwork, sizing, framing, and placement recommendations.",
+      "dateModified": "2026-08-21",
+      "name": "Art In Your Space — Preview Fine Art In Rooms | Dan Sproul",
+      "description": "Preview Dan Sproul fine art photography in bedrooms, living rooms, entryways, offices, and hospitality spaces, then use the complimentary Art Advisor for personalized artwork, sizing, framing, and placement recommendations.",
       "isPartOf": {
         "@id": "https://dsproul.com/#website"
       },
@@ -1659,12 +1739,12 @@ body::before{
     {
       "@type": "ItemList",
       "@id": "https://dsproul.com/in-your-space.html#room-mockups",
-      "name": "Dan Sproul Artwork in Room Mockups",
+      "name": "Dan Sproul Artwork Room Previews",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
-          "name": "In Your Space Hero Room Mockup",
+          "name": "In Your Space Hero Room Preview",
           "url": "https://dsproul.com/in-your-space.html#Hero"
         },
         {
@@ -1709,7 +1789,7 @@ body::before{
       "@type": "ImageObject",
       "@id": "https://dsproul.com/warm%20modern%20living%20room%20mountain%20reflection%20mockup.jpg#image",
       "contentUrl": "https://dsproul.com/warm%20modern%20living%20room%20mountain%20reflection%20mockup.jpg",
-      "name": "In Your Space Hero Room Mockup by Dan Sproul",
+      "name": "In Your Space Hero Room Preview by Dan Sproul",
       "description": "Warm modern living room with large B&W mountain reflection print by Dan Sproul — walnut frame white mat",
       "creator": {
         "@id": "https://dsproul.com/#dan-sproul"
@@ -1822,7 +1902,7 @@ body::before{
 <a href="about-dan-sproul.html">About</a>
 <a href="in-your-space.html" aria-current="page">In Your Space</a>
 <a href="for-designers.html">For Designers</a>
-<a class="nav-shop-standard" href="https://dansproul.com" rel="noopener" target="_blank">Shop Prints</a>
+<a class="nav-shop-standard" href="https://dansproul.com/shop/prints" rel="noopener" target="_blank">Shop Prints</a>
 </div>
 </nav>
 <a class="mockup-float" href="art-advisor.html" id="mf">Art Advisor</a>
@@ -1833,7 +1913,7 @@ body::before{
 <img alt="" id="lb-img" src=""/>
 <div id="lb-info">
 <p id="lb-cap"></p>
-<a href="https://dansproul.com" id="lb-shop" target="_blank">Shop This Print →</a>
+<a href="https://dansproul.com/shop/prints" id="lb-shop" rel="noopener" target="_blank">Shop This Print →</a>
 </div>
 </div>
 <!-- MOBILE NAV -->
@@ -1845,7 +1925,7 @@ body::before{
 <a href="about-dan-sproul.html">About</a>
 <a href="in-your-space.html" style="color:var(--accent)">In Your Space</a>
 <a class="mob-designers" href="for-designers.html">For Designers</a>
-<a href="https://dansproul.com" rel="noopener" style="color:var(--accent)" target="_blank">Shop Prints ↗</a>
+<a href="https://dansproul.com/shop/prints" rel="noopener" style="color:var(--accent)" target="_blank">Shop Prints ↗</a>
 </div>
 <!-- NAV -->
 <!-- ═══════════════════════════════════════
@@ -1858,7 +1938,7 @@ body::before{
 <h1>See exactly how it<br/><em>looks in your room.</em></h1>
 <!-- Orient the visitor, then direct them to the personalized Art Advisor. -->
 <div class="hero-explainer">
-<p>Every image below is a <strong>real room with Dan Sproul's photography</strong> shown in scale. Use this page for visual inspiration, then visit the complimentary <strong>Art Advisor</strong> for personalized artwork, sizing, framing, placement, and room-preview guidance.</p>
+<p>Every image below is a <strong>styled room preview showing Dan Sproul's photography approximately to scale</strong>. Use this page for visual inspiration, then visit the complimentary <strong>Art Advisor</strong> for personalized artwork, sizing, framing, placement, and room-preview guidance.</p>
 </div>
 <div class="hero-creds">
 <span class="hero-cred">Available 8×10 to 60×40+</span>
@@ -1867,7 +1947,7 @@ body::before{
 <span class="hero-cred">Ships nationwide</span>
 </div>
 <div class="hero-ctas">
-<a class="btn btn-solid" href="https://dansproul.com" target="_blank">Shop All Prints</a>
+<a class="btn btn-solid" href="https://dansproul.com/shop/prints" target="_blank" rel="noopener">Shop All Prints</a>
 <a class="btn btn-out" href="art-advisor.html">Use the Art Advisor</a>
 <a class="btn btn-out" href="residential-nature-wall-art.html">Residential Artwork</a>
 </div>
@@ -2018,7 +2098,7 @@ body::before{
 </div>
 <div class="shop-section-strip">
 <p class="sss-text">All bedroom prints available in <strong>canvas, metal, acrylic, and framed paper</strong> — any size from 8×10 to 60×40+.</p>
-<a class="sss-link" href="https://dansproul.com" target="_blank">Browse All Bedroom Prints →</a>
+<a class="sss-link" href="https://dansproul.com/shop/prints" target="_blank" rel="noopener">Browse All Bedroom Prints →</a>
 </div>
 </section>
 <div class="divider"><hr/></div>
@@ -2120,7 +2200,7 @@ body::before{
 </div>
 <div class="shop-section-strip">
 <p class="sss-text"><strong>Entryway tip:</strong> Vertical pieces work best in narrow foyers. For wide entryways or feature walls, a large square at 36×36 or bigger makes the strongest statement.</p>
-<a class="sss-link" href="https://dansproul.com" target="_blank">Browse Vertical Prints →</a>
+<a class="sss-link" href="https://dansproul.com/shop/prints" target="_blank" rel="noopener">Browse Vertical Prints →</a>
 </div>
 </section>
 <div class="divider"><hr/></div>
@@ -2137,7 +2217,7 @@ body::before{
 <span class="guidance-pill">B&amp;W for professional settings</span>
 <span class="guidance-pill">Hang at eye level, centered behind desk</span>
 </div>
-<p class="sec-feeling">"Research shows nature imagery in workspaces reduces stress and improves focus. The right landscape behind a desk isn't decoration — it's a tool."</p>
+<p class="sec-feeling">"Nature imagery can give a workspace visual calm and a stronger connection to the outdoors. A well-scaled landscape behind a desk can anchor the room without competing with the work happening there."</p>
 </div>
 <div class="feat-card" onclick="openLb('large framed mountain scene in modern office sunlit.jpg','Mountain Scene — Corporate Office · Black Float Frame · 40×60 recommended','https://dansproul.com/featured/canadian-rockies-snow-capped-mountain-landscape-dan-sproul.html')">
 <img alt="Sunlit corporate office with large framed mountain scene by Dan Sproul — black float frame" src="large framed mountain scene in modern office sunlit.jpg"/>
@@ -2305,6 +2385,51 @@ body::before{
 <p class="sec-feeling">Use these pages to narrow the work by atmosphere, interior purpose, or frequently selected pieces.</p>
 </div>
 </section>
+
+<section class="indexing-support" aria-labelledby="more-artwork-help-title">
+  <div class="indexing-support-inner">
+    <div class="indexing-support-head">
+      <div>
+        <p class="sec-label">More Artwork Help</p>
+        <h2 id="more-artwork-help-title">Choose by atmosphere, room purpose, or design setting.</h2>
+      </div>
+      <p>These focused guides and collections go deeper into specific room types and visual directions, from restorative water imagery and calm residential spaces to boutique hospitality and open landscapes.</p>
+    </div>
+    <div class="indexing-support-grid">
+      <a href="how-nature-artwork-creates-calm-connected-homes.html">
+        <span>Residential Guide</span>
+        <strong>Nature Artwork for Calm, Connected Homes</strong>
+        <small>Ideas for bringing landscape and nature photography into everyday residential interiors.</small>
+      </a>
+      <a href="calming-water-art-therapy-offices.html">
+        <span>Therapy &amp; Wellness</span>
+        <strong>Calming Water Art for Therapy Offices</strong>
+        <small>Water, stream, and coastal imagery for counseling rooms and quieter wellness spaces.</small>
+      </a>
+      <a href="water-imagery-restorative-interiors.html">
+        <span>Restorative Interiors</span>
+        <strong>Water Imagery for Restorative Spaces</strong>
+        <small>How flowing water and soft natural movement can support calm interior direction.</small>
+      </a>
+      <a href="boutique-hotel-artwork.html">
+        <span>Hospitality</span>
+        <strong>Boutique Hotel Artwork</strong>
+        <small>Atmospheric artwork ideas for guest rooms, corridors, lounges, and destination properties.</small>
+      </a>
+      <a href="open-horizons-collection.html">
+        <span>Collection</span>
+        <strong>Open Horizons</strong>
+        <small>Expansive landscapes, open skies, prairie roads, dunes, and distant views for visual breathing room.</small>
+      </a>
+      <a href="winter-stillness.html">
+        <span>Collection</span>
+        <strong>Winter Stillness</strong>
+        <small>Quiet snow, winter forests, monochrome landscapes, and restrained nature imagery for calm rooms.</small>
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- CTA STRIP -->
 <div class="cta-strip cta-centered" id="contact">
 <div>
@@ -2313,7 +2438,7 @@ body::before{
 </div>
 <div class="cta-actions">
 <a class="btn btn-solid" href="mailto:dan@dsproul.com?subject=Free Mockup Request">Get a Free Mockup</a>
-<a class="btn btn-out" href="https://dansproul.com" target="_blank">Shop All Prints</a>
+<a class="btn btn-out" href="https://dansproul.com/shop/prints" target="_blank" rel="noopener">Shop All Prints</a>
 </div>
 </div>
 <section class="artwork-guides-card-section" id="artwork-guides-help">
@@ -2339,7 +2464,7 @@ body::before{
         <a href="art-collections.html">Collections</a>
         <a href="in-your-space.html">In Your Space</a>
         <a href="for-designers.html">For Designers</a>
-        <a href="https://dansproul.com" rel="noopener" target="_blank">Shop Prints</a>
+        <a href="https://dansproul.com/shop/prints" rel="noopener" target="_blank">Shop Prints</a>
         <a href="mailto:dan@dsproul.com">Contact</a>
       </div>
     </details>
@@ -2400,7 +2525,7 @@ function openLb(src,cap,shopUrl){
   var lbImg=document.getElementById('lb-img'); if(!lbImg)return; lbImg.src=src;
   document.getElementById('lb-cap').textContent=cap||'';
   var s=document.getElementById('lb-shop');
-  s.href=shopUrl||'https://dansproul.com';
+  s.href=shopUrl||'https://dansproul.com/shop/prints';
   var lb=document.getElementById('lb'); if(lb) lb.classList.add('open');
   document.body.style.overflow='hidden';
 }
