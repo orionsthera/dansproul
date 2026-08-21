@@ -1646,6 +1646,225 @@
   .weekly-featured-all{font-size:8.5px}
 }
 
+
+/* ── PROMOTION-LED FEATURED PRINT ─────────────────────────── */
+.weekly-featured.promo-led{
+  background:#eee7dc;
+}
+.promo-head{
+  margin-bottom:24px;
+}
+.promo-hero-card{
+  display:grid;
+  grid-template-columns:minmax(0,1.08fr) minmax(360px,.92fr);
+  background:#fffaf3;
+  border:1px solid rgba(33,27,20,.11);
+  box-shadow:0 18px 44px rgba(33,27,20,.08);
+  overflow:hidden;
+}
+.promo-hero-image{
+  display:block;
+  min-height:470px;
+  overflow:hidden;
+  background:#d8d0c4;
+}
+.promo-hero-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  transition:transform .45s ease,filter .35s ease;
+  filter:brightness(.97) saturate(.96);
+}
+.promo-hero-card:hover .promo-hero-image img{
+  transform:scale(1.015);
+  filter:brightness(1) saturate(1);
+}
+.promo-hero-copy{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:clamp(28px,4vw,48px);
+}
+.promo-hero-copy h3{
+  color:#2a221a;
+  font-size:clamp(34px,4vw,54px);
+  line-height:1.02;
+  margin-bottom:14px;
+}
+.promo-intro{
+  color:rgba(33,27,20,.69);
+  font-size:13.5px;
+  line-height:1.7;
+  max-width:620px;
+}
+.promo-price-row{
+  display:grid;
+  grid-template-columns:1.05fr .9fr .9fr;
+  gap:1px;
+  margin-top:24px;
+  background:rgba(33,27,20,.12);
+  border:1px solid rgba(33,27,20,.12);
+}
+.promo-price-row > div{
+  background:#f7f0e6;
+  padding:18px 16px;
+  min-width:0;
+}
+.promo-price-now{
+  display:block;
+  color:#211b14;
+  font-family:Georgia,'Times New Roman',serif;
+  font-size:clamp(38px,4vw,54px);
+  line-height:.95;
+}
+.promo-price-was{
+  display:block;
+  margin-top:5px;
+  color:rgba(33,27,20,.56);
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:9px;
+  letter-spacing:.10em;
+  text-transform:uppercase;
+}
+.promo-format strong,
+.promo-savings strong{
+  display:block;
+  color:#87672d;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:11px;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+}
+.promo-format span,
+.promo-savings span{
+  display:block;
+  margin-top:7px;
+  color:rgba(33,27,20,.65);
+  font-size:11.5px;
+  line-height:1.45;
+}
+.promo-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+  align-items:center;
+  margin-top:22px;
+}
+.promo-primary{
+  margin-top:0!important;
+  min-height:44px;
+  padding:0 22px!important;
+}
+.promo-secondary{
+  color:#87672d;
+  text-decoration:none;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:9px;
+  font-weight:700;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
+.promo-note{
+  margin-top:14px;
+  color:rgba(33,27,20,.52);
+  font-size:10.5px;
+  line-height:1.55;
+}
+.also-featured-head{
+  display:flex;
+  justify-content:space-between;
+  gap:24px;
+  align-items:end;
+  margin:28px 0 12px;
+}
+.also-featured-head p:last-child{
+  max-width:560px;
+  color:rgba(33,27,20,.58);
+  font-size:11.5px;
+  line-height:1.55;
+  text-align:right;
+}
+.secondary-feature-grid{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+}
+.secondary-feature-grid .weekly-print-image{
+  aspect-ratio:16/9;
+}
+
+@media(max-width:900px){
+  .promo-hero-card{
+    grid-template-columns:1fr;
+  }
+  .promo-hero-image{
+    min-height:0;
+    aspect-ratio:16/10;
+  }
+}
+@media(max-width:680px){
+  .promo-head{
+    margin-left:22px!important;
+    margin-right:22px!important;
+  }
+  .promo-hero-card{
+    margin:0 22px;
+  }
+  .promo-hero-image{
+    aspect-ratio:4/3;
+  }
+  .promo-hero-copy{
+    padding:18px 16px;
+  }
+  .promo-hero-copy h3{
+    font-size:1.65rem!important;
+    margin-bottom:9px!important;
+  }
+  .promo-intro{
+    font-size:12px!important;
+    line-height:1.5!important;
+  }
+  .promo-price-row{
+    grid-template-columns:1fr 1fr;
+    margin-top:16px;
+  }
+  .promo-price{
+    grid-column:1 / -1;
+  }
+  .promo-price-row > div{
+    padding:13px 12px;
+  }
+  .promo-price-now{
+    font-size:2.15rem!important;
+  }
+  .promo-actions{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:10px;
+    margin-top:16px;
+  }
+  .promo-primary{
+    width:100%;
+    justify-content:center;
+  }
+  .promo-secondary{
+    text-align:center;
+  }
+  .promo-note{
+    font-size:9.5px!important;
+  }
+  .also-featured-head{
+    margin:24px 22px 10px;
+    display:block;
+  }
+  .also-featured-head p:last-child{
+    display:none;
+  }
+  .secondary-feature-grid{
+    display:flex!important;
+    grid-template-columns:none!important;
+  }
+}
+
 </style>
 
   <script type="application/ld+json">
@@ -2030,29 +2249,57 @@
   </section>
 
 
-  <section class="weekly-featured" id="featured-this-week" aria-labelledby="weekly-featured-title">
+  
+  <section class="weekly-featured promo-led" id="featured-this-week" aria-labelledby="weekly-featured-title">
     <div class="weekly-featured-inner">
-      <div class="weekly-featured-head">
+
+      <div class="weekly-featured-head promo-head">
         <div>
-          <p class="eyebrow">Featured Prints · This Week</p>
-          <h2 id="weekly-featured-title">Three customer favorites, selected for real rooms.</h2>
+          <p class="eyebrow">Limited-Time Featured Print</p>
+          <h2 id="weekly-featured-title">Pyramid Island Bridge in Fog — 36 × 24 canvas for $120.</h2>
         </div>
-        <p>A quiet landscape, a warm sunrise, and a statement wildlife piece — three different directions if you are ready to choose artwork now. Each is available in multiple sizes and print formats.</p>
+        <p>This atmospheric Jasper National Park photograph is currently available as a 36 × 24 stretched canvas at 50% off the regular $240 price. Promotion created by Dan Sproul and available for a limited time.</p>
       </div>
 
-      <div class="weekly-print-grid" aria-label="This week's featured print selections">
-        <article class="weekly-print-card">
-          <a class="weekly-print-image" href="https://dansproul.com/featured/pyramid-island-bridge-in-fog-jasper-national-park-photography-print-dan-sproul.html" target="_blank" rel="noopener" aria-label="Shop Pyramid Island Bridge in Fog">
-            <img src="therapist lounge foggy island dan sproul.jpg" alt="Pyramid Island bridge in fog Jasper National Park photography displayed in a warm calm living room by Dan Sproul" loading="lazy" decoding="async">
-          </a>
-          <div class="weekly-print-copy">
-            <p class="weekly-print-kicker">Quiet Landscape · Living Rooms</p>
-            <h3>Pyramid Island Bridge in Fog</h3>
-            <p>Soft blue-gray atmosphere, still water, and a restrained palette for calm living rooms, bedrooms, lake homes, and quiet offices.</p>
-            <a class="weekly-print-action" href="https://dansproul.com/featured/pyramid-island-bridge-in-fog-jasper-national-park-photography-print-dan-sproul.html" target="_blank" rel="noopener">Shop This Print</a>
-          </div>
-        </article>
+      <article class="promo-hero-card">
+        <a class="promo-hero-image" href="https://dansproul.com/featured/pyramid-island-bridge-in-fog-jasper-national-park-photography-print-dan-sproul.html" target="_blank" rel="noopener" aria-label="Shop the Pyramid Island Bridge in Fog canvas promotion">
+          <img src="therapist lounge foggy island dan sproul.jpg" alt="Pyramid Island Bridge in Fog by Dan Sproul shown in a calm interior setting" loading="lazy" decoding="async">
+        </a>
+        <div class="promo-hero-copy">
+          <p class="weekly-print-kicker">Jasper National Park · Limited-Time Canvas Promotion</p>
+          <h3>Pyramid Island Bridge in Fog</h3>
+          <p class="promo-intro">Soft blue-gray fog, still water, evergreen forest, and the Canadian Rockies create a quiet statement piece for living rooms, bedrooms, offices, cabins, and lake homes.</p>
 
+          <div class="promo-price-row" aria-label="Promotional price details">
+            <div class="promo-price">
+              <span class="promo-price-now">$120</span>
+              <span class="promo-price-was">Regularly $240</span>
+            </div>
+            <div class="promo-format">
+              <strong>36 × 24</strong>
+              <span>Stretched canvas</span>
+            </div>
+            <div class="promo-savings">
+              <strong>50% Off</strong>
+              <span>Limited-time promotion</span>
+            </div>
+          </div>
+
+          <div class="promo-actions">
+            <a class="weekly-print-action promo-primary" href="https://dansproul.com/featured/pyramid-island-bridge-in-fog-jasper-national-park-photography-print-dan-sproul.html" target="_blank" rel="noopener">Shop the Canvas Offer</a>
+            <a class="promo-secondary" href="best-sellers.html">View All Best Sellers →</a>
+          </div>
+
+          <p class="promo-note">Promotion applies to the featured 36 × 24 stretched canvas while available. Other sizes and print formats remain available through the print storefront.</p>
+        </div>
+      </article>
+
+      <div class="also-featured-head">
+        <p class="weekly-print-kicker">Also Featured This Week</p>
+        <p>Two additional customer-favorite directions if you prefer warmer color or a stronger wildlife statement.</p>
+      </div>
+
+      <div class="weekly-print-grid secondary-feature-grid" aria-label="Additional featured print selections">
         <article class="weekly-print-card">
           <a class="weekly-print-image" href="https://dansproul.com/featured/dreamy-sunrise-in-cades-cove-smoky-mountains-dan-sproul.html" target="_blank" rel="noopener" aria-label="Shop Dreamy Sunrise in Cades Cove">
             <img src="modern bedroom cades cove sunrise dan sproul.jpg" alt="Dreamy Cades Cove sunrise photography displayed above a bed in a warm modern bedroom by Dan Sproul" loading="lazy" decoding="async">
@@ -2079,7 +2326,7 @@
       </div>
 
       <div class="weekly-featured-foot">
-        <p class="weekly-featured-reassurance">Prints from $45 · Framed from $100 · Canvas · Metal · Acrylic · Ships worldwide · Secure checkout through the print storefront</p>
+        <p class="weekly-featured-reassurance">Featured canvas promotion · Prints from $45 · Framed from $100 · Canvas · Metal · Acrylic · Ships worldwide</p>
         <a class="weekly-featured-all" href="best-sellers.html">View All Best Sellers →</a>
       </div>
     </div>
