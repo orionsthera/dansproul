@@ -2,197 +2,248 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://dsproul.com/</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://dsproul.com/best-sellers.html</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dsproul.com/art-collections.html</loc>
-    <lastmod>2026-08-07</lastmod>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://dsproul.com/about-dan-sproul.html</loc>
     <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://dsproul.com/in-your-space.html</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://dsproul.com/art-advisor.html</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://dsproul.com/for-designers.html</loc>
-    <lastmod>2026-08-07</lastmod>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://dsproul.com/blog.html</loc>
-    <lastmod>2026-08-07</lastmod>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://dsproul.com/artwork-guides.html</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dsproul.com/healthcare-artwork.html</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://dsproul.com/healthcare-oncology.html</loc>
     <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
   </url>
   <url>
     <loc>https://dsproul.com/waiting-room-artwork.html</loc>
     <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.86</priority>
   </url>
   <url>
     <loc>https://dsproul.com/how-to-choose-calming-artwork-medical-waiting-room.html</loc>
     <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
   </url>
   <url>
     <loc>https://dsproul.com/calming-water-art-therapy-offices.html</loc>
     <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
   </url>
   <url>
     <loc>https://dsproul.com/hospitality-artwork.html</loc>
     <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://dsproul.com/boutique-hotel-artwork.html</loc>
     <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
   </url>
   <url>
     <loc>https://dsproul.com/senior-living-artwork.html</loc>
-    <lastmod>2026-08-06</lastmod>
-  </url>
-  <url>
-    <loc>https://dsproul.com/senior-living-artwork-guide.html</loc>
-    <lastmod>2026-08-07</lastmod>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://dsproul.com/office-artwork.html</loc>
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://dsproul.com/residential-nature-wall-art.html</loc>
     <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://dsproul.com/lima-ohio-fine-art-photographer.html</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dsproul.com/lima-ohio-nature-wildlife-photography.html</loc>
     <lastmod>2026-07-15</lastmod>
-  </url>
-  <url>
-    <loc>https://dsproul.com/ottawa-metro-park-sunrise-photography-lima-ohio.html</loc>
-    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://dsproul.com/ohio-nature-photography-prints.html</loc>
-    <lastmod>2026-08-07</lastmod>
-  </url>
-  <url>
-    <loc>https://dsproul.com/cuyahoga-valley-national-park-photography-prints.html</loc>
-    <lastmod>2026-08-07</lastmod>
-  </url>
-  <url>
-    <loc>https://dsproul.com/cuyahoga-valley-national-park-photography-guide.html</loc>
-    <lastmod>2026-08-07</lastmod>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dsproul.com/alaska-photography-prints.html</loc>
-    <lastmod>2026-08-03</lastmod>
-  </url>
-  <url>
-    <loc>https://dsproul.com/colorado-photography-prints.html</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dsproul.com/colorado-fall-colors-photography-prints.html</loc>
-    <lastmod>2026-07-16</lastmod>
-  </url>
-  <url>
-    <loc>https://dsproul.com/oregon-coast-photography-prints.html</loc>
-    <lastmod>2026-05-11</lastmod>
-  </url>
-  <url>
-    <loc>https://dsproul.com/smoky-mountains-photography-prints.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dsproul.com/quiet-earth-collection.html</loc>
     <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dsproul.com/forest-light-collection.html</loc>
-    <lastmod>2026-07-07</lastmod>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dsproul.com/wellness-waters-collection.html</loc>
     <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dsproul.com/coastal-atmosphere.html</loc>
     <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dsproul.com/mountain-light-collection.html</loc>
     <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dsproul.com/monochrome-stillness.html</loc>
     <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dsproul.com/winter-stillness.html</loc>
     <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dsproul.com/open-horizons-collection.html</loc>
     <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dsproul.com/heritage-mixed-media.html</loc>
     <lastmod>2026-07-07</lastmod>
-  </url>
-  <url>
-    <loc>https://dsproul.com/vintage-travel-poster-collection.html</loc>
-    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dsproul.com/how-to-choose-large-wall-art-living-room.html</loc>
     <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
   </url>
   <url>
     <loc>https://dsproul.com/water-imagery-restorative-interiors.html</loc>
     <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://dsproul.com/how-nature-artwork-creates-calm-connected-homes.html</loc>
     <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://dsproul.com/how-hospitality-artwork-creates-a-memorable-sense-of-place.html</loc>
     <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.74</priority>
   </url>
   <url>
     <loc>https://dsproul.com/ricketts-glen-watkins-glen-spring-waterfall-trip.html</loc>
     <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://dsproul.com/48-hours-in-the-smokies-photography-prints.html</loc>
-    <lastmod>2026-07-13</lastmod>
+    <loc>https://dsproul.com/cuyahoga-valley-national-park-photography-guide.html</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
   </url>
   <url>
-    <loc>https://dsproul.com/maine-fall-road-trip-lily-bay-baxter-grafton-notch.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <loc>https://dsproul.com/mohican-state-park-ohio-photography-guide.html</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
   </url>
   <url>
-    <loc>https://dsproul.com/oregon-coast-road-trip-itinerary-photography-guide.html</loc>
-    <lastmod>2026-07-20</lastmod>
+    <loc>https://dsproul.com/vintage-travel-poster-collection.html</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
   </url>
 </urlset>
