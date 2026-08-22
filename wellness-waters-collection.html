@@ -2,6 +2,16 @@
 
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1Q52T85XS5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1Q52T85XS5');
+</script>
+
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="https://dsproul.com/sunset%20waters%20on%20the%20beach%20in%20modern%20bedroom.png" name="twitter:image"/><meta content="Wellness Waters is a residential-first collection of restorative water artwork by Dan Sproul for living rooms, bedrooms, primary suites, spa-inspired retreats, wellness spaces, hospitality interiors, and calming healthcare environments." name="twitter:description"/><meta content="Wellness Waters Collection | Restorative Water Artwork for Residential, Wellness &amp; Hospitality Interiors | Dan Sproul" name="twitter:title"/><meta content="summary_large_image" name="twitter:card"/><meta content="index, follow, max-image-preview:large" name="robots"/><meta content="Dan Sproul" name="author"/>
 <title>Wellness Waters Collection | Restorative Water Artwork for Residential, Wellness &amp; Hospitality Interiors | Dan Sproul</title>
@@ -2479,5 +2489,103 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 </script>
+
+<!-- Dan Sproul GA4 business-event tracking -->
+<script>
+(function () {
+  function sendEvent(name, params) {
+    if (typeof gtag !== 'function') return;
+    gtag('event', name, Object.assign({
+      source_page: window.location.pathname
+    }, params || {}));
+  }
+
+  // Sitewide link tracking
+  document.addEventListener('click', function (event) {
+    const link = event.target.closest('a');
+    if (!link) return;
+
+    // Clicking a Wellness Waters room image opens the lightbox rather than
+    // immediately leaving for the storefront. Track that as room_preview_open
+    // instead of view_print.
+    if (event.target.closest('.mockup-image img')) return;
+
+    const href = link.href || '';
+    const text = (link.textContent || '').trim();
+    const lowerHref = href.toLowerCase();
+    const lowerText = text.toLowerCase();
+
+    // Individual artwork / print clicks
+    if (
+      lowerHref.includes('dansproul.com/featured/') ||
+      lowerHref.includes('dansproul.com/art/')
+    ) {
+      sendEvent('view_print', {
+        link_url: href,
+        link_text: text
+      });
+      return;
+    }
+
+    // Main storefront / catalog handoff
+    if (lowerHref.includes('dansproul.com')) {
+      sendEvent('shop_click', {
+        link_url: href,
+        link_text: text
+      });
+      return;
+    }
+
+    // Email / inquiry actions
+    if (lowerHref.startsWith('mailto:')) {
+      if (
+        lowerHref.includes('mockup') ||
+        lowerText.includes('mockup')
+      ) {
+        sendEvent('mockup_request', {
+          link_text: text
+        });
+        return;
+      }
+
+      if (
+        lowerHref.includes('trade') ||
+        lowerHref.includes('project') ||
+        lowerHref.includes('inquiry') ||
+        lowerText.includes('trade inquiry') ||
+        lowerText.includes('project guidance')
+      ) {
+        sendEvent('project_inquiry', {
+          link_text: text
+        });
+        return;
+      }
+
+      sendEvent('contact_click', {
+        link_text: text
+      });
+    }
+  });
+
+  // Wellness Waters room-preview / lightbox engagement
+  document.addEventListener('click', function (event) {
+    const image = event.target.closest('.mockup-image img');
+    if (!image) return;
+
+    const preview = image.closest('.mockup-image');
+    if (!preview) return;
+
+    sendEvent('room_preview_open', {
+      artwork_title: preview.getAttribute('data-title') || '',
+      artwork_url:
+        preview.getAttribute('data-purchase') ||
+        preview.getAttribute('href') ||
+        '',
+      best_rooms: preview.getAttribute('data-rooms') || ''
+    });
+  });
+})();
+</script>
+
 </body>
 </html>
