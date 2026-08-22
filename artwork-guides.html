@@ -2,6 +2,16 @@
 
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1Q52T85XS5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1Q52T85XS5');
+</script>
+
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Artwork Guides | How to Choose Wall Art for Homes &amp; Interiors | Dan Sproul</title>
@@ -931,5 +941,74 @@ document.addEventListener('DOMContentLoaded',function(){
   }
 });
 </script>
+
+<!-- Dan Sproul GA4 business-event tracking -->
+<script>
+document.addEventListener('click', function (event) {
+  const link = event.target.closest('a');
+  if (!link || typeof gtag !== 'function') return;
+
+  const href = link.href || '';
+  const text = (link.textContent || '').trim();
+  const lowerHref = href.toLowerCase();
+  const lowerText = text.toLowerCase();
+
+  if (lowerHref.includes('dansproul.com/featured/')) {
+    gtag('event', 'view_print', {
+      link_url: href,
+      link_text: text,
+      source_page: window.location.pathname
+    });
+    return;
+  }
+
+  if (lowerHref.includes('dansproul.com')) {
+    gtag('event', 'shop_click', {
+      link_url: href,
+      link_text: text,
+      source_page: window.location.pathname
+    });
+    return;
+  }
+
+  if (lowerHref.includes('art-advisor.html')) {
+    gtag('event', 'art_advisor_click', {
+      link_url: href,
+      link_text: text,
+      source_page: window.location.pathname
+    });
+    return;
+  }
+
+  if (lowerHref.startsWith('mailto:')) {
+    if (lowerHref.includes('mockup') || lowerText.includes('mockup')) {
+      gtag('event', 'mockup_request', {
+        link_text: text,
+        source_page: window.location.pathname
+      });
+      return;
+    }
+
+    if (
+      lowerHref.includes('project') ||
+      lowerText.includes('start a project') ||
+      lowerText.includes('discuss a project') ||
+      lowerText.includes('project guidance')
+    ) {
+      gtag('event', 'project_inquiry', {
+        link_text: text,
+        source_page: window.location.pathname
+      });
+      return;
+    }
+
+    gtag('event', 'contact_click', {
+      link_text: text,
+      source_page: window.location.pathname
+    });
+  }
+});
+</script>
+
 </body>
 </html>
