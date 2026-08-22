@@ -1,5 +1,15 @@
 <!DOCTYPE html>
 <html lang="en"><head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1Q52T85XS5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1Q52T85XS5');
+</script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mountain Light Nature Prints &amp; Alpine Wall Art | Dan Sproul</title>
@@ -2534,4 +2544,112 @@ document.addEventListener('DOMContentLoaded',function(){
   });
 });
 </script>
+
+<!-- Dan Sproul GA4 business-event tracking -->
+<script>
+(function () {
+  function sendEvent(name, params) {
+    if (typeof gtag !== 'function') return;
+    gtag('event', name, Object.assign({
+      source_page: window.location.pathname
+    }, params || {}));
+  }
+
+  // Sitewide link tracking
+  document.addEventListener('click', function (event) {
+    const link = event.target.closest('a');
+    if (!link) return;
+
+    const href = link.href || '';
+    const text = (link.textContent || '').trim();
+    const lowerHref = href.toLowerCase();
+    const lowerText = text.toLowerCase();
+
+    // Individual artwork / print clicks
+    if (
+      lowerHref.includes('dansproul.com/featured/') ||
+      lowerHref.includes('dansproul.com/art/')
+    ) {
+      sendEvent('view_print', {
+        link_url: href,
+        link_text: text
+      });
+      return;
+    }
+
+    // Storefront / catalog handoff
+    if (lowerHref.includes('dansproul.com')) {
+      sendEvent('shop_click', {
+        link_url: href,
+        link_text: text
+      });
+      return;
+    }
+
+    // Email / inquiry actions
+    if (lowerHref.startsWith('mailto:')) {
+      if (
+        lowerHref.includes('mockup') ||
+        lowerText.includes('mockup')
+      ) {
+        sendEvent('mockup_request', {
+          link_text: text
+        });
+        return;
+      }
+
+      if (
+        lowerHref.includes('project') ||
+        lowerHref.includes('inquiry') ||
+        lowerHref.includes('trade') ||
+        lowerText.includes('trade pricing') ||
+        lowerText.includes('email dan')
+      ) {
+        sendEvent('project_inquiry', {
+          link_text: text
+        });
+        return;
+      }
+
+      sendEvent('contact_click', {
+        link_text: text
+      });
+    }
+  });
+
+  // Mountain Light room-preview engagement
+  document.addEventListener('click', function (event) {
+    const preview = event.target.closest('.mockup-trigger');
+    if (!preview) return;
+
+    // Direct purchase links are tracked separately.
+    if (event.target.closest('a')) return;
+
+    sendEvent('room_preview_open', {
+      artwork_title: preview.getAttribute('data-title') || '',
+      artwork_url: preview.getAttribute('data-purchase') || '',
+      best_rooms: preview.getAttribute('data-rooms') || ''
+    });
+  });
+
+  // Mobile progressive-disclosure engagement
+  document.addEventListener('click', function (event) {
+    const mockMore = event.target.closest('.mountain-mock-more');
+    if (mockMore) {
+      sendEvent('interior_examples_toggle', {
+        expanded: mockMore.getAttribute('aria-expanded') === 'true'
+      });
+      return;
+    }
+
+    const printMore = event.target.closest('.mountain-print-more');
+    if (printMore) {
+      sendEvent('mountain_prints_toggle', {
+        expanded: printMore.getAttribute('aria-expanded') === 'true'
+      });
+    }
+  });
+})();
+</script>
+
 </body></html>
