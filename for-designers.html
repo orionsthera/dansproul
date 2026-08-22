@@ -2,6 +2,16 @@
 
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1Q52T85XS5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1Q52T85XS5');
+</script>
+
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Fine Art Photography for Interior Designers | Dan Sproul | Lima, Ohio</title>
@@ -2786,5 +2796,104 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 </script>
+
+<!-- Dan Sproul GA4 business-event tracking -->
+<script>
+(function () {
+  function sendEvent(name, params) {
+    if (typeof gtag !== 'function') return;
+    gtag('event', name, Object.assign({
+      source_page: window.location.pathname
+    }, params || {}));
+  }
+
+  // Sitewide link tracking
+  document.addEventListener('click', function (event) {
+    const link = event.target.closest('a');
+    if (!link) return;
+
+    const href = link.href || '';
+    const text = (link.textContent || '').trim();
+    const lowerHref = href.toLowerCase();
+    const lowerText = text.toLowerCase();
+
+    // Individual artwork / print clicks
+    if (
+      lowerHref.includes('dansproul.com/featured/') ||
+      lowerHref.includes('dansproul.com/art/')
+    ) {
+      sendEvent('view_print', {
+        link_url: href,
+        link_text: text
+      });
+      return;
+    }
+
+    // Storefront / catalog handoff
+    if (lowerHref.includes('dansproul.com')) {
+      sendEvent('shop_click', {
+        link_url: href,
+        link_text: text
+      });
+      return;
+    }
+
+    // Email / inquiry actions
+    if (lowerHref.startsWith('mailto:')) {
+      if (
+        lowerHref.includes('mockup') ||
+        lowerText.includes('mockup')
+      ) {
+        sendEvent('mockup_request', {
+          link_text: text
+        });
+        return;
+      }
+
+      if (
+        lowerHref.includes('project') ||
+        lowerText.includes('start a project') ||
+        lowerText.includes('discuss a project') ||
+        lowerText.includes('project guidance')
+      ) {
+        sendEvent('project_inquiry', {
+          link_text: text
+        });
+        return;
+      }
+
+      sendEvent('contact_click', {
+        link_text: text
+      });
+    }
+  });
+
+  // Trade-account application
+  const tradeForm = document.getElementById('tradeFormWrap');
+  if (tradeForm) {
+    tradeForm.addEventListener('submit', function () {
+      if (!tradeForm.checkValidity()) return;
+
+      sendEvent('trade_application', {
+        design_focus: document.getElementById('tf-type')?.value || ''
+      });
+    });
+  }
+
+  // Lightbox / mockup-preview engagement
+  document.addEventListener('click', function (event) {
+    const preview = event.target.closest(
+      '.placement-card[onclick*="openFDLightbox"], .hospitality-slide[onclick*="openFDLightbox"]'
+    );
+    if (!preview) return;
+
+    const image = preview.querySelector('img');
+    sendEvent('room_preview_open', {
+      image_alt: image?.alt || ''
+    });
+  });
+})();
+</script>
+
 </body>
 </html>
