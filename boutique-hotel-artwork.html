@@ -1,6 +1,16 @@
 <!doctype html>
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1Q52T85XS5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1Q52T85XS5');
+</script>
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Boutique Hotel Artwork & Atmospheric Photography for Guest Interiors | Dan Sproul</title>
@@ -331,5 +341,88 @@ document.addEventListener('DOMContentLoaded', function () {
   document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && modal.classList.contains('is-open')){ closeModal(); } });
 });
 </script>
+
+<!-- Dan Sproul GA4 business-event tracking -->
+<script>
+document.addEventListener('click', function (event) {
+  const link = event.target.closest('a');
+  if (!link || typeof gtag !== 'function') return;
+
+  const href = link.href || '';
+  const text = (link.textContent || '').trim();
+  const lowerHref = href.toLowerCase();
+  const lowerText = text.toLowerCase();
+
+  // Individual artwork / print clicks
+  if (
+    lowerHref.includes('dansproul.com/featured/') ||
+    lowerHref.includes('dansproul.com/art/')
+  ) {
+    gtag('event', 'view_print', {
+      link_url: href,
+      link_text: text,
+      source_page: window.location.pathname
+    });
+    return;
+  }
+
+  // Main storefront / collection clicks
+  if (lowerHref.includes('dansproul.com')) {
+    gtag('event', 'shop_click', {
+      link_url: href,
+      link_text: text,
+      source_page: window.location.pathname
+    });
+    return;
+  }
+
+  // Email / inquiry actions
+  if (lowerHref.startsWith('mailto:')) {
+
+    if (
+      lowerHref.includes('mockup') ||
+      lowerText.includes('mockup')
+    ) {
+      gtag('event', 'mockup_request', {
+        link_text: text,
+        source_page: window.location.pathname
+      });
+      return;
+    }
+
+    if (
+      lowerHref.includes('project') ||
+      lowerText.includes('start a project') ||
+      lowerText.includes('discuss a project') ||
+      lowerText.includes('project guidance') ||
+      lowerText.includes('request guidance') ||
+      lowerText.includes('email dan')
+    ) {
+      gtag('event', 'project_inquiry', {
+        link_text: text,
+        source_page: window.location.pathname
+      });
+      return;
+    }
+
+    gtag('event', 'contact_click', {
+      link_text: text,
+      source_page: window.location.pathname
+    });
+  }
+});
+
+// Boutique-hotel installation preview engagement
+document.addEventListener('click', function (event) {
+  const preview = event.target.closest('.mockup-image-button');
+  if (!preview || typeof gtag !== 'function') return;
+
+  gtag('event', 'installation_preview_open', {
+    artwork_title: preview.getAttribute('data-title') || '',
+    source_page: window.location.pathname
+  });
+});
+</script>
+
 </body>
 </html>
