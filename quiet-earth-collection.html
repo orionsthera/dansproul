@@ -2,6 +2,16 @@
 
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1Q52T85XS5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1Q52T85XS5');
+</script>
+
 <meta charset="UTF-8"/>
 <meta content="index, follow, max-image-preview:large" name="robots"/><meta content="Dan Sproul" name="author"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Calming Nature Photography Prints | Quiet Earth by Dan Sproul</title>
@@ -1923,5 +1933,92 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 </script>
+
+<!-- Dan Sproul GA4 business-event tracking -->
+<script>
+(function () {
+  function sendEvent(name, params) {
+    if (typeof gtag !== 'function') return;
+    gtag('event', name, Object.assign({
+      source_page: window.location.pathname
+    }, params || {}));
+  }
+
+  // Sitewide link tracking
+  document.addEventListener('click', function (event) {
+    const link = event.target.closest('a');
+    if (!link) return;
+
+    const href = link.href || '';
+    const text = (link.textContent || '').trim();
+    const lowerHref = href.toLowerCase();
+    const lowerText = text.toLowerCase();
+
+    // Individual artwork / print clicks
+    if (
+      lowerHref.includes('dansproul.com/featured/') ||
+      lowerHref.includes('dansproul.com/art/')
+    ) {
+      sendEvent('view_print', {
+        link_url: href,
+        link_text: text
+      });
+      return;
+    }
+
+    // Main storefront / catalog handoff
+    if (lowerHref.includes('dansproul.com')) {
+      sendEvent('shop_click', {
+        link_url: href,
+        link_text: text
+      });
+      return;
+    }
+
+    // Email / inquiry actions
+    if (lowerHref.startsWith('mailto:')) {
+      if (
+        lowerHref.includes('mockup') ||
+        lowerText.includes('mockup')
+      ) {
+        sendEvent('mockup_request', {
+          link_text: text
+        });
+        return;
+      }
+
+      if (
+        lowerHref.includes('project') ||
+        lowerHref.includes('inquiry') ||
+        lowerHref.includes('recommendation') ||
+        lowerText.includes('project guidance') ||
+        lowerText.includes('artwork help')
+      ) {
+        sendEvent('project_inquiry', {
+          link_text: text
+        });
+        return;
+      }
+
+      sendEvent('contact_click', {
+        link_text: text
+      });
+    }
+  });
+
+  // Quiet Earth room-preview engagement
+  document.addEventListener('click', function (event) {
+    const preview = event.target.closest('.mockup-image-button');
+    if (!preview) return;
+
+    sendEvent('room_preview_open', {
+      artwork_title: preview.getAttribute('data-title') || '',
+      artwork_url: preview.getAttribute('data-link') || '',
+      suggested_size: preview.getAttribute('data-size') || ''
+    });
+  });
+})();
+</script>
+
 </body>
 </html>
