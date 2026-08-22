@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1Q52T85XS5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1Q52T85XS5');
+</script>
+
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Lima Ohio Fine Art Photographer &amp; Nature Wall Art | Dan Sproul</title>
@@ -1297,5 +1307,102 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 </script>
+
+<!-- Dan Sproul GA4 business-event tracking -->
+<script>
+(function () {
+  function sendEvent(name, params) {
+    if (typeof gtag !== 'function') return;
+    gtag('event', name, Object.assign({
+      source_page: window.location.pathname
+    }, params || {}));
+  }
+
+  // Sitewide link tracking
+  document.addEventListener('click', function (event) {
+    const link = event.target.closest('a');
+    if (!link) return;
+
+    const href = link.href || '';
+    const text = (link.textContent || '').trim();
+    const lowerHref = href.toLowerCase();
+    const lowerText = text.toLowerCase();
+
+    // Individual artwork / print clicks
+    if (
+      lowerHref.includes('dansproul.com/featured/') ||
+      lowerHref.includes('dansproul.com/art/')
+    ) {
+      sendEvent('view_print', {
+        link_url: href,
+        link_text: text
+      });
+      return;
+    }
+
+    // Storefront / catalog handoff
+    if (lowerHref.includes('dansproul.com')) {
+      sendEvent('shop_click', {
+        link_url: href,
+        link_text: text
+      });
+      return;
+    }
+
+    // Art Advisor funnel entry
+    if (lowerHref.includes('art-advisor.html')) {
+      sendEvent('art_advisor_click', {
+        link_url: href,
+        link_text: text
+      });
+      return;
+    }
+
+    // Email / inquiry actions
+    if (lowerHref.startsWith('mailto:')) {
+      if (
+        lowerHref.includes('mockup') ||
+        lowerText.includes('mockup')
+      ) {
+        sendEvent('mockup_request', {
+          link_text: text
+        });
+        return;
+      }
+
+      if (
+        lowerHref.includes('project') ||
+        lowerHref.includes('inquiry') ||
+        lowerHref.includes('order') ||
+        lowerText.includes('contact dan') ||
+        lowerText.includes('local artwork') ||
+        lowerText.includes('direct quote')
+      ) {
+        sendEvent('project_inquiry', {
+          link_text: text
+        });
+        return;
+      }
+
+      sendEvent('contact_click', {
+        link_text: text
+      });
+    }
+  });
+
+  // Lima / Northwest Ohio local artwork preview engagement
+  document.addEventListener('click', function (event) {
+    const preview = event.target.closest('.local-installation-card');
+    if (!preview) return;
+
+    sendEvent('local_artwork_preview_open', {
+      artwork_title: preview.getAttribute('data-title') || '',
+      artwork_url: preview.getAttribute('data-link') || '',
+      suggested_sizes: preview.getAttribute('data-sizes') || ''
+    });
+  });
+})();
+</script>
+
 </body>
 </html>
