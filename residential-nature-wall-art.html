@@ -1,5 +1,15 @@
 <!DOCTYPE html>
 <html lang="en"><head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1Q52T85XS5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1Q52T85XS5');
+</script>
+
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>Nature Wall Art for Homes, Living Rooms &amp; Bedrooms | Dan Sproul</title><meta content="https://dsproul.com/residential%20lakehouse%20living%20room%20framed%20landscape.jpg" name="twitter:image"><meta content="Nature wall art for living rooms, bedrooms, home offices, lake houses, cabins, entryways, and residential interiors by Ohio-based artist Dan Sproul. Room mockups, sizing guidance, and print recommendations." name="twitter:description"><meta content="Nature Wall Art for Homes, Living Rooms &amp; Bedrooms | Dan Sproul" name="twitter:title"><meta content="summary_large_image" name="twitter:card"><meta content="index, follow, max-image-preview:large" name="robots"><meta content="Dan Sproul" name="author">
@@ -2036,4 +2046,114 @@ document.addEventListener('DOMContentLoaded', function(){
 
 });
 </script>
+
+<!-- Dan Sproul GA4 business-event tracking -->
+<script>
+(function () {
+  function sendEvent(name, params) {
+    if (typeof gtag !== 'function') return;
+    gtag('event', name, Object.assign({
+      source_page: window.location.pathname
+    }, params || {}));
+  }
+
+  // Sitewide link tracking
+  document.addEventListener('click', function (event) {
+    const link = event.target.closest('a');
+    if (!link) return;
+
+    const href = link.href || '';
+    const text = (link.textContent || '').trim();
+    const lowerHref = href.toLowerCase();
+    const lowerText = text.toLowerCase();
+
+    // Art Advisor funnel entry
+    if (lowerHref.includes('art-advisor.html')) {
+      sendEvent('art_advisor_click', {
+        link_url: href,
+        link_text: text
+      });
+      return;
+    }
+
+    // Individual artwork / print clicks
+    if (
+      lowerHref.includes('dansproul.com/featured/') ||
+      lowerHref.includes('dansproul.com/art/')
+    ) {
+      sendEvent('view_print', {
+        link_url: href,
+        link_text: text
+      });
+      return;
+    }
+
+    // Main storefront / catalog handoff
+    if (lowerHref.includes('dansproul.com')) {
+      sendEvent('shop_click', {
+        link_url: href,
+        link_text: text
+      });
+      return;
+    }
+
+    // Email / inquiry actions
+    if (lowerHref.startsWith('mailto:')) {
+      if (
+        lowerHref.includes('mockup') ||
+        lowerText.includes('mockup')
+      ) {
+        sendEvent('mockup_request', {
+          link_text: text
+        });
+        return;
+      }
+
+      if (
+        lowerHref.includes('recommendation') ||
+        lowerHref.includes('project') ||
+        lowerHref.includes('inquiry') ||
+        lowerText.includes('request help') ||
+        lowerText.includes('request artwork help') ||
+        lowerText.includes('artwork recommendation')
+      ) {
+        sendEvent('project_inquiry', {
+          link_text: text
+        });
+        return;
+      }
+
+      sendEvent('contact_click', {
+        link_text: text
+      });
+    }
+  });
+
+  // Residential room-preview engagement
+  document.addEventListener('click', function (event) {
+    const preview = event.target.closest('.mockup-card');
+    if (!preview) return;
+
+    // Direct shop links are already tracked as view_print.
+    if (event.target.closest('.quick-shop')) return;
+
+    sendEvent('room_preview_open', {
+      artwork_title: preview.getAttribute('data-title') || '',
+      artwork_url: preview.getAttribute('data-purchase') || '',
+      best_rooms: preview.getAttribute('data-rooms') || ''
+    });
+  });
+
+  // Mobile "view all room examples" engagement
+  document.addEventListener('click', function (event) {
+    const more = event.target.closest('.mockup-more-control');
+    if (!more) return;
+
+    sendEvent('residential_examples_toggle', {
+      expanded: more.getAttribute('aria-expanded') === 'true'
+    });
+  });
+})();
+</script>
+
 </body></html>
