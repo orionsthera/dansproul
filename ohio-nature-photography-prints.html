@@ -2,6 +2,16 @@
 
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1Q52T85XS5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1Q52T85XS5');
+</script>
+
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Ohio Nature Photography Prints | Ohio Landscape Wall Art by Dan Sproul</title>
@@ -2595,5 +2605,113 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 </script>
+
+<!-- Dan Sproul GA4 business-event tracking -->
+<script>
+(function () {
+  function sendEvent(name, params) {
+    if (typeof gtag !== 'function') return;
+    gtag('event', name, Object.assign({
+      source_page: window.location.pathname
+    }, params || {}));
+  }
+
+  // Sitewide link tracking
+  document.addEventListener('click', function (event) {
+    const link = event.target.closest('a');
+    if (!link) return;
+
+    const href = link.href || '';
+    const text = (link.textContent || '').trim();
+    const lowerHref = href.toLowerCase();
+    const lowerText = text.toLowerCase();
+
+    // Ohio map / regional browsing paths.
+    // Handle these before the storefront rules so location-category links
+    // are not mislabeled as individual print views.
+    if (
+      link.matches('.map-pin, .ohio-map-link') ||
+      link.closest('.featured-region-spotlight') ||
+      link.closest('.location-link-grid')
+    ) {
+      sendEvent('ohio_location_click', {
+        link_url: href,
+        link_text: text,
+        location_name:
+          link.querySelector('strong')?.textContent?.trim() ||
+          link.querySelector('h3')?.textContent?.trim() ||
+          link.getAttribute('aria-label') ||
+          text
+      });
+      return;
+    }
+
+    // Individual artwork / print clicks
+    if (
+      lowerHref.includes('dansproul.com/featured/') ||
+      lowerHref.includes('dansproul.com/art/')
+    ) {
+      sendEvent('view_print', {
+        link_url: href,
+        link_text: text
+      });
+      return;
+    }
+
+    // Main storefront / catalog handoff
+    if (lowerHref.includes('dansproul.com')) {
+      sendEvent('shop_click', {
+        link_url: href,
+        link_text: text
+      });
+      return;
+    }
+
+    // Email / inquiry actions
+    if (lowerHref.startsWith('mailto:')) {
+      if (
+        lowerHref.includes('mockup') ||
+        lowerText.includes('mockup')
+      ) {
+        sendEvent('mockup_request', {
+          link_text: text
+        });
+        return;
+      }
+
+      if (
+        lowerHref.includes('project') ||
+        lowerHref.includes('inquiry') ||
+        lowerHref.includes('order') ||
+        lowerText.includes('project guidance') ||
+        lowerText.includes('local ordering') ||
+        lowerText.includes('artwork help')
+      ) {
+        sendEvent('project_inquiry', {
+          link_text: text
+        });
+        return;
+      }
+
+      sendEvent('contact_click', {
+        link_text: text
+      });
+    }
+  });
+
+  // Ohio room-preview / installation modal engagement
+  document.addEventListener('click', function (event) {
+    const preview = event.target.closest('.mockup-button');
+    if (!preview) return;
+
+    sendEvent('room_preview_open', {
+      artwork_title: preview.getAttribute('data-title') || '',
+      artwork_url: preview.getAttribute('data-link') || '',
+      best_rooms: preview.getAttribute('data-rooms') || ''
+    });
+  });
+})();
+</script>
+
 </body>
 </html>
