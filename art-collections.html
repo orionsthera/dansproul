@@ -14,12 +14,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Fine Art Nature Photography Collections for Interiors | Dan Sproul</title>
-<meta name="description" content="Explore fine art nature photography collections by Dan Sproul for homes, healthcare, hospitality, offices, wellness spaces, designers, collectors, and atmospheric interiors, including Alaska, Colorado, Ohio, vintage travel posters, heritage mixed media, and curated mood-based artwork.">
+<meta name="description" content="Explore fine art nature and wildlife photography collections by Dan Sproul for homes, healthcare, hospitality, offices, wellness spaces, designers, collectors, and atmospheric interiors, including Alaska, Colorado, Ohio, vintage travel posters, heritage mixed media, and curated mood-based artwork.">
 <meta name="author" content="Dan Sproul">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://dsproul.com/art-collections.html">
 <meta property="og:title" content="Fine Art Nature Photography Collections for Interiors | Dan Sproul">
-<meta property="og:description" content="Explore atmospheric nature photography collections for homes, healthcare, hospitality, offices, wellness spaces, designers, collectors, and interior projects, including Alaska, Colorado, Ohio, vintage travel posters, heritage mixed media, and curated mood-based artwork.">
+<meta property="og:description" content="Explore atmospheric nature and wildlife photography collections for homes, healthcare, hospitality, offices, wellness spaces, designers, collectors, and interior projects, including Alaska, Colorado, Ohio, vintage travel posters, heritage mixed media, and curated mood-based artwork.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://dsproul.com/art-collections.html">
 <meta property="og:image" content="https://dsproul.com/moody%20mountain%20landscape%20in%20modern%20bedroom.png">
@@ -905,6 +905,43 @@ body{padding-top:66px}
   #heritage-mixed-media .feature-card{min-height:225px!important}
 }
 
+/* AUGUST 2026 PRIMARY COLLECTION HUB — nine-card responsive grid */
+.collection-grid{
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:22px!important;
+  max-width:1240px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.collection-grid .card{
+  display:flex!important;
+  flex-direction:column;
+  min-width:0;
+}
+.collection-grid .copy{
+  display:flex;
+  flex-direction:column;
+  flex:1;
+  padding:23px!important;
+}
+.collection-grid .copy p{
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:3;
+  overflow:hidden;
+  font-size:.88rem;
+  line-height:1.65;
+}
+.collection-grid .meta{margin-top:auto;padding-top:17px}
+@media(max-width:1100px) and (min-width:701px){
+  .collection-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+@media(max-width:700px){
+  .collection-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}
+  .collection-grid .copy{padding:13px!important}
+  .collection-grid .copy p,.collection-grid .meta{display:none!important}
+}
+
 </style>
 <script type="application/ld+json">
 {
@@ -945,7 +982,8 @@ body{padding-top:66px}
       "@id": "https://dsproul.com/art-collections.html#collectionpage",
       "url": "https://dsproul.com/art-collections.html",
       "name": "Fine Art Nature Photography Collections for Interiors | Dan Sproul",
-      "description": "Explore fine art nature photography collections by Dan Sproul for homes, healthcare, hospitality, offices, wellness spaces, designers, collectors, and atmospheric interiors, including Alaska, Colorado, Ohio, vintage travel posters, heritage mixed media, and curated mood-based artwork.",
+      "description": "Explore fine art nature and wildlife photography collections by Dan Sproul for homes, healthcare, hospitality, offices, wellness spaces, designers, collectors, and atmospheric interiors, including Alaska, Colorado, Ohio, vintage travel posters, heritage mixed media, and curated mood-based artwork.",
+      "dateModified": "2026-08-26",
       "author": {
         "@id": "https://dsproul.com/#dan-sproul"
       },
@@ -963,6 +1001,8 @@ body{padding-top:66px}
         "black-and-white office photography",
         "expansive landscape wall art",
         "open horizon landscape photography",
+        "wildlife photography prints",
+        "animal wall art",
         "vintage travel posters",
         "travel posters for sale",
         "retro destination wall art",
@@ -1044,6 +1084,22 @@ body{padding-top:66px}
       },
       "creditText": "Dan Sproul",
       "acquireLicensePage": "https://dansproul.com",
+      "representativeOfPage": false
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/bighorn%20ram%20in%20living%20room%20mockup.jpg#image",
+      "contentUrl": "https://dsproul.com/bighorn%20ram%20in%20living%20room%20mockup.jpg",
+      "name": "Wildlife photography collection featuring a Rocky Mountain bighorn ram print in a contemporary living room",
+      "description": "Large framed black-and-white Rocky Mountain bighorn ram photograph by Dan Sproul shown in a refined contemporary living room.",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Artwork photography by Dan Sproul",
+      "acquireLicensePage": "https://dsproul.com/wildlife-photography-prints.html",
       "representativeOfPage": false
     },
     {
@@ -1177,6 +1233,7 @@ body{padding-top:66px}
 <a href="#atmospheric" class="btn primary">Atmospheric Collections</a><a href="https://dansproul.com" class="btn" target="_blank" rel="noopener">Shop Full Catalog</a>
 <nav class="trust" aria-label="Featured photography collections">
   <a href="/quiet-earth-collection.html">Quiet Earth</a>
+  <a href="/wildlife-photography-prints.html">Wildlife Photography</a>
   <a href="/winter-stillness.html">Winter Stillness</a>
   <a href="/wellness-waters-collection.html">Wellness Waters</a>
   <a href="/coastal-atmosphere.html">Coastal Atmosphere</a>
@@ -1201,14 +1258,15 @@ body{padding-top:66px}
 </div></section>
 
 <section class="light" id="atmospheric"><div class="container">
-<div class="center"><span class="eyebrow">Primary Atmospheric Collections</span><h2>Eight collection directions for refined interiors.</h2><p>Each collection is curated to bring a sense of calm, clarity, and connection to interiors. Explore by atmosphere, location, or interior application to find the right artwork for your space.</p></div>
+<div class="center"><span class="eyebrow">Primary Fine Art Collections</span><h2>Nine curated directions for refined interiors.</h2><p>Explore by atmosphere, habitat, subject, or interior application. Each collection brings a distinct sense of place and feeling while remaining connected through natural light, thoughtful presentation, and artwork selected for real spaces.</p></div>
 <div class="collection-grid">
 <a class="card" href="/quiet-earth-collection.html"><img src="quiet-earth-appalachian-fog.jpg" onerror="this.src='quiet-earth-fallback.jpg'" alt="Quiet Earth fine art photography collection by Dan Sproul" loading="lazy" decoding="async"><div class="copy"><span>Calm / Grounded / Atmospheric</span><h3>Quiet Earth</h3><p>Muted landscapes, still water, mountain atmosphere, and grounded natural tones for calming residential, wellness, and hospitality interiors.</p><div class="meta"><em>Wellness</em><em>Hospitality</em><em>Quiet Luxury</em></div><b class="link">View Collection</b></div></a>
-<a class="card" href="/winter-stillness.html"><img src="winter stillness living room mockup.jpg" alt="Winter Stillness fine art photography collection by Dan Sproul shown in a calm living room interior" loading="lazy" decoding="async"><div class="copy"><span>Winter / Quiet / Neutral</span><h3>Winter Stillness</h3><p>Soft winter landscapes, quiet snow, muted woodland atmosphere, and neutral nature photography for calm homes, hospitality rooms, offices, and restful interiors.</p><div class="meta"><em>Calm Interiors</em><em>Neutral Palette</em><em>Hospitality</em></div><b class="link">View Collection</b></div></a>
+<a class="card" href="/wildlife-photography-prints.html"><img src="bighorn ram in living room mockup.jpg" alt="Large framed black-and-white Rocky Mountain bighorn ram photograph in a refined contemporary living room" loading="lazy" decoding="async"><div class="copy"><span>Wildlife / Habitat / Presence</span><h3>Wildlife Photography</h3><p>Bears, moose, bighorn sheep, birds, prairie animals, and coastal wildlife selected for character, atmosphere, and strong interior presence.</p><div class="meta"><em>Residential</em><em>Lodges</em><em>Collectors</em></div><b class="link">View Collection</b></div></a>
 <a class="card" href="/wellness-waters-collection.html"><img src="spa massage room waterfall mockup.jpg" alt="Wellness Waters fine art photography collection shown in a luxury spa treatment room with large waterfall wall art by Dan Sproul" loading="lazy" decoding="async"><div class="copy"><span>Water / Wellness / Restorative</span><h3>Wellness Waters</h3><p>Restorative waterfall, stream, and flowing water photography for spas, healthcare interiors, hospitality, and calm residential spaces.</p><div class="meta"><em>Spa</em><em>Healthcare</em><em>Wellness</em></div><b class="link">View Collection</b></div></a>
-<a class="card" href="/coastal-atmosphere.html"><img src="coastal-atmosphere-preview.jpg" onerror="this.src='residential-art-resource.jpg'" alt="Coastal Atmosphere fine art photography collection by Dan Sproul" loading="lazy" decoding="async"><div class="copy"><span>Moody / Coastal / Refined</span><h3>Coastal Atmosphere</h3><p>Moody Oregon Coast photography featuring sea stacks, fog, monochrome shoreline studies, and atmospheric coastal imagery for boutique hospitality and elevated coastal interiors.</p><div class="meta"><em>Coastal Modern</em><em>Residential</em><em>Boutique Hospitality</em></div><b class="link">View Collection</b></div></a>
 <a class="card" href="/mountain-light-collection.html"><img src="mountain-light-preview.jpg" onerror="this.src='mountain-light-artwork.jpg'" alt="Mountain Light fine art photography collection by Dan Sproul" loading="lazy" decoding="async"><div class="copy"><span>Alpine / Luminous / Statement</span><h3>Mountain Light</h3><p>Atmospheric mountain photography featuring alpine landscapes, dramatic peaks, expansive wilderness scenes, and elevated natural light designed for statement interiors and modern mountain-inspired spaces.</p><div class="meta"><em>Lodges</em><em>Residential</em><em>Hospitality</em></div><b class="link">View Collection</b></div></a>
 <a class="card" href="/forest-light-collection.html"><img src="forest-light-preview.jpg" onerror="this.src='forest-light-artwork.jpg'" alt="Forest Light fine art photography collection by Dan Sproul" loading="lazy" decoding="async"><div class="copy"><span>Woodland / Biophilic / Restorative</span><h3>Forest Light</h3><p>Atmospheric forest photography featuring woodland trails, filtered morning light, immersive green landscapes, and calming natural scenes designed for wellness-focused interiors and grounded modern environments.</p><div class="meta"><em>Biophilic</em><em>Wellness</em><em>Organic Modern</em></div><b class="link">View Collection</b></div></a>
+<a class="card" href="/coastal-atmosphere.html"><img src="coastal-atmosphere-preview.jpg" onerror="this.src='residential-art-resource.jpg'" alt="Coastal Atmosphere fine art photography collection by Dan Sproul" loading="lazy" decoding="async"><div class="copy"><span>Moody / Coastal / Refined</span><h3>Coastal Atmosphere</h3><p>Moody Oregon Coast photography featuring sea stacks, fog, monochrome shoreline studies, and atmospheric coastal imagery for boutique hospitality and elevated coastal interiors.</p><div class="meta"><em>Coastal Modern</em><em>Residential</em><em>Boutique Hospitality</em></div><b class="link">View Collection</b></div></a>
+<a class="card" href="/winter-stillness.html"><img src="winter stillness living room mockup.jpg" alt="Winter Stillness fine art photography collection by Dan Sproul shown in a calm living room interior" loading="lazy" decoding="async"><div class="copy"><span>Winter / Quiet / Neutral</span><h3>Winter Stillness</h3><p>Soft winter landscapes, quiet snow, muted woodland atmosphere, and neutral nature photography for calm homes, hospitality rooms, offices, and restful interiors.</p><div class="meta"><em>Calm Interiors</em><em>Neutral Palette</em><em>Hospitality</em></div><b class="link">View Collection</b></div></a>
 <a class="card" href="/monochrome-stillness.html"><img src="recovery hallway mockup.jpg" alt="Monochrome Stillness black and white landscape photography collection by Dan Sproul in a healthcare hallway interior" loading="lazy" decoding="async"><div class="copy"><span>Monochrome / Restorative / Architectural</span><h3>Monochrome Stillness</h3><p>Restrained black and white landscape photography featuring mist, reflection, quiet pathways, and mountain atmosphere for healthcare, wellness, hospitality, executive, and refined residential interiors.</p><div class="meta"><em>Healthcare</em><em>Hospitality</em><em>Executive</em></div><b class="link">View Collection</b></div></a>
 <a class="card" href="/open-horizons-collection.html"><img src="open-horizons-residential-living-room.jpg" alt="Open Horizons expansive landscape photography collection by Dan Sproul shown in a warm residential living room interior" loading="lazy" decoding="async"><div class="copy"><span>Open / Western / Expansive</span><h3>Open Horizons</h3><p>Expansive landscapes with open skies, prairie roads, dunes, badlands, and distant horizons for rooms that need space, calm, and visual breathing room.</p><div class="meta"><em>Residential</em><em>Cabins</em><em>Offices</em></div><b class="link">View Collection</b></div></a>
 </div></div></section>
@@ -1355,6 +1413,7 @@ body{padding-top:66px}
       <summary><span class="footer-summary-title">Collections</span></summary>
       <div class="footer-links">
         <a href="quiet-earth-collection.html">Quiet Earth</a>
+        <a href="wildlife-photography-prints.html">Wildlife Photography</a>
         <a href="winter-stillness.html">Winter Stillness</a>
         <a href="forest-light-collection.html">Forest Light</a>
         <a href="wellness-waters-collection.html">Wellness Waters</a>
