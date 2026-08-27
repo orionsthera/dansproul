@@ -384,6 +384,80 @@ h2{font-size:clamp(1.9rem,7vw,2.7rem)!important}
   }
 }
 
+
+/* CURATED HOSPITALITY FEATURE — service proof above installation grid */
+.curated-hospitality-feature{
+  max-width:1180px;
+  margin:0 auto 44px;
+}
+.curated-hospitality-frame{
+  overflow:hidden;
+  border:1px solid rgba(199,155,85,.22);
+  background:#12100d;
+  box-shadow:0 28px 80px rgba(0,0,0,.42);
+}
+.curated-hospitality-frame img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+.curated-hospitality-copy{
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:34px;
+  align-items:center;
+  padding:30px 0 0;
+}
+.curated-hospitality-copy h3{
+  font-size:clamp(28px,3.5vw,42px);
+  margin-bottom:10px;
+}
+.curated-hospitality-copy p{
+  max-width:760px;
+  font-size:14px;
+  margin:0;
+}
+.curated-hospitality-actions{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  min-width:230px;
+}
+.curated-hospitality-actions .btn{
+  text-align:center;
+}
+@media(max-width:900px){
+  .curated-hospitality-copy{
+    grid-template-columns:1fr;
+  }
+  .curated-hospitality-actions{
+    flex-direction:row;
+    flex-wrap:wrap;
+    min-width:0;
+  }
+}
+@media(max-width:680px){
+  .curated-hospitality-feature{
+    margin-bottom:28px;
+  }
+  .curated-hospitality-copy{
+    padding-top:18px;
+    gap:18px;
+  }
+  .curated-hospitality-copy h3{
+    font-size:1.5rem!important;
+  }
+  .curated-hospitality-copy p{
+    font-size:12.5px!important;
+    line-height:1.55!important;
+  }
+  .curated-hospitality-actions{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:8px;
+  }
+}
+
 </style>
 <script type="application/ld+json">
 {
@@ -698,6 +772,22 @@ h2{font-size:clamp(1.9rem,7vw,2.7rem)!important}
     },
     {
       "@type": "ImageObject",
+      "@id": "https://dsproul.com/boutique-hospitality-lounge-black-white-mountain-art-dan-sproul.jpg#image",
+      "contentUrl": "https://dsproul.com/boutique-hospitality-lounge-black-white-mountain-art-dan-sproul.jpg",
+      "name": "Curated black and white mountain artwork pairing in boutique hospitality lounge by Dan Sproul",
+      "description": "Boutique hospitality lounge concept featuring two coordinated black and white mountain landscape photographs curated by Dan Sproul for a refined hospitality interior.",
+      "creator": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "copyrightHolder": {
+        "@id": "https://dsproul.com/#dan-sproul"
+      },
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dsproul.com/monochrome-stillness.html",
+      "representativeOfPage": false
+    },
+    {
+      "@type": "ImageObject",
       "@id": "https://dsproul.com/hospitality-mockup-rustic-lodge-lobby-canadian-rockies.jpg#image",
       "contentUrl": "https://dsproul.com/hospitality-mockup-rustic-lodge-lobby-canadian-rockies.jpg",
       "name": "Luxury lodge hospitality lobby with Lake Louise mountain artwork by Dan Sproul",
@@ -855,12 +945,32 @@ h2{font-size:clamp(1.9rem,7vw,2.7rem)!important}
     <div class="note-card">
       <p class="eyebrow">Project Support</p>
       <h3>Built for hospitality specifications</h3>
-      <p>Available support includes coordinated artwork sets, custom sizing guidance, format recommendations, regional concepts, and complimentary room mockups based on photographs, renderings, or finish palettes.</p>
+      <p>Available support includes project-specific artwork curation, coordinated artwork sets, custom sizing guidance, format recommendations, regional concepts, and complimentary room mockups based on photographs, renderings, finish palettes, and wall dimensions.</p>
     </div>
   </div>
 </section>
 <section class="mockups" id="installations">
   <div class="section-heading"><p class="eyebrow">Featured Installation Concepts</p><h2>Hospitality mockups with direct print links.</h2><p>Click any mockup to enlarge the installation, then use the button inside the preview to view the corresponding print.</p></div>
+
+  <div class="curated-hospitality-feature">
+    <div class="curated-hospitality-frame">
+      <img src="boutique-hospitality-lounge-black-white-mountain-art-dan-sproul.jpg"
+           alt="Boutique hospitality lounge with two coordinated black and white mountain landscape photographs by Dan Sproul"
+           loading="lazy" decoding="async">
+    </div>
+    <div class="curated-hospitality-copy">
+      <div>
+        <p class="eyebrow">Curated Hospitality Artwork</p>
+        <h3>Coordinated Black &amp; White Artwork for Hospitality Interiors</h3>
+        <p>This lounge concept demonstrates a project-specific artwork direction rather than a single print selection. Designers can send a room photo, finish palette, wall dimensions, and desired atmosphere to receive coordinated artwork pairings, scale guidance, finish recommendations, and complimentary mockup previews.</p>
+      </div>
+      <div class="curated-hospitality-actions">
+        <a class="btn primary" href="mailto:dan@dsproul.com?subject=Hospitality%20Artwork%20Curation%20Request">Request Curated Mockup</a>
+        <a class="btn" href="monochrome-stillness.html">Explore Monochrome Collection</a>
+      </div>
+    </div>
+  </div>
+
   <div class="mockup-grid">
     <article class="mockup-card"><button class="mockup-image-button" type="button" data-img="hospitality-mockup-hotel-lobby-bnw-mountains.jpg" data-title="Majestic Resurrection Bay Black and White" data-desc="Black and white coastal mountain photography designed for boutique hotel lounges, executive hospitality spaces, and quiet luxury interiors." data-spaces="Boutique hotel lounges|Executive hospitality spaces|Quiet luxury lobbies|Modern resort interiors" data-link="https://dansproul.com/featured/majestic-resurrection-bay-black-and-white-dan-sproul.html"><img src="hospitality-mockup-hotel-lobby-bnw-mountains.jpg" alt="Black and white Resurrection Bay mountain artwork installed in a quiet luxury hospitality lounge by Dan Sproul" loading="lazy" decoding="async"></button><div class="mockup-copy"><p class="eyebrow">Quiet Luxury Hospitality Artwork</p><h3>Black &amp; White Mountain Lounge</h3><p>Refined monochrome artwork for hospitality spaces that need structure, calm, and visual sophistication.</p><a class="text-link" href="https://dansproul.com/featured/majestic-resurrection-bay-black-and-white-dan-sproul.html" target="_blank" rel="noopener">View Print →</a></div></article>
     <article class="mockup-card"><button class="mockup-image-button" type="button" data-img="hospitality modern spa mockup moody landscape lake.jpg" data-title="Moose Lake Sunrise Canada" data-desc="Warm sunrise reflections and calming lake imagery curated for spa retreats, wellness resorts, and restorative guest environments." data-spaces="Resort spas|Wellness retreats|Relaxation lounges|Restorative hospitality interiors" data-link="https://dansproul.com/featured/moose-lake-sunrise-canada-dan-sproul.html"><img src="hospitality modern spa mockup moody landscape lake.jpg" alt="Moose Lake sunrise artwork installed in a spa and wellness hospitality interior by Dan Sproul" loading="lazy" decoding="async"></button><div class="mockup-copy"><p class="eyebrow">Spa &amp; Wellness Artwork</p><h3>Moody Mountain Spa Installation</h3><p>Warm reflective imagery for wellness-driven hospitality spaces and restorative resort environments.</p><a class="text-link" href="https://dansproul.com/featured/moose-lake-sunrise-canada-dan-sproul.html" target="_blank" rel="noopener">View Print →</a></div></article>
