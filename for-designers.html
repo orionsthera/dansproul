@@ -1822,6 +1822,19 @@ line-height:1.7;
 @media(max-width:900px){.curation-proof-section{padding:64px 24px 70px}.curation-proof-copy{grid-template-columns:1fr;padding:24px 0 0}.curation-proof-tag{white-space:normal}}
 @media(max-width:580px){.curation-proof-section{padding:50px 22px 56px}.curation-proof-head{text-align:left;margin-bottom:28px}.curation-proof-head .section-label{justify-content:flex-start}.curation-proof-head p:not(.section-label){font-size:13px;line-height:1.7}.curation-proof-copy h3{font-size:1.55rem}.curation-proof-copy p{font-size:12px;line-height:1.7}}
 
+
+/* SELECTED ARTWORK PATH — bridge from curation proof to portfolio */
+.selected-artwork-path{background:#f2efe8;color:#171512;padding:48px 56px;border-bottom:1px solid rgba(181,146,74,.18)}
+.selected-artwork-path-inner{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:1fr auto;gap:36px;align-items:center}
+.selected-artwork-path .section-label{color:#8f7137;margin-bottom:14px}
+.selected-artwork-path h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.7vw,3.2rem);font-weight:400;line-height:1.05;color:#171512;margin-bottom:12px}
+.selected-artwork-path p{max-width:740px;color:#51483d;font-size:.78rem;line-height:1.9}
+.selected-artwork-path-actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}
+.selected-artwork-path .btn-out{color:#171512;border-color:rgba(143,113,55,.45)}
+.selected-artwork-path .btn-out:hover{color:#8f7137;border-color:#8f7137;background:rgba(143,113,55,.08)}
+@media(max-width:900px){.selected-artwork-path-inner{grid-template-columns:1fr}.selected-artwork-path-actions{justify-content:flex-start}}
+@media(max-width:680px){.selected-artwork-path{padding:42px 22px}.selected-artwork-path-actions{display:grid;grid-template-columns:1fr}.selected-artwork-path-actions .btn{width:100%;text-align:center}}
+
 </style>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -1894,6 +1907,10 @@ line-height:1.7;
         {
           "@type": "WebPageElement",
           "name": "Curated Artwork Pairing Example"
+        },
+        {
+          "@type": "WebPageElement",
+          "name": "Selected Artwork by Dan"
         },
         {
           "@type": "WebPageElement",
@@ -2219,6 +2236,21 @@ line-height:1.7;
 </figcaption>
 </figure>
 </div>
+</section>
+
+
+<section class="selected-artwork-path" id="selected-artwork">
+  <div class="selected-artwork-path-inner">
+    <div>
+      <p class="section-label">Selected Artwork</p>
+      <h2>A concise visual starting point before project-specific curation.</h2>
+      <p>Browse 24 photographs personally selected by Dan and organized by atmosphere, palette, and sense of place. If a direction fits your project, Dan can then search the broader 8,500+ image archive for coordinated works, alternate orientations, regional imagery, and project-specific options.</p>
+    </div>
+    <div class="selected-artwork-path-actions">
+      <a class="btn btn-solid" href="curated-by-dan.html">View Selected Artwork</a>
+      <a class="btn btn-out" href="mailto:dan@dsproul.com?subject=Artwork%20Curation%20Request">Request Project Curation</a>
+    </div>
+  </div>
 </section>
 
 <section class="designer-resource-intro" id="designer-resources">
