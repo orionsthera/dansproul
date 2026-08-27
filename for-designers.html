@@ -1804,6 +1804,24 @@ line-height:1.7;
 @media(max-width:900px){.designer-curation-section{padding:64px 24px 70px}.designer-curation-grid{grid-template-columns:1fr}.designer-curation-step{min-height:0}}
 @media(max-width:580px){.designer-curation-section{padding:52px 22px 58px}.designer-curation-head{text-align:left;margin-bottom:30px}.designer-curation-head .section-label{justify-content:flex-start}.designer-curation-step{padding:25px 22px 27px}.designer-curation-actions{flex-direction:column}.designer-curation-actions .btn{width:100%;text-align:center}}
 
+
+/* FEATURED CURATION MOCKUP — visual proof of designer curation service */
+.curation-proof-section{background:#0b0a08;padding:76px 56px 84px;border-bottom:1px solid var(--border)}
+.curation-proof-inner{max-width:1180px;margin:0 auto}
+.curation-proof-head{max-width:800px;margin:0 auto 36px;text-align:center}
+.curation-proof-head .section-label{justify-content:center;margin-bottom:24px}
+.curation-proof-head p:not(.section-label){max-width:720px;margin:0 auto;color:rgba(242,239,232,.58);font-size:.78rem;line-height:2}
+.curation-proof-figure{margin:0}
+.curation-proof-image{position:relative;overflow:hidden;border:1px solid rgba(181,146,74,.20);background:#0e0c09;cursor:zoom-in;box-shadow:0 24px 80px rgba(0,0,0,.38)}
+.curation-proof-image img{width:100%;height:auto;display:block;transition:transform .75s cubic-bezier(.25,.46,.45,.94),filter .4s ease}
+.curation-proof-image:hover img{transform:scale(1.015);filter:brightness(1.02)}
+.curation-proof-copy{display:grid;grid-template-columns:1fr auto;gap:34px;align-items:center;padding:28px 30px 0}
+.curation-proof-copy h3{font-family:'Cormorant Garamond',serif;font-size:clamp(1.65rem,3vw,2.45rem);font-weight:300;line-height:1.08;color:var(--off-white);margin-bottom:10px}
+.curation-proof-copy p{max-width:760px;color:rgba(242,239,232,.56);font-size:.72rem;line-height:1.9}
+.curation-proof-tag{color:var(--accent);font-size:.52rem;letter-spacing:.28em;text-transform:uppercase;white-space:nowrap}
+@media(max-width:900px){.curation-proof-section{padding:64px 24px 70px}.curation-proof-copy{grid-template-columns:1fr;padding:24px 0 0}.curation-proof-tag{white-space:normal}}
+@media(max-width:580px){.curation-proof-section{padding:50px 22px 56px}.curation-proof-head{text-align:left;margin-bottom:28px}.curation-proof-head .section-label{justify-content:flex-start}.curation-proof-head p:not(.section-label){font-size:13px;line-height:1.7}.curation-proof-copy h3{font-size:1.55rem}.curation-proof-copy p{font-size:12px;line-height:1.7}}
+
 </style>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -1872,6 +1890,10 @@ line-height:1.7;
         {
           "@type": "WebPageElement",
           "name": "Artwork Curation Process"
+        },
+        {
+          "@type": "WebPageElement",
+          "name": "Curated Artwork Pairing Example"
         },
         {
           "@type": "WebPageElement",
@@ -2005,6 +2027,19 @@ line-height:1.7;
       "copyrightHolder": {
         "@id": "https://dsproul.com/#dan-sproul"
       },
+      "creditText": "Dan Sproul",
+      "acquireLicensePage": "https://dansproul.com",
+      "representativeOfPage": false
+    },
+
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/living room dan sproul artwork mockup.jpg#image",
+      "contentUrl": "https://dsproul.com/living room dan sproul artwork mockup.jpg",
+      "name": "Curated residential artwork pairing by Dan Sproul",
+      "description": "Quiet luxury living room concept featuring two coordinated framed landscape photographs curated by Dan Sproul for an interior design project.",
+      "creator": {"@id": "https://dsproul.com/#dan-sproul"},
+      "copyrightHolder": {"@id": "https://dsproul.com/#dan-sproul"},
       "creditText": "Dan Sproul",
       "acquireLicensePage": "https://dansproul.com",
       "representativeOfPage": false
@@ -2163,6 +2198,29 @@ line-height:1.7;
 <p class="designer-curation-note">Available for residential, hospitality, healthcare, senior living, office, wellness, and other designer-led interiors.</p>
 </div>
 </section>
+
+<section class="curation-proof-section" id="curation-example">
+<div class="curation-proof-inner">
+<div class="curation-proof-head">
+<p class="section-label">Curated Pairing Example</p>
+<h2 class="section-title">See how a <em>coordinated artwork direction</em> can shape a room.</h2>
+<p>This residential concept shows two complementary landscape photographs selected as a coordinated pairing rather than as isolated pieces. The same approach can be built around a client palette, wall dimensions, desired mood, and project location.</p>
+</div>
+<figure class="curation-proof-figure">
+<div class="curation-proof-image" onclick="openFDLightbox(this)">
+<img alt="Quiet luxury living room with two coordinated framed landscape photographs curated by Dan Sproul for an interior design project" decoding="async" loading="lazy" src="living room dan sproul artwork mockup.jpg"/>
+</div>
+<figcaption class="curation-proof-copy">
+<div>
+<h3>Residential Curation — Coordinated Landscape Pairing</h3>
+<p>A larger atmospheric mountain-and-lake photograph anchors the primary wall while a softer autumn water scene continues the palette across the adjoining space. Designers can request similar pairings, artwork families, scale recommendations, and room mockups for active projects.</p>
+</div>
+<span class="curation-proof-tag">Residential · Quiet Luxury · Custom Curation</span>
+</figcaption>
+</figure>
+</div>
+</section>
+
 <section class="designer-resource-intro" id="designer-resources">
 <div class="resource-head">
 <p class="section-label">Designer Resources</p>
