@@ -942,6 +942,30 @@ body{padding-top:66px}
   .collection-grid .copy p,.collection-grid .meta{display:none!important}
 }
 
+
+/* BUYER SUPPORT — compact Art Advisor + artist trust */
+.art-advisor-mini{background:#ede5d9;color:#24201b;padding:34px 0;border-top:1px solid rgba(35,30,24,.10);border-bottom:1px solid rgba(35,30,24,.12)}
+.art-advisor-mini-inner{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center}
+.art-advisor-mini .eyebrow{color:#8c7450;margin-bottom:9px}
+.art-advisor-mini h2{font-size:clamp(1.65rem,2.8vw,2.45rem);color:#24201b;margin-bottom:8px}
+.art-advisor-mini p{max-width:760px;color:#5e574f;font-size:.86rem;line-height:1.72}
+.art-advisor-mini .btn{margin:0;white-space:nowrap;background:#c7a25d;color:#111!important;border-color:#c7a25d}
+.artist-trust-mini{background:#100e0b;padding:38px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.artist-trust-mini-inner{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:92px 1fr auto;gap:24px;align-items:center}
+.artist-trust-mini img{width:92px;height:92px;border-radius:50%;object-fit:cover;border:1px solid rgba(199,162,93,.36)}
+.artist-trust-mini .eyebrow{margin-bottom:7px}
+.artist-trust-mini h2{font-size:clamp(1.55rem,2.7vw,2.25rem);margin-bottom:7px}
+.artist-trust-mini p{max-width:720px;color:var(--muted);font-size:.82rem;line-height:1.7}
+.artist-trust-mini .artist-link{color:var(--gold);text-decoration:none;font-family:Arial,Helvetica,sans-serif;font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;white-space:nowrap}
+@media(max-width:760px){
+  .art-advisor-mini,.artist-trust-mini{padding-left:22px;padding-right:22px}
+  .art-advisor-mini-inner{grid-template-columns:1fr}
+  .art-advisor-mini .btn{width:100%;text-align:center}
+  .artist-trust-mini-inner{grid-template-columns:70px 1fr}
+  .artist-trust-mini img{width:70px;height:70px}
+  .artist-trust-mini .artist-link{grid-column:1/-1;white-space:normal}
+}
+
 </style>
 <script type="application/ld+json">
 {
@@ -1257,6 +1281,18 @@ body{padding-top:66px}
   <p class="price-note">Available in a range of sizes for bedrooms, living rooms, offices, hospitality spaces, healthcare environments, and quiet statement walls.</p>
 </div></section>
 
+
+<section class="art-advisor-mini" aria-labelledby="collections-art-advisor">
+  <div class="art-advisor-mini-inner">
+    <div>
+      <span class="eyebrow">Free Art Advisor</span>
+      <h2 id="collections-art-advisor">Not sure which collection fits your room?</h2>
+      <p>Answer a few quick questions about your room, palette, wall size, and style to get personalized artwork recommendations without browsing the full archive.</p>
+    </div>
+    <a class="btn primary" href="art-advisor.html">Use the Art Advisor</a>
+  </div>
+</section>
+
 <section class="light" id="atmospheric"><div class="container">
 <div class="center"><span class="eyebrow">Primary Fine Art Collections</span><h2>Nine curated directions for refined interiors.</h2><p>Explore by atmosphere, habitat, subject, or interior application. Each collection brings a distinct sense of place and feeling while remaining connected through natural light, thoughtful presentation, and artwork selected for real spaces.</p></div>
 <div class="collection-grid">
@@ -1270,6 +1306,19 @@ body{padding-top:66px}
 <a class="card" href="/monochrome-stillness.html"><img src="recovery hallway mockup.jpg" alt="Monochrome Stillness black and white landscape photography collection by Dan Sproul in a healthcare hallway interior" loading="lazy" decoding="async"><div class="copy"><span>Monochrome / Restorative / Architectural</span><h3>Monochrome Stillness</h3><p>Restrained black and white landscape photography featuring mist, reflection, quiet pathways, and mountain atmosphere for healthcare, wellness, hospitality, executive, and refined residential interiors.</p><div class="meta"><em>Healthcare</em><em>Hospitality</em><em>Executive</em></div><b class="link">View Collection</b></div></a>
 <a class="card" href="/open-horizons-collection.html"><img src="open-horizons-residential-living-room.jpg" alt="Open Horizons expansive landscape photography collection by Dan Sproul shown in a warm residential living room interior" loading="lazy" decoding="async"><div class="copy"><span>Open / Western / Expansive</span><h3>Open Horizons</h3><p>Expansive landscapes with open skies, prairie roads, dunes, badlands, and distant horizons for rooms that need space, calm, and visual breathing room.</p><div class="meta"><em>Residential</em><em>Cabins</em><em>Offices</em></div><b class="link">View Collection</b></div></a>
 </div></div></section>
+
+
+<section class="artist-trust-mini" aria-labelledby="collections-meet-dan">
+  <div class="artist-trust-mini-inner">
+    <img src="me1.jpg" alt="Dan Sproul, Ohio fine art nature and landscape photographer" loading="lazy" decoding="async">
+    <div>
+      <span class="eyebrow">Photographed by Dan Sproul</span>
+      <h2 id="collections-meet-dan">One photographer, many places, a consistent connection to nature.</h2>
+      <p>I’m a Lima, Ohio-based fine art photographer and mixed media artist. The collections on this page come from years of traveling and photographing landscapes, wildlife, coastlines, mountains, forests, waterfalls, and regional places across the United States.</p>
+    </div>
+    <a class="artist-link" href="about-dan-sproul.html">Meet Dan →</a>
+  </div>
+</section>
 
 <section class="dark" id="heritage-mixed-media">
   <div class="container">
@@ -1429,6 +1478,7 @@ body{padding-top:66px}
     <details class="footer-nav-group" open>
       <summary><span class="footer-summary-title">Resources</span></summary>
       <div class="footer-links">
+        <a href="art-advisor.html">Art Advisor</a>
         <a href="artwork-guides.html">Artwork Guides</a>
         <a href="blog.html">Journal</a>
         <a href="lima-ohio-fine-art-photographer.html">Lima Fine Art Photographer</a>
