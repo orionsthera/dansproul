@@ -858,8 +858,8 @@
     .field-notes-featured{background:var(--paper);color:var(--light-ink)}
     .field-notes-featured .eyebrow{color:#91692d}
     .field-notes-featured .section-head p{color:rgba(33,27,20,.68)}
-    .field-notes-layout{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(360px,.65fr);gap:18px;align-items:stretch}
-    .field-note-lead{display:grid;grid-template-rows:minmax(390px,520px) 1fr;background:var(--paper-soft);border:1px solid rgba(33,27,20,.13);color:var(--light-ink);text-decoration:none;overflow:hidden;transition:.25s}
+    .field-notes-layout{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(360px,.65fr);gap:18px;align-items:start}
+    .field-note-lead{display:grid;grid-template-rows:minmax(390px,520px) auto;background:var(--paper-soft);border:1px solid rgba(33,27,20,.13);color:var(--light-ink);text-decoration:none;overflow:hidden;transition:.25s}
     .field-note-lead:hover,.field-note-small:hover{transform:translateY(-3px);border-color:rgba(154,107,40,.36)}
     .field-note-lead-image,.field-note-small-image{overflow:hidden;background:#211b14}
     .field-note-lead-image img,.field-note-small-image img{height:100%;object-fit:cover;filter:brightness(.9) saturate(.92);transition:transform .65s ease,filter .65s ease}
@@ -868,6 +868,8 @@
     .field-note-lead-body h2{color:var(--light-ink);font-size:clamp(38px,4.5vw,62px);letter-spacing:-.03em}
     .field-note-lead-body p{margin-top:15px;color:rgba(33,27,20,.70);font-size:15px;line-height:1.8}
     .field-note-side-grid{display:grid;grid-template-columns:1fr;gap:18px}
+    .field-note-grid{max-width:var(--max);margin:18px auto 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+    .field-note-grid .field-note-small{grid-template-columns:minmax(150px,180px) 1fr;min-height:172px}
     .field-note-small{display:grid;grid-template-columns:135px 1fr;min-height:120px;background:var(--paper-soft);border:1px solid rgba(33,27,20,.13);color:var(--light-ink);text-decoration:none;overflow:hidden;transition:.25s}
     .field-note-small-body{padding:16px;display:flex;flex-direction:column;justify-content:center}
     .field-note-small-body .post-kicker{margin-bottom:9px}
@@ -881,8 +883,10 @@
     .guide-grid-compact .post-image{min-height:210px}
     @media(max-width:1120px){
       .field-notes-layout{grid-template-columns:1fr}
-      .field-note-side-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-      .field-note-small{grid-template-columns:1fr;grid-template-rows:190px 1fr}
+      .field-note-side-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+      .field-note-side-grid .field-note-small{grid-template-columns:1fr;grid-template-rows:190px auto}
+      .field-note-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .field-note-grid .field-note-small{grid-template-columns:minmax(150px,180px) 1fr;grid-template-rows:none}
       .guide-grid-compact{grid-template-columns:1fr}
     }
     @media(max-width:760px){
@@ -891,8 +895,10 @@
       .field-note-lead-body{padding:17px}
       .field-note-lead-body h2{font-size:28px}
       .field-note-lead-body p{display:none}
-      .field-note-side-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+      .field-note-side-grid,.field-note-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+      .field-note-grid{margin-top:12px}
       .field-note-small{grid-template-columns:1fr;grid-template-rows:120px 1fr;min-height:0}
+      .field-note-grid .field-note-small{grid-template-columns:1fr;grid-template-rows:120px 1fr;min-height:0}
       .field-note-small-body{padding:13px;justify-content:flex-start}
       .field-note-small-body h3{font-size:20px}
       .field-note-small-body p{display:none}
@@ -902,7 +908,7 @@
       .guide-grid-compact .post-image{min-height:145px!important}
     }
     @media(max-width:380px){
-      .field-note-side-grid,.guide-grid-compact{grid-template-columns:1fr!important}
+      .field-note-side-grid,.field-note-grid,.guide-grid-compact{grid-template-columns:1fr!important}
     }
 
 </style>
@@ -1138,6 +1144,10 @@
             <div class="field-note-small-image"><img src="sunlit-forest-trail-in-cuyahoga-valley-national-park-ohio-dan-sproul.jpg" alt="Sunlight filtering through a forest trail in Cuyahoga Valley National Park photographed by Dan Sproul" loading="lazy" decoding="async" /></div>
             <div class="field-note-small-body"><p class="post-kicker">Cuyahoga Valley · Ohio</p><h3>Cuyahoga Valley National Park Photography Guide</h3><p>Forest light, waterfalls, bridges, reflections, intimate woodland scenes, and nearby Northeast Ohio extensions.</p></div>
           </a>
+        </div>
+      </div>
+
+      <div class="field-note-grid">
           <a class="field-note-small" href="oregon-coast-road-trip-itinerary-photography-guide.html">
             <div class="field-note-small-image"><img src="cannon-beach-sea-stack-sunset-dan-sproul.jpg" alt="Cannon Beach sea stacks and reflections at sunset on the Oregon Coast photographed by Dan Sproul" loading="lazy" decoding="async" /></div>
             <div class="field-note-small-body"><p class="post-kicker">Oregon Coast Road Trip</p><h3>Oregon Coast Photography Guide</h3><p>An eight-day route through sea stacks, wildlife, lighthouses, mountain lakes, and Columbia River Gorge waterfalls.</p></div>
@@ -1163,7 +1173,6 @@
             <div class="field-note-small-body"><p class="post-kicker">Spring Waterfalls</p><h3>Ricketts Glen &amp; Watkins Glen</h3><p>Gorge trails, stone steps, mist, spring foliage, and finished waterfall prints.</p></div>
           </a>
         </div>
-      </div>
 
       <div class="btns field-notes-actions"><a class="btn" href="#artwork-guides">Browse Artwork Guides</a></div>
     </section>
