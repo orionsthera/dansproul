@@ -60,7 +60,7 @@ h2{font-size:clamp(1.9rem,7vw,2.7rem)!important}
 
 
 /* ==========================================================
-   JULY 2026 MOBILE CONDENSE PASS — Hospitality page
+   JULY 2026 MOBILE CONDENSE PASS — Hospitality page
    Goal: reduce vertical scroll on phones without altering desktop.
    1. Mockup grid trimmed to first 4 cards (≤900px)
    2. Buying guidance cards collapsed on phones (≤680px)
@@ -73,7 +73,7 @@ h2{font-size:clamp(1.9rem,7vw,2.7rem)!important}
   .mockup-grid .mockup-card:nth-of-type(n+5){display:none!important;}
 }
 
-/* ---------- 2. BUYING GUIDANCE ---------- */
+/* ---------- 2. BUYING GUIDANCE ---------- */
 @media(max-width:680px){
   /* hide buying cards, show toggle */
   .buying-grid{position:relative;}
@@ -108,7 +108,7 @@ h2{font-size:clamp(1.9rem,7vw,2.7rem)!important}
   .faq-item.open p{display:block;}
 }
 
-/* ---------- 4. SPEC SHEET DETAILS ---------- */
+/* ---------- 4. SPEC SHEET DETAILS ---------- */
 @media(max-width:680px){
   .spec-box ul{display:none;}
   .spec-box{
@@ -460,6 +460,34 @@ h2{font-size:clamp(1.9rem,7vw,2.7rem)!important}
   }
 }
 
+
+
+/* HOSPITALITY LICENSING NOTE — Oct 2026 */
+.hospitality-licensing-note{
+  margin:18px 0 0;
+  max-width:690px;
+  padding:15px 17px;
+  border-left:2px solid var(--gold);
+  background:rgba(199,155,85,.07);
+  color:#665b4d!important;
+  font-size:13px!important;
+  line-height:1.65!important;
+}
+.hospitality-licensing-note a{
+  color:#8b6229;
+  font-weight:700;
+  text-decoration:none;
+}
+.hospitality-licensing-note a:hover{text-decoration:underline}
+@media(max-width:680px){
+  .hospitality-licensing-note{
+    margin-top:14px!important;
+    padding:13px 14px!important;
+    font-size:12px!important;
+    line-height:1.55!important;
+  }
+}
+
 </style>
 <script type="application/ld+json">
 {
@@ -514,7 +542,7 @@ h2{font-size:clamp(1.9rem,7vw,2.7rem)!important}
       "url": "https://dsproul.com/hospitality-artwork.html",
       "name": "Hospitality Artwork for Hotels, Lodges & Guest Spaces | Dan Sproul",
       "description": "Atmospheric nature photography for hotel lobbies, guest rooms, lounges, restaurants, lodges, and hospitality interiors. View room mockups, print options, and project guidance from Ohio artist Dan Sproul.",
-      "dateModified": "2026-09-29",
+      "dateModified": "2026-10-01",
       "isPartOf": {
         "@id": "https://dsproul.com/#website"
       },
@@ -562,7 +590,11 @@ h2{font-size:clamp(1.9rem,7vw,2.7rem)!important}
       },
       "mainEntity": {
         "@id": "https://dsproul.com/hospitality-artwork.html#hospitality-artwork-service"
-      }
+      },
+      "relatedLink": [
+        "https://dsproul.com/image-licensing.html",
+        "https://dsproul.com/blue-green-commercial-art-licensing.html"
+      ]
     },
     {
       "@type": "BreadcrumbList",
@@ -670,6 +702,14 @@ h2{font-size:clamp(1.9rem,7vw,2.7rem)!important}
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Hospitality corridors usually work well with cohesive horizontal series, calming landscape imagery, refined monochrome pieces, and artwork that adds rhythm to guest circulation areas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can hospitality projects license image files for local printing or fabrication?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Selected original photographs can be licensed for approved hospitality projects that use a local printer or fabricator. General image licensing is available through Dan Sproul Photography, and the Blue-Green Restorative Landscapes collection is one coordinated option for spa, wellness, and calm guest environments."
           }
         }
       ]
@@ -1045,7 +1085,7 @@ h2{font-size:clamp(1.9rem,7vw,2.7rem)!important}
   <div class="buying-grid mobile-toggle-grid" data-mobile-label="Tap to view buying guidance"><article class="buy-box"><h3>Best Formats</h3><p>Framed fine art paper for boutique warmth, acrylic for clean luxury interiors, metal for high-traffic areas, and canvas for softer lodge and resort spaces.</p></article><article class="buy-box"><h3>Suggested Sizes</h3><p>Use oversized statement pieces for lobbies, moderate framed work for suites, and cohesive horizontal series for guest corridors.</p></article><article class="buy-box"><h3>Artwork Mood</h3><p>Monochrome supports quiet luxury, coastal sunsets create dining atmosphere, mountain scenes fit lodges, and water imagery supports spa environments.</p></article><article class="buy-box"><h3>Project Support</h3><p>Send a room photo, finish palette, or project direction for curated artwork recommendations and complimentary mockup guidance.</p></article></div>
 </section>
 <section class="spec-sheet" id="spec-sheet">
-  <div class="spec-grid"><div><p class="eyebrow">Hospitality Spec Sheet</p><h2>Download the hospitality artwork specification guide.</h2><p>A concise PDF overview for designers, hospitality teams, and procurement conversations. It summarizes recommended applications, format guidance, sizing direction, project support, and visual examples.</p><div class="btns"><a class="btn primary" href="hospitality-artwork-specification-guide.pdf" target="_blank" rel="noopener">Download Spec Sheet</a><a class="btn" href="mailto:dan@dsproul.com?subject=Hospitality%20Artwork%20Mockup%20Request">Request Mockup Preview</a></div></div><div class="spec-box toggle mobile-toggle-spec"><h3>Included in the guide</h3><ul><li>Hospitality and resort use cases</li><li>Lobby, spa, restaurant, lodge, and corridor examples</li><li>Recommended sizes and formats</li><li>Mockup support and project guidance</li></ul></div></div>
+  <div class="spec-grid"><div><p class="eyebrow">Hospitality Spec Sheet</p><h2>Download the hospitality artwork specification guide.</h2><p>A concise PDF overview for designers, hospitality teams, and procurement conversations. It summarizes recommended applications, format guidance, sizing direction, project support, and visual examples.</p><div class="btns"><a class="btn primary" href="hospitality-artwork-specification-guide.pdf" target="_blank" rel="noopener">Download Spec Sheet</a><a class="btn" href="mailto:dan@dsproul.com?subject=Hospitality%20Artwork%20Mockup%20Request">Request Mockup Preview</a></div><p class="hospitality-licensing-note"><strong>Using your own printer or fabricator?</strong> <a href="image-licensing.html">View image licensing options →</a> For spa, wellness, and quieter guest environments, the <a href="blue-green-commercial-art-licensing.html">Blue-Green Restorative Landscapes collection</a> is also available as a coordinated commercial license.</p></div><div class="spec-box toggle mobile-toggle-spec"><h3>Included in the guide</h3><ul><li>Hospitality and resort use cases</li><li>Lobby, spa, restaurant, lodge, and corridor examples</li><li>Recommended sizes and formats</li><li>Mockup support and project guidance</li></ul></div></div>
 </section>
 <section class="best-sellers">
   <div class="section-heading"><p class="eyebrow">Hospitality-Compatible Best Sellers</p><h2>Strong starting points for commercial interiors.</h2><p>A short selection of artwork directions that pair well with hospitality, wellness, lodge, and resort interiors.</p></div>
@@ -1072,7 +1112,7 @@ h2{font-size:clamp(1.9rem,7vw,2.7rem)!important}
 <div class="faq-item"><h3>Do you work with hospitality designers?</h3><p>Yes. Hospitality designers, interior designers, procurement teams, and hotel owners can request mockups, artwork recommendations, sizing guidance, and project support.</p></div>
 <div class="faq-item"><h3>Can artwork be specified across multiple guest rooms?</h3><p>Yes. Artwork can be curated as a coordinated series across guest rooms, suites, corridors, lounges, reception areas, restaurants, and spa environments.</p></div>
 <div class="faq-item"><h3>Do you offer hospitality trade pricing?</h3><p>Yes. Designers, architects, hospitality buyers, and procurement professionals may request trade pricing and project guidance for multi-piece hospitality projects.</p></div>
-<div class="faq-item"><h3>What artwork works best in hospitality corridors?</h3><p>Hospitality corridors usually work well with cohesive horizontal series, calming landscape imagery, refined monochrome pieces, and artwork that adds rhythm to guest circulation areas.</p></div></div>
+<div class="faq-item"><h3>What artwork works best in hospitality corridors?</h3><p>Hospitality corridors usually work well with cohesive horizontal series, calming landscape imagery, refined monochrome pieces, and artwork that adds rhythm to guest circulation areas.</p></div><div class="faq-item"><h3>Can hospitality projects license image files for local printing or fabrication?</h3><p>Yes. Selected original photographs can be licensed for approved hospitality projects using a local printer or fabricator. <a href="image-licensing.html">View general image licensing</a>. For spa, wellness, and calm guest environments, the <a href="blue-green-commercial-art-licensing.html">Blue-Green Restorative Landscapes collection</a> is one coordinated option.</p></div></div>
 </section>
 <section class="related-collections">
   <div class="section-heading"><p class="eyebrow">Related Collections</p><h2>Continue exploring atmospheric artwork for interiors.</h2></div>
@@ -1135,6 +1175,7 @@ h2{font-size:clamp(1.9rem,7vw,2.7rem)!important}
     <details class="footer-group" open>
       <summary>For Designers</summary>
       <a href="/for-designers.html">Designer Resources</a>
+      <a href="/image-licensing.html">Image Licensing</a>
       <a href="/healthcare-artwork.html">Healthcare</a>
       <a href="/hospitality-artwork.html">Hospitality</a>
       <a href="/office-artwork.html">Office</a>
