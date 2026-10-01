@@ -1242,6 +1242,112 @@ h1{font-size:54px}
   }
 }
 
+
+
+/* BLUE-GREEN HEALTHCARE LICENSING FEATURE */
+.healthcare-license-feature{
+  padding:clamp(76px,8vw,108px) 7vw;
+  background:#111410;
+  border-top:1px solid rgba(199,155,85,.22);
+  border-bottom:1px solid rgba(199,155,85,.22);
+}
+.healthcare-license-inner{
+  max-width:1180px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:clamp(38px,6vw,74px);
+  align-items:center;
+}
+.healthcare-license-visual{
+  position:relative;
+}
+.healthcare-license-visual::before{
+  content:'';
+  position:absolute;
+  inset:22px -18px -18px 22px;
+  border:1px solid rgba(199,155,85,.23);
+  background:rgba(255,255,255,.025);
+}
+.healthcare-license-visual img{
+  position:relative;
+  z-index:1;
+  width:100%;
+  height:auto;
+  border:1px solid rgba(199,155,85,.32);
+  box-shadow:0 30px 85px rgba(0,0,0,.38);
+}
+.healthcare-license-copy h2{
+  font-size:clamp(38px,4.8vw,64px);
+}
+.healthcare-license-copy p{
+  max-width:620px;
+  color:#d4c8b7;
+}
+.healthcare-license-points{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:10px;
+  margin:28px 0 0;
+}
+.healthcare-license-points div{
+  padding:15px 16px;
+  border:1px solid rgba(199,155,85,.20);
+  background:rgba(255,255,255,.025);
+}
+.healthcare-license-points strong{
+  display:block;
+  margin-bottom:5px;
+  color:#c79b55;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:10px;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+}
+.healthcare-license-points span{
+  color:#d8cbb9;
+  font-size:13px;
+  line-height:1.5;
+}
+.healthcare-license-actions{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:28px;
+}
+.healthcare-license-actions a{
+  display:inline-block;
+  text-decoration:none;
+  padding:14px 20px;
+  border:1px solid rgba(199,155,85,.65);
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+}
+.healthcare-license-actions .primary{
+  background:#c79b55;
+  color:#14100b;
+}
+.healthcare-license-actions .secondary{
+  color:#f4efe6;
+}
+@media(max-width:900px){
+  .healthcare-license-inner{grid-template-columns:1fr;gap:34px}
+  .healthcare-license-visual{max-width:720px}
+}
+@media(max-width:680px){
+  .healthcare-license-feature{padding:46px 22px!important}
+  .healthcare-license-inner{gap:24px!important}
+  .healthcare-license-visual::before{display:none}
+  .healthcare-license-points{grid-template-columns:1fr 1fr!important;gap:8px!important}
+  .healthcare-license-points div{padding:12px!important}
+  .healthcare-license-points span{font-size:12px!important}
+  .healthcare-license-actions{display:grid!important;grid-template-columns:1fr!important;gap:9px!important;margin-top:20px!important}
+  .healthcare-license-actions a{width:100%!important;text-align:center!important;padding:12px 14px!important}
+}
+
 </style>
 
 <script type="application/ld+json">
@@ -1550,6 +1656,62 @@ h1{font-size:54px}
           }
         }
       ]
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/okaloosa-island-monochrome-morning-sand-dunes-dan-sproul.jpg#licensed-image",
+      "name": "Okaloosa Island Monochrome Dunes",
+      "contentUrl": "https://dsproul.com/okaloosa-island-monochrome-morning-sand-dunes-dan-sproul.jpg",
+      "license": "https://dsproul.com/image-licensing.html",
+      "acquireLicensePage": "https://dsproul.com/image-licensing.html",
+      "creditText": "Dan Sproul Photography",
+      "creator": {
+        "@type": "Person",
+        "name": "Dan Sproul"
+      },
+      "copyrightNotice": "© Dan Sproul Photography"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/dramatic-bow-lake-reflection-dan-sproul.jpg#licensed-image",
+      "name": "Dramatic Bow Lake Reflection",
+      "contentUrl": "https://dsproul.com/dramatic-bow-lake-reflection-dan-sproul.jpg",
+      "license": "https://dsproul.com/image-licensing.html",
+      "acquireLicensePage": "https://dsproul.com/image-licensing.html",
+      "creditText": "Dan Sproul Photography",
+      "creator": {
+        "@type": "Person",
+        "name": "Dan Sproul"
+      },
+      "copyrightNotice": "© Dan Sproul Photography"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/foggy-morning-landscape-cades-cove-dan-sproul.jpg#licensed-image",
+      "name": "Foggy Morning Cades Cove",
+      "contentUrl": "https://dsproul.com/foggy-morning-landscape-cades-cove-dan-sproul.jpg",
+      "license": "https://dsproul.com/image-licensing.html",
+      "acquireLicensePage": "https://dsproul.com/image-licensing.html",
+      "creditText": "Dan Sproul Photography",
+      "creator": {
+        "@type": "Person",
+        "name": "Dan Sproul"
+      },
+      "copyrightNotice": "© Dan Sproul Photography"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://dsproul.com/smoky-mountain-long-exposure-waterfall-dan-sproul.jpg#licensed-image",
+      "name": "Smoky Mountains Waterfall",
+      "contentUrl": "https://dsproul.com/smoky-mountain-long-exposure-waterfall-dan-sproul.jpg",
+      "license": "https://dsproul.com/image-licensing.html",
+      "acquireLicensePage": "https://dsproul.com/image-licensing.html",
+      "creditText": "Dan Sproul Photography",
+      "creator": {
+        "@type": "Person",
+        "name": "Dan Sproul"
+      },
+      "copyrightNotice": "© Dan Sproul Photography"
     }
   ]
 }
@@ -1604,6 +1766,7 @@ h1{font-size:54px}
   <a href="#focused-pathways">Guides</a>
   <a href="#healthcare-spec-sheet">Spec Sheet</a>
   <a href="#curated-gallery">Gallery</a>
+  <a href="#blue-green-healthcare">Licensing</a>
 </nav>
 
 <section class="mockup-feature">
@@ -1911,12 +2074,48 @@ h1{font-size:54px}
 </section>
 
 
+<section class="healthcare-license-feature" id="blue-green-healthcare">
+  <div class="healthcare-license-inner">
+    <div class="healthcare-license-visual">
+      <a href="blue-green-commercial-art-licensing.html" aria-label="View the Blue-Green Restorative Landscapes licensing collection">
+        <img src="blue-green-collection-interior-mockup.webp" alt="Healthcare and wellness interior showing coordinated Blue-Green Restorative Landscapes nature photography by Dan Sproul" loading="lazy" decoding="async">
+      </a>
+    </div>
+    <div class="healthcare-license-copy">
+      <p class="eyebrow">Curated Healthcare Licensing</p>
+      <h2>Blue-Green Restorative Landscapes.</h2>
+      <p>
+        Eight coordinated original nature photographs combining water, forest, mist and quiet natural color
+        for healthcare, wellness, waiting, consultation and corridor environments.
+      </p>
+      <p>
+        The collection is available as a single-location commercial image license for project teams that prefer
+        to print and fabricate artwork through their own production partners.
+      </p>
+      <div class="healthcare-license-points">
+        <div><strong>8 photographs</strong><span>One coordinated visual direction</span></div>
+        <div><strong>Up to 12 prints</strong><span>Within one licensed project location</span></div>
+        <div><strong>Local production</strong><span>Printer or fabricator access permitted</span></div>
+        <div><strong>Project mockups</strong><span>Available for active healthcare projects</span></div>
+      </div>
+      <div class="healthcare-license-actions">
+        <a class="primary" href="blue-green-commercial-art-licensing.html">View Blue-Green Collection</a>
+        <a class="secondary" href="image-licensing.html">General Image Licensing</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
 <section class="faq-section">
   <div class="section-heading">
     <p class="eyebrow">Healthcare Artwork FAQ</p>
     <h2>Common questions for designers, offices, and healthcare buyers.</h2>
   </div>
   <div class="faq-grid">
+    <div class="faq-item"><h3>Can our healthcare project license files for local printing?</h3><p>Yes. The <a href="blue-green-commercial-art-licensing.html">Blue-Green Restorative Landscapes collection</a> is available as a coordinated commercial interior license, and individual photographs may also be considered through <a href="image-licensing.html">general image licensing</a>.</p></div>
     <div class="faq-item"><h3>Can you help choose artwork for a specific healthcare room?</h3><p>Yes. Send a room photo, wall size, or project type and I can suggest artwork direction based on scale, mood, and environment.</p></div>
     <div class="faq-item"><h3>What imagery works best in patient-facing spaces?</h3><p>Calm water, soft forests, quiet mountains, fog, open skies, and low visual-noise compositions often work best.</p></div>
     <div class="faq-item"><h3>What are good calming nature prints for healthcare or therapy offices?</h3><p>Good options include quiet water scenes, soft forest paths, misty landscapes, muted mountains, and nature photography with gentle color, low visual clutter, and a calm emotional tone. For therapy offices and healthcare waiting rooms, artwork should feel reassuring, warm, and easy to live with rather than dramatic or overstimulating. Start with <a href="wellness-waters-collection.html">Wellness Waters</a>, <a href="quiet-earth-collection.html">Quiet Earth</a>, or <a href="waiting-room-artwork.html">Waiting Room Artwork</a>.</p></div>
@@ -1999,6 +2198,7 @@ h1{font-size:54px}
       <summary><span class="footer-summary-title">For Designers</span></summary>
       <div class="footer-links-list">
         <a href="/for-designers.html">Designer Resources</a>
+        <a href="/image-licensing.html">Image Licensing</a>
         <a href="/healthcare-artwork.html">Healthcare</a>
         <a href="/hospitality-artwork.html">Hospitality</a>
         <a href="/office-artwork.html">Office</a>
