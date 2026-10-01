@@ -900,7 +900,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 900px}
   .format-title{margin-bottom:4px!important;}
 }
 
-/* ---------- 3. DIGITAL LICENSING ---------- */
+/* ---------- 3. DIGITAL LICENSING ---------- */
 @media(max-width:680px){
   /* collapse individual licence detail cards */
   .license-options{display:none!important;}
@@ -1836,6 +1836,119 @@ line-height:1.7;
 @media(max-width:900px){.selected-artwork-path-inner{grid-template-columns:1fr}.selected-artwork-path-actions{justify-content:flex-start}}
 @media(max-width:680px){.selected-artwork-path{padding:42px 22px}.selected-artwork-path-actions{display:grid;grid-template-columns:1fr}.selected-artwork-path-actions .btn{width:100%;text-align:center}}
 
+
+
+/* COMMERCIAL IMAGE LICENSING FEATURE — Oct 2026 */
+.commercial-licensing-feature{
+  max-width:1120px;
+  margin:46px auto 0;
+  display:grid;
+  grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);
+  background:#0f0d0a;
+  border:1px solid rgba(181,146,74,.22);
+  overflow:hidden;
+  box-shadow:0 24px 70px rgba(0,0,0,.18);
+}
+.commercial-licensing-image{
+  min-height:390px;
+  background:#14110d;
+  overflow:hidden;
+}
+.commercial-licensing-image img{
+  width:100%;
+  height:100%;
+  min-height:390px;
+  object-fit:cover;
+  display:block;
+  filter:brightness(.9) saturate(.92);
+  transition:transform .75s cubic-bezier(.25,.46,.45,.94),filter .4s ease;
+}
+.commercial-licensing-feature:hover .commercial-licensing-image img{
+  transform:scale(1.025);
+  filter:brightness(.98) saturate(1);
+}
+.commercial-licensing-copy{
+  padding:48px 46px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.commercial-licensing-kicker{
+  display:block;
+  color:var(--accent);
+  font-size:.52rem;
+  letter-spacing:.32em;
+  text-transform:uppercase;
+  margin-bottom:16px;
+}
+.commercial-licensing-copy h3{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(2rem,3.5vw,3rem);
+  font-weight:300;
+  line-height:1.05;
+  color:var(--off-white);
+  margin-bottom:18px;
+}
+.commercial-licensing-copy h3 em{
+  color:var(--accent);
+  font-style:italic;
+}
+.commercial-licensing-copy p{
+  color:rgba(242,239,232,.6);
+  font-size:.74rem;
+  line-height:1.95;
+  margin-bottom:22px;
+}
+.commercial-licensing-points{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:8px 18px;
+  margin:2px 0 28px;
+}
+.commercial-licensing-points span{
+  color:rgba(242,239,232,.64);
+  font-size:.6rem;
+  letter-spacing:.08em;
+  line-height:1.55;
+  padding-left:12px;
+  position:relative;
+}
+.commercial-licensing-points span::before{
+  content:'';
+  width:4px;
+  height:4px;
+  border-radius:50%;
+  background:var(--accent);
+  position:absolute;
+  left:0;
+  top:.62em;
+}
+.commercial-licensing-copy .btn{
+  align-self:flex-start;
+}
+.inline-resource-link{
+  display:inline-block;
+  margin-top:10px;
+  color:var(--accent)!important;
+  text-decoration:none;
+  font-size:.62rem;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+.inline-resource-link:hover{text-decoration:underline}
+@media(max-width:900px){
+  .commercial-licensing-feature{grid-template-columns:1fr;}
+  .commercial-licensing-image,.commercial-licensing-image img{min-height:320px;}
+  .commercial-licensing-copy{padding:38px 30px 42px;}
+}
+@media(max-width:580px){
+  .commercial-licensing-feature{margin-top:30px;}
+  .commercial-licensing-image,.commercial-licensing-image img{min-height:240px;}
+  .commercial-licensing-copy{padding:30px 22px 34px;}
+  .commercial-licensing-points{grid-template-columns:1fr;}
+  .commercial-licensing-copy .btn{width:100%;text-align:center;padding-left:18px;padding-right:18px;}
+}
+
 </style>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -2312,6 +2425,26 @@ line-height:1.7;
 </a>
 </div>
 
+
+<div class="commercial-licensing-feature" id="commercial-licensing">
+  <div class="commercial-licensing-image">
+    <img src="assets/blue-green/blue-green-collection-interior-mockup.webp" loading="lazy" decoding="async" alt="Blue-Green Collection nature photography shown together in a refined commercial interior mockup by Dan Sproul"/>
+  </div>
+  <div class="commercial-licensing-copy">
+    <span class="commercial-licensing-kicker">Commercial Image Licensing</span>
+    <h3>License the <em>Blue-Green Collection</em> for one project.</h3>
+    <p>A coordinated set of eight original nature photographs created for healthcare, hospitality, workplace, wellness, senior living, and other professionally designed interiors. The collection is available as a straightforward one-location commercial image license when your project team prefers local printing, fabrication, or installation.</p>
+    <div class="commercial-licensing-points" aria-label="Blue-Green commercial licensing highlights">
+      <span>Eight coordinated images</span>
+      <span>Up to 12 finished prints</span>
+      <span>One licensed project location</span>
+      <span>Local production permitted</span>
+    </div>
+    <a class="btn btn-solid" href="/blue-green-commercial-art-licensing.html">View Commercial Licensing</a>
+  </div>
+</div>
+
+
 <p class="selected-installations-note">Serving homeowners, interior designers, healthcare providers, hospitality properties, and commercial workplaces throughout Ohio and across the United States.</p>
 
 </section>
@@ -2426,7 +2559,7 @@ line-height:1.7;
 </div>
 <div>
 <strong>Digital licensing</strong>
-<p>Digital licensing is available for projects that require local print production, custom fabrication, regional installers, or multi-site artwork programs.</p>
+<p>Digital licensing is available for projects that require local print production, custom fabrication, regional installers, or multi-site artwork programs.<br/><a class="inline-resource-link" href="/blue-green-commercial-art-licensing.html">View the Blue-Green licensing collection →</a></p>
 </div>
 </div>
 </div>
@@ -2821,6 +2954,7 @@ function closeFDLightbox(){
 <div>
 <h3>For Designers</h3>
 <a href="/for-designers.html">Designer Resources</a>
+<a href="/blue-green-commercial-art-licensing.html">Commercial Licensing</a>
 <a href="/healthcare-artwork.html">Healthcare</a>
 <a href="/waiting-room-artwork.html">Waiting Rooms</a>
 <a href="/hospitality-artwork.html">Hospitality</a>
@@ -2871,6 +3005,7 @@ function closeFDLightbox(){
 <details>
 <summary>For Designers</summary>
 <a href="/for-designers.html">Designer Resources</a>
+<a href="/blue-green-commercial-art-licensing.html">Commercial Licensing</a>
 <a href="/healthcare-artwork.html">Healthcare</a>
 <a href="/waiting-room-artwork.html">Waiting Rooms</a>
 <a href="/hospitality-artwork.html">Hospitality</a>
