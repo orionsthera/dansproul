@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://dsproul.com/colorado-fall-colors-photography-prints.html</loc>
+    <image:image>
+      <image:loc>https://dsproul.com/autumn-colors-along-kebler-pass-colorado-dan-sproul.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://dsproul.com/golden-aspen-forest-colorado-dan-sproul.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://dsproul.com/chimney-peak-colorado-autumn-dan-sproul.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://dsproul.com/moose-family-in-autumn-aspen-dan-sproul.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://dsproul.com/autumn-sunrise-maroon-bells-dan-sproul.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://dsproul.com/castle-peak-aspen-colorado-in-fall-dan-sproul.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://dsproul.com/last-dollar-road-in-autumn-colorado-dan-sproul.jpg</image:loc>
+    </image:image>
+  </url>
+</urlset>
