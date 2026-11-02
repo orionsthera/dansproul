@@ -1874,6 +1874,83 @@
   }
 }
 
+
+/* ── 2026 HOLIDAY GIFT PROMO BAR ───────────────────────────── */
+.holiday-home-bar{
+  position:relative;
+  z-index:20;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  align-items:center;
+  gap:18px;
+  padding:14px clamp(18px,4vw,44px);
+  background:
+    radial-gradient(circle at 86% 50%,rgba(199,164,90,.14),transparent 26%),
+    linear-gradient(90deg,#5f1e23 0%,#7b2026 52%,#5d1c21 100%);
+  border-top:1px solid rgba(229,201,143,.28);
+  border-bottom:1px solid rgba(229,201,143,.34);
+  color:#fff7eb;
+}
+.holiday-home-copy{
+  min-width:0;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:12px;
+  line-height:1.5;
+  letter-spacing:.06em;
+}
+.holiday-home-copy strong{
+  display:inline;
+  margin-right:8px;
+  color:#f6dfaa;
+  font-family:"Cormorant Garamond",Georgia,serif;
+  font-size:20px;
+  font-weight:400;
+  letter-spacing:.01em;
+}
+.holiday-home-link{
+  min-height:38px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:0 16px;
+  border:1px solid rgba(255,247,235,.62);
+  color:#fff7eb;
+  text-decoration:none;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:9px;
+  font-weight:700;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  white-space:nowrap;
+  transition:.2s ease;
+}
+.holiday-home-link:hover{
+  background:#fff7eb;
+  color:#6b1f25;
+}
+@media(max-width:680px){
+  .holiday-home-bar{
+    grid-template-columns:1fr;
+    gap:10px;
+    padding:12px 18px 13px;
+    text-align:center;
+  }
+  .holiday-home-copy{
+    font-size:10.5px;
+    line-height:1.45;
+  }
+  .holiday-home-copy strong{
+    display:block;
+    margin:0 0 3px;
+    font-size:18px;
+  }
+  .holiday-home-link{
+    width:100%;
+    min-height:36px;
+    font-size:8.5px;
+  }
+}
+
 </style>
 
   <script type="application/ld+json">
@@ -2223,6 +2300,15 @@
       <a href="https://dansproul.com/shop/prints" target="_blank" rel="noopener" class="nav-shop-standard">Shop Prints</a>
     </div>
   </nav>
+
+<div class="holiday-home-bar" role="region" aria-label="2026 Ohio holiday gift guide">
+  <div class="holiday-home-copy">
+    <strong>2026 Ohio Holiday Gift Guide</strong>
+    Mugs from about $17 · Ohio puzzles $35–40 · local art, photography &amp; small gifts
+  </div>
+  <a class="holiday-home-link" href="lima-ohio-gifts.html" data-holiday-home-link>Shop Ohio Gifts →</a>
+</div>
+
 
   <header class="hero">
     <div class="hero-content">
@@ -3190,5 +3276,20 @@ document.addEventListener('DOMContentLoaded',function(){
   },{passive:true});
 });
 </script>
+
+<script>
+document.addEventListener('click',function(e){
+  const link=e.target.closest('[data-holiday-home-link]');
+  if(!link) return;
+  if(typeof gtag==='function'){
+    gtag('event','homepage_holiday_gift_click',{
+      link_url:link.href,
+      link_text:(link.textContent||'').trim(),
+      source_page:window.location.pathname
+    });
+  }
+});
+</script>
+
 </body>
 </html>
