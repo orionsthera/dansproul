@@ -499,7 +499,54 @@ html{scroll-behavior:smooth}body{background:var(--charcoal);color:var(--text);fo
 .gift-assurance div:last-child{border-right:0}
 .gift-assurance strong{display:block;margin-bottom:5px;color:#6f5122;font-size:.52rem;letter-spacing:.18em;text-transform:uppercase}
 .gift-assurance span{display:block;color:#514638;font-family:'Cormorant Garamond',Georgia,serif;font-size:1.08rem;line-height:1.18}
+.holiday-guide-callout{
+  max-width:1320px;
+  margin:0 auto 22px;
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:28px;
+  align-items:center;
+  padding:28px 30px;
+  background:linear-gradient(135deg,#173126 0%,#102019 62%,#0b1712 100%);
+  border:1px solid rgba(185,147,75,.42);
+  box-shadow:0 16px 36px rgba(36,31,24,.11);
+  color:#f4eee5;
+}
+.holiday-guide-callout .eyebrow{
+  margin-bottom:8px;
+  color:#d5b365;
+}
+.holiday-guide-callout h3{
+  font-size:clamp(1.65rem,2.7vw,2.45rem);
+  color:#fff7eb;
+  margin-bottom:8px;
+}
+.holiday-guide-callout p{
+  max-width:780px;
+  color:rgba(244,238,229,.72);
+  font-size:.74rem;
+  line-height:1.75;
+}
+.holiday-guide-callout .btn{
+  white-space:nowrap;
+  background:#b9934b;
+  border-color:#b9934b;
+  color:#15120e;
+  font-weight:500;
+}
+.holiday-guide-callout .btn:hover{
+  background:#d0ad63;
+  border-color:#d0ad63;
+}
+
 @media(max-width:760px){
+  .holiday-guide-callout{
+    grid-template-columns:1fr;
+    gap:18px;
+    padding:22px 18px;
+    border-radius:10px;
+  }
+  .holiday-guide-callout .btn{width:100%}
   .art-advisor-mini-inner{grid-template-columns:1fr}
   .art-advisor-mini .btn{width:100%}
   .artist-trust-mini-inner{grid-template-columns:70px 1fr}
@@ -705,8 +752,18 @@ html{scroll-behavior:smooth}body{background:var(--charcoal);color:var(--text);fo
     </div>
     <p class="section-sub">Choose a gift around the landscape, animal, region, or feeling they already love. Each artwork opens to a secure print page with current sizes, formats, production times, and delivery estimates.</p>
   </div>
+
+  <div class="holiday-guide-callout">
+    <div>
+      <p class="eyebrow">2026 Holiday Gift Guide</p>
+      <h3>Not sure where to begin? Start with the place, animal, or landscape they already love.</h3>
+      <p>Browse a curated holiday guide organized around national parks, mountains, wildlife, coastlines, travel memories, Ohio gifts, and easy-to-give formats.</p>
+    </div>
+    <a class="btn" href="nature-photography-gift-guide.html">Explore the Holiday Gift Guide</a>
+  </div>
+
   <div class="gift-guide-grid">
-    <a class="gift-path" href="ohio-nature-photography-prints.html"><div><span>Ohio &amp; Local</span><h3>Gifts with an Ohio connection</h3><p>Landscapes and familiar places for Ohio homes, former Ohioans, and anyone who feels connected to the state.</p></div><small>Explore Ohio Prints →</small></a>
+    <a class="gift-path" href="lima-ohio-gifts.html"><div><span>Ohio &amp; Local</span><h3>Gifts with an Ohio connection</h3><p>Landscapes and familiar places for Ohio homes, former Ohioans, and anyone who feels connected to the state.</p></div><small>Explore Ohio Prints →</small></a>
     <a class="gift-path" href="mountain-light-collection.html"><div><span>Mountain &amp; Travel</span><h3>For the person who would rather be outside</h3><p>Colorado, Alaska, mountain, and national-park-inspired photography for travelers and outdoor enthusiasts.</p></div><small>Explore Mountain Light →</small></a>
     <a class="gift-path" href="https://dansproul.com/featured/cades-cove-black-bear-cub-dan-sproul.html" target="_blank" rel="noopener"><div><span>Wildlife</span><h3>A character-filled nature gift</h3><p>Start with the Cades Cove bear cub, a warm wildlife favorite for cabins, family rooms, and animal lovers.</p></div><small>Shop the Bear Cub Print →</small></a>
     <a class="gift-path" href="quiet-earth-collection.html"><div><span>Calm Home</span><h3>Quiet artwork for everyday rooms</h3><p>Soft water, forest, fog, and open landscapes chosen for bedrooms, reading spaces, and restorative interiors.</p></div><small>Explore Quiet Earth →</small></a>
@@ -810,6 +867,7 @@ html{scroll-behavior:smooth}body{background:var(--charcoal);color:var(--text);fo
         <div class="footer-links">
           <a href="/">Home</a>
           <a href="best-sellers.html">Best Sellers</a>
+          <a href="nature-photography-gift-guide.html">Holiday Gift Guide</a>
           <a href="art-collections.html">Collections</a>
           <a href="in-your-space.html">In Your Space</a>
           <a href="for-designers.html">For Designers</a>
