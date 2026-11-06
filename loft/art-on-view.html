@@ -1,6 +1,13 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1Q52T85XS5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-1Q52T85XS5');
+  </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="robots" content="noindex,nofollow">
@@ -45,7 +52,16 @@
     .process{background:var(--paper2);border-top:1px solid var(--line);padding:74px clamp(18px,5vw,64px)}
     .process-inner{max-width:1150px;margin:0 auto}.process h2{max-width:720px;font-size:clamp(2.5rem,5vw,4.6rem)}
     .step-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:34px}.step{padding:23px;border:1px solid var(--line);background:#fff}.step span{color:var(--gold);font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase}.step h3{margin:11px 0 8px;font-size:1.55rem}.step p{margin:0;color:var(--muted);font-size:12px;line-height:1.7}
-    footer{padding:34px clamp(18px,5vw,64px);background:var(--ink);color:#eee8df;text-align:center}footer p{margin:0;font-size:11px;line-height:1.8;letter-spacing:.1em}footer a{color:#d4b77c}
+    footer{padding:48px clamp(18px,5vw,64px) 34px;background:var(--ink);color:#eee8df}
+    .footer-inner{max-width:1150px;margin:0 auto;display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:start}
+    .footer-block h3{margin:0 0 14px;color:#d4b77c;font-family:'Cormorant Garamond',Georgia,serif;font-size:1.5rem;font-weight:500}
+    .footer-links{display:flex;flex-wrap:wrap;gap:10px 22px}
+    .footer-links a{color:#eee8df;text-decoration:none;font-size:11px;font-weight:500;line-height:1.7;letter-spacing:.08em}
+    .footer-links a:hover{color:#d4b77c}
+    .footer-meta{color:#bdb4a8;font-size:11px;line-height:1.9;letter-spacing:.06em}
+    .footer-meta a{color:#d4b77c;text-decoration:none}
+    .footer-bottom{max-width:1150px;margin:30px auto 0;padding-top:22px;border-top:1px solid rgba(238,232,223,.14);color:#8f887f;font-size:10px;line-height:1.75;letter-spacing:.08em;text-align:center}
+    @media(max-width:680px){.footer-inner{grid-template-columns:1fr;gap:28px}.footer-links{display:grid;grid-template-columns:1fr 1fr;gap:8px 16px}.footer-bottom{text-align:left}}
     @media(max-width:860px){.art-card{grid-template-columns:1fr}.art-card:nth-child(even) .art-stage,.art-card:nth-child(even) .copy{order:initial}.art-stage{min-height:0}.step-grid{grid-template-columns:1fr}}
     @media(max-width:560px){.top-link{display:none}.hero{padding-top:44px}.art-card{padding:42px 0}.details{grid-template-columns:1fr}.buttons{grid-template-columns:1fr}h1{font-size:3.15rem}.art-stage img{max-height:520px}}
   </style>
@@ -65,7 +81,7 @@
     </section>
 
     <section class="collection" aria-label="Artwork collection">
-      <article class="art-card" id="grotto-falls">
+      <article class="art-card" id="grotto-falls" data-art-id="L419-01" data-art-name="Grotto Falls in Spring" data-art-price="95">
         <div class="art-stage"><img src="assets/grotto-falls.jpg?v=2" alt="Grotto Falls flowing over moss-covered rocks in spring in Great Smoky Mountains National Park"></div>
         <div class="copy">
           <span class="number">01 · Fine art photograph</span>
@@ -73,12 +89,12 @@
           <p class="description">Silky water descends through fresh green foliage and moss-covered rock at Grotto Falls in Great Smoky Mountains National Park. Filtered light and a long exposure give the scene a quiet, restorative atmosphere.</p>
           <div class="price-row"><div><div class="price-label">Display price</div><div class="price">$95</div></div></div>
           <ul class="details"><li>Image size<b>8 × 10 inches</b></li><li>Finished size<b>11 × 14 inches</b></li><li>Presentation<b>White mat and black frame</b></li><li>Availability<b>Available</b></li></ul>
-          <div class="buttons"><a class="button" href="https://www.paypal.com/ncp/payment/TW7WYE6P3XXNY" target="_blank" rel="noopener">Purchase this artwork</a><a class="button button-secondary" href="https://dansproul.com/featured/grotto-falls-smoky-mountains-in-spring-dan-sproul.html" target="_blank" rel="noopener">Other sizes &amp; formats</a></div>
+          <div class="buttons"><a class="button track-purchase" href="https://www.paypal.com/ncp/payment/TW7WYE6P3XXNY" target="_blank" rel="noopener">Purchase this artwork</a><a class="button button-secondary track-other-formats" href="https://dansproul.com/featured/grotto-falls-smoky-mountains-in-spring-dan-sproul.html" target="_blank" rel="noopener">Other sizes &amp; formats</a></div>
           <p class="small-note">Sold as shown, ready to hang. Additional formats are produced to order.</p>
         </div>
       </article>
 
-      <article class="art-card" id="maroon-bells">
+      <article class="art-card" id="maroon-bells" data-art-id="L419-02" data-art-name="Autumn Sunrise at Maroon Bells" data-art-price="95">
         <div class="art-stage"><img src="assets/autumn-sunrise-maroon-bells.jpg?v=2" alt="Maroon Bells reflected in a calm Colorado lake at sunrise with vivid autumn color"></div>
         <div class="copy">
           <span class="number">02 · Fine art photograph</span>
@@ -86,12 +102,12 @@
           <p class="description">The iconic Maroon Bells glow above a calm Colorado lake at sunrise, framed by brilliant gold, orange and red foliage. The reflection and soft morning light bring a warm, expansive feeling to the landscape.</p>
           <div class="price-row"><div><div class="price-label">Display price</div><div class="price">$95</div></div></div>
           <ul class="details"><li>Image size<b>8 × 10 inches</b></li><li>Finished size<b>11 × 14 inches</b></li><li>Presentation<b>White mat and black frame</b></li><li>Availability<b>Available</b></li></ul>
-          <div class="buttons"><a class="button" href="https://www.paypal.com/ncp/payment/GE7G659XY5JXS" target="_blank" rel="noopener">Purchase this artwork</a><a class="button button-secondary" href="https://dansproul.com/featured/autumn-sunrise-maroon-bells-dan-sproul.html" target="_blank" rel="noopener">Other sizes &amp; formats</a></div>
+          <div class="buttons"><a class="button track-purchase" href="https://www.paypal.com/ncp/payment/GE7G659XY5JXS" target="_blank" rel="noopener">Purchase this artwork</a><a class="button button-secondary track-other-formats" href="https://dansproul.com/featured/autumn-sunrise-maroon-bells-dan-sproul.html" target="_blank" rel="noopener">Other sizes &amp; formats</a></div>
           <p class="small-note">Sold as shown, ready to hang. Additional formats are produced to order.</p>
         </div>
       </article>
 
-      <article class="art-card" id="toledo-poster">
+      <article class="art-card" id="toledo-poster" data-art-id="L419-03" data-art-name="Downtown Toledo and the Maumee River" data-art-price="95">
         <div class="art-stage"><div class="poster-mat-window"><img src="assets/toledo-travel-poster.jpg?v=2" alt="Illustrated Downtown Toledo skyline and Maumee River travel poster by Dan Sproul, cropped as displayed within its mat"></div></div>
         <div class="copy">
           <span class="number">03 · Toledo art print</span>
@@ -99,12 +115,12 @@
           <p class="description">A contemporary travel-poster interpretation of Toledo's downtown waterfront. The skyline, Maumee River and warm graphic palette celebrate Glass City identity in the spirit of a classic destination poster.</p>
           <div class="price-row"><div><div class="price-label">Display price</div><div class="price">$95</div></div></div>
           <ul class="details"><li>Artwork size<b>8 × 10 inches</b></li><li>Finished size<b>11 × 14 inches</b></li><li>Presentation<b>White mat and black frame</b></li><li>Availability<b>Available</b></li></ul>
-          <div class="buttons"><a class="button" href="https://www.paypal.com/ncp/payment/8NS536282L4YU" target="_blank" rel="noopener">Purchase this artwork</a><a class="button button-secondary" href="https://dansproul.com/featured/downtown-toledo-ohio-maumee-river-travel-poster-dan-sproul.html" target="_blank" rel="noopener">Other sizes &amp; formats</a></div>
+          <div class="buttons"><a class="button track-purchase" href="https://www.paypal.com/ncp/payment/8NS536282L4YU" target="_blank" rel="noopener">Purchase this artwork</a><a class="button button-secondary track-other-formats" href="https://dansproul.com/featured/downtown-toledo-ohio-maumee-river-travel-poster-dan-sproul.html" target="_blank" rel="noopener">Other sizes &amp; formats</a></div>
           <p class="small-note">Preview reflects the portion visible through the mat; the lower wording and blue border are intentionally covered. Sold as shown, ready to hang.</p>
         </div>
       </article>
 
-      <article class="art-card" id="anthony-wayne-bridge">
+      <article class="art-card" id="anthony-wayne-bridge" data-art-id="L419-04" data-art-name="Anthony Wayne Bridge — Toledo Map" data-art-price="200">
         <div class="art-stage"><img src="assets/anthony-wayne-bridge-map.jpg?v=2" alt="Layered artwork combining Toledo's Anthony Wayne Bridge with a map of downtown Toledo"></div>
         <div class="copy">
           <span class="number">04 · Toledo composite artwork</span>
@@ -112,12 +128,12 @@
           <p class="description">A layered photo composite blending Toledo's Anthony Wayne Bridge with city map typography. Turquoise structure, downtown detail and cartographic texture create a distinctive tribute to the Glass City.</p>
           <div class="price-row"><div><div class="price-label">Display price</div><div class="price">$200</div></div></div>
           <ul class="details"><li>Artwork size<b>12 × 18 inches</b></li><li>Finished size<b>18 × 24 inches</b></li><li>Presentation<b>White mat and black frame</b></li><li>Availability<b>Available</b></li></ul>
-          <div class="buttons"><a class="button" href="https://www.paypal.com/ncp/payment/YMYC4ZLXP3PVS" target="_blank" rel="noopener">Purchase this artwork</a><a class="button button-secondary" href="https://dansproul.com/featured/anthony-wayne-bridge-toledo-map-dan-sproul.html" target="_blank" rel="noopener">Other sizes &amp; formats</a></div>
+          <div class="buttons"><a class="button track-purchase" href="https://www.paypal.com/ncp/payment/YMYC4ZLXP3PVS" target="_blank" rel="noopener">Purchase this artwork</a><a class="button button-secondary track-other-formats" href="https://dansproul.com/featured/anthony-wayne-bridge-toledo-map-dan-sproul.html" target="_blank" rel="noopener">Other sizes &amp; formats</a></div>
           <p class="small-note">The mat and larger finished size make this the visual anchor of the collection.</p>
         </div>
       </article>
 
-      <article class="art-card" id="ecola-state-park">
+      <article class="art-card" id="ecola-state-park" data-art-id="L419-05" data-art-name="Dreamy Cannon Beach from Ecola State Park" data-art-price="115">
         <div class="art-stage"><img src="assets/dreamy-cannon-beach.jpg?v=2" alt="Dreamy view of Cannon Beach sea stacks from Ecola State Park with golden foreground grasses"></div>
         <div class="copy">
           <span class="number">05 · Fine art canvas</span>
@@ -125,12 +141,12 @@
           <p class="description">Golden grasses frame the rugged Oregon shoreline and iconic Cannon Beach sea stacks from Ecola State Park. Warm light and a softened coastal atmosphere bring a calm Pacific Northwest mood to the room.</p>
           <div class="price-row"><div><div class="price-label">Display price</div><div class="price">$115</div></div></div>
           <ul class="details"><li>Artwork size<b>9 × 16 inches</b></li><li>Medium<b>Canvas print</b></li><li>Presentation<b>Gallery-wrapped canvas</b></li><li>Availability<b>Available</b></li></ul>
-          <div class="buttons"><a class="button" href="https://www.paypal.com/ncp/payment/JGX6KG8XPH2BE" target="_blank" rel="noopener">Purchase this artwork</a><a class="button button-secondary" href="https://dansproul.com/featured/dreamy-cannon-beach-seastacks-from-ecola-state-park-dan-sproul.html" target="_blank" rel="noopener">Other sizes &amp; formats</a></div>
+          <div class="buttons"><a class="button track-purchase" href="https://www.paypal.com/ncp/payment/JGX6KG8XPH2BE" target="_blank" rel="noopener">Purchase this artwork</a><a class="button button-secondary track-other-formats" href="https://dansproul.com/featured/dreamy-cannon-beach-seastacks-from-ecola-state-park-dan-sproul.html" target="_blank" rel="noopener">Other sizes &amp; formats</a></div>
           <p class="small-note">A ready-to-hang canvas featuring the Oregon coast as seen from Ecola State Park.</p>
         </div>
       </article>
 
-      <article class="art-card" id="lima-sunrise-kayaker">
+      <article class="art-card" id="lima-sunrise-kayaker" data-art-id="L419-06" data-art-name="Golden Sunrise Kayaker — Lima, Ohio" data-art-price="175">
         <div class="art-stage"><img src="assets/lima-sunrise-kayaker.jpg?v=2" alt="Silhouetted kayaker crossing a misty lake at a brilliant orange sunrise near Lima, Ohio"></div>
         <div class="copy">
           <span class="number">06 · Fine art photograph</span>
@@ -138,7 +154,7 @@
           <p class="description">A lone kayaker moves through glowing morning mist as the rising sun transforms the lake into layers of amber and gold. The Ohio setting adds another local connection while the dramatic light gives the collection a strong visual finale.</p>
           <div class="price-row"><div><div class="price-label">Display price</div><div class="price">$175</div></div></div>
           <ul class="details"><li>Artwork size<b>12 × 18 inches</b></li><li>Finished size<b>18 × 24 inches</b></li><li>Presentation<b>White mat and black frame</b></li><li>Availability<b>Available</b></li></ul>
-          <div class="buttons"><a class="button" href="https://www.paypal.com/ncp/payment/5JBWKP49HU7X8" target="_blank" rel="noopener">Purchase this artwork</a><a class="button button-secondary" href="https://dansproul.com/featured/golden-sunrise-kayaker-on-a-misty-lake-in-lima-ohio-dan-sproul.html" target="_blank" rel="noopener">Other sizes &amp; formats</a></div>
+          <div class="buttons"><a class="button track-purchase" href="https://www.paypal.com/ncp/payment/5JBWKP49HU7X8" target="_blank" rel="noopener">Purchase this artwork</a><a class="button button-secondary track-other-formats" href="https://dansproul.com/featured/golden-sunrise-kayaker-on-a-misty-lake-in-lima-ohio-dan-sproul.html" target="_blank" rel="noopener">Other sizes &amp; formats</a></div>
           <p class="small-note">Sold as shown, ready to hang. Additional formats are produced to order.</p>
         </div>
       </article>
@@ -157,6 +173,31 @@
     </div>
   </section>
 
-  <footer><p>Artwork and photography © 2026 Dan Sproul · Lima, Ohio · <a href="mailto:dan@dsproul.com">dan@dsproul.com</a></p></footer>
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-block">
+        <h3>Explore More</h3>
+        <div class="footer-links">
+          <a class="track-footer" href="https://dsproul.com/best-sellers.html">Best Sellers</a>
+          <a class="track-footer" href="https://dsproul.com/nature-photography-gift-guide.html">Holiday Gift Guide</a>
+          <a class="track-footer" href="https://dsproul.com/lima-ohio-gifts.html">Ohio &amp; Lima Gifts</a>
+          <a class="track-footer" href="https://dansproul.com" target="_blank" rel="noopener">Shop All Artwork</a>
+        </div>
+      </div>
+
+      <div class="footer-block">
+        <h3>Dan Sproul Fine Art Photography</h3>
+        <div class="footer-meta">
+          Lima, Ohio<br>
+          <a href="mailto:dan@dsproul.com">dan@dsproul.com</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      Artwork and photography © 2026 Dan Sproul · Original photography and artwork · The Loft 419 collection
+    </div>
+  </footer>
+\n  <script>\n  (function(){\n    function sendEvent(name, params){ if(typeof gtag==='function') gtag('event',name,params||{}); }\n    const q=new URLSearchParams(window.location.search);\n    const campaign={source:q.get('utm_source')||'',medium:q.get('utm_medium')||'',campaign:q.get('utm_campaign')||''};\n    try{\n      if(campaign.source||campaign.medium||campaign.campaign){sessionStorage.setItem('loft419_campaign',JSON.stringify(campaign));}\n      else{const saved=sessionStorage.getItem('loft419_campaign');if(saved)Object.assign(campaign,JSON.parse(saved));}\n    }catch(e){}\n    function common(extra){return Object.assign({venue:'The Loft 419',campaign_source:campaign.source,campaign_medium:campaign.medium,campaign_name:campaign.campaign,page_path:window.location.pathname},extra||{});}\n    sendEvent('loft_page_visit',common());\n    if(campaign.source==='the_loft_419'&&campaign.medium==='qr')sendEvent('loft_qr_visit',common());\n\n    const viewed=new Set();\n    if('IntersectionObserver' in window){\n      const observer=new IntersectionObserver(function(entries){\n        entries.forEach(function(entry){\n          if(!entry.isIntersecting||entry.intersectionRatio<.55)return;\n          const card=entry.target, id=card.dataset.artId||'';\n          if(!id||viewed.has(id))return; viewed.add(id);\n          sendEvent('view_item',common({currency:'USD',value:Number(card.dataset.artPrice||0),items:[{item_id:id,item_name:card.dataset.artName||'',item_category:'Loft 419 Display',price:Number(card.dataset.artPrice||0),quantity:1}]}));\n        });\n      },{threshold:[.55]});\n      document.querySelectorAll('.art-card[data-art-id]').forEach(function(card){observer.observe(card);});\n    }\n\n    document.addEventListener('click',function(event){\n      const link=event.target.closest('a'); if(!link)return;\n      const card=link.closest('.art-card');\n      const id=card?(card.dataset.artId||''):'', name=card?(card.dataset.artName||''):'', price=card?Number(card.dataset.artPrice||0):0;\n      const href=link.href||'', text=(link.textContent||'').trim();\n      if(link.classList.contains('track-purchase')){\n        sendEvent('begin_checkout',common({currency:'USD',value:price,checkout_destination:'PayPal',items:[{item_id:id,item_name:name,item_category:'Loft 419 Display',price:price,quantity:1}]})); return;\n      }\n      if(link.classList.contains('track-other-formats')){\n        sendEvent('select_item',common({link_url:href,destination:'DanSproul Storefront',item_list_name:'Loft 419 Other Sizes and Formats',items:[{item_id:id,item_name:name,item_category:'Loft 419 Display',price:price,quantity:1}]})); return;\n      }\n      if(link.classList.contains('track-footer')){sendEvent('loft_explore_click',common({link_url:href,link_text:text})); return;}\n      if(href.toLowerCase().startsWith('mailto:'))sendEvent('generate_lead',common({lead_type:'email',link_text:text,item_id:id,item_name:name}));\n    });\n  })();\n  </script>\n
 </body>
 </html>
