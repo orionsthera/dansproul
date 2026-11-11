@@ -1951,6 +1951,139 @@
   }
 }
 
+
+/* ── FROM PLACE TO SPACE — HOMEPAGE START PATH ───────────── */
+.from-place-space .quick-head{
+  grid-template-columns:minmax(0,500px) minmax(320px,1fr);
+  gap:clamp(34px,5vw,72px);
+  margin-bottom:30px;
+}
+.from-place-space .quick-head h2{
+  max-width:520px;
+  font-size:clamp(34px,4.6vw,58px);
+  letter-spacing:-.015em;
+}
+.from-place-space .quick-head > p{
+  max-width:660px;
+  justify-self:end;
+  font-size:14px;
+  line-height:1.85;
+}
+.from-place-space .path-grid{
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:1px;
+}
+.from-place-space .path{
+  min-height:224px;
+  padding:30px 28px 26px;
+  transition:transform .22s ease,box-shadow .22s ease,background .22s ease;
+}
+.from-place-space .path:hover{
+  position:relative;
+  z-index:2;
+  transform:translateY(-3px);
+  box-shadow:0 16px 34px rgba(33,27,20,.10);
+}
+.from-place-space .path-step{
+  display:block;
+  margin:0 0 16px;
+  color:#9a783c;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:8.5px;
+  font-weight:700;
+  letter-spacing:.20em;
+  text-transform:uppercase;
+}
+.from-place-space .path h3{
+  font-size:clamp(28px,2.5vw,36px);
+  line-height:1.03;
+}
+.from-place-space .path p{
+  margin-top:12px;
+  font-size:13px;
+  line-height:1.7;
+}
+.from-place-space .path-link{
+  margin-top:24px;
+  color:#87672d;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:9px;
+  font-weight:700;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+}
+.from-place-space .path-featured{
+  background:#f3eadb;
+  box-shadow:inset 0 3px 0 #b88d43;
+}
+.from-place-space .path-featured .path-link{
+  color:#684b1d;
+}
+@media(max-width:900px){
+  .from-place-space .quick-head{
+    grid-template-columns:1fr;
+    gap:16px;
+  }
+  .from-place-space .quick-head > p{
+    justify-self:start;
+    max-width:760px;
+  }
+  .from-place-space .path-grid{
+    grid-template-columns:1fr;
+    gap:4px;
+    background:transparent;
+  }
+  .from-place-space .path{
+    min-height:auto;
+    padding:24px;
+    border:1px solid rgba(33,27,20,.12);
+  }
+}
+@media(max-width:680px){
+  .from-place-space{
+    padding:38px 22px!important;
+  }
+  .from-place-space .quick-head{
+    margin-bottom:18px!important;
+  }
+  .from-place-space .quick-head h2{
+    font-size:clamp(1.8rem,7.4vw,2.4rem)!important;
+  }
+  .from-place-space .quick-head > p{
+    display:block!important;
+    font-size:12.5px!important;
+    line-height:1.55!important;
+  }
+  .from-place-space .path-grid{
+    grid-template-columns:1fr!important;
+    gap:6px!important;
+  }
+  .from-place-space .path{
+    min-height:auto!important;
+    padding:18px!important;
+  }
+  .from-place-space .path-step{
+    margin-bottom:10px!important;
+    font-size:7.5px!important;
+    letter-spacing:.16em!important;
+  }
+  .from-place-space .path h3{
+    font-size:1.35rem!important;
+  }
+  .from-place-space .path p{
+    display:block!important;
+    margin-top:8px!important;
+    font-size:12px!important;
+    line-height:1.5!important;
+  }
+  .from-place-space .path-link{
+    display:block!important;
+    margin-top:12px!important;
+    font-size:7.8px!important;
+    letter-spacing:.14em!important;
+  }
+}
+
 </style>
 
   <script type="application/ld+json">
@@ -2427,44 +2560,42 @@
     </div>
   </section>
 
-  <section class="quick-paths" id="start-here">
+  <section class="quick-paths from-place-space" id="start-here" aria-labelledby="from-place-space-title">
     <div class="quick-inner">
       <div class="quick-head">
         <div>
-          <p class="eyebrow">Start here</p>
-          <h2>Shop by room, mood, or collection.</h2>
+          <p class="eyebrow">From Place to Space</p>
+          <h2 id="from-place-space-title">Find artwork that belongs in your room.</h2>
         </div>
-        <p>Start with the feeling you want in the room: calm, warm, coastal, mountain, woodland, minimal, dramatic, or grounded in nature.</p>
+        <p>Every photograph begins with a real place — changing light, weather, wildlife, mountains, water, or a landscape worth remembering. The next step is finding where that feeling belongs in your space.</p>
       </div>
 
-      <div class="path-grid">
-        <a class="path" href="best-sellers.html">
+      <div class="path-grid" aria-label="Ways to start choosing artwork">
+        <a class="path" href="best-sellers.html" data-start-path="artwork">
           <div>
-            <h3>Best Sellers</h3>
-            <p>Customer favorite landscapes, wildlife prints, coastal scenes, and mountain artwork that are easy to place in real homes.</p>
+            <span class="path-step">01 · Explore</span>
+            <h3>Explore the Artwork</h3>
+            <p>Start with customer favorites, then browse curated collections organized by atmosphere, place, color, and natural subject.</p>
           </div>
-          <span>Shop best sellers</span>
+          <span class="path-link">Browse artwork →</span>
         </a>
-        <a class="path" href="art-collections.html">
+
+        <a class="path" href="in-your-space.html" data-start-path="space">
           <div>
-            <h3>Collections</h3>
-            <p>Curated groups organized by mood, atmosphere, place, color, and natural subject matter.</p>
+            <span class="path-step">02 · Visualize</span>
+            <h3>See It in Your Space</h3>
+            <p>See large-format photography in living rooms, bedrooms, offices, entryways, and other real interiors before deciding what feels right.</p>
           </div>
-          <span>Shop collections</span>
+          <span class="path-link">View room ideas →</span>
         </a>
-        <a class="path" href="in-your-space.html">
+
+        <a class="path path-featured" href="art-advisor.html" data-start-path="advisor">
           <div>
-            <h3>In Your Space</h3>
-            <p>See how large-format fine art photography looks in bedrooms, living rooms, dining rooms, and home offices.</p>
+            <span class="path-step">03 · Personalize</span>
+            <h3>Not Sure Where to Start?</h3>
+            <p>Use the complimentary Art Advisor for personalized artwork, sizing, framing, and placement recommendations — with the option to ask Dan for personal help.</p>
           </div>
-          <span>View mockups</span>
-        </a>
-        <a class="path" href="for-designers.html">
-          <div>
-            <h3>Designer Projects</h3>
-            <p>Dedicated support for interior designers, hospitality, healthcare, senior living, offices, and project teams.</p>
-          </div>
-          <span>Commercial resources</span>
+          <span class="path-link">Start the Art Advisor →</span>
         </a>
       </div>
     </div>
@@ -3285,6 +3416,22 @@ document.addEventListener('click',function(e){
     gtag('event','homepage_holiday_gift_click',{
       link_url:link.href,
       link_text:(link.textContent||'').trim(),
+      source_page:window.location.pathname
+    });
+  }
+});
+</script>
+
+
+<script>
+document.addEventListener('click',function(e){
+  const link=e.target.closest('[data-start-path]');
+  if(!link) return;
+  if(typeof gtag==='function'){
+    gtag('event','homepage_start_path_click',{
+      path_choice:link.getAttribute('data-start-path'),
+      link_url:link.href,
+      link_text:(link.textContent||'').trim().replace(/\s+/g,' '),
       source_page:window.location.pathname
     });
   }
