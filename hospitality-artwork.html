@@ -48,8 +48,30 @@ gtag('config', 'G-1Q52T85XS5');
 @media(max-width:1040px){.process-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:680px){.process{padding:64px 24px}.process-grid{grid-template-columns:1fr}}
 
-/* MODAL */
-.modal{display;position;z-index:10000;inset:0;background(0,0,0,.92);padding:30px}.modal.is-open{display;align-items;justify-content}.modal-panel{width(1180px,96vw);max-height:90vh;display;grid-template-columns:1.35fr .75fr;background:#111;border:1px solid rgba(199,155,85,.34);box-shadow:0 30px 90px rgba(0,0,0,.7);overflow}.modal-image-wrap{background:#050505;display;align-items;justify-content}.modal img{max-width:100%;max-height:90vh;object-fit}.modal-copy{padding:34px;overflow}.modal-copy h3{font-size:34px;margin-bottom:14px}.modal-copy p{font-size:14px}.modal-copy ul{margin:10px 0 0;padding-left:18px;color:#cfc2b1;line-height:1.8;font-size:14px}.modal-close{position;top:18px;right:28px;background;border:0;color;font-size:42px;cursor}.modal .btns{margin-top:22px}
+/* HOSPITALITY LIGHTBOX — repaired complete modal rules */
+#image-modal.modal{display:none;position:fixed;z-index:10050;inset:0;background:rgba(0,0,0,.92);padding:30px;align-items:center;justify-content:center;overflow-y:auto}
+#image-modal.modal.is-open{display:flex;align-items:center;justify-content:center}
+#image-modal .modal-panel{width:min(1180px,96vw);max-height:90vh;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.75fr);background:#111;border:1px solid rgba(199,155,85,.34);box-shadow:0 30px 90px rgba(0,0,0,.7);overflow:auto}
+#image-modal .modal-image-wrap{background:#050505;display:flex;align-items:center;justify-content:center;min-width:0}
+#image-modal .modal-image-wrap img{display:block;max-width:100%;max-height:86vh;width:auto;height:auto;object-fit:contain}
+#image-modal .modal-copy{padding:34px;overflow:auto;min-width:0}
+#image-modal .modal-copy h3{font-size:34px;margin-bottom:14px}
+#image-modal .modal-copy p{font-size:14px}
+#image-modal .modal-copy ul{margin:10px 0 0;padding-left:18px;color:#cfc2b1;line-height:1.8;font-size:14px}
+#image-modal .modal-close{position:fixed;z-index:10060;top:14px;right:20px;background:rgba(0,0,0,.85);border:1px solid rgba(199,155,85,.55);border-radius:3px;color:#fff;font-size:36px;line-height:1;width:48px;height:48px;cursor:pointer}
+#image-modal .btns{margin-top:22px}
+@media(max-width:900px){
+  #image-modal .modal-panel{grid-template-columns:1fr;max-height:min(90dvh,950px)}
+  #image-modal .modal-image-wrap img{max-height:52dvh}
+}
+@media(max-width:680px){
+  #image-modal.modal{padding:62px 12px 12px!important;align-items:flex-start!important;overflow-y:auto!important}
+  #image-modal .modal-panel{width:100%!important;max-height:calc(100dvh - 80px)!important;grid-template-columns:1fr!important;overflow-y:auto!important}
+  #image-modal .modal-image-wrap img{max-height:40dvh!important;object-fit:contain!important}
+  #image-modal .modal-copy{padding:18px!important;max-height:none!important;overflow:visible!important}
+  #image-modal .modal-close{position:fixed!important;top:10px!important;right:12px!important;z-index:10060!important;background:rgba(0,0,0,.85)!important;color:#fff!important}
+}
+
 @media(max-width:1040px){.site-nav-standard{height:64px!important}.nav-toggle-standard{display!important}.nav-links-standard{position!important;top:64px!important;left:0!important;right:0!important;display!important;flex-direction!important;align-items!important;gap:0!important;padding:18px 24px 24px!important;background(14,12,9,.98)!important;border-bottom:1px solid rgba(185,138,59,.22)!important}.site-nav-standard.is-open .nav-links-standard{display!important}.nav-links-standard a{width:100%!important;padding:14px 0!important}.nav-shop-standard{width!important;margin-top:8px!important;padding:13px 18px!important}.footer-grid{grid-template-columns:1fr!important}.trust-strip{grid-template-columns(3,1fr)}.intro-grid,.note-grid,.spec-grid{grid-template-columns:1fr}.analysis-grid,.buying-grid,.seller-grid,.related-grid{grid-template-columns(2,1fr)}.modal-panel{grid-template-columns:1fr}.modal img{max-height:58vh}.modal-copy{max-height:32vh}}
 @media(max-width:680px){.breadcrumbs{padding:84px 24px 0}.hospitality-hero{min-height:76vh;padding:88px 24px 58px}.intro,.dans-note,.analysis,.mockups,.buying,.spec-sheet,.best-sellers,.faq-section,.related-collections,.footer-cta{padding:64px 24px}.trust-strip,.analysis-grid,.mockup-grid,.buying-grid,.seller-grid,.faq-grid,.related-grid{grid-template-columns:1fr}.mockup-card img,.seller-card img{height}h1{font-size:50px}.modal{padding:14px}.modal-copy{padding:24px}.modal-close{top:8px;right:14px}}
 
@@ -475,6 +497,9 @@ line-height:1.55!important;
   .mockup-card img{height:215px!important}
 }
 
+
+.curated-preview-button{width:100%;display:block;cursor:zoom-in;background:transparent;border:0;padding:0}
+.curated-preview-button img{width:100%;height:auto;display:block;object-fit:cover}
 </style>
 <script type="application/ld+json">
 {
@@ -965,9 +990,17 @@ line-height:1.55!important;
 
   <div class="curated-hospitality-feature">
     <div class="curated-hospitality-frame">
-      <img src="boutique-hospitality-lounge-black-white-mountain-art-dan-sproul.jpg"
+      <button class="mockup-image-button curated-preview-button" type="button"
+        data-img="boutique-hospitality-lounge-black-white-mountain-art-dan-sproul.jpg"
+        data-title="Coordinated Black &amp; White Artwork"
+        data-desc="Conceptual boutique hotel lounge with coordinated monochrome landscape photographs."
+        data-spaces="Boutique hotel lounges|Resort gathering spaces|Coordinated multi-piece interiors"
+        data-link="monochrome-stillness.html" data-cta="Explore Monochrome Collection"
+        aria-label="Enlarge coordinated black and white hospitality artwork mockup">
+        <img src="boutique-hospitality-lounge-black-white-mountain-art-dan-sproul.jpg"
            alt="Boutique hospitality lounge with two coordinated black and white mountain landscape photographs by Dan Sproul"
            loading="eager" fetchpriority="high" decoding="async">
+      </button>
     </div>
     <div class="curated-hospitality-copy">
       <div>
@@ -1267,6 +1300,7 @@ document.addEventListener('DOMContentLoaded', function () {
     modalTitle.textContent = title;
     modalDesc.textContent = desc;
     modalLink.href = link;
+    modalLink.textContent = button.getAttribute('data-cta') || 'View Print & Purchase';
 
     modalSpaces.innerHTML = '';
     spaces.split('|').filter(Boolean).forEach(function(space){
