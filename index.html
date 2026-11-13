@@ -2084,6 +2084,24 @@
   }
 }
 
+
+/* NOV 2026: Put featured photographs before supporting copy on smaller screens. */
+@media(max-width:680px){
+  .hero{min-height:56svh!important;padding:82px 22px 27px!important}
+  .hero-copy{font-size:13px!important;line-height:1.47!important;max-width:520px!important}
+  .hero .btns{margin-top:15px!important}
+  .hero .btn{min-height:42px!important;padding:11px 14px!important}
+  .trust-strip{padding:9px 14px!important}
+  .trust-strip>div{padding:8px 6px!important}
+  .weekly-featured{padding-top:24px!important}
+  .weekly-featured-head{margin-bottom:14px!important}
+  .weekly-featured-head h2{font-size:clamp(1.55rem,6.8vw,2.1rem)!important}
+  .promo-hero-image{aspect-ratio:16/11!important}
+  .seller-section{padding-top:29px!important;padding-bottom:40px!important}
+  .seller-section .section-head{margin-bottom:19px!important}
+  .seller-section .section-head p:not(.eyebrow){display:none!important}
+}
+
 </style>
 
   <script type="application/ld+json">
@@ -2447,7 +2465,7 @@
     <div class="hero-content">
       <p class="eyebrow">Landscape, wildlife &amp; nature prints</p>
       <h1>Fine art nature photography for the rooms you <em>live in.</em></h1>
-      <p class="hero-copy">Atmospheric landscapes, wildlife, coastal scenes, mountains, forests, waterfalls, and quiet natural places chosen to bring calm, warmth, and a sense of place into your home. Designer and project support is also available.</p>
+      <p class="hero-copy">Original landscapes and wildlife photography for homes, offices, and welcoming commercial spaces. Explore nature prints chosen for their atmosphere, color, and sense of place.</p>
       <p class="price-anchor">Prints from $45 &middot; Framed from $100</p>
       <div class="btns">
         <a class="btn primary" href="best-sellers.html">Shop Best Sellers</a>
@@ -2464,17 +2482,7 @@
   </div>
 
 
-  <section class="proof-buybar" aria-label="Social proof and shopping links">
-    <div class="proof-buybar-inner">
-      <p class="proof-copy"><strong>Collected by homeowners, designers, and businesses across the United States.</strong><br>Atmospheric nature artwork for living rooms, bedrooms, offices, healthcare spaces, hospitality interiors, and meaningful gifts.</p>
-      <div class="shop-intent-links" aria-label="Shop artwork by popular buying intent">
-        <a class="primary-shop" href="best-sellers.html">Shop Best Sellers</a>
-        <a href="art-collections.html">Shop Collections</a>
-        <a href="in-your-space.html">Large Wall Art</a>
-        <a href="https://dansproul.com/shop/prints" target="_blank" rel="noopener">Shop Prints</a>
-      </div>
-    </div>
-  </section>
+  
 
 
   
@@ -2491,7 +2499,7 @@
 
       <article class="promo-hero-card">
         <a class="promo-hero-image" href="https://dansproul.com/weeklypromotion.html?promotionid=292082" target="_blank" rel="noopener" aria-label="Shop the Pyramid Island Bridge in Fog canvas promotion">
-          <img src="therapist lounge foggy island dan sproul.jpg" alt="Pyramid Island Bridge in Fog by Dan Sproul shown in a calm interior setting" loading="lazy" decoding="async">
+          <img src="therapist lounge foggy island dan sproul.jpg" alt="Pyramid Island Bridge in Fog by Dan Sproul shown in a calm interior setting" loading="eager" fetchpriority="high" decoding="async">
         </a>
         <div class="promo-hero-copy">
           <p class="weekly-print-kicker">Jasper National Park · Limited-Time Canvas Promotion</p>
@@ -2556,6 +2564,114 @@
       <div class="weekly-featured-foot">
         <p class="weekly-featured-reassurance">Featured canvas promotion · Prints from $45 · Framed from $100 · Canvas · Metal · Acrylic · Ships worldwide</p>
         <a class="weekly-featured-all" href="best-sellers.html">View All Best Sellers →</a>
+      </div>
+    </div>
+  </section>
+
+<section class="section-pad seller-section" id="best-sellers">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Buyer favorites</p>
+        <h2>Most collected nature prints.</h2>
+      </div>
+      <p>A simple starting point for landscapes, wildlife, waterfalls, coastal scenes, and mountain prints that feel easy to love and easy to place at home.</p>
+    </div>
+
+    <div class="seller-grid">
+      <a class="image-card feature" href="best-sellers.html">
+        <img src="https://dsproul.com/valdez-glacier-lake-alaska-dan-sproul.jpg" alt="Valdez Glacier Lake Alaska atmospheric landscape photography print by Dan Sproul" loading="lazy" decoding="async">
+        <div class="card-text">
+          <span class="tag">Featured collection</span>
+          <h3>Customer Favorites</h3>
+          <p>Collected landscapes, wildlife, coastal scenes, waterfalls, and mountain prints for warm, memorable rooms.</p>
+        </div>
+      </a>
+
+      <a class="image-card" href="https://dansproul.com/featured/haystack-rock-beach-dan-sproul.html">
+        <img src="https://dsproul.com/cannon-beach-haystack-rock-oregon-dan-sproul.jpg" alt="Cannon Beach Haystack Rock Oregon Coast fine art photography print by Dan Sproul" loading="lazy" decoding="async">
+        <div class="card-text">
+          <span class="tag">Coastal favorite</span>
+          <h3>Cannon Beach</h3>
+          <p>Moody Oregon Coast wall art.</p>
+        </div>
+      </a>
+
+      <a class="image-card" href="https://dansproul.com/featured/autumn-sunrise-maroon-bells-dan-sproul.html">
+        <img src="https://dsproul.com/maroon-bells-dawn-autumn-dan-sproul.jpg" alt="Maroon Bells autumn sunrise Colorado mountain photography print by Dan Sproul" loading="lazy" decoding="async">
+        <div class="card-text">
+          <span class="tag">Mountain favorite</span>
+          <h3>Maroon Bells</h3>
+          <p>Warm Colorado autumn photography.</p>
+        </div>
+      </a>
+
+      <a class="image-card" href="https://dansproul.com/featured/cades-cove-black-bear-cub-dan-sproul.html">
+        <img src="https://dsproul.com/black-bear-cub-cades-cove-tennessee-dan-sproul.jpg" alt="Cades Cove black bear cub wildlife photography print by Dan Sproul" loading="lazy" decoding="async">
+        <div class="card-text">
+          <span class="tag">Wildlife favorite</span>
+          <h3>Cades Cove Bear</h3>
+          <p>Giftable wildlife with warmth.</p>
+        </div>
+      </a>
+
+      <a class="image-card" href="https://dansproul.com/featured/chimney-peak-colorado-in-autumn-dan-sproul.html">
+        <img src="https://dsproul.com/chimney-peak-colorado-autumn-dan-sproul.jpg" alt="Chimney Peak Colorado autumn landscape photography print by Dan Sproul" loading="lazy" decoding="async">
+        <div class="card-text">
+          <span class="tag">Autumn favorite</span>
+          <h3>Chimney Peak</h3>
+          <p>Golden light for warm interiors.</p>
+        </div>
+      </a>
+
+      <a class="image-card" href="https://dansproul.com/featured/dreamy-takakkaw-falls-yoho-national-park-canadian-rockies-waterfall-dan-sproul.html">
+        <img src="https://dsproul.com/dreamy-takkakaw-falls-dan-sproul.jpg" alt="Dreamy Takakkaw Falls Yoho National Park Canadian Rockies waterfall photography print by Dan Sproul" loading="lazy" decoding="async">
+        <div class="card-text">
+          <span class="tag">Waterfall favorite</span>
+          <h3>Takakkaw Falls</h3>
+          <p>Soft mountain water with atmosphere.</p>
+        </div>
+      </a>
+
+      <a class="image-card" href="https://dansproul.com/featured/dramatic-beartooth-peak-black-and-white-dan-sproul.html">
+        <img src="https://dsproul.com/dramatic-beartooth-peak-black-and-white-dan-sproul.jpg" alt="Dramatic Beartooth Peak black and white mountain photography print by Dan Sproul" loading="lazy" decoding="async">
+        <div class="card-text">
+          <span class="tag">Black &amp; white favorite</span>
+          <h3>Beartooth Peak</h3>
+          <p>Bold monochrome mountain drama.</p>
+        </div>
+      </a>
+
+      <a class="image-card" href="https://dansproul.com/featured/peaceful-garden-of-gods-sunrise-dan-sproul.html">
+        <img src="https://dsproul.com/peaceful-garden-of-gods-sunrise-dan-sproul.jpg" alt="Peaceful Garden of the Gods sunrise Colorado landscape photography print by Dan Sproul" loading="lazy" decoding="async">
+        <div class="card-text">
+          <span class="tag">Sunrise favorite</span>
+          <h3>Garden of the Gods</h3>
+          <p>Warm red rock sunrise color.</p>
+        </div>
+      </a>
+
+      <a class="image-card" href="https://dansproul.com/featured/jenny-lake-vertical-summer-dan-sproul.html">
+  <img src="https://dsproul.com/jenny-lake-vertical-summer-dan-sproul.jpg"
+       alt="Jenny Lake Grand Teton National Park summer reflection photography by Dan Sproul"
+       loading="lazy" decoding="async">
+  <div class="card-text">
+    <span class="tag">National park favorite</span>
+    <h3>Jenny Lake</h3>
+    <p>Calm reflections and alpine stillness for timeless interiors.</p>
+  </div>
+</a>
+
+    </div>
+  </section>
+
+<section class="proof-buybar" aria-label="Social proof and shopping links">
+    <div class="proof-buybar-inner">
+      <p class="proof-copy"><strong>Collected by homeowners, designers, and businesses across the United States.</strong><br>Atmospheric nature artwork for living rooms, bedrooms, offices, healthcare spaces, hospitality interiors, and meaningful gifts.</p>
+      <div class="shop-intent-links" aria-label="Shop artwork by popular buying intent">
+        <a class="primary-shop" href="best-sellers.html">Shop Best Sellers</a>
+        <a href="art-collections.html">Shop Collections</a>
+        <a href="in-your-space.html">Large Wall Art</a>
+        <a href="https://dansproul.com/shop/prints" target="_blank" rel="noopener">Shop Prints</a>
       </div>
     </div>
   </section>
@@ -2641,101 +2757,7 @@
   </section>
 
 
-  <section class="section-pad seller-section" id="best-sellers">
-    <div class="section-head">
-      <div>
-        <p class="eyebrow">Buyer favorites</p>
-        <h2>Most collected nature prints.</h2>
-      </div>
-      <p>A simple starting point for landscapes, wildlife, waterfalls, coastal scenes, and mountain prints that feel easy to love and easy to place at home.</p>
-    </div>
-
-    <div class="seller-grid">
-      <a class="image-card feature" href="best-sellers.html">
-        <img src="https://dsproul.com/valdez-glacier-lake-alaska-dan-sproul.jpg" alt="Valdez Glacier Lake Alaska atmospheric landscape photography print by Dan Sproul" loading="eager" decoding="async" fetchpriority="high">
-        <div class="card-text">
-          <span class="tag">Featured collection</span>
-          <h3>Customer Favorites</h3>
-          <p>Collected landscapes, wildlife, coastal scenes, waterfalls, and mountain prints for warm, memorable rooms.</p>
-        </div>
-      </a>
-
-      <a class="image-card" href="https://dansproul.com/featured/haystack-rock-beach-dan-sproul.html">
-        <img src="https://dsproul.com/cannon-beach-haystack-rock-oregon-dan-sproul.jpg" alt="Cannon Beach Haystack Rock Oregon Coast fine art photography print by Dan Sproul" loading="lazy" decoding="async">
-        <div class="card-text">
-          <span class="tag">Coastal favorite</span>
-          <h3>Cannon Beach</h3>
-          <p>Moody Oregon Coast wall art.</p>
-        </div>
-      </a>
-
-      <a class="image-card" href="https://dansproul.com/featured/autumn-sunrise-maroon-bells-dan-sproul.html">
-        <img src="https://dsproul.com/maroon-bells-dawn-autumn-dan-sproul.jpg" alt="Maroon Bells autumn sunrise Colorado mountain photography print by Dan Sproul" loading="lazy" decoding="async">
-        <div class="card-text">
-          <span class="tag">Mountain favorite</span>
-          <h3>Maroon Bells</h3>
-          <p>Warm Colorado autumn photography.</p>
-        </div>
-      </a>
-
-      <a class="image-card" href="https://dansproul.com/featured/cades-cove-black-bear-cub-dan-sproul.html">
-        <img src="https://dsproul.com/black-bear-cub-cades-cove-tennessee-dan-sproul.jpg" alt="Cades Cove black bear cub wildlife photography print by Dan Sproul" loading="lazy" decoding="async">
-        <div class="card-text">
-          <span class="tag">Wildlife favorite</span>
-          <h3>Cades Cove Bear</h3>
-          <p>Giftable wildlife with warmth.</p>
-        </div>
-      </a>
-
-      <a class="image-card" href="https://dansproul.com/featured/chimney-peak-colorado-in-autumn-dan-sproul.html">
-        <img src="https://dsproul.com/chimney-peak-colorado-autumn-dan-sproul.jpg" alt="Chimney Peak Colorado autumn landscape photography print by Dan Sproul" loading="lazy" decoding="async">
-        <div class="card-text">
-          <span class="tag">Autumn favorite</span>
-          <h3>Chimney Peak</h3>
-          <p>Golden light for warm interiors.</p>
-        </div>
-      </a>
-
-      <a class="image-card" href="https://dansproul.com/featured/dreamy-takakkaw-falls-yoho-national-park-canadian-rockies-waterfall-dan-sproul.html">
-        <img src="https://dsproul.com/dreamy-takkakaw-falls-dan-sproul.jpg" alt="Dreamy Takakkaw Falls Yoho National Park Canadian Rockies waterfall photography print by Dan Sproul" loading="lazy" decoding="async">
-        <div class="card-text">
-          <span class="tag">Waterfall favorite</span>
-          <h3>Takakkaw Falls</h3>
-          <p>Soft mountain water with atmosphere.</p>
-        </div>
-      </a>
-
-      <a class="image-card" href="https://dansproul.com/featured/dramatic-beartooth-peak-black-and-white-dan-sproul.html">
-        <img src="https://dsproul.com/dramatic-beartooth-peak-black-and-white-dan-sproul.jpg" alt="Dramatic Beartooth Peak black and white mountain photography print by Dan Sproul" loading="lazy" decoding="async">
-        <div class="card-text">
-          <span class="tag">Black &amp; white favorite</span>
-          <h3>Beartooth Peak</h3>
-          <p>Bold monochrome mountain drama.</p>
-        </div>
-      </a>
-
-      <a class="image-card" href="https://dansproul.com/featured/peaceful-garden-of-gods-sunrise-dan-sproul.html">
-        <img src="https://dsproul.com/peaceful-garden-of-gods-sunrise-dan-sproul.jpg" alt="Peaceful Garden of the Gods sunrise Colorado landscape photography print by Dan Sproul" loading="lazy" decoding="async">
-        <div class="card-text">
-          <span class="tag">Sunrise favorite</span>
-          <h3>Garden of the Gods</h3>
-          <p>Warm red rock sunrise color.</p>
-        </div>
-      </a>
-
-      <a class="image-card" href="https://dansproul.com/featured/jenny-lake-vertical-summer-dan-sproul.html">
-  <img src="https://dsproul.com/jenny-lake-vertical-summer-dan-sproul.jpg"
-       alt="Jenny Lake Grand Teton National Park summer reflection photography by Dan Sproul"
-       loading="lazy" decoding="async">
-  <div class="card-text">
-    <span class="tag">National park favorite</span>
-    <h3>Jenny Lake</h3>
-    <p>Calm reflections and alpine stillness for timeless interiors.</p>
-  </div>
-</a>
-
-    </div>
-  </section>
+  
 
   <section class="section-pad collections" id="collections">
     <div class="section-head">
