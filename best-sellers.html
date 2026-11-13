@@ -562,6 +562,26 @@ html{scroll-behavior:smooth}body{background:var(--charcoal);color:var(--text);fo
 }
 @media(max-width:380px){.gift-guide-grid{grid-template-columns:1fr}.gift-assurance{grid-template-columns:1fr}.gift-assurance div{border-right:0;border-bottom:1px solid rgba(36,31,24,.12)}.gift-assurance div:last-child{border-bottom:0}}
 
+
+/* NOV 2026: Mobile-first gallery access, preserving all artwork and buying guides. */
+@media(max-width:680px){
+  .hero{min-height:0!important;padding:91px 22px 28px!important}
+  .hero-copy{font-size:.79rem!important;line-height:1.5!important;margin-top:12px!important}
+  .hero-ctas{margin-top:17px!important;gap:8px!important}
+  .hero-ctas .btn{padding:11px 13px!important;min-height:41px!important}
+  .hero-ctas .btn:last-child{display:none!important}
+  .hero-price-points{margin-top:12px!important}
+  .trust-item{padding:10px!important}
+  .trust-v{font-size:.81rem!important;line-height:1.2!important}
+  .featured{padding-top:26px!important;padding-bottom:38px!important}
+  .featured .section-head{margin-bottom:17px!important}
+  .featured .section-title{font-size:clamp(1.7rem,7vw,2.25rem)!important}
+  .featured .section-sub{display:none!important}
+  .featured .print-body{padding:11px 10px!important}
+  .featured .print-note{display:none!important}
+  .featured .print-img{aspect-ratio:1/1!important}
+  .gift-guide{padding-top:40px!important}
+}
 </style>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -727,7 +747,7 @@ html{scroll-behavior:smooth}body{background:var(--charcoal);color:var(--text);fo
     <p class="eyebrow">Best Sellers · Nature Photography Gifts</p>
     <h1>Best Selling Prints for <em>Real Interiors &amp; Thoughtful Gifts</em></h1>
     <p class="hero-copy">A focused selection of Dan Sproul's most versatile fine art prints for meaningful gifts, living rooms, bedrooms, offices, hospitality projects, healthcare interiors, wellness spaces, and buyers who want an easy place to begin.</p>
-    <div class="hero-ctas"><a class="btn btn-solid" href="#gift-guide">Shop Gift Ideas</a><a class="btn btn-out" href="#featured">View Featured Prints</a><a class="btn btn-out" href="https://dansproul.com/collections/best+sellers+and+designer+favorite+wall+art" target="_blank" rel="noopener">Shop Full Collection</a></div>
+    <div class="hero-ctas"><a class="btn btn-solid" href="#featured">View Bestselling Prints</a><a class="btn btn-out" href="#gift-guide">Browse Gift Ideas</a><a class="btn btn-out" href="https://dansproul.com/collections/best+sellers+and+designer+favorite+wall+art" target="_blank" rel="noopener">Shop Full Collection</a></div>
     <div class="hero-price-points" aria-label="Starting price points">
       <div class="hero-price"><strong>From $45</strong><span>Fine Art Prints</span></div>
       <div class="hero-price"><strong>From $100</strong><span>Framed Prints</span></div>
@@ -743,6 +763,44 @@ html{scroll-behavior:smooth}body{background:var(--charcoal);color:var(--text);fo
   <div class="trust-item"><p class="trust-k">Help Offered</p><p class="trust-v">Free mockups and sizing guidance</p></div>
 </div>
 
+
+<section class="featured" id="featured"><div class="section-head"><div><p class="section-label">Featured Favorites &amp; Gift Picks</p><h2 class="section-title">Versatile prints that feel <em>personal</em></h2></div><p class="section-sub">Click any print to open the secure purchase page, where you can choose the size, frame, canvas, metal, acrylic, or paper option for a gift or your own room.</p></div><div class="print-grid"><a class="print-card" href="https://dansproul.com/featured/valdez-glacier-lake-dan-sproul.html" target="_blank" rel="noopener">
+      <div class="print-img"><img src="valdez-glacier-lake-alaska-dan-sproul.jpg" alt="Valdez Glacier Lake Alaska fine art photography print by Dan Sproul" loading="eager" decoding="async" fetchpriority="high"></div>
+      <div class="print-body"><p class="print-type">Mountain Water</p><h3 class="print-name">Valdez Glacier Lake</h3><p class="print-note">A calm blue mountain print for bedrooms, offices, and quiet interiors.</p></div>
+    </a><a class="print-card" href="https://dansproul.com/featured/haystack-rock-beach-dan-sproul.html" target="_blank" rel="noopener">
+      <div class="print-img"><img src="cannon-beach-haystack-rock-oregon-dan-sproul.jpg" alt="Cannon Beach Haystack Rock Oregon coastal photography print by Dan Sproul" loading="lazy" decoding="async"></div>
+      <div class="print-body"><p class="print-type">Coastal</p><h3 class="print-name">Cannon Beach</h3><p class="print-note">A strong coastal statement print with a quiet, modern palette.</p></div>
+    </a><a class="print-card" href="https://dansproul.com/featured/autumn-sunrise-maroon-bells-dan-sproul.html" target="_blank" rel="noopener">
+      <div class="print-img"><img src="maroon-bells-dawn-autumn-dan-sproul.jpg" alt="Maroon Bells dawn autumn Colorado landscape photography by Dan Sproul" loading="lazy" decoding="async"></div>
+      <div class="print-body"><p class="print-type">Autumn Mountain</p><h3 class="print-name">Maroon Bells Dawn</h3><p class="print-note">Warm Colorado color for cabins, offices, and statement walls.</p></div>
+    </a><a class="print-card" href="https://dansproul.com/featured/chimney-peak-colorado-in-autumn-dan-sproul.html" target="_blank" rel="noopener">
+      <div class="print-img"><img src="chimney-peak-colorado-autumn-dan-sproul.jpg" alt="Chimney Peak Colorado autumn landscape print by Dan Sproul" loading="lazy" decoding="async"></div>
+      <div class="print-body"><p class="print-type">Colorado</p><h3 class="print-name">Chimney Peak Autumn</h3><p class="print-note">A bright autumn landscape that still feels refined and natural.</p></div>
+    </a><a class="print-card" href="https://dansproul.com/art/bridal+veil" target="_blank" rel="noopener">
+      <div class="print-img"><img src="bridal-veil-falls-oregon-dan-sproul.jpg" alt="Bridal Veil Falls Oregon waterfall photography print by Dan Sproul" loading="lazy" decoding="async"></div>
+      <div class="print-body"><p class="print-type">Waterfall</p><h3 class="print-name">Bridal Veil Falls</h3><p class="print-note">A restorative waterfall print for wellness, spa, and office spaces.</p></div>
+    </a><a class="print-card" href="https://dansproul.com/featured/final-frontier-mystical-alaska-range-dan-sproul.html" target="_blank" rel="noopener">
+      <div class="print-img"><img src="denali-highway-alaska-black-white-dan-sproul.jpg" alt="Denali Highway Alaska black and white photography print by Dan Sproul" loading="lazy" decoding="async"></div>
+      <div class="print-body"><p class="print-type">Black & White</p><h3 class="print-name">Denali Highway</h3><p class="print-note">Graphic, quiet, and easy to place in modern interiors.</p></div>
+    </a><a class="print-card" href="https://dansproul.com/featured/cades-cove-black-bear-cub-dan-sproul.html" target="_blank" rel="noopener">
+      <div class="print-img"><img src="black-bear-cub-cades-cove-tennessee-dan-sproul.jpg" alt="Black bear cub Cades Cove Tennessee wildlife print by Dan Sproul" loading="lazy" decoding="async"></div>
+      <div class="print-body"><p class="print-type">Wildlife</p><h3 class="print-name">Cades Cove Bear Cub</h3><p class="print-note">A warm wildlife piece for cabins, family rooms, and gift buyers.</p></div>
+    </a><a class="print-card" href="https://dansproul.com/featured/autumn-transitions-denali-alaska-dan-sproul.html" target="_blank" rel="noopener">
+      <div class="print-img"><img src="autumn-transitions-denali-alaska-dan-sproul.jpg" alt="Autumn Transitions Denali Alaska landscape photography print by Dan Sproul" loading="lazy" decoding="async"></div>
+      <div class="print-body"><p class="print-type">Alaska Autumn</p><h3 class="print-name">Autumn Transitions</h3><p class="print-note">A wide seasonal Alaska landscape with color, snow, and quiet mountain atmosphere.</p></div>
+    </a><a class="print-card" href="https://dansproul.com/featured/golden-aspen-forest-colorado-dan-sproul.html" target="_blank" rel="noopener">
+      <div class="print-img"><img src="golden-aspen-forest-colorado-dan-sproul (1).jpg" alt="Golden Aspen Forest Colorado fine art photography print by Dan Sproul" loading="lazy" decoding="async"></div>
+      <div class="print-body"><p class="print-type">Aspen Forest</p><h3 class="print-name">Golden Aspen Forest</h3><p class="print-note">Bright Colorado color for entryways, dining rooms, offices, and autumn-themed rooms.</p></div>
+    </a><a class="print-card" href="https://dansproul.com/featured/proposal-rock-moody-oregon-coast-dan-sproul.html" target="_blank" rel="noopener">
+      <div class="print-img"><img src="proposal-rock-moody-oregon-coast-dan-sproul.jpg" alt="Proposal Rock moody Oregon Coast photography print by Dan Sproul" loading="lazy" decoding="async"></div>
+      <div class="print-body"><p class="print-type">Moody Coast</p><h3 class="print-name">Proposal Rock</h3><p class="print-note">A subdued Oregon coast print with fog, water, and a strong natural form.</p></div>
+    </a><a class="print-card" href="https://dansproul.com/featured/fox-forest-double-exposure-wildlife-wall-art-dan-sproul.html" target="_blank" rel="noopener">
+      <div class="print-img"><img src="fox-forest-double-exposure-dan-sproul.jpg" alt="Fox Forest Double Exposure mixed media wildlife print by Dan Sproul" loading="lazy" decoding="async"></div>
+      <div class="print-body"><p class="print-type">Wildlife Art</p><h3 class="print-name">Fox Forest</h3><p class="print-note">A softer double exposure piece that adds variety beyond traditional photography.</p></div>
+    </a><a class="print-card" href="https://dansproul.com/featured/sunlit-badlands-burrowing-owl-dan-sproul.html" target="_blank" rel="noopener">
+      <div class="print-img"><img src="sunlit-badlands-burrowing-owl-dan-sproul.jpg" alt="Sunlit Badlands Burrowing Owl wildlife print by Dan Sproul" loading="lazy" decoding="async"></div>
+      <div class="print-body"><p class="print-type">Badlands Wildlife</p><h3 class="print-name">Sunlit Burrowing Owl</h3><p class="print-note">A small, character-rich wildlife print for collectors and nature-inspired rooms.</p></div>
+    </a></div></section>
 
 <section class="gift-guide" id="gift-guide" aria-labelledby="gift-guide-title">
   <div class="section-head">
@@ -796,43 +854,7 @@ html{scroll-behavior:smooth}body{background:var(--charcoal);color:var(--text);fo
   </div>
 </section>
 
-<section class="featured" id="featured"><div class="section-head"><div><p class="section-label">Featured Favorites &amp; Gift Picks</p><h2 class="section-title">Versatile prints that feel <em>personal</em></h2></div><p class="section-sub">Click any print to open the secure purchase page, where you can choose the size, frame, canvas, metal, acrylic, or paper option for a gift or your own room.</p></div><div class="print-grid"><a class="print-card" href="https://dansproul.com/featured/valdez-glacier-lake-dan-sproul.html" target="_blank" rel="noopener">
-      <div class="print-img"><img src="valdez-glacier-lake-alaska-dan-sproul.jpg" alt="Valdez Glacier Lake Alaska fine art photography print by Dan Sproul" loading="eager" decoding="async" fetchpriority="high"></div>
-      <div class="print-body"><p class="print-type">Mountain Water</p><h3 class="print-name">Valdez Glacier Lake</h3><p class="print-note">A calm blue mountain print for bedrooms, offices, and quiet interiors.</p></div>
-    </a><a class="print-card" href="https://dansproul.com/featured/haystack-rock-beach-dan-sproul.html" target="_blank" rel="noopener">
-      <div class="print-img"><img src="cannon-beach-haystack-rock-oregon-dan-sproul.jpg" alt="Cannon Beach Haystack Rock Oregon coastal photography print by Dan Sproul" loading="lazy" decoding="async"></div>
-      <div class="print-body"><p class="print-type">Coastal</p><h3 class="print-name">Cannon Beach</h3><p class="print-note">A strong coastal statement print with a quiet, modern palette.</p></div>
-    </a><a class="print-card" href="https://dansproul.com/featured/autumn-sunrise-maroon-bells-dan-sproul.html" target="_blank" rel="noopener">
-      <div class="print-img"><img src="maroon-bells-dawn-autumn-dan-sproul.jpg" alt="Maroon Bells dawn autumn Colorado landscape photography by Dan Sproul" loading="lazy" decoding="async"></div>
-      <div class="print-body"><p class="print-type">Autumn Mountain</p><h3 class="print-name">Maroon Bells Dawn</h3><p class="print-note">Warm Colorado color for cabins, offices, and statement walls.</p></div>
-    </a><a class="print-card" href="https://dansproul.com/featured/chimney-peak-colorado-in-autumn-dan-sproul.html" target="_blank" rel="noopener">
-      <div class="print-img"><img src="chimney-peak-colorado-autumn-dan-sproul.jpg" alt="Chimney Peak Colorado autumn landscape print by Dan Sproul" loading="lazy" decoding="async"></div>
-      <div class="print-body"><p class="print-type">Colorado</p><h3 class="print-name">Chimney Peak Autumn</h3><p class="print-note">A bright autumn landscape that still feels refined and natural.</p></div>
-    </a><a class="print-card" href="https://dansproul.com/art/bridal+veil" target="_blank" rel="noopener">
-      <div class="print-img"><img src="bridal-veil-falls-oregon-dan-sproul.jpg" alt="Bridal Veil Falls Oregon waterfall photography print by Dan Sproul" loading="lazy" decoding="async"></div>
-      <div class="print-body"><p class="print-type">Waterfall</p><h3 class="print-name">Bridal Veil Falls</h3><p class="print-note">A restorative waterfall print for wellness, spa, and office spaces.</p></div>
-    </a><a class="print-card" href="https://dansproul.com/featured/final-frontier-mystical-alaska-range-dan-sproul.html" target="_blank" rel="noopener">
-      <div class="print-img"><img src="denali-highway-alaska-black-white-dan-sproul.jpg" alt="Denali Highway Alaska black and white photography print by Dan Sproul" loading="lazy" decoding="async"></div>
-      <div class="print-body"><p class="print-type">Black & White</p><h3 class="print-name">Denali Highway</h3><p class="print-note">Graphic, quiet, and easy to place in modern interiors.</p></div>
-    </a><a class="print-card" href="https://dansproul.com/featured/cades-cove-black-bear-cub-dan-sproul.html" target="_blank" rel="noopener">
-      <div class="print-img"><img src="black-bear-cub-cades-cove-tennessee-dan-sproul.jpg" alt="Black bear cub Cades Cove Tennessee wildlife print by Dan Sproul" loading="lazy" decoding="async"></div>
-      <div class="print-body"><p class="print-type">Wildlife</p><h3 class="print-name">Cades Cove Bear Cub</h3><p class="print-note">A warm wildlife piece for cabins, family rooms, and gift buyers.</p></div>
-    </a><a class="print-card" href="https://dansproul.com/featured/autumn-transitions-denali-alaska-dan-sproul.html" target="_blank" rel="noopener">
-      <div class="print-img"><img src="autumn-transitions-denali-alaska-dan-sproul.jpg" alt="Autumn Transitions Denali Alaska landscape photography print by Dan Sproul" loading="lazy" decoding="async"></div>
-      <div class="print-body"><p class="print-type">Alaska Autumn</p><h3 class="print-name">Autumn Transitions</h3><p class="print-note">A wide seasonal Alaska landscape with color, snow, and quiet mountain atmosphere.</p></div>
-    </a><a class="print-card" href="https://dansproul.com/featured/golden-aspen-forest-colorado-dan-sproul.html" target="_blank" rel="noopener">
-      <div class="print-img"><img src="golden-aspen-forest-colorado-dan-sproul (1).jpg" alt="Golden Aspen Forest Colorado fine art photography print by Dan Sproul" loading="lazy" decoding="async"></div>
-      <div class="print-body"><p class="print-type">Aspen Forest</p><h3 class="print-name">Golden Aspen Forest</h3><p class="print-note">Bright Colorado color for entryways, dining rooms, offices, and autumn-themed rooms.</p></div>
-    </a><a class="print-card" href="https://dansproul.com/featured/proposal-rock-moody-oregon-coast-dan-sproul.html" target="_blank" rel="noopener">
-      <div class="print-img"><img src="proposal-rock-moody-oregon-coast-dan-sproul.jpg" alt="Proposal Rock moody Oregon Coast photography print by Dan Sproul" loading="lazy" decoding="async"></div>
-      <div class="print-body"><p class="print-type">Moody Coast</p><h3 class="print-name">Proposal Rock</h3><p class="print-note">A subdued Oregon coast print with fog, water, and a strong natural form.</p></div>
-    </a><a class="print-card" href="https://dansproul.com/featured/fox-forest-double-exposure-wildlife-wall-art-dan-sproul.html" target="_blank" rel="noopener">
-      <div class="print-img"><img src="fox-forest-double-exposure-dan-sproul.jpg" alt="Fox Forest Double Exposure mixed media wildlife print by Dan Sproul" loading="lazy" decoding="async"></div>
-      <div class="print-body"><p class="print-type">Wildlife Art</p><h3 class="print-name">Fox Forest</h3><p class="print-note">A softer double exposure piece that adds variety beyond traditional photography.</p></div>
-    </a><a class="print-card" href="https://dansproul.com/featured/sunlit-badlands-burrowing-owl-dan-sproul.html" target="_blank" rel="noopener">
-      <div class="print-img"><img src="sunlit-badlands-burrowing-owl-dan-sproul.jpg" alt="Sunlit Badlands Burrowing Owl wildlife print by Dan Sproul" loading="lazy" decoding="async"></div>
-      <div class="print-body"><p class="print-type">Badlands Wildlife</p><h3 class="print-name">Sunlit Burrowing Owl</h3><p class="print-note">A small, character-rich wildlife print for collectors and nature-inspired rooms.</p></div>
-    </a></div></section>
+
 
 
 
